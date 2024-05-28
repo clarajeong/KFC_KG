@@ -1,0 +1,28 @@
+Got argument: Turtle, 5, 5_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', 'start word': 'Turtle', 'end word': 'Gulf of Mexico', 'source': {'name': 'Turtle', 'line': 39}, 'cpnet': {'start word': 'turtle', 'end word': 'gulf_of_mexico'}}
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+second_hop:  {'triplet': '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")', 'start word': 'Gulf of Mexico', 'end word': 'Cuba', 'source': {'name': 'Gulf of Mexico', 'line': 38}, 'cpnet': {'start word': 'gulf_of_mexico', 'end word': 'cuba'}}
+
+utils/question.py extract_hops(Cuba, [], ['Turtle', 'Gulf of Mexico']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cuba_info.json file
+extract_info(Cuba) Start.
+utils/preprocess.py extract_info(): Checking good links on Cuba
+Cay is Geography
+1 / 30 )  cays Cay cay
+Caribbean Sea is Geography
+2 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Gulf of Mexico is Geography
+3 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico
+Yucatán Peninsula is Geography
+4 / 30 )  Yucatán Peninsula Yucatán Peninsula yucatan_peninsula
+Florida is Geography
+5 / 30 )  Florida Florida florida
+The Bahamas is Geography
+6 / 30 )  the Bahamas The Bahamas bahamas
+Hispaniola is Geography
+7 / 30 )  Hispaniola Hispaniola hispaniola

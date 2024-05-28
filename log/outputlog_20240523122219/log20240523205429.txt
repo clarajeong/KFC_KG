@@ -1,0 +1,1292 @@
+Got argument: Mexico, 4, 4_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', 'start word': 'Mexico', 'end word': 'Abyssal plain', 'source': {'name': 'Gulf of Mexico', 'line': 27}, 'cpnet': {'start word': 'mexico', 'end word': 'abyssal_plain'}}
+
+utils/question.py extract_hops(Abyssal plain, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abyssal_plain_info.json file
+second_hop:  {'triplet': '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")', 'start word': 'Abyssal plain', 'end word': 'Ocean', 'source': {'name': 'Abyssal plain', 'line': 8}, 'cpnet': {'start word': 'abyssal_plain', 'end word': 'ocean'}}
+
+utils/question.py extract_hops(Ocean, [], ['Mexico', 'Abyssal plain']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Ocean_info.json file
+third_hop:  {'triplet': '("Seven Seas", "reference in arts and popular culture to", "oceans")', 'start word': 'Ocean', 'end word': 'Seven Seas', 'source': {'name': 'Seven Seas', 'line': 6}, 'cpnet': {'start word': 'ocean', 'end word': 'seven_seas'}}
+
+utils/question.py extract_hops(Seven Seas, [], ['Mexico', 'Abyssal plain', 'Ocean']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Seven_Seas_info.json file
+forth_hop:  {'triplet': '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")', 'start word': 'Seven Seas', 'end word': 'Persian Gulf', 'source': {'name': 'Seven Seas', 'line': 10}, 'cpnet': {'start word': 'seven_seas', 'end word': 'persian_gulf'}}
+generate_question(4_6, ['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")', '("Seven Seas", "reference in arts and popular culture to", "oceans")', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")'], ['Abyssal plain', 'Ocean', 'Seven Seas', 'Persian Gulf'], [('Mexico', 'Abyssal plain'), ('Abyssal plain', 'Ocean'), ('Ocean', 'Seven Seas'), ('Seven Seas', 'Persian Gulf')], Persian Gulf, [{'name': 'Gulf of Mexico', 'line': 27}, {'name': 'Abyssal plain', 'line': 8}, {'name': 'Seven Seas', 'line': 6}, {'name': 'Seven Seas', 'line': 10}]) called
+GPT output is:  Q: Which body of water is recognized in Arabic seafaring lore as the inaugural marine region of the traditional collective term used to describe Earth's saltwater bodies, which is impacted by features like the notable terrain found in the Gulf of Mexico?
+
+A: Persian Gulf
+final_choice(Persian Gulf, options = 5) started
+[]
+entity_type(Persian Gulf) called
+Persian Gulf is Geography
+check_matchscore(Persian Gulf, Bodies of water of Iraq):  0.0
+choose_by_wiki_recur(Bodies of water of Iraq)
+   Pages in Bodies of water of Iraq: ['Persian Gulf']
+   Upper category of Bodies of water of Iraq: ['Landforms of Iraq', 'Bodies of water by country', 'Water in Iraq', 'Bodies of water of Asia by country']
+choose_by_wiki_recur(Landforms of Iraq)
+check_matchscore(Persian Gulf, Bahrain–Saudi Arabia border):  0.0
+choose_by_wiki_recur(Bahrain–Saudi Arabia border)
+   Pages in Bahrain–Saudi Arabia border: ['Gulf of Bahrain', 'Persian Gulf']
+   Upper category of Bahrain–Saudi Arabia border: ['Borders of Bahrain', 'Borders of Saudi Arabia', 'Bahrain–Saudi Arabia relations', 'International borders']
+choose_by_wiki_recur(Borders of Bahrain)
+check_matchscore(Persian Gulf, Bodies of water of Qatar):  0.0
+choose_by_wiki_recur(Bodies of water of Qatar)
+   Pages in Bodies of water of Qatar: ['Persian Gulf']
+   Upper category of Bodies of water of Qatar: ['Landforms of Qatar', 'Bodies of water by country', 'Water in Qatar', 'Bodies of water of Asia by country']
+choose_by_wiki_recur(Landforms of Qatar)
+check_matchscore(Persian Gulf, Iran–Iraq border):  0.0
+choose_by_wiki_recur(Iran–Iraq border)
+   Pages in Iran–Iraq border: ['Iran–Iraq border', '31st parallel north', '1974–75 Shatt al-Arab conflict', '1975 Algiers Agreement', '2018 Marivan border crossing attack', 'April 2006 Iran–Iraq cross-border raids', 'Cheekha Dar', 'Diyala River', 'Fakkeh, Iran', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', 'Kuh-e Haji Ebrahim', 'Little Zab', 'Persian Gulf', 'Shatt al-Arab', 'Sirwan River']
+      1975 Algiers Agreement in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict']
+      Cheekha Dar in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River']
+      Fakkeh, Iran in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River']
+      1974–75 Shatt al-Arab conflict in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids']
+      Sirwan River in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand']
+      Diyala River in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north']
+      2011 Iran–Iraq cross-border raids in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim']
+      Joint Operation Arvand in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim', 'Shatt al-Arab']
+      31st parallel north in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim', 'Shatt al-Arab', '2018 Marivan border crossing attack']
+      Kuh-e Haji Ebrahim in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim', 'Shatt al-Arab', '2018 Marivan border crossing attack', 'Little Zab']
+      Shatt al-Arab in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim', 'Shatt al-Arab', '2018 Marivan border crossing attack', 'Little Zab', 'April 2006 Iran–Iraq cross-border raids']
+      2018 Marivan border crossing attack in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim', 'Shatt al-Arab', '2018 Marivan border crossing attack', 'Little Zab', 'April 2006 Iran–Iraq cross-border raids']
+      Little Zab in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim', 'Shatt al-Arab', '2018 Marivan border crossing attack', 'Little Zab', 'April 2006 Iran–Iraq cross-border raids', 'Persian Gulf']
+      April 2006 Iran–Iraq cross-border raids in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim', 'Shatt al-Arab', '2018 Marivan border crossing attack', 'Little Zab', 'April 2006 Iran–Iraq cross-border raids', 'Persian Gulf']
+      Persian Gulf in ['1975 Algiers Agreement', 'Cheekha Dar', 'Fakkeh, Iran', '1974–75 Shatt al-Arab conflict', 'Sirwan River', 'Diyala River', '2011 Iran–Iraq cross-border raids', 'Joint Operation Arvand', '31st parallel north', 'Kuh-e Haji Ebrahim', 'Shatt al-Arab', '2018 Marivan border crossing attack', 'Little Zab', 'April 2006 Iran–Iraq cross-border raids', 'Persian Gulf']
+   Upper category of Iran–Iraq border: ['Borders of Iraq', 'Borders of Iran', 'Iran–Iraq relations', 'International borders']
+choose_by_wiki_recur(Iran–Iraq relations)
+check_matchscore(Persian Gulf, Marginal seas of the Indian Ocean):  0.0
+choose_by_wiki_recur(Marginal seas of the Indian Ocean)
+   Pages in Marginal seas of the Indian Ocean: ['Andaman Sea', 'Australasian Mediterranean Sea', 'Bay of Bengal', 'Persian Gulf', 'Red Sea']
+      Red Sea in ['Red Sea', 'Persian Gulf', 'Bay of Bengal', 'Andaman Sea']
+      Persian Gulf in ['Red Sea', 'Persian Gulf', 'Bay of Bengal', 'Andaman Sea']
+      Bay of Bengal in ['Red Sea', 'Persian Gulf', 'Bay of Bengal', 'Andaman Sea', 'Australasian Mediterranean Sea']
+      Andaman Sea in ['Red Sea', 'Persian Gulf', 'Bay of Bengal', 'Andaman Sea', 'Australasian Mediterranean Sea']
+      Australasian Mediterranean Sea in ['Red Sea', 'Persian Gulf', 'Bay of Bengal', 'Andaman Sea', 'Australasian Mediterranean Sea']
+['Shatt al-Arab', 'Red Sea', 'Bay of Bengal', 'Andaman Sea', 'Australasian Mediterranean Sea']
+Ended after 2.5 hierarchy
+(2.5, ['Red Sea', 'Bay of Bengal', 'Australasian Mediterranean Sea', 'Shatt al-Arab', 'Andaman Sea'])
+
+extract_info(Andaman Sea) Start.
+utils/preprocess.py extract_info(): Checking good links on Andaman Sea
+Indian Ocean is Geography
+1 / 30 )  Indian Ocean Indian Ocean indian_ocean
+Myanmar is Geography
+2 / 30 )  Myanmar Myanmar myanmar
+Thailand is Geography
+3 / 30 )  Thailand Thailand thailand
+Gulf of Martaban is Geography
+4 / 30 )  Gulf of Martaban Gulf of Martaban gulf_of_martaban
+Malay Peninsula is Geography
+5 / 30 )  Malay Peninsula Malay Peninsula malay_peninsula
+Bay of Bengal is Geography
+6 / 30 )  Bay of Bengal Bay of Bengal bay_of_bengal
+Andaman Islands is Geography
+7 / 30 )  Andaman Islands Andaman Islands andaman_islands
+Nicobar Islands is Geography
+8 / 30 )  Nicobar Islands Nicobar Islands nicobar_islands
+Sumatra is Geography
+9 / 30 )  Sumatra Sumatra sumatra
+Strait of Malacca is Geography
+10 / 30 )  Strait of Malacca Strait of Malacca strait_of_malacca
+Coral reef is Geography
+11 / 30 )  coral reefs Coral reef coral_reef
+Dutch East Indies is Geography
+12 / 30 )  Netherlands East Indies Dutch East Indies dutch_east_indies
+Irrawaddy River is Geography
+13 / 30 )  Irrawaddy River Irrawaddy River irrawaddy_river
+Banda Aceh is Geography
+14 / 30 )  Banda Aceh Banda Aceh banda_aceh
+Palaemon (crustacean) is Animal
+15 / 30 )  brackish water shrimp Palaemon (crustacean) palaemonetes
+Dugong is Animal
+16 / 30 )  dugong Dugong dugong
+Irrawaddy dolphin is Animal
+17 / 30 )  Irrawaddy dolphin Irrawaddy dolphin irrawaddy_dolphin
+Leatherback sea turtle is Animal
+18 / 30 )  leatherback turtle Leatherback sea turtle leatherback_sea_turtle
+Hawksbill sea turtle is Animal
+19 / 30 )  hawksbill turtle Hawksbill sea turtle hawksbill_sea_turtle
+Green sea turtle is Animal
+20 / 30 )  green turtle Green sea turtle green_sea_turtle
+Olive ridley sea turtle is Animal
+21 / 30 )  olive ridley Olive ridley sea turtle olive_ridley_sea_turtle
+RAI is Geography
+22 / 30 )  rai RAI rai
+Gulf of Thailand is Geography
+23 / 30 )  Gulf of Thailand Gulf of Thailand gulf_of_thailand
+Cephalopod is Animal
+24 / 30 )  cephalopod Cephalopod cephalopod
+Sardinella is Animal
+25 / 30 )  sardinellas Sardinella sardinella
+Decapterus is Animal
+26 / 30 )  scad Decapterus decapterus
+Carangidae is Animal
+27 / 30 )  trevallies Carangidae carangidae
+Bigeye scad is Animal
+28 / 30 )  bigeye scad Bigeye scad bigeye_scad
+Indian mackerel is Animal
+29 / 30 )  Indian mackerel Indian mackerel indian_mackerel
+King mackerel is Animal
+30 / 30 )  king mackerel King mackerel king_mackerel
+extract_triplet(Andaman Sea)
+Got GPT's response. String length : 2839
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Myanmar', 'Myanmar', 'myanmar']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Thailand', 'Thailand', 'thailand'], ['Gulf of Martaban', 'Gulf of Martaban', 'gulf_of_martaban']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Bay of Bengal', 'Bay of Bengal', 'bay_of_bengal'], ['Andaman Islands', 'Andaman Islands', 'andaman_islands']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Bay of Bengal', 'Bay of Bengal', 'bay_of_bengal'], ['Nicobar Islands', 'Nicobar Islands', 'nicobar_islands']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Sumatra', 'Sumatra', 'sumatra']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Strait of Malacca', 'Strait of Malacca', 'strait_of_malacca']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  []
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  []
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['coral reefs', 'Coral reef', 'coral_reef']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  []
+subject_words:  [['Gulf of Martaban', 'Gulf of Martaban', 'gulf_of_martaban']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Malay Peninsula', 'Malay Peninsula', 'malay_peninsula']]
+subject_words:  [['Strait of Malacca', 'Strait of Malacca', 'strait_of_malacca']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [['Gulf of Martaban', 'Gulf of Martaban', 'gulf_of_martaban']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [['Myanmar', 'Myanmar', 'myanmar']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [['Thailand', 'Thailand', 'thailand']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [['Andaman Islands', 'Andaman Islands', 'andaman_islands']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea'), ['Bay of Bengal', 'Bay of Bengal', 'bay_of_bengal']]
+subject_words:  [['Nicobar Islands', 'Nicobar Islands', 'nicobar_islands']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea'), ['Bay of Bengal', 'Bay of Bengal', 'bay_of_bengal']]
+subject_words:  [['Sumatra', 'Sumatra', 'sumatra']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['coral reefs', 'Coral reef', 'coral_reef']]
+subject_words:  [['Malay Peninsula', 'Malay Peninsula', 'malay_peninsula']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [['Bay of Bengal', 'Bay of Bengal', 'bay_of_bengal']]
+object_words:  [['Nicobar Islands', 'Nicobar Islands', 'nicobar_islands']]
+subject_words:  [['Bay of Bengal', 'Bay of Bengal', 'bay_of_bengal']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea'), ['Nicobar Islands', 'Nicobar Islands', 'nicobar_islands']]
+subject_words:  [['Netherlands East Indies', 'Dutch East Indies', 'dutch_east_indies']]
+object_words:  [['Sumatra', 'Sumatra', 'sumatra']]
+subject_words:  [['Irrawaddy River', 'Irrawaddy River', 'irrawaddy_river']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+subject_words:  [['Banda Aceh', 'Banda Aceh', 'banda_aceh']]
+object_words:  []
+subject_words:  [['Irrawaddy River', 'Irrawaddy River', 'irrawaddy_river']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea'), ['Myanmar', 'Myanmar', 'myanmar']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['brackish water shrimp', 'Palaemon (crustacean)', 'palaemonetes']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['dugong', 'Dugong', 'dugong']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['Irrawaddy dolphin', 'Irrawaddy dolphin', 'irrawaddy_dolphin']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['leatherback turtle', 'Leatherback sea turtle', 'leatherback_sea_turtle']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['hawksbill turtle', 'Hawksbill sea turtle', 'hawksbill_sea_turtle']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['green turtle', 'Green sea turtle', 'green_sea_turtle']]
+subject_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+object_words:  [['olive ridley', 'Olive ridley sea turtle', 'olive_ridley_sea_turtle']]
+subject_words:  [['Thailand', 'Thailand', 'thailand'], ['Gulf of Thailand', 'Gulf of Thailand', 'gulf_of_thailand']]
+object_words:  [(None, 'Andaman Sea', 'andaman_sea')]
+['Note: The limit here did not allow me to write triplets for all the important keywords listed due to character restrictions. If more are needed, additional requests may be necessary.']
+extract_info(Shatt al-Arab) Start.
+utils/preprocess.py extract_info(): Checking good links on Shatt al-Arab
+Persian Gulf is Geography
+1 / 30 )  Persian Gulf Persian Gulf persian_gulf
+Basra is Geography
+2 / 30 )  Basra Basra basra
+Tigris is Geography
+3 / 30 )  Tigris Tigris tigris
+Euphrates is Geography
+4 / 30 )  Euphrates Euphrates euphrates
+Kuwait is Geography
+5 / 30 )  Kuwait Kuwait kuwait
+Date palm is Animal
+6 / 30 )  date palm Date palm date_palm
+United Kingdom is Geography
+7 / 30 )  British United Kingdom united_kingdom
+Turkey is Geography
+8 / 30 )  Turkey Turkey turkey
+Iran is Geography
+9 / 30 )  Persia Iran iran
+Istanbul is Geography
+10 / 30 )  Istanbul Istanbul istanbul
+Abadan, Iran is Geography
+11 / 30 )  Abadan Abadan, Iran abadan
+Khorramshahr is Geography
+12 / 30 )  Khorramshahr Khorramshahr khorramshahr
+Mustafa Kemal Atatürk is People
+13 / 30 )  Mustafa Kemal Atatürk Mustafa Kemal Atatürk mustafa_kemal
+Mohammad Reza Pahlavi is People
+14 / 30 )  Mohammad Reza Pahlavi Mohammad Reza Pahlavi mohammed_reza_pahlevi
+Ba'athist Iraq is Geography
+15 / 30 )  Baathist Iraq Ba'athist Iraq saddamists
+Aqaba is Geography
+16 / 30 )  Aqaba Aqaba aqaba
+Jordan is Geography
+17 / 30 )  Jordan Jordan jordan
+extract_triplet(Shatt al-Arab)
+Got GPT's response. String length : 1048
+subject_words:  []
+object_words:  [['Tigris', 'Tigris', 'tigris'], ['Euphrates', 'Euphrates', 'euphrates']]
+subject_words:  []
+object_words:  [['Persian Gulf', 'Persian Gulf', 'persian_gulf']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['date palm', 'Date palm', 'date_palm']]
+subject_words:  []
+object_words:  [['British', 'United Kingdom', 'united_kingdom']]
+subject_words:  []
+object_words:  [['Persia', 'Iran', 'iran']]
+subject_words:  []
+object_words:  [['Istanbul', 'Istanbul', 'istanbul']]
+subject_words:  []
+object_words:  [['Abadan', 'Abadan, Iran', 'abadan'], ['Khorramshahr', 'Khorramshahr', 'khorramshahr']]
+subject_words:  []
+object_words:  [['Mustafa Kemal Atatürk', 'Mustafa Kemal Atatürk', 'mustafa_kemal'], ['Mohammad Reza Pahlavi', 'Mohammad Reza Pahlavi', 'mohammed_reza_pahlevi']]
+subject_words:  []
+object_words:  [['Persia', 'Iran', 'iran'], ['Baathist Iraq', "Ba'athist Iraq", 'saddamists']]
+subject_words:  []
+object_words:  [['Aqaba', 'Aqaba', 'aqaba'], ['Jordan', 'Jordan', 'jordan']]
+subject_words:  []
+object_words:  [['Persia', 'Iran', 'iran']]
+subject_words:  []
+object_words:  [['Abadan', 'Abadan, Iran', 'abadan'], ['Khorramshahr', 'Khorramshahr', 'khorramshahr']]
+subject_words:  []
+object_words:  [['Basra', 'Basra', 'basra']]
+extract_info(Australasian Mediterranean Sea) Start.
+utils/preprocess.py extract_info(): Checking good links on Australasian Mediterranean Sea
+Mediterranean Sea is Geography
+1 / 30 )  mediterranean sea Mediterranean Sea mediterranean_sea
+Australasia is Geography
+2 / 30 )  Australasia Australasia australasia
+Indian Ocean is Geography
+3 / 30 )  Indian Indian Ocean indian_ocean
+Pacific Ocean is Geography
+4 / 30 )  Pacific Pacific Ocean pacific_ocean
+American Mediterranean Sea is Geography
+5 / 30 )  American Mediterranean Sea American Mediterranean Sea american_mediterranean_sea
+Australia is Geography
+6 / 30 )  Australia Australia australia
+Brunei is Geography
+7 / 30 )  Brunei Brunei brunei
+China is Geography
+8 / 30 )  China China china
+Indonesia is Geography
+9 / 30 )  Indonesia Indonesia indonesia
+Cambodia is Geography
+10 / 30 )  Cambodia Cambodia cambodia
+Malaysia is Geography
+11 / 30 )  Malaysia Malaysia malaysia
+Papua New Guinea is Geography
+12 / 30 )  Papua New Guinea Papua New Guinea papua_new_guinea
+Philippines is Geography
+13 / 30 )  Philippines Philippines philippines
+Singapore is Geography
+14 / 30 )  Singapore Singapore singapore
+Taiwan is Geography
+15 / 30 )  Taiwan Taiwan taiwan
+Thailand is Geography
+16 / 30 )  Thailand Thailand thailand
+East Timor is Geography
+17 / 30 )  Timor-Leste East Timor east_timor
+Vietnam is Geography
+18 / 30 )  Vietnam Vietnam vietnam
+Strait of Malacca is Geography
+19 / 30 )  Malacca Strait of Malacca strait_of_malacca
+Luzon Strait is Geography
+20 / 30 )  Luzon Luzon Strait luzon_strait
+extract_triplet(Australasian Mediterranean Sea)
+Got GPT's response. String length : 2735
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Indian', 'Indian Ocean', 'indian_ocean'], ['Pacific', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['China', 'China', 'china']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Thailand', 'Thailand', 'thailand']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Malacca', 'Strait of Malacca', 'strait_of_malacca']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Singapore', 'Singapore', 'singapore']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Luzon', 'Luzon Strait', 'luzon_strait']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Malaysia', 'Malaysia', 'malaysia']]
+subject_words:  [['Australia', 'Australia', 'australia']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Brunei', 'Brunei', 'brunei']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['China', 'China', 'china']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Indonesia', 'Indonesia', 'indonesia']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Cambodia', 'Cambodia', 'cambodia']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Malaysia', 'Malaysia', 'malaysia']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Papua New Guinea', 'Papua New Guinea', 'papua_new_guinea']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Philippines', 'Philippines', 'philippines']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Singapore', 'Singapore', 'singapore']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Taiwan', 'Taiwan', 'taiwan']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Thailand', 'Thailand', 'thailand']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  []
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [['Vietnam', 'Vietnam', 'vietnam']]
+object_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Malacca', 'Strait of Malacca', 'strait_of_malacca']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Singapore', 'Singapore', 'singapore']]
+subject_words:  [(None, 'Australasian Mediterranean Sea', 'australasian_mediterranean_sea'), ['mediterranean sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Luzon', 'Luzon Strait', 'luzon_strait']]
+extract_info(Red Sea) Start.
+utils/preprocess.py extract_info(): Checking good links on Red Sea
+Indian Ocean is Geography
+1 / 30 )  Indian Ocean Indian Ocean indian_ocean
+Bab-el-Mandeb is Geography
+2 / 30 )  Bab-el-Mandeb Bab-el-Mandeb bab_el_mandeb
+Gulf of Aden is Geography
+3 / 30 )  Gulf of Aden Gulf of Aden gulf_of_aden
+Sinai Peninsula is Geography
+4 / 30 )  Sinai Peninsula Sinai Peninsula sinai_peninsula
+Gulf of Aqaba is Geography
+5 / 30 )  Gulf of Aqaba Gulf of Aqaba gulf_of_aqaba
+Gulf of Suez is Geography
+6 / 30 )  Gulf of Suez Gulf of Suez gulf_of_suez
+Coral is Animal
+7 / 30 )  corals Coral coral
+Invertebrate is Animal
+8 / 30 )  invertebrate Invertebrate invertebrate
+Erythraean Sea is Geography
+9 / 30 )  Erythraean Sea Erythraean Sea erythraean_sea
+Trichodesmium is Animal
+10 / 30 )  Trichodesmium erythraeum Trichodesmium trichodesmium
+Black Sea is Geography
+11 / 30 )  Black Sea Black Sea black_sea
+Herodotus is People
+12 / 30 )  Herodotus Herodotus herodotus
+White Sea is Geography
+13 / 30 )  White Sea White Sea white_sea
+Yellow Sea is Geography
+14 / 30 )  Yellow Sea Yellow Sea yellow_sea
+Suez Canal is Geography
+15 / 30 )  Suez Canal Suez Canal suez_canal
+Augustus is People
+16 / 30 )  Augustus Augustus augustus
+Egypt is Geography
+17 / 30 )  Egypt Egypt egypt
+China is Geography
+18 / 30 )  China China china
+France is Geography
+19 / 30 )  France France france
+Napoleon is People
+20 / 30 )  Napoleon Napoleon napoleon
+Houthi movement is Incident
+21 / 30 )  Houthis Houthi movement houthi
+Arabian Sea is Geography
+22 / 30 )  Arabian Sea Arabian Sea arabian_sea
+Sudan is Geography
+23 / 30 )  Sudan Sudan sudan
+Eritrea is Geography
+24 / 30 )  Eritrea Eritrea eritrea
+Algae is Animal
+25 / 30 )  algae Algae algae
+Shoiaba  is Geography
+26 / 30 )  Shoiaba Shoiaba  red_sea
+Al-Kharrar  is Geography
+27 / 30 )  Al-Kharrar Al-Kharrar  bethabara
+Arabian Peninsula is Geography
+28 / 30 )  Arabian peninsula Arabian Peninsula arabian_peninsula
+Horn of Africa is Geography
+29 / 30 )  Horn of Africa Horn of Africa horn_of_africa
+Eocene is Geography
+30 / 30 )  Eocene Eocene eocene
+extract_triplet(Red Sea)
+Got GPT's response. String length : 1569
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  []
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Gulf of Aden', 'Gulf of Aden', 'gulf_of_aden']]
+subject_words:  [['Sinai Peninsula', 'Sinai Peninsula', 'sinai_peninsula']]
+object_words:  [(None, 'Red Sea', 'red_sea')]
+subject_words:  [['Gulf of Aqaba', 'Gulf of Aqaba', 'gulf_of_aqaba']]
+object_words:  [(None, 'Red Sea', 'red_sea')]
+subject_words:  [['Gulf of Suez', 'Gulf of Suez', 'gulf_of_suez']]
+object_words:  [['Suez Canal', 'Suez Canal', 'suez_canal']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  []
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['corals', 'Coral', 'coral']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['invertebrate', 'Invertebrate', 'invertebrate']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Erythraean Sea', 'Erythraean Sea', 'erythraean_sea']]
+subject_words:  [['Trichodesmium erythraeum', 'Trichodesmium', 'trichodesmium']]
+object_words:  [(None, 'Red Sea', 'red_sea')]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  []
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Black Sea', 'Black Sea', 'black_sea']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['White Sea', 'White Sea', 'white_sea']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Yellow Sea', 'Yellow Sea', 'yellow_sea']]
+subject_words:  [['Suez Canal', 'Suez Canal', 'suez_canal']]
+object_words:  [['Augustus', 'Augustus', 'augustus']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['China', 'China', 'china']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['France', 'France', 'france']]
+subject_words:  [['Houthis', 'Houthi movement', 'houthi']]
+object_words:  [(None, 'Red Sea', 'red_sea')]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Arabian Sea', 'Arabian Sea', 'arabian_sea']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Sudan', 'Sudan', 'sudan']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Eritrea', 'Eritrea', 'eritrea']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['algae', 'Algae', 'algae']]
+subject_words:  [['Shoiaba', 'Shoiaba ', 'red_sea']]
+object_words:  [(None, 'Red Sea', 'red_sea')]
+subject_words:  []
+object_words:  [(None, 'Red Sea', 'red_sea')]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Arabian peninsula', 'Arabian Peninsula', 'arabian_peninsula']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Horn of Africa', 'Horn of Africa', 'horn_of_africa']]
+subject_words:  [(None, 'Red Sea', 'red_sea')]
+object_words:  [['Eocene', 'Eocene', 'eocene']]
+['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Andaman Sea", "is a marginal sea of", "the northeastern Indian Ocean")\n', '("Andaman Sea", "bounded by the coastlines of", "Myanmar")\n', '("Andaman Sea", "bounded by the coastlines of", "Thailand along the Gulf of Martaban")\n', '("Andaman Sea", "separated from", "the Bay of Bengal by the Andaman Islands")\n', '("Andaman Sea", "separated from", "the Bay of Bengal by the Nicobar Islands")\n', '("Andaman Sea", "southern end is at", "Breueh Island just north of Sumatra")\n', '("Andaman Sea", "connected through", "the Strait of Malacca")\n', '("Andaman Sea", "historically known as", "the Burma Sea")\n', '("Andaman Sea", "used for fishery and transportation", "between the coastal countries")\n', '("Andaman Sea", "position in", "the Indian Ocean")\n', '("Andaman Sea", "contains", "coral reefs")\n', '("Andaman Sea", "contains", "islands")\n', '("Gulf of Martaban", "adjacent to", "the Andaman Sea")\n', '("Andaman Sea", "has", "the Malay Peninsula along its west side")\n', '("Strait of Malacca", "is the southern exitway of", "the Andaman Sea basin")\n', '("Gulf of Martaban", "extends into", "the Andaman Sea")\n', '("Indian Ocean", "is the larger sea that", "the Andaman Sea is part of")\n', '("Myanmar", "coastline bounds", "the Andaman Sea")\n', '("Thailand", "coastline bounds", "the Andaman Sea")\n', '("Andaman Islands", "separate", "the Andaman Sea from the Bay of Bengal")\n', '("Nicobar Islands", "separate", "the Andaman Sea from the Bay of Bengal")\n', '("Sumatra", "located just south of", "the Andaman Sea\'s southern end")\n', '("Andaman Sea", "notable for", "coral reefs and islands as tourist destinations")\n', '("Malay Peninsula", "located along the west side of", "the Andaman Sea")\n', '("Bay of Bengal", "connected to the Andaman Sea via", "strait between the Andaman and Nicobar Islands")\n', '("Bay of Bengal", "separated from", "the Andaman Sea by the Andaman and Nicobar Islands")\n', '("Netherlands East Indies", "included the island of", "Sumatra")\n', '("Irrawaddy River", "silt deposited in", "the northern and eastern parts of the Andaman Sea")\n', '("Banda Aceh", "located near", "the Great Channel")\n', '("Irrawaddy River", "flows into", "the Andaman Sea from Myanmar")\n', '("Andaman Sea", "inhabited by", "brackish water shrimp")\n', '("Andaman Sea", "inhabited by", "dugong")\n', '("Andaman Sea", "inhabited by", "Irrawaddy dolphin")\n', '("Andaman Sea", "inhabited by", "leatherback turtle")\n', '("Andaman Sea", "inhabited by", "hawksbill turtle")\n', '("Andaman Sea", "inhabited by", "green turtle")\n', '("Andaman Sea", "inhabited by", "olive ridley turtle")\n', '("Gulf of Thailand", "connected to", "the Andaman Sea")\n', '("Shatt al-Arab", "is formed at the confluence of", "Euphrates and Tigris")\n', '("Shatt al-Arab", "discharges into", "Persian Gulf")\n', '("Kuwait\'s", "Bubiyan Island is part of", "Shatt al-Arab delta")\n', '("Shatt al-Arab", "includes", "date palm forest")\n', '("Shatt al-Arab", "was controlled by", "British")\n', '("Shatt al-Arab", "had historical dispute with", "Ottoman Empire and Safavid Persia")\n', '("Shatt al-Arab", "had its boundaries negotiated in", "Istanbul")\n', '("Shatt al-Arab", "border involves", "Abadan and Khorramshahr")\n', '("Shatt al-Arab", "was under influence of", "Mustafa Kemal Atatürk and Mohammad Reza Pahlavi")\n', '("Shatt al-Arab", "was a conflict zone between", "Baathist Iraq and Iran")\n', '("Iraq", "diverted its shipping activities through", "Aqaba and Jordan")\n', '("Shatt al-Arab", "saw major military battles during", "Iran-Iraq War")\n', '("Iranian cities", "located along", "Shatt al-Arab are Abadan and Khorramshahr")\n', '("Iraqi cities", "located along", "Shatt al-Arab are Basra and Al-Faw")\n', '("Australasian Mediterranean Sea", "is a", "mediterranean sea")\n', '("Australasian Mediterranean Sea", "is located between", "Southeast Asia and Australasia")\n', '("Australasian Mediterranean Sea", "connects", "Indian and Pacific oceans")\n', '("Australasian Mediterranean Sea", "is surrounded by", "islands and peninsulas")\n', '("Australasian Mediterranean Sea", "includes", "South China Sea")\n', '("Australasian Mediterranean Sea", "includes", "Banda Sea")\n', '("Australasian Mediterranean Sea", "includes", "Arafura Sea")\n', '("Australasian Mediterranean Sea", "includes", "Timor Sea")\n', '("Australasian Mediterranean Sea", "includes", "Java Sea")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Thailand")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Carpentaria")\n', '("Australasian Mediterranean Sea", "includes", "Celebes Sea")\n', '("Australasian Mediterranean Sea", "includes", "Sulu Sea")\n', '("Australasian Mediterranean Sea", "includes", "Flores Sea")\n', '("Australasian Mediterranean Sea", "includes", "Molucca Sea")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Tonkin")\n', '("Australasian Mediterranean Sea", "includes", "Halmahera Sea")\n', '("Australasian Mediterranean Sea", "includes", "Bali Sea")\n', '("Australasian Mediterranean Sea", "includes", "Savu Sea")\n', '("Australasian Mediterranean Sea", "includes", "Joseph Bonaparte Gulf")\n', '("Australasian Mediterranean Sea", "includes", "Seram Sea")\n', '("Australasian Mediterranean Sea", "includes", "Strait of Malacca")\n', '("Australasian Mediterranean Sea", "includes", "Singapore Strait")\n', '("Australasian Mediterranean Sea", "includes", "Luzon Strait")\n', '("Australasian Mediterranean Sea", "adjoins", "peninsulas of Indochina and Malaysia")\n', '("Australia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Brunei", "has a coast on", "Australasian Mediterranean Sea")\n', '("China", "has a coast on", "Australasian Mediterranean Sea")\n', '("Indonesia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Cambodia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Malaysia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Papua New Guinea", "has a coast on", "Australasian Mediterranean Sea")\n', '("Philippines", "has a coast on", "Australasian Mediterranean Sea")\n', '("Singapore", "has a coast on", "Australasian Mediterranean Sea")\n', '("Taiwan", "has a coast on", "Australasian Mediterranean Sea")\n', '("Thailand", "has a coast on", "Australasian Mediterranean Sea")\n', '("Timor-Leste", "has a coast on", "Australasian Mediterranean Sea")\n', '("Vietnam", "has a coast on", "Australasian Mediterranean Sea")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Malacca")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Singapore")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Luzon")\n', '("Red Sea", "is an inlet of", "Indian Ocean")\n', '("Red Sea", "is connected through", "Bab-el-Mandeb strait")\n', '("Red Sea", "is connected through", "Gulf of Aden")\n', '("Sinai Peninsula", "is located to the north of", "Red Sea")\n', '("Gulf of Aqaba", "is located to the north of", "Red Sea")\n', '("Gulf of Suez", "leads to", "Suez Canal")\n', '("Red Sea", "has", "marine life")\n', '("Red Sea", "has", "corals")\n', '("Red Sea", "is habitat for", "invertebrate species")\n', '("Red Sea", "was once referred to as", "Erythraean Sea")\n', '("Trichodesmium erythraeum", "causes seasonal blooms in", "Red Sea")\n', '("Red Sea", "was called by Herodotus as", "Southern Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "Black Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "White Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "Yellow Sea")\n', '("Suez Canal", "was opened under the reign of", "Augustus")\n', '("Red Sea", "was part of an ancient route to", "Egypt")\n', '("Red Sea", "is part of a maritime route to", "China")\n', '("Red Sea", "was part of Napoleon\'s mission to control", "France")\n', '("Houthis", "have attacked ships in", "Red Sea")\n', '("Red Sea", "connects with", "Arabian Sea")\n', '("Red Sea", "shorelines include", "Sudan")\n', '("Red Sea", "shorelines include", "Eritrea")\n', '("Red Sea", "supports diverse", "algae")\n', '("Shoiaba", "is located near", "Red Sea")\n', '("Al-Kharrar", "is a lagoon connected to", "Red Sea")\n', '("Red Sea", "is bordered by", "Arabian peninsula")\n', '("Red Sea", "is near", "Horn of Africa")\n', '("Red Sea Rift", "was active in geological epoch called", "Eocene")\n']
+range(1, 258) 4
+['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Andaman Sea", "is a marginal sea of", "the northeastern Indian Ocean")\n', '("Andaman Sea", "bounded by the coastlines of", "Myanmar")\n', '("Andaman Sea", "bounded by the coastlines of", "Thailand along the Gulf of Martaban")\n', '("Andaman Sea", "separated from", "the Bay of Bengal by the Andaman Islands")\n', '("Andaman Sea", "separated from", "the Bay of Bengal by the Nicobar Islands")\n', '("Andaman Sea", "southern end is at", "Breueh Island just north of Sumatra")\n', '("Andaman Sea", "connected through", "the Strait of Malacca")\n', '("Andaman Sea", "historically known as", "the Burma Sea")\n', '("Andaman Sea", "used for fishery and transportation", "between the coastal countries")\n', '("Andaman Sea", "position in", "the Indian Ocean")\n', '("Andaman Sea", "contains", "coral reefs")\n', '("Andaman Sea", "contains", "islands")\n', '("Gulf of Martaban", "adjacent to", "the Andaman Sea")\n', '("Andaman Sea", "has", "the Malay Peninsula along its west side")\n', '("Strait of Malacca", "is the southern exitway of", "the Andaman Sea basin")\n', '("Gulf of Martaban", "extends into", "the Andaman Sea")\n', '("Indian Ocean", "is the larger sea that", "the Andaman Sea is part of")\n', '("Myanmar", "coastline bounds", "the Andaman Sea")\n', '("Thailand", "coastline bounds", "the Andaman Sea")\n', '("Andaman Islands", "separate", "the Andaman Sea from the Bay of Bengal")\n', '("Nicobar Islands", "separate", "the Andaman Sea from the Bay of Bengal")\n', '("Sumatra", "located just south of", "the Andaman Sea\'s southern end")\n', '("Andaman Sea", "notable for", "coral reefs and islands as tourist destinations")\n', '("Malay Peninsula", "located along the west side of", "the Andaman Sea")\n', '("Bay of Bengal", "connected to the Andaman Sea via", "strait between the Andaman and Nicobar Islands")\n', '("Bay of Bengal", "separated from", "the Andaman Sea by the Andaman and Nicobar Islands")\n', '("Netherlands East Indies", "included the island of", "Sumatra")\n', '("Irrawaddy River", "silt deposited in", "the northern and eastern parts of the Andaman Sea")\n', '("Banda Aceh", "located near", "the Great Channel")\n', '("Irrawaddy River", "flows into", "the Andaman Sea from Myanmar")\n', '("Andaman Sea", "inhabited by", "brackish water shrimp")\n', '("Andaman Sea", "inhabited by", "dugong")\n', '("Andaman Sea", "inhabited by", "Irrawaddy dolphin")\n', '("Andaman Sea", "inhabited by", "leatherback turtle")\n', '("Andaman Sea", "inhabited by", "hawksbill turtle")\n', '("Andaman Sea", "inhabited by", "green turtle")\n', '("Andaman Sea", "inhabited by", "olive ridley turtle")\n', '("Gulf of Thailand", "connected to", "the Andaman Sea")\n', '("Shatt al-Arab", "is formed at the confluence of", "Euphrates and Tigris")\n', '("Shatt al-Arab", "discharges into", "Persian Gulf")\n', '("Kuwait\'s", "Bubiyan Island is part of", "Shatt al-Arab delta")\n', '("Shatt al-Arab", "includes", "date palm forest")\n', '("Shatt al-Arab", "was controlled by", "British")\n', '("Shatt al-Arab", "had historical dispute with", "Ottoman Empire and Safavid Persia")\n', '("Shatt al-Arab", "had its boundaries negotiated in", "Istanbul")\n', '("Shatt al-Arab", "border involves", "Abadan and Khorramshahr")\n', '("Shatt al-Arab", "was under influence of", "Mustafa Kemal Atatürk and Mohammad Reza Pahlavi")\n', '("Shatt al-Arab", "was a conflict zone between", "Baathist Iraq and Iran")\n', '("Iraq", "diverted its shipping activities through", "Aqaba and Jordan")\n', '("Shatt al-Arab", "saw major military battles during", "Iran-Iraq War")\n', '("Iranian cities", "located along", "Shatt al-Arab are Abadan and Khorramshahr")\n', '("Iraqi cities", "located along", "Shatt al-Arab are Basra and Al-Faw")\n', '("Australasian Mediterranean Sea", "is a", "mediterranean sea")\n', '("Australasian Mediterranean Sea", "is located between", "Southeast Asia and Australasia")\n', '("Australasian Mediterranean Sea", "connects", "Indian and Pacific oceans")\n', '("Australasian Mediterranean Sea", "is surrounded by", "islands and peninsulas")\n', '("Australasian Mediterranean Sea", "includes", "South China Sea")\n', '("Australasian Mediterranean Sea", "includes", "Banda Sea")\n', '("Australasian Mediterranean Sea", "includes", "Arafura Sea")\n', '("Australasian Mediterranean Sea", "includes", "Timor Sea")\n', '("Australasian Mediterranean Sea", "includes", "Java Sea")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Thailand")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Carpentaria")\n', '("Australasian Mediterranean Sea", "includes", "Celebes Sea")\n', '("Australasian Mediterranean Sea", "includes", "Sulu Sea")\n', '("Australasian Mediterranean Sea", "includes", "Flores Sea")\n', '("Australasian Mediterranean Sea", "includes", "Molucca Sea")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Tonkin")\n', '("Australasian Mediterranean Sea", "includes", "Halmahera Sea")\n', '("Australasian Mediterranean Sea", "includes", "Bali Sea")\n', '("Australasian Mediterranean Sea", "includes", "Savu Sea")\n', '("Australasian Mediterranean Sea", "includes", "Joseph Bonaparte Gulf")\n', '("Australasian Mediterranean Sea", "includes", "Seram Sea")\n', '("Australasian Mediterranean Sea", "includes", "Strait of Malacca")\n', '("Australasian Mediterranean Sea", "includes", "Singapore Strait")\n', '("Australasian Mediterranean Sea", "includes", "Luzon Strait")\n', '("Australasian Mediterranean Sea", "adjoins", "peninsulas of Indochina and Malaysia")\n', '("Australia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Brunei", "has a coast on", "Australasian Mediterranean Sea")\n', '("China", "has a coast on", "Australasian Mediterranean Sea")\n', '("Indonesia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Cambodia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Malaysia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Papua New Guinea", "has a coast on", "Australasian Mediterranean Sea")\n', '("Philippines", "has a coast on", "Australasian Mediterranean Sea")\n', '("Singapore", "has a coast on", "Australasian Mediterranean Sea")\n', '("Taiwan", "has a coast on", "Australasian Mediterranean Sea")\n', '("Thailand", "has a coast on", "Australasian Mediterranean Sea")\n', '("Timor-Leste", "has a coast on", "Australasian Mediterranean Sea")\n', '("Vietnam", "has a coast on", "Australasian Mediterranean Sea")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Malacca")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Singapore")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Luzon")\n', '("Red Sea", "is an inlet of", "Indian Ocean")\n', '("Red Sea", "is connected through", "Bab-el-Mandeb strait")\n', '("Red Sea", "is connected through", "Gulf of Aden")\n', '("Sinai Peninsula", "is located to the north of", "Red Sea")\n', '("Gulf of Aqaba", "is located to the north of", "Red Sea")\n', '("Gulf of Suez", "leads to", "Suez Canal")\n', '("Red Sea", "has", "marine life")\n', '("Red Sea", "has", "corals")\n', '("Red Sea", "is habitat for", "invertebrate species")\n', '("Red Sea", "was once referred to as", "Erythraean Sea")\n', '("Trichodesmium erythraeum", "causes seasonal blooms in", "Red Sea")\n', '("Red Sea", "was called by Herodotus as", "Southern Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "Black Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "White Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "Yellow Sea")\n', '("Suez Canal", "was opened under the reign of", "Augustus")\n', '("Red Sea", "was part of an ancient route to", "Egypt")\n', '("Red Sea", "is part of a maritime route to", "China")\n', '("Red Sea", "was part of Napoleon\'s mission to control", "France")\n', '("Houthis", "have attacked ships in", "Red Sea")\n', '("Red Sea", "connects with", "Arabian Sea")\n', '("Red Sea", "shorelines include", "Sudan")\n', '("Red Sea", "shorelines include", "Eritrea")\n', '("Red Sea", "supports diverse", "algae")\n', '("Shoiaba", "is located near", "Red Sea")\n', '("Al-Kharrar", "is a lagoon connected to", "Red Sea")\n', '("Red Sea", "is bordered by", "Arabian peninsula")\n', '("Red Sea", "is near", "Horn of Africa")\n', '("Red Sea Rift", "was active in geological epoch called", "Eocene")\n']
+range(1, 258) 4
+['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Andaman Sea", "is a marginal sea of", "the northeastern Indian Ocean")\n', '("Andaman Sea", "bounded by the coastlines of", "Myanmar")\n', '("Andaman Sea", "bounded by the coastlines of", "Thailand along the Gulf of Martaban")\n', '("Andaman Sea", "separated from", "the Bay of Bengal by the Andaman Islands")\n', '("Andaman Sea", "separated from", "the Bay of Bengal by the Nicobar Islands")\n', '("Andaman Sea", "southern end is at", "Breueh Island just north of Sumatra")\n', '("Andaman Sea", "connected through", "the Strait of Malacca")\n', '("Andaman Sea", "historically known as", "the Burma Sea")\n', '("Andaman Sea", "used for fishery and transportation", "between the coastal countries")\n', '("Andaman Sea", "position in", "the Indian Ocean")\n', '("Andaman Sea", "contains", "coral reefs")\n', '("Andaman Sea", "contains", "islands")\n', '("Gulf of Martaban", "adjacent to", "the Andaman Sea")\n', '("Andaman Sea", "has", "the Malay Peninsula along its west side")\n', '("Strait of Malacca", "is the southern exitway of", "the Andaman Sea basin")\n', '("Gulf of Martaban", "extends into", "the Andaman Sea")\n', '("Indian Ocean", "is the larger sea that", "the Andaman Sea is part of")\n', '("Myanmar", "coastline bounds", "the Andaman Sea")\n', '("Thailand", "coastline bounds", "the Andaman Sea")\n', '("Andaman Islands", "separate", "the Andaman Sea from the Bay of Bengal")\n', '("Nicobar Islands", "separate", "the Andaman Sea from the Bay of Bengal")\n', '("Sumatra", "located just south of", "the Andaman Sea\'s southern end")\n', '("Andaman Sea", "notable for", "coral reefs and islands as tourist destinations")\n', '("Malay Peninsula", "located along the west side of", "the Andaman Sea")\n', '("Bay of Bengal", "connected to the Andaman Sea via", "strait between the Andaman and Nicobar Islands")\n', '("Bay of Bengal", "separated from", "the Andaman Sea by the Andaman and Nicobar Islands")\n', '("Netherlands East Indies", "included the island of", "Sumatra")\n', '("Irrawaddy River", "silt deposited in", "the northern and eastern parts of the Andaman Sea")\n', '("Banda Aceh", "located near", "the Great Channel")\n', '("Irrawaddy River", "flows into", "the Andaman Sea from Myanmar")\n', '("Andaman Sea", "inhabited by", "brackish water shrimp")\n', '("Andaman Sea", "inhabited by", "dugong")\n', '("Andaman Sea", "inhabited by", "Irrawaddy dolphin")\n', '("Andaman Sea", "inhabited by", "leatherback turtle")\n', '("Andaman Sea", "inhabited by", "hawksbill turtle")\n', '("Andaman Sea", "inhabited by", "green turtle")\n', '("Andaman Sea", "inhabited by", "olive ridley turtle")\n', '("Gulf of Thailand", "connected to", "the Andaman Sea")\n', '("Shatt al-Arab", "is formed at the confluence of", "Euphrates and Tigris")\n', '("Shatt al-Arab", "discharges into", "Persian Gulf")\n', '("Kuwait\'s", "Bubiyan Island is part of", "Shatt al-Arab delta")\n', '("Shatt al-Arab", "includes", "date palm forest")\n', '("Shatt al-Arab", "was controlled by", "British")\n', '("Shatt al-Arab", "had historical dispute with", "Ottoman Empire and Safavid Persia")\n', '("Shatt al-Arab", "had its boundaries negotiated in", "Istanbul")\n', '("Shatt al-Arab", "border involves", "Abadan and Khorramshahr")\n', '("Shatt al-Arab", "was under influence of", "Mustafa Kemal Atatürk and Mohammad Reza Pahlavi")\n', '("Shatt al-Arab", "was a conflict zone between", "Baathist Iraq and Iran")\n', '("Iraq", "diverted its shipping activities through", "Aqaba and Jordan")\n', '("Shatt al-Arab", "saw major military battles during", "Iran-Iraq War")\n', '("Iranian cities", "located along", "Shatt al-Arab are Abadan and Khorramshahr")\n', '("Iraqi cities", "located along", "Shatt al-Arab are Basra and Al-Faw")\n', '("Australasian Mediterranean Sea", "is a", "mediterranean sea")\n', '("Australasian Mediterranean Sea", "is located between", "Southeast Asia and Australasia")\n', '("Australasian Mediterranean Sea", "connects", "Indian and Pacific oceans")\n', '("Australasian Mediterranean Sea", "is surrounded by", "islands and peninsulas")\n', '("Australasian Mediterranean Sea", "includes", "South China Sea")\n', '("Australasian Mediterranean Sea", "includes", "Banda Sea")\n', '("Australasian Mediterranean Sea", "includes", "Arafura Sea")\n', '("Australasian Mediterranean Sea", "includes", "Timor Sea")\n', '("Australasian Mediterranean Sea", "includes", "Java Sea")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Thailand")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Carpentaria")\n', '("Australasian Mediterranean Sea", "includes", "Celebes Sea")\n', '("Australasian Mediterranean Sea", "includes", "Sulu Sea")\n', '("Australasian Mediterranean Sea", "includes", "Flores Sea")\n', '("Australasian Mediterranean Sea", "includes", "Molucca Sea")\n', '("Australasian Mediterranean Sea", "includes", "Gulf of Tonkin")\n', '("Australasian Mediterranean Sea", "includes", "Halmahera Sea")\n', '("Australasian Mediterranean Sea", "includes", "Bali Sea")\n', '("Australasian Mediterranean Sea", "includes", "Savu Sea")\n', '("Australasian Mediterranean Sea", "includes", "Joseph Bonaparte Gulf")\n', '("Australasian Mediterranean Sea", "includes", "Seram Sea")\n', '("Australasian Mediterranean Sea", "includes", "Strait of Malacca")\n', '("Australasian Mediterranean Sea", "includes", "Singapore Strait")\n', '("Australasian Mediterranean Sea", "includes", "Luzon Strait")\n', '("Australasian Mediterranean Sea", "adjoins", "peninsulas of Indochina and Malaysia")\n', '("Australia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Brunei", "has a coast on", "Australasian Mediterranean Sea")\n', '("China", "has a coast on", "Australasian Mediterranean Sea")\n', '("Indonesia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Cambodia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Malaysia", "has a coast on", "Australasian Mediterranean Sea")\n', '("Papua New Guinea", "has a coast on", "Australasian Mediterranean Sea")\n', '("Philippines", "has a coast on", "Australasian Mediterranean Sea")\n', '("Singapore", "has a coast on", "Australasian Mediterranean Sea")\n', '("Taiwan", "has a coast on", "Australasian Mediterranean Sea")\n', '("Thailand", "has a coast on", "Australasian Mediterranean Sea")\n', '("Timor-Leste", "has a coast on", "Australasian Mediterranean Sea")\n', '("Vietnam", "has a coast on", "Australasian Mediterranean Sea")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Malacca")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Singapore")\n', '("Australasian Mediterranean Sea", "includes the straits of", "Luzon")\n', '("Red Sea", "is an inlet of", "Indian Ocean")\n', '("Red Sea", "is connected through", "Bab-el-Mandeb strait")\n', '("Red Sea", "is connected through", "Gulf of Aden")\n', '("Sinai Peninsula", "is located to the north of", "Red Sea")\n', '("Gulf of Aqaba", "is located to the north of", "Red Sea")\n', '("Gulf of Suez", "leads to", "Suez Canal")\n', '("Red Sea", "has", "marine life")\n', '("Red Sea", "has", "corals")\n', '("Red Sea", "is habitat for", "invertebrate species")\n', '("Red Sea", "was once referred to as", "Erythraean Sea")\n', '("Trichodesmium erythraeum", "causes seasonal blooms in", "Red Sea")\n', '("Red Sea", "was called by Herodotus as", "Southern Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "Black Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "White Sea")\n', '("Red Sea", "is one of the seas named after a color term like", "Yellow Sea")\n', '("Suez Canal", "was opened under the reign of", "Augustus")\n', '("Red Sea", "was part of an ancient route to", "Egypt")\n', '("Red Sea", "is part of a maritime route to", "China")\n', '("Red Sea", "was part of Napoleon\'s mission to control", "France")\n', '("Houthis", "have attacked ships in", "Red Sea")\n', '("Red Sea", "connects with", "Arabian Sea")\n', '("Red Sea", "shorelines include", "Sudan")\n', '("Red Sea", "shorelines include", "Eritrea")\n', '("Red Sea", "supports diverse", "algae")\n', '("Shoiaba", "is located near", "Red Sea")\n', '("Al-Kharrar", "is a lagoon connected to", "Red Sea")\n', '("Red Sea", "is bordered by", "Arabian peninsula")\n', '("Red Sea", "is near", "Horn of Africa")\n', '("Red Sea Rift", "was active in geological epoch called", "Eocene")\n']
+range(1, 258) 4
+{'id': '4_6', 'Question': " Which body of water is recognized in Arabic seafaring lore as the inaugural marine region of the traditional collective term used to describe Earth's saltwater bodies, which is impacted by features like the notable terrain found in the Gulf of Mexico?\n\n", 'Answer': 'Persian Gulf', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Andaman Sea'}, {'label': 'B', 'text': 'Persian Gulf'}, {'label': 'C', 'text': 'Shatt al-Arab'}, {'label': 'D', 'text': 'Australasian Mediterranean Sea'}, {'label': 'E', 'text': 'Red Sea'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'andaman_sea'}, {'label': 'B', 'text': 'persian_gulf'}, {'label': 'C', 'text': 'shatt_al_arab'}, {'label': 'D', 'text': 'australasian_mediterranean_sea'}, {'label': 'E', 'text': 'red_sea'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: What large marine feature in the Gulf of Mexico includes notable underwater terrain such as an abyssal plain and Sigsbee Deep?\nA1: Abyssal plain\n\n', "2: What massive body of water's biogeochemical dynamics are impacted by features such as abyssal plains?\nA2: Ocean\n\n", "3: What term has traditionally been used in storytelling and various forms of art to describe the collective expanse of the Earth's saltwater bodies?\nA3: Seven Seas\n\n", '4: Within the narratives of Arabic seafaring lore, which body of water is recognized as the inaugural marine region in the fabled grouping?\nA4: Persian Gulf'], 'Hops_wiki': [('Mexico', 'Abyssal plain'), ('Abyssal plain', 'Ocean'), ('Ocean', 'Seven Seas'), ('Seven Seas', 'Persian Gulf')], 'Hops_cpnet': [('mexico', 'abyssal_plain'), ('abyssal_plain', 'ocean'), ('ocean', 'seven_seas'), ('seven_seas', 'persian_gulf')], 'Triplets': ['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")', '("Seven Seas", "reference in arts and popular culture to", "oceans")', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")'], 'Referred_files': [{'name': 'Gulf of Mexico', 'line': 27}, {'name': 'Abyssal plain', 'line': 8}, {'name': 'Seven Seas', 'line': 6}, {'name': 'Seven Seas', 'line': 10}], 'Question_triplet_answer': {100: [84, 93, 158, 172], 50: [56, 90, 120, 133], 25: [48, 107, 158, 185]}}
+time passed:  2520.9080827236176
+Expected dollar:  0.005
+Red Sea is Geography
+Yellow Sea is Geography
+Shatt al Arab" is Geography
+Mustafa Kemal Atatürk is People
+Mohammad Reza Pahlavi is People
+Jurassic is Geography
+Indian Ocean is Geography
+Malay Peninsula is Geography
+the Andaman Sea is Geography
+Australasian Mediterranean Sea is Geography
+"Seram Sea" is Geography
+Singapore is Geography
+Irrawaddy River is Geography
+Myanmar is Geography
+Thailand is Geography
+Gulf of Aqaba is Geography
+Caribbean Sea is Geography
+Gulf of Martaban is Geography
+Celebes Sea is Geography
+Persia is Geography
+Sierra Madre Oriental is Geography
+Caspian Sea is Geography
+Po river is Geography
+Gulf of Aden is Geography
+Arafura Sea is Geography
+Joseph Bonaparte Gulf is Geography
+Istanbul is Geography
+Shatt al Arab is Geography
+Basra is Geography
+Al Faw is Geography
+Andaman Sea is Geography
+Sudan is Geography
+Java Sea is Geography
+Gulf of Mexico is Geography
+Indonesia is Geography
+Gulf of Suez is Geography
+Suez Canal is Geography
+Sinai Peninsula is Geography
+Kuwait is Geography
+Bubiyan Island is Geography
+Florida is Geography
+Alabama is Geography
+Mississippi is Geography
+Louisiana is Geography
+Texas is Geography
+Indian Ocean" is Geography
+the United States' is Geography
+Americas is Geography
+Black Sea is Geography
+Trichodesmium is Animal
+Gulf of Carpentaria is Geography
+Timor Sea is Geography
+Tea Route is Geography
+South China Sea is Geography
+Mediterranean Sea is Geography
+the United States is Geography
+Iraq is Geography
+Aqaba is Geography
+Jordan is Geography
+Nicobar Islands is Geography
+the Bay of Bengal is Geography
+Yucatán is Geography
+Mississippi Embayment is Geography
+Philippines is Geography
+7700 meters is Geography
+Venice is Geography
+Breueh Island is Geography
+Sumatra is Geography
+"Celebes Sea is Geography
+United States is Geography
+Mexico is Geography
+Cuba is Geography
+Flores Sea is Geography
+the Robert E. Lee is People
+the Indian Ocean is Geography
+Banda Sea is Geography
+the Gulf of Mexico is Geography
+Sulu Sea is Geography
+Abadan is Geography
+Khorramshahr is Geography
+Arabian is Geography
+Khanfu is Geography
+Netherlands East Indies is Geography
+Oklahoma is Geography
+Eritrea is Geography
+Australia is Geography
+Augustus is People
+Bay of Bengal is Geography
+International Hydrographic Organization is Incident
+the Atlantic Ocean is Geography
+Horn of Africa is Geography
+White Sea is Geography
+Banda Aceh is Geography
+Ascension Island is Geography
+Muhammad is Geography
+the Gulf of Martaban is Geography
+Taiwan is Geography
+China is Geography
+England is Geography
+27,000 is Geography
+Pacific is Geography
+the Andaman Islands is Geography
+the Caribbean Sea is Geography
+Luzon is Geography
+Kanjli is Geography
+Baathist Iraq is Geography
+Iran is Geography
+Adriatic Sea is Geography
+Eocene is Geography
+Gulf of Tonkin is Geography
+Herodotus is People
+Southern Sea is Animal
+Hernán Cortés is People
+Tamaulipas is Geography
+Veracruz is Geography
+Tabasco is Geography
+Campeche is Geography
+Quintana Roo is Geography
+Singapore Strait is Geography
+Challenger Deep is Geography
+the Mariana Trench is Geography
+entities:  {'Arab', 'Indies', 'Ocean"', 'Mohammad', 'Myanmar', 'International', 'Sudan', 'Pangaea', 'South', 'Malay', 'Carpentaria', 'Jordan', 'Cuba', 'Strait', 'Eocene', 'Abyssal', 'Sulu', 'Peninsula', 'Augustus', 'Herodotus', 'Mediterranean', 'Kanjli', 'Roo', 'White', 'Nicobar', 'Istanbul', 'Shatt', 'Bonaparte', 'Luzon', 'Louann', 'Pahlavi', 'Yucatán', 'Island', 'Texas', 'Sumatra', 'Celebes', 'plain', 'Baathist', 'Muhammad', 'Mustafa', 'Persian', 'Bay', 'Basra', 'Mexico', 'Tamaulipas', 'Atlantic', 'Arab"', 'East', 'Trichodesmium', 'Organization', 'Japan', 'Americas', 'Tea', 'Lee', 'Tabasco', 'Horn', 'Ascension', 'Jurassic', 'Papua', 'Aceh', 'Black', 'Red', 'Ocean', 'Mariana', 'Sinai', 'Quintana', 'Canal', 'Campeche', 'Sierra', 'Venice', 'Bubiyan', 'Timor', 'Trench', 'Sea', 'Sanji', 'Netherlands', "States'", 'Caspian', 'Java', 'Banda', '"Seram', 'Thailand', 'Pacific', 'Arabian', 'Iran', 'Abadan', 'Andaman', 'Al', 'al-Arab', 'Seas', 'Suez', 'Bengal', 'Mississippi', 'Louisiana', 'Breueh', 'Route', 'Flores', 'Tonkin', 'Reza', 'Oklahoma', 'Martaban', 'Khorramshahr', 'Persia', 'Eritrea', 'Florida', 'Oriental', 'China', '"Celebes', 'Yellow', 'Southern', 'Irrawaddy', 'Singapore', 'Deep', 'Australasian', 'Australia', 'Indian', 'Indonesia', 'Hernán', 'Philippines', 'Islands', 'Iraq', 'Khanfu', 'Taiwan', 'Gulf', 'Africa', 'River', 'Challenger', '27,000', 'Malacca', 'England', 'Kemal', 'Aden', 'Cortés', 'meters', 'Alabama', 'Robert', 'Hydrographic', 'Arafura', 'Veracruz', 'river', 'Kuwait', 'Seven', 'Sea"', 'Caribbean', 'Adriatic', 'E.', 'Faw', 'al', '7700', 'Madre', 'Aqaba', 'Embayment', 'Joseph', 'Po', 'Brunei', 'Atatürk', 'States', 'United'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mexico
+Yucatán
+
+gpt_entity_particular(): entity list: 
+ ['Mexico', 'Yucatán']
+
+gpt_entity_particular(): filtered entity: 
+ ['Yucatán']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Abyssal plain' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Abyssal plain
+Exploitation of abyssal plains
+Biodiversity in abyssal plains
+Abyssal plains
+
+gpt_entity_particular(): entity list: 
+ ['Abyssal plain', 'Biodiversity in abyssal plains', 'Abyssal plains', 'Exploitation of abyssal plains']
+
+gpt_entity_particular(): filtered entity: 
+ ['Abyssal plains']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Red Sea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Red Sea
+Shatt al-Arab
+Louann Salt
+Red Sea
+Malay Peninsula
+Australasian Mediterranean Sea 
+Singapore
+Irrawaddy River
+Thailand
+Gulf of Aqaba
+Seven Seas
+Red Sea
+Gulf of Martaban
+Celebes Sea
+Louann Salt
+Sierra Madre Oriental
+Philippines
+Kardanj
+Gulf of Aden
+Iraqi cities
+Andaman Sea
+Gulf of Mexico
+Kuwait's
+Gulf of Mexico basin
+Sinai Peninsula
+Sea of Harkand
+Gulf of Mexico basin
+Gulf of Suez
+Gulf of Mexico
+Hydrothermal vents
+saltwater lakes
+Abyssal plains
+Sea of Kalah
+Indonesia
+Sudan
+Red Sea
+Abyssal plains
+Seven Seas
+Australasian Mediterranean Sea
+Red Sea
+Seven Seas
+Ocean
+Sea of Fars
+Australasian Mediterranean Sea
+Gulf Stream
+Australasian Mediterranean Sea
+camphor tree
+Andaman Sea
+Gulf of Martaban
+Australasian Mediterranean Sea
+Red Sea
+Seven Seas
+Australasian Mediterranean Sea
+Khanfu
+Andaman Sea
+Netherlands East Indies
+Australasian Mediterranean Sea
+Abyssal plains
+
+gpt_entity_particular(): entity list: 
+ ['Sea of Fars', 'Australasian Mediterranean Sea', 'Louann Salt', 'Thailand', 'Seven Seas', 'Singapore', 'Gulf of Martaban', 'Sierra Madre Oriental', "Kuwait's", 'Sea of Kalah', 'Iraqi cities', 'Sudan', 'Sea of Harkand', 'Indonesia', 'Abyssal plains', 'Philippines', 'Hydrothermal vents', 'Red Sea', 'Shatt al-Arab', 'Khanfu', 'Netherlands East Indies', 'Gulf of Aqaba', 'Gulf of Aden', 'Irrawaddy River', 'Sinai Peninsula', 'Gulf of Mexico basin', 'Malay Peninsula', 'Gulf Stream', 'Celebes Sea', 'Gulf of Mexico', 'Ocean', 'Kardanj', 'Gulf of Suez', 'Australasian Mediterranean Sea ', 'saltwater lakes', 'Andaman Sea', 'camphor tree']
+
+gpt_entity_particular(): filtered entity: 
+ ['Gulf of Aqaba', 'Gulf of Suez']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Australasian Mediterranean Sea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Australasian Mediterranean Sea
+Seram Sea
+Joseph Bonaparte Gulf
+Singapore
+Gulf of Carpentaria
+Arafura Sea
+the straits of Singapore
+Java Sea
+South China Sea
+Banda Sea
+Malacca
+Sulu Sea
+Luzon
+Hernán Cortés
+Flores Sea
+the straits of Malacca
+Singapore Strait
+
+gpt_entity_particular(): entity list: 
+ ['Java Sea', 'Hernán Cortés', 'Seram Sea', 'Australasian Mediterranean Sea', 'the straits of Malacca', 'Singapore', 'Sulu Sea', 'Flores Sea', 'Singapore Strait', 'Joseph Bonaparte Gulf', 'Luzon', 'South China Sea', 'Malacca', 'the straits of Singapore', 'Gulf of Carpentaria', 'Banda Sea', 'Arafura Sea']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Seven Seas' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Seven Seas
+Australasian Mediterranean Sea
+Shatt al-Arab
+Yellow Sea
+Louann Salt and associated anhydrite evaporites
+Indian Ocean
+Andaman Sea
+Caribbean Sea
+Gulf of Suez
+Gulf of Aden
+Abyssal plains
+Australasian Mediterranean Sea
+Seram Sea
+Singapore
+Irrawaddy River
+Thailand
+Gulf of Aqaba
+Celebes Sea
+Adaman Sea
+Gulf of Martaban
+Gulf of Mexico
+Bubiyan Island 
+Caspian Sea
+Istanbul
+Gulf of Suez
+Abyssal zones
+oceanic basins
+Java Sea
+Gulf of Mexico
+Mardi Gras shipwreck
+Bubiyan Island 
+Gulf Stream
+
+gpt_entity_particular(): entity list: 
+ ['oceanic basins', 'Australasian Mediterranean Sea', 'Seven Seas', 'Thailand', 'Singapore', 'Gulf of Martaban', 'Indian Ocean', 'Abyssal plains', 'Java Sea', 'Shatt al-Arab', 'Mardi Gras shipwreck', 'Gulf of Aqaba', 'Adaman Sea', 'Gulf of Aden', 'Bubiyan Island ', 'Yellow Sea', 'Irrawaddy River', 'Seram Sea', 'Caribbean Sea', 'Istanbul', 'Gulf Stream', 'Celebes Sea', 'Gulf of Mexico', 'Gulf of Suez', 'Abyssal zones', 'Louann Salt and associated anhydrite evaporites', 'Andaman Sea', 'Caspian Sea']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Shatt al-Arab' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Shatt al-Arab
+Mustafa Kemal Atatürk
+Mohammad Reza Pahlavi
+Louann Salt
+anhydrite evaporites
+Irrawaddy River
+Gulf of Aqaba
+Red Sea
+Yellow Sea
+Malay Peninsula
+Australasian Mediterranean Sea
+Seram Sea
+Singapore
+Istanbul
+Iraqi cities 'located along'
+Basra
+Al-Faw
+Gulf of Martaban
+Gulf of Aden
+Ottoman Empire
+Safavid Persia
+Arab seafarers
+Po river
+Caribbean Sea
+Gulf of Mexico
+Mardi Gras shipwreck
+Bubiyan Island
+Louisiana
+Texas
+Kalah
+Yucatán
+Mediterranean Sea
+Andaman Sea
+Indian Ocean
+Myanmar
+Brunei
+Aqaba
+Banda Sea
+Gulf of Carpentaria
+Chinese Swords
+Java Sea
+Gulf of Suez
+Suez Canal
+Sinai Peninsula
+Caspian Sea
+Abyssal plains
+caribbean Sea
+Andaman islands
+Kuwait
+Baltic Sea
+Texas
+Louisiana
+Mississippi
+Alabama
+Flordia
+Larwi
+Ancient Romans
+Banda Sea
+Yucatán
+Cuba
+
+gpt_entity_particular(): entity list: 
+ ['Australasian Mediterranean Sea', 'Louann Salt', 'Singapore', 'Gulf of Martaban', 'Myanmar', 'Mohammad Reza Pahlavi', 'Indian Ocean', 'Abyssal plains', 'Banda Sea', 'Chinese Swords', 'Java Sea', 'Red Sea', 'Shatt al-Arab', 'Cuba', 'Mardi Gras shipwreck', 'Ancient Romans', "Iraqi cities 'located along'", 'Mississippi', 'Larwi', 'Gulf of Aqaba', 'Louisiana', 'Gulf of Aden', 'Al-Faw', 'Arab seafarers', 'Yellow Sea', 'Flordia', 'Irrawaddy River', 'Sinai Peninsula', 'Seram Sea', 'anhydrite evaporites', 'Alabama', 'Malay Peninsula', 'Mustafa Kemal Atatürk', 'Istanbul', 'Caribbean Sea', 'Mediterranean Sea', 'Gulf of Mexico', 'Kuwait', 'Gulf of Suez', 'Gulf of Carpentaria', 'Ottoman Empire', 'Yucatán', 'Po river', 'Safavid Persia', 'Texas', 'caribbean Sea', 'Suez Canal', 'Andaman islands', 'Aqaba', 'Andaman Sea', 'Brunei', 'Bubiyan Island', 'Baltic Sea', 'Caspian Sea', 'Kalah', 'Basra']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Persian Gulf' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Persian Gulf
+Shatt al-Arab
+Gulf of Aqaba
+
+gpt_entity_particular(): entity list: 
+ ['Shatt al-Arab', 'Persian Gulf', 'Gulf of Aqaba']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Andaman Sea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Andaman Sea
+Malay Peninsula
+Irrawaddy River
+Gulf of Martaban
+Brunei
+Thailand
+Gulf of Mexico
+Abyssal plains
+Red Sea
+Australasian Mediterranean Sea
+Singapore
+Maly Peninsula
+Celebes Sea
+Gulf of Martaban
+Indonesia
+Gulf of Suez
+Sinai Peninsula
+Thailand
+Singapore
+Sumatra
+Nicobar Islands
+Brunei
+Iraqi cities
+Hydrothermal vents
+Leatherback Turtle
+Camphor tree
+Bubiyan Island
+Aden
+Black Sea
+Al-Kharrar
+Dugong
+Seram Sea
+Luzon
+Oil drilling
+Shrimp
+Bacteria
+Protozoans
+Invertebrates
+Kardanj
+
+gpt_entity_particular(): entity list: 
+ ['Australasian Mediterranean Sea', 'Nicobar Islands', 'Thailand', 'Gulf of Martaban', 'Singapore', 'Iraqi cities', 'Camphor tree', 'Protozoans', 'Indonesia', 'Abyssal plains', 'Hydrothermal vents', 'Red Sea', 'Oil drilling', 'Shrimp', 'Irrawaddy River', 'Aden', 'Sinai Peninsula', 'Seram Sea', 'Leatherback Turtle', 'Black Sea', 'Malay Peninsula', 'Celebes Sea', 'Luzon', 'Gulf of Mexico', 'Bacteria', 'Invertebrates', 'Kardanj', 'Gulf of Suez', 'Maly Peninsula', 'Sumatra', 'Andaman Sea', 'Brunei', 'Bubiyan Island', 'Dugong', 'Al-Kharrar']
+
+gpt_entity_particular(): filtered entity: 
+ ['Thailand', 'Gulf of Martaban', 'Sumatra']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ocean' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ocean
+Red Sea
+Yellow Sea
+Shatt al-Arab
+Mustafa Kemal Atatürk
+Mohammad Reza Pahlavi
+Louann Salt
+anhydrite evaporites
+Jurassic
+Indian Ocean
+Malay Peninsula
+Andaman Sea
+Australasian Mediterranean Sea
+Seram Sea
+Singapore
+Irrawaddy River
+Gulf of Aqaba
+Seven Seas
+Caribbean Sea
+Gulf of Martaban
+Celebes Sea
+Dutch East Indies
+Ottoman Empire
+Safavid Persia
+Sierra Madre Oriental
+Laramide Orogeny
+Caspian Sea
+Arab seafarers
+Po river
+Kardanj
+Gulf of Aden
+Iran-Iraq War
+Brunei
+Arafura Sea
+Joseph Bonaparte Gulf
+Istanbul
+Iraqi cities
+Al-Faw
+Sudan
+Abyssal plains
+Java Sea
+Black Sea
+Trichodesmium erythraeum
+Dutch East Indies
+Gulf of Carpentaria
+Sea of Harkand
+Island of Sarandib
+Mardi Gras shipwreck
+Kuwait's
+Bubiyan Island
+Seven Seas
+Gulf of Mexico
+Mississippi
+Embaymen
+Sierra Madre Oriental
+Seven Seas
+Texas
+Louisiana
+Mississippi
+Alabama
+Florida
+Larwi
+Indian Ocean
+camphor tree
+Island of Kalah
+Black Sea
+Timor Sea
+Tea Route
+South China Sea
+Third Coast of the United States
+Iraq
+Aqaba
+Jordan
+Nicobar Islands
+Bay of Bengal
+area
+Yucatán
+Pangaea
+Mississippi Embayment
+Philippines
+Hadal snailfish
+Japan Trench
+Gulf of Mexico
+Sigsbee Deep
+Ascension Island
+Andaman Sea
+Al-Kharrar
+Seven Seas
+Arabic literature's
+Seven Seas
+Mediterranean Sea
+Hydrothermal vents
+Ocean
+Sea of Kalah
+Luzon
+Australasian Mediterranean Sea
+Southern Sea
+Yellow Sea
+depth
+Photic zone
+Eritrea
+Australia
+Suez Canal
+Gulf Stream
+Pacific Ocean
+Hydrothermal vents
+Mediterranean Sea
+Gulf of Mexico
+carolina Sea
+Gulf of Mexico
+Caribbean Sea
+Abyssal plains
+ocean carbon cycling
+Hernán Cortés
+Spanish exploration
+Java Sea
+Photic zone
+Celebes Sea
+Gulf of Mexico
+Mexican
+Yucatán
+Abyssal plains
+Gulf of Mexico
+Caribbean Sea
+Myanmar
+Papua New Guinea
+Abyssal plains
+Andaman Sea
+Malacca
+Eritrea
+Abyssal plains
+Cuba
+Sea of Sanji
+Strait of Malacca
+Gulf of Mexico
+Mardi Gras shipwreck
+Island of Sarandib
+Venice
+Abyssal plains
+Khanfu
+Southern Sea
+Abyssal plains
+Joseph Bonaparte Gulf
+Challenger Deep
+Mariana Trench
+Banda Aceh
+Precious stones
+Khanfu
+Saltwater lakes
+Ancient Romans
+Challenger Deep
+Earth's oceans
+Abyssal plains
+Joseph Bonaparte Gulf
+Challenger Deep
+Marina Trench
+Saltwater lakes
+Ancient Romans
+
+gpt_entity_particular(): entity list: 
+ ["Kuwait's", 'Gulf of Martaban', 'Myanmar', 'Mohammad Reza Pahlavi', 'Sudan', 'South China Sea', 'Pangaea', 'Abyssal plains', 'Trichodesmium erythraeum', 'Jordan', 'Cuba', 'Mardi Gras shipwreck', 'Arab seafarers', 'Gulf of Aden', 'Al-Faw', 'Iran-Iraq War', 'Caribbean Sea', 'Istanbul', 'Gulf Stream', 'Mediterranean Sea', 'Gulf of Mexico', 'Embaymen', 'Dutch East Indies', 'Luzon', "Earth's oceans", 'Yucatán', 'Texas', 'Mariana Trench', 'camphor tree', 'Caspian Sea', 'Al-Kharrar', 'Hadal snailfish', 'Mississippi Embayment', 'Precious stones', 'Red Sea', 'Jurassic', 'Seram Sea', 'anhydrite evaporites', 'Banda Aceh', 'Mustafa Kemal Atatürk', 'Celebes Sea', 'Laramide Orogeny', 'Ocean', 'Timor Sea', 'Kardanj', 'Venice', 'Marina Trench', 'Joseph Bonaparte Gulf', 'Papua New Guinea', 'Ascension Island', 'Australasian Mediterranean Sea', 'Louann Salt', 'Sea of Kalah', 'Iraqi cities', 'Island of Kalah', 'Indian Ocean', 'Strait of Malacca', 'Pacific Ocean', 'Tea Route', 'Mississippi', 'Photic zone', 'Larwi', 'Gulf of Aqaba', 'area', 'Louisiana', 'Saltwater lakes', 'Black Sea', 'Spanish exploration', "Arabic literature's", 'Eritrea', 'Ottoman Empire', 'Hernán Cortés', 'Florida', 'Suez Canal', 'Mexican', 'Bubiyan Island', 'Southern Sea', 'Seven Seas', 'Nicobar Islands', 'Sierra Madre Oriental', 'Singapore', 'Sigsbee Deep', 'Australia', 'Sea of Harkand', 'Java Sea', 'Philippines', 'Hydrothermal vents', 'Bay of Bengal', 'Iraq', 'Shatt al-Arab', 'Khanfu', 'Ancient Romans', 'Sea of Sanji', 'Malacca', 'Yellow Sea', 'Arafura Sea', 'Irrawaddy River', 'Japan Trench', 'depth', 'Third Coast of the United States', 'Alabama', 'Malay Peninsula', 'ocean carbon cycling', 'carolina Sea', 'Gulf of Carpentaria', 'Po river', 'Safavid Persia', 'Island of Sarandib', 'Aqaba', 'Andaman Sea', 'Brunei', 'Challenger Deep']
+
+gpt_entity_particular(): filtered entity: 
+ ['Mediterranean Sea', 'Indian Ocean', 'Pacific Ocean', 'Photic zone', 'Seven Seas']
+After GPT, entity:  {'Arab', 'Indies', 'Ocean"', 'Mohammad', 'Myanmar', 'Gulf of Martaban', 'International', 'Sudan', 'Pangaea', 'South', 'Abyssal plains', 'Malay', 'Carpentaria', 'Jordan', 'Cuba', 'Strait', 'Eocene', 'Abyssal', 'Sulu', 'Peninsula', 'Augustus', 'Herodotus', 'Mediterranean', 'Kanjli', 'Roo', 'White', 'Nicobar', 'Istanbul', 'Shatt', 'Bonaparte', 'Luzon', 'Mediterranean Sea', 'Louann', 'Pahlavi', 'Yucatán', 'Island', 'Texas', 'Sumatra', 'Celebes', 'plain', 'Baathist', 'Muhammad', 'Mustafa', 'Persian', 'Bay', 'Basra', 'Mexico', 'Tamaulipas', 'Atlantic', 'Arab"', 'East', 'Trichodesmium', 'Organization', 'Japan', 'Americas', 'Tea', 'Lee', 'Tabasco', 'Horn', 'Ascension', 'Jurassic', 'Papua', 'Aceh', 'Black', 'Red', 'Ocean', 'Mariana', 'Sinai', 'Quintana', 'Canal', 'Campeche', 'Sierra', 'Venice', 'Bubiyan', 'Timor', 'Trench', 'Sea', 'Sanji', 'Netherlands', "States'", 'Caspian', 'Java', 'Banda', '"Seram', 'Thailand', 'Pacific', 'Arabian', 'Iran', 'Abadan', 'Andaman', 'Indian Ocean', 'Al', 'al-Arab', 'Seas', 'Suez', 'Bengal', 'Pacific Ocean', 'Mississippi', 'Photic zone', 'Gulf of Aqaba', 'Louisiana', 'Breueh', 'Route', 'Flores', 'Tonkin', 'Reza', 'Oklahoma', 'Martaban', 'Khorramshahr', 'Persia', 'Eritrea', 'Florida', 'Oriental', 'China', '"Celebes', 'Yellow', 'Southern', 'Irrawaddy', 'Seven Seas', 'Singapore', 'Deep', 'Australasian', 'Australia', 'Indian', 'Indonesia', 'Hernán', 'Philippines', 'Islands', 'Iraq', 'Khanfu', 'Taiwan', 'Gulf', 'Africa', 'River', 'Challenger', '27,000', 'Malacca', 'England', 'Kemal', 'Aden', 'Cortés', 'meters', 'Alabama', 'Robert', 'Hydrographic', 'Arafura', 'Veracruz', 'river', 'Kuwait', 'Gulf of Suez', 'Seven', 'Sea"', 'Caribbean', 'Adriatic', 'E.', 'Faw', 'al', '7700', 'Madre', 'Aqaba', 'Embayment', 'Joseph', 'Po', 'Brunei', 'Atatürk', 'States', 'United'}
+Total time:  477.0716931819916
+Entity conversion done on 4_6 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_6_entity_conversion_hash.json. Check the entity.
+ Which body of water is recognized in Arabic seafaring lore as the inaugural marine region of the traditional collective term used to describe Earth's saltwater bodies, which is impacted by features like the notable terrain found in the 065 of Mexico?
+
+
+
+
+Done. Check final_query/id_4_6_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_6_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_6_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_6_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_6_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_6_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_6_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

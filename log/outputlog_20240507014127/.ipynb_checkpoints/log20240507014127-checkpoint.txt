@@ -1,0 +1,44 @@
+Got argument: Napoleon, 2, 2_4
+
+utils/question.py extract_hops(Napoleon, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Napoleon", "was exiled to", "the island of Elba")', 'start word': 'Napoleon', 'end word': 'Elba', 'source': {'name': 'Napoleon', 'line': 14}, 'cpnet': {'start word': 'napoleon', 'end word': 'elba'}}
+
+utils/question.py extract_hops(Elba, [], ['Napoleon']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Elba_info.json file
+extract_info(Elba) Start.
+utils/preprocess.py extract_info(): Checking good links on Elba
+Mediterranean Sea is Geography
+1 / 30 )  Mediterranean Mediterranean Sea mediterranean_sea
+Tuscany is Geography
+2 / 30 )  Tuscany Tuscany tuscany
+Italy is Geography
+3 / 30 )  Italy Italy italy
+Tuscan Archipelago is Geography
+4 / 30 )  Tuscan Archipelago Tuscan Archipelago tuscan_archipelago
+Sicily is Geography
+5 / 30 )  Sicily Sicily sicily
+Sardinia is Geography
+6 / 30 )  Sardinia Sardinia sardinia
+Tyrrhenian Sea is Geography
+7 / 30 )  Tyrrhenian Sea Tyrrhenian Sea tyrrhenian_sea
+Corsica is Geography
+8 / 30 )  Corsica Corsica corsica
+Portoferraio is Geography
+9 / 30 )  Portoferraio Portoferraio portoferraio
+Napoleon is People
+10 / 30 )  Napoleon Napoleon napoleon
+Apennine Mountains is Geography
+11 / 30 )  Apennine orogeny Apennine Mountains apennine_mountains
+Mouflon is Animal
+12 / 30 )  mouflon Mouflon mouflon
+Wild boar is Animal
+13 / 30 )  wild boar Wild boar wild_boar
+Strabo is People
+14 / 30 )  Strabo Strabo strabo
+Philip II of Spain is People
+15 / 30 )  Philip II of Spain Philip II of Spain philip_ii_of_spain
+Kingdom of Great Britain is Geography
+16 / 30 )  British Kingdom of Great Britain kingdom_of_great_britain
+Livorno is Geography
+17 / 30 )  Livorno Livorno livorno

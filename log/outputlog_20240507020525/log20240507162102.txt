@@ -1,0 +1,1273 @@
+Got argument: Napoleon, 4, 4_4
+
+utils/question.py extract_hops(Napoleon, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Napoleon", "made another attempt at crossing the Danube during", "the Battle of Wagram")', 'start word': 'Napoleon', 'end word': 'Battle of Wagram', 'source': {'name': 'Napoleon', 'line': 40}, 'cpnet': {'start word': 'napoleon', 'end word': 'battle_of_wagram'}}
+
+utils/question.py extract_hops(Battle of Wagram, [], ['Napoleon']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Battle_of_Wagram_info.json file
+second_hop:  None
+
+utils/question.py extract_hops(Napoleon, ['Battle of Wagram'], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Napoleon", "was exiled to", "the island of Elba")', 'start word': 'Napoleon', 'end word': 'Elba', 'source': {'name': 'Napoleon', 'line': 14}, 'cpnet': {'start word': 'napoleon', 'end word': 'elba'}}
+
+utils/question.py extract_hops(Elba, [], ['Napoleon']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Elba_info.json file
+second_hop:  {'triplet': '("Strabo", "mentions", "Elba")', 'start word': 'Elba', 'end word': 'Strabo', 'source': {'name': 'Elba', 'line': 14}, 'cpnet': {'start word': 'elba', 'end word': 'strabo'}}
+
+utils/question.py extract_hops(Strabo, [], ['Napoleon', 'Elba']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Strabo_info.json file
+extract_info(Strabo) Start.
+utils/preprocess.py extract_info(): Checking good links on Strabo
+Anatolia is Geography
+1 / 30 )  Asia Minor Anatolia anatolia
+Amasya is Geography
+2 / 30 )  Amaseia Amasya amasya
+Mithridates VI Eupator is People
+3 / 30 )  Mithridates VI Mithridates VI Eupator mithridates_vi
+Egypt is Geography
+4 / 30 )  Egypt Egypt egypt
+Tuscany is Geography
+5 / 30 )  Tuscany Tuscany tuscany
+Ethiopia is Geography
+6 / 30 )  Ethiopia Ethiopia ethiopia
+Rome is Geography
+7 / 30 )  Rome Rome rome
+Augustus is People
+8 / 30 )  Augustus Augustus augustus
+Corinth is Geography
+9 / 30 )  Corinth Corinth corinth
+Nile is Geography
+10 / 30 )  Nile Nile nile
+Tiberius is People
+11 / 30 )  Tiberius Tiberius tiberius
+Homer is People
+12 / 30 )  Homer Homer homer
+Aristotle is People
+13 / 30 )  Aristotle Aristotle aristotle
+Rhodes is Geography
+14 / 30 )  Rhodes Rhodes rhodes
+Venice is Geography
+15 / 30 )  Venice Venice venice
+Eratosthenes is People
+16 / 30 )  Eratosthenes Eratosthenes eratosthenes
+Hipparchus is People
+17 / 30 )  Hipparchus Hipparchus hipparchus
+Black Sea is Geography
+18 / 30 )  Euxine Black Sea black_sea
+Danube is Geography
+19 / 30 )  Danube Danube danube
+India is Geography
+20 / 30 )  India India india
+Herodotus is People
+21 / 30 )  Herodotus Herodotus herodotus
+Josephus is People
+22 / 30 )  Flavius Josephus Josephus josephus
+Charles Lyell is People
+23 / 30 )  Charles Lyell Charles Lyell sir_charles_lyell
+Sea of Marmara is Geography
+24 / 30 )  Propontis Sea of Marmara sea_of_marmara
+Pillars of Hercules is Geography
+25 / 30 )  Columns of Hercules Pillars of Hercules pillars_of_hercules
+Nummulite is Animal
+26 / 30 )  Nummulite Nummulite nummulite
+Pliny the Younger is People
+27 / 30 )  Pliny the Younger Pliny the Younger gaius_plinius_caecilius_secundus
+Mount Vesuvius is Geography
+28 / 30 )  Mount Vesuvius Mount Vesuvius mount_vesuvius
+Pompeii is Geography
+29 / 30 )  Pompeii Pompeii pompeii
+extract_triplet(Strabo)
+Got GPT's response. String length : 1877
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Asia Minor', 'Anatolia', 'anatolia']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Amaseia', 'Amasya', 'amasya']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Tuscany', 'Tuscany', 'tuscany']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Ethiopia', 'Ethiopia', 'ethiopia']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [['Augustus', 'Augustus', 'augustus']]
+object_words:  [(None, 'Strabo', 'strabo')]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Corinth', 'Corinth', 'corinth']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Nile', 'Nile', 'nile']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Tiberius', 'Tiberius', 'tiberius']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Homer', 'Homer', 'homer']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Aristotle', 'Aristotle', 'aristotle']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Eratosthenes', 'Eratosthenes', 'eratosthenes']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Hipparchus', 'Hipparchus', 'hipparchus']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Euxine', 'Black Sea', 'black_sea']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Danube', 'Danube', 'danube']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['India', 'India', 'india']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Herodotus', 'Herodotus', 'herodotus']]
+subject_words:  [['Charles Lyell', 'Charles Lyell', 'sir_charles_lyell']]
+object_words:  [(None, 'Strabo', 'strabo')]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Nummulite', 'Nummulite', 'nummulite']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [['Pliny the Younger', 'Pliny the Younger', 'gaius_plinius_caecilius_secundus']]
+object_words:  [['Mount Vesuvius', 'Mount Vesuvius', 'mount_vesuvius']]
+subject_words:  [['Mount Vesuvius', 'Mount Vesuvius', 'mount_vesuvius']]
+object_words:  [['Pompeii', 'Pompeii', 'pompeii']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Venice', 'Venice', 'venice']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  [['Rhodes', 'Rhodes', 'rhodes']]
+subject_words:  [(None, 'Strabo', 'strabo')]
+object_words:  []
+third_hop:  {'triplet': '("Strabo", "commented on", "Nummulite")', 'start word': 'Strabo', 'end word': 'Nummulite', 'source': {'name': 'Strabo', 'line': 23}, 'cpnet': {'start word': 'strabo', 'end word': 'nummulite'}}
+
+utils/question.py extract_hops(Nummulite, [], ['Napoleon', 'Elba', 'Strabo']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Nummulite_info.json file
+extract_info(Nummulite) Start.
+utils/preprocess.py extract_info(): Checking good links on Nummulite
+Foraminifera is Animal
+1 / 30 )  foraminiferan Foraminifera foraminifera
+Eocene is Geography
+2 / 30 )  Eocene Eocene eocene
+Miocene is Geography
+3 / 30 )  Miocene Miocene miocene
+Mediterranean Sea is Geography
+4 / 30 )  Mediterranean Mediterranean Sea mediterranean_sea
+Egypt is Geography
+5 / 30 )  Egypt Egypt egypt
+Pakistan is Geography
+6 / 30 )  Pakistan Pakistan pakistan
+Egyptian pyramids is Geography
+7 / 30 )  pyramids Egyptian pyramids egyptian_pyramids
+Sirenia is Animal
+8 / 30 )  Sirenio Sirenia sirenia
+extract_triplet(Nummulite)
+Got GPT's response. String length : 426
+subject_words:  [(None, 'Nummulite', 'nummulite')]
+object_words:  [['foraminiferan', 'Foraminifera', 'foraminifera']]
+subject_words:  [(None, 'Nummulite', 'nummulite')]
+object_words:  [['Eocene', 'Eocene', 'eocene'], ['Miocene', 'Miocene', 'miocene']]
+subject_words:  [(None, 'Nummulite', 'nummulite')]
+object_words:  [['Mediterranean', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [(None, 'Nummulite', 'nummulite')]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [(None, 'Nummulite', 'nummulite')]
+object_words:  [['Pakistan', 'Pakistan', 'pakistan']]
+subject_words:  []
+object_words:  []
+subject_words:  [['pyramids', 'Egyptian pyramids', 'egyptian_pyramids']]
+object_words:  [(None, 'Nummulite', 'nummulite')]
+subject_words:  [(None, 'Nummulite', 'nummulite')]
+object_words:  [['Sirenio', 'Sirenia', 'sirenia']]
+forth_hop:  {'triplet': '("Nummulite", "is a type of", "foraminiferan")', 'start word': 'Nummulite', 'end word': 'Foraminifera', 'source': {'name': 'Nummulite', 'line': 1}, 'cpnet': {'start word': 'nummulite', 'end word': 'foraminifera'}}
+generate_question(4_4, ['("Napoleon", "was exiled to", "the island of Elba")', '("Strabo", "mentions", "Elba")', '("Strabo", "commented on", "Nummulite")', '("Nummulite", "is a type of", "foraminiferan")'], ['Elba', 'Strabo', 'Nummulite', 'Foraminifera'], [('Napoleon', 'Elba'), ('Elba', 'Strabo'), ('Strabo', 'Nummulite'), ('Nummulite', 'Foraminifera')], Foraminifera, [{'name': 'Napoleon', 'line': 14}, {'name': 'Elba', 'line': 14}, {'name': 'Strabo', 'line': 23}, {'name': 'Nummulite', 'line': 1}]) called
+GPT output is:  Q: What category of single-celled protists with a calcareous shell did the ancient geographer and philosopher who wrote about the island where Napoleon was exiled after his forced abdication comment on?
+A: Foraminifera
+final_choice(Foraminifera, options = 5) started
+[]
+entity_type(Foraminifera) called
+Foraminifera is Animal
+check_matchscore(Foraminifera, Bikont subphyla):  0.0
+choose_by_wiki_recur(Bikont subphyla)
+   Pages in Bikont subphyla: ['Endomyxa', 'Filosa', 'Foraminifera', 'Intramacronucleata', 'Postciliodesmatophora', 'Radiolaria', 'Trichozoa']
+      Radiolaria in ['Radiolaria', 'Intramacronucleata', 'Trichozoa', 'Postciliodesmatophora']
+Radiolaria is Animal
+      Intramacronucleata in ['Radiolaria', 'Intramacronucleata', 'Trichozoa', 'Postciliodesmatophora']
+Intramacronucleata is Animal
+      Trichozoa in ['Radiolaria', 'Intramacronucleata', 'Trichozoa', 'Postciliodesmatophora', 'Filosa']
+Trichozoa is Animal
+      Postciliodesmatophora in ['Radiolaria', 'Intramacronucleata', 'Trichozoa', 'Postciliodesmatophora', 'Filosa', 'Foraminifera']
+Postciliodesmatophora is Animal
+      Filosa in ['Radiolaria', 'Intramacronucleata', 'Trichozoa', 'Postciliodesmatophora', 'Filosa', 'Foraminifera', 'Endomyxa']
+Filosa is Animal
+      Foraminifera in ['Radiolaria', 'Intramacronucleata', 'Trichozoa', 'Postciliodesmatophora', 'Filosa', 'Foraminifera', 'Endomyxa']
+Foraminifera is Animal
+      Endomyxa in ['Radiolaria', 'Intramacronucleata', 'Trichozoa', 'Postciliodesmatophora', 'Filosa', 'Foraminifera', 'Endomyxa']
+Endomyxa is Animal
+   Upper category of Bikont subphyla: ['Bikont taxa by rank', 'Eukaryote subphyla']
+choose_by_wiki_recur(Bikont taxa by rank)
+check_matchscore(Foraminifera, Great Pyramid of Giza):  0.0
+choose_by_wiki_recur(Great Pyramid of Giza)
+   Pages in Great Pyramid of Giza: ['Great Pyramid of Giza', '4th Psychological Operations Group', '1303 Crete earthquake', 'The Archives of the Planet', 'Maud Gage Baum', 'Bembine Tablet', 'The Book of the Law', 'Giovanni Battista Caviglia', 'Nathaniel Davison', 'Waynman Dixon', 'Djedi Project', 'Foraminifera', 'Max Geller (provocateur)', 'Great Pyramid Monument', 'John Greaves', 'Hemiunu', 'Ibsen Year', 'Khufu ship', 'The Librarian: Quest for the Spear', "Al-Ma'mun", 'Sister M. T. Martin', 'Duke Maximilian Joseph in Bavaria', 'Talbot Mundy', 'Mysteries of the Unknown', 'Jessica Duncan Piazzi Smyth', 'The Pyramid (Kadare novel)', 'Pyramid inch', 'The Seven Wonders (Saylor novel)', 'Charles Piazzi Smyth', 'Studies in the Scriptures', 'Decimus Terentius Gentianus', 'Tomb Raider: The Last Revelation', 'Upuaut Project', 'Howard Vyse']
+      Talbot Mundy in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse']
+      Giovanni Battista Caviglia in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison']
+      Sister M. T. Martin in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake']
+      Howard Vyse in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth']
+      Nathaniel Davison in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship']
+      1303 Crete earthquake in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun"]
+      Jessica Duncan Piazzi Smyth in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet']
+      Khufu ship in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves']
+      Al-Ma'mun in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures']
+      The Archives of the Planet in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera']
+      John Greaves in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)']
+      Studies in the Scriptures in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus']
+      Foraminifera in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument']
+Foraminifera is Animal
+      Max Geller (provocateur) in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria']
+      Decimus Terentius Gentianus in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law']
+      Great Pyramid Monument in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project']
+      Duke Maximilian Joseph in Bavaria in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year']
+      The Book of the Law in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet']
+      Upuaut Project in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)']
+      Ibsen Year in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown']
+      Bembine Tablet in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project']
+      The Seven Wonders (Saylor novel) in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation']
+      Mysteries of the Unknown in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)']
+      Djedi Project in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum']
+      Tomb Raider: The Last Revelation in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear']
+      The Pyramid (Kadare novel) in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth']
+      Maud Gage Baum in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth', 'Waynman Dixon']
+      The Librarian: Quest for the Spear in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth', 'Waynman Dixon', 'Hemiunu']
+      Charles Piazzi Smyth in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth', 'Waynman Dixon', 'Hemiunu', '4th Psychological Operations Group']
+      Waynman Dixon in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth', 'Waynman Dixon', 'Hemiunu', '4th Psychological Operations Group', 'Pyramid inch']
+      Hemiunu in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth', 'Waynman Dixon', 'Hemiunu', '4th Psychological Operations Group', 'Pyramid inch', 'Great Pyramid of Giza']
+      4th Psychological Operations Group in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth', 'Waynman Dixon', 'Hemiunu', '4th Psychological Operations Group', 'Pyramid inch', 'Great Pyramid of Giza']
+      Pyramid inch in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth', 'Waynman Dixon', 'Hemiunu', '4th Psychological Operations Group', 'Pyramid inch', 'Great Pyramid of Giza']
+      Great Pyramid of Giza in ['Talbot Mundy', 'Giovanni Battista Caviglia', 'Sister M. T. Martin', 'Howard Vyse', 'Nathaniel Davison', '1303 Crete earthquake', 'Jessica Duncan Piazzi Smyth', 'Khufu ship', "Al-Ma'mun", 'The Archives of the Planet', 'John Greaves', 'Studies in the Scriptures', 'Foraminifera', 'Max Geller (provocateur)', 'Decimus Terentius Gentianus', 'Great Pyramid Monument', 'Duke Maximilian Joseph in Bavaria', 'The Book of the Law', 'Upuaut Project', 'Ibsen Year', 'Bembine Tablet', 'The Seven Wonders (Saylor novel)', 'Mysteries of the Unknown', 'Djedi Project', 'Tomb Raider: The Last Revelation', 'The Pyramid (Kadare novel)', 'Maud Gage Baum', 'The Librarian: Quest for the Spear', 'Charles Piazzi Smyth', 'Waynman Dixon', 'Hemiunu', '4th Psychological Operations Group', 'Pyramid inch', 'Great Pyramid of Giza']
+   Upper category of Great Pyramid of Giza: ['Buildings and structures completed in the 26th century BC', 'Buildings and structures in Giza', "Former world's tallest buildings", 'Giza pyramid complex', 'Khufu', 'Pyramids of the Fourth Dynasty of Egypt', 'Seven Wonders of the Ancient World', 'Tourist attractions in Egypt']
+choose_by_wiki_recur(Buildings and structures completed in the 26th century BC)
+check_matchscore(Foraminifera, Extant Cambrian first appearances):  0.0
+choose_by_wiki_recur(Extant Cambrian first appearances)
+   Pages in Extant Cambrian first appearances: ['Agnatha', 'Allogromiida', 'Annelid', 'Archaeogastropoda', 'Arthropod', 'Ascidiacea', 'Bivalvia', 'Brachiopod', 'Branchiopoda', 'Cephalopod', 'Chaetognatha', 'Chordate', 'Craniate', 'Crinozoa', 'Crustacean', 'Ctenophora', 'Discinida', 'Ecdysozoa', 'Echinoderm', 'Eleutherozoa', 'Entoprocta', 'Foraminifera', 'Gastropoda', 'Hemichordate', 'Hexactinellid', 'Jellyfish', 'Lingulata', 'Lingulida', 'Lophotrochozoa', 'Loricifera', 'Malacostraca', 'Medusozoa', 'Mollusca', 'Monoplacophora', 'Nautiloid', 'Nautiloidea', 'Panarthropoda', 'Pentastomida', 'Phyllocarida', 'Polychaete', 'Pseudotrochamminita', 'Radiolaria', 'Rhabdopleura', 'Sea pen', 'Sea spider', 'Sipuncula', 'Tardigrade', 'Textulariida', 'Tunicate', 'Vertebrate']
+      Sea pen in ['Sea pen', 'Annelid', 'Agnatha', 'Loricifera']
+Sea pen is Animal
+      Annelid in ['Sea pen', 'Annelid', 'Agnatha', 'Loricifera']
+Annelid is Animal
+      Agnatha in ['Sea pen', 'Annelid', 'Agnatha', 'Loricifera']
+Agnatha is Animal
+      Loricifera in ['Sea pen', 'Annelid', 'Agnatha', 'Loricifera']
+Loricifera is Animal
+['Radiolaria', 'Filosa', 'Endomyxa', 'Sea pen', 'Annelid', 'Agnatha', 'Loricifera']
+Ended after 2.5 hierarchy
+(2.5, ['Loricifera', 'Radiolaria', 'Filosa', 'Agnatha', 'Sea pen', 'Annelid', 'Endomyxa'])
+
+extract_info(Cercozoa) Start.
+utils/preprocess.py extract_info(): Checking good links on Cercozoa
+Eukaryote is Animal
+1 / 30 )  eukaryotes Eukaryote eukaryote
+Rhizaria is Animal
+2 / 30 )  Rhizaria Rhizaria rhizaria
+Cercomonad is Animal
+3 / 30 )  Cercomonas Cercomonad cercomonad
+Alphaproteobacteria is Animal
+4 / 30 )  alphaproteobacteria Alphaproteobacteria alphaproteobacteria
+Betaproteobacteria is Animal
+5 / 30 )  betaproteobacteria Betaproteobacteria betaproteobacteria
+Gammaproteobacteria is Animal
+6 / 30 )  gammaproteobacteria Gammaproteobacteria gammaproteobacteria
+Endomyxa is Animal
+7 / 30 )  Endomyxa Endomyxa endomyxa
+Foraminifera is Animal
+8 / 30 )  Foraminifera Foraminifera foraminifera
+Radiolaria is Animal
+9 / 30 )  Radiolaria Radiolaria radiolaria
+Polycystine is Animal
+10 / 30 )  Polycystinea Polycystine polycystine
+Acantharea is Animal
+11 / 30 )  Acantharea Acantharea acantharea
+Metromonadea  is Animal
+12 / 30 )  Metromonadea Metromonadea  filosa
+Chlorarachniophyte is Animal
+13 / 30 )  Chlorarachnea Chlorarachniophyte chlorarachniophyte
+Skiomonadea  is Animal
+14 / 30 )  Skiomonadea Skiomonadea  filosa
+extract_triplet(Cercozoa)
+Got GPT's response. String length : 2127
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  [['eukaryotes', 'Eukaryote', 'eukaryote']]
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  []
+object_words:  [['Rhizaria', 'Rhizaria', 'rhizaria']]
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [['Cercomonas', 'Cercomonad', 'cercomonad']]
+object_words:  []
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [['Cercomonas', 'Cercomonad', 'cercomonad']]
+object_words:  [(None, 'Cercozoa', 'cercozoa')]
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  [['alphaproteobacteria', 'Alphaproteobacteria', 'alphaproteobacteria'], ['betaproteobacteria', 'Betaproteobacteria', 'betaproteobacteria']]
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  [['gammaproteobacteria', 'Gammaproteobacteria', 'gammaproteobacteria']]
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  [['Endomyxa', 'Endomyxa', 'endomyxa']]
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [(None, 'Cercozoa', 'cercozoa')]
+object_words:  []
+subject_words:  [['Endomyxa', 'Endomyxa', 'endomyxa']]
+object_words:  [(None, 'Cercozoa', 'cercozoa')]
+subject_words:  []
+object_words:  [(None, 'Cercozoa', 'cercozoa')]
+subject_words:  []
+object_words:  [(None, 'Cercozoa', 'cercozoa')]
+subject_words:  [['Metromonadea', 'Metromonadea ', 'filosa']]
+object_words:  []
+subject_words:  [['Chlorarachnea', 'Chlorarachniophyte', 'chlorarachniophyte']]
+object_words:  []
+subject_words:  [['Skiomonadea', 'Skiomonadea ', 'filosa']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Cercozoa', 'cercozoa')]
+subject_words:  [['Chlorarachnea', 'Chlorarachniophyte', 'chlorarachniophyte']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Skiomonadea', 'Skiomonadea ', 'filosa']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Cercozoa', 'cercozoa')]
+subject_words:  []
+object_words:  []
+subject_words:  [['Metromonadea', 'Metromonadea ', 'filosa']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+extract_info(Endomyxa) Start.
+utils/preprocess.py extract_info(): Checking good links on Endomyxa
+Rhizaria is Animal
+1 / 30 )  Rhizaria Rhizaria rhizaria
+Cercozoa is Animal
+2 / 30 )  Cercozoa Cercozoa cercozoa
+extract_triplet(Endomyxa)
+Got GPT's response. String length : 223
+subject_words:  [(None, 'Endomyxa', 'endomyxa')]
+object_words:  []
+subject_words:  [(None, 'Endomyxa', 'endomyxa')]
+object_words:  [['Rhizaria', 'Rhizaria', 'rhizaria']]
+subject_words:  [(None, 'Endomyxa', 'endomyxa')]
+object_words:  [['Cercozoa', 'Cercozoa', 'cercozoa']]
+subject_words:  [(None, 'Endomyxa', 'endomyxa')]
+object_words:  []
+extract_info(Loricifera) Start.
+utils/preprocess.py extract_info(): Checking good links on Loricifera
+Cycloneuralia is Animal
+1 / 30 )  cycloneuralian Cycloneuralia cycloneuralia
+Roscoff is Geography
+2 / 30 )  Roscoff Roscoff roscoff
+France is Geography
+3 / 30 )  France France france
+Priapulida is Animal
+4 / 30 )  Priapulida Priapulida priapulida
+Kinorhyncha is Animal
+5 / 30 )  Kinorhyncha Kinorhyncha kinorhyncha
+Scalidophora is Animal
+6 / 30 )  Scalidophora Scalidophora scalidophoran
+Scalid  is Animal
+7 / 30 )  scalids Scalid  loriciferan
+Panarthropoda is Animal
+8 / 30 )  Panarthropoda Panarthropoda panarthropoda
+Ecdysozoa is Animal
+9 / 30 )  Ecdysozoa Ecdysozoa ecdysozoa
+Cambrian is Geography
+10 / 30 )  Cambrian Cambrian cambrian
+Mediterranean Sea is Geography
+11 / 30 )  Mediterranean Sea Mediterranean Sea mediterranean_sea
+wikispecies:Loricifera is Animal
+12 / 30 )  Loricifera wikispecies:Loricifera loriciferan
+extract_triplet(Loricifera)
+Got GPT's response. String length : 632
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  [['cycloneuralian', 'Cycloneuralia', 'cycloneuralia']]
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  [['France', 'France', 'france']]
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  [['Scalidophora', 'Scalidophora', 'scalidophoran']]
+subject_words:  [['Scalidophora', 'Scalidophora', 'scalidophoran']]
+object_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+subject_words:  [['Scalidophora', 'Scalidophora', 'scalidophoran']]
+object_words:  [['Priapulida', 'Priapulida', 'priapulida']]
+subject_words:  [['Scalidophora', 'Scalidophora', 'scalidophoran']]
+object_words:  [['Kinorhyncha', 'Kinorhyncha', 'kinorhyncha']]
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  []
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  [['scalids', 'Scalid ', 'loriciferan']]
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  [['Ecdysozoa', 'Ecdysozoa', 'ecdysozoa']]
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  [['Cambrian', 'Cambrian', 'cambrian']]
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  [['Mediterranean Sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [(None, 'Loricifera', 'loricifera'), ['Loricifera', 'wikispecies:Loricifera', 'loriciferan']]
+object_words:  [['Panarthropoda', 'Panarthropoda', 'panarthropoda']]
+extract_info(Agnatha) Start.
+utils/preprocess.py extract_info(): Checking good links on Agnatha
+Chordate is Animal
+1 / 30 )  Chordata Chordate chordate
+Vertebrate is Animal
+2 / 30 )  Vertebrata Vertebrate vertebrate
+Gnathostomata is Animal
+3 / 30 )  gnathostomes Gnathostomata gnathostomata
+Hagfish is Animal
+4 / 30 )  hagfishes Hagfish hagfish
+Lamprey is Animal
+5 / 30 )  lampreys Lamprey lamprey
+Cambrian is Geography
+6 / 30 )  Cambrian Cambrian cambrian
+Craniate is Animal
+7 / 30 )  Craniata Craniate craniate
+Carl Linnaeus is Geography
+8 / 30 )  Linnaeus Carl Linnaeus carl_linnaeus
+Osteostraci is Animal
+9 / 30 )  osteostracans Osteostraci osteostraci
+Paleozoic is Geography
+10 / 30 )  Paleozoic Paleozoic paleozoic
+China is Geography
+11 / 30 )  China China china
+Burgess Shale is Geography
+12 / 30 )  Burgess Shale Burgess Shale burgess_shale
+British Columbia is Geography
+13 / 30 )  British Columbia British Columbia british_columbia
+Conodont is Animal
+14 / 30 )  Conodonts Conodont conodont
+Triassic is Geography
+15 / 30 )  Triassic Triassic triassic
+Osteichthyes is Animal
+16 / 30 )  bony fish Osteichthyes osteichthyes
+Tetrapod is Animal
+17 / 30 )  tetrapods Tetrapod tetrapod
+Ordovician is Geography
+18 / 30 )  Ordovician Ordovician ordovician
+Silurian is Geography
+19 / 30 )  Silurian Silurian silurian
+Thelodonti is Animal
+20 / 30 )  thelodonts Thelodonti thelodont
+Galeaspida is Animal
+21 / 30 )  galeaspids Galeaspida galeaspid
+Devonian is Geography
+22 / 30 )  Devonian Devonian devonian
+Heterostraci is Animal
+23 / 30 )  Heterostraci Heterostraci heterostraci
+Anaspida is Animal
+24 / 30 )  Anaspida Anaspida anaspida
+Protopanderodontida  is Animal
+25 / 30 )  Protopanderodontida Protopanderodontida  conodonts
+Panderontida  is Animal
+26 / 30 )  Panderontida Panderontida  jawless_fish
+Lepidaspidiformes  is Animal
+27 / 30 )  Lepidaspidiformes Lepidaspidiformes  jawless_fish
+Pteraspidiformes is Animal
+28 / 30 )  Pteraspidiformes Pteraspidiformes pteraspid
+Huananaspidiformes  is Animal
+29 / 30 )  Huananaspidiformes Huananaspidiformes  galeaspid
+Polybranchiaspidiformes  is Animal
+30 / 30 )  Polybranchiaspidiformes Polybranchiaspidiformes  galeaspid
+extract_triplet(Agnatha)
+Got GPT's response. String length : 1736
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  []
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['Chordata', 'Chordate', 'chordate']]
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['Vertebrata', 'Vertebrate', 'vertebrate']]
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['Conodonts', 'Conodont', 'conodont']]
+subject_words:  []
+object_words:  [['gnathostomes', 'Gnathostomata', 'gnathostomata']]
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['hagfishes', 'Hagfish', 'hagfish'], ['lampreys', 'Lamprey', 'lamprey']]
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['Cambrian', 'Cambrian', 'cambrian']]
+subject_words:  [['Craniata', 'Craniate', 'craniate']]
+object_words:  [['Linnaeus', 'Carl Linnaeus', 'carl_linnaeus']]
+subject_words:  [['hagfishes', 'Hagfish', 'hagfish']]
+object_words:  [['Vertebrata', 'Vertebrate', 'vertebrate']]
+subject_words:  [['hagfishes', 'Hagfish', 'hagfish']]
+object_words:  []
+subject_words:  [['hagfishes', 'Hagfish', 'hagfish']]
+object_words:  [['lampreys', 'Lamprey', 'lamprey']]
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  []
+subject_words:  [['lampreys', 'Lamprey', 'lamprey']]
+object_words:  []
+subject_words:  [['hagfishes', 'Hagfish', 'hagfish']]
+object_words:  []
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  []
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  []
+subject_words:  [['lampreys', 'Lamprey', 'lamprey']]
+object_words:  []
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  []
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  []
+subject_words:  [['hagfishes', 'Hagfish', 'hagfish']]
+object_words:  []
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  []
+subject_words:  [['osteostracans', 'Osteostraci', 'osteostraci']]
+object_words:  []
+subject_words:  [['lampreys', 'Lamprey', 'lamprey']]
+object_words:  []
+subject_words:  [['hagfishes', 'Hagfish', 'hagfish']]
+object_words:  []
+subject_words:  [['lampreys', 'Lamprey', 'lamprey']]
+object_words:  []
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['Paleozoic', 'Paleozoic', 'paleozoic']]
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['China', 'China', 'china'], ['British Columbia', 'British Columbia', 'british_columbia']]
+subject_words:  [['Conodonts', 'Conodont', 'conodont']]
+object_words:  [['Cambrian', 'Cambrian', 'cambrian'], ['Triassic', 'Triassic', 'triassic']]
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['Ordovician', 'Ordovician', 'ordovician']]
+subject_words:  [(None, 'Agnatha', 'agnatha')]
+object_words:  [['Devonian', 'Devonian', 'devonian']]
+subject_words:  []
+object_words:  []
+['("Napoleon", "was exiled to", "the island of Elba")\n', '("Strabo", "mentions", "Elba")\n', '("Strabo", "commented on", "Nummulite")\n', '("Nummulite", "is a type of", "foraminiferan")\n']
+
+['("Napoleon", "was a French emperor", "and military commander")\n', '("Napoleon", "initiated enduring reforms", "in France")\n', '("Napoleon", "was born on", "the island of Corsica")\n', '("Napoleon", "supported the", "French Revolution")\n', '("Napoleon", "began military campaign against", "the Austrians and their Italian allies")\n', '("Napoleon", "led a military expedition to", "Egypt")\n', '("Napoleon", "became First Consul of", "the Republic")\n', '("Napoleon", "crowned himself", "Emperor of the French")\n', '("Napoleon", "shattered the War of the Third Coalition with victories at", "the Battle of Austerlitz")\n', '("Napoleon", "defeated Prussia at", "the battles of Jena and Auerstedt")\n', '("Napoleon", "triumphed at", "the Battle of Wagram")\n', '("Napoleon", "invaded", "the Iberian Peninsula")\n', '("Napoleon", "was defeated at", "the Battle of Leipzig")\n', '("Napoleon", "was defeated at", "the Battle of Waterloo")\n', '("Napoleon", "was exiled to", "the remote island of Saint Helena")\n', '("Napoleon", "sold the Louisiana Territory to", "the United States")\n', '("Napoleon\'s family", "was of", "Italian origin")\n', '("Napoleon\'s ancestors, the Buonapartes", "emigrated to Corsica from", "a minor Tuscan noble family")\n', '("Napoleon\'s maternal ancestors, the Ramolinos", "descended from", "a noble family from Lombardy")\n', '("Napoleon\'s parents", "maintained a home in", "Ajaccio")\n', '("Napoleon", "was baptized as a Catholic", "under the name Napoleone di Buonaparte")\n', '("Napoleon", "obtained a royal bursary to a military academy in", "France")\n', '("Napoleon", "moved to the French mainland and enrolled at a religious school in", "Autun")\n', '("Napoleon", "transferred to the military academy at", "Brienne-le-Château")\n', '("Napoleon", "was admitted to the École militaire in", "Paris")\n', '("Napoleon", "was commissioned a second lieutenant in", "La Fère artillery regiment")\n', '("Napoleon", "promoted the French revolutionary cause in", "Corsica")\n', '("Napoleon", "was promoted to captain in the regular army in", "1792")\n', '("Napoleon", "took part in a failed expedition to invade", "Sardinia")\n', '("Napoleon", "became artillery commander of the republican forces sent to recapture", "Toulon")\n', '("Napoleon", "was appointed artillery commander of", "the Army of Italy")\n', '("Napoleon", "took part in an expedition to take back Corsica from", "the British")\n', '("Napoleon", "was asked to draw up plans to attack Italian positions as part of", "France\'s war with Austria")\n', '("Napoleon", "was removed from the list of generals in regular service for refusing to serve in", "the Vendée campaign")\n', '("Napoleon", "sought a transfer to", "Constantinople")\n', '("Napoleon", "fired on the rebels with canister rounds during", "13 Vendémiaire")\n', '("Napoleon", "was promoted to commander of", "the Army of the Interior")\n', '("Napoleon", "was appointed head of", "the Army of Italy")\n', '("Napoleon", "made another attempt at crossing the Danube during", "the Battle of Wagram")\n', '("Napoleon", "introduced the baccalaureate in", "the French educational system")\n', '("Napoleon\'s", "health continued to worsen and he was confined to bed in", "March 1821")\n', '("Napoleon", "died on", "5 May 1821")\n', '("Elba", "is a Mediterranean island in", "Tuscany, Italy")\n', '("Elba", "is the largest island of the", "Tuscan Archipelago")\n', '("Elba", "is the third largest island in", "Italy")\n', '("Elba", "is located in the", "Tyrrhenian Sea")\n', '("Elba", "is east of", "Corsica")\n', '("Elba", "is part of the province of", "Livorno")\n', '("Portoferraio", "is the island\'s principal town of", "Elba")\n', '("Napoleon", "was exiled to", "Elba")\n', '("Elba", "went through the", "Alpine orogeny")\n', '("Elba", "went through the", "Apennine orogeny")\n', '("Mount Capanne", "is located on", "Elba")\n', '("mouflon", "flourishes on", "Elba")\n', '("wild boar", "flourishes on", "Elba")\n', '("Philip II of Spain", "had two fortresses built on", "Elba")\n', '("Elba", "was protected by the", "British")\n', '("Elba", "was handed over to Cosimo I de\' Medici by", "Spain")\n', '("Elba", "is connected to the mainland via ferry companies", "Toremar, Moby Lines, Blunavy, and Sardinia Ferries")\n', '("Marina di Campo Airport", "serves", "Elba")\n', '("Elba football team", "is a member of", "ConIFA")\n', '("Elba football team", "played their first game against", "Sicily Football Team")\n', '("Strabo", "lived in", "Asia Minor")\n', '("Strabo", "was born in", "Amaseia")\n', '("Strabo\'s family", "supported", "Mithridates VI")\n', '("Strabo", "traveled to", "Egypt")\n', '("Strabo", "traveled to", "Kush")\n', '("Strabo", "traveled to", "Tuscany")\n', '("Strabo", "traveled to", "Ethiopia")\n', '("Strabo", "spent time in", "Rome")\n', '("Strabo", "studied and wrote in", "Rome")\n', '("Augustus", "enjoyed relative peace throughout the reign of", "Strabo")\n', '("Strabo", "visited", "Corinth")\n', '("Strabo", "sailed up the", "Nile")\n', '("Geography by Strabo", "written during the reign of", "Tiberius")\n', '("Strabo", "was influenced by", "Homer")\n', '("Strabo", "was influenced by", "Aristotle")\n', '("Strabo", "referenced", "Eratosthenes")\n', '("Strabo", "referenced", "Hipparchus")\n', '("Strabo", "mentions", "Euxine")\n', '("Strabo", "connected the", "Danube")\n', '("Strabo", "described", "India")\n', '("Strabo", "cited", "Herodotus")\n', '("Charles Lyell", "wrote about", "Strabo")\n', '("Strabo", "observed volcanism in", "Katakekaumene")\n', '("Pliny the Younger", "witnessed the eruption of", "Mount Vesuvius")\n', '("Mount Vesuvius", "erupted and affected", "Pompeii")\n', '("Strabo", "education included studying with", "Aristodemus in Nysa")\n', '("Strabo", "education included studying with", "Xenarchus in Rome")\n', '("Strabo", "education included studying with", "Tyrannion in Rome")\n', '("Strabo", "education included studying with", "Athenodorus in Rome")\n', '("Strabo", "wrote", "Historical Sketches")\n', '("Strabo", "worked on Geography for many years", "")\n', '("Geographica by Strabo", "survived throughout", "the Byzantine Empire")\n', '("Geographica by Strabo", "first appeared in", "Western Europe")\n', '("Geographica by Strabo", "first printed edition published in", "Venice")\n', '("Geographica by Strabo", "provides information about", "Europe and the Mediterranean")\n', '("Strabo", "travelled to", "Rhodes")\n', '("Strabo\'s Geography", "describes", "Alexandria")\n', '("Nummulite", "common from", "Eocene to Miocene")\n', '("Nummulite", "rocks found in", "Mediterranean")\n', '("Nummulite", "limestones found in", "Egypt")\n', '("Nummulite", "fossils found in", "Pakistan")\n', '("Egyptians", "used nummulite shells as", "coins")\n', '("Pyramids", "constructed with limestone containing", "nummulites")\n', '("Nummulites tavertetensis", "date the oldest remains of", "Sirenio")\n', '("Cercozoa", "is a phylum of", "diverse single-celled eukaryotes")\n', '("Cercozoa", "are united by molecular phylogenies of", "rRNA")\n', '("Cercozoa", "are the natural predators of", "bacteria")\n', '("Cercozoa", "is closely related to the phylum", "Retaria")\n', '("Retaria", "and Cercozoa form the supergroup", "Rhizaria")\n', '("Cercozoa", "includes", "filose amoebae with shells")\n', '("Cercozoa", "includes", "Gromia")\n', '("Cercomonas", "are common soil-dwelling", "amoeboflagellates")\n', '("Cercozoa", "includes", "Chlorarachniophytes")\n', '("Cercozoa", "comprises one of the dominant groups of protozoa in", "soil")\n', '("Cercomonas", "are strongly coprophilic examples of", "Cercozoa")\n', '("Cercozoa", "predation causes shifts in", "bacterial communities")\n', '("Cercozoa", "reduce populations of", "alphaproteobacteria and betaproteobacteria")\n', '("Cercozoa", "predation favors populations of", "gammaproteobacteria")\n', '("Cercozoa", "contained both", "Filosa and Endomyxa")\n', '("Cercozoa", "is the sister group of", "Retaria")\n', '("Cercozoa", "became a synonym of", "Filosa")\n', '("Endomyxa", "was excluded from", "Cercozoa")\n', '("Filosa", "equals", "Cercozoa")\n', '("Monadofilosa", "is a subphylum of", "Cercozoa")\n', '("Metromonadea", "is the deepest branching group in", "Monadofilosa")\n', '("Chlorarachnea", "is the sister group of", "Monadofilosa")\n', '("Skiomonadea", "is classified within", "Reticulofilosa")\n', '("Reticulofilosa", "is a subphylum of", "Cercozoa")\n', '("Chlorarachnea", "is a class within", "Reticulofilosa")\n', '("Granofilosea", "is a class within", "Reticulofilosa")\n', '("Skiomonadea", "is a class within", "Reticulofilosa")\n', '("Monadofilosa", "is a subphylum of", "Cercozoa")\n', '("Eoglissa", "is a superclass within", "Monadofilosa")\n', '("Metromonadea", "is a class within", "Monadofilosa")\n', '("Helkesea", "is a class within", "Eoglissa")\n', '("Ventrifilosa", "is a superclass within", "Monadofilosa")\n', '("Sarcomonadea", "is a class within", "Ventrifilosa")\n', '("Imbricatea", "is a class within", "Ventrifilosa")\n', '("Thecofilosea", "is a class within", "Ventrifilosa")\n', '("Endomyxa", "is a group of", "eukaryotic organisms")\n', '("Endomyxa", "belongs to the supergroup", "Rhizaria")\n', '("Endomyxa", "was initially a subphylum of", "Cercozoa")\n', '("Endomyxa", "is currently regarded as its own", "phylum")\n', '("Loricifera", "is a phylum of", "marine cycloneuralian sediment-dwelling animals")\n', '("Loricifera", "was discovered near", "Roscoff, France")\n', '("Loricifera", "is related to the taxon", "Scalidophora")\n', '("Scalidophora", "includes", "Loricifera")\n', '("Scalidophora", "comprises", "Priapulida")\n', '("Scalidophora", "contains", "Kinorhyncha")\n', '("Loricifera", "has an armor-like", "lorica")\n', '("Loricifera", "features", "scalids")\n', '("Loricifera", "is part of", "Ecdysozoa")\n', '("Loricifera", "existed since the", "Cambrian period")\n', '("Loricifera species", "were found in", "the Mediterranean Sea")\n', '("Loricifera", "share characters with", "Panarthropoda")\n', '("Agnatha", "is an infraphylum of", "jawless fish")\n', '("Agnatha", "belongs to the phylum", "Chordata")\n', '("Agnatha", "belongs to the subphylum", "Vertebrata")\n', '("Agnatha", "consists of both living and extinct species such as", "cyclostomes and conodonts")\n', '("Cyclostomes", "are sister to", "gnathostomes")\n', '("Living agnathans", "include", "hagfishes and lampreys")\n', '("Fossils of agnathans", "appeared in the", "Cambrian period")\n', '("Craniata", "was created by", "Linnaeus")\n', '("Hagfish", "are considered members of", "Vertebrata")\n', '("Hagfish", "lost vertebrae", "secondarily")\n', '("Hagfish", "are more closely related to", "lampreys")\n', '("Agnathans", "are", "ectothermic")\n', '("Lampreys", "feed on", "other fish and mammals")\n', '("Hagfish", "are", "scavengers")\n', '("Agnathans", "have teeth that are unable to move", "up and down")\n', '("Modern Agnatha", "lack", "paired fins")\n', '("Lampreys", "have a", "light sensitive pineal eye")\n', '("Agnathans", "do not have", "parental care")\n', '("Agnathans", "have a", "cartilaginous skeleton")\n', '("Hagfish skin", "has", "copious slime glands")\n', '("Extinct agnathans", "had exoskeletons composed of", "heavy dermal armour or small mineralized scales")\n', '("Osteostracans", "had", "paired fins")\n', '("Fertilization in lampreys", "is", "external")\n', '("Reproduction mode in hagfishes", "is", "not known")\n', '("Lampreys", "reproduce in", "freshwater riverbeds")\n', '("Early agnathans", "were prominent among the early fish in the", "Paleozoic")\n', '("Early agnathan fossils", "found in", "China and British Columbia")\n', '("Conodonts", "existed from the", "Cambrian to the Triassic")\n', '("Armored agnathans", "known from the", "Ordovician")\n', '("Agnathans", "declined in the", "Devonian")\n', '("Jawless vertebrates\' AIS", "is based on", "variable lymphocyte receptors (VLRs)")\n']
+range(1, 193) 4
+['("Napoleon", "was exiled to", "the island of Elba")\n', '("Strabo", "mentions", "Elba")\n', '("Strabo", "commented on", "Nummulite")\n', '("Nummulite", "is a type of", "foraminiferan")\n']
+
+['("Napoleon", "was a French emperor", "and military commander")\n', '("Napoleon", "initiated enduring reforms", "in France")\n', '("Napoleon", "was born on", "the island of Corsica")\n', '("Napoleon", "supported the", "French Revolution")\n', '("Napoleon", "began military campaign against", "the Austrians and their Italian allies")\n', '("Napoleon", "led a military expedition to", "Egypt")\n', '("Napoleon", "became First Consul of", "the Republic")\n', '("Napoleon", "crowned himself", "Emperor of the French")\n', '("Napoleon", "shattered the War of the Third Coalition with victories at", "the Battle of Austerlitz")\n', '("Napoleon", "defeated Prussia at", "the battles of Jena and Auerstedt")\n', '("Napoleon", "triumphed at", "the Battle of Wagram")\n', '("Napoleon", "invaded", "the Iberian Peninsula")\n', '("Napoleon", "was defeated at", "the Battle of Leipzig")\n', '("Napoleon", "was defeated at", "the Battle of Waterloo")\n', '("Napoleon", "was exiled to", "the remote island of Saint Helena")\n', '("Napoleon", "sold the Louisiana Territory to", "the United States")\n', '("Napoleon\'s family", "was of", "Italian origin")\n', '("Napoleon\'s ancestors, the Buonapartes", "emigrated to Corsica from", "a minor Tuscan noble family")\n', '("Napoleon\'s maternal ancestors, the Ramolinos", "descended from", "a noble family from Lombardy")\n', '("Napoleon\'s parents", "maintained a home in", "Ajaccio")\n', '("Napoleon", "was baptized as a Catholic", "under the name Napoleone di Buonaparte")\n', '("Napoleon", "obtained a royal bursary to a military academy in", "France")\n', '("Napoleon", "moved to the French mainland and enrolled at a religious school in", "Autun")\n', '("Napoleon", "transferred to the military academy at", "Brienne-le-Château")\n', '("Napoleon", "was admitted to the École militaire in", "Paris")\n', '("Napoleon", "was commissioned a second lieutenant in", "La Fère artillery regiment")\n', '("Napoleon", "promoted the French revolutionary cause in", "Corsica")\n', '("Napoleon", "was promoted to captain in the regular army in", "1792")\n', '("Napoleon", "took part in a failed expedition to invade", "Sardinia")\n', '("Napoleon", "became artillery commander of the republican forces sent to recapture", "Toulon")\n', '("Napoleon", "was appointed artillery commander of", "the Army of Italy")\n', '("Napoleon", "took part in an expedition to take back Corsica from", "the British")\n', '("Napoleon", "was asked to draw up plans to attack Italian positions as part of", "France\'s war with Austria")\n', '("Napoleon", "was removed from the list of generals in regular service for refusing to serve in", "the Vendée campaign")\n', '("Napoleon", "sought a transfer to", "Constantinople")\n', '("Napoleon", "fired on the rebels with canister rounds during", "13 Vendémiaire")\n', '("Napoleon", "was promoted to commander of", "the Army of the Interior")\n', '("Napoleon", "was appointed head of", "the Army of Italy")\n', '("Napoleon", "made another attempt at crossing the Danube during", "the Battle of Wagram")\n', '("Napoleon", "introduced the baccalaureate in", "the French educational system")\n', '("Napoleon\'s", "health continued to worsen and he was confined to bed in", "March 1821")\n', '("Napoleon", "died on", "5 May 1821")\n', '("Elba", "is a Mediterranean island in", "Tuscany, Italy")\n', '("Elba", "is the largest island of the", "Tuscan Archipelago")\n', '("Elba", "is the third largest island in", "Italy")\n', '("Elba", "is located in the", "Tyrrhenian Sea")\n', '("Elba", "is east of", "Corsica")\n', '("Elba", "is part of the province of", "Livorno")\n', '("Portoferraio", "is the island\'s principal town of", "Elba")\n', '("Napoleon", "was exiled to", "Elba")\n', '("Elba", "went through the", "Alpine orogeny")\n', '("Elba", "went through the", "Apennine orogeny")\n', '("Mount Capanne", "is located on", "Elba")\n', '("mouflon", "flourishes on", "Elba")\n', '("wild boar", "flourishes on", "Elba")\n', '("Philip II of Spain", "had two fortresses built on", "Elba")\n', '("Elba", "was protected by the", "British")\n', '("Elba", "was handed over to Cosimo I de\' Medici by", "Spain")\n', '("Elba", "is connected to the mainland via ferry companies", "Toremar, Moby Lines, Blunavy, and Sardinia Ferries")\n', '("Marina di Campo Airport", "serves", "Elba")\n', '("Elba football team", "is a member of", "ConIFA")\n', '("Elba football team", "played their first game against", "Sicily Football Team")\n', '("Strabo", "lived in", "Asia Minor")\n', '("Strabo", "was born in", "Amaseia")\n', '("Strabo\'s family", "supported", "Mithridates VI")\n', '("Strabo", "traveled to", "Egypt")\n', '("Strabo", "traveled to", "Kush")\n', '("Strabo", "traveled to", "Tuscany")\n', '("Strabo", "traveled to", "Ethiopia")\n', '("Strabo", "spent time in", "Rome")\n', '("Strabo", "studied and wrote in", "Rome")\n', '("Augustus", "enjoyed relative peace throughout the reign of", "Strabo")\n', '("Strabo", "visited", "Corinth")\n', '("Strabo", "sailed up the", "Nile")\n', '("Geography by Strabo", "written during the reign of", "Tiberius")\n', '("Strabo", "was influenced by", "Homer")\n', '("Strabo", "was influenced by", "Aristotle")\n', '("Strabo", "referenced", "Eratosthenes")\n', '("Strabo", "referenced", "Hipparchus")\n', '("Strabo", "mentions", "Euxine")\n', '("Strabo", "connected the", "Danube")\n', '("Strabo", "described", "India")\n', '("Strabo", "cited", "Herodotus")\n', '("Charles Lyell", "wrote about", "Strabo")\n', '("Strabo", "observed volcanism in", "Katakekaumene")\n', '("Pliny the Younger", "witnessed the eruption of", "Mount Vesuvius")\n', '("Mount Vesuvius", "erupted and affected", "Pompeii")\n', '("Strabo", "education included studying with", "Aristodemus in Nysa")\n', '("Strabo", "education included studying with", "Xenarchus in Rome")\n', '("Strabo", "education included studying with", "Tyrannion in Rome")\n', '("Strabo", "education included studying with", "Athenodorus in Rome")\n', '("Strabo", "wrote", "Historical Sketches")\n', '("Strabo", "worked on Geography for many years", "")\n', '("Geographica by Strabo", "survived throughout", "the Byzantine Empire")\n', '("Geographica by Strabo", "first appeared in", "Western Europe")\n', '("Geographica by Strabo", "first printed edition published in", "Venice")\n', '("Geographica by Strabo", "provides information about", "Europe and the Mediterranean")\n', '("Strabo", "travelled to", "Rhodes")\n', '("Strabo\'s Geography", "describes", "Alexandria")\n', '("Nummulite", "common from", "Eocene to Miocene")\n', '("Nummulite", "rocks found in", "Mediterranean")\n', '("Nummulite", "limestones found in", "Egypt")\n', '("Nummulite", "fossils found in", "Pakistan")\n', '("Egyptians", "used nummulite shells as", "coins")\n', '("Pyramids", "constructed with limestone containing", "nummulites")\n', '("Nummulites tavertetensis", "date the oldest remains of", "Sirenio")\n', '("Cercozoa", "is a phylum of", "diverse single-celled eukaryotes")\n', '("Cercozoa", "are united by molecular phylogenies of", "rRNA")\n', '("Cercozoa", "are the natural predators of", "bacteria")\n', '("Cercozoa", "is closely related to the phylum", "Retaria")\n', '("Retaria", "and Cercozoa form the supergroup", "Rhizaria")\n', '("Cercozoa", "includes", "filose amoebae with shells")\n', '("Cercozoa", "includes", "Gromia")\n', '("Cercomonas", "are common soil-dwelling", "amoeboflagellates")\n', '("Cercozoa", "includes", "Chlorarachniophytes")\n', '("Cercozoa", "comprises one of the dominant groups of protozoa in", "soil")\n', '("Cercomonas", "are strongly coprophilic examples of", "Cercozoa")\n', '("Cercozoa", "predation causes shifts in", "bacterial communities")\n', '("Cercozoa", "reduce populations of", "alphaproteobacteria and betaproteobacteria")\n', '("Cercozoa", "predation favors populations of", "gammaproteobacteria")\n', '("Cercozoa", "contained both", "Filosa and Endomyxa")\n', '("Cercozoa", "is the sister group of", "Retaria")\n', '("Cercozoa", "became a synonym of", "Filosa")\n', '("Endomyxa", "was excluded from", "Cercozoa")\n', '("Filosa", "equals", "Cercozoa")\n', '("Monadofilosa", "is a subphylum of", "Cercozoa")\n', '("Metromonadea", "is the deepest branching group in", "Monadofilosa")\n', '("Chlorarachnea", "is the sister group of", "Monadofilosa")\n', '("Skiomonadea", "is classified within", "Reticulofilosa")\n', '("Reticulofilosa", "is a subphylum of", "Cercozoa")\n', '("Chlorarachnea", "is a class within", "Reticulofilosa")\n', '("Granofilosea", "is a class within", "Reticulofilosa")\n', '("Skiomonadea", "is a class within", "Reticulofilosa")\n', '("Monadofilosa", "is a subphylum of", "Cercozoa")\n', '("Eoglissa", "is a superclass within", "Monadofilosa")\n', '("Metromonadea", "is a class within", "Monadofilosa")\n', '("Helkesea", "is a class within", "Eoglissa")\n', '("Ventrifilosa", "is a superclass within", "Monadofilosa")\n', '("Sarcomonadea", "is a class within", "Ventrifilosa")\n', '("Imbricatea", "is a class within", "Ventrifilosa")\n', '("Thecofilosea", "is a class within", "Ventrifilosa")\n', '("Endomyxa", "is a group of", "eukaryotic organisms")\n', '("Endomyxa", "belongs to the supergroup", "Rhizaria")\n', '("Endomyxa", "was initially a subphylum of", "Cercozoa")\n', '("Endomyxa", "is currently regarded as its own", "phylum")\n', '("Loricifera", "is a phylum of", "marine cycloneuralian sediment-dwelling animals")\n', '("Loricifera", "was discovered near", "Roscoff, France")\n', '("Loricifera", "is related to the taxon", "Scalidophora")\n', '("Scalidophora", "includes", "Loricifera")\n', '("Scalidophora", "comprises", "Priapulida")\n', '("Scalidophora", "contains", "Kinorhyncha")\n', '("Loricifera", "has an armor-like", "lorica")\n', '("Loricifera", "features", "scalids")\n', '("Loricifera", "is part of", "Ecdysozoa")\n', '("Loricifera", "existed since the", "Cambrian period")\n', '("Loricifera species", "were found in", "the Mediterranean Sea")\n', '("Loricifera", "share characters with", "Panarthropoda")\n', '("Agnatha", "is an infraphylum of", "jawless fish")\n', '("Agnatha", "belongs to the phylum", "Chordata")\n', '("Agnatha", "belongs to the subphylum", "Vertebrata")\n', '("Agnatha", "consists of both living and extinct species such as", "cyclostomes and conodonts")\n', '("Cyclostomes", "are sister to", "gnathostomes")\n', '("Living agnathans", "include", "hagfishes and lampreys")\n', '("Fossils of agnathans", "appeared in the", "Cambrian period")\n', '("Craniata", "was created by", "Linnaeus")\n', '("Hagfish", "are considered members of", "Vertebrata")\n', '("Hagfish", "lost vertebrae", "secondarily")\n', '("Hagfish", "are more closely related to", "lampreys")\n', '("Agnathans", "are", "ectothermic")\n', '("Lampreys", "feed on", "other fish and mammals")\n', '("Hagfish", "are", "scavengers")\n', '("Agnathans", "have teeth that are unable to move", "up and down")\n', '("Modern Agnatha", "lack", "paired fins")\n', '("Lampreys", "have a", "light sensitive pineal eye")\n', '("Agnathans", "do not have", "parental care")\n', '("Agnathans", "have a", "cartilaginous skeleton")\n', '("Hagfish skin", "has", "copious slime glands")\n', '("Extinct agnathans", "had exoskeletons composed of", "heavy dermal armour or small mineralized scales")\n', '("Osteostracans", "had", "paired fins")\n', '("Fertilization in lampreys", "is", "external")\n', '("Reproduction mode in hagfishes", "is", "not known")\n', '("Lampreys", "reproduce in", "freshwater riverbeds")\n', '("Early agnathans", "were prominent among the early fish in the", "Paleozoic")\n', '("Early agnathan fossils", "found in", "China and British Columbia")\n', '("Conodonts", "existed from the", "Cambrian to the Triassic")\n', '("Armored agnathans", "known from the", "Ordovician")\n', '("Agnathans", "declined in the", "Devonian")\n', '("Jawless vertebrates\' AIS", "is based on", "variable lymphocyte receptors (VLRs)")\n']
+range(1, 193) 4
+['("Napoleon", "was exiled to", "the island of Elba")\n', '("Strabo", "mentions", "Elba")\n', '("Strabo", "commented on", "Nummulite")\n', '("Nummulite", "is a type of", "foraminiferan")\n']
+
+['("Napoleon", "was a French emperor", "and military commander")\n', '("Napoleon", "initiated enduring reforms", "in France")\n', '("Napoleon", "was born on", "the island of Corsica")\n', '("Napoleon", "supported the", "French Revolution")\n', '("Napoleon", "began military campaign against", "the Austrians and their Italian allies")\n', '("Napoleon", "led a military expedition to", "Egypt")\n', '("Napoleon", "became First Consul of", "the Republic")\n', '("Napoleon", "crowned himself", "Emperor of the French")\n', '("Napoleon", "shattered the War of the Third Coalition with victories at", "the Battle of Austerlitz")\n', '("Napoleon", "defeated Prussia at", "the battles of Jena and Auerstedt")\n', '("Napoleon", "triumphed at", "the Battle of Wagram")\n', '("Napoleon", "invaded", "the Iberian Peninsula")\n', '("Napoleon", "was defeated at", "the Battle of Leipzig")\n', '("Napoleon", "was defeated at", "the Battle of Waterloo")\n', '("Napoleon", "was exiled to", "the remote island of Saint Helena")\n', '("Napoleon", "sold the Louisiana Territory to", "the United States")\n', '("Napoleon\'s family", "was of", "Italian origin")\n', '("Napoleon\'s ancestors, the Buonapartes", "emigrated to Corsica from", "a minor Tuscan noble family")\n', '("Napoleon\'s maternal ancestors, the Ramolinos", "descended from", "a noble family from Lombardy")\n', '("Napoleon\'s parents", "maintained a home in", "Ajaccio")\n', '("Napoleon", "was baptized as a Catholic", "under the name Napoleone di Buonaparte")\n', '("Napoleon", "obtained a royal bursary to a military academy in", "France")\n', '("Napoleon", "moved to the French mainland and enrolled at a religious school in", "Autun")\n', '("Napoleon", "transferred to the military academy at", "Brienne-le-Château")\n', '("Napoleon", "was admitted to the École militaire in", "Paris")\n', '("Napoleon", "was commissioned a second lieutenant in", "La Fère artillery regiment")\n', '("Napoleon", "promoted the French revolutionary cause in", "Corsica")\n', '("Napoleon", "was promoted to captain in the regular army in", "1792")\n', '("Napoleon", "took part in a failed expedition to invade", "Sardinia")\n', '("Napoleon", "became artillery commander of the republican forces sent to recapture", "Toulon")\n', '("Napoleon", "was appointed artillery commander of", "the Army of Italy")\n', '("Napoleon", "took part in an expedition to take back Corsica from", "the British")\n', '("Napoleon", "was asked to draw up plans to attack Italian positions as part of", "France\'s war with Austria")\n', '("Napoleon", "was removed from the list of generals in regular service for refusing to serve in", "the Vendée campaign")\n', '("Napoleon", "sought a transfer to", "Constantinople")\n', '("Napoleon", "fired on the rebels with canister rounds during", "13 Vendémiaire")\n', '("Napoleon", "was promoted to commander of", "the Army of the Interior")\n', '("Napoleon", "was appointed head of", "the Army of Italy")\n', '("Napoleon", "made another attempt at crossing the Danube during", "the Battle of Wagram")\n', '("Napoleon", "introduced the baccalaureate in", "the French educational system")\n', '("Napoleon\'s", "health continued to worsen and he was confined to bed in", "March 1821")\n', '("Napoleon", "died on", "5 May 1821")\n', '("Elba", "is a Mediterranean island in", "Tuscany, Italy")\n', '("Elba", "is the largest island of the", "Tuscan Archipelago")\n', '("Elba", "is the third largest island in", "Italy")\n', '("Elba", "is located in the", "Tyrrhenian Sea")\n', '("Elba", "is east of", "Corsica")\n', '("Elba", "is part of the province of", "Livorno")\n', '("Portoferraio", "is the island\'s principal town of", "Elba")\n', '("Napoleon", "was exiled to", "Elba")\n', '("Elba", "went through the", "Alpine orogeny")\n', '("Elba", "went through the", "Apennine orogeny")\n', '("Mount Capanne", "is located on", "Elba")\n', '("mouflon", "flourishes on", "Elba")\n', '("wild boar", "flourishes on", "Elba")\n', '("Philip II of Spain", "had two fortresses built on", "Elba")\n', '("Elba", "was protected by the", "British")\n', '("Elba", "was handed over to Cosimo I de\' Medici by", "Spain")\n', '("Elba", "is connected to the mainland via ferry companies", "Toremar, Moby Lines, Blunavy, and Sardinia Ferries")\n', '("Marina di Campo Airport", "serves", "Elba")\n', '("Elba football team", "is a member of", "ConIFA")\n', '("Elba football team", "played their first game against", "Sicily Football Team")\n', '("Strabo", "lived in", "Asia Minor")\n', '("Strabo", "was born in", "Amaseia")\n', '("Strabo\'s family", "supported", "Mithridates VI")\n', '("Strabo", "traveled to", "Egypt")\n', '("Strabo", "traveled to", "Kush")\n', '("Strabo", "traveled to", "Tuscany")\n', '("Strabo", "traveled to", "Ethiopia")\n', '("Strabo", "spent time in", "Rome")\n', '("Strabo", "studied and wrote in", "Rome")\n', '("Augustus", "enjoyed relative peace throughout the reign of", "Strabo")\n', '("Strabo", "visited", "Corinth")\n', '("Strabo", "sailed up the", "Nile")\n', '("Geography by Strabo", "written during the reign of", "Tiberius")\n', '("Strabo", "was influenced by", "Homer")\n', '("Strabo", "was influenced by", "Aristotle")\n', '("Strabo", "referenced", "Eratosthenes")\n', '("Strabo", "referenced", "Hipparchus")\n', '("Strabo", "mentions", "Euxine")\n', '("Strabo", "connected the", "Danube")\n', '("Strabo", "described", "India")\n', '("Strabo", "cited", "Herodotus")\n', '("Charles Lyell", "wrote about", "Strabo")\n', '("Strabo", "observed volcanism in", "Katakekaumene")\n', '("Pliny the Younger", "witnessed the eruption of", "Mount Vesuvius")\n', '("Mount Vesuvius", "erupted and affected", "Pompeii")\n', '("Strabo", "education included studying with", "Aristodemus in Nysa")\n', '("Strabo", "education included studying with", "Xenarchus in Rome")\n', '("Strabo", "education included studying with", "Tyrannion in Rome")\n', '("Strabo", "education included studying with", "Athenodorus in Rome")\n', '("Strabo", "wrote", "Historical Sketches")\n', '("Strabo", "worked on Geography for many years", "")\n', '("Geographica by Strabo", "survived throughout", "the Byzantine Empire")\n', '("Geographica by Strabo", "first appeared in", "Western Europe")\n', '("Geographica by Strabo", "first printed edition published in", "Venice")\n', '("Geographica by Strabo", "provides information about", "Europe and the Mediterranean")\n', '("Strabo", "travelled to", "Rhodes")\n', '("Strabo\'s Geography", "describes", "Alexandria")\n', '("Nummulite", "common from", "Eocene to Miocene")\n', '("Nummulite", "rocks found in", "Mediterranean")\n', '("Nummulite", "limestones found in", "Egypt")\n', '("Nummulite", "fossils found in", "Pakistan")\n', '("Egyptians", "used nummulite shells as", "coins")\n', '("Pyramids", "constructed with limestone containing", "nummulites")\n', '("Nummulites tavertetensis", "date the oldest remains of", "Sirenio")\n', '("Cercozoa", "is a phylum of", "diverse single-celled eukaryotes")\n', '("Cercozoa", "are united by molecular phylogenies of", "rRNA")\n', '("Cercozoa", "are the natural predators of", "bacteria")\n', '("Cercozoa", "is closely related to the phylum", "Retaria")\n', '("Retaria", "and Cercozoa form the supergroup", "Rhizaria")\n', '("Cercozoa", "includes", "filose amoebae with shells")\n', '("Cercozoa", "includes", "Gromia")\n', '("Cercomonas", "are common soil-dwelling", "amoeboflagellates")\n', '("Cercozoa", "includes", "Chlorarachniophytes")\n', '("Cercozoa", "comprises one of the dominant groups of protozoa in", "soil")\n', '("Cercomonas", "are strongly coprophilic examples of", "Cercozoa")\n', '("Cercozoa", "predation causes shifts in", "bacterial communities")\n', '("Cercozoa", "reduce populations of", "alphaproteobacteria and betaproteobacteria")\n', '("Cercozoa", "predation favors populations of", "gammaproteobacteria")\n', '("Cercozoa", "contained both", "Filosa and Endomyxa")\n', '("Cercozoa", "is the sister group of", "Retaria")\n', '("Cercozoa", "became a synonym of", "Filosa")\n', '("Endomyxa", "was excluded from", "Cercozoa")\n', '("Filosa", "equals", "Cercozoa")\n', '("Monadofilosa", "is a subphylum of", "Cercozoa")\n', '("Metromonadea", "is the deepest branching group in", "Monadofilosa")\n', '("Chlorarachnea", "is the sister group of", "Monadofilosa")\n', '("Skiomonadea", "is classified within", "Reticulofilosa")\n', '("Reticulofilosa", "is a subphylum of", "Cercozoa")\n', '("Chlorarachnea", "is a class within", "Reticulofilosa")\n', '("Granofilosea", "is a class within", "Reticulofilosa")\n', '("Skiomonadea", "is a class within", "Reticulofilosa")\n', '("Monadofilosa", "is a subphylum of", "Cercozoa")\n', '("Eoglissa", "is a superclass within", "Monadofilosa")\n', '("Metromonadea", "is a class within", "Monadofilosa")\n', '("Helkesea", "is a class within", "Eoglissa")\n', '("Ventrifilosa", "is a superclass within", "Monadofilosa")\n', '("Sarcomonadea", "is a class within", "Ventrifilosa")\n', '("Imbricatea", "is a class within", "Ventrifilosa")\n', '("Thecofilosea", "is a class within", "Ventrifilosa")\n', '("Endomyxa", "is a group of", "eukaryotic organisms")\n', '("Endomyxa", "belongs to the supergroup", "Rhizaria")\n', '("Endomyxa", "was initially a subphylum of", "Cercozoa")\n', '("Endomyxa", "is currently regarded as its own", "phylum")\n', '("Loricifera", "is a phylum of", "marine cycloneuralian sediment-dwelling animals")\n', '("Loricifera", "was discovered near", "Roscoff, France")\n', '("Loricifera", "is related to the taxon", "Scalidophora")\n', '("Scalidophora", "includes", "Loricifera")\n', '("Scalidophora", "comprises", "Priapulida")\n', '("Scalidophora", "contains", "Kinorhyncha")\n', '("Loricifera", "has an armor-like", "lorica")\n', '("Loricifera", "features", "scalids")\n', '("Loricifera", "is part of", "Ecdysozoa")\n', '("Loricifera", "existed since the", "Cambrian period")\n', '("Loricifera species", "were found in", "the Mediterranean Sea")\n', '("Loricifera", "share characters with", "Panarthropoda")\n', '("Agnatha", "is an infraphylum of", "jawless fish")\n', '("Agnatha", "belongs to the phylum", "Chordata")\n', '("Agnatha", "belongs to the subphylum", "Vertebrata")\n', '("Agnatha", "consists of both living and extinct species such as", "cyclostomes and conodonts")\n', '("Cyclostomes", "are sister to", "gnathostomes")\n', '("Living agnathans", "include", "hagfishes and lampreys")\n', '("Fossils of agnathans", "appeared in the", "Cambrian period")\n', '("Craniata", "was created by", "Linnaeus")\n', '("Hagfish", "are considered members of", "Vertebrata")\n', '("Hagfish", "lost vertebrae", "secondarily")\n', '("Hagfish", "are more closely related to", "lampreys")\n', '("Agnathans", "are", "ectothermic")\n', '("Lampreys", "feed on", "other fish and mammals")\n', '("Hagfish", "are", "scavengers")\n', '("Agnathans", "have teeth that are unable to move", "up and down")\n', '("Modern Agnatha", "lack", "paired fins")\n', '("Lampreys", "have a", "light sensitive pineal eye")\n', '("Agnathans", "do not have", "parental care")\n', '("Agnathans", "have a", "cartilaginous skeleton")\n', '("Hagfish skin", "has", "copious slime glands")\n', '("Extinct agnathans", "had exoskeletons composed of", "heavy dermal armour or small mineralized scales")\n', '("Osteostracans", "had", "paired fins")\n', '("Fertilization in lampreys", "is", "external")\n', '("Reproduction mode in hagfishes", "is", "not known")\n', '("Lampreys", "reproduce in", "freshwater riverbeds")\n', '("Early agnathans", "were prominent among the early fish in the", "Paleozoic")\n', '("Early agnathan fossils", "found in", "China and British Columbia")\n', '("Conodonts", "existed from the", "Cambrian to the Triassic")\n', '("Armored agnathans", "known from the", "Ordovician")\n', '("Agnathans", "declined in the", "Devonian")\n', '("Jawless vertebrates\' AIS", "is based on", "variable lymphocyte receptors (VLRs)")\n']
+range(1, 193) 4
+{'id': '4_4', 'Question': ' What category of single-celled protists with a calcareous shell did the ancient geographer and philosopher who wrote about the island where Napoleon was exiled after his forced abdication comment on?\n', 'Answer': 'Foraminifera', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Cercozoa'}, {'label': 'B', 'text': 'Endomyxa'}, {'label': 'C', 'text': 'Foraminifera'}, {'label': 'D', 'text': 'Loricifera'}, {'label': 'E', 'text': 'Agnatha'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'filosa'}, {'label': 'B', 'text': 'endomyxa'}, {'label': 'C', 'text': 'foraminifera'}, {'label': 'D', 'text': 'loricifera'}, {'label': 'E', 'text': 'agnatha'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Question_decompositions': ['1: To which island was Napoleon exiled following his forced abdication?\nA1: Elba\n\n', '2: Which ancient geographer and philosopher included an account of Elba in his writings?\nA2: Strabo\n\n', '3: On which large, coin-shaped fossil did Strabo comment in his historical and geographical work?\nA3: Nummulite\n\n', '4: Identifying this organism reveals it belongs to what category of single-celled protists with a calcareous shell?\nA4: Foraminifera'], 'Hops_wiki': [('Napoleon', 'Elba'), ('Elba', 'Strabo'), ('Strabo', 'Nummulite'), ('Nummulite', 'Foraminifera')], 'Hops_cpnet': [('napoleon', 'elba'), ('elba', 'strabo'), ('strabo', 'nummulite'), ('nummulite', 'foraminifera')], 'Triplets': ['("Napoleon", "was exiled to", "the island of Elba")', '("Strabo", "mentions", "Elba")', '("Strabo", "commented on", "Nummulite")', '("Nummulite", "is a type of", "foraminiferan")'], 'Referred_files': [{'name': 'Napoleon', 'line': 14}, {'name': 'Elba', 'line': 14}, {'name': 'Strabo', 'line': 23}, {'name': 'Nummulite', 'line': 1}], 'Question_triplet_answer': {100: [84, 129, 142, 190], 50: [41, 83, 110, 126], 25: [36, 56, 125, 169]}}
+time passed:  2097.8048264980316
+Expected dollar:  0.005
+Chlorarachnea is Animal
+Monadofilosa is Animal
+Loricifera is Animal
+Cambrian is Geography
+Corinth is Geography
+Reticulofilosa is Animal
+Cercozoa is Animal
+Mediterranean is Geography
+Egypt is Geography
+Craniata is Animal
+China is Geography
+British Columbia is Geography
+Napoleon is People
+Eocene to Miocene is Geography
+Osteostracans is Animal
+Herodotus is People
+the Battle of Leipzig is Geography
+Italy is Geography
+Danube is Geography
+the Battle of Wagram is Geography
+Katakekaumene is Geography
+Corsica is Geography
+Mount Vesuvius" is Geography
+Strabo's Geography is People
+Alexandria is Geography
+the Mediterranean Sea is Geography
+Aristotle is People
+Ventrifilosa is Animal
+Vertebrata is Animal
+Pakistan is Geography
+India is Geography
+Vendée is Geography
+Livorno is Geography
+France is Geography
+Austria is Geography
+Pliny the Younger is People
+Mount Vesuvius is Geography
+Retaria is Animal
+Rome is Geography
+La Fère is Geography
+Spain is Geography
+Triassic is Geography
+13 Vendémiaire is Geography
+Hipparchus is People
+Nummulites is Animal
+Jena is Geography
+Auerstedt is Geography
+Mount Capanne" is Geography
+Gromia is Animal
+Filosa is Animal
+Venice is Geography
+Charles Lyell is People
+Marina di Campo Airport is Geography
+Thecofilosea is Animal
+Tuscany is Geography
+Filosa and is Animal
+Endomyxa is Animal
+Eoglissa is Animal
+Scalidophora is Animal
+Kinorhyncha is Animal
+entities:  {'Vertebrata', 'La', 'Cercozoa', 'Mount', 'Eoglissa', 'Napoleon', 'Mediterranean', 'Gromia', 'Campo', 'Europe', 'Livorno', 'Cambrian', 'Egypt', 'Vesuvius', 'Corinth', 'Loricifera', 'Strabo', 'Katakekaumene', 'Agnatha', 'Capanne"', 'Venice', 'Airport', 'Herodotus', 'Younger', 'Triassic', 'Pakistan', 'Charles', 'Tuscany', 'Chlorarachnea', 'Leipzig', "Strabo's", 'Auerstedt', 'Corsica', 'Craniata', 'Ventrifilosa', 'China', 'Italy', 'Prussia', 'Vesuvius"', 'di', 'Rome', 'Spain', 'Wagram', 'Filosa', 'Nummulites', 'Scalidophora', 'Battle', 'Foraminifera', 'Elba', 'Lyell', 'Retaria', 'Nummulite', 'Miocene', 'Geography', 'Sea', 'Marina', 'Eocene', 'Alexandria', 'Columbia', 'British', 'Pliny', 'India', 'Fère', 'Osteostracans', 'Austria', 'Peninsula', 'Reticulofilosa', 'Aristotle', 'Danube', 'Monadofilosa', '13', 'Vendée', 'Kinorhyncha', 'Jena', 'Hipparchus', 'Vendémiaire', 'Endomyxa', 'Thecofilosea', 'France'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Cercozoa' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Cercozoa
+Reticulofilosa
+Metromonadea
+Monadofilosa
+Endomyxa
+Filosa
+Retaria
+Gromia
+Imbricatea
+Ventrifilosa
+Helkesea
+Eoglissa
+Scalidophora
+
+gpt_entity_particular(): entity list: 
+ ['Monadofilosa', 'Cercozoa', 'Helkesea', 'Eoglissa', 'Reticulofilosa', 'Filosa', 'Imbricatea', 'Metromonadea', 'Gromia', 'Scalidophora', 'Endomyxa', 'Ventrifilosa', 'Retaria']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Nummulite' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Nummulite
+rocks
+Mediterranean
+Fossils
+Eocene
+Miocene
+Pakistan
+
+gpt_entity_particular(): entity list: 
+ ['rocks', 'Eocene', 'Pakistan', 'Nummulite', 'Fossils', 'Mediterranean', 'Miocene']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Loricifera' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Loricifera
+Loricifera
+Loricifera
+Loricifera species
+
+gpt_entity_particular(): entity list: 
+ ['Loricifera species', 'Loricifera']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Strabo' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+Strabo
+
+gpt_entity_particular(): entity list: 
+ ['Strabo']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Napoleon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Napoleon
+Napoleon
+Napoleon
+Napoleon's
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon's
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon's
+Napoleon
+Napoleon
+Napoleon
+Napoleon's
+Napoleon
+Napoleon's
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon's
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon's
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon's
+Napoleon
+Napoleon
+Napoleon's
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+Napoleon
+
+gpt_entity_particular(): entity list: 
+ ['Napoleon', "Napoleon's"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Agnatha' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Agnatha
+Loricifera
+Elba
+Portoferraio
+Elba
+Elba
+Napoleon
+Napoleon
+Elba
+Elba
+Napoleon
+Elba
+Hagfish
+Strabo
+Ocean
+Nummulite
+Strabo
+Strabo
+Strabo
+Napoleon
+Napoleon
+General
+Strabo
+Strabo
+Napoleon
+Craniata
+Napoleon
+Strabo
+Strabo
+Strabo
+Lampreys
+Napoleon's
+Nummulite
+Vesuvius
+Agnathans
+Napoleon's
+Strabo
+Hagfish
+Napoleon
+Elba
+Strabo
+Agnatha
+Loricifera
+Metromonadea
+Napoleon
+Napoleon
+Agnathans
+Agnatha
+Nummulites
+Strabo
+Agnatha
+Strabo
+Strabo
+NUmmulite
+Napoleon
+Loricifera
+Egyptians
+Agnathans
+Strabo
+Philip II of Spain
+Strabo
+Hagfish
+Strabo
+Battles
+Elba
+Napoleon
+Lampreys
+Elba
+Cercozoa
+Strabo
+Cercozoa
+Elba
+Elba
+Endomyxa
+Strabo
+Elba
+Napoleon
+Agnathans
+Cercozoa
+Cercozoa
+Cercozoa
+Endomyxa
+Helkesea
+Napoleon
+Cercozoa
+Agnatha
+Loricifera
+Napoleon
+Napoleon
+Extinct agnathans
+Agnatha
+Elba
+Cercozoa
+Osteostracans
+Napoleon
+Scalidophora
+Elba
+Napoleon
+Hagfish
+Chlorarachnea
+Ocean
+Agnathans
+Agnathans
+Agnatha
+Napoleon
+Agnatha
+
+gpt_entity_particular(): entity list: 
+ ['General', 'Cercozoa', 'Nummulite', 'Napoleon', 'Egyptians', 'Portoferraio', 'Philip II of Spain', 'Helkesea', 'Vesuvius', 'Agnathans', 'Loricifera', 'Lampreys', 'Strabo', 'Agnatha', 'Osteostracans', 'Chlorarachnea', 'Craniata', 'Battles', 'Ocean', 'Extinct agnathans', 'Hagfish', 'Nummulites', "Napoleon's", 'Metromonadea', 'Scalidophora', 'Endomyxa', 'NUmmulite', 'Elba']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Endomyxa' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+Endomyxa
+
+gpt_entity_particular(): entity list: 
+ ['Endomyxa']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Foraminifera' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Foraminifera
+Nummulite
+Kinaera
+Endomyxa
+Scalidophora
+Elba
+Chlorarachnea
+Eoglissa
+Reticulofilosa
+Cercozoa
+Filosa
+
+gpt_entity_particular(): entity list: 
+ ['Kinaera', 'Cercozoa', 'Chlorarachnea', 'Nummulite', 'Eoglissa', 'Reticulofilosa', 'Filosa', 'Scalidophora', 'Endomyxa', 'Foraminifera', 'Elba']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Elba' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Elba
+Portoferraio
+Elba
+mouflon
+Elba
+Elba
+Elba
+Elba
+Mount Capanne
+Elba
+Elba
+Elba
+Charles Lyell
+Elba
+Cercozoa
+Elba
+Elba
+Elba
+Elba
+Elba football team
+Elba
+Marina di Campo Airport
+Elba
+Elba
+Elba
+
+gpt_entity_particular(): entity list: 
+ ['Cercozoa', 'Elba football team', 'Charles Lyell', 'Mount Capanne', 'Marina di Campo Airport', 'mouflon', 'Portoferraio', 'Elba']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Vertebrata', 'La', 'Cercozoa', 'Mount', 'Eoglissa', 'Napoleon', 'Mediterranean', 'Gromia', 'Campo', 'Europe', 'Livorno', 'Cambrian', 'Egypt', 'Vesuvius', 'Corinth', 'Loricifera', 'Strabo', 'Katakekaumene', 'Agnatha', 'Capanne"', 'Venice', 'Airport', 'Herodotus', 'Younger', 'Triassic', 'Pakistan', 'Charles', 'Tuscany', 'Chlorarachnea', 'Leipzig', "Strabo's", 'Auerstedt', 'Corsica', 'Craniata', 'Ventrifilosa', 'China', 'Italy', 'Prussia', 'Vesuvius"', 'di', 'Rome', 'Spain', 'Wagram', 'Filosa', 'Nummulites', 'Scalidophora', 'Battle', 'Foraminifera', 'Elba', 'Lyell', 'Retaria', 'Nummulite', 'Miocene', 'Geography', 'Sea', 'Marina', 'Eocene', 'Alexandria', 'Columbia', 'British', 'Pliny', 'India', 'Fère', 'Osteostracans', 'Austria', 'Peninsula', 'Reticulofilosa', 'Aristotle', 'Danube', 'Monadofilosa', '13', 'Vendée', 'Kinorhyncha', 'Jena', 'Hipparchus', 'Vendémiaire', 'Endomyxa', 'Thecofilosea', 'France'}
+Total time:  258.15470147132874
+Entity conversion done on 4_4 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_4_entity_conversion_hash.json. Check the entity.
+ What category of single-celled protists with a calcareous shell did the ancient geographer and philosopher who wrote about the island where 038 was exiled after his forced abdication comment on?
+
+
+
+Done. Check final_query/id_4_4_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_4_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_4_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_4_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_4_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_4_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_4_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

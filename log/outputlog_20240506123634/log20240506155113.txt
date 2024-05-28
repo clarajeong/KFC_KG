@@ -1,0 +1,24 @@
+Got argument: Napoleon, 2, 2_4
+
+utils/question.py extract_hops(Napoleon, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Napoleon III", "sought to place Maximilian Habsburg as head of state in", "Mexico")', 'start word': 'Napoleon', 'end word': 'Mexico', 'source': {'name': 'Mexico', 'line': 26}, 'cpnet': {'start word': 'napoleon', 'end word': 'mexico'}}
+
+utils/question.py extract_hops(Mexico, [], ['Napoleon']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+second_hop:  {'triplet': '("The Caribbean", "was a maritime border of", "Mexico")', 'start word': 'Mexico', 'end word': 'Caribbean', 'source': {'name': 'Mexico', 'line': 20}, 'cpnet': {'start word': 'mexico', 'end word': 'caribbean'}}
+
+utils/question.py extract_hops(Caribbean, [], ['Napoleon', 'Mexico']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Caribbean_info.json file
+extract_info(Caribbean) Start.
+utils/preprocess.py extract_info(): Checking good links on Caribbean
+Americas is Geography
+1 / 30 )  Americas Americas americas
+Caribbean Sea is Geography
+2 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Gulf of Mexico is Geography
+3 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico
+Cay is Geography
+4 / 30 )  cays Cay cay
+Greater Antilles is Geography
+5 / 30 )  Greater Antilles Greater Antilles greater_antilles

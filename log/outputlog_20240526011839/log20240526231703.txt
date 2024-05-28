@@ -1,0 +1,1158 @@
+Got argument: Mount Everest, 1, 1_11, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Mount Everest, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mount_Everest_info.json file
+first_hop:  {'triplet': '("Ordovician limestone", "composes", "the summit of Mount Everest")', 'start word': 'Mount Everest', 'end word': 'Ordovician', 'source': {'name': 'Mount Everest', 'line': 12}, 'cpnet': {'start word': 'mount_everest', 'end word': 'ordovician'}}
+next_word: Ordovician
+
+utils/question.py extract_hops(Ordovician, [], ['Mount Everest']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Ordovician_info.json file
+extract_info(Ordovician) Start.
+utils/preprocess.py extract_info(): Checking good links on Ordovician
+Paleozoic is Geography
+1 / 30 )  Paleozoic Paleozoic paleozoic
+Cambrian is Geography
+2 / 30 )  Cambrian Cambrian cambrian
+Silurian is Geography
+3 / 30 )  Silurian Silurian silurian
+Roderick Murchison is People
+4 / 30 )  Roderick Murchison Roderick Murchison murch
+North Wales is Geography
+5 / 30 )  North Wales North Wales north_wales
+Mollusca is Animal
+6 / 30 )  molluscs Mollusca mollusca
+Arthropod is Animal
+7 / 30 )  arthropods Arthropod arthropod
+Devonian is Geography
+8 / 30 )  Devonian Devonian devonian
+Embryophyte is Animal
+9 / 30 )  land plants Embryophyte embryophyte
+Fish is Animal
+10 / 30 )  Fish Fish fish
+Vertebrate is Animal
+11 / 30 )  vertebrates Vertebrate vertebrate
+Gnathostomata is Animal
+12 / 30 )  those with jaws Gnathostomata gnathostomata
+Hirnantian is Geography
+13 / 30 )  Hirnantian Hirnantian hirnantian
+Equator is Geography
+14 / 30 )  equator Equator equator
+South Pole is Geography
+15 / 30 )  South Pole South Pole south_pole
+Siberia  is Geography
+16 / 30 )  Siberia Siberia  north_asia
+Triassic is Geography
+17 / 30 )  Triassic Triassic triassic
+North America is Geography
+18 / 30 )  North America North America north_america
+Northern Hemisphere is Geography
+19 / 30 )  Northern Hemisphere Northern Hemisphere northern_hemisphere
+Conodont is Animal
+20 / 30 )  conodonts Conodont conodont
+Graptolite is Animal
+21 / 30 )  graptolites Graptolite graptolite
+Trilobite is Animal
+22 / 30 )  trilobites Trilobite trilobite
+Agnostida is Animal
+23 / 30 )  Agnostida Agnostida agnostida
+Ptychopariida is Animal
+24 / 30 )  Ptychopariida Ptychopariida ptychopariida
+Brachiopod is Animal
+25 / 30 )  Brachiopods Brachiopod brachiopod
+Bryozoa is Animal
+26 / 30 )  bryozoans Bryozoa bryozoa
+Echinoderm is Animal
+27 / 30 )  echinoderms Echinoderm echinoderm
+Endocerida is Animal
+28 / 30 )  endocerid Endocerida cyrtoconic
+Cephalopod is Animal
+29 / 30 )  cephalopods Cephalopod cephalopod
+Moss is Animal
+30 / 30 )  first terrestrial plants Moss moss
+extract_triplet(Ordovician)
+Got GPT's response. String length : 2088
+['Here are the triplets extracted from the given text:']
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  [['Paleozoic', 'Paleozoic', 'paleozoic']]
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  [['Cambrian', 'Cambrian', 'cambrian']]
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  [['Silurian', 'Silurian', 'silurian']]
+subject_words:  []
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  []
+object_words:  [['Roderick Murchison', 'Roderick Murchison', 'murch']]
+subject_words:  [['Roderick Murchison', 'Roderick Murchison', 'murch']]
+object_words:  [['North Wales', 'North Wales', 'north_wales']]
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  []
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  []
+subject_words:  [['land plants', 'Embryophyte', 'embryophyte']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [['Fish', 'Fish', 'fish']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [['Fish', 'Fish', 'fish']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  []
+object_words:  [['equator', 'Equator', 'equator'], ['South Pole', 'South Pole', 'south_pole']]
+subject_words:  []
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [['Siberia', 'Siberia ', 'north_asia']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  []
+subject_words:  [['conodonts', 'Conodont', 'conodont'], ['graptolites', 'Graptolite', 'graptolite']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [['trilobites', 'Trilobite', 'trilobite'], ['Agnostida', 'Agnostida', 'agnostida'], ['Ptychopariida', 'Ptychopariida', 'ptychopariida']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [['Brachiopods', 'Brachiopod', 'brachiopod'], ['bryozoans', 'Bryozoa', 'bryozoa']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [['endocerid', 'Endocerida', 'cyrtoconic'], ['cephalopods', 'Cephalopod', 'cephalopod']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+subject_words:  [(None, 'Ordovician', 'ordovician')]
+object_words:  []
+subject_words:  [['first terrestrial plants', 'Moss', 'moss']]
+object_words:  [(None, 'Ordovician', 'ordovician')]
+generate_question(1_11, ['("Ordovician limestone", "composes", "the summit of Mount Everest")', '("First land plants", "are known from", "Ordovician")'], ['Ordovician', 'Embryophyte'], [('Mount Everest', 'Ordovician'), ('Ordovician', 'Embryophyte')], Embryophyte, [{'name': 'Mount Everest', 'line': 12}, {'name': 'Ordovician', 'line': 10}]) called
+GPT output is:  Q: Which geological period, known for the first land plants, shares its name with the type of limestone found at the summit of the mountain where the highest peak on Earth is located?
+A: Embryophyte
+final_choice(Embryophyte, options = 5) started
+[]
+entity_type(Embryophyte) called
+Embryophyte is Animal
+check_matchscore(Embryophyte, Dapingian first appearances):  0.0
+choose_by_wiki_recur(Dapingian first appearances)
+   Pages in Dapingian first appearances: ['Atractopyge', 'Aulacopleura', 'Embryophyte', 'Geisonoceratidae', 'Glyptocrinus']
+      Glyptocrinus in ['Glyptocrinus', 'Embryophyte', 'Geisonoceratidae', 'Atractopyge']
+Glyptocrinus is Animal
+      Embryophyte in ['Glyptocrinus', 'Embryophyte', 'Geisonoceratidae', 'Atractopyge', 'Aulacopleura']
+Embryophyte is Animal
+      Geisonoceratidae in ['Glyptocrinus', 'Embryophyte', 'Geisonoceratidae', 'Atractopyge', 'Aulacopleura']
+Geisonoceratidae is Animal
+      Atractopyge in ['Glyptocrinus', 'Embryophyte', 'Geisonoceratidae', 'Atractopyge', 'Aulacopleura']
+Atractopyge is Animal
+      Aulacopleura in ['Glyptocrinus', 'Embryophyte', 'Geisonoceratidae', 'Atractopyge', 'Aulacopleura']
+Aulacopleura is Animal
+   Upper category of Dapingian first appearances: ['Middle Ordovician first appearances', 'Dapingian']
+choose_by_wiki_recur(Middle Ordovician first appearances)
+check_matchscore(Embryophyte, Plants):  0.0
+choose_by_wiki_recur(Plants)
+   Pages in Plants: ['Plant', 'Artificial plants', 'Barinophytaceae', 'Barinophytales', 'Barinophytopsida', 'Biliprotein', 'Biomass partitioning', 'Blossom', 'Cormophyte', 'Davallia fejeensis', 'Embryophyte', 'Endosphere', 'Entomophily', 'Ephemeral plant', 'Euphyllophyte', 'Evergreen', 'Flowering plant', 'Foliosum', 'Introgressive hybridization in plants', 'JULES', 'Lampenflora', 'Laser (plant)', 'Lignin', 'Metaphenomics', 'Net ecosystem production', 'Non-vascular plant', 'Nurse plants', 'Offset (botany)', 'Permanent vegetative cover', 'Photothermal ratio', 'Phytogeomorphology', 'Plant microbiome', 'Plant perception (paranormal)', 'Plantlet', 'Polysporangiophyte', 'Primary production', 'Primary succession', 'Pteridophyte', 'Seed blanking', 'Seed plant', 'Shrub', 'Stinging plant', 'Stomatophyta', 'Tasmanian coniferous shrubbery', 'Thermophyte', 'Transpirational cooling (biological)', 'Understory', 'Vascular plant', 'Visite du Branchage', 'Wildflower', 'Woody plant', 'Portal:Plants']
+      Biliprotein in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum']
+      Photothermal ratio in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage']
+      JULES in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte']
+      Foliosum in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics']
+      Visite du Branchage in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily']
+      Euphyllophyte in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession']
+Euphyllophyte is Animal
+      Metaphenomics in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession']
+      Entomophily in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora']
+      Primary succession in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)']
+      Lampenflora in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology']
+      Laser (plant) in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte']
+Laser (plant) is Animal
+      Phytogeomorphology in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)']
+      Cormophyte in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida']
+      Offset (botany) in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales']
+      Barinophytopsida in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking']
+Barinophytopsida is Animal
+      Barinophytales in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis']
+Barinophytales is Animal
+      Seed blanking in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte']
+      Davallia fejeensis in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory']
+Davallia fejeensis is Animal
+      Polysporangiophyte in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning']
+Polysporangiophyte is Animal
+      Understory in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning']
+      Biomass partitioning in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet']
+      Plantlet in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants']
+      Introgressive hybridization in plants in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta']
+      Stomatophyta in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte']
+      Pteridophyte in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery']
+Pteridophyte is Animal
+      Tasmanian coniferous shrubbery in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery']
+      Shrub in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub']
+      Permanent vegetative cover in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover']
+      Wildflower in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower']
+      Endosphere in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere']
+      Transpirational cooling (biological) in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)']
+      Net ecosystem production in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)', 'Net ecosystem production']
+      Blossom in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)', 'Net ecosystem production', 'Blossom']
+      Embryophyte in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)', 'Net ecosystem production', 'Blossom', 'Embryophyte']
+Embryophyte is Animal
+      Evergreen in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)', 'Net ecosystem production', 'Blossom', 'Embryophyte', 'Evergreen']
+      Lignin in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)', 'Net ecosystem production', 'Blossom', 'Embryophyte', 'Evergreen', 'Lignin']
+      Barinophytaceae in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)', 'Net ecosystem production', 'Blossom', 'Embryophyte', 'Evergreen', 'Lignin', 'Barinophytaceae']
+Barinophytaceae is Animal
+      Primary production in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)', 'Net ecosystem production', 'Blossom', 'Embryophyte', 'Evergreen', 'Lignin', 'Barinophytaceae', 'Primary production']
+      Thermophyte in ['Biliprotein', 'Photothermal ratio', 'JULES', 'Foliosum', 'Visite du Branchage', 'Euphyllophyte', 'Metaphenomics', 'Entomophily', 'Primary succession', 'Lampenflora', 'Laser (plant)', 'Phytogeomorphology', 'Cormophyte', 'Offset (botany)', 'Barinophytopsida', 'Barinophytales', 'Seed blanking', 'Davallia fejeensis', 'Polysporangiophyte', 'Understory', 'Biomass partitioning', 'Plantlet', 'Introgressive hybridization in plants', 'Stomatophyta', 'Pteridophyte', 'Tasmanian coniferous shrubbery', 'Shrub', 'Permanent vegetative cover', 'Wildflower', 'Endosphere', 'Transpirational cooling (biological)', 'Net ecosystem production', 'Blossom', 'Embryophyte', 'Evergreen', 'Lignin', 'Barinophytaceae', 'Primary production', 'Thermophyte']
+   Upper category of Plants: ['Kingdoms (biology)', 'Archaeplastida', 'Organisms', 'Botany']
+choose_by_wiki_recur(Kingdoms (biology))
+['Geisonoceratidae', 'Euphyllophyte', 'Polysporangiophyte', 'Pteridophyte']
+Ended after 2.5 hierarchy
+(2.5, ['Pteridophyte', 'Euphyllophyte', 'Geisonoceratidae', 'Polysporangiophyte'])
+
+extract_info(Polysporangiophyte) Start.
+utils/preprocess.py extract_info(): Checking good links on Polysporangiophyte
+Vascular plant is Animal
+1 / 30 )  vascular plants Vascular plant vascular_plant
+Devonian is Geography
+2 / 30 )  Devonian Devonian devonian
+Gaspé Peninsula is Geography
+3 / 30 )  Gaspé region Gaspé Peninsula gaspé
+Psilophyton is Animal
+4 / 30 )  Psilophyton Psilophyton psilophyton
+Aberdeenshire is Geography
+5 / 30 )  Aberdeenshire Aberdeenshire aberdeenshire
+Pragian is Geography
+6 / 30 )  Pragian Pragian pragian
+Silurian is Geography
+7 / 30 )  Silurian Silurian silurian
+Llandovery Epoch is Geography
+8 / 30 )  Llandovery epoch Llandovery Epoch llandoverian
+Marchantiophyta is Animal
+9 / 30 )  liverworts Marchantiophyta marchantiophyta
+Moss is Animal
+10 / 30 )  mosses Moss moss
+Hornwort is Animal
+11 / 30 )  hornworts Hornwort hornwort
+Psilotum is Animal
+12 / 30 )  Psilotaceae Psilotum psilotum
+Rhyniophyte is Animal
+13 / 30 )  rhyniophytes Rhyniophyte rhyniophyte
+Zosterophyll is Animal
+14 / 30 )  zosterophylls Zosterophyll zosterophyll
+Fern is Animal
+15 / 30 )  ferns Fern fern
+Seed plant is Animal
+16 / 30 )  seed plants Seed plant seed_plant
+Horneophyton is Animal
+17 / 30 )  Horneophyton Horneophyton horneophyton
+Rhynia is Animal
+18 / 30 )  Rhynia Rhynia rhynia
+extract_triplet(Polysporangiophyte)
+Got GPT's response. String length : 1676
+subject_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+object_words:  []
+subject_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+object_words:  [['vascular plants', 'Vascular plant', 'vascular_plant']]
+subject_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+object_words:  [['liverworts', 'Marchantiophyta', 'marchantiophyta']]
+subject_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+object_words:  [['mosses', 'Moss', 'moss']]
+subject_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+object_words:  [['hornworts', 'Hornwort', 'hornwort']]
+subject_words:  []
+object_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+subject_words:  [['Psilophyton', 'Psilophyton', 'psilophyton']]
+object_words:  [['Gaspé region', 'Gaspé Peninsula', 'gaspé']]
+subject_words:  []
+object_words:  [['Llandovery epoch', 'Llandovery Epoch', 'llandoverian']]
+subject_words:  []
+object_words:  []
+subject_words:  [['ferns', 'Fern', 'fern']]
+object_words:  [['Psilotaceae', 'Psilotum', 'psilotum']]
+subject_words:  [['rhyniophytes', 'Rhyniophyte', 'rhyniophyte']]
+object_words:  [['Horneophyton', 'Horneophyton', 'horneophyton'], ['Rhynia', 'Rhynia', 'rhynia']]
+subject_words:  [['Psilophyton', 'Psilophyton', 'psilophyton']]
+object_words:  []
+subject_words:  [['ferns', 'Fern', 'fern']]
+object_words:  []
+subject_words:  [['seed plants', 'Seed plant', 'seed_plant']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+subject_words:  [['Devonian', 'Devonian', 'devonian']]
+object_words:  [['Aberdeenshire', 'Aberdeenshire', 'aberdeenshire']]
+subject_words:  []
+object_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+subject_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+object_words:  []
+subject_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+object_words:  [['Devonian', 'Devonian', 'devonian']]
+subject_words:  [['rhyniophytes', 'Rhyniophyte', 'rhyniophyte']]
+object_words:  []
+subject_words:  [['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+object_words:  []
+subject_words:  []
+object_words:  [['vascular plants', 'Vascular plant', 'vascular_plant']]
+subject_words:  []
+object_words:  [['Horneophyton', 'Horneophyton', 'horneophyton']]
+subject_words:  [['Rhynia', 'Rhynia', 'rhynia']]
+object_words:  []
+subject_words:  []
+object_words:  [['Devonian', 'Devonian', 'devonian']]
+subject_words:  []
+object_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+subject_words:  []
+object_words:  [['vascular plants', 'Vascular plant', 'vascular_plant']]
+subject_words:  []
+object_words:  [(None, 'Polysporangiophyte', 'polysporangiophyte')]
+extract_info(Pteridophyte) Start.
+utils/preprocess.py extract_info(): Checking good links on Pteridophyte
+Vascular plant is Animal
+1 / 30 )  vascular plant Vascular plant vascular_plant
+Fern is Animal
+2 / 30 )  Ferns Fern fern
+Equisetum is Animal
+3 / 30 )  horsetails Equisetum equisetum
+Lycophyte is Animal
+4 / 30 )  lycophytes Lycophyte lycophyte
+Seed plant is Animal
+5 / 30 )  seed plants Seed plant seed_plant
+Embryophyte is Animal
+6 / 30 )  land plant Embryophyte embryophyte
+Psilotum is Animal
+7 / 30 )  whisk ferns Psilotum psilotum
+Eusporangiate fern is Animal
+8 / 30 )  eusporangiate Eusporangiate fern eusporangiate_fern
+Leptosporangiate fern is Animal
+9 / 30 )  leptosporangiate Leptosporangiate fern leptosporangiate_fern
+Polypodiales is Animal
+10 / 30 )  polypods Polypodiales polypodiales
+Gymnosperm is Animal
+11 / 30 )  Gymnospermae Gymnosperm gymnosperm
+Flowering plant is Animal
+12 / 30 )  Angiospermae Flowering plant flowering_plant
+Rhyniophyte is Animal
+13 / 30 )  Rhyniopsida Rhyniophyte rhyniophyte
+Zosterophyll is Animal
+14 / 30 )  Zosterophyllopsida Zosterophyll zosterophyll
+Lepidodendrales is Animal
+15 / 30 )  Lepidodendrales Lepidodendrales lepidodendrales
+Progymnosperm is Animal
+16 / 30 )  Progymnospermopsida Progymnosperm progymnosperm
+extract_triplet(Pteridophyte)
+Got GPT's response. String length : 1374
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  [['vascular plant', 'Vascular plant', 'vascular_plant']]
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  [['Ferns', 'Fern', 'fern']]
+object_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+subject_words:  [['horsetails', 'Equisetum', 'equisetum']]
+object_words:  [['Ferns', 'Fern', 'fern']]
+subject_words:  [['lycophytes', 'Lycophyte', 'lycophyte']]
+object_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+subject_words:  [['Ferns', 'Fern', 'fern']]
+object_words:  [['seed plants', 'Seed plant', 'seed_plant']]
+subject_words:  [['lycophytes', 'Lycophyte', 'lycophyte']]
+object_words:  [['seed plants', 'Seed plant', 'seed_plant']]
+subject_words:  [['Ferns', 'Fern', 'fern']]
+object_words:  [['Ferns', 'Fern', 'fern'], ['whisk ferns', 'Psilotum', 'psilotum']]
+subject_words:  [['Ferns', 'Fern', 'fern']]
+object_words:  [['Ferns', 'Fern', 'fern'], ['eusporangiate', 'Eusporangiate fern', 'eusporangiate_fern']]
+subject_words:  [['Ferns', 'Fern', 'fern']]
+object_words:  [['Ferns', 'Fern', 'fern'], ['leptosporangiate', 'Leptosporangiate fern', 'leptosporangiate_fern']]
+subject_words:  [['Ferns', 'Fern', 'fern']]
+object_words:  [['polypods', 'Polypodiales', 'polypodiales']]
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  [['seed plants', 'Seed plant', 'seed_plant']]
+object_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  []
+object_words:  [['Gymnospermae', 'Gymnosperm', 'gymnosperm']]
+subject_words:  []
+object_words:  [['Angiospermae', 'Flowering plant', 'flowering_plant']]
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  [['Rhyniopsida', 'Rhyniophyte', 'rhyniophyte']]
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  [['Zosterophyllopsida', 'Zosterophyll', 'zosterophyll']]
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  [['Lepidodendrales', 'Lepidodendrales', 'lepidodendrales']]
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  [['Progymnospermopsida', 'Progymnosperm', 'progymnosperm']]
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+subject_words:  [(None, 'Pteridophyte', 'pteridophyte')]
+object_words:  []
+extract_info(Euphyllophyte) Start.
+utils/preprocess.py extract_info(): Checking good links on Euphyllophyte
+Vascular plant is Animal
+1 / 30 )  tracheophytes Vascular plant vascular_plant
+Lycophyte is Animal
+2 / 30 )  lycopodiophytes Lycophyte lycophyte
+Seed plant is Animal
+3 / 30 )  spermatophytes Seed plant seed_plant
+Fern is Animal
+4 / 30 )  Polypodiophytes Fern fern
+Lycopodiopsida is Animal
+5 / 30 )  Clubmosses Lycopodiopsida lycopodiopsida
+Isoetes is Animal
+6 / 30 )  Quillworts Isoetes isoetes
+Selaginella is Animal
+7 / 30 )  Spikemosses Selaginella selaginella
+Flowering plant is Animal
+8 / 30 )  Angiosperms Flowering plant flowering_plant
+Cycad is Animal
+9 / 30 )  Cycads Cycad cycad
+Ginkgo is Animal
+10 / 30 )  Ginkgo Ginkgo ginkgo
+Conifer is Animal
+11 / 30 )  Conifers Conifer conifer
+Gnetophyta is Animal
+12 / 30 )  Gnetophytes Gnetophyta gnetophyta
+Ophioglossaceae is Animal
+13 / 30 )  Ophioglossoid Ophioglossaceae ophioglossaceae
+Psilotum is Animal
+14 / 30 )  Whisk ferns Psilotum psilotum
+Equisetum is Animal
+15 / 30 )  Horsetails Equisetum equisetum
+Leptosporangiate fern is Animal
+16 / 30 )  Leptosporangiate ferns Leptosporangiate fern leptosporangiate_fern
+Rhyniophyte is Animal
+17 / 30 )  Rhyniopsida Rhyniophyte rhyniophyte
+Protopityales  is Animal
+18 / 30 )  Protopityales Protopityales  tracheobionta
+extract_triplet(Euphyllophyte)
+Got GPT's response. String length : 588
+subject_words:  [(None, 'Euphyllophyte', 'euphyllophyte')]
+object_words:  [['tracheophytes', 'Vascular plant', 'vascular_plant']]
+subject_words:  [(None, 'Euphyllophyte', 'euphyllophyte')]
+object_words:  []
+subject_words:  [(None, 'Euphyllophyte', 'euphyllophyte')]
+object_words:  [['lycopodiophytes', 'Lycophyte', 'lycophyte']]
+subject_words:  [(None, 'Euphyllophyte', 'euphyllophyte')]
+object_words:  [['spermatophytes', 'Seed plant', 'seed_plant']]
+subject_words:  [['spermatophytes', 'Seed plant', 'seed_plant']]
+object_words:  [['Angiosperms', 'Flowering plant', 'flowering_plant']]
+subject_words:  [['spermatophytes', 'Seed plant', 'seed_plant']]
+object_words:  []
+subject_words:  [(None, 'Euphyllophyte', 'euphyllophyte')]
+object_words:  [['Polypodiophytes', 'Fern', 'fern']]
+subject_words:  [['Polypodiophytes', 'Fern', 'fern']]
+object_words:  []
+subject_words:  []
+object_words:  [['Conifers', 'Conifer', 'conifer']]
+subject_words:  [['Polypodiophytes', 'Fern', 'fern']]
+object_words:  [['Rhyniopsida', 'Rhyniophyte', 'rhyniophyte']]
+subject_words:  [(None, 'Euphyllophyte', 'euphyllophyte')]
+object_words:  [['Protopityales', 'Protopityales ', 'tracheobionta']]
+extract_info(Geisonoceratidae) Start.
+utils/preprocess.py extract_info(): Checking good links on Geisonoceratidae
+Orthocerida is Animal
+1 / 30 )  orthoceroid Orthocerida orthocerida
+North America is Geography
+2 / 30 )  North America North America north_america
+Ordovician is Geography
+3 / 30 )  Middle Ordovician Ordovician ordovician
+Cretaceous is Geography
+4 / 30 )  Cretaceous Cretaceous cretaceous
+Orthoceratidae is Animal
+5 / 30 )  Michelinoceratidae Orthoceratidae orthoceratidae
+extract_triplet(Geisonoceratidae)
+Got GPT's response. String length : 942
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  [['orthoceroid', 'Orthocerida', 'orthocerida']]
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  []
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  []
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  [['Middle Ordovician', 'Ordovician', 'ordovician']]
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  []
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  [['Cretaceous', 'Cretaceous', 'cretaceous']]
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  []
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  []
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  []
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  []
+subject_words:  [(None, 'Geisonoceratidae', 'geisonoceratidae')]
+object_words:  [['Michelinoceratidae', 'Orthoceratidae', 'orthoceratidae']]
+['("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("First land plants", "are known from", "Ordovician")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Ordovician", "is a geologic period and system in", "Paleozoic Era")\n', '("Ordovician spans", "from end of", "Cambrian Period")\n', '("Ordovician starts", "at start of", "Silurian Period")\n', '("Charles Lapworth", "defined", "Ordovician")\n', '("Charles Lapworth", "resolved dispute between followers of", "Adam Sedgwick and Roderick Murchison")\n', '("Followers of Adam Sedgwick and Roderick Murchison", "were placing rock beds in", "North Wales")\n', '("Ordovician", "was named after", "Welsh tribe of the Ordovices")\n', '("Ordovician–Silurian extinction events", "marked by end of", "Ordovician")\n', '("During Ordovician", "molluscs and arthropods dominated", "oceans")\n', '("Fish", "first true vertebrates, evolved in", "Ordovician")\n', '("Fish with jaws", "may have first appeared in", "Ordovician late")\n', '("Ordovician meteor event", "occurred during", "Middle Ordovician Epoch")\n', '("Gondwana", "extended from", "equator to South Pole")\n', '("Laurentia", "currently", "North America")\n', '("Siberia", "was a continent during", "Ordovician")\n', '("Ordovician", "saw", "Ordovician meteor event")\n', '("Ordovician", "witnessed", "mass-extinction events")\n', '("Graptolites and conodonts", "were affected by", "extinction events during Ordovician")\n', '("Trilobites Agnostida and Ptychopariida", "died out in", "Ordovician")\n', '("Brachiopods and bryozoans", "heavily affected during", "Ordovician extinctions")\n', '("Endocerid cephalopods", "died out except for rare Silurian forms during", "Ordovician")\n', '("Ordovician–Silurian extinction events", "possibly caused by", "ice age")\n', '("First terrestrial plants", "appeared during", "Ordovician")\n', '("Polysporangiophyte", "also called", "polysporangiate")\n', '("Polysporangiophytes", "have", "branching stems")\n', '("Branching stems", "bear", "sporangia")\n', '("Polysporangiophytes", "includes", "vascular plants")\n', '("Polysporangiophytes", "excludes", "liverworts")\n', '("Polysporangiophytes", "excludes", "mosses")\n', '("Polysporangiophytes", "excludes", "hornworts")\n', '("Dawson", "discovered", "polysporangiophyte megafossil")\n', '("Psilophyton princeps", "collected from", "Gaspé region")\n', '("Eohostimella", "dated to", "Llandovery epoch")\n', '("Psilophytales", "placed in", "Psilophyta")\n', '("Whisk-ferns", "sometimes added to", "Psilotaceae")\n', '("Rhyniophytes", "include", "Horneophyton and Rhynia")\n', '("Psilophyton", "example of", "trimerophyte")\n', '("Ferns", "allied to", "trimerophytes")\n', '("Seed plants", "allied to", "trimerophytes")\n', '("Vascular tissue", "present in", "Polysporangiophytes")\n', '("Devonian plants", "discovered in", "Rhynie, Aberdeenshire")\n', '("Kenrick and Crane", "established concept of", "Polysporangiophytes")\n', '("Polysporangiophytes", "may or may not have", "vascular tissue")\n', '("Early polysporangiophytes", "part of", "Devonian period")\n', '("Rhyniophytes", "include", "Cooksonia species")\n', '("Zosterophylls", "possess", "lateral sporangia")\n', '("Tracheophytes", "include", "eutracheophytes with true vascular plants")\n', '("Protracheophytes", "similar to", "Horneophyton")\n', '("Rhynia", "example of", "basal tracheophyte")\n', '("Lycophytes and euphyllophytes", "two lineages from", "Devonian split")\n', '("Cooksonia", "belongs to", "polysporangiophytes")\n', '("Cooksonia species", "illustrate", "evolution of modern vascular plants")\n', '("Stomatophytes", "possible group includes", "mosses, hornworts, and polysporangiophytes")\n', '("Pteridophyte", "is a", "vascular plant")\n', '("Pteridophyte", "reproduces by means of", "spores")\n', '("Ferns", "are", "pteridophytes")\n', '("Horsetails", "are often treated as", "ferns")\n', '("Lycophytes", "are", "pteridophytes")\n', '("Ferns", "are more closely related to", "seed plants")\n', '("Lycophytes", "are less closely related to", "seed plants")\n', '("Ferns", "include", "whisk ferns")\n', '("Ferns", "include", "eusporangiate ferns")\n', '("Ferns", "include", "leptosporangiate ferns")\n', '("Ferns", "include", "polypods")\n', '("Pteridophytes", "constitute a", "paraphyletic grade")\n', '("Seed plants", "emerged from", "pteridophytes")\n', '("Pteridophyte", "has a life cycle with", "alternating generations")\n', '("Pteridophyte sporophyte", "is differentiated into", "roots, stem and leaves")\n', '("Pteridophyte root system", "is", "adventitious")\n', '("Pteridophyte", "may have leaves called", "microphylls or megaphylls")\n', '("Vascular plants", "include", "Gymnospermae")\n', '("Vascular plants", "include", "Angiospermae")\n', '("Pteridophytes", "include", "Rhyniopsida")\n', '("Pteridophytes", "include", "Zosterophyllopsida")\n', '("Pteridophytes", "include", "Lepidodendrales")\n', '("Pteridophytes", "include", "Progymnospermopsida")\n', '("Pteridophyte gametophytes", "can be", "dioicous")\n', '("Pteridophyte gametophytes", "can be", "monoicous")\n', '("Pteridophyte gametophytes", "can be", "protandrous")\n', '("Pteridophyte gametophytes", "can be", "protogynous")\n', '("Euphyllophytes", "are within", "tracheophytes")\n', '("Euphyllophytes", "have true leaves called", "megaphylls")\n', '("Euphyllophytes", "have a sister relationship to", "lycopodiophytes")\n', '("Euphyllophytes", "consist of", "spermatophytes")\n', '("Spermatophytes", "such as", "angiosperms")\n', '("Spermatophytes", "include", "gymnosperms")\n', '("Euphyllophytes", "comprise", "polypodiophytes")\n', '("Polypodiophytes", "are also known as", "ferns")\n', '("Gymnosperms", "include", "conifers")\n', '("Polypodiophytes", "include extinct fossil groups like", "rhyniopsida")\n', '("Extinct Euphyllophytes", "include", "protopityales")\n', '("Geisonoceratidae", "is an extinct family of", "orthoceroid cephalopods")\n', '("Geisonoceratidae", "endemic to", "Asia")\n', '("Geisonoceratidae", "endemic to", "Europe")\n', '("Geisonoceratidae", "endemic to", "North America")\n', '("Geisonoceratidae", "existed from the", "Middle Ordovician")\n', '("Geisonoceratidae", "existed until the", "Middle Devonian")\n', '("Geisonoceratidae", "possibly existed in the Early", "Cretaceous")\n', '("Geisonoceratidae", "morphology includes", "orthoconic or cyrtoconic shells")\n', '("Geisonoceratidae", "siphuncle varies from", "central to subventral")\n', '("Geisonoceratidae", "has", "orthoceratoid shells")\n', '("Geisonoceratidae", "included in", "Orthocerataceae")\n', '("Geisonoceratidae", "discussed by Flower in relation with", "Michelinoceratidae")\n']
+range(1, 123) 2
+['("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("First land plants", "are known from", "Ordovician")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Ordovician", "is a geologic period and system in", "Paleozoic Era")\n', '("Ordovician spans", "from end of", "Cambrian Period")\n', '("Ordovician starts", "at start of", "Silurian Period")\n', '("Charles Lapworth", "defined", "Ordovician")\n', '("Charles Lapworth", "resolved dispute between followers of", "Adam Sedgwick and Roderick Murchison")\n', '("Followers of Adam Sedgwick and Roderick Murchison", "were placing rock beds in", "North Wales")\n', '("Ordovician", "was named after", "Welsh tribe of the Ordovices")\n', '("Ordovician–Silurian extinction events", "marked by end of", "Ordovician")\n', '("During Ordovician", "molluscs and arthropods dominated", "oceans")\n', '("Fish", "first true vertebrates, evolved in", "Ordovician")\n', '("Fish with jaws", "may have first appeared in", "Ordovician late")\n', '("Ordovician meteor event", "occurred during", "Middle Ordovician Epoch")\n', '("Gondwana", "extended from", "equator to South Pole")\n', '("Laurentia", "currently", "North America")\n', '("Siberia", "was a continent during", "Ordovician")\n', '("Ordovician", "saw", "Ordovician meteor event")\n', '("Ordovician", "witnessed", "mass-extinction events")\n', '("Graptolites and conodonts", "were affected by", "extinction events during Ordovician")\n', '("Trilobites Agnostida and Ptychopariida", "died out in", "Ordovician")\n', '("Brachiopods and bryozoans", "heavily affected during", "Ordovician extinctions")\n', '("Endocerid cephalopods", "died out except for rare Silurian forms during", "Ordovician")\n', '("Ordovician–Silurian extinction events", "possibly caused by", "ice age")\n', '("First terrestrial plants", "appeared during", "Ordovician")\n', '("Polysporangiophyte", "also called", "polysporangiate")\n', '("Polysporangiophytes", "have", "branching stems")\n', '("Branching stems", "bear", "sporangia")\n', '("Polysporangiophytes", "includes", "vascular plants")\n', '("Polysporangiophytes", "excludes", "liverworts")\n', '("Polysporangiophytes", "excludes", "mosses")\n', '("Polysporangiophytes", "excludes", "hornworts")\n', '("Dawson", "discovered", "polysporangiophyte megafossil")\n', '("Psilophyton princeps", "collected from", "Gaspé region")\n', '("Eohostimella", "dated to", "Llandovery epoch")\n', '("Psilophytales", "placed in", "Psilophyta")\n', '("Whisk-ferns", "sometimes added to", "Psilotaceae")\n', '("Rhyniophytes", "include", "Horneophyton and Rhynia")\n', '("Psilophyton", "example of", "trimerophyte")\n', '("Ferns", "allied to", "trimerophytes")\n', '("Seed plants", "allied to", "trimerophytes")\n', '("Vascular tissue", "present in", "Polysporangiophytes")\n', '("Devonian plants", "discovered in", "Rhynie, Aberdeenshire")\n', '("Kenrick and Crane", "established concept of", "Polysporangiophytes")\n', '("Polysporangiophytes", "may or may not have", "vascular tissue")\n', '("Early polysporangiophytes", "part of", "Devonian period")\n', '("Rhyniophytes", "include", "Cooksonia species")\n', '("Zosterophylls", "possess", "lateral sporangia")\n', '("Tracheophytes", "include", "eutracheophytes with true vascular plants")\n', '("Protracheophytes", "similar to", "Horneophyton")\n', '("Rhynia", "example of", "basal tracheophyte")\n', '("Lycophytes and euphyllophytes", "two lineages from", "Devonian split")\n', '("Cooksonia", "belongs to", "polysporangiophytes")\n', '("Cooksonia species", "illustrate", "evolution of modern vascular plants")\n', '("Stomatophytes", "possible group includes", "mosses, hornworts, and polysporangiophytes")\n', '("Pteridophyte", "is a", "vascular plant")\n', '("Pteridophyte", "reproduces by means of", "spores")\n', '("Ferns", "are", "pteridophytes")\n', '("Horsetails", "are often treated as", "ferns")\n', '("Lycophytes", "are", "pteridophytes")\n', '("Ferns", "are more closely related to", "seed plants")\n', '("Lycophytes", "are less closely related to", "seed plants")\n', '("Ferns", "include", "whisk ferns")\n', '("Ferns", "include", "eusporangiate ferns")\n', '("Ferns", "include", "leptosporangiate ferns")\n', '("Ferns", "include", "polypods")\n', '("Pteridophytes", "constitute a", "paraphyletic grade")\n', '("Seed plants", "emerged from", "pteridophytes")\n', '("Pteridophyte", "has a life cycle with", "alternating generations")\n', '("Pteridophyte sporophyte", "is differentiated into", "roots, stem and leaves")\n', '("Pteridophyte root system", "is", "adventitious")\n', '("Pteridophyte", "may have leaves called", "microphylls or megaphylls")\n', '("Vascular plants", "include", "Gymnospermae")\n', '("Vascular plants", "include", "Angiospermae")\n', '("Pteridophytes", "include", "Rhyniopsida")\n', '("Pteridophytes", "include", "Zosterophyllopsida")\n', '("Pteridophytes", "include", "Lepidodendrales")\n', '("Pteridophytes", "include", "Progymnospermopsida")\n', '("Pteridophyte gametophytes", "can be", "dioicous")\n', '("Pteridophyte gametophytes", "can be", "monoicous")\n', '("Pteridophyte gametophytes", "can be", "protandrous")\n', '("Pteridophyte gametophytes", "can be", "protogynous")\n', '("Euphyllophytes", "are within", "tracheophytes")\n', '("Euphyllophytes", "have true leaves called", "megaphylls")\n', '("Euphyllophytes", "have a sister relationship to", "lycopodiophytes")\n', '("Euphyllophytes", "consist of", "spermatophytes")\n', '("Spermatophytes", "such as", "angiosperms")\n', '("Spermatophytes", "include", "gymnosperms")\n', '("Euphyllophytes", "comprise", "polypodiophytes")\n', '("Polypodiophytes", "are also known as", "ferns")\n', '("Gymnosperms", "include", "conifers")\n', '("Polypodiophytes", "include extinct fossil groups like", "rhyniopsida")\n', '("Extinct Euphyllophytes", "include", "protopityales")\n', '("Geisonoceratidae", "is an extinct family of", "orthoceroid cephalopods")\n', '("Geisonoceratidae", "endemic to", "Asia")\n', '("Geisonoceratidae", "endemic to", "Europe")\n', '("Geisonoceratidae", "endemic to", "North America")\n', '("Geisonoceratidae", "existed from the", "Middle Ordovician")\n', '("Geisonoceratidae", "existed until the", "Middle Devonian")\n', '("Geisonoceratidae", "possibly existed in the Early", "Cretaceous")\n', '("Geisonoceratidae", "morphology includes", "orthoconic or cyrtoconic shells")\n', '("Geisonoceratidae", "siphuncle varies from", "central to subventral")\n', '("Geisonoceratidae", "has", "orthoceratoid shells")\n', '("Geisonoceratidae", "included in", "Orthocerataceae")\n', '("Geisonoceratidae", "discussed by Flower in relation with", "Michelinoceratidae")\n']
+range(1, 123) 2
+['("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("First land plants", "are known from", "Ordovician")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Ordovician", "is a geologic period and system in", "Paleozoic Era")\n', '("Ordovician spans", "from end of", "Cambrian Period")\n', '("Ordovician starts", "at start of", "Silurian Period")\n', '("Charles Lapworth", "defined", "Ordovician")\n', '("Charles Lapworth", "resolved dispute between followers of", "Adam Sedgwick and Roderick Murchison")\n', '("Followers of Adam Sedgwick and Roderick Murchison", "were placing rock beds in", "North Wales")\n', '("Ordovician", "was named after", "Welsh tribe of the Ordovices")\n', '("Ordovician–Silurian extinction events", "marked by end of", "Ordovician")\n', '("During Ordovician", "molluscs and arthropods dominated", "oceans")\n', '("Fish", "first true vertebrates, evolved in", "Ordovician")\n', '("Fish with jaws", "may have first appeared in", "Ordovician late")\n', '("Ordovician meteor event", "occurred during", "Middle Ordovician Epoch")\n', '("Gondwana", "extended from", "equator to South Pole")\n', '("Laurentia", "currently", "North America")\n', '("Siberia", "was a continent during", "Ordovician")\n', '("Ordovician", "saw", "Ordovician meteor event")\n', '("Ordovician", "witnessed", "mass-extinction events")\n', '("Graptolites and conodonts", "were affected by", "extinction events during Ordovician")\n', '("Trilobites Agnostida and Ptychopariida", "died out in", "Ordovician")\n', '("Brachiopods and bryozoans", "heavily affected during", "Ordovician extinctions")\n', '("Endocerid cephalopods", "died out except for rare Silurian forms during", "Ordovician")\n', '("Ordovician–Silurian extinction events", "possibly caused by", "ice age")\n', '("First terrestrial plants", "appeared during", "Ordovician")\n', '("Polysporangiophyte", "also called", "polysporangiate")\n', '("Polysporangiophytes", "have", "branching stems")\n', '("Branching stems", "bear", "sporangia")\n', '("Polysporangiophytes", "includes", "vascular plants")\n', '("Polysporangiophytes", "excludes", "liverworts")\n', '("Polysporangiophytes", "excludes", "mosses")\n', '("Polysporangiophytes", "excludes", "hornworts")\n', '("Dawson", "discovered", "polysporangiophyte megafossil")\n', '("Psilophyton princeps", "collected from", "Gaspé region")\n', '("Eohostimella", "dated to", "Llandovery epoch")\n', '("Psilophytales", "placed in", "Psilophyta")\n', '("Whisk-ferns", "sometimes added to", "Psilotaceae")\n', '("Rhyniophytes", "include", "Horneophyton and Rhynia")\n', '("Psilophyton", "example of", "trimerophyte")\n', '("Ferns", "allied to", "trimerophytes")\n', '("Seed plants", "allied to", "trimerophytes")\n', '("Vascular tissue", "present in", "Polysporangiophytes")\n', '("Devonian plants", "discovered in", "Rhynie, Aberdeenshire")\n', '("Kenrick and Crane", "established concept of", "Polysporangiophytes")\n', '("Polysporangiophytes", "may or may not have", "vascular tissue")\n', '("Early polysporangiophytes", "part of", "Devonian period")\n', '("Rhyniophytes", "include", "Cooksonia species")\n', '("Zosterophylls", "possess", "lateral sporangia")\n', '("Tracheophytes", "include", "eutracheophytes with true vascular plants")\n', '("Protracheophytes", "similar to", "Horneophyton")\n', '("Rhynia", "example of", "basal tracheophyte")\n', '("Lycophytes and euphyllophytes", "two lineages from", "Devonian split")\n', '("Cooksonia", "belongs to", "polysporangiophytes")\n', '("Cooksonia species", "illustrate", "evolution of modern vascular plants")\n', '("Stomatophytes", "possible group includes", "mosses, hornworts, and polysporangiophytes")\n', '("Pteridophyte", "is a", "vascular plant")\n', '("Pteridophyte", "reproduces by means of", "spores")\n', '("Ferns", "are", "pteridophytes")\n', '("Horsetails", "are often treated as", "ferns")\n', '("Lycophytes", "are", "pteridophytes")\n', '("Ferns", "are more closely related to", "seed plants")\n', '("Lycophytes", "are less closely related to", "seed plants")\n', '("Ferns", "include", "whisk ferns")\n', '("Ferns", "include", "eusporangiate ferns")\n', '("Ferns", "include", "leptosporangiate ferns")\n', '("Ferns", "include", "polypods")\n', '("Pteridophytes", "constitute a", "paraphyletic grade")\n', '("Seed plants", "emerged from", "pteridophytes")\n', '("Pteridophyte", "has a life cycle with", "alternating generations")\n', '("Pteridophyte sporophyte", "is differentiated into", "roots, stem and leaves")\n', '("Pteridophyte root system", "is", "adventitious")\n', '("Pteridophyte", "may have leaves called", "microphylls or megaphylls")\n', '("Vascular plants", "include", "Gymnospermae")\n', '("Vascular plants", "include", "Angiospermae")\n', '("Pteridophytes", "include", "Rhyniopsida")\n', '("Pteridophytes", "include", "Zosterophyllopsida")\n', '("Pteridophytes", "include", "Lepidodendrales")\n', '("Pteridophytes", "include", "Progymnospermopsida")\n', '("Pteridophyte gametophytes", "can be", "dioicous")\n', '("Pteridophyte gametophytes", "can be", "monoicous")\n', '("Pteridophyte gametophytes", "can be", "protandrous")\n', '("Pteridophyte gametophytes", "can be", "protogynous")\n', '("Euphyllophytes", "are within", "tracheophytes")\n', '("Euphyllophytes", "have true leaves called", "megaphylls")\n', '("Euphyllophytes", "have a sister relationship to", "lycopodiophytes")\n', '("Euphyllophytes", "consist of", "spermatophytes")\n', '("Spermatophytes", "such as", "angiosperms")\n', '("Spermatophytes", "include", "gymnosperms")\n', '("Euphyllophytes", "comprise", "polypodiophytes")\n', '("Polypodiophytes", "are also known as", "ferns")\n', '("Gymnosperms", "include", "conifers")\n', '("Polypodiophytes", "include extinct fossil groups like", "rhyniopsida")\n', '("Extinct Euphyllophytes", "include", "protopityales")\n', '("Geisonoceratidae", "is an extinct family of", "orthoceroid cephalopods")\n', '("Geisonoceratidae", "endemic to", "Asia")\n', '("Geisonoceratidae", "endemic to", "Europe")\n', '("Geisonoceratidae", "endemic to", "North America")\n', '("Geisonoceratidae", "existed from the", "Middle Ordovician")\n', '("Geisonoceratidae", "existed until the", "Middle Devonian")\n', '("Geisonoceratidae", "possibly existed in the Early", "Cretaceous")\n', '("Geisonoceratidae", "morphology includes", "orthoconic or cyrtoconic shells")\n', '("Geisonoceratidae", "siphuncle varies from", "central to subventral")\n', '("Geisonoceratidae", "has", "orthoceratoid shells")\n', '("Geisonoceratidae", "included in", "Orthocerataceae")\n', '("Geisonoceratidae", "discussed by Flower in relation with", "Michelinoceratidae")\n']
+range(1, 123) 2
+{'id': '1_11', 'Question': ' Which geological period, known for the first land plants, shares its name with the type of limestone found at the summit of the mountain where the highest peak on Earth is located?\n', 'Answer': 'Embryophyte', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Polysporangiophyte'}, {'label': 'B', 'text': 'Pteridophyte'}, {'label': 'C', 'text': 'Euphyllophyte'}, {'label': 'D', 'text': 'Embryophyte'}, {'label': 'E', 'text': 'Geisonoceratidae'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'polysporangiophyte'}, {'label': 'B', 'text': 'pteridophyte'}, {'label': 'C', 'text': 'euphyllophyte'}, {'label': 'D', 'text': 'embryophyte'}, {'label': 'E', 'text': 'geisonoceratidae'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Question_decompositions': ["1: What geological period's limestone composes the summit of Mount Everest?\nA1: Ordovician\n\n", '2: From which period in history are the first land plants known?\nA2: Embryophyte'], 'Hops_wiki': [('Mount Everest', 'Ordovician'), ('Ordovician', 'Embryophyte')], 'Hops_cpnet': [('mount_everest', 'ordovician'), ('ordovician', 'embryophyte')], 'Triplets': ['("Ordovician limestone", "composes", "the summit of Mount Everest")', '("First land plants", "are known from", "Ordovician")'], 'Referred_files': [{'name': 'Mount Everest', 'line': 12}, {'name': 'Ordovician', 'line': 10}], 'Question_triplet_answer': {100: [10, 113], 50: [70, 83], 25: [71, 83]}}
+time passed:  1657.4969992637634
+Expected dollar:  0.005
+Geisonoceratidae is Animal
+Michelinoceratidae is Animal
+Ordovician is Geography
+Cooksonia is Animal
+Silurian is Geography
+Mount Everest is Geography
+China is Geography
+Nepal is Geography
+Psilophyton is Animal
+Stomatophytes is Animal
+Siberia is Geography
+North America is Geography
+Everest is Geography
+Charles Lapworth is People
+Adam Sedgwick is People
+Roderick Murchison is People
+Lycophytes is Animal
+Tibet is Geography
+Gymnosperms is Animal
+Graptolites is Animal
+Cretaceous is Geography
+Polypodiophytes is Animal
+Paleozoic Era is Geography
+Zosterophylls is Animal
+Orthocerataceae is Animal
+Kangchenjunga is Geography
+Rhynie is Geography
+Aberdeenshire is Geography
+Pteridophyte is Animal
+Horsetails is Animal
+the Khumbu Icefall is Geography
+Mauna Kea is Geography
+Denali is Geography
+South Pole is Geography
+Horneophyton is Animal
+Rhynia is Animal
+Kenrick and Crane is Animal
+entities:  {'Charles', 'Lapworth', 'Euphyllophyte', 'Adam', 'Murchison', 'Cooksonia', 'Pteridophyte', 'China', 'Horneophyton', 'Kenrick', 'Everest', 'Rhynie', 'Graptolites', 'Polysporangiophyte', 'Mount', 'Tibet', 'Icefall', 'South', 'Paleozoic', 'Stomatophytes', 'Gymnosperms', 'Kangchenjunga', 'Denali', 'Sedgwick', 'Crane', 'Ordovician', 'America', 'Rhynia', 'Europe', 'Cretaceous', 'Embryophyte', 'Lycophytes', 'Khumbu', 'Zosterophylls', 'Pole', 'Nepal', 'Era', 'Horsetails', 'Psilophyton', 'Siberia', 'Roderick', 'Orthocerataceae', 'North', 'Polypodiophytes', 'Michelinoceratidae', 'Mauna', 'Silurian', 'Asia', 'Dawson', 'Geisonoceratidae', 'Aberdeenshire', 'Kea'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Euphyllophyte' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Euphyllophytes
+terrestrial plants
+Fish
+Ordovician limestone
+Mount Everest
+Siberia
+British mountaineers
+Branching stems
+Charles Lapworth
+The north route
+Gymnosperms
+Vascular tissue
+Mount Everest
+fossil groups
+
+Devonian plants
+Horsetails
+Gondwana
+During Ordovician
+Followers of Adam Sedgwick and Roderick Murchison
+Seed plants
+Gondwana
+Charles Lapworth
+dioicous
+Above sea level
+
+gpt_entity_particular(): entity list: 
+ ['Euphyllophytes', 'Branching stems', 'dioicous', 'British mountaineers', 'terrestrial plants', 'Ordovician limestone', 'fossil groups', 'Above sea level', 'Gymnosperms', 'Gondwana', 'Seed plants', 'Vascular tissue', 'Followers of Adam Sedgwick and Roderick Murchison', 'Mount Everest', 'Horsetails', 'Fish', 'Siberia', 'The north route', 'Charles Lapworth', 'Devonian plants', 'During Ordovician']
+
+gpt_entity_particular(): filtered entity: 
+ ['Euphyllophytes']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ordovician' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Geisonoceratidae
+Euphyllophytes
+First terrestrial plants
+Cooksonia species
+Ferns
+Geisonoceratidae
+Fish
+Ordovician starts
+Ordovician limestone
+Mount Everest
+Ordovician
+Mount Everest
+Psilophyton
+Whisk-ferns
+Euphyllophytes
+Psilophyton princeps
+Mount Everest
+Polysporangiophyte
+Stomatophytes
+Ferns
+Mount Everest
+Siberia
+Geisonoceratidae
+Montaineers
+Branching stems
+Charles Lapworth
+Lycophytes
+Geisonoceratidae
+The north route
+Fish with jaws
+Gymnosperms
+Graptolites and conodonts
+Tracheophytes
+Geisonoceratidae
+Polypodiophytes
+Ferns
+Polysporangiophyte
+Climbers
+Ferns
+Climbers
+Geisonoceratidae
+The north route
+Vascular tissue
+Polysporangiophytes
+Mount Everest
+Psilophytales
+Rhyniophytes
+Zosterophylls
+Geisonoceratidae
+Geisonoceratidae
+Mount Everest
+Pteridophyte gametophytes
+Rhyniophytes
+Vascular plants
+Ordovician–Silurian extinction events
+Mount Everest
+Polypodiophytes
+Kangchenjunga
+Euphyllophytes
+Euphyllophytes
+Polysporangiophytes
+Devonian plants
+Pteridophyte sporophyte
+Geisonoceratidae
+Horsetails
+Mount Everest
+Ordovician starts
+Charles Lapworth
+Zosterophylls
+Mount Everest
+Gondwana
+Pteridophytes
+Lycophytes
+Polysporangiophytes
+Devonian plants
+The north route
+Vascular tissue
+During Ordovician
+Followers of Adam Sedgwick and Roderick Murchison
+Ordovician meteor event
+Geisonoceratidae
+Seed plants
+Ferns
+Ordovician
+Ferns
+Gondwana
+Geisonoceratidae
+Rhyniophytes
+Charles Lapworth
+Pteridophytes
+Rhyniophytes
+Stomatophytes
+Gymnosperms
+Geisonoceratidae
+Fish
+Pteridophyte gametophytes
+First land plants
+Vascular tissue
+Geisonoceratidae
+Ferns
+Kenrick and Crane
+Mount Everest
+Ferns
+Ordovician
+Seed plants
+Kangchenjunga
+
+gpt_entity_particular(): entity list: 
+ ['Euphyllophytes', 'Pteridophyte sporophyte', 'Branching stems', 'Ordovician starts', 'Rhyniophytes', 'Montaineers', 'Whisk-ferns', 'Polysporangiophyte', 'First land plants', 'Tracheophytes', 'Ordovician limestone', 'Stomatophytes', 'Graptolites and conodonts', 'Gymnosperms', 'Kangchenjunga', 'Vascular plants', 'Gondwana', 'Seed plants', 'Vascular tissue', 'First terrestrial plants', 'Kenrick and Crane', 'Ordovician', 'Psilophytales', 'Cooksonia species', 'Lycophytes', 'Zosterophylls', 'Followers of Adam Sedgwick and Roderick Murchison', 'Ordovician meteor event', 'Mount Everest', 'Polysporangiophytes', 'Pteridophytes', 'Ferns', 'Fish', 'Horsetails', 'Psilophyton', 'Siberia', 'Pteridophyte gametophytes', 'The north route', 'Psilophyton princeps', 'Fish with jaws', 'Polypodiophytes', 'Climbers', 'Ordovician–Silurian extinction events', 'Charles Lapworth', 'Devonian plants', 'Geisonoceratidae', 'During Ordovician']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Pteridophyte' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Euphyllophytes
+First terrestrial plants
+Cooksonia species
+Ferns
+Ordovician
+Ordovician limestone
+Mount Everest
+Psilophyton
+Whisk-ferns
+Euphyllophytes
+Psilophyton princeps
+Polysporangiophyte
+Stomatophytes
+Polypodiophytes
+Ferns
+Fish
+Gymnosperms
+Tracheophytes
+Polypodiophytes
+Pteridophyte root system
+Ordovician
+Psilophytales
+Rhyniophytes
+Zosterophylls
+Pteridophyte gametophytes
+Vascular plants
+Polypodiophytes
+Polysporangiophytes
+Devonian plants
+Pteridophyte sporophyte
+Horsetails
+Gondwana
+Lycophytes
+Devonian plants
+During Ordovician
+Followers of Adam Sedgwick and Roderick Murchison
+Seed plants
+Charles Lapworth
+Pteridophytes
+During Ordovician
+Geisonoceratidae
+Seed plants
+Gondwana
+Rhyniophytes
+Gymnosperms
+Geisonoceratidae
+Fish
+Pteridophyte gametophytes
+First land plants
+Kenrick and Crane
+Mount Everest
+Ferns
+Seed plants
+Kangchenjunga
+
+gpt_entity_particular(): entity list: 
+ ['Euphyllophytes', 'Pteridophyte sporophyte', 'Rhyniophytes', 'Whisk-ferns', 'Polysporangiophyte', 'First land plants', 'Tracheophytes', 'Ordovician limestone', 'Stomatophytes', 'Gymnosperms', 'Kangchenjunga', 'Vascular plants', 'Pteridophyte root system', 'Gondwana', 'Seed plants', 'First terrestrial plants', 'Kenrick and Crane', 'Ordovician', 'Psilophytales', 'Cooksonia species', 'Lycophytes', 'Zosterophylls', 'Followers of Adam Sedgwick and Roderick Murchison', 'Mount Everest', 'Polysporangiophytes', 'Pteridophytes', 'Ferns', 'Fish', 'Horsetails', 'Psilophyton', 'Pteridophyte gametophytes', 'Psilophyton princeps', 'Polypodiophytes', 'Charles Lapworth', 'Devonian plants', 'Geisonoceratidae', 'During Ordovician']
+
+gpt_entity_particular(): filtered entity: 
+ ['Pteridophytes']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Embryophyte' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Euphyllophytes
+terrestrial plants
+Cooksonia species
+Ferns
+Fish
+limestone
+Mount Everest
+Ordovician
+Psilophyton
+Whisk-ferns
+Euphyllophytes
+Psilophyton princeps
+Polysporangiophyte
+Stomatophytes
+Ferns
+Siberia
+British mountaineers
+Branching stems
+Charles Lapworth
+Lycophytes
+The north route
+Psilophyton princeps
+Pteridophytes
+Polypodiophytes
+Pteridophyte root system
+Ordovician meteor event
+Polypodiophytes
+Euphyllophytes
+Seed plants
+Endocerid cephalopods
+Polysporangiophyte
+Climbers
+Ferns
+Climbers
+The north route
+Vascular tissue
+Polysporangiophytes
+Mount Everest
+Psilophytales
+Rhyniophytes
+Zosterophylls
+Geisonoceratidae
+Geisonoceratidae
+Mount Everest
+Pteridophyte gametophytes
+Rhyniophytes
+Vascular plants
+Ordovician
+Polypodiophytes
+Kangchenjunga
+Euphyllophytes
+Euphyllophytes
+Polysporangiophytes
+Devonian plants
+Pteridophyte sporophyte
+Geisonoceratidae
+Horsetails
+Mount Everest
+Ordovician
+Charles Lapworth
+Zosterophylls
+Mount Everest
+Gondwana
+Pteridophytes
+Lycophytes
+Polysporangiophytes
+Devonian plants
+The north route
+Vascular tissue
+Ordovician
+Followers
+Ordovician meteor event
+Geisonoceratidae
+Seed plants
+Ferns
+Ordovician
+Ferns
+Gondwana
+Geisonoceratidae
+Rhyniophytes
+Charles Lapworth
+Pteridophytes
+Rhyniophytes
+Stomatophytes
+Gymnosperms
+Geisonoceratidae
+Fish
+Pteridophyte gametophytes
+land plants
+Vascular tissue
+Geisonoceratidae
+Ferns
+Kenrick and Crane
+Mount Everest
+Ferns
+Ordovician
+Seed plants
+Kangchenjunga
+
+gpt_entity_particular(): entity list: 
+ ['Euphyllophytes', 'Pteridophyte sporophyte', 'Branching stems', 'Rhyniophytes', 'British mountaineers', 'Whisk-ferns', 'limestone', 'Polysporangiophyte', 'terrestrial plants', 'Stomatophytes', 'Gymnosperms', 'Kangchenjunga', 'land plants', 'Vascular plants', 'Pteridophyte root system', 'Gondwana', 'Seed plants', 'Endocerid cephalopods', 'Vascular tissue', 'Kenrick and Crane', 'Ordovician', 'Psilophytales', 'Cooksonia species', 'Lycophytes', 'Zosterophylls', 'Ordovician meteor event', 'Followers', 'Mount Everest', 'Pteridophytes', 'Polysporangiophytes', 'Ferns', 'Fish', 'Horsetails', 'Psilophyton', 'Siberia', 'Pteridophyte gametophytes', 'The north route', 'Psilophyton princeps', 'Climbers', 'Polypodiophytes', 'Charles Lapworth', 'Devonian plants', 'Geisonoceratidae']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Polysporangiophyte' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Polysporangiophyte
+Polysporangiate
+Vascular plants
+Polysporangiophytes
+Tracheophytes
+Spermatophytes
+Polypodiophytes
+Adventitious
+Protoandrous
+Lepidodendrales
+Angiospermae
+Rhyniopsida
+Paraphyletic grade
+Dioicous
+Eusporangiate ferns
+
+gpt_entity_particular(): entity list: 
+ ['Eusporangiate ferns', 'Paraphyletic grade', 'Spermatophytes', 'Vascular plants', 'Polypodiophytes', 'Polysporangiate', 'Angiospermae', 'Polysporangiophyte', 'Adventitious', 'Tracheophytes', 'Polysporangiophytes', 'Rhyniopsida', 'Lepidodendrales', 'Protoandrous', 'Dioicous']
+
+gpt_entity_particular(): filtered entity: 
+ ['Polysporangiate', 'Polysporangiophytes']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mount Everest' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mount Everest
+Mount Everest
+Ordovician limestone
+the summit of Mount Everest
+the international border between China and Nepal across its summit
+the international border between China and Nepal across its summit
+Mount Everest
+the summit of Mount Everest
+Mount Everest
+the summit of Mount Everest
+Mount Everest
+the summit of Mount Everest
+Britain mountaineers
+the first recorded efforts to reach Everest's summit
+Mount Everest
+the summit of Mount Everest
+Modern Everest
+the summit of Mount Everest
+Mount Everest
+the summit of Mount Everest
+Mount Everest
+
+gpt_entity_particular(): entity list: 
+ ['the international border between China and Nepal across its summit', 'Britain mountaineers', 'the summit of Mount Everest', 'Modern Everest', "the first recorded efforts to reach Everest's summit", 'Mount Everest', 'Ordovician limestone']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Geisonoceratidae' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Euphyllophytes
+lycopodiophytes
+Ordovician
+Cooksonia species
+Ferns
+Geisonoceratidae
+Asia
+Fish
+Silurian Period
+Ordovician limestone
+Mount Everest
+China and Nepal across its summit
+Welsh tribe of the Ordovices
+Psilophyton
+trimerophyte
+Psilotaceae
+mosses, hornworts, and polysporangiophytes
+seed plants
+China and Nepal across its summit
+Euphyllophytes
+lycopodiophytes
+Gaspé region
+altitudel altitude sickness, weather, and wind
+polysporangiate
+mosses, hornworts, and polysporangiophytes
+polypods
+altitude sickness, weather, and wind
+Siberia
+North America
+Everest's summit
+sporangia
+Adam Sedgwick and Roderick Murchison
+lycopodiophytes
+central to subventral
+Tibet
+Ordovician late
+conifers
+extinction events during Ordovician
+eutracheophytes with true vascular plants
+Early Cretaceous
+ferns
+polypods
+adventitious
+Paleozoic Era
+Middle Ordovician Epoch
+Progymnospermopsida
+North America
+Nepal
+polysporangiophyte megafossil
+Gaspé region
+orthoceroid cephalopods
+Lepidodendrales
+ice age
+spermatophytes
+polypodiophytes
+pteridophytes
+orthoceroid cephalopods
+alitude sickness, weather, and wind
+protandrous
+Cooksonia species
+Angiospermae
+ice age
+China and Nepal across its summit
+rhyniopsida
+Everest's recognition
+tracheophytes
+polypodiophytes
+mosses
+Rhynie, Aberdeenshire
+roots, stem and leaves
+Middle Ordovician
+ferns
+Silurian Period
+Adam Sedgwick and Roderick Murchison
+lateral sporangia
+Mauna Kea and Denali for tallest mountain from base
+equator to South Pole
+paraphyletic grade
+lycopodiophytes
+branching stems
+Rhynie, Aberdeenshire
+Tibet
+Polysporangiophytes
+oceans
+North Wales
+Middle Ordovician Epoch
+Middle Ordovician
+trimerophytes
+seed plants
+Paleozoic Era
+trimerophytes
+equator to South Pole
+Asia
+Horneophyton and Rhynia
+ordovician
+paraphyletic grade
+Cooksonia species
+mosses, hornworts, and polysporangiophytes
+conifers
+Orthocerataceae
+Ordovician
+roots, stem, and leaves
+lateral sporangia
+cKoncerataceae
+Ordovician
+dioicous
+Ordovician
+Polysporangiophytes
+Kelopsorangiophytes
+mutains
+Everest's recognition
+
+gpt_entity_particular(): entity list: 
+ ['Euphyllophytes', 'Adam Sedgwick and Roderick Murchison', 'polypodiophytes', 'paraphyletic grade', 'trimerophyte', 'tracheophytes', 'roots, stem and leaves', 'Horneophyton and Rhynia', 'dioicous', 'Gaspé region', 'conifers', 'pteridophytes', 'Polysporangiophytes', 'Tibet', 'Ordovician late', 'Ordovician limestone', 'polysporangiophyte megafossil', 'sporangia', 'Lepidodendrales', "Everest's summit", 'roots, stem, and leaves', 'North America', 'mosses, hornworts, and polysporangiophytes', 'North Wales', 'Middle Ordovician', 'Kelopsorangiophytes', 'mosses', 'ferns', 'rhyniopsida', 'Mauna Kea and Denali for tallest mountain from base', 'polysporangiate', 'altitude sickness, weather, and wind', 'eutracheophytes with true vascular plants', 'Silurian Period', 'lycopodiophytes', 'ice age', 'Angiospermae', "Everest's recognition", 'adventitious', 'lateral sporangia', 'Rhynie, Aberdeenshire', 'Middle Ordovician Epoch', 'orthoceroid cephalopods', 'Welsh tribe of the Ordovices', 'Ordovician', 'trimerophytes', 'protandrous', 'Cooksonia species', 'oceans', 'mutains', 'Nepal', 'Mount Everest', 'spermatophytes', 'Psilotaceae', 'Early Cretaceous', 'central to subventral', 'Paleozoic Era', 'alitude sickness, weather, and wind', 'equator to South Pole', 'branching stems', 'Ferns', 'Fish', 'Psilophyton', 'Siberia', 'Orthocerataceae', 'China and Nepal across its summit', 'extinction events during Ordovician', 'polypods', 'Progymnospermopsida', 'Asia', 'cKoncerataceae', 'ordovician', 'seed plants', 'altitudel altitude sickness, weather, and wind', 'Geisonoceratidae']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Charles', 'Lapworth', 'Euphyllophyte', 'Adam', 'Murchison', 'Euphyllophytes', 'Cooksonia', 'Pteridophyte', 'China', 'Horneophyton', 'Kenrick', 'Everest', 'Rhynie', 'Graptolites', 'Polysporangiate', 'Polysporangiophyte', 'Mount', 'Tibet', 'Icefall', 'South', 'Paleozoic', 'Stomatophytes', 'Gymnosperms', 'Kangchenjunga', 'Denali', 'Sedgwick', 'Crane', 'Ordovician', 'America', 'Rhynia', 'Europe', 'Cretaceous', 'Embryophyte', 'Lycophytes', 'Khumbu', 'Zosterophylls', 'Pole', 'Nepal', 'Era', 'Polysporangiophytes', 'Pteridophytes', 'Horsetails', 'Psilophyton', 'Siberia', 'Roderick', 'Orthocerataceae', 'North', 'Polypodiophytes', 'Michelinoceratidae', 'Mauna', 'Silurian', 'Asia', 'Dawson', 'Geisonoceratidae', 'Aberdeenshire', 'Kea'}
+Total time:  146.62699961662292
+Entity conversion done on 1_11 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_11_entity_conversion_hash.json. Check the entity.
+ Which geological period, known for the first land plants, shares its name with the type of limestone found at the summit of the mountain where the highest peak on Earth is located?
+
+
+
+Done. Check final_query/id_1_11_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_11_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_11_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_11_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_11_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_11_final_result_ratio25_unmasked.txt

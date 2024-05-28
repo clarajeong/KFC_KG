@@ -1,0 +1,1616 @@
+Got argument: Turtle, 5, 5_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', 'start word': 'Turtle', 'end word': 'Gulf of Mexico', 'source': {'name': 'Turtle', 'line': 39}, 'cpnet': {'start word': 'turtle', 'end word': 'gulf_of_mexico'}}
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+second_hop:  {'triplet': '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")', 'start word': 'Gulf of Mexico', 'end word': 'Cuba', 'source': {'name': 'Gulf of Mexico', 'line': 38}, 'cpnet': {'start word': 'gulf_of_mexico', 'end word': 'cuba'}}
+
+utils/question.py extract_hops(Cuba, [], ['Turtle', 'Gulf of Mexico']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cuba_info.json file
+extract_info(Cuba) Start.
+utils/preprocess.py extract_info(): Checking good links on Cuba
+Cay is Geography
+1 / 30 )  cays Cay cay
+Caribbean Sea is Geography
+2 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Gulf of Mexico is Geography
+3 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico
+Yucatán Peninsula is Geography
+4 / 30 )  Yucatán Peninsula Yucatán Peninsula yucatan_peninsula
+Florida is Geography
+5 / 30 )  Florida Florida florida
+The Bahamas is Geography
+6 / 30 )  the Bahamas The Bahamas bahamas
+Hispaniola is Geography
+7 / 30 )  Hispaniola Hispaniola hispaniola
+Jamaica is Geography
+8 / 30 )  Jamaica Jamaica jamaica
+Cayman Islands is Geography
+9 / 30 )  Cayman Islands Cayman Islands cayman_islands
+Havana is Geography
+10 / 30 )  Havana Havana havana
+Caribbean is Geography
+11 / 30 )  Caribbean Caribbean caribbean
+Republic of Cuba  is Geography
+12 / 30 )  independence Republic of Cuba  republic_of_cuba
+Fidel Castro is People
+13 / 30 )  Fidel Castro Fidel Castro fidel_castro
+Soviet Union is Geography
+14 / 30 )  Soviet Union Soviet Union soviet_union
+Organization of American States is Geography
+15 / 30 )  Organization of American States Organization of American States organization_of_american_states
+Christopher Columbus is People
+16 / 30 )  Christopher Columbus Christopher Columbus christopher_columbus
+Southeastern United States is Geography
+17 / 30 )  American Southeast Southeastern United States southeastern_united_states
+Barbados is Geography
+18 / 30 )  Barbados Barbados barbados
+Saint-Domingue is Geography
+19 / 30 )  Saint-Domingue Saint-Domingue saint_domingue
+Kingdom of Great Britain is Geography
+20 / 30 )  British Kingdom of Great Britain kingdom_of_great_britain
+Dominican Republic is Geography
+21 / 30 )  Dominican Republic Dominican Republic dominican_republic
+José Martí is People
+22 / 30 )  José Martí José Martí jose_julian_marti
+Santo Domingo is Geography
+23 / 30 )  Santo Domingo Santo Domingo santo_domingo
+International Red Cross and Red Crescent Movement is Geography
+24 / 30 )  Red Cross International Red Cross and Red Crescent Movement red_cross
+USS Maine  is Geography
+25 / 30 )  USS Maine USS Maine  maine
+Puerto Rico is Geography
+26 / 30 )  Puerto Rico Puerto Rico puerto_rico
+Philippines is Geography
+27 / 30 )  Philippines Philippines philippines
+Guam is Geography
+28 / 30 )  Guam Guam guam
+Guantanamo Bay Naval Base is Geography
+29 / 30 )  Guantánamo Bay Naval Base Guantanamo Bay Naval Base gtmo
+Francoist Spain is Geography
+30 / 30 )  Francoist Spain Francoist Spain francoist
+extract_triplet(Cuba)
+Got GPT's response. String length : 2425
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Caribbean', 'Caribbean', 'caribbean']]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Yucatán Peninsula', 'Yucatán Peninsula', 'yucatan_peninsula']]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Florida', 'Florida', 'florida'], ['the Bahamas', 'The Bahamas', 'bahamas']]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Hispaniola', 'Hispaniola', 'hispaniola']]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Jamaica', 'Jamaica', 'jamaica'], ['Cayman Islands', 'Cayman Islands', 'cayman_islands']]
+subject_words:  [['Havana', 'Havana', 'havana']]
+object_words:  [(None, 'Cuba', 'cuba')]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Caribbean', 'Caribbean', 'caribbean']]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  []
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  []
+subject_words:  [['Fidel Castro', 'Fidel Castro', 'fidel_castro']]
+object_words:  [(None, 'Cuba', 'cuba')]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  []
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  []
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  []
+subject_words:  [(None, 'Cuba', 'cuba')]
+object_words:  []
+third_hop1:  {'triplet': '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")', 'start word': 'Cuba', 'end word': 'Soviet Union', 'source': {'name': 'Cuba', 'line': 12}, 'cpnet': {'start word': 'cuba', 'end word': 'soviet_union'}}
+
+utils/question.py extract_hops(Cuba, ['Soviet Union'], ['Turtle', 'Gulf of Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cuba_info.json file
+third_hop2:  {'triplet': '("Fidel Castro", "established communist rule during", "the Cuban Revolution")', 'start word': 'Cuba', 'end word': 'Fidel Castro', 'source': {'name': 'Cuba', 'line': 10}, 'cpnet': {'start word': 'cuba', 'end word': 'fidel_castro'}}
+extraction_done:  True
+generate_question(5_2, ['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")', '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")', '("Fidel Castro", "established communist rule during", "the Cuban Revolution")'], ['Turtle', 'Gulf of Mexico', 'Cuba', 'Cuba'], [('Turtle', 'Gulf of Mexico'), ('Gulf of Mexico', 'Cuba'), ('Cuba', 'Soviet Union'), ('Cuba', 'Fidel Castro')], Turtle, [{'name': 'Turtle', 'line': 39}, {'name': 'Gulf of Mexico', 'line': 38}, {'name': 'Cuba', 'line': 12}, {'name': 'Cuba', 'line': 10}]) called
+GPT output is:  Q: During which revolution, led by Fidel Castro, did the country that experienced a crisis with the Soviet Union in 1962 establish a form of government that is currently found in the nation where the richest diversity of non-marine species of a certain creature exists, a creature also abundant in the marine ecosystems of a body of water that supports significant fisheries for this country, the United States, and Mexico?
+
+A: Turtle
+final_choice(Turtle, options = 5) started
+[]
+entity_type(Turtle) called
+Turtle is Animal
+check_matchscore(Turtle, Turtles):  1.0
+check_matchscore(Turtle, Kimmeridgian first appearances):  0.0
+choose_by_wiki_recur(Kimmeridgian first appearances)
+   Pages in Kimmeridgian first appearances: ['Allosauridae', 'Aulacostephanidae', 'Bonefishes', 'Brachiosauridae', 'Carcharodontosauridae', 'Coeluridae', 'Compsemydidae', 'Cycnorhamphus suevicus', 'Dsungaripteridae', 'Haploceratidae', 'Lusitanisuchus', 'Marginocephalia', 'Mazapilitinae', 'Multituberculata', 'Neosauropoda', 'Nodosauridae', 'Paurodontidae', 'Platypterygiinae', 'Pygope', 'Salamandroidea', 'Somphospondyli', 'Spinosauridae', 'Titanosauria', 'Turtle']
+      Titanosauria in ['Titanosauria', 'Platypterygiinae', 'Salamandroidea', 'Paurodontidae']
+Titanosauria is Animal
+      Platypterygiinae in ['Titanosauria', 'Platypterygiinae', 'Salamandroidea', 'Paurodontidae']
+Platypterygiinae is Animal
+      Salamandroidea in ['Titanosauria', 'Platypterygiinae', 'Salamandroidea', 'Paurodontidae']
+Salamandroidea is Animal
+      Paurodontidae in ['Titanosauria', 'Platypterygiinae', 'Salamandroidea', 'Paurodontidae']
+Paurodontidae is Animal
+['Titanosauria', 'Platypterygiinae', 'Salamandroidea', 'Paurodontidae']
+Ended after 2.5 hierarchy
+(2.5, ['Platypterygiinae', 'Paurodontidae', 'Salamandroidea', 'Titanosauria'])
+
+extract_info(Titanosauria) Start.
+utils/preprocess.py extract_info(): Checking good links on Titanosauria
+Sauropoda is Animal
+1 / 30 )  sauropod Sauropoda sauropoda
+Dinosaur is Animal
+2 / 30 )  dinosaurs Dinosaur dinosaur
+Cretaceous is Geography
+3 / 30 )  Cretaceous Cretaceous cretaceous
+Argentinosaurus is Animal
+4 / 30 )  Argentinosaurus Argentinosaurus argentinosaurus
+Patagonia is Geography
+5 / 30 )  same region Patagonia patagonia
+Titanosaurus is Animal
+6 / 30 )  Titanosaurus Titanosaurus titanosaurus
+Brachiosauridae is Animal
+7 / 30 )  brachiosaurids Brachiosauridae brachiosauridae
+Macronaria is Animal
+8 / 30 )  Titanosauriformes Macronaria macronaria
+Diplodocidae is Animal
+9 / 30 )  diplodocids Diplodocidae diplodocidae
+Rebbachisauridae is Animal
+10 / 30 )  rebbachisaurid Rebbachisauridae rebbachisauridae
+Camarasaurus is Animal
+11 / 30 )  Camarasaurus Camarasaurus camarasaurus
+Brachiosaurus is Animal
+12 / 30 )  Brachiosaurus Brachiosaurus brachiosaurus
+Saurischia is Animal
+13 / 30 )  saurischian Saurischia saurischia
+Stegosauria is Animal
+14 / 30 )  stegosaurs Stegosauria stegosauria
+Ankylosauria is Animal
+15 / 30 )  ankylosaurs Ankylosauria ankylosauria
+Mamenchisauridae is Animal
+16 / 30 )  Mamenchisauridae Mamenchisauridae mamenchisauridae
+Turiasauria is Animal
+17 / 30 )  Turiasauria Turiasauria turiasauria
+Dicraeosauridae is Animal
+18 / 30 )  Dicraeosauridae Dicraeosauridae dicraeosauridae
+Euhelopodidae is Animal
+19 / 30 )  Euhelopodidae Euhelopodidae euhelopodidae
+Lithostrotia is Animal
+20 / 30 )  Lithostrotia Lithostrotia lithostrotia
+India is Geography
+21 / 30 )  India India india
+Cetiosauridae is Animal
+22 / 30 )  Cetiosauridae Cetiosauridae cetiosauridae
+Camarasauridae is Animal
+23 / 30 )  Morosauridae Camarasauridae camarasaurid
+Argentina is Geography
+24 / 30 )  Argentina Argentina argentina
+England is Geography
+25 / 30 )  England England england
+France is Geography
+26 / 30 )  France France france
+Romania is Geography
+27 / 30 )  Romania Romania romania
+Madagascar is Geography
+28 / 30 )  Madagascar Madagascar madagascar
+United States is Geography
+29 / 30 )  United States United States united_states
+Saltasaurinae is Animal
+30 / 30 )  Saltasaurinae Saltasaurinae saltasaurines
+extract_triplet(Titanosauria)
+Got GPT's response. String length : 3618
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  [['sauropod', 'Sauropoda', 'sauropoda'], ['dinosaurs', 'Dinosaur', 'dinosaur']]
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  [['Cretaceous', 'Cretaceous', 'cretaceous']]
+subject_words:  [['Argentinosaurus', 'Argentinosaurus', 'argentinosaurus']]
+object_words:  [['same region', 'Patagonia', 'patagonia']]
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  []
+subject_words:  [['Titanosaurus', 'Titanosaurus', 'titanosaurus']]
+object_words:  []
+subject_words:  [['Titanosauriformes', 'Macronaria', 'macronaria']]
+object_words:  [['brachiosaurids', 'Brachiosauridae', 'brachiosauridae']]
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  []
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  []
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  []
+subject_words:  []
+object_words:  [['brachiosaurids', 'Brachiosauridae', 'brachiosauridae']]
+subject_words:  []
+object_words:  [['diplodocids', 'Diplodocidae', 'diplodocidae']]
+subject_words:  []
+object_words:  [['rebbachisaurid', 'Rebbachisauridae', 'rebbachisauridae']]
+subject_words:  [['Camarasaurus', 'Camarasaurus', 'camarasaurus']]
+object_words:  []
+subject_words:  [['Brachiosaurus', 'Brachiosaurus', 'brachiosaurus']]
+object_words:  []
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  [['saurischian', 'Saurischia', 'saurischia']]
+subject_words:  [['stegosaurs', 'Stegosauria', 'stegosauria']]
+object_words:  []
+subject_words:  [['ankylosaurs', 'Ankylosauria', 'ankylosauria']]
+object_words:  []
+subject_words:  [['Saltasaurinae', 'Saltasaurinae', 'saltasaurines']]
+object_words:  [['Lithostrotia', 'Lithostrotia', 'lithostrotia']]
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  [['sauropod', 'Sauropoda', 'sauropoda'], ['dinosaurs', 'Dinosaur', 'dinosaur']]
+subject_words:  [['Titanosauriformes', 'Macronaria', 'macronaria']]
+object_words:  [['brachiosaurids', 'Brachiosauridae', 'brachiosauridae']]
+subject_words:  [['Saltasaurinae', 'Saltasaurinae', 'saltasaurines']]
+object_words:  [['Lithostrotia', 'Lithostrotia', 'lithostrotia']]
+subject_words:  [['Titanosaurus', 'Titanosaurus', 'titanosaurus']]
+object_words:  [['India', 'India', 'india']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Morosauridae', 'Camarasauridae', 'camarasaurid']]
+object_words:  []
+subject_words:  [['Argentinosaurus', 'Argentinosaurus', 'argentinosaurus']]
+object_words:  []
+subject_words:  [['Argentina', 'Argentina', 'argentina']]
+object_words:  []
+subject_words:  [['England', 'England', 'england']]
+object_words:  []
+subject_words:  [['France', 'France', 'france']]
+object_words:  []
+subject_words:  [['Romania', 'Romania', 'romania']]
+object_words:  []
+subject_words:  [['Madagascar', 'Madagascar', 'madagascar']]
+object_words:  []
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  []
+subject_words:  [['Argentina', 'Argentina', 'argentina']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  []
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  []
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  [['Argentina', 'Argentina', 'argentina']]
+subject_words:  [(None, 'Titanosauria', 'titanosauria')]
+object_words:  [['brachiosaurids', 'Brachiosauridae', 'brachiosauridae'], ['diplodocids', 'Diplodocidae', 'diplodocidae']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+extract_info(Paurodontidae) Start.
+utils/preprocess.py extract_info(): Checking good links on Paurodontidae
+Dryolestida is Animal
+1 / 30 )  Dryolestida Dryolestida dryolestoid
+United Kingdom is Geography
+2 / 30 )  Britain United Kingdom united_kingdom
+Portugal is Geography
+3 / 30 )  Portugal Portugal portugal
+Tanzania is Geography
+4 / 30 )  Tanzania Tanzania tanzania
+Dryolestidae is Animal
+5 / 30 )  dryolestid Dryolestidae dryolestid
+Golden mole is Animal
+6 / 30 )  golden mole Golden mole golden_mole
+Amblysomus is Animal
+7 / 30 )  Amblysomus Amblysomus golden_moles
+Jurassic is Geography
+8 / 30 )  Jurassic Jurassic jurassic
+Mammal is Animal
+9 / 30 )  mammal Mammal mammal
+Cretaceous is Geography
+10 / 30 )  Cretaceous Cretaceous cretaceous
+extract_triplet(Paurodontidae)
+Got GPT's response. String length : 662
+subject_words:  [(None, 'Paurodontidae', 'paurodontidae')]
+object_words:  [['Jurassic', 'Jurassic', 'jurassic'], ['Cretaceous', 'Cretaceous', 'cretaceous']]
+subject_words:  [(None, 'Paurodontidae', 'paurodontidae')]
+object_words:  [['Dryolestida', 'Dryolestida', 'dryolestoid']]
+subject_words:  [(None, 'Paurodontidae', 'paurodontidae')]
+object_words:  []
+subject_words:  [(None, 'Paurodontidae', 'paurodontidae')]
+object_words:  [['Britain', 'United Kingdom', 'united_kingdom']]
+subject_words:  [(None, 'Paurodontidae', 'paurodontidae')]
+object_words:  [['Portugal', 'Portugal', 'portugal']]
+subject_words:  [(None, 'Paurodontidae', 'paurodontidae')]
+object_words:  [['Tanzania', 'Tanzania', 'tanzania']]
+subject_words:  []
+object_words:  [['dryolestid', 'Dryolestidae', 'dryolestid']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['golden mole', 'Golden mole', 'golden_mole'], ['Amblysomus', 'Amblysomus', 'golden_moles']]
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")\n', '("Fidel Castro", "established communist rule during", "the Cuban Revolution")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Cuba", "is located at", "the northern Caribbean Sea, Gulf of Mexico, and Atlantic Ocean meet")\n', '("Cuba", "is east of", "the Yucatán Peninsula (Mexico)")\n', '("Cuba", "is south of", "both the American state of Florida and the Bahamas")\n', '("Cuba", "is west of", "Hispaniola (Haiti/Dominican Republic)")\n', '("Cuba", "is north of", "Jamaica and the Cayman Islands")\n', '("Havana", "is the largest city and capital of", "Cuba")\n', '("Cuba", "is the third-most populous country in", "the Caribbean")\n', '("The territory that is now Cuba", "was inhabited by", "Guanahatabey and Taíno peoples")\n', '("Cuba", "was then a colony of", "Spain")\n', '("Fidel Castro", "established communist rule during", "the Cuban Revolution")\n', '("Cuba", "was a point of contention during", "the Cold War between the Soviet Union and the United States")\n', '("Cuba", "is one of a few extant socialist states", "")\n', '("Cuba", "has an authoritarian regime where", "political opposition is not permitted")\n', '("Cuban culture", "derives from", "the Taíno Ciboney peoples, Spanish colonialism, the introduction of enslaved Africans and a close relationship with the Soviet Union")\n', '("The name Cuba", "comes from the Taíno language", "")\n', '("Archeological findings", "associate the arrival of humans on Cuba with", "extinctions of the islands native fauna, particularly its endemic sloths")\n', '("Slavery in Cuba", "was practiced during", "the Spanish colonization")\n', '("Cuba\'s diet", "is of international concern due to", "micronutrient deficiencies and lack of diversity")\n', '("Cuba", "is located at", "the northern Caribbean Sea, Gulf of Mexico, and Atlantic Ocean meet")\n', '("Cuba", "is east of", "the Yucatán Peninsula (Mexico)")\n', '("Cuba", "is south of", "both the American state of Florida and the Bahamas")\n', '("Cuba", "is west of", "Hispaniola (Haiti/Dominican Republic)")\n', '("Cuba", "is north of", "Jamaica and the Cayman Islands")\n', '("Havana", "is the largest city and capital of", "Cuba")\n', '("Cuba", "is the third-most populous country in", "the Caribbean")\n', '("The territory that is now Cuba", "was inhabited by", "Guanahatabey and Taíno peoples")\n', '("Cuba", "was then a colony of", "Spain")\n', '("Cuba", "was a point of contention during", "the Cold War between the Soviet Union and the United States")\n', '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")\n', '("Cuba", "is one of a few extant socialist states", "")\n', '("Cuba", "has an authoritarian regime where", "political opposition is not permitted")\n', '("Cuban culture", "derives from", "the Taíno Ciboney peoples, Spanish colonialism, the introduction of enslaved Africans and a close relationship with the Soviet Union")\n', '("The name Cuba", "comes from the Taíno language", "")\n', '("Archeological findings", "associate the arrival of humans on Cuba with", "extinctions of the islands native fauna, particularly its endemic sloths")\n', '("Slavery in Cuba", "was practiced during", "the Spanish colonization")\n', '("Cuba\'s diet", "is of international concern due to", "micronutrient deficiencies and lack of diversity")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n', '("Platypterygiinae", "is a subfamily of", "ophthalmosaurid thunnosaur ichthyosaurs")\n', '("Platypterygiinae", "existed from", "the early Late Jurassic to the early Late Cretaceous")\n', '("Brachypterygius", "is the oldest known", "platypterygiine")\n', '("Platypterygiinae", "has square tooth roots and reduced extracondylar area", "in their anatomy")\n', '("Platypterygiinae", "has prominent dorsal and ventral trochanters on", "humerus")\n', '("Platypterygiinae", "ischiopubis lacks", "an obturator foramen")\n', '("Platypterygiinae", "was named in", "2001 by Maxim S. Arkhangelsky")\n', '("Arkhangelsky", "and colleague noted", "Platypterygiinae")\n', '("Platypterygiinae", "defined phylogenetically by", "Fischer et al. (2012)")\n', '("Platypterygiinae", "is closer to", "Platypterygius hercynicus than to Ophthalmosaurus icenicus")\n', '("Platypterygiinae", "lived in", "Asia")\n', '("Platypterygiinae", "lived in", "Australia")\n', '("Platypterygiinae", "lived in", "Europe")\n', '("Platypterygiinae", "lived in", "North America")\n', '("Platypterygiinae", "lived in", "South America")\n', '("Titanosauria", "were a diverse group of", "sauropod dinosaurs")\n', '("Titanosauria", "thrived at the time of", "the extinction event at the end of the Cretaceous")\n', '("Argentinosaurus", "from", "the same region")\n', '("Titanosauria", "name alludes to", "the mythological Titans")\n', '("Titanosaurus", "is considered a", "nomen dubium")\n', '("Titanosauriformes", "includes", "brachiosaurids and titanosaurs")\n', '("Titanosauria", "relationships between species are", "still not well-understood")\n', '("Titanosauria", "fossils have been found on", "every continent")\n', '("Titanosauria", "have the least complete", "fossil record of sauropodomorph")\n', '("Nemegtosaurus", "nearly complete skulls have been described for", "titanosaurs")\n', '("Titanosauria", "includes some of the", "largest known sauropods and some of the smallest")\n', '("Sarmientosaurus", "head resembled that of", "brachiosaurids")\n', '("Rapetosaurus", "head resembled that of", "diplodocids")\n', '("Antarctosaurus", "skull was similar to the", "rebbachisaurid Nigersaurus")\n', '("Camarasaurus", "similar head to", "titanosaurs")\n', '("Brachiosaurus", "similar head to", "titanosaurs")\n', '("Titanosauria", "reversal to more basal", "saurischian characteristics")\n', '("stegosaurs", "osteoderms arrangement similar to", "titanosaurs")\n', '("ankylosaurs", "osteoderms arrangement similar to", "titanosaurs")\n', '("Saltasaurinae", "osteoderms were present in", "titanosaurs within the clade Lithostrotia")\n', '("Titanosauria", "classified as", "sauropod dinosaurs")\n', '("Titanosauriformes", "Titanosaurs most closely related to", "euhelopodids and brachiosaurids")\n', '("Saltasaurinae", "majority of titanosaurs except Andesaurus form a clade called", "Lithostrotia")\n', '("Titanosaurus indicus", "was first discovered in", "India")\n', '("Titanosauridae", "was named by", "Richard Lydekker")\n', '("Morosauridae", "once included", "Titanosaurinae according to Franz Nopcsa")\n', '("Argentinosaurus", "included in", "Titanosauridae by Friedrich von Huene")\n', '("Argentina", "many species of titanosaurs were classified in", "Titanosauridae")\n', '("England", "Titanosaurus species from", "classified in Titanosauridae")\n', '("France", "species from", "classified in Titanosauridae")\n', '("Romania", "species from", "classified in Titanosauridae")\n', '("Madagascar", "species from", "classified in Titanosauridae")\n', '("United States", "species from", "classified in Titanosauridae")\n', '("Argentina", "species from", "classified in Titanosauridae")\n', '("Andesauridae", "Argentinosaurus, Andesaurus and Epachthosaurus distinct from", "titanosaurids")\n', '("dicraeosaurids", "Nemegtosaurus and Quaesitosaurus placed within", "by McIntosh")\n', '("Titanosauria", "poorly understood", "paleobiology")\n', '("Titanosauria", "diet revealed by", "fossilized dung")\n', '("Titanosauria", "nesting grounds discovered in", "Auca Mahuevo, Argentina")\n', '("Titanosauria", "replaced other", "sauropods like diplodocids and brachiosaurids")\n', '("Gondwana", "titanosaurs were especially numerous in", "the southern continents")\n', '("Ibirania", "suggests titanosaurs were susceptible to", "diseases like osteomyelitis and parasite infestations")\n', '("Paurodontidae", "is a family of", "Late Jurassic to Early Cretaceous mammals")\n', '("Paurodontidae", "in the order of", "Dryolestida")\n', '("Paurodontidae remains", "have been found in", "the United States")\n', '("Paurodontidae remains", "have been found in", "Britain")\n', '("Paurodontidae remains", "have been found in", "Portugal")\n', '("Paurodontidae remains", "have been found in", "Tanzania")\n', '("Paurodontids", "likely represent", "a paraphyletic group of basal non dryolestid dryolestidans")\n', '("Paurodon", "has been suggested to have been a specialist feeder on", "earthworms")\n', '("Paurodon\'s teeth morphology", "closely resembling that of", "the golden mole genus Amblysomus")\n']
+range(1, 195) 4
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")\n', '("Fidel Castro", "established communist rule during", "the Cuban Revolution")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Cuba", "is located at", "the northern Caribbean Sea, Gulf of Mexico, and Atlantic Ocean meet")\n', '("Cuba", "is east of", "the Yucatán Peninsula (Mexico)")\n', '("Cuba", "is south of", "both the American state of Florida and the Bahamas")\n', '("Cuba", "is west of", "Hispaniola (Haiti/Dominican Republic)")\n', '("Cuba", "is north of", "Jamaica and the Cayman Islands")\n', '("Havana", "is the largest city and capital of", "Cuba")\n', '("Cuba", "is the third-most populous country in", "the Caribbean")\n', '("The territory that is now Cuba", "was inhabited by", "Guanahatabey and Taíno peoples")\n', '("Cuba", "was then a colony of", "Spain")\n', '("Fidel Castro", "established communist rule during", "the Cuban Revolution")\n', '("Cuba", "was a point of contention during", "the Cold War between the Soviet Union and the United States")\n', '("Cuba", "is one of a few extant socialist states", "")\n', '("Cuba", "has an authoritarian regime where", "political opposition is not permitted")\n', '("Cuban culture", "derives from", "the Taíno Ciboney peoples, Spanish colonialism, the introduction of enslaved Africans and a close relationship with the Soviet Union")\n', '("The name Cuba", "comes from the Taíno language", "")\n', '("Archeological findings", "associate the arrival of humans on Cuba with", "extinctions of the islands native fauna, particularly its endemic sloths")\n', '("Slavery in Cuba", "was practiced during", "the Spanish colonization")\n', '("Cuba\'s diet", "is of international concern due to", "micronutrient deficiencies and lack of diversity")\n', '("Cuba", "is located at", "the northern Caribbean Sea, Gulf of Mexico, and Atlantic Ocean meet")\n', '("Cuba", "is east of", "the Yucatán Peninsula (Mexico)")\n', '("Cuba", "is south of", "both the American state of Florida and the Bahamas")\n', '("Cuba", "is west of", "Hispaniola (Haiti/Dominican Republic)")\n', '("Cuba", "is north of", "Jamaica and the Cayman Islands")\n', '("Havana", "is the largest city and capital of", "Cuba")\n', '("Cuba", "is the third-most populous country in", "the Caribbean")\n', '("The territory that is now Cuba", "was inhabited by", "Guanahatabey and Taíno peoples")\n', '("Cuba", "was then a colony of", "Spain")\n', '("Cuba", "was a point of contention during", "the Cold War between the Soviet Union and the United States")\n', '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")\n', '("Cuba", "is one of a few extant socialist states", "")\n', '("Cuba", "has an authoritarian regime where", "political opposition is not permitted")\n', '("Cuban culture", "derives from", "the Taíno Ciboney peoples, Spanish colonialism, the introduction of enslaved Africans and a close relationship with the Soviet Union")\n', '("The name Cuba", "comes from the Taíno language", "")\n', '("Archeological findings", "associate the arrival of humans on Cuba with", "extinctions of the islands native fauna, particularly its endemic sloths")\n', '("Slavery in Cuba", "was practiced during", "the Spanish colonization")\n', '("Cuba\'s diet", "is of international concern due to", "micronutrient deficiencies and lack of diversity")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n', '("Platypterygiinae", "is a subfamily of", "ophthalmosaurid thunnosaur ichthyosaurs")\n', '("Platypterygiinae", "existed from", "the early Late Jurassic to the early Late Cretaceous")\n', '("Brachypterygius", "is the oldest known", "platypterygiine")\n', '("Platypterygiinae", "has square tooth roots and reduced extracondylar area", "in their anatomy")\n', '("Platypterygiinae", "has prominent dorsal and ventral trochanters on", "humerus")\n', '("Platypterygiinae", "ischiopubis lacks", "an obturator foramen")\n', '("Platypterygiinae", "was named in", "2001 by Maxim S. Arkhangelsky")\n', '("Arkhangelsky", "and colleague noted", "Platypterygiinae")\n', '("Platypterygiinae", "defined phylogenetically by", "Fischer et al. (2012)")\n', '("Platypterygiinae", "is closer to", "Platypterygius hercynicus than to Ophthalmosaurus icenicus")\n', '("Platypterygiinae", "lived in", "Asia")\n', '("Platypterygiinae", "lived in", "Australia")\n', '("Platypterygiinae", "lived in", "Europe")\n', '("Platypterygiinae", "lived in", "North America")\n', '("Platypterygiinae", "lived in", "South America")\n', '("Titanosauria", "were a diverse group of", "sauropod dinosaurs")\n', '("Titanosauria", "thrived at the time of", "the extinction event at the end of the Cretaceous")\n', '("Argentinosaurus", "from", "the same region")\n', '("Titanosauria", "name alludes to", "the mythological Titans")\n', '("Titanosaurus", "is considered a", "nomen dubium")\n', '("Titanosauriformes", "includes", "brachiosaurids and titanosaurs")\n', '("Titanosauria", "relationships between species are", "still not well-understood")\n', '("Titanosauria", "fossils have been found on", "every continent")\n', '("Titanosauria", "have the least complete", "fossil record of sauropodomorph")\n', '("Nemegtosaurus", "nearly complete skulls have been described for", "titanosaurs")\n', '("Titanosauria", "includes some of the", "largest known sauropods and some of the smallest")\n', '("Sarmientosaurus", "head resembled that of", "brachiosaurids")\n', '("Rapetosaurus", "head resembled that of", "diplodocids")\n', '("Antarctosaurus", "skull was similar to the", "rebbachisaurid Nigersaurus")\n', '("Camarasaurus", "similar head to", "titanosaurs")\n', '("Brachiosaurus", "similar head to", "titanosaurs")\n', '("Titanosauria", "reversal to more basal", "saurischian characteristics")\n', '("stegosaurs", "osteoderms arrangement similar to", "titanosaurs")\n', '("ankylosaurs", "osteoderms arrangement similar to", "titanosaurs")\n', '("Saltasaurinae", "osteoderms were present in", "titanosaurs within the clade Lithostrotia")\n', '("Titanosauria", "classified as", "sauropod dinosaurs")\n', '("Titanosauriformes", "Titanosaurs most closely related to", "euhelopodids and brachiosaurids")\n', '("Saltasaurinae", "majority of titanosaurs except Andesaurus form a clade called", "Lithostrotia")\n', '("Titanosaurus indicus", "was first discovered in", "India")\n', '("Titanosauridae", "was named by", "Richard Lydekker")\n', '("Morosauridae", "once included", "Titanosaurinae according to Franz Nopcsa")\n', '("Argentinosaurus", "included in", "Titanosauridae by Friedrich von Huene")\n', '("Argentina", "many species of titanosaurs were classified in", "Titanosauridae")\n', '("England", "Titanosaurus species from", "classified in Titanosauridae")\n', '("France", "species from", "classified in Titanosauridae")\n', '("Romania", "species from", "classified in Titanosauridae")\n', '("Madagascar", "species from", "classified in Titanosauridae")\n', '("United States", "species from", "classified in Titanosauridae")\n', '("Argentina", "species from", "classified in Titanosauridae")\n', '("Andesauridae", "Argentinosaurus, Andesaurus and Epachthosaurus distinct from", "titanosaurids")\n', '("dicraeosaurids", "Nemegtosaurus and Quaesitosaurus placed within", "by McIntosh")\n', '("Titanosauria", "poorly understood", "paleobiology")\n', '("Titanosauria", "diet revealed by", "fossilized dung")\n', '("Titanosauria", "nesting grounds discovered in", "Auca Mahuevo, Argentina")\n', '("Titanosauria", "replaced other", "sauropods like diplodocids and brachiosaurids")\n', '("Gondwana", "titanosaurs were especially numerous in", "the southern continents")\n', '("Ibirania", "suggests titanosaurs were susceptible to", "diseases like osteomyelitis and parasite infestations")\n', '("Paurodontidae", "is a family of", "Late Jurassic to Early Cretaceous mammals")\n', '("Paurodontidae", "in the order of", "Dryolestida")\n', '("Paurodontidae remains", "have been found in", "the United States")\n', '("Paurodontidae remains", "have been found in", "Britain")\n', '("Paurodontidae remains", "have been found in", "Portugal")\n', '("Paurodontidae remains", "have been found in", "Tanzania")\n', '("Paurodontids", "likely represent", "a paraphyletic group of basal non dryolestid dryolestidans")\n', '("Paurodon", "has been suggested to have been a specialist feeder on", "earthworms")\n', '("Paurodon\'s teeth morphology", "closely resembling that of", "the golden mole genus Amblysomus")\n']
+range(1, 195) 4
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")\n', '("Fidel Castro", "established communist rule during", "the Cuban Revolution")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Cuba", "is located at", "the northern Caribbean Sea, Gulf of Mexico, and Atlantic Ocean meet")\n', '("Cuba", "is east of", "the Yucatán Peninsula (Mexico)")\n', '("Cuba", "is south of", "both the American state of Florida and the Bahamas")\n', '("Cuba", "is west of", "Hispaniola (Haiti/Dominican Republic)")\n', '("Cuba", "is north of", "Jamaica and the Cayman Islands")\n', '("Havana", "is the largest city and capital of", "Cuba")\n', '("Cuba", "is the third-most populous country in", "the Caribbean")\n', '("The territory that is now Cuba", "was inhabited by", "Guanahatabey and Taíno peoples")\n', '("Cuba", "was then a colony of", "Spain")\n', '("Fidel Castro", "established communist rule during", "the Cuban Revolution")\n', '("Cuba", "was a point of contention during", "the Cold War between the Soviet Union and the United States")\n', '("Cuba", "is one of a few extant socialist states", "")\n', '("Cuba", "has an authoritarian regime where", "political opposition is not permitted")\n', '("Cuban culture", "derives from", "the Taíno Ciboney peoples, Spanish colonialism, the introduction of enslaved Africans and a close relationship with the Soviet Union")\n', '("The name Cuba", "comes from the Taíno language", "")\n', '("Archeological findings", "associate the arrival of humans on Cuba with", "extinctions of the islands native fauna, particularly its endemic sloths")\n', '("Slavery in Cuba", "was practiced during", "the Spanish colonization")\n', '("Cuba\'s diet", "is of international concern due to", "micronutrient deficiencies and lack of diversity")\n', '("Cuba", "is located at", "the northern Caribbean Sea, Gulf of Mexico, and Atlantic Ocean meet")\n', '("Cuba", "is east of", "the Yucatán Peninsula (Mexico)")\n', '("Cuba", "is south of", "both the American state of Florida and the Bahamas")\n', '("Cuba", "is west of", "Hispaniola (Haiti/Dominican Republic)")\n', '("Cuba", "is north of", "Jamaica and the Cayman Islands")\n', '("Havana", "is the largest city and capital of", "Cuba")\n', '("Cuba", "is the third-most populous country in", "the Caribbean")\n', '("The territory that is now Cuba", "was inhabited by", "Guanahatabey and Taíno peoples")\n', '("Cuba", "was then a colony of", "Spain")\n', '("Cuba", "was a point of contention during", "the Cold War between the Soviet Union and the United States")\n', '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")\n', '("Cuba", "is one of a few extant socialist states", "")\n', '("Cuba", "has an authoritarian regime where", "political opposition is not permitted")\n', '("Cuban culture", "derives from", "the Taíno Ciboney peoples, Spanish colonialism, the introduction of enslaved Africans and a close relationship with the Soviet Union")\n', '("The name Cuba", "comes from the Taíno language", "")\n', '("Archeological findings", "associate the arrival of humans on Cuba with", "extinctions of the islands native fauna, particularly its endemic sloths")\n', '("Slavery in Cuba", "was practiced during", "the Spanish colonization")\n', '("Cuba\'s diet", "is of international concern due to", "micronutrient deficiencies and lack of diversity")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n', '("Platypterygiinae", "is a subfamily of", "ophthalmosaurid thunnosaur ichthyosaurs")\n', '("Platypterygiinae", "existed from", "the early Late Jurassic to the early Late Cretaceous")\n', '("Brachypterygius", "is the oldest known", "platypterygiine")\n', '("Platypterygiinae", "has square tooth roots and reduced extracondylar area", "in their anatomy")\n', '("Platypterygiinae", "has prominent dorsal and ventral trochanters on", "humerus")\n', '("Platypterygiinae", "ischiopubis lacks", "an obturator foramen")\n', '("Platypterygiinae", "was named in", "2001 by Maxim S. Arkhangelsky")\n', '("Arkhangelsky", "and colleague noted", "Platypterygiinae")\n', '("Platypterygiinae", "defined phylogenetically by", "Fischer et al. (2012)")\n', '("Platypterygiinae", "is closer to", "Platypterygius hercynicus than to Ophthalmosaurus icenicus")\n', '("Platypterygiinae", "lived in", "Asia")\n', '("Platypterygiinae", "lived in", "Australia")\n', '("Platypterygiinae", "lived in", "Europe")\n', '("Platypterygiinae", "lived in", "North America")\n', '("Platypterygiinae", "lived in", "South America")\n', '("Titanosauria", "were a diverse group of", "sauropod dinosaurs")\n', '("Titanosauria", "thrived at the time of", "the extinction event at the end of the Cretaceous")\n', '("Argentinosaurus", "from", "the same region")\n', '("Titanosauria", "name alludes to", "the mythological Titans")\n', '("Titanosaurus", "is considered a", "nomen dubium")\n', '("Titanosauriformes", "includes", "brachiosaurids and titanosaurs")\n', '("Titanosauria", "relationships between species are", "still not well-understood")\n', '("Titanosauria", "fossils have been found on", "every continent")\n', '("Titanosauria", "have the least complete", "fossil record of sauropodomorph")\n', '("Nemegtosaurus", "nearly complete skulls have been described for", "titanosaurs")\n', '("Titanosauria", "includes some of the", "largest known sauropods and some of the smallest")\n', '("Sarmientosaurus", "head resembled that of", "brachiosaurids")\n', '("Rapetosaurus", "head resembled that of", "diplodocids")\n', '("Antarctosaurus", "skull was similar to the", "rebbachisaurid Nigersaurus")\n', '("Camarasaurus", "similar head to", "titanosaurs")\n', '("Brachiosaurus", "similar head to", "titanosaurs")\n', '("Titanosauria", "reversal to more basal", "saurischian characteristics")\n', '("stegosaurs", "osteoderms arrangement similar to", "titanosaurs")\n', '("ankylosaurs", "osteoderms arrangement similar to", "titanosaurs")\n', '("Saltasaurinae", "osteoderms were present in", "titanosaurs within the clade Lithostrotia")\n', '("Titanosauria", "classified as", "sauropod dinosaurs")\n', '("Titanosauriformes", "Titanosaurs most closely related to", "euhelopodids and brachiosaurids")\n', '("Saltasaurinae", "majority of titanosaurs except Andesaurus form a clade called", "Lithostrotia")\n', '("Titanosaurus indicus", "was first discovered in", "India")\n', '("Titanosauridae", "was named by", "Richard Lydekker")\n', '("Morosauridae", "once included", "Titanosaurinae according to Franz Nopcsa")\n', '("Argentinosaurus", "included in", "Titanosauridae by Friedrich von Huene")\n', '("Argentina", "many species of titanosaurs were classified in", "Titanosauridae")\n', '("England", "Titanosaurus species from", "classified in Titanosauridae")\n', '("France", "species from", "classified in Titanosauridae")\n', '("Romania", "species from", "classified in Titanosauridae")\n', '("Madagascar", "species from", "classified in Titanosauridae")\n', '("United States", "species from", "classified in Titanosauridae")\n', '("Argentina", "species from", "classified in Titanosauridae")\n', '("Andesauridae", "Argentinosaurus, Andesaurus and Epachthosaurus distinct from", "titanosaurids")\n', '("dicraeosaurids", "Nemegtosaurus and Quaesitosaurus placed within", "by McIntosh")\n', '("Titanosauria", "poorly understood", "paleobiology")\n', '("Titanosauria", "diet revealed by", "fossilized dung")\n', '("Titanosauria", "nesting grounds discovered in", "Auca Mahuevo, Argentina")\n', '("Titanosauria", "replaced other", "sauropods like diplodocids and brachiosaurids")\n', '("Gondwana", "titanosaurs were especially numerous in", "the southern continents")\n', '("Ibirania", "suggests titanosaurs were susceptible to", "diseases like osteomyelitis and parasite infestations")\n', '("Paurodontidae", "is a family of", "Late Jurassic to Early Cretaceous mammals")\n', '("Paurodontidae", "in the order of", "Dryolestida")\n', '("Paurodontidae remains", "have been found in", "the United States")\n', '("Paurodontidae remains", "have been found in", "Britain")\n', '("Paurodontidae remains", "have been found in", "Portugal")\n', '("Paurodontidae remains", "have been found in", "Tanzania")\n', '("Paurodontids", "likely represent", "a paraphyletic group of basal non dryolestid dryolestidans")\n', '("Paurodon", "has been suggested to have been a specialist feeder on", "earthworms")\n', '("Paurodon\'s teeth morphology", "closely resembling that of", "the golden mole genus Amblysomus")\n']
+range(1, 195) 4
+{'id': '5_2', 'Question': ' During which revolution, led by Fidel Castro, did the country that experienced a crisis with the Soviet Union in 1962 establish a form of government that is currently found in the nation where the richest diversity of non-marine species of a certain creature exists, a creature also abundant in the marine ecosystems of a body of water that supports significant fisheries for this country, the United States, and Mexico?\n\n', 'Answer': 'Turtle', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Salamandroidea'}, {'label': 'B', 'text': 'Platypterygiinae'}, {'label': 'C', 'text': 'Titanosauria'}, {'label': 'D', 'text': 'Turtle'}, {'label': 'E', 'text': 'Paurodontidae'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'salamandroidea'}, {'label': 'B', 'text': 'platypterygiine'}, {'label': 'C', 'text': 'titanosauria'}, {'label': 'D', 'text': 'turtle'}, {'label': 'E', 'text': 'paurodontidae'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Question_decompositions': ["1: Which creature's non-marine species are richest in the Amazon basin, Gulf of Mexico drainages, South and Southeast Asia?\nA1: Turtle\n\n", '2: Which body of water supports fishery industries of the United States, Mexico, and Cuba?\nA2: Gulf of Mexico\n\n', '3: The 1962 crisis involving which country and the Soviet Union nearly broke out nuclear war?\nA3: Cuba\n\n', '4: During which revolution did Fidel Castro establish communist rule?\nA4: Cuba'], 'Hops_wiki': [('Turtle', 'Gulf of Mexico'), ('Gulf of Mexico', 'Cuba'), ('Cuba', 'Soviet Union'), ('Cuba', 'Fidel Castro')], 'Hops_cpnet': [('turtle', 'gulf_of_mexico'), ('gulf_of_mexico', 'cuba'), ('cuba', 'soviet_union'), ('cuba', 'fidel_castro')], 'Triplets': ['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")', '("The Cuban Missile Crisis", "nearly broke out nuclear war between", "the Soviet Union and the United States")', '("Fidel Castro", "established communist rule during", "the Cuban Revolution")'], 'Referred_files': [{'name': 'Turtle', 'line': 39}, {'name': 'Gulf of Mexico', 'line': 38}, {'name': 'Cuba', 'line': 12}, {'name': 'Cuba', 'line': 10}], 'Question_triplet_answer': {100: [17, 37, 73, 123], 50: [7, 12, 68, 87], 25: [1, 8, 47, 124]}}
+time passed:  2215.7097384929657
+Expected dollar:  0.005
+Platypterygiinae is Animal
+Gulf of Mexico is Geography
+International Hydrographic Organization is Incident
+Argentina is Geography
+Titanosauridae is Animal
+Turtle is Animal
+Paurodon is Animal
+Titanosauria is Animal
+Yucatán is Geography
+the Southern Hemisphere is Geography
+the United States is Geography
+the Soviet Union is Geography
+the Atlantic Ocean is Geography
+Cuba is Geography
+Nemegtosaurus is Animal
+Tamaulipas is Geography
+Veracruz is Geography
+Tabasco is Geography
+Campeche is Geography
+Quintana Roo is Geography
+the Gulf of Mexico is Geography
+Richard Lydekker is People
+Jurassic is Geography
+Qinglongtriton is Animal
+Caribbean Sea is Geography
+Atlantic Ocean is Geography
+Hernán Cortés is People
+Mexico is Geography
+Sierra Madre Oriental is Geography
+Christopher Columbus is People
+France is Geography
+Cryptodira is Animal
+Florida is Geography
+Bahamas is Geography
+Brutus is People
+Alabama is Geography
+Mississippi is Geography
+Louisiana is Geography
+Texas is Geography
+Triassic is Geography
+Caribbean is Geography
+United States is Geography
+Fidel Castro is People
+Antarctica is Geography
+Maxim S. Arkhangelsky is Animal
+Andesauridae is Animal
+Argentinosaurus is Animal
+Andesaurus is Animal
+Epachthosaurus is Animal
+Leatherback is Animal
+Atlantic is Geography
+Pacific is Geography
+titanosaurs is Animal
+India is Geography
+the Robert E. Lee is People
+Late Jurassic to Early Cretaceous is Geography
+Mississippi Embayment is Geography
+Amblysomus is Animal
+Brachypterygius is Animal
+Spain is Geography
+the Yucatán Peninsula is Geography
+Titanosauridae by Friedrich von Huene is Animal
+the Caribbean Sea is Geography
+Titanosaurs is Animal
+Rapetosaurus is Animal
+Oceania is Geography
+England is Geography
+Turtles is Animal
+Testudines is Animal
+Australia is Geography
+Late Cretaceous sea is Geography
+entities:  {'Gondwana', 'Amblysomus', 'States', 'Spain', 'Paurodon', 'Friedrich', 'Early', 'France', 'Leatherback', 'Rapetosaurus', 'Atlantic', 'Qinglongtriton', 'Shell', 'Maxim', 'United', 'Cryptodira', 'Soviet', 'Caribbean', 'Mississippi', 'titanosaurs', 'Tabasco', 'Tamaulipas', 'Huene', 'sea', 'Salamandroidea', 'Lydekker', 'Triassic', 'Texas', 'America', 'Roo', 'International', 'Madre', 'Cuba', 'Cretaceous', 'Southeast', 'Hydrographic', 'Alabama', 'Late', 'Andesauridae', 'Veracruz', 'Embayment', 'Sierra', 'Platypterygiinae', 'Florida', 'Cortés', 'Asia', 'Castro', 'Ocean', 'Paurodontidae', 'Antarctica', 'Yucatán', 'Sea', 'Gulf', 'Jurassic', 'Brutus', 'Turtles', 'Oceania', 'Fidel', 'Andesaurus', 'Christopher', 'Titanosaurs', 'E.', 'Louisiana', 'Columbus', 'Arkhangelsky', 'Testudines', 'Australia', 'Organization', 'Pangaea', 'Richard', 'Campeche', 'Epachthosaurus', 'Lee', 'Hemisphere', 'Argentina', 'England', 'Hernán', 'von', 'Bahamas', 'Argentinosaurus', 'Amazon', 'Peninsula', 'Brachypterygius', 'India', 'Quintana', 'Fischer', 'Titanosauridae', 'Nemegtosaurus', 'Titanosauria', 'Europe', 'Mexico', 'S.', 'Union', 'Southern', 'Robert', 'Pacific', 'Oriental', 'Turtle'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Platypterygiinae' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Platypterygiinae
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+Paurodon
+Platypterygius
+Titanosauridae
+
+gpt_entity_particular(): entity list: 
+ ['Platypterygius hercynicus', 'Platypterygiinae', 'Paurodon', 'Titanosauridae', 'Platypterygius', 'Ophthalmosaurus icenicus']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gulf of Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+turtle
+Europe
+species
+shape
+years
+coast
+Argentina
+primates
+skull
+Paurodon
+other
+meat
+area
+Pangaea
+Platypterygius hercynicus
+organization
+Crisis
+nuclear war
+Atlantic Ocean
+Tertiary
+brachiosaurids
+paleobiology
+Cuba's diet
+Micronutrient deficiencies
+Nemegtosaurus
+sauropod dinosaurs
+continent
+Mexican states
+Gulf Stream
+30 km/h
+Hernán Cortés
+expedition
+Sierra Madre Oriental
+Cuban culture
+Spanish colonialism
+Cretaceous
+florida platforms
+shell
+Cuban diet
+salamandroids
+Amazon basin
+countries
+Bolivia
+Cretaceous
+nomen dubium
+fossil record
+Cryptodira
+tortoises
+Guanahatabey
+Taíno peoples
+Scales
+Golden mole
+extant socialist states
+bibliography
+mid-Cretaceous
+romeripedidae
+Cretaceous
+plastron
+Sigsbee Deep
+sanidine
+Vertebrates
+Pan-tart
+titanosaurids
+mesopretersaal
+Ursula B
+oceanic batipelagic zone
+dieselome
+epidermal bony plate
+megalodontid sharks
+ambient sea surface temperature
+Premium Access
+hidden necked turtles
+reptiles
+Gulf Coast of the United States
+Jamaica
+IUCN
+karst topography
+Sabinoceridae
+Dominican Republic
+Salamanca Formation
+North America
+Pachycephalosaurus
+stegosaurs
+theropods
+Titanosaurus species
+
+gpt_entity_particular(): entity list: 
+ ['North America', 'mid-Cretaceous', 'florida platforms', 'Cryptodira', 'Cuban culture', 'Platypterygius hercynicus', 'Dominican Republic', 'Pachycephalosaurus', 'plastron', 'Amazon basin', 'mesopretersaal', 'Gulf Coast of the United States', 'years', 'dieselome', 'turtle', 'bibliography', 'Pan-tart', 'Premium Access', 'skull', 'romeripedidae', 'stegosaurs', 'Pangaea', 'Sabinoceridae', 'shape', 'Argentina', 'coast', 'primates', 'extant socialist states', 'Scales', 'Salamanca Formation', 'Nemegtosaurus', 'Europe', 'hidden necked turtles', 'Guanahatabey', 'sauropod dinosaurs', 'Crisis', "Cuba's diet", 'karst topography', 'Paurodon', 'IUCN', 'epidermal bony plate', 'organization', 'species', 'countries', 'Golden mole', '30 km/h', 'Taíno peoples', 'reptiles', 'Cuban diet', 'Cretaceous', 'meat', 'sanidine', 'Titanosaurus species', 'Spanish colonialism', 'Mexican states', 'other', 'brachiosaurids', 'Sierra Madre Oriental', 'titanosaurids', 'Ursula B', 'ambient sea surface temperature', 'Atlantic Ocean', 'nuclear war', 'megalodontid sharks', 'continent', 'oceanic batipelagic zone', 'Bolivia', 'Tertiary', 'Micronutrient deficiencies', 'fossil record', 'Sigsbee Deep', 'Jamaica', 'Hernán Cortés', 'Gulf of Mexico', 'nomen dubium', 'expedition', 'shell', 'Vertebrates', 'area', 'salamandroids', 'theropods', 'Gulf Stream', 'tortoises', 'paleobiology']
+
+gpt_entity_particular(): filtered entity: 
+ ['Gulf Stream']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Fidel Castro' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+Platypterygiinae
+Turtles
+Cuba
+Cuban Missile Crisis
+Fidel Castro
+Sierra Madre Oriental
+Yucatán
+Pleurodira
+Cuba
+Titanosauria
+Nemegtosaurus
+Florida
+Mexico
+Gulf Stream
+Titanosauriformes
+Turtle
+Qinglongtriton gangouensis
+Argentina
+France
+Brachypterygius
+Mississippi
+Rapetosaurus
+England
+Testudines
+Cretaceous
+Modern turtles
+Shell
+Sea turtles
+Caribbean Sea
+Fidel Castro
+Archelon ischyros
+Platypterygiinae
+Ocean
+Pangea
+Manatee
+Chordata
+Prehistoric
+Fauna
+Headquarters
+Rheiformes
+Hieraaetus
+Circumdederunt
+
+gpt_entity_particular(): entity list: 
+ ['Rheiformes', 'Turtles', 'Qinglongtriton gangouensis', 'Titanosauriformes', 'Sea turtles', 'France', 'Rapetosaurus', 'Shell', 'Pleurodira', 'Caribbean Sea', 'Testudines', 'Fidel Castro', 'Manatee', 'Cuban Missile Crisis', 'Argentina', 'Mississippi', 'Chordata', 'Circumdederunt', 'England', 'Modern turtles', 'Brachypterygius', 'Prehistoric', 'Gulf of Mexico', 'Archelon ischyros', 'Cuba', 'Nemegtosaurus', 'Titanosauria', 'Cretaceous', 'Mexico', 'Hieraaetus', 'Fauna', 'Platypterygiinae', 'Florida', 'Headquarters', 'Sierra Madre Oriental', 'Pangea', 'Ocean', 'Gulf Stream', 'Turtle', 'Yucatán']
+
+gpt_entity_particular(): filtered entity: 
+ ['Cuba']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Salamandroidea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Salamandroidea
+Platypterygiinae
+Paurodon
+Brachypterygius
+Qinglongtriton gangouensis
+
+gpt_entity_particular(): entity list: 
+ ['Brachypterygius', 'Platypterygiinae', 'Paurodon', 'Qinglongtriton gangouensis', 'Salamandroidea']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Soviet Union' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Soviet Union
+Soviet Union
+Soviet Union
+
+gpt_entity_particular(): entity list: 
+ ['Soviet Union']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Cuba' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Cuba
+Gulf of Mexico
+Turtle
+Leatherback turtle
+Argentinosaurus
+Titanosaur
+Sauropod dinosaurs
+Atlantic Ocean
+Cretaceous
+Pleurodira
+Southern Hemisphere
+Mediterranean
+Platyrtegiine
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+Skull
+Earthworms
+Diplodocids
+Shell
+Pangaea
+Fossil
+Richard Lydekker
+Brutus oil rig
+Socialist states
+The Cuban Missile Crisis
+Autoritarian regime
+Political opposition
+Christopher Columbus
+Shell's Brutus oil rig
+Archeological findings
+Taíno Ciboney peoples
+Spanish colonialism
+Soviet Union
+Brachiosaurids
+Vertebrates
+Pleurodontidae
+Late Jurassic
+Habitats
+Migratory behaviors
+Mississippi Embayment
+Argentinosaurus
+Titanosauridae
+Terrestrial, freshwater, and marine species
+Rapetosaurus
+Diplodocids
+Euhelopodids
+Oceania
+Rapetosaurus
+Diplodocids
+Aseismic
+
+gpt_entity_particular(): entity list: 
+ ['The Cuban Missile Crisis', 'Sauropod dinosaurs', 'Political opposition', 'Habitats', 'Leatherback turtle', 'Taíno Ciboney peoples', 'Pleurodontidae', 'Fossil', 'Atlantic Ocean', 'Oceania', 'Diplodocids', 'Rapetosaurus', "Shell's Brutus oil rig", 'Shell', 'Pleurodira', 'Platyrtegiine', 'Late Jurassic', 'Aseismic', 'Platypterygius hercynicus', 'Pangaea', 'Skull', 'Socialist states', 'Terrestrial, freshwater, and marine species', 'Argentinosaurus', 'Ophthalmosaurus icenicus', 'Brachiosaurids', 'Christopher Columbus', 'Archeological findings', 'Mississippi Embayment', 'Gulf of Mexico', 'Autoritarian regime', 'Brutus oil rig', 'Titanosauridae', 'Cuba', 'Cretaceous', 'Titanosaur', 'Euhelopodids', 'Richard Lydekker', 'Vertebrates', 'Spanish colonialism', 'Southern Hemisphere', 'Earthworms', 'Mediterranean', 'Migratory behaviors', 'Soviet Union', 'Turtle']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Titanosauria' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Platypterygiinae
+Europe
+Gulf of Mexico
+International Hydrographic Organization
+Argentina
+Turtles
+Turtle skull
+Paurodon
+sauropods
+Yucatán
+Pangaea
+Pleurodira
+Pangaea
+Platypterygiinae
+Gulf Coast
+United States
+Soviet Union
+Atlantic Ocean
+Cretaceous-Tertiary extinction
+Titanosauriformes
+brachiosaurids
+titanosaurs
+sauropod dinosaurs
+fossils
+every continent
+Gulf States
+Gulf Stream
+Earliest
+Amazon basin
+Leatherback turtle
+Atlantic
+Pacific
+Hernán Cortés
+Platypterygius
+Ophthalmosaurus
+Largest known turtle
+Archelon ischyros
+Florida
+Caribbean Sea
+Communist
+Jurassic
+French
+Yucatán platforms
+Andesauridae
+titanosaurids
+Largest living species of turtle
+Salamandroidea
+Argentina
+Gulf of Mexico
+Mardi Gras shipwreck
+Sigsbee Deep
+Abiotic lifestyle
+Cryptodira
+Cuba
+Robert E. Lee
+Laramide Orogeny
+Brachypterygius
+Modern turtles
+Guanahatabey
+Taino
+Cuba
+Revolution
+Extinctions
+Mississippi Embayment
+Gondwana
+Paurodon
+Second skull
+West Gondwana
+Paurodon
+Archeological
+Taino Ciboney
+Sierra
+Orogeny
+Sierra
+Laramide Orogeny
+Marine production
+Platypterygiinae
+Fischer
+Sierra
+Mammals
+Cretaceous
+Southern continents
+Spain
+Salamandroidea
+Titanosauria
+Titanosauria
+Cuba
+Cuba
+Carbibbean Sea
+Sierra
+Titanosauriformes
+Rapetosaurus
+Jurassic
+Salamandroidea
+Sarmientosaurus
+Titanosauria
+Titanosauria
+Oceania
+Brachiosaurids
+Sarmientosaurus
+Gulf of Mexico
+Cuba
+Rapetosaurus
+Turtles
+England
+Titanosauriformes
+French
+Cuba
+Cuba
+Cretaceous
+Yucatán
+Testudines
+Adult sea turtles
+Control temperature
+Cryptodira
+Platypterygiinae
+Platypterygiinae
+Archelon ischyros
+
+gpt_entity_particular(): entity list: 
+ ['Gulf Coast', 'Revolution', 'Spain', 'Titanosauriformes', 'Rapetosaurus', 'Atlantic', 'Cryptodira', 'Carbibbean Sea', 'Largest known turtle', 'United States', 'titanosaurs', 'Salamandroidea', 'Extinctions', 'Ophthalmosaurus', 'Amazon basin', 'fossils', 'Gulf States', 'Florida', 'International Hydrographic Organization', 'Yucatán', 'Jurassic', 'Largest living species of turtle', 'Turtles', 'Oceania', 'Caribbean Sea', 'Robert E. Lee', 'Pangaea', 'Argentina', 'England', 'Second skull', 'Southern continents', 'Turtle skull', 'Brachiosaurids', 'Modern turtles', 'West Gondwana', 'Brachypterygius', 'Mississippi Embayment', 'Europe', 'every continent', 'Mammals', 'Guanahatabey', 'sauropod dinosaurs', 'Pacific', 'Cretaceous-Tertiary extinction', 'Gondwana', 'Taino Ciboney', 'Paurodon', 'Leatherback turtle', 'Platypterygius', 'Yucatán platforms', 'Marine production', 'Archelon ischyros', 'Cuba', 'Cretaceous', 'Andesauridae', 'Sierra', 'Platypterygiinae', 'Sarmientosaurus', 'brachiosaurids', 'titanosaurids', 'Earliest', 'Laramide Orogeny', 'Control temperature', 'Atlantic Ocean', 'Pleurodira', 'Testudines', 'Abiotic lifestyle', 'Sigsbee Deep', 'Hernán Cortés', 'Gulf of Mexico', 'Fischer', 'Communist', 'Taino', 'Titanosauria', 'Archeological', 'French', 'Orogeny', 'Adult sea turtles', 'sauropods', 'Soviet Union', 'Mardi Gras shipwreck', 'Gulf Stream']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Paurodontidae' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Paurodontidae
+Paurodon
+Paurodon's teeth morphology 
+Paurodontidae
+
+gpt_entity_particular(): entity list: 
+ ["Paurodon's teeth morphology ", 'Paurodontidae', 'Paurodon']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Turtle' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Platypterygiinae
+Europe
+leatherback turtle
+Gulf of Mexico
+International Hydrographic Organization
+Argentina
+sauropods like diplodocids and brachiosaurids
+Paurodon
+earthworms
+Pangaea
+sedimentary rocks and recent sediments
+Southern Hemisphere
+dry land
+Platypterygiinae
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+the Gulf Coast of the United States
+Soviet Union
+Atlantic Ocean
+Titanosauriformes
+brachiosaurids
+titanosaurs
+Amazon basin
+Archelon ischyros
+the northern Caribbean Sea
+Gulf Stream
+Cretaceous-Tertiary extinction
+Titanosauriformes
+Earth
+sauropod dinosaurs
+shell
+Qinglongtriton gangouensis
+salamandroids
+South and Southeast Asia
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf Gulf of Mexico
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+Gulf of Mexico
+sodium, Gulf of Mexico, and Atlantic Ocean
+Atlantic Ocean
+Gulf of Mexico
+Atlantic Ocean
+Gulf Coast of the United States
+Turtle
+Cuba
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+plastrom
+sodium, Gulf of Mexico
+plastrom
+Gulf of Mexico
+Pangaea
+Platypterygiinae
+Laramide Orogeny
+Gulf of Mexico
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Brachypterygius
+platypterygiine
+shell
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+Jlans and some of the smallest
+Cryptodira
+Titanosauridae
+Sodium, Gulf of Mexico
+Pangaea
+Sodium, Gulf of Mexico
+Pangaea
+extinction
+sodium, Gulf of Mexico
+Cuba
+United States
+sodium, Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Cuba
+Gulf of Mexico
+Cuba
+Platypterygiinae
+Turtle
+Gulf of Mexico
+          Gulf of Mexico
+locality
+Total
+dioz
+t
+North Atlantic Ocean
+pa
+sodium
+Sodium, organization
+gulf stream
+&
+gulf
+ul
+is Lemma & (organization)
+Gulf of Mexico
+mississippi
+sodium
+SooC & Atactic ociithe
+Gulf ul Mexicom
+Mississippi
+Sooory
+ordering
+Pleurodon
+Hiebimervsoš & Embaomic
+nemepabense
+yprcad
+supercontinent Pangaea
+pr
+plf
+plf
+plf
+ul
+l
+Flriduob Nurnioh Edit.Dimension
+Fihoma adima
+Mas w mator James fum
+ul W Moinl
+and Final Hint
+dol
+do
+os
+rs
+poissent
+ange in ali
+.T
+als deiselcens papcipimg
+Eclypvies
+os
+vDrawsneunami
+Inerliolls Fron
+eonalo another continent
+lastmbed literature URC catalog ible URL
+molipalnlast
+sciend
+“It'sitensive mediwowst
+cibein ertewluciln
+ul anld r14
+tranal
+M&lramP
+Sgooneg
+Gutgehni
+Pu
+sodium
+ind
+opkosant
+India
+Bauccbenmading barIng
+hirAr
+olp
+solute & atchrois
+other continent
+Worldwide
+uatidde
+some
+&
+bogumbing
+naosiseneiabe encitesetihemisoscon tulean
+a
+Purecanuluf
+"easin;mphbe submersed
+ate seaciarbiPL "easing simbers
+iero submersed
+a ajeakness
+Piyia naninsaymars
+botleea
+uobya
+London
+biasnena
+asimaCS
+ancesnosyd ansenanis
+ksws` we
+Waochun baosinsasivica
+exansed ena wea
+itgurstd
+opmanded inlealmememop
+endemol
+Haiashustre
+atisassorsnte
+Airdandus
+aphisondsinte
+mainge
+eausuphave plutinstpre ontadbledmuitole
+Crypto
+e ot
+ Catmbtone
+Platypterygiinae
+Australia
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+South America
+Platypterygiinae
+Laramide Orogeny
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Brachypterygius
+platypterygiine
+shell
+Platypterygiinae
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Argentinosaurus
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+the Gulf Coast of the United States
+Soviet Union
+Atlantic Ocean
+Titanosauriformes
+brachiosaurids
+titanosaurs
+Amazon basin
+Archelon ischyros
+the northern Caribbean Sea
+Gulf Stream
+Cretaceous-Tertiary extinction
+Titanosauriformes
+Earth
+sauropod dinosaurs
+shell
+Qinglongtriton gangouensis
+salamandroids
+South and Southeast Asia
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf Gulf of Mexico
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+sodium, Gulf of Mexico, and Atlantic Ocean
+Atlantic Ocean
+Gulf of Mexico
+Atlantic Ocean
+Gulf Coast of the United States
+Turtle
+Cuba
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+plastrom
+sodium, Gulf of Mexico
+plastrom
+Gulf of Mexico
+Pangaea
+Platypterygiinae
+Laramide Orogeny
+Gulf of Mexico
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Brachypterygius
+platypterygiine
+shell
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+Jlans and some of the smallest
+Crypto
+Titanosauridae
+Sodium, Gulf of Mexico
+Pangaea
+nost
+Sodium, Gulf of Mexico
+Pangaea
+extinction
+sodium, Gulf of Mexico
+Cuba
+United States
+sodium, Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Cuba
+Gulf of Mexico
+Cuba
+Platypterygiinae
+Turtle
+Gulf of Mexico
+          Gulf of Mexico
+locality
+Total
+dioz
+t
+North Atlantic Ocean
+pa
+sodium
+Sodium, organization
+gulf stream
+&
+gulf
+ul
+is Lemma & (organization)
+Gulf of Mexico
+mississippi
+sodium
+SooC & Atactic ociithe
+Gulf ul Mexicom
+Mississippi
+Sooory
+ordering
+Pleurodon
+Hiebimervsoš & Embaomic
+nemepabense
+yprcad
+supercontinent Pangaea
+pr
+plf
+plf
+plf
+ul
+l
+Flriduob Nurnioh Edit.Dimension
+Fihoma adima
+Mas w mator James fum
+ul W Moinl
+and Final Hint
+dol
+do
+os
+rs
+poissent
+ange in ali
+.T
+als deiselcens papcipimg
+Eclypvies
+os
+vDrawsneunami
+Inerliolls Fron
+eonalo another continent
+lastmbed literature URC catalog ible URL
+molipalnlast
+sciend
+“It'sitensive mediwowst
+cibein ertewluciln
+ul anld r14
+tranal
+M&lramP
+Sgooneg
+Gutgehni
+Pu
+sodium
+ind
+opkosant
+India
+Bauccbenmading barIng
+hirAr
+olp
+solute & atchrois
+other continent
+Worldwide
+uatidde
+some
+&
+bogumbing
+naosiseneiabe encitesetihemisoscon tulean
+a
+Purecanuluf
+"easin;mphbe submersed
+ate seaciarbiPL "easing simbers
+iero submersed
+a ajeakness
+Piyia naninsaymars
+botleea
+uobya
+London
+biasnena
+asimaCS
+ancesnosyd ansenanis
+ksws` we
+Waochun baosinsasivica
+exansed ena wea
+itgurstd
+opmanded inlealmememop
+endemol
+Haiashustre
+atisassorsnte
+Airdandus
+aphisondsinte
+mainge
+eausuphave plutinstpre ontadbledmuitole
+Crypto
+e ot
+ Catmbtone
+Platypterygiinae
+Australia
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+South America
+Platypterygiinae
+Laramide Orogeny
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Brachypterygius
+platypterygiine
+shell
+Platypterygiinae
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Argentinosaurus
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+the Gulf Coast of the United States
+Soviet Union
+Atlantic Ocean
+Titanosauriformes
+brachiosaurids
+titanosaurs
+Amazon basin
+Archelon ischyros
+the northern Caribbean Sea
+Gulf Stream
+Cretaceous-Tertiary extinction
+Titanosauriformes
+Earth
+sauropod dinosaurs
+shell
+Qinglongtriton gangouensis
+salamandroids
+South and Southeast Asia
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf Gulf of Mexico
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+sodium, Gulf of Mexico, and Atlantic Ocean
+Atlantic Ocean
+Gulf of Mexico
+Atlantic Ocean
+Gulf Coast of the United States
+Turtle
+Cuba
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+plastrom
+sodium, Gulf of Mexico
+plastrom
+Gulf of Mexico
+Pangaea
+Platypterygiinae
+Laramide Orogeny
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Brachypterygius
+platypterygiine
+shell
+sodium, Gulf of Mexico, and Atlantic Ocean meet
+Gulf of Mexico
+Jlans and some of the smallest
+Crypto
+Titanosauridae
+Sodium, Gulf of Mexico
+Pangaea
+nost
+Sodium, Gulf of Mexico
+Pangaea
+extinction
+sodium, Gulf of Mexico
+Cuba
+United States
+sodium, Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Cuba
+Gulf of Mexico
+Cuba
+Platypterygiinae
+Turtle
+Gulf of Mexico
+          Gulf of Mexico
+locality
+Total
+dioz
+t
+North Atlantic Ocean
+pa
+sodium
+Sodium, organization
+gulf stream
+&
+gulf
+ul
+is Lemma & (organization)
+Gulf of Mexico
+mississippi
+sodium
+SooC & Atactic ociithe
+Gulf ul Mexicom
+Mississippi
+Sooory
+ordering
+Pleurodon
+Hiebimervsoš & Embaomic
+nemepabense
+yprcad
+supercontinent Pangaea
+pr
+plf
+plf
+plf
+ul
+l
+Flriduob Nurnioh Edit.Dimension
+Fihoma adima
+Mas w mator James fum
+ul W Moinl
+and Final Hint
+dol
+do
+os
+rs
+poissent
+ange in ali
+.T
+als deiselcens papcipimg
+Eclypvies
+os
+vDrawsneunami
+Inerliolls Fron
+eonalo another continent
+lastmbed literature URC catalog ible URL
+molipalnlast
+sciend
+“It'sitensive mediwowst
+cibein ertewluciln
+ul anld r14
+tranal
+M&lramP
+Sgooneg
+Gutgehni
+Pu
+sodium
+ind
+opkosant
+India
+Bauccbenmading barIng
+hirAr
+olp
+solute & atchrois
+other continent
+Worldwide
+uatidde
+some
+&
+bogumbing
+naosiseneiabe encitesetihemisoscon tulean
+a
+Purecanuluf
+"easin;mphbe submersed
+ate seaciarbiPL "easing simbers
+iero submersed
+a ajeakness
+Piyia naninsaymars
+botleea
+uobya
+London
+biasnena
+asimaCS
+ancesnosyd ansenanis
+ksws` we
+Waochun baosinsasivica
+exansed ena wea
+itgurstd
+opmanded inlealmememop
+endemol
+Haiashustre
+atisassorsnte
+Airdandus
+aphisondsinte
+mainge
+eausuphave plutinstpre ontadbledmuitole
+Crypto
+e ot
+ Catmbtone
+Platypterygiinae
+Australia
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+South America
+Platypterygiinae
+Laramide Orogeny
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Brachypterygius
+platypterygiine
+shell
+Platypterygiinae
+Platypterygius hercynicus
+Ophthalmosaurus icenicus
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Argentinosaurus
+Gulf of Mexico
+Cubabd
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+the Gulf Coast of the United States
+Soviet Union
+Atlantic OيSسacu�f4حين�z�0__))pb�2�؟�b�h���6�ړ&�octua�nAane�/acZӵ���v��k��C.Cٺ���b�g���r��P��pޑ���bard�2Ƒ�@z�i�p�۔�,�pط�@,�u�v���J��Y;&@��WBkf�C�d:���PԮ��a�>Air-6���.E�j�$��y#rq�v���}ؾ�A�P��{�|5��^���gt��q^���?�&�裏݉DP��c��:�!�MZ�Xم̲lw�oy�2�؅6ݍ�E����ܛ�2u^(t�*1�-ף�a'�AH���5z�a֥�'4�pS)чJڶ��*3hi�?�qt��RT>�Y�么��NE�j�=�`qb��^Z�I7��m�l��*���g��L֕��$��g�6�U�)�)$4g�<��+����ӌ�)��M9�ܝ&�mq�<yy�*�
+#�}Fj�ݺK�qw�lc��[�	134�x���H�9ݥ����J�N���\����E�ya�)��XN��n��i��9����.
+ڃ	�(�"a!�.���`��NU܆~��a�a���raKe�u4�jڨ�Ş�]�:#'���A�P�P�g����Ϡ�>٪�$�ُ�nue��3�a�������	£o�)���)��/���-Ct\�}Fܵ�O`�4@{��W*�xQ;��)�#�u���R�Y���V���g-�3_eEn��P��?K�Ӵ�z0�A̲�g;,�u$��1��J�`W�d��6L�mitt��x�(+�
+����>�5��a�7c�bo�Ϝ6��n��^���S�}m�S����+�Mu�ʒ�2k�r�2rV��N�p�nИ��\�z+$�\4�Y�j�ز�o�2d�9�TV��9��}�pm0Q���ݢ�������}�=2a��h'��o�L�v.�m��Jd�ۖ�s4�����髆������@?ُa����طa��v$�n�]��7�\f�I�4�dǃ-�5�ږPxխUs�m1�hu�y�A2�����W^K�r�8��#�4ζ��	�U'����ی�I�����`����.�,�Cr�g$u��P&��p��D���Ѝ��lAr��佀]ݭ6pv�N�0�`�����ݔ9n���Jæ3�!���,����1M�x�e��֒�c�����E�E�V�6�߭Xg�\<�
+
+gpt_entity_particular(): entity list: 
+ ['do', 'atisassorsnte', 'a ajeakness', 'Titanosauriformes', 'biasnena', 'Cryptodira', 'lastmbed literature URC catalog ible URL', 'ange in ali', 'Platypterygius hercynicus', 'olp', 'United States', 'gulf stream', 'Mississippi', 'titanosaurs', 'vDrawsneunami', 'Piyia naninsaymars', 'l', 'is Lemma & (organization)', 'Crypto', 'tranal', 'the northern Caribbean Sea', 'gulf', 'poissent', 'uobya', 'Airdandus', 'Amazon basin', 'naosiseneiabe encitesetihemisoscon tulean', 'extinction', 'yprcad', 'Sodium, organization', '          Gulf of Mexico', 'Cubabd', 'Haiashustre', 'Gulf Coast of the United States', "Atlantic OيSسacu�f4حين�z�0__))pb�2�؟�b�h���6�ړ&�octua�nAane�/acZӵ���v��k��C.Cٺ���b�g���r��P��pޑ���bard�2Ƒ�@z�i�p�۔�,�pط�@,�u�v���J�\uf3d1�Y;&@��WBkf�C�d:���PԮ��a�>Air-6���.E�j�$��y#rq�v���}ؾ�A�P��{�|5��^���gt��q^���?�&�裏݉DP��c��:�!�MZ�Xم̲lw�oy�2�\u06056ݍ�E����ܛ�2u^(t�*1�-ף�a'�AH���5z�a֥�'4�pS)чJڶ��*3hi�?�qt��RT>�Y�么��NE�j�=�`qb��^Z�I7��m�l��*���g��L֕��$��g�6�U�)�)$4g�<��+����ӌ�)��M9�ܝ&�mq�<yy�*�\r", 'Florida, Alabama, Mississippi, Louisiana, and Texas', 'International Hydrographic Organization', 'endemol', 'ul', 'Waochun baosinsasivica', 'exansed ena wea', "����>�5��a�7c�bo�Ϝ6��n��^���S�}m�S����\x1a+�Mu�ʒ�2k�r�2rV��N�p�nИ��\\�z+$�\\4�Y�j�ز�o�2d�9�TV��9��}�pm0\rQ��\ue196�ݢ�\x04������}�=2a��\x7fh'��o�\rL�v.�m��Jd�ۖ�s4�����髆������@?ُa����طa��v$�n�]��7�\\f�I�4�dǃ-�5�ږPxխUs�m1�hu�y�A2�����W^K�r�8��#�4ζ��\t�U'����ی�I�����`����.�,�Cr�g$u��P&��p��D���Ѝ��lAr��佀]ݭ6pv�N�0�`�����ݔ9n\x1c��\x0e�Jæ3�!���,����1M�x�e��֒�c���\x0c��E�E�V�6�߭Xg�\\<�", 'Pleurodon', 'opkosant', 'solute & atchrois', 'a', 'Sooory', 'ul anld r14', 'Mas w mator James fum', 'Australia', 'Inerliolls Fron', 'os', 'Pangaea', 'ul W Moinl', 'Argentina', ' Catmbtone', 'London', 'Argentinosaurus', 'asimaCS', 'Brachypterygius', 'als deiselcens papcipimg', 'dry land', 'iero submersed', 'Europe', 'molipalnlast', 'dol', 'the Gulf Coast of the United States', 'supercontinent Pangaea', 'locality', 'Southern Hemisphere', 'Eclypvies', 'sauropod dinosaurs', 'opmanded inlealmememop', 'earthworms', 'ancesnosyd ansenanis', 'Cretaceous-Tertiary extinction', 'Paurodon', 'itgurstd', 'mainge\r', 'Hiebimervsoš & Embaomic', 'Worldwide', 'uatidde', 'plf', 'pr', 'rs', 'Fihoma adima', 'sodium, Gulf of Mexico, and Atlantic Ocean', '"easin;mphbe submersed', 'nost', 'Earth', "“It'sitensive mediwowst", 'sodium', 'North Atlantic Ocean', 'South and Southeast Asia', 'Gutgehni', 'ate seaciarbiPL "easing simbers', 'cibein ertewluciln', 'SooC & Atactic ociithe', 'Ophthalmosaurus icenicus', 'e ot', '#�}Fj�ݺK�qw�lc��[�\t134�x���H�9ݥ����J�N���\\����E�ya�)��XN��n��i��9����.\r', 'hirAr', 'some', 'Archelon ischyros', 'Gulf Gulf of Mexico', 'and Final Hint', 'Cuba', 'ksws` we', 'other continent', 'Pu', 'Platypterygiinae', 'sedimentary rocks and recent sediments', 'brachiosaurids', 'Gulf ul Mexicom', '.T', 'Total', 'ind', 'Laramide Orogeny', 'bogumbing', 'sauropods like diplodocids and brachiosaurids', 'Qinglongtriton gangouensis', 'Atlantic Ocean', 'sciend', 'plastrom', 'Flriduob Nurnioh Edit.Dimension', 'sodium, Gulf of Mexico, and Atlantic Ocean meet', '&', 'botleea', 'mississippi', 't', 'nemepabense', 'Purecanuluf', 'aphisondsinte', 'ordering', 'Sodium, Gulf of Mexico', 'India', 'Gulf of Mexico', 'leatherback turtle', 'ڃ\t�(�"a!�.���`��NU܆~��a�a���raKe�u4�jڨ�Ş�]�:#\'���A�P�P�g����Ϡ�>٪�$�ُ�nue��3�a�������\t£o�)���)��/���-C\rt\\�}Fܵ�O`�4@{��W*�xQ;��)�#�u���R�Y���V���g-�3_eEn��P��?K�Ӵ�z0�A̲�g;,�u$��1��J�`W�d��6L�mitt��x�(+�\r', 'eausuphave plutinstpre ontadbledmuitole\r', 'shell', 'Titanosauridae', 'pa', 'Sgooneg', 'Jlans and some of the smallest', 'South America', 'M&lramP', 'salamandroids', 'dioz', 'eonalo another continent', 'platypterygiine', 'Soviet Union', 'sodium, Gulf of Mexico', 'Gulf Stream', 'Bauccbenmading barIng', 'Turtle']
+
+gpt_entity_particular(): filtered entity: 
+ ['Cryptodira', 'Australia', 'leatherback turtle', 'shell']
+After GPT, entity:  {'Gondwana', 'Amblysomus', 'States', 'Spain', 'Paurodon', 'Friedrich', 'Early', 'France', 'Leatherback', 'Rapetosaurus', 'Atlantic', 'Qinglongtriton', 'Shell', 'Maxim', 'United', 'Cryptodira', 'Soviet', 'Caribbean', 'Mississippi', 'titanosaurs', 'Tabasco', 'Tamaulipas', 'Huene', 'sea', 'Salamandroidea', 'Lydekker', 'Triassic', 'Texas', 'America', 'Roo', 'International', 'Madre', 'Cuba', 'Cretaceous', 'Southeast', 'Hydrographic', 'Alabama', 'Late', 'Andesauridae', 'Veracruz', 'Embayment', 'Sierra', 'Platypterygiinae', 'Florida', 'Cortés', 'Asia', 'Castro', 'Ocean', 'Paurodontidae', 'Antarctica', 'Yucatán', 'Sea', 'Gulf', 'Jurassic', 'Brutus', 'Turtles', 'Oceania', 'Fidel', 'Andesaurus', 'Christopher', 'Titanosaurs', 'E.', 'Louisiana', 'Columbus', 'Arkhangelsky', 'Testudines', 'Australia', 'Organization', 'Pangaea', 'Richard', 'Campeche', 'Epachthosaurus', 'Lee', 'Hemisphere', 'Argentina', 'England', 'Hernán', 'von', 'Bahamas', 'Argentinosaurus', 'Amazon', 'Peninsula', 'Brachypterygius', 'India', 'Quintana', 'leatherback turtle', 'shell', 'Fischer', 'Titanosauridae', 'Nemegtosaurus', 'Titanosauria', 'Europe', 'Mexico', 'S.', 'Union', 'Southern', 'Robert', 'Pacific', 'Oriental', 'Gulf Stream', 'Turtle'}
+Total time:  366.8705995082855
+Entity conversion done on 5_2 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_5_2_entity_conversion_hash.json. Check the entity.
+ During which revolution, led by 061 Castro, did the country that experienced a crisis with the 001 054 in 1962 establish a form of government that is currently found in the nation where the richest diversity of non-marine species of a certain creature exists, a creature also abundant in the marine ecosystems of a body of water that supports significant fisheries for this country, the 006 States, and Mexico?
+
+
+
+
+Done. Check final_query/id_5_2_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

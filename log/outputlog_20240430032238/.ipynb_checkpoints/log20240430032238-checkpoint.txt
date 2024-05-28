@@ -1,0 +1,11 @@
+Got argument: Turtle, 1, 1_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', 'start word': 'Turtle', 'end word': 'Gulf of Mexico', 'source': {'name': 'Turtle', 'line': 39}, 'cpnet': {'start word': 'turtle', 'end word': 'gulf_of_mexico'}}
+next_word: Gulf of Mexico
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Turtle']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+extract_info(Gulf of Mexico) Start.
+utils/preprocess.py extract_info(): Checking good links on Gulf of Mexico

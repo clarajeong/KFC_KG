@@ -1,0 +1,1271 @@
+Got argument: Immanuel Kant, 5, 5_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop:  {'triplet': '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")', 'start word': 'Kaliningrad', 'end word': 'Baltic Sea', 'source': {'name': 'Kaliningrad', 'line': 11}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'baltic_sea'}}
+
+utils/question.py extract_hops(Baltic Sea, [], ['Immanuel Kant', 'Kaliningrad']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Baltic_Sea_info.json file
+third_hop1:  {'triplet': '("Baltic Sea", "includes", "Bay of Mecklenburg")', 'start word': 'Baltic Sea', 'end word': 'Bay of Mecklenburg', 'source': {'name': 'Baltic Sea', 'line': 23}, 'cpnet': {'start word': 'baltic_sea', 'end word': 'bay_of_mecklenburg'}}
+
+utils/question.py extract_hops(Baltic Sea, ['Bay of Mecklenburg'], ['Immanuel Kant', 'Kaliningrad']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Baltic_Sea_info.json file
+third_hop2:  {'triplet': '("Baltic Sea", "is connected via", "Kiel Canal")', 'start word': 'Baltic Sea', 'end word': 'Kiel Canal', 'source': {'name': 'Baltic Sea', 'line': 18}, 'cpnet': {'start word': 'baltic_sea', 'end word': 'kiel_canal'}}
+extraction_done:  True
+generate_question(5_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")', '("Baltic Sea", "includes", "Bay of Mecklenburg")', '("Baltic Sea", "is connected via", "Kiel Canal")'], ['Immanuel Kant', 'Kaliningrad', 'Baltic Sea', 'Baltic Sea'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Baltic Sea'), ('Baltic Sea', 'Bay of Mecklenburg'), ('Baltic Sea', 'Kiel Canal')], Immanuel Kant, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 11}, {'name': 'Baltic Sea', 'line': 23}, {'name': 'Baltic Sea', 'line': 18}]) called
+GPT output is:  Q: Which philosopher is buried in the city that serves as Russia's only ice-free port on the same sea to which the Kiel Canal provides a navigational link, and also encompasses the Bay of Mecklenburg?
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called
+Immanuel Kant is People
+check_matchscore(Immanuel Kant, People of the Age of Enlightenment):  0.0
+choose_by_wiki_recur(People of the Age of Enlightenment)
+   Pages in People of the Age of Enlightenment: ['René Descartes', 'Denis Diderot', 'Denis Fonvizin', 'Immanuel Kant', 'Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing', 'Anton Tomaž Linhart', 'Margareta Momma', 'Ludovico Antonio Muratori', "Pedro Alonso O'Crouley", 'Marko Pohlin', 'Rudolf Erich Raspe', 'Giovanni Salvemini', 'Baruch Spinoza', 'Johann Baptist von Spix', 'Alessandro Verri', 'Sigmund Zois']
+      Ludovico Antonio Muratori in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe']
+Ludovico Antonio Muratori is People
+      Denis Diderot in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe', 'Gottfried Wilhelm Leibniz']
+Denis Diderot is People
+      Johann Baptist von Spix in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe', 'Gottfried Wilhelm Leibniz']
+Johann Baptist von Spix is People
+      Rudolf Erich Raspe in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe', 'Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing']
+      Gottfried Wilhelm Leibniz in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe', 'Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing', 'Immanuel Kant']
+Gottfried Wilhelm Leibniz is People
+      Gotthold Ephraim Lessing in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe', 'Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing', 'Immanuel Kant']
+Gotthold Ephraim Lessing is People
+      Immanuel Kant in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe', 'Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing', 'Immanuel Kant']
+Immanuel Kant is People
+      Denis Fonvizin in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe', 'Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing', 'Immanuel Kant', 'Denis Fonvizin']
+Denis Fonvizin is People
+      René Descartes in ['Ludovico Antonio Muratori', 'Denis Diderot', 'Johann Baptist von Spix', 'Rudolf Erich Raspe', 'Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing', 'Immanuel Kant', 'Denis Fonvizin', 'René Descartes']
+René Descartes is People
+['Denis Diderot', 'Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing', 'René Descartes']
+Ended after 2.5 hierarchy
+(2.5, ['Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing', 'Denis Diderot', 'René Descartes'])
+
+extract_info(René Descartes) Start.
+utils/preprocess.py extract_info(): Checking good links on René Descartes
+Augustine of Hippo is People
+1 / 30 )  Augustine Augustine of Hippo augustine_of_hippo
+Baruch Spinoza is People
+2 / 30 )  Spinoza Baruch Spinoza spinoza
+Gottfried Wilhelm Leibniz is People
+3 / 30 )  Leibniz Gottfried Wilhelm Leibniz gottfried_wilhelm_leibniz
+Thomas Hobbes is People
+4 / 30 )  Hobbes Thomas Hobbes thomas_hobbes
+John Locke is People
+5 / 30 )  Locke John Locke john_locke
+George Berkeley is People
+6 / 30 )  Berkeley George Berkeley george_berkeley
+David Hume is People
+7 / 30 )  Hume David Hume david_hume
+Touraine is Geography
+8 / 30 )  Province of Touraine Touraine touraine
+Rennes is Geography
+9 / 30 )  Rennes Rennes rennes
+Poitou is Geography
+10 / 30 )  Poitou Poitou poitou
+Jesuits is Geography
+11 / 30 )  Jesuit Jesuits jesuits
+La Flèche is Geography
+12 / 30 )  La Flèche La Flèche la_flèche
+Galileo Galilei is People
+13 / 30 )  Galileo Galileo Galilei galileo_galilei
+Breda is Geography
+14 / 30 )  Breda Breda breda
+Simon Stevin is People
+15 / 30 )  Simon Stevin Simon Stevin simon_stevin
+Prague is Geography
+16 / 30 )  Prague Prague prague
+The Hague is Geography
+17 / 30 )  La Haye The Hague hague
+Cardinal Richelieu is People
+18 / 30 )  Cardinal Richelieu Cardinal Richelieu cardinal_richelieu
+Girard Desargues is People
+19 / 30 )  Girard Desargues Girard Desargues girard_desargues
+Leiden University is Geography
+20 / 30 )  Leiden University Leiden University university_of_leiden
+Pierre de Fermat is People
+21 / 30 )  Pierre de Fermat Pierre de Fermat pierre_de_fermat
+Teresa of Ávila is People
+22 / 30 )  Teresa of Ávila Teresa of Ávila saint_teresa_of_avila
+Stockholm is Geography
+23 / 30 )  Stockholm Stockholm stockholm
+Evangelista Torricelli is People
+24 / 30 )  Torricellian Evangelista Torricelli evangelista_torricelli
+Blaise Pascal is People
+25 / 30 )  Blaise Pascal Blaise Pascal blaise_pascal
+Louis XIV is People
+26 / 30 )  Louis XIV Louis XIV louis_xiv
+Johannes Kepler is People
+27 / 30 )  Kepler Johannes Kepler johannes_kepler
+Alan Turing is People
+28 / 30 )  Alan Turing Alan Turing alan_turing
+Ivan Pavlov is People
+29 / 30 )  Ivan Pavlov Ivan Pavlov ivan_pavlov
+Charles Darwin is People
+30 / 30 )  Charles Darwin Charles Darwin charles_darwin
+extract_triplet(René Descartes)
+Got GPT's response. String length : 4599
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  []
+object_words:  [['Augustine', 'Augustine of Hippo', 'augustine_of_hippo']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Augustine', 'Augustine of Hippo', 'augustine_of_hippo']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Hume', 'David Hume', 'david_hume']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Province of Touraine', 'Touraine', 'touraine'], ['La Haye', 'The Hague', 'hague']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  []
+object_words:  [['Rennes', 'Rennes', 'rennes']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Jesuit', 'Jesuits', 'jesuits'], ['La Flèche', 'La Flèche', 'la_flèche']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Breda', 'Breda', 'breda']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Simon Stevin', 'Simon Stevin', 'simon_stevin']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Prague', 'Prague', 'prague']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Stockholm', 'Stockholm', 'stockholm']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Blaise Pascal', 'Blaise Pascal', 'blaise_pascal']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Stockholm', 'Stockholm', 'stockholm']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  [['Leibniz', 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz']]
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+subject_words:  [(None, 'René Descartes', 'rené_descartes')]
+object_words:  []
+extract_info(Gotthold Ephraim Lessing) Start.
+utils/preprocess.py extract_info(): Checking good links on Gotthold Ephraim Lessing
+Meissen is Geography
+1 / 30 )  Meissen Meissen meissen
+Berlin is Geography
+2 / 30 )  Berlin Berlin berlin
+Wrocław is Geography
+3 / 30 )  Breslau Wrocław wrocław
+Johann Friedrich Löwen  is People
+4 / 30 )  Johann Friedrich Löwen Johann Friedrich Löwen  lessingian
+de:Johann Friedrich Löwen is People
+5 / 30 )  de de:Johann Friedrich Löwen schiller
+Baruch Spinoza is People
+6 / 30 )  Spinoza Baruch Spinoza spinoza
+Archimedes is Geography
+7 / 30 )  Archimedes Archimedes archimedes
+Braunschweig is Geography
+8 / 30 )  Brunswick Braunschweig braunschweig
+Felix Mendelssohn is People
+9 / 30 )  Felix Felix Mendelssohn felix_mendelssohn
+Académie Française is Geography
+10 / 30 )  French Academy Académie Française académie_française
+William Shakespeare is People
+11 / 30 )  Shakespeare William Shakespeare william_shakespeare
+Horace is People
+12 / 30 )  Horace Horace horace
+Johann Daniel Müller  is People
+13 / 30 )  Johann Daniel Müller Johann Daniel Müller  lessingian
+extract_triplet(Gotthold Ephraim Lessing)
+Got GPT's response. String length : 765
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Meissen', 'Meissen', 'meissen']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Berlin', 'Berlin', 'berlin']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Breslau', 'Wrocław', 'wrocław']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Johann Friedrich Löwen', 'Johann Friedrich Löwen ', 'lessingian']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Spinoza', 'Baruch Spinoza', 'spinoza']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Archimedes', 'Archimedes', 'archimedes']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Brunswick', 'Braunschweig', 'braunschweig']]
+subject_words:  []
+object_words:  [['Felix', 'Felix Mendelssohn', 'felix_mendelssohn']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['French Academy', 'Académie Française', 'académie_française']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Shakespeare', 'William Shakespeare', 'william_shakespeare']]
+subject_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+object_words:  [['Horace', 'Horace', 'horace']]
+subject_words:  [['Johann Daniel Müller', 'Johann Daniel Müller ', 'lessingian']]
+object_words:  [(None, 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing')]
+extract_info(Denis Diderot) Start.
+utils/preprocess.py extract_info(): Checking good links on Denis Diderot
+Jesuits is Geography
+1 / 30 )  Jesuit Jesuits jesuits
+Académie Française is Geography
+2 / 30 )  Académie française Académie Française académie_française
+Saint Petersburg is Geography
+3 / 30 )  Saint Petersburg Saint Petersburg saint_petersburg
+Langres is Geography
+4 / 30 )  Langres Langres langres
+Socrates is People
+5 / 30 )  Socrates Socrates socrates
+Jean-Jacques Rousseau is People
+6 / 30 )  Jean-Jacques Rousseau Jean-Jacques Rousseau jean_jacques_rousseau
+Baruch Spinoza is People
+7 / 30 )  Spinozist Baruch Spinoza spinoza
+Vincennes is Geography
+8 / 30 )  Vincennes Vincennes vincennes
+Voltaire is People
+9 / 30 )  Voltaire Voltaire voltaire
+Anne Robert Jacques Turgot is People
+10 / 30 )  Anne Robert Jacques Turgot, Baron de Laune Anne Robert Jacques Turgot anne_robert_jacques_turgot
+Horace is People
+11 / 30 )  Horace Horace horace
+Friedrich Schiller is People
+12 / 30 )  Schiller Friedrich Schiller friedrich_schiller
+Johann Wolfgang von Goethe is People
+13 / 30 )  Goethe Johann Wolfgang von Goethe johann_wolfgang_von_goethe
+Louvre is Geography
+14 / 30 )  Louvre Louvre louvre
+Germaine de Staël is People
+15 / 30 )  Anne Louise Germaine de Staël Germaine de Staël madame_de_stael
+Paracelsus is Geography
+16 / 30 )  Paracelsus Paracelsus paracelsus
+Baron d'Holbach is People
+17 / 30 )  Baron d'Holbach Baron d'Holbach paul_henri_thiry
+fr:Jacques-Henri Meister is People
+18 / 30 )  Henri Meister fr:Jacques-Henri Meister maritain
+Honoré de Balzac is People
+19 / 30 )  Balzac Honoré de Balzac honoré_de_balzac
+Eugène Delacroix is People
+20 / 30 )  Delacroix Eugène Delacroix eugene_delacroix
+Stendhal is People
+21 / 30 )  Stendhal Stendhal stendhal
+Émile Zola is People
+22 / 30 )  Zola Émile Zola émile_zola
+Arthur Schopenhauer is People
+23 / 30 )  Schopenhauer Arthur Schopenhauer arthur_schopenhauer
+Auguste Comte is People
+24 / 30 )  Comte Auguste Comte auguste_comte
+Karl Marx is People
+25 / 30 )  Marx Karl Marx karl_marx
+extract_triplet(Denis Diderot)
+Got GPT's response. String length : 5186
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Jesuit', 'Jesuits', 'jesuits']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Langres', 'Langres', 'langres']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  []
+object_words:  [['Socrates', 'Socrates', 'socrates']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Saint Petersburg', 'Saint Petersburg', 'saint_petersburg']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Voltaire', 'Voltaire', 'voltaire']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Paracelsus', 'Paracelsus', 'paracelsus']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+subject_words:  []
+object_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Vincennes', 'Vincennes', 'vincennes']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Horace', 'Horace', 'horace']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Académie française', 'Académie Française', 'académie_française']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Vincennes', 'Vincennes', 'vincennes']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  []
+object_words:  [['Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Langres', 'Langres', 'langres']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Anne Louise Germaine de Staël', 'Germaine de Staël', 'madame_de_stael']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Henri Meister', 'fr:Jacques-Henri Meister', 'maritain']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Schopenhauer', 'Arthur Schopenhauer', 'arthur_schopenhauer']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  [['Comte', 'Auguste Comte', 'auguste_comte'], ['Marx', 'Karl Marx', 'karl_marx']]
+subject_words:  [(None, 'Denis Diderot', 'denis_diderot')]
+object_words:  []
+extract_info(Gottfried Wilhelm Leibniz) Start.
+utils/preprocess.py extract_info(): Checking good links on Gottfried Wilhelm Leibniz
+Isaac Newton is People
+1 / 30 )  Isaac Newton Isaac Newton isaac_newton
+Voltaire is People
+2 / 30 )  Voltaire Voltaire voltaire
+René Descartes is People
+3 / 30 )  René Descartes René Descartes rené_descartes
+Baruch Spinoza is People
+4 / 30 )  Baruch Spinoza Baruch Spinoza spinoza
+Leipzig is Geography
+5 / 30 )  Leipzig Leipzig leipzig
+Martin Geier  is People
+6 / 30 )  Martin Geier Martin Geier  gottfried_wilhelm_leibnitz
+Ramon Llull is People
+7 / 30 )  Ramon Llull Ramon Llull raymond_lully
+Nuremberg is Geography
+8 / 30 )  Nuremberg Nuremberg nuremberg
+Mainz is Geography
+9 / 30 )  Mainz Mainz mainz
+Louis XIV is People
+10 / 30 )  Louis XIV of France Louis XIV louis_xiv
+Egypt is Geography
+11 / 30 )  Egypt Egypt egypt
+Dutch East Indies is Geography
+12 / 30 )  Dutch East Indies Dutch East Indies dutch_east_indies
+Christiaan Huygens is People
+13 / 30 )  Christiaan Huygens Christiaan Huygens christiaan_huygens
+Nicolas Malebranche is People
+14 / 30 )  Nicolas Malebranche Nicolas Malebranche nicolas_de_malebranche
+Blaise Pascal is People
+15 / 30 )  Pascal Blaise Pascal blaise_pascal
+Royal Society is Geography
+16 / 30 )  Royal Society Royal Society royal_society
+The Hague is Geography
+17 / 30 )  The Hague The Hague hague
+Antonie van Leeuwenhoek is People
+18 / 30 )  van Leeuwenhoek Antonie van Leeuwenhoek anton_van_leeuwenhoek
+Parliament of the United Kingdom is Geography
+19 / 30 )  British Parliament Parliament of the United Kingdom british_parliament
+Charlemagne is People
+20 / 30 )  Charlemagne Charlemagne charlemagne
+Lower Saxony is Geography
+21 / 30 )  Lower Saxony Lower Saxony lower_saxony
+Vienna is Geography
+22 / 30 )  Vienna Vienna vienna
+Hanover is Geography
+23 / 30 )  Hanover Hanover hanover
+John Locke is People
+24 / 30 )  John Locke John Locke john_locke
+Jesuits is Geography
+25 / 30 )  Jesuit Jesuits jesuits
+Robert Boyle is People
+26 / 30 )  Boyle Robert Boyle robert_boyle
+Martin Heidegger is People
+27 / 30 )  Martin Heidegger Martin Heidegger martin_heidegger
+Charles Sanders Peirce is People
+28 / 30 )  Charles Sanders Peirce Charles Sanders Peirce charles_sanders_peirce
+Gottlob Frege is People
+29 / 30 )  Gottlob Frege Gottlob Frege fregean
+Bertrand Russell is People
+30 / 30 )  Bertrand Russell Bertrand Russell bertrand_russell
+extract_triplet(Gottfried Wilhelm Leibniz)
+Got GPT's response. String length : 3747
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['René Descartes', 'René Descartes', 'rené_descartes']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Leipzig', 'Leipzig', 'leipzig']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Leipzig', 'Leipzig', 'leipzig']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Leipzig', 'Leipzig', 'leipzig']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Ramon Llull', 'Ramon Llull', 'raymond_lully']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Nuremberg', 'Nuremberg', 'nuremberg']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Mainz', 'Mainz', 'mainz']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Christiaan Huygens', 'Christiaan Huygens', 'christiaan_huygens']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Pascal', 'Blaise Pascal', 'blaise_pascal']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Royal Society', 'Royal Society', 'royal_society']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Royal Society', 'Royal Society', 'royal_society']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Royal Society', 'Royal Society', 'royal_society']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Vienna', 'Vienna', 'vienna']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['The Hague', 'The Hague', 'hague'], ['van Leeuwenhoek', 'Antonie van Leeuwenhoek', 'anton_van_leeuwenhoek']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['John Locke', 'John Locke', 'john_locke']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  [['Voltaire', 'Voltaire', 'voltaire']]
+subject_words:  [(None, 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz')]
+object_words:  []
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("René Descartes", "was", "a French philosopher, scientist, and mathematician")\n', '("René Descartes", "considered", "a seminal figure in the emergence of modern philosophy and science")\n', '("René Descartes", "connected", "geometry and algebra into analytic geometry")\n', '("René Descartes", "spent working life in", "the Dutch Republic")\n', '("René Descartes", "served", "the Dutch States Army")\n', '("René Descartes", "was", "Roman Catholic")\n', '("Descartes\' philosophy", "has precedents in", "Augustine")\n', '("René Descartes", "rejected", "splitting of corporeal substance into matter and form")\n', '("René Descartes", "insists on", "the absolute freedom of God\'s act of creation")\n', '("René Descartes", "set views apart from", "philosophers like Augustine")\n', '("René Descartes", "asserts to write on emotions", "as if no one had written on these matters before")\n', '("René Descartes", "frequently considered", "the father of modern philosophy")\n', '("René Descartes", "laid foundation for", "continental rationalism")\n', '("René Descartes", "opposed by", "empiricist school of thought consisting of Hobbes, Locke, Berkeley, and Hume")\n', '("René Descartes", "called", "father of analytic geometry")\n', '("René Descartes", "key figure in", "the Scientific Revolution")\n', '("René Descartes", "was born in", "La Haye en Touraine, Province of Touraine")\n', '("René Descartes\'s mother", "is", "Jeanne Brochard")\n', '("René Descartes\'s father", "is", "Joachim")\n', '("Joachim", "was a member of", "the Parlement of Rennes at Rennes")\n', '("René Descartes", "entered", "Jesuit Collège Royal Henry-Le-Grand at La Flèche")\n', '("René Descartes", "introduced to", "mathematics and physics, including Galileo\'s work")\n', '("René Descartes", "studied at", "University of Poitiers")\n', '("René Descartes", "earned", "a Baccalauréat and Licence in canon and civil law")\n', '("René Descartes", "moved to", "Paris")\n', '("René Descartes", "joined", "Dutch States Army in Breda")\n', '("René Descartes", "undertook formal study of", "military engineering, established by Simon Stevin")\n', '("René Descartes", "acquainted with", "Isaac Beeckman")\n', '("René Descartes", "wrote", "the Compendium of Music")\n', '("René Descartes", "present at", "the Battle of the White Mountain near Prague")\n', '("René Descartes", "formulated", "analytic geometry and idea of applying the mathematical method to philosophy")\n', '("René Descartes", "discovered", "cogito, ergo sum")\n', '("René Descartes", "committed correspondence with", "Princess Elisabeth of Bohemia")\n', '("René Descartes", "published", "Les Passions de l\'âme")\n', '("René Descartes", "invited by", "Queen Christina of Sweden to her court")\n', '("René Descartes", "took barometric readings in", "Stockholm")\n', '("René Descartes", "challenged", "Blaise Pascal")\n', '("René Descartes", "contracted", "pneumonia")\n', '("René Descartes", "died in", "Stockholm")\n', '("René Descartes", "employed", "method called hyperbolical/metaphysical doubt")\n', '("René Descartes", "built ideas from", "methodical doubt")\n', '("Mind–body dualism", "influenced by", "Descartes")\n', '("René Descartes", "investigated", "connection between mind and body")\n', '("René Descartes", "believed in", "the power of innate ideas")\n', '("René Descartes", "advanced theory on", "automatic bodily reactions to external events")\n', '("René Descartes", "believed brain resembled", "a working machine")\n', '("René Descartes", "believed", "all humans were born with knowledge through the higher power of God")\n', '("René Descartes", "denied", "animals had reason or intelligence")\n', '("René Descartes", "argued that animals", "could not feel pain or anxiety")\n', '("René Descartes", "ethics was", "the highest and most perfect science")\n', '("René Descartes", "proves the existence of", "God")\n', '("René Descartes", "defends", "free will")\n', '("René Descartes", "contributed to", "mathematics as a method to automate or mechanize reasoning")\n', '("René Descartes", "pioneered", "the standard notation of exponents")\n', '("René Descartes", "developed", "Cartesian or analytic geometry")\n', '("René Descartes", "work provided basis for", "the calculus by Leibniz and Newton")\n', '("René Descartes", "formulated", "three laws of motion")\n', '("René Descartes", "outlined", "views on the universe in Principles of Philosophy")\n', '("René Descartes", "described", "planetary motion with vortex theory")\n', '("René Descartes", "made contributions to", "the field of optics")\n', '("René Descartes", "showed by using geometric construction", "the angular radius of a rainbow is 42 degrees")\n', '("René Descartes", "independently discovered", "the law of reflection")\n', '("René Descartes", "emancipated", "humanity from Christian revelational truth and Church doctrine")\n', '("René Descartes", "raised to the level of a subject", "human being")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Denis Diderot", "co-founder and chief editor of", "the Encyclopédie")\n', '("Denis Diderot", "known for serving as", "chief editor of the Encyclopédie")\n', '("Denis Diderot", "studied philosophy at", "Jesuit college")\n', '("Denis Diderot", "initially considered working in", "church clergy")\n', '("Denis Diderot", "from", "Langres")\n', '("Denis Diderot", "greatly admired by", "his sister Denise")\n', '("Denise Diderot", "known as", "a female Socrates")\n', '("Denis Diderot", "developed a friendship with", "Jean-Jacques Rousseau")\n', '("Denis Diderot", "wrote for", "La Correspondance littéraire")\n', '("Denis Diderot", "had philosophical discussions with", "Catherine the Great")\n', '("Denis Diderot", "visited", "Saint Petersburg")\n', '("Denis Diderot", "stayed at court of", "Catherine the Great") \n', '("Denis Diderot", "discussed with", "Catherine the Great")\n', '("Denis Diderot", "influenced by", "Voltaire")\n', '("Denis Diderot", "moved towards", "materialism and atheism")\n', '("Denis Diderot", "showed interest in work of", "Paracelsus")\n', '("Denis Diderot", "had his library purchased by", "Catherine the Great")\n', '("Catherine the Great", "appointed Diderot as", "caretaker of his library")\n', '("Catherine the Great", "provided", "salary to Denis Diderot")\n', '("Catherine the Great", "heard of", "Denis Diderot\'s financial troubles")\n', '("Denis Diderot", "visited by", "Jean-Jacques Rousseau in Vincennes")\n', '("Denis Diderot", "read", "Paradise Lost during incarceration")\n', '("Denis Diderot", "provided a sum of money by", "Catherine the Great")\n', '("Denis Diderot", "wrote eulogy for", "Catherine the Great")\n', '("Denis Diderot", "collaborated with", "Raynal on Histoire philosophique et politique des deux Indes")\n', '("Denis Diderot", "had works admired by", "Goethe, Schiller, and Lessing")\n', '("Denis Diderot", "was denied burial in", "the Panthéon")\n', '("Denis Diderot", "library deposited at", "the National Library of Russia")\n', '("Denis Diderot", "died of", "pulmonary thrombosis")\n', '("Denis Diderot", "buried in", "Église Saint-Roch")\n', '("Denis Diderot", "remains sent to", "Catherine II")\n', '("Denis Diderot", "remains unearthed by", "grave robbers")\n', '("Denis Diderot", "admirer of", "Horace")\n', '("Denis Diderot", "translated", "Shaftesbury\'s Inquiry Concerning Virtue and Merit")\n', '("Denis Diderot", "wrote original work", "Philosophical Thoughts")\n', '("Denis Diderot", "wrote The Indiscreet Jewels to", "raise money")\n', '("Denis Diderot", "most published work is", "The Indiscreet Jewels")\n', '("Denis Diderot", "translated work of", "Robert James")\n', '("Denis Diderot", "translated work of", "Temple Stanyan")\n', '("Denis Diderot", "earliest works were", "translations")\n', '("Denis Diderot", "critiqued Christianity in", "Philosophical Thoughts")\n', '("Denis Diderot", "proud of his scientific work", "Memoires sur differents sujets de mathematique")\n', '("Denis Diderot", "discussed the unity of nature in", "scientific works")\n', '("Denis Diderot", "rejected", "emboîtement")\n', '("Denis Diderot", "believes in the temporal nature of", "molecules")\n', '("Denis Diderot", "introduced argument from design in", "The Skeptic\'s Walk")\n', '("Denis Diderot", "introduced atheism and neo-Spinozism in", "Letter on the Blind")\n', '("Denis Diderot", "used as a pen", "a toothpick")\n', '("Denis Diderot", "made ink by", "scraping slate and mixing with wine")\n', '("Denis Diderot", "transformed Chamber\'s Cyclopaedia into the", "Encyclopédie")\n', '("Denis Diderot", "wrote articles skeptical about", "Biblical miracles")\n', '("Denis Diderot", "collaborated with", "Jean le Rond d\'Alembert on the Encyclopédie")\n', '("Denis Diderot", "continued working on Encyclopédie until", "1765")\n', '("Denis Diderot", "passed over for membership in", "Académie française")\n', '("Denis Diderot", "wrote", "approximately 7,000 articles for the Encyclopédie")\n', '("Denis Diderot", "harassed by threats of", "police raids while working on Encyclopédie")\n', '("Denis Diderot", "manuscripts confiscated and imprisoned by", "lettre de cachet in Vincennes")\n', '("Denis Diderot", "wrote Rameau\'s Nephew between", "1761 and 1774")\n', '("Rameau\'s Nephew", "translated by", "Goethe into German")\n', '("Denis Diderot", "contemporary friend of", "Friedrich Melchior Grimm")\n', '("Denis Diderot", "reported on", "Salons art exhibitions")\n', '("Denis Diderot", "appreciated the artist", "Jean-Baptiste Greuze")\n', '("Denis Diderot", "introduced the concept of", "the fourth wall")\n', '("Denis Diderot", "wrote Paradox of the Actor which argued that", "actors do not experience the emotions they are displaying")\n', '("Denis Diderot", "wrote travel piece", "Voyage en Hollande")\n', '("Denis Diderot", "informed about the disadvantages of knowledge by", "Jean-Jacques Rousseau")\n', '("Denis Diderot", "honored in hometown of", "Langres during tricentennial")\n', '("Denis Diderot", "received a 3000-volume personal library from", "Catherine the Great")\n', '("Denis Diderot", "admired by", "Anne Louise Germaine de Staël")\n', '("Denis Diderot", "obliged to visit", "Catherine the Great in Russia")\n', '("Denis Diderot", "died in", "Paris")\n', '("Denis Diderot", "corresponded with", "Henri Meister")\n', '("Denis Diderot", "considered important by", "Balzac, Delacroix, Stendhal, Zola, and Schopenhauer")\n', '("Denis Diderot", "philosophy appreciated by", "Marx and Comte")\n', '("Denis Diderot", "biography included in", "Marmontel\'s and Henri Meister\'s comments")\n', '("Gottfried Wilhelm Leibniz", "invented", "calculus")\n', '("Gottfried Wilhelm Leibniz", "called", "the last universal genius")\n', '("Gottfried Wilhelm Leibniz", "made contributions to", "physics and technology")\n', '("Gottfried Wilhelm Leibniz", "anticipated notions in", "probability theory, biology, medicine, geology, psychology, linguistics and computer science")\n', '("Gottfried Wilhelm Leibniz", "devised", "cataloguing system for Herzog August Library")\n', '("Gottfried Wilhelm Leibniz", "major achievement in mathematics was", "development of differential and integral calculus")\n', '("Gottfried Wilhelm Leibniz", "notation favored by", "mathematicians for calculus expression")\n', '("Gottfried Wilhelm Leibniz", "pioneer in", "field of mechanical calculators")\n', '("Gottfried Wilhelm Leibniz", "described", "pinwheel calculator")\n', '("Gottfried Wilhelm Leibniz", "noted for his optimism in philosophy", "our world is the best possible world that God could have created")\n', '("Gottfried Wilhelm Leibniz", "together with", "René Descartes and Baruch Spinoza, one of the influential rationalists")\n', '("Gottfried Wilhelm Leibniz", "assimilated elements of", "scholastic tradition in his philosophy")\n', '("Gottfried Wilhelm Leibniz", "anticipated", "modern logic")\n', '("Gottfried Wilhelm Leibniz", "influences", "contemporary analytic philosophy")\n', '("Gottfried Wilhelm Leibniz", "born in", "Leipzig")\n', '("Gottfried Wilhelm Leibniz", "baptized at", "St. Nicholas Church, Leipzig")\n', '("Gottfried Wilhelm Leibniz", "inherited personal library from", "his father")\n', '("Gottfried Wilhelm Leibniz", "enrolled at", "University of Leipzig")\n', '("Gottfried Wilhelm Leibniz", "earned bachelor\'s and master\'s degrees in", "Philosophy")\n', '("Gottfried Wilhelm Leibniz", "wrote thesis inspired by", "Ramon Llull")\n', '("Gottfried Wilhelm Leibniz", "earned Doctorate in Law at", "University of Altdorf")\n', '("Gottfried Wilhelm Leibniz", "first position was as", "salaried secretary to an alchemical society in Nuremberg")\n', '("Gottfried Wilhelm Leibniz", "worked for", "the Elector of Mainz")\n', '("Gottfried Wilhelm Leibniz", "appointed assessor in", "Court of Appeal")\n', '("Gottfried Wilhelm Leibniz", "proposed Egyptian plan to", "protect German-speaking Europe")\n', '("Gottfried Wilhelm Leibniz", "invited to Paris by", "French government for his Egyptian plan")\n', '("Gottfried Wilhelm Leibniz", "met", "Christiaan Huygens in Paris")\n', '("Gottfried Wilhelm Leibniz", "studied writings of", "Descartes and Pascal")\n', '("Gottfried Wilhelm Leibniz", "befriended", "Ehrenfried Walther von Tschirnhaus")\n', '("Gottfried Wilhelm Leibniz", "went on mission to", "British government in London")\n', '("Gottfried Wilhelm Leibniz", "demonstrated calculating machine to", "Royal Society")\n', '("Gottfried Wilhelm Leibniz", "made external member of", "Royal Society")\n', '("Gottfried Wilhelm Leibniz", "worked for Duke John Frederick of Brunswick as", "historian and political adviser")\n', '("Gottfried Wilhelm Leibniz", "commissioned to write history of", "House of Brunswick")\n', '("Gottfried Wilhelm Leibniz", "appointed Librarian of", "Herzog August Library in Wolfenbüttel")\n', '("Gottfried Wilhelm Leibniz", "accused of plagiarism by", "John Keill and Royal Society")\n', '("Gottfried Wilhelm Leibniz", "began residence in", "Vienna")\n', '("Gottfried Wilhelm Leibniz", "advisor to", "the Habsburgs")\n', '("Gottfried Wilhelm Leibniz", "met", "van Leeuwenhoek in The Hague")\n', '("Gottfried Wilhelm Leibniz", "discussed with", "Spinoza")\n', '("Gottfried Wilhelm Leibniz", "eulogized by", "Fontenelle")\n', '("Gottfried Wilhelm Leibniz", "correspondence with", "John Locke")\n', '("Gottfried Wilhelm Leibniz", "believed that reason and faith", "must be reconciled")\n', '("Gottfried Wilhelm Leibniz", "responded to criticisms on theodicy by", "Voltaire")\n', '("Gottfried Wilhelm Leibniz", "influenced", "Wilhelm Wundt")\n']
+range(1, 337) 4
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("René Descartes", "was", "a French philosopher, scientist, and mathematician")\n', '("René Descartes", "considered", "a seminal figure in the emergence of modern philosophy and science")\n', '("René Descartes", "connected", "geometry and algebra into analytic geometry")\n', '("René Descartes", "spent working life in", "the Dutch Republic")\n', '("René Descartes", "served", "the Dutch States Army")\n', '("René Descartes", "was", "Roman Catholic")\n', '("Descartes\' philosophy", "has precedents in", "Augustine")\n', '("René Descartes", "rejected", "splitting of corporeal substance into matter and form")\n', '("René Descartes", "insists on", "the absolute freedom of God\'s act of creation")\n', '("René Descartes", "set views apart from", "philosophers like Augustine")\n', '("René Descartes", "asserts to write on emotions", "as if no one had written on these matters before")\n', '("René Descartes", "frequently considered", "the father of modern philosophy")\n', '("René Descartes", "laid foundation for", "continental rationalism")\n', '("René Descartes", "opposed by", "empiricist school of thought consisting of Hobbes, Locke, Berkeley, and Hume")\n', '("René Descartes", "called", "father of analytic geometry")\n', '("René Descartes", "key figure in", "the Scientific Revolution")\n', '("René Descartes", "was born in", "La Haye en Touraine, Province of Touraine")\n', '("René Descartes\'s mother", "is", "Jeanne Brochard")\n', '("René Descartes\'s father", "is", "Joachim")\n', '("Joachim", "was a member of", "the Parlement of Rennes at Rennes")\n', '("René Descartes", "entered", "Jesuit Collège Royal Henry-Le-Grand at La Flèche")\n', '("René Descartes", "introduced to", "mathematics and physics, including Galileo\'s work")\n', '("René Descartes", "studied at", "University of Poitiers")\n', '("René Descartes", "earned", "a Baccalauréat and Licence in canon and civil law")\n', '("René Descartes", "moved to", "Paris")\n', '("René Descartes", "joined", "Dutch States Army in Breda")\n', '("René Descartes", "undertook formal study of", "military engineering, established by Simon Stevin")\n', '("René Descartes", "acquainted with", "Isaac Beeckman")\n', '("René Descartes", "wrote", "the Compendium of Music")\n', '("René Descartes", "present at", "the Battle of the White Mountain near Prague")\n', '("René Descartes", "formulated", "analytic geometry and idea of applying the mathematical method to philosophy")\n', '("René Descartes", "discovered", "cogito, ergo sum")\n', '("René Descartes", "committed correspondence with", "Princess Elisabeth of Bohemia")\n', '("René Descartes", "published", "Les Passions de l\'âme")\n', '("René Descartes", "invited by", "Queen Christina of Sweden to her court")\n', '("René Descartes", "took barometric readings in", "Stockholm")\n', '("René Descartes", "challenged", "Blaise Pascal")\n', '("René Descartes", "contracted", "pneumonia")\n', '("René Descartes", "died in", "Stockholm")\n', '("René Descartes", "employed", "method called hyperbolical/metaphysical doubt")\n', '("René Descartes", "built ideas from", "methodical doubt")\n', '("Mind–body dualism", "influenced by", "Descartes")\n', '("René Descartes", "investigated", "connection between mind and body")\n', '("René Descartes", "believed in", "the power of innate ideas")\n', '("René Descartes", "advanced theory on", "automatic bodily reactions to external events")\n', '("René Descartes", "believed brain resembled", "a working machine")\n', '("René Descartes", "believed", "all humans were born with knowledge through the higher power of God")\n', '("René Descartes", "denied", "animals had reason or intelligence")\n', '("René Descartes", "argued that animals", "could not feel pain or anxiety")\n', '("René Descartes", "ethics was", "the highest and most perfect science")\n', '("René Descartes", "proves the existence of", "God")\n', '("René Descartes", "defends", "free will")\n', '("René Descartes", "contributed to", "mathematics as a method to automate or mechanize reasoning")\n', '("René Descartes", "pioneered", "the standard notation of exponents")\n', '("René Descartes", "developed", "Cartesian or analytic geometry")\n', '("René Descartes", "work provided basis for", "the calculus by Leibniz and Newton")\n', '("René Descartes", "formulated", "three laws of motion")\n', '("René Descartes", "outlined", "views on the universe in Principles of Philosophy")\n', '("René Descartes", "described", "planetary motion with vortex theory")\n', '("René Descartes", "made contributions to", "the field of optics")\n', '("René Descartes", "showed by using geometric construction", "the angular radius of a rainbow is 42 degrees")\n', '("René Descartes", "independently discovered", "the law of reflection")\n', '("René Descartes", "emancipated", "humanity from Christian revelational truth and Church doctrine")\n', '("René Descartes", "raised to the level of a subject", "human being")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Denis Diderot", "co-founder and chief editor of", "the Encyclopédie")\n', '("Denis Diderot", "known for serving as", "chief editor of the Encyclopédie")\n', '("Denis Diderot", "studied philosophy at", "Jesuit college")\n', '("Denis Diderot", "initially considered working in", "church clergy")\n', '("Denis Diderot", "from", "Langres")\n', '("Denis Diderot", "greatly admired by", "his sister Denise")\n', '("Denise Diderot", "known as", "a female Socrates")\n', '("Denis Diderot", "developed a friendship with", "Jean-Jacques Rousseau")\n', '("Denis Diderot", "wrote for", "La Correspondance littéraire")\n', '("Denis Diderot", "had philosophical discussions with", "Catherine the Great")\n', '("Denis Diderot", "visited", "Saint Petersburg")\n', '("Denis Diderot", "stayed at court of", "Catherine the Great") \n', '("Denis Diderot", "discussed with", "Catherine the Great")\n', '("Denis Diderot", "influenced by", "Voltaire")\n', '("Denis Diderot", "moved towards", "materialism and atheism")\n', '("Denis Diderot", "showed interest in work of", "Paracelsus")\n', '("Denis Diderot", "had his library purchased by", "Catherine the Great")\n', '("Catherine the Great", "appointed Diderot as", "caretaker of his library")\n', '("Catherine the Great", "provided", "salary to Denis Diderot")\n', '("Catherine the Great", "heard of", "Denis Diderot\'s financial troubles")\n', '("Denis Diderot", "visited by", "Jean-Jacques Rousseau in Vincennes")\n', '("Denis Diderot", "read", "Paradise Lost during incarceration")\n', '("Denis Diderot", "provided a sum of money by", "Catherine the Great")\n', '("Denis Diderot", "wrote eulogy for", "Catherine the Great")\n', '("Denis Diderot", "collaborated with", "Raynal on Histoire philosophique et politique des deux Indes")\n', '("Denis Diderot", "had works admired by", "Goethe, Schiller, and Lessing")\n', '("Denis Diderot", "was denied burial in", "the Panthéon")\n', '("Denis Diderot", "library deposited at", "the National Library of Russia")\n', '("Denis Diderot", "died of", "pulmonary thrombosis")\n', '("Denis Diderot", "buried in", "Église Saint-Roch")\n', '("Denis Diderot", "remains sent to", "Catherine II")\n', '("Denis Diderot", "remains unearthed by", "grave robbers")\n', '("Denis Diderot", "admirer of", "Horace")\n', '("Denis Diderot", "translated", "Shaftesbury\'s Inquiry Concerning Virtue and Merit")\n', '("Denis Diderot", "wrote original work", "Philosophical Thoughts")\n', '("Denis Diderot", "wrote The Indiscreet Jewels to", "raise money")\n', '("Denis Diderot", "most published work is", "The Indiscreet Jewels")\n', '("Denis Diderot", "translated work of", "Robert James")\n', '("Denis Diderot", "translated work of", "Temple Stanyan")\n', '("Denis Diderot", "earliest works were", "translations")\n', '("Denis Diderot", "critiqued Christianity in", "Philosophical Thoughts")\n', '("Denis Diderot", "proud of his scientific work", "Memoires sur differents sujets de mathematique")\n', '("Denis Diderot", "discussed the unity of nature in", "scientific works")\n', '("Denis Diderot", "rejected", "emboîtement")\n', '("Denis Diderot", "believes in the temporal nature of", "molecules")\n', '("Denis Diderot", "introduced argument from design in", "The Skeptic\'s Walk")\n', '("Denis Diderot", "introduced atheism and neo-Spinozism in", "Letter on the Blind")\n', '("Denis Diderot", "used as a pen", "a toothpick")\n', '("Denis Diderot", "made ink by", "scraping slate and mixing with wine")\n', '("Denis Diderot", "transformed Chamber\'s Cyclopaedia into the", "Encyclopédie")\n', '("Denis Diderot", "wrote articles skeptical about", "Biblical miracles")\n', '("Denis Diderot", "collaborated with", "Jean le Rond d\'Alembert on the Encyclopédie")\n', '("Denis Diderot", "continued working on Encyclopédie until", "1765")\n', '("Denis Diderot", "passed over for membership in", "Académie française")\n', '("Denis Diderot", "wrote", "approximately 7,000 articles for the Encyclopédie")\n', '("Denis Diderot", "harassed by threats of", "police raids while working on Encyclopédie")\n', '("Denis Diderot", "manuscripts confiscated and imprisoned by", "lettre de cachet in Vincennes")\n', '("Denis Diderot", "wrote Rameau\'s Nephew between", "1761 and 1774")\n', '("Rameau\'s Nephew", "translated by", "Goethe into German")\n', '("Denis Diderot", "contemporary friend of", "Friedrich Melchior Grimm")\n', '("Denis Diderot", "reported on", "Salons art exhibitions")\n', '("Denis Diderot", "appreciated the artist", "Jean-Baptiste Greuze")\n', '("Denis Diderot", "introduced the concept of", "the fourth wall")\n', '("Denis Diderot", "wrote Paradox of the Actor which argued that", "actors do not experience the emotions they are displaying")\n', '("Denis Diderot", "wrote travel piece", "Voyage en Hollande")\n', '("Denis Diderot", "informed about the disadvantages of knowledge by", "Jean-Jacques Rousseau")\n', '("Denis Diderot", "honored in hometown of", "Langres during tricentennial")\n', '("Denis Diderot", "received a 3000-volume personal library from", "Catherine the Great")\n', '("Denis Diderot", "admired by", "Anne Louise Germaine de Staël")\n', '("Denis Diderot", "obliged to visit", "Catherine the Great in Russia")\n', '("Denis Diderot", "died in", "Paris")\n', '("Denis Diderot", "corresponded with", "Henri Meister")\n', '("Denis Diderot", "considered important by", "Balzac, Delacroix, Stendhal, Zola, and Schopenhauer")\n', '("Denis Diderot", "philosophy appreciated by", "Marx and Comte")\n', '("Denis Diderot", "biography included in", "Marmontel\'s and Henri Meister\'s comments")\n', '("Gottfried Wilhelm Leibniz", "invented", "calculus")\n', '("Gottfried Wilhelm Leibniz", "called", "the last universal genius")\n', '("Gottfried Wilhelm Leibniz", "made contributions to", "physics and technology")\n', '("Gottfried Wilhelm Leibniz", "anticipated notions in", "probability theory, biology, medicine, geology, psychology, linguistics and computer science")\n', '("Gottfried Wilhelm Leibniz", "devised", "cataloguing system for Herzog August Library")\n', '("Gottfried Wilhelm Leibniz", "major achievement in mathematics was", "development of differential and integral calculus")\n', '("Gottfried Wilhelm Leibniz", "notation favored by", "mathematicians for calculus expression")\n', '("Gottfried Wilhelm Leibniz", "pioneer in", "field of mechanical calculators")\n', '("Gottfried Wilhelm Leibniz", "described", "pinwheel calculator")\n', '("Gottfried Wilhelm Leibniz", "noted for his optimism in philosophy", "our world is the best possible world that God could have created")\n', '("Gottfried Wilhelm Leibniz", "together with", "René Descartes and Baruch Spinoza, one of the influential rationalists")\n', '("Gottfried Wilhelm Leibniz", "assimilated elements of", "scholastic tradition in his philosophy")\n', '("Gottfried Wilhelm Leibniz", "anticipated", "modern logic")\n', '("Gottfried Wilhelm Leibniz", "influences", "contemporary analytic philosophy")\n', '("Gottfried Wilhelm Leibniz", "born in", "Leipzig")\n', '("Gottfried Wilhelm Leibniz", "baptized at", "St. Nicholas Church, Leipzig")\n', '("Gottfried Wilhelm Leibniz", "inherited personal library from", "his father")\n', '("Gottfried Wilhelm Leibniz", "enrolled at", "University of Leipzig")\n', '("Gottfried Wilhelm Leibniz", "earned bachelor\'s and master\'s degrees in", "Philosophy")\n', '("Gottfried Wilhelm Leibniz", "wrote thesis inspired by", "Ramon Llull")\n', '("Gottfried Wilhelm Leibniz", "earned Doctorate in Law at", "University of Altdorf")\n', '("Gottfried Wilhelm Leibniz", "first position was as", "salaried secretary to an alchemical society in Nuremberg")\n', '("Gottfried Wilhelm Leibniz", "worked for", "the Elector of Mainz")\n', '("Gottfried Wilhelm Leibniz", "appointed assessor in", "Court of Appeal")\n', '("Gottfried Wilhelm Leibniz", "proposed Egyptian plan to", "protect German-speaking Europe")\n', '("Gottfried Wilhelm Leibniz", "invited to Paris by", "French government for his Egyptian plan")\n', '("Gottfried Wilhelm Leibniz", "met", "Christiaan Huygens in Paris")\n', '("Gottfried Wilhelm Leibniz", "studied writings of", "Descartes and Pascal")\n', '("Gottfried Wilhelm Leibniz", "befriended", "Ehrenfried Walther von Tschirnhaus")\n', '("Gottfried Wilhelm Leibniz", "went on mission to", "British government in London")\n', '("Gottfried Wilhelm Leibniz", "demonstrated calculating machine to", "Royal Society")\n', '("Gottfried Wilhelm Leibniz", "made external member of", "Royal Society")\n', '("Gottfried Wilhelm Leibniz", "worked for Duke John Frederick of Brunswick as", "historian and political adviser")\n', '("Gottfried Wilhelm Leibniz", "commissioned to write history of", "House of Brunswick")\n', '("Gottfried Wilhelm Leibniz", "appointed Librarian of", "Herzog August Library in Wolfenbüttel")\n', '("Gottfried Wilhelm Leibniz", "accused of plagiarism by", "John Keill and Royal Society")\n', '("Gottfried Wilhelm Leibniz", "began residence in", "Vienna")\n', '("Gottfried Wilhelm Leibniz", "advisor to", "the Habsburgs")\n', '("Gottfried Wilhelm Leibniz", "met", "van Leeuwenhoek in The Hague")\n', '("Gottfried Wilhelm Leibniz", "discussed with", "Spinoza")\n', '("Gottfried Wilhelm Leibniz", "eulogized by", "Fontenelle")\n', '("Gottfried Wilhelm Leibniz", "correspondence with", "John Locke")\n', '("Gottfried Wilhelm Leibniz", "believed that reason and faith", "must be reconciled")\n', '("Gottfried Wilhelm Leibniz", "responded to criticisms on theodicy by", "Voltaire")\n', '("Gottfried Wilhelm Leibniz", "influenced", "Wilhelm Wundt")\n']
+range(1, 337) 4
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("René Descartes", "was", "a French philosopher, scientist, and mathematician")\n', '("René Descartes", "considered", "a seminal figure in the emergence of modern philosophy and science")\n', '("René Descartes", "connected", "geometry and algebra into analytic geometry")\n', '("René Descartes", "spent working life in", "the Dutch Republic")\n', '("René Descartes", "served", "the Dutch States Army")\n', '("René Descartes", "was", "Roman Catholic")\n', '("Descartes\' philosophy", "has precedents in", "Augustine")\n', '("René Descartes", "rejected", "splitting of corporeal substance into matter and form")\n', '("René Descartes", "insists on", "the absolute freedom of God\'s act of creation")\n', '("René Descartes", "set views apart from", "philosophers like Augustine")\n', '("René Descartes", "asserts to write on emotions", "as if no one had written on these matters before")\n', '("René Descartes", "frequently considered", "the father of modern philosophy")\n', '("René Descartes", "laid foundation for", "continental rationalism")\n', '("René Descartes", "opposed by", "empiricist school of thought consisting of Hobbes, Locke, Berkeley, and Hume")\n', '("René Descartes", "called", "father of analytic geometry")\n', '("René Descartes", "key figure in", "the Scientific Revolution")\n', '("René Descartes", "was born in", "La Haye en Touraine, Province of Touraine")\n', '("René Descartes\'s mother", "is", "Jeanne Brochard")\n', '("René Descartes\'s father", "is", "Joachim")\n', '("Joachim", "was a member of", "the Parlement of Rennes at Rennes")\n', '("René Descartes", "entered", "Jesuit Collège Royal Henry-Le-Grand at La Flèche")\n', '("René Descartes", "introduced to", "mathematics and physics, including Galileo\'s work")\n', '("René Descartes", "studied at", "University of Poitiers")\n', '("René Descartes", "earned", "a Baccalauréat and Licence in canon and civil law")\n', '("René Descartes", "moved to", "Paris")\n', '("René Descartes", "joined", "Dutch States Army in Breda")\n', '("René Descartes", "undertook formal study of", "military engineering, established by Simon Stevin")\n', '("René Descartes", "acquainted with", "Isaac Beeckman")\n', '("René Descartes", "wrote", "the Compendium of Music")\n', '("René Descartes", "present at", "the Battle of the White Mountain near Prague")\n', '("René Descartes", "formulated", "analytic geometry and idea of applying the mathematical method to philosophy")\n', '("René Descartes", "discovered", "cogito, ergo sum")\n', '("René Descartes", "committed correspondence with", "Princess Elisabeth of Bohemia")\n', '("René Descartes", "published", "Les Passions de l\'âme")\n', '("René Descartes", "invited by", "Queen Christina of Sweden to her court")\n', '("René Descartes", "took barometric readings in", "Stockholm")\n', '("René Descartes", "challenged", "Blaise Pascal")\n', '("René Descartes", "contracted", "pneumonia")\n', '("René Descartes", "died in", "Stockholm")\n', '("René Descartes", "employed", "method called hyperbolical/metaphysical doubt")\n', '("René Descartes", "built ideas from", "methodical doubt")\n', '("Mind–body dualism", "influenced by", "Descartes")\n', '("René Descartes", "investigated", "connection between mind and body")\n', '("René Descartes", "believed in", "the power of innate ideas")\n', '("René Descartes", "advanced theory on", "automatic bodily reactions to external events")\n', '("René Descartes", "believed brain resembled", "a working machine")\n', '("René Descartes", "believed", "all humans were born with knowledge through the higher power of God")\n', '("René Descartes", "denied", "animals had reason or intelligence")\n', '("René Descartes", "argued that animals", "could not feel pain or anxiety")\n', '("René Descartes", "ethics was", "the highest and most perfect science")\n', '("René Descartes", "proves the existence of", "God")\n', '("René Descartes", "defends", "free will")\n', '("René Descartes", "contributed to", "mathematics as a method to automate or mechanize reasoning")\n', '("René Descartes", "pioneered", "the standard notation of exponents")\n', '("René Descartes", "developed", "Cartesian or analytic geometry")\n', '("René Descartes", "work provided basis for", "the calculus by Leibniz and Newton")\n', '("René Descartes", "formulated", "three laws of motion")\n', '("René Descartes", "outlined", "views on the universe in Principles of Philosophy")\n', '("René Descartes", "described", "planetary motion with vortex theory")\n', '("René Descartes", "made contributions to", "the field of optics")\n', '("René Descartes", "showed by using geometric construction", "the angular radius of a rainbow is 42 degrees")\n', '("René Descartes", "independently discovered", "the law of reflection")\n', '("René Descartes", "emancipated", "humanity from Christian revelational truth and Church doctrine")\n', '("René Descartes", "raised to the level of a subject", "human being")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Denis Diderot", "co-founder and chief editor of", "the Encyclopédie")\n', '("Denis Diderot", "known for serving as", "chief editor of the Encyclopédie")\n', '("Denis Diderot", "studied philosophy at", "Jesuit college")\n', '("Denis Diderot", "initially considered working in", "church clergy")\n', '("Denis Diderot", "from", "Langres")\n', '("Denis Diderot", "greatly admired by", "his sister Denise")\n', '("Denise Diderot", "known as", "a female Socrates")\n', '("Denis Diderot", "developed a friendship with", "Jean-Jacques Rousseau")\n', '("Denis Diderot", "wrote for", "La Correspondance littéraire")\n', '("Denis Diderot", "had philosophical discussions with", "Catherine the Great")\n', '("Denis Diderot", "visited", "Saint Petersburg")\n', '("Denis Diderot", "stayed at court of", "Catherine the Great") \n', '("Denis Diderot", "discussed with", "Catherine the Great")\n', '("Denis Diderot", "influenced by", "Voltaire")\n', '("Denis Diderot", "moved towards", "materialism and atheism")\n', '("Denis Diderot", "showed interest in work of", "Paracelsus")\n', '("Denis Diderot", "had his library purchased by", "Catherine the Great")\n', '("Catherine the Great", "appointed Diderot as", "caretaker of his library")\n', '("Catherine the Great", "provided", "salary to Denis Diderot")\n', '("Catherine the Great", "heard of", "Denis Diderot\'s financial troubles")\n', '("Denis Diderot", "visited by", "Jean-Jacques Rousseau in Vincennes")\n', '("Denis Diderot", "read", "Paradise Lost during incarceration")\n', '("Denis Diderot", "provided a sum of money by", "Catherine the Great")\n', '("Denis Diderot", "wrote eulogy for", "Catherine the Great")\n', '("Denis Diderot", "collaborated with", "Raynal on Histoire philosophique et politique des deux Indes")\n', '("Denis Diderot", "had works admired by", "Goethe, Schiller, and Lessing")\n', '("Denis Diderot", "was denied burial in", "the Panthéon")\n', '("Denis Diderot", "library deposited at", "the National Library of Russia")\n', '("Denis Diderot", "died of", "pulmonary thrombosis")\n', '("Denis Diderot", "buried in", "Église Saint-Roch")\n', '("Denis Diderot", "remains sent to", "Catherine II")\n', '("Denis Diderot", "remains unearthed by", "grave robbers")\n', '("Denis Diderot", "admirer of", "Horace")\n', '("Denis Diderot", "translated", "Shaftesbury\'s Inquiry Concerning Virtue and Merit")\n', '("Denis Diderot", "wrote original work", "Philosophical Thoughts")\n', '("Denis Diderot", "wrote The Indiscreet Jewels to", "raise money")\n', '("Denis Diderot", "most published work is", "The Indiscreet Jewels")\n', '("Denis Diderot", "translated work of", "Robert James")\n', '("Denis Diderot", "translated work of", "Temple Stanyan")\n', '("Denis Diderot", "earliest works were", "translations")\n', '("Denis Diderot", "critiqued Christianity in", "Philosophical Thoughts")\n', '("Denis Diderot", "proud of his scientific work", "Memoires sur differents sujets de mathematique")\n', '("Denis Diderot", "discussed the unity of nature in", "scientific works")\n', '("Denis Diderot", "rejected", "emboîtement")\n', '("Denis Diderot", "believes in the temporal nature of", "molecules")\n', '("Denis Diderot", "introduced argument from design in", "The Skeptic\'s Walk")\n', '("Denis Diderot", "introduced atheism and neo-Spinozism in", "Letter on the Blind")\n', '("Denis Diderot", "used as a pen", "a toothpick")\n', '("Denis Diderot", "made ink by", "scraping slate and mixing with wine")\n', '("Denis Diderot", "transformed Chamber\'s Cyclopaedia into the", "Encyclopédie")\n', '("Denis Diderot", "wrote articles skeptical about", "Biblical miracles")\n', '("Denis Diderot", "collaborated with", "Jean le Rond d\'Alembert on the Encyclopédie")\n', '("Denis Diderot", "continued working on Encyclopédie until", "1765")\n', '("Denis Diderot", "passed over for membership in", "Académie française")\n', '("Denis Diderot", "wrote", "approximately 7,000 articles for the Encyclopédie")\n', '("Denis Diderot", "harassed by threats of", "police raids while working on Encyclopédie")\n', '("Denis Diderot", "manuscripts confiscated and imprisoned by", "lettre de cachet in Vincennes")\n', '("Denis Diderot", "wrote Rameau\'s Nephew between", "1761 and 1774")\n', '("Rameau\'s Nephew", "translated by", "Goethe into German")\n', '("Denis Diderot", "contemporary friend of", "Friedrich Melchior Grimm")\n', '("Denis Diderot", "reported on", "Salons art exhibitions")\n', '("Denis Diderot", "appreciated the artist", "Jean-Baptiste Greuze")\n', '("Denis Diderot", "introduced the concept of", "the fourth wall")\n', '("Denis Diderot", "wrote Paradox of the Actor which argued that", "actors do not experience the emotions they are displaying")\n', '("Denis Diderot", "wrote travel piece", "Voyage en Hollande")\n', '("Denis Diderot", "informed about the disadvantages of knowledge by", "Jean-Jacques Rousseau")\n', '("Denis Diderot", "honored in hometown of", "Langres during tricentennial")\n', '("Denis Diderot", "received a 3000-volume personal library from", "Catherine the Great")\n', '("Denis Diderot", "admired by", "Anne Louise Germaine de Staël")\n', '("Denis Diderot", "obliged to visit", "Catherine the Great in Russia")\n', '("Denis Diderot", "died in", "Paris")\n', '("Denis Diderot", "corresponded with", "Henri Meister")\n', '("Denis Diderot", "considered important by", "Balzac, Delacroix, Stendhal, Zola, and Schopenhauer")\n', '("Denis Diderot", "philosophy appreciated by", "Marx and Comte")\n', '("Denis Diderot", "biography included in", "Marmontel\'s and Henri Meister\'s comments")\n', '("Gottfried Wilhelm Leibniz", "invented", "calculus")\n', '("Gottfried Wilhelm Leibniz", "called", "the last universal genius")\n', '("Gottfried Wilhelm Leibniz", "made contributions to", "physics and technology")\n', '("Gottfried Wilhelm Leibniz", "anticipated notions in", "probability theory, biology, medicine, geology, psychology, linguistics and computer science")\n', '("Gottfried Wilhelm Leibniz", "devised", "cataloguing system for Herzog August Library")\n', '("Gottfried Wilhelm Leibniz", "major achievement in mathematics was", "development of differential and integral calculus")\n', '("Gottfried Wilhelm Leibniz", "notation favored by", "mathematicians for calculus expression")\n', '("Gottfried Wilhelm Leibniz", "pioneer in", "field of mechanical calculators")\n', '("Gottfried Wilhelm Leibniz", "described", "pinwheel calculator")\n', '("Gottfried Wilhelm Leibniz", "noted for his optimism in philosophy", "our world is the best possible world that God could have created")\n', '("Gottfried Wilhelm Leibniz", "together with", "René Descartes and Baruch Spinoza, one of the influential rationalists")\n', '("Gottfried Wilhelm Leibniz", "assimilated elements of", "scholastic tradition in his philosophy")\n', '("Gottfried Wilhelm Leibniz", "anticipated", "modern logic")\n', '("Gottfried Wilhelm Leibniz", "influences", "contemporary analytic philosophy")\n', '("Gottfried Wilhelm Leibniz", "born in", "Leipzig")\n', '("Gottfried Wilhelm Leibniz", "baptized at", "St. Nicholas Church, Leipzig")\n', '("Gottfried Wilhelm Leibniz", "inherited personal library from", "his father")\n', '("Gottfried Wilhelm Leibniz", "enrolled at", "University of Leipzig")\n', '("Gottfried Wilhelm Leibniz", "earned bachelor\'s and master\'s degrees in", "Philosophy")\n', '("Gottfried Wilhelm Leibniz", "wrote thesis inspired by", "Ramon Llull")\n', '("Gottfried Wilhelm Leibniz", "earned Doctorate in Law at", "University of Altdorf")\n', '("Gottfried Wilhelm Leibniz", "first position was as", "salaried secretary to an alchemical society in Nuremberg")\n', '("Gottfried Wilhelm Leibniz", "worked for", "the Elector of Mainz")\n', '("Gottfried Wilhelm Leibniz", "appointed assessor in", "Court of Appeal")\n', '("Gottfried Wilhelm Leibniz", "proposed Egyptian plan to", "protect German-speaking Europe")\n', '("Gottfried Wilhelm Leibniz", "invited to Paris by", "French government for his Egyptian plan")\n', '("Gottfried Wilhelm Leibniz", "met", "Christiaan Huygens in Paris")\n', '("Gottfried Wilhelm Leibniz", "studied writings of", "Descartes and Pascal")\n', '("Gottfried Wilhelm Leibniz", "befriended", "Ehrenfried Walther von Tschirnhaus")\n', '("Gottfried Wilhelm Leibniz", "went on mission to", "British government in London")\n', '("Gottfried Wilhelm Leibniz", "demonstrated calculating machine to", "Royal Society")\n', '("Gottfried Wilhelm Leibniz", "made external member of", "Royal Society")\n', '("Gottfried Wilhelm Leibniz", "worked for Duke John Frederick of Brunswick as", "historian and political adviser")\n', '("Gottfried Wilhelm Leibniz", "commissioned to write history of", "House of Brunswick")\n', '("Gottfried Wilhelm Leibniz", "appointed Librarian of", "Herzog August Library in Wolfenbüttel")\n', '("Gottfried Wilhelm Leibniz", "accused of plagiarism by", "John Keill and Royal Society")\n', '("Gottfried Wilhelm Leibniz", "began residence in", "Vienna")\n', '("Gottfried Wilhelm Leibniz", "advisor to", "the Habsburgs")\n', '("Gottfried Wilhelm Leibniz", "met", "van Leeuwenhoek in The Hague")\n', '("Gottfried Wilhelm Leibniz", "discussed with", "Spinoza")\n', '("Gottfried Wilhelm Leibniz", "eulogized by", "Fontenelle")\n', '("Gottfried Wilhelm Leibniz", "correspondence with", "John Locke")\n', '("Gottfried Wilhelm Leibniz", "believed that reason and faith", "must be reconciled")\n', '("Gottfried Wilhelm Leibniz", "responded to criticisms on theodicy by", "Voltaire")\n', '("Gottfried Wilhelm Leibniz", "influenced", "Wilhelm Wundt")\n']
+range(1, 337) 4
+{'id': '5_3', 'Question': " Which philosopher is buried in the city that serves as Russia's only ice-free port on the same sea to which the Kiel Canal provides a navigational link, and also encompasses the Bay of Mecklenburg?\n", 'Answer': 'Immanuel Kant', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Immanuel Kant'}, {'label': 'B', 'text': 'René Descartes'}, {'label': 'C', 'text': 'Gotthold Ephraim Lessing'}, {'label': 'D', 'text': 'Denis Diderot'}, {'label': 'E', 'text': 'Gottfried Wilhelm Leibniz'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'immanuel_kant'}, {'label': 'B', 'text': 'rené_descartes'}, {'label': 'C', 'text': 'gotthold_ephraim_lessing'}, {'label': 'D', 'text': 'denis_diderot'}, {'label': 'E', 'text': 'gottfried_wilhelm_leibniz'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which philosopher was laid to rest in Kaliningrad?\nA1: Immanuel Kant\n\n', '2: What serves as the only ice-free port of Russia located on a specific European sea?\nA2: Kaliningrad\n\n', '3: Which body of water encompasses the Bay of Mecklenburg?\nA3: Baltic Sea\n\n', '4: What sea does the Kiel Canal provide a navigational link to?\nA4: Baltic Sea'], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Baltic Sea'), ('Baltic Sea', 'Bay of Mecklenburg'), ('Baltic Sea', 'Kiel Canal')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'baltic_sea'), ('baltic_sea', 'bay_of_mecklenburg'), ('baltic_sea', 'kiel_canal')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")', '("Baltic Sea", "includes", "Bay of Mecklenburg")', '("Baltic Sea", "is connected via", "Kiel Canal")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 11}, {'name': 'Baltic Sea', 'line': 23}, {'name': 'Baltic Sea', 'line': 18}], 'Question_triplet_answer': {100: [38, 77, 103, 313], 50: [77, 105, 202, 268], 25: [65, 170, 181, 182]}}
+time passed:  5167.588093757629
+Expected dollar:  0.005
+Baltic Sea is Geography
+Gottfried Wilhelm Leibniz is People
+Leipzig is Geography
+Denis Diderot is People
+Kant is People
+Mikhail Kalinin is People
+Robert James is People
+Gotthold Ephraim Lessing is People
+French Academy is Geography
+Royal Society is Geography
+London is Geography
+Augustine is People
+Jesuit Collège Royal Henry Le Grand is Geography
+La Flèche is Geography
+Germany is Geography
+University of Königsberg is Geography
+Königsberg is Geography
+Catherine the Great is People
+Bay of Mecklenburg is Geography
+Gotland is Geography
+Immanuel Kant is People
+Øresund Bridge is Geography
+Copenhagen and Malmö is Geography
+Stockholm is Geography
+Gulf of Bothnia is Geography
+Åland is Geography
+White Sea is Geography
+Emanuel Swedenborg's Dreams of a Spirit is People
+Danish Straits is Geography
+Walther von Tschirnhaus is People
+Fürstenschule St. Afra is People
+the Soviet Union is Geography
+Leibniz and is People
+the Battle of the White Mountain is Geography
+Prague is Geography
+Marx is People
+Vincennes is Geography
+Kaliningrad is Geography
+Hobbes, Locke, Berkeley is People
+the North Sea is Geography
+the Dutch Republic is Geography
+Sweden is Geography
+Northwestern Federal District is Geography
+Jean le Rond d'Alembert is People
+Voyage en Hollande is People
+Denmark is Geography
+Sound Dues is Geography
+Helsingør is Geography
+Nuremberg is Geography
+Johann Georg Kant is People
+Vienna is Geography
+John Keill is People
+Herzog August Library is Geography
+Jean Baptiste Greuze is People
+Latvia is Geography
+Full Professor of Logic and Metaphysics at University of Königsberg is People
+Russia is Geography
+Anne Louise Germaine de Staël is People
+Poland is Geography
+the Parlement of Rennes at Rennes is Geography
+Queen Christina of is People
+White Sea Baltic Canal is Geography
+the White Sea is Geography
+Fredericia is Geography
+Horace is People
+Reinhold, is People
+Fichte is People
+Hegel is People
+Novalis is People
+Gulf of Riga is Geography
+Christiaan Huygens is People
+Paris is Geography
+Descartes is People
+René Descartes and is People
+Baruch Spinoza is People
+Anna Regina Reuter is People
+Shakespeare is People
+University of Leipzig is Geography
+Touraine is Geography
+42 degrees is Geography
+Denise Diderot is People
+Jean Piaget is People
+Carl Gustav Jung is People
+Balzac is People
+Delacroix is People
+Stendhal is People
+Schopenhauer is People
+Simon Stevin is People
+Breda is Geography
+Henri Meister's is People
+Bay of Kiel" is Geography
+the National Library of Russia is Geography
+Estonia is Geography
+Johann Friedrich Löwen is People
+Weimar Germany is Geography
+Blaise Pascal is People
+Berlin is Geography
+Shaftesbury is Geography
+Inquiry Concerning Virtue is People
+Mendelssohn is People
+Galileo is People
+Nazi Germany is Geography
+Nyborg is Geography
+Langres is Geography
+René Descartes's is People
+Jeanne Brochard is People
+entities:  {'Newton', 'Le', 'Christiaan', 'Full', 'Louise', 'Stevin', 'Northwestern', 'Voyage', 'Gustav', 'Dutch', 'Dues', 'Rond', 'Afra', 'Anna', 'Bay', 'Touraine', "l'âme", 'Catherine', 'Mountain', 'de', 'Novalis', 'Copenhagen', 'Shaftesbury', 'Galileo', 'Marx', 'Simon', 'Balzac', 'le', 'Poland', "Meister's", '42', 'James', 'Danish', 'Stockholm', 'Langres', 'Löwen', 'Nazi', 'Prague', 'Russia', 'Flèche', 'Åland', 'Mikhail', 'Bornholm', 'Nyborg', 'Leibniz', 'Republic', 'Leipzig', 'Kalinin', 'Christina', 'Locke,', 'Parlement', 'Augustine', 'Malmö', 'Dreams', 'Immanuel', 'Regina', 'Kaliningrad', 'Straits', 'Spirit', 'Øresund', 'Hobbes,', 'Denise', 'Helsingør', "Descartes's", 'Jeanne', 'Altdorf', 'Estonia', 'Sound', 'Gotthold', 'Queen', 'Henry', 'Denmark', 'Horace', 'Mecklenburg', 'Hollande', 'Brochard', 'Ephraim', 'von', 'Herzog', 'Königsberg', 'University', 'Georg', 'Professor', 'Baptiste', 'Frederick', 'Sea', 'Keill', 'Shakespeare', 'Grand', 'Academy', 'Jean', 'Joachim', 'Jesuit', 'Collège', 'Mendelssohn', 'John', 'Vienna', 'Denis', 'Johann', 'August', 'Ramon', 'Soviet', 'Descartes', "d'Alembert", 'Staël', 'Christian', 'Schopenhauer', 'Tschirnhaus', 'Kiel', 'Logic', 'Breda', 'Brunswick', 'Gulf', 'Piaget', 'Bothnia', 'Rennes', 'Gottfried', 'Bridge', 'Weimar', 'St.', 'Reuter', 'Meister', 'Robert', 'Berkeley', 'Pascal', 'Walther', 'Latvia', 'Huygens', 'Zola', 'National', 'Fredericia', 'Friedrich', 'Diderot', 'René', 'Lessing', 'Sweden', 'Society', 'Fürstenschule', 'White', 'House', 'Paris', 'Germany', 'en', 'Emanuel', 'Great', 'North', 'Kiel"', 'Delacroix', 'Anne', 'Battle', 'degrees', 'Gotland', 'Vincennes', 'La', 'Blaise', 'Fichte', 'Berlin', 'Carl', 'Reinhold,', 'Greuze', 'Concerning', 'Europe', 'Royal', 'London', 'Virtue', 'Union', 'Library', 'Inquiry', 'District', 'Canal', 'Spinoza', "Swedenborg's", 'Stendhal', 'Hegel', 'Wilhelm', 'Nuremberg', 'French', 'Federal', 'Swedenborg', 'Metaphysics', 'Riga', 'Henri', 'Germaine', 'Baltic', 'Baruch', 'Kant', 'Jung'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Kant
+
+gpt_entity_particular(): entity list: 
+ ['Immanuel Kant', 'Kant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Baltic Sea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Baltic Sea
+Kiel Canal
+Kaliningrad
+German Confederation
+Bay of Mecklenburg
+Gulf of Finland
+White Sea
+Gotland
+Åland
+Gulf of Bothnia
+North Sea
+Russia
+Bay of Kiel
+Estonia
+Poland
+Latvia
+Denmark
+German Bight
+Artificial waterways
+
+gpt_entity_particular(): entity list: 
+ ['Baltic Sea', 'Gulf of Bothnia', 'Bay of Mecklenburg', 'Bay of Kiel', 'Gotland', 'White Sea', 'Kaliningrad', 'Gulf of Finland', 'North Sea', 'Poland', 'Estonia', 'German Confederation', 'Denmark', 'Latvia', 'Kiel Canal', 'German Bight', 'Russia', 'Artificial waterways', 'Åland']
+
+gpt_entity_particular(): filtered entity: 
+ ['Gulf of Bothnia', 'Bay of Mecklenburg', 'Gotland', 'Gulf of Finland', 'Latvia']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Denis Diderot' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+Denis Diderot
+
+gpt_entity_particular(): entity list: 
+ ['Denis Diderot']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'René Descartes' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ René Descartes
+the father of modern philosophy
+philosopher, scientist, and mathematician
+automatic bodily reactions to external events
+emancipated humanity from Christian revelational truth and Church doctrine
+spent working life in the Dutch Republic
+a French philosopher, scientist, and mathematician
+entered Jesuit Collège Royal Henry-Le-Grand at La Flèche
+set views apart from philosophers like Augustine
+the Battle of the White Mountain near Prague
+contracted pneumonia
+earned a Baccalauréat and Licence in canon and civil law
+took barometric readings in Stockholm
+set views apart from philosophers like Augustine
+discovered cogito, ergo sum
+laid foundation for continental rationalism
+work provided basis for the calculus by Leibniz and Newton
+present at the Battle of the White Mountain near Prague
+died in Stockholm
+moved to Paris
+emancipated humanity from Christian revelational truth and Church doctrine
+contributed to mathematics as a method to automate or mechanize reasoning
+published Les Passions de l'âme
+described planetary motion with vortex theory
+outlined views on the universe in Principles of Philosophy
+discovered the angular radius of a rainbow is 42 degrees
+the Compendium of Music
+showed by using geometric construction the angular radius of a rainbow is 42 degrees
+pioneered the standard notation of exponents
+describes planter motion with vortex theory
+believed all humans were born with knowledge through the higher power of God
+believed in the power of innate ideas
+raised to the level of a subject human being
+defends free will
+ethics was the highest and most perfect science
+described the power of innate ideas 
+father of modern philosophy
+
+gpt_entity_particular(): entity list: 
+ ['work provided basis for the calculus by Leibniz and Newton', 'ethics was the highest and most perfect science', 'father of modern philosophy', 'earned a Baccalauréat and Licence in canon and civil law', 'discovered cogito, ergo sum', 'pioneered the standard notation of exponents', "published Les Passions de l'âme", 'René Descartes', 'the Compendium of Music', 'showed by using geometric construction the angular radius of a rainbow is 42 degrees', 'moved to Paris', 'died in Stockholm', 'a French philosopher, scientist, and mathematician', 'discovered the angular radius of a rainbow is 42 degrees', 'described the power of innate ideas ', 'believed all humans were born with knowledge through the higher power of God', 'spent working life in the Dutch Republic', 'contracted pneumonia', 'automatic bodily reactions to external events', 'outlined views on the universe in Principles of Philosophy', 'describes planter motion with vortex theory', 'raised to the level of a subject human being', 'set views apart from philosophers like Augustine', 'the father of modern philosophy', 'believed in the power of innate ideas', 'took barometric readings in Stockholm', 'the Battle of the White Mountain near Prague', 'defends free will', 'philosopher, scientist, and mathematician', 'contributed to mathematics as a method to automate or mechanize reasoning', 'described planetary motion with vortex theory', 'laid foundation for continental rationalism', 'emancipated humanity from Christian revelational truth and Church doctrine', 'present at the Battle of the White Mountain near Prague', 'entered Jesuit Collège Royal Henry-Le-Grand at La Flèche']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gottfried Wilhelm Leibniz' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gottfried Wilhelm Leibniz
+St. Nicholas Church, Leipzig
+Ramon Llull
+Royal Society
+House of Brunswick
+scholastic tradition
+
+gpt_entity_particular(): entity list: 
+ ['Gottfried Wilhelm Leibniz', 'House of Brunswick', 'Ramon Llull', 'Royal Society', 'scholastic tradition', 'St. Nicholas Church, Leipzig']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gotthold Ephraim Lessing' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gottfried Wilhelm Leibniz
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+
+gpt_entity_particular(): entity list: 
+ ['Gottfried Wilhelm Leibniz', 'Gotthold Ephraim Lessing']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kiel Canal' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kiel Canal
+Baltic Sea
+Kaliningrad
+German Confederation
+Church
+St. Nicholas Church, Leipzig
+Thesis
+Ramon Llull
+Denis Diderot
+Emboîtement
+René Descartes
+Philosophy
+Kant
+Thoughts
+True Estimation of Living Forces
+Automatic bodily reactions to external events
+House
+Brunswick
+British government in London
+Forster
+Human race distinctions
+Royal Society
+History
+Critique of Pure Reason
+University of Königsberg
+Copenhagen
+Malmö
+Øresund Bridge
+White Sea
+Emanuel Swedenborg's Dreams of a Spirit-Seer
+Royal Society
+Eye
+Gotland
+Marxism, positivism, phenomenology
+Stockholm
+Goethe
+Gottfried Wilhelm Leibniz
+British government in London
+Battle of the White Mountain
+Marx and Comte
+Catherine the Great
+Angeline de La Roche, lady of Bressan
+Immanuel Kant
+Revolution
+Critical project
+Nature
+Emanuel Swedenborg's Dreams of a Spirit-Seer
+Gottfried Wilhelm Leibniz
+Faculté Notre-Dame de la Daurade
+Montpellier
+Leiden
+University of Oxford
+London
+Stockholm
+Kaliningrad
+Memel
+Life History
+Royal Society
+Bay of Kiel
+Conquests
+Gottfried Wilhelm Leibniz
+Voyage
+Holland
+Denmark
+Sound Dues
+Anna Regina Reuter
+Aveiro
+University of Altdorf
+Fredonian Tea Party
+
+gpt_entity_particular(): entity list: 
+ ['Baltic Sea', 'Human race distinctions', 'University of Altdorf', 'Fredonian Tea Party', 'Gottfried Wilhelm Leibniz', 'Critique of Pure Reason', 'Sound Dues', 'University of Königsberg', 'Thesis', 'Eye', 'Automatic bodily reactions to external events', 'Bay of Kiel', 'British government in London', 'Malmö', 'Gotland', 'University of Oxford', 'Voyage', 'Øresund Bridge', 'Battle of the White Mountain', 'Denis Diderot', 'René Descartes', 'White Sea', "Emanuel Swedenborg's Dreams of a Spirit-Seer", 'Critical project', 'Ramon Llull', 'Marxism, positivism, phenomenology', 'London', 'Revolution', 'Memel', 'Kaliningrad', 'Brunswick', 'Thoughts', 'Copenhagen', 'Goethe', 'Marx and Comte', 'Nature', 'Conquests', 'History', 'Life History', 'Church', 'Forster', 'Catherine the Great', 'Royal Society', 'German Confederation', 'Angeline de La Roche, lady of Bressan', 'Anna Regina Reuter', 'Immanuel Kant', 'Stockholm', 'Faculté Notre-Dame de la Daurade', 'Denmark', 'Aveiro', 'True Estimation of Living Forces', 'Montpellier', 'Emboîtement', 'Kiel Canal', 'Leiden', 'Holland', 'Philosophy', 'Kant', 'House', 'St. Nicholas Church, Leipzig']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Bay of Mecklenburg' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Bay of Mecklenburg
+
+gpt_entity_particular(): entity list: 
+ ['Bay of Mecklenburg']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kaliningrad
+Baltic Sea
+Kiel Canal
+Gottfried Wilhelm Leibniz
+German Confederation
+St. Nicholas Church, Leipzig
+Ramon Llull
+Denis Diderot
+René Descartes
+Mikhail Kalinin
+Gottfried Wilhelm Leibniz
+Robert James
+French Academy
+Forster
+Royal Society
+House of Brunswick
+British government in London
+Jesuit college
+Goethe
+Schiller
+Lessing
+University of Königsberg
+Bay of Mecklenburg
+Gulf of Finland
+Åland
+Marxism
+positivism
+phenomenology
+University of Leipzig
+Leibniz and Newton
+University of Altdorf
+Nazi Germany period
+King of Sweden during Seven Years' War
+Russi
+Goethe
+Copenhagen
+Malmö
+Lithuanian SSR
+Northwestern Federal District 
+Leipzig
+Vienna
+House of Brunswick
+history of philosophy
+University of Königsberg
+Critique of Pure Reason
+University of Altdorf
+Novalis
+enlightenment
+Bay of Kiel
+Leipzig and Berlin
+Fontenelle
+Reinhold
+Fichte
+Hegel
+Nuremberg
+Battle of the White Mountain near Prague
+British government in London
+Antoine-Léonard Thomas
+University of Leipzig
+Pierre Rousseau
+Gottfried Achenwall
+National Library of Russia
+Ludwig Ziegenhagen
+John Keill
+Royal Society
+cataloguing system
+Herzog August Library
+Gottfried Wilhelm Leibniz
+Christiaan Huygens
+Leipzig
+harness-maker
+Denis Diderot
+Catherine the Great
+
+gpt_entity_particular(): entity list: 
+ ['harness-maker', 'Baltic Sea', 'National Library of Russia', 'Schiller', 'University of Altdorf', 'Gottfried Wilhelm Leibniz', 'Critique of Pure Reason', 'history of philosophy', 'University of Königsberg', 'House of Brunswick', 'Leipzig', 'Leipzig and Berlin', 'Bay of Mecklenburg', 'Gottfried Achenwall', 'Bay of Kiel', 'Northwestern Federal District ', 'British government in London', 'Malmö', 'Vienna', 'phenomenology', 'Fichte', 'Leibniz and Newton', 'Denis Diderot', 'René Descartes', 'Russi', 'Christiaan Huygens', "King of Sweden during Seven Years' War", 'Ramon Llull', 'Robert James', 'Ludwig Ziegenhagen', 'Reinhold', 'Novalis', 'Kaliningrad', 'Goethe', 'Copenhagen', 'Gulf of Finland', 'University of Leipzig', 'enlightenment', 'Pierre Rousseau', 'Hegel', 'John Keill', 'Nuremberg', 'cataloguing system', 'Forster', 'Fontenelle', 'Catherine the Great', 'Royal Society', 'Nazi Germany period', 'German Confederation', 'Battle of the White Mountain near Prague', 'Marxism', 'positivism', 'Antoine-Léonard Thomas', 'Herzog August Library', 'Kiel Canal', 'Jesuit college', 'Lithuanian SSR', 'French Academy', 'Åland', 'Lessing', 'Mikhail Kalinin', 'St. Nicholas Church, Leipzig']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Newton', 'Le', 'Christiaan', 'Full', 'Louise', 'Stevin', 'Northwestern', 'Voyage', 'Gustav', 'Dutch', 'Dues', 'Rond', 'Afra', 'Anna', 'Bay', 'Touraine', "l'âme", 'Catherine', 'Mountain', 'de', 'Novalis', 'Copenhagen', 'Shaftesbury', 'Galileo', 'Marx', 'Simon', 'Balzac', 'le', 'Poland', "Meister's", '42', 'James', 'Danish', 'Stockholm', 'Langres', 'Löwen', 'Nazi', 'Prague', 'Russia', 'Flèche', 'Åland', 'Mikhail', 'Bornholm', 'Nyborg', 'Leibniz', 'Republic', 'Leipzig', 'Kalinin', 'Christina', 'Locke,', 'Parlement', 'Augustine', 'Malmö', 'Dreams', 'Immanuel', 'Regina', 'Kaliningrad', 'Straits', 'Spirit', 'Øresund', 'Hobbes,', 'Denise', 'Helsingør', "Descartes's", 'Jeanne', 'Altdorf', 'Estonia', 'Sound', 'Gotthold', 'Queen', 'Henry', 'Denmark', 'Horace', 'Mecklenburg', 'Hollande', 'Brochard', 'Ephraim', 'von', 'Herzog', 'Königsberg', 'University', 'Georg', 'Professor', 'Baptiste', 'Frederick', 'Sea', 'Keill', 'Shakespeare', 'Grand', 'Academy', 'Jean', 'Joachim', 'Gulf of Bothnia', 'Jesuit', 'Collège', 'Mendelssohn', 'John', 'Vienna', 'Denis', 'Johann', 'August', 'Ramon', 'Soviet', 'Descartes', "d'Alembert", 'Staël', 'Christian', 'Schopenhauer', 'Tschirnhaus', 'Kiel', 'Logic', 'Breda', 'Brunswick', 'Gulf', 'Piaget', 'Bothnia', 'Rennes', 'Gottfried', 'Bridge', 'Weimar', 'St.', 'Reuter', 'Meister', 'Robert', 'Berkeley', 'Pascal', 'Walther', 'Latvia', 'Huygens', 'Zola', 'National', 'Fredericia', 'Friedrich', 'Diderot', 'René', 'Lessing', 'Sweden', 'Society', 'Fürstenschule', 'White', 'House', 'Paris', 'Germany', 'en', 'Emanuel', 'Great', 'North', 'Kiel"', 'Delacroix', 'Anne', 'Battle', 'Bay of Mecklenburg', 'degrees', 'Gotland', 'Vincennes', 'La', 'Blaise', 'Fichte', 'Berlin', 'Carl', 'Reinhold,', 'Greuze', 'Concerning', 'Europe', 'Royal', 'London', 'Virtue', 'Union', 'Gulf of Finland', 'Library', 'Inquiry', 'District', 'Canal', 'Spinoza', "Swedenborg's", 'Stendhal', 'Hegel', 'Wilhelm', 'Nuremberg', 'French', 'Federal', 'Swedenborg', 'Metaphysics', 'Riga', 'Henri', 'Germaine', 'Baltic', 'Baruch', 'Kant', 'Jung'}
+Total time:  416.6742515563965
+Entity conversion done on 5_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_5_3_entity_conversion_hash.json. Check the entity.
+ Which philosopher is buried in the city that serves as Russia's only ice-free port on the same 05C to which the 00F 0BC provides a navigational link, and also encompasses the 03D of Mecklenburg?
+
+
+
+Done. Check final_query/id_5_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

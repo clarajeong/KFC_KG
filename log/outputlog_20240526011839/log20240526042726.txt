@@ -1,0 +1,567 @@
+Got argument: Seoul, 0, 0_5, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Seoul, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Seoul_info.json file
+first_hop:  {'triplet': '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")', 'start word': 'Seoul', 'end word': 'Los Angeles', 'source': {'name': 'Seoul', 'line': 5}, 'cpnet': {'start word': 'seoul', 'end word': 'los_angeles'}}
+next_word: Los Angeles
+generate_question(0_5, ['("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")'], ['Los Angeles'], [('Seoul', 'Los Angeles')], Los Angeles, [{'name': 'Seoul', 'line': 5}]) called
+GPT output is:  Q: Which city does Seoul come after in the ranking of the world's largest metropolitan economies, if Tokyo and New York City are considered to be ahead of it?
+A: Los Angeles
+final_choice(Los Angeles, options = 5) started
+[]
+entity_type(Los Angeles) called
+Los Angeles is Geography
+check_matchscore(Los Angeles, County seats in California):  0.0
+choose_by_wiki_recur(County seats in California)
+   Pages in County seats in California: ['Alturas, California', 'Auburn, California', 'Bakersfield, California', 'Bridgeport, California', 'Colusa, California', 'Crescent City, California', 'Downieville, California', 'El Centro, California', 'Eureka, California', 'Fairfield, California', 'Fresno, California', 'Hanford, California', 'Hollister, California', 'Independence, California', 'Jackson, California', 'Lakeport, California', 'Los Angeles', 'Madera, California', 'Mariposa, California', 'Markleeville, California', 'Martinez, California', 'Marysville, California', 'Merced, California', 'Modesto, California', 'Napa, California', 'Nevada City, California', 'Oakland, California', 'Oroville, California', 'Placerville, California', 'Quincy, California', 'Red Bluff, California', 'Redding, California', 'Redwood City, California', 'Riverside, California', 'Sacramento, California', 'Salinas, California', 'San Andreas, California', 'San Bernardino, California', 'San Diego', 'San Francisco', 'San Jose, California', 'San Luis Obispo, California', 'San Rafael, California', 'Santa Ana, California', 'Santa Barbara, California', 'Santa Cruz, California', 'Santa Rosa, California', 'Sonora, California', 'Stockton, California', 'Susanville, California', 'Ukiah, California', 'Ventura, California', 'Visalia, California', 'Weaverville, California', 'Willows, California', 'Woodland, California', 'Yreka, California', 'Yuba City, California']
+      Sacramento, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California']
+      Alturas, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California']
+      San Rafael, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California']
+      Ukiah, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California']
+      San Andreas, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California']
+      Placerville, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California']
+      Oakland, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California']
+      Santa Rosa, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California']
+      Madera, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California', 'Madera, California']
+      Los Angeles in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California', 'Madera, California', 'Los Angeles']
+      Marysville, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California', 'Madera, California', 'Los Angeles', 'Marysville, California']
+      Willows, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California', 'Madera, California', 'Los Angeles', 'Marysville, California', 'Willows, California']
+      Oroville, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California', 'Madera, California', 'Los Angeles', 'Marysville, California', 'Willows, California', 'Oroville, California']
+      Ventura, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California', 'Madera, California', 'Los Angeles', 'Marysville, California', 'Willows, California', 'Oroville, California', 'Ventura, California']
+      Fairfield, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California', 'Madera, California', 'Los Angeles', 'Marysville, California', 'Willows, California', 'Oroville, California', 'Ventura, California', 'Fairfield, California']
+      Yuba City, California in ['Sacramento, California', 'Alturas, California', 'San Rafael, California', 'Ukiah, California', 'San Andreas, California', 'Placerville, California', 'Oakland, California', 'Santa Rosa, California', 'Madera, California', 'Los Angeles', 'Marysville, California', 'Willows, California', 'Oroville, California', 'Ventura, California', 'Fairfield, California', 'Yuba City, California']
+['Sacramento, California', 'Alturas, California', 'Oakland, California', 'Yuba City, California']
+Ended after 2.5 hierarchy
+(2.5, ['Oakland, California', 'Yuba City, California', 'Sacramento, California', 'Alturas, California'])
+
+extract_info(Alturas, California) Start.
+utils/preprocess.py extract_info(): Checking good links on Alturas, California
+Modoc County, California is Geography
+1 / 30 )  Modoc County, California Modoc County, California modoc_county
+Northern California is Geography
+2 / 30 )  Northern California Northern California northern_california
+Pit River is Geography
+3 / 30 )  Pit River Pit River pit_river
+Wild rice is Animal
+4 / 30 )  wild rice Wild rice wild_rice
+United States House of Representatives is Geography
+5 / 30 )  United States House of Representatives United States House of Representatives united_states_house_of_representatives
+Susanville, California is Geography
+6 / 30 )  Susanville Susanville, California susanville
+Reno, Nevada is Geography
+7 / 30 )  Reno Reno, Nevada reno
+extract_triplet(Alturas, California)
+Got GPT's response. String length : 502
+subject_words:  []
+object_words:  [['Modoc County, California', 'Modoc County, California', 'modoc_county']]
+subject_words:  []
+object_words:  [['Northern California', 'Northern California', 'northern_california']]
+subject_words:  []
+object_words:  [['Pit River', 'Pit River', 'pit_river']]
+subject_words:  []
+object_words:  [['Northern California', 'Northern California', 'northern_california']]
+subject_words:  []
+object_words:  [['wild rice', 'Wild rice', 'wild_rice']]
+extract_info(Yuba City, California) Start.
+utils/preprocess.py extract_info(): Checking good links on Yuba City, California
+Northern California is Geography
+1 / 30 )  Northern California Northern California northern_california
+Sutter County, California is Geography
+2 / 30 )  Sutter County, California Sutter County, California sutter_county
+Yuba City, California is Geography
+3 / 30 )  Yuba City Metropolitan Statistical Area Yuba City, California yuba_city
+Yuba County, California is Geography
+4 / 30 )  Yuba County Yuba County, California yuba_county
+Sacramento River is Geography
+5 / 30 )  Sacramento River Sacramento River sacramento_river
+Miramonte High School is Geography
+6 / 30 )  Miramonte High School Miramonte High School mirador
+Sacramento, California is Geography
+7 / 30 )  Sacramento Sacramento, California sacremento
+Tundra swan is Animal
+8 / 30 )  Swan Tundra swan tundra_swan
+United States House of Representatives is Geography
+9 / 30 )  United States House of Representatives United States House of Representatives united_states_house_of_representatives
+Yuba City Unified School District  is Geography
+10 / 30 )  Yuba City Unified School District Yuba City Unified School District  yuba_city
+extract_triplet(Yuba City, California)
+Got GPT's response. String length : 864
+subject_words:  []
+object_words:  [['Northern California', 'Northern California', 'northern_california']]
+subject_words:  []
+object_words:  [['Sutter County, California', 'Sutter County, California', 'sutter_county']]
+subject_words:  []
+object_words:  [['Yuba City Metropolitan Statistical Area', 'Yuba City, California', 'yuba_city']]
+subject_words:  [['Yuba City Metropolitan Statistical Area', 'Yuba City, California', 'yuba_city']]
+object_words:  [['Yuba County', 'Yuba County, California', 'yuba_county']]
+subject_words:  []
+object_words:  [['Sacramento', 'Sacramento, California', 'sacremento']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Sacramento River', 'Sacramento River', 'sacramento_river'], ['Sacramento', 'Sacramento, California', 'sacremento']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Yuba City Unified School District', 'Yuba City Unified School District ', 'yuba_city']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Swan', 'Tundra swan', 'tundra_swan']]
+extract_info(Oakland, California) Start.
+utils/preprocess.py extract_info(): Checking good links on Oakland, California
+Alameda County, California is Geography
+1 / 30 )  Alameda County, California Alameda County, California alameda_county
+San Francisco Bay Area is Geography
+2 / 30 )  San Francisco Bay Area San Francisco Bay Area san_francisco_bay_area
+Northern California is Geography
+3 / 30 )  Northern California Northern California northern_california
+Oak is Animal
+4 / 30 )  oak Oak oak
+Sequoia sempervirens is Animal
+5 / 30 )  redwood Sequoia sempervirens sequoia_sempervirens
+San Francisco is Geography
+6 / 30 )  San Francisco San Francisco san_francisco
+University of California is Geography
+7 / 30 )  University of California University of California university_of_california
+Spain is Geography
+8 / 30 )  Spain Spain spain
+Stanford University is Geography
+9 / 30 )  Stanford University Stanford University stanford_university
+Horsecar is Geography
+10 / 30 )  horsecar Horsecar horsecar
+Rotary International is Incident
+11 / 30 )  Rotary Club Rotary International rotary_international
+Chevrolet is Geography
+12 / 30 )  Chevrolet Chevrolet chevrolet
+Detroit is Geography
+13 / 30 )  Detroit Detroit detroit
+Eddie Rickenbacker is People
+14 / 30 )  Eddie Rickenbacker Eddie Rickenbacker eddie_rickenbacker
+San Francisco Bay Oakland International Airport is Geography
+15 / 30 )  San Francisco Bay Oakland International Airport San Francisco Bay Oakland International Airport oak
+Franklin D. Roosevelt is People
+16 / 30 )  Franklin D. Roosevelt Franklin D. Roosevelt franklin_d_roosevelt
+New Mexico is Geography
+17 / 30 )  New Mexico New Mexico new_mexico
+Texas is Geography
+18 / 30 )  Texas Texas texas
+Colorado is Geography
+19 / 30 )  Colorado Colorado colorado
+Supreme Court of California is Geography
+20 / 30 )  California Supreme Court Supreme Court of California cal
+Chicago is Geography
+21 / 30 )  Chicago Chicago chicago
+Denver is Geography
+22 / 30 )  Denver Denver denver
+San Francisco Bay is Geography
+23 / 30 )  San Francisco Bay San Francisco Bay san_francisco_bay
+San Andreas Fault is Geography
+24 / 30 )  San Andreas Fault San Andreas Fault san_andreas_fault
+North Oakland, Oakland, California is Geography
+25 / 30 )  North Oakland North Oakland, Oakland, California oakland
+West Oakland, Oakland, California is Geography
+26 / 30 )  West Oakland West Oakland, Oakland, California oakland
+Oakland Point, Oakland, California is Geography
+27 / 30 )  Oakland Point Oakland Point, Oakland, California oakland
+National Oceanic and Atmospheric Administration is Geography
+28 / 30 )  National Oceanic and Atmospheric Administration National Oceanic and Atmospheric Administration national_oceanic_and_atmospheric_administration
+National Weather Service is Geography
+29 / 30 )  U.S. Weather Bureau National Weather Service national_weather_service
+Eucalyptus globulus is Animal
+30 / 30 )  Australian eucalyptus trees Eucalyptus globulus eucalyptus_globulus
+extract_triplet(Oakland, California)
+Got GPT's response. String length : 1498
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  [['Alameda County, California', 'Alameda County, California', 'alameda_county']]
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  [['Alameda County, California', 'Alameda County, California', 'alameda_county']]
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  [['San Francisco Bay Area', 'San Francisco Bay Area', 'san_francisco_bay_area'], ['San Francisco', 'San Francisco', 'san_francisco'], ['San Francisco Bay', 'San Francisco Bay', 'san_francisco_bay']]
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  [['San Francisco Bay Area', 'San Francisco Bay Area', 'san_francisco_bay_area'], ['San Francisco', 'San Francisco', 'san_francisco'], ['San Francisco Bay', 'San Francisco Bay', 'san_francisco_bay']]
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  [['Northern California', 'Northern California', 'northern_california']]
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  []
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  []
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  [['San Francisco', 'San Francisco', 'san_francisco']]
+subject_words:  []
+object_words:  [(None, 'Oakland, California', 'oakland')]
+subject_words:  [['San Francisco', 'San Francisco', 'san_francisco'], ['San Francisco Bay Oakland International Airport', 'San Francisco Bay Oakland International Airport', 'oak'], ['San Francisco Bay', 'San Francisco Bay', 'san_francisco_bay']]
+object_words:  [(None, 'Oakland, California', 'oakland')]
+subject_words:  [['Franklin D. Roosevelt', 'Franklin D. Roosevelt', 'franklin_d_roosevelt']]
+object_words:  [(None, 'Oakland, California', 'oakland')]
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  [['San Francisco', 'San Francisco', 'san_francisco'], ['San Francisco Bay', 'San Francisco Bay', 'san_francisco_bay']]
+subject_words:  [(None, 'Oakland, California', 'oakland')]
+object_words:  [['San Andreas Fault', 'San Andreas Fault', 'san_andreas_fault']]
+subject_words:  [['National Oceanic and Atmospheric Administration', 'National Oceanic and Atmospheric Administration', 'national_oceanic_and_atmospheric_administration']]
+object_words:  [['U.S. Weather Bureau', 'National Weather Service', 'national_weather_service']]
+subject_words:  [['Australian eucalyptus trees', 'Eucalyptus globulus', 'eucalyptus_globulus']]
+object_words:  [(None, 'Oakland, California', 'oakland')]
+extract_info(Sacramento, California) Start.
+utils/preprocess.py extract_info(): Checking good links on Sacramento, California
+California is Geography
+1 / 30 )  California California california
+Sacramento County, California is Geography
+2 / 30 )  Sacramento County Sacramento County, California sacramento_county
+Sacramento River is Geography
+3 / 30 )  Sacramento Sacramento River sacramento_river
+Northern California is Geography
+4 / 30 )  Northern California Northern California northern_california
+Switzerland is Geography
+5 / 30 )  Swiss Switzerland switzerland
+California State University, Sacramento is Geography
+6 / 30 )  California State University, Sacramento California State University, Sacramento sac_state
+Coloma, California is Geography
+7 / 30 )  Coloma Coloma, California colomas
+Sierra Nevada is Geography
+8 / 30 )  Sierra Nevada Sierra Nevada sierra_nevada
+Leland Stanford is People
+9 / 30 )  Leland Stanford Leland Stanford leland_stanford
+Monterey, California is Geography
+10 / 30 )  Monterey Monterey, California monterey
+Pony Express is Incident
+11 / 30 )  Pony Express Pony Express pony_express
+Collis Potter Huntington is People
+12 / 30 )  Collis P. Huntington Collis Potter Huntington collis_potter_huntington
+Ronald Reagan is People
+13 / 30 )  Ronald Reagan Ronald Reagan ronald_reagan
+San Francisco Bay Area is Geography
+14 / 30 )  San Francisco Bay Area San Francisco Bay Area san_francisco_bay_area
+Ted Kaczynski is People
+15 / 30 )  Theodore Kaczynski Ted Kaczynski unibomber
+San Francisco Bay is Geography
+16 / 30 )  San Francisco Bay San Francisco Bay san_francisco_bay
+Populus is Animal
+17 / 30 )  cottonwood Populus populus
+Eucalyptus is Animal
+18 / 30 )  eucalyptus Eucalyptus eucalyptus
+Willow is Animal
+19 / 30 )  willows Willow willow
+Elm is Animal
+20 / 30 )  elms Elm elm
+Arecaceae is Animal
+21 / 30 )  palm trees Arecaceae arecaceae
+Platanus × acerifolia is Animal
+22 / 30 )  London plane Platanus × acerifolia london_plane
+Massachusetts Institute of Technology is Geography
+23 / 30 )  MIT Massachusetts Institute of Technology massachusetts_institute_of_technology
+Vancouver is Geography
+24 / 30 )  Vancouver Vancouver vancouver
+Singapore is Geography
+25 / 30 )  Singapore Singapore singapore
+San Diego County, California is Geography
+26 / 30 )  San Diego metropolitan area San Diego County, California san_diego_county
+Hewlett-Packard is Geography
+27 / 30 )  Hewlett Packard Hewlett-Packard hewlett_packard
+Intel is Geography
+28 / 30 )  Intel Intel intel
+Mississippi River is Geography
+29 / 30 )  Mississippi River Mississippi River mississippi_river
+Oleander  is Animal
+30 / 30 )  Oleander Oleander  oleander
+extract_triplet(Sacramento, California)
+Got GPT's response. String length : 318
+['("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Alturas", "is the county seat of", "Modoc County, California")\n', '("Alturas", "is located in", "Northern California")\n', '("Alturas", "is situated at the confluence of", "Pit River")\n', '("Modoc County", "is part of", "Northern California")\n', '("South Fork Valley", "contains wetlands and", "wild rice fields")\n', '("Yuba City", "is a city in", "Northern California")\n', '("Yuba City", "is the county seat of", "Sutter County, California")\n', '("Yuba City", "is the principal city of", "Yuba City Metropolitan Statistical Area")\n', '("Yuba City Metropolitan Statistical Area", "encompasses", "all of Sutter County and Yuba County")\n', '("Yuba City", "is part of the Greater", "Sacramento CSA")\n', '("Yuba City", "was settled by", "the Maidu people")\n', '("Yuba River and the Feather River", "are tributaries of the", "Sacramento River")\n', '("Yuba City", "had its first major influx of population after", "World War II")\n', '("Yuba City", "is served by the", "Yuba City Unified School District")\n', '("Yuba City", "celebrates the Sikh Parade", "annually")\n', '("Yuba City", "participated in", "California Swan Festival")\n', '("Oakland, California", "is the most populous city in", "Alameda County, California")\n', '("Oakland, California", "is the county seat of", "Alameda County, California")\n', '("Oakland, California", "is the third-largest city overall in", "the San Francisco Bay Area")\n', '("Oakland, California", "is the largest city in the", "East Bay region of the San Francisco Bay Area")\n', '("Oakland, California", "serves as the Bay Area\'s trade center with", "the Port of Oakland being the busiest port in Northern California")\n', '("Oakland, California\'s", "territory was once", "California coastal terrace prairie, oak woodland, and north coastal scrub")\n', '("Oakland, California", "was known for its", "oak stands")\n', '("Oakland, California\'s", "oak and redwood timber were used to build", "San Francisco")\n', '("University of California\'s", "first campus was founded in", "Oakland, California")\n', '("San Francisco Bay Oakland International Airport", "is an airport in", "Oakland, California")\n', '("Franklin D. Roosevelt", "called on defense industries in", "Oakland, California")\n', '("Oakland, California", "is in the", "San Francisco Bay")\n', '("Oakland, California", "is near the", "San Andreas Fault")\n', '("National Oceanic and Atmospheric Administration", "and", "U.S. Weather Bureau kept weather records in downtown Oakland")\n', '("Australian eucalyptus trees", "have been planted in", "Oakland, California")\n']
+range(1, 52) 1
+['("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Alturas", "is the county seat of", "Modoc County, California")\n', '("Alturas", "is located in", "Northern California")\n', '("Alturas", "is situated at the confluence of", "Pit River")\n', '("Modoc County", "is part of", "Northern California")\n', '("South Fork Valley", "contains wetlands and", "wild rice fields")\n', '("Yuba City", "is a city in", "Northern California")\n', '("Yuba City", "is the county seat of", "Sutter County, California")\n', '("Yuba City", "is the principal city of", "Yuba City Metropolitan Statistical Area")\n', '("Yuba City Metropolitan Statistical Area", "encompasses", "all of Sutter County and Yuba County")\n', '("Yuba City", "is part of the Greater", "Sacramento CSA")\n', '("Yuba City", "was settled by", "the Maidu people")\n', '("Yuba River and the Feather River", "are tributaries of the", "Sacramento River")\n', '("Yuba City", "had its first major influx of population after", "World War II")\n', '("Yuba City", "is served by the", "Yuba City Unified School District")\n', '("Yuba City", "celebrates the Sikh Parade", "annually")\n', '("Yuba City", "participated in", "California Swan Festival")\n', '("Oakland, California", "is the most populous city in", "Alameda County, California")\n', '("Oakland, California", "is the county seat of", "Alameda County, California")\n', '("Oakland, California", "is the third-largest city overall in", "the San Francisco Bay Area")\n', '("Oakland, California", "is the largest city in the", "East Bay region of the San Francisco Bay Area")\n', '("Oakland, California", "serves as the Bay Area\'s trade center with", "the Port of Oakland being the busiest port in Northern California")\n', '("Oakland, California\'s", "territory was once", "California coastal terrace prairie, oak woodland, and north coastal scrub")\n', '("Oakland, California", "was known for its", "oak stands")\n', '("Oakland, California\'s", "oak and redwood timber were used to build", "San Francisco")\n', '("University of California\'s", "first campus was founded in", "Oakland, California")\n', '("San Francisco Bay Oakland International Airport", "is an airport in", "Oakland, California")\n', '("Franklin D. Roosevelt", "called on defense industries in", "Oakland, California")\n', '("Oakland, California", "is in the", "San Francisco Bay")\n', '("Oakland, California", "is near the", "San Andreas Fault")\n', '("National Oceanic and Atmospheric Administration", "and", "U.S. Weather Bureau kept weather records in downtown Oakland")\n', '("Australian eucalyptus trees", "have been planted in", "Oakland, California")\n']
+range(1, 52) 1
+['("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Alturas", "is the county seat of", "Modoc County, California")\n', '("Alturas", "is located in", "Northern California")\n', '("Alturas", "is situated at the confluence of", "Pit River")\n', '("Modoc County", "is part of", "Northern California")\n', '("South Fork Valley", "contains wetlands and", "wild rice fields")\n', '("Yuba City", "is a city in", "Northern California")\n', '("Yuba City", "is the county seat of", "Sutter County, California")\n', '("Yuba City", "is the principal city of", "Yuba City Metropolitan Statistical Area")\n', '("Yuba City Metropolitan Statistical Area", "encompasses", "all of Sutter County and Yuba County")\n', '("Yuba City", "is part of the Greater", "Sacramento CSA")\n', '("Yuba City", "was settled by", "the Maidu people")\n', '("Yuba River and the Feather River", "are tributaries of the", "Sacramento River")\n', '("Yuba City", "had its first major influx of population after", "World War II")\n', '("Yuba City", "is served by the", "Yuba City Unified School District")\n', '("Yuba City", "celebrates the Sikh Parade", "annually")\n', '("Yuba City", "participated in", "California Swan Festival")\n', '("Oakland, California", "is the most populous city in", "Alameda County, California")\n', '("Oakland, California", "is the county seat of", "Alameda County, California")\n', '("Oakland, California", "is the third-largest city overall in", "the San Francisco Bay Area")\n', '("Oakland, California", "is the largest city in the", "East Bay region of the San Francisco Bay Area")\n', '("Oakland, California", "serves as the Bay Area\'s trade center with", "the Port of Oakland being the busiest port in Northern California")\n', '("Oakland, California\'s", "territory was once", "California coastal terrace prairie, oak woodland, and north coastal scrub")\n', '("Oakland, California", "was known for its", "oak stands")\n', '("Oakland, California\'s", "oak and redwood timber were used to build", "San Francisco")\n', '("University of California\'s", "first campus was founded in", "Oakland, California")\n', '("San Francisco Bay Oakland International Airport", "is an airport in", "Oakland, California")\n', '("Franklin D. Roosevelt", "called on defense industries in", "Oakland, California")\n', '("Oakland, California", "is in the", "San Francisco Bay")\n', '("Oakland, California", "is near the", "San Andreas Fault")\n', '("National Oceanic and Atmospheric Administration", "and", "U.S. Weather Bureau kept weather records in downtown Oakland")\n', '("Australian eucalyptus trees", "have been planted in", "Oakland, California")\n']
+range(1, 52) 1
+{'id': '0_5', 'Question': " Which city does Seoul come after in the ranking of the world's largest metropolitan economies, if Tokyo and New York City are considered to be ahead of it?\n", 'Answer': 'Los Angeles', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Alturas, California'}, {'label': 'B', 'text': 'Yuba City, California'}, {'label': 'C', 'text': 'Los Angeles'}, {'label': 'D', 'text': 'Oakland, California'}, {'label': 'E', 'text': 'Sacramento, California'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'alturas'}, {'label': 'B', 'text': 'yuba_city'}, {'label': 'C', 'text': 'los_angeles'}, {'label': 'D', 'text': 'oakland'}, {'label': 'E', 'text': 'sacremento'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Question_decompositions': ["1: Which city, in addition to Tokyo and New York City, does Seoul trail as one of the world's largest metropolitan economies?\nA1: Los Angeles"], 'Hops_wiki': [('Seoul', 'Los Angeles')], 'Hops_cpnet': [('seoul', 'los_angeles')], 'Triplets': ['("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")'], 'Referred_files': [{'name': 'Seoul', 'line': 5}], 'Question_triplet_answer': {100: [7], 50: [36], 25: [28]}}
+time passed:  5093.226794958115
+Expected dollar:  0.0
+Oakland is Geography
+California is Geography
+Seoul is Geography
+the Republic of Korea is Geography
+Alameda County is Geography
+San Francisco is Geography
+Tokyo is Geography
+New York City is Geography
+Los Angeles is Geography
+the Bay Area's is Geography
+"the Port of Oakland is Geography
+Northern California is Geography
+Shanghai is Geography
+San Andreas Fault is Geography
+the Korean Empire is Geography
+the Joseon dynasty is Geography
+Sacramento is Geography
+South Korea is Geography
+Modoc County is Geography
+Yuba River is Geography
+the Feather River is Geography
+Sacramento River is Geography
+Yuba City Metropolitan Statistical Area is Geography
+Gangnam district is Geography
+Tokyo Haneda is Geography
+University of California is Geography
+Namsan is Geography
+Seoul National University is Geography
+East Bay is Geography
+the San Francisco Bay Area is Geography
+entities:  {'York', 'County', 'Seoul', 'City,', 'Statistical', '"the', 'Korea', 'Fault', 'Haneda', 'San', 'Hongqiao', 'California', 'East', 'Modoc', 'Incheon', 'Alturas,', 'River', 'district', 'Oakland', 'South', 'City', 'Gangnam', 'dynasty', 'New', 'Angeles', 'Area', 'Sacramento', 'Korean', 'Northern', 'Joseon', 'Yuba', 'Republic', 'Alameda', 'Andreas', 'Oakland,', 'Feather', 'Shanghai', 'University', 'Namsan', 'National', 'Empire', 'Port', 'Los', 'Metropolitan', 'Francisco', 'Sacramento,', 'Bay', "Area's", 'Tokyo'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Sacramento, California' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Sacramento
+California
+
+gpt_entity_particular(): entity list: 
+ ['Sacramento', 'California']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Alturas, California' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Oakland, California
+oak stands
+Alameda County, California
+San Francisco
+Chungnam
+Japanese rule
+Tokyo Haneda
+oakland
+San Francisco Bay Oakland International Airport
+Seoul
+Gyeongseong
+Chungnam
+Shanghai Hongqiao
+Tokyo Haneda
+Namsan
+Incheon
+Seoul National University
+Gangnam district
+the Republic of Korea
+South Korea
+Yuba City
+Sacramento CSA
+Yuba City Metropolitan Statistical Area
+the Maidu people
+Northern California
+Modoc County
+University of California's
+the Port of Oakland
+San Francisco Bay Area
+the East Bay region of the San Francisco Bay Area
+
+gpt_entity_particular(): entity list: 
+ ['Seoul National University', 'Seoul', 'San Francisco Bay Oakland International Airport', 'Yuba City', 'Gyeongseong', 'the Republic of Korea', 'Sacramento CSA', 'Gangnam district', 'Incheon', 'Tokyo Haneda', 'Alameda County, California', 'San Francisco', 'Modoc County', 'the Maidu people', 'the Port of Oakland', 'Shanghai Hongqiao', 'Northern California', 'oakland', 'oak stands', 'Japanese rule', 'Namsan', 'San Francisco Bay Area', 'Yuba City Metropolitan Statistical Area', "University of California's", 'the East Bay region of the San Francisco Bay Area', 'South Korea', 'Oakland, California', 'Chungnam']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Seoul' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Seoul
+Chungnam
+Gangnam district
+Incheon
+Namsan
+Seoul National University
+
+gpt_entity_particular(): entity list: 
+ ['Namsan', 'Seoul National University', 'Seoul', 'Gangnam district', 'Incheon', 'Chungnam']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Yuba City, California' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Yuba City
+Northern California
+Sacramento CSA
+Yuba City Metropolitan Statistical Area
+
+gpt_entity_particular(): entity list: 
+ ['Northern California', 'Yuba City', 'Sacramento CSA', 'Yuba City Metropolitan Statistical Area']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Oakland, California' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Oakland
+California
+oak stands
+county seat
+Alameda County
+trade center
+Port of Oakland
+San Francisco
+San Andreas Fault
+territory
+California coastal terrace prairie
+oak woodland
+north coastal scrub
+University of California's
+first campus
+
+gpt_entity_particular(): entity list: 
+ ['county seat', 'first campus', 'Port of Oakland', 'California', 'California coastal terrace prairie', 'trade center', 'territory', 'Alameda County', 'San Andreas Fault', 'north coastal scrub', 'Oakland', 'oak stands', 'oak woodland', 'San Francisco', "University of California's"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Los Angeles' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Oakland
+California
+oak stands
+Seoul
+Republic of Korea
+Japanese rule
+Chungnam
+Japanese rule
+the Korean Empire
+the Joseon dynasty
+San Francisco
+Chungnam
+the Port of Oakland
+Shanghai Hongqiao
+San Andreas Fault
+the Greater
+Sacramento CSA
+the Korean Empire
+the Joseon dynasty
+Northern California
+Sacramento River
+Yuba City
+Yuba City Metropolitan Statistical Area
+Northern California
+San Francisco Bay Area
+South Fork Valley
+Incheon
+Gangnam district
+San Francisco Bay Oakland International Airport
+Tokyo Haneda
+the Maidu people
+the Port of Oakland
+Namsan
+Seoul National University
+the East Bay region of the San Francisco Bay Area
+
+gpt_entity_particular(): entity list: 
+ ['the Joseon dynasty', 'Seoul National University', 'Sacramento River', 'Seoul', 'South Fork Valley', 'San Francisco Bay Oakland International Airport', 'San Andreas Fault', 'Yuba City', 'California', 'Sacramento CSA', 'Gangnam district', 'Incheon', 'Tokyo Haneda', 'Oakland', 'San Francisco', 'the Maidu people', 'the Port of Oakland', 'Shanghai Hongqiao', 'Northern California', 'oak stands', 'the Korean Empire', 'Japanese rule', 'Namsan', 'San Francisco Bay Area', 'Yuba City Metropolitan Statistical Area', 'Republic of Korea', 'the East Bay region of the San Francisco Bay Area', 'the Greater', 'Chungnam']
+
+gpt_entity_particular(): filtered entity: 
+ ['California']
+After GPT, entity:  {'York', 'County', 'Seoul', 'City,', 'Statistical', '"the', 'Korea', 'Fault', 'Haneda', 'San', 'Hongqiao', 'California', 'East', 'Modoc', 'Incheon', 'Alturas,', 'River', 'district', 'Oakland', 'South', 'City', 'Gangnam', 'dynasty', 'New', 'Angeles', 'Area', 'Sacramento', 'Korean', 'Northern', 'Joseon', 'Yuba', 'Republic', 'Alameda', 'Andreas', 'Oakland,', 'Feather', 'Shanghai', 'University', 'Namsan', 'National', 'Empire', 'Port', 'Los', 'Metropolitan', 'Francisco', 'Sacramento,', 'Bay', "Area's", 'Tokyo'}
+Total time:  126.30049872398376
+Entity conversion done on 0_5 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_0_5_entity_conversion_hash.json. Check the entity.
+ Which 020 does 02D come after in the ranking of the world's largest 002 economies, if 019 and 00B 00D 020 are considered to be ahead of it?
+
+
+
+Done. Check final_query/id_0_5_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_0_5_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_0_5_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_0_5_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_0_5_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_0_5_final_result_ratio25_unmasked.txt

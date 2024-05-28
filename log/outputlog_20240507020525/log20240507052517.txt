@@ -1,0 +1,1530 @@
+Got argument: Immanuel Kant, 4, 4_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Hannah Arendt", "was influenced by", "the philosophy of Kant")', 'start word': 'Immanuel Kant', 'end word': 'Hannah Arendt', 'source': {'name': 'Hannah Arendt', 'line': 26}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'hannah_arendt'}}
+
+utils/question.py extract_hops(Hannah Arendt, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Hannah_Arendt_info.json file
+second_hop:  {'triplet': '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")', 'start word': 'Hannah Arendt', 'end word': 'East Prussia', 'source': {'name': 'Hannah Arendt', 'line': 5}, 'cpnet': {'start word': 'hannah_arendt', 'end word': 'east_prussia'}}
+
+utils/question.py extract_hops(East Prussia, [], ['Immanuel Kant', 'Hannah Arendt']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/East_Prussia_info.json file
+extract_info(East Prussia) Start.
+utils/preprocess.py extract_info(): Checking good links on East Prussia
+Weimar Republic is Geography
+1 / 30 )  Weimar Republic Weimar Republic weimar_republic
+Königsberg is Geography
+2 / 30 )  Königsberg Königsberg königsberg
+Baltic Sea is Geography
+3 / 30 )  Baltic Coast Baltic Sea baltic_sea
+State of the Teutonic Order is Geography
+4 / 30 )  monastic state of the Teutonic Knights State of the Teutonic Order ordensstaat
+German Empire is Geography
+5 / 30 )  German Empire German Empire german_empire
+Lithuania is Geography
+6 / 30 )  Lithuania Lithuania lithuania
+Nazi Germany is Geography
+7 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Joseph Stalin is People
+8 / 30 )  Joseph Stalin Joseph Stalin joseph_stalin
+Soviet Union is Geography
+9 / 30 )  Soviet Union Soviet Union soviet_union
+Polish People's Republic is Geography
+10 / 30 )  People's Republic of Poland Polish People's Republic polish_people's_republic
+Kaliningrad is Geography
+11 / 30 )  Kaliningrad Kaliningrad kaliningrad
+Pomerelia is Geography
+12 / 30 )  Pomerelia Pomerelia pomerelia
+Warmia is Geography
+13 / 30 )  Warmia Warmia warmia
+Frederick William, Elector of Brandenburg is People
+14 / 30 )  Frederick William Frederick William, Elector of Brandenburg great_elector
+Pomeranian Voivodeship  is Geography
+15 / 30 )  Pomerania Pomeranian Voivodeship  pomorskie
+Vistula is Geography
+16 / 30 )  Vistula Vistula vistula
+Chełmno Land is Geography
+17 / 30 )  Chełmno Land Chełmno Land culmerland
+Kwidzyn is Geography
+18 / 30 )  Marienwerder Kwidzyn kwidzyn
+Berlin is Geography
+19 / 30 )  Berlin Berlin berlin
+East Prussia is Geography
+20 / 30 )  Province of East Prussia East Prussia east_prussia
+Battle of Jena–Auerstedt is Geography
+21 / 30 )  Battle of Jena-Auerstedt Battle of Jena–Auerstedt battle_of_jena
+Napoleon is People
+22 / 30 )  Napoleon Napoleon napoleon
+Frederick William III of Prussia is People
+23 / 30 )  Frederick William III Frederick William III of Prussia frederick_william_iii
+Curonian Spit is Geography
+24 / 30 )  Curonian Spit Curonian Spit curonian_spit
+Klaipėda is Geography
+25 / 30 )  Memel Klaipėda klaipėda
+Gdańsk is Geography
+26 / 30 )  Danzig Gdańsk gdańsk
+Brandenburg is Geography
+27 / 30 )  Brandenburg Brandenburg brandenburg
+Westphalia is Geography
+28 / 30 )  Westphalia Westphalia westphalia
+Ruhr is Geography
+29 / 30 )  Ruhr Area Ruhr ruhr
+Battle of Tannenberg is Geography
+30 / 30 )  Battle of Tannenberg Battle of Tannenberg battle_of_tannenberg
+extract_triplet(East Prussia)
+Got GPT's response. String length : 2927
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [['Königsberg', 'Königsberg', 'königsberg']]
+subject_words:  [['Königsberg', 'Königsberg', 'königsberg']]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad']]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [['Baltic Coast', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [['monastic state of the Teutonic Knights', 'State of the Teutonic Order', 'ordensstaat']]
+subject_words:  []
+object_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  []
+object_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Joseph Stalin', 'Joseph Stalin', 'joseph_stalin']]
+object_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [['Marienwerder', 'Kwidzyn', 'kwidzyn']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [['Berlin', 'Berlin', 'berlin']]
+subject_words:  [['Frederick William', 'Frederick William, Elector of Brandenburg', 'great_elector'], ['Frederick William III', 'Frederick William III of Prussia', 'frederick_william_iii']]
+object_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+subject_words:  []
+object_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['German Empire', 'German Empire', 'german_empire']]
+subject_words:  []
+object_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  [['Königsberg', 'Königsberg', 'königsberg']]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad']]
+third_hop:  {'triplet': '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")', 'start word': 'East Prussia', 'end word': 'State of the Teutonic Order', 'source': {'name': 'East Prussia', 'line': 4}, 'cpnet': {'start word': 'east_prussia', 'end word': 'ordensstaat'}}
+
+utils/question.py extract_hops(State of the Teutonic Order, [], ['Immanuel Kant', 'Hannah Arendt', 'East Prussia']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/State_of_the_Teutonic_Order_info.json file
+extract_info(State of the Teutonic Order) Start.
+utils/preprocess.py extract_info(): Checking good links on State of the Teutonic Order
+Baltic Sea is Geography
+1 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Chełmno Land is Geography
+2 / 30 )  Chełmno Land Chełmno Land culmerland
+Courland is Geography
+3 / 30 )  Courland Courland courland
+Gotland is Geography
+4 / 30 )  Gotland Gotland gotland
+Estonia is Geography
+5 / 30 )  Estonia Estonia estonia
+Pomerelia is Geography
+6 / 30 )  Pomerelia Pomerelia pomerelia
+Samogitia is Geography
+7 / 30 )  Samogitia Samogitia samogitia
+Kievan Rus' is Geography
+8 / 30 )  Kievan Rus' Kievan Rus' kievan_russia
+Podlaskie Voivodeship is Geography
+9 / 30 )  Podlaskie Voivodeship Podlaskie Voivodeship podlaskie
+Burzenland is Geography
+10 / 30 )  Burzenland Burzenland burzenland
+Frederick II, Holy Roman Emperor is People
+11 / 30 )  Frederick II Frederick II, Holy Roman Emperor holy_roman_emperor_frederick_ii
+Catania is Geography
+12 / 30 )  Catania Catania catania
+Sambia Peninsula is Geography
+13 / 30 )  Sambia Sambia Peninsula sambia
+Königsberg is Geography
+14 / 30 )  Königsberg Königsberg königsberg
+Elbe is Geography
+15 / 30 )  Elbe Elbe elbe
+Oder is Geography
+16 / 30 )  Oder Oder oder
+Silesia is Geography
+17 / 30 )  Silesia Silesia silesia
+Elbląg is Geography
+18 / 30 )  Elbing  Elbląg elbląg
+Latvia is Geography
+19 / 30 )  Latvia Latvia latvia
+Warmia is Geography
+20 / 30 )  Warmia Warmia warmia
+Gdańsk is Geography
+21 / 30 )  Danzig  Gdańsk gdańsk
+Toruń is Geography
+22 / 30 )  Thorn  Toruń toruń
+Kuyavia is Geography
+23 / 30 )  Kuyavia Kuyavia kujawy
+Øresund is Geography
+24 / 30 )  Øresund Øresund øresund
+Lübeck is Geography
+25 / 30 )  Lübeck Lübeck lübeck
+Zuiderzee is Geography
+26 / 30 )  Zuiderzee Zuiderzee zuider_zee
+Cologne is Geography
+27 / 30 )  Cologne Cologne cologne
+Amsterdam is Geography
+28 / 30 )  Amsterdam Amsterdam amsterdam
+Brielle is Geography
+29 / 30 )  Brielle Brielle brielle
+Bremen is Geography
+30 / 30 )  Bremen Bremen bremen
+extract_triplet(State of the Teutonic Order)
+Got GPT's response. String length : 1675
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Chełmno Land', 'Chełmno Land', 'culmerland']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Courland', 'Courland', 'courland']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Gotland', 'Gotland', 'gotland']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Estonia', 'Estonia', 'estonia']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Pomerelia', 'Pomerelia', 'pomerelia']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Samogitia', 'Samogitia', 'samogitia']]
+subject_words:  [["Kievan Rus'", "Kievan Rus'", 'kievan_russia']]
+object_words:  []
+subject_words:  [['Podlaskie Voivodeship', 'Podlaskie Voivodeship', 'podlaskie']]
+object_words:  []
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Burzenland', 'Burzenland', 'burzenland']]
+subject_words:  [['Frederick II', 'Frederick II, Holy Roman Emperor', 'holy_roman_emperor_frederick_ii']]
+object_words:  []
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Catania', 'Catania', 'catania']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Sambia', 'Sambia Peninsula', 'sambia']]
+subject_words:  [['Königsberg', 'Königsberg', 'königsberg']]
+object_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Elbe', 'Elbe', 'elbe'], ['Oder', 'Oder', 'oder']]
+subject_words:  []
+object_words:  [['Silesia', 'Silesia', 'silesia']]
+subject_words:  []
+object_words:  [['Lübeck', 'Lübeck', 'lübeck']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Latvia', 'Latvia', 'latvia']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Warmia', 'Warmia', 'warmia']]
+subject_words:  []
+object_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+subject_words:  []
+object_words:  [['Thorn ', 'Toruń', 'toruń']]
+subject_words:  [(None, 'State of the Teutonic Order', 'ordensstaat')]
+object_words:  [['Kuyavia', 'Kuyavia', 'kujawy']]
+subject_words:  [['Øresund', 'Øresund', 'øresund']]
+object_words:  []
+subject_words:  [['Lübeck', 'Lübeck', 'lübeck']]
+object_words:  []
+subject_words:  [['Zuiderzee', 'Zuiderzee', 'zuider_zee']]
+object_words:  []
+subject_words:  [['Cologne', 'Cologne', 'cologne']]
+object_words:  [['Estonia', 'Estonia', 'estonia']]
+subject_words:  [['Amsterdam', 'Amsterdam', 'amsterdam']]
+object_words:  []
+subject_words:  [['Brielle', 'Brielle', 'brielle']]
+object_words:  []
+subject_words:  [['Bremen', 'Bremen', 'bremen']]
+object_words:  []
+forth_hop:  {'triplet': '("State of the Teutonic Order", "encompassed", "Pomerelia")', 'start word': 'State of the Teutonic Order', 'end word': 'Pomerelia', 'source': {'name': 'State of the Teutonic Order', 'line': 6}, 'cpnet': {'start word': 'ordensstaat', 'end word': 'pomerelia'}}
+generate_question(4_3, ['("Hannah Arendt", "was influenced by", "the philosophy of Kant")', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")', '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")', '("State of the Teutonic Order", "encompassed", "Pomerelia")'], ['Hannah Arendt', 'East Prussia', 'State of the Teutonic Order', 'Pomerelia'], [('Immanuel Kant', 'Hannah Arendt'), ('Hannah Arendt', 'East Prussia'), ('East Prussia', 'State of the Teutonic Order'), ('State of the Teutonic Order', 'Pomerelia')], Pomerelia, [{'name': 'Hannah Arendt', 'line': 26}, {'name': 'Hannah Arendt', 'line': 5}, {'name': 'East Prussia', 'line': 4}, {'name': 'State of the Teutonic Order', 'line': 6}]) called
+GPT output is:  Q: To which region that was once governed by a Baltic crusading military order did the political theorist, who was influenced by Kant's philosophy, move when it was the capital of a territory formerly part of the Kingdom of Prussia?
+A: Pomerelia
+final_choice(Pomerelia, options = 5) started
+[]
+entity_type(Pomerelia) called
+Pomerelia is Geography
+check_matchscore(Pomerelia, Historical regions in Poland):  0.0
+choose_by_wiki_recur(Historical regions in Poland)
+   Pages in Historical regions in Poland: ['Polish historical regions', 'Bernstein Land', 'Chełmno Land', 'Cherven Cities', 'Dobrzyń Land', 'Farther Pomerania', 'Galicia (Eastern Europe)', 'Greater Poland', 'Kalisz Region', 'Kashubia', 'Kłodzko Land', 'Łęczyca Land', 'Lesser Poland', 'Lower Lusatia', 'Lower Prussia', 'Lower Silesia', 'Lubusz Land', 'Lusatia', 'Masuria', 'Mazovia', 'Michałów Land', 'Opolian Silesia', 'Podlachia', 'Polesia', 'Pomerania', 'Pomerelia', 'Prudnik Land', 'Prussia (region)', 'Red Ruthenia', 'Sasna', 'Silesia', 'Spiš', 'Suwałki Region', 'Upper Lusatia', 'Upper Silesia', 'Volhynia', 'Warmia']
+      Prussia (region) in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land']
+      Prudnik Land in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region']
+      Lesser Poland in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land']
+      Kłodzko Land in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land']
+      Suwałki Region in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land', 'Pomerelia']
+      Lubusz Land in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land', 'Pomerelia', 'Michałów Land']
+      Pomerelia in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land', 'Pomerelia', 'Michałów Land', 'Kashubia']
+      Michałów Land in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land', 'Pomerelia', 'Michałów Land', 'Kashubia', 'Farther Pomerania']
+      Kashubia in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land', 'Pomerelia', 'Michałów Land', 'Kashubia', 'Farther Pomerania', 'Volhynia']
+      Farther Pomerania in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land', 'Pomerelia', 'Michałów Land', 'Kashubia', 'Farther Pomerania', 'Volhynia']
+      Volhynia in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land', 'Pomerelia', 'Michałów Land', 'Kashubia', 'Farther Pomerania', 'Volhynia', 'Lower Lusatia']
+      Lower Lusatia in ['Prussia (region)', 'Prudnik Land', 'Lesser Poland', 'Kłodzko Land', 'Suwałki Region', 'Lubusz Land', 'Pomerelia', 'Michałów Land', 'Kashubia', 'Farther Pomerania', 'Volhynia', 'Lower Lusatia']
+['Lesser Poland', 'Kashubia', 'Volhynia', 'Lower Lusatia']
+Ended after 2.5 hierarchy
+(2.5, ['Lower Lusatia', 'Lesser Poland', 'Volhynia', 'Kashubia'])
+
+extract_info(Volhynia) Start.
+utils/preprocess.py extract_info(): Checking good links on Volhynia
+Western Ukraine is Geography
+1 / 30 )  western Ukraine Western Ukraine western_ukraine
+Volyn Oblast is Geography
+2 / 30 )  Volyn Oblast Volyn Oblast volyn_oblast
+Zhytomyr is Geography
+3 / 30 )  Zhytomyr Zhytomyr zhytomyr
+Rivne is Geography
+4 / 30 )  Rivne Rivne rivne
+Lutsk is Geography
+5 / 30 )  Lutsk Lutsk lutsk
+Huczwa  is Geography
+6 / 30 )  Huczwa Huczwa  wołyń
+Rivne Oblast is Geography
+7 / 30 )  Rivne Rivne Oblast rivne_oblast
+Ternopil Oblast is Geography
+8 / 30 )  Ternopil Ternopil Oblast ternopil_oblast
+Khmelnytskyi Oblast is Geography
+9 / 30 )  Khmelnytskyi Oblasts Khmelnytskyi Oblast khmelnytskyi_oblast
+Pogost is Geography
+10 / 30 )  pogosts Pogost pogost
+Russian Orthodox Church is Geography
+11 / 30 )  Russian Orthodox Church Russian Orthodox Church russian_orthodox_church
+Kyiv is Geography
+12 / 30 )  Kyiv Kyiv kyiv
+Soviet Union is Geography
+13 / 30 )  Soviet Union Soviet Union soviet_union
+Ukrainian Soviet Socialist Republic is Geography
+14 / 30 )  Ukrainian SSR Ukrainian Soviet Socialist Republic ukrainian_soviet_socialist_republic
+Holy See is Geography
+15 / 30 )  Vatican Holy See holy_see
+Siberia is Geography
+16 / 30 )  Siberia Siberia siberia
+Nazi Germany is Geography
+17 / 30 )  Reich Nazi Germany nazi_germany
+NKVD is Geography
+18 / 30 )  NKVD NKVD nkvd
+extract_triplet(Volhynia)
+Got GPT's response. String length : 1626
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  [['Volyn Oblast', 'Volyn Oblast', 'volyn_oblast']]
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [['Huczwa', 'Huczwa ', 'wołyń']]
+object_words:  [(None, 'Volhynia', 'volhynia')]
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  [['Ukrainian SSR', 'Ukrainian Soviet Socialist Republic', 'ukrainian_soviet_socialist_republic']]
+subject_words:  [['Russian Orthodox Church', 'Russian Orthodox Church', 'russian_orthodox_church']]
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  [['Kyiv', 'Kyiv', 'kyiv']]
+subject_words:  [['Kyiv', 'Kyiv', 'kyiv']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Volhynia', 'volhynia'), ['pogosts', 'Pogost', 'pogost']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  [(None, 'Volhynia', 'volhynia')]
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+subject_words:  [['Vatican', 'Holy See', 'holy_see']]
+object_words:  [(None, 'Volhynia', 'volhynia')]
+subject_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+object_words:  [(None, 'Volhynia', 'volhynia'), ['Siberia', 'Siberia', 'siberia']]
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [['NKVD', 'NKVD', 'nkvd']]
+object_words:  [(None, 'Volhynia', 'volhynia')]
+subject_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+object_words:  [(None, 'Volhynia', 'volhynia')]
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  [['Ukrainian SSR', 'Ukrainian Soviet Socialist Republic', 'ukrainian_soviet_socialist_republic']]
+subject_words:  [(None, 'Volhynia', 'volhynia')]
+object_words:  []
+extract_info(Lower Lusatia) Start.
+utils/preprocess.py extract_info(): Checking good links on Lower Lusatia
+Germany is Geography
+1 / 30 )  German Germany germany
+Brandenburg is Geography
+2 / 30 )  Brandenburg Brandenburg brandenburg
+Lubusz Voivodeship is Geography
+3 / 30 )  Lubusz Voivodeship Lubusz Voivodeship lubuskie
+Poland is Geography
+4 / 30 )  Poland Poland poland
+Upper Lusatia is Geography
+5 / 30 )  Upper Lusatia Upper Lusatia upper_lusatia
+Pinus sylvestris is Animal
+6 / 30 )  pine Pinus sylvestris pinus_sylvestris
+Oder is Geography
+7 / 30 )  Oder Oder oder
+Lübben  is Geography
+8 / 30 )  Lübben Lübben  lubben
+Cottbus is Geography
+9 / 30 )  Cottbus Cottbus cottbus
+Spree Forest is Geography
+10 / 30 )  Spreewald Spree Forest spreewald
+Bóbr is Geography
+11 / 30 )  Bóbr Bóbr bober
+Saxony is Geography
+12 / 30 )  Saxony Saxony saxony
+East Germany is Geography
+13 / 30 )  East German East Germany east_germany
+Finsterwalde is Geography
+14 / 30 )  Finsterwalde Finsterwalde finsterwalde
+Oder–Neisse line is Geography
+15 / 30 )  Oder–Neisse line Oder–Neisse line oder_neisse_line
+Saale is Geography
+16 / 30 )  Saale Saale saale
+Bautzen is Geography
+17 / 30 )  Bautzen Bautzen bautzen
+Görlitz is Geography
+18 / 30 )  Görlitz Görlitz görlitz
+Enclave and exclave is Geography
+19 / 30 )  exclave Enclave and exclave enclave
+Lusatia is Geography
+20 / 30 )  Lusatias Lusatia lusatia
+Warsaw is Geography
+21 / 30 )  Warsaw Warsaw warsaw
+Dresden is Geography
+22 / 30 )  Dresden Dresden dresden
+Milestone is Geography
+23 / 30 )  mileposts Milestone milestone
+Napoleon is People
+24 / 30 )  Napoleon Napoleon napoleon
+Czechoslovakia is Geography
+25 / 30 )  Czechoslovakia Czechoslovakia czechoslovakia
+Lusatian Neisse is Geography
+26 / 30 )  Neisse Lusatian Neisse lusatian_neisse
+extract_triplet(Lower Lusatia)
+Got GPT's response. String length : 1466
+subject_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+object_words:  [['German', 'Germany', 'germany'], ['Brandenburg', 'Brandenburg', 'brandenburg']]
+subject_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+object_words:  [['Lubusz Voivodeship', 'Lubusz Voivodeship', 'lubuskie'], ['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+object_words:  []
+subject_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+object_words:  [['pine', 'Pinus sylvestris', 'pinus_sylvestris']]
+subject_words:  []
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Oder', 'Oder', 'oder']]
+object_words:  []
+subject_words:  [['Lübben', 'Lübben ', 'lubben']]
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Cottbus', 'Cottbus', 'cottbus']]
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Spreewald', 'Spree Forest', 'spreewald']]
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Bóbr', 'Bóbr', 'bober']]
+object_words:  []
+subject_words:  [['Saxony', 'Saxony', 'saxony']]
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['German', 'Germany', 'germany'], ['East German', 'East Germany', 'east_germany']]
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Finsterwalde', 'Finsterwalde', 'finsterwalde']]
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Oder–Neisse line', 'Oder–Neisse line', 'oder_neisse_line']]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [['Saale', 'Saale', 'saale']]
+object_words:  [['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Görlitz', 'Görlitz', 'görlitz']]
+object_words:  [['Upper Lusatia', 'Upper Lusatia', 'upper_lusatia'], ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Lusatias', 'Lusatia', 'lusatia']]
+object_words:  []
+subject_words:  [['Warsaw', 'Warsaw', 'warsaw']]
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia'], ['Dresden', 'Dresden', 'dresden']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [(None, 'Lower Lusatia', 'lower_lusatia'), ['Lusatias', 'Lusatia', 'lusatia']]
+subject_words:  [['Czechoslovakia', 'Czechoslovakia', 'czechoslovakia']]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [['Neisse', 'Lusatian Neisse', 'lusatian_neisse']]
+object_words:  [['Poland', 'Poland', 'poland']]
+extract_info(Kashubia) Start.
+utils/preprocess.py extract_info(): Checking good links on Kashubia
+Pomerania is Geography
+1 / 30 )  Pomerania Pomerania pomerania
+Poland is Geography
+2 / 30 )  Poland Poland poland
+Gdańsk is Geography
+3 / 30 )  Gdańsk Gdańsk gdańsk
+Vistula is Geography
+4 / 30 )  Vistula Vistula vistula
+Pomeranian Voivodeship is Geography
+5 / 30 )  Pomeranian Voivodeship Pomeranian Voivodeship pomorskie
+Baltic Sea is Geography
+6 / 30 )  Baltic Sea Baltic Sea baltic_sea
+extract_triplet(Kashubia)
+Got GPT's response. String length : 1276
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  [['Pomerania', 'Pomerania', 'pomerania']]
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [['Gdańsk', 'Gdańsk', 'gdańsk']]
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  [['Vistula', 'Vistula', 'vistula']]
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  []
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  [['Pomeranian Voivodeship', 'Pomeranian Voivodeship', 'pomorskie']]
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  []
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  []
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  []
+subject_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  []
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Kashubia', 'kashubia')]
+subject_words:  [(None, 'Kashubia', 'kashubia')]
+object_words:  [(None, 'Kashubia', 'kashubia')]
+extract_info(Lesser Poland) Start.
+utils/preprocess.py extract_info(): Checking good links on Lesser Poland
+Poland is Geography
+1 / 30 )  Poland Poland poland
+Kraków is Geography
+2 / 30 )  Kraków Kraków kraków
+Lesser Poland Voivodeship is Geography
+3 / 30 )  Lesser Poland Voivodeship Lesser Poland Voivodeship malopolskie
+Siedlce is Geography
+4 / 30 )  Siedlce Siedlce siedlce
+Lublin Voivodeship  is Geography
+5 / 30 )  Lublin Lublin Voivodeship  lubelskie
+Carpathian Mountains is Geography
+6 / 30 )  Carpathian Mountains Carpathian Mountains carpathian_mountains
+Tatra Mountains is Geography
+7 / 30 )  Tatra Mountain Range Tatra Mountains tatra_mountains
+Vistula is Geography
+8 / 30 )  Vistula Vistula vistula
+Volhynia is Geography
+9 / 30 )  Volhynia Volhynia volhynia
+Lublin is Geography
+10 / 30 )  Lublin Lublin lublin
+Wymysorys language is Geography
+11 / 30 )  Wymysorys Wymysorys language wilamowicean
+Kraków-Częstochowa Upland is Geography
+12 / 30 )  Kraków-Częstochowa Upland Kraków-Częstochowa Upland polish_jura
+Kuyavia is Geography
+13 / 30 )  Kujawy Kuyavia kujawy
+Pomerania is Geography
+14 / 30 )  Pomerania Pomerania pomerania
+Tarnobrzeg is Geography
+15 / 30 )  Tarnobrzeg Tarnobrzeg tarnobrzeg
+Radom is Geography
+16 / 30 )  Radom Radom radom
+Beskids is Geography
+17 / 30 )  Beskidy Beskids beskids
+Oder is Geography
+18 / 30 )  Odra Oder oder
+Danube is Geography
+19 / 30 )  Dunaj Danube danube
+Warta is Geography
+20 / 30 )  Warta Warta warta
+Dunajec is Geography
+21 / 30 )  Dunajec Dunajec dunajec
+Podlaskie Voivodeship is Geography
+22 / 30 )  Podlaskie Podlaskie Voivodeship podlaskie
+Slovakia is Geography
+23 / 30 )  Slovakia Slovakia slovakia
+Silesia is Geography
+24 / 30 )  Silesia Silesia silesia
+Silesian Voivodeship is Geography
+25 / 30 )  Silesian Voivodeship Silesian Voivodeship slaskie
+Subcarpathian Voivodeship is Geography
+26 / 30 )  Podkarpackie Voivodeship Subcarpathian Voivodeship podkarpackie
+Masovian Voivodeship is Geography
+27 / 30 )  Masovian Voivodeship Masovian Voivodeship masovian_voivodeship
+Łódź Voivodeship is Geography
+28 / 30 )  Łódź Voivodeship Łódź Voivodeship lodzkie
+Lublin Voivodeship is Geography
+29 / 30 )  Lublin Voivodeship Lublin Voivodeship lubelskie
+Jaworzno is Geography
+30 / 30 )  Jaworzno Jaworzno jaworzno
+extract_triplet(Lesser Poland)
+Got GPT's response. String length : 2574
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [['Kraków', 'Kraków', 'kraków']]
+object_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland'], ['Lesser Poland Voivodeship', 'Lesser Poland Voivodeship', 'malopolskie']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland'], ['Lesser Poland Voivodeship', 'Lesser Poland Voivodeship', 'malopolskie']]
+object_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland'], ['Lesser Poland Voivodeship', 'Lesser Poland Voivodeship', 'malopolskie']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [['Siedlce', 'Siedlce', 'siedlce']]
+subject_words:  [['Kraków', 'Kraków', 'kraków']]
+object_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland')]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [['Lublin', 'Lublin Voivodeship ', 'lubelskie'], ['Lublin', 'Lublin', 'lublin'], ['Lublin Voivodeship', 'Lublin Voivodeship', 'lubelskie']]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [['Vistula', 'Vistula', 'vistula']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [['Kraków', 'Kraków', 'kraków']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [['Beskidy', 'Beskids', 'beskids']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [['Vistula', 'Vistula', 'vistula']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Lesser Poland', 'lesser_poland'), ['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  []
+object_words:  []
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")\n', '("State of the Teutonic Order", "encompassed", "Pomerelia")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("The capital city of East Prussia", "was", "Königsberg")\n', '("Königsberg", "is present-day", "Kaliningrad")\n', '("East Prussia", "was the main part of the region of", "Prussia along the southeastern Baltic Coast")\n', '("Germans", "became the dominant ethnic group in", "East Prussia")\n', '("Poles and Lithuanians", "formed minorities in", "East Prussia")\n', '("The Duchy of Prussia", "became a vassal of", "the Polish crown by the Prussian Homage")\n', '("The Treaty of Versailles", "made East Prussia an exclave of", "Weimar Germany")\n', '("Joseph Stalin", "insisted on the division of", "East Prussia")\n', '("The German and the Masurian population of East Prussia", "was largely evacuated or expelled", "after World War II")\n', '("The capital of the Province of East Prussia", "was", "Marienwerder")\n', '("Napoleon", "occupied", "Berlin")\n', '("Frederick William III and Queen Louise", "fled from", "Napoleon")\n', '("Adolf Hitler", "rose to power in", "Nazi Germany")\n', '("The Polish Corridor", "separated East Prussia from the rest of", "Germany after World War I")\n', '("The Kingdom of Prussia", "became the leading state of", "the German Empire")\n', '("The Russian Empire", "invaded", "East Prussia during World War I")\n', '("The city of Königsberg", "was renamed", "Kaliningrad")\n', '("State of the Teutonic Order", "had its shore along", "Baltic Sea")\n', '("State of the Teutonic Order", "encompassed", "Chełmno Land")\n', '("State of the Teutonic Order", "encompassed", "Courland")\n', '("State of the Teutonic Order", "acquired", "Gotland")\n', '("State of the Teutonic Order", "encompassed", "Estonia")\n', '("State of the Teutonic Order", "encompassed", "Samogitia")\n', '("Kievan Rus\'", "aided", "conquests in Old Prussia")\n', '("Podlaskie Voivodeship", "was situated in", "land of Yotvingians")\n', '("State of the Teutonic Order", "expanded to", "Burzenland")\n', '("Frederick II", "announced", "imperial immediacy over Prussia and nearby regions")\n', '("State of the Teutonic Order", "assumed control over", "Catania")\n', '("State of the Teutonic Order", "held possession of", "Sambia")\n', '("Königsberg", "was founded by", "State of the Teutonic Order")\n', '("State of the Teutonic Order", "had cities between", "Elbe and Oder")\n', '("Teutonic Order", "settled", "Silesia")\n', '("Elbing", "was granted", "Lübeck law")\n', '("State of the Teutonic Order", "included", "Latvia ")\n', '("State of the Teutonic Order", "encompassed", "Warmia")\n', '("Danzig", "was part of", "State of the Teutonic Order")\n', '("Thorn", "conflated with", "Toruń")\n', '("State of the Teutonic Order", "held territory near", "Kuyavia")\n', '("Øresund", "involved in", "Hanseatic conflict with Denmark")\n', '("Lübeck", "supported", "Elbing")\n', '("Zuiderzee", "associated with", "Amsterdam\'s involvement in Hanseatic League")\n', '("Cologne", "currency was used in", "sale of Duchy of Estonia")\n', '("Amsterdam", "joined", "Hanseatic League")\n', '("Brielle", "joined", "Hanseatic League")\n', '("Bremen", "joined", "Hanseatic League")\n', '("Volhynia", "is located in", "Central and Eastern Europe")\n', '("Volhynia", "is part of", "Volyn Oblast")\n', '("Volhynia", "historically included", "Zhytomyr, Rivne, Lutsk, Zviahel, and Volodymyr")\n', '("Volhynia", "was part of", "Polish-Lithuanian Commonwealth")\n', '("Volhynia", "was annexed to", "Russian Empire")\n', '("Volhynia", "became part of", "the Pale of Settlement")\n', '("Volhynia", "contains the city of", "Volodymyr")\n', '("Huczwa River", "is a tributary in", "Volhynia")\n', '("Volhynia", "borders with", "Polesia and Podlasie")\n', '("Volodymyr", "alternative name of region is", "Lodomeria")\n', '("Volhynia", "located in basins of", "Western Bug and Prypyat")\n', '("Volhynia", "part of", "Ukrainian SSR")\n', '("Russian Orthodox Church", "received buildings from", "Ukrainian Greek Catholic Church")\n', '("Volhynia", "historically tied to", "Grand Duchy of Kyiv")\n', '("Kyiv", "Princess Olga from", "sent punitive raid against the Drevlians")\n', '("Olga", "established", "pogosts in Volhynia")\n', '("Vladimir the Great", "established the city of", "Volodymer")\n', '("Volhynia", "part of", "Halych-Volhynia")\n', '("Volhynia", "divided between", "Poland and Grand Duchy of Lithuania")\n', '("Volhynia", "organized as province of", "Polish–Lithuanian Commonwealth")\n', '("Vatican", "established a Ukrainian Catholic Apostolic Exarchate in", "Volhynia")\n', '("Soviet Union", "deported people from", "Volhynia to Siberia")\n', '("Volhynia", "after Peace of Riga divided between", "Poland and Soviet Union")\n', '("NKVD", "carried out repressions in", "Volhynia")\n', '("Soviet Union", "annexed", "Volhynia")\n', '("Volhynia", "after World War II became part of", "Ukrainian SSR")\n', '("Volhynia", "is now part of", "Ukraine")\n', '("Lower Lusatia", "is located in", "the German state of Brandenburg")\n', '("Lower Lusatia", "extends to", "Lubusz Voivodeship in Poland")\n', '("Lower Lusatia", "is part of", "the settlement area of the West Slavic Sorbs")\n', '("Lower Lusatia", "is characterized by", "extended pine forests")\n', '("The Spree River", "confines", "Lower Lusatia in the north")\n', '("The Oder", "is crossed by", "the Spree River")\n', '("Lübben", "is in", "the glacial valley of Lower Lusatia")\n', '("Cottbus", "is a major town in", "Lower Lusatia")\n', '("The Spreewald", "is", "a riparian forest in Lower Lusatia")\n', '("The Bóbr River", "forms the border with", "Lower Silesia")\n', '("Saxony", "borders", "Lower Lusatia to the west")\n', '("East German authorities", "damaged or destroyed villages in", "Lower Lusatia")\n', '("Finsterwalde", "is an important town in", "Lower Lusatia")\n', '("The Oder–Neisse line", "incorporated parts of Lusatia into", "Poland")\n', '("The Saale River", "is near the", "March of Lusatia")\n', '("Görlitz", "became known as", "Upper Lusatia")\n', '("Lusatias", "were separate Bohemian crown lands under", "Luxembourg, Jagiellon and Habsburg dynasties")\n', '("Warsaw", "connected to", "Dresden through Lower Lusatia")\n', '("Napoleon", "forced Saxony to cede", "Lower Lusatia to Prussia")\n', '("Czechoslovakia", "proposed for Sorbian national development with", "Poland or as an independent state")\n', '("Neisse river", "became east border part of", "Poland after World War II")\n', '("Kashubia", "is a language area in", "Eastern Pomerania")\n', '("Kashubia", "is located in", "northern Poland")\n', '("Gdańsk", "is west of", "Kashubia")\n', '("The Vistula river", "is east of", "Kashubia")\n', '("Members of", "the Kashubian ethnic group inhabit", "Kashubia")\n', '("The Pomeranian Voivodeship", "includes", "Kashubian municipalities")\n', '("The Kashubian Lake District", "is located in", "Kashubia")\n', '("Kaszëbsczé nótë", "is a traditional song recognized as an important part of", "Kashubian folklore")\n', '("The Kashubian language", "belongs to", "the West Slavic language group")\n', '("The Kashubian language", "is recognized as a regional language in", "Poland")\n', '("The majority of the population in Kashubia", "is", "Catholic")\n', '("The Baltic Sea", "is symbolized by blue in", "Kashubian embroidery")\n', '("Kashubian embroidery", "uses colors representing", "sky, lakes, meadows, forests, sun, peoples\' love for the region, and the hard work of Kashubians")\n', '("Kashubian cuisine", "is based on", "fish, meat, grain, and mushrooms")\n', '("Kashubian sports teams", "often reflect", "ethnolinguistic identity")\n', '("Arka Gdynia", "expresses", "Kashubian identity")\n', '("On Kashubian Unity Day", "the team played in", "the colours of the Kashubian flag")\n', '("Lesser Poland", "often known by its Polish name", "Małopolska")\n', '("Lesser Poland", "is situated in", "southern and south-eastern Poland")\n', '("Kraków", "is the capital and largest city of", "Lesser Poland")\n', '("Lesser Poland", "has a rich cultural heritage with", "diverse architecture, folk costumes, traditions, and a dialect")\n', '("Lesser Poland", "is home to", "historical landmarks, monuments, castles, and UNESCO World Heritage Sites")\n', '("Lesser Poland", "should not be confused with", "Lesser Poland Voivodeship")\n', '("Lesser Poland Voivodeship", "covers only the southwestern part of", "Lesser Poland")\n', '("Lesser Poland", "was historically much larger than", "Lesser Poland Voivodeship")\n', '("Lesser Poland", "reached from", "Bielsko-Biała to Siedlce")\n', '("Kraków", "Sandomierz and Lublin", "voivodeships used to make up Lesser Poland")\n', '("Lesser Poland\'s", "landscape is described as", "mainly hilly")\n', '("Lesser Poland", "has wealthy aristocracy known as", "magnateria")\n', '("Lesser Poland Province", "encompassed", "Podlachia, Volhynia, Podolia, and Red Ruthenia/Cherven Cities")\n', '("Lesser Poland", "became known as", "Galicia under Austrian control")\n', '("Lublin Voivodeship", "has speakers of", "Lesser Polish dialect")\n', '("Lesser Poland", "lies in the area of the upper confluence of", "the Vistula river")\n', '("Lesser Poland", "covers large upland including", "Świętokrzyskie Mountains and Kraków-Częstochowa Upland")\n', '("Lesser Poland", "is mainly hilly compared to other parts like", "Kujawy, Mazovia, Podlachia, Pomerania, or Greater Poland")\n', '("Lesser Poland", "is home to Poland\'s highest peak", "Rysy")\n', '("Lesser Poland", "has smaller mountain ranges such as", "Pieniny, Tatry, and Beskidy")\n', '("Lesser Poland", "is mainly located in", "Vistula Basin")\n', '("Lesser Poland", "stretches from the Carpathians to", "Pilica and Liwiec rivers")\n', '("Lesser Poland", "borders", "Mazovia, Podlaskie, Red Ruthenia/Cherven Cities, Slovakia, Silesia, and Greater Poland")\n', '("Lesser Poland", "includes regions such as", "Podhale, Ponidzie, and Zagłębie Dąbrowskie")\n', 'Note: Due to the extensive content provided, the triplets above are a selection that focuses on location, geography, administrative history, and cultural elements of Lesser Poland mentioned in the text. The names of rivers, mountain ranges, and neighboring regions have been used to describe the geographical situation and relationship of Lesser Poland to other areas. The triplet format ("<Subject>", "<Predicate>", "<Object>") was preserved in all examples, and elements from the list of important keywords were integrated into the triplets.\n']
+range(1, 192) 4
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")\n', '("State of the Teutonic Order", "encompassed", "Pomerelia")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("The capital city of East Prussia", "was", "Königsberg")\n', '("Königsberg", "is present-day", "Kaliningrad")\n', '("East Prussia", "was the main part of the region of", "Prussia along the southeastern Baltic Coast")\n', '("Germans", "became the dominant ethnic group in", "East Prussia")\n', '("Poles and Lithuanians", "formed minorities in", "East Prussia")\n', '("The Duchy of Prussia", "became a vassal of", "the Polish crown by the Prussian Homage")\n', '("The Treaty of Versailles", "made East Prussia an exclave of", "Weimar Germany")\n', '("Joseph Stalin", "insisted on the division of", "East Prussia")\n', '("The German and the Masurian population of East Prussia", "was largely evacuated or expelled", "after World War II")\n', '("The capital of the Province of East Prussia", "was", "Marienwerder")\n', '("Napoleon", "occupied", "Berlin")\n', '("Frederick William III and Queen Louise", "fled from", "Napoleon")\n', '("Adolf Hitler", "rose to power in", "Nazi Germany")\n', '("The Polish Corridor", "separated East Prussia from the rest of", "Germany after World War I")\n', '("The Kingdom of Prussia", "became the leading state of", "the German Empire")\n', '("The Russian Empire", "invaded", "East Prussia during World War I")\n', '("The city of Königsberg", "was renamed", "Kaliningrad")\n', '("State of the Teutonic Order", "had its shore along", "Baltic Sea")\n', '("State of the Teutonic Order", "encompassed", "Chełmno Land")\n', '("State of the Teutonic Order", "encompassed", "Courland")\n', '("State of the Teutonic Order", "acquired", "Gotland")\n', '("State of the Teutonic Order", "encompassed", "Estonia")\n', '("State of the Teutonic Order", "encompassed", "Samogitia")\n', '("Kievan Rus\'", "aided", "conquests in Old Prussia")\n', '("Podlaskie Voivodeship", "was situated in", "land of Yotvingians")\n', '("State of the Teutonic Order", "expanded to", "Burzenland")\n', '("Frederick II", "announced", "imperial immediacy over Prussia and nearby regions")\n', '("State of the Teutonic Order", "assumed control over", "Catania")\n', '("State of the Teutonic Order", "held possession of", "Sambia")\n', '("Königsberg", "was founded by", "State of the Teutonic Order")\n', '("State of the Teutonic Order", "had cities between", "Elbe and Oder")\n', '("Teutonic Order", "settled", "Silesia")\n', '("Elbing", "was granted", "Lübeck law")\n', '("State of the Teutonic Order", "included", "Latvia ")\n', '("State of the Teutonic Order", "encompassed", "Warmia")\n', '("Danzig", "was part of", "State of the Teutonic Order")\n', '("Thorn", "conflated with", "Toruń")\n', '("State of the Teutonic Order", "held territory near", "Kuyavia")\n', '("Øresund", "involved in", "Hanseatic conflict with Denmark")\n', '("Lübeck", "supported", "Elbing")\n', '("Zuiderzee", "associated with", "Amsterdam\'s involvement in Hanseatic League")\n', '("Cologne", "currency was used in", "sale of Duchy of Estonia")\n', '("Amsterdam", "joined", "Hanseatic League")\n', '("Brielle", "joined", "Hanseatic League")\n', '("Bremen", "joined", "Hanseatic League")\n', '("Volhynia", "is located in", "Central and Eastern Europe")\n', '("Volhynia", "is part of", "Volyn Oblast")\n', '("Volhynia", "historically included", "Zhytomyr, Rivne, Lutsk, Zviahel, and Volodymyr")\n', '("Volhynia", "was part of", "Polish-Lithuanian Commonwealth")\n', '("Volhynia", "was annexed to", "Russian Empire")\n', '("Volhynia", "became part of", "the Pale of Settlement")\n', '("Volhynia", "contains the city of", "Volodymyr")\n', '("Huczwa River", "is a tributary in", "Volhynia")\n', '("Volhynia", "borders with", "Polesia and Podlasie")\n', '("Volodymyr", "alternative name of region is", "Lodomeria")\n', '("Volhynia", "located in basins of", "Western Bug and Prypyat")\n', '("Volhynia", "part of", "Ukrainian SSR")\n', '("Russian Orthodox Church", "received buildings from", "Ukrainian Greek Catholic Church")\n', '("Volhynia", "historically tied to", "Grand Duchy of Kyiv")\n', '("Kyiv", "Princess Olga from", "sent punitive raid against the Drevlians")\n', '("Olga", "established", "pogosts in Volhynia")\n', '("Vladimir the Great", "established the city of", "Volodymer")\n', '("Volhynia", "part of", "Halych-Volhynia")\n', '("Volhynia", "divided between", "Poland and Grand Duchy of Lithuania")\n', '("Volhynia", "organized as province of", "Polish–Lithuanian Commonwealth")\n', '("Vatican", "established a Ukrainian Catholic Apostolic Exarchate in", "Volhynia")\n', '("Soviet Union", "deported people from", "Volhynia to Siberia")\n', '("Volhynia", "after Peace of Riga divided between", "Poland and Soviet Union")\n', '("NKVD", "carried out repressions in", "Volhynia")\n', '("Soviet Union", "annexed", "Volhynia")\n', '("Volhynia", "after World War II became part of", "Ukrainian SSR")\n', '("Volhynia", "is now part of", "Ukraine")\n', '("Lower Lusatia", "is located in", "the German state of Brandenburg")\n', '("Lower Lusatia", "extends to", "Lubusz Voivodeship in Poland")\n', '("Lower Lusatia", "is part of", "the settlement area of the West Slavic Sorbs")\n', '("Lower Lusatia", "is characterized by", "extended pine forests")\n', '("The Spree River", "confines", "Lower Lusatia in the north")\n', '("The Oder", "is crossed by", "the Spree River")\n', '("Lübben", "is in", "the glacial valley of Lower Lusatia")\n', '("Cottbus", "is a major town in", "Lower Lusatia")\n', '("The Spreewald", "is", "a riparian forest in Lower Lusatia")\n', '("The Bóbr River", "forms the border with", "Lower Silesia")\n', '("Saxony", "borders", "Lower Lusatia to the west")\n', '("East German authorities", "damaged or destroyed villages in", "Lower Lusatia")\n', '("Finsterwalde", "is an important town in", "Lower Lusatia")\n', '("The Oder–Neisse line", "incorporated parts of Lusatia into", "Poland")\n', '("The Saale River", "is near the", "March of Lusatia")\n', '("Görlitz", "became known as", "Upper Lusatia")\n', '("Lusatias", "were separate Bohemian crown lands under", "Luxembourg, Jagiellon and Habsburg dynasties")\n', '("Warsaw", "connected to", "Dresden through Lower Lusatia")\n', '("Napoleon", "forced Saxony to cede", "Lower Lusatia to Prussia")\n', '("Czechoslovakia", "proposed for Sorbian national development with", "Poland or as an independent state")\n', '("Neisse river", "became east border part of", "Poland after World War II")\n', '("Kashubia", "is a language area in", "Eastern Pomerania")\n', '("Kashubia", "is located in", "northern Poland")\n', '("Gdańsk", "is west of", "Kashubia")\n', '("The Vistula river", "is east of", "Kashubia")\n', '("Members of", "the Kashubian ethnic group inhabit", "Kashubia")\n', '("The Pomeranian Voivodeship", "includes", "Kashubian municipalities")\n', '("The Kashubian Lake District", "is located in", "Kashubia")\n', '("Kaszëbsczé nótë", "is a traditional song recognized as an important part of", "Kashubian folklore")\n', '("The Kashubian language", "belongs to", "the West Slavic language group")\n', '("The Kashubian language", "is recognized as a regional language in", "Poland")\n', '("The majority of the population in Kashubia", "is", "Catholic")\n', '("The Baltic Sea", "is symbolized by blue in", "Kashubian embroidery")\n', '("Kashubian embroidery", "uses colors representing", "sky, lakes, meadows, forests, sun, peoples\' love for the region, and the hard work of Kashubians")\n', '("Kashubian cuisine", "is based on", "fish, meat, grain, and mushrooms")\n', '("Kashubian sports teams", "often reflect", "ethnolinguistic identity")\n', '("Arka Gdynia", "expresses", "Kashubian identity")\n', '("On Kashubian Unity Day", "the team played in", "the colours of the Kashubian flag")\n', '("Lesser Poland", "often known by its Polish name", "Małopolska")\n', '("Lesser Poland", "is situated in", "southern and south-eastern Poland")\n', '("Kraków", "is the capital and largest city of", "Lesser Poland")\n', '("Lesser Poland", "has a rich cultural heritage with", "diverse architecture, folk costumes, traditions, and a dialect")\n', '("Lesser Poland", "is home to", "historical landmarks, monuments, castles, and UNESCO World Heritage Sites")\n', '("Lesser Poland", "should not be confused with", "Lesser Poland Voivodeship")\n', '("Lesser Poland Voivodeship", "covers only the southwestern part of", "Lesser Poland")\n', '("Lesser Poland", "was historically much larger than", "Lesser Poland Voivodeship")\n', '("Lesser Poland", "reached from", "Bielsko-Biała to Siedlce")\n', '("Kraków", "Sandomierz and Lublin", "voivodeships used to make up Lesser Poland")\n', '("Lesser Poland\'s", "landscape is described as", "mainly hilly")\n', '("Lesser Poland", "has wealthy aristocracy known as", "magnateria")\n', '("Lesser Poland Province", "encompassed", "Podlachia, Volhynia, Podolia, and Red Ruthenia/Cherven Cities")\n', '("Lesser Poland", "became known as", "Galicia under Austrian control")\n', '("Lublin Voivodeship", "has speakers of", "Lesser Polish dialect")\n', '("Lesser Poland", "lies in the area of the upper confluence of", "the Vistula river")\n', '("Lesser Poland", "covers large upland including", "Świętokrzyskie Mountains and Kraków-Częstochowa Upland")\n', '("Lesser Poland", "is mainly hilly compared to other parts like", "Kujawy, Mazovia, Podlachia, Pomerania, or Greater Poland")\n', '("Lesser Poland", "is home to Poland\'s highest peak", "Rysy")\n', '("Lesser Poland", "has smaller mountain ranges such as", "Pieniny, Tatry, and Beskidy")\n', '("Lesser Poland", "is mainly located in", "Vistula Basin")\n', '("Lesser Poland", "stretches from the Carpathians to", "Pilica and Liwiec rivers")\n', '("Lesser Poland", "borders", "Mazovia, Podlaskie, Red Ruthenia/Cherven Cities, Slovakia, Silesia, and Greater Poland")\n', '("Lesser Poland", "includes regions such as", "Podhale, Ponidzie, and Zagłębie Dąbrowskie")\n', 'Note: Due to the extensive content provided, the triplets above are a selection that focuses on location, geography, administrative history, and cultural elements of Lesser Poland mentioned in the text. The names of rivers, mountain ranges, and neighboring regions have been used to describe the geographical situation and relationship of Lesser Poland to other areas. The triplet format ("<Subject>", "<Predicate>", "<Object>") was preserved in all examples, and elements from the list of important keywords were integrated into the triplets.\n']
+range(1, 192) 4
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")\n', '("State of the Teutonic Order", "encompassed", "Pomerelia")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("The capital city of East Prussia", "was", "Königsberg")\n', '("Königsberg", "is present-day", "Kaliningrad")\n', '("East Prussia", "was the main part of the region of", "Prussia along the southeastern Baltic Coast")\n', '("Germans", "became the dominant ethnic group in", "East Prussia")\n', '("Poles and Lithuanians", "formed minorities in", "East Prussia")\n', '("The Duchy of Prussia", "became a vassal of", "the Polish crown by the Prussian Homage")\n', '("The Treaty of Versailles", "made East Prussia an exclave of", "Weimar Germany")\n', '("Joseph Stalin", "insisted on the division of", "East Prussia")\n', '("The German and the Masurian population of East Prussia", "was largely evacuated or expelled", "after World War II")\n', '("The capital of the Province of East Prussia", "was", "Marienwerder")\n', '("Napoleon", "occupied", "Berlin")\n', '("Frederick William III and Queen Louise", "fled from", "Napoleon")\n', '("Adolf Hitler", "rose to power in", "Nazi Germany")\n', '("The Polish Corridor", "separated East Prussia from the rest of", "Germany after World War I")\n', '("The Kingdom of Prussia", "became the leading state of", "the German Empire")\n', '("The Russian Empire", "invaded", "East Prussia during World War I")\n', '("The city of Königsberg", "was renamed", "Kaliningrad")\n', '("State of the Teutonic Order", "had its shore along", "Baltic Sea")\n', '("State of the Teutonic Order", "encompassed", "Chełmno Land")\n', '("State of the Teutonic Order", "encompassed", "Courland")\n', '("State of the Teutonic Order", "acquired", "Gotland")\n', '("State of the Teutonic Order", "encompassed", "Estonia")\n', '("State of the Teutonic Order", "encompassed", "Samogitia")\n', '("Kievan Rus\'", "aided", "conquests in Old Prussia")\n', '("Podlaskie Voivodeship", "was situated in", "land of Yotvingians")\n', '("State of the Teutonic Order", "expanded to", "Burzenland")\n', '("Frederick II", "announced", "imperial immediacy over Prussia and nearby regions")\n', '("State of the Teutonic Order", "assumed control over", "Catania")\n', '("State of the Teutonic Order", "held possession of", "Sambia")\n', '("Königsberg", "was founded by", "State of the Teutonic Order")\n', '("State of the Teutonic Order", "had cities between", "Elbe and Oder")\n', '("Teutonic Order", "settled", "Silesia")\n', '("Elbing", "was granted", "Lübeck law")\n', '("State of the Teutonic Order", "included", "Latvia ")\n', '("State of the Teutonic Order", "encompassed", "Warmia")\n', '("Danzig", "was part of", "State of the Teutonic Order")\n', '("Thorn", "conflated with", "Toruń")\n', '("State of the Teutonic Order", "held territory near", "Kuyavia")\n', '("Øresund", "involved in", "Hanseatic conflict with Denmark")\n', '("Lübeck", "supported", "Elbing")\n', '("Zuiderzee", "associated with", "Amsterdam\'s involvement in Hanseatic League")\n', '("Cologne", "currency was used in", "sale of Duchy of Estonia")\n', '("Amsterdam", "joined", "Hanseatic League")\n', '("Brielle", "joined", "Hanseatic League")\n', '("Bremen", "joined", "Hanseatic League")\n', '("Volhynia", "is located in", "Central and Eastern Europe")\n', '("Volhynia", "is part of", "Volyn Oblast")\n', '("Volhynia", "historically included", "Zhytomyr, Rivne, Lutsk, Zviahel, and Volodymyr")\n', '("Volhynia", "was part of", "Polish-Lithuanian Commonwealth")\n', '("Volhynia", "was annexed to", "Russian Empire")\n', '("Volhynia", "became part of", "the Pale of Settlement")\n', '("Volhynia", "contains the city of", "Volodymyr")\n', '("Huczwa River", "is a tributary in", "Volhynia")\n', '("Volhynia", "borders with", "Polesia and Podlasie")\n', '("Volodymyr", "alternative name of region is", "Lodomeria")\n', '("Volhynia", "located in basins of", "Western Bug and Prypyat")\n', '("Volhynia", "part of", "Ukrainian SSR")\n', '("Russian Orthodox Church", "received buildings from", "Ukrainian Greek Catholic Church")\n', '("Volhynia", "historically tied to", "Grand Duchy of Kyiv")\n', '("Kyiv", "Princess Olga from", "sent punitive raid against the Drevlians")\n', '("Olga", "established", "pogosts in Volhynia")\n', '("Vladimir the Great", "established the city of", "Volodymer")\n', '("Volhynia", "part of", "Halych-Volhynia")\n', '("Volhynia", "divided between", "Poland and Grand Duchy of Lithuania")\n', '("Volhynia", "organized as province of", "Polish–Lithuanian Commonwealth")\n', '("Vatican", "established a Ukrainian Catholic Apostolic Exarchate in", "Volhynia")\n', '("Soviet Union", "deported people from", "Volhynia to Siberia")\n', '("Volhynia", "after Peace of Riga divided between", "Poland and Soviet Union")\n', '("NKVD", "carried out repressions in", "Volhynia")\n', '("Soviet Union", "annexed", "Volhynia")\n', '("Volhynia", "after World War II became part of", "Ukrainian SSR")\n', '("Volhynia", "is now part of", "Ukraine")\n', '("Lower Lusatia", "is located in", "the German state of Brandenburg")\n', '("Lower Lusatia", "extends to", "Lubusz Voivodeship in Poland")\n', '("Lower Lusatia", "is part of", "the settlement area of the West Slavic Sorbs")\n', '("Lower Lusatia", "is characterized by", "extended pine forests")\n', '("The Spree River", "confines", "Lower Lusatia in the north")\n', '("The Oder", "is crossed by", "the Spree River")\n', '("Lübben", "is in", "the glacial valley of Lower Lusatia")\n', '("Cottbus", "is a major town in", "Lower Lusatia")\n', '("The Spreewald", "is", "a riparian forest in Lower Lusatia")\n', '("The Bóbr River", "forms the border with", "Lower Silesia")\n', '("Saxony", "borders", "Lower Lusatia to the west")\n', '("East German authorities", "damaged or destroyed villages in", "Lower Lusatia")\n', '("Finsterwalde", "is an important town in", "Lower Lusatia")\n', '("The Oder–Neisse line", "incorporated parts of Lusatia into", "Poland")\n', '("The Saale River", "is near the", "March of Lusatia")\n', '("Görlitz", "became known as", "Upper Lusatia")\n', '("Lusatias", "were separate Bohemian crown lands under", "Luxembourg, Jagiellon and Habsburg dynasties")\n', '("Warsaw", "connected to", "Dresden through Lower Lusatia")\n', '("Napoleon", "forced Saxony to cede", "Lower Lusatia to Prussia")\n', '("Czechoslovakia", "proposed for Sorbian national development with", "Poland or as an independent state")\n', '("Neisse river", "became east border part of", "Poland after World War II")\n', '("Kashubia", "is a language area in", "Eastern Pomerania")\n', '("Kashubia", "is located in", "northern Poland")\n', '("Gdańsk", "is west of", "Kashubia")\n', '("The Vistula river", "is east of", "Kashubia")\n', '("Members of", "the Kashubian ethnic group inhabit", "Kashubia")\n', '("The Pomeranian Voivodeship", "includes", "Kashubian municipalities")\n', '("The Kashubian Lake District", "is located in", "Kashubia")\n', '("Kaszëbsczé nótë", "is a traditional song recognized as an important part of", "Kashubian folklore")\n', '("The Kashubian language", "belongs to", "the West Slavic language group")\n', '("The Kashubian language", "is recognized as a regional language in", "Poland")\n', '("The majority of the population in Kashubia", "is", "Catholic")\n', '("The Baltic Sea", "is symbolized by blue in", "Kashubian embroidery")\n', '("Kashubian embroidery", "uses colors representing", "sky, lakes, meadows, forests, sun, peoples\' love for the region, and the hard work of Kashubians")\n', '("Kashubian cuisine", "is based on", "fish, meat, grain, and mushrooms")\n', '("Kashubian sports teams", "often reflect", "ethnolinguistic identity")\n', '("Arka Gdynia", "expresses", "Kashubian identity")\n', '("On Kashubian Unity Day", "the team played in", "the colours of the Kashubian flag")\n', '("Lesser Poland", "often known by its Polish name", "Małopolska")\n', '("Lesser Poland", "is situated in", "southern and south-eastern Poland")\n', '("Kraków", "is the capital and largest city of", "Lesser Poland")\n', '("Lesser Poland", "has a rich cultural heritage with", "diverse architecture, folk costumes, traditions, and a dialect")\n', '("Lesser Poland", "is home to", "historical landmarks, monuments, castles, and UNESCO World Heritage Sites")\n', '("Lesser Poland", "should not be confused with", "Lesser Poland Voivodeship")\n', '("Lesser Poland Voivodeship", "covers only the southwestern part of", "Lesser Poland")\n', '("Lesser Poland", "was historically much larger than", "Lesser Poland Voivodeship")\n', '("Lesser Poland", "reached from", "Bielsko-Biała to Siedlce")\n', '("Kraków", "Sandomierz and Lublin", "voivodeships used to make up Lesser Poland")\n', '("Lesser Poland\'s", "landscape is described as", "mainly hilly")\n', '("Lesser Poland", "has wealthy aristocracy known as", "magnateria")\n', '("Lesser Poland Province", "encompassed", "Podlachia, Volhynia, Podolia, and Red Ruthenia/Cherven Cities")\n', '("Lesser Poland", "became known as", "Galicia under Austrian control")\n', '("Lublin Voivodeship", "has speakers of", "Lesser Polish dialect")\n', '("Lesser Poland", "lies in the area of the upper confluence of", "the Vistula river")\n', '("Lesser Poland", "covers large upland including", "Świętokrzyskie Mountains and Kraków-Częstochowa Upland")\n', '("Lesser Poland", "is mainly hilly compared to other parts like", "Kujawy, Mazovia, Podlachia, Pomerania, or Greater Poland")\n', '("Lesser Poland", "is home to Poland\'s highest peak", "Rysy")\n', '("Lesser Poland", "has smaller mountain ranges such as", "Pieniny, Tatry, and Beskidy")\n', '("Lesser Poland", "is mainly located in", "Vistula Basin")\n', '("Lesser Poland", "stretches from the Carpathians to", "Pilica and Liwiec rivers")\n', '("Lesser Poland", "borders", "Mazovia, Podlaskie, Red Ruthenia/Cherven Cities, Slovakia, Silesia, and Greater Poland")\n', '("Lesser Poland", "includes regions such as", "Podhale, Ponidzie, and Zagłębie Dąbrowskie")\n', 'Note: Due to the extensive content provided, the triplets above are a selection that focuses on location, geography, administrative history, and cultural elements of Lesser Poland mentioned in the text. The names of rivers, mountain ranges, and neighboring regions have been used to describe the geographical situation and relationship of Lesser Poland to other areas. The triplet format ("<Subject>", "<Predicate>", "<Object>") was preserved in all examples, and elements from the list of important keywords were integrated into the triplets.\n']
+range(1, 192) 4
+{'id': '4_3', 'Question': " To which region that was once governed by a Baltic crusading military order did the political theorist, who was influenced by Kant's philosophy, move when it was the capital of a territory formerly part of the Kingdom of Prussia?\n", 'Answer': 'Pomerelia', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Pomerelia'}, {'label': 'B', 'text': 'Volhynia'}, {'label': 'C', 'text': 'Lower Lusatia'}, {'label': 'D', 'text': 'Kashubia'}, {'label': 'E', 'text': 'Lesser Poland'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'pomerelia'}, {'label': 'B', 'text': 'volhynia'}, {'label': 'C', 'text': 'lower_lusatia'}, {'label': 'D', 'text': 'kashubia'}, {'label': 'E', 'text': 'lesser_poland'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ["1: Which political theorist's thinking was significantly shaped by the philosophy of Kant?\nA1: Hannah Arendt\n\n", "2: To which region's capital, formerly part of the Kingdom of Prussia, did the philosopher Hannah Arendt relocate?\nA2: East Prussia\n\n", '3: Which historical entity did East Prussia belong to, which was led by a crusading military order?\nA3: State of the Teutonic Order\n\n', '4: Which region was once under the jurisdiction of a state governed by a crusading military order in the Baltic?\nA4: Pomerelia'], 'Hops_wiki': [('Immanuel Kant', 'Hannah Arendt'), ('Hannah Arendt', 'East Prussia'), ('East Prussia', 'State of the Teutonic Order'), ('State of the Teutonic Order', 'Pomerelia')], 'Hops_cpnet': [('immanuel_kant', 'hannah_arendt'), ('hannah_arendt', 'east_prussia'), ('east_prussia', 'ordensstaat'), ('ordensstaat', 'pomerelia')], 'Triplets': ['("Hannah Arendt", "was influenced by", "the philosophy of Kant")', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")', '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")', '("State of the Teutonic Order", "encompassed", "Pomerelia")'], 'Referred_files': [{'name': 'Hannah Arendt', 'line': 26}, {'name': 'Hannah Arendt', 'line': 5}, {'name': 'East Prussia', 'line': 4}, {'name': 'State of the Teutonic Order', 'line': 6}], 'Question_triplet_answer': {100: [1, 28, 53, 92], 50: [26, 44, 104, 157], 25: [68, 101, 148, 171]}}
+time passed:  6230.694435119629
+Expected dollar:  0.005
+Paul Arendt is People
+the Albertina (University of Königsberg is Geography
+Lesser Poland Voivodeship is Geography
+East Prussia is Geography
+Volhynia is Geography
+Cottbus is Geography
+Lower Lusatia is Geography
+Russian Orthodox Church is Geography
+Latvia is Geography
+Hannah Arendt is People
+Martin Heidegger is People
+Augustine is People
+Pomerania is Geography
+the German Empire is Geography
+Brandenburg is Geography
+Paris is Geography
+Poland is Geography
+Soviet Union is Geography
+Kant is People
+East Prussian is Geography
+Königsberg is Geography
+Hannah Arendt's is People
+Germany is Geography
+The Bóbr River is Geography
+NKVD is Geography
+Gestapo is Geography
+Kashubia is Geography
+Denmark is Geography
+Burzenland is Geography
+Görlitz is Geography
+Upper Lusatia is Geography
+Rosa Luxemburg is People
+Vistula Basin is Geography
+Samogitia is Geography
+The Spree River is Geography
+Ukraine is Geography
+Lubusz Voivodeship is Geography
+Lübeck is Geography
+Baltic Coast is Geography
+The Duchy of Prussia is Geography
+Czechoslovakia is Geography
+Zagłębie Dąbrowskie is Geography
+The Vistula river" is Geography
+the University of Heidelberg is Geography
+Amsterdam is Geography
+Joseph Stalin is People
+Saxony is Geography
+Berlin is Geography
+Adolf Hitler is People
+Nazi Germany is Geography
+Edmund Husserl is People
+Rudolf Bultmann is People
+Weimar Germany is Geography
+Karl Jaspers is People
+The Pomeranian Voivodeship is Geography
+The Oder is Geography
+the Spree River is Geography
+Podlaskie Voivodeship is Geography
+Youth Aliyah is Incident
+Rilke and Bertold Brecht is People
+the Province of East Prussia is Geography
+The Oder Neisse is Geography
+Lusatia is Geography
+Silesia is Geography
+Kievan Rus' is Geography
+Courland is Geography
+Luxembourg is Geography
+Warsaw is Geography
+Dresden through Lower Lusatia is Geography
+Zhytomyr, Rivne, Lutsk is Geography
+Zviahel is Geography
+Frederick William III is People
+Queen Louise is People
+entities:  {'Podolia', 'Luxembourg', 'Volhynia', 'Burzenland', 'Youth', 'Gdynia', 'Samogitia', 'Rilke', 'river"', 'Lower', 'Rivne,', 'Luxemburg', 'Lusatia', 'Courland', 'Neisse', 'Heidelberg', 'Union', 'Poland', 'Brecht', 'Stalin', 'Karl', 'Aliyah', 'Königsberg', 'Podlaskie', 'Duchy', 'Latvia', 'Podlachia', 'Martin', 'Germany', 'Baltic', 'Arendt', 'Denmark', 'Weimar', 'Vistula', 'Nazi', 'German', 'Lübeck', 'III', 'Upper', 'Pomerania', 'Province', 'Brandenburg', 'Bertold', 'Kant', 'Bóbr', 'Orthodox', 'Lithuania', 'Empire', 'Habsburg', 'Jaspers', 'Dąbrowskie', 'Volodymyr', 'Zhytomyr', 'Warsaw', 'River', 'Order', 'Napoleon', 'Lesser', 'Prussia', 'Czechoslovakia', 'Paul', 'Lubusz', 'Teutonic', 'Zagłębie', 'Adolf', 'Husserl', 'Hitler', 'Ukraine', 'Saxony', 'Russian', 'Immanuel', 'Augustine', 'Coast', 'East', 'Berlin', 'Amsterdam', 'Bultmann', 'Oder', 'Hannah', 'Kievan', 'Dresden', 'Linden', 'Pomeranian', '(University', 'Queen', "Arendt's", 'Joseph', 'Frederick', 'Görlitz', "Rus'", 'Spree', 'University', 'Cottbus', 'Zviahel', 'Heidegger', 'Lutsk', 'Soviet', 'Rudolf', 'Pomerelia', 'Zhytomyr,', 'Paris', 'Louise', 'Gestapo', 'Voivodeship', 'Martha', 'Silesia', 'Rosa', 'Prussian', 'NKVD', 'Church', 'Basin', 'William', 'Albertina', 'Kashubia', 'State', 'Edmund', 'Mazovia'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'East Prussia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ East Prussia
+Teutonic Knights
+Albertina (University of Königsberg)
+World War II
+Russian Empire 
+Volhynia 
+Lower Lusatia 
+Latvia 
+Königsberg 
+Vistula river 
+Elbe
+Oder
+Ukrainian Greek Catholic Church
+State of the Teutonic Order
+Martin Heidegger
+Vatican
+Kant
+Kaliningrad
+Prussia
+German Empire
+Brandenburg
+Lower Silesia
+Paris
+Mažvydas
+Halych-Volhynia
+Øresund
+Hamburg
+Burzenland
+Lower Lusatia
+Upper Lusatia
+Augustine
+Martha Cohn
+Rouen
+NKVD
+Gestapo
+Kutaisi
+Philemon
+Lower Lusatia
+Lusatia
+Irnerius
+Heliand
+Marienwerder
+Charlemagne
+Great Moravia
+Czechoslovakia
+Sorbs
+Treaty of Versailles
+Oława
+Kyiv Princess Olga 
+Podolia
+Voivodeship
+Vistula Basin
+Samogitia
+Pomerania
+Ukraine
+Yotvingians
+Skarszewy
+Luther's Bible
+Kalancešu pagasts
+Venice
+Amsterdam
+Kashubians
+Jagiellon
+Sorbian
+Zselaberg
+Kashubians
+Pogosts
+Marienwerder
+
+gpt_entity_particular(): entity list: 
+ ['Upper Lusatia', 'Irnerius', 'Ukrainian Greek Catholic Church', 'Oława', 'Podolia', 'Teutonic Knights', 'Ukraine', 'Jagiellon', 'Burzenland', 'Königsberg ', 'Pomerania', 'Elbe', 'Halych-Volhynia', 'Samogitia', 'Albertina (University of Königsberg)', 'Øresund', 'Lower Lusatia', 'Augustine', 'Kyiv Princess Olga ', 'Lower Lusatia ', 'Lower Silesia', 'Paris', 'Vatican', 'Mažvydas', 'Gestapo', 'Brandenburg', 'Hamburg', 'State of the Teutonic Order', 'Lusatia', 'Great Moravia', 'Voivodeship', 'Kant', 'Heliand', "Luther's Bible", 'Oder', 'Marienwerder', 'Martin Heidegger', 'Kashubians', 'East Prussia', 'Latvia ', 'Charlemagne', 'World War II', 'Kaliningrad', 'NKVD', 'Pogosts', 'Russian Empire ', 'Yotvingians', 'Kalancešu pagasts', 'Amsterdam', 'Skarszewy', 'Sorbs', 'Venice', 'Kutaisi', 'Prussia', 'German Empire', 'Martha Cohn', 'Czechoslovakia', 'Zselaberg', 'Vistula river ', 'Treaty of Versailles', 'Rouen', 'Vistula Basin', 'Volhynia ', 'Sorbian', 'Philemon']
+
+gpt_entity_particular(): filtered entity: 
+ ['Prussia']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Volhynia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Volhynia
+Prussia
+Knights
+University
+Poland
+Ukraine
+Voivodeship
+Catholic
+Russian Empire
+Pogosts
+Church
+Latvia
+World War I
+Peace of Riga
+Totalitarianism
+Paris
+Lusatia
+Elbe
+Order
+Königsberg
+Günther Stern
+Lower Lusatia
+Great Duchy of Lithuania
+Latvia
+Rysy
+Eastern Baltic Coast
+Nazi Germany
+Lübeck
+Weimar Germany
+Konigsberg
+Prussian Homage
+Saxony
+NKVD
+Øresund
+Czechoslovakia
+Kashubia
+Berlin
+Rosa Luxemburg
+Silesia
+Imperial immediacy
+Prussia
+Husserl
+Sorbs
+Napolean
+Bertold Brecht
+Pomerelian
+Königsberg
+Prussia
+Frederick II
+Marienwerder
+West Slavic Sorbs
+Kievan Rus'	Yotvingians
+Kashubian
+Gdansk-Amsterdam
+Rilke
+Karl Japers
+Linden
+Volodymyr
+Lusatias
+Jagiellon
+Yotvingians
+Zhytomyr
+Rivne
+Lutsk
+Zviahel
+Volodymyr
+Podhale
+Ponidzie
+Zagłębie Dąbrowskie
+Lodomeria
+Frederick William III 
+Napoleon
+Frederick II
+Queen Louise
+
+gpt_entity_particular(): entity list: 
+ ['Weimar Germany', 'Konigsberg', 'Zviahel', 'Ukraine', 'Günther Stern', 'Volhynia', 'Saxony', 'Jagiellon', 'Great Duchy of Lithuania', "Kievan Rus'\tYotvingians", 'Elbe', 'West Slavic Sorbs', 'Russian Empire', 'Rilke', 'Lutsk', 'Lower Lusatia', 'Catholic', 'Prussian Homage', 'Øresund', 'Zagłębie Dąbrowskie', 'World War I', 'Peace of Riga', 'Kashubian', 'Pogosts', 'Paris', 'Totalitarianism', 'Lusatia', 'Karl Japers', 'Voivodeship', 'Gdansk-Amsterdam', 'Bertold Brecht', 'Marienwerder', 'Poland', 'Rosa Luxemburg', 'Frederick William III ', 'Silesia', 'Knights', 'Linden', 'Napolean', 'Lusatias', 'NKVD', 'Frederick II', 'Church', 'Rivne', 'Ponidzie', 'Königsberg', 'Nazi Germany', 'Yotvingians', 'Volodymyr', 'Zhytomyr', 'Sorbs', 'Latvia', 'Order', 'Napoleon', 'Eastern Baltic Coast', 'Queen Louise', 'Imperial immediacy', 'Prussia', 'Czechoslovakia', 'Kashubia', 'Rysy', 'Podhale', 'Lodomeria', 'Husserl', 'Berlin', 'University', 'Pomerelian', 'Lübeck']
+
+gpt_entity_particular(): filtered entity: 
+ ['Lodomeria']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kashubia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ East Prussia
+Albertina
+Lesser Poland
+Masurian
+Russian Empire
+Volhynia
+Cottbus
+Vistula river
+Russian Orthodox Church
+State of the Teutonic Order
+Latvia
+Hannah Arendt
+Günther Stern
+Elbe
+Oder
+Ukrainian Catholic Apostolic Exarchate
+The Kingdom of Prussia
+The German Empire
+Lower Lusatia
+Podlachia
+Pomerania
+Greater Poland
+Rahel Varnhagen
+NKVD
+Gestapo
+Kaliningrad
+Rysy
+Samogitia
+Volhynia
+Nazi Germany
+Kashubia
+Lesser Poland Province
+Paul Arendt
+Soviet Union
+Hanseatic League
+NKVD
+Kashubia
+Hannah Arendt
+Lesser Poland's
+Kashubia
+Lower Lusatia
+Hannah Arendt's
+Kashubian
+Kashubia
+Hannah Arendt
+Nazi Germany
+Catholic
+Marienwerder
+Kujawy
+Mazovia
+Podlachia
+Pomerania
+Weimar Germany
+Lower Lusatia
+Kashubia
+Kaliningrad
+Hannah Arendt
+Kashubian
+Hannah Arendt
+Lusatia
+Hannah Arendt's
+Kashubian
+Podlaskie Voivodeship
+Kashubian
+Karl Jaspers
+Ukrainian SSR
+Kashubian language
+Ukraine
+Prussia
+Sorbs
+Königsberg
+Prussia
+Weimar Germany
+Podlachia
+Yotvingians
+Volhynia
+Karl Jaspers
+The Vistula river
+The Pale of Settlement
+The Versailles
+Kashubian municipalities
+Kashubian language
+West Slavic
+ArticleReferences provided no entity related to 'Kashubia'.
+
+gpt_entity_particular(): entity list: 
+ ['Weimar Germany', 'Günther Stern', 'Lesser Poland Province', 'Ukraine', 'Volhynia', 'Pomerania', 'Elbe', 'Hanseatic League', 'Samogitia', 'Russian Empire', 'Kujawy', 'Ukrainian SSR', 'Lower Lusatia', 'Catholic', 'The Versailles', 'Kashubian language', 'Kashubian', "Lesser Poland's", 'Rahel Varnhagen', 'Gestapo', 'Lusatia', 'The Pale of Settlement', 'Kashubian municipalities', 'State of the Teutonic Order', 'Lesser Poland', "ArticleReferences provided no entity related to 'Kashubia'.", 'Vistula river', 'Hannah Arendt', 'Oder', 'Russian Orthodox Church', 'West Slavic', 'Marienwerder', 'Ukrainian Catholic Apostolic Exarchate', 'East Prussia', 'Masurian', 'The German Empire', 'Kaliningrad', 'NKVD', 'Königsberg', 'Nazi Germany', 'Yotvingians', 'Podlaskie Voivodeship', "Hannah Arendt's", 'Soviet Union', 'Greater Poland', 'Sorbs', 'Albertina', 'Karl Jaspers', 'Latvia', 'Podlachia', 'The Vistula river', 'Prussia', 'Kashubia', 'The Kingdom of Prussia', 'Rysy', 'Paul Arendt', 'Cottbus', 'Mazovia']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kashubian']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'State of the Teutonic Order' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ State of the Teutonic Order
+monastic state of the Teutonic Knights
+East Prussia
+World War II
+Russian Orthodox Church
+Ukrainian Greek Catholic Church
+Latvia
+Elbe and Oder
+University of Königsberg
+pogosts in Volhynia
+Lower Lusatia
+Vistula river
+Martin Heidegger
+Ukrainian Catholic Apostolic Exarchate
+The Origins of Totalitarianism
+Augustine
+Totalitarianism
+Evil
+Heidelberg
+Władysław II Jagiełło
+
+gpt_entity_particular(): entity list: 
+ ['Ukrainian Greek Catholic Church', 'Lower Lusatia', 'Augustine', 'Totalitarianism', 'University of Königsberg', 'State of the Teutonic Order', 'Vistula river', 'pogosts in Volhynia', 'Heidelberg', 'Russian Orthodox Church', 'Martin Heidegger', 'Ukrainian Catholic Apostolic Exarchate', 'East Prussia', 'Władysław II Jagiełło', 'The Origins of Totalitarianism', 'World War II', 'Elbe and Oder', 'Evil', 'monastic state of the Teutonic Knights', 'Latvia']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Lesser Poland' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Lesser Poland
+Albertina (University of Königsberg)
+Lesser Poland Voivodeship
+Vistula river
+Ukrainian Greek Catholic Church
+Elbe and Oder
+Vladimir
+Grand Duchy of Lithuania
+Rysy
+NKVD
+Kaliningrad
+Hannah Arendt's
+Samogitia
+Rahel Varnhagen
+the Bóbr River
+Berkeley
+Ṣaḥīḥ al-Bukhārī
+UJV Rez
+Ursula
+Eden.
+
+gpt_entity_particular(): entity list: 
+ ['Ukrainian Greek Catholic Church', 'Grand Duchy of Lithuania', 'Berkeley', 'Samogitia', 'Albertina (University of Königsberg)', 'Rahel Varnhagen', 'UJV Rez', 'Eden.', 'Lesser Poland', 'Vistula river', 'Ṣaḥīḥ al-Bukhārī', 'Vladimir', 'Kaliningrad', 'NKVD', 'Elbe and Oder', "Hannah Arendt's", 'Ursula', 'Lesser Poland Voivodeship', 'Rysy', 'the Bóbr River']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hannah Arendt' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ East Prussia
+Paul Arendt
+Lesser Poland
+German
+Russian Empire
+Olga
+Cottbus
+the Vistula river
+Russian Orthodox Church
+State of the Teutonic Order
+Hannah Arendt
+Vatican
+Martin Heidegger
+Latvia
+Rahel Varnhagen
+The Kingdom of Prussia
+Lower Lusatia
+Martha Cohn
+Vistula Basin
+Samogitia
+Günther Stern
+the philosophy of Kant
+Elbing
+Rysy
+Pogosts
+The German Empire
+the University of Heidelberg
+Königsberg
+Kaliningrad
+Czechoslovakia
+Vistula
+NKVD
+Gestapo
+The Duchy of Prussia
+Weimar Germany
+Volhynia
+Ukraine
+Hanseatic League
+Lower Silesia
+Poland
+Nazi Germany
+University of Heidelberg
+Jewish
+Yotvingians
+Poland
+The Spree River
+Kaliningrad
+Soviet Union
+West Slavic Sorbs
+The Treaty of Versailles
+Youth Aliyah
+The West Slavic language group
+Lower Silesia
+Edmund Husserl
+Youth Aliyah
+Poland
+Günther Stern
+Vistula Basin
+Martha Cohn
+Prussian Homage
+Lübeck
+Czechoslovakia
+Poland
+Hanseatic League
+Saxony
+Napoleon
+Kashubia
+Treaty of Versailles
+Lusatia
+Rudolf Bultmann
+Napoleon
+the Spree River
+Kashubia
+Sophie
+Hannah Arendt
+After World War II
+Frau Arendt
+Günther Stern
+Yotvingian
+Heidelberger
+Günther Stern
+Halych-Volhynia
+Polish
+Antiquitäten
+Görlitz
+
+gpt_entity_particular(): entity list: 
+ ['Weimar Germany', 'Vistula', 'The Treaty of Versailles', 'Günther Stern', 'Ukraine', 'Volhynia', 'Saxony', 'Hanseatic League', 'Elbing', 'Samogitia', 'Russian Empire', 'West Slavic Sorbs', 'Halych-Volhynia', 'Lower Lusatia', 'the Spree River', 'Prussian Homage', 'the Vistula river', 'Edmund Husserl', 'Jewish', 'Pogosts', 'Lower Silesia', 'Vatican', 'Rahel Varnhagen', 'Gestapo', 'Lusatia', 'Rudolf Bultmann', 'State of the Teutonic Order', 'After World War II', 'Lesser Poland', 'Hannah Arendt', 'Russian Orthodox Church', 'The Spree River', 'Poland', 'Martin Heidegger', 'East Prussia', 'The West Slavic language group', 'The German Empire', 'Frau Arendt', 'Kaliningrad', 'NKVD', 'Königsberg', 'Nazi Germany', 'Yotvingians', 'University of Heidelberg', 'Soviet Union', 'Polish', 'Latvia', 'the philosophy of Kant', 'the University of Heidelberg', 'Youth Aliyah', 'Napoleon', 'Sophie', 'Antiquitäten', 'Görlitz', 'Martha Cohn', 'Czechoslovakia', 'Kashubia', 'The Kingdom of Prussia', 'Rysy', 'Paul Arendt', 'Olga', 'Treaty of Versailles', 'Vistula Basin', 'Yotvingian', 'Cottbus', 'Heidelberger', 'German', 'Lübeck', 'The Duchy of Prussia']
+
+gpt_entity_particular(): filtered entity: 
+ ['Martin Heidegger']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Kant
+Hannah Arendt
+Philosophy of Kant
+
+gpt_entity_particular(): entity list: 
+ ['Philosophy of Kant', 'Kant', 'Immanuel Kant', 'Hannah Arendt']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant', 'Hannah Arendt']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Lower Lusatia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Königsberg
+Cottbus
+Bóbr River
+Sorbs
+Lusatias
+	  Elbe
+Spree River
+Silesia
+Rysy
+Napoleon
+Pale of Settlement
+Frederick II
+Brandenburg
+Lower Silesia
+Bautzen
+Finsterwalde
+Görlitz
+Lübeck
+Dresden
+
+gpt_entity_particular(): entity list: 
+ ['Bóbr River', 'Finsterwalde', 'Lower Silesia', 'Brandenburg', '\t  Elbe', 'Bautzen', 'Spree River', 'Dresden', 'Silesia', 'Lusatias', 'Frederick II', 'Königsberg', 'Sorbs', 'Napoleon', 'Görlitz', 'Rysy', 'Cottbus', 'Lübeck', 'Pale of Settlement']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Pomerelia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ East Prussia
+monastic state 
+Teutonic Knights
+Paul Arendt
+Albertina (University of Königsberg)
+Lesser Poland
+Lesser Poland Voivodeship
+German 
+Masurian population 
+world
+World War II
+Russian Empire
+World War I
+Olga, pogosts
+Volhynia
+Cottbus
+Lower Lusatia
+Kujawy
+Mazovia
+Podlachia
+Pomerania
+Greater Poland
+Elbe
+Oder
+Martin Heidegger
+Vatican
+Ukrainian Greek Catholic Church
+State of the Teutonic Order
+Latvia
+Hannah Arendt
+Prussia
+German Empire
+Lower Lusatia
+Brandenburg
+Paris
+Pomerelia
+Lesser Poland
+Kingdom of Prussia
+Nazi Germany
+Königsberg
+Kaliningrad
+Peace of Riga
+Latvia
+Samogitia
+Volhynia
+Günther Stern
+Czechoslovakia
+Sorbian
+Halych-Volhynia
+Lübeck
+Potsdam Agreement
+East Prussia
+Lesser Poland Voivodeship
+The Origins of Totalitarianism
+Hanseatic League
+Lesser Poland Province
+Volhynia
+Pale of Settlement
+Stephanie Hertel
+Poland
+Kashubia
+Catholic
+Linden
+Joseph Stalin
+East Prussia
+Napoleon
+Berlin
+Königsberg
+Upper Silesia
+East Prussia
+Görlitz
+Upper Lusatia
+Lesser Poland
+Podlaskie Voivodeship
+Gliwice
+Gdańsk
+The Baltic Sea
+Poland
+Fredenbeck
+Brandenburg-Prussia
+Grand Duchy of Kyiv
+Westphalia
+Meissen
+Kingdom of Poland
+Silesia
+Sophia Braniborskaya
+Saxony
+Magdeburg Cathedral
+Prussia
+Podlaskie Voivodeship
+Land of Yotvingians
+Rostock
+Hanseatic League
+Land of Yotvingians
+Polish Crown
+Sorbi
+Kashubians
+Drahim
+Drahim
+Greater Poland
+Białystokøj
+Volhynia
+The Pale of Settlement
+Halych-Volhynia
+Ukrainian SSR
+Ukrainian SSR
+Kievan Rus'
+Old Prussia
+Weimar Germany
+Silesia
+Prussia
+Saxony
+Lower Lusatia
+Sorbs
+Lower Lusatia
+Pomeranian Voivodeship
+Kashubian municipalities
+Oder
+Neisse 
+Hannah Arendt
+Potsdam Agreement
+Rilke
+Bertold Brecht
+Marienwerder
+Lusatias
+Luxembourg
+Jagiellon
+Habsburg 
+Frederick II
+Olga
+Russian Empire
+Karl Jaspers
+Oder–Neisse line
+Lusatia
+West Slavic Sorbs
+East Prussia
+World War I
+Vistula river
+Marienwerder
+Lusatia
+West Slavic Sorbs
+Lusatia
+Hanseatic League
+Napoleon
+Königsberg
+Agency for Palestine
+Youth Aliyah
+Königsberg
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Lower Lusatia
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Kashubian embroidery
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Volhynia
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Kashubian cuisine
+Lower Lusatia
+Lusatias
+Hannah Arendt
+Napoleon
+Berlin
+Warsaw
+Lusatia
+Hannah Arendt
+Hannah Arendt
+Hannah Arendt
+Vistula river
+Volhynia
+Podlaskie Voivodeship
+Hannah Arendt
+Lübben
+Lesser Poland
+Spree River
+Hannah Arendt
+Olga
+Frederick William III and Queen Louise
+Volodymyr
+Lesser Poland
+Czechoslovakia
+Hannah Arendt
+
+gpt_entity_particular(): entity list: 
+ ['Weimar Germany', 'Günther Stern', 'Lesser Poland Province', 'Luxembourg', 'Volhynia', 'monastic state ', 'Elbe', 'Samogitia', 'Russian Empire', 'Rilke', 'Masurian population ', 'Albertina (University of Königsberg)', 'Catholic', 'German ', 'Lusatia', 'Vatican', 'Westphalia', 'Kashubian municipalities', 'State of the Teutonic Order', 'Bertold Brecht', 'Marienwerder', 'Poland', 'Kashubian embroidery', 'Spree River', 'Martin Heidegger', 'The Origins of Totalitarianism', 'Frederick II', 'Königsberg', 'Polish Crown', 'Latvia', 'Podlachia', 'German Empire', 'Kashubian cuisine', 'Pomeranian Voivodeship', 'Lübeck', 'Pale of Settlement', 'Upper Lusatia', 'Frederick William III and Queen Louise', 'Jagiellon', 'Kujawy', 'Pomerania', 'West Slavic Sorbs', 'world', 'Land of Yotvingians', 'Sophia Braniborskaya', 'Brandenburg', 'Białystokøj', 'Hannah Arendt', 'East Prussia', 'Kaliningrad', 'Nazi Germany', 'Volodymyr', 'Greater Poland', 'Kingdom of Poland', 'Warsaw', 'Joseph Stalin', 'Napoleon', 'Prussia', 'Czechoslovakia', 'Potsdam Agreement', 'Paul Arendt', 'Sorbian', 'Ukrainian Greek Catholic Church', 'Gdańsk', 'Magdeburg Cathedral', 'Teutonic Knights', 'Saxony', 'Habsburg ', 'Grand Duchy of Kyiv', "Kievan Rus'", 'Kingdom of Prussia', 'Fredenbeck', 'Peace of Riga', 'Vistula river', 'Oder', 'Rostock', 'Agency for Palestine', 'Linden', 'World War II', 'Gliwice', 'Lusatias', 'Podlaskie Voivodeship', 'Lesser Poland Voivodeship', 'Karl Jaspers', 'Youth Aliyah', 'Oder–Neisse line', 'Görlitz', 'Stephanie Hertel', 'Cottbus', 'Upper Silesia', 'Sorbi', 'Meissen', 'Hanseatic League', 'Halych-Volhynia', 'Ukrainian SSR', 'Lower Lusatia', 'Neisse ', 'Pomerelia', 'World War I', 'Paris', 'Old Prussia', 'The Pale of Settlement', 'Lesser Poland', 'Kashubians', 'Silesia', 'Lübben', 'Sorbs', 'Drahim', 'Brandenburg-Prussia', 'Kashubia', 'Olga', 'The Baltic Sea', 'Berlin', 'Olga, pogosts', 'Mazovia']
+
+gpt_entity_particular(): filtered entity: 
+ ['Pomerania', 'Gdańsk']
+After GPT, entity:  {'Podolia', 'Luxembourg', 'Volhynia', 'Burzenland', 'Youth', 'Gdynia', 'Samogitia', 'Rilke', 'river"', 'Lower', 'Rivne,', 'Luxemburg', 'Lusatia', 'Courland', 'Neisse', 'Heidelberg', 'Union', 'Poland', 'Martin Heidegger', 'Brecht', 'Stalin', 'Karl', 'Aliyah', 'Königsberg', 'Podlaskie', 'Duchy', 'Latvia', 'Podlachia', 'Martin', 'Germany', 'Baltic', 'Arendt', 'Denmark', 'Weimar', 'Vistula', 'Nazi', 'German', 'Lübeck', 'III', 'Upper', 'Pomerania', 'Province', 'Kashubian', 'Brandenburg', 'Bertold', 'Kant', 'Bóbr', 'Hannah Arendt', 'Orthodox', 'Lithuania', 'Empire', 'Habsburg', 'Jaspers', 'Dąbrowskie', 'Volodymyr', 'Zhytomyr', 'Warsaw', 'River', 'Order', 'Napoleon', 'Lesser', 'Prussia', 'Czechoslovakia', 'Paul', 'Lubusz', 'Teutonic', 'Zagłębie', 'Adolf', 'Husserl', 'Lodomeria', 'Hitler', 'Gdańsk', 'Ukraine', 'Saxony', 'Russian', 'Immanuel', 'Augustine', 'Coast', 'East', 'Berlin', 'Amsterdam', 'Bultmann', 'Oder', 'Hannah', 'Kievan', 'Dresden', 'Linden', 'Pomeranian', '(University', 'Queen', "Arendt's", 'Joseph', 'Frederick', 'Görlitz', "Rus'", 'Spree', 'University', 'Cottbus', 'Zviahel', 'Heidegger', 'Lutsk', 'Soviet', 'Rudolf', 'Pomerelia', 'Zhytomyr,', 'Paris', 'Louise', 'Gestapo', 'Voivodeship', 'Martha', 'Silesia', 'Rosa', 'Prussian', 'NKVD', 'Church', 'Basin', 'William', 'Albertina', 'Kashubia', 'State', 'Edmund', 'Mazovia'}
+Total time:  359.7321650981903
+Entity conversion done on 4_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_3_entity_conversion_hash.json. Check the entity.
+ To which region that was once governed by a 01C crusading military 000 did the political theorist, who was influenced by Kant's philosophy, move when it was the capital of a territory formerly part of the Kingdom of Prussia?
+
+
+
+Done. Check final_query/id_4_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

@@ -1,0 +1,674 @@
+Got argument: Mexico, 4, 4_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Gars in North America", "live in shallow, brackish waters off of", "Texas, Louisiana, and eastern coast of Mexico")', 'start word': 'Mexico', 'end word': 'Gar', 'source': {'name': 'Gar', 'line': 41}, 'cpnet': {'start word': 'mexico', 'end word': 'gar'}}
+
+utils/question.py extract_hops(Gar, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gar_info.json file
+second_hop:  {'triplet': '("Holosteian fish", "include", "gars and bowfins")', 'start word': 'Gar', 'end word': 'Holostei', 'source': {'name': 'Gar', 'line': 7}, 'cpnet': {'start word': 'gar', 'end word': 'holostei'}}
+
+utils/question.py extract_hops(Holostei, [], ['Mexico', 'Gar']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Holostei_info.json file
+extract_info(Holostei) Start.
+utils/preprocess.py extract_info(): Checking good links on Holostei
+Actinopterygii is Animal
+1 / 30 )  ray-finned Actinopterygii actinopterygii
+Osteichthyes is Animal
+2 / 30 )  bony fish Osteichthyes osteichthyes
+Halecomorphi is Animal
+3 / 30 )  Halecomorphi Halecomorphi halecomorph
+Bowfin is Animal
+4 / 30 )  bowfins Bowfin bowfin
+Ginglymodi is Animal
+5 / 30 )  Ginglymodi Ginglymodi ginglymodian
+Gar is Animal
+6 / 30 )  gars Gar gar
+Semionotiformes is Animal
+7 / 30 )  semionotiforms Semionotiformes semionotiform
+Guadalupian is Geography
+8 / 30 )  Middle Guadalupian guadalupian
+Lopingian is Geography
+9 / 30 )  Late Permian Lopingian lopingian
+Neopterygii is Animal
+10 / 30 )  neopterygians Neopterygii neopterygii
+Teleost is Animal
+11 / 30 )  Teleostei Teleost teleost
+Chondrostei is Animal
+12 / 30 )  chondrosteans Chondrostei chondrostei
+Shark is Animal
+13 / 30 )  sharks Shark shark
+Bichir is Animal
+14 / 30 )  bichirs Bichir bichir
+Sturgeon is Animal
+15 / 30 )  sturgeons Sturgeon sturgeon
+Lepisosteiformes is Animal
+16 / 30 )  Lepisosteiformes Lepisosteiformes lepisosteiformes
+Panxianichthyiformes  is Animal
+17 / 30 )  Panxianichthyiformes Panxianichthyiformes  holostean
+Ionoscopiformes  is Animal
+18 / 30 )  Ionoscopiformes Ionoscopiformes  teleostan
+Amiiformes is Animal
+19 / 30 )  Amiiformes Amiiformes amiiformes
+Sarcopterygii is Animal
+20 / 30 )  lobe-finned fish Sarcopterygii sarcopterygii
+Coelacanth is Animal
+21 / 30 )  Actinistia Coelacanth coelacanth
+Lungfish is Animal
+22 / 30 )  Dipnoi Lungfish lungfish
+Amphibian is Animal
+23 / 30 )  Amphibians Amphibian amphibian
+Mammal is Animal
+24 / 30 )  Mammals Mammal mammal
+Sauropsida is Animal
+25 / 30 )  Sauropsids Sauropsida sauropsida
+Acipenseriformes is Animal
+26 / 30 )  Acipenseriformes Acipenseriformes acipenseriformes
+Atractosteus spatula is Animal
+27 / 30 )   Atractosteus spatula gator_gar
+extract_triplet(Holostei)
+Got GPT's response. String length : 1623
+subject_words:  [(None, 'Holostei', 'holostei')]
+object_words:  [['bony fish', 'Osteichthyes', 'osteichthyes']]
+subject_words:  [(None, 'Holostei', 'holostei')]
+object_words:  [['Halecomorphi', 'Halecomorphi', 'halecomorph'], ['Ginglymodi', 'Ginglymodi', 'ginglymodian']]
+subject_words:  [['Halecomorphi', 'Halecomorphi', 'halecomorph']]
+object_words:  [['bowfins', 'Bowfin', 'bowfin']]
+subject_words:  [['Ginglymodi', 'Ginglymodi', 'ginglymodian']]
+object_words:  [['gars', 'Gar', 'gar']]
+subject_words:  [['semionotiforms', 'Semionotiformes', 'semionotiform']]
+object_words:  [['Middle', 'Guadalupian', 'guadalupian'], ['Late Permian', 'Lopingian', 'lopingian']]
+subject_words:  [['semionotiforms', 'Semionotiformes', 'semionotiform']]
+object_words:  [['neopterygians', 'Neopterygii', 'neopterygii']]
+subject_words:  [(None, 'Holostei', 'holostei')]
+object_words:  []
+subject_words:  [(None, 'Holostei', 'holostei')]
+object_words:  [['Teleostei', 'Teleost', 'teleost']]
+subject_words:  [['Teleostei', 'Teleost', 'teleost']]
+object_words:  [['neopterygians', 'Neopterygii', 'neopterygii']]
+subject_words:  [['chondrosteans', 'Chondrostei', 'chondrostei']]
+object_words:  []
+subject_words:  [['sharks', 'Shark', 'shark']]
+object_words:  [['chondrosteans', 'Chondrostei', 'chondrostei']]
+subject_words:  [['bichirs', 'Bichir', 'bichir']]
+object_words:  [['bowfins', 'Bowfin', 'bowfin']]
+subject_words:  [['sturgeons', 'Sturgeon', 'sturgeon']]
+object_words:  [['gars', 'Gar', 'gar']]
+subject_words:  [['Lepisosteiformes', 'Lepisosteiformes', 'lepisosteiformes']]
+object_words:  [['gars', 'Gar', 'gar']]
+subject_words:  [['Panxianichthyiformes', 'Panxianichthyiformes ', 'holostean']]
+object_words:  [['Halecomorphi', 'Halecomorphi', 'halecomorph']]
+subject_words:  [['Ionoscopiformes', 'Ionoscopiformes ', 'teleostan']]
+object_words:  [['Halecomorphi', 'Halecomorphi', 'halecomorph']]
+subject_words:  [['Amiiformes', 'Amiiformes', 'amiiformes']]
+object_words:  [['bowfins', 'Bowfin', 'bowfin']]
+subject_words:  [(None, 'Holostei', 'holostei')]
+object_words:  []
+subject_words:  [(None, 'Holostei', 'holostei')]
+object_words:  [['Teleostei', 'Teleost', 'teleost']]
+subject_words:  [['Halecomorphi', 'Halecomorphi', 'halecomorph']]
+object_words:  [['Teleostei', 'Teleost', 'teleost']]
+subject_words:  [['Halecomorphi', 'Halecomorphi', 'halecomorph']]
+object_words:  [['Amiiformes', 'Amiiformes', 'amiiformes']]
+subject_words:  [['Ginglymodi', 'Ginglymodi', 'ginglymodian']]
+object_words:  []
+subject_words:  [['Lepisosteiformes', 'Lepisosteiformes', 'lepisosteiformes']]
+object_words:  [['gars', 'Gar', 'gar']]
+subject_words:  [['Amiiformes', 'Amiiformes', 'amiiformes']]
+object_words:  [['bowfins', 'Bowfin', 'bowfin']]
+subject_words:  [['bowfins', 'Bowfin', 'bowfin'], ['gars', 'Gar', 'gar']]
+object_words:  []
+third_hop:  {'triplet': '("Holostei hypothesis", "proposes Holostei as the sister group to", "Teleostei")', 'start word': 'Holostei', 'end word': 'Teleost', 'source': {'name': 'Holostei', 'line': 19}, 'cpnet': {'start word': 'holostei', 'end word': 'teleost'}}
+
+utils/question.py extract_hops(Teleost, [], ['Mexico', 'Gar', 'Holostei']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Teleost_info.json file
+extract_info(Teleost) Start.
+utils/preprocess.py extract_info(): Checking good links on Teleost
+Actinopterygii is Animal
+1 / 30 )  Actinopterygii Actinopterygii actinopterygii
+Fish is Animal
+2 / 30 )  fish Fish fish
+Giant oarfish is Animal
+3 / 30 )  giant oarfish Giant oarfish giant_oarfish
+Ocean sunfish is Animal
+4 / 30 )  ocean sunfish Ocean sunfish ocean_sunfish
+Anglerfish is Animal
+5 / 30 )  anglerfish Anglerfish anglerfish
+Seahorse is Animal
+6 / 30 )  seahorses Seahorse seahorse
+Paleozoic is Geography
+7 / 30 )  Paleozoic Paleozoic paleozoic
+Holostei is Animal
+8 / 30 )  holostean Holostei holostei
+Johannes Peter Müller is People
+9 / 30 )  Johannes Peter Müller Johannes Peter Müller johannes_peter_muller
+Triassic is Geography
+10 / 30 )  Triassic Triassic triassic
+Mesozoic is Geography
+11 / 30 )  Mesozoic Mesozoic mesozoic
+Cenozoic is Geography
+12 / 30 )  Cenozoic Cenozoic cenozoic
+Devonian is Geography
+13 / 30 )  Devonian Devonian devonian
+Coelacanth is Animal
+14 / 30 )  Coelacanths Coelacanth coelacanth
+Lungfish is Animal
+15 / 30 )  Lungfish Lungfish lungfish
+Lissamphibia is Animal
+16 / 30 )  Lissamphibia Lissamphibia lissamphibia
+Mammal is Animal
+17 / 30 )  Mammals Mammal mammal
+Sauropsida is Animal
+18 / 30 )  Sauropsida Sauropsida sauropsida
+Bichir is Animal
+19 / 30 )  Polypteriformes Bichir bichir
+Acipenseriformes is Animal
+20 / 30 )  Acipenseriformes Acipenseriformes acipenseriformes
+Lepisosteiformes is Animal
+21 / 30 )  Lepisosteiformes Lepisosteiformes lepisosteiformes
+Amiiformes is Animal
+22 / 30 )  Amiiformes Amiiformes amiiformes
+Osteoglossiformes is Animal
+23 / 30 )  Osteoglossiformes Osteoglossiformes osteoglossiformes
+Elopiformes is Animal
+24 / 30 )  Elopiformes Elopiformes elopiformes
+Bonefishes is Animal
+25 / 30 )  Albuliformes Bonefishes bonefishes
+Eel is Animal
+26 / 30 )  Anguilliformes Eel eel
+Clupeiformes is Animal
+27 / 30 )  Clupeiformes Clupeiformes clupeiformes
+Alepocephaliformes is Animal
+28 / 30 )  Alepocephaliformes Alepocephaliformes alepocephaliform
+Gonorynchiformes is Animal
+29 / 30 )  Gonorynchiformes Gonorynchiformes gonorynchiformes
+Cypriniformes is Animal
+30 / 30 )  Cypriniformes Cypriniformes cypriniformes
+extract_triplet(Teleost)
+Got GPT's response. String length : 1949
+['Based on the provided text, here are the triplets extracted:']
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Actinopterygii', 'Actinopterygii', 'actinopterygii']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['fish', 'Fish', 'fish']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['giant oarfish', 'Giant oarfish', 'giant_oarfish']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['ocean sunfish', 'Ocean sunfish', 'ocean_sunfish']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['anglerfish', 'Anglerfish', 'anglerfish']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['seahorses', 'Seahorse', 'seahorse']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  []
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Johannes Peter Müller', 'Johannes Peter Müller', 'johannes_peter_muller']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Paleozoic', 'Paleozoic', 'paleozoic']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Triassic', 'Triassic', 'triassic']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Mesozoic', 'Mesozoic', 'mesozoic']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Cenozoic', 'Cenozoic', 'cenozoic']]
+subject_words:  []
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  []
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Polypteriformes', 'Bichir', 'bichir']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Acipenseriformes', 'Acipenseriformes', 'acipenseriformes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Lepisosteiformes', 'Lepisosteiformes', 'lepisosteiformes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Amiiformes', 'Amiiformes', 'amiiformes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Osteoglossiformes', 'Osteoglossiformes', 'osteoglossiformes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Elopiformes', 'Elopiformes', 'elopiformes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Albuliformes', 'Bonefishes', 'bonefishes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Anguilliformes', 'Eel', 'eel']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Clupeiformes', 'Clupeiformes', 'clupeiformes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Alepocephaliformes', 'Alepocephaliformes', 'alepocephaliform']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Gonorynchiformes', 'Gonorynchiformes', 'gonorynchiformes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [['Cypriniformes', 'Cypriniformes', 'cypriniformes']]
+object_words:  [(None, 'Teleost', 'teleost')]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['holostean', 'Holostei', 'holostei']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Coelacanths', 'Coelacanth', 'coelacanth']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Lungfish', 'Lungfish', 'lungfish']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Lissamphibia', 'Lissamphibia', 'lissamphibia']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Mammals', 'Mammal', 'mammal']]
+subject_words:  [(None, 'Teleost', 'teleost')]
+object_words:  [['Sauropsida', 'Sauropsida', 'sauropsida']]
+['Please note that I adhered strictly to the rules specified: Each triplet has either the main keyword "Teleost" or its plural "Teleosts" as the subject, and each important keyword is included at least once across the triplets as part of an object. The variety of taxa listed as belonging to teleosts are grouped together to avoid redundancy while ensuring each is represented.']
+forth_hop:  {'triplet': '("Teleosts", "range from", "anglerfish")', 'start word': 'Teleost', 'end word': 'Anglerfish', 'source': {'name': 'Teleost', 'line': 6}, 'cpnet': {'start word': 'teleost', 'end word': 'anglerfish'}}
+generate_question(4_6, ['("Gars in North America", "live in shallow, brackish waters off of", "Texas, Louisiana, and eastern coast of Mexico")', '("Holosteian fish", "include", "gars and bowfins")', '("Holostei hypothesis", "proposes Holostei as the sister group to", "Teleostei")', '("Teleosts", "range from", "anglerfish")'], ['Gar', 'Holostei', 'Teleost', 'Anglerfish'], [('Mexico', 'Gar'), ('Gar', 'Holostei'), ('Holostei', 'Teleost'), ('Teleost', 'Anglerfish')], Anglerfish, [{'name': 'Gar', 'line': 41}, {'name': 'Gar', 'line': 7}, {'name': 'Holostei', 'line': 19}, {'name': 'Teleost', 'line': 6}]) called
+GPT output is:  Q: Which deep-sea creature, known for its distinctive lure, belongs to the diversity of the large group of fish that is considered the closest relative to the predatory fish inhabiting shallow waters off of Texas, Louisiana, and the eastern coast of a country, where these fish and bowfins, known for their bony structure and air-gulping capability, are placed under a certain scientific proposition?
+
+A: Anglerfish
+final_choice(Anglerfish, options = 5) started
+[]
+entity_type(Anglerfish) called
+Anglerfish is Animal
+check_matchscore(Anglerfish, Extant Early Cretaceous first appearances):  0.0
+choose_by_wiki_recur(Extant Early Cretaceous first appearances)
+   Pages in Extant Early Cretaceous first appearances: ['Angiosperm', 'Anglerfish', 'Articulina', 'Avebrevicauda', 'Bathycrinus', 'Bee', 'Bourgueticrinidae', 'Coccinelloidea', 'Copepod', 'Crassostrea', 'Elopidae', 'Eudicots', 'Euornithes', 'Fairyfly', 'Gekkonomorpha', 'Histocidaridae', 'Iguanidae', 'Krill', 'Laetmogonidae', 'Lamniformes', 'Magallana', 'Metatheria', 'Mitsukurinidae', 'Monocotyledon', 'Myriotrochidae', 'Myriotrochus', 'Myrmecia (ant)', 'Neogastropoda', 'Nymphaeaceae', 'Nymphaeales', 'Ophiacanthidae', 'Ophiolepididae', 'Ophioleuce', 'Ophioleucinae', 'Ophiolimna', 'Ophiomusium', 'Ophiotholia', 'Ostariophysi', 'Palaeognathae', 'Pygostylia', 'Scutigeridae', 'Slipper lobster', 'Spatangoida', 'Stingray', 'Strepsiptera']
+      Gekkonomorpha in ['Gekkonomorpha', 'Monocotyledon', 'Mitsukurinidae', 'Anglerfish']
+Gekkonomorpha is Animal
+      Monocotyledon in ['Gekkonomorpha', 'Monocotyledon', 'Mitsukurinidae', 'Anglerfish', 'Myriotrochus']
+Monocotyledon is Animal
+      Mitsukurinidae in ['Gekkonomorpha', 'Monocotyledon', 'Mitsukurinidae', 'Anglerfish', 'Myriotrochus']
+Mitsukurinidae is Animal
+      Anglerfish in ['Gekkonomorpha', 'Monocotyledon', 'Mitsukurinidae', 'Anglerfish', 'Myriotrochus']
+Anglerfish is Animal
+      Myriotrochus in ['Gekkonomorpha', 'Monocotyledon', 'Mitsukurinidae', 'Anglerfish', 'Myriotrochus', 'Eudicots']
+Myriotrochus is Animal
+      Eudicots in ['Gekkonomorpha', 'Monocotyledon', 'Mitsukurinidae', 'Anglerfish', 'Myriotrochus', 'Eudicots', 'Myrmecia (ant)']
+Eudicots is Animal
+      Myrmecia (ant) in ['Gekkonomorpha', 'Monocotyledon', 'Mitsukurinidae', 'Anglerfish', 'Myriotrochus', 'Eudicots', 'Myrmecia (ant)']
+Myrmecia (ant) is Animal
+['Monocotyledon', 'Mitsukurinidae', 'Eudicots', 'Myrmecia (ant)']
+Ended after 2.5 hierarchy
+(2.5, ['Monocotyledon', 'Myrmecia (ant)', 'Mitsukurinidae', 'Eudicots'])
+
+extract_info(Eudicots) Start.
+utils/preprocess.py extract_info(): Checking good links on Eudicots
+Flowering plant is Animal
+1 / 30 )  flowering plants Flowering plant flowering_plant
+Dicotyledon is Animal
+2 / 30 )  dicotyledon Dicotyledon dicotyledon
+Common sunflower is Animal
+3 / 30 )  sunflower Common sunflower common_sunflower
+Taraxacum is Animal
+4 / 30 )  dandelion Taraxacum taraxacum
+Myosotis is Animal
+5 / 30 )  forget-me-not Myosotis myosotis
+Apple is Animal
+6 / 30 )  apple Apple apple
+Ranunculus is Animal
+7 / 30 )  buttercup Ranunculus ranunculus
+Maple is Animal
+8 / 30 )  maple Maple maple
+Macadamia is Animal
+9 / 30 )  macadamia Macadamia macadamia
+Magnolia is Animal
+10 / 30 )  magnolias Magnolia magnolia
+Liriodendron tulipifera is Animal
+11 / 30 )  American tulip tree Liriodendron tulipifera liriodendron_tulipifera
+Magnoliids is Animal
+12 / 30 )  magnoliids Magnoliids magnoliids
+Ginkgo biloba is Animal
+13 / 30 )  Ginkgo biloba Ginkgo biloba ginkgo_biloba
+Monocotyledon is Animal
+14 / 30 )  monocots Monocotyledon monocotyledon
+Seed plant is Animal
+15 / 30 )  seed plants Seed plant seed_plant
+Eudicots is Animal
+16 / 30 )  Eudicot Eudicots eudicots
+Dilleniales is Animal
+17 / 30 )  Dilleniales Dilleniales dilleniales
+Vitaceae is Animal
+18 / 30 )  Vitales Vitaceae vitaceae
+Rosids is Animal
+19 / 30 )  fabids Rosids rosids
+Santalales is Animal
+20 / 30 )  Santalales Santalales santalales
+Caryophyllales is Animal
+21 / 30 )  Caryophyllales Caryophyllales caryophyllales
+Cornales is Animal
+22 / 30 )  Cornales Cornales cornales
+Ericales is Animal
+23 / 30 )  Ericales Ericales ericales
+Asterids is Animal
+24 / 30 )  campanulids Asterids asterids
+extract_triplet(Eudicots)
+Got GPT's response. String length : 1238
+subject_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+object_words:  []
+subject_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+object_words:  [['flowering plants', 'Flowering plant', 'flowering_plant']]
+subject_words:  [['dicotyledon', 'Dicotyledon', 'dicotyledon']]
+object_words:  [['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+object_words:  []
+subject_words:  [['sunflower', 'Common sunflower', 'common_sunflower']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['dandelion', 'Taraxacum', 'taraxacum']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  []
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['apple', 'Apple', 'apple']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['buttercup', 'Ranunculus', 'ranunculus']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['maple', 'Maple', 'maple']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['macadamia', 'Macadamia', 'macadamia']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['magnolias', 'Magnolia', 'magnolia']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['American tulip tree', 'Liriodendron tulipifera', 'liriodendron_tulipifera']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['magnoliids', 'Magnoliids', 'magnoliids']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['Ginkgo biloba', 'Ginkgo biloba', 'ginkgo_biloba']]
+object_words:  []
+subject_words:  [['monocots', 'Monocotyledon', 'monocotyledon']]
+object_words:  []
+subject_words:  [['seed plants', 'Seed plant', 'seed_plant']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+object_words:  []
+subject_words:  [['Eudicot', 'Eudicots', 'eudicots']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['Dilleniales', 'Dilleniales', 'dilleniales']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['Vitales', 'Vitaceae', 'vitaceae']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['fabids', 'Rosids', 'rosids']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['Santalales', 'Santalales', 'santalales']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['Caryophyllales', 'Caryophyllales', 'caryophyllales']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['Cornales', 'Cornales', 'cornales']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['Ericales', 'Ericales', 'ericales']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+subject_words:  [['campanulids', 'Asterids', 'asterids']]
+object_words:  [(None, 'Eudicots', 'eudicots'), ['Eudicot', 'Eudicots', 'eudicots']]
+extract_info(Mitsukurinidae) Start.
+utils/preprocess.py extract_info(): Checking good links on Mitsukurinidae
+Shark is Animal
+1 / 30 )  sharks Shark shark
+Mitsukurina is Animal
+2 / 30 )  Mitsukurina Mitsukurina mitsukurina
+Protoscapanorhynchus  is Animal
+3 / 30 )  Protoscapanorhynchus Protoscapanorhynchus  goblin_sharks
+Woellsteinia  is Animal
+4 / 30 )  Woellsteinia Woellsteinia  goblin_sharks
+Goblin shark is Animal
+5 / 30 )  goblin shark Goblin shark goblin_shark
+Sand tiger shark is Animal
+6 / 30 )  sand tiger shark Sand tiger shark sand_tiger_shark
+Mitsukurina owstoni . Animal Diversity Web. https://animaldiversity.org/accounts/Mitsukurina owstoni/  is Animal
+7 / 30 )  Mitsukurina owstoni . Animal Diversity Web. https://animaldiversity.org/accounts/Mitsukurina_owstoni/ Mitsukurina owstoni . Animal Diversity Web. https://animaldiversity.org/accounts/Mitsukurina owstoni/  goblin_sharks
+extract_triplet(Mitsukurinidae)
+Got GPT's response. String length : 547
+subject_words:  [(None, 'Mitsukurinidae', 'mitsukurinidae')]
+object_words:  [['sharks', 'Shark', 'shark']]
+subject_words:  [(None, 'Mitsukurinidae', 'mitsukurinidae')]
+object_words:  [['Mitsukurina', 'Mitsukurina', 'mitsukurina']]
+subject_words:  [(None, 'Mitsukurinidae', 'mitsukurinidae')]
+object_words:  [['Protoscapanorhynchus', 'Protoscapanorhynchus ', 'goblin_sharks']]
+subject_words:  [(None, 'Mitsukurinidae', 'mitsukurinidae')]
+object_words:  [['Woellsteinia', 'Woellsteinia ', 'goblin_sharks']]
+subject_words:  [(None, 'Mitsukurinidae', 'mitsukurinidae')]
+object_words:  [['sharks', 'Shark', 'shark'], ['goblin shark', 'Goblin shark', 'goblin_shark']]
+subject_words:  [['sharks', 'Shark', 'shark'], ['goblin shark', 'Goblin shark', 'goblin_shark']]
+object_words:  [['Mitsukurina', 'Mitsukurina', 'mitsukurina']]
+subject_words:  [['sharks', 'Shark', 'shark'], ['goblin shark', 'Goblin shark', 'goblin_shark']]
+object_words:  [['sharks', 'Shark', 'shark'], ['sand tiger shark', 'Sand tiger shark', 'sand_tiger_shark']]
+subject_words:  [['Mitsukurina', 'Mitsukurina', 'mitsukurina']]
+object_words:  []
+extract_info(Myrmecia (ant)) Start.
+utils/preprocess.py extract_info(): Checking good links on Myrmecia (ant)
+Ant is Animal
+1 / 30 )  ants Ant ant
+Myrmeciinae is Animal
+2 / 30 )  Myrmeciinae Myrmeciinae myrmeciinae
+New Caledonia is Geography
+3 / 30 )  New Caledonia New Caledonia new_caledonia
+New Zealand is Geography
+4 / 30 )  New Zealand New Zealand new_zealand
+Scolecophidia is Animal
+5 / 30 )  blindsnakes Scolecophidia scolecophidia
+Echidna is Animal
+6 / 30 )  echidnas Echidna echidna
+Tasmania is Geography
+7 / 30 )  Tasmania Tasmania tasmania
+Western Australia is Geography
+8 / 30 )  Western Australia Western Australia western_australia
+Jack jumper ant is Animal
+9 / 30 )  jack jumper ants Jack jumper ant jack_jumper_ant
+Nothomyrmecia is Animal
+10 / 30 )  Nothomyrmecia Nothomyrmecia prionomyrmex_macrops
+Amblyopone is Animal
+11 / 30 )  Amblyopone Amblyopone amblyopone
+Myrmecia brevinoda is Animal
+12 / 30 )  Myrmecia brevinoda Myrmecia brevinoda myrmecia_brevinoda
+Formica is Animal
+13 / 30 )  Formica Formica formica
+Ponerinae is Animal
+14 / 30 )  Ponerinae Ponerinae ponerinae
+Myrmicinae is Animal
+15 / 30 )  Myrmicinae Myrmicinae myrmicinae
+Hymenoptera is Animal
+16 / 30 )  Hymenoptera Hymenoptera hymenoptera
+Myrmecia gulosa is Animal
+17 / 30 )  M. gulosa Myrmecia gulosa myrmecia_gulosa
+Joseph Banks is People
+18 / 30 )  Joseph Banks Joseph Banks sir_joseph_banks
+James Cook is People
+19 / 30 )  James Cook James Cook james_cook
+HMS Endeavour is Geography
+20 / 30 )  HMS Endeavour HMS Endeavour endeavour
+Natural History Museum, London is Geography
+21 / 30 )  Natural History Museum, London Natural History Museum, London natural_history_museum_in_london
+Formicinae is Animal
+22 / 30 )  formicine Formicinae formicinae
+Camponotus bendigensis  is Animal
+23 / 30 )  Camponotus bendigensis Camponotus bendigensis  bull_ant
+Auckland is Geography
+24 / 30 )  Auckland Auckland auckland
+Callitris is Animal
+25 / 30 )  Callitris Callitris callitris
+Corymbia calophylla is Animal
+26 / 30 )  marri Corymbia calophylla eucalyptus_calophylla
+Eucalyptus is Animal
+27 / 30 )  Eucalyptus Eucalyptus eucalyptus
+Platycerium is Animal
+28 / 30 )  Platycerium Platycerium platycerium
+Eucalyptus regnans is Animal
+29 / 30 )  Eucalyptus regnans Eucalyptus regnans eucalyptus_regnans
+Ithone fusca  is Animal
+30 / 30 )  Ithone fusca Ithone fusca  bull_ant
+extract_triplet(Myrmecia (ant))
+Got GPT's response. String length : 3750
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Myrmeciinae', 'Myrmeciinae', 'myrmeciinae']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['New Caledonia', 'New Caledonia', 'new_caledonia']]
+subject_words:  []
+object_words:  [['New Zealand', 'New Zealand', 'new_zealand']]
+subject_words:  [['ants', 'Ant', 'ant']]
+object_words:  [['ants', 'Ant', 'ant']]
+subject_words:  [['ants', 'Ant', 'ant']]
+object_words:  [['ants', 'Ant', 'ant']]
+subject_words:  [['ants', 'Ant', 'ant']]
+object_words:  [['ants', 'Ant', 'ant'], ['jack jumper ants', 'Jack jumper ant', 'jack_jumper_ant']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['ants', 'Ant', 'ant']]
+subject_words:  []
+object_words:  [['ants', 'Ant', 'ant']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['blindsnakes', 'Scolecophidia', 'scolecophidia']]
+subject_words:  []
+object_words:  [['echidnas', 'Echidna', 'echidna']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Myrmeciinae', 'Myrmeciinae', 'myrmeciinae']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Formica', 'Formica', 'formica']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Ponerinae', 'Ponerinae', 'ponerinae']]
+subject_words:  []
+object_words:  [['Myrmicinae', 'Myrmicinae', 'myrmicinae']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Myrmeciinae', 'Myrmeciinae', 'myrmeciinae']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Hymenoptera', 'Hymenoptera', 'hymenoptera']]
+subject_words:  []
+object_words:  [['M. gulosa', 'Myrmecia gulosa', 'myrmecia_gulosa']]
+subject_words:  [['Joseph Banks', 'Joseph Banks', 'sir_joseph_banks']]
+object_words:  [['M. gulosa', 'Myrmecia gulosa', 'myrmecia_gulosa']]
+subject_words:  [['James Cook', 'James Cook', 'james_cook']]
+object_words:  [['Joseph Banks', 'Joseph Banks', 'sir_joseph_banks']]
+subject_words:  [['M. gulosa', 'Myrmecia gulosa', 'myrmecia_gulosa']]
+object_words:  []
+subject_words:  [['Joseph Banks', 'Joseph Banks', 'sir_joseph_banks']]
+object_words:  [['Natural History Museum, London', 'Natural History Museum, London', 'natural_history_museum_in_london']]
+subject_words:  [['ants', 'Ant', 'ant']]
+object_words:  []
+subject_words:  [['ants', 'Ant', 'ant']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Eucalyptus', 'Eucalyptus', 'eucalyptus'], ['Eucalyptus regnans', 'Eucalyptus regnans', 'eucalyptus_regnans']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Ithone fusca', 'Ithone fusca ', 'bull_ant']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['echidnas', 'Echidna', 'echidna']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['ants', 'Ant', 'ant']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['ants', 'Ant', 'ant']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+extract_info(Monocotyledon) Start.
+utils/preprocess.py extract_info(): Checking good links on Monocotyledon
+Flowering plant is Animal
+1 / 30 )  flowering plants Flowering plant flowering_plant
+Dicotyledon is Animal
+2 / 30 )  dicotyledons Dicotyledon dicotyledon
+Cyperaceae is Animal
+3 / 30 )  sedges Cyperaceae cyperaceae
+Bamboo is Animal
+4 / 30 )  bamboos Bamboo bamboo
+Orchid is Animal
+5 / 30 )  orchids Orchid orchid
+Tulip is Animal
+6 / 30 )  tulips Tulip tulip
+Lilium is Animal
+7 / 30 )  lilies Lilium lilium
+Lilioid monocots is Animal
+8 / 30 )  lilioid monocots Lilioid monocots lilioid
+Poaceae is Animal
+9 / 30 )  grass family Poaceae poaceae
+Arecaceae is Animal
+10 / 30 )  palm trees Arecaceae arecaceae
+Bromeliaceae is Animal
+11 / 30 )  bromeliads Bromeliaceae bromeliaceae
+Ginger is Animal
+12 / 30 )  ginger Ginger ginger
+Commelinids is Animal
+13 / 30 )  commelinid monocots Commelinids commelinids
+Araceae is Animal
+14 / 30 )  aroids Araceae araceae
+Seagrass is Animal
+15 / 30 )  seagrass Seagrass seagrass
+Agave is Animal
+16 / 30 )  agaves Agave agave
+Pandanus is Animal
+17 / 30 )  pandans Pandanus pandanus
+Yucca is Animal
+18 / 30 )  Yucca Yucca yucca
+wikt:establishment growth is Incident
+19 / 30 )  establishment growth wikt:establishment growth golodomor

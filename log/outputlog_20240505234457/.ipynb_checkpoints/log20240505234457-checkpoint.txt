@@ -1,0 +1,71 @@
+Got argument: Abraham Lincoln, 5, 5_1
+
+utils/question.py extract_hops(Abraham Lincoln, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")', 'start word': 'Abraham Lincoln', 'end word': 'John Wilkes Booth', 'source': {'name': 'Andrew Johnson', 'line': 129}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'john_wilkes_booth'}}
+
+utils/question.py extract_hops(John Wilkes Booth, [], ['Abraham Lincoln']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/John_Wilkes_Booth_info.json file
+second_hop:  None
+
+utils/question.py extract_hops(Abraham Lincoln, ['John Wilkes Booth'], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Abraham Lincoln", "named", "Andrew Johnson as military governor of Tennessee")', 'start word': 'Abraham Lincoln', 'end word': 'Tennessee', 'source': {'name': 'Abraham Lincoln', 'line': 28}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'tennessee'}}
+
+utils/question.py extract_hops(Tennessee, [], ['Abraham Lincoln']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Tennessee_info.json file
+second_hop:  {'triplet': '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")', 'start word': 'Tennessee', 'end word': 'Indiana', 'source': {'name': 'Indiana', 'line': 16}, 'cpnet': {'start word': 'tennessee', 'end word': 'indiana'}}
+
+utils/question.py extract_hops(Indiana, [], ['Abraham Lincoln', 'Tennessee']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Indiana_info.json file
+third_hop1:  {'triplet': '("Indiana", "borders", "the Ohio River")', 'start word': 'Indiana', 'end word': 'Ohio', 'source': {'name': 'Indiana', 'line': 5}, 'cpnet': {'start word': 'indiana', 'end word': 'ohio'}}
+
+utils/question.py extract_hops(Indiana, ['Ohio'], ['Abraham Lincoln', 'Tennessee']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Indiana_info.json file
+third_hop2:  {'triplet': '("Indiana", "hosts", "the Indianapolis 500")', 'start word': 'Indiana', 'end word': 'Indianapolis', 'source': {'name': 'Indiana', 'line': 19}, 'cpnet': {'start word': 'indiana', 'end word': 'indianapolis'}}
+extraction_done:  True
+generate_question(5_1, ['("Abraham Lincoln", "named", "Andrew Johnson as military governor of Tennessee")', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")', '("Indiana", "borders", "the Ohio River")', '("Indiana", "hosts", "the Indianapolis 500")'], ['Abraham Lincoln', 'Tennessee', 'Indiana', 'Indiana'], [('Abraham Lincoln', 'Tennessee'), ('Tennessee', 'Indiana'), ('Indiana', 'Ohio'), ('Indiana', 'Indianapolis')], Abraham Lincoln, [{'name': 'Abraham Lincoln', 'line': 28}, {'name': 'Indiana', 'line': 16}, {'name': 'Indiana', 'line': 5}, {'name': 'Indiana', 'line': 19}]) called
+GPT output is:  Q: Which President appointed the person as military governor who came from the same state that, along with Kentucky, helped populate a region known for an annual motorsport event and shares its southern border with the Ohio River?
+A: Abraham Lincoln
+final_choice(Abraham Lincoln, options = 5) started
+[]
+entity_type(Abraham Lincoln) called
+Abraham Lincoln is People
+check_matchscore(Abraham Lincoln, People with mood disorders):  0.0
+choose_by_wiki_recur(People with mood disorders)
+   Pages in People with mood disorders: ['360 (rapper)', 'Ryan Adams', 'Hasil Adkins', 'Buzz Aldrin', 'Yashar Ali', 'Hideaki Anno', 'Diane Arbus', 'Heather Armstrong', 'Kinjirō Ashiwara', 'Tommy Blake', 'Anthony Bourdain', 'Richard Brautigan', 'Antuan Bronshtein', 'Tiffany Lee Brown', 'Nick Burbridge', 'Cage (rapper)', 'Beverley Callard', 'Michael Carneal', 'Mark David Chapman', 'Christine Chubbuck', 'Winston Churchill', 'John Clare', 'Rebecca Clarke (composer)', 'Robbie Coburn', 'Billy Corgan', 'Chris Cornell', 'Julee Cruise', 'Ian Curtis', 'Gregory Davis', 'Rob Delaney', 'Barry Dickins', 'Siobhán Donaghy', 'Charmaine Dragun', 'Nick Drake', 'Karyn Dwyer', 'Inger Edelfeldt', 'Richey Edwards', 'James Dallas Egbert III', 'Peter-Ernst Eiffe', 'Harlan Ellison', 'Robert Farquharson', 'John Fetterman', 'John Fitzgerald (Wisconsin politician)', 'Vince Foster', 'Jackson C. Frank', 'Tyson Fury', 'Jeff Garlin', 'Michael Gerson', 'Georges Gilles de la Tourette', 'Chrissie Glazebrook', 'Michael Gothard', 'Devin Grayson', 'Steve Halliwell', 'Tom Hardy', 'Henry VIII', 'Patricia Highsmith', 'John Hinckley Jr.', 'Daryl Holton', 'Doug Hopkins', 'Alex Hribal', 'Greg Hyatt', 'Jordon Ibe', 'Josip Iličić', 'Alice de Janzé', 'Richard Jeni', 'Andrew Jenks', 'Samuel Johnson', 'Kevan Jones', 'Andre Jordan', 'David Katz (gamer)', 'Roman Kemp', 'Kid Cudi', 'Kip Kinkel', 'Tim Kretschmer', 'Norma Angélica Ladrón de Guevara', 'Jenny Lawson', 'Amy Levy', "Lil' Chris", 'Abraham Lincoln', 'Max Linder', 'Stanley Lingar', 'Bartolo Longo', 'Barry Loukaitis', 'Billy Mackenzie', 'Rafe Mair', 'Joseph Mann (shooting victim)', 'Walter M. Miller Jr.', 'Miroslava Stern', 'Joseph Mitchell (writer)', 'Marilyn Monroe', 'Morrissey', 'Audrey Munson', 'Naive John', 'Nam Tae-hyun', 'Shain Neumeier', 'Lisa Nowak', "Elaine O'Hara", "Georgia O'Keeffe", "Dolores O'Riordan", 'Aileen Palmer', 'Pina Pellicer', 'David Pereira', 'Marcus-David Peters', 'Karen Carter Peterson', 'Philip V of Spain', 'Robert M. Pirsig', 'Sylvia Plath', 'Nour El-Refai', 'Henriette Roland Holst', 'Fred Rosen (author)', 'Suicide of Terry Rossland', 'Roszaidi Osman', 'Death of Conrad Roy', 'Michael Steven Sandford', 'Cher Scarlett', 'Sarah Silverman', 'Elliott Smith', 'Susan Smith', 'Sylville Smith', 'Andrew Solomon', 'William Styron', 'Darren Sutherland', 'Tan Ping Koon', 'Torquato Tasso', 'Alexis Vastine', 'Lupe Vélez', 'Ned Vizzini', 'David Foster Wallace', 'Denise Welch', 'Robison Wells', 'Wil Wheaton', 'Robbie Williams', 'Robin Williams', 'Elizabeth Wurtzel']
+      Tim Kretschmer in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins']
+      Darren Sutherland in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain']
+Darren Sutherland is People
+      Billy Corgan in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill']
+Billy Corgan is People
+      Hasil Adkins in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison']
+      Philip V of Spain in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein']
+Philip V of Spain is People
+      Winston Churchill in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan']
+Winston Churchill is People
+      Harlan Ellison in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan']
+Harlan Ellison is People
+      Antuan Bronshtein in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan']
+      Andre Jordan in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern']
+Andre Jordan is People
+      Miroslava Stern in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern', 'Richard Brautigan']
+Miroslava Stern is People
+      Richard Brautigan in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern', 'Richard Brautigan', 'Marilyn Monroe']
+Richard Brautigan is People
+      Marilyn Monroe in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern', 'Richard Brautigan', 'Marilyn Monroe', 'Heather Armstrong']
+Marilyn Monroe is People
+      Heather Armstrong in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern', 'Richard Brautigan', 'Marilyn Monroe', 'Heather Armstrong']
+Heather Armstrong is People
+['Winston Churchill', 'Harlan Ellison', 'Marilyn Monroe', 'Heather Armstrong']
+Ended after 2.5 hierarchy
+(2.5, ['Heather Armstrong', 'Harlan Ellison', 'Marilyn Monroe', 'Winston Churchill'])
+
+extract_info(Heather Armstrong) Start.
+utils/preprocess.py extract_info(): Checking good links on Heather Armstrong
+Salt Lake City is Geography
+1 / 30 )  Salt Lake City Salt Lake City salt_lake_city
+Brigham Young University is Geography
+2 / 30 )  Brigham Young University Brigham Young University brigham_young_university
+Utah is Geography
+3 / 30 )  Utah Utah utah

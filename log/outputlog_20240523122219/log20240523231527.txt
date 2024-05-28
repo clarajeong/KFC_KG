@@ -1,0 +1,1775 @@
+Got argument: Mexico, 6, 6_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', 'start word': 'Mexico', 'end word': 'Abyssal plain', 'source': {'name': 'Gulf of Mexico', 'line': 27}, 'cpnet': {'start word': 'mexico', 'end word': 'abyssal_plain'}}
+
+utils/question.py extract_hops(Abyssal plain, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abyssal_plain_info.json file
+second_hop1:  {'triplet': '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")', 'start word': 'Abyssal plain', 'end word': 'Ocean', 'source': {'name': 'Abyssal plain', 'line': 8}, 'cpnet': {'start word': 'abyssal_plain', 'end word': 'ocean'}}
+
+utils/question.py extract_hops(Ocean, [], ['Mexico', 'Abyssal plain']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Ocean_info.json file
+last_hop:  {'triplet': '("Western Hemisphere", "center is in", "Pacific Ocean")', 'start word': 'Ocean', 'end word': 'Western Hemisphere', 'source': {'name': 'Pacific Ocean', 'line': 6}, 'cpnet': {'start word': 'ocean', 'end word': 'western_hemisphere'}}
+
+utils/question.py extract_hops(Abyssal plain, ['Ocean'], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abyssal_plain_info.json file
+second_hop2:  {'triplet': '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', 'start word': 'Abyssal plain', 'end word': 'Gulf of Mexico', 'source': {'name': 'Gulf of Mexico', 'line': 27}, 'cpnet': {'start word': 'abyssal_plain', 'end word': 'gulf_of_mexico'}}
+generate_question(6_6, ['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', '("Western Hemisphere", "center is in", "Pacific Ocean")'], ['Mexico', 'Abyssal plain', 'Abyssal plain', 'Ocean'], [('Mexico', 'Abyssal plain'), ('Abyssal plain', 'Ocean'), ('Abyssal plain', 'Gulf of Mexico'), ('Ocean', 'Western Hemisphere')], Mexico, [{'name': 'Gulf of Mexico', 'line': 27}, {'name': 'Abyssal plain', 'line': 8}, {'name': 'Gulf of Mexico', 'line': 27}, {'name': 'Pacific Ocean', 'line': 6}]) called
+GPT output is:  Q: Which country to the north of an abyssal plain known for impacting ocean carbon cycling and containing the Sigsbee Deep is centrally located in the hemisphere bounded by continents?
+A: Mexico
+final_choice(Mexico, options = 5) started
+[]
+entity_type(Mexico) called
+Mexico is Geography
+check_matchscore(Mexico, Newly industrializing countries):  0.0
+choose_by_wiki_recur(Newly industrializing countries)
+   Pages in Newly industrializing countries: ['Brazil', 'Indonesia', 'Mexico', 'Philippines', 'South Africa', 'Thailand', 'Turkey']
+      South Africa in ['South Africa', 'Brazil', 'Philippines', 'Mexico']
+      Brazil in ['South Africa', 'Brazil', 'Philippines', 'Mexico']
+      Philippines in ['South Africa', 'Brazil', 'Philippines', 'Mexico']
+      Mexico in ['South Africa', 'Brazil', 'Philippines', 'Mexico']
+      Turkey in ['South Africa', 'Brazil', 'Philippines', 'Mexico', 'Turkey']
+['South Africa', 'Brazil', 'Philippines', 'Turkey']
+Ended after 2.5 hierarchy
+(2.5, ['Brazil', 'South Africa', 'Philippines', 'Turkey'])
+
+extract_info(Philippines) Start.
+utils/preprocess.py extract_info(): Checking good links on Philippines
+Pacific Ocean is Geography
+1 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Luzon is Geography
+2 / 30 )  Luzon Luzon luzon
+Visayas is Geography
+3 / 30 )  Visayas Visayas visayas
+Mindanao is Geography
+4 / 30 )  Mindanao Mindanao mindanao
+South China Sea is Geography
+5 / 30 )  South China Sea South China Sea south_china_sea
+Philippine Sea is Geography
+6 / 30 )  Philippine Sea Philippine Sea philippine_sea
+Celebes Sea is Geography
+7 / 30 )  Celebes Sea Celebes Sea celebes_sea
+Taiwan is Geography
+8 / 30 )  Taiwan Taiwan taiwan
+Japan is Geography
+9 / 30 )  Japan Japan japan
+Palau is Geography
+10 / 30 )  Palau Palau palau
+Indonesia is Geography
+11 / 30 )  Indonesia Indonesia indonesia
+Malaysia is Geography
+12 / 30 )  Malaysia Malaysia malaysia
+Vietnam is Geography
+13 / 30 )  Vietnam Vietnam vietnam
+China is Geography
+14 / 30 )  China China china
+Manila is Geography
+15 / 30 )  Manila Manila manila
+Quezon City is Geography
+16 / 30 )  Quezon City Quezon City quezon_city
+Metro Manila is Geography
+17 / 30 )  Metro Manila Metro Manila metro_manila
+Ferdinand Magellan is People
+18 / 30 )  Ferdinand Magellan Ferdinand Magellan ferdinand_magellan
+Philip II of Spain is People
+19 / 30 )  King Philip II Philip II of Spain philip_ii_of_spain
+Iberian Peninsula is Geography
+20 / 30 )  Iberia Iberian Peninsula iberian_peninsula
+World Trade Organization is Geography
+21 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+ASEAN is Geography
+22 / 30 )  ASEAN ASEAN asean
+Leyte is Geography
+23 / 30 )  Leyte Leyte leyte
+Samar is Geography
+24 / 30 )  Samar Samar samar
+United States is Geography
+25 / 30 )  United States United States united_states
+Hominini is Animal
+26 / 30 )  hominins Hominini hominini
+Human is Animal
+27 / 30 )  modern human Human human
+Palawan is Geography
+28 / 30 )  Palawan Palawan palawan
+Batanes is Geography
+29 / 30 )  Batanes Batanes batanes
+Maynila  is Geography
+30 / 30 )  Maynila Maynila  capital_of_philippines
+extract_triplet(Philippines)
+Got GPT's response. String length : 1946
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  []
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['South China Sea', 'South China Sea', 'south_china_sea'], ['China', 'China', 'china']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Celebes Sea', 'Celebes Sea', 'celebes_sea']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Taiwan', 'Taiwan', 'taiwan']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Japan', 'Japan', 'japan']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Palau', 'Palau', 'palau']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Indonesia', 'Indonesia', 'indonesia']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Malaysia', 'Malaysia', 'malaysia']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Vietnam', 'Vietnam', 'vietnam']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['China', 'China', 'china']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Manila', 'Manila', 'manila']]
+subject_words:  [['Quezon City', 'Quezon City', 'quezon_city']]
+object_words:  [(None, 'Philippines', 'philippines')]
+subject_words:  [['Manila', 'Manila', 'manila']]
+object_words:  [['Manila', 'Manila', 'manila'], ['Metro Manila', 'Metro Manila', 'metro_manila']]
+subject_words:  [['Quezon City', 'Quezon City', 'quezon_city']]
+object_words:  [['Manila', 'Manila', 'manila'], ['Metro Manila', 'Metro Manila', 'metro_manila']]
+subject_words:  [['Ferdinand Magellan', 'Ferdinand Magellan', 'ferdinand_magellan']]
+object_words:  [(None, 'Philippines', 'philippines')]
+subject_words:  []
+object_words:  [['King Philip II', 'Philip II of Spain', 'philip_ii_of_spain']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['ASEAN', 'ASEAN', 'asean']]
+subject_words:  [['Leyte', 'Leyte', 'leyte']]
+object_words:  [['King Philip II', 'Philip II of Spain', 'philip_ii_of_spain']]
+subject_words:  [['Samar', 'Samar', 'samar']]
+object_words:  [['King Philip II', 'Philip II of Spain', 'philip_ii_of_spain']]
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  []
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  [['Palawan', 'Palawan', 'palawan']]
+subject_words:  [(None, 'Philippines', 'philippines')]
+object_words:  []
+subject_words:  [['Manila', 'Manila', 'manila']]
+object_words:  [(None, 'Philippines', 'philippines')]
+extract_info(South Africa) Start.
+utils/preprocess.py extract_info(): Checking good links on South Africa
+Atlantic Ocean is Geography
+1 / 30 )  South Atlantic Atlantic Ocean atlantic_ocean
+Indian Ocean is Geography
+2 / 30 )  Indian Oceans Indian Ocean indian_ocean
+Namibia is Geography
+3 / 30 )  Namibia Namibia namibia
+Botswana is Geography
+4 / 30 )  Botswana Botswana botswana
+Zimbabwe is Geography
+5 / 30 )  Zimbabwe Zimbabwe zimbabwe
+Mozambique is Geography
+6 / 30 )  Mozambique Mozambique mozambique
+Eswatini is Geography
+7 / 30 )  Eswatini Eswatini eswatini
+Enclave and exclave is Geography
+8 / 30 )  enclaves Enclave and exclave enclave
+Lesotho is Geography
+9 / 30 )  Lesotho Lesotho lesotho
+Tanzania is Geography
+10 / 30 )  Tanzania Tanzania tanzania
+Pretoria is Geography
+11 / 30 )  Pretoria Pretoria pretoria
+Cape Town is Geography
+12 / 30 )  Cape Town Cape Town cape_town
+Bloemfontein is Geography
+13 / 30 )  Bloemfontein Bloemfontein bloemfontein
+Union of South Africa is Geography
+14 / 30 )  Union of South Africa Union of South Africa union_of_south_africa
+Gauteng is Geography
+15 / 30 )  Gauteng Gauteng gauteng
+Hominini is Animal
+16 / 30 )  hominin Hominini hominini
+Limpopo is Geography
+17 / 30 )  Limpopo Limpopo limpopo
+KwaZulu-Natal is Geography
+18 / 30 )  KwaZulu-Natal KwaZulu-Natal kwazulu_natal
+Eastern Cape is Geography
+19 / 30 )  Eastern Cape Eastern Cape eastern_cape
+Western Cape is Geography
+20 / 30 )  Western Cape Western Cape western_cape
+Australopithecus africanus is Animal
+21 / 30 )  Australopithecus africanus Australopithecus africanus australopithecus_africanus
+Homo erectus is Animal
+22 / 30 )  Homo erectus Homo erectus homo_erectus
+Homo rhodesiensis is Animal
+23 / 30 )  Homo rhodesiensis Homo rhodesiensis homo_rhodesiensis
+Human is Animal
+24 / 30 )  humans Human human
+Oldowan is Geography
+25 / 30 )  pebble tools Oldowan oldowan
+Vaal River is Geography
+26 / 30 )  Vaal River Vaal River vaal
+Mpumalanga is Geography
+27 / 30 )  Mpumalanga Mpumalanga mpumalanga
+Bartolomeu Dias is People
+28 / 30 )  Bartolomeu Dias Bartolomeu Dias bartholomeu_diaz
+Cape of Good Hope is Geography
+29 / 30 )  Cape of Good Hope Cape of Good Hope cape_of_good_hope
+East Indies is Geography
+30 / 30 )  East Indies East Indies east_indies
+extract_triplet(South Africa)
+Got GPT's response. String length : 2338
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  [['South Atlantic', 'Atlantic Ocean', 'atlantic_ocean'], ['Indian Oceans', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  [['Namibia', 'Namibia', 'namibia']]
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  [['Botswana', 'Botswana', 'botswana']]
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  [['Zimbabwe', 'Zimbabwe', 'zimbabwe']]
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  [['Mozambique', 'Mozambique', 'mozambique'], ['Eswatini', 'Eswatini', 'eswatini']]
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  [['Lesotho', 'Lesotho', 'lesotho']]
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  [['Tanzania', 'Tanzania', 'tanzania']]
+subject_words:  [['Pretoria', 'Pretoria', 'pretoria']]
+object_words:  [(None, 'South Africa', 'south_africa')]
+subject_words:  [['Cape Town', 'Cape Town', 'cape_town']]
+object_words:  [(None, 'South Africa', 'south_africa')]
+subject_words:  [['Bloemfontein', 'Bloemfontein', 'bloemfontein']]
+object_words:  [(None, 'South Africa', 'south_africa')]
+subject_words:  []
+object_words:  [(None, 'South Africa', 'south_africa')]
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  []
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  []
+subject_words:  [['Gauteng', 'Gauteng', 'gauteng']]
+object_words:  []
+subject_words:  []
+object_words:  [['hominin', 'Hominini', 'hominini']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Australopithecus africanus', 'Australopithecus africanus', 'australopithecus_africanus']]
+object_words:  [(None, 'South Africa', 'south_africa')]
+subject_words:  [['Bartolomeu Dias', 'Bartolomeu Dias', 'bartholomeu_diaz']]
+object_words:  []
+subject_words:  []
+object_words:  [['Cape of Good Hope', 'Cape of Good Hope', 'cape_of_good_hope']]
+subject_words:  []
+object_words:  [['Cape of Good Hope', 'Cape of Good Hope', 'cape_of_good_hope']]
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  []
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  []
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  []
+subject_words:  [(None, 'South Africa', 'south_africa')]
+object_words:  []
+extract_info(Brazil) Start.
+utils/preprocess.py extract_info(): Checking good links on Brazil
+Brasília is Geography
+1 / 30 )  Brasília Brasília brasília
+São Paulo is Geography
+2 / 30 )  São Paulo São Paulo são_paulo
+Americas is Geography
+3 / 30 )  Americas Americas americas
+Atlantic Ocean is Geography
+4 / 30 )  Atlantic Ocean Atlantic Ocean atlantic_ocean
+Ecuador is Geography
+5 / 30 )  Ecuador Ecuador ecuador
+Chile is Geography
+6 / 30 )  Chile Chile chile
+Amazon basin is Geography
+7 / 30 )  Amazon basin Amazon basin amazon_basin
+Amazon rainforest is Geography
+8 / 30 )  vast tropical forest Amazon rainforest amazon_rainforest
+Colonial Brazil is Geography
+9 / 30 )  Portuguese colony Colonial Brazil colonial_brazil
+United States is Geography
+10 / 30 )  United States United States united_states
+Organization of American States is Geography
+11 / 30 )  Organization of American States Organization of American States organization_of_american_states
+Paubrasilia is Animal
+12 / 30 )  brazilwood Paubrasilia pau_brasil
+Paraguay is Geography
+13 / 30 )  Paraguay Paraguay paraguay
+Minas Gerais is Geography
+14 / 30 )  Minas Gerais Minas Gerais minas_gerais
+Lisbon is Geography
+15 / 30 )  Lisbon Lisbon lisbon
+Rio de Janeiro is Geography
+16 / 30 )  Rio de Janeiro Rio de Janeiro rio_de_janeiro
+Porto is Geography
+17 / 30 )  Porto Porto porto
+Rio Grande do Sul is Geography
+18 / 30 )  Rio Grande do Sul Rio Grande do Sul rio_grande_do_sul
+Giuseppe Garibaldi is People
+19 / 30 )  Giuseppe Garibaldi Giuseppe Garibaldi giuseppe_garibaldi
+Pernambuco is Geography
+20 / 30 )  Pernambuco Pernambuco pernambuco
+United Kingdom of Great Britain and Ireland is Geography
+21 / 30 )  British United Kingdom of Great Britain and Ireland united_kingdom_of_great_britain_and_ireland
+Uruguay is Geography
+22 / 30 )  Uruguay Uruguay uruguay
+Getúlio Vargas is People
+23 / 30 )  Getúlio Vargas Getúlio Vargas getulio_dornelles_vargas
+Nazi Germany is Geography
+24 / 30 )  Nazi Germany Nazi Germany nazi_germany
+José Sarney is People
+25 / 30 )  José Sarney José Sarney sarney
+Luiz Inácio Lula da Silva is People
+26 / 30 )  Luiz Inácio Lula da Silva Luiz Inácio Lula da Silva luiz_inácio_lula_da_silva
+Argentina is Geography
+27 / 30 )  Argentina Argentina argentina
+Bolivia is Geography
+28 / 30 )  Bolivia Bolivia bolivia
+Peru is Geography
+29 / 30 )  Peru Peru peru
+Colombia is Geography
+30 / 30 )  Colombia Colombia colombia
+extract_triplet(Brazil)
+Got GPT's response. String length : 1505
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  []
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  []
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  []
+subject_words:  [['Brasília', 'Brasília', 'brasília']]
+object_words:  [(None, 'Brazil', 'brazil')]
+subject_words:  [['São Paulo', 'São Paulo', 'são_paulo']]
+object_words:  [(None, 'Brazil', 'brazil')]
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  []
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  [['Atlantic Ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  [['Ecuador', 'Ecuador', 'ecuador'], ['Chile', 'Chile', 'chile']]
+subject_words:  [['Amazon basin', 'Amazon basin', 'amazon_basin']]
+object_words:  [(None, 'Brazil', 'brazil')]
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  [['vast tropical forest', 'Amazon rainforest', 'amazon_rainforest']]
+subject_words:  [(None, 'Brazil', 'brazil'), ['brazilwood', 'Paubrasilia', 'pau_brasil']]
+object_words:  [(None, 'Brazil', 'brazil')]
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  []
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  []
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  [['São Paulo', 'São Paulo', 'são_paulo'], ['Rio de Janeiro', 'Rio de Janeiro', 'rio_de_janeiro']]
+subject_words:  []
+object_words:  [(None, 'Brazil', 'brazil')]
+subject_words:  [(None, 'Brazil', 'brazil')]
+object_words:  []
+['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Western Hemisphere", "center is in", "Pacific Ocean")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Pacific Ocean", "extends from", "Arctic Ocean")\n', '("Pacific Ocean", "extends to", "Southern Ocean")\n', '("Pacific Ocean", "bounded by", "Americas")\n', '("Pacific Ocean", "largest division of", "World Ocean")\n', '("Water Hemisphere", "center is in", "Pacific Ocean")\n', '("oceanic pole of inaccessibility", "is in", "Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "North Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "South Pacific Ocean")\n', '("Pacific Ocean", "informally divided by", "International Date Line")\n', '("North America", "coast off", "Northeast Pacific")\n', '("Oceania", "surrounds", "Southwest Pacific")\n', '("Challenger Deep", "is in", "Mariana Trench")\n', '("Challenger Deep", "deepest part of", "Pacific Ocean")\n', '("Mariana Trench", "located in", "northwestern Pacific")\n', '("Southern Hemisphere", "contains", "Horizon Deep")\n', '("Philippine Sea", "part of", "Pacific Ocean")\n', '("South China Sea", "part of", "Pacific Ocean")\n', '("East China Sea", "part of", "Pacific Ocean")\n', '("Sea of Japan", "part of", "Pacific Ocean")\n', '("Sea of Okhotsk", "part of", "Pacific Ocean")\n', '("Bering Sea", "part of", "Pacific Ocean")\n', '("Gulf of Alaska", "part of", "Pacific Ocean")\n', '("Tasman Sea", "part of", "Pacific Ocean")\n', '("Coral Sea", "part of", "Pacific Ocean")\n', '("Vasco Núñez de Balboa", "sighted", "Pacific Ocean")\n', '("Isthmus of Panama", "crossed by", "Vasco Núñez de Balboa")\n', '("Ferdinand Magellan", "coined current name of", "Pacific Ocean")\n', '("Australia", "bounded by", "Pacific Ocean")\n', '("atolls", "are in", "Pacific Ocean")\n', '("New Guinea", "bounded by", "Pacific Ocean")\n', '("Taiwan", "bounded by", "Pacific Ocean")\n', '("Philippines", "is an", "archipelagic country in Southeast Asia")\n', '("Philippines", "located in", "western Pacific Ocean")\n', '("Philippines", "bounded by", "South China Sea to the west")\n', '("Philippines", "bounded by", "Philippine Sea to the east")\n', '("Philippines", "bounded by", "Celebes Sea to the south")\n', '("Philippines", "shares maritime borders with", "Taiwan to the north")\n', '("Philippines", "shares maritime borders with", "Japan to the northeast")\n', '("Philippines", "shares maritime borders with", "Palau to the east and southeast")\n', '("Philippines", "shares maritime borders with", "Indonesia to the south")\n', '("Philippines", "shares maritime borders with", "Malaysia to the southwest")\n', '("Philippines", "shares maritime borders with", "Vietnam to the west")\n', '("Philippines", "shares maritime borders with", "China to the northwest")\n', '("Philippines", "has a capital named", "Manila")\n', '("Quezon City", "is the most populated city in", "Philippines")\n', '("Manila", "is within", "Metro Manila")\n', '("Quezon City", "is within", "Metro Manila")\n', '("Ferdinand Magellan", "marked the beginning of", "Spanish colonization in the Philippines")\n', '("Ruy López de Villalobos", "named the archipelago", "Las Islas Filipinas in honor of King Philip II of Castile")\n', '("Philippines", "became part of", "World Trade Organization")\n', '("Philippines", "became part of", "ASEAN")\n', '("Leyte", "named by", "Ruy López de Villalobos as Felipinas in honor of King Philip II")\n', '("Samar", "named by", "Ruy López de Villalobos as Felipinas in honor of King Philip II")\n', '("United States", "controlled the Philippines territory until", "Japanese invasion during World War II")\n', '("Philippines", "has oldest modern human remains at", "Tabon Caves of Palawan")\n', '("Philippines", "has", "Spanish and American influence on its culture")\n', '("Manila", "a city in", "Philippines")\n', '("Turkey", "is officially known as", "the Republic of Türkiye")\n', '("Turkey", "is mainly located in", "Anatolia in West Asia")\n', '("Turkey", "has a part called", "East Thrace in Southeast Europe")\n', '("Turkey", "borders the", "Black Sea to the north")\n', '("Turkey", "borders", "Georgia, Armenia, Azerbaijan, and Iran to the east")\n', '("Turkey", "borders", "Iraq, Syria, and the Mediterranean Sea to the south")\n', '("Turkey", "borders", "the Aegean Sea, Greece, and Bulgaria to the west")\n', '("Turkey", "has a population of over", "85 million people")\n', '("Turkey", "\'s majority population is", "Muslim")\n', '("Turkey", "\'s capital city is", "Ankara")\n', '("Turkey", "\'s largest city is", "Istanbul")\n', '("Turkey", "includes cities such as", "İzmir, Bursa and Antalya")\n', '("Human habitation in Turkey", "began in the", "Late Paleolithic period")\n', '("Turkey", "is the location of", "Göbekli Tepe")\n', '("Turkey", "is the location of", "Çatalhöyük")\n', '("Anatolian peoples", "assimilated the", "Hattians")\n', '("Turkey", "experienced Hellenization after", "Alexander the Great\'s conquests")\n', '("Seljuk Turks", "began migrating to", "Anatolia in the 11th century")\n', '("Seljuk Sultanate of Rum", "ruled", "Anatolia until the Mongol invasion in 1243")\n', '("Ottomans", "united the Turkish principalities and expanded", "beginning in 1299")\n', '("Mehmed II", "conquered", "Istanbul in 1453")\n', '("Ottoman Empire", "became a global power during", "the reigns of Selim I and Suleiman the Magnificent")\n', '("Mustafa Kemal Atatürk", "initiated reforms and became the first president of", "Republic of Türkiye")\n', '("Turkey", "was involved in", "the Korean War")\n', '("Turkey", "experienced coups in", "1960 and 1980")\n', '("Turkey", "is the 18th- or 11th-largest economy by", "GDP in the world")\n', '("Turkey", "has a unique location", "bridging Southeastern Europe and Western Asia")\n', '("Turkey", "contains", "the Sea of Marmara in the northwest")\n', '("Turkey", "is divided into seven geographical regions including", "Marmara, Aegean, and Black Sea")\n', '("Mount Ararat", "is Turkey\'s highest point at", "5,137 metres")\n', '("Lake Van", "is the largest lake in", "Turkey")\n', '("Turkey", "is prone to", "frequent earthquakes")\n', '("Turkey", "is highly vulnerable to", "climate change")\n', '("Turkey", "aims to achieve net zero emissions by", "2053")\n', '("Turkey", "has a universal public healthcare system known as", "Universal Health Insurance")\n', '("Turkey", "has a life expectancy of", "78.6 years")\n', '("Turkey", "has the largest number of refugees in the world as of", "April 2020")\n', '("Turkey", "hosts a significant number of", "Syrian refugees")\n', '("Turkey", "has a population that is", "predominantly Muslim")\n', '("Turkey", "has a secular state with", "no official state religion")\n', '("Turkish", "is the official language of", "Turkey")\n', '("Turkey", "has a rich cultural heritage that is a blend of", "Turkic, Anatolian, Byzantine and Ottoman cultures")\n', '("Orhan Pamuk", "is a Turkish novelist who received the", "Nobel Prize in Literature in 2006")\n', '("Turkey", "\'s most popular sport is", "association football")\n', '("Turkey", "won the UEFA Cup and UEFA Super Cup in", "2000")\n', '("Turkish cuisine", "is a heritage of", "Ottoman cuisine")\n', '("Istanbul", "is marketed as", "Turkey Home for tourism promotion")\n', '("South Africa", "is bounded by", "the South Atlantic and Indian Oceans")\n', '("South Africa", "is neighboured to the north by", "Namibia")\n', '("South Africa", "is neighboured to the north by", "Botswana")\n', '("South Africa", "is neighboured to the north by", "Zimbabwe")\n', '("South Africa", "is neighboured to the east and northeast by", "Mozambique and Eswatini")\n', '("South Africa", "completely enclaves", "Lesotho")\n', '("South Africa", "is located entirely south of the equator", "second-most populous after Tanzania")\n', '("Pretoria", "is the administrative capital of", "South Africa")\n', '("Cape Town", "is the legislative capital of", "South Africa")\n', '("Bloemfontein", "is traditionally regarded as the judicial capital of", "South Africa")\n', '("Johannesburg", "hosts the Constitutional Court", "South Africa\'s highest court")\n', '("South Africa", "was named the Union of South Africa", "upon formation")\n', '("South Africa", "was named after", "its geographic location at the southern tip of Africa")\n', '("Gauteng", "contains some of the oldest archaeological and human-fossil sites", "in the world")\n', '("Sterkfontein", "is one of the richest sites for", "hominin fossils")\n', '("Raymond Dart", "identified the first hominin fossil discovered in Africa", "the Taung Child")\n', '("Australopithecus africanus", "existed in", "South Africa about three million years ago")\n', '("Bartolomeu Dias", "named the point", "Cabo das Tormentas")\n', '("King John II", "renamed the point to", "Cape of Good Hope")\n', '("Jan van Riebeeck", "established a victualling station at the", "Cape of Good Hope for the Dutch East India Company")\n', '("South Africa", "has the most UNESCO World Heritage Sites in", "Africa")\n', '("South Africa", "is the only African nation to legislate", "same-sex marriage")\n', '("South Africa", "has the seventh highest Human Development Index on", "the continent")\n', '("The South African National Defence Force", "is involved in peacekeeping in", "Africa")\n', '("Brazil", "is the largest country in", "South America and Latin America")\n', '("Brazil", "is the world\'s fifth-largest country by", "area")\n', '("Brazil", "is the world\'s seventh most populous country", "")\n', '("Brasília", "is the capital of", "Brazil")\n', '("São Paulo", "is the most populous city in", "Brazil")\n', '("Brazil", "is the only country in the Americas with", "Portuguese as an official language")\n', '("Brazil", "is bounded by the", "Atlantic Ocean on the east")\n', '("Brazil", "borders all other countries in South America except", "Ecuador and Chile")\n', '("Amazon basin", "is part of", "Brazil")\n', '("Brazil", "includes", "vast tropical forest")\n', '("brazilwood", "is the source of the name for", "Brazil")\n', '("Brazil", "has the second-highest number of airports in the world", "")\n', '("Brazilian", "legal system is based on", "the civil law legal system")\n', '("Brazil", "hosts", "the São Paulo and Rio de Janeiro International Film Festivals")\n', '("Soccer", "is the most popular sport in", "Brazil")\n', '("Brazil", "has won the World Cup", "a record five times")\n']
+range(1, 259) 4
+['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Western Hemisphere", "center is in", "Pacific Ocean")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Pacific Ocean", "extends from", "Arctic Ocean")\n', '("Pacific Ocean", "extends to", "Southern Ocean")\n', '("Pacific Ocean", "bounded by", "Americas")\n', '("Pacific Ocean", "largest division of", "World Ocean")\n', '("Water Hemisphere", "center is in", "Pacific Ocean")\n', '("oceanic pole of inaccessibility", "is in", "Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "North Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "South Pacific Ocean")\n', '("Pacific Ocean", "informally divided by", "International Date Line")\n', '("North America", "coast off", "Northeast Pacific")\n', '("Oceania", "surrounds", "Southwest Pacific")\n', '("Challenger Deep", "is in", "Mariana Trench")\n', '("Challenger Deep", "deepest part of", "Pacific Ocean")\n', '("Mariana Trench", "located in", "northwestern Pacific")\n', '("Southern Hemisphere", "contains", "Horizon Deep")\n', '("Philippine Sea", "part of", "Pacific Ocean")\n', '("South China Sea", "part of", "Pacific Ocean")\n', '("East China Sea", "part of", "Pacific Ocean")\n', '("Sea of Japan", "part of", "Pacific Ocean")\n', '("Sea of Okhotsk", "part of", "Pacific Ocean")\n', '("Bering Sea", "part of", "Pacific Ocean")\n', '("Gulf of Alaska", "part of", "Pacific Ocean")\n', '("Tasman Sea", "part of", "Pacific Ocean")\n', '("Coral Sea", "part of", "Pacific Ocean")\n', '("Vasco Núñez de Balboa", "sighted", "Pacific Ocean")\n', '("Isthmus of Panama", "crossed by", "Vasco Núñez de Balboa")\n', '("Ferdinand Magellan", "coined current name of", "Pacific Ocean")\n', '("Australia", "bounded by", "Pacific Ocean")\n', '("atolls", "are in", "Pacific Ocean")\n', '("New Guinea", "bounded by", "Pacific Ocean")\n', '("Taiwan", "bounded by", "Pacific Ocean")\n', '("Philippines", "is an", "archipelagic country in Southeast Asia")\n', '("Philippines", "located in", "western Pacific Ocean")\n', '("Philippines", "bounded by", "South China Sea to the west")\n', '("Philippines", "bounded by", "Philippine Sea to the east")\n', '("Philippines", "bounded by", "Celebes Sea to the south")\n', '("Philippines", "shares maritime borders with", "Taiwan to the north")\n', '("Philippines", "shares maritime borders with", "Japan to the northeast")\n', '("Philippines", "shares maritime borders with", "Palau to the east and southeast")\n', '("Philippines", "shares maritime borders with", "Indonesia to the south")\n', '("Philippines", "shares maritime borders with", "Malaysia to the southwest")\n', '("Philippines", "shares maritime borders with", "Vietnam to the west")\n', '("Philippines", "shares maritime borders with", "China to the northwest")\n', '("Philippines", "has a capital named", "Manila")\n', '("Quezon City", "is the most populated city in", "Philippines")\n', '("Manila", "is within", "Metro Manila")\n', '("Quezon City", "is within", "Metro Manila")\n', '("Ferdinand Magellan", "marked the beginning of", "Spanish colonization in the Philippines")\n', '("Ruy López de Villalobos", "named the archipelago", "Las Islas Filipinas in honor of King Philip II of Castile")\n', '("Philippines", "became part of", "World Trade Organization")\n', '("Philippines", "became part of", "ASEAN")\n', '("Leyte", "named by", "Ruy López de Villalobos as Felipinas in honor of King Philip II")\n', '("Samar", "named by", "Ruy López de Villalobos as Felipinas in honor of King Philip II")\n', '("United States", "controlled the Philippines territory until", "Japanese invasion during World War II")\n', '("Philippines", "has oldest modern human remains at", "Tabon Caves of Palawan")\n', '("Philippines", "has", "Spanish and American influence on its culture")\n', '("Manila", "a city in", "Philippines")\n', '("Turkey", "is officially known as", "the Republic of Türkiye")\n', '("Turkey", "is mainly located in", "Anatolia in West Asia")\n', '("Turkey", "has a part called", "East Thrace in Southeast Europe")\n', '("Turkey", "borders the", "Black Sea to the north")\n', '("Turkey", "borders", "Georgia, Armenia, Azerbaijan, and Iran to the east")\n', '("Turkey", "borders", "Iraq, Syria, and the Mediterranean Sea to the south")\n', '("Turkey", "borders", "the Aegean Sea, Greece, and Bulgaria to the west")\n', '("Turkey", "has a population of over", "85 million people")\n', '("Turkey", "\'s majority population is", "Muslim")\n', '("Turkey", "\'s capital city is", "Ankara")\n', '("Turkey", "\'s largest city is", "Istanbul")\n', '("Turkey", "includes cities such as", "İzmir, Bursa and Antalya")\n', '("Human habitation in Turkey", "began in the", "Late Paleolithic period")\n', '("Turkey", "is the location of", "Göbekli Tepe")\n', '("Turkey", "is the location of", "Çatalhöyük")\n', '("Anatolian peoples", "assimilated the", "Hattians")\n', '("Turkey", "experienced Hellenization after", "Alexander the Great\'s conquests")\n', '("Seljuk Turks", "began migrating to", "Anatolia in the 11th century")\n', '("Seljuk Sultanate of Rum", "ruled", "Anatolia until the Mongol invasion in 1243")\n', '("Ottomans", "united the Turkish principalities and expanded", "beginning in 1299")\n', '("Mehmed II", "conquered", "Istanbul in 1453")\n', '("Ottoman Empire", "became a global power during", "the reigns of Selim I and Suleiman the Magnificent")\n', '("Mustafa Kemal Atatürk", "initiated reforms and became the first president of", "Republic of Türkiye")\n', '("Turkey", "was involved in", "the Korean War")\n', '("Turkey", "experienced coups in", "1960 and 1980")\n', '("Turkey", "is the 18th- or 11th-largest economy by", "GDP in the world")\n', '("Turkey", "has a unique location", "bridging Southeastern Europe and Western Asia")\n', '("Turkey", "contains", "the Sea of Marmara in the northwest")\n', '("Turkey", "is divided into seven geographical regions including", "Marmara, Aegean, and Black Sea")\n', '("Mount Ararat", "is Turkey\'s highest point at", "5,137 metres")\n', '("Lake Van", "is the largest lake in", "Turkey")\n', '("Turkey", "is prone to", "frequent earthquakes")\n', '("Turkey", "is highly vulnerable to", "climate change")\n', '("Turkey", "aims to achieve net zero emissions by", "2053")\n', '("Turkey", "has a universal public healthcare system known as", "Universal Health Insurance")\n', '("Turkey", "has a life expectancy of", "78.6 years")\n', '("Turkey", "has the largest number of refugees in the world as of", "April 2020")\n', '("Turkey", "hosts a significant number of", "Syrian refugees")\n', '("Turkey", "has a population that is", "predominantly Muslim")\n', '("Turkey", "has a secular state with", "no official state religion")\n', '("Turkish", "is the official language of", "Turkey")\n', '("Turkey", "has a rich cultural heritage that is a blend of", "Turkic, Anatolian, Byzantine and Ottoman cultures")\n', '("Orhan Pamuk", "is a Turkish novelist who received the", "Nobel Prize in Literature in 2006")\n', '("Turkey", "\'s most popular sport is", "association football")\n', '("Turkey", "won the UEFA Cup and UEFA Super Cup in", "2000")\n', '("Turkish cuisine", "is a heritage of", "Ottoman cuisine")\n', '("Istanbul", "is marketed as", "Turkey Home for tourism promotion")\n', '("South Africa", "is bounded by", "the South Atlantic and Indian Oceans")\n', '("South Africa", "is neighboured to the north by", "Namibia")\n', '("South Africa", "is neighboured to the north by", "Botswana")\n', '("South Africa", "is neighboured to the north by", "Zimbabwe")\n', '("South Africa", "is neighboured to the east and northeast by", "Mozambique and Eswatini")\n', '("South Africa", "completely enclaves", "Lesotho")\n', '("South Africa", "is located entirely south of the equator", "second-most populous after Tanzania")\n', '("Pretoria", "is the administrative capital of", "South Africa")\n', '("Cape Town", "is the legislative capital of", "South Africa")\n', '("Bloemfontein", "is traditionally regarded as the judicial capital of", "South Africa")\n', '("Johannesburg", "hosts the Constitutional Court", "South Africa\'s highest court")\n', '("South Africa", "was named the Union of South Africa", "upon formation")\n', '("South Africa", "was named after", "its geographic location at the southern tip of Africa")\n', '("Gauteng", "contains some of the oldest archaeological and human-fossil sites", "in the world")\n', '("Sterkfontein", "is one of the richest sites for", "hominin fossils")\n', '("Raymond Dart", "identified the first hominin fossil discovered in Africa", "the Taung Child")\n', '("Australopithecus africanus", "existed in", "South Africa about three million years ago")\n', '("Bartolomeu Dias", "named the point", "Cabo das Tormentas")\n', '("King John II", "renamed the point to", "Cape of Good Hope")\n', '("Jan van Riebeeck", "established a victualling station at the", "Cape of Good Hope for the Dutch East India Company")\n', '("South Africa", "has the most UNESCO World Heritage Sites in", "Africa")\n', '("South Africa", "is the only African nation to legislate", "same-sex marriage")\n', '("South Africa", "has the seventh highest Human Development Index on", "the continent")\n', '("The South African National Defence Force", "is involved in peacekeeping in", "Africa")\n', '("Brazil", "is the largest country in", "South America and Latin America")\n', '("Brazil", "is the world\'s fifth-largest country by", "area")\n', '("Brazil", "is the world\'s seventh most populous country", "")\n', '("Brasília", "is the capital of", "Brazil")\n', '("São Paulo", "is the most populous city in", "Brazil")\n', '("Brazil", "is the only country in the Americas with", "Portuguese as an official language")\n', '("Brazil", "is bounded by the", "Atlantic Ocean on the east")\n', '("Brazil", "borders all other countries in South America except", "Ecuador and Chile")\n', '("Amazon basin", "is part of", "Brazil")\n', '("Brazil", "includes", "vast tropical forest")\n', '("brazilwood", "is the source of the name for", "Brazil")\n', '("Brazil", "has the second-highest number of airports in the world", "")\n', '("Brazilian", "legal system is based on", "the civil law legal system")\n', '("Brazil", "hosts", "the São Paulo and Rio de Janeiro International Film Festivals")\n', '("Soccer", "is the most popular sport in", "Brazil")\n', '("Brazil", "has won the World Cup", "a record five times")\n']
+range(1, 259) 4
+['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Western Hemisphere", "center is in", "Pacific Ocean")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Pacific Ocean", "extends from", "Arctic Ocean")\n', '("Pacific Ocean", "extends to", "Southern Ocean")\n', '("Pacific Ocean", "bounded by", "Americas")\n', '("Pacific Ocean", "largest division of", "World Ocean")\n', '("Water Hemisphere", "center is in", "Pacific Ocean")\n', '("oceanic pole of inaccessibility", "is in", "Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "North Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "South Pacific Ocean")\n', '("Pacific Ocean", "informally divided by", "International Date Line")\n', '("North America", "coast off", "Northeast Pacific")\n', '("Oceania", "surrounds", "Southwest Pacific")\n', '("Challenger Deep", "is in", "Mariana Trench")\n', '("Challenger Deep", "deepest part of", "Pacific Ocean")\n', '("Mariana Trench", "located in", "northwestern Pacific")\n', '("Southern Hemisphere", "contains", "Horizon Deep")\n', '("Philippine Sea", "part of", "Pacific Ocean")\n', '("South China Sea", "part of", "Pacific Ocean")\n', '("East China Sea", "part of", "Pacific Ocean")\n', '("Sea of Japan", "part of", "Pacific Ocean")\n', '("Sea of Okhotsk", "part of", "Pacific Ocean")\n', '("Bering Sea", "part of", "Pacific Ocean")\n', '("Gulf of Alaska", "part of", "Pacific Ocean")\n', '("Tasman Sea", "part of", "Pacific Ocean")\n', '("Coral Sea", "part of", "Pacific Ocean")\n', '("Vasco Núñez de Balboa", "sighted", "Pacific Ocean")\n', '("Isthmus of Panama", "crossed by", "Vasco Núñez de Balboa")\n', '("Ferdinand Magellan", "coined current name of", "Pacific Ocean")\n', '("Australia", "bounded by", "Pacific Ocean")\n', '("atolls", "are in", "Pacific Ocean")\n', '("New Guinea", "bounded by", "Pacific Ocean")\n', '("Taiwan", "bounded by", "Pacific Ocean")\n', '("Philippines", "is an", "archipelagic country in Southeast Asia")\n', '("Philippines", "located in", "western Pacific Ocean")\n', '("Philippines", "bounded by", "South China Sea to the west")\n', '("Philippines", "bounded by", "Philippine Sea to the east")\n', '("Philippines", "bounded by", "Celebes Sea to the south")\n', '("Philippines", "shares maritime borders with", "Taiwan to the north")\n', '("Philippines", "shares maritime borders with", "Japan to the northeast")\n', '("Philippines", "shares maritime borders with", "Palau to the east and southeast")\n', '("Philippines", "shares maritime borders with", "Indonesia to the south")\n', '("Philippines", "shares maritime borders with", "Malaysia to the southwest")\n', '("Philippines", "shares maritime borders with", "Vietnam to the west")\n', '("Philippines", "shares maritime borders with", "China to the northwest")\n', '("Philippines", "has a capital named", "Manila")\n', '("Quezon City", "is the most populated city in", "Philippines")\n', '("Manila", "is within", "Metro Manila")\n', '("Quezon City", "is within", "Metro Manila")\n', '("Ferdinand Magellan", "marked the beginning of", "Spanish colonization in the Philippines")\n', '("Ruy López de Villalobos", "named the archipelago", "Las Islas Filipinas in honor of King Philip II of Castile")\n', '("Philippines", "became part of", "World Trade Organization")\n', '("Philippines", "became part of", "ASEAN")\n', '("Leyte", "named by", "Ruy López de Villalobos as Felipinas in honor of King Philip II")\n', '("Samar", "named by", "Ruy López de Villalobos as Felipinas in honor of King Philip II")\n', '("United States", "controlled the Philippines territory until", "Japanese invasion during World War II")\n', '("Philippines", "has oldest modern human remains at", "Tabon Caves of Palawan")\n', '("Philippines", "has", "Spanish and American influence on its culture")\n', '("Manila", "a city in", "Philippines")\n', '("Turkey", "is officially known as", "the Republic of Türkiye")\n', '("Turkey", "is mainly located in", "Anatolia in West Asia")\n', '("Turkey", "has a part called", "East Thrace in Southeast Europe")\n', '("Turkey", "borders the", "Black Sea to the north")\n', '("Turkey", "borders", "Georgia, Armenia, Azerbaijan, and Iran to the east")\n', '("Turkey", "borders", "Iraq, Syria, and the Mediterranean Sea to the south")\n', '("Turkey", "borders", "the Aegean Sea, Greece, and Bulgaria to the west")\n', '("Turkey", "has a population of over", "85 million people")\n', '("Turkey", "\'s majority population is", "Muslim")\n', '("Turkey", "\'s capital city is", "Ankara")\n', '("Turkey", "\'s largest city is", "Istanbul")\n', '("Turkey", "includes cities such as", "İzmir, Bursa and Antalya")\n', '("Human habitation in Turkey", "began in the", "Late Paleolithic period")\n', '("Turkey", "is the location of", "Göbekli Tepe")\n', '("Turkey", "is the location of", "Çatalhöyük")\n', '("Anatolian peoples", "assimilated the", "Hattians")\n', '("Turkey", "experienced Hellenization after", "Alexander the Great\'s conquests")\n', '("Seljuk Turks", "began migrating to", "Anatolia in the 11th century")\n', '("Seljuk Sultanate of Rum", "ruled", "Anatolia until the Mongol invasion in 1243")\n', '("Ottomans", "united the Turkish principalities and expanded", "beginning in 1299")\n', '("Mehmed II", "conquered", "Istanbul in 1453")\n', '("Ottoman Empire", "became a global power during", "the reigns of Selim I and Suleiman the Magnificent")\n', '("Mustafa Kemal Atatürk", "initiated reforms and became the first president of", "Republic of Türkiye")\n', '("Turkey", "was involved in", "the Korean War")\n', '("Turkey", "experienced coups in", "1960 and 1980")\n', '("Turkey", "is the 18th- or 11th-largest economy by", "GDP in the world")\n', '("Turkey", "has a unique location", "bridging Southeastern Europe and Western Asia")\n', '("Turkey", "contains", "the Sea of Marmara in the northwest")\n', '("Turkey", "is divided into seven geographical regions including", "Marmara, Aegean, and Black Sea")\n', '("Mount Ararat", "is Turkey\'s highest point at", "5,137 metres")\n', '("Lake Van", "is the largest lake in", "Turkey")\n', '("Turkey", "is prone to", "frequent earthquakes")\n', '("Turkey", "is highly vulnerable to", "climate change")\n', '("Turkey", "aims to achieve net zero emissions by", "2053")\n', '("Turkey", "has a universal public healthcare system known as", "Universal Health Insurance")\n', '("Turkey", "has a life expectancy of", "78.6 years")\n', '("Turkey", "has the largest number of refugees in the world as of", "April 2020")\n', '("Turkey", "hosts a significant number of", "Syrian refugees")\n', '("Turkey", "has a population that is", "predominantly Muslim")\n', '("Turkey", "has a secular state with", "no official state religion")\n', '("Turkish", "is the official language of", "Turkey")\n', '("Turkey", "has a rich cultural heritage that is a blend of", "Turkic, Anatolian, Byzantine and Ottoman cultures")\n', '("Orhan Pamuk", "is a Turkish novelist who received the", "Nobel Prize in Literature in 2006")\n', '("Turkey", "\'s most popular sport is", "association football")\n', '("Turkey", "won the UEFA Cup and UEFA Super Cup in", "2000")\n', '("Turkish cuisine", "is a heritage of", "Ottoman cuisine")\n', '("Istanbul", "is marketed as", "Turkey Home for tourism promotion")\n', '("South Africa", "is bounded by", "the South Atlantic and Indian Oceans")\n', '("South Africa", "is neighboured to the north by", "Namibia")\n', '("South Africa", "is neighboured to the north by", "Botswana")\n', '("South Africa", "is neighboured to the north by", "Zimbabwe")\n', '("South Africa", "is neighboured to the east and northeast by", "Mozambique and Eswatini")\n', '("South Africa", "completely enclaves", "Lesotho")\n', '("South Africa", "is located entirely south of the equator", "second-most populous after Tanzania")\n', '("Pretoria", "is the administrative capital of", "South Africa")\n', '("Cape Town", "is the legislative capital of", "South Africa")\n', '("Bloemfontein", "is traditionally regarded as the judicial capital of", "South Africa")\n', '("Johannesburg", "hosts the Constitutional Court", "South Africa\'s highest court")\n', '("South Africa", "was named the Union of South Africa", "upon formation")\n', '("South Africa", "was named after", "its geographic location at the southern tip of Africa")\n', '("Gauteng", "contains some of the oldest archaeological and human-fossil sites", "in the world")\n', '("Sterkfontein", "is one of the richest sites for", "hominin fossils")\n', '("Raymond Dart", "identified the first hominin fossil discovered in Africa", "the Taung Child")\n', '("Australopithecus africanus", "existed in", "South Africa about three million years ago")\n', '("Bartolomeu Dias", "named the point", "Cabo das Tormentas")\n', '("King John II", "renamed the point to", "Cape of Good Hope")\n', '("Jan van Riebeeck", "established a victualling station at the", "Cape of Good Hope for the Dutch East India Company")\n', '("South Africa", "has the most UNESCO World Heritage Sites in", "Africa")\n', '("South Africa", "is the only African nation to legislate", "same-sex marriage")\n', '("South Africa", "has the seventh highest Human Development Index on", "the continent")\n', '("The South African National Defence Force", "is involved in peacekeeping in", "Africa")\n', '("Brazil", "is the largest country in", "South America and Latin America")\n', '("Brazil", "is the world\'s fifth-largest country by", "area")\n', '("Brazil", "is the world\'s seventh most populous country", "")\n', '("Brasília", "is the capital of", "Brazil")\n', '("São Paulo", "is the most populous city in", "Brazil")\n', '("Brazil", "is the only country in the Americas with", "Portuguese as an official language")\n', '("Brazil", "is bounded by the", "Atlantic Ocean on the east")\n', '("Brazil", "borders all other countries in South America except", "Ecuador and Chile")\n', '("Amazon basin", "is part of", "Brazil")\n', '("Brazil", "includes", "vast tropical forest")\n', '("brazilwood", "is the source of the name for", "Brazil")\n', '("Brazil", "has the second-highest number of airports in the world", "")\n', '("Brazilian", "legal system is based on", "the civil law legal system")\n', '("Brazil", "hosts", "the São Paulo and Rio de Janeiro International Film Festivals")\n', '("Soccer", "is the most popular sport in", "Brazil")\n', '("Brazil", "has won the World Cup", "a record five times")\n']
+range(1, 259) 4
+{'id': '6_6', 'Question': ' Which country to the north of an abyssal plain known for impacting ocean carbon cycling and containing the Sigsbee Deep is centrally located in the hemisphere bounded by continents?\n', 'Answer': 'Mexico', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Philippines'}, {'label': 'B', 'text': 'Turkey'}, {'label': 'C', 'text': 'Mexico'}, {'label': 'D', 'text': 'South Africa'}, {'label': 'E', 'text': 'Brazil'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'philippines'}, {'label': 'B', 'text': 'turkey'}, {'label': 'C', 'text': 'mexico'}, {'label': 'D', 'text': 'south_africa'}, {'label': 'E', 'text': 'brazil'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Question_decompositions': ['1: The Gulf which has the abyssal plain and Sigsbee Deep lies south of which country?\nA1: Mexico\n\n', '2: These vast, flat regions of the ocean floor exert significant influence upon which aspect of ecological dynamics?\nA2: Ocean carbon cycling\n\n', '3: This geographical feature in the Gulf that contains the Sigsbee Deep is known as what?\nA3: Abyssal plain\n\n', '4: The center of which Hemisphere is located in a massive body of water bounded by continents?\nA4: Ocean'], 'Hops_wiki': [('Mexico', 'Abyssal plain'), ('Abyssal plain', 'Ocean'), ('Abyssal plain', 'Gulf of Mexico'), ('Ocean', 'Western Hemisphere')], 'Hops_cpnet': [('mexico', 'abyssal_plain'), ('abyssal_plain', 'ocean'), ('abyssal_plain', 'gulf_of_mexico'), ('ocean', 'western_hemisphere')], 'Triplets': ['("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', '("Western Hemisphere", "center is in", "Pacific Ocean")'], 'Referred_files': [{'name': 'Gulf of Mexico', 'line': 27}, {'name': 'Abyssal plain', 'line': 8}, {'name': 'Gulf of Mexico', 'line': 27}, {'name': 'Pacific Ocean', 'line': 6}], 'Question_triplet_answer': {100: [21, 136, 150, 211], 50: [118, 167, 170, 179], 25: [20, 33, 225, 244]}}
+time passed:  4267.182313680649
+Expected dollar:  0.005
+Isthmus of Panama is Geography
+Vasco Núñez de Balboa is People
+Brazil is Geography
+Philippines is Geography
+Vietnam is Geography
+Turkey is Geography
+Gulf of Mexico is Geography
+International Hydrographic Organization is Incident
+South Africa is Geography
+Brutus is People
+Anatolia is Geography
+Quezon City is Geography
+the Caribbean Sea is Geography
+Triassic is Geography
+Florida Platform is Geography
+Jurassic is Geography
+ASEAN is Geography
+Ruy López de Villalobos is People
+Las Islas Filipinas is Geography
+King Philip II of Castile is People
+Gulf of Alaska is Geography
+Pacific Ocean is Geography
+Sea of Okhotsk is Geography
+Challenger Deep is Geography
+the Mariana Trench is Geography
+Black Sea is Geography
+Cuba is Geography
+İzmir is Geography
+Bursa is Geography
+Antalya is Geography
+Coral Sea is Geography
+Alexander the Great is People
+World Trade Organization is Geography
+Hernán Cortés is People
+Mexico is Geography
+China is Geography
+Texas is Geography
+Oklahoma is Geography
+Alabama is Geography
+Sierra Madre Oriental is Geography
+Christopher Columbus is People
+Namibia is Geography
+Creation of the abyssal plain is Geography
+Johannesburg is Geography
+South Africa's is Geography
+Istanbul is Geography
+United States is Geography
+Palau is Geography
+Tamaulipas is Geography
+Veracruz is Geography
+Tabasco is Geography
+Campeche is Geography
+Yucatán is Geography
+Quintana Roo is Geography
+Deepwater Horizon is Geography
+South China Sea is Geography
+Göbekli Tepe is Geography
+Samar is Geography
+Lake Van is Geography
+Ecuador is Geography
+Chile is Geography
+Americas is Geography
+Pretoria is Geography
+Pacific is Geography
+"Water Hemisphere" is Geography
+Australia is Geography
+Manila is Geography
+World Ocean is Geography
+East Thrace is Geography
+South Pacific Ocean is Geography
+International Date Line is Geography
+the Gulf of Mexico is Geography
+Gauteng is Geography
+the Atlantic Ocean is Geography
+Tabon Caves of Palawan is Geography
+Japan is Geography
+Ascension Island is Geography
+Florida is Geography
+Mississippi is Geography
+Louisiana is Geography
+Western Hemisphere is Geography
+27,000 is Geography
+Taiwan is Geography
+Ferdinand Magellan is People
+Jan van Riebeeck is People
+Cape of Good Hope for the Dutch East India Company is Geography
+Southern Hemisphere is Geography
+Horizon Deep is Geography
+Raymond Dart is People
+Cusk is People
+Celebes Sea is Geography
+North Pacific Ocean is Geography
+5,137 metres is Geography
+Mississippi Embayment is Geography
+Atlantic Ocean is Geography
+Leyte is Geography
+7700 meters is Geography
+Yucatán Peninsula is Geography
+Tasman Sea is Geography
+Tanzania is Geography
+the Robert E. Lee is People
+the United States is Geography
+Arctic Ocean is Geography
+Malaysia is Geography
+"Cape of Good Hope is Geography
+entities:  {'Ferdinand', 'Coral', 'Celebes', 'de', 'Hemisphere"', 'plain', 'Lake', 'Tamaulipas', 'Tabasco', 'meters', 'Trade', 'Americas', 'Mariana', 'Alaska', 'Núñez', 'Mount', 'Jan', 'Deep', 'South', 'Organization', 'Florida', 'Dutch', 'Hope', 'Vietnam', 'Antalya', 'Brutus', 'Tabon', 'Turkey', 'Atatürk', 'Raymond', 'Veracruz', 'Dart', 'Creation', 'Yucatán', 'Anatolia', 'Manila', 'Cape', 'Pretoria', 'Philippines', 'Islas', 'Namibia', 'Europe', 'Robert', 'Philip', 'International', 'Africa', 'Atlantic', 'Caves', 'Louisiana', 'Peninsula', 'Magellan', 'Quezon', 'Cuba', 'Alexander', 'Ascension', 'Sierra', 'Göbekli', 'Las', 'Palau', 'Pacific', 'Black', 'Embayment', 'Gulf', 'East', 'City', '"Cape', 'World', 'Cortés', 'Isthmus', 'Hydrographic', 'Filipinas', 'Roo', 'Southern', 'Ocean', 'Date', 'Samar', 'Arctic', 'ASEAN', 'Villalobos', 'Vasco', 'Castile', 'II', 'Trench', 'Australia', 'Sea', 'Gauteng', 'Quintana', 'Abyssal', 'Ecuador', 'United', 'Caribbean', 'States', 'Ruy', 'Oriental', 'Triassic', 'López', 'Marmara', 'Van', 'Malaysia', 'Hemisphere', '27,000', 'İzmir', 'Great', 'Texas', 'Brazil', 'Riebeeck', "Africa's", 'abyssal', 'Horizon', 'Thrace', 'Oklahoma', '7700', 'Mexico', 'Company', 'Panama', 'Hernán', 'Madre', 'Christopher', 'Columbus', 'Palawan', 'Western', 'Istanbul', 'Asia', 'Tepe', '5,137', 'Ararat', 'China', 'North', 'Bursa', 'Leyte', 'Campeche', 'Balboa', 'Good', 'Challenger', 'Johannesburg', 'Brasília', 'Line', 'van', 'metres', 'Deepwater', 'Lee', 'Mustafa', 'Alabama', 'Cusk', 'Island', 'Okhotsk', 'Chile', 'America', 'India', 'Alvin', 'King', '"Water', 'Louann', 'Tasman', 'E.', 'Pangaea', 'Japan', 'Mississippi', 'Southeast', 'Taiwan', 'Platform', 'Tanzania', 'Jurassic'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Brazil' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Isthmus of Panama
+Brasília
+Philippines
+Turkey
+Gulf of Mexico
+South Africa
+Shell's Brutus oil rig
+Seljuk Turks
+Quezon City
+Abyssal plains
+Ruy López de Villalobos
+Cuba
+São Paulo
+İzmir, Bursa and Antalya
+Coral Sea
+Gulf of Mexico
+Sea of Okhotsk
+Black Sea
+Istanbul
+Bartolomeu Dias
+South African National Defence Force
+Johannesburg
+Turkish
+The South African National Defence Force
+Anatolia
+Palau
+Namibia
+Turkish
+Brazil
+Göbekli Tepe
+Manila
+Tabon Caves of Palawan
+Cabo of Good Hope
+Gulf Stream
+Gulf of Mexico basin
+Bartolomeu Dias
+São Paulo
+World Cup
+ASEAN
+Ruy López de VillalobosLas Islas Filipinas
+Caribbean Sea
+Hernán Cortés
+Ocean
+Florida Platform
+Louann Salt and associated anhydrite evaporites
+Turkish
+International Date Line
+Pretoria
+Istanbul
+Abyssal plain
+Mongol invasion
+Abyssal plain
+Gulf of Mexico basin
+Philippines
+Gulf of Mexico
+Turkish
+Horizon Deep
+Pacific Ocean
+Gulf of Mexico
+Polychaete worms
+Bartolomeu Dias
+Gulf of Mexico
+Philippines
+Turkish
+Ecuador and Chile
+Hattians
+Felipinas
+Celebes Sea
+East Thrace
+West Venture Field
+Homo naledi
+Laramide Orogeny
+Philippines
+Mount Ararat
+Pangaea
+Brazil
+Gulf of Mexico
+Syrian refugees
+Philippines
+Turkish
+Challenger Deep
+Quezon City
+Turkey
+Ferdinand Magellan
+Coral Sea
+Coral Sea
+South Africa
+Horizon Deep
+Taung Child
+Soccer
+Portuguese
+Photic Zone
+Oxyrhynchus 
+Pacific Ocean
+Philippines
+Celebes Sea
+International Date Line
+Polychaete worms
+Tabon Caves
+Turkish
+South Africa
+Pacific Ocean
+Celebes Sea
+Pacific Ocean
+Celebes Sea
+Radiolaria 
+Huánuco 
+Cabo das Correntes 
+Sao Sebastiao
+Atlantic coast
+Celebes Sea
+spoils dump site
+Gondwana
+Oaxaca
+Tabon Caves
+Arutanga
+Cape of Good Hope
+Pacific Ocean
+Tonga Trench
+Arutanga
+Philippines
+Huánuco 
+Atlantic Ocean
+Celebes Sea
+Rejoso
+Atlantic Ocean
+
+gpt_entity_particular(): entity list: 
+ ['Ferdinand Magellan', 'Ruy López de VillalobosLas Islas Filipinas', 'Felipinas', 'Soccer', 'South African National Defence Force', 'Atlantic coast', 'Portuguese', 'Turkey', 'Radiolaria ', 'Cabo das Correntes ', 'South Africa', 'Isthmus of Panama', 'Pacific Ocean', 'Gulf of Mexico basin', 'Coral Sea', 'Ruy López de Villalobos', 'İzmir, Bursa and Antalya', 'Laramide Orogeny', 'Anatolia', 'Manila', 'Pretoria', 'Philippines', 'Namibia', 'Tabon Caves of Palawan', 'Cape of Good Hope', 'Ecuador and Chile', 'Mongol invasion', 'Seljuk Turks', 'Rejoso', 'Cuba', 'Caribbean Sea', 'Göbekli Tepe', 'Sao Sebastiao', 'Palau', 'Huánuco ', 'Abyssal plains', 'Ocean', 'ASEAN', 'Hernán Cortés', 'Gulf Stream', 'Turkish', 'Horizon Deep', 'The South African National Defence Force', 'Cabo of Good Hope', 'Challenger Deep', 'Quezon City', 'Arutanga', 'Louann Salt and associated anhydrite evaporites', 'São Paulo', 'Tabon Caves', 'Tonga Trench', 'International Date Line', 'Taung Child', "Shell's Brutus oil rig", 'Florida Platform', 'Brazil', 'Photic Zone', 'Syrian refugees', 'spoils dump site', 'Homo naledi', 'Gulf of Mexico', 'Istanbul', 'World Cup', 'Bartolomeu Dias', 'Black Sea', 'Atlantic Ocean', 'Abyssal plain', 'Johannesburg', 'Brasília', 'Oxyrhynchus ', 'Polychaete worms', 'Hattians', 'Celebes Sea', 'Oaxaca', 'Sea of Okhotsk', 'Pangaea', 'West Venture Field', 'Mount Ararat', 'East Thrace', 'Gondwana']
+
+gpt_entity_particular(): filtered entity: 
+ ['Portuguese']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gulf of Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+Shell's Brutus oil rig
+Florida Platform
+Gulf of Alaska
+Coral Sea
+Sea of Okhotsk
+Abyssal plains
+Gulf Stream
+São Paulo
+Brasília
+Louann Salt and associated anhydrite evaporites
+Quezon City
+Johannesburg
+Sterkfontein
+Gulf of Alaska
+Gulf of Alaska
+Gulf of Mexico basin
+Louann Salt and associated anhydrite evaporites
+Abyssal plain
+Bartolomeu Dias
+Turkey
+Exploitation of abyssal plains
+mountain range
+Philippines
+Gulf Stream
+Gulf of Mexico
+Gulf of Mexico
+Louisiana
+Gulf Stream
+Gulf of Mexico
+Gulf of Mexico
+Abyssal plain
+Philippines
+Gulf of Alaska
+Gulf of Mexico
+Philippines
+Gulf of Mexico
+Gulf of Mexico
+Deepwater Horizon oil platform
+Gulf of Mexico
+South China Sea
+Gulf of Mexico
+Coral Sea
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+atolls
+Hydrothermal vents
+Soccer
+Gulf of Mexico
+Gulf of Mexico
+Abyssal plains
+Brazil
+Challenger Deep
+Philippines
+Coral Sea
+Philippines
+Abyssal plains
+Gulf of Mexico
+Brazil
+Pacific Ocean
+Gulf Stream
+Brasília
+Louann Salt and associated anhydrite evaporites
+Cape Town
+Bartolomeu Dias
+Paulo
+Abyssal plain
+Philippines
+Gulf of Mexico
+Ferdinand Magellan
+Gulf of Mexico
+Quezon City
+Gulf of Mexico
+mountain range
+Ferdinand Magellan
+Gulf of Mexico
+Yucatán Peninsula
+Hydrothermal vents
+Philippines
+
+gpt_entity_particular(): entity list: 
+ ['Challenger Deep', 'Johannesburg', 'Louisiana', 'Sterkfontein', 'Brasília', 'Quezon City', 'Louann Salt and associated anhydrite evaporites', 'São Paulo', 'Exploitation of abyssal plains', 'South China Sea', 'Cape Town', 'Paulo', 'Ferdinand Magellan', 'Soccer', "Shell's Brutus oil rig", 'Florida Platform', 'Sea of Okhotsk', 'Brazil', 'Deepwater Horizon oil platform', 'Yucatán Peninsula', 'Abyssal plains', 'Turkey', 'Pacific Ocean', 'Gulf of Mexico', 'Gulf of Mexico basin', 'Coral Sea', 'Gulf of Alaska', 'Hydrothermal vents', 'Gulf Stream', 'Bartolomeu Dias', 'mountain range', 'Philippines', 'Abyssal plain', 'atolls']
+
+gpt_entity_particular(): filtered entity: 
+ ['Gulf Stream']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Cape Town
+Philippines
+Vietnam 
+Turkey
+Gulf of Mexico 
+South Africa
+Shell's Brutus oil rig
+Seljuk Turks
+Quezon City
+Caribbean Sea
+Abyssal plains
+Florida Platform
+brazilwood
+Ruy López de Villalobos
+Gulf of Alaska
+Gulf of Mexico
+Sea of Okhotsk
+Challenger Deep
+Gulf of Alaska
+Louann Salt and associated anhydrite evaporites
+Shell's Brutus oil rig
+World Trade Organization
+Hernán Cortés
+World Trade Organization
+Mariana Trench
+Black Sea
+Cape of Good Hope
+Abyssal plain
+South African National Defence Force
+İstanbul
+Turkey
+Philippines
+Turkey
+Göbekli Tepe
+Turkey
+South Africa
+Bitcoin
+Spain
+Florida Platform
+Turkish
+Gulf of Mexico
+Universal Health Insurance
+Abyssal plain
+Gulf of Mexico
+Philippines
+Istanbul
+Gulf of Mexico
+Abyssal plain 
+Mount Ararat
+Philippines
+Turkey
+Louann Salt and associated anhydrite evaporites
+Philippines
+Turkey
+ASEAN
+Colorado Plateau
+Australia
+Easter Road
+Mediterranean Sea
+Black Sea
+South Africa 
+Turkey
+Brazil
+Portuguese 
+Challenger Deep 
+Turkey
+Mariana Trench 
+Ruy López de Villalobos 
+South Africa 
+Horizon Deep
+Sierra Madre Oriental 
+Pacific Ocean 
+Gulf of Mexico
+Deepwater Horizon
+Sea of Okhotsk
+Turkey
+Brazil
+Photic
+Abyssal plain
+Mississippi River
+Johannesburg 
+Mississippi River
+Cape Town
+Gulf of Mexico 
+Alvin
+Yucatan Peninsula 
+Gulf of Mexico 
+Sea of Okhotsk 
+Gulf of Mexico 
+Gulf of Alaska 
+Yucatán Peninsula 
+Aphotic
+Gulf of Mexico 
+Yucatán Peninsula 
+Mariana Trench
+Abyssal plain 
+Horizon Deep
+Gulf of Mexico 
+Hydrothermal vents 
+Gulf of Mexico
+Yucatán Peninsula 
+Turkish 
+Republic of Türkiye 
+Philippines 
+Turkey 
+Turkey 
+South Africa 
+Brazil
+Gulf of Mexico
+Revolution
+Arctic Ocean
+Çatalhöyük
+Lake Van 
+Universal Health Insurance
+Turkey 
+Arctic Ocean
+Brazil
+Gulf of Mexico
+Black Sea
+Marmara
+
+gpt_entity_particular(): entity list: 
+ ['South Africa ', 'Challenger Deep', 'İstanbul', 'Seljuk Turks', 'Quezon City', 'Louann Salt and associated anhydrite evaporites', 'Easter Road', 'Photic', 'Lake Van ', 'Turkish ', 'Cape Town', 'Ruy López de Villalobos ', 'Gulf of Alaska ', 'Caribbean Sea', 'Marmara', 'Çatalhöyük', 'World Trade Organization', 'Göbekli Tepe', 'Arctic Ocean', 'Mediterranean Sea', 'Republic of Türkiye ', 'Vietnam ', 'Gulf of Mexico ', 'Mariana Trench', "Shell's Brutus oil rig", 'Yucatán Peninsula ', 'Alvin', 'Mississippi River', 'Florida Platform', 'Sea of Okhotsk', 'Brazil', 'Aphotic', 'Abyssal plains', 'Yucatan Peninsula ', 'South African National Defence Force', 'Bitcoin', 'Turkey', 'Abyssal plain ', 'Colorado Plateau', 'South Africa', 'Mariana Trench ', 'Pacific Ocean ', 'Deepwater Horizon', 'Revolution', 'Hydrothermal vents ', 'Gulf of Mexico', 'Gulf of Alaska', 'Istanbul', 'brazilwood', 'Ruy López de Villalobos', 'Hernán Cortés', 'Mount Ararat', 'ASEAN', 'Universal Health Insurance', 'Challenger Deep ', 'Sierra Madre Oriental ', 'Turkish', 'Philippines', 'Black Sea', 'Australia', 'Portuguese ', 'Abyssal plain', 'Johannesburg ', 'Sea of Okhotsk ', 'Horizon Deep', 'Cape of Good Hope', 'Spain', 'Philippines ', 'Turkey ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Philippines' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Philippines
+ASEAN
+Palau
+China
+Manila
+Vietnam
+ASEAN
+ASEAN
+World Trade Organization
+ASEAN
+Abyssal plains
+Sidee Deep
+Tabon Caves of Palawan
+Japan
+Taiwan
+Malaysia
+
+gpt_entity_particular(): entity list: 
+ ['World Trade Organization', 'Vietnam', 'Abyssal plains', 'ASEAN', 'Palau', 'Malaysia', 'Taiwan', 'Manila', 'Philippines', 'Japan', 'China', 'Tabon Caves of Palawan', 'Sidee Deep']
+
+gpt_entity_particular(): filtered entity: 
+ ['Manila']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'South Africa' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ South Africa
+Human Development Index
+Brutus oil rig
+Gulf of Mexico
+Caribbean Sea
+Florida Platform
+Sigsbee Deep
+South African National Defence Force
+Cape Town
+Africa
+Turks
+Anatolia
+ASEAN
+Philippines
+World Trade Organization
+Hernán Cortés
+Abyssal plains
+migrating
+Namibia
+constitutional court
+World Cup
+Istanbul
+Louann Salt
+Fossils
+mountain range
+Bartolomeu Dias
+Göbekli Tepe
+Hattians
+Cabo das Tormentas
+Abyssal plain
+Coral Sea
+Gauteng
+Tabon Caves
+Magellan
+Leyte
+Ararat
+Turkey (the nation)
+Mississippi Embayment
+refugees
+civil law
+Soccer
+Portuguese
+species
+Ruy López de Villalobos
+UNCLOS
+Maya Civilization
+End-of-Jurassic Sea
+Mustafa Kemal Atatürk
+Tanzania
+sinking of the Robert E. Lee
+Robert E. Lee
+Marmara
+Aegean
+Arctic Ocean
+Pangaea
+Brazil
+vast tropical forest
+Malaysia
+King John II
+
+gpt_entity_particular(): entity list: 
+ ['Leyte', 'King John II', 'Sigsbee Deep', 'migrating', 'Mustafa Kemal Atatürk', 'Tabon Caves', 'sinking of the Robert E. Lee', 'Hattians', 'Magellan', 'Cape Town', 'Marmara', 'Caribbean Sea', 'World Trade Organization', 'Göbekli Tepe', 'refugees', 'Soccer', 'Arctic Ocean', 'Louann Salt', 'Malaysia', 'Human Development Index', 'Mississippi Embayment', 'Aegean', 'species', 'Florida Platform', 'Brazil', 'constitutional court', 'Robert E. Lee', 'Fossils', 'Abyssal plains', 'civil law', 'Brutus oil rig', 'Turks', 'South African National Defence Force', 'Pangaea', 'Portuguese', 'South Africa', 'vast tropical forest', 'Gulf of Mexico', 'Cabo das Tormentas', 'Coral Sea', 'Istanbul', 'ASEAN', 'Hernán Cortés', 'Ruy López de Villalobos', 'Anatolia', 'World Cup', 'UNCLOS', 'mountain range', 'Philippines', 'Bartolomeu Dias', 'Ararat', 'Turkey (the nation)', 'Namibia', 'Abyssal plain', 'Maya Civilization', 'Tanzania', 'Gauteng', 'Africa', 'End-of-Jurassic Sea']
+
+gpt_entity_particular(): filtered entity: 
+ ['Cape Town', 'Gauteng', 'Africa']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Abyssal plain' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Abyssal plain
+Plains
+Earth's surface
+50%
+Biodiversity
+
+gpt_entity_particular(): entity list: 
+ ["Earth's surface", '50%', 'Abyssal plain', 'Biodiversity', 'Plains']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Western Hemisphere' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Isthmus of Panama
+Brasília
+Philippines
+Turkey
+Gulf of Mexico
+South Africa
+Shell's Brutus oil rig
+Seljuk Turks
+Quezon City
+Abyssal plains
+The South African National Defence Force
+Cape Town
+Florida Platform
+Brazil
+Ruy López de Villalobos
+Gulf of Alaska
+Sea of Okhotsk
+Challenger Deep
+Turkey
+China
+Western Hemisphere
+World Trade Organization
+Hernán Cortés
+Anatolia
+São Paulo
+İzmir
+Bursa
+Antalya
+Turkey
+Coral Sea
+Alexander the Great's conquests
+Georgia
+ASEAN
+Mexico
+Madagascar
+King Philip II of Castile
+Sigsbee Deep
+Black Sea
+Cuba
+Göbekli Tepe
+Black Sea
+Gulf of Mexico
+United States, Mexico, and Cuba
+Palau
+China
+Brazil
+ASEAN
+World Trade Organization
+Gulf of Mexico
+World Cup
+ASEAN
+International Hydrographic Organization
+ASEAN
+International Hydrographic Organization
+Turkey
+Göbekli Tepe
+Syria
+Turkey
+Louann Salt
+East Thrace
+Philippines
+Japan
+Louann Salt and
+Philippines
+Gulf of Mexico
+International Hydrographic Organization
+Gulf of Mexico
+Turkey
+Turkic, Anatolian, Byzantine and Ottoman cultures
+Challenger Deep
+Florida Platform
+Alvin
+Florida Platform
+Turkey
+Göbekli Tepe
+South Africa
+Brazil
+Same-sex marriage
+Quezon City
+Turkey
+Turkey
+Bursa
+Antalya
+East Thrace
+Turkey
+Universal Health Insurance
+Philippines
+Manila
+Philippines
+Philippines
+South China Sea
+Pacific Ocean
+Horizon Deep
+Pretoria
+Turkey
+Universal Health Insurance
+Spain 
+Anatolia
+Same-sex marriage
+Portuguese
+Mongol invasion
+Spain
+Pacific Ocean
+East Thrace
+Portuguese
+Vietnam
+Philippines
+biodiversity
+Malaysia
+Pacific Ocean
+Ruy López de Villalobos
+Landmark 
+biodiversity
+Hernán Cortés
+ÖZGÜR
+Ferdinand Magellan
+Gulf of Mexico
+Pacific Ocean
+Yucatán Peninsula
+Yucatán
+Maya civilization
+Pacific Ocean
+Ruy López de Villalobos 
+Celebes Sea
+Ferdinand Magellan
+Scientific name 
+Mississippi Embayment
+Soccer
+Atlantic Ocean
+Gulf of Mexico
+Ferdinand Magellan
+Soccer
+Saudi Arabia
+Philippines 
+Challenger Deep
+EXPLOITATION
+Abyss
+Sea of Okhotsk
+Japan Trench
+Göbekli Tepe
+Brazil 
+Philippines
+Philippines 
+ASEAN
+Philippines 
+King Philip II
+Philippines
+Malaysia 
+Yucatán Peninsula
+Hernán Cortés
+
+gpt_entity_particular(): entity list: 
+ ['Landmark ', 'Louann Salt and', 'Ferdinand Magellan', 'World Trade Organization', 'Soccer', 'Louann Salt', 'Saudi Arabia', 'Vietnam', 'Antalya', 'Portuguese', 'Turkey', 'South Africa', 'Isthmus of Panama', 'Pacific Ocean', 'Coral Sea', 'Yucatán', 'Ruy López de Villalobos', 'Spain ', 'biodiversity', 'International Hydrographic Organization', 'Anatolia', 'Manila', 'Pretoria', 'Philippines', 'Philippines ', 'Spain', 'Mongol invasion', 'Seljuk Turks', 'Cuba', 'ÖZGÜR', 'United States, Mexico, and Cuba', 'Göbekli Tepe', 'Palau', 'King Philip II', 'Same-sex marriage', 'Mississippi Embayment', 'King Philip II of Castile', 'Abyssal plains', 'Gulf of Alaska', 'Hernán Cortés', 'ASEAN', 'Georgia', 'Horizon Deep', 'The South African National Defence Force', 'Challenger Deep', 'Sigsbee Deep', 'Quezon City', 'São Paulo', 'Maya civilization', 'Syria', 'South China Sea', 'Cape Town', 'Malaysia', 'İzmir', "Shell's Brutus oil rig", 'Florida Platform', 'Brazil', 'Yucatán Peninsula', 'Mexico', 'Scientific name ', 'Gulf of Mexico', 'World Cup', 'Turkic, Anatolian, Byzantine and Ottoman cultures', 'Black Sea', 'Atlantic Ocean', 'China', 'Bursa', 'Brasília', 'Ruy López de Villalobos ', 'EXPLOITATION', 'Japan Trench', 'Celebes Sea', 'Madagascar', 'Abyss', 'Alvin', 'Sea of Okhotsk', 'Malaysia ', 'Japan', "Alexander the Great's conquests", 'Brazil ', 'East Thrace', 'Universal Health Insurance', 'Western Hemisphere']
+
+gpt_entity_particular(): filtered entity: 
+ ['Atlantic Ocean']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Turkey' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf
+International Hydrographic Organization
+People
+Sultanate 
+Migrating
+Anatolia 
+Cities
+Country
+Majority 
+Population 
+Üsküdar
+Sultan Selim 
+Hagia Sophia
+Zeytinburnu and Basın Ekspress
+Gulf
+Cuba
+Black Sea
+Syrian
+Universal Health Insurance
+Çatalhöyük
+Kemal
+Istanbul
+Lake 
+Court
+Hydrothermal vents 
+Sacred 
+Hurricanes
+Largest 
+Oil
+Platform
+Mardi Gras 
+Pretoria
+World Heritage Sites 
+Republican 
+Syrian
+President 
+Healthcare
+Göbekli Tepe
+Cape
+World Cup 
+Vulnerable
+African 
+Frequent 
+Capital 
+East
+Culture 
+Exploration
+Alexander 
+Syrian
+Syrian
+
+gpt_entity_particular(): entity list: 
+ ['Hurricanes', 'Vulnerable', 'Syrian', 'Alexander ', 'Frequent ', 'Cuba', 'Majority ', 'Oil', 'Çatalhöyük', 'Mardi Gras ', 'Lake ', 'Göbekli Tepe', 'People', 'Gulf', 'Largest ', 'Culture ', 'President ', 'East', 'Sacred ', 'Exploration', 'Cities', 'Üsküdar', 'World Cup ', 'Anatolia ', 'Hagia Sophia', 'Sultanate ', 'Country', 'Capital ', 'Kemal', 'Court', 'Healthcare', 'Sultan Selim ', 'Istanbul', 'Hydrothermal vents ', 'International Hydrographic Organization', 'Universal Health Insurance', 'Cape', 'Pretoria', 'World Heritage Sites ', 'Republican ', 'Black Sea', 'Platform', 'African ', 'Migrating', 'Population ', 'Zeytinburnu and Basın Ekspress']
+
+gpt_entity_particular(): filtered entity: 
+ ['Hagia Sophia', 'Country', 'Istanbul', 'Black Sea']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ocean' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Isthmus
+Vasco Núñez de Balboa
+Brasília
+Philippines
+Brazil
+Vietnam
+Turkey
+population
+Muslim
+Gulf of Mexico
+International Hydrographic Organization
+South Africa
+Brutus oil rig
+Shell
+Seljuk Turks
+Anatolia
+Quezon City
+Caribbean Sea
+Abyssal plains
+Earth's surface
+late Triassic
+The South African National Defence Force
+Cape Town
+Florida Platform
+brazilwood
+ASEAN
+Ruy López de Villalobos
+Las Islas Filipinas
+Gulf of Alaska
+South African National Defence Force
+philippines
+Gulf Stream
+Göbekli Tepe
+Mariana Trench
+Black Sea
+Cuba
+İzmir
+Bursa
+Antalya
+Coral Sea
+basket seafaring
+Abyssal plain
+Sigsbee Deep
+Sea of Okhotsk
+Challenger Deep
+Christopher Columbus
+Gulf of Mexico
+offshore petroleum
+Africa
+Johannesburg
+Constitutional Court
+Istanbul
+Bartolomeu Dias
+Cabo das Tormentas
+São Paulo
+Rum
+Louann Salt
+anhydrite evaporites
+mountain range
+Sierra Madre Oriental
+Rum
+Laramide Orogeny
+Alexander
+Triassic
+biodiversity
+World Cup
+Gulf of Mexico basin
+Exploitation
+mineral resources
+Louann Salt
+Late Jurassic
+Abyssal plain
+underwater plain
+hominin fossils
+Gulf of Alaska
+Gulf of Mexico
+oil platforms
+mineral resources
+Alabama
+Arkansas
+Sierra Madre Oriental
+Laramide Orogeny
+Black Sea
+national state
+religion
+Mardi Gras shipwreck
+Anatolian peoples
+Hattians
+Samar
+Ruy López de Villalobos
+South America
+South African National Defence Force
+Ocean
+sustained pressure
+Göbekli Tepe
+mountain range
+Black Sea
+Mediterranean
+Cape of Good Hope
+INS Luthuli
+Western Indian Ocean
+Tropical Depression Four-C
+Gulf of Mexico area
+seismic rift
+Oil Basin
+Robert E. Lee
+Vasco Núñez de Balboa
+South America
+Argentina
+Spain
+Mediterranean Sea
+Cape Henry-Colonial Beach fault system
+Anadolu Efes
+Balcova
+Gulf of Mexico
+Atlantic Ocean
+Alexander Laurent Daubin
+Plains of South Africa
+Croatia
+Germany
+Mexico
+Nickel Ore
+Tasmania
+Borneo
+Indonesia
+Deepwater Horizon
+Gulf of Thailand
+Andaman Sea
+South China Sea
+Pacific Ocean
+Vietnam
+Monterey Bay
+Mississippi valley
+United States
+GONDWANA
+Anatolia
+Tethys Ocean
+Pacific Ocean
+Atlantic Ocean
+Gulf of Mexico
+Pacific Ocean
+Water Hemisphere
+Pacific Ocean
+Gulf of MexicoQString('Entity 1
+Vasco Núñez de Balboa
+Brasília
+Philippines
+Brazil
+Vietnam
+Turkey
+population
+Muslim
+Gulf of Mexico
+International Hydrographic Organization
+South Africa
+Brutus oil rig
+Shell
+Seljuk Turks
+Anatolia
+Quezon City
+Caribbean Sea
+Abyssal plains
+Earth's surface
+late Triassic
+The South African National Defence Force
+Cape Town
+Florida Platform
+brazilwood
+ASEAN
+Ruy López de Villalobos
+Las Islas Filipinas
+Gulf of Alaska
+South African National Defence Force
+philippines
+Gulf Stream
+Göbekli Tepe
+Mariana Trench
+Black Sea
+Cuba
+İzmir
+Bursa
+Antalya
+Coral Sea
+basket seafaring
+Abyssal plain
+Sigsbee Deep
+Sea of Okhotsk
+Challenger Deep
+Christopher Columbus
+Gulf of Mexico
+offshore petroleum
+Africa
+Johannesburg
+Constitutional Court
+Istanbul
+Bartolomeu Dias
+Cabo das Tormentas
+São Paulo
+Rum
+Louann Salt
+anhydrite evaporites
+mountain range
+Sierra Madre Oriental
+Rum
+Laramide Orogeny
+Alexander
+Triassic
+biodiversity
+World Cup
+Gulf of Mexico basin
+Exploitation
+mineral resources
+Louann Salt
+Late Jurassic
+Abyssal plain
+underwater plain
+hominin fossils
+Gulf of Alaska
+Gulf of Mexico
+oil platforms
+mineral resources
+Alabama
+Arkansas
+Sierra Madre Oriental
+Laramide Orogeny
+Black Sea
+national state
+religion
+Mardi Gras shipwreck
+Anatolian peoples
+Hattians
+Samar
+Ruy López de Villalobos
+South America
+South African National Defence Force
+Ocean
+sustained pressure
+Göbekli Tepe
+mountain range
+Black Sea
+Mediterranean
+Cape of Good Hope
+INS Luthuli
+Western Indian Ocean
+Tropical Depression Four-C
+Gulf of Mexico area
+seismic rift
+Oil Basin
+Robert E. Lee
+Vasco Núñez de Balboa
+South America
+Argentina
+Spain
+Mediterranean Sea
+Cape Henry-Colonial Beach fault system
+Anadolu Efes
+Balcova
+Gulf of Mexico
+Atlantic Ocean
+Alexander Laurent Daubin
+Plains of South Africa
+Croatia
+Germany
+Mexico
+Nickel Ore
+Tasmania
+Borneo
+Indonesia
+Deepwater Horizon
+Gulf of Thailand
+Andaman Sea
+South China Sea
+Pacific Ocean
+Vietnam
+Monterey Bay
+Mississippi valley
+United States
+GONDWANA
+Anatolia
+Tethys Ocean
+Pacific Ocean
+Atlantic Ocean
+Gulf of Mexico
+Pacific Ocean
+Water Hemisphere
+Pacific Ocean
+Gulf of MexicoQString('Entity 1
+Vasco Núñez de Balboa
+Brasília
+Philippines
+Brazil
+Vietnam
+Turkey
+population
+Muslim
+Gulf of Mexico
+International Hydrographic Organization
+South Africa
+Brutus oil rig
+Shell
+Seljuk Turks
+Anatolia
+Quezon City
+Caribbean Sea
+Abyssal plains
+Earth's surface
+late Triassic
+The South African National Defence Force
+Cape Town
+Florida Platform
+brazilwood
+ASEAN
+Ruy López de Villalobos
+Las Islas Filipinas
+Gulf of Alaska
+South African National Defence Force
+philippines
+Gulf Stream
+Göbekli Tepe
+Mariana Trench
+Black Sea
+Cuba
+İzmir
+Bursa
+Antalya
+Coral Sea
+basket seafaring
+Abyssal plain
+Sigsbee Deep
+Sea of Okhotsk
+Challenger Deep
+Christopher Columbus
+Gulf of Mexico
+offshore petroleum
+Africa
+Johannesburg
+Constitutional Court
+Istanbul
+Bartolomeu Dias
+Cabo das Tormentas
+São Paulo
+Rum
+Louann Salt
+anhydrite evaporites
+mountain range
+Sierra Madre Oriental
+Rum
+Laramide Orogeny
+Alexander
+Triassic
+biodiversity
+World Cup
+Gulf of Mexico basin
+Exploitation
+mineral resources
+Louann Salt
+Late Jurassic
+Abyssal plain
+underwater plain
+hominin fossils
+Gulf of Alaska
+Gulf of Mexico
+oil platforms
+mineral resources
+Alabama
+Arkansas
+Sierra Madre Oriental
+Laramide Orogeny
+Black Sea
+national state
+religion
+Mardi Gras shipwreck
+Anatolian peoples
+Hattians
+Samar
+Ruy López de Villalobos
+South America
+South African National Defence Force
+Ocean
+sustained pressure
+Göbekli Tepe
+mountain range
+Black Sea
+Mediterranean
+Cape of Good Hope
+INS Luthuli
+Western Indian Ocean
+Tropical Depression Four-C
+Gulf of Mexico area
+seismic rift
+Oil Basin
+Robert E. Lee
+Vasco Núñez de Balboa
+South America
+Argentina
+Spain
+Mediterranean Sea
+Cape Henry-Colonial Beach fault system
+Anadolu Efes
+Balcova
+Gulf of Mexico
+Atlantic Ocean
+Alexander Laurent Daubin
+Plains of South Africa
+Croatia
+Germany
+Mexico
+Nickel Ore
+Tasmania
+Borneo
+Indonesia
+Deepwater Horizon
+Gulf of Thailand
+Andaman Sea
+South China Sea
+Pacific Ocean
+Vietnam
+Monterey Bay
+Mississippi valley
+United States
+GONDWANA
+Anatolia
+Tethys Ocean
+Pacific Ocean
+Atlantic Ocean
+Gulf of Mexico
+Pacific Ocean
+Water Hemisphere
+Pacific Ocean
+Gulf of Mexico
+
+gpt_entity_particular(): entity list: 
+ ['South America', 'Late Jurassic', 'Arkansas', 'Monterey Bay', 'population', 'Mediterranean Sea', 'Louann Salt', 'Mediterranean', 'hominin fossils', 'Robert E. Lee', 'Vietnam', 'Antalya', 'Nickel Ore', 'South African National Defence Force', 'Cape Henry-Colonial Beach fault system', 'Turkey', 'Deepwater Horizon', 'South Africa', 'Balcova', 'Pacific Ocean', 'Gulf of Mexico basin', 'Coral Sea', 'Water Hemisphere', 'brazilwood', 'Ruy López de Villalobos', 'Laramide Orogeny', 'International Hydrographic Organization', 'Anatolia', 'offshore petroleum', 'biodiversity', 'Indonesia', 'Philippines', 'Cape of Good Hope', 'Spain', 'Africa', 'GONDWANA', 'Seljuk Turks', 'Cuba', 'Alexander', 'Caribbean Sea', 'Shell', 'Göbekli Tepe', 'Western Indian Ocean', 'national state', 'Argentina', 'Plains of South Africa', 'Isthmus', 'Abyssal plains', 'Brutus oil rig', 'sustained pressure', 'Sierra Madre Oriental', 'mineral resources', 'Ocean', 'Samar', 'Cabo das Tormentas', 'Tethys Ocean', 'Gulf of Alaska', 'Constitutional Court', 'ASEAN', 'Gulf of Thailand', 'Gulf Stream', 'basket seafaring', 'Andaman Sea', 'Christopher Columbus', 'Muslim', 'The South African National Defence Force', 'Tropical Depression Four-C', "Earth's surface", 'Sigsbee Deep', 'Challenger Deep', 'United States', 'Quezon City', 'São Paulo', 'Triassic', 'seismic rift', 'South China Sea', 'Cape Town', 'Anatolian peoples', 'İzmir', 'Florida Platform', 'Brazil', 'Vasco Núñez de Balboa', 'Mexico', 'Mardi Gras shipwreck', 'Borneo', 'philippines', 'Las Islas Filipinas', 'Gulf of Mexico', 'Exploitation', 'Istanbul', 'World Cup', 'Bartolomeu Dias', 'mountain range', 'Black Sea', 'Atlantic Ocean', 'Abyssal plain', 'Bursa', 'Johannesburg', 'Brasília', 'Hattians', 'Alabama', 'oil platforms', 'underwater plain', 'Mariana Trench', 'INS Luthuli', "Gulf of MexicoQString('Entity 1", 'Germany', 'Sea of Okhotsk', 'Mississippi valley', 'Tasmania', 'late Triassic', 'religion', 'Croatia', 'Rum', 'anhydrite evaporites', 'Alexander Laurent Daubin', 'Anadolu Efes', 'Oil Basin', 'Gulf of Mexico area']
+
+gpt_entity_particular(): filtered entity: 
+ ['Mediterranean Sea', 'Pacific Ocean', 'Shell', 'Atlantic Ocean', 'Abyssal plain']
+After GPT, entity:  {'Ferdinand', 'Coral', 'Celebes', 'de', 'Hemisphere"', 'plain', 'Lake', 'Tamaulipas', 'Tabasco', 'meters', 'Trade', 'Americas', 'Mediterranean Sea', 'Mariana', 'Alaska', 'Núñez', 'Mount', 'Jan', 'Deep', 'South', 'Organization', 'Florida', 'Dutch', 'Hope', 'Vietnam', 'Antalya', 'Brutus', 'Tabon', 'Portuguese', 'Turkey', 'Atatürk', 'Raymond', 'Pacific Ocean', 'Veracruz', 'Dart', 'Creation', 'Yucatán', 'Anatolia', 'Manila', 'Cape', 'Pretoria', 'Philippines', 'Islas', 'Namibia', 'Europe', 'Robert', 'Philip', 'International', 'Africa', 'Atlantic', 'Caves', 'Louisiana', 'Peninsula', 'Magellan', 'Quezon', 'Cuba', 'Alexander', 'Ascension', 'Shell', 'Sierra', 'Göbekli', 'Las', 'Palau', 'Pacific', 'Black', 'Embayment', 'Gulf', 'East', 'City', '"Cape', 'World', 'Cortés', 'Isthmus', 'Hydrographic', 'Filipinas', 'Hagia Sophia', 'Roo', 'Southern', 'Ocean', 'Date', 'Samar', 'Arctic', 'ASEAN', 'Gulf Stream', 'Villalobos', 'Vasco', 'Castile', 'II', 'Trench', 'Australia', 'Sea', 'Gauteng', 'Quintana', 'Abyssal', 'Ecuador', 'United', 'Caribbean', 'States', 'Ruy', 'Oriental', 'Triassic', 'Cape Town', 'López', 'Marmara', 'Van', 'Malaysia', 'Hemisphere', '27,000', 'İzmir', 'Great', 'Texas', 'Brazil', 'Riebeeck', "Africa's", 'abyssal', 'Horizon', 'Thrace', 'Oklahoma', '7700', 'Mexico', 'Country', 'Company', 'Panama', 'Hernán', 'Madre', 'Christopher', 'Columbus', 'Palawan', 'Western', 'Istanbul', 'Asia', 'Tepe', '5,137', 'Ararat', 'Black Sea', 'Atlantic Ocean', 'China', 'Abyssal plain', 'North', 'Bursa', 'Leyte', 'Campeche', 'Balboa', 'Good', 'Challenger', 'Johannesburg', 'Brasília', 'Line', 'van', 'metres', 'Deepwater', 'Lee', 'Mustafa', 'Alabama', 'Cusk', 'Island', 'Okhotsk', 'Chile', 'America', 'India', 'Alvin', 'King', '"Water', 'Louann', 'Tasman', 'E.', 'Pangaea', 'Japan', 'Mississippi', 'Southeast', 'Taiwan', 'Platform', 'Tanzania', 'Jurassic'}
+Total time:  504.99608874320984
+Entity conversion done on 6_6 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_6_6_entity_conversion_hash.json. Check the entity.
+ Which 090 to the east of an 00F 01B known for impacting 049 carbon cycling and containing the Sigsbee 078 is centrally located in the 095 bounded by continents?
+
+
+
+Done. Check final_query/id_6_6_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_6_6_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_6_6_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_6_6_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_6_6_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_6_6_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_6_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

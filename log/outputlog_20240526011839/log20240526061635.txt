@@ -1,0 +1,1129 @@
+Got argument: Genghis Khan, 0, 0_7, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Genghis Khan, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Genghis_Khan_info.json file
+first_hop:  {'triplet': '("Jochi", "paternity questioned by", "Genghis Khan")', 'start word': 'Genghis Khan', 'end word': 'Jochi', 'source': {'name': 'Genghis Khan', 'line': 26}, 'cpnet': {'start word': 'genghis_khan', 'end word': 'jochi'}}
+next_word: Jochi
+generate_question(0_7, ['("Jochi", "paternity questioned by", "Genghis Khan")'], ['Jochi'], [('Genghis Khan', 'Jochi')], Jochi, [{'name': 'Genghis Khan', 'line': 26}]) called
+GPT output is:  Q: When Genghis Khan contested the origin of one of his offspring, which individual's paternal connection was questioned?
+A: Jochi
+final_choice(Jochi, options = 5) started
+[]
+entity_type(Jochi) called
+Jochi is People
+check_matchscore(Jochi, 1227 deaths):  0.0
+choose_by_wiki_recur(1227 deaths)
+   Pages in 1227 deaths: ['Abdallah al-Adil', 'Ken Arok', 'Guala Bicchieri', 'Conrad of Ottobeuren', 'Conrad of Urach', 'Daniel and companions', 'Guillaume II Amanieu de Genève', 'Henry Borwin I, Lord of Mecklenburg', 'Pope Honorius III', 'Hugh II, Count of Rethel', 'Abd al-Salam ibn Mashish', 'Jan Gozdawita', 'Jochi', 'Genghis Khan', 'Leszek the White', 'Louis IV, Landgrave of Thuringia', 'Minamoto no Michitomo', "Al-Mu'azzam Isa", 'Luke Netterville (priest)', 'Oliver of Paderborn', 'Philip of Ibelin (1180–1227)', 'Qiu Chuji', 'Renaud I, Count of Dammartin', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Shimazu Tadahisa', 'Suleyman Shah', 'Zeger III of Ghent']
+      Philip of Ibelin (1180–1227) in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan']
+Philip of Ibelin (1180–1227) is People
+      Guillaume II Amanieu de Genève in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)']
+      Conrad of Urach in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III']
+      Genghis Khan in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn']
+Genghis Khan is People
+      Luke Netterville (priest) in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn']
+      Pope Honorius III in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil']
+Pope Honorius III is People
+      Oliver of Paderborn in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel']
+      Abdallah al-Adil in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo']
+Abdallah al-Adil is People
+      Hugh II, Count of Rethel in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli']
+      Marco I Sanudo in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg']
+      Shalva Akhaltsikheli in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia']
+Shalva Akhaltsikheli is People
+      Henry Borwin I, Lord of Mecklenburg in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi']
+      Louis IV, Landgrave of Thuringia in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin']
+Louis IV, Landgrave of Thuringia is People
+      Jochi in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish']
+Jochi is People
+      Renaud I, Count of Dammartin in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji']
+Renaud I, Count of Dammartin is People
+      Abd al-Salam ibn Mashish in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren']
+Abd al-Salam ibn Mashish is People
+      Qiu Chuji in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions']
+      Conrad of Ottobeuren in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White']
+Conrad of Ottobeuren is People
+      Daniel and companions in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah']
+      Leszek the White in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent']
+Leszek the White is People
+      Suleyman Shah in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent', 'Shimazu Tadahisa']
+Suleyman Shah is People
+      Zeger III of Ghent in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent', 'Shimazu Tadahisa', 'Guala Bicchieri']
+Zeger III of Ghent is People
+      Shimazu Tadahisa in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent', 'Shimazu Tadahisa', 'Guala Bicchieri', 'Jan Gozdawita']
+      Guala Bicchieri in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent', 'Shimazu Tadahisa', 'Guala Bicchieri', 'Jan Gozdawita', 'Ken Arok']
+Guala Bicchieri is People
+      Jan Gozdawita in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent', 'Shimazu Tadahisa', 'Guala Bicchieri', 'Jan Gozdawita', 'Ken Arok', 'Minamoto no Michitomo']
+      Ken Arok in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent', 'Shimazu Tadahisa', 'Guala Bicchieri', 'Jan Gozdawita', 'Ken Arok', 'Minamoto no Michitomo', "Al-Mu'azzam Isa"]
+Ken Arok is People
+      Minamoto no Michitomo in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent', 'Shimazu Tadahisa', 'Guala Bicchieri', 'Jan Gozdawita', 'Ken Arok', 'Minamoto no Michitomo', "Al-Mu'azzam Isa"]
+      Al-Mu'azzam Isa in ['Philip of Ibelin (1180–1227)', 'Guillaume II Amanieu de Genève', 'Conrad of Urach', 'Genghis Khan', 'Luke Netterville (priest)', 'Pope Honorius III', 'Oliver of Paderborn', 'Abdallah al-Adil', 'Hugh II, Count of Rethel', 'Marco I Sanudo', 'Shalva Akhaltsikheli', 'Henry Borwin I, Lord of Mecklenburg', 'Louis IV, Landgrave of Thuringia', 'Jochi', 'Renaud I, Count of Dammartin', 'Abd al-Salam ibn Mashish', 'Qiu Chuji', 'Conrad of Ottobeuren', 'Daniel and companions', 'Leszek the White', 'Suleyman Shah', 'Zeger III of Ghent', 'Shimazu Tadahisa', 'Guala Bicchieri', 'Jan Gozdawita', 'Ken Arok', 'Minamoto no Michitomo', "Al-Mu'azzam Isa"]
+Al-Mu'azzam Isa is People
+   Upper category of 1227 deaths: ['1227 endings', '1220s deaths', 'Deaths by year']
+choose_by_wiki_recur(1227 endings)
+check_matchscore(Jochi, 13th-century Mongol khans):  0.0
+choose_by_wiki_recur(13th-century Mongol khans)
+   Pages in 13th-century Mongol khans: ['Alaqush', 'Ariq Böke', 'Buyruq khan', 'Chaka of Bulgaria', 'Godan Khan', 'Güyük Khan', 'Jamukha', 'Jochi', 'Kaidu', 'Genghis Khan', 'Orda Khan', 'Köchü', 'Kublai Khan', 'Kutlugh Turkan', 'Möngke Khan', 'Mutukan', 'Nambui', 'Nogai Khan', 'Ögedei Khan', 'Qun Quran', 'Qutuqa Beki', 'Tayang Khan', 'Temür Khan', 'Tolui', 'Töregene Khatun']
+      Nogai Khan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun']
+      Temür Khan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran']
+Temür Khan is People
+      Kutlugh Turkan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui']
+Kutlugh Turkan is People
+      Töregene Khatun in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke']
+      Qun Quran in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria']
+      Tolui in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush']
+Tolui is People
+      Ariq Böke in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush']
+Ariq Böke is People
+      Chaka of Bulgaria in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan']
+Chaka of Bulgaria is People
+      Alaqush in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan']
+      Tayang Khan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan', 'Genghis Khan']
+Tayang Khan is People
+      Orda Khan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan', 'Genghis Khan', 'Buyruq khan']
+Orda Khan is People
+      Genghis Khan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan', 'Genghis Khan', 'Buyruq khan', 'Jochi']
+Genghis Khan is People
+      Buyruq khan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan', 'Genghis Khan', 'Buyruq khan', 'Jochi']
+      Jochi in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan', 'Genghis Khan', 'Buyruq khan', 'Jochi', 'Nambui']
+Jochi is People
+      Nambui in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan', 'Genghis Khan', 'Buyruq khan', 'Jochi', 'Nambui', 'Möngke Khan']
+      Möngke Khan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan', 'Genghis Khan', 'Buyruq khan', 'Jochi', 'Nambui', 'Möngke Khan', 'Ögedei Khan']
+Möngke Khan is People
+      Ögedei Khan in ['Nogai Khan', 'Temür Khan', 'Kutlugh Turkan', 'Töregene Khatun', 'Qun Quran', 'Tolui', 'Ariq Böke', 'Chaka of Bulgaria', 'Alaqush', 'Tayang Khan', 'Orda Khan', 'Genghis Khan', 'Buyruq khan', 'Jochi', 'Nambui', 'Möngke Khan', 'Ögedei Khan']
+Ögedei Khan is People
+['Genghis Khan', 'Tolui', 'Genghis Khan', 'Möngke Khan', 'Ögedei Khan']
+Ended after 2.5 hierarchy
+(2.5, ['Tolui', 'Ögedei Khan', 'Möngke Khan', 'Genghis Khan'])
+
+extract_info(Tolui) Start.
+utils/preprocess.py extract_info(): Checking good links on Tolui
+Genghis Khan is People
+1 / 30 )  Genghis Khan Genghis Khan genghis_khan
+Ögedei Khan is People
+2 / 30 )  Ögedei Ögedei Khan ögedei_khan
+Möngke Khan is People
+3 / 30 )  Möngke Möngke Khan möngke
+Kublai Khan is People
+4 / 30 )  Kublai Kublai Khan kublai_khan
+Hulegu Khan is People
+5 / 30 )  Hulagu Hulegu Khan hulagu
+Jochi is People
+6 / 30 )  Jochi Jochi jochi
+Greater Khorasan is Geography
+7 / 30 )  Khorasan Greater Khorasan khurasan
+Merv is Geography
+8 / 30 )  Merv Merv merv
+Nishapur is Geography
+9 / 30 )  Nishapur Nishapur nishapur
+Herat is Geography
+10 / 30 )  Herat Herat herat
+Juyong Pass is Geography
+11 / 30 )  Juyong Pass Juyong Pass juyongguan
+Samarkand is Geography
+12 / 30 )  Samarkand Samarkand samarkand
+Bukhara is Geography
+13 / 30 )  Bukhara Bukhara bukhara
+Termez is Geography
+14 / 30 )  Termez Termez termez
+Tajikistan is Geography
+15 / 30 )  Tajikistan Tajikistan tajikistan
+Balkh is Geography
+16 / 30 )  Balkh Balkh balkh
+Nisa, Turkmenistan is Geography
+17 / 30 )  Nasa Nisa, Turkmenistan mithradatkirt
+Irtysh is Geography
+18 / 30 )  Irtysh river Irtysh irtysh
+Siberia is Geography
+19 / 30 )  Siberia Siberia siberia
+Dzungaria is Geography
+20 / 30 )  Dzungaria Dzungaria dzungaria
+Altai Mountains is Geography
+21 / 30 )  Altai Mountains Altai Mountains altai_mountains
+Yelü Chucai is People
+22 / 30 )  Yelu Chucai Yelü Chucai yelü_chucai
+Shaanxi is Geography
+23 / 30 )  Shaanxi Shaanxi shaanxi
+Inner Mongolia is Geography
+24 / 30 )  Inner Mongolia Inner Mongolia inner_mongolia
+Kaifeng is Geography
+25 / 30 )  Kaifeng Kaifeng kaifeng
+Yellow River is Geography
+26 / 30 )  Yellow River Yellow River yellow_river
+Henan is Geography
+27 / 30 )  Henan Henan henan
+Yuan dynasty is Geography
+28 / 30 )  Yuan dynasty Yuan dynasty yuan_dynasty
+extract_triplet(Tolui)
+Got GPT's response. String length : 1670
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Genghis Khan', 'Genghis Khan', 'genghis_khan']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Ögedei', 'Ögedei Khan', 'ögedei_khan']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Möngke', 'Möngke Khan', 'möngke']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Kublai', 'Kublai Khan', 'kublai_khan']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Hulagu', 'Hulegu Khan', 'hulagu']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Jochi', 'Jochi', 'jochi']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  []
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  []
+subject_words:  [['Genghis Khan', 'Genghis Khan', 'genghis_khan']]
+object_words:  [['Khorasan', 'Greater Khorasan', 'khurasan']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Merv', 'Merv', 'merv']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Nishapur', 'Nishapur', 'nishapur']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Herat', 'Herat', 'herat']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Juyong Pass', 'Juyong Pass', 'juyongguan']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Samarkand', 'Samarkand', 'samarkand']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Bukhara', 'Bukhara', 'bukhara']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Termez', 'Termez', 'termez']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Irtysh river', 'Irtysh', 'irtysh']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Siberia', 'Siberia', 'siberia']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Dzungaria', 'Dzungaria', 'dzungaria']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Altai Mountains', 'Altai Mountains', 'altai_mountains']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Yelu Chucai', 'Yelü Chucai', 'yelü_chucai']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  []
+['', "Ögedei's third wife Angqui raised Tolui's son", 'Möngke', '']
+['', 'Sorghaghtani', 'succeeded Tolui after his death, amassing power and supporters', '']
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  []
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  []
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  [['Kublai', 'Kublai Khan', 'kublai_khan']]
+subject_words:  [(None, 'Tolui', 'toluid')]
+object_words:  []
+extract_info(Möngke Khan) Start.
+utils/preprocess.py extract_info(): Checking good links on Möngke Khan
+Tolui is People
+1 / 30 )  Toluid line Tolui toluid
+Iraq is Geography
+2 / 30 )  Iraq Iraq iraq
+Syria is Geography
+3 / 30 )  Syria Syria syria
+Genghis Khan is People
+4 / 30 )  Genghis Khan Genghis Khan genghis_khan
+Ögedei Khan is People
+5 / 30 )  Ögedei Khan Ögedei Khan ögedei_khan
+Kublai Khan is People
+6 / 30 )  Kublai Kublai Khan kublai_khan
+Rabbit is Animal
+7 / 30 )  rabbit Rabbit rabbit
+Antelope is Animal
+8 / 30 )  antelope Antelope antelope
+Kievan Rus' is Geography
+9 / 30 )  Kievan Rus' Kievan Rus' kievan_russia
+Volga is Geography
+10 / 30 )  Volga delta Volga volga
+Crimea is Geography
+11 / 30 )  Crimea Crimea crimea
+Caucasus is Geography
+12 / 30 )  Caucasus Caucasus caucasus
+Mongolia is Geography
+13 / 30 )  Mongolia Mongolia mongolia
+Kyiv is Geography
+14 / 30 )  Kiev Kyiv kyiv
+Afghanistan is Geography
+15 / 30 )  Afghanistan Afghanistan afghanistan
+Hulegu Khan is People
+16 / 30 )  Hulagu Hulegu Khan hulagu
+Menggeser  is People
+17 / 30 )  Menggeser Menggeser  möngke
+Iran is Geography
+18 / 30 )  Iran Iran iran
+Bolghar is Geography
+19 / 30 )  Bolghar Bolghar bolghar
+Armenia is Geography
+20 / 30 )  Armenia Armenia armenia
+Russia is Geography
+21 / 30 )  Russia Russia russia
+Veliky Novgorod is Geography
+22 / 30 )  Novgorod Veliky Novgorod veliky_novgorod
+Kutaisi is Geography
+23 / 30 )  Kutaisi Kutaisi kutaisi
+Imereti is Geography
+24 / 30 )  Imereti Imereti imereti
+Tbilisi is Geography
+25 / 30 )  Tbilisi Tbilisi tbilisi
+Ankara is Geography
+26 / 30 )  Ankara Ankara ankara
+Kashmir is Geography
+27 / 30 )  Kashmiris Kashmir kashmir
+Srinagar is Geography
+28 / 30 )  Srinagar Srinagar srinagar
+Najaf is Geography
+29 / 30 )  Najaf Najaf najaf
+Jesus is People
+30 / 30 )  Jesus Jesus jesus
+extract_triplet(Möngke Khan)
+Got GPT's response. String length : 2301
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Toluid line', 'Tolui', 'toluid']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Iraq', 'Iraq', 'iraq'], ['Syria', 'Syria', 'syria']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Toluid line', 'Tolui', 'toluid']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Kublai', 'Kublai Khan', 'kublai_khan']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Volga delta', 'Volga', 'volga']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Kiev', 'Kyiv', 'kyiv']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Mongolia', 'Mongolia', 'mongolia']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Iran', 'Iran', 'iran']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Syria', 'Syria', 'syria']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Kashmiris', 'Kashmir', 'kashmir']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Hulagu', 'Hulegu Khan', 'hulagu']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Toluid line', 'Tolui', 'toluid']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  [['Kublai', 'Kublai Khan', 'kublai_khan']]
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+subject_words:  [(None, 'Möngke Khan', 'möngke')]
+object_words:  []
+extract_info(Genghis Khan) Start.
+utils/preprocess.py extract_info(): Checking good links on Genghis Khan
+Greater Khorasan is Geography
+1 / 30 )  Khorasan Greater Khorasan khurasan
+Ögedei Khan is People
+2 / 30 )  Ögedei Ögedei Khan ögedei_khan
+Russia is Geography
+3 / 30 )  Russia Russia russia
+Mongolia is Geography
+4 / 30 )  Mongolia Mongolia mongolia
+Kublai Khan is People
+5 / 30 )  Kublai Khan Kublai Khan kublai_khan
+Yuan dynasty is Geography
+6 / 30 )  Yuan dynasty Yuan dynasty yuan_dynasty
+Arthur Waley is People
+7 / 30 )  Arthur Waley Arthur Waley arthur_waley
+Pig  is Animal
+8 / 30 )  Year of the Pig Pig  swine
+Sable is Animal
+9 / 30 )  sable Sable sable
+Qojin  is People
+10 / 30 )  Qojin Qojin  gengis_khan
+Jochi is People
+11 / 30 )  Jochi Jochi jochi
+Battle of Yedi Qunan  is People
+12 / 30 )  at Yedi Qunan Battle of Yedi Qunan  gengis_khan
+Tibet is Geography
+13 / 30 )  Tibet Tibet tibet
+Altai Mountains is Geography
+14 / 30 )  Altai Mountains Altai Mountains altai_mountains
+Timur is People
+15 / 30 )  Timur Timur timur
+Hoi-yin Irgen  is People
+16 / 30 )  Hoi-yin Irgen Hoi-yin Irgen  gengis_khan
+Irtysh is Geography
+17 / 30 )  River Irtysh Irtysh irtysh
+Gobi Desert is Geography
+18 / 30 )  Gobi desert Gobi Desert gobi_desert
+Yellow River is Geography
+19 / 30 )  Yellow River Yellow River yellow_river
+Mountain pass is Geography
+20 / 30 )  mountain passes Mountain pass mountain_pass
+North China Plain is Geography
+21 / 30 )  North China Plain North China Plain north_china_plain
+Juyong Pass is Geography
+22 / 30 )  Juyong Pass Juyong Pass juyongguan
+Kaifeng is Geography
+23 / 30 )  Kaifeng Kaifeng kaifeng
+Liaodong Peninsula is Geography
+24 / 30 )  Liaodong Liaodong Peninsula liaodong_peninsula
+Kashgar is Geography
+25 / 30 )  Kashgar Kashgar kashgar
+Pamir Mountains is Geography
+26 / 30 )  Pamir Mountains Pamir Mountains pamir_mountains
+Iran is Geography
+27 / 30 )  Persia Iran iran
+Afghanistan is Geography
+28 / 30 )  Afghanistan Afghanistan afghanistan
+Syr Darya is Geography
+29 / 30 )  Syr Darya Syr Darya syr_darya
+Kyzylkum Desert is Geography
+30 / 30 )  Kyzylkum Desert Kyzylkum Desert kizil_kum
+extract_triplet(Genghis Khan)
+Got GPT's response. String length : 4367
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  [['Mongolia', 'Mongolia', 'mongolia']]
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  [['Mongolia', 'Mongolia', 'mongolia']]
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [['Kublai Khan', 'Kublai Khan', 'kublai_khan']]
+object_words:  [['Yuan dynasty', 'Yuan dynasty', 'yuan_dynasty']]
+subject_words:  [['Kublai Khan', 'Kublai Khan', 'kublai_khan']]
+object_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+['', 'Arthur Waley', 'considered', 'The Secret History of the Mongols" as having no historiographical value)']
+subject_words:  [['Jochi', 'Jochi', 'jochi']]
+object_words:  []
+['', "Genghis Khan's childhood and rise to power derived from", 'The Secret History of the Mongols and the Altan Debter', '']
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [['Year of the Pig', 'Pig ', 'swine']]
+object_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Qojin', 'Qojin ', 'gengis_khan']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Jochi', 'Jochi', 'jochi']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [['Ögedei', 'Ögedei Khan', 'ögedei_khan']]
+object_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  []
+subject_words:  [(None, 'Genghis Khan', 'genghis_khan')]
+object_words:  [['Yuan dynasty', 'Yuan dynasty', 'yuan_dynasty']]
+extract_info(Ögedei Khan) Start.
+utils/preprocess.py extract_info(): Checking good links on Ögedei Khan
+Genghis Khan is People
+1 / 30 )  Genghis Khan Genghis Khan genghis_khan
+Jochi is People
+2 / 30 )  Jochi Jochi jochi
+Tolui is People
+3 / 30 )  Tolui Tolui toluid
+Kingdom of Hungary  is Geography
+4 / 30 )  Hungary Kingdom of Hungary  kingdom_of_hungary
+Yelü Chucai is People
+5 / 30 )  Yelü Chucai Yelü Chucai yelü_chucai
+Hebei is Geography
+6 / 30 )  Hebei Hebei hebei
+Shanxi is Geography
+7 / 30 )  Shanxi Shanxi shanxi
+Ghazni is Geography
+8 / 30 )  Ghazni Ghazni ghazni
+Iran is Geography
+9 / 30 )  Persia Iran iran
+Damghan is Geography
+10 / 30 )  Dameghan Damghan damghan
+Isfahan is Geography
+11 / 30 )  Isfahan Isfahan isfahan
+Bukhara is Geography
+12 / 30 )  Bukhara Bukhara bukhara
+Greater Khorasan is Geography
+13 / 30 )  Khorasan Greater Khorasan khurasan
+Amu Darya is Geography
+14 / 30 )  Amu Darya River Amu Darya amu_darya
+Afghanistan is Geography
+15 / 30 )  Afghanistan Afghanistan afghanistan
+Caspian Sea is Geography
+16 / 30 )  Caspian Sea Caspian Sea caspian_sea
+Alborz is Geography
+17 / 30 )  Alborz Alborz alborz
+Ray, Iran is Geography
+18 / 30 )  Rey Ray, Iran rages
+Qom is Geography
+19 / 30 )  Qum Qom qom
+Hamadan is Geography
+20 / 30 )  Hamadan Hamadan hamadan
+Fars province is Geography
+21 / 30 )  Fars Fars province farsistan
+Kabul is Geography
+22 / 30 )  Kabul Kabul kabul
+Henan is Geography
+23 / 30 )  Henan Henan henan
+Kaifeng is Geography
+24 / 30 )  Kaifeng Kaifeng kaifeng
+Luoyang is Geography
+25 / 30 )  Luoyang Luoyang luoyang
+Chang'an is Geography
+26 / 30 )  Chang'an Chang'an changan
+Manchuria is Geography
+27 / 30 )  Manchuria Manchuria manchuria
+Caucasus is Geography
+28 / 30 )  Caucasus Caucasus caucasus
+Ganja, Azerbaijan is Geography
+29 / 30 )  Ganjak Ganja, Azerbaijan ganca
+Erbil is Geography
+30 / 30 )  Irbil Erbil erbil
+extract_triplet(Ögedei Khan)
+Got GPT's response. String length : 2608
+subject_words:  [(None, 'Ögedei Khan', 'ögedei_khan')]
+object_words:  [['Genghis Khan', 'Genghis Khan', 'genghis_khan']]
+subject_words:  []
+object_words:  [['Genghis Khan', 'Genghis Khan', 'genghis_khan']]
+subject_words:  []
+object_words:  [['Jochi', 'Jochi', 'jochi']]
+subject_words:  []
+object_words:  [['Tolui', 'Tolui', 'toluid']]
+subject_words:  [(None, 'Ögedei Khan', 'ögedei_khan')]
+object_words:  [['Hungary', 'Kingdom of Hungary ', 'kingdom_of_hungary']]
+subject_words:  []
+object_words:  [['Yelü Chucai', 'Yelü Chucai', 'yelü_chucai']]
+subject_words:  []
+object_words:  [['Hebei', 'Hebei', 'hebei']]
+subject_words:  []
+object_words:  [['Shanxi', 'Shanxi', 'shanxi']]
+subject_words:  []
+object_words:  [['Ghazni', 'Ghazni', 'ghazni']]
+subject_words:  []
+object_words:  [['Persia', 'Iran', 'iran']]
+subject_words:  []
+object_words:  [['Dameghan', 'Damghan', 'damghan']]
+subject_words:  []
+object_words:  [['Isfahan', 'Isfahan', 'isfahan']]
+subject_words:  []
+object_words:  [['Bukhara', 'Bukhara', 'bukhara']]
+subject_words:  []
+object_words:  [['Khorasan', 'Greater Khorasan', 'khurasan']]
+subject_words:  []
+object_words:  [['Amu Darya River', 'Amu Darya', 'amu_darya']]
+subject_words:  []
+object_words:  [['Afghanistan', 'Afghanistan', 'afghanistan']]
+subject_words:  []
+object_words:  [['Caspian Sea', 'Caspian Sea', 'caspian_sea']]
+subject_words:  []
+object_words:  [['Alborz', 'Alborz', 'alborz']]
+subject_words:  []
+object_words:  [['Rey', 'Ray, Iran', 'rages']]
+subject_words:  []
+object_words:  [['Qum', 'Qom', 'qom']]
+subject_words:  []
+object_words:  [['Hamadan', 'Hamadan', 'hamadan']]
+subject_words:  []
+object_words:  [['Fars', 'Fars province', 'farsistan']]
+subject_words:  []
+object_words:  [['Kabul', 'Kabul', 'kabul']]
+subject_words:  []
+object_words:  [['Henan', 'Henan', 'henan']]
+subject_words:  []
+object_words:  [['Kaifeng', 'Kaifeng', 'kaifeng']]
+subject_words:  []
+object_words:  [['Luoyang', 'Luoyang', 'luoyang']]
+subject_words:  []
+object_words:  [["Chang'an", "Chang'an", 'changan']]
+subject_words:  [(None, 'Ögedei Khan', 'ögedei_khan')]
+object_words:  [['Manchuria', 'Manchuria', 'manchuria']]
+subject_words:  []
+object_words:  [['Caucasus', 'Caucasus', 'caucasus']]
+subject_words:  []
+object_words:  [['Ganjak', 'Ganja, Azerbaijan', 'ganca']]
+subject_words:  []
+object_words:  [['Irbil', 'Erbil', 'erbil']]
+['The triplets above follow the pattern that the subject is either Ögedei Khan or something closely associated with him (e.g., "Ögedei\'s troops', ', the predicate describes an action or relation, and the object includes one of the important keywords provided. Each triplet corresponds to specific information found in the provided text. If some of the listed important keywords do not appear in the triplets, this is because those specific keywords were not directly associated with Ögedei Khan based on the text provided, or they were not mentioned in the context given. To create triplets for every important keyword, further information that directly connects Ögedei Khan to those keywords would be required.']
+['("Persian chronicles", "display attitudes towards", "Genghis Khan")\n']
+
+['("Genghis Khan", "was the founder and first khan of", "Mongol Empire")\n', '("Mongol Empire", "became the largest contiguous empire in", "history")\n', '("Genghis Khan", "united", "Mongol tribes")\n', '("Genghis Khan", "was also known as", "Chinggis Khan")\n', '("Genghis Khan", "launched military campaigns in", "China and Central Asia")\n', '("Genghis Khan", "was born as", "Temüjin")\n', '("Temüjin", "was the son of", "Yesugei and Hö\'elün")\n', '("Temüjin", "killed", "his half-brother Behter")\n', '("Temüjin", "made alliances with", "Jamukha and Toghrul")\n', '("Genghis Khan", "transformed Mongols\' tribal structure into", "an integrated meritocracy")\n', '("Genghis Khan", "consolidated his power after thwarting coup attempt of", "a powerful shaman")\n', '("Genghis Khan", "led a raid into", "Western Xia")\n', '("Genghis Khan", "launched a campaign against", "Jin dynasty")\n', '("Genghis Khan\'s", "general Jebe annexed", "Qara Khitai")\n', '("Genghis Khan", "invaded", "Khwarazmian Empire")\n', '("Khwarazmian Empire", "was devastated by", "Genghis Khan")\n', '("Genghis Khan", "died while subduing", "Western Xia")\n', '("Genghis Khan", "is deified in", "Mongolia")\n', '("Genghis Khan", "is recognized as the founding father of", "Mongolia")\n', '("Genghis Khan", "remains a controversial figure in", "Russia and the Muslim world")\n', '("Genghis Khan", "underwent reassessment in", "Western scholarship")\n', '("Kublai Khan", "established", "Yuan dynasty")\n', '("Kublai Khan", "bestowed posthumous name upon", "Genghis Khan")\n', '("Jochi", "possibility of", "illegitimacy")\n', '("Mongol sources", "include", "The History of Yuan and the Shengwu qinzheng lu")\n', '("Rashid al-Din", "compiled", "Jami\' al-tawarikh")\n', '("Genghis Khan\'s army", "killed", "millions of people")\n', '("Genghis Khan\'s conquests", "facilitated", "commercial and cultural exchange")\n', '("Year of the Pig", "is connected to", "Genghis Khan\'s birth")\n', '("Temüjin\'s", "father was", "Yesügei")\n', '("Temüjin", "killed", "Behter")\n', '("Temüjin", "married", "Börte")\n', '("Temüjin\'s", "birthplace is", "Delüün Boldog on the Onon River")\n', '("Hö\'elün", "is the mother of", "Temüjin")\n', '("Temüjin", "had a blood clot in the hand at", "birth")\n', '("Temüjin", "had", "three younger brothers and one sister")\n', '("Temüjin", "made anda oath with", "Jamukha")\n', '("Temüjin", "sought to avenge", "Yesügei\'s death")\n', '("Temüjin\'s", "first child was", "Qojin")\n', '("Jamukha", "deteriorated relations with", "Temüjin")\n', '("Jochi", "was", "Temüjin\'s first son")\n', '("Jochi\'s", "paternity was", "questionable")\n', '("Jamukha", "elected as", "gurkhan")\n', '("Jamukha", "executed by", "Genghis Khan")\n', '("Genghis Khan", "had a", "meritocratic command structure")\n', '("Genghis Khan", "appointed", "Bo\'orchu and Muqali as commanders")\n', '("Genghis Khan", "consolidated power by campaigns against", "Tatars, Merkits, Naimans")\n', '("Genghis Khan", "sealed his victory by defeating", "Kereit tribe")\n', '("Genghis Khan", "made a", "covenant at Baljuna")\n', '("Genghis Khan", "began social revolution to transform Mongols into", "an integrated meritocracy")\n', '("Mongol army", "was characterised by", "draconian discipline and military intelligence")\n', '("Genghis Khan", "secured tribute from", "Western Xia after siege")\n', '("Genghis Khan", "engaged in", "Great Raid around the Caspian Sea")\n', '("Genghis Khan", "had a senior wife named", "Börte")\n', '("Ögedei", "succeeded", "Genghis Khan")\n', '("Genghis Khan", "was buried near", "Burkhan Khaldun peak")\n', '("Genghis Khan", "idealised as", "national hero of Mongolian people")\n', '("Genghis Khan", "became", "deity in Buddhist, shamanistic, and folk traditions")\n', '("Genghis Khan", "revered as the nation\'s creator under", "Yuan dynasty")\n', '("Tolui", "was youngest son of", "Genghis Khan")\n', '("Tolui", "served as regent until accession of his brother", "Ögedei")\n', '("Tolui", "had sons including", "Möngke")\n', '("Tolui", "had sons including", "Kublai")\n', '("Tolui", "had son", "Hulagu")\n', '("Tolui", "was less active than his elder brothers such as", "Jochi")\n', '("Tolui", "commanded armies under his father during the first invasion of", "Jin China")\n', '("Tolui", "secured his reputation during the invasion of the", "Khwarazmian Empire")\n', '("Genghis Khan", "dispatched Tolui to subjugate", "Khorasan")\n', '("Tolui", "assaulted", "Merv")\n', '("Tolui", "assaulted", "Nishapur")\n', '("Tolui", "assaulted", "Herat")\n', '("Tolui", "commanded armies at", "Juyong Pass")\n', '("Tolui", "captured", "Samarkand")\n', '("Tolui", "caputred", "Bukhara")\n', '("Tolui", "captured", "Termez")\n', '("Tolui", "dealt with rebels along", "Irtysh river")\n', '("Tolui", "dealt with rebels in", "Siberia")\n', '("Tolui", "dealt with rebels in", "Dzungaria")\n', '("Tolui", "was given property near the", "Altai Mountains")\n', '("Tolui", "was persuaded by", "Yelu Chucai to hold kurultai")\n', '("Tolui", "participated in military campaign against", "Jin dynasty")\n', '("Tolui", "was regent dealing with nation\'s administration and", "Genghis Khan\'s burial")\n', '("Tolui", "had his land taken over by", "Sorghaghtani")\n', '("Tolui", "was elevated to status of khagan by", "Kublai")\n', '("Tolui", "and Sorghaghtani became major figures in", "Eight White Yurts cult")\n', '("Möngke Khan", "was the fourth khagan of", "the Mongol Empire")\n', '("Möngke Khan", "was the first Khagan from", "the Toluid line")\n', '("Möngke Khan", "conquered", "Iraq and Syria")\n', '("Möngke Khan", "was the eldest son of", "Tolui")\n', '("Möngke Khan", "was raised by", "Ögedei Khan\'s queen Angqui")\n', '("Möngke Khan", "received writing teaching from", "Persian scholar Idi-dan Muhammed")\n', '("Möngke Khan", "went on his first hunt with", "Kublai")\n', '("Möngke Khan", "inherited at least one wife of his father", "Oghul-Khoimish")\n', '("Möngke Khan", "captured", "Bachman from the Volga delta")\n', '("Möngke Khan", "participated in the siege of", "Kiev")\n', '("Möngke Khan", "fought in", "the Battle of Mohi")\n', '("Möngke Khan", "tried the Odchigin at the order of", "Güyük")\n', '("Möngke Khan", "assembled a formal kurultai at", "Kodoe Aral in Mongolia")\n', '("Möngke Khan", "was supported by", "Batu for his election")\n', '("Möngke Khan", "ordered a general amnesty after", "the bloody purge")\n', '("Möngke Khan", "gave his brothers Kublai and Hulagu supervisory powers in", "North China and Iran")\n', '("Möngke Khan", "conducted a census of", "the Mongol Empire")\n', '("Möngke Khan", "allowed the conquest of", "Georgia")\n', '("Möngke Khan", "took the submission of", "Malik Nasir Yusuf in Syria")\n', '("Möngke Khan", "appointed generals Sali and Takudar to pacify", "Kashmir")\n', '("Möngke Khan", "sent envoys to", "Goryeo demanding submission")\n', '("Möngke Khan", "dispatched Kublai to conquer", "the Dali Kingdom")\n', '("Möngke Khan", "ordered Sali Noyan to recover territories for", "Jalal al-Din Masud")\n', '("Möngke Khan", "entrusted the conquest of the Nizari state to his brother", "Hulagu")\n', '("Möngke Khan", "focused on the conquest of", "the Song dynasty in South China")\n', '("Möngke Khan", "died at the Siege of", "Diaoyucheng")\n', '("Möngke Khan", "was buried near", "Genghis and Tolui")\n', '("Möngke Khan", "was succeeded by", "Kublai Khan after a civil war")\n', '("Möngke Khan", "was posthumously named", "Xianzong by the Yuan dynasty")\n', '("Möngke Khan", "decorated Karakorum with", "Chinese, European, and Persian architectures")\n', '("Genghis Khan", "was the founder and first khan of", "Mongol Empire")\n', '("Mongol Empire", "became the largest contiguous empire in", "history")\n', '("Genghis Khan", "united", "Mongol tribes")\n', '("Genghis Khan", "was also known as", "Chinggis Khan")\n', '("Genghis Khan", "launched military campaigns in", "China and Central Asia")\n', '("Genghis Khan", "was born as", "Temüjin")\n', '("Temüjin", "was the son of", "Yesugei and Hö\'elün")\n', '("Temüjin", "killed", "his half-brother Behter")\n', '("Temüjin", "made alliances with", "Jamukha and Toghrul")\n', '("Genghis Khan", "transformed Mongols\' tribal structure into", "an integrated meritocracy")\n', '("Genghis Khan", "consolidated his power after thwarting coup attempt of", "a powerful shaman")\n', '("Genghis Khan", "led a raid into", "Western Xia")\n', '("Genghis Khan", "launched a campaign against", "Jin dynasty")\n', '("Genghis Khan\'s", "general Jebe annexed", "Qara Khitai")\n', '("Genghis Khan", "invaded", "Khwarazmian Empire")\n', '("Khwarazmian Empire", "was devastated by", "Genghis Khan")\n', '("Genghis Khan", "died while subduing", "Western Xia")\n', '("Genghis Khan", "is deified in", "Mongolia")\n', '("Genghis Khan", "is recognized as the founding father of", "Mongolia")\n', '("Genghis Khan", "remains a controversial figure in", "Russia and the Muslim world")\n', '("Genghis Khan", "underwent reassessment in", "Western scholarship")\n', '("Kublai Khan", "established", "Yuan dynasty")\n', '("Kublai Khan", "bestowed posthumous name upon", "Genghis Khan")\n', '("Jochi", "possibility of", "illegitimacy")\n', '("Mongol sources", "include", "The History of Yuan and the Shengwu qinzheng lu")\n', '("Persian chronicles", "display attitudes towards", "Genghis Khan")\n', '("Rashid al-Din", "compiled", "Jami\' al-tawarikh")\n', '("Genghis Khan\'s army", "killed", "millions of people")\n', '("Genghis Khan\'s conquests", "facilitated", "commercial and cultural exchange")\n', '("Year of the Pig", "is connected to", "Genghis Khan\'s birth")\n', '("Temüjin\'s", "father was", "Yesügei")\n', '("Temüjin", "killed", "Behter")\n', '("Temüjin", "married", "Börte")\n', '("Temüjin\'s", "birthplace is", "Delüün Boldog on the Onon River")\n', '("Hö\'elün", "is the mother of", "Temüjin")\n', '("Temüjin", "had a blood clot in the hand at", "birth")\n', '("Temüjin", "had", "three younger brothers and one sister")\n', '("Temüjin", "made anda oath with", "Jamukha")\n', '("Temüjin", "sought to avenge", "Yesügei\'s death")\n', '("Temüjin\'s", "first child was", "Qojin")\n', '("Jamukha", "deteriorated relations with", "Temüjin")\n', '("Jochi", "was", "Temüjin\'s first son")\n', '("Jochi\'s", "paternity was", "questionable")\n', '("Jamukha", "elected as", "gurkhan")\n', '("Jamukha", "executed by", "Genghis Khan")\n', '("Genghis Khan", "had a", "meritocratic command structure")\n', '("Genghis Khan", "appointed", "Bo\'orchu and Muqali as commanders")\n', '("Genghis Khan", "consolidated power by campaigns against", "Tatars, Merkits, Naimans")\n', '("Genghis Khan", "sealed his victory by defeating", "Kereit tribe")\n', '("Genghis Khan", "made a", "covenant at Baljuna")\n', '("Genghis Khan", "began social revolution to transform Mongols into", "an integrated meritocracy")\n', '("Mongol army", "was characterised by", "draconian discipline and military intelligence")\n', '("Genghis Khan", "secured tribute from", "Western Xia after siege")\n', '("Genghis Khan", "engaged in", "Great Raid around the Caspian Sea")\n', '("Genghis Khan", "had a senior wife named", "Börte")\n', '("Ögedei", "succeeded", "Genghis Khan")\n', '("Genghis Khan", "was buried near", "Burkhan Khaldun peak")\n', '("Genghis Khan", "idealised as", "national hero of Mongolian people")\n', '("Genghis Khan", "became", "deity in Buddhist, shamanistic, and folk traditions")\n', '("Genghis Khan", "revered as the nation\'s creator under", "Yuan dynasty")\n', '("Ögedei Khan", "was the third son of", "Genghis Khan")\n', '("Ögedei", "continued the expansion of the empire started by", "Genghis Khan")\n', '("Ögedei", "had an older brother named", "Jochi")\n', '("Ögedei", "was military apprentice of", "Tolui")\n', '("Ögedei Khan", "successfully captured", "Hungary at Mohi")\n', '("Ögedei", "worked with", "Yelü Chucai")\n', '("Ögedei", "sent troops through", "Hebei")\n', '("Ögedei", "sent troops through", "Shanxi")\n', '("Ögedei", "pacified", "Ghazni")\n', '("Ögedei\'s policies", "pursued the expansionist approach into", "Persia")\n', '("Ögedei\'s troops", "defeated and invaded", "Dameghan")\n', '("Ögedei", "consented to the pillage of", "Isfahan")\n', '("Ögedei\'s soldiers", "besieged", "Bukhara")\n', '("Ögedei\'s rule", "expanded into the region of", "Khorasan")\n', '("Ögedei\'s troops", "crossed", "Amu Darya River")\n', '("Ögedei\'s command", "led invasions towards", "Afghanistan")\n', '("Ögedei", "commanded conquests near", "Caspian Sea")\n', '("Ögedei\'s military campaigns", "moved across", "Alborz")\n', '("Ögedei\'s forces", "established a camp at", "Rey")\n', '("Ögedei\'s army", "captured cities such as", "Qum")\n', '("Ögedei", "sent his armies to capture", "Hamadan")\n', '("Ögedei\'s reign", "claimed territories including", "Fars")\n', '("Ögedei", "sent his army to", "Kabul")\n', '("Ögedei", "was ruler of territories including", "Henan")\n', '("Ögedei", "captured significant cities like", "Kaifeng")\n', '("Ögedei\'s soldiers", "took control of", "Luoyang")\n', '("Ögedei", "was the ruler when Mongols entered", "Chang\'an")\n', '("Ögedei Khan", "pacified regions in", "Manchuria")\n', '("Ögedei\'s campaigns", "impacted regions such as the", "Caucasus")\n', '("Ögedei\'s forces", "breached walls of", "Ganjak")\n', '("Ögedei", "demanded tribute from the city of", "Irbil")\n']
+range(1, 208) 1
+['("Persian chronicles", "display attitudes towards", "Genghis Khan")\n']
+
+['("Genghis Khan", "was the founder and first khan of", "Mongol Empire")\n', '("Mongol Empire", "became the largest contiguous empire in", "history")\n', '("Genghis Khan", "united", "Mongol tribes")\n', '("Genghis Khan", "was also known as", "Chinggis Khan")\n', '("Genghis Khan", "launched military campaigns in", "China and Central Asia")\n', '("Genghis Khan", "was born as", "Temüjin")\n', '("Temüjin", "was the son of", "Yesugei and Hö\'elün")\n', '("Temüjin", "killed", "his half-brother Behter")\n', '("Temüjin", "made alliances with", "Jamukha and Toghrul")\n', '("Genghis Khan", "transformed Mongols\' tribal structure into", "an integrated meritocracy")\n', '("Genghis Khan", "consolidated his power after thwarting coup attempt of", "a powerful shaman")\n', '("Genghis Khan", "led a raid into", "Western Xia")\n', '("Genghis Khan", "launched a campaign against", "Jin dynasty")\n', '("Genghis Khan\'s", "general Jebe annexed", "Qara Khitai")\n', '("Genghis Khan", "invaded", "Khwarazmian Empire")\n', '("Khwarazmian Empire", "was devastated by", "Genghis Khan")\n', '("Genghis Khan", "died while subduing", "Western Xia")\n', '("Genghis Khan", "is deified in", "Mongolia")\n', '("Genghis Khan", "is recognized as the founding father of", "Mongolia")\n', '("Genghis Khan", "remains a controversial figure in", "Russia and the Muslim world")\n', '("Genghis Khan", "underwent reassessment in", "Western scholarship")\n', '("Kublai Khan", "established", "Yuan dynasty")\n', '("Kublai Khan", "bestowed posthumous name upon", "Genghis Khan")\n', '("Jochi", "possibility of", "illegitimacy")\n', '("Mongol sources", "include", "The History of Yuan and the Shengwu qinzheng lu")\n', '("Rashid al-Din", "compiled", "Jami\' al-tawarikh")\n', '("Genghis Khan\'s army", "killed", "millions of people")\n', '("Genghis Khan\'s conquests", "facilitated", "commercial and cultural exchange")\n', '("Year of the Pig", "is connected to", "Genghis Khan\'s birth")\n', '("Temüjin\'s", "father was", "Yesügei")\n', '("Temüjin", "killed", "Behter")\n', '("Temüjin", "married", "Börte")\n', '("Temüjin\'s", "birthplace is", "Delüün Boldog on the Onon River")\n', '("Hö\'elün", "is the mother of", "Temüjin")\n', '("Temüjin", "had a blood clot in the hand at", "birth")\n', '("Temüjin", "had", "three younger brothers and one sister")\n', '("Temüjin", "made anda oath with", "Jamukha")\n', '("Temüjin", "sought to avenge", "Yesügei\'s death")\n', '("Temüjin\'s", "first child was", "Qojin")\n', '("Jamukha", "deteriorated relations with", "Temüjin")\n', '("Jochi", "was", "Temüjin\'s first son")\n', '("Jochi\'s", "paternity was", "questionable")\n', '("Jamukha", "elected as", "gurkhan")\n', '("Jamukha", "executed by", "Genghis Khan")\n', '("Genghis Khan", "had a", "meritocratic command structure")\n', '("Genghis Khan", "appointed", "Bo\'orchu and Muqali as commanders")\n', '("Genghis Khan", "consolidated power by campaigns against", "Tatars, Merkits, Naimans")\n', '("Genghis Khan", "sealed his victory by defeating", "Kereit tribe")\n', '("Genghis Khan", "made a", "covenant at Baljuna")\n', '("Genghis Khan", "began social revolution to transform Mongols into", "an integrated meritocracy")\n', '("Mongol army", "was characterised by", "draconian discipline and military intelligence")\n', '("Genghis Khan", "secured tribute from", "Western Xia after siege")\n', '("Genghis Khan", "engaged in", "Great Raid around the Caspian Sea")\n', '("Genghis Khan", "had a senior wife named", "Börte")\n', '("Ögedei", "succeeded", "Genghis Khan")\n', '("Genghis Khan", "was buried near", "Burkhan Khaldun peak")\n', '("Genghis Khan", "idealised as", "national hero of Mongolian people")\n', '("Genghis Khan", "became", "deity in Buddhist, shamanistic, and folk traditions")\n', '("Genghis Khan", "revered as the nation\'s creator under", "Yuan dynasty")\n', '("Tolui", "was youngest son of", "Genghis Khan")\n', '("Tolui", "served as regent until accession of his brother", "Ögedei")\n', '("Tolui", "had sons including", "Möngke")\n', '("Tolui", "had sons including", "Kublai")\n', '("Tolui", "had son", "Hulagu")\n', '("Tolui", "was less active than his elder brothers such as", "Jochi")\n', '("Tolui", "commanded armies under his father during the first invasion of", "Jin China")\n', '("Tolui", "secured his reputation during the invasion of the", "Khwarazmian Empire")\n', '("Genghis Khan", "dispatched Tolui to subjugate", "Khorasan")\n', '("Tolui", "assaulted", "Merv")\n', '("Tolui", "assaulted", "Nishapur")\n', '("Tolui", "assaulted", "Herat")\n', '("Tolui", "commanded armies at", "Juyong Pass")\n', '("Tolui", "captured", "Samarkand")\n', '("Tolui", "caputred", "Bukhara")\n', '("Tolui", "captured", "Termez")\n', '("Tolui", "dealt with rebels along", "Irtysh river")\n', '("Tolui", "dealt with rebels in", "Siberia")\n', '("Tolui", "dealt with rebels in", "Dzungaria")\n', '("Tolui", "was given property near the", "Altai Mountains")\n', '("Tolui", "was persuaded by", "Yelu Chucai to hold kurultai")\n', '("Tolui", "participated in military campaign against", "Jin dynasty")\n', '("Tolui", "was regent dealing with nation\'s administration and", "Genghis Khan\'s burial")\n', '("Tolui", "had his land taken over by", "Sorghaghtani")\n', '("Tolui", "was elevated to status of khagan by", "Kublai")\n', '("Tolui", "and Sorghaghtani became major figures in", "Eight White Yurts cult")\n', '("Möngke Khan", "was the fourth khagan of", "the Mongol Empire")\n', '("Möngke Khan", "was the first Khagan from", "the Toluid line")\n', '("Möngke Khan", "conquered", "Iraq and Syria")\n', '("Möngke Khan", "was the eldest son of", "Tolui")\n', '("Möngke Khan", "was raised by", "Ögedei Khan\'s queen Angqui")\n', '("Möngke Khan", "received writing teaching from", "Persian scholar Idi-dan Muhammed")\n', '("Möngke Khan", "went on his first hunt with", "Kublai")\n', '("Möngke Khan", "inherited at least one wife of his father", "Oghul-Khoimish")\n', '("Möngke Khan", "captured", "Bachman from the Volga delta")\n', '("Möngke Khan", "participated in the siege of", "Kiev")\n', '("Möngke Khan", "fought in", "the Battle of Mohi")\n', '("Möngke Khan", "tried the Odchigin at the order of", "Güyük")\n', '("Möngke Khan", "assembled a formal kurultai at", "Kodoe Aral in Mongolia")\n', '("Möngke Khan", "was supported by", "Batu for his election")\n', '("Möngke Khan", "ordered a general amnesty after", "the bloody purge")\n', '("Möngke Khan", "gave his brothers Kublai and Hulagu supervisory powers in", "North China and Iran")\n', '("Möngke Khan", "conducted a census of", "the Mongol Empire")\n', '("Möngke Khan", "allowed the conquest of", "Georgia")\n', '("Möngke Khan", "took the submission of", "Malik Nasir Yusuf in Syria")\n', '("Möngke Khan", "appointed generals Sali and Takudar to pacify", "Kashmir")\n', '("Möngke Khan", "sent envoys to", "Goryeo demanding submission")\n', '("Möngke Khan", "dispatched Kublai to conquer", "the Dali Kingdom")\n', '("Möngke Khan", "ordered Sali Noyan to recover territories for", "Jalal al-Din Masud")\n', '("Möngke Khan", "entrusted the conquest of the Nizari state to his brother", "Hulagu")\n', '("Möngke Khan", "focused on the conquest of", "the Song dynasty in South China")\n', '("Möngke Khan", "died at the Siege of", "Diaoyucheng")\n', '("Möngke Khan", "was buried near", "Genghis and Tolui")\n', '("Möngke Khan", "was succeeded by", "Kublai Khan after a civil war")\n', '("Möngke Khan", "was posthumously named", "Xianzong by the Yuan dynasty")\n', '("Möngke Khan", "decorated Karakorum with", "Chinese, European, and Persian architectures")\n', '("Genghis Khan", "was the founder and first khan of", "Mongol Empire")\n', '("Mongol Empire", "became the largest contiguous empire in", "history")\n', '("Genghis Khan", "united", "Mongol tribes")\n', '("Genghis Khan", "was also known as", "Chinggis Khan")\n', '("Genghis Khan", "launched military campaigns in", "China and Central Asia")\n', '("Genghis Khan", "was born as", "Temüjin")\n', '("Temüjin", "was the son of", "Yesugei and Hö\'elün")\n', '("Temüjin", "killed", "his half-brother Behter")\n', '("Temüjin", "made alliances with", "Jamukha and Toghrul")\n', '("Genghis Khan", "transformed Mongols\' tribal structure into", "an integrated meritocracy")\n', '("Genghis Khan", "consolidated his power after thwarting coup attempt of", "a powerful shaman")\n', '("Genghis Khan", "led a raid into", "Western Xia")\n', '("Genghis Khan", "launched a campaign against", "Jin dynasty")\n', '("Genghis Khan\'s", "general Jebe annexed", "Qara Khitai")\n', '("Genghis Khan", "invaded", "Khwarazmian Empire")\n', '("Khwarazmian Empire", "was devastated by", "Genghis Khan")\n', '("Genghis Khan", "died while subduing", "Western Xia")\n', '("Genghis Khan", "is deified in", "Mongolia")\n', '("Genghis Khan", "is recognized as the founding father of", "Mongolia")\n', '("Genghis Khan", "remains a controversial figure in", "Russia and the Muslim world")\n', '("Genghis Khan", "underwent reassessment in", "Western scholarship")\n', '("Kublai Khan", "established", "Yuan dynasty")\n', '("Kublai Khan", "bestowed posthumous name upon", "Genghis Khan")\n', '("Jochi", "possibility of", "illegitimacy")\n', '("Mongol sources", "include", "The History of Yuan and the Shengwu qinzheng lu")\n', '("Persian chronicles", "display attitudes towards", "Genghis Khan")\n', '("Rashid al-Din", "compiled", "Jami\' al-tawarikh")\n', '("Genghis Khan\'s army", "killed", "millions of people")\n', '("Genghis Khan\'s conquests", "facilitated", "commercial and cultural exchange")\n', '("Year of the Pig", "is connected to", "Genghis Khan\'s birth")\n', '("Temüjin\'s", "father was", "Yesügei")\n', '("Temüjin", "killed", "Behter")\n', '("Temüjin", "married", "Börte")\n', '("Temüjin\'s", "birthplace is", "Delüün Boldog on the Onon River")\n', '("Hö\'elün", "is the mother of", "Temüjin")\n', '("Temüjin", "had a blood clot in the hand at", "birth")\n', '("Temüjin", "had", "three younger brothers and one sister")\n', '("Temüjin", "made anda oath with", "Jamukha")\n', '("Temüjin", "sought to avenge", "Yesügei\'s death")\n', '("Temüjin\'s", "first child was", "Qojin")\n', '("Jamukha", "deteriorated relations with", "Temüjin")\n', '("Jochi", "was", "Temüjin\'s first son")\n', '("Jochi\'s", "paternity was", "questionable")\n', '("Jamukha", "elected as", "gurkhan")\n', '("Jamukha", "executed by", "Genghis Khan")\n', '("Genghis Khan", "had a", "meritocratic command structure")\n', '("Genghis Khan", "appointed", "Bo\'orchu and Muqali as commanders")\n', '("Genghis Khan", "consolidated power by campaigns against", "Tatars, Merkits, Naimans")\n', '("Genghis Khan", "sealed his victory by defeating", "Kereit tribe")\n', '("Genghis Khan", "made a", "covenant at Baljuna")\n', '("Genghis Khan", "began social revolution to transform Mongols into", "an integrated meritocracy")\n', '("Mongol army", "was characterised by", "draconian discipline and military intelligence")\n', '("Genghis Khan", "secured tribute from", "Western Xia after siege")\n', '("Genghis Khan", "engaged in", "Great Raid around the Caspian Sea")\n', '("Genghis Khan", "had a senior wife named", "Börte")\n', '("Ögedei", "succeeded", "Genghis Khan")\n', '("Genghis Khan", "was buried near", "Burkhan Khaldun peak")\n', '("Genghis Khan", "idealised as", "national hero of Mongolian people")\n', '("Genghis Khan", "became", "deity in Buddhist, shamanistic, and folk traditions")\n', '("Genghis Khan", "revered as the nation\'s creator under", "Yuan dynasty")\n', '("Ögedei Khan", "was the third son of", "Genghis Khan")\n', '("Ögedei", "continued the expansion of the empire started by", "Genghis Khan")\n', '("Ögedei", "had an older brother named", "Jochi")\n', '("Ögedei", "was military apprentice of", "Tolui")\n', '("Ögedei Khan", "successfully captured", "Hungary at Mohi")\n', '("Ögedei", "worked with", "Yelü Chucai")\n', '("Ögedei", "sent troops through", "Hebei")\n', '("Ögedei", "sent troops through", "Shanxi")\n', '("Ögedei", "pacified", "Ghazni")\n', '("Ögedei\'s policies", "pursued the expansionist approach into", "Persia")\n', '("Ögedei\'s troops", "defeated and invaded", "Dameghan")\n', '("Ögedei", "consented to the pillage of", "Isfahan")\n', '("Ögedei\'s soldiers", "besieged", "Bukhara")\n', '("Ögedei\'s rule", "expanded into the region of", "Khorasan")\n', '("Ögedei\'s troops", "crossed", "Amu Darya River")\n', '("Ögedei\'s command", "led invasions towards", "Afghanistan")\n', '("Ögedei", "commanded conquests near", "Caspian Sea")\n', '("Ögedei\'s military campaigns", "moved across", "Alborz")\n', '("Ögedei\'s forces", "established a camp at", "Rey")\n', '("Ögedei\'s army", "captured cities such as", "Qum")\n', '("Ögedei", "sent his armies to capture", "Hamadan")\n', '("Ögedei\'s reign", "claimed territories including", "Fars")\n', '("Ögedei", "sent his army to", "Kabul")\n', '("Ögedei", "was ruler of territories including", "Henan")\n', '("Ögedei", "captured significant cities like", "Kaifeng")\n', '("Ögedei\'s soldiers", "took control of", "Luoyang")\n', '("Ögedei", "was the ruler when Mongols entered", "Chang\'an")\n', '("Ögedei Khan", "pacified regions in", "Manchuria")\n', '("Ögedei\'s campaigns", "impacted regions such as the", "Caucasus")\n', '("Ögedei\'s forces", "breached walls of", "Ganjak")\n', '("Ögedei", "demanded tribute from the city of", "Irbil")\n']
+range(1, 208) 1
+['("Persian chronicles", "display attitudes towards", "Genghis Khan")\n']
+
+['("Genghis Khan", "was the founder and first khan of", "Mongol Empire")\n', '("Mongol Empire", "became the largest contiguous empire in", "history")\n', '("Genghis Khan", "united", "Mongol tribes")\n', '("Genghis Khan", "was also known as", "Chinggis Khan")\n', '("Genghis Khan", "launched military campaigns in", "China and Central Asia")\n', '("Genghis Khan", "was born as", "Temüjin")\n', '("Temüjin", "was the son of", "Yesugei and Hö\'elün")\n', '("Temüjin", "killed", "his half-brother Behter")\n', '("Temüjin", "made alliances with", "Jamukha and Toghrul")\n', '("Genghis Khan", "transformed Mongols\' tribal structure into", "an integrated meritocracy")\n', '("Genghis Khan", "consolidated his power after thwarting coup attempt of", "a powerful shaman")\n', '("Genghis Khan", "led a raid into", "Western Xia")\n', '("Genghis Khan", "launched a campaign against", "Jin dynasty")\n', '("Genghis Khan\'s", "general Jebe annexed", "Qara Khitai")\n', '("Genghis Khan", "invaded", "Khwarazmian Empire")\n', '("Khwarazmian Empire", "was devastated by", "Genghis Khan")\n', '("Genghis Khan", "died while subduing", "Western Xia")\n', '("Genghis Khan", "is deified in", "Mongolia")\n', '("Genghis Khan", "is recognized as the founding father of", "Mongolia")\n', '("Genghis Khan", "remains a controversial figure in", "Russia and the Muslim world")\n', '("Genghis Khan", "underwent reassessment in", "Western scholarship")\n', '("Kublai Khan", "established", "Yuan dynasty")\n', '("Kublai Khan", "bestowed posthumous name upon", "Genghis Khan")\n', '("Jochi", "possibility of", "illegitimacy")\n', '("Mongol sources", "include", "The History of Yuan and the Shengwu qinzheng lu")\n', '("Rashid al-Din", "compiled", "Jami\' al-tawarikh")\n', '("Genghis Khan\'s army", "killed", "millions of people")\n', '("Genghis Khan\'s conquests", "facilitated", "commercial and cultural exchange")\n', '("Year of the Pig", "is connected to", "Genghis Khan\'s birth")\n', '("Temüjin\'s", "father was", "Yesügei")\n', '("Temüjin", "killed", "Behter")\n', '("Temüjin", "married", "Börte")\n', '("Temüjin\'s", "birthplace is", "Delüün Boldog on the Onon River")\n', '("Hö\'elün", "is the mother of", "Temüjin")\n', '("Temüjin", "had a blood clot in the hand at", "birth")\n', '("Temüjin", "had", "three younger brothers and one sister")\n', '("Temüjin", "made anda oath with", "Jamukha")\n', '("Temüjin", "sought to avenge", "Yesügei\'s death")\n', '("Temüjin\'s", "first child was", "Qojin")\n', '("Jamukha", "deteriorated relations with", "Temüjin")\n', '("Jochi", "was", "Temüjin\'s first son")\n', '("Jochi\'s", "paternity was", "questionable")\n', '("Jamukha", "elected as", "gurkhan")\n', '("Jamukha", "executed by", "Genghis Khan")\n', '("Genghis Khan", "had a", "meritocratic command structure")\n', '("Genghis Khan", "appointed", "Bo\'orchu and Muqali as commanders")\n', '("Genghis Khan", "consolidated power by campaigns against", "Tatars, Merkits, Naimans")\n', '("Genghis Khan", "sealed his victory by defeating", "Kereit tribe")\n', '("Genghis Khan", "made a", "covenant at Baljuna")\n', '("Genghis Khan", "began social revolution to transform Mongols into", "an integrated meritocracy")\n', '("Mongol army", "was characterised by", "draconian discipline and military intelligence")\n', '("Genghis Khan", "secured tribute from", "Western Xia after siege")\n', '("Genghis Khan", "engaged in", "Great Raid around the Caspian Sea")\n', '("Genghis Khan", "had a senior wife named", "Börte")\n', '("Ögedei", "succeeded", "Genghis Khan")\n', '("Genghis Khan", "was buried near", "Burkhan Khaldun peak")\n', '("Genghis Khan", "idealised as", "national hero of Mongolian people")\n', '("Genghis Khan", "became", "deity in Buddhist, shamanistic, and folk traditions")\n', '("Genghis Khan", "revered as the nation\'s creator under", "Yuan dynasty")\n', '("Tolui", "was youngest son of", "Genghis Khan")\n', '("Tolui", "served as regent until accession of his brother", "Ögedei")\n', '("Tolui", "had sons including", "Möngke")\n', '("Tolui", "had sons including", "Kublai")\n', '("Tolui", "had son", "Hulagu")\n', '("Tolui", "was less active than his elder brothers such as", "Jochi")\n', '("Tolui", "commanded armies under his father during the first invasion of", "Jin China")\n', '("Tolui", "secured his reputation during the invasion of the", "Khwarazmian Empire")\n', '("Genghis Khan", "dispatched Tolui to subjugate", "Khorasan")\n', '("Tolui", "assaulted", "Merv")\n', '("Tolui", "assaulted", "Nishapur")\n', '("Tolui", "assaulted", "Herat")\n', '("Tolui", "commanded armies at", "Juyong Pass")\n', '("Tolui", "captured", "Samarkand")\n', '("Tolui", "caputred", "Bukhara")\n', '("Tolui", "captured", "Termez")\n', '("Tolui", "dealt with rebels along", "Irtysh river")\n', '("Tolui", "dealt with rebels in", "Siberia")\n', '("Tolui", "dealt with rebels in", "Dzungaria")\n', '("Tolui", "was given property near the", "Altai Mountains")\n', '("Tolui", "was persuaded by", "Yelu Chucai to hold kurultai")\n', '("Tolui", "participated in military campaign against", "Jin dynasty")\n', '("Tolui", "was regent dealing with nation\'s administration and", "Genghis Khan\'s burial")\n', '("Tolui", "had his land taken over by", "Sorghaghtani")\n', '("Tolui", "was elevated to status of khagan by", "Kublai")\n', '("Tolui", "and Sorghaghtani became major figures in", "Eight White Yurts cult")\n', '("Möngke Khan", "was the fourth khagan of", "the Mongol Empire")\n', '("Möngke Khan", "was the first Khagan from", "the Toluid line")\n', '("Möngke Khan", "conquered", "Iraq and Syria")\n', '("Möngke Khan", "was the eldest son of", "Tolui")\n', '("Möngke Khan", "was raised by", "Ögedei Khan\'s queen Angqui")\n', '("Möngke Khan", "received writing teaching from", "Persian scholar Idi-dan Muhammed")\n', '("Möngke Khan", "went on his first hunt with", "Kublai")\n', '("Möngke Khan", "inherited at least one wife of his father", "Oghul-Khoimish")\n', '("Möngke Khan", "captured", "Bachman from the Volga delta")\n', '("Möngke Khan", "participated in the siege of", "Kiev")\n', '("Möngke Khan", "fought in", "the Battle of Mohi")\n', '("Möngke Khan", "tried the Odchigin at the order of", "Güyük")\n', '("Möngke Khan", "assembled a formal kurultai at", "Kodoe Aral in Mongolia")\n', '("Möngke Khan", "was supported by", "Batu for his election")\n', '("Möngke Khan", "ordered a general amnesty after", "the bloody purge")\n', '("Möngke Khan", "gave his brothers Kublai and Hulagu supervisory powers in", "North China and Iran")\n', '("Möngke Khan", "conducted a census of", "the Mongol Empire")\n', '("Möngke Khan", "allowed the conquest of", "Georgia")\n', '("Möngke Khan", "took the submission of", "Malik Nasir Yusuf in Syria")\n', '("Möngke Khan", "appointed generals Sali and Takudar to pacify", "Kashmir")\n', '("Möngke Khan", "sent envoys to", "Goryeo demanding submission")\n', '("Möngke Khan", "dispatched Kublai to conquer", "the Dali Kingdom")\n', '("Möngke Khan", "ordered Sali Noyan to recover territories for", "Jalal al-Din Masud")\n', '("Möngke Khan", "entrusted the conquest of the Nizari state to his brother", "Hulagu")\n', '("Möngke Khan", "focused on the conquest of", "the Song dynasty in South China")\n', '("Möngke Khan", "died at the Siege of", "Diaoyucheng")\n', '("Möngke Khan", "was buried near", "Genghis and Tolui")\n', '("Möngke Khan", "was succeeded by", "Kublai Khan after a civil war")\n', '("Möngke Khan", "was posthumously named", "Xianzong by the Yuan dynasty")\n', '("Möngke Khan", "decorated Karakorum with", "Chinese, European, and Persian architectures")\n', '("Genghis Khan", "was the founder and first khan of", "Mongol Empire")\n', '("Mongol Empire", "became the largest contiguous empire in", "history")\n', '("Genghis Khan", "united", "Mongol tribes")\n', '("Genghis Khan", "was also known as", "Chinggis Khan")\n', '("Genghis Khan", "launched military campaigns in", "China and Central Asia")\n', '("Genghis Khan", "was born as", "Temüjin")\n', '("Temüjin", "was the son of", "Yesugei and Hö\'elün")\n', '("Temüjin", "killed", "his half-brother Behter")\n', '("Temüjin", "made alliances with", "Jamukha and Toghrul")\n', '("Genghis Khan", "transformed Mongols\' tribal structure into", "an integrated meritocracy")\n', '("Genghis Khan", "consolidated his power after thwarting coup attempt of", "a powerful shaman")\n', '("Genghis Khan", "led a raid into", "Western Xia")\n', '("Genghis Khan", "launched a campaign against", "Jin dynasty")\n', '("Genghis Khan\'s", "general Jebe annexed", "Qara Khitai")\n', '("Genghis Khan", "invaded", "Khwarazmian Empire")\n', '("Khwarazmian Empire", "was devastated by", "Genghis Khan")\n', '("Genghis Khan", "died while subduing", "Western Xia")\n', '("Genghis Khan", "is deified in", "Mongolia")\n', '("Genghis Khan", "is recognized as the founding father of", "Mongolia")\n', '("Genghis Khan", "remains a controversial figure in", "Russia and the Muslim world")\n', '("Genghis Khan", "underwent reassessment in", "Western scholarship")\n', '("Kublai Khan", "established", "Yuan dynasty")\n', '("Kublai Khan", "bestowed posthumous name upon", "Genghis Khan")\n', '("Jochi", "possibility of", "illegitimacy")\n', '("Mongol sources", "include", "The History of Yuan and the Shengwu qinzheng lu")\n', '("Persian chronicles", "display attitudes towards", "Genghis Khan")\n', '("Rashid al-Din", "compiled", "Jami\' al-tawarikh")\n', '("Genghis Khan\'s army", "killed", "millions of people")\n', '("Genghis Khan\'s conquests", "facilitated", "commercial and cultural exchange")\n', '("Year of the Pig", "is connected to", "Genghis Khan\'s birth")\n', '("Temüjin\'s", "father was", "Yesügei")\n', '("Temüjin", "killed", "Behter")\n', '("Temüjin", "married", "Börte")\n', '("Temüjin\'s", "birthplace is", "Delüün Boldog on the Onon River")\n', '("Hö\'elün", "is the mother of", "Temüjin")\n', '("Temüjin", "had a blood clot in the hand at", "birth")\n', '("Temüjin", "had", "three younger brothers and one sister")\n', '("Temüjin", "made anda oath with", "Jamukha")\n', '("Temüjin", "sought to avenge", "Yesügei\'s death")\n', '("Temüjin\'s", "first child was", "Qojin")\n', '("Jamukha", "deteriorated relations with", "Temüjin")\n', '("Jochi", "was", "Temüjin\'s first son")\n', '("Jochi\'s", "paternity was", "questionable")\n', '("Jamukha", "elected as", "gurkhan")\n', '("Jamukha", "executed by", "Genghis Khan")\n', '("Genghis Khan", "had a", "meritocratic command structure")\n', '("Genghis Khan", "appointed", "Bo\'orchu and Muqali as commanders")\n', '("Genghis Khan", "consolidated power by campaigns against", "Tatars, Merkits, Naimans")\n', '("Genghis Khan", "sealed his victory by defeating", "Kereit tribe")\n', '("Genghis Khan", "made a", "covenant at Baljuna")\n', '("Genghis Khan", "began social revolution to transform Mongols into", "an integrated meritocracy")\n', '("Mongol army", "was characterised by", "draconian discipline and military intelligence")\n', '("Genghis Khan", "secured tribute from", "Western Xia after siege")\n', '("Genghis Khan", "engaged in", "Great Raid around the Caspian Sea")\n', '("Genghis Khan", "had a senior wife named", "Börte")\n', '("Ögedei", "succeeded", "Genghis Khan")\n', '("Genghis Khan", "was buried near", "Burkhan Khaldun peak")\n', '("Genghis Khan", "idealised as", "national hero of Mongolian people")\n', '("Genghis Khan", "became", "deity in Buddhist, shamanistic, and folk traditions")\n', '("Genghis Khan", "revered as the nation\'s creator under", "Yuan dynasty")\n', '("Ögedei Khan", "was the third son of", "Genghis Khan")\n', '("Ögedei", "continued the expansion of the empire started by", "Genghis Khan")\n', '("Ögedei", "had an older brother named", "Jochi")\n', '("Ögedei", "was military apprentice of", "Tolui")\n', '("Ögedei Khan", "successfully captured", "Hungary at Mohi")\n', '("Ögedei", "worked with", "Yelü Chucai")\n', '("Ögedei", "sent troops through", "Hebei")\n', '("Ögedei", "sent troops through", "Shanxi")\n', '("Ögedei", "pacified", "Ghazni")\n', '("Ögedei\'s policies", "pursued the expansionist approach into", "Persia")\n', '("Ögedei\'s troops", "defeated and invaded", "Dameghan")\n', '("Ögedei", "consented to the pillage of", "Isfahan")\n', '("Ögedei\'s soldiers", "besieged", "Bukhara")\n', '("Ögedei\'s rule", "expanded into the region of", "Khorasan")\n', '("Ögedei\'s troops", "crossed", "Amu Darya River")\n', '("Ögedei\'s command", "led invasions towards", "Afghanistan")\n', '("Ögedei", "commanded conquests near", "Caspian Sea")\n', '("Ögedei\'s military campaigns", "moved across", "Alborz")\n', '("Ögedei\'s forces", "established a camp at", "Rey")\n', '("Ögedei\'s army", "captured cities such as", "Qum")\n', '("Ögedei", "sent his armies to capture", "Hamadan")\n', '("Ögedei\'s reign", "claimed territories including", "Fars")\n', '("Ögedei", "sent his army to", "Kabul")\n', '("Ögedei", "was ruler of territories including", "Henan")\n', '("Ögedei", "captured significant cities like", "Kaifeng")\n', '("Ögedei\'s soldiers", "took control of", "Luoyang")\n', '("Ögedei", "was the ruler when Mongols entered", "Chang\'an")\n', '("Ögedei Khan", "pacified regions in", "Manchuria")\n', '("Ögedei\'s campaigns", "impacted regions such as the", "Caucasus")\n', '("Ögedei\'s forces", "breached walls of", "Ganjak")\n', '("Ögedei", "demanded tribute from the city of", "Irbil")\n']
+range(1, 208) 1
+{'id': '0_7', 'Question': " When Genghis Khan contested the origin of one of his offspring, which individual's paternal connection was questioned?\n", 'Answer': 'Jochi', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Jochi'}, {'label': 'B', 'text': 'Tolui'}, {'label': 'C', 'text': 'Möngke Khan'}, {'label': 'D', 'text': 'Genghis Khan'}, {'label': 'E', 'text': 'Ögedei Khan'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'jochi'}, {'label': 'B', 'text': 'toluid'}, {'label': 'C', 'text': 'möngke'}, {'label': 'D', 'text': 'genghis_khan'}, {'label': 'E', 'text': 'ögedei_khan'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Whose lineage was in doubt when Genghis Khan contested the origin of one of his sons?\nA1: Jochi'], 'Hops_wiki': [('Genghis Khan', 'Jochi')], 'Hops_cpnet': [('genghis_khan', 'jochi')], 'Triplets': ['("Jochi", "paternity questioned by", "Genghis Khan")'], 'Referred_files': [{'name': 'Genghis Khan', 'line': 26}], 'Question_triplet_answer': {100: [190], 50: [94], 25: [89]}}
+time passed:  5124.470248222351
+Expected dollar:  0.0
+Tolui is People
+China is Geography
+Yesügei is People
+Ögedei is People
+Caspian Sea is Geography
+Kublai Khan is People
+Termez is Geography
+Jochi is People
+Amu Darya River is Geography
+Henan is Geography
+Genghis Khan's is People
+Russia is Geography
+Kublai is People
+Dzungaria is Geography
+Hulagu is People
+Iran is Geography
+Juyong Pass is Geography
+Iraq is Geography
+Syria is Geography
+Shanxi is Geography
+Siberia is Geography
+Ghazni is Geography
+Güyük is People
+Jamukha and Toghrul is People
+Persia is Geography
+Börte is People
+Kodoe Aral is People
+Mongolia is Geography
+Bukhara is Geography
+the Battle of Mohi is Geography
+Ögedei Khan's is People
+Angqui is People
+Malik Nasir Yusuf is People
+Herat is Geography
+Chang'an is Geography
+the Caspian Sea is Geography
+Sorghaghtani is People
+Qum is Geography
+Kabul is Geography
+Luoyang is Geography
+Kaifeng is Geography
+Hebei is Geography
+Toluid is People
+Diaoyucheng is Geography
+Muqali is People
+Idi dan Muhammed is People
+entities:  {'Amu', 'Onon', 'Kereit', 'Russia', 'Iraq', 'Yesügei', 'Shanxi', 'Toghrul', 'Yusuf', 'Muhammed', 'Jochi', 'Ögedei', 'Aral', 'Kodoe', 'Güyük', 'Bukhara', 'Battle', 'Malik', 'Jin', 'Luoyang', 'Manchuria', 'Hulagu', 'Henan', 'Dzungaria', 'Nizari', 'Caspian', 'Darya', 'Siberia', 'Tolui', 'Syria', 'Möngke', "Chang'an", 'Sea', 'Genghis', 'Börte', 'Ghazni', 'River', 'Khan', 'Muqali', 'Termez', 'Jamukha', 'Angqui', 'Juyong', 'Sorghaghtani', 'Mohi', 'Herat', 'Sali', 'Kublai', 'Alborz', 'Hebei', 'Nasir', 'Toluid', 'Mongolia', 'Pass', 'Noyan', 'Jami', 'Qum', 'Diaoyucheng', 'Iran', 'Persia', 'Khorasan', "Khan's", 'dan', 'Kabul', 'Idi', 'anda', 'China', 'Kaifeng'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Möngke Khan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Möngke Khan
+Genghis Khan
+Tolui
+Temüjin
+Ögedei
+Kublai Khan
+Yesügei
+Hö'elün
+Karakorum
+Chinese
+European
+Persian
+Year of the Pig
+Jochi
+Ögedei's troops
+Amu Darya River
+Yuan dynasty
+Goryeo
+Köten
+Malik Nasir Yusuf
+The History of Yuan
+Shengwu qinzheng lu
+Year of the Pig
+
+gpt_entity_particular(): entity list: 
+ ['Shengwu qinzheng lu', 'Köten', "Hö'elün", 'Yesügei', 'Jochi', 'Ögedei', 'Kublai Khan', 'Persian', 'Yuan dynasty', 'Karakorum', 'Year of the Pig', 'Möngke Khan', "Ögedei's troops", 'Tolui', 'Chinese', 'European', 'Malik Nasir Yusuf', 'Temüjin', 'Genghis Khan', 'The History of Yuan', 'Goryeo', 'Amu Darya River']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Genghis Khan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Genghis Khan
+Tolui
+China
+Central Asia
+covenant
+father
+military campaigns
+Kublai Khan
+covenant
+mother
+tribute
+Möngke Khan
+armies
+China
+persian chronicles
+Börte
+Mongolia
+Bo'orchu
+united
+Sorghaghtani
+Goryeo
+founding father of
+Karakorum
+army
+Tatars, Merkits, Naimans
+deity
+Khwarazmian Empire
+Kublai
+Dzungaria
+Hulagu
+Western Xia
+Kereit tribe
+Jamukha
+Görkhan
+Khagan
+Southern Song
+Yuan dynasty
+Kwarazmian Empire
+Persia
+Oghul-Khoimish
+Jochi
+Ghazni
+Behter
+Jin China
+Qiuchi
+clot
+Luoyang
+Xianzong
+Nizari state
+eight White Yurts Cult
+angqui
+goryeo
+Nizari
+Toluid line
+Mexican standoff
+sorghaghtani
+Öghul-Khoimish
+Güyuk
+Diaoyucheng
+Behter
+
+gpt_entity_particular(): entity list: 
+ ['eight White Yurts Cult', 'Jamukha', 'persian chronicles', 'goryeo', 'Öghul-Khoimish', 'Sorghaghtani', 'founding father of', 'Jochi', 'military campaigns', 'army', 'tribute', "Bo'orchu", 'Güyuk', 'clot', 'sorghaghtani', 'mother', 'Kublai', 'father', 'Kublai Khan', 'Kereit tribe', 'united', 'Central Asia', 'Tatars, Merkits, Naimans', 'Yuan dynasty', 'Mongolia', 'Hulagu', 'Western Xia', 'Luoyang', 'Karakorum', 'Khagan', 'angqui', 'armies', 'Mexican standoff', 'Jin China', 'Görkhan', 'Dzungaria', 'Möngke Khan', 'Nizari state', 'Nizari', 'Diaoyucheng', 'Southern Song', 'Tolui', 'Persia', 'Toluid line', 'deity', 'Kwarazmian Empire', 'Qiuchi', 'covenant', 'Genghis Khan', 'Khwarazmian Empire', 'Behter', 'China', 'Xianzong', 'Börte', 'Goryeo', 'Ghazni', 'Oghul-Khoimish']
+
+gpt_entity_particular(): filtered entity: 
+ ['Hulagu']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Jochi' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Jochi
+Jochi
+Jochi
+Qojin
+
+gpt_entity_particular(): entity list: 
+ ['Qojin', 'Jochi']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Tolui' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+Tolui
+
+gpt_entity_particular(): entity list: 
+ ['Tolui']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ögedei Khan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ögedei
+Tolui
+China
+Central Asia
+covenant
+father
+Yesügei
+Ögedei Khan
+Caspian Sea
+Yuan dynasty
+Yuan dynasty
+Termez
+Yesugei
+Western Xia
+Tolui
+Merv
+father
+Yesügei
+Ögedei's reign
+Fars
+Tolui
+Tolui
+Kublai
+Dzungaria
+North China
+Iran
+Jin China
+Ögedei
+Henan
+Mongol Empire
+Western scholarship
+Mongol Empire
+China
+Central Asia
+Russia
+Muslim world
+Hö'elün
+millions
+Ganjak
+Fars
+Ögedei Khan
+man
+Merkit
+Naimans
+rebels
+Dzungaria
+Persia
+Tatars
+Merkits
+tribe
+Khwarazmian Empire
+Mongolia
+Khwarazmian Empire
+Mongol Empire
+era
+Goryeo
+Börte
+Möngke Khan
+Kublai Khan
+Western Xia
+Khwarazmian Empire
+Genghis Khan
+Börte
+Buddhist
+Manchuria
+father
+Yesügei
+Iraq
+Syria
+Möngke Khan
+the Mongol Empire
+Delüün Boldog
+Kublai
+Möngke Khan
+China
+South China
+Merv
+Tolui
+Termez
+Goryeo
+Genghis Khan
+Western Xia
+Jochi
+Möngke Khan
+Henan
+Yuan dynasty
+Tolui
+Siberia
+expansion of the empire
+Tolui
+Möngke
+China
+birth
+Illegitimacy
+Kublai Khan
+Yuan dynasty
+Yesugei's death
+Möngke Khan
+born
+Xianzong 
+Tolui
+Möngke Khan
+Battle of Mohi
+Güyük
+Mongol Empire
+Karluks
+civil war
+Tolui
+Tolui
+Termez
+Kublai Khan
+Genghis Khan
+Möngnu
+Persia
+Khorasan
+commanders
+Qum
+Görk
+Isfahan
+Anda oath
+Obol
+Dzungaria
+Möngke Khan
+Hülegü
+Rajiya
+Ilkhanate
+Anda
+Descriptive words
+Flame
+Tolui
+Sorghaghtani
+Möngke Khan
+Oghul-Khoimish
+Mongol tribes
+Buddhist
+Kublai Khan
+Dali Kingdom
+Börte
+Hö'elün
+Kublai
+Behter
+Sorghaghtani
+Siege of 
+Diaoyucheng
+Börte
+Kublai
+Dali Kingdom
+Yesugei and Hö'elün
+Kublai
+Mongol Empire
+Buddhist
+Bo'orchu and Muqali
+Höelün
+Western scholarship
+Börte
+Bo'orchu and Muqali
+Genghis Khan
+Western scholarship
+Tolui
+Genghis Khan
+Ögedei Khan
+Raj
+Öged
+Genghis Khan
+Mongol army
+
+gpt_entity_particular(): entity list: 
+ ['Tatars', 'Western scholarship', 'Russia', 'Iraq', 'Raj', 'Jochi', 'Ögedei Khan', 'Güyük', 'Muslim world', "Yesugei's death", 'Central Asia', 'Yuan dynasty', 'rebels', 'era', 'Battle of Mohi', 'the Mongol Empire', 'expansion of the empire', 'Möngke', 'Khwarazmian Empire', 'Goryeo', 'Oghul-Khoimish', 'Xianzong ', "Hö'elün", 'Ganjak', 'Karluks', 'Kublai', 'father', 'Ilkhanate', 'man', 'commanders', 'Qum', 'Diaoyucheng', 'Siege of ', 'Iran', 'Mongol Empire', 'Persia', 'Khorasan', 'Fars', 'Descriptive words', 'Caspian Sea', 'China', 'Möngnu', 'Buddhist', 'tribe', 'Höelün', 'Merkits', 'Naimans', "Yesugei and Hö'elün", 'Yesügei', 'born', 'Ögedei', 'millions', 'Kublai Khan', "Ögedei's reign", 'Manchuria', 'Western Xia', 'Flame', 'Henan', 'Rajiya', 'Dzungaria', 'Möngke Khan', 'Siberia', 'Tolui', 'Syria', 'Öged', 'covenant', 'Börte', 'Termez', 'South China', 'Illegitimacy', 'Sorghaghtani', 'Dali Kingdom', 'Yesugei', 'Isfahan', 'Mongol army', 'Merkit', 'North China', 'birth', 'civil war', 'Obol', 'Mongolia', 'Anda oath', 'Jin China', 'Görk', "Bo'orchu and Muqali", 'Hülegü', 'Genghis Khan', 'Behter', 'Anda', 'Delüün Boldog', 'Merv', 'Mongol tribes']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Amu', 'Onon', 'Kereit', 'Russia', 'Iraq', 'Yesügei', 'Shanxi', 'Toghrul', 'Yusuf', 'Muhammed', 'Jochi', 'Ögedei', 'Aral', 'Kodoe', 'Güyük', 'Bukhara', 'Battle', 'Malik', 'Jin', 'Luoyang', 'Manchuria', 'Hulagu', 'Henan', 'Dzungaria', 'Nizari', 'Caspian', 'Darya', 'Siberia', 'Tolui', 'Syria', 'Möngke', "Chang'an", 'Sea', 'Genghis', 'Börte', 'Ghazni', 'River', 'Khan', 'Muqali', 'Termez', 'Jamukha', 'Angqui', 'Juyong', 'Sorghaghtani', 'Mohi', 'Herat', 'Sali', 'Kublai', 'Alborz', 'Hebei', 'Nasir', 'Toluid', 'Mongolia', 'Pass', 'Noyan', 'Jami', 'Qum', 'Diaoyucheng', 'Iran', 'Persia', 'Khorasan', "Khan's", 'dan', 'Kabul', 'Idi', 'anda', 'China', 'Kaifeng'}
+Total time:  210.21279168128967
+Entity conversion done on 0_7 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_0_7_entity_conversion_hash.json. Check the entity.
+ When 031 015 contested the origin of one of his offspring, which individual's paternal connection was questioned?
+
+
+
+Done. Check final_query/id_0_7_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_0_7_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_0_7_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_0_7_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_0_7_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_0_7_final_result_ratio25_unmasked.txt

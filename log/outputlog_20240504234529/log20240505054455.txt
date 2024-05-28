@@ -1,0 +1,800 @@
+Got argument: Turtle, 6, 6_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', 'start word': 'Turtle', 'end word': 'Cretaceous', 'source': {'name': 'Turtle', 'line': 41}, 'cpnet': {'start word': 'turtle', 'end word': 'cretaceous'}}
+
+utils/question.py extract_hops(Cretaceous, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cretaceous_info.json file
+second_hop1:  {'triplet': '("Jurassic period", "to the beginning of", "Cretaceous Period")', 'start word': 'Cretaceous', 'end word': 'Jurassic', 'source': {'name': 'Jurassic', 'line': 2}, 'cpnet': {'start word': 'cretaceous', 'end word': 'jurassic'}}
+
+utils/question.py extract_hops(Jurassic, [], ['Turtle', 'Cretaceous']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Jurassic_info.json file
+last_hop:  {'triplet': '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")', 'start word': 'Jurassic', 'end word': 'Toarcian', 'source': {'name': 'Jurassic', 'line': 39}, 'cpnet': {'start word': 'jurassic', 'end word': 'toarcian'}}
+
+utils/question.py extract_hops(Cretaceous, ['Jurassic'], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cretaceous_info.json file
+second_hop2:  {'triplet': '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")', 'start word': 'Cretaceous', 'end word': 'Florida', 'source': {'name': 'Gulf of Mexico', 'line': 23}, 'cpnet': {'start word': 'cretaceous', 'end word': 'florida'}}
+generate_question(6_2, ['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', '("Jurassic period", "to the beginning of", "Cretaceous Period")', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")', '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")'], ['Turtle', 'Cretaceous', 'Cretaceous', 'Jurassic'], [('Turtle', 'Cretaceous'), ('Cretaceous', 'Jurassic'), ('Cretaceous', 'Florida'), ('Jurassic', 'Toarcian')], Turtle, [{'name': 'Turtle', 'line': 41}, {'name': 'Jurassic', 'line': 2}, {'name': 'Gulf of Mexico', 'line': 23}, {'name': 'Jurassic', 'line': 39}]) called
+GPT output is:  Q: What type of animal is facing a higher rate of extinction today compared to the die-off at the boundary of the geological time frame that ended with the period famous for the vast expansion of flowering plants and also had areas like modern-day Yucatán and Florida submerged, but is not the period that witnessed sea levels rise drastically starting from an epoch named after a French town?
+
+A: Turtle
+final_choice(Turtle, options = 5) started
+[]
+entity_type(Turtle) called
+Turtle is Animal
+check_matchscore(Turtle, Kimmeridgian first appearances):  0.0
+choose_by_wiki_recur(Kimmeridgian first appearances)
+   Pages in Kimmeridgian first appearances: ['Allosauridae', 'Aulacostephanidae', 'Bonefishes', 'Brachiosauridae', 'Carcharodontosauridae', 'Coeluridae', 'Compsemydidae', 'Cycnorhamphus suevicus', 'Dsungaripteridae', 'Haploceratidae', 'Lusitanisuchus', 'Marginocephalia', 'Mazapilitinae', 'Multituberculata', 'Neosauropoda', 'Nodosauridae', 'Paurodontidae', 'Platypterygiinae', 'Pygope', 'Salamandroidea', 'Somphospondyli', 'Spinosauridae', 'Titanosauria', 'Turtle']
+      Lusitanisuchus in ['Lusitanisuchus', 'Multituberculata', 'Platypterygiinae', 'Turtle']
+Lusitanisuchus is Animal
+      Multituberculata in ['Lusitanisuchus', 'Multituberculata', 'Platypterygiinae', 'Turtle', 'Somphospondyli']
+Multituberculata is Animal
+      Platypterygiinae in ['Lusitanisuchus', 'Multituberculata', 'Platypterygiinae', 'Turtle', 'Somphospondyli']
+Platypterygiinae is Animal
+      Turtle in ['Lusitanisuchus', 'Multituberculata', 'Platypterygiinae', 'Turtle', 'Somphospondyli']
+Turtle is Animal
+      Somphospondyli in ['Lusitanisuchus', 'Multituberculata', 'Platypterygiinae', 'Turtle', 'Somphospondyli', 'Salamandroidea']
+Somphospondyli is Animal
+      Salamandroidea in ['Lusitanisuchus', 'Multituberculata', 'Platypterygiinae', 'Turtle', 'Somphospondyli', 'Salamandroidea']
+Salamandroidea is Animal
+['Multituberculata', 'Platypterygiinae', 'Somphospondyli', 'Salamandroidea']
+Ended after 2.5 hierarchy
+(2.5, ['Salamandroidea', 'Multituberculata', 'Somphospondyli', 'Platypterygiinae'])
+
+extract_info(Platypterygiinae) Start.
+utils/preprocess.py extract_info(): Checking good links on Platypterygiinae
+Ophthalmosauridae is Animal
+1 / 30 )  ophthalmosaurid Ophthalmosauridae ophthalmosaurid
+Thunnosauria is Animal
+2 / 30 )  thunnosaur Thunnosauria thunnosaur
+Ichthyosauria is Animal
+3 / 30 )  ichthyosaurs Ichthyosauria ichthyosauria
+Late Cretaceous is Geography
+4 / 30 )  Late Cretaceous Late Cretaceous upper_cretaceous
+Australia is Geography
+5 / 30 )  Australia Australia australia
+North America is Geography
+6 / 30 )  North America North America north_america
+Ophthalmosaurinae is Animal
+7 / 30 )  Ophthalmosaurinae Ophthalmosaurinae ophthalmosaurine
+extract_triplet(Platypterygiinae)
+Got GPT's response. String length : 1022
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  [['ophthalmosaurid', 'Ophthalmosauridae', 'ophthalmosaurid'], ['thunnosaur', 'Thunnosauria', 'thunnosaur'], ['ichthyosaurs', 'Ichthyosauria', 'ichthyosauria']]
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  [['Late Cretaceous', 'Late Cretaceous', 'upper_cretaceous']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  [['Australia', 'Australia', 'australia']]
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [(None, 'Platypterygiinae', 'platypterygiine')]
+object_words:  []
+extract_info(Somphospondyli) Start.
+utils/preprocess.py extract_info(): Checking good links on Somphospondyli
+Macronaria is Animal
+1 / 30 )  titanosauriform Macronaria macronaria
+Sauropoda is Animal
+2 / 30 )  sauropods Sauropoda sauropoda
+Late Cretaceous is Geography
+3 / 30 )  Late Cretaceous Late Cretaceous upper_cretaceous
+Titanosauria is Animal
+4 / 30 )  Titanosauria Titanosauria titanosauria
+Brachiosauridae is Animal
+5 / 30 )  Brachiosauridae Brachiosauridae brachiosauridae
+Camellate  is Animal
+6 / 30 )  camellate Camellate  somphospondylan
+Sauroposeidon is Animal
+7 / 30 )  Sauroposeidon proteles Sauroposeidon sauroposeidon
+Chubutisaurus is Animal
+8 / 30 )  Chubutisaurus insignis Chubutisaurus chubutisaurus
+extract_triplet(Somphospondyli)
+Got GPT's response. String length : 937
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  [['titanosauriform', 'Macronaria', 'macronaria'], ['sauropods', 'Sauropoda', 'sauropoda']]
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  [['Late Cretaceous', 'Late Cretaceous', 'upper_cretaceous']]
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  [['Titanosauria', 'Titanosauria', 'titanosauria'], ['Brachiosauridae', 'Brachiosauridae', 'brachiosauridae']]
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  []
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  []
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  []
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  []
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  []
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  [['camellate', 'Camellate ', 'somphospondylan']]
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  []
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  []
+subject_words:  [(None, 'Somphospondyli', 'somphospondylan')]
+object_words:  []
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Jurassic period", "to the beginning of", "Cretaceous Period")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Jurassic period", "spanned from", "end of the Triassic Period")\n', '("Jurassic", "constitutes middle period of", "Mesozoic Era")\n', '("Jura Mountains", "limestone strata from", "Jurassic identified")\n', '("Jurassic", "marked by", "Triassic–Jurassic extinction event")\n', '("Toarcian Stage", "marked by", "Toarcian Oceanic Anoxic Event")\n', '("Triassic fauna", "transitioned to", "fauna dominated by dinosaurs")\n', '("Jurassic", "first appearance of", "birds")\n', '("Jurassic", "appearance of", "earliest crabs and modern lizards")\n', '("Central Atlantic Magmatic Province", "associated with", "major Triassic-Jurassic extinction event")\n', '("Jurassic", "boundary with", "Cretaceous remains formally undefined")\n', '("Jurassic", "start marked by eruption of", "Central Atlantic Magmatic Province")\n', '("Jurassic", "climate was", "warmer")\n', '("Jurassic", "major events include", "diversification of early mammals")\n', '("Pangaea", "began rifting into", "Laurasia and Gondwana during Jurassic")\n', '("Jurassic", "fauna dominated by", "dinosaurs alone")\n', '("Jurassic", "oceans inhabited by", "marine reptiles such as ichthyosaurs and plesiosaurs")\n', '("Jurassic flora", "dominated by", "ferns and gymnosperms")\n', '("Jurassic", "etymology linked to", "Jura Mountains")\n', '("Alexander von Humboldt", "recognized", "carbonate deposits as Jura limestone")\n', '("Jurassic", "term coined by", "Alexandre Brongniart")\n', '("Leopold von Buch", "established", "three-fold division of the Jurassic")\n', '("Swabian Jura", "subdivided into", "six subdivisions by Friedrich August von Quenstedt")\n', '("Lower Jurassic", "also known as", "Lias or Liassic")\n', '("Hettangian Stage", "GSSP located at", "Kuhjoch Pass, Karwendel Mountains")\n', '("Sinemurian Stage", "first defined by", "Alcide d\'Orbigny")\n', '("Pliensbachian Stage", "named after", "the hamlet of Pliensbach")\n', '("Toarcian Stage", "takes name from", "the French town of Thouars")\n', '("Aalenian Stage", "named after", "the city of Aalen in Germany")\n', '("Bajocian Stage", "GSSP located at", "Cabo Mondego, Portugal")\n', '("Bathonian Stage", "named after", "city of Bath, England")\n', '("Callovian Stage", "derived from", "name of the village of Kellaways")\n', '("Oxfordian Stage", "named after", "the city of Oxford")\n', '("Kimmeridgian Stage", "named after", "village of Kimmeridge")\n', '("Tithonian Stage", "origin of name from", "Greek mythology Tithonus")\n', '("Jurassic", "major source rock for", "North Sea oil")\n', '("Jurassic", "coal reserves found in", "north-west China")\n', '("Pangaea", "began to break up during", "Early Jurassic")\n', '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")\n', '("Jurassic climate", "warmer than present with no ice caps", "forests near poles")\n', '("Toarcian Oceanic Anoxic Event", "associated with", "increase of carbon dioxide and extinctions")\n', '("Jurassic", "Jurassic-Cretaceous boundary lacks", "defined GSSP")\n', '("Conifers", "dominant during", "Jurassic")\n', '("Ginkgoales", "important components of", "Eurasian Jurassic floras")\n', '("Bennettitales", "diverse and abundant in", "Jurassic floras")\n', '("Cycads", "apex of diversity during", "Jurassic and Cretaceous periods")\n', '("Mesozoic", "sometimes called the Age of Cycads", "due to diversity")\n', '("Gnetophytes", "first appeared by end of", "Jurassic")\n', '("Ferns and allies", "widespread during", "Jurassic")\n', '("Jurassic reptiles", "included diverse", "crocodylomorphs")\n', '("Turtles", "diversified during", "Jurassic")\n', '("Rhynchocephalians", "dominant small reptiles during", "Jurassic")\n', '("Jurassic squamates", "first appearance during", "Middle Jurassic")\n', '("Choristoderes", "earliest known remains found in", "Middle Jurassic")\n', '("Ichthyosaurs", "reached apex of diversity during", "Early Jurassic")\n', '("Plesiosaurs", "originated at end of", "Triassic")\n', '("Pterosaurs", "first appeared in", "Late Triassic")\n', '("Dinosaurs", "diversified extensively during", "Jurassic")\n', '("Theropods", "Advanced theropods part of", "Neotheropoda")\n', '("Birds", "earliest avialans during", "Middle to Late Jurassic")\n', '("Ornithischians", "earliest definitive ornithischians in", "Early Jurassic")\n', '("Sauropodomorphs", "became dominant large herbivores during", "Jurassic")\n', '("Amphibians", "Modern lissamphibians diversified during", "Jurassic")\n', '("Mammaliaformes", "diversified extensively during", "Jurassic")\n', '("Fish", "included diverse Actinopterygii and first true crabs during", "Jurassic")\n', '("Insects and arachnids", "no major extinction at Triassic-Jurassic boundary, diversity increased in Middle-Late Jurassic", "including beetles, lepidopterans, fleas, and others")\n', '("Marine invertebrates", "reefs expanded during Late Jurassic", "including sponge reefs and scleractinian coral reefs")\n', '("Brachiopods", "declined during Triassic-Jurassic extinction but later rebounded", "to later decline in Late Jurassic")\n', '("Molluscs", "Bivalves impacted by end-Triassic extinction but later diversified", "Ammonites radiated during Early Jurassic")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Jurassic period", "spanned from", "end of the Triassic Period")\n', '("Jurassic period", "to the beginning of", "Cretaceous Period")\n', '("Jurassic", "constitutes middle period of", "Mesozoic Era")\n', '("Jura Mountains", "limestone strata from", "Jurassic identified")\n', '("Jurassic", "marked by", "Triassic–Jurassic extinction event")\n', '("Toarcian Stage", "marked by", "Toarcian Oceanic Anoxic Event")\n', '("Triassic fauna", "transitioned to", "fauna dominated by dinosaurs")\n', '("Jurassic", "first appearance of", "birds")\n', '("Jurassic", "appearance of", "earliest crabs and modern lizards")\n', '("Central Atlantic Magmatic Province", "associated with", "major Triassic-Jurassic extinction event")\n', '("Jurassic", "boundary with", "Cretaceous remains formally undefined")\n', '("Jurassic", "start marked by eruption of", "Central Atlantic Magmatic Province")\n', '("Jurassic", "climate was", "warmer")\n', '("Jurassic", "major events include", "diversification of early mammals")\n', '("Pangaea", "began rifting into", "Laurasia and Gondwana during Jurassic")\n', '("Jurassic", "fauna dominated by", "dinosaurs alone")\n', '("Jurassic", "oceans inhabited by", "marine reptiles such as ichthyosaurs and plesiosaurs")\n', '("Jurassic flora", "dominated by", "ferns and gymnosperms")\n', '("Jurassic", "etymology linked to", "Jura Mountains")\n', '("Alexander von Humboldt", "recognized", "carbonate deposits as Jura limestone")\n', '("Jurassic", "term coined by", "Alexandre Brongniart")\n', '("Leopold von Buch", "established", "three-fold division of the Jurassic")\n', '("Swabian Jura", "subdivided into", "six subdivisions by Friedrich August von Quenstedt")\n', '("Lower Jurassic", "also known as", "Lias or Liassic")\n', '("Hettangian Stage", "GSSP located at", "Kuhjoch Pass, Karwendel Mountains")\n', '("Sinemurian Stage", "first defined by", "Alcide d\'Orbigny")\n', '("Pliensbachian Stage", "named after", "the hamlet of Pliensbach")\n', '("Toarcian Stage", "takes name from", "the French town of Thouars")\n', '("Aalenian Stage", "named after", "the city of Aalen in Germany")\n', '("Bajocian Stage", "GSSP located at", "Cabo Mondego, Portugal")\n', '("Bathonian Stage", "named after", "city of Bath, England")\n', '("Callovian Stage", "derived from", "name of the village of Kellaways")\n', '("Oxfordian Stage", "named after", "the city of Oxford")\n', '("Kimmeridgian Stage", "named after", "village of Kimmeridge")\n', '("Tithonian Stage", "origin of name from", "Greek mythology Tithonus")\n', '("Jurassic", "major source rock for", "North Sea oil")\n', '("Jurassic", "coal reserves found in", "north-west China")\n', '("Pangaea", "began to break up during", "Early Jurassic")\n', '("Jurassic climate", "warmer than present with no ice caps", "forests near poles")\n', '("Toarcian Oceanic Anoxic Event", "associated with", "increase of carbon dioxide and extinctions")\n', '("Jurassic", "Jurassic-Cretaceous boundary lacks", "defined GSSP")\n', '("Conifers", "dominant during", "Jurassic")\n', '("Ginkgoales", "important components of", "Eurasian Jurassic floras")\n', '("Bennettitales", "diverse and abundant in", "Jurassic floras")\n', '("Cycads", "apex of diversity during", "Jurassic and Cretaceous periods")\n', '("Mesozoic", "sometimes called the Age of Cycads", "due to diversity")\n', '("Gnetophytes", "first appeared by end of", "Jurassic")\n', '("Ferns and allies", "widespread during", "Jurassic")\n', '("Jurassic reptiles", "included diverse", "crocodylomorphs")\n', '("Turtles", "diversified during", "Jurassic")\n', '("Rhynchocephalians", "dominant small reptiles during", "Jurassic")\n', '("Jurassic squamates", "first appearance during", "Middle Jurassic")\n', '("Choristoderes", "earliest known remains found in", "Middle Jurassic")\n', '("Ichthyosaurs", "reached apex of diversity during", "Early Jurassic")\n', '("Plesiosaurs", "originated at end of", "Triassic")\n', '("Pterosaurs", "first appeared in", "Late Triassic")\n', '("Dinosaurs", "diversified extensively during", "Jurassic")\n', '("Theropods", "Advanced theropods part of", "Neotheropoda")\n', '("Birds", "earliest avialans during", "Middle to Late Jurassic")\n', '("Ornithischians", "earliest definitive ornithischians in", "Early Jurassic")\n', '("Sauropodomorphs", "became dominant large herbivores during", "Jurassic")\n', '("Amphibians", "Modern lissamphibians diversified during", "Jurassic")\n', '("Mammaliaformes", "diversified extensively during", "Jurassic")\n', '("Fish", "included diverse Actinopterygii and first true crabs during", "Jurassic")\n', '("Insects and arachnids", "no major extinction at Triassic-Jurassic boundary, diversity increased in Middle-Late Jurassic", "including beetles, lepidopterans, fleas, and others")\n', '("Marine invertebrates", "reefs expanded during Late Jurassic", "including sponge reefs and scleractinian coral reefs")\n', '("Brachiopods", "declined during Triassic-Jurassic extinction but later rebounded", "to later decline in Late Jurassic")\n', '("Molluscs", "Bivalves impacted by end-Triassic extinction but later diversified", "Ammonites radiated during Early Jurassic")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n', '("Platypterygiinae", "is a subfamily of", "ophthalmosaurid thunnosaur ichthyosaurs")\n', '("Platypterygiinae", "existed from", "the early Late Jurassic to the early Late Cretaceous")\n', '("Brachypterygius", "is the oldest known", "platypterygiine")\n', '("Platypterygiinae", "has square tooth roots and reduced extracondylar area", "in their anatomy")\n', '("Platypterygiinae", "has prominent dorsal and ventral trochanters on", "humerus")\n', '("Platypterygiinae", "ischiopubis lacks", "an obturator foramen")\n', '("Platypterygiinae", "was named in", "2001 by Maxim S. Arkhangelsky")\n', '("Arkhangelsky", "and colleague noted", "Platypterygiinae")\n', '("Platypterygiinae", "defined phylogenetically by", "Fischer et al. (2012)")\n', '("Platypterygiinae", "is closer to", "Platypterygius hercynicus than to Ophthalmosaurus icenicus")\n', '("Platypterygiinae", "lived in", "Asia")\n', '("Platypterygiinae", "lived in", "Australia")\n', '("Platypterygiinae", "lived in", "Europe")\n', '("Platypterygiinae", "lived in", "North America")\n', '("Platypterygiinae", "lived in", "South America")\n', '("Multituberculata", "is an extinct order of", "mammals")\n', '("Multituberculata", "first appeared in the", "Middle Jurassic")\n', '("Multituberculata", "reached peak diversity during", "Late Cretaceous")\n', '("Multituberculata", "reached peak diversity during", "Paleocene")\n', '("Multituberculata", "disappeared from fossil record in", "late Eocene")\n', '("Multituberculata", "were diverse order of", "Mesozoic")\n', '("Multituberculata", "had ecological niches similar to", "jerboa")\n', '("Multituberculata", "were crown mammals outside of", "Theria")\n', '("Multituberculata", "were crown mammals outside of", "Monotremata")\n', '("Multituberculata", "closely related to", "Gondwanatheria")\n', '("Multituberculata", "part of", "Allotheria")\n', '("Multituberculata", "had dental anatomy similar to", "rodents")\n', '("Multituberculata", "is compared with", "Plesiadapiformes")\n', '("Multituberculata", "is compared with", "diprotodontian marsupials")\n', '("Multituberculata", "includes the subgroup", "taeniolabidoideans")\n', '("Multituberculata", "jaw structure is similar to", "haramiyidans")\n', '("Multituberculata", "jaw structure is similar to", "tritylodontids")\n', '("Multituberculata", "includes the subfamily", "sudamericid")\n', '("Multituberculata", "is a member of", "mammaliforms")\n', '("Multituberculata", "first appear in the fossil record in the", "Middle Jurassic")\n', '("Middle Jurassic", "is the period of first appearance of", "Multituberculata")\n', '("Multituberculata", "appear during", "Aptian stage of the Early Cretaceous")\n', '("Multituberculata", "have a resemblance to", "rodents")\n', '("Multituberculata", "have a resemblance to", "ungulates")\n', '("Multituberculata", "includes the subgroup", "ptilodonts")\n', '("Multituberculata", "have tooth marks on fossils of", "Champsosaurus")\n', '("Multituberculata", "fossil specimens found in", "Wyoming")\n', '("Multituberculata", "reached peak diversity during", "Late Cretaceous")\n', '("Multituberculata", "reach peak diversity in", "Madagascar")\n', '("Multituberculata", "radiated in", "Paleogene")\n', '("Multituberculata", "first appear in the fossil record during", "Jurassic")\n', '("Multituberculata", "dominated for over", "one hundred million years")\n', '("Multituberculata", "earliest known from", "Middle Jurassic")\n', '("Multituberculata", "abundant during", "Late Jurassic")\n', '("Multituberculata", "abundant during", "Early Cretaceous")\n', '("Multituberculates", "radiated into", "ptilodont morphotypes")\n', '("Multituberculates", "extinct after", "at least 88 million years of dominance")\n', '("Multituberculates", "reach peak diversity in", "early Palaeocene")\n', '("Multituberculates", "experiencing decline in", "Eocene")\n', '("Ectypodus childei", "is the last species of", "Multituberculata")\n', '("Multituberculata", "competed with", "rodents")\n', '("Multituberculates", "co-existed with", "rodents")\n', '("Somphospondyli", "is a clade of", "titanosauriform sauropods")\n', '("Somphospondyli", "existed from", "Late Jurassic until Late Cretaceous")\n', '("Somphospondyli", "more closely related to", "Titanosauria than Brachiosauridae")\n', '("Somphospondyli", "remains have been discovered on", "all continents")\n', '("Somphospondyli", "includes species like", "Saltasaurus loricatus")\n', '("Somphospondyli", "does not include", "Giraffatitan brancai")\n', '("Somphospondyli", "defined by features such as", "at least 15 cervical vertebrae")\n', '("Somphospondyli", "features include", "bevelled radius bone end")\n', '("Somphospondyli", "has", "sacral vertebrae with camellate internal texture")\n', '("Somphospondyli", "defined by features such as", "convex posterior articular surfaces of middle to posterior caudal vertebrae")\n', '("Somphospondyli", "features include", "biconvex distal caudal vertebrae")\n', '("Somphospondyli", "features include", "humerus anterolateral corner squared")\n']
+range(1, 298) 4
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Jurassic period", "to the beginning of", "Cretaceous Period")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Jurassic period", "spanned from", "end of the Triassic Period")\n', '("Jurassic", "constitutes middle period of", "Mesozoic Era")\n', '("Jura Mountains", "limestone strata from", "Jurassic identified")\n', '("Jurassic", "marked by", "Triassic–Jurassic extinction event")\n', '("Toarcian Stage", "marked by", "Toarcian Oceanic Anoxic Event")\n', '("Triassic fauna", "transitioned to", "fauna dominated by dinosaurs")\n', '("Jurassic", "first appearance of", "birds")\n', '("Jurassic", "appearance of", "earliest crabs and modern lizards")\n', '("Central Atlantic Magmatic Province", "associated with", "major Triassic-Jurassic extinction event")\n', '("Jurassic", "boundary with", "Cretaceous remains formally undefined")\n', '("Jurassic", "start marked by eruption of", "Central Atlantic Magmatic Province")\n', '("Jurassic", "climate was", "warmer")\n', '("Jurassic", "major events include", "diversification of early mammals")\n', '("Pangaea", "began rifting into", "Laurasia and Gondwana during Jurassic")\n', '("Jurassic", "fauna dominated by", "dinosaurs alone")\n', '("Jurassic", "oceans inhabited by", "marine reptiles such as ichthyosaurs and plesiosaurs")\n', '("Jurassic flora", "dominated by", "ferns and gymnosperms")\n', '("Jurassic", "etymology linked to", "Jura Mountains")\n', '("Alexander von Humboldt", "recognized", "carbonate deposits as Jura limestone")\n', '("Jurassic", "term coined by", "Alexandre Brongniart")\n', '("Leopold von Buch", "established", "three-fold division of the Jurassic")\n', '("Swabian Jura", "subdivided into", "six subdivisions by Friedrich August von Quenstedt")\n', '("Lower Jurassic", "also known as", "Lias or Liassic")\n', '("Hettangian Stage", "GSSP located at", "Kuhjoch Pass, Karwendel Mountains")\n', '("Sinemurian Stage", "first defined by", "Alcide d\'Orbigny")\n', '("Pliensbachian Stage", "named after", "the hamlet of Pliensbach")\n', '("Toarcian Stage", "takes name from", "the French town of Thouars")\n', '("Aalenian Stage", "named after", "the city of Aalen in Germany")\n', '("Bajocian Stage", "GSSP located at", "Cabo Mondego, Portugal")\n', '("Bathonian Stage", "named after", "city of Bath, England")\n', '("Callovian Stage", "derived from", "name of the village of Kellaways")\n', '("Oxfordian Stage", "named after", "the city of Oxford")\n', '("Kimmeridgian Stage", "named after", "village of Kimmeridge")\n', '("Tithonian Stage", "origin of name from", "Greek mythology Tithonus")\n', '("Jurassic", "major source rock for", "North Sea oil")\n', '("Jurassic", "coal reserves found in", "north-west China")\n', '("Pangaea", "began to break up during", "Early Jurassic")\n', '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")\n', '("Jurassic climate", "warmer than present with no ice caps", "forests near poles")\n', '("Toarcian Oceanic Anoxic Event", "associated with", "increase of carbon dioxide and extinctions")\n', '("Jurassic", "Jurassic-Cretaceous boundary lacks", "defined GSSP")\n', '("Conifers", "dominant during", "Jurassic")\n', '("Ginkgoales", "important components of", "Eurasian Jurassic floras")\n', '("Bennettitales", "diverse and abundant in", "Jurassic floras")\n', '("Cycads", "apex of diversity during", "Jurassic and Cretaceous periods")\n', '("Mesozoic", "sometimes called the Age of Cycads", "due to diversity")\n', '("Gnetophytes", "first appeared by end of", "Jurassic")\n', '("Ferns and allies", "widespread during", "Jurassic")\n', '("Jurassic reptiles", "included diverse", "crocodylomorphs")\n', '("Turtles", "diversified during", "Jurassic")\n', '("Rhynchocephalians", "dominant small reptiles during", "Jurassic")\n', '("Jurassic squamates", "first appearance during", "Middle Jurassic")\n', '("Choristoderes", "earliest known remains found in", "Middle Jurassic")\n', '("Ichthyosaurs", "reached apex of diversity during", "Early Jurassic")\n', '("Plesiosaurs", "originated at end of", "Triassic")\n', '("Pterosaurs", "first appeared in", "Late Triassic")\n', '("Dinosaurs", "diversified extensively during", "Jurassic")\n', '("Theropods", "Advanced theropods part of", "Neotheropoda")\n', '("Birds", "earliest avialans during", "Middle to Late Jurassic")\n', '("Ornithischians", "earliest definitive ornithischians in", "Early Jurassic")\n', '("Sauropodomorphs", "became dominant large herbivores during", "Jurassic")\n', '("Amphibians", "Modern lissamphibians diversified during", "Jurassic")\n', '("Mammaliaformes", "diversified extensively during", "Jurassic")\n', '("Fish", "included diverse Actinopterygii and first true crabs during", "Jurassic")\n', '("Insects and arachnids", "no major extinction at Triassic-Jurassic boundary, diversity increased in Middle-Late Jurassic", "including beetles, lepidopterans, fleas, and others")\n', '("Marine invertebrates", "reefs expanded during Late Jurassic", "including sponge reefs and scleractinian coral reefs")\n', '("Brachiopods", "declined during Triassic-Jurassic extinction but later rebounded", "to later decline in Late Jurassic")\n', '("Molluscs", "Bivalves impacted by end-Triassic extinction but later diversified", "Ammonites radiated during Early Jurassic")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Jurassic period", "spanned from", "end of the Triassic Period")\n', '("Jurassic period", "to the beginning of", "Cretaceous Period")\n', '("Jurassic", "constitutes middle period of", "Mesozoic Era")\n', '("Jura Mountains", "limestone strata from", "Jurassic identified")\n', '("Jurassic", "marked by", "Triassic–Jurassic extinction event")\n', '("Toarcian Stage", "marked by", "Toarcian Oceanic Anoxic Event")\n', '("Triassic fauna", "transitioned to", "fauna dominated by dinosaurs")\n', '("Jurassic", "first appearance of", "birds")\n', '("Jurassic", "appearance of", "earliest crabs and modern lizards")\n', '("Central Atlantic Magmatic Province", "associated with", "major Triassic-Jurassic extinction event")\n', '("Jurassic", "boundary with", "Cretaceous remains formally undefined")\n', '("Jurassic", "start marked by eruption of", "Central Atlantic Magmatic Province")\n', '("Jurassic", "climate was", "warmer")\n', '("Jurassic", "major events include", "diversification of early mammals")\n', '("Pangaea", "began rifting into", "Laurasia and Gondwana during Jurassic")\n', '("Jurassic", "fauna dominated by", "dinosaurs alone")\n', '("Jurassic", "oceans inhabited by", "marine reptiles such as ichthyosaurs and plesiosaurs")\n', '("Jurassic flora", "dominated by", "ferns and gymnosperms")\n', '("Jurassic", "etymology linked to", "Jura Mountains")\n', '("Alexander von Humboldt", "recognized", "carbonate deposits as Jura limestone")\n', '("Jurassic", "term coined by", "Alexandre Brongniart")\n', '("Leopold von Buch", "established", "three-fold division of the Jurassic")\n', '("Swabian Jura", "subdivided into", "six subdivisions by Friedrich August von Quenstedt")\n', '("Lower Jurassic", "also known as", "Lias or Liassic")\n', '("Hettangian Stage", "GSSP located at", "Kuhjoch Pass, Karwendel Mountains")\n', '("Sinemurian Stage", "first defined by", "Alcide d\'Orbigny")\n', '("Pliensbachian Stage", "named after", "the hamlet of Pliensbach")\n', '("Toarcian Stage", "takes name from", "the French town of Thouars")\n', '("Aalenian Stage", "named after", "the city of Aalen in Germany")\n', '("Bajocian Stage", "GSSP located at", "Cabo Mondego, Portugal")\n', '("Bathonian Stage", "named after", "city of Bath, England")\n', '("Callovian Stage", "derived from", "name of the village of Kellaways")\n', '("Oxfordian Stage", "named after", "the city of Oxford")\n', '("Kimmeridgian Stage", "named after", "village of Kimmeridge")\n', '("Tithonian Stage", "origin of name from", "Greek mythology Tithonus")\n', '("Jurassic", "major source rock for", "North Sea oil")\n', '("Jurassic", "coal reserves found in", "north-west China")\n', '("Pangaea", "began to break up during", "Early Jurassic")\n', '("Jurassic climate", "warmer than present with no ice caps", "forests near poles")\n', '("Toarcian Oceanic Anoxic Event", "associated with", "increase of carbon dioxide and extinctions")\n', '("Jurassic", "Jurassic-Cretaceous boundary lacks", "defined GSSP")\n', '("Conifers", "dominant during", "Jurassic")\n', '("Ginkgoales", "important components of", "Eurasian Jurassic floras")\n', '("Bennettitales", "diverse and abundant in", "Jurassic floras")\n', '("Cycads", "apex of diversity during", "Jurassic and Cretaceous periods")\n', '("Mesozoic", "sometimes called the Age of Cycads", "due to diversity")\n', '("Gnetophytes", "first appeared by end of", "Jurassic")\n', '("Ferns and allies", "widespread during", "Jurassic")\n', '("Jurassic reptiles", "included diverse", "crocodylomorphs")\n', '("Turtles", "diversified during", "Jurassic")\n', '("Rhynchocephalians", "dominant small reptiles during", "Jurassic")\n', '("Jurassic squamates", "first appearance during", "Middle Jurassic")\n', '("Choristoderes", "earliest known remains found in", "Middle Jurassic")\n', '("Ichthyosaurs", "reached apex of diversity during", "Early Jurassic")\n', '("Plesiosaurs", "originated at end of", "Triassic")\n', '("Pterosaurs", "first appeared in", "Late Triassic")\n', '("Dinosaurs", "diversified extensively during", "Jurassic")\n', '("Theropods", "Advanced theropods part of", "Neotheropoda")\n', '("Birds", "earliest avialans during", "Middle to Late Jurassic")\n', '("Ornithischians", "earliest definitive ornithischians in", "Early Jurassic")\n', '("Sauropodomorphs", "became dominant large herbivores during", "Jurassic")\n', '("Amphibians", "Modern lissamphibians diversified during", "Jurassic")\n', '("Mammaliaformes", "diversified extensively during", "Jurassic")\n', '("Fish", "included diverse Actinopterygii and first true crabs during", "Jurassic")\n', '("Insects and arachnids", "no major extinction at Triassic-Jurassic boundary, diversity increased in Middle-Late Jurassic", "including beetles, lepidopterans, fleas, and others")\n', '("Marine invertebrates", "reefs expanded during Late Jurassic", "including sponge reefs and scleractinian coral reefs")\n', '("Brachiopods", "declined during Triassic-Jurassic extinction but later rebounded", "to later decline in Late Jurassic")\n', '("Molluscs", "Bivalves impacted by end-Triassic extinction but later diversified", "Ammonites radiated during Early Jurassic")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n', '("Platypterygiinae", "is a subfamily of", "ophthalmosaurid thunnosaur ichthyosaurs")\n', '("Platypterygiinae", "existed from", "the early Late Jurassic to the early Late Cretaceous")\n', '("Brachypterygius", "is the oldest known", "platypterygiine")\n', '("Platypterygiinae", "has square tooth roots and reduced extracondylar area", "in their anatomy")\n', '("Platypterygiinae", "has prominent dorsal and ventral trochanters on", "humerus")\n', '("Platypterygiinae", "ischiopubis lacks", "an obturator foramen")\n', '("Platypterygiinae", "was named in", "2001 by Maxim S. Arkhangelsky")\n', '("Arkhangelsky", "and colleague noted", "Platypterygiinae")\n', '("Platypterygiinae", "defined phylogenetically by", "Fischer et al. (2012)")\n', '("Platypterygiinae", "is closer to", "Platypterygius hercynicus than to Ophthalmosaurus icenicus")\n', '("Platypterygiinae", "lived in", "Asia")\n', '("Platypterygiinae", "lived in", "Australia")\n', '("Platypterygiinae", "lived in", "Europe")\n', '("Platypterygiinae", "lived in", "North America")\n', '("Platypterygiinae", "lived in", "South America")\n', '("Multituberculata", "is an extinct order of", "mammals")\n', '("Multituberculata", "first appeared in the", "Middle Jurassic")\n', '("Multituberculata", "reached peak diversity during", "Late Cretaceous")\n', '("Multituberculata", "reached peak diversity during", "Paleocene")\n', '("Multituberculata", "disappeared from fossil record in", "late Eocene")\n', '("Multituberculata", "were diverse order of", "Mesozoic")\n', '("Multituberculata", "had ecological niches similar to", "jerboa")\n', '("Multituberculata", "were crown mammals outside of", "Theria")\n', '("Multituberculata", "were crown mammals outside of", "Monotremata")\n', '("Multituberculata", "closely related to", "Gondwanatheria")\n', '("Multituberculata", "part of", "Allotheria")\n', '("Multituberculata", "had dental anatomy similar to", "rodents")\n', '("Multituberculata", "is compared with", "Plesiadapiformes")\n', '("Multituberculata", "is compared with", "diprotodontian marsupials")\n', '("Multituberculata", "includes the subgroup", "taeniolabidoideans")\n', '("Multituberculata", "jaw structure is similar to", "haramiyidans")\n', '("Multituberculata", "jaw structure is similar to", "tritylodontids")\n', '("Multituberculata", "includes the subfamily", "sudamericid")\n', '("Multituberculata", "is a member of", "mammaliforms")\n', '("Multituberculata", "first appear in the fossil record in the", "Middle Jurassic")\n', '("Middle Jurassic", "is the period of first appearance of", "Multituberculata")\n', '("Multituberculata", "appear during", "Aptian stage of the Early Cretaceous")\n', '("Multituberculata", "have a resemblance to", "rodents")\n', '("Multituberculata", "have a resemblance to", "ungulates")\n', '("Multituberculata", "includes the subgroup", "ptilodonts")\n', '("Multituberculata", "have tooth marks on fossils of", "Champsosaurus")\n', '("Multituberculata", "fossil specimens found in", "Wyoming")\n', '("Multituberculata", "reached peak diversity during", "Late Cretaceous")\n', '("Multituberculata", "reach peak diversity in", "Madagascar")\n', '("Multituberculata", "radiated in", "Paleogene")\n', '("Multituberculata", "first appear in the fossil record during", "Jurassic")\n', '("Multituberculata", "dominated for over", "one hundred million years")\n', '("Multituberculata", "earliest known from", "Middle Jurassic")\n', '("Multituberculata", "abundant during", "Late Jurassic")\n', '("Multituberculata", "abundant during", "Early Cretaceous")\n', '("Multituberculates", "radiated into", "ptilodont morphotypes")\n', '("Multituberculates", "extinct after", "at least 88 million years of dominance")\n', '("Multituberculates", "reach peak diversity in", "early Palaeocene")\n', '("Multituberculates", "experiencing decline in", "Eocene")\n', '("Ectypodus childei", "is the last species of", "Multituberculata")\n', '("Multituberculata", "competed with", "rodents")\n', '("Multituberculates", "co-existed with", "rodents")\n', '("Somphospondyli", "is a clade of", "titanosauriform sauropods")\n', '("Somphospondyli", "existed from", "Late Jurassic until Late Cretaceous")\n', '("Somphospondyli", "more closely related to", "Titanosauria than Brachiosauridae")\n', '("Somphospondyli", "remains have been discovered on", "all continents")\n', '("Somphospondyli", "includes species like", "Saltasaurus loricatus")\n', '("Somphospondyli", "does not include", "Giraffatitan brancai")\n', '("Somphospondyli", "defined by features such as", "at least 15 cervical vertebrae")\n', '("Somphospondyli", "features include", "bevelled radius bone end")\n', '("Somphospondyli", "has", "sacral vertebrae with camellate internal texture")\n', '("Somphospondyli", "defined by features such as", "convex posterior articular surfaces of middle to posterior caudal vertebrae")\n', '("Somphospondyli", "features include", "biconvex distal caudal vertebrae")\n', '("Somphospondyli", "features include", "humerus anterolateral corner squared")\n']
+range(1, 298) 4
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Jurassic period", "to the beginning of", "Cretaceous Period")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Jurassic period", "spanned from", "end of the Triassic Period")\n', '("Jurassic", "constitutes middle period of", "Mesozoic Era")\n', '("Jura Mountains", "limestone strata from", "Jurassic identified")\n', '("Jurassic", "marked by", "Triassic–Jurassic extinction event")\n', '("Toarcian Stage", "marked by", "Toarcian Oceanic Anoxic Event")\n', '("Triassic fauna", "transitioned to", "fauna dominated by dinosaurs")\n', '("Jurassic", "first appearance of", "birds")\n', '("Jurassic", "appearance of", "earliest crabs and modern lizards")\n', '("Central Atlantic Magmatic Province", "associated with", "major Triassic-Jurassic extinction event")\n', '("Jurassic", "boundary with", "Cretaceous remains formally undefined")\n', '("Jurassic", "start marked by eruption of", "Central Atlantic Magmatic Province")\n', '("Jurassic", "climate was", "warmer")\n', '("Jurassic", "major events include", "diversification of early mammals")\n', '("Pangaea", "began rifting into", "Laurasia and Gondwana during Jurassic")\n', '("Jurassic", "fauna dominated by", "dinosaurs alone")\n', '("Jurassic", "oceans inhabited by", "marine reptiles such as ichthyosaurs and plesiosaurs")\n', '("Jurassic flora", "dominated by", "ferns and gymnosperms")\n', '("Jurassic", "etymology linked to", "Jura Mountains")\n', '("Alexander von Humboldt", "recognized", "carbonate deposits as Jura limestone")\n', '("Jurassic", "term coined by", "Alexandre Brongniart")\n', '("Leopold von Buch", "established", "three-fold division of the Jurassic")\n', '("Swabian Jura", "subdivided into", "six subdivisions by Friedrich August von Quenstedt")\n', '("Lower Jurassic", "also known as", "Lias or Liassic")\n', '("Hettangian Stage", "GSSP located at", "Kuhjoch Pass, Karwendel Mountains")\n', '("Sinemurian Stage", "first defined by", "Alcide d\'Orbigny")\n', '("Pliensbachian Stage", "named after", "the hamlet of Pliensbach")\n', '("Toarcian Stage", "takes name from", "the French town of Thouars")\n', '("Aalenian Stage", "named after", "the city of Aalen in Germany")\n', '("Bajocian Stage", "GSSP located at", "Cabo Mondego, Portugal")\n', '("Bathonian Stage", "named after", "city of Bath, England")\n', '("Callovian Stage", "derived from", "name of the village of Kellaways")\n', '("Oxfordian Stage", "named after", "the city of Oxford")\n', '("Kimmeridgian Stage", "named after", "village of Kimmeridge")\n', '("Tithonian Stage", "origin of name from", "Greek mythology Tithonus")\n', '("Jurassic", "major source rock for", "North Sea oil")\n', '("Jurassic", "coal reserves found in", "north-west China")\n', '("Pangaea", "began to break up during", "Early Jurassic")\n', '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")\n', '("Jurassic climate", "warmer than present with no ice caps", "forests near poles")\n', '("Toarcian Oceanic Anoxic Event", "associated with", "increase of carbon dioxide and extinctions")\n', '("Jurassic", "Jurassic-Cretaceous boundary lacks", "defined GSSP")\n', '("Conifers", "dominant during", "Jurassic")\n', '("Ginkgoales", "important components of", "Eurasian Jurassic floras")\n', '("Bennettitales", "diverse and abundant in", "Jurassic floras")\n', '("Cycads", "apex of diversity during", "Jurassic and Cretaceous periods")\n', '("Mesozoic", "sometimes called the Age of Cycads", "due to diversity")\n', '("Gnetophytes", "first appeared by end of", "Jurassic")\n', '("Ferns and allies", "widespread during", "Jurassic")\n', '("Jurassic reptiles", "included diverse", "crocodylomorphs")\n', '("Turtles", "diversified during", "Jurassic")\n', '("Rhynchocephalians", "dominant small reptiles during", "Jurassic")\n', '("Jurassic squamates", "first appearance during", "Middle Jurassic")\n', '("Choristoderes", "earliest known remains found in", "Middle Jurassic")\n', '("Ichthyosaurs", "reached apex of diversity during", "Early Jurassic")\n', '("Plesiosaurs", "originated at end of", "Triassic")\n', '("Pterosaurs", "first appeared in", "Late Triassic")\n', '("Dinosaurs", "diversified extensively during", "Jurassic")\n', '("Theropods", "Advanced theropods part of", "Neotheropoda")\n', '("Birds", "earliest avialans during", "Middle to Late Jurassic")\n', '("Ornithischians", "earliest definitive ornithischians in", "Early Jurassic")\n', '("Sauropodomorphs", "became dominant large herbivores during", "Jurassic")\n', '("Amphibians", "Modern lissamphibians diversified during", "Jurassic")\n', '("Mammaliaformes", "diversified extensively during", "Jurassic")\n', '("Fish", "included diverse Actinopterygii and first true crabs during", "Jurassic")\n', '("Insects and arachnids", "no major extinction at Triassic-Jurassic boundary, diversity increased in Middle-Late Jurassic", "including beetles, lepidopterans, fleas, and others")\n', '("Marine invertebrates", "reefs expanded during Late Jurassic", "including sponge reefs and scleractinian coral reefs")\n', '("Brachiopods", "declined during Triassic-Jurassic extinction but later rebounded", "to later decline in Late Jurassic")\n', '("Molluscs", "Bivalves impacted by end-Triassic extinction but later diversified", "Ammonites radiated during Early Jurassic")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Jurassic period", "spanned from", "end of the Triassic Period")\n', '("Jurassic period", "to the beginning of", "Cretaceous Period")\n', '("Jurassic", "constitutes middle period of", "Mesozoic Era")\n', '("Jura Mountains", "limestone strata from", "Jurassic identified")\n', '("Jurassic", "marked by", "Triassic–Jurassic extinction event")\n', '("Toarcian Stage", "marked by", "Toarcian Oceanic Anoxic Event")\n', '("Triassic fauna", "transitioned to", "fauna dominated by dinosaurs")\n', '("Jurassic", "first appearance of", "birds")\n', '("Jurassic", "appearance of", "earliest crabs and modern lizards")\n', '("Central Atlantic Magmatic Province", "associated with", "major Triassic-Jurassic extinction event")\n', '("Jurassic", "boundary with", "Cretaceous remains formally undefined")\n', '("Jurassic", "start marked by eruption of", "Central Atlantic Magmatic Province")\n', '("Jurassic", "climate was", "warmer")\n', '("Jurassic", "major events include", "diversification of early mammals")\n', '("Pangaea", "began rifting into", "Laurasia and Gondwana during Jurassic")\n', '("Jurassic", "fauna dominated by", "dinosaurs alone")\n', '("Jurassic", "oceans inhabited by", "marine reptiles such as ichthyosaurs and plesiosaurs")\n', '("Jurassic flora", "dominated by", "ferns and gymnosperms")\n', '("Jurassic", "etymology linked to", "Jura Mountains")\n', '("Alexander von Humboldt", "recognized", "carbonate deposits as Jura limestone")\n', '("Jurassic", "term coined by", "Alexandre Brongniart")\n', '("Leopold von Buch", "established", "three-fold division of the Jurassic")\n', '("Swabian Jura", "subdivided into", "six subdivisions by Friedrich August von Quenstedt")\n', '("Lower Jurassic", "also known as", "Lias or Liassic")\n', '("Hettangian Stage", "GSSP located at", "Kuhjoch Pass, Karwendel Mountains")\n', '("Sinemurian Stage", "first defined by", "Alcide d\'Orbigny")\n', '("Pliensbachian Stage", "named after", "the hamlet of Pliensbach")\n', '("Toarcian Stage", "takes name from", "the French town of Thouars")\n', '("Aalenian Stage", "named after", "the city of Aalen in Germany")\n', '("Bajocian Stage", "GSSP located at", "Cabo Mondego, Portugal")\n', '("Bathonian Stage", "named after", "city of Bath, England")\n', '("Callovian Stage", "derived from", "name of the village of Kellaways")\n', '("Oxfordian Stage", "named after", "the city of Oxford")\n', '("Kimmeridgian Stage", "named after", "village of Kimmeridge")\n', '("Tithonian Stage", "origin of name from", "Greek mythology Tithonus")\n', '("Jurassic", "major source rock for", "North Sea oil")\n', '("Jurassic", "coal reserves found in", "north-west China")\n', '("Pangaea", "began to break up during", "Early Jurassic")\n', '("Jurassic climate", "warmer than present with no ice caps", "forests near poles")\n', '("Toarcian Oceanic Anoxic Event", "associated with", "increase of carbon dioxide and extinctions")\n', '("Jurassic", "Jurassic-Cretaceous boundary lacks", "defined GSSP")\n', '("Conifers", "dominant during", "Jurassic")\n', '("Ginkgoales", "important components of", "Eurasian Jurassic floras")\n', '("Bennettitales", "diverse and abundant in", "Jurassic floras")\n', '("Cycads", "apex of diversity during", "Jurassic and Cretaceous periods")\n', '("Mesozoic", "sometimes called the Age of Cycads", "due to diversity")\n', '("Gnetophytes", "first appeared by end of", "Jurassic")\n', '("Ferns and allies", "widespread during", "Jurassic")\n', '("Jurassic reptiles", "included diverse", "crocodylomorphs")\n', '("Turtles", "diversified during", "Jurassic")\n', '("Rhynchocephalians", "dominant small reptiles during", "Jurassic")\n', '("Jurassic squamates", "first appearance during", "Middle Jurassic")\n', '("Choristoderes", "earliest known remains found in", "Middle Jurassic")\n', '("Ichthyosaurs", "reached apex of diversity during", "Early Jurassic")\n', '("Plesiosaurs", "originated at end of", "Triassic")\n', '("Pterosaurs", "first appeared in", "Late Triassic")\n', '("Dinosaurs", "diversified extensively during", "Jurassic")\n', '("Theropods", "Advanced theropods part of", "Neotheropoda")\n', '("Birds", "earliest avialans during", "Middle to Late Jurassic")\n', '("Ornithischians", "earliest definitive ornithischians in", "Early Jurassic")\n', '("Sauropodomorphs", "became dominant large herbivores during", "Jurassic")\n', '("Amphibians", "Modern lissamphibians diversified during", "Jurassic")\n', '("Mammaliaformes", "diversified extensively during", "Jurassic")\n', '("Fish", "included diverse Actinopterygii and first true crabs during", "Jurassic")\n', '("Insects and arachnids", "no major extinction at Triassic-Jurassic boundary, diversity increased in Middle-Late Jurassic", "including beetles, lepidopterans, fleas, and others")\n', '("Marine invertebrates", "reefs expanded during Late Jurassic", "including sponge reefs and scleractinian coral reefs")\n', '("Brachiopods", "declined during Triassic-Jurassic extinction but later rebounded", "to later decline in Late Jurassic")\n', '("Molluscs", "Bivalves impacted by end-Triassic extinction but later diversified", "Ammonites radiated during Early Jurassic")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n', '("Platypterygiinae", "is a subfamily of", "ophthalmosaurid thunnosaur ichthyosaurs")\n', '("Platypterygiinae", "existed from", "the early Late Jurassic to the early Late Cretaceous")\n', '("Brachypterygius", "is the oldest known", "platypterygiine")\n', '("Platypterygiinae", "has square tooth roots and reduced extracondylar area", "in their anatomy")\n', '("Platypterygiinae", "has prominent dorsal and ventral trochanters on", "humerus")\n', '("Platypterygiinae", "ischiopubis lacks", "an obturator foramen")\n', '("Platypterygiinae", "was named in", "2001 by Maxim S. Arkhangelsky")\n', '("Arkhangelsky", "and colleague noted", "Platypterygiinae")\n', '("Platypterygiinae", "defined phylogenetically by", "Fischer et al. (2012)")\n', '("Platypterygiinae", "is closer to", "Platypterygius hercynicus than to Ophthalmosaurus icenicus")\n', '("Platypterygiinae", "lived in", "Asia")\n', '("Platypterygiinae", "lived in", "Australia")\n', '("Platypterygiinae", "lived in", "Europe")\n', '("Platypterygiinae", "lived in", "North America")\n', '("Platypterygiinae", "lived in", "South America")\n', '("Multituberculata", "is an extinct order of", "mammals")\n', '("Multituberculata", "first appeared in the", "Middle Jurassic")\n', '("Multituberculata", "reached peak diversity during", "Late Cretaceous")\n', '("Multituberculata", "reached peak diversity during", "Paleocene")\n', '("Multituberculata", "disappeared from fossil record in", "late Eocene")\n', '("Multituberculata", "were diverse order of", "Mesozoic")\n', '("Multituberculata", "had ecological niches similar to", "jerboa")\n', '("Multituberculata", "were crown mammals outside of", "Theria")\n', '("Multituberculata", "were crown mammals outside of", "Monotremata")\n', '("Multituberculata", "closely related to", "Gondwanatheria")\n', '("Multituberculata", "part of", "Allotheria")\n', '("Multituberculata", "had dental anatomy similar to", "rodents")\n', '("Multituberculata", "is compared with", "Plesiadapiformes")\n', '("Multituberculata", "is compared with", "diprotodontian marsupials")\n', '("Multituberculata", "includes the subgroup", "taeniolabidoideans")\n', '("Multituberculata", "jaw structure is similar to", "haramiyidans")\n', '("Multituberculata", "jaw structure is similar to", "tritylodontids")\n', '("Multituberculata", "includes the subfamily", "sudamericid")\n', '("Multituberculata", "is a member of", "mammaliforms")\n', '("Multituberculata", "first appear in the fossil record in the", "Middle Jurassic")\n', '("Middle Jurassic", "is the period of first appearance of", "Multituberculata")\n', '("Multituberculata", "appear during", "Aptian stage of the Early Cretaceous")\n', '("Multituberculata", "have a resemblance to", "rodents")\n', '("Multituberculata", "have a resemblance to", "ungulates")\n', '("Multituberculata", "includes the subgroup", "ptilodonts")\n', '("Multituberculata", "have tooth marks on fossils of", "Champsosaurus")\n', '("Multituberculata", "fossil specimens found in", "Wyoming")\n', '("Multituberculata", "reached peak diversity during", "Late Cretaceous")\n', '("Multituberculata", "reach peak diversity in", "Madagascar")\n', '("Multituberculata", "radiated in", "Paleogene")\n', '("Multituberculata", "first appear in the fossil record during", "Jurassic")\n', '("Multituberculata", "dominated for over", "one hundred million years")\n', '("Multituberculata", "earliest known from", "Middle Jurassic")\n', '("Multituberculata", "abundant during", "Late Jurassic")\n', '("Multituberculata", "abundant during", "Early Cretaceous")\n', '("Multituberculates", "radiated into", "ptilodont morphotypes")\n', '("Multituberculates", "extinct after", "at least 88 million years of dominance")\n', '("Multituberculates", "reach peak diversity in", "early Palaeocene")\n', '("Multituberculates", "experiencing decline in", "Eocene")\n', '("Ectypodus childei", "is the last species of", "Multituberculata")\n', '("Multituberculata", "competed with", "rodents")\n', '("Multituberculates", "co-existed with", "rodents")\n', '("Somphospondyli", "is a clade of", "titanosauriform sauropods")\n', '("Somphospondyli", "existed from", "Late Jurassic until Late Cretaceous")\n', '("Somphospondyli", "more closely related to", "Titanosauria than Brachiosauridae")\n', '("Somphospondyli", "remains have been discovered on", "all continents")\n', '("Somphospondyli", "includes species like", "Saltasaurus loricatus")\n', '("Somphospondyli", "does not include", "Giraffatitan brancai")\n', '("Somphospondyli", "defined by features such as", "at least 15 cervical vertebrae")\n', '("Somphospondyli", "features include", "bevelled radius bone end")\n', '("Somphospondyli", "has", "sacral vertebrae with camellate internal texture")\n', '("Somphospondyli", "defined by features such as", "convex posterior articular surfaces of middle to posterior caudal vertebrae")\n', '("Somphospondyli", "features include", "biconvex distal caudal vertebrae")\n', '("Somphospondyli", "features include", "humerus anterolateral corner squared")\n']
+range(1, 298) 4
+{'id': '6_2', 'Question': ' What type of animal is facing a higher rate of extinction today compared to the die-off at the boundary of the geological time frame that ended with the period famous for the vast expansion of flowering plants and also had areas like modern-day Yucatán and Florida submerged, but is not the period that witnessed sea levels rise drastically starting from an epoch named after a French town?\n\n', 'Answer': 'Turtle', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Salamandroidea'}, {'label': 'B', 'text': 'Platypterygiinae'}, {'label': 'C', 'text': 'Turtle'}, {'label': 'D', 'text': 'Multituberculata'}, {'label': 'E', 'text': 'Somphospondyli'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'salamandroidea'}, {'label': 'B', 'text': 'platypterygiine'}, {'label': 'C', 'text': 'turtle'}, {'label': 'D', 'text': 'multituberculata'}, {'label': 'E', 'text': 'somphospondylan'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Question_decompositions': ["1: Which type of animal's extinction is progressing faster now than it did during a major extinction event at the end of the Mesozoic Era?\nA1: Turtle \n\n", '2: The period known for its giant reptiles ended with which geological period that saw the emergence of flowering plants?\nA2: Cretaceous \n\n', '3: Which geological time frame saw regions that include the modern-day Yucatán and Florida completely underwater?\nA3: Cretaceous \n\n', '4: During which period did the sea level experience a significant rise, beginning in the early stage named after a French town and reaching its highest point at the boundary between two late stages?\nA4: Jurassic'], 'Hops_wiki': [('Turtle', 'Cretaceous'), ('Cretaceous', 'Jurassic'), ('Cretaceous', 'Florida'), ('Jurassic', 'Toarcian')], 'Hops_cpnet': [('turtle', 'cretaceous'), ('cretaceous', 'jurassic'), ('cretaceous', 'florida'), ('jurassic', 'toarcian')], 'Triplets': ['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', '("Jurassic period", "to the beginning of", "Cretaceous Period")', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")', '("Jurassic", "sea level rose during", "Toarcian and peaked at Kimmeridgian-Tithonian boundary")'], 'Referred_files': [{'name': 'Turtle', 'line': 41}, {'name': 'Jurassic', 'line': 2}, {'name': 'Gulf of Mexico', 'line': 23}, {'name': 'Jurassic', 'line': 39}], 'Question_triplet_answer': {100: [25, 155, 174, 202], 50: [112, 138, 176, 253], 25: [10, 52, 91, 188]}}
+time passed:  710.2824919223785
+Expected dollar:  0.005
+Mississippi Embayment is Geography
+Platypterygiinae is Animal
+Jura Mountains is Geography
+Jurassic is Geography
+Multituberculata is Animal
+Monotremata is Animal
+China is Geography
+Gulf of Mexico is Geography
+the United States is Geography
+Yucatán is Geography
+Florida is Geography
+Aalen is Geography
+Germany is Geography
+Pterosaurs is Animal
+Late Triassic is Geography
+Swabian Jura" is Geography
+Turtle is Animal
+Testudines is Animal
+Molluscs is Animal
+Triassic is Geography
+Ammonites is Animal
+Alabama is Geography
+Mississippi is Geography
+Louisiana is Geography
+Texas is Geography
+Theria is Animal
+Kimmeridgian Stage" is Geography
+Kimmeridge is Geography
+Bajocian Stage is Geography
+Cabo Mondego is Geography
+Portugal is Geography
+Mesozoic is Geography
+the Age of Cycads is Animal
+Lower Jurassic is Geography
+Multituberculates is Animal
+Actinopterygii is Animal
+Eocene is Geography
+Pliensbach is Geography
+Oxford is Geography
+Cuba is Geography
+Ichthyosaurs is Animal
+Toarcian is Geography
+Kimmeridgian Tithonian boundary is Geography
+Amphibians is Animal
+Tamaulipas is Geography
+Veracruz is Geography
+Tabasco is Geography
+Campeche is Geography
+Quintana Roo is Geography
+Oceania is Geography
+Thouars is Geography
+International Hydrographic Organization is Incident
+Rhynchocephalians is Animal
+27,000 is Geography
+Choristoderes is Animal
+Bathonian Stage is Geography
+Bath, England is Geography
+United States is Geography
+Mexico is Geography
+Turtles is Animal
+Maxim S. Arkhangelsky is Animal
+the Southern Hemisphere is Geography
+Yucatán Peninsula is Geography
+Giraffatitan is Animal
+North America is Geography
+Mesozoic Era is Geography
+Leatherback is Animal
+Atlantic is Geography
+Pacific is Geography
+Antarctica is Geography
+Paleocene is Geography
+Hernán Cortés is People
+entities:  {'Eocene', 'Bathonian', 'Tithonian', 'Tabasco', '27,000', 'Aalen', 'Testudines', 'von', 'North', 'Friedrich', 'Cortés', 'Campeche', 'Tamaulipas', 'United', 'Salamandroidea', 'Actinopterygii', 'Era', 'August', 'Quenstedt', 'Jura', 'Portugal', 'Louisiana', 'Cuba', 'Embayment', 'England', 'Molluscs', 'Bajocian', 'Quintana', 'Pterosaurs', 'Roo', 'International', 'China', 'boundary', 'Germany', 'Southeast', 'S.', 'Maxim', 'Pangaea', 'Ammonites', 'Laurasia', 'Ichthyosaurs', 'Kimmeridge', 'Peninsula', 'Turtles', 'Mexico', 'Oceania', 'Hemisphere', 'Atlantic', 'Leatherback', 'Multituberculates', 'Amazon', 'States', 'Paleocene', 'Lower', 'Mondego', 'Swabian', 'Cycads', 'Theria', 'Bath,', 'Mississippi', 'Hydrographic', 'Kimmeridgian', 'Turtle', 'Veracruz', 'Pliensbach', 'Cretaceous', 'Texas', 'Gondwana', 'Gulf', 'Thouars', 'Jurassic', 'Alabama', 'Monotremata', 'Europe', 'Louann', 'Asia', 'Rhynchocephalians', 'Southern', 'Mountains', 'Arkhangelsky', 'Hernán', 'Florida', 'Stage"', 'Amphibians', 'Pacific', 'Stage', 'Antarctica', 'Somphospondyli', 'Yucatán', 'Toarcian', 'Mesozoic', 'Late', 'Choristoderes', 'Giraffatitan', 'Organization', 'Cabo', 'Fischer', 'America', 'Platypterygiinae', 'Age', 'Triassic', 'Multituberculata', 'Jura"', 'Oxford'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Somphospondyli' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Somphospondyli
+Saltasaurus loricatus
+biconvex distal caudal vertebrae 
+sacral vertebrae with camellate internal texture
+
+gpt_entity_particular(): entity list: 
+ ['Saltasaurus loricatus', 'Somphospondyli', 'sacral vertebrae with camellate internal texture', 'biconvex distal caudal vertebrae ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Toarcian' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Toarcian Oceanic Anoxic Event
+Toarcian Stage
+Toarcian
+carbon dioxide
+extinctions
+increase
+Multituberculates
+ptilodont morphotypes
+ptilodonts
+sudamericid
+late Jurassic
+Middle Jurassic
+Jurassic
+Mesozoic
+Mardi Gras shipwreck
+
+gpt_entity_particular(): entity list: 
+ ['sudamericid', 'Mesozoic', 'Toarcian', 'extinctions', 'Toarcian Oceanic Anoxic Event', 'Toarcian Stage', 'Multituberculates', 'ptilodonts', 'late Jurassic', 'carbon dioxide', 'Mardi Gras shipwreck', 'ptilodont morphotypes', 'Middle Jurassic', 'Jurassic', 'increase']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Cretaceous' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Aalenian Stage
+Amphibians
+Archelon ischyros
+Arkhangelsky
+Bathonian Stage
+Birds
+Brachiopods
+Cabo Mondego, Portugal
+Central Atlantic Magmatic Province
+Choristoderes
+Conifers
+Cretaceous
+Dinosaurs
+Ectypodus childei
+Florida Platform
+Fossil record
+Giraffatitan brancai
+Gnetophytes
+Gondwana
+Gulf Coast of the United States
+Jura Mountains
+Jurassic
+Jurassic-Cretaceous
+Kimberley region
+Kimmeridgian Stage
+Leatherback turtle
+Liassic
+Limestone
+Lias
+Lias or Liassic
+Louann Salt
+Luisiameictus atavus
+Marcosuchus
+Maya civilization
+Mesozoic
+Middle Jurassic
+Middle to Late Jurassic
+Middle-Late Jurassic
+Mississippi Embayment
+Monotremata
+Multituberculata
+Neotheropoda
+North America
+North Atlantic Ocean
+Ophritodon
+Oxfords
+Pangaea
+Phlegethontiidae
+Pindax
+Platypterygiinae
+Pleurodira
+Pliensbachian Stage
+Ravniot
+Salt
+Saltasaurus
+Sauropodomorphs
+South America
+Sudamericidae
+Swabian Jura
+Tamaulipas
+Testudines
+Theropods
+Thyrosternon
+Tithonian Stage
+Toarcian Oceanic Anoxic Event
+Toarcian Stage
+Triassic
+Triassic–Jurassic
+Turtle
+Turtles
+Western Interior Seaway
+Yucatán Peninsula
+
+gpt_entity_particular(): entity list: 
+ ['Middle to Late Jurassic', 'Salt', 'Oxfords', 'Jurassic-Cretaceous', 'Thyrosternon', 'South America', 'Kimmeridgian Stage', 'Testudines', 'Liassic', 'Cabo Mondego, Portugal', 'Turtle', 'Marcosuchus', 'Triassic–Jurassic', 'Central Atlantic Magmatic Province', 'Maya civilization', 'Florida Platform', 'Mississippi Embayment', 'Dinosaurs', 'Phlegethontiidae', 'Middle-Late Jurassic', 'Toarcian Stage', 'Cretaceous', 'Aalenian Stage', 'Gondwana', 'Leatherback turtle', 'Neotheropoda', 'Limestone', 'Jurassic', 'Bathonian Stage', 'Lias', 'Monotremata', 'Gulf Coast of the United States', 'North Atlantic Ocean', 'Ravniot', 'Swabian Jura', 'Saltasaurus', 'Fossil record', 'Pindax', 'Theropods', 'Ophritodon', 'Western Interior Seaway', 'Tithonian Stage', 'Arkhangelsky', 'Birds', 'Pliensbachian Stage', 'Amphibians', 'Archelon ischyros', 'North America', 'Brachiopods', 'Giraffatitan brancai', 'Gnetophytes', 'Middle Jurassic', 'Conifers', 'Luisiameictus atavus', 'Louann Salt', 'Pleurodira', 'Yucatán Peninsula', 'Tamaulipas', 'Lias or Liassic', 'Mesozoic', 'Sauropodomorphs', 'Toarcian Oceanic Anoxic Event', 'Choristoderes', 'Sudamericidae', 'Pangaea', 'Platypterygiinae', 'Triassic', 'Multituberculata', 'Kimberley region', 'Turtles', 'Jura Mountains', 'Ectypodus childei']
+
+gpt_entity_particular(): filtered entity: 
+ ['Jurassic', 'Mesozoic']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Florida' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+Florida
+Alabama
+Mississippi
+Louisiana
+Texas
+
+gpt_entity_particular(): entity list: 
+ ['Gulf of Mexico', 'Texas', 'Florida', 'Mississippi', 'Alabama', 'Louisiana']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Platypterygiinae' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Platypterygiinae
+South America
+Asia
+Europe
+North America
+late Jurassic
+early Late Cretaceous
+Fischer et al. (2012)
+ophthalmosaurid thunnosaur ichthyosaurs
+
+gpt_entity_particular(): entity list: 
+ ['Fischer et al. (2012)', 'late Jurassic', 'South America', 'Platypterygiinae', 'ophthalmosaurid thunnosaur ichthyosaurs', 'North America', 'Europe', 'Asia', 'early Late Cretaceous']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Multituberculata' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Multituberculata
+Sudamericid
+Taeniolabidoideans
+Ptilodonts
+Haramiyidans
+Therapsids
+Euarchontoglires
+Mammaliforms
+Monotremata
+Theria
+Ungulates
+Diprotodontian marsupials
+Rodents
+Vertebrates
+Giraffatitan brancai
+Birds
+
+gpt_entity_particular(): entity list: 
+ ['Euarchontoglires', 'Sudamericid', 'Birds', 'Diprotodontian marsupials', 'Taeniolabidoideans', 'Multituberculata', 'Therapsids', 'Theria', 'Monotremata', 'Ptilodonts', 'Giraffatitan brancai', 'Mammaliforms', 'Haramiyidans', 'Rodents', 'Vertebrates', 'Ungulates']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Jurassic' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mississippi Embayment
+Platypterygiinae
+Jura Mountains
+Brachiopods
+Multituberculata
+Jurassic
+Largest living species of turtle
+Shells
+Marine invertebrates
+Salamandroidea
+central Atlantic Magmatic Province
+Gulf of Mexico
+Toarcian Oceanic Anoxic Event
+Somphospondyli
+Conifers
+Turtles
+Yucatán and Florida platforms
+Aalenian Stage
+Pterosaurs
+Gulf of Mexico
+Conifers
+Mesozoic
+Fish
+Salamandroidea
+Gnetophytes
+Pterosaurs
+Theropods
+Turtles
+Molluscs
+Pangaea
+Turtles
+Turtles
+Gulf of Mexico
+Multituberculata
+Turtles
+multituberculata
+Gnetophytes
+Gulf of Mexico
+Turtles
+Multituberculata
+Turtle
+mesozoic
+Jurassic
+Shell
+Rhynchocephalians
+Platypterygiinae
+Jurassic
+Jurassic
+Gulf of Mexico
+Jurassic
+Birds
+Turtles
+Gulf of Mexico
+Amphibians
+Jurassic
+Jurassic
+Jurassic
+Turtles
+Salamandroidea
+Jurassic
+Gulf of Mexico
+Gulf of Mexico
+Pangaea
+Gulf of Mexico
+Jurassic
+Mesozoic
+Fish
+Gulf of Mexico
+Turtles
+Somphospondyli
+Gulf of Mexico
+Shell
+Rhynchocephalians
+Platypterygiinae
+Platypterygiinae
+Jurassic
+Platypterygiinae
+Toarcian Oceanic Anoxic Event
+Sea turtles
+Multituberculata
+Multituberculata
+Gulf of Mexico
+Gulf of Mexico
+Jurassic
+Platypterygiinae
+Gulf of Mexico
+Gulf of Mexico
+Jurassic
+Shell
+Pangaea
+Turtles
+Pleiensbachian Stage
+Pleiensbachian Stage
+Jurassic
+Jurassic
+Multituberculata
+Multituberculata
+Multituberculata
+
+gpt_entity_particular(): entity list: 
+ ['Largest living species of turtle', 'Fish', 'Sea turtles', 'Yucatán and Florida platforms', 'Pleiensbachian Stage', 'Shells', 'Turtle', 'Mississippi Embayment', 'Marine invertebrates', 'Aalenian Stage', 'multituberculata', 'Jurassic', 'Salamandroidea', 'Theropods', 'central Atlantic Magmatic Province', 'Gulf of Mexico', 'Rhynchocephalians', 'Birds', 'Molluscs', 'Shell', 'Amphibians', 'Brachiopods', 'Pterosaurs', 'Gnetophytes', 'Conifers', 'mesozoic', 'Somphospondyli', 'Mesozoic', 'Toarcian Oceanic Anoxic Event', 'Pangaea', 'Platypterygiinae', 'Multituberculata', 'Turtles', 'Jura Mountains']
+
+gpt_entity_particular(): filtered entity: 
+ ['mesozoic', 'Mesozoic']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Turtle' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mississippi Embayment
+Platypterygiinae
+Jura Mountains
+Brachiopods
+Multituberculata
+Jurassic
+Shells
+Marine invertebrates
+Salamandroidea
+Somphospondyli
+Gulf of Mexico
+Theropods
+Mesozoic
+Fish
+Pangaea
+Molluscs
+Aalenian Stage
+Pterosaurs
+Conifers
+Yucatán and Florida platforms
+Gnetophytes
+Leatherback turtle
+Somphospondyli
+Sea turtles
+Dinosaurs
+Oxfordian Stage
+Arkhangelsky
+Choristoderes
+Ectypodus childei
+Pleurodira
+Gulf of Mexico
+Jura Mountains
+Turtle
+Birds
+Gulf of Mexico
+Ichthyosaurs
+Florida Platform
+Yucatán Peninsula
+Insects and arachnids
+Largest known turtle
+Cycads
+Hernán Cortés
+Word turtle
+
+gpt_entity_particular(): entity list: 
+ ['Fish', 'Sea turtles', 'Yucatán and Florida platforms', 'Cycads', 'Shells', 'Turtle', 'Florida Platform', 'Mississippi Embayment', 'Dinosaurs', 'Marine invertebrates', 'Aalenian Stage', 'Leatherback turtle', 'Insects and arachnids', 'Jurassic', 'Salamandroidea', 'Theropods', 'Largest known turtle', 'Gulf of Mexico', 'Oxfordian Stage', 'Arkhangelsky', 'Birds', 'Molluscs', 'Brachiopods', 'Pterosaurs', 'Gnetophytes', 'Conifers', 'Yucatán Peninsula', 'Pleurodira', 'Hernán Cortés', 'Somphospondyli', 'Mesozoic', 'Choristoderes', 'Pangaea', 'Platypterygiinae', 'Word turtle', 'Multituberculata', 'Ichthyosaurs', 'Jura Mountains', 'Ectypodus childei']
+
+gpt_entity_particular(): filtered entity: 
+ ['Leatherback turtle', 'Pleurodira']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Salamandroidea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Jurassic
+Salamandroidea
+Jurassic
+Leatherback turtle
+Carapace
+Plastron
+Late Jurassic
+Middle Jurassic
+Early Jurassic
+Toarcian
+Central Atlantic Magmatic Province
+North-west China
+Florida
+Alabama
+Mississippi
+Louisiana
+Texas
+Late Eocene
+Middle Jurassic
+Jurassic-Cretaceous boundary
+GSSP
+Early Triassic
+South America
+Asia
+Europe
+Theria
+Cretaceous-Tertiary extinction
+Late Cretaceous
+Pangaea
+Laurasia
+Gondwana
+Monotremata
+Diprotodontian marsupials
+Theropods
+Neotheropoda
+Testudines
+Haramiyidans
+Oceania
+Amphibians
+Lissamphibians
+Maya civilization
+Cycads 
+Gondwana 
+Triassic 
+Eocene 
+Sea turtles 
+Carbon dioxide 
+Giraffatitan brancai 
+Leatherback turtle 
+Antarctica 
+Bycatch 
+Amazon 
+Maya 
+Cycads 
+Cretaceous 
+Giraffatitan brancai 
+Central Atlantic Magmatic Province 
+Yucatán
+
+gpt_entity_particular(): entity list: 
+ ['Carbon dioxide ', 'Late Jurassic', 'Leatherback turtle ', 'South America', 'Early Jurassic', 'Lissamphibians', 'Theria', 'Late Cretaceous', 'Mississippi', 'Testudines', 'Early Triassic', 'Haramiyidans', 'Central Atlantic Magmatic Province', 'Maya civilization', 'Bycatch ', 'Amazon ', 'Texas', 'Triassic ', 'Leatherback turtle', 'Gondwana', 'Neotheropoda', 'Jurassic', 'Alabama', 'Europe', 'Late Eocene', 'Carapace', 'Salamandroidea', 'Monotremata', 'Asia', 'Sea turtles ', 'Theropods', 'Louisiana', 'Eocene ', 'Florida', 'Amphibians', 'Middle Jurassic', 'Cycads ', 'Gondwana ', 'Plastron', 'Jurassic-Cretaceous boundary', 'Cretaceous-Tertiary extinction', 'Maya ', 'Giraffatitan brancai ', 'Cretaceous ', 'Toarcian', 'Yucatán', 'North-west China', 'Antarctica ', 'Pangaea', 'Diprotodontian marsupials', 'GSSP', 'Laurasia', 'Central Atlantic Magmatic Province ', 'Oceania']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Eocene', 'Bathonian', 'Tithonian', 'Tabasco', '27,000', 'Aalen', 'Testudines', 'von', 'North', 'Friedrich', 'Leatherback turtle', 'Cortés', 'Campeche', 'Tamaulipas', 'United', 'Salamandroidea', 'Actinopterygii', 'Era', 'August', 'Quenstedt', 'Jura', 'Portugal', 'Louisiana', 'Cuba', 'Embayment', 'England', 'Molluscs', 'Bajocian', 'Quintana', 'Pterosaurs', 'Roo', 'International', 'China', 'boundary', 'Germany', 'Southeast', 'mesozoic', 'S.', 'Maxim', 'Pangaea', 'Ammonites', 'Laurasia', 'Ichthyosaurs', 'Kimmeridge', 'Peninsula', 'Turtles', 'Mexico', 'Oceania', 'Hemisphere', 'Atlantic', 'Leatherback', 'Multituberculates', 'Amazon', 'States', 'Paleocene', 'Lower', 'Mondego', 'Swabian', 'Cycads', 'Theria', 'Bath,', 'Mississippi', 'Hydrographic', 'Kimmeridgian', 'Turtle', 'Veracruz', 'Pliensbach', 'Cretaceous', 'Texas', 'Gondwana', 'Gulf', 'Thouars', 'Jurassic', 'Alabama', 'Monotremata', 'Europe', 'Louann', 'Asia', 'Rhynchocephalians', 'Southern', 'Mountains', 'Arkhangelsky', 'Hernán', 'Florida', 'Stage"', 'Amphibians', 'Pacific', 'Stage', 'Pleurodira', 'Antarctica', 'Somphospondyli', 'Yucatán', 'Toarcian', 'Mesozoic', 'Late', 'Choristoderes', 'Giraffatitan', 'Organization', 'Cabo', 'Fischer', 'America', 'Platypterygiinae', 'Age', 'Triassic', 'Multituberculata', 'Jura"', 'Oxford'}
+Total time:  316.6133098602295
+Entity conversion done on 6_2 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_6_2_entity_conversion_hash.json. Check the entity.
+ What type of animal is facing a higher rate of extinction today compared to the die-off at the 012 of the geological time frame that ended with the period famous for the vast expansion of flowering plants and also had areas like modern-day 05B and 057 submerged, but is not the period that witnessed sea levels rise drastically starting from an epoch named after a French town?
+
+
+
+
+Done. Check final_query/id_6_2_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

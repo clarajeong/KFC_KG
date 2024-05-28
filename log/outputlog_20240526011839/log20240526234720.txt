@@ -1,0 +1,1125 @@
+Got argument: Mount Everest, 2, 2_11, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Mount Everest, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mount_Everest_info.json file
+first_hop:  {'triplet': '("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")', 'start word': 'Mount Everest', 'end word': 'List of highest mountains on Earth', 'source': {'name': 'Mount Everest', 'line': 1}, 'cpnet': {'start word': 'mount_everest', 'end word': 'highest_mountain'}}
+
+utils/question.py extract_hops(List of highest mountains on Earth, [], ['Mount Everest']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/List_of_highest_mountains_on_Earth_info.json file
+extract_info(List of highest mountains on Earth) Start.
+utils/preprocess.py extract_info(): Checking good links on List of highest mountains on Earth
+China is Geography
+1 / 30 )  China China china
+India is Geography
+2 / 30 )  India India india
+Nepal is Geography
+3 / 30 )  Nepal Nepal nepal
+Pakistan is Geography
+4 / 30 )  Pakistan Pakistan pakistan
+Topographic prominence is Geography
+5 / 30 )  topographic prominence Topographic prominence prominence
+Eiger is Geography
+6 / 30 )  Eiger Eiger eiger
+Nuptse is Geography
+7 / 30 )  Nuptse Nuptse nuptse
+Ulugh Muztagh is Geography
+8 / 30 )  Ulugh Muztagh Ulugh Muztagh ulugh_muztagh
+Tibetan Plateau is Geography
+9 / 30 )  Tibetan Plateau Tibetan Plateau tibetan_plateau
+Mount Everest is Geography
+10 / 30 )  Mount Everest Mount Everest mount_everest
+Denali is Geography
+11 / 30 )  Denali Denali denali
+Mount Kilimanjaro is Geography
+12 / 30 )  Mount Kilimanjaro Mount Kilimanjaro mount_kilimanjaro
+Nanga Parbat is Geography
+13 / 30 )  Nanga Parbat Nanga Parbat nanga_parbat
+Mauna Kea is Geography
+14 / 30 )  Mauna Kea Mauna Kea mauna_kea
+Pacific Ocean is Geography
+15 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Guam is Geography
+16 / 30 )  Guam Guam guam
+Mariana Trench is Geography
+17 / 30 )  Mariana Trench Mariana Trench mariana_trench
+Challenger Deep is Geography
+18 / 30 )  Challenger Deep Challenger Deep challenger_deep
+Ojos del Salado is Geography
+19 / 30 )  Ojos del Salado Ojos del Salado ojos_del_salado
+Peru–Chile Trench is Geography
+20 / 30 )  Atacama Trench Peru–Chile Trench atacama_trench
+Mauna Loa is Geography
+21 / 30 )  Mauna Loa Mauna Loa mauna_loa
+Kīlauea is Geography
+22 / 30 )  Kilauea Kīlauea kilauea
+Mount Logan is Geography
+23 / 30 )  Mount Logan Mount Logan mount_logan
+Chimborazo is Geography
+24 / 30 )  Chimborazo Chimborazo chimborazo
+Ecuador is Geography
+25 / 30 )  Ecuador Ecuador ecuador
+Peru is Geography
+26 / 30 )  Peru Peru peru
+Huascarán is Geography
+27 / 30 )  Huascarán Huascarán huascaran
+Himalayas is Geography
+28 / 30 )  Himalaya Himalayas himalayas
+Karakoram is Geography
+29 / 30 )  Karakoram Karakoram karakoram
+Jengish Chokusu is Geography
+30 / 30 )  Jengish Chokusu Jengish Chokusu pobeda_peak
+extract_triplet(List of highest mountains on Earth)
+Got GPT's response. String length : 1883
+subject_words:  []
+object_words:  [['Pakistan', 'Pakistan', 'pakistan']]
+subject_words:  []
+object_words:  [['topographic prominence', 'Topographic prominence', 'prominence']]
+subject_words:  [['Ulugh Muztagh', 'Ulugh Muztagh', 'ulugh_muztagh']]
+object_words:  [['Tibetan Plateau', 'Tibetan Plateau', 'tibetan_plateau']]
+subject_words:  [(None, 'List of highest mountains on Earth', 'highest_mountain')]
+object_words:  []
+subject_words:  [['Denali', 'Denali', 'denali']]
+object_words:  []
+subject_words:  [['Mount Kilimanjaro', 'Mount Kilimanjaro', 'mount_kilimanjaro']]
+object_words:  []
+subject_words:  [['Nanga Parbat', 'Nanga Parbat', 'nanga_parbat']]
+object_words:  []
+subject_words:  [['Mauna Kea', 'Mauna Kea', 'mauna_kea']]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Mariana Trench', 'Mariana Trench', 'mariana_trench']]
+subject_words:  [['Ojos del Salado', 'Ojos del Salado', 'ojos_del_salado']]
+object_words:  [['Atacama Trench', 'Peru–Chile Trench', 'atacama_trench']]
+subject_words:  [['Mauna Loa', 'Mauna Loa', 'mauna_loa']]
+object_words:  []
+subject_words:  [['Kilauea', 'Kīlauea', 'kilauea']]
+object_words:  [['Mauna Loa', 'Mauna Loa', 'mauna_loa']]
+subject_words:  [['Mount Kilimanjaro', 'Mount Kilimanjaro', 'mount_kilimanjaro']]
+object_words:  []
+['', 'Mount Logan', 'is the largest non-volcanic mountain in base area', '']
+subject_words:  [['Chimborazo', 'Chimborazo', 'chimborazo']]
+object_words:  []
+subject_words:  [['Huascarán', 'Huascarán', 'huascaran']]
+object_words:  []
+subject_words:  []
+object_words:  [['Himalaya', 'Himalayas', 'himalayas'], ['Karakoram', 'Karakoram', 'karakoram']]
+subject_words:  [['Jengish Chokusu', 'Jengish Chokusu', 'pobeda_peak']]
+object_words:  []
+subject_words:  [['Mount Logan', 'Mount Logan', 'mount_logan']]
+object_words:  []
+second_hop:  None
+
+utils/question.py extract_hops(Mount Everest, ['List of highest mountains on Earth'], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mount_Everest_info.json file
+first_hop:  {'triplet': '("Mount Everest", "has the international border between", "China and Nepal across its summit")', 'start word': 'Mount Everest', 'end word': 'Kingdom of Nepal', 'source': {'name': 'Mount Everest', 'line': 3}, 'cpnet': {'start word': 'mount_everest', 'end word': 'kingdom_of_nepal'}}
+
+utils/question.py extract_hops(Kingdom of Nepal, [], ['Mount Everest']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kingdom_of_Nepal_info.json file
+extract_info(Kingdom of Nepal) Start.
+utils/preprocess.py extract_info(): Checking good links on Kingdom of Nepal
+Nepal is Geography
+1 / 30 )  Federal Democratic Republic of Nepal Nepal nepal
+Tibet is Geography
+2 / 30 )  Tibet Tibet tibet
+India is Geography
+3 / 30 )  Republic of India India india
+Gyanendra of Nepal is People
+4 / 30 )  King Gyanendra Gyanendra of Nepal gyanendra_of_nepal
+House of Representatives  is Geography
+5 / 30 )  House of Representatives House of Representatives  house_of_representatives
+KHAS is Geography
+6 / 30 )  Khas KHAS khas
+Kathmandu is Geography
+7 / 30 )  Kathmandu Kathmandu kathmandu
+Bhaktapur is Geography
+8 / 30 )  Bhaktapur Bhaktapur bhaktapur
+Pokhara is Geography
+9 / 30 )  Pokhara Pokhara pokhara
+Shigatse is Geography
+10 / 30 )  Shigatse Shigatse shigatse
+Qianlong Emperor is People
+11 / 30 )  Qianlong Emperor Qianlong Emperor qianlong_emperor
+Qing dynasty is Geography
+12 / 30 )  Qing Dynasty Qing dynasty qing_dynasty
+Varanasi is Geography
+13 / 30 )  Varanasi Varanasi varanasi
+extract_triplet(Kingdom of Nepal)
+Got GPT's response. String length : 904
+subject_words:  [(None, 'Kingdom of Nepal', 'kingdom_of_nepal'), ['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+subject_words:  [(None, 'Kingdom of Nepal', 'kingdom_of_nepal'), ['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['Tibet', 'Tibet', 'tibet']]
+subject_words:  [(None, 'Kingdom of Nepal', 'kingdom_of_nepal'), ['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['Republic of India', 'India', 'india']]
+subject_words:  [['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['King Gyanendra', 'Gyanendra of Nepal', 'gyanendra_of_nepal']]
+subject_words:  [(None, 'Kingdom of Nepal', 'kingdom_of_nepal'), ['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['House of Representatives', 'House of Representatives ', 'house_of_representatives']]
+subject_words:  []
+object_words:  [['Khas', 'KHAS', 'khas']]
+subject_words:  [(None, 'Kingdom of Nepal', 'kingdom_of_nepal'), ['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['Kathmandu', 'Kathmandu', 'kathmandu']]
+subject_words:  [(None, 'Kingdom of Nepal', 'kingdom_of_nepal'), ['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['Bhaktapur', 'Bhaktapur', 'bhaktapur']]
+subject_words:  [(None, 'Kingdom of Nepal', 'kingdom_of_nepal'), ['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['Pokhara', 'Pokhara', 'pokhara']]
+['', 'Nepali forces', 'reported to', 'Qianlong Emperor during invasion of', 'Shigatse', '']
+subject_words:  []
+object_words:  [['Qianlong Emperor', 'Qianlong Emperor', 'qianlong_emperor']]
+subject_words:  [(None, 'Kingdom of Nepal', 'kingdom_of_nepal'), ['Federal Democratic Republic of Nepal', 'Nepal', 'nepal']]
+object_words:  [['Qing Dynasty', 'Qing dynasty', 'qing_dynasty']]
+subject_words:  []
+object_words:  [['Varanasi', 'Varanasi', 'varanasi']]
+second_hop:  {'triplet': '("Kingdom of Nepal", "faced military support from", "Qing Dynasty")', 'start word': 'Kingdom of Nepal', 'end word': 'Qing dynasty', 'source': {'name': 'Kingdom of Nepal', 'line': 11}, 'cpnet': {'start word': 'kingdom_of_nepal', 'end word': 'qing_dynasty'}}
+
+utils/question.py extract_hops(Qing dynasty, [], ['Mount Everest', 'Kingdom of Nepal']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Qing_dynasty_info.json file
+extract_info(Qing dynasty) Start.
+utils/preprocess.py extract_info(): Checking good links on Qing dynasty
+Shenyang is Geography
+1 / 30 )  Shenyang Shenyang shenyang
+Beijing is Geography
+2 / 30 )  Beijing Beijing beijing
+Nurhaci is People
+3 / 30 )  Nurhaci Nurhaci nurhaci
+Hong Taiji is People
+4 / 30 )  Hong Taiji Hong Taiji hong_taiji
+Wu Sangui is People
+5 / 30 )  a Ming general Wu Sangui wu_sangui
+Shanhai Pass is Geography
+6 / 30 )  Shanhai Pass Shanhai Pass shanhai_pass
+Kangxi Emperor is People
+7 / 30 )  Kangxi Emperor Kangxi Emperor kangxi
+Joseon is Geography
+8 / 30 )  Korea Joseon joseon
+Qianlong Emperor is People
+9 / 30 )  Qianlong Emperor Qianlong Emperor qianlong_emperor
+Empire of Japan is Geography
+10 / 30 )  Japan Empire of Japan empire_of_japan
+Empress Dowager Cixi is People
+11 / 30 )  Empress Dowager Cixi Empress Dowager Cixi empress_dowager_cixi
+Sun Yat-sen is People
+12 / 30 )  Sun Yat-sen Sun Yat-sen sun_yat_sen
+Kang Youwei is People
+13 / 30 )  Kang Youwei Kang Youwei kang_youwei
+Liang Qichao is People
+14 / 30 )  Liang Qichao Liang Qichao liang_qichao
+Guangxu Emperor is People
+15 / 30 )  Guangxu Emperor Guangxu Emperor guangxu_emperor
+Puyi is People
+16 / 30 )  Xuantong Emperor Puyi puyi
+Manchuria is Geography
+17 / 30 )  Manchuria Manchuria manchuria
+Jilin is Geography
+18 / 30 )  Jilin Jilin jilin
+Heilongjiang is Geography
+19 / 30 )  Heilongjiang Heilongjiang heilongjiang
+Dorgon is People
+20 / 30 )  Dorgon Dorgon dorgon
+Li Zicheng is People
+21 / 30 )  Li Zicheng Li Zicheng li_zicheng
+Great Wall of China is Geography
+22 / 30 )  Great Wall Great Wall of China great_wall_of_china
+Myanmar is Geography
+23 / 30 )  Burma Myanmar myanmar
+Yunnan is Geography
+24 / 30 )  Yunnan Yunnan yunnan
+Jesuits is Geography
+25 / 30 )  Jesuit Jesuits jesuits
+Koxinga is People
+26 / 30 )  Koxinga Koxinga koxinga
+Lhasa is Geography
+27 / 30 )  Lhasa Lhasa lhasa
+Yongzheng Emperor is People
+28 / 30 )  Yongzheng Emperor Yongzheng Emperor yongzheng
+Xinjiang is Geography
+29 / 30 )  Xinjiang Xinjiang xinjiang
+Mongolia is Geography
+30 / 30 )  Mongolia Mongolia mongolia
+extract_triplet(Qing dynasty)
+Got GPT's response. String length : 1351
+subject_words:  [(None, 'Qing dynasty', 'qing_dynasty')]
+object_words:  [['Shenyang', 'Shenyang', 'shenyang']]
+subject_words:  [(None, 'Qing dynasty', 'qing_dynasty')]
+object_words:  [['Beijing', 'Beijing', 'beijing']]
+subject_words:  [['Nurhaci', 'Nurhaci', 'nurhaci']]
+object_words:  []
+subject_words:  [['Nurhaci', 'Nurhaci', 'nurhaci']]
+object_words:  []
+subject_words:  [['Hong Taiji', 'Hong Taiji', 'hong_taiji']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Kangxi Emperor', 'Kangxi Emperor', 'kangxi']]
+object_words:  [['Korea', 'Joseon', 'joseon']]
+subject_words:  [['Qianlong Emperor', 'Qianlong Emperor', 'qianlong_emperor']]
+object_words:  []
+subject_words:  [['Qianlong Emperor', 'Qianlong Emperor', 'qianlong_emperor']]
+object_words:  []
+subject_words:  [['Empress Dowager Cixi', 'Empress Dowager Cixi', 'empress_dowager_cixi']]
+object_words:  []
+subject_words:  []
+object_words:  [['Kang Youwei', 'Kang Youwei', 'kang_youwei'], ['Liang Qichao', 'Liang Qichao', 'liang_qichao']]
+subject_words:  [(None, 'Qing dynasty', 'qing_dynasty')]
+object_words:  [['Heilongjiang', 'Heilongjiang', 'heilongjiang']]
+subject_words:  [['Dorgon', 'Dorgon', 'dorgon']]
+object_words:  []
+subject_words:  [['Li Zicheng', 'Li Zicheng', 'li_zicheng']]
+object_words:  [['Beijing', 'Beijing', 'beijing']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Qianlong Emperor', 'Qianlong Emperor', 'qianlong_emperor']]
+object_words:  []
+subject_words:  [['Jesuit', 'Jesuits', 'jesuits']]
+object_words:  []
+subject_words:  [['Koxinga', 'Koxinga', 'koxinga']]
+object_words:  []
+subject_words:  [['Yongzheng Emperor', 'Yongzheng Emperor', 'yongzheng']]
+object_words:  []
+subject_words:  [['Xinjiang', 'Xinjiang', 'xinjiang']]
+object_words:  []
+subject_words:  [['Xinjiang', 'Xinjiang', 'xinjiang']]
+object_words:  []
+subject_words:  [['Hong Taiji', 'Hong Taiji', 'hong_taiji']]
+object_words:  []
+subject_words:  [['Shanhai Pass', 'Shanhai Pass', 'shanhai_pass']]
+object_words:  [['a Ming general', 'Wu Sangui', 'wu_sangui']]
+third_hop:  {'triplet': '("Qing dynasty", "proclaimed in", "Shenyang")', 'start word': 'Qing dynasty', 'end word': 'Shenyang', 'source': {'name': 'Qing dynasty', 'line': 1}, 'cpnet': {'start word': 'qing_dynasty', 'end word': 'shenyang'}}
+generate_question(2_11, ['("Mount Everest", "has the international border between", "China and Nepal across its summit")', '("Kingdom of Nepal", "faced military support from", "Qing Dynasty")', '("Qing dynasty", "proclaimed in", "Shenyang")'], ['Kingdom of Nepal', 'Qing dynasty', 'Shenyang'], [('Mount Everest', 'Kingdom of Nepal'), ('Kingdom of Nepal', 'Qing dynasty'), ('Qing dynasty', 'Shenyang')], Shenyang, [{'name': 'Mount Everest', 'line': 3}, {'name': 'Kingdom of Nepal', 'line': 11}, {'name': 'Qing dynasty', 'line': 1}]) called
+GPT output is:  Q: In which city was the imperial regime first established that provided military support to the country whose border is marked by the summit of Mount Everest?
+A: Shenyang
+final_choice(Shenyang, options = 5) started
+[]
+entity_type(Shenyang) called
+Shenyang is Geography
+check_matchscore(Shenyang, Capitals of former nations):  0.0
+choose_by_wiki_recur(Capitals of former nations)
+   Pages in Capitals of former nations: ['List of former national capitals', 'Abomey', 'Aden', 'Aegae (Macedonia)', 'Ajdir', 'Al-Fashir', 'Alegrete', 'Austin, Texas', 'Aw-Barkhadle', 'Axum', 'Bagé', 'Bamburgh', 'Barda, Azerbaijan', 'Bastia', 'Batoche, Saskatchewan', 'East Berlin', 'Betancuria', 'Bhisho', 'Braunschweig', 'Caçapava do Sul', 'Cagliari', 'Changchun', 'Chania', 'Yangcheng (historical city)', 'Chipata', 'Cirta', 'Concepción del Uruguay', 'Constantinople', 'Córdoba, Spain', 'Corfu (city)', 'Corte, Haute-Corse', 'Cunani, Calçoene', 'Cusco', 'Cuzcatlan', 'Dakkar', 'Danville, Virginia', 'Darmstadt', 'Dosso, Niger', 'Dubrovnik', 'Enugu', 'Eraclea', 'Florence', 'Fort Mitchell, Florida', 'Galveston, Texas', 'Gao', 'Genoa', 'Gibeah', 'Granada', 'Grootfontein', 'Gungnae', 'Hakodate', 'Harper, Liberia', 'Harrisburg, Houston', 'History of Barda', 'Ho Chi Minh City', 'Honolulu', 'Houston', 'Hyderabad', 'Istanbul', 'Jammu', 'Jelgava', 'Kailua-Kona, Hawaii', 'Kalomo', 'Kangaba', 'Karlsruhe', 'Kelmis', 'Kernavė', 'Knin', 'Kolkata', 'Königsberg', 'Koumbi Saleh', 'Kubar', 'Kumasi', 'Kyethi', 'Laguna, Santa Catarina', 'Lahaina, Hawaii', 'Laredo, Texas', 'Lhasa', 'Liège', 'Linjiang', 'Lubumbashi', 'Lucca', 'Lulami', "M'banza-Kongo", 'Malamocco', 'Mbuji-Mayi', 'Mérida, Yucatán', 'Miccosukee, Florida', 'Mmabatho', 'Montgomery, Alabama', 'Mostar', 'Mthatha', 'Muʻa (Tongatapu)', 'Naples', 'Nekor', 'Niutoua', 'Nojpetén', 'Nueva Ciudad Guerrero', 'Ouidah', 'Palermo', 'Palma de Mallorca', 'Pella', 'Perpignan', 'Perquenco', 'Piratini', 'Pittsburg, New Hampshire', 'Qabala', 'Ravenna', 'Richmond, Virginia', 'Rijeka', 'Rooigrond', "St. John's, Newfoundland and Labrador", 'Salò', 'San Felipe, Texas', 'Santiago de Rubiás', 'São Borja', 'Senieji Trakai', 'Shangjing Longquanfu', 'Shenyang', 'Siena', 'Silvan, Diyarbakır', 'Soissons', 'Sonoma, California', 'St. Francisville, Louisiana', 'Sukhothai (city)', 'Tacna', 'Tainan', 'Taiz', 'Teguise (village)', 'Thohoyandou', 'Trabzon', 'Turin', 'Urasoe, Okinawa', 'Urbino', 'Valencia', 'The Valley, Anguilla', 'Velasco, Texas', 'Veliky Novgorod', 'Venice', 'Vichy', 'Victoria, Texas', 'Vryburg', 'Vryheid', 'Washington-on-the-Brazos, Texas', 'West Columbia, Texas', 'Westminster (town), Vermont', 'Windsor, Vermont', 'Yeha', 'York', 'Zamboanga City', 'Zanzibar City']
+      Velasco, Texas in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo']
+      Muʻa (Tongatapu) in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan']
+      Urasoe, Okinawa in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate']
+      Kalomo in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate', 'Chania']
+      Cuzcatlan in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate', 'Chania', 'Malamocco']
+      Hakodate in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate', 'Chania', 'Malamocco', 'Batoche, Saskatchewan']
+      Chania in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate', 'Chania', 'Malamocco', 'Batoche, Saskatchewan']
+      Malamocco in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate', 'Chania', 'Malamocco', 'Batoche, Saskatchewan']
+      Batoche, Saskatchewan in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate', 'Chania', 'Malamocco', 'Batoche, Saskatchewan', 'Vichy']
+      Vichy in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate', 'Chania', 'Malamocco', 'Batoche, Saskatchewan', 'Vichy', 'Jelgava']
+      Jelgava in ['Velasco, Texas', 'Muʻa (Tongatapu)', 'Urasoe, Okinawa', 'Kalomo', 'Cuzcatlan', 'Hakodate', 'Chania', 'Malamocco', 'Batoche, Saskatchewan', 'Vichy', 'Jelgava']
+['Hakodate', 'Chania', 'Vichy', 'Jelgava']
+Ended after 2.5 hierarchy
+(2.5, ['Vichy', 'Chania', 'Jelgava', 'Hakodate'])
+
+extract_info(Hakodate) Start.
+utils/preprocess.py extract_info(): Checking good links on Hakodate
+Hokkaido is Geography
+1 / 30 )  Hokkaido Hokkaido hokkaido
+Japan is Geography
+2 / 30 )  Japan Japan japan
+Sapporo is Geography
+3 / 30 )  Sapporo Sapporo sapporo
+Asahikawa is Geography
+4 / 30 )  Asahikawa Asahikawa asahikawa
+Iturup is Geography
+5 / 30 )  Etorofu Iturup iturup
+Kuril Islands is Geography
+6 / 30 )  Kuril Kuril Islands kuril_islands
+Matthew Perry is People
+7 / 30 )  Matthew Perry Matthew Perry matthew_perry
+Emperor Meiji is People
+8 / 30 )  Meiji Emperor Emperor Meiji emperor_meiji
+Kyoto is Geography
+9 / 30 )  Kyoto Kyoto kyoto
+Battle of Hakodate is Geography
+10 / 30 )  Battle of Hakodate Battle of Hakodate battle_of_hakodate
+Soviet Union is Geography
+11 / 30 )  Soviet Soviet Union soviet_union
+Honshu is Geography
+12 / 30 )  Honshu Honshu honshu
+Seaweed is Animal
+13 / 30 )  seaweed Seaweed seaweed
+extract_triplet(Hakodate)
+Got GPT's response. String length : 2061
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  [['Japan', 'Japan', 'japan']]
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  [['Hokkaido', 'Hokkaido', 'hokkaido'], ['Sapporo', 'Sapporo', 'sapporo'], ['Asahikawa', 'Asahikawa', 'asahikawa']]
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Hakodate', 'hakodate')]
+subject_words:  [['Matthew Perry', 'Matthew Perry', 'matthew_perry']]
+object_words:  [(None, 'Hakodate', 'hakodate')]
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Hakodate', 'hakodate')]
+subject_words:  [(None, 'Hakodate', 'hakodate'), ['Battle of Hakodate', 'Battle of Hakodate', 'battle_of_hakodate']]
+object_words:  []
+subject_words:  []
+object_words:  [['Hokkaido', 'Hokkaido', 'hokkaido']]
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  [(None, 'Hakodate', 'hakodate')]
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  [['Hokkaido', 'Hokkaido', 'hokkaido']]
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  [['Honshu', 'Honshu', 'honshu']]
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  [['seaweed', 'Seaweed', 'seaweed']]
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+subject_words:  [(None, 'Hakodate', 'hakodate')]
+object_words:  []
+extract_info(Jelgava) Start.
+utils/preprocess.py extract_info(): Checking good links on Jelgava
+Latvia is Geography
+1 / 30 )  Latvia Latvia latvia
+Riga is Geography
+2 / 30 )  Riga Riga riga
+Semigallia is Geography
+3 / 30 )  Zemgale Semigallia semigallia
+Lithuania is Geography
+4 / 30 )  Lithuanians Lithuania lithuania
+Sweden is Geography
+5 / 30 )  Sweden Sweden sweden
+Saint Petersburg is Geography
+6 / 30 )  St Petersburg Saint Petersburg saint_petersburg
+German Empire is Geography
+7 / 30 )  German German Empire german_empire
+Soviet Union is Geography
+8 / 30 )  Soviet Union Soviet Union soviet_union
+Courland is Geography
+9 / 30 )  Courland Courland courland
+Latvian Soviet Socialist Republic is Geography
+10 / 30 )  Latvian SSR Latvian Soviet Socialist Republic latvian_soviet_socialist_republic
+Magadan is Geography
+11 / 30 )  Magadan Magadan magadan
+extract_triplet(Jelgava)
+Got GPT's response. String length : 1801
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Latvia', 'Latvia', 'latvia']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Riga', 'Riga', 'riga']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Zemgale', 'Semigallia', 'semigallia']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Zemgale', 'Semigallia', 'semigallia'], ['Courland', 'Courland', 'courland']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Courland', 'Courland', 'courland']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  []
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Lithuanians', 'Lithuania', 'lithuania']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Sweden', 'Sweden', 'sweden']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [(None, 'Jelgava', 'jelgava')]
+subject_words:  [['German', 'German Empire', 'german_empire']]
+object_words:  [(None, 'Jelgava', 'jelgava')]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Courland', 'Courland', 'courland']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['German', 'German Empire', 'german_empire']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Zemgale', 'Semigallia', 'semigallia']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Sweden', 'Sweden', 'sweden']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['St Petersburg', 'Saint Petersburg', 'saint_petersburg']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Courland', 'Courland', 'courland']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  []
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  []
+subject_words:  [['Riga', 'Riga', 'riga']]
+object_words:  [(None, 'Jelgava', 'jelgava')]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [['Latvia', 'Latvia', 'latvia']]
+object_words:  [(None, 'Jelgava', 'jelgava')]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Latvia', 'Latvia', 'latvia']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Courland', 'Courland', 'courland']]
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  []
+subject_words:  [(None, 'Jelgava', 'jelgava')]
+object_words:  [['Magadan', 'Magadan', 'magadan']]
+extract_info(Vichy) Start.
+utils/preprocess.py extract_info(): Checking good links on Vichy
+Allier is Geography
+1 / 30 )  Allier department Allier allier
+France is Geography
+2 / 30 )  France France france
+Diocletian is People
+3 / 30 )  Diocletian Diocletian diocletian
+Massif Central is Geography
+4 / 30 )  Massif Central Massif Central massif_central
+Clermont-Ferrand is Geography
+5 / 30 )  Clermont-Ferrand Clermont-Ferrand clermont_ferrand
+Oligocene is Geography
+6 / 30 )  Oligocene Oligocene oligocene
+Vercingetorix is People
+7 / 30 )  Vercingetorix Vercingetorix vercingetorix
+Louis XV is People
+8 / 30 )  Louis XV Louis XV louis_xv
+Palace of Versailles is Geography
+9 / 30 )  Versailles Palace of Versailles palace_of_versailles
+Louis XVI is People
+10 / 30 )  Louis XVI Louis XVI louis_xvi
+Napoleon is People
+11 / 30 )  Napoleon Napoleon napoleon
+Napoleon III is People
+12 / 30 )  Napoleon III Napoleon III napoleon_iii
+Second French Empire is Geography
+13 / 30 )  Second French Empire Second French Empire second_french_empire
+Paris is Geography
+14 / 30 )  Paris Paris paris
+Strasbourg is Geography
+15 / 30 )  Strasbourg Strasbourg strasbourg
+fr:Route nationale 106  is Geography
+16 / 30 )  fr fr:Route nationale 106  france
+extract_triplet(Vichy)
+Got GPT's response. String length : 1661
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Allier department', 'Allier', 'allier']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['France', 'France', 'france']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Diocletian', 'Diocletian', 'diocletian']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Massif Central', 'Massif Central', 'massif_central']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  []
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Oligocene', 'Oligocene', 'oligocene']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [(None, 'Vichy', 'vichy'), ['France', 'France', 'france']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  []
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Vercingetorix', 'Vercingetorix', 'vercingetorix']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Louis XV', 'Louis XV', 'louis_xv']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Louis XVI', 'Louis XVI', 'louis_xvi']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Second French Empire', 'Second French Empire', 'second_french_empire']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Paris', 'Paris', 'paris']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Napoleon', 'Napoleon', 'napoleon'], ['Napoleon III', 'Napoleon III', 'napoleon_iii']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['fr', 'fr:Route nationale 106 ', 'france']]
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Versailles', 'Palace of Versailles', 'palace_of_versailles']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Vichy', 'vichy')]
+object_words:  [['Strasbourg', 'Strasbourg', 'strasbourg']]
+["Please note that the request to have triplet output for each important keyword from the provided text means that some triplets may contain more generalized relationships, as some exact keywords didn't have direct explicit relationships described in the text. If more specific or detailed information is required for any key term, please let me know, and I can provide additional context or triplets based on broader interpretation or inferred connections from the provided text."]
+extract_info(Chania) Start.
+utils/preprocess.py extract_info(): Checking good links on Chania
+Greece is Geography
+1 / 30 )  Greece Greece greece
+Chania  is Geography
+2 / 30 )  Chania regional unit Chania  hania
+Crete is Geography
+3 / 30 )  Crete Crete crete
+Rethymno is Geography
+4 / 30 )  Rethymno Rethymno rethymno
+Heraklion is Geography
+5 / 30 )  Heraklion Heraklion heraklion
+Souda is Geography
+6 / 30 )  Souda Souda souda
+Knossos is Geography
+7 / 30 )  Knossos Knossos knossos
+Quince is Animal
+8 / 30 )  quince Quince quince
+Homer is People
+9 / 30 )  Homer Homer homer
+Constantinople is Geography
+10 / 30 )  Constantinople Constantinople constantinople
+Venice is Geography
+11 / 30 )  Venice Venice venice
+Germany is Geography
+12 / 30 )  German Germany germany
+Egypt is Geography
+13 / 30 )  Egypt Egypt egypt
+Nazi Germany is Geography
+14 / 30 )  Nazi Nazi Germany nazi_germany
+United Kingdom is Geography
+15 / 30 )  British United Kingdom united_kingdom
+Mediterranean Sea is Geography
+16 / 30 )  Mediterranean Sea Mediterranean Sea mediterranean_sea
+Aegean Sea is Geography
+17 / 30 )  Aegean Sea Aegean Sea aegean_sea
+France is Geography
+18 / 30 )  French France france
+Italy is Geography
+19 / 30 )  Italian Italy italy
+Sweden is Geography
+20 / 30 )  Swedish Sweden sweden
+Olive is Animal
+21 / 30 )  olive trees Olive olive
+Citrus is Animal
+22 / 30 )  citrus Citrus citrus
+Avocado is Animal
+23 / 30 )  avocados Avocado avocado
+Piraeus is Geography
+24 / 30 )  Piraeus Piraeus piraeus
+extract_triplet(Chania)
+Got GPT's response. String length : 1194
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Greece', 'Greece', 'greece']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [(None, 'Chania', 'chania'), ['Chania regional unit', 'Chania ', 'hania']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Crete', 'Crete', 'crete']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Rethymno', 'Rethymno', 'rethymno']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Heraklion', 'Heraklion', 'heraklion']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Souda', 'Souda', 'souda']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Knossos', 'Knossos', 'knossos']]
+['', "The word 'quince' is derived from", 'Cydonia', '']
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Constantinople', 'Constantinople', 'constantinople']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Venice', 'Venice', 'venice']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['German', 'Germany', 'germany']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Nazi', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['British', 'United Kingdom', 'united_kingdom']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Mediterranean Sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Aegean Sea', 'Aegean Sea', 'aegean_sea']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['French', 'France', 'france']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Italian', 'Italy', 'italy']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Swedish', 'Sweden', 'sweden']]
+subject_words:  []
+object_words:  [['olive trees', 'Olive', 'olive']]
+subject_words:  []
+object_words:  [['citrus', 'Citrus', 'citrus']]
+subject_words:  []
+object_words:  [['avocados', 'Avocado', 'avocado']]
+subject_words:  [(None, 'Chania', 'chania')]
+object_words:  [['Piraeus', 'Piraeus', 'piraeus']]
+['("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Kingdom of Nepal", "faced military support from", "Qing Dynasty")\n', '("Qing dynasty", "proclaimed in", "Shenyang")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Kingdom of Nepal", "transitioned into", "Federal Democratic Republic of Nepal")\n', '("Kingdom of Nepal", "invaded", "Tibet")\n', '("Kingdom of Nepal", "had a war with", "Republic of India")\n', '("King of Nepal", "was", "King Gyanendra")\n', '("Kingdom of Nepal", "had legislative body called", "House of Representatives")\n', '("Prithvi Narayan Shah", "claimed to be of", "Khas origin")\n', '("Kingdom of Nepal", "had its capital in", "Kathmandu")\n', '("Kingdom of Nepal", "expanded to include", "Bhaktapur")\n', '("Kingdom of Nepal", "expanded to include", "Pokhara")\n', '("Qing Dynasty\'s", "emperor was", "Qianlong Emperor")\n', '("Influential figures in", "Kingdom of Nepal sought safety in", "Varanasi")\n', '("Qing dynasty", "seized control of", "Beijing")\n', '("Nurhaci", "unified", "Jurchen clans")\n', '("Nurhaci", "founded", "Later Jin dynasty")\n', '("Hong Taiji", "declared Emperor of", "Great Qing")\n', '("Qing army", "defeated", "Ming general")\n', '("Kangxi Emperor", "consolidated control", "Korea and Vietnam")\n', '("Qianlong Emperor", "led", "Ten Great Campaigns")\n', '("Qianlong Emperor", "supervised", "Confucian cultural projects")\n', '("Empress Dowager Cixi", "turned back", "Hundred Days\' Reform")\n', '("Sun Yat-sen", "debated with", "Kang Youwei and Liang Qichao")\n', '("Qing dynasty", "expanded control over", "Manchuria, Jilin, and Heilongjiang")\n', '("Dorgon", "ally and regent of", "Shunzhi Emperor")\n', '("Li Zicheng", "captured", "Beijing")\n', '("Great Qing", "claimed the Mandate of Heaven", "Hong Taiji\'s reign")\n', '("Qianlong Emperor", "increased", "population of China")\n', '("Jesuits", "provided", "scientific and military knowledge")\n', '("Koxinga", "ruled", "Taiwan")\n', '("Yongzheng Emperor", "patronised", "Tibetan Buddhism")\n', '("Xinjiang", "proclaimed absorbed into", "China")\n', '("Mongolia, Tibet, and Xinjiang", "controlled by", "Qing")\n', '("Hong Taiji", "promoted", "Ming defector Hong Chengchou")\n', '("Shanhai Pass", "opened to", "Qing army by a Ming general")\n', '("Hakodate", "is located in", "Oshima Subprefecture, Hokkaido, Japan")\n', '("Hakodate", "is the capital city of", "Oshima Subprefecture")\n', '("Hakodate", "is the third biggest city in", "Hokkaido after Sapporo and Asahikawa")\n', '("Hakodate", "was Japan\'s first city opened to foreign trade due to", "Convention of Kanagawa")\n', '("Takadaya Kahei", "is honoured as the founder of", "Hakodate port")\n', '("Matthew Perry", "surveyed the port of", "Hakodate")\n', '("Hakodate", "played a central role in the", "Boshin War")\n', '("Republic of Ezo", "tried unsuccessfully to gather international recognition to foreign legations in", "Hakodate")\n', '("Battle of Hakodate", "was fought between", "the Tokugawa shogunate navy and the newly formed Imperial Japanese Navy")\n', '("Economy of", "Hakodate featured companies like", "Air Hokkaido and Airtransse")\n', '("Hakodate", "is well known for", "seafood and sushi")\n', '("Hakodate", "celebrates", "Hakodate Port Festival")\n', '("Hakodate", "has the", "Hokkaido Shinkansen")\n', '("Hakodate", "is connected to", "Honshu via Seikan Tunnel")\n', '("Mount Hakodate", "was formed by", "volcanic eruptions")\n', '("Mount Hakodate", "is connected to Hokkaido by", "a tombolo")\n', '("Hakodate", "is famous for", "seaweed")\n', '("Hakodate", "has a sister city relationship with", "Halifax, Nova Scotia, Canada")\n', '("Hakodate", "has a sister city relationship with", "Vladivostok, Primorsky Krai, Russia")\n', '("Hakodate", "has a sister city relationship with", "City of Lake Macquarie, New South Wales, Australia")\n', '("Hakodate", "has a sister city relationship with", "Yuzhno-Sakhalinsk, Sakhalin Oblast, Russia")\n', '("Hakodate", "has a sister city relationship with", "Singapore")\n', '("Hakodate", "has a sister city relationship with", "Tianjin, China")\n', '("Hakodate", "has a sister city relationship with", "Goyang, Gyeonggi-do, South Korea")\n', '("Jelgava", "is situated in", "Latvia")\n', '("Jelgava", "is southwest of", "Riga")\n', '("Jelgava", "is the largest town in", "Zemgale")\n', '("Jelgava", "was the capital of", "the united Duchy of Courland and Semigallia")\n', '("Jelgava", "was the administrative center of", "Courland Governorate")\n', '("Jelgava", "is situated on the river", "Lielupe")\n', '("Jelgava", "is a railway center with connections to", "Lithuania")\n', '("Jelgava", "is a railway center with connections to", "Sweden")\n', '("Jelgava Air Base", "is located in", "Jelgava")\n', '("German knights", "constructed the castle in", "Jelgava")\n', '("Jelgava", "became a town of", "the Duchy of Courland")\n', '("Jelgava", "was referred to as Mitau by", "German")\n', '("Jelgava", "became the residence of Duke Friedrich Kettler of", "Semigallia")\n', '("Jelgava", "was subjected to sieges by", "Sweden")\n', '("Jelgava", "began to fall under Russia\'s sphere of influence", "St Petersburg")\n', '("Jelgava", "became part of", "Courland")\n', '("Jelgava", "was annexed by", "the Soviet Union")\n', '("Jelgava", "suffered damage from fighting", "World War II")\n', '("Jelgava", "was rebuilt in typical", "Soviet style")\n', '("Riga Autobus Factory", "had administration buildings in", "Jelgava")\n', '("Jelgava", "regained its Germanic heritage after independence from", "Soviet Union")\n', '("Latvia University of Life Sciences and Technologies", "is located in", "Jelgava")\n', '("Jelgava", "is sometimes called the Student capital of", "Latvia")\n', '("Jelgava Castle", "was the old castle of", "the dukes of Courland")\n', '("Jelgava", "hosts an international Ice Sculpture festival", "Culture")\n', '("Jelgava", "suspended cooperation agreements with", "Magadan")\n', '("Vichy", "is a city in", "Allier department")\n', '("Vichy", "located in", "France")\n', '("Vichy", "name derived from Roman times under", "Diocletian")\n', '("Vichy", "part of", "Massif Central")\n', '("Vichy", "near", "Clermont-Ferrand")\n', '("Vichy\'s thermal springs", "exist due to", "Oligocene sedimentary rocks")\n', '("Vichy", "was named capital of", "Vichy France during World War II")\n', '("Vichy", "associated with", "collaboration with Nazi regime")\n', '("Vichy", "has a close historical connection to", "Vercingetorix")\n', '("Spa towns including Vichy", "popularized by", "Louis XV")\n', '("Vichy", "development influenced by visits from", "Louis XVI")\n', '("Vichy", "received investment from", "Napoleon")\n', '("Vichy", "underwent major transformation during", "Napoleon III\'s")\n', '("Vichy", "had major enhancements during", "Second French Empire")\n', '("Vichy", "is in relative proximity to", "Paris")\n', '("Vichy", "expanded due to contributions of", "Napoleon III")\n', '("Vichy", "has a significant telephone exchange for", "fr")\n', '("Vichy", "provided baths to", "Louis XV\'s daughters at Versailles")\n', '("Great Spa Towns of Europe", "Vichy is a part of", "UNESCO World Heritage Site")\n', '("Vichy", "has historical links with", "Strasbourg")\n', '("Chania", "is a city in", "Greece")\n', '("Chania", "is the capital of", "Chania regional unit")\n', '("Chania", "lies along the north west coast of", "Crete")\n', '("Chania", "is west of", "Rethymno")\n', '("Chania", "is west of", "Heraklion")\n', '("Chania", "includes areas such as", "Souda")\n', '("Chania", "was a site of a Minoan settlement near", "Knossos")\n', '("Cydonians", "are mentioned in", "Homer\'s Odyssey")\n', '("Chania", "was fortified by materials from ancient buildings including", "Constantinople")\n', '("Chania", "strengthened its fortifications under", "Venice")\n', '("Chania", "came under rule of", "German")\n', '("Chania had a community that was", "transported", "Egypt during Ottoman era")\n', '("Chania had been", "occupied by", "Nazi")\n', '("Chania", "had relations with", "British")\n', '("Chania", "lies near", "Mediterranean Sea")\n', '("Chania", "is affected by", "Aegean Sea")\n', '("Chania\'s history includes", "rule by", "French")\n', '("Chania", "has been influenced by", "Italian")\n', '("Chania", "had contact with", "Swedish")\n', '("Cretans", "cultivate", "olive trees")\n', '("Cretans", "cultivate", "citrus")\n', '("Cretans", "cultivate", "avocados")\n', '("Chania", "has a port that connects to", "Piraeus")\n']
+range(1, 147) 3
+['("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Kingdom of Nepal", "faced military support from", "Qing Dynasty")\n', '("Qing dynasty", "proclaimed in", "Shenyang")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Kingdom of Nepal", "transitioned into", "Federal Democratic Republic of Nepal")\n', '("Kingdom of Nepal", "invaded", "Tibet")\n', '("Kingdom of Nepal", "had a war with", "Republic of India")\n', '("King of Nepal", "was", "King Gyanendra")\n', '("Kingdom of Nepal", "had legislative body called", "House of Representatives")\n', '("Prithvi Narayan Shah", "claimed to be of", "Khas origin")\n', '("Kingdom of Nepal", "had its capital in", "Kathmandu")\n', '("Kingdom of Nepal", "expanded to include", "Bhaktapur")\n', '("Kingdom of Nepal", "expanded to include", "Pokhara")\n', '("Qing Dynasty\'s", "emperor was", "Qianlong Emperor")\n', '("Influential figures in", "Kingdom of Nepal sought safety in", "Varanasi")\n', '("Qing dynasty", "seized control of", "Beijing")\n', '("Nurhaci", "unified", "Jurchen clans")\n', '("Nurhaci", "founded", "Later Jin dynasty")\n', '("Hong Taiji", "declared Emperor of", "Great Qing")\n', '("Qing army", "defeated", "Ming general")\n', '("Kangxi Emperor", "consolidated control", "Korea and Vietnam")\n', '("Qianlong Emperor", "led", "Ten Great Campaigns")\n', '("Qianlong Emperor", "supervised", "Confucian cultural projects")\n', '("Empress Dowager Cixi", "turned back", "Hundred Days\' Reform")\n', '("Sun Yat-sen", "debated with", "Kang Youwei and Liang Qichao")\n', '("Qing dynasty", "expanded control over", "Manchuria, Jilin, and Heilongjiang")\n', '("Dorgon", "ally and regent of", "Shunzhi Emperor")\n', '("Li Zicheng", "captured", "Beijing")\n', '("Great Qing", "claimed the Mandate of Heaven", "Hong Taiji\'s reign")\n', '("Qianlong Emperor", "increased", "population of China")\n', '("Jesuits", "provided", "scientific and military knowledge")\n', '("Koxinga", "ruled", "Taiwan")\n', '("Yongzheng Emperor", "patronised", "Tibetan Buddhism")\n', '("Xinjiang", "proclaimed absorbed into", "China")\n', '("Mongolia, Tibet, and Xinjiang", "controlled by", "Qing")\n', '("Hong Taiji", "promoted", "Ming defector Hong Chengchou")\n', '("Shanhai Pass", "opened to", "Qing army by a Ming general")\n', '("Hakodate", "is located in", "Oshima Subprefecture, Hokkaido, Japan")\n', '("Hakodate", "is the capital city of", "Oshima Subprefecture")\n', '("Hakodate", "is the third biggest city in", "Hokkaido after Sapporo and Asahikawa")\n', '("Hakodate", "was Japan\'s first city opened to foreign trade due to", "Convention of Kanagawa")\n', '("Takadaya Kahei", "is honoured as the founder of", "Hakodate port")\n', '("Matthew Perry", "surveyed the port of", "Hakodate")\n', '("Hakodate", "played a central role in the", "Boshin War")\n', '("Republic of Ezo", "tried unsuccessfully to gather international recognition to foreign legations in", "Hakodate")\n', '("Battle of Hakodate", "was fought between", "the Tokugawa shogunate navy and the newly formed Imperial Japanese Navy")\n', '("Economy of", "Hakodate featured companies like", "Air Hokkaido and Airtransse")\n', '("Hakodate", "is well known for", "seafood and sushi")\n', '("Hakodate", "celebrates", "Hakodate Port Festival")\n', '("Hakodate", "has the", "Hokkaido Shinkansen")\n', '("Hakodate", "is connected to", "Honshu via Seikan Tunnel")\n', '("Mount Hakodate", "was formed by", "volcanic eruptions")\n', '("Mount Hakodate", "is connected to Hokkaido by", "a tombolo")\n', '("Hakodate", "is famous for", "seaweed")\n', '("Hakodate", "has a sister city relationship with", "Halifax, Nova Scotia, Canada")\n', '("Hakodate", "has a sister city relationship with", "Vladivostok, Primorsky Krai, Russia")\n', '("Hakodate", "has a sister city relationship with", "City of Lake Macquarie, New South Wales, Australia")\n', '("Hakodate", "has a sister city relationship with", "Yuzhno-Sakhalinsk, Sakhalin Oblast, Russia")\n', '("Hakodate", "has a sister city relationship with", "Singapore")\n', '("Hakodate", "has a sister city relationship with", "Tianjin, China")\n', '("Hakodate", "has a sister city relationship with", "Goyang, Gyeonggi-do, South Korea")\n', '("Jelgava", "is situated in", "Latvia")\n', '("Jelgava", "is southwest of", "Riga")\n', '("Jelgava", "is the largest town in", "Zemgale")\n', '("Jelgava", "was the capital of", "the united Duchy of Courland and Semigallia")\n', '("Jelgava", "was the administrative center of", "Courland Governorate")\n', '("Jelgava", "is situated on the river", "Lielupe")\n', '("Jelgava", "is a railway center with connections to", "Lithuania")\n', '("Jelgava", "is a railway center with connections to", "Sweden")\n', '("Jelgava Air Base", "is located in", "Jelgava")\n', '("German knights", "constructed the castle in", "Jelgava")\n', '("Jelgava", "became a town of", "the Duchy of Courland")\n', '("Jelgava", "was referred to as Mitau by", "German")\n', '("Jelgava", "became the residence of Duke Friedrich Kettler of", "Semigallia")\n', '("Jelgava", "was subjected to sieges by", "Sweden")\n', '("Jelgava", "began to fall under Russia\'s sphere of influence", "St Petersburg")\n', '("Jelgava", "became part of", "Courland")\n', '("Jelgava", "was annexed by", "the Soviet Union")\n', '("Jelgava", "suffered damage from fighting", "World War II")\n', '("Jelgava", "was rebuilt in typical", "Soviet style")\n', '("Riga Autobus Factory", "had administration buildings in", "Jelgava")\n', '("Jelgava", "regained its Germanic heritage after independence from", "Soviet Union")\n', '("Latvia University of Life Sciences and Technologies", "is located in", "Jelgava")\n', '("Jelgava", "is sometimes called the Student capital of", "Latvia")\n', '("Jelgava Castle", "was the old castle of", "the dukes of Courland")\n', '("Jelgava", "hosts an international Ice Sculpture festival", "Culture")\n', '("Jelgava", "suspended cooperation agreements with", "Magadan")\n', '("Vichy", "is a city in", "Allier department")\n', '("Vichy", "located in", "France")\n', '("Vichy", "name derived from Roman times under", "Diocletian")\n', '("Vichy", "part of", "Massif Central")\n', '("Vichy", "near", "Clermont-Ferrand")\n', '("Vichy\'s thermal springs", "exist due to", "Oligocene sedimentary rocks")\n', '("Vichy", "was named capital of", "Vichy France during World War II")\n', '("Vichy", "associated with", "collaboration with Nazi regime")\n', '("Vichy", "has a close historical connection to", "Vercingetorix")\n', '("Spa towns including Vichy", "popularized by", "Louis XV")\n', '("Vichy", "development influenced by visits from", "Louis XVI")\n', '("Vichy", "received investment from", "Napoleon")\n', '("Vichy", "underwent major transformation during", "Napoleon III\'s")\n', '("Vichy", "had major enhancements during", "Second French Empire")\n', '("Vichy", "is in relative proximity to", "Paris")\n', '("Vichy", "expanded due to contributions of", "Napoleon III")\n', '("Vichy", "has a significant telephone exchange for", "fr")\n', '("Vichy", "provided baths to", "Louis XV\'s daughters at Versailles")\n', '("Great Spa Towns of Europe", "Vichy is a part of", "UNESCO World Heritage Site")\n', '("Vichy", "has historical links with", "Strasbourg")\n', '("Chania", "is a city in", "Greece")\n', '("Chania", "is the capital of", "Chania regional unit")\n', '("Chania", "lies along the north west coast of", "Crete")\n', '("Chania", "is west of", "Rethymno")\n', '("Chania", "is west of", "Heraklion")\n', '("Chania", "includes areas such as", "Souda")\n', '("Chania", "was a site of a Minoan settlement near", "Knossos")\n', '("Cydonians", "are mentioned in", "Homer\'s Odyssey")\n', '("Chania", "was fortified by materials from ancient buildings including", "Constantinople")\n', '("Chania", "strengthened its fortifications under", "Venice")\n', '("Chania", "came under rule of", "German")\n', '("Chania had a community that was", "transported", "Egypt during Ottoman era")\n', '("Chania had been", "occupied by", "Nazi")\n', '("Chania", "had relations with", "British")\n', '("Chania", "lies near", "Mediterranean Sea")\n', '("Chania", "is affected by", "Aegean Sea")\n', '("Chania\'s history includes", "rule by", "French")\n', '("Chania", "has been influenced by", "Italian")\n', '("Chania", "had contact with", "Swedish")\n', '("Cretans", "cultivate", "olive trees")\n', '("Cretans", "cultivate", "citrus")\n', '("Cretans", "cultivate", "avocados")\n', '("Chania", "has a port that connects to", "Piraeus")\n']
+range(1, 147) 3
+['("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Kingdom of Nepal", "faced military support from", "Qing Dynasty")\n', '("Qing dynasty", "proclaimed in", "Shenyang")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Kingdom of Nepal", "transitioned into", "Federal Democratic Republic of Nepal")\n', '("Kingdom of Nepal", "invaded", "Tibet")\n', '("Kingdom of Nepal", "had a war with", "Republic of India")\n', '("King of Nepal", "was", "King Gyanendra")\n', '("Kingdom of Nepal", "had legislative body called", "House of Representatives")\n', '("Prithvi Narayan Shah", "claimed to be of", "Khas origin")\n', '("Kingdom of Nepal", "had its capital in", "Kathmandu")\n', '("Kingdom of Nepal", "expanded to include", "Bhaktapur")\n', '("Kingdom of Nepal", "expanded to include", "Pokhara")\n', '("Qing Dynasty\'s", "emperor was", "Qianlong Emperor")\n', '("Influential figures in", "Kingdom of Nepal sought safety in", "Varanasi")\n', '("Qing dynasty", "seized control of", "Beijing")\n', '("Nurhaci", "unified", "Jurchen clans")\n', '("Nurhaci", "founded", "Later Jin dynasty")\n', '("Hong Taiji", "declared Emperor of", "Great Qing")\n', '("Qing army", "defeated", "Ming general")\n', '("Kangxi Emperor", "consolidated control", "Korea and Vietnam")\n', '("Qianlong Emperor", "led", "Ten Great Campaigns")\n', '("Qianlong Emperor", "supervised", "Confucian cultural projects")\n', '("Empress Dowager Cixi", "turned back", "Hundred Days\' Reform")\n', '("Sun Yat-sen", "debated with", "Kang Youwei and Liang Qichao")\n', '("Qing dynasty", "expanded control over", "Manchuria, Jilin, and Heilongjiang")\n', '("Dorgon", "ally and regent of", "Shunzhi Emperor")\n', '("Li Zicheng", "captured", "Beijing")\n', '("Great Qing", "claimed the Mandate of Heaven", "Hong Taiji\'s reign")\n', '("Qianlong Emperor", "increased", "population of China")\n', '("Jesuits", "provided", "scientific and military knowledge")\n', '("Koxinga", "ruled", "Taiwan")\n', '("Yongzheng Emperor", "patronised", "Tibetan Buddhism")\n', '("Xinjiang", "proclaimed absorbed into", "China")\n', '("Mongolia, Tibet, and Xinjiang", "controlled by", "Qing")\n', '("Hong Taiji", "promoted", "Ming defector Hong Chengchou")\n', '("Shanhai Pass", "opened to", "Qing army by a Ming general")\n', '("Hakodate", "is located in", "Oshima Subprefecture, Hokkaido, Japan")\n', '("Hakodate", "is the capital city of", "Oshima Subprefecture")\n', '("Hakodate", "is the third biggest city in", "Hokkaido after Sapporo and Asahikawa")\n', '("Hakodate", "was Japan\'s first city opened to foreign trade due to", "Convention of Kanagawa")\n', '("Takadaya Kahei", "is honoured as the founder of", "Hakodate port")\n', '("Matthew Perry", "surveyed the port of", "Hakodate")\n', '("Hakodate", "played a central role in the", "Boshin War")\n', '("Republic of Ezo", "tried unsuccessfully to gather international recognition to foreign legations in", "Hakodate")\n', '("Battle of Hakodate", "was fought between", "the Tokugawa shogunate navy and the newly formed Imperial Japanese Navy")\n', '("Economy of", "Hakodate featured companies like", "Air Hokkaido and Airtransse")\n', '("Hakodate", "is well known for", "seafood and sushi")\n', '("Hakodate", "celebrates", "Hakodate Port Festival")\n', '("Hakodate", "has the", "Hokkaido Shinkansen")\n', '("Hakodate", "is connected to", "Honshu via Seikan Tunnel")\n', '("Mount Hakodate", "was formed by", "volcanic eruptions")\n', '("Mount Hakodate", "is connected to Hokkaido by", "a tombolo")\n', '("Hakodate", "is famous for", "seaweed")\n', '("Hakodate", "has a sister city relationship with", "Halifax, Nova Scotia, Canada")\n', '("Hakodate", "has a sister city relationship with", "Vladivostok, Primorsky Krai, Russia")\n', '("Hakodate", "has a sister city relationship with", "City of Lake Macquarie, New South Wales, Australia")\n', '("Hakodate", "has a sister city relationship with", "Yuzhno-Sakhalinsk, Sakhalin Oblast, Russia")\n', '("Hakodate", "has a sister city relationship with", "Singapore")\n', '("Hakodate", "has a sister city relationship with", "Tianjin, China")\n', '("Hakodate", "has a sister city relationship with", "Goyang, Gyeonggi-do, South Korea")\n', '("Jelgava", "is situated in", "Latvia")\n', '("Jelgava", "is southwest of", "Riga")\n', '("Jelgava", "is the largest town in", "Zemgale")\n', '("Jelgava", "was the capital of", "the united Duchy of Courland and Semigallia")\n', '("Jelgava", "was the administrative center of", "Courland Governorate")\n', '("Jelgava", "is situated on the river", "Lielupe")\n', '("Jelgava", "is a railway center with connections to", "Lithuania")\n', '("Jelgava", "is a railway center with connections to", "Sweden")\n', '("Jelgava Air Base", "is located in", "Jelgava")\n', '("German knights", "constructed the castle in", "Jelgava")\n', '("Jelgava", "became a town of", "the Duchy of Courland")\n', '("Jelgava", "was referred to as Mitau by", "German")\n', '("Jelgava", "became the residence of Duke Friedrich Kettler of", "Semigallia")\n', '("Jelgava", "was subjected to sieges by", "Sweden")\n', '("Jelgava", "began to fall under Russia\'s sphere of influence", "St Petersburg")\n', '("Jelgava", "became part of", "Courland")\n', '("Jelgava", "was annexed by", "the Soviet Union")\n', '("Jelgava", "suffered damage from fighting", "World War II")\n', '("Jelgava", "was rebuilt in typical", "Soviet style")\n', '("Riga Autobus Factory", "had administration buildings in", "Jelgava")\n', '("Jelgava", "regained its Germanic heritage after independence from", "Soviet Union")\n', '("Latvia University of Life Sciences and Technologies", "is located in", "Jelgava")\n', '("Jelgava", "is sometimes called the Student capital of", "Latvia")\n', '("Jelgava Castle", "was the old castle of", "the dukes of Courland")\n', '("Jelgava", "hosts an international Ice Sculpture festival", "Culture")\n', '("Jelgava", "suspended cooperation agreements with", "Magadan")\n', '("Vichy", "is a city in", "Allier department")\n', '("Vichy", "located in", "France")\n', '("Vichy", "name derived from Roman times under", "Diocletian")\n', '("Vichy", "part of", "Massif Central")\n', '("Vichy", "near", "Clermont-Ferrand")\n', '("Vichy\'s thermal springs", "exist due to", "Oligocene sedimentary rocks")\n', '("Vichy", "was named capital of", "Vichy France during World War II")\n', '("Vichy", "associated with", "collaboration with Nazi regime")\n', '("Vichy", "has a close historical connection to", "Vercingetorix")\n', '("Spa towns including Vichy", "popularized by", "Louis XV")\n', '("Vichy", "development influenced by visits from", "Louis XVI")\n', '("Vichy", "received investment from", "Napoleon")\n', '("Vichy", "underwent major transformation during", "Napoleon III\'s")\n', '("Vichy", "had major enhancements during", "Second French Empire")\n', '("Vichy", "is in relative proximity to", "Paris")\n', '("Vichy", "expanded due to contributions of", "Napoleon III")\n', '("Vichy", "has a significant telephone exchange for", "fr")\n', '("Vichy", "provided baths to", "Louis XV\'s daughters at Versailles")\n', '("Great Spa Towns of Europe", "Vichy is a part of", "UNESCO World Heritage Site")\n', '("Vichy", "has historical links with", "Strasbourg")\n', '("Chania", "is a city in", "Greece")\n', '("Chania", "is the capital of", "Chania regional unit")\n', '("Chania", "lies along the north west coast of", "Crete")\n', '("Chania", "is west of", "Rethymno")\n', '("Chania", "is west of", "Heraklion")\n', '("Chania", "includes areas such as", "Souda")\n', '("Chania", "was a site of a Minoan settlement near", "Knossos")\n', '("Cydonians", "are mentioned in", "Homer\'s Odyssey")\n', '("Chania", "was fortified by materials from ancient buildings including", "Constantinople")\n', '("Chania", "strengthened its fortifications under", "Venice")\n', '("Chania", "came under rule of", "German")\n', '("Chania had a community that was", "transported", "Egypt during Ottoman era")\n', '("Chania had been", "occupied by", "Nazi")\n', '("Chania", "had relations with", "British")\n', '("Chania", "lies near", "Mediterranean Sea")\n', '("Chania", "is affected by", "Aegean Sea")\n', '("Chania\'s history includes", "rule by", "French")\n', '("Chania", "has been influenced by", "Italian")\n', '("Chania", "had contact with", "Swedish")\n', '("Cretans", "cultivate", "olive trees")\n', '("Cretans", "cultivate", "citrus")\n', '("Cretans", "cultivate", "avocados")\n', '("Chania", "has a port that connects to", "Piraeus")\n']
+range(1, 147) 3
+{'id': '2_11', 'Question': ' In which city was the imperial regime first established that provided military support to the country whose border is marked by the summit of Mount Everest?\n', 'Answer': 'Shenyang', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Hakodate'}, {'label': 'B', 'text': 'Jelgava'}, {'label': 'C', 'text': 'Vichy'}, {'label': 'D', 'text': 'Chania'}, {'label': 'E', 'text': 'Shenyang'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'hakodate'}, {'label': 'B', 'text': 'jelgava'}, {'label': 'C', 'text': 'vichy'}, {'label': 'D', 'text': 'chania'}, {'label': 'E', 'text': 'shenyang'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: The summit of Mount Everest marks the international border between which two countries?\nA1: Kingdom of Nepal\n\n', '2: During the period of its expansion, which eastern historical empire provided military support to the Kingdom of Nepal?\nA2: ', 'ing dynasty\n\n', '3: In which city was the imperial regime of the ', 'ing family first established?\nA3: Shenyang'], 'Hops_wiki': [('Mount Everest', 'Kingdom of Nepal'), ('Kingdom of Nepal', 'Qing dynasty'), ('Qing dynasty', 'Shenyang')], 'Hops_cpnet': [('mount_everest', 'kingdom_of_nepal'), ('kingdom_of_nepal', 'qing_dynasty'), ('qing_dynasty', 'shenyang')], 'Triplets': ['("Mount Everest", "has the international border between", "China and Nepal across its summit")', '("Kingdom of Nepal", "faced military support from", "Qing Dynasty")', '("Qing dynasty", "proclaimed in", "Shenyang")'], 'Referred_files': [{'name': 'Mount Everest', 'line': 3}, {'name': 'Kingdom of Nepal', 'line': 11}, {'name': 'Qing dynasty', 'line': 1}], 'Question_triplet_answer': {100: [5, 63, 79], 50: [16, 42, 135], 25: [31, 45, 104]}}
+time passed:  6595.718466043472
+Expected dollar:  0.005
+Tibet is Geography
+Jelgava is Geography
+Courland is Geography
+Mitau is Geography
+Ordovician is Geography
+Mount Everest is Geography
+Shenyang is Geography
+Hakodate is Geography
+Chania is Geography
+Lithuania is Geography
+Koxinga is People
+Taiwan is Geography
+Hong Taiji is People
+Everest is Geography
+Magadan is Geography
+Massif Central is Geography
+Xinjiang is Geography
+China is Geography
+Battle of Hakodate is Geography
+Jelgava Castle is Geography
+Nurhaci is People
+Shanhai Pass is Geography
+Singapore is Geography
+"Khumbu Glacier and is Geography
+France is Geography
+Eurasian is Geography
+Oligocene is Geography
+Nova Scotia is Geography
+Canada is Geography
+Mount Hakodate is Geography
+Beijing is Geography
+Rethymno is Geography
+Mauna Kea is Geography
+Denali is Geography
+Honshu via Seikan Tunnel is Geography
+Riga is Geography
+Qing Dynasty is Geography
+Matthew Perry" is People
+Aegean Sea is Geography
+Vladivostok is Geography
+Primorsky Krai is Geography
+Russia is Geography
+Clermont Ferrand is Geography
+Kathmandu is Geography
+Federal Democratic Republic of Nepal is Geography
+Latvia University of Life Sciences is Geography
+Nepal is Geography
+Great Spa Towns of Europe is Incident
+House of Representatives is Geography
+the Duchy of Courland is Geography
+Louis XV is People
+Louis XV's is People
+Versailles is Geography
+the Soviet Union is Geography
+Soviet is Geography
+Li Zicheng" is People
+Hokkaido is Geography
+Goyang is Geography
+Gyeonggi is Geography
+South Korea is Geography
+Yuzhno Sakhalinsk is Geography
+Sakhalin Oblast is Geography
+George Everest is People
+Latvia is Geography
+the united Duchy of Courland is Geography
+Semigallia is Geography
+Hakodate Port Festival is Geography
+Sun Yat is People
+Kang Youwei is People
+Liang Qichao is People
+Cyanobacteria is Animal
+Hong Chengchou is People
+Kangxi Emperor" is People
+Korea is Geography
+Vietnam is Geography
+Oshima Subprefecture is Geography
+Mediterranean Sea is Geography
+Venice is Geography
+Zemgale is Geography
+Egypt is Geography
+Dorgon is People
+Lielupe is Geography
+Kangchenjunga is Geography
+entities:  {'Tibet', 'Lielupe', 'Ferrand', 'Chengchou', 'Mauna', 'Kang', 'Khumbu', 'Shenyang', 'South', 'Everest', 'Glacier', 'Zicheng', 'Rethymno', 'Soviet', 'Matthew', 'Kathmandu', 'Qing', 'Xinjiang', 'Riga', 'Festival', 'House', 'Venice', 'Central', 'Pass', 'Semigallia', 'Ming', 'Navy', 'Federal', 'Nova', 'China', 'Port', 'Sakhalinsk', "XV's", 'Europe', 'Oligocene', 'Vichy', 'Subprefecture', 'Mount', 'Sun', 'Kingdom', 'Honshu', 'Taiji', 'Goyang', 'Nepal', 'Napoleon', 'Kangxi', 'Singapore', 'Yat', 'Shanhai', 'Zicheng"', 'dynasty', 'Lithuania', 'Beijing', 'Dorgon', 'Duchy', 'Life', 'Battle', 'Denali', 'Mitau', 'Emperor"', 'Chania', 'Yuzhno', 'via', 'George', 'XV', 'Magadan', 'Tunnel', 'Union', 'Li', 'Eurasian', 'Great', 'Louis', 'Hokkaido', 'Sciences', 'Oshima', 'Massif', 'Cyanobacteria', 'Sakhalin', 'Hong', 'Krai', 'Mediterranean', 'Representatives', 'Qichao', 'Castle', 'Vladivostok', 'France', 'Aegean', 'Perry', 'Sea', 'Perry"', 'Towns', 'Spa', 'Halifax', 'Scotia', 'Canada', 'Kea', 'Zemgale', 'Jelgava', 'Dynasty', 'Gyeonggi', 'Nurhaci', 'Oblast', 'Courland', 'Clermont', 'Versailles', 'University', 'Republic', 'Egypt', 'Vietnam', 'Primorsky', 'Youwei', 'Kangchenjunga', 'Seikan', 'Hakodate', 'Liang', 'Ordovician', 'Korea', 'Taiwan', 'Democratic', 'Latvia', '"Khumbu', 'Russia', 'united', 'Koxinga'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Vichy' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Vichy
+Napoleon
+Second French Empire
+Clermont-Ferrand
+Allier department
+France
+Massif Central
+Oligocene sedimentary rocks
+UNESCO World Heritage Site
+
+gpt_entity_particular(): entity list: 
+ ['Vichy', 'Second French Empire', 'Napoleon', 'Massif Central', 'France', 'Allier department', 'Clermont-Ferrand', 'Oligocene sedimentary rocks', 'UNESCO World Heritage Site']
+
+gpt_entity_particular(): filtered entity: 
+ ['France']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Shenyang' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Nepal
+Tibet
+Qing dynasty
+Ming general
+Italian
+Chinese
+Chine
+Taiwan
+Great Qing
+Lithuania
+Taiwan
+Napoleon
+Great Qing
+Courland
+Later Jin dynasty
+Shanhai Pass
+Beijing
+Soviet Union
+Kathmandu
+Federal Democratic Republic of Nepal
+Mitau
+Soviet
+Latvia
+Riga
+Homer's Odyssey
+Swedish
+Korea
+Nepal
+Tibet
+Law of the People's Republic of Chinaertainty in Hong Kong
+Qing dynasty
+Beijing
+Jelgava
+Courland
+Latvia
+Pokhara
+India
+Beijing
+Qing dynasty
+Korea
+Vietnam
+Venice
+East Indi
+Lielupe
+Spain
+England
+America
+Napoleon III
+Khumbu Glacier
+
+gpt_entity_particular(): entity list: 
+ ['Later Jin dynasty', 'Tibet', 'Lielupe', 'England', 'Spain', 'Shanhai Pass', 'Jelgava', "Homer's Odyssey", 'Napoleon', 'Nepal', 'Pokhara', 'Ming general', 'Federal Democratic Republic of Nepal', 'India', 'Khumbu Glacier', 'Qing dynasty', 'Courland', 'Soviet', 'Italian', 'Soviet Union', 'Kathmandu', 'Vietnam', 'Riga', "Law of the People's Republic of Chinaertainty in Hong Kong", 'East Indi', 'America', 'Venice', 'Great Qing', 'Lithuania', 'Beijing', 'Chinese', 'Korea', 'Chine', 'Taiwan', 'Mitau', 'Latvia', 'Swedish', 'Napoleon III']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kingdom of Nepal' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kingdom of Nepal
+Tibet
+Republic of India
+Kathmandu
+Pokhara
+House of Representatives
+Federal Democratic Republic of Nepal
+
+gpt_entity_particular(): entity list: 
+ ['Tibet', 'Pokhara', 'Kingdom of Nepal', 'Federal Democratic Republic of Nepal', 'Republic of India', 'House of Representatives', 'Kathmandu']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Qing dynasty' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Qing dynasty
+Qing army
+Ming general
+Qianlong Emperor
+Great Qing
+Sun Yat-sen
+Kangxi Emperor
+Dorgon
+
+gpt_entity_particular(): entity list: 
+ ['Ming general', 'Sun Yat-sen', 'Qing dynasty', 'Qianlong Emperor', 'Great Qing', 'Kangxi Emperor', 'Qing army', 'Dorgon']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Jelgava' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Jelgava
+Courland Governorate
+Mitau
+Railway center
+Latvia University of Life Sciences and Technologies
+Soviet style
+Zemgale
+Lielupe
+Student capital
+Semigallia
+
+gpt_entity_particular(): entity list: 
+ ['Lielupe', 'Courland Governorate', 'Mitau', 'Soviet style', 'Zemgale', 'Student capital', 'Jelgava', 'Railway center', 'Semigallia', 'Latvia University of Life Sciences and Technologies']
+
+gpt_entity_particular(): filtered entity: 
+ ['Semigallia']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hakodate' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hakodate
+Seaweed
+Economy
+Companies
+Port Festival
+Capital city
+Oshima Subprefecture
+Seafood
+Sushi
+Hokkaido Shinkansen
+
+gpt_entity_particular(): entity list: 
+ ['Seafood', 'Port Festival', 'Companies', 'Sushi', 'Hokkaido Shinkansen', 'Seaweed', 'Economy', 'Hakodate', 'Oshima Subprefecture', 'Capital city']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mount Everest' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mount Everest
+Ordovician limestone
+Mount Everest
+Mount Everest
+Ice Sculpture festival
+Khumbu Glacier
+Everest's climbing conditions
+Mount Everest
+China
+Nepal
+British mountaineers
+Mauna Kea
+Denali
+Mount Everest
+China
+Nepal
+Beijing
+Beijing
+Soviet Union
+World War II
+Courland Governorate
+Soviet Union
+Chania
+Italian
+Homer's Odyssey
+Aegean Sea
+Cretans
+Mount Everest
+Kathmandu
+Kathmandu
+Kathmandu
+Kingdom of Nepal
+Kingdom of Nepal
+Tibet
+UNESCO World Heritage Site
+House of Representatives
+Tibet
+Kingdom of Nepal
+Pokhara
+Kingdom of Nepal
+Republic of India
+Qing dynasty
+Qing dynasty
+Second French Empire
+Nazi regime
+Duchy of Courland
+Spa towns
+Soviet Union
+Soviet Union
+Culture
+Kingdom of Nepal
+Li Zicheng
+volcanic eruptions
+Hakodate
+Hakodate
+Hakodate
+Hakodate
+Hakodate
+Vladivostok
+Goyang
+Vladivostok
+Goyang
+Boshin War
+Boshin War
+Hakodate
+Hakodate
+Hakodate
+Hakodate
+courland
+
+gpt_entity_particular(): entity list: 
+ ['Tibet', 'Second French Empire', 'volcanic eruptions', 'Ordovician limestone', 'courland', 'House of Representatives', 'Mount Everest', 'UNESCO World Heritage Site', 'Culture', "Homer's Odyssey", 'Nazi regime', 'World War II', 'Khumbu Glacier', 'Nepal', 'Pokhara', 'Goyang', 'Courland Governorate', 'Qing dynasty', 'Republic of India', 'Ice Sculpture festival', 'Aegean Sea', 'Italian', 'Soviet Union', 'Cretans', 'Mauna Kea', 'Spa towns', 'Kathmandu', 'Boshin War', 'Kingdom of Nepal', 'Li Zicheng', 'Hakodate', 'Beijing', 'British mountaineers', "Everest's climbing conditions", 'Vladivostok', 'Denali', 'China', 'Duchy of Courland', 'Chania']
+
+gpt_entity_particular(): filtered entity: 
+ ['Tibet', 'Nepal', 'China']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Chania' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Chania
+Khumbu Glacier
+Everest's summit
+Chania regional unit
+Piraeus
+Souda
+Rethymno
+Mediterranean Sea
+Venice
+Egypt
+Zemgale
+
+gpt_entity_particular(): entity list: 
+ ['Souda', 'Khumbu Glacier', "Everest's summit", 'Mediterranean Sea', 'Piraeus', 'Venice', 'Zemgale', 'Rethymno', 'Chania', 'Chania regional unit', 'Egypt']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Tibet', 'Lielupe', 'Ferrand', 'Chengchou', 'Mauna', 'Kang', 'Khumbu', 'Shenyang', 'South', 'Everest', 'Glacier', 'Zicheng', 'Rethymno', 'Soviet', 'Matthew', 'Kathmandu', 'Qing', 'Xinjiang', 'Riga', 'Festival', 'House', 'Venice', 'Central', 'Pass', 'Semigallia', 'Ming', 'Navy', 'Federal', 'Nova', 'China', 'Port', 'Sakhalinsk', "XV's", 'Europe', 'Oligocene', 'Vichy', 'Subprefecture', 'Mount', 'Sun', 'Kingdom', 'Honshu', 'Taiji', 'Goyang', 'Nepal', 'Napoleon', 'Kangxi', 'Singapore', 'Yat', 'Shanhai', 'Zicheng"', 'dynasty', 'Lithuania', 'Beijing', 'Dorgon', 'Duchy', 'Life', 'Battle', 'Denali', 'Mitau', 'Emperor"', 'Chania', 'Yuzhno', 'via', 'George', 'XV', 'Magadan', 'Tunnel', 'Union', 'Li', 'Eurasian', 'Great', 'Louis', 'Hokkaido', 'Sciences', 'Oshima', 'Massif', 'Cyanobacteria', 'Sakhalin', 'Hong', 'Krai', 'Mediterranean', 'Representatives', 'Qichao', 'Castle', 'Vladivostok', 'France', 'Aegean', 'Perry', 'Sea', 'Perry"', 'Towns', 'Spa', 'Halifax', 'Scotia', 'Canada', 'Kea', 'Zemgale', 'Jelgava', 'Dynasty', 'Gyeonggi', 'Nurhaci', 'Oblast', 'Courland', 'Clermont', 'Versailles', 'University', 'Republic', 'Egypt', 'Vietnam', 'Primorsky', 'Youwei', 'Kangchenjunga', 'Seikan', 'Hakodate', 'Liang', 'Ordovician', 'Korea', 'Taiwan', 'Democratic', 'Latvia', '"Khumbu', 'Russia', 'united', 'Koxinga'}
+Total time:  290.2897062301636
+Entity conversion done on 2_11 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_2_11_entity_conversion_hash.json. Check the entity.
+ In which city was the imperial regime first established that provided military support to the country whose border is marked by the summit of 042 Everest?
+
+
+
+Done. Check final_query/id_2_11_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_2_11_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_2_11_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_2_11_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_2_11_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_2_11_final_result_ratio25_unmasked.txt

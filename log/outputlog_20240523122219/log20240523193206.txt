@@ -1,0 +1,1330 @@
+Got argument: Mexico, 3, 3_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("New Spain", "included what is now", "Mexico and the Southwestern United States")', 'start word': 'Mexico', 'end word': 'New Spain', 'source': {'name': 'New Spain', 'line': 4}, 'cpnet': {'start word': 'mexico', 'end word': 'new_spain'}}
+
+utils/question.py extract_hops(New Spain, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/New_Spain_info.json file
+second1_hop:  {'triplet': '("New Spain", "comprised", "territory in North America")', 'start word': 'New Spain', 'end word': 'North America', 'source': {'name': 'New Spain', 'line': 3}, 'cpnet': {'start word': 'new_spain', 'end word': 'north_america'}}
+
+utils/question.py extract_hops(New Spain, ['North America'], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/New_Spain_info.json file
+second2_hop:  {'triplet': '("Hernán Cortés", "named the territory", "New Spain")', 'start word': 'New Spain', 'end word': 'Hernán Cortés', 'source': {'name': 'New Spain', 'line': 10}, 'cpnet': {'start word': 'new_spain', 'end word': 'hernando_cortes'}}
+generate_question(3_6, ['("New Spain", "included what is now", "Mexico and the Southwestern United States")', '("New Spain", "comprised", "territory in North America")', '("Hernán Cortés", "named the territory", "New Spain")'], ['Mexico', 'New Spain', 'New Spain'], [('Mexico', 'New Spain'), ('New Spain', 'North America'), ('New Spain', 'Hernán Cortés')], Mexico, [{'name': 'New Spain', 'line': 4}, {'name': 'New Spain', 'line': 3}, {'name': 'New Spain', 'line': 10}]) called
+GPT output is:  Q: What modern-day country corresponds with the region that Hernán Cortés named after his expedition led to the fall of the Aztec Empire and which was also part of a historical entity that covered much of North America?
+A: Mexico
+final_choice(Mexico, options = 5) started
+[]
+entity_type(Mexico) called
+Mexico is Geography
+check_matchscore(Mexico, Mexico):  1.0
+check_matchscore(Mexico, Member states of the United Nations):  0.0
+choose_by_wiki_recur(Member states of the United Nations)
+   Pages in Member states of the United Nations: ['Member states of the United Nations', 'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'The Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Cape Verde', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Democratic Republic of the Congo', 'Republic of the Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Gabon', 'The Gambia', 'Georgia (country)', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Republic of Ireland', 'Islamic Republic of Afghanistan', 'Israel', 'Italy', 'Ivory Coast', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Federated States of Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'São Tomé and Príncipe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe']
+      New Zealand in ['New Zealand', 'Laos', 'Angola', 'Romania']
+      Laos in ['New Zealand', 'Laos', 'Angola', 'Romania']
+      Angola in ['New Zealand', 'Laos', 'Angola', 'Romania']
+      Romania in ['New Zealand', 'Laos', 'Angola', 'Romania']
+['New Zealand', 'Laos', 'Angola', 'Romania']
+Ended after 2.5 hierarchy
+(2.5, ['Laos', 'New Zealand', 'Angola', 'Romania'])
+
+extract_info(Angola) Start.
+utils/preprocess.py extract_info(): Checking good links on Angola
+Namibia is Geography
+1 / 30 )  Namibia Namibia namibia
+Democratic Republic of the Congo is Geography
+2 / 30 )  Democratic Republic of the Congo Democratic Republic of the Congo democratic_republic_of_congo
+Zambia is Geography
+3 / 30 )  Zambia Zambia zambia
+Atlantic Ocean is Geography
+4 / 30 )  Atlantic Ocean Atlantic Ocean atlantic_ocean
+Enclave and exclave is Geography
+5 / 30 )  exclave Enclave and exclave enclave
+Cabinda Province is Geography
+6 / 30 )  Cabinda Cabinda Province portuguese_congo
+Republic of the Congo is Geography
+7 / 30 )  Republic of the Congo Republic of the Congo republic_of_congo
+Luanda is Geography
+8 / 30 )  Luanda Luanda luanda
+Portuguese Angola is Geography
+9 / 30 )  Portuguese colony Portuguese Angola portuguese_west_africa
+Soviet Union is Geography
+10 / 30 )  Soviet Union Soviet Union soviet_union
+Cuba is Geography
+11 / 30 )  Cuba Cuba cuba
+United States is Geography
+12 / 30 )  United States United States united_states
+South Africa is Geography
+13 / 30 )  South Africa South Africa south_africa
+Zaire is Geography
+14 / 30 )  Zaire Zaire zaire
+Nigeria is Geography
+15 / 30 )  Nigeria Nigeria nigeria
+Niger is Geography
+16 / 30 )  Niger Niger niger
+Taro is Animal
+17 / 30 )  taro Taro taro
+Gabon is Geography
+18 / 30 )  Gabon Gabon gabon
+Benguela is Geography
+19 / 30 )  Benguela Benguela benguela
+São Tomé is Geography
+20 / 30 )  Sao Tome São Tomé são_tomé
+Congo River is Geography
+21 / 30 )  Congo River Congo River congo_river
+Mozambique is Geography
+22 / 30 )  Mozambique Mozambique mozambique
+Kinshasa is Geography
+23 / 30 )  Léopoldville Kinshasa kinshasa
+Mobutu Sese Seko is People
+24 / 30 )  Mobutu Sese Seko Mobutu Sese Seko mobutu
+China is Geography
+25 / 30 )  People's Republic of China China china
+Morocco is Geography
+26 / 30 )  Morocco Morocco morocco
+Ghana is Geography
+27 / 30 )  Ghana Ghana ghana
+Guinea is Geography
+28 / 30 )  Guinea Guinea guinea
+Mali is Geography
+29 / 30 )  Mali Mali mali
+United Arab Republic is Geography
+30 / 30 )  United Arab Republic United Arab Republic united_arab_republic
+extract_triplet(Angola)
+Got GPT's response. String length : 1865
+subject_words:  [(None, 'Angola', 'angola')]
+object_words:  [['Namibia', 'Namibia', 'namibia']]
+subject_words:  [(None, 'Angola', 'angola')]
+object_words:  [['Democratic Republic of the Congo', 'Democratic Republic of the Congo', 'democratic_republic_of_congo'], ['Republic of the Congo', 'Republic of the Congo', 'republic_of_congo']]
+subject_words:  [(None, 'Angola', 'angola')]
+object_words:  [['Zambia', 'Zambia', 'zambia']]
+subject_words:  [(None, 'Angola', 'angola')]
+object_words:  [['Atlantic Ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Angola', 'angola')]
+object_words:  [['Cabinda', 'Cabinda Province', 'portuguese_congo']]
+subject_words:  [['Cabinda', 'Cabinda Province', 'portuguese_congo']]
+object_words:  [['Republic of the Congo', 'Republic of the Congo', 'republic_of_congo']]
+subject_words:  [['Cabinda', 'Cabinda Province', 'portuguese_congo']]
+object_words:  [['Democratic Republic of the Congo', 'Democratic Republic of the Congo', 'democratic_republic_of_congo'], ['Republic of the Congo', 'Republic of the Congo', 'republic_of_congo']]
+subject_words:  [(None, 'Angola', 'angola')]
+object_words:  [['Luanda', 'Luanda', 'luanda']]
+subject_words:  [(None, 'Angola', 'angola')]
+object_words:  [['Portuguese colony', 'Portuguese Angola', 'portuguese_west_africa']]
+subject_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Cuba', 'Cuba', 'cuba']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['South Africa', 'South Africa', 'south_africa']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Zaire', 'Zaire', 'zaire']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Nigeria', 'Nigeria', 'nigeria']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Niger', 'Niger', 'niger']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [(None, 'Angola', 'angola')]
+object_words:  [['taro', 'Taro', 'taro']]
+subject_words:  [['Gabon', 'Gabon', 'gabon']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Benguela', 'Benguela', 'benguela']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Sao Tome', 'São Tomé', 'são_tomé']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Congo River', 'Congo River', 'congo_river']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Mozambique', 'Mozambique', 'mozambique']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Léopoldville', 'Kinshasa', 'kinshasa']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Mobutu Sese Seko', 'Mobutu Sese Seko', 'mobutu']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [["People's Republic of China", 'China', 'china']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Morocco', 'Morocco', 'morocco']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Ghana', 'Ghana', 'ghana']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Guinea', 'Guinea', 'guinea']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['Mali', 'Mali', 'mali']]
+object_words:  [(None, 'Angola', 'angola')]
+subject_words:  [['United Arab Republic', 'United Arab Republic', 'united_arab_republic']]
+object_words:  [(None, 'Angola', 'angola')]
+extract_info(Laos) Start.
+utils/preprocess.py extract_info(): Checking good links on Laos
+ASEAN is Geography
+1 / 30 )  ASEAN ASEAN asean
+Myanmar is Geography
+2 / 30 )  Myanmar Myanmar myanmar
+China is Geography
+3 / 30 )  China China china
+Vietnam is Geography
+4 / 30 )  Vietnam Vietnam vietnam
+Cambodia is Geography
+5 / 30 )  Cambodia Cambodia cambodia
+Thailand is Geography
+6 / 30 )  Thailand Thailand thailand
+Vientiane is Geography
+7 / 30 )  Vientiane Vientiane vientiane
+France is Geography
+8 / 30 )  France France france
+Kingdom of Laos is Geography
+9 / 30 )  Kingdom of Laos Kingdom of Laos kingdom_of_laos
+Pathet Lao is Incident
+10 / 30 )  Pathet Lao Pathet Lao pathet_lao
+North Vietnam is Geography
+11 / 30 )  North Vietnam North Vietnam north_vietnam
+Soviet Union is Geography
+12 / 30 )  Soviet Union Soviet Union soviet_union
+United States is Geography
+13 / 30 )  United States United States united_states
+Organisation internationale de la Francophonie is Geography
+14 / 30 )  La Francophonie Organisation internationale de la Francophonie francophony
+World Trade Organization is Geography
+15 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+French Indochina is Geography
+16 / 30 )  French Indochina French Indochina french_indochina
+Pleistocene is Geography
+17 / 30 )  Pleistocene Pleistocene pleistocene
+Guangxi is Geography
+18 / 30 )  Guangxi Guangxi guangxi
+Khmer Empire is Geography
+19 / 30 )  Khmer Empire Khmer Empire kambuja
+Mekong is Geography
+20 / 30 )  Mekong Mekong mekong
+Luang Prabang is Geography
+21 / 30 )  Luang Prabang Luang Prabang luang_prabang
+Bangkok is Geography
+22 / 30 )  Bangkok Bangkok bangkok
+Tonkin is Geography
+23 / 30 )  Tonkin Tonkin tonkin
+Empire of Japan is Geography
+24 / 30 )  Imperial Japan Empire of Japan empire_of_japan
+Viet Minh is Incident
+25 / 30 )  Viet Minh Viet Minh viet_minh
+Viet Cong is Incident
+26 / 30 )  Viet Cong Viet Cong viet_cong
+South Vietnam is Geography
+27 / 30 )  South Vietnam South Vietnam south_vietnam
+Belt and Road Initiative is Incident
+28 / 30 )  Belt and Road Initiative Belt and Road Initiative belt_and_road_initiative
+Russia is Geography
+29 / 30 )  Russia Russia russia
+Australia is Geography
+30 / 30 )  Australia Australia australia
+extract_triplet(Laos)
+Got GPT's response. String length : 4767
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['Myanmar', 'Myanmar', 'myanmar'], ['China', 'China', 'china']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['Vietnam', 'Vietnam', 'vietnam']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['Cambodia', 'Cambodia', 'cambodia']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['Thailand', 'Thailand', 'thailand']]
+subject_words:  [['Vientiane', 'Vientiane', 'vientiane']]
+object_words:  [(None, 'Laos', 'laos')]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['Imperial Japan', 'Empire of Japan', 'empire_of_japan']]
+subject_words:  [['Pathet Lao', 'Pathet Lao', 'pathet_lao']]
+object_words:  [['Vietnam', 'Vietnam', 'vietnam'], ['North Vietnam', 'North Vietnam', 'north_vietnam'], ['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  []
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['ASEAN', 'ASEAN', 'asean']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['Vietnam', 'Vietnam', 'vietnam']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['France', 'France', 'france']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Laos', 'laos')]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [['Pathet Lao', 'Pathet Lao', 'pathet_lao']]
+object_words:  [['Viet Minh', 'Viet Minh', 'viet_minh']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['Vietnam', 'Vietnam', 'vietnam']]
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  [(None, 'Laos', 'laos')]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [['Vientiane', 'Vientiane', 'vientiane']]
+object_words:  [['Belt and Road Initiative', 'Belt and Road Initiative', 'belt_and_road_initiative']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Laos', 'laos')]
+subject_words:  [['Mekong', 'Mekong', 'mekong']]
+object_words:  [['Thailand', 'Thailand', 'thailand']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['La Francophonie', 'Organisation internationale de la Francophonie', 'francophony']]
+subject_words:  []
+object_words:  [(None, 'Laos', 'laos')]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  [['Australia', 'Australia', 'australia']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  []
+object_words:  [['China', 'China', 'china']]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [['Luang Prabang', 'Luang Prabang', 'luang_prabang']]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Laos', 'laos')]
+subject_words:  []
+object_words:  [(None, 'Laos', 'laos')]
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+subject_words:  [(None, 'Laos', 'laos')]
+object_words:  []
+extract_info(New Zealand) Start.
+utils/preprocess.py extract_info(): Checking good links on New Zealand
+Pacific Ocean is Geography
+1 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+North Island is Geography
+2 / 30 )  North Island North Island north_island
+South Island is Geography
+3 / 30 )  South Island South Island south_island
+Australia is Geography
+4 / 30 )  Australia Australia australia
+Tasman Sea is Geography
+5 / 30 )  Tasman Sea Tasman Sea tasman_sea
+New Caledonia is Geography
+6 / 30 )  New Caledonia New Caledonia new_caledonia
+Fiji is Geography
+7 / 30 )  Fiji Fiji fiji
+Tonga is Geography
+8 / 30 )  Tonga Tonga tonga
+Southern Alps is Geography
+9 / 30 )  Southern Alps Southern Alps southern_alps
+Wellington is Geography
+10 / 30 )  Wellington Wellington wellington
+Auckland is Geography
+11 / 30 )  Auckland Auckland auckland
+Abel Tasman is People
+12 / 30 )  Abel Tasman Abel Tasman abel_tasman
+James Cook is People
+13 / 30 )  Captain James Cook James Cook james_cook
+ASEAN is Geography
+14 / 30 )  ASEAN Plus Six ASEAN asean
+United States is Geography
+15 / 30 )  United States United States united_states
+United Kingdom is Geography
+16 / 30 )  United Kingdom United Kingdom united_kingdom
+Samoa is Geography
+17 / 30 )  Samoa Samoa samoa
+Tokelau is Geography
+18 / 30 )  Tokelau Tokelau tokelau
+Cook Islands is Geography
+19 / 30 )  Cook Islands Cook Islands cook_islands
+Niue is Geography
+20 / 30 )  Niue Niue niue
+Ross Dependency is Geography
+21 / 30 )  Ross Dependency Ross Dependency ross_dependency
+Zeeland is Geography
+22 / 30 )  Zeeland Zeeland zeeland
+William IV is People
+23 / 30 )  William IV William IV william_iv
+Chatham Islands is Geography
+24 / 30 )  Chatham Islands Chatham Islands chatham_islands
+North America is Geography
+25 / 30 )  North American North America north_america
+United Kingdom of Great Britain and Ireland is Geography
+26 / 30 )  United Kingdom United Kingdom of Great Britain and Ireland united_kingdom_of_great_britain_and_ireland
+Bay of Islands is Geography
+27 / 30 )  Bay of Islands Bay of Islands bay_of_islands
+Cook Strait is Geography
+28 / 30 )  Cook Strait Cook Strait cook_strait
+Edward VII is People
+29 / 30 )  Edward VII Edward VII edward_vii
+Parliament of the United Kingdom is Geography
+30 / 30 )  British Parliament Parliament of the United Kingdom british_parliament
+extract_triplet(New Zealand)
+Got GPT's response. String length : 2915
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [['North Island', 'North Island', 'north_island'], ['South Island', 'South Island', 'south_island']]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [['Australia', 'Australia', 'australia']]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [['Tasman Sea', 'Tasman Sea', 'tasman_sea']]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [['Tonga', 'Tonga', 'tonga']]
+subject_words:  [['Southern Alps', 'Southern Alps', 'southern_alps']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Wellington', 'Wellington', 'wellington']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Auckland', 'Auckland', 'auckland']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Abel Tasman', 'Abel Tasman', 'abel_tasman']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Captain James Cook', 'James Cook', 'james_cook']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Captain James Cook', 'James Cook', 'james_cook']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom'], ['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+object_words:  []
+subject_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom'], ['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  []
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom'], ['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Samoa', 'Samoa', 'samoa']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Fiji', 'Fiji', 'fiji']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Tonga', 'Tonga', 'tonga']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [['Tokelau', 'Tokelau', 'tokelau']]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [['Cook Islands', 'Cook Islands', 'cook_islands'], ['Niue', 'Niue', 'niue']]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  []
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [['Zeeland', 'Zeeland', 'zeeland']]
+subject_words:  [['William IV', 'William IV', 'william_iv']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['William IV', 'William IV', 'william_iv']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['North Island', 'North Island', 'north_island']]
+object_words:  []
+subject_words:  [['South Island', 'South Island', 'south_island']]
+object_words:  []
+subject_words:  [['North American', 'North America', 'north_america']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom'], ['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  []
+subject_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom'], ['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Bay of Islands', 'Bay of Islands', 'bay_of_islands']]
+object_words:  []
+subject_words:  [['Cook Strait', 'Cook Strait', 'cook_strait']]
+object_words:  [(None, 'New Zealand', 'new_zealand')]
+subject_words:  [['Edward VII', 'Edward VII', 'edward_vii']]
+object_words:  []
+subject_words:  [(None, 'New Zealand', 'new_zealand')]
+object_words:  []
+subject_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+object_words:  []
+subject_words:  [['ASEAN Plus Six', 'ASEAN', 'asean']]
+object_words:  []
+['("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "comprised", "territory in North America")\n', '("Hernán Cortés", "named the territory", "New Spain")\n']
+
+['("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("Angola", "borders", "Namibia")\n', '("Angola", "borders", "Democratic Republic of the Congo")\n', '("Angola", "borders", "Zambia")\n', '("Angola", "has a coastline on", "Atlantic Ocean")\n', '("Angola", "has an exclave province named", "Cabinda")\n', '("Cabinda", "borders", "Republic of the Congo")\n', '("Cabinda", "borders", "Democratic Republic of the Congo")\n', '("Angola", "has its capital and most populous city in", "Luanda")\n', '("Angola", "was a", "Portuguese colony")\n', '("Soviet Union", "backed", "People\'s Movement for the Liberation of Angola")\n', '("Cuba", "backed", "People\'s Movement for the Liberation of Angola")\n', '("United States", "supported", "National Union for the Total Independence of Angola")\n', '("South Africa", "supported", "National Union for the Total Independence of Angola")\n', '("Zaire", "backed", "National Liberation Front of Angola")\n', '("Nigeria", "originated Bantu migrations into", "Angola")\n', '("Niger", "originated Bantu migrations into", "Angola")\n', '("Angola", "introduced cultivation of", "taro")\n', '("Gabon", "had historical ties with", "Kingdom of Kongo in Angola")\n', '("Benguela", "was fortified and became a township in", "Angola")\n', '("Sao Tome", "had slaves traded to it from", "Angola")\n', '("Congo River", "is a significant river related to", "Angola")\n', '("Mozambique", "had proposed linkage with", "Angola")\n', '("Léopoldville", "was involved in conflicts related to", "Angola")\n', '("Mobutu Sese Seko", "supported", "National Liberation Front of Angola")\n', '("People\'s Republic of China", "is a trade partner of", "Angola")\n', '("Morocco", "provided diplomatic support to", "MPLA in Angola")\n', '("Ghana", "provided diplomatic support to", "MPLA in Angola")\n', '("Guinea", "provided diplomatic support to", "MPLA in Angola")\n', '("Mali", "provided diplomatic support to", "MPLA in Angola")\n', '("United Arab Republic", "provided diplomatic support to", "MPLA in Angola")\n', '("Romania", "is located at", "the crossroads of Central, Eastern and Southeastern Europe")\n', '("Romania", "borders", "Ukraine to the north and east")\n', '("Romania", "borders", "Hungary to the west")\n', '("Romania", "borders", "Serbia to the southwest")\n', '("Romania", "borders", "Bulgaria to the south")\n', '("Romania", "borders", "Moldova to the east")\n', '("Romania", "borders", "the Black Sea to the southeast")\n', '("Romania", "has", "a predominantly continental climate")\n', '("Romania", "is the twelfth-largest country in", "Europe")\n', '("Romania", "is the sixth-most populous member state of", "the European Union")\n', '("Romania\'s", "capital and largest city is", "Bucharest")\n', '("Romania", "has cities including", "Cluj-Napoca, Iași, Timișoara, Constanța, Craiova, Brașov, Galați")\n', '("The Danube", "rises in", "Germany\'s Black Forest")\n', '("The Carpathian Mountains", "cross", "Romania from the north to the southwest")\n', '("Romania", "includes", "Moldoveanu Peak")\n', '("Romania", "has a settlement history starting from", "the Lower Paleolithic")\n', '("Romania", "was founded through a personal union of", "the Danubian Principalities of Moldavia and Wallachia")\n', '("Romania", "officially named since", "1866")\n', '("Romania", "gained independence from", "the Ottoman Empire in 1877")\n', '("Romania", "fought with the Allied Powers from", "1916")\n', '("Romania", "ceded Bessarabia and Northern Bukovina to", "the Soviet Union")\n', '("Romania", "ceded Northern Transylvania to", "Hungary")\n', '("Romania", "signed the Tripartite Pact and entered World War II on the Axis side against", "the Soviet Union")\n', '("Romania", "joined the Allies and recovered", "Northern Transylvania")\n', '("Romania", "became a socialist republic and a member of", "the Warsaw Pact")\n', '("Romania", "began a transition towards", "democracy and a market economy after the 1989 Revolution")\n', '("Romania", "is a member of", "the United Nations, the European Union, the Schengen Area, NATO, the Council of Europe, BSEC, and WTO")\n', '("Homo sapiens", "oldest known in Europe found in", "Peștera cu Oase")\n', '("Neolithic agriculture", "spread from", "Thessaly to Romania")\n', '("Salt production", "began in", "Lunca in the 5th to 4th millennium BC")\n', '("The Getae", "were part of", "the Dacians")\n', '("Romania", "conquered by", "the Roman Empire during late antiquity")\n', '("The Carpians, Goths and other tribes", "made raids against", "Dacia")\n', '("The Goths", "were overrun by", "the Huns")\n', '("The Huns", "forced the local population into", "submission")\n', '("The Goths", "occupied", "the Lower Danube region in 376")\n', '("Place names of Slavic origin", "indicate", "a significant Slavic-speaking population in Romania")\n', '("Hungary", "took control of", "the steppes north of the Lower Danube")\n', '("The First Bulgarian Empire", "had a population consisting of", "Bulgars, Slavs, and Vlachs")\n', '("Romanians", "established a cultural association to promote", "the use of Romanian")\n', '("Romania", "secretly joined the Triple Alliance of", "Germany, Austria-Hungary, and Italy")\n', '("Romania", "seized Southern Dobruja from", "Bulgaria")\n', '("Treaty of Paris", "put the Danubian Principalities under the collective guardianship of", "the Great Powers")\n', '("Romania", "the united principalities officially adopted the name", "in 1862")\n', '("The Great Powers", "acknowledged Romania\'s full independence at", "the Congress of Berlin")\n', '("Romania\'s", "king was crowned in", "1881")\n', '("Romania", "entered World War I against", "the Central Powers in 1916")\n', '("Romania", "signed a peace treaty with", "the Central Powers in May 1918")\n', '("Bessarabia", "united with", "Romania")\n', '("Transylvania, Banat, Crișana, and Maramureș", "became part of", "the Kingdom of Romania")\n', '("Romania", "terminated its mission in", "Iraq and withdrew its last troops on 24 July 2009")\n', '("Romania", "joined", "the European Union on 1 January 2007")\n', '("Romania", "adopted", "the Romanian leu as its currency since 1867")\n', '("Romania", "plans to adopt", "the euro in 2029")\n', '("Romania", "population was", "19,053,815 according to the 2021 Romanian census")\n', '("Romania", "official language is", "Romanian")\n', '("Romanian", "is similar to", "Aromanian, Megleno-Romanian, and Istro-Romanian")\n', '("Romania", "is a secular state with", "no state religion")\n', '("Romania", "majority of the population identify themselves as", "Christians")\n', '("Romania", "is", "an autocephalous Eastern Orthodox Church")\n', '("Romania", "has", "the world\'s third-largest Eastern Orthodox population")\n', '("Romania", "most popular sport is", "football")\n', '("Romania", "has", "over 219,000 registered players for football")\n', '("Romania national football team", "played its first match in", "1922")\n', '("Romania", "has played in", "seven World Cups")\n', '("Gheorghe Hagi", "was nicknamed", "Maradona of the Carpathians")\n', '("Steaua București", "was the first Eastern European team to win", "the UEFA Champions League in 1986")\n', '("Simona Halep", "won", "the French Open in 2018 and Wimbledon in 2019")\n', '("Romania", "has", "306 all-time Summer Olympics medals")\n', '("Romania", "has", "the world\'s second-largest gymnast Nadia Comăneci")\n', '("Romania", "has", "a universal health care system")\n', '("Laos", "is officially known as", "the Lao People\'s Democratic Republic or Lao PDR")\n', '("Laos", "is bordered by", "Myanmar and China to the northwest")\n', '("Laos", "is bordered by", "Vietnam to the east")\n', '("Laos", "is bordered by", "Cambodia to the southeast")\n', '("Laos", "is bordered by", "Thailand to the west and southwest")\n', '("Vientiane", "is the capital and largest city of", "Laos")\n', '("Laos", "traces its historic and cultural identity to", "Lan Xang")\n', '("Laos", "became wealthy due to", "its location as a hub for overland trade")\n', '("Laos", "was occupied by", "Imperial Japan during World War II")\n', '("Pathet Lao", "was supported by", "North Vietnam and the Soviet Union")\n', '("Royal Lao Armed Forces", "was supported by", "the United States")\n', '("Laos", "is a member of", "the Asia-Pacific Trade Agreement")\n', '("Laos", "is a member of", "ASEAN")\n', '("Laos", "is governed by", "the Lao People\'s Revolutionary Party")\n', '("Laos\'s strategies for development", "are based on", "generating electricity from rivers and selling power to Thailand, China, and Vietnam")\n', '("Laos", "is one of Southeast Asia\'s fastest-growing economies", "according to the World Bank")\n', '("The word \'Laos\'", "was coined by", "France")\n', '("Laos", "traces its history to", "the kingdom of Lan Xang")\n', '("King Sisavang Vong of Luang Phrabang", "became ruler of a unified", "Laos")\n', '("Laos", "produced tin, rubber, and coffee during", "French colonial rule")\n', '("Pathet Lao", "began a war against the French colonial forces with support from", "the Viet Minh")\n', '("Laos", "was involved in", "the Vietnam War")\n', '("United States", "initiated a bombing campaign against", "the North Vietnamese positions in Laos")\n', '("Laos", "suffered from", "the most extensive bombing campaign in history relative to its population")\n', '("Boten-Vientiane railway", "is a part of", "China\'s Belt and Road Initiative")\n', '("Laos", "is the only landlocked country in", "Southeast Asia")\n', '("Phou Bia", "is the highest mountain in", "Laos")\n', '("Mekong River", "forms a large part of the western boundary with", "Thailand")\n', '("Laos", "consists of three main geographical areas", "north, central, and south")\n', '("Laos", "is a member of", "La Francophonie")\n', '("French", "is used in government and commerce in", "Laos")\n', '("Laos", "\'s emergence from international isolation", "is marked by improved relations with countries including Russia, China, Thailand, and Australia")\n', '("Lao People\'s Armed Forces", "is the institution of", "the Lao People\'s Revolutionary Party")\n', '("Laos", "is part of the opium poppy growing region known as", "the Golden Triangle according to UNODC")\n', '("Lao economy", "depends on investment and trade with", "its neighbours, Thailand, Vietnam, and China")\n', '("Laos", "has been classified as", "a least developed country by the United Nations")\n', '("Laos", "is recognised internationally for", "Beerlao")\n', '("Luang Prabang and Vat Phou", "are", "UNESCO World Heritage sites")\n', '("Laos", "has aspirations to become a", "land-linked nation")\n', '("Laos", "\'s government is", "a one-party socialist republic espousing Marxism–Leninism")\n', '("Laos", "\'s health expenditure is around", "four percent of its GDP")\n', '("Lao language", "is the official and majority language in", "Laos")\n', '("Theravada Buddhism", "is a major influence in", "Laos culture")\n', '("Laos", "has a tradition in", "the martial art of muay Lao")\n', '("Laos", "has an important garment known as", "the sinh worn by Lao women")\n', '("New Zealand", "is an island country in", "the southwestern Pacific Ocean")\n', '("New Zealand", "consists of", "two main landmasses—the North Island and the South Island")\n', '("New Zealand", "lies east of", "Australia")\n', '("New Zealand", "is separated from Australia by", "the Tasman Sea")\n', '("New Zealand", "is south of", "the islands of New Caledonia, Fiji, and Tonga")\n', '("Southern Alps", "are part of", "New Zealand\'s sharp mountain peaks")\n', '("Wellington", "is the capital city of", "New Zealand")\n', '("Auckland", "is the most populous city in", "New Zealand")\n', '("Abel Tasman", "was the first European to sight", "New Zealand")\n', '("Captain James Cook", "was the first European to set foot on", "New Zealand")\n', '("Captain James Cook", "mapped", "New Zealand")\n', '("United Kingdom", "signed the Treaty of Waitangi with", "Māori chiefs")\n', '("United Kingdom", "declared British sovereignty over", "New Zealand")\n', '("New Zealand", "became a colony within", "the British Empire")\n', '("United States", "is especially close relations with", "New Zealand")\n', '("United Kingdom", "has close relations with", "New Zealand")\n', '("Samoa", "has diplomatic relations with", "New Zealand")\n', '("Fiji", "has diplomatic relations with", "New Zealand")\n', '("Tonga", "has diplomatic relations with", "New Zealand")\n', '("New Zealand", "maintains the Realm of", "Tokelau")\n', '("New Zealand", "is in free association with", "the Cook Islands and Niue")\n', '("New Zealand", "claims the Ross Dependency in", "Antarctica")\n', '("New Zealand", "has the name \'Zeeland\' after the Dutch province of", "Zeeland")\n', '("William IV", "acknowledged the flag of", "the United Tribes of New Zealand")\n', '("New Zealand", "signed the Declaration of the Independence of", "New Zealand")\n', '("William IV", "recognised the declaration in a letter from", "Lord Glenelg")\n', '("Aotearoa", "is the current Māori name for", "New Zealand")\n', '("The North Island", "was originally called Te Ika-a-Māui by", "Māori")\n', '("The South Island", "was originally called Te Waipounamu by", "Māori")\n', '("North American", "whaling, sealing, and trading ships visited", "New Zealand")\n', '("United Kingdom", "appointed James Busby as British Resident to", "New Zealand")\n', '("New Zealand", "introduced a minimum wage as the first country to do so", "")\n', '("United Kingdom", "had legislative powers over", "New Zealand")\n', '("Bay of Islands", "was where the Treaty of Waitangi was first signed", "")\n', '("Cook Strait", "separates the North Island and South Island of", "New Zealand")\n', '("Edward VII", "proclaimed New Zealand as a Dominion within", "the British Empire")\n', '("New Zealand", "adopted the Statute of Westminster", "")\n', '("Pacific Ocean", "is where New Zealand is an island country located", "")\n', '("ASEAN Plus Six", "includes New Zealand as a member", "")\n']
+range(1, 312) 3
+['("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "comprised", "territory in North America")\n', '("Hernán Cortés", "named the territory", "New Spain")\n']
+
+['("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("Angola", "borders", "Namibia")\n', '("Angola", "borders", "Democratic Republic of the Congo")\n', '("Angola", "borders", "Zambia")\n', '("Angola", "has a coastline on", "Atlantic Ocean")\n', '("Angola", "has an exclave province named", "Cabinda")\n', '("Cabinda", "borders", "Republic of the Congo")\n', '("Cabinda", "borders", "Democratic Republic of the Congo")\n', '("Angola", "has its capital and most populous city in", "Luanda")\n', '("Angola", "was a", "Portuguese colony")\n', '("Soviet Union", "backed", "People\'s Movement for the Liberation of Angola")\n', '("Cuba", "backed", "People\'s Movement for the Liberation of Angola")\n', '("United States", "supported", "National Union for the Total Independence of Angola")\n', '("South Africa", "supported", "National Union for the Total Independence of Angola")\n', '("Zaire", "backed", "National Liberation Front of Angola")\n', '("Nigeria", "originated Bantu migrations into", "Angola")\n', '("Niger", "originated Bantu migrations into", "Angola")\n', '("Angola", "introduced cultivation of", "taro")\n', '("Gabon", "had historical ties with", "Kingdom of Kongo in Angola")\n', '("Benguela", "was fortified and became a township in", "Angola")\n', '("Sao Tome", "had slaves traded to it from", "Angola")\n', '("Congo River", "is a significant river related to", "Angola")\n', '("Mozambique", "had proposed linkage with", "Angola")\n', '("Léopoldville", "was involved in conflicts related to", "Angola")\n', '("Mobutu Sese Seko", "supported", "National Liberation Front of Angola")\n', '("People\'s Republic of China", "is a trade partner of", "Angola")\n', '("Morocco", "provided diplomatic support to", "MPLA in Angola")\n', '("Ghana", "provided diplomatic support to", "MPLA in Angola")\n', '("Guinea", "provided diplomatic support to", "MPLA in Angola")\n', '("Mali", "provided diplomatic support to", "MPLA in Angola")\n', '("United Arab Republic", "provided diplomatic support to", "MPLA in Angola")\n', '("Romania", "is located at", "the crossroads of Central, Eastern and Southeastern Europe")\n', '("Romania", "borders", "Ukraine to the north and east")\n', '("Romania", "borders", "Hungary to the west")\n', '("Romania", "borders", "Serbia to the southwest")\n', '("Romania", "borders", "Bulgaria to the south")\n', '("Romania", "borders", "Moldova to the east")\n', '("Romania", "borders", "the Black Sea to the southeast")\n', '("Romania", "has", "a predominantly continental climate")\n', '("Romania", "is the twelfth-largest country in", "Europe")\n', '("Romania", "is the sixth-most populous member state of", "the European Union")\n', '("Romania\'s", "capital and largest city is", "Bucharest")\n', '("Romania", "has cities including", "Cluj-Napoca, Iași, Timișoara, Constanța, Craiova, Brașov, Galați")\n', '("The Danube", "rises in", "Germany\'s Black Forest")\n', '("The Carpathian Mountains", "cross", "Romania from the north to the southwest")\n', '("Romania", "includes", "Moldoveanu Peak")\n', '("Romania", "has a settlement history starting from", "the Lower Paleolithic")\n', '("Romania", "was founded through a personal union of", "the Danubian Principalities of Moldavia and Wallachia")\n', '("Romania", "officially named since", "1866")\n', '("Romania", "gained independence from", "the Ottoman Empire in 1877")\n', '("Romania", "fought with the Allied Powers from", "1916")\n', '("Romania", "ceded Bessarabia and Northern Bukovina to", "the Soviet Union")\n', '("Romania", "ceded Northern Transylvania to", "Hungary")\n', '("Romania", "signed the Tripartite Pact and entered World War II on the Axis side against", "the Soviet Union")\n', '("Romania", "joined the Allies and recovered", "Northern Transylvania")\n', '("Romania", "became a socialist republic and a member of", "the Warsaw Pact")\n', '("Romania", "began a transition towards", "democracy and a market economy after the 1989 Revolution")\n', '("Romania", "is a member of", "the United Nations, the European Union, the Schengen Area, NATO, the Council of Europe, BSEC, and WTO")\n', '("Homo sapiens", "oldest known in Europe found in", "Peștera cu Oase")\n', '("Neolithic agriculture", "spread from", "Thessaly to Romania")\n', '("Salt production", "began in", "Lunca in the 5th to 4th millennium BC")\n', '("The Getae", "were part of", "the Dacians")\n', '("Romania", "conquered by", "the Roman Empire during late antiquity")\n', '("The Carpians, Goths and other tribes", "made raids against", "Dacia")\n', '("The Goths", "were overrun by", "the Huns")\n', '("The Huns", "forced the local population into", "submission")\n', '("The Goths", "occupied", "the Lower Danube region in 376")\n', '("Place names of Slavic origin", "indicate", "a significant Slavic-speaking population in Romania")\n', '("Hungary", "took control of", "the steppes north of the Lower Danube")\n', '("The First Bulgarian Empire", "had a population consisting of", "Bulgars, Slavs, and Vlachs")\n', '("Romanians", "established a cultural association to promote", "the use of Romanian")\n', '("Romania", "secretly joined the Triple Alliance of", "Germany, Austria-Hungary, and Italy")\n', '("Romania", "seized Southern Dobruja from", "Bulgaria")\n', '("Treaty of Paris", "put the Danubian Principalities under the collective guardianship of", "the Great Powers")\n', '("Romania", "the united principalities officially adopted the name", "in 1862")\n', '("The Great Powers", "acknowledged Romania\'s full independence at", "the Congress of Berlin")\n', '("Romania\'s", "king was crowned in", "1881")\n', '("Romania", "entered World War I against", "the Central Powers in 1916")\n', '("Romania", "signed a peace treaty with", "the Central Powers in May 1918")\n', '("Bessarabia", "united with", "Romania")\n', '("Transylvania, Banat, Crișana, and Maramureș", "became part of", "the Kingdom of Romania")\n', '("Romania", "terminated its mission in", "Iraq and withdrew its last troops on 24 July 2009")\n', '("Romania", "joined", "the European Union on 1 January 2007")\n', '("Romania", "adopted", "the Romanian leu as its currency since 1867")\n', '("Romania", "plans to adopt", "the euro in 2029")\n', '("Romania", "population was", "19,053,815 according to the 2021 Romanian census")\n', '("Romania", "official language is", "Romanian")\n', '("Romanian", "is similar to", "Aromanian, Megleno-Romanian, and Istro-Romanian")\n', '("Romania", "is a secular state with", "no state religion")\n', '("Romania", "majority of the population identify themselves as", "Christians")\n', '("Romania", "is", "an autocephalous Eastern Orthodox Church")\n', '("Romania", "has", "the world\'s third-largest Eastern Orthodox population")\n', '("Romania", "most popular sport is", "football")\n', '("Romania", "has", "over 219,000 registered players for football")\n', '("Romania national football team", "played its first match in", "1922")\n', '("Romania", "has played in", "seven World Cups")\n', '("Gheorghe Hagi", "was nicknamed", "Maradona of the Carpathians")\n', '("Steaua București", "was the first Eastern European team to win", "the UEFA Champions League in 1986")\n', '("Simona Halep", "won", "the French Open in 2018 and Wimbledon in 2019")\n', '("Romania", "has", "306 all-time Summer Olympics medals")\n', '("Romania", "has", "the world\'s second-largest gymnast Nadia Comăneci")\n', '("Romania", "has", "a universal health care system")\n', '("Laos", "is officially known as", "the Lao People\'s Democratic Republic or Lao PDR")\n', '("Laos", "is bordered by", "Myanmar and China to the northwest")\n', '("Laos", "is bordered by", "Vietnam to the east")\n', '("Laos", "is bordered by", "Cambodia to the southeast")\n', '("Laos", "is bordered by", "Thailand to the west and southwest")\n', '("Vientiane", "is the capital and largest city of", "Laos")\n', '("Laos", "traces its historic and cultural identity to", "Lan Xang")\n', '("Laos", "became wealthy due to", "its location as a hub for overland trade")\n', '("Laos", "was occupied by", "Imperial Japan during World War II")\n', '("Pathet Lao", "was supported by", "North Vietnam and the Soviet Union")\n', '("Royal Lao Armed Forces", "was supported by", "the United States")\n', '("Laos", "is a member of", "the Asia-Pacific Trade Agreement")\n', '("Laos", "is a member of", "ASEAN")\n', '("Laos", "is governed by", "the Lao People\'s Revolutionary Party")\n', '("Laos\'s strategies for development", "are based on", "generating electricity from rivers and selling power to Thailand, China, and Vietnam")\n', '("Laos", "is one of Southeast Asia\'s fastest-growing economies", "according to the World Bank")\n', '("The word \'Laos\'", "was coined by", "France")\n', '("Laos", "traces its history to", "the kingdom of Lan Xang")\n', '("King Sisavang Vong of Luang Phrabang", "became ruler of a unified", "Laos")\n', '("Laos", "produced tin, rubber, and coffee during", "French colonial rule")\n', '("Pathet Lao", "began a war against the French colonial forces with support from", "the Viet Minh")\n', '("Laos", "was involved in", "the Vietnam War")\n', '("United States", "initiated a bombing campaign against", "the North Vietnamese positions in Laos")\n', '("Laos", "suffered from", "the most extensive bombing campaign in history relative to its population")\n', '("Boten-Vientiane railway", "is a part of", "China\'s Belt and Road Initiative")\n', '("Laos", "is the only landlocked country in", "Southeast Asia")\n', '("Phou Bia", "is the highest mountain in", "Laos")\n', '("Mekong River", "forms a large part of the western boundary with", "Thailand")\n', '("Laos", "consists of three main geographical areas", "north, central, and south")\n', '("Laos", "is a member of", "La Francophonie")\n', '("French", "is used in government and commerce in", "Laos")\n', '("Laos", "\'s emergence from international isolation", "is marked by improved relations with countries including Russia, China, Thailand, and Australia")\n', '("Lao People\'s Armed Forces", "is the institution of", "the Lao People\'s Revolutionary Party")\n', '("Laos", "is part of the opium poppy growing region known as", "the Golden Triangle according to UNODC")\n', '("Lao economy", "depends on investment and trade with", "its neighbours, Thailand, Vietnam, and China")\n', '("Laos", "has been classified as", "a least developed country by the United Nations")\n', '("Laos", "is recognised internationally for", "Beerlao")\n', '("Luang Prabang and Vat Phou", "are", "UNESCO World Heritage sites")\n', '("Laos", "has aspirations to become a", "land-linked nation")\n', '("Laos", "\'s government is", "a one-party socialist republic espousing Marxism–Leninism")\n', '("Laos", "\'s health expenditure is around", "four percent of its GDP")\n', '("Lao language", "is the official and majority language in", "Laos")\n', '("Theravada Buddhism", "is a major influence in", "Laos culture")\n', '("Laos", "has a tradition in", "the martial art of muay Lao")\n', '("Laos", "has an important garment known as", "the sinh worn by Lao women")\n', '("New Zealand", "is an island country in", "the southwestern Pacific Ocean")\n', '("New Zealand", "consists of", "two main landmasses—the North Island and the South Island")\n', '("New Zealand", "lies east of", "Australia")\n', '("New Zealand", "is separated from Australia by", "the Tasman Sea")\n', '("New Zealand", "is south of", "the islands of New Caledonia, Fiji, and Tonga")\n', '("Southern Alps", "are part of", "New Zealand\'s sharp mountain peaks")\n', '("Wellington", "is the capital city of", "New Zealand")\n', '("Auckland", "is the most populous city in", "New Zealand")\n', '("Abel Tasman", "was the first European to sight", "New Zealand")\n', '("Captain James Cook", "was the first European to set foot on", "New Zealand")\n', '("Captain James Cook", "mapped", "New Zealand")\n', '("United Kingdom", "signed the Treaty of Waitangi with", "Māori chiefs")\n', '("United Kingdom", "declared British sovereignty over", "New Zealand")\n', '("New Zealand", "became a colony within", "the British Empire")\n', '("United States", "is especially close relations with", "New Zealand")\n', '("United Kingdom", "has close relations with", "New Zealand")\n', '("Samoa", "has diplomatic relations with", "New Zealand")\n', '("Fiji", "has diplomatic relations with", "New Zealand")\n', '("Tonga", "has diplomatic relations with", "New Zealand")\n', '("New Zealand", "maintains the Realm of", "Tokelau")\n', '("New Zealand", "is in free association with", "the Cook Islands and Niue")\n', '("New Zealand", "claims the Ross Dependency in", "Antarctica")\n', '("New Zealand", "has the name \'Zeeland\' after the Dutch province of", "Zeeland")\n', '("William IV", "acknowledged the flag of", "the United Tribes of New Zealand")\n', '("New Zealand", "signed the Declaration of the Independence of", "New Zealand")\n', '("William IV", "recognised the declaration in a letter from", "Lord Glenelg")\n', '("Aotearoa", "is the current Māori name for", "New Zealand")\n', '("The North Island", "was originally called Te Ika-a-Māui by", "Māori")\n', '("The South Island", "was originally called Te Waipounamu by", "Māori")\n', '("North American", "whaling, sealing, and trading ships visited", "New Zealand")\n', '("United Kingdom", "appointed James Busby as British Resident to", "New Zealand")\n', '("New Zealand", "introduced a minimum wage as the first country to do so", "")\n', '("United Kingdom", "had legislative powers over", "New Zealand")\n', '("Bay of Islands", "was where the Treaty of Waitangi was first signed", "")\n', '("Cook Strait", "separates the North Island and South Island of", "New Zealand")\n', '("Edward VII", "proclaimed New Zealand as a Dominion within", "the British Empire")\n', '("New Zealand", "adopted the Statute of Westminster", "")\n', '("Pacific Ocean", "is where New Zealand is an island country located", "")\n', '("ASEAN Plus Six", "includes New Zealand as a member", "")\n']
+range(1, 312) 3
+['("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "comprised", "territory in North America")\n', '("Hernán Cortés", "named the territory", "New Spain")\n']
+
+['("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("Angola", "borders", "Namibia")\n', '("Angola", "borders", "Democratic Republic of the Congo")\n', '("Angola", "borders", "Zambia")\n', '("Angola", "has a coastline on", "Atlantic Ocean")\n', '("Angola", "has an exclave province named", "Cabinda")\n', '("Cabinda", "borders", "Republic of the Congo")\n', '("Cabinda", "borders", "Democratic Republic of the Congo")\n', '("Angola", "has its capital and most populous city in", "Luanda")\n', '("Angola", "was a", "Portuguese colony")\n', '("Soviet Union", "backed", "People\'s Movement for the Liberation of Angola")\n', '("Cuba", "backed", "People\'s Movement for the Liberation of Angola")\n', '("United States", "supported", "National Union for the Total Independence of Angola")\n', '("South Africa", "supported", "National Union for the Total Independence of Angola")\n', '("Zaire", "backed", "National Liberation Front of Angola")\n', '("Nigeria", "originated Bantu migrations into", "Angola")\n', '("Niger", "originated Bantu migrations into", "Angola")\n', '("Angola", "introduced cultivation of", "taro")\n', '("Gabon", "had historical ties with", "Kingdom of Kongo in Angola")\n', '("Benguela", "was fortified and became a township in", "Angola")\n', '("Sao Tome", "had slaves traded to it from", "Angola")\n', '("Congo River", "is a significant river related to", "Angola")\n', '("Mozambique", "had proposed linkage with", "Angola")\n', '("Léopoldville", "was involved in conflicts related to", "Angola")\n', '("Mobutu Sese Seko", "supported", "National Liberation Front of Angola")\n', '("People\'s Republic of China", "is a trade partner of", "Angola")\n', '("Morocco", "provided diplomatic support to", "MPLA in Angola")\n', '("Ghana", "provided diplomatic support to", "MPLA in Angola")\n', '("Guinea", "provided diplomatic support to", "MPLA in Angola")\n', '("Mali", "provided diplomatic support to", "MPLA in Angola")\n', '("United Arab Republic", "provided diplomatic support to", "MPLA in Angola")\n', '("Romania", "is located at", "the crossroads of Central, Eastern and Southeastern Europe")\n', '("Romania", "borders", "Ukraine to the north and east")\n', '("Romania", "borders", "Hungary to the west")\n', '("Romania", "borders", "Serbia to the southwest")\n', '("Romania", "borders", "Bulgaria to the south")\n', '("Romania", "borders", "Moldova to the east")\n', '("Romania", "borders", "the Black Sea to the southeast")\n', '("Romania", "has", "a predominantly continental climate")\n', '("Romania", "is the twelfth-largest country in", "Europe")\n', '("Romania", "is the sixth-most populous member state of", "the European Union")\n', '("Romania\'s", "capital and largest city is", "Bucharest")\n', '("Romania", "has cities including", "Cluj-Napoca, Iași, Timișoara, Constanța, Craiova, Brașov, Galați")\n', '("The Danube", "rises in", "Germany\'s Black Forest")\n', '("The Carpathian Mountains", "cross", "Romania from the north to the southwest")\n', '("Romania", "includes", "Moldoveanu Peak")\n', '("Romania", "has a settlement history starting from", "the Lower Paleolithic")\n', '("Romania", "was founded through a personal union of", "the Danubian Principalities of Moldavia and Wallachia")\n', '("Romania", "officially named since", "1866")\n', '("Romania", "gained independence from", "the Ottoman Empire in 1877")\n', '("Romania", "fought with the Allied Powers from", "1916")\n', '("Romania", "ceded Bessarabia and Northern Bukovina to", "the Soviet Union")\n', '("Romania", "ceded Northern Transylvania to", "Hungary")\n', '("Romania", "signed the Tripartite Pact and entered World War II on the Axis side against", "the Soviet Union")\n', '("Romania", "joined the Allies and recovered", "Northern Transylvania")\n', '("Romania", "became a socialist republic and a member of", "the Warsaw Pact")\n', '("Romania", "began a transition towards", "democracy and a market economy after the 1989 Revolution")\n', '("Romania", "is a member of", "the United Nations, the European Union, the Schengen Area, NATO, the Council of Europe, BSEC, and WTO")\n', '("Homo sapiens", "oldest known in Europe found in", "Peștera cu Oase")\n', '("Neolithic agriculture", "spread from", "Thessaly to Romania")\n', '("Salt production", "began in", "Lunca in the 5th to 4th millennium BC")\n', '("The Getae", "were part of", "the Dacians")\n', '("Romania", "conquered by", "the Roman Empire during late antiquity")\n', '("The Carpians, Goths and other tribes", "made raids against", "Dacia")\n', '("The Goths", "were overrun by", "the Huns")\n', '("The Huns", "forced the local population into", "submission")\n', '("The Goths", "occupied", "the Lower Danube region in 376")\n', '("Place names of Slavic origin", "indicate", "a significant Slavic-speaking population in Romania")\n', '("Hungary", "took control of", "the steppes north of the Lower Danube")\n', '("The First Bulgarian Empire", "had a population consisting of", "Bulgars, Slavs, and Vlachs")\n', '("Romanians", "established a cultural association to promote", "the use of Romanian")\n', '("Romania", "secretly joined the Triple Alliance of", "Germany, Austria-Hungary, and Italy")\n', '("Romania", "seized Southern Dobruja from", "Bulgaria")\n', '("Treaty of Paris", "put the Danubian Principalities under the collective guardianship of", "the Great Powers")\n', '("Romania", "the united principalities officially adopted the name", "in 1862")\n', '("The Great Powers", "acknowledged Romania\'s full independence at", "the Congress of Berlin")\n', '("Romania\'s", "king was crowned in", "1881")\n', '("Romania", "entered World War I against", "the Central Powers in 1916")\n', '("Romania", "signed a peace treaty with", "the Central Powers in May 1918")\n', '("Bessarabia", "united with", "Romania")\n', '("Transylvania, Banat, Crișana, and Maramureș", "became part of", "the Kingdom of Romania")\n', '("Romania", "terminated its mission in", "Iraq and withdrew its last troops on 24 July 2009")\n', '("Romania", "joined", "the European Union on 1 January 2007")\n', '("Romania", "adopted", "the Romanian leu as its currency since 1867")\n', '("Romania", "plans to adopt", "the euro in 2029")\n', '("Romania", "population was", "19,053,815 according to the 2021 Romanian census")\n', '("Romania", "official language is", "Romanian")\n', '("Romanian", "is similar to", "Aromanian, Megleno-Romanian, and Istro-Romanian")\n', '("Romania", "is a secular state with", "no state religion")\n', '("Romania", "majority of the population identify themselves as", "Christians")\n', '("Romania", "is", "an autocephalous Eastern Orthodox Church")\n', '("Romania", "has", "the world\'s third-largest Eastern Orthodox population")\n', '("Romania", "most popular sport is", "football")\n', '("Romania", "has", "over 219,000 registered players for football")\n', '("Romania national football team", "played its first match in", "1922")\n', '("Romania", "has played in", "seven World Cups")\n', '("Gheorghe Hagi", "was nicknamed", "Maradona of the Carpathians")\n', '("Steaua București", "was the first Eastern European team to win", "the UEFA Champions League in 1986")\n', '("Simona Halep", "won", "the French Open in 2018 and Wimbledon in 2019")\n', '("Romania", "has", "306 all-time Summer Olympics medals")\n', '("Romania", "has", "the world\'s second-largest gymnast Nadia Comăneci")\n', '("Romania", "has", "a universal health care system")\n', '("Laos", "is officially known as", "the Lao People\'s Democratic Republic or Lao PDR")\n', '("Laos", "is bordered by", "Myanmar and China to the northwest")\n', '("Laos", "is bordered by", "Vietnam to the east")\n', '("Laos", "is bordered by", "Cambodia to the southeast")\n', '("Laos", "is bordered by", "Thailand to the west and southwest")\n', '("Vientiane", "is the capital and largest city of", "Laos")\n', '("Laos", "traces its historic and cultural identity to", "Lan Xang")\n', '("Laos", "became wealthy due to", "its location as a hub for overland trade")\n', '("Laos", "was occupied by", "Imperial Japan during World War II")\n', '("Pathet Lao", "was supported by", "North Vietnam and the Soviet Union")\n', '("Royal Lao Armed Forces", "was supported by", "the United States")\n', '("Laos", "is a member of", "the Asia-Pacific Trade Agreement")\n', '("Laos", "is a member of", "ASEAN")\n', '("Laos", "is governed by", "the Lao People\'s Revolutionary Party")\n', '("Laos\'s strategies for development", "are based on", "generating electricity from rivers and selling power to Thailand, China, and Vietnam")\n', '("Laos", "is one of Southeast Asia\'s fastest-growing economies", "according to the World Bank")\n', '("The word \'Laos\'", "was coined by", "France")\n', '("Laos", "traces its history to", "the kingdom of Lan Xang")\n', '("King Sisavang Vong of Luang Phrabang", "became ruler of a unified", "Laos")\n', '("Laos", "produced tin, rubber, and coffee during", "French colonial rule")\n', '("Pathet Lao", "began a war against the French colonial forces with support from", "the Viet Minh")\n', '("Laos", "was involved in", "the Vietnam War")\n', '("United States", "initiated a bombing campaign against", "the North Vietnamese positions in Laos")\n', '("Laos", "suffered from", "the most extensive bombing campaign in history relative to its population")\n', '("Boten-Vientiane railway", "is a part of", "China\'s Belt and Road Initiative")\n', '("Laos", "is the only landlocked country in", "Southeast Asia")\n', '("Phou Bia", "is the highest mountain in", "Laos")\n', '("Mekong River", "forms a large part of the western boundary with", "Thailand")\n', '("Laos", "consists of three main geographical areas", "north, central, and south")\n', '("Laos", "is a member of", "La Francophonie")\n', '("French", "is used in government and commerce in", "Laos")\n', '("Laos", "\'s emergence from international isolation", "is marked by improved relations with countries including Russia, China, Thailand, and Australia")\n', '("Lao People\'s Armed Forces", "is the institution of", "the Lao People\'s Revolutionary Party")\n', '("Laos", "is part of the opium poppy growing region known as", "the Golden Triangle according to UNODC")\n', '("Lao economy", "depends on investment and trade with", "its neighbours, Thailand, Vietnam, and China")\n', '("Laos", "has been classified as", "a least developed country by the United Nations")\n', '("Laos", "is recognised internationally for", "Beerlao")\n', '("Luang Prabang and Vat Phou", "are", "UNESCO World Heritage sites")\n', '("Laos", "has aspirations to become a", "land-linked nation")\n', '("Laos", "\'s government is", "a one-party socialist republic espousing Marxism–Leninism")\n', '("Laos", "\'s health expenditure is around", "four percent of its GDP")\n', '("Lao language", "is the official and majority language in", "Laos")\n', '("Theravada Buddhism", "is a major influence in", "Laos culture")\n', '("Laos", "has a tradition in", "the martial art of muay Lao")\n', '("Laos", "has an important garment known as", "the sinh worn by Lao women")\n', '("New Zealand", "is an island country in", "the southwestern Pacific Ocean")\n', '("New Zealand", "consists of", "two main landmasses—the North Island and the South Island")\n', '("New Zealand", "lies east of", "Australia")\n', '("New Zealand", "is separated from Australia by", "the Tasman Sea")\n', '("New Zealand", "is south of", "the islands of New Caledonia, Fiji, and Tonga")\n', '("Southern Alps", "are part of", "New Zealand\'s sharp mountain peaks")\n', '("Wellington", "is the capital city of", "New Zealand")\n', '("Auckland", "is the most populous city in", "New Zealand")\n', '("Abel Tasman", "was the first European to sight", "New Zealand")\n', '("Captain James Cook", "was the first European to set foot on", "New Zealand")\n', '("Captain James Cook", "mapped", "New Zealand")\n', '("United Kingdom", "signed the Treaty of Waitangi with", "Māori chiefs")\n', '("United Kingdom", "declared British sovereignty over", "New Zealand")\n', '("New Zealand", "became a colony within", "the British Empire")\n', '("United States", "is especially close relations with", "New Zealand")\n', '("United Kingdom", "has close relations with", "New Zealand")\n', '("Samoa", "has diplomatic relations with", "New Zealand")\n', '("Fiji", "has diplomatic relations with", "New Zealand")\n', '("Tonga", "has diplomatic relations with", "New Zealand")\n', '("New Zealand", "maintains the Realm of", "Tokelau")\n', '("New Zealand", "is in free association with", "the Cook Islands and Niue")\n', '("New Zealand", "claims the Ross Dependency in", "Antarctica")\n', '("New Zealand", "has the name \'Zeeland\' after the Dutch province of", "Zeeland")\n', '("William IV", "acknowledged the flag of", "the United Tribes of New Zealand")\n', '("New Zealand", "signed the Declaration of the Independence of", "New Zealand")\n', '("William IV", "recognised the declaration in a letter from", "Lord Glenelg")\n', '("Aotearoa", "is the current Māori name for", "New Zealand")\n', '("The North Island", "was originally called Te Ika-a-Māui by", "Māori")\n', '("The South Island", "was originally called Te Waipounamu by", "Māori")\n', '("North American", "whaling, sealing, and trading ships visited", "New Zealand")\n', '("United Kingdom", "appointed James Busby as British Resident to", "New Zealand")\n', '("New Zealand", "introduced a minimum wage as the first country to do so", "")\n', '("United Kingdom", "had legislative powers over", "New Zealand")\n', '("Bay of Islands", "was where the Treaty of Waitangi was first signed", "")\n', '("Cook Strait", "separates the North Island and South Island of", "New Zealand")\n', '("Edward VII", "proclaimed New Zealand as a Dominion within", "the British Empire")\n', '("New Zealand", "adopted the Statute of Westminster", "")\n', '("Pacific Ocean", "is where New Zealand is an island country located", "")\n', '("ASEAN Plus Six", "includes New Zealand as a member", "")\n']
+range(1, 312) 3
+{'id': '3_6', 'Question': ' What modern-day country corresponds with the region that Hernán Cortés named after his expedition led to the fall of the Aztec Empire and which was also part of a historical entity that covered much of North America?\n', 'Answer': 'Mexico', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Mexico'}, {'label': 'B', 'text': 'Angola'}, {'label': 'C', 'text': 'Romania'}, {'label': 'D', 'text': 'Laos'}, {'label': 'E', 'text': 'New Zealand'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'mexico'}, {'label': 'B', 'text': 'angola'}, {'label': 'C', 'text': 'romania'}, {'label': 'D', 'text': 'laos'}, {'label': 'E', 'text': 'new_zealand'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: What modern-day country and region were once encompassed by a historical territory that also included what is now the Southwestern United States?\nA1: Mexico\n\n', '2: What historical entity, at its peak, covered a significant portion of the North American continent?\nA2: New Spain\n\n', '3: What did Hernán Cortés call the territory after leading an expedition that resulted in the fall of the Aztec Empire?\nA3: New Spain'], 'Hops_wiki': [('Mexico', 'New Spain'), ('New Spain', 'North America'), ('New Spain', 'Hernán Cortés')], 'Hops_cpnet': [('mexico', 'new_spain'), ('new_spain', 'north_america'), ('new_spain', 'hernando_cortes')], 'Triplets': ['("New Spain", "included what is now", "Mexico and the Southwestern United States")', '("New Spain", "comprised", "territory in North America")', '("Hernán Cortés", "named the territory", "New Spain")'], 'Referred_files': [{'name': 'New Spain', 'line': 4}, {'name': 'New Spain', 'line': 3}, {'name': 'New Spain', 'line': 10}], 'Question_triplet_answer': {100: [10, 121, 174], 50: [127, 205, 242], 25: [167, 185, 307]}}
+time passed:  3863.437389612198
+Expected dollar:  0.005
+Hernán Cortés" is People
+Spain is Geography
+Louisiana is Geography
+Florida is Geography
+Laos is Geography
+Hernán Cortés is People
+Romania is Geography
+William IV" is People
+New Zealand is Geography
+Pacific is Geography
+Philippines is Geography
+Guam is Geography
+East Indies is Geography
+Wellington is Geography
+Taiwan is Geography
+Angola is Geography
+Namibia is Geography
+Cuba is Geography
+Australia is Geography
+the Tasman Sea is Geography
+La Francophonie is Geography
+Simona Halep is People
+Acapulco is Geography
+Pacific Ocean is Geography
+Ghana is Geography
+Bessarabia is Geography
+the Soviet Union is Geography
+Agustín de Iturbide is People
+Tokelau is Geography
+Bay of Islands is Geography
+BSEC is Incident
+WTO is Geography
+Hungary is Geography
+the Black Sea is Geography
+Danubian is Geography
+Moldoveanu Peak is Geography
+Caribbean is Geography
+Thailand is Geography
+Peru is Geography
+Myanmar is Geography
+China is Geography
+Cluj Napoca, Iași, Timișoara, is Geography
+Constanța is Geography
+Craiova is Geography
+Brașov is Geography
+Galați is Geography
+Antonio de Mendoza is People
+Americas is Geography
+North America is Geography
+Canada is Geography
+Mexico is Geography
+the Southwestern United States is Geography
+Oceania is Geography
+Bernal Díaz del Castillo is People
+Dacia is Geography
+South Africa is Geography
+Southern Alps is Geography
+New Zealand's is Geography
+James Cook is People
+The North Island is Geography
+Te Ika a Māui is Geography
+California is Geography
+North Vietnam is Geography
+Nigeria is Geography
+Nadia Comăneci is People
+Luang Prabang is Geography
+Vat Phou is Geography
+the Ross Dependency is Geography
+Antarctica is Geography
+Lan Xang is Geography
+Central Mexico is Geography
+Niger is Geography
+Germany is Geography
+Austria Hungary is Geography
+Italy is Geography
+New Caledonia is Geography
+Fiji is Geography
+Tonga is Geography
+Luanda is Geography
+Belt and Road Initiative is Incident
+North Vietnamese is Geography
+Russia is Geography
+Congo River is Geography
+Vietnam is Geography
+Bulgaria is Geography
+the Cook Islands is Geography
+Niue is Geography
+ASEAN is Geography
+Morocco is Geography
+Serbia is Geography
+Peștera cu Oase is Geography
+Zaire is Geography
+Abel Tasman is People
+France is Geography
+Mali is Geography
+the Congress of Berlin is Geography
+entities:  {'Ghana', 'Fiji', 'Congo', 'States', 'BSEC', 'Taiwan', 'Acapulco', 'Cook', 'Vietnam', 'Benguela', 'Italy', 'Iași,', 'Zaire', 'Road', 'Simona', 'Constanța', 'Ocean', 'Cluj', 'Vat', 'Tonga', 'Southern', 'Dacia', 'Black', 'Asia', 'IV"', 'Timișoara,', 'Bulgaria', 'Russia', 'China', 'Mexico', 'Prabang', 'del', 'Ross', 'Myanmar', 'South', 'Peru', 'Serbia', 'Māui', 'Lan', 'Philippines', 'California', 'Mali', 'Tokelau', 'Americas', 'Guam', 'Comăneci', 'Bessarabia', 'Napoca,', 'Lao', 'Phou', 'Indies', 'Dependency', 'cu', 'Cortés', 'Napoca', 'Hernán', 'Mendoza', 'Canada', 'Díaz', 'France', 'Iturbide', 'Austria', 'Europe', 'Zealand', 'Danubian', 'Brașov', 'Soviet', 'Antarctica', 'Sea', 'Florida', 'Bay', 'Central', 'Craiova', 'Romania', 'Vietnamese', 'MPLA', 'Tasman', 'Australia', 'Southwestern', 'de', 'Africa', 'Islands', 'James', 'Germany', 'New', 'Island', 'Nadia', 'Antonio', 'Southeast', 'Te', 'Caribbean', 'Initiative', 'Agustín', 'Paris', 'Hungary', 'Berlin', 'Oase', 'Cuba', 'Laos', 'North', 'Oceania', 'Eastern', 'Francophonie', 'Revolutionary', 'Bukovina', 'Cortés"', 'Peak', 'Halep', 'Domingo', 'Morocco', 'Peninsula', 'Alps', 'NATO', 'Peștera', "Zealand's", 'Caledonia', 'William', 'Belt', 'Iași', 'United', 'Bernal', 'ASEAN', 'Louisiana', 'Luanda', 'Pacific', 'Union', 'Congress', 'Iberian', 'Xang', 'Niger', 'Luang', 'Namibia', 'Nigeria', 'Ika', 'Spain', 'Thailand', 'East', 'La', 'Castillo', 'Abel', 'WTO', 'America', 'Galați', 'River', 'Angola', 'Tenochtitlan', 'Wellington', 'Niue', 'Habsburg', 'Orthodox', 'Moldoveanu'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ New Spain
+Hernán Cortés
+Spanish Formosa
+Louisiana and Florida
+Mexican Churrigueresque architecture
+Laos
+New Spain
+Captaincies general and governorates
+Romania
+Wellington
+Taiwan
+Angola
+El Mercurio Volante
+Cuba
+Queen Isabella
+New Zealand
+Sor Juana Inés de la Cruz
+Ghana
+William IV
+Viceroy
+Captaincies general and governorates
+Acapulco
+Wellington
+Romania
+New Laws
+The Goths
+Bay of Islands
+Mexico City
+Bulgaria
+El Mercurio Volante
+Lao language
+Santo Domingo
+Viceroy
+New World
+Intendancies
+Romania
+Spanish borderlands
+Treaty of Paris
+United Kingdom
+Vientiane
+Bulgaria
+Lao People's Armed Forces
+New Laws
+Queens Isabella
+Antonio de Mendoza
+Mexican Churrigueresque architecture
+The Goths
+First printing press in New World
+Lao language
+Santo Domingo
+Acapulco
+Aotearoa
+United States
+Romania
+Viceroy
+Romania's
+Léopoldville
+South Africa
+Southern Alps
+Sor Juana Inés de la Cruz
+Laos
+Angola
+Queen Isabella
+Spanish borderlands
+Agustín de Iturbide
+Sor Juana Inés de la Cruz
+Mexican Churrigueresque architecture
+New Laws
+Romania
+Pathet Lao
+Spanish borderlands
+Laos
+New Zealand
+Romania
+United States
+Romania
+California
+New Laws
+Romania
+El Mercurio Volante
+Moldoveanu Peak
+New Zealand
+Laos
+Romania
+Romania
+Laos
+Romania
+El Mercurio Volante
+Vientiane
+The Goths
+El Mercurio Volante
+Romania
+Laos
+El Mercurio Volante
+Laos
+
+gpt_entity_particular(): entity list: 
+ ['Agustín de Iturbide', 'Bay of Islands', 'Ghana', 'Queens Isabella', 'The Goths', 'Louisiana and Florida', 'Queen Isabella', 'Viceroy', 'United States', "Lao People's Armed Forces", 'Aotearoa', 'United Kingdom', 'New Spain', 'Taiwan', 'Acapulco', 'Mexico City', 'Vientiane', 'First printing press in New World', 'Mexican Churrigueresque architecture', "Romania's", 'California', 'Treaty of Paris', 'Romania', 'Antonio de Mendoza', 'Moldoveanu Peak', 'Sor Juana Inés de la Cruz', 'New World', 'New Zealand', 'William IV', 'Intendancies', 'Léopoldville', 'Spanish Formosa', 'Captaincies general and governorates', 'South Africa', 'Pathet Lao', 'Spanish borderlands', 'Southern Alps', 'Cuba', 'Laos', 'Bulgaria', 'Angola', 'Wellington', 'New Laws', 'Lao language', 'Hernán Cortés', 'El Mercurio Volante', 'Santo Domingo']
+
+gpt_entity_particular(): filtered entity: 
+ ['Acapulco', 'Mexico City']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'New Zealand' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ New Zealand
+New Spain
+New Zealand
+Governorate
+Mexican Churrigueresque architecture
+New Spain
+Hernán Cortés
+Captaincies general and governorates
+New Spain
+Exploration
+Pacific
+Philippines
+Guam
+Wellington
+Tasman Sea
+Southern Alps
+Captain James Cook
+Te Ika-a-Māui
+Edward VII
+Antarctica
+Auckland
+The Cook Islands
+Niue
+Abel Tasman
+
+gpt_entity_particular(): entity list: 
+ ['New Spain', 'Antarctica', 'Philippines', 'Mexican Churrigueresque architecture', 'Auckland', 'Exploration', 'Captain James Cook', 'Te Ika-a-Māui', 'Pacific', 'Edward VII', 'New Zealand', 'Guam', 'Governorate', 'Captaincies general and governorates', 'The Cook Islands', 'Tasman Sea', 'Southern Alps', 'Abel Tasman', 'Wellington', 'Niue', 'Hernán Cortés']
+
+gpt_entity_particular(): filtered entity: 
+ ['Auckland', 'Pacific', 'The Cook Islands', 'Tasman Sea', 'Southern Alps', 'Wellington', 'Niue']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Laos' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Laos
+Lao People's Revolutionary Party
+New Spain
+Governorate
+Beerlao
+La Francophonie
+Laos
+Lao People's Revolutionary Party
+Muay Lao
+
+gpt_entity_particular(): entity list: 
+ ['Governorate', "Lao People's Revolutionary Party", 'Laos', 'La Francophonie', 'Muay Lao', 'Beerlao', 'New Spain']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Romania' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Romania
+New Spain
+Governorate
+Churrigueresque architecture
+Lao People's Revolutionary Party
+Habsburg Spain
+La Francophonie
+Beerlao
+New Zealand
+Auckland
+Realm of
+Mexican Empire
+Tokelau
+Lao People's Armed Forces
+British Empire
+European Union
+Schengen Area
+NATO
+Council of Europe
+WTO
+Christians
+Bucharest
+Football
+Moldoveanu Peak
+Nadia Comăneci
+Eastern Orthodox
+ASEAN
+
+gpt_entity_particular(): entity list: 
+ ['Realm of', 'Bucharest', 'Council of Europe', 'Beerlao', "Lao People's Armed Forces", 'New Spain', 'Schengen Area', 'NATO', 'Churrigueresque architecture', 'Auckland', 'British Empire', 'Romania', 'Mexican Empire', 'Moldoveanu Peak', 'ASEAN', 'Eastern Orthodox', 'Tokelau', 'European Union', 'New Zealand', "Lao People's Revolutionary Party", 'Governorate', 'Nadia Comăneci', 'La Francophonie', 'Habsburg Spain', 'Christians', 'WTO', 'Football']
+
+gpt_entity_particular(): filtered entity: 
+ ['Bucharest']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'North America' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Empire
+Territory
+Governorate
+Architecture
+Party
+Empire
+Territory
+Campaign
+Territory
+Flag
+Territory
+Trade
+Capital city
+Country
+Population
+Cultivation
+Newspaper
+New World
+Exploration
+Island country
+Contribution
+Cultural association
+Country
+State
+Peak
+City
+Trade partner
+River
+Free association
+Dominion
+Economy
+Treaty
+Railway
+Landlocked country
+Martial art
+Language
+Neighbours
+Population
+Country
+Capital and most populous city
+Secular state
+All-time Summer Olympics medals
+City
+Traditional sites
+Congo River
+History
+Position
+Deposits of silver
+Slavic-speaking population
+Migrations
+Life
+Name
+Support
+Location
+Tradition
+Population
+Religion
+Emergence
+Agreement
+National park
+Economic aid
+Church
+Fished
+Migrations
+Mergers
+Reservoirs
+Militaries
+Economy
+Conquest
+Government
+Diplomatic support
+Settlement movement
+Peace
+Development
+Settlement
+Leak
+Endurance
+Settlement
+Union
+Newspaper published
+Archaeological site
+Flight
+Campaign
+Trade
+Annexation
+Headquarters
+Trade
+Port
+Monetary union
+Base
+Religious policy
+Repatriation
+Railway
+Trade missions
+Administrations
+Settlement
+Settlement
+Shipbuilders
+Empresses
+Expansion
+Suppliers
+New World
+Suppliers
+Efficiency
+Treaty
+Immigrant
+Language
+Treaty
+Trade
+Civilizing mission
+Mission
+Campaign
+Trade
+Trials
+Population
+Kingdom
+Mountain
+Trade
+Occupation
+Missionaries
+Queenship
+Pernambuco
+Province
+Tradable
+Missionaries
+
+gpt_entity_particular(): entity list: 
+ ['Campaign', 'Religious policy', 'Flag', 'Monetary union', 'Peace', 'Party', 'Settlement movement', 'Flight', 'Cultural association', 'Empresses', 'Governorate', 'Headquarters', 'Leak', 'Development', 'Trials', 'Position', 'Province', 'Repatriation', 'Trade', 'Newspaper', 'Trade partner', 'Empire', 'Contribution', 'Emergence', 'Administrations', 'Kingdom', 'Country', 'History', 'Traditional sites', 'Congo River', 'Slavic-speaking population', 'Mountain', 'Exploration', 'All-time Summer Olympics medals', 'Civilizing mission', 'Cultivation', 'Diplomatic support', 'Support', 'Efficiency', 'Mission', 'Expansion', 'Treaty', 'Dominion', 'Trade missions', 'Annexation', 'Deposits of silver', 'Fished', 'Port', 'Population', 'Suppliers', 'State', 'Free association', 'Government', 'Architecture', 'Territory', 'Settlement', 'Life', 'Pernambuco', 'City', 'New World', 'Island country', 'Economy', 'Economic aid', 'Martial art', 'Agreement', 'Church', 'National park', 'Landlocked country', 'Endurance', 'Tradable', 'Neighbours', 'Location', 'Peak', 'Capital city', 'Militaries', 'Shipbuilders', 'Tradition', 'Conquest', 'Name', 'Reservoirs', 'Missionaries', 'Secular state', 'Capital and most populous city', 'Language', 'Migrations', 'Union', 'Immigrant', 'Newspaper published', 'Occupation', 'Queenship', 'Mergers', 'Archaeological site', 'River', 'Religion', 'Base', 'Railway']
+
+gpt_entity_particular(): filtered entity: 
+ ['New World']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Angola' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Angola
+Namibia
+Democratic Republic of the Congo
+tarorelease of Angola
+the most extensive bombing campaign in history relative to its population
+the most populous city in Angola
+Luanda
+the Soviet Union
+the Danubian Principalities
+the Tasman Sea
+the United Tribes of New Zealand
+with the Allied Powers from
+the Third Bulgarian Empire
+regulated sugar
+Greece
+North Korea
+Northern Transylvania
+Southern Dobruja
+the United Nations, the European Union, the Schengen Area, NATO, the Council of Europe, BSEC, and WTO
+the Ottoman Empire
+
+gpt_entity_particular(): entity list: 
+ ['the most extensive bombing campaign in history relative to its population', 'the Tasman Sea', 'the most populous city in Angola', 'Democratic Republic of the Congo', 'Greece', 'Northern Transylvania', 'Southern Dobruja', 'Luanda', 'the United Nations, the European Union, the Schengen Area, NATO, the Council of Europe, BSEC, and WTO', 'regulated sugar', 'the Ottoman Empire', 'Namibia', 'the Soviet Union', 'North Korea', 'the Danubian Principalities', 'the United Tribes of New Zealand', 'with the Allied Powers from', 'Angola', 'tarorelease of Angola', 'the Third Bulgarian Empire']
+
+gpt_entity_particular(): filtered entity: 
+ ['Luanda']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'New Spain' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ New Spain
+Spanish Formosa
+Louisiana and Florida
+Mexican Churrigueresque architecture
+Laos
+Habsburg Spain
+Laos
+Hernán Cortés
+Captaincies general and governorates
+Romania
+Laos
+William IV
+the Pacific including the Philippines and Guam
+Mexico City
+Cuba
+Queen Isabella
+Wellington
+Acapulco
+First printing press in New World
+Romania
+Sor Juana Inés de la Cruz
+Ghana
+Romanians
+Hungary
+Agustín de Iturbide
+The Goths
+Wellington
+Sor Juana Inés de la Cruz
+Laos
+New Spain
+Romania
+Angola
+Hungary
+Viceroy
+Romania
+Treaty of Waitangi
+Mexico City
+Romania
+La Francophonie
+United States
+Simona Halep
+Viceroy
+Romanians
+Saatchi Art
+Spanish language
+Romania
+Laos
+Sor Juana Inés de la Cruz
+Romania
+Laos
+Romania
+Captaincies general and governorates
+El Mercurio Volante
+Hernán Cortés
+Mexico City
+Romania
+Romania
+Laos
+Romania
+Lao People's Armed Forces
+Captain James Cook
+New Zealand
+Romania
+El Mercurio Volante
+Intendancies
+Acapulco
+Romania
+New Zealand
+Romania
+Romania
+Deep Purple
+Romania
+Mexico City
+New Spain and Peru
+Southern Alps
+Captaincies general and governorates
+La Granja
+Acapulco
+Spain
+New Spain
+New Zealand
+Romania
+Intendancies
+Angola
+Boten-Vientiane railway
+Romania
+Intendancies
+Angola
+Phou Bia
+Boten-Vientiane railway
+Central Mexico
+Romania
+New Spain
+Romania
+Mexican Churrigueresque architecture
+New Spain
+Romania
+Romania
+Treaty of Waitangi
+El Mercurio Volante
+Nigeria
+New Spain
+Laos
+Captaincies general and governorates
+Romanian
+El Mercurio Volante
+Treaty of Waitangi
+Sor Juana Inés de la Cruz
+Homo sapiens
+Place names of Slavic origin
+Benguela
+Charles, Prince of Wales
+New Laws
+Local-level administration
+Louisiana and Florida
+Gold
+Romania
+Luang Prabang
+Royal Romanian Navy
+Flag of Romania
+Danubian Principalities
+Romania
+Unification of Romania
+Laos
+French
+Nicolae Iorga
+Afreeka
+Lao alphabet
+Lucky Star
+Cultural assimilation
+National Assembly of Laos 
+Romania
+Opposition to Ceaușescu's regime
+Romania
+Papua New Guinea
+Lao American Writers
+ighbgn
+Portland Timbers
+Romania
+Bihor County
+Bucharest PO
+Land reform
+Samantha
+Lebanese diaspora
+Romania
+The Dictator
+Romeo and Juliet
+Nicholas
+The Walking Dead
+folkstyle 
+Legally Blonde
+noiu
+New Jersey Devils
+Sayid
+Jouirnal
+navyblue
+Soror
+SHARES
+Romania
+Conceived
+Laos
+Authority
+Romania
+Authority
+Laos
+Authority
+Nondenomination==
+
+gpt_entity_particular(): entity list: 
+ ['Agustín de Iturbide', 'Ghana', 'Sayid', "Lao People's Armed Forces", 'Acapulco', 'Bucharest PO', 'New Jersey Devils', 'noiu', 'Benguela', 'the Pacific including the Philippines and Guam', 'Samantha', 'New Zealand', 'Simona Halep', 'Intendancies', 'Nicholas', 'Land reform', 'French', 'Papua New Guinea', 'Romeo and Juliet', 'Flag of Romania', 'Phou Bia', 'folkstyle ', 'Romanians', 'Luang Prabang', 'The Goths', 'United States', 'Conceived', 'First printing press in New World', 'Mexico City', 'Gold', 'New Spain and Peru', 'Sor Juana Inés de la Cruz', 'Boten-Vientiane railway', 'Bihor County', 'William IV', 'Charles, Prince of Wales', 'Homo sapiens', 'Legally Blonde', 'La Francophonie', 'Place names of Slavic origin', 'Afreeka', 'ighbgn', 'Captaincies general and governorates', 'Southern Alps', 'navyblue', 'Hernán Cortés', 'Danubian Principalities', 'Louisiana and Florida', 'Queen Isabella', 'Viceroy', 'Local-level administration', 'Nondenomination==', 'Deep Purple', 'Saatchi Art', 'New Spain', 'Unification of Romania', 'Mexican Churrigueresque architecture', 'Authority', 'Royal Romanian Navy', 'Romania', 'Captain James Cook', 'Lao American Writers', 'Lao alphabet', 'Spanish language', 'Lucky Star', 'The Dictator', 'Spanish Formosa', "Opposition to Ceaușescu's regime", 'National Assembly of Laos ', 'Hungary', 'Soror', 'Nicolae Iorga', 'Cuba', 'Laos', 'SHARES', 'Portland Timbers', 'Jouirnal', 'La Granja', 'Lebanese diaspora', 'Treaty of Waitangi', 'Romanian', 'The Walking Dead', 'Habsburg Spain', 'Nigeria', 'Spain', 'Cultural assimilation', 'Angola', 'Wellington', 'New Laws', 'El Mercurio Volante', 'Central Mexico']
+
+gpt_entity_particular(): filtered entity: 
+ ['Mexico City', 'Spain']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hernán Cortés' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hernán Cortés
+New Spain
+Spanish Formosa
+Governorate
+Mexican Churrigueresque architecture 
+Laos
+Habsburg Spain
+Captaincies general and governorates 
+Louisiana
+Philippines
+Guam
+Aztec Empire 
+El Mercurio Volante
+East Indies empire  
+Mexico City 
+Pacific 
+Central America 
+Caribbean 
+South America 
+Acapulco 
+Bourbon Reforms 
+William IV 
+United Tribes of New Zealand
+Viceroyalty 
+Roman Empire 
+Beerlao 
+Namibia 
+Queen Isabella 
+Romania 
+Sor Juana Inés de la Cruz 
+Aotearoa 
+Russian 
+France 
+Football
+The Viet Minh 
+The Huns 
+Moldoveanu Peak 
+Bucharest 
+La Francophonie 
+Democratic Republic of the Congo 
+Angola 
+Angolan Empire 
+Vietnam 
+Lan Xang 
+Angolan Empire 
+Habsburg Spain 
+North America
+Aztec Empire 
+Black Sea 
+Constitutional 
+Danubian Principalities 
+Tokelau
+South Africa 
+The Cook Islands 
+Niue 
+Antarctica 
+National Union for the Total Independence of Angola
+MPLA 
+North Vietnam 
+People's Movement for the Liberation of Angola
+Moldoveanu Peak 
+La Francophonie 
+National Liberation Front of Angola 
+Mali 
+Soviet Union 
+Ayacucho 
+Cuba 
+France
+
+gpt_entity_particular(): entity list: 
+ ['Danubian Principalities ', 'William IV ', 'Vietnam ', 'Captaincies general and governorates ', 'Ayacucho ', 'France', 'Russian ', 'Soviet Union ', 'Mexico City ', 'France ', 'Pacific ', 'La Francophonie ', 'Angolan Empire ', 'Namibia ', 'New Spain', 'Lan Xang ', 'East Indies empire  ', 'South America ', 'Philippines', 'Mexican Churrigueresque architecture ', 'The Cook Islands ', 'Antarctica ', 'Democratic Republic of the Congo ', 'United Tribes of New Zealand', 'Louisiana', 'Romania ', 'National Liberation Front of Angola ', 'Tokelau', 'The Huns ', 'Aotearoa ', 'Guam', 'Bourbon Reforms ', 'Governorate', 'Constitutional ', 'Niue ', 'Caribbean ', 'Spanish Formosa', 'Roman Empire ', 'Moldoveanu Peak ', 'Beerlao ', "People's Movement for the Liberation of Angola", 'Habsburg Spain', 'Acapulco ', 'Aztec Empire ', 'Queen Isabella ', 'Bucharest ', 'Sor Juana Inés de la Cruz ', 'South Africa ', 'Viceroyalty ', 'National Union for the Total Independence of Angola', 'North Vietnam ', 'Habsburg Spain ', 'Black Sea ', 'Laos', 'Mali ', 'MPLA ', 'Angola ', 'North America', 'Football', 'Cuba ', 'Central America ', 'Hernán Cortés', 'El Mercurio Volante', 'The Viet Minh ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Ghana', 'Fiji', 'Congo', 'States', 'BSEC', 'Taiwan', 'Acapulco', 'Cook', 'Vietnam', 'Benguela', 'Italy', 'Iași,', 'Zaire', 'Road', 'Simona', 'Constanța', 'Ocean', 'Cluj', 'Vat', 'Tonga', 'Southern', 'The Cook Islands', 'Dacia', 'Black', 'Asia', 'IV"', 'Timișoara,', 'Bulgaria', 'Russia', 'China', 'Mexico', 'Prabang', 'del', 'Ross', 'Myanmar', 'South', 'Peru', 'Serbia', 'Māui', 'Mexico City', 'Lan', 'Philippines', 'California', 'Mali', 'Tokelau', 'Americas', 'Guam', 'Comăneci', 'Bessarabia', 'Napoca,', 'Lao', 'Phou', 'Indies', 'Dependency', 'cu', 'Southern Alps', 'Cortés', 'Napoca', 'Hernán', 'Mendoza', 'Canada', 'Díaz', 'France', 'Iturbide', 'Austria', 'Europe', 'Zealand', 'Danubian', 'Brașov', 'Soviet', 'Antarctica', 'Sea', 'Florida', 'Bay', 'Central', 'Craiova', 'Romania', 'Vietnamese', 'MPLA', 'New World', 'Tasman', 'Australia', 'Southwestern', 'de', 'Africa', 'Islands', 'James', 'Germany', 'New', 'Island', 'Nadia', 'Antonio', 'Southeast', 'Te', 'Caribbean', 'Initiative', 'Agustín', 'Paris', 'Hungary', 'Berlin', 'Oase', 'Cuba', 'Laos', 'North', 'Oceania', 'Eastern', 'Francophonie', 'Revolutionary', 'Bukovina', 'Cortés"', 'Peak', 'Halep', 'Bucharest', 'Domingo', 'Morocco', 'Peninsula', 'Alps', 'NATO', 'Peștera', "Zealand's", 'Caledonia', 'Auckland', 'William', 'Belt', 'Iași', 'United', 'Bernal', 'ASEAN', 'Louisiana', 'Luanda', 'Pacific', 'Union', 'Congress', 'Iberian', 'Xang', 'Niger', 'Luang', 'Namibia', 'Nigeria', 'Ika', 'Spain', 'Thailand', 'East', 'La', 'Castillo', 'Abel', 'Tasman Sea', 'WTO', 'America', 'Galați', 'River', 'Angola', 'Tenochtitlan', 'Wellington', 'Niue', 'Habsburg', 'Orthodox', 'Moldoveanu'}
+Total time:  553.9677841663361
+Entity conversion done on 3_6 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_3_6_entity_conversion_hash.json. Check the entity.
+ What modern-day country corresponds with the region that 01A 030 named after his expedition led to the fall of the Aztec Empire and which was also part of a historical entity that covered much of east America?
+
+
+
+Done. Check final_query/id_3_6_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_3_6_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_3_6_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_3_6_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_3_6_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_3_6_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_6_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

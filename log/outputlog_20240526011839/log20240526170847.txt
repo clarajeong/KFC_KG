@@ -1,0 +1,1119 @@
+Got argument: Michael Jackson, 1, 1_10, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Michael Jackson, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Michael_Jackson_info.json file
+first_hop:  {'triplet': '("Michael Jackson", "performed for", "Pope John Paul II")', 'start word': 'Michael Jackson', 'end word': 'Pope John Paul II', 'source': {'name': 'Michael Jackson', 'line': 27}, 'cpnet': {'start word': 'michael_jackson', 'end word': 'pope_john_paul_ii'}}
+next_word: Pope John Paul II
+
+utils/question.py extract_hops(Pope John Paul II, [], ['Michael Jackson']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Pope_John_Paul_II_info.json file
+extract_info(Pope John Paul II) Start.
+utils/preprocess.py extract_info(): Checking good links on Pope John Paul II
+Vatican City is Geography
+1 / 30 )  Vatican City State Vatican City vatican_city
+Wadowice is Geography
+2 / 30 )  Wadowice Wadowice wadowice
+Pope John Paul I is People
+3 / 30 )  John Paul I Pope John Paul I john_paul_i
+Pope Paul VI is People
+4 / 30 )  Pope Paul VI Pope Paul VI paul_vi
+Pope is Incident
+5 / 30 )  longest-serving pope Pope pope
+Pope Pius IX is People
+6 / 30 )  Pius IX Pope Pius IX pius_ix
+Saint Peter is People
+7 / 30 )  St. Peter Saint Peter saint_peter
+Pope Benedict XVI is People
+8 / 30 )  Benedict XVI Pope Benedict XVI pope_benedict_xvi
+Pope John XXIII is People
+9 / 30 )  John XXIII Pope John XXIII john_xxiii
+Karol Wojtyła  is People
+10 / 30 )  Karol Wojtyła Karol Wojtyła  john_paul_ii
+Kraków is Geography
+11 / 30 )  Kraków Kraków kraków
+Nazi Germany is Geography
+12 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Austria-Hungary is Geography
+13 / 30 )  Austro-Hungarian Austria-Hungary austria_hungary
+Wehrmacht is Geography
+14 / 30 )  Wehrmacht Wehrmacht wehrmacht
+Gestapo is Geography
+15 / 30 )  Gestapo Gestapo gestapo
+Częstochowa is Geography
+16 / 30 )  Częstochowa Częstochowa częstochowa
+Polish People's Republic is Geography
+17 / 30 )  Polish People's Republic Polish People's Republic polish_people's_republic
+Pope Pius XII is People
+18 / 30 )  Pope Pius XII Pope Pius XII eugenio_pacelli
+Primate  is Animal
+19 / 30 )  Primate Primate  primates
+Stefan Wyszyński is People
+20 / 30 )  Stefan Wyszyński Stefan Wyszyński stefan_wyszynski
+Jesuits is Geography
+21 / 30 )  Jesuit Jesuits jesuits
+Stanford University is Geography
+22 / 30 )  Stanford University Stanford University stanford_university
+Harvard University is Geography
+23 / 30 )  Harvard University Harvard University harvard_university
+Richard Nixon is People
+24 / 30 )  Richard Nixon Richard Nixon richard_nixon
+White House is Geography
+25 / 30 )  White House White House white_house
+Jimmy Carter is People
+26 / 30 )  Jimmy Carter Jimmy Carter jimmy_carter
+Elizabeth II is People
+27 / 30 )  Elizabeth II Elizabeth II elizabeth_ii
+Archbishop of Canterbury is Incident
+28 / 30 )  Archbishop of Canterbury Archbishop of Canterbury archbishop_of_canterbury
+Thomas Becket is People
+29 / 30 )  Thomas Becket Thomas Becket thomas_becket
+Damascus is Geography
+30 / 30 )  Damascus Damascus damascus
+extract_triplet(Pope John Paul II)
+Got GPT's response. String length : 9992
+subject_words:  []
+object_words:  [(None, 'Pope John Paul II', 'pope_john_paul_ii'), ['longest-serving pope', 'Pope', 'pope']]
+subject_words:  []
+object_words:  [['Wadowice', 'Wadowice', 'wadowice']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Kraków', 'Kraków', 'kraków']]
+subject_words:  [['Pope Paul VI', 'Pope Paul VI', 'paul_vi'], ['longest-serving pope', 'Pope', 'pope']]
+object_words:  [['John Paul I', 'Pope John Paul I', 'john_paul_i']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Pius IX', 'Pope Pius IX', 'pius_ix'], ['St. Peter', 'Saint Peter', 'saint_peter']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Benedict XVI', 'Pope Benedict XVI', 'pope_benedict_xvi']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['John XXIII', 'Pope John XXIII', 'john_xxiii']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Karol Wojtyła', 'Karol Wojtyła ', 'john_paul_ii']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Karol Wojtyła', 'Karol Wojtyła ', 'john_paul_ii']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Wadowice', 'Wadowice', 'wadowice']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Gestapo', 'Gestapo', 'gestapo']]
+subject_words:  []
+object_words:  [['Częstochowa', 'Częstochowa', 'częstochowa']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['longest-serving pope', 'Pope', 'pope'], ['Pope Pius XII', 'Pope Pius XII', 'eugenio_pacelli']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Archbishop of Canterbury', 'Archbishop of Canterbury', 'archbishop_of_canterbury']]
+subject_words:  []
+object_words:  [['longest-serving pope', 'Pope', 'pope']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Pope John Paul II', 'pope_john_paul_ii'), ['longest-serving pope', 'Pope', 'pope']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+generate_question(1_10, ['("Michael Jackson", "performed for", "Pope John Paul II")', '("St. Joseph\'s Seminary in Yonkers", "was visited by", "Pope John Paul II and Pope Benedict XVI")'], ['Pope John Paul II', 'Yonkers '], [('Michael Jackson', 'Pope John Paul II'), ('Pope John Paul II', 'Yonkers ')], Yonkers , [{'name': 'Michael Jackson', 'line': 27}, {'name': 'Yonkers, New York', 'line': 19}]) called
+GPT output is:  Q: In which city's seminary would you find the institution where both successor and predecessor to the individual Michael Jackson performed for made visits?
+A: Yonkers
+final_choice(Yonkers , options = 5) started
+[]
+entity_type(Yonkers ) called
+Yonkers  is Geography
+check_matchscore(Yonkers , Populated places established in 1646):  0.5
+choose_by_wiki_recur(Populated places established in 1646)
+   Pages in Populated places established in 1646: ['Arizpe', 'East Marion, New York', 'Kingsessing Township, Pennsylvania', 'Muzaffarabad', 'Nansemond County, Virginia', 'New London, Connecticut', 'Southwest Philadelphia', 'Yonkers, New York']
+      Muzaffarabad in ['Muzaffarabad', 'Southwest Philadelphia', 'Yonkers, New York', 'New London, Connecticut']
+      Southwest Philadelphia in ['Muzaffarabad', 'Southwest Philadelphia', 'Yonkers, New York', 'New London, Connecticut']
+      Yonkers, New York in ['Muzaffarabad', 'Southwest Philadelphia', 'Yonkers, New York', 'New London, Connecticut', 'Arizpe']
+      New London, Connecticut in ['Muzaffarabad', 'Southwest Philadelphia', 'Yonkers, New York', 'New London, Connecticut', 'Arizpe', 'Nansemond County, Virginia']
+      Arizpe in ['Muzaffarabad', 'Southwest Philadelphia', 'Yonkers, New York', 'New London, Connecticut', 'Arizpe', 'Nansemond County, Virginia', 'East Marion, New York']
+      Nansemond County, Virginia in ['Muzaffarabad', 'Southwest Philadelphia', 'Yonkers, New York', 'New London, Connecticut', 'Arizpe', 'Nansemond County, Virginia', 'East Marion, New York']
+      East Marion, New York in ['Muzaffarabad', 'Southwest Philadelphia', 'Yonkers, New York', 'New London, Connecticut', 'Arizpe', 'Nansemond County, Virginia', 'East Marion, New York', 'Kingsessing Township, Pennsylvania']
+      Kingsessing Township, Pennsylvania in ['Muzaffarabad', 'Southwest Philadelphia', 'Yonkers, New York', 'New London, Connecticut', 'Arizpe', 'Nansemond County, Virginia', 'East Marion, New York', 'Kingsessing Township, Pennsylvania']
+   Upper category of Populated places established in 1646: ['1646 establishments', 'Populated places established in the 1640s', 'Populated places by year of establishment']
+choose_by_wiki_recur(1646 establishments)
+check_matchscore(Yonkers , Establishments in New Netherland):  0.5
+choose_by_wiki_recur(Establishments in New Netherland)
+   Pages in Establishments in New Netherland: ['Bergen Township, New Jersey (1661–1862)', 'Bergen, New Netherland', 'Billiou–Stillwell–Perine House', 'Bushwick, Brooklyn', 'Camden, New Jersey', 'Collegiate School (New York City)', 'Constable Hook', 'East Marion, New York', 'First Presbyterian Church in Jamaica', 'Fort Wadsworth', 'Gravesend, Brooklyn', 'Greenpoint, Brooklyn', 'Hoboken, New Jersey', 'Jamaica, Queens', 'Jersey City, New Jersey', 'Land of the Blacks (Manhattan)', 'Manhattan', 'Marcus Hook, Pennsylvania', 'New Utrecht, Brooklyn', 'New York City', 'Old Bergen Church', 'Old Town, Staten Island', 'Pavonia, New Netherland', 'Rensselaerswyck', 'Rye, New York', 'Schenectady, New York', 'Southold (CDP), New York', 'Stuyvesant Farm', 'Williamsburg, Brooklyn', 'Yonkers, New York']
+      Yonkers, New York in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland']
+      First Presbyterian Church in Jamaica in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island']
+      New York City in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn']
+      Pavonia, New Netherland in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn']
+      Old Town, Staten Island in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)']
+      Greenpoint, Brooklyn in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania']
+      Land of the Blacks (Manhattan) in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn']
+      Marcus Hook, Pennsylvania in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey']
+      Williamsburg, Brooklyn in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan']
+      Hoboken, New Jersey in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm']
+      Manhattan in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth']
+      Stuyvesant Farm in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth']
+      Fort Wadsworth in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York']
+      Rye, New York in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn']
+      Gravesend, Brooklyn in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)']
+      Bergen Township, New Jersey (1661–1862) in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey']
+      Jersey City, New Jersey in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook']
+      Constable Hook in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church']
+      Old Bergen Church in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church', 'New Utrecht, Brooklyn']
+      New Utrecht, Brooklyn in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church', 'New Utrecht, Brooklyn', 'Bergen, New Netherland']
+      Bergen, New Netherland in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church', 'New Utrecht, Brooklyn', 'Bergen, New Netherland', 'Jamaica, Queens']
+      Jamaica, Queens in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church', 'New Utrecht, Brooklyn', 'Bergen, New Netherland', 'Jamaica, Queens', 'Bushwick, Brooklyn']
+      Bushwick, Brooklyn in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church', 'New Utrecht, Brooklyn', 'Bergen, New Netherland', 'Jamaica, Queens', 'Bushwick, Brooklyn', 'Rensselaerswyck']
+      Rensselaerswyck in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church', 'New Utrecht, Brooklyn', 'Bergen, New Netherland', 'Jamaica, Queens', 'Bushwick, Brooklyn', 'Rensselaerswyck']
+      Collegiate School (New York City) in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church', 'New Utrecht, Brooklyn', 'Bergen, New Netherland', 'Jamaica, Queens', 'Bushwick, Brooklyn', 'Rensselaerswyck', 'Collegiate School (New York City)']
+      Schenectady, New York in ['Yonkers, New York', 'First Presbyterian Church in Jamaica', 'New York City', 'Pavonia, New Netherland', 'Old Town, Staten Island', 'Greenpoint, Brooklyn', 'Land of the Blacks (Manhattan)', 'Marcus Hook, Pennsylvania', 'Williamsburg, Brooklyn', 'Hoboken, New Jersey', 'Manhattan', 'Stuyvesant Farm', 'Fort Wadsworth', 'Rye, New York', 'Gravesend, Brooklyn', 'Bergen Township, New Jersey (1661–1862)', 'Jersey City, New Jersey', 'Constable Hook', 'Old Bergen Church', 'New Utrecht, Brooklyn', 'Bergen, New Netherland', 'Jamaica, Queens', 'Bushwick, Brooklyn', 'Rensselaerswyck', 'Collegiate School (New York City)', 'Schenectady, New York']
+['Muzaffarabad', 'Arizpe', 'New York City', 'Manhattan', 'Bushwick, Brooklyn', 'Schenectady, New York']
+Ended after 2.5 hierarchy
+(2.5, ['New York City', 'Schenectady, New York', 'Arizpe', 'Bushwick, Brooklyn', 'Muzaffarabad', 'Manhattan'])
+
+extract_info(Manhattan) Start.
+utils/preprocess.py extract_info(): Checking good links on Manhattan
+New York City is Geography
+1 / 30 )  New York City New York City new_york_city
+James II of England is People
+2 / 30 )  Duke of York James II of England james_ii
+Statue of Liberty is Geography
+3 / 30 )  Statue of Liberty Statue of Liberty statue_of_liberty
+Greenwich Village is Geography
+4 / 30 )  Greenwich Village Greenwich Village greenwich_village
+World Trade Center  is Geography
+5 / 30 )  World Trade Center World Trade Center  twin_towers
+Hudson River is Geography
+6 / 30 )  Hudson Hudson River hudson_river
+East River is Geography
+7 / 30 )  East East River east_river
+Harlem River is Geography
+8 / 30 )  Harlem Harlem River harlem_river
+Financial District, Manhattan is Geography
+9 / 30 )  Financial District Financial District, Manhattan financial_district
+New York Stock Exchange is Geography
+10 / 30 )  New York Stock Exchange New York Stock Exchange new_york_stock_exchange
+Nasdaq is Geography
+11 / 30 )  Nasdaq Nasdaq nasdaq
+Columbia University is Geography
+12 / 30 )  Columbia University Columbia University columbia_university
+New York University is Geography
+13 / 30 )  New York University New York University new_york_university
+Headquarters of the United Nations is Geography
+14 / 30 )  headquarters of the United Nations Headquarters of the United Nations united_nations_headquarters
+Times Square is Geography
+15 / 30 )  Times Square Times Square times_square
+Central Park is Geography
+16 / 30 )  Central Park Central Park central_park
+Western Hemisphere is Geography
+17 / 30 )  Western Hemisphere Western Hemisphere western_hemisphere
+Empire State Building is Geography
+18 / 30 )  Empire State Building Empire State Building empire_state_building
+National Basketball Association is Geography
+19 / 30 )  National Basketball Association National Basketball Association national_basketball_association
+New York Knicks is Incident
+20 / 30 )  New York Knicks New York Knicks knicks
+Hickory is Animal
+21 / 30 )  hickory trees Hickory hickory
+Florence is Geography
+22 / 30 )  Florentine Florence florence
+Giovanni da Verrazzano is People
+23 / 30 )  Giovanni da Verrazzano Giovanni da Verrazzano giovanni_da_verrazzano
+The Narrows is Geography
+24 / 30 )  The Narrows The Narrows narrows
+Henry Hudson is People
+25 / 30 )  Henry Hudson Henry Hudson henry_hudson
+Peter Stuyvesant is People
+26 / 30 )  Peter Stuyvesant Peter Stuyvesant peter_stuyvesant
+Continental Army is Incident
+27 / 30 )  Continental Army Continental Army continental_army
+George Washington is Geography
+28 / 30 )  George Washington George Washington george_washington
+Supreme Court of the United States is Geography
+29 / 30 )  United States Supreme Court Supreme Court of the United States united_states_supreme_court
+Alexander Hamilton is People
+30 / 30 )  Alexander Hamilton Alexander Hamilton alexander_hamilton
+extract_triplet(Manhattan)
+Got GPT's response. String length : 2285
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  []
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  []
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  []
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  []
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  []
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  [['Duke of York', 'James II of England', 'james_ii']]
+subject_words:  [['Statue of Liberty', 'Statue of Liberty', 'statue_of_liberty']]
+object_words:  []
+subject_words:  [['Greenwich Village', 'Greenwich Village', 'greenwich_village']]
+object_words:  []
+subject_words:  [(None, 'Manhattan', 'manhattan')]
+object_words:  [['Harlem', 'Harlem River', 'harlem_river']]
+subject_words:  [['New York Stock Exchange', 'New York Stock Exchange', 'new_york_stock_exchange'], ['Nasdaq', 'Nasdaq', 'nasdaq']]
+object_words:  [(None, 'Manhattan', 'manhattan')]
+subject_words:  [['headquarters of the United Nations', 'Headquarters of the United Nations', 'united_nations_headquarters']]
+object_words:  [(None, 'Manhattan', 'manhattan')]
+subject_words:  [['Central Park', 'Central Park', 'central_park']]
+object_words:  [(None, 'Manhattan', 'manhattan')]
+subject_words:  [['Empire State Building', 'Empire State Building', 'empire_state_building']]
+object_words:  [(None, 'Manhattan', 'manhattan')]
+subject_words:  [['New York Knicks', 'New York Knicks', 'knicks']]
+object_words:  [(None, 'Manhattan', 'manhattan')]
+subject_words:  [['hickory trees', 'Hickory', 'hickory']]
+object_words:  []
+subject_words:  [['Giovanni da Verrazzano', 'Giovanni da Verrazzano', 'giovanni_da_verrazzano']]
+object_words:  [['Florentine', 'Florence', 'florence']]
+subject_words:  [['The Narrows', 'The Narrows', 'narrows']]
+object_words:  [['Giovanni da Verrazzano', 'Giovanni da Verrazzano', 'giovanni_da_verrazzano']]
+subject_words:  [['Hudson', 'Hudson River', 'hudson_river'], ['Henry Hudson', 'Henry Hudson', 'henry_hudson']]
+object_words:  [(None, 'Manhattan', 'manhattan')]
+subject_words:  [['Peter Stuyvesant', 'Peter Stuyvesant', 'peter_stuyvesant']]
+object_words:  []
+subject_words:  [['Continental Army', 'Continental Army', 'continental_army']]
+object_words:  []
+subject_words:  [['George Washington', 'George Washington', 'george_washington']]
+object_words:  []
+subject_words:  [['United States Supreme Court', 'Supreme Court of the United States', 'united_states_supreme_court']]
+object_words:  [(None, 'Manhattan', 'manhattan')]
+subject_words:  [['Alexander Hamilton', 'Alexander Hamilton', 'alexander_hamilton']]
+object_words:  []
+subject_words:  [['Columbia University', 'Columbia University', 'columbia_university'], ['New York University', 'New York University', 'new_york_university']]
+object_words:  [(None, 'Manhattan', 'manhattan')]
+extract_info(Bushwick, Brooklyn) Start.
+utils/preprocess.py extract_info(): Checking good links on Bushwick, Brooklyn
+New York City is Geography
+1 / 30 )  New York City New York City new_york_city
+Brooklyn is Geography
+2 / 30 )  Brooklyn Brooklyn brooklyn
+Bedford–Stuyvesant, Brooklyn is Geography
+3 / 30 )  Bedford–Stuyvesant Bedford–Stuyvesant, Brooklyn bed_stuy
+Queens is Geography
+4 / 30 )  Queens Queens queens
+Peter Stuyvesant is People
+5 / 30 )  Peter Stuyvesant Peter Stuyvesant peter_stuyvesant
+Potato is Animal
+6 / 30 )  potato Potato potato
+Peter Cooper is People
+7 / 30 )  Peter Cooper Peter Cooper peter_cooper
+Manhattan is Geography
+8 / 30 )  Manhattan Manhattan manhattan
+Palermo is Geography
+9 / 30 )  Palermo Palermo palermo
+Trapani is Geography
+10 / 30 )  Trapani Trapani trapani
+Agrigento is Geography
+11 / 30 )  Agrigento Agrigento agrigento
+Sicily is Geography
+12 / 30 )  Sicily Sicily sicily
+Dresden is Geography
+13 / 30 )  Dresden Dresden dresden
+Park Slope is Geography
+14 / 30 )  Park Slope Park Slope south_slope
+Puerto Rico is Geography
+15 / 30 )  Puerto Rico Puerto Rico puerto_rico
+Dominican Republic is Geography
+16 / 30 )  Dominican Republic Dominican Republic dominican_republic
+Mexico is Geography
+17 / 30 )  Mexico Mexico mexico
+El Salvador is Geography
+18 / 30 )  El Salvador El Salvador el_salvador
+Lower East Side is Geography
+19 / 30 )  Lower East Side Lower East Side lower_east_side
+Bernie Sanders is People
+20 / 30 )  Bernie Sanders Bernie Sanders bernie_sanders
+United States House of Representatives is Geography
+21 / 30 )  United States Representative United States House of Representatives united_states_house_of_representatives
+Long Island is Geography
+22 / 30 )  Long Island Long Island long_island
+Verrazzano-Narrows Bridge is Geography
+23 / 30 )  Verrazzano-Narrows Bridge Verrazzano-Narrows Bridge verrazano_narrows
+extract_triplet(Bushwick, Brooklyn)
+Got GPT's response. String length : 2444
+subject_words:  []
+object_words:  [['New York City', 'New York City', 'new_york_city'], ['Brooklyn', 'Brooklyn', 'brooklyn']]
+subject_words:  []
+object_words:  [['Queens', 'Queens', 'queens']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Bedford–Stuyvesant', 'Bedford–Stuyvesant, Brooklyn', 'bed_stuy']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Peter Stuyvesant', 'Peter Stuyvesant', 'peter_stuyvesant']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Peter Cooper', 'Peter Cooper', 'peter_cooper']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Agrigento', 'Agrigento', 'agrigento']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Park Slope', 'Park Slope', 'south_slope']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Mexico', 'Mexico', 'mexico']]
+object_words:  []
+subject_words:  []
+object_words:  [['Bernie Sanders', 'Bernie Sanders', 'bernie_sanders'], ['United States Representative', 'United States House of Representatives', 'united_states_house_of_representatives']]
+subject_words:  []
+object_words:  [['Long Island', 'Long Island', 'long_island']]
+subject_words:  []
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  []
+object_words:  []
+['Please note that the information in the triplets above is extracted based on the keywords provided and the context of the text about Bushwick, Brooklyn. The format requested is followed, however, given the length and breadth of the text, this is not an exhaustive list of all possible triplets, and some liberties were made to succinctly express the relationships in the triplet format, while prioritizing the inclusion of the provided important keywords.']
+extract_info(Muzaffarabad) Start.
+utils/preprocess.py extract_info(): Checking good links on Muzaffarabad
+Pakistan is Geography
+1 / 30 )  Pakistani Pakistan pakistan
+Azad Kashmir is Geography
+2 / 30 )  Azad Kashmir Azad Kashmir azad_kashmir
+Kashmir is Geography
+3 / 30 )  Kashmir Kashmir kashmir
+Muzaffarabad District is Geography
+4 / 30 )  Muzaffarabad District Muzaffarabad District muzaffarabad_district
+Khyber Pakhtunkhwa is Geography
+5 / 30 )  Khyber Pakhtunkhwa Khyber Pakhtunkhwa khyber_pakhtunkhwa
+Kupwara district is Geography
+6 / 30 )  Kupwara Kupwara district kupwara_district
+India is Geography
+7 / 30 )  Indian India india
+Neelum District is Geography
+8 / 30 )  Neelum District Neelum District neelum_district
+extract_triplet(Muzaffarabad)
+Got GPT's response. String length : 1079
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  [['Pakistani', 'Pakistan', 'pakistan'], ['Azad Kashmir', 'Azad Kashmir', 'azad_kashmir'], ['Kashmir', 'Kashmir', 'kashmir']]
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  [['Azad Kashmir', 'Azad Kashmir', 'azad_kashmir'], ['Kashmir', 'Kashmir', 'kashmir']]
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  [(None, 'Muzaffarabad', 'muzaffarabad'), ['Muzaffarabad District', 'Muzaffarabad District', 'muzaffarabad_district']]
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad'), ['Muzaffarabad District', 'Muzaffarabad District', 'muzaffarabad_district']]
+object_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa']]
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad'), ['Muzaffarabad District', 'Muzaffarabad District', 'muzaffarabad_district']]
+object_words:  [['Kupwara', 'Kupwara district', 'kupwara_district']]
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad'), ['Muzaffarabad District', 'Muzaffarabad District', 'muzaffarabad_district']]
+object_words:  [['Kashmir', 'Kashmir', 'kashmir'], ['Indian', 'India', 'india']]
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad'), ['Muzaffarabad District', 'Muzaffarabad District', 'muzaffarabad_district']]
+object_words:  [['Neelum District', 'Neelum District', 'neelum_district']]
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  []
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  []
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  []
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  []
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  []
+subject_words:  [(None, 'Muzaffarabad', 'muzaffarabad')]
+object_words:  []
+extract_info(New York City) Start.
+utils/preprocess.py extract_info(): Checking good links on New York City
+Headquarters of the United Nations is Geography
+1 / 30 )  headquarters of the United Nations Headquarters of the United Nations united_nations_headquarters
+Los Angeles is Geography
+2 / 30 )  Los Angeles Los Angeles los_angeles
+James II of England is People
+3 / 30 )  Duke of York James II of England james_ii
+Manhattan is Geography
+4 / 30 )  Manhattan Manhattan manhattan
+Brooklyn is Geography
+5 / 30 )  Brooklyn Brooklyn brooklyn
+Queens is Geography
+6 / 30 )  Queens Queens queens
+The Bronx is Geography
+7 / 30 )  The Bronx The Bronx bronx
+Staten Island is Geography
+8 / 30 )  Staten Island Staten Island staten_island
+Financial District, Manhattan is Geography
+9 / 30 )  Financial District Financial District, Manhattan financial_district
+New York Stock Exchange is Geography
+10 / 30 )  New York Stock Exchange New York Stock Exchange new_york_stock_exchange
+Nasdaq is Geography
+11 / 30 )  Nasdaq Nasdaq nasdaq
+Long Island is Geography
+12 / 30 )  Long Island Long Island long_island
+Hudson Valley is Geography
+13 / 30 )  Lower Hudson Valley Hudson Valley hudson_valley
+Giovanni da Verrazzano is People
+14 / 30 )  Giovanni da Verrazzano Giovanni da Verrazzano giovanni_da_verrazzano
+Florence is Geography
+15 / 30 )  Florence Florence florence
+Hudson River is Geography
+16 / 30 )  Hudson River Hudson River hudson_river
+Henry Hudson is People
+17 / 30 )  Henry Hudson Henry Hudson henry_hudson
+Northwest Passage is Geography
+18 / 30 )  Northwest Passage Northwest Passage northwest_passage
+Cape Cod is Geography
+19 / 30 )  Cape Cod Cape Cod cape_cod
+Delaware Bay is Geography
+20 / 30 )  Delaware Bay Delaware Bay delaware_bay
+Peter Minuit is People
+21 / 30 )  Peter Minuit Peter Minuit peter_minuit
+Peter Stuyvesant is People
+22 / 30 )  Peter Stuyvesant Peter Stuyvesant peter_stuyvesant
+Suriname is Geography
+23 / 30 )  Suriname Suriname suriname
+Fort Orange (New Netherland) is Geography
+24 / 30 )  Fort Orange Fort Orange (New Netherland) fort_orange
+William Cosby is People
+25 / 30 )  William Cosby William Cosby bill_cosby
+North America is Geography
+26 / 30 )  North America North America north_america
+Columbia University is Geography
+27 / 30 )  Columbia University Columbia University columbia_university
+George Washington is Geography
+28 / 30 )  George Washington George Washington george_washington
+New Jersey is Geography
+29 / 30 )  New Jersey New Jersey new_jersey
+Nova Scotia is Geography
+30 / 30 )  Nova Scotia Nova Scotia nova_scotia
+extract_triplet(New York City)
+Got GPT's response. String length : 2171
+['Please note that, for brevity, not all possible triplets have been included, and some data points may encompass multiple important keywords where applicable.']
+['("Michael Jackson", "performed for", "Pope John Paul II")\n', '("St. Joseph\'s Seminary in Yonkers", "was visited by", "Pope John Paul II and Pope Benedict XVI")\n']
+
+['("Michael Jackson", "signed with", "Motown")\n', '("Michael Jackson", "popularized dance moves like", "moonwalk and robot")\n', '("Michael Jackson", "called", "King of Pop")\n', '("Michael Jackson\'s Thriller", "became the best-selling album of all time", "")\n', '("Michael Jackson", "was inducted into the Rock and Roll Hall of Fame", "twice")\n', '("Michael Jackson\'s", "influence extended across", "many music genres")\n', '("Michael Jackson", "moonwalk dance was popularized by", "")\n', '("Michael Jackson", "recorded successful solo singles while at", "Motown")\n', '("Michael Jackson", "starred in", "The Wiz alongside Diana Ross")\n', '("Michael Jackson", "experienced abuse from", "his father Joe Jackson")\n', '("Michael Jackson", "had groundbreaking videos on", "MTV")\n', '("Michael Jackson", "was accused of and settled", "child sexual abuse allegations")\n', '("Michael Jackson", "died from", "overdose of propofol administered by Conrad Murray")\n', '("Michael Jackson", "won American Music Awards", "for Favorite Soul/R&B Album and Artist")\n', '("Michael Jackson", "signed a record-breaking contract with", "Sony")\n', '("Michael Jackson\'s", "estate merged his ATV Music catalog with", "Sony")\n', '("Michael Jackson", "named a crater on the Moon after by", "the Lunar Republic Society")\n', '("Michael Jackson", "collaborated with Freddie Mercury", "")\n', '("Michael Jackson", "performed with Mick Jagger on", "State of Shock")\n', '("Michael Jackson", "performed at Democratic National Committee fundraiser with", "former President Bill Clinton")\n', '("Michael Jackson", "was involved in a trial over", "child sexual abuse allegations")\n', '("Michael Jackson", "collaborated with Paul McCartney", "")\n', '("Michael Jackson", "acquired publishing rights to Beatles catalog via", "ATV Music")\n', '("Marty Bandier", "involved with Michael Jackson in", "tentative offer to buy ATV Music")\n', '("Michael Jackson", "purchased Neverland Ranch in", "Culver City, California")\n', '("Michael Jackson", "donated", "to United Negro College Fund")\n', '("Michael Jackson", "interviewed by", "Oprah Winfrey")\n', '("Michael Jackson", "duet with Luciano Pavarotti in", "Modena, Italy")\n', '("Michael Jackson", "visited", "Guatemala and Korea for humanitarian efforts")\n', '("Yonkers", "is a city in", "Westchester County, New York")\n', '("Yonkers", "is north of", "the Bronx")\n', '("Yonkers", "borders", "Hudson River")\n', '("Yonkers", "is approximately north of", "Marble Hill in Manhattan")\n', '("Yonkers", "is a suburb of", "New York metropolitan area")\n', '("Yonkers", "is an inner suburb of", "New York City")\n', '("Getty Square in Yonkers", "centers around", "municipal government")\n', '("Elisha Otis", "opened", "the world\'s first elevator factory in Yonkers")\n', '("Hudson Valley", "includes", "Yonkers")\n', '("Yonkers residents", "are known as", "Yonkersonians, Yonkersites, or Yonks")\n', '("Yonkers Raceway", "renovated to become", "Empire City Casino")\n', '("Sherwood House in Yonkers", "provides access to", "Hudson River")\n', '("Yonkers", "underwent", "gentrification")\n', '("Getty Square", "is in", "Yonkers")\n', '("Yonkers", "has", "limited-access roads")\n', '("Lion Gate Studios in Yonkers", "will host", "Mediapro")\n', '("Neil Simon\'s play", "is set in", "Yonkers")\n', '("Andrew Carnegie", "funded", "the Carnegie Library in Yonkers")\n', '("Long Island", "can see", "Sacred Heart Church spire in Yonkers")\n', '("New Jersey", "can see", "Sacred Heart Church spire in Yonkers")\n', '("Buffalo", "is behind", "Yonkers as the third-largest city in New York")\n', '("Philipse Manor Hall in Yonkers", "is a", "state historic site")\n', '("Cross County Shopping Center", "is located in", "Yonkers")\n', '("Ridge Hill Mall", "is a major shopping area in", "Yonkers")\n', '("Financial District", "was a ferry service destination from", "Yonkers")\n', '("Manhattan", "is the most densely populated borough of", "New York City")\n', '("Manhattan", "is coextensive with", "New York County")\n', '("Manhattan", "is geographically the smallest county by area in", "the U.S. state of New York")\n', '("Manhattan", "constitutes the urban core of", "the New York metropolitan area")\n', '("Manhattan", "serves as the economic and administrative center of", "New York City")\n', '("Manhattan", "is described as the cultural, financial, media, and entertainment capital of", "the world")\n', '("European settlement in Manhattan", "began with", "a trading post established by Dutch colonists")\n', '("The territory of Manhattan", "came under English control and was renamed", "New York after King Charles II granted the lands to his brother, the Duke of York")\n', '("The Statue of Liberty", "is located in", "New York Harbor")\n', '("The Stonewall Inn in Greenwich Village", "is considered the birthplace of", "the modern gay rights movement")\n', '("Manhattan", "is bounded by", "the Hudson, East, and Harlem rivers")\n', '("New York Stock Exchange and Nasdaq", "are located in", "Manhattan")\n', '("The headquarters of the United Nations", "is located in", "Manhattan")\n', '("Central Park", "is located within", "Manhattan")\n', '("The Empire State Building", "is a skyscraper in", "Manhattan")\n', '("The New York Knicks", "are based in", "Manhattan")\n', '("Hickory trees", "were ideal for making bows according to", "a Munsee tradition")\n', '("Giovanni da Verrazzano", "was a", "Florentine explorer")\n', '("The Narrows", "was named by", "Giovanni da Verrazzano")\n', '("Henry Hudson", "explored", "Manhattan Island")\n', '("Peter Stuyvesant", "was appointed as the last Dutch Director-General of the colony of", "New Amsterdam")\n', '("The Continental Army", "was forced to abandon Manhattan after", "the Battle of Fort Washington")\n', '("George Washington", "returned to Manhattan marking", "Evacuation Day")\n', '("The United States Supreme Court", "met for the first time in", "Manhattan")\n', '("The policies of Alexander Hamilton", "helped to establish New York as a center of", "commerce and industry")\n', '("Columbia University and New York University", "are located in", "Manhattan")\n', '("Bushwick", "is a neighborhood in", "the northern part of the New York City borough of Brooklyn")\n', '("Bushwick", "is bounded by", "Ridgewood, Queens")\n', '("Bushwick", "is bounded by", "Williamsburg")\n', '("Bushwick", "is bounded by", "East New York")\n', '("Bushwick", "is bounded by", "the cemeteries of Highland Park")\n', '("Bushwick", "is bounded by", "Brownsville")\n', '("Bushwick", "is bounded by", "Bedford–Stuyvesant")\n', '("Bushwick", "was first founded by", "the Dutch")\n', '("Peter Stuyvesant", "chartered", "Bushwick")\n', '("Bushwick", "became a community of", "German immigrants")\n', '("Bushwick", "saw influx of", "Italian immigrants")\n', '("Bushwick", "became predominantly", "Hispanic")\n', '("Bushwick", "centriod is located on", "Stockholm Street")\n', '("Bushwick", "included the modern-day communities of", "Williamsburg")\n', '("Bushwick", "included the modern-day communities of", "Greenpoint")\n', '("Peter Cooper", "built a glue manufacturing plant in", "Bushwick")\n', '("Bushwick", "became the \'beer capital of the Northeast\'", "")\n', '("The Italian community in Bushwick", "was composed of", "Sicilians from Palermo, Trapani, and Agrigento")\n', '("Bushwick", "experienced", "gentrification")\n', '("Park Slope and Williamsburg", "are nearby neighborhoods of", "Bushwick")\n', '("Bushwick", "experienced reduced crime rates", "")\n', '("Puerto Rico, Dominican Republic, Mexico", "immigrants arrived in", "Bushwick")\n', '("Bushwick", "is represented by", "Bernie Sanders as United States Representative")\n', '("Bushwick", "is part of", "the Long Island")\n', '("Bushwick Initiative", "is a program by", "the New York City Department of Housing Preservation and Development")\n', '("Verrazzano-Narrows Bridge", "is connected with plans to", "Bushwick")\n', '("Muzaffarabad", "is a city in", "Pakistani-administered Azad Kashmir")\n', '("Muzaffarabad", "is the capital of", "Azad Kashmir")\n', '("Muzaffarabad", "is located in", "Muzaffarabad District")\n', '("Muzaffarabad District", "is bounded by", "Khyber Pakhtunkhwa")\n', '("Muzaffarabad District", "is bounded by", "Kupwara")\n', '("Muzaffarabad District", "is bounded by", "Indian-administered Jammu and Kashmir")\n', '("Muzaffarabad District", "is bounded by", "Neelum District")\n', '("Muzaffarabad", "was founded by", "Sultan Muzaffar Khan")\n', '("Muzaffarabad", "has public transportation system that relies on", "buses")\n', '("Muzaffarabad", "has public transportation system that relies on", "rickshaws")\n', '("Muzaffarabad", "has public transportation system that relies on", "small pickup trucks")\n', '("Muzaffarabad", "lacks", "railway system")\n', '("Muzaffarabad", "lacks", "functional airport")\n']
+range(1, 122) 2
+['("Michael Jackson", "performed for", "Pope John Paul II")\n', '("St. Joseph\'s Seminary in Yonkers", "was visited by", "Pope John Paul II and Pope Benedict XVI")\n']
+
+['("Michael Jackson", "signed with", "Motown")\n', '("Michael Jackson", "popularized dance moves like", "moonwalk and robot")\n', '("Michael Jackson", "called", "King of Pop")\n', '("Michael Jackson\'s Thriller", "became the best-selling album of all time", "")\n', '("Michael Jackson", "was inducted into the Rock and Roll Hall of Fame", "twice")\n', '("Michael Jackson\'s", "influence extended across", "many music genres")\n', '("Michael Jackson", "moonwalk dance was popularized by", "")\n', '("Michael Jackson", "recorded successful solo singles while at", "Motown")\n', '("Michael Jackson", "starred in", "The Wiz alongside Diana Ross")\n', '("Michael Jackson", "experienced abuse from", "his father Joe Jackson")\n', '("Michael Jackson", "had groundbreaking videos on", "MTV")\n', '("Michael Jackson", "was accused of and settled", "child sexual abuse allegations")\n', '("Michael Jackson", "died from", "overdose of propofol administered by Conrad Murray")\n', '("Michael Jackson", "won American Music Awards", "for Favorite Soul/R&B Album and Artist")\n', '("Michael Jackson", "signed a record-breaking contract with", "Sony")\n', '("Michael Jackson\'s", "estate merged his ATV Music catalog with", "Sony")\n', '("Michael Jackson", "named a crater on the Moon after by", "the Lunar Republic Society")\n', '("Michael Jackson", "collaborated with Freddie Mercury", "")\n', '("Michael Jackson", "performed with Mick Jagger on", "State of Shock")\n', '("Michael Jackson", "performed at Democratic National Committee fundraiser with", "former President Bill Clinton")\n', '("Michael Jackson", "was involved in a trial over", "child sexual abuse allegations")\n', '("Michael Jackson", "collaborated with Paul McCartney", "")\n', '("Michael Jackson", "acquired publishing rights to Beatles catalog via", "ATV Music")\n', '("Marty Bandier", "involved with Michael Jackson in", "tentative offer to buy ATV Music")\n', '("Michael Jackson", "purchased Neverland Ranch in", "Culver City, California")\n', '("Michael Jackson", "donated", "to United Negro College Fund")\n', '("Michael Jackson", "interviewed by", "Oprah Winfrey")\n', '("Michael Jackson", "duet with Luciano Pavarotti in", "Modena, Italy")\n', '("Michael Jackson", "visited", "Guatemala and Korea for humanitarian efforts")\n', '("Yonkers", "is a city in", "Westchester County, New York")\n', '("Yonkers", "is north of", "the Bronx")\n', '("Yonkers", "borders", "Hudson River")\n', '("Yonkers", "is approximately north of", "Marble Hill in Manhattan")\n', '("Yonkers", "is a suburb of", "New York metropolitan area")\n', '("Yonkers", "is an inner suburb of", "New York City")\n', '("Getty Square in Yonkers", "centers around", "municipal government")\n', '("Elisha Otis", "opened", "the world\'s first elevator factory in Yonkers")\n', '("Hudson Valley", "includes", "Yonkers")\n', '("Yonkers residents", "are known as", "Yonkersonians, Yonkersites, or Yonks")\n', '("Yonkers Raceway", "renovated to become", "Empire City Casino")\n', '("Sherwood House in Yonkers", "provides access to", "Hudson River")\n', '("Yonkers", "underwent", "gentrification")\n', '("Getty Square", "is in", "Yonkers")\n', '("Yonkers", "has", "limited-access roads")\n', '("Lion Gate Studios in Yonkers", "will host", "Mediapro")\n', '("Neil Simon\'s play", "is set in", "Yonkers")\n', '("Andrew Carnegie", "funded", "the Carnegie Library in Yonkers")\n', '("Long Island", "can see", "Sacred Heart Church spire in Yonkers")\n', '("New Jersey", "can see", "Sacred Heart Church spire in Yonkers")\n', '("Buffalo", "is behind", "Yonkers as the third-largest city in New York")\n', '("Philipse Manor Hall in Yonkers", "is a", "state historic site")\n', '("Cross County Shopping Center", "is located in", "Yonkers")\n', '("Ridge Hill Mall", "is a major shopping area in", "Yonkers")\n', '("Financial District", "was a ferry service destination from", "Yonkers")\n', '("Manhattan", "is the most densely populated borough of", "New York City")\n', '("Manhattan", "is coextensive with", "New York County")\n', '("Manhattan", "is geographically the smallest county by area in", "the U.S. state of New York")\n', '("Manhattan", "constitutes the urban core of", "the New York metropolitan area")\n', '("Manhattan", "serves as the economic and administrative center of", "New York City")\n', '("Manhattan", "is described as the cultural, financial, media, and entertainment capital of", "the world")\n', '("European settlement in Manhattan", "began with", "a trading post established by Dutch colonists")\n', '("The territory of Manhattan", "came under English control and was renamed", "New York after King Charles II granted the lands to his brother, the Duke of York")\n', '("The Statue of Liberty", "is located in", "New York Harbor")\n', '("The Stonewall Inn in Greenwich Village", "is considered the birthplace of", "the modern gay rights movement")\n', '("Manhattan", "is bounded by", "the Hudson, East, and Harlem rivers")\n', '("New York Stock Exchange and Nasdaq", "are located in", "Manhattan")\n', '("The headquarters of the United Nations", "is located in", "Manhattan")\n', '("Central Park", "is located within", "Manhattan")\n', '("The Empire State Building", "is a skyscraper in", "Manhattan")\n', '("The New York Knicks", "are based in", "Manhattan")\n', '("Hickory trees", "were ideal for making bows according to", "a Munsee tradition")\n', '("Giovanni da Verrazzano", "was a", "Florentine explorer")\n', '("The Narrows", "was named by", "Giovanni da Verrazzano")\n', '("Henry Hudson", "explored", "Manhattan Island")\n', '("Peter Stuyvesant", "was appointed as the last Dutch Director-General of the colony of", "New Amsterdam")\n', '("The Continental Army", "was forced to abandon Manhattan after", "the Battle of Fort Washington")\n', '("George Washington", "returned to Manhattan marking", "Evacuation Day")\n', '("The United States Supreme Court", "met for the first time in", "Manhattan")\n', '("The policies of Alexander Hamilton", "helped to establish New York as a center of", "commerce and industry")\n', '("Columbia University and New York University", "are located in", "Manhattan")\n', '("Bushwick", "is a neighborhood in", "the northern part of the New York City borough of Brooklyn")\n', '("Bushwick", "is bounded by", "Ridgewood, Queens")\n', '("Bushwick", "is bounded by", "Williamsburg")\n', '("Bushwick", "is bounded by", "East New York")\n', '("Bushwick", "is bounded by", "the cemeteries of Highland Park")\n', '("Bushwick", "is bounded by", "Brownsville")\n', '("Bushwick", "is bounded by", "Bedford–Stuyvesant")\n', '("Bushwick", "was first founded by", "the Dutch")\n', '("Peter Stuyvesant", "chartered", "Bushwick")\n', '("Bushwick", "became a community of", "German immigrants")\n', '("Bushwick", "saw influx of", "Italian immigrants")\n', '("Bushwick", "became predominantly", "Hispanic")\n', '("Bushwick", "centriod is located on", "Stockholm Street")\n', '("Bushwick", "included the modern-day communities of", "Williamsburg")\n', '("Bushwick", "included the modern-day communities of", "Greenpoint")\n', '("Peter Cooper", "built a glue manufacturing plant in", "Bushwick")\n', '("Bushwick", "became the \'beer capital of the Northeast\'", "")\n', '("The Italian community in Bushwick", "was composed of", "Sicilians from Palermo, Trapani, and Agrigento")\n', '("Bushwick", "experienced", "gentrification")\n', '("Park Slope and Williamsburg", "are nearby neighborhoods of", "Bushwick")\n', '("Bushwick", "experienced reduced crime rates", "")\n', '("Puerto Rico, Dominican Republic, Mexico", "immigrants arrived in", "Bushwick")\n', '("Bushwick", "is represented by", "Bernie Sanders as United States Representative")\n', '("Bushwick", "is part of", "the Long Island")\n', '("Bushwick Initiative", "is a program by", "the New York City Department of Housing Preservation and Development")\n', '("Verrazzano-Narrows Bridge", "is connected with plans to", "Bushwick")\n', '("Muzaffarabad", "is a city in", "Pakistani-administered Azad Kashmir")\n', '("Muzaffarabad", "is the capital of", "Azad Kashmir")\n', '("Muzaffarabad", "is located in", "Muzaffarabad District")\n', '("Muzaffarabad District", "is bounded by", "Khyber Pakhtunkhwa")\n', '("Muzaffarabad District", "is bounded by", "Kupwara")\n', '("Muzaffarabad District", "is bounded by", "Indian-administered Jammu and Kashmir")\n', '("Muzaffarabad District", "is bounded by", "Neelum District")\n', '("Muzaffarabad", "was founded by", "Sultan Muzaffar Khan")\n', '("Muzaffarabad", "has public transportation system that relies on", "buses")\n', '("Muzaffarabad", "has public transportation system that relies on", "rickshaws")\n', '("Muzaffarabad", "has public transportation system that relies on", "small pickup trucks")\n', '("Muzaffarabad", "lacks", "railway system")\n', '("Muzaffarabad", "lacks", "functional airport")\n']
+range(1, 122) 2
+['("Michael Jackson", "performed for", "Pope John Paul II")\n', '("St. Joseph\'s Seminary in Yonkers", "was visited by", "Pope John Paul II and Pope Benedict XVI")\n']
+
+['("Michael Jackson", "signed with", "Motown")\n', '("Michael Jackson", "popularized dance moves like", "moonwalk and robot")\n', '("Michael Jackson", "called", "King of Pop")\n', '("Michael Jackson\'s Thriller", "became the best-selling album of all time", "")\n', '("Michael Jackson", "was inducted into the Rock and Roll Hall of Fame", "twice")\n', '("Michael Jackson\'s", "influence extended across", "many music genres")\n', '("Michael Jackson", "moonwalk dance was popularized by", "")\n', '("Michael Jackson", "recorded successful solo singles while at", "Motown")\n', '("Michael Jackson", "starred in", "The Wiz alongside Diana Ross")\n', '("Michael Jackson", "experienced abuse from", "his father Joe Jackson")\n', '("Michael Jackson", "had groundbreaking videos on", "MTV")\n', '("Michael Jackson", "was accused of and settled", "child sexual abuse allegations")\n', '("Michael Jackson", "died from", "overdose of propofol administered by Conrad Murray")\n', '("Michael Jackson", "won American Music Awards", "for Favorite Soul/R&B Album and Artist")\n', '("Michael Jackson", "signed a record-breaking contract with", "Sony")\n', '("Michael Jackson\'s", "estate merged his ATV Music catalog with", "Sony")\n', '("Michael Jackson", "named a crater on the Moon after by", "the Lunar Republic Society")\n', '("Michael Jackson", "collaborated with Freddie Mercury", "")\n', '("Michael Jackson", "performed with Mick Jagger on", "State of Shock")\n', '("Michael Jackson", "performed at Democratic National Committee fundraiser with", "former President Bill Clinton")\n', '("Michael Jackson", "was involved in a trial over", "child sexual abuse allegations")\n', '("Michael Jackson", "collaborated with Paul McCartney", "")\n', '("Michael Jackson", "acquired publishing rights to Beatles catalog via", "ATV Music")\n', '("Marty Bandier", "involved with Michael Jackson in", "tentative offer to buy ATV Music")\n', '("Michael Jackson", "purchased Neverland Ranch in", "Culver City, California")\n', '("Michael Jackson", "donated", "to United Negro College Fund")\n', '("Michael Jackson", "interviewed by", "Oprah Winfrey")\n', '("Michael Jackson", "duet with Luciano Pavarotti in", "Modena, Italy")\n', '("Michael Jackson", "visited", "Guatemala and Korea for humanitarian efforts")\n', '("Yonkers", "is a city in", "Westchester County, New York")\n', '("Yonkers", "is north of", "the Bronx")\n', '("Yonkers", "borders", "Hudson River")\n', '("Yonkers", "is approximately north of", "Marble Hill in Manhattan")\n', '("Yonkers", "is a suburb of", "New York metropolitan area")\n', '("Yonkers", "is an inner suburb of", "New York City")\n', '("Getty Square in Yonkers", "centers around", "municipal government")\n', '("Elisha Otis", "opened", "the world\'s first elevator factory in Yonkers")\n', '("Hudson Valley", "includes", "Yonkers")\n', '("Yonkers residents", "are known as", "Yonkersonians, Yonkersites, or Yonks")\n', '("Yonkers Raceway", "renovated to become", "Empire City Casino")\n', '("Sherwood House in Yonkers", "provides access to", "Hudson River")\n', '("Yonkers", "underwent", "gentrification")\n', '("Getty Square", "is in", "Yonkers")\n', '("Yonkers", "has", "limited-access roads")\n', '("Lion Gate Studios in Yonkers", "will host", "Mediapro")\n', '("Neil Simon\'s play", "is set in", "Yonkers")\n', '("Andrew Carnegie", "funded", "the Carnegie Library in Yonkers")\n', '("Long Island", "can see", "Sacred Heart Church spire in Yonkers")\n', '("New Jersey", "can see", "Sacred Heart Church spire in Yonkers")\n', '("Buffalo", "is behind", "Yonkers as the third-largest city in New York")\n', '("Philipse Manor Hall in Yonkers", "is a", "state historic site")\n', '("Cross County Shopping Center", "is located in", "Yonkers")\n', '("Ridge Hill Mall", "is a major shopping area in", "Yonkers")\n', '("Financial District", "was a ferry service destination from", "Yonkers")\n', '("Manhattan", "is the most densely populated borough of", "New York City")\n', '("Manhattan", "is coextensive with", "New York County")\n', '("Manhattan", "is geographically the smallest county by area in", "the U.S. state of New York")\n', '("Manhattan", "constitutes the urban core of", "the New York metropolitan area")\n', '("Manhattan", "serves as the economic and administrative center of", "New York City")\n', '("Manhattan", "is described as the cultural, financial, media, and entertainment capital of", "the world")\n', '("European settlement in Manhattan", "began with", "a trading post established by Dutch colonists")\n', '("The territory of Manhattan", "came under English control and was renamed", "New York after King Charles II granted the lands to his brother, the Duke of York")\n', '("The Statue of Liberty", "is located in", "New York Harbor")\n', '("The Stonewall Inn in Greenwich Village", "is considered the birthplace of", "the modern gay rights movement")\n', '("Manhattan", "is bounded by", "the Hudson, East, and Harlem rivers")\n', '("New York Stock Exchange and Nasdaq", "are located in", "Manhattan")\n', '("The headquarters of the United Nations", "is located in", "Manhattan")\n', '("Central Park", "is located within", "Manhattan")\n', '("The Empire State Building", "is a skyscraper in", "Manhattan")\n', '("The New York Knicks", "are based in", "Manhattan")\n', '("Hickory trees", "were ideal for making bows according to", "a Munsee tradition")\n', '("Giovanni da Verrazzano", "was a", "Florentine explorer")\n', '("The Narrows", "was named by", "Giovanni da Verrazzano")\n', '("Henry Hudson", "explored", "Manhattan Island")\n', '("Peter Stuyvesant", "was appointed as the last Dutch Director-General of the colony of", "New Amsterdam")\n', '("The Continental Army", "was forced to abandon Manhattan after", "the Battle of Fort Washington")\n', '("George Washington", "returned to Manhattan marking", "Evacuation Day")\n', '("The United States Supreme Court", "met for the first time in", "Manhattan")\n', '("The policies of Alexander Hamilton", "helped to establish New York as a center of", "commerce and industry")\n', '("Columbia University and New York University", "are located in", "Manhattan")\n', '("Bushwick", "is a neighborhood in", "the northern part of the New York City borough of Brooklyn")\n', '("Bushwick", "is bounded by", "Ridgewood, Queens")\n', '("Bushwick", "is bounded by", "Williamsburg")\n', '("Bushwick", "is bounded by", "East New York")\n', '("Bushwick", "is bounded by", "the cemeteries of Highland Park")\n', '("Bushwick", "is bounded by", "Brownsville")\n', '("Bushwick", "is bounded by", "Bedford–Stuyvesant")\n', '("Bushwick", "was first founded by", "the Dutch")\n', '("Peter Stuyvesant", "chartered", "Bushwick")\n', '("Bushwick", "became a community of", "German immigrants")\n', '("Bushwick", "saw influx of", "Italian immigrants")\n', '("Bushwick", "became predominantly", "Hispanic")\n', '("Bushwick", "centriod is located on", "Stockholm Street")\n', '("Bushwick", "included the modern-day communities of", "Williamsburg")\n', '("Bushwick", "included the modern-day communities of", "Greenpoint")\n', '("Peter Cooper", "built a glue manufacturing plant in", "Bushwick")\n', '("Bushwick", "became the \'beer capital of the Northeast\'", "")\n', '("The Italian community in Bushwick", "was composed of", "Sicilians from Palermo, Trapani, and Agrigento")\n', '("Bushwick", "experienced", "gentrification")\n', '("Park Slope and Williamsburg", "are nearby neighborhoods of", "Bushwick")\n', '("Bushwick", "experienced reduced crime rates", "")\n', '("Puerto Rico, Dominican Republic, Mexico", "immigrants arrived in", "Bushwick")\n', '("Bushwick", "is represented by", "Bernie Sanders as United States Representative")\n', '("Bushwick", "is part of", "the Long Island")\n', '("Bushwick Initiative", "is a program by", "the New York City Department of Housing Preservation and Development")\n', '("Verrazzano-Narrows Bridge", "is connected with plans to", "Bushwick")\n', '("Muzaffarabad", "is a city in", "Pakistani-administered Azad Kashmir")\n', '("Muzaffarabad", "is the capital of", "Azad Kashmir")\n', '("Muzaffarabad", "is located in", "Muzaffarabad District")\n', '("Muzaffarabad District", "is bounded by", "Khyber Pakhtunkhwa")\n', '("Muzaffarabad District", "is bounded by", "Kupwara")\n', '("Muzaffarabad District", "is bounded by", "Indian-administered Jammu and Kashmir")\n', '("Muzaffarabad District", "is bounded by", "Neelum District")\n', '("Muzaffarabad", "was founded by", "Sultan Muzaffar Khan")\n', '("Muzaffarabad", "has public transportation system that relies on", "buses")\n', '("Muzaffarabad", "has public transportation system that relies on", "rickshaws")\n', '("Muzaffarabad", "has public transportation system that relies on", "small pickup trucks")\n', '("Muzaffarabad", "lacks", "railway system")\n', '("Muzaffarabad", "lacks", "functional airport")\n']
+range(1, 122) 2
+{'id': '1_10', 'Question': " In which city's seminary would you find the institution where both successor and predecessor to the individual Michael Jackson performed for made visits?\n", 'Answer': 'Yonkers ', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Manhattan'}, {'label': 'B', 'text': 'Bushwick, Brooklyn'}, {'label': 'C', 'text': 'Muzaffarabad'}, {'label': 'D', 'text': 'Yonkers, New York'}, {'label': 'E', 'text': 'New York City'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'manhattan'}, {'label': 'B', 'text': 'bushwick'}, {'label': 'C', 'text': 'muzaffarabad'}, {'label': 'D', 'text': 'yonkers'}, {'label': 'E', 'text': 'new_york_city'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who did Michael Jackson perform for?\nA1: Pope John Paul II\n\n', "2: In which city's seminary did Pope John Paul II and Pope Benedict XVI both make visits?\nA2: Yonkers"], 'Hops_wiki': [('Michael Jackson', 'Pope John Paul II'), ('Pope John Paul II', 'Yonkers, New York')], 'Hops_cpnet': [('michael_jackson', 'pope_john_paul_ii'), ('pope_john_paul_ii', 'yonkers')], 'Triplets': ['("Michael Jackson", "performed for", "Pope John Paul II")', '("St. Joseph\'s Seminary in Yonkers", "was visited by", "Pope John Paul II and Pope Benedict XVI")'], 'Referred_files': [{'name': 'Michael Jackson', 'line': 27}, {'name': 'Yonkers, New York', 'line': 19}], 'Question_triplet_answer': {100: [13, 62], 50: [29, 118], 25: [21, 22]}}
+time passed:  6573.258314609528
+Expected dollar:  0.005
+Central Park is Geography
+Manhattan is Geography
+Michael Jackson is People
+Muzaffarabad is Geography
+Azad Kashmir is Geography
+"Khyber Pakhtunkhwa is Geography
+Verrazzano Narrows Bridge is Geography
+Bushwick is Geography
+"King of Pop is People
+The Statue of Liberty is Geography
+New York Harbor is Geography
+Yonkers Raceway is Geography
+Yonkers is Geography
+John Paul II is People
+Benedict XVI is People
+the Rock and Roll Hall of Fame is Geography
+New York City is Geography
+Brooklyn is Geography
+Columbia University is Geography
+New York University is Geography
+Getty Square is Geography
+The Stonewall Inn is Geography
+Greenwich Village is Geography
+Marty Bandier is People
+Oprah Winfrey is People
+Paul McCartney is People
+Charles II is People
+Andrew Carnegie is People
+Giovanni da Verrazzano is People
+Philipse Manor Hall is Geography
+Stockholm Street is Geography
+Mick Jagger is People
+Democratic National Committee is Incident
+Bill Clinton is People
+Peter Stuyvesant is People
+Bedford Stuyvesant is Geography
+New Jersey is Geography
+Highland Park is Geography
+"Marble Hill is Geography
+Guatemala is Geography
+Korea is Geography
+Hudson River is Geography
+New York Stock Exchange is Geography
+Nasdaq is Geography
+The Narrows is Geography
+New York County is Geography
+Bernie Sanders is People
+United States is Geography
+Ridge Hill Mall is Geography
+United Negro College Fund is Geography
+The Empire State Building is Geography
+Elisha Otis is People
+Michael Jackson's is People
+Joe Jackson is People
+Conrad Murray is People
+Puerto Rico is Geography
+Dominican Republic is Geography
+Mexico is Geography
+The Continental Army is Incident
+the Battle of Fort Washington is Geography
+Westchester County is Geography
+entities:  {'Paul', 'Building', 'Ridge', 'Committee', "Jackson's", 'Washington', 'Michael', 'County', 'Bushwick', 'Yonkers,', 'Highland', 'Harbor', 'Nasdaq', 'Philipse', 'States', 'Puerto', 'Conrad', 'Guatemala', 'Exchange', 'Liberty', 'National', 'II', 'Jersey', 'Winfrey', 'Peter', 'Empire', 'Park', 'XVI', 'Brownsville', 'New', 'Stonewall', 'Verrazzano', 'Democratic', 'Rico', '"Marble', 'Marty', 'Central', 'Stuyvesant', 'Clinton', 'Mexico', 'Mick', 'Stock', 'Benedict', 'Murray', 'Greenwich', 'State', 'Stockholm', 'Hudson', 'Mall', 'Charles', 'Continental', 'Inn', '"Khyber', 'Narrows', 'Jagger', 'Getty', 'York', 'Elisha', 'Dominican', 'Westchester', 'Pop', 'Korea', 'Statue', 'Yonkers', 'Columbia', 'Bernie', 'Kashmir', 'Muzaffarabad', 'Bedford', 'Fund', 'Hall', 'Sanders', 'Bushwick,', 'Roll', 'Army', 'Fame', 'Carnegie', 'Village', 'Joseph', 'River', 'John', 'Brooklyn', 'Bridge', 'Joe', 'McCartney', 'Williamsburg', 'College', 'Otis', 'City', 'Street', 'Fort', 'Sony', '"King', 'University', 'Republic', 'Bandier', 'Manhattan', 'Rock', 'Negro', 'da', 'Azad', 'Square', 'Oprah', 'Bill', 'United', 'Manor', 'Hill', 'Raceway', 'Battle', 'Andrew', 'Giovanni', 'Pakhtunkhwa', 'Pope', 'Jackson'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Michael Jackson' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Michael Jackson
+American Music Awards
+Favorite Soul/R&B Album and Artist
+King of Pop
+Estate merged his ATV Music Catalog with Sony
+Moonwalk and robot
+Rock and Roll Hall of Fame
+Child sexual abuse allegations
+Oprah Winfrey
+Mick Jagger
+Favorite Soul/R&B Album and Artist
+State of Shock
+Pope John Paul II
+Paul McCartney
+King of Pop
+Democratic National Committee fundraiser with former President Bill Clinton
+Guatemala and Korea for humanitarian efforts
+Influence extended across
+Many music genres
+Moonwalk dance was popularized by
+Moonwalk dance was popularized by
+Sony
+Motown
+MTV
+United Negro College Fund
+Thriller
+Died from
+Overdose of propofol administered by Conrad Murray
+Experienced abuse from
+His father Joe Jackson
+Recorded successful solo singles while at
+Antown
+The Continental Army
+The Battle of Fort Washington
+
+gpt_entity_particular(): entity list: 
+ ['Experienced abuse from', 'Rock and Roll Hall of Fame', 'Democratic National Committee fundraiser with former President Bill Clinton', 'Thriller', 'United Negro College Fund', 'The Battle of Fort Washington', 'Many music genres', 'His father Joe Jackson', 'Moonwalk dance was popularized by', 'Died from', 'The Continental Army', 'Moonwalk and robot', 'Child sexual abuse allegations', 'Influence extended across', 'Favorite Soul/R&B Album and Artist', 'American Music Awards', 'Oprah Winfrey', 'King of Pop', 'Sony', 'Overdose of propofol administered by Conrad Murray', 'Motown', 'Paul McCartney', 'Recorded successful solo singles while at', 'State of Shock', 'MTV', 'Antown', 'Mick Jagger', 'Michael Jackson', 'Guatemala and Korea for humanitarian efforts', 'Estate merged his ATV Music Catalog with Sony', 'Pope John Paul II']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Muzaffarabad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Muzaffarabad
+Azad Kashmir
+Muzaffarabad District
+Pakistani-administered Azad Kashmir
+Muzaffarabad District
+railway system
+functional airport
+Muzaffarabad
+Muzaffarabad District
+
+gpt_entity_particular(): entity list: 
+ ['Pakistani-administered Azad Kashmir', 'Muzaffarabad District', 'railway system', 'functional airport', 'Muzaffarabad', 'Azad Kashmir']
+
+gpt_entity_particular(): filtered entity: 
+ ['Azad Kashmir']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'New York City' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Central Park
+Manhattan
+European settlement
+trading post
+Dutch colonists
+Verrazzano-Narrows Bridge
+Bushwick
+King of Pop
+Azad Kashmir
+The Statue of Liberty
+Yonkers Raceway
+Empire City Casino
+St. Joseph's Seminary
+ATV Music catalog
+Sony
+Mick Jagger
+Pope John Paul II
+Rock and Roll Hall of Fame
+Columbia University
+New York University
+gentrification
+New York City
+Greenwich Village
+Yonkers
+King Charles II
+Duke of York
+Andrew Carnegie
+Philipse Manor Hall
+Stockholm Street
+Bedford–Stuyvesant
+New Jersey
+Highland Park
+Michael Jackson's
+Hudson River
+New York Stock Exchange
+Nasdaq
+Motown
+Bernie Sanders
+United States Representative
+MTV
+Ridge Hill Mall
+Narrows
+Empire State Building
+Elisha Otis
+United Nations
+Joe Jackson
+Thriller
+headquarters
+United Nations
+world's first elevator factory
+Westchester County, New York
+
+gpt_entity_particular(): entity list: 
+ ['headquarters', 'Andrew Carnegie', 'Stockholm Street', 'Rock and Roll Hall of Fame', 'Verrazzano-Narrows Bridge', 'Yonkers', 'Thriller', 'Bushwick', 'Hudson River', 'Joe Jackson', 'New York University', 'Nasdaq', 'Empire State Building', 'Empire City Casino', 'Bernie Sanders', 'Philipse Manor Hall', 'Yonkers Raceway', 'The Statue of Liberty', "St. Joseph's Seminary", 'Azad Kashmir', 'Highland Park', 'Dutch colonists', 'Greenwich Village', 'United States Representative', 'Westchester County, New York', 'gentrification', 'New York Stock Exchange', "Michael Jackson's", 'King of Pop', 'Sony', 'Duke of York', 'Motown', 'Manhattan', 'Ridge Hill Mall', 'MTV', 'Elisha Otis', 'Mick Jagger', 'trading post', 'Bedford–Stuyvesant', 'United Nations', 'ATV Music catalog', 'Narrows', 'New Jersey', 'Pope John Paul II', 'European settlement', 'Columbia University', 'Central Park', 'New York City', "world's first elevator factory", 'King Charles II']
+
+gpt_entity_particular(): filtered entity: 
+ ['Yonkers', 'Hudson River', 'Empire State Building', 'The Statue of Liberty', 'Greenwich Village', 'Motown', 'Manhattan', 'United Nations', 'Central Park']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Pope John Paul II' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Pope John Paul II
+Pope Benedict XVI
+
+gpt_entity_particular(): entity list: 
+ ['Pope John Paul II', 'Pope Benedict XVI']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Bushwick, Brooklyn' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Bushwick
+New York City borough
+neighborhood 
+gentrification
+Italian immigrants
+reduced crime rates
+influx of Puerto Rico, Dominican Republic, Mexico immigrants
+Williamsburg
+Brownsville
+Bedford–Stuyvesant
+united states representative
+
+gpt_entity_particular(): entity list: 
+ ['reduced crime rates', 'gentrification', 'Italian immigrants', 'Brownsville', 'Bedford–Stuyvesant', 'neighborhood ', 'influx of Puerto Rico, Dominican Republic, Mexico immigrants', 'Bushwick', 'Williamsburg', 'united states representative', 'New York City borough']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Yonkers, New York' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Yonkers
+Central Park
+European settlement
+Manhattan
+Verrazzano-Narrows Bridge
+King of Pop
+Empire City Casino
+Limited-access roads
+St. Joseph's Seminary
+ATV Music catalog
+Moonwalk
+Statue of Liberty
+Pope John Paul II
+Pope Benedict XVI
+Columbia University
+New York University
+Rock and Roll Hall of Fame
+Bushwick
+Stonewall Inn
+Muzaffarabad District
+Khyber Pakhtunkhwa
+Williamsburg
+Gentrification
+Mick Jagger
+Democratic National Committee
+Pope John Paul II
+Marble Hill
+Guatemala
+Korea
+Hudson River
+New York Stock Exchange
+Nasdaq
+Music genres
+Ridge Hill Mall
+Empire City Casino
+United Negro College Fund
+Elevator factory
+United Nations
+Thriller
+Propofol
+Conrad Murray
+Florentine explorer
+Battle of Fort Washington
+Sultan Muzaffar Khan
+Westchester County
+
+gpt_entity_particular(): entity list: 
+ ['Rock and Roll Hall of Fame', 'Korea', 'Verrazzano-Narrows Bridge', 'Yonkers', 'Battle of Fort Washington', 'Stonewall Inn', 'Thriller', 'Gentrification', 'Conrad Murray', 'Sultan Muzaffar Khan', 'United Negro College Fund', 'Bushwick', 'Hudson River', 'Statue of Liberty', 'Democratic National Committee', 'New York University', 'Nasdaq', 'Empire City Casino', 'Khyber Pakhtunkhwa', 'Guatemala', "St. Joseph's Seminary", 'Williamsburg', 'Propofol', 'Elevator factory', 'New York Stock Exchange', 'King of Pop', 'Moonwalk', 'Manhattan', 'Ridge Hill Mall', 'Mick Jagger', 'Music genres', 'Marble Hill', 'United Nations', 'ATV Music catalog', 'Muzaffarabad District', 'Pope John Paul II', 'European settlement', 'Columbia University', 'Limited-access roads', 'Pope Benedict XVI', 'Central Park', 'Florentine explorer', 'Westchester County']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Manhattan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Central Park
+European settlement
+trading post
+Dutch colonists
+Muzaffarabad
+Kashmir
+Verrazzano-Narrows Bridge
+Bushwick
+Michael Jackson
+American Music Awards
+Favorite Soul/R&B Album
+Muzaffarabad District
+Khyber Pakhtunkhwa
+Yonkers Raceway
+Empire City Casino
+limited-access roads
+St. Joseph's Seminary
+estate
+ATV Music catalog
+Sony
+King of Pop
+Statue of Liberty
+New York Harbor
+Yonkers
+Stonewall Inn
+Greenwich Village
+Mahattan
+New York City
+Gettty Square
+Stuyvesant
+New York metropolitan area
+Rock and Roll Hall of Fame
+	Columbia University
+New York University
+personal transportation
+Manhattan
+Carnegie Library
+attempts to buy ATV Music
+Sacred Heart Church
+Hudson River
+New York Stock Exchange
+Nasdaq
+Italian immigrants
+east New York
+Giovanni da Verrazzano
+Florentine explorer
+Philipse Manor Hall
+state historic site
+Williamsburg
+democratic National Committee
+Former President Bill Clinton
+Stockholm Street
+Hudson River
+Ridge Hill Mall
+world's first elevator factory in Yonkers
+Thriller album
+United Negro College Fund
+Empire State Building
+Elisha Otis
+United Nations
+Headquarters
+overdose of propofol
+Joe Jackson
+Puerto Rico, Dominican Republic, Mexico
+Continental Army
+Battle of Fort Washington
+Sultan Muzaffar Khan
+Westchester County, New York
+
+gpt_entity_particular(): entity list: 
+ ['Gettty Square', 'Sacred Heart Church', 'Rock and Roll Hall of Fame', 'Stockholm Street', 'limited-access roads', 'Verrazzano-Narrows Bridge', 'Yonkers', 'Mahattan', 'Stonewall Inn', 'Battle of Fort Washington', 'Sultan Muzaffar Khan', 'Favorite Soul/R&B Album', 'Bushwick', 'Hudson River', 'Muzaffarabad', 'United Negro College Fund', 'Statue of Liberty', 'personal transportation', 'east New York', 'Thriller album', 'Joe Jackson', 'Puerto Rico, Dominican Republic, Mexico', 'Continental Army', 'New York University', 'Carnegie Library', 'Nasdaq', 'Empire State Building', 'Giovanni da Verrazzano', 'Empire City Casino', 'attempts to buy ATV Music', 'Khyber Pakhtunkhwa', 'Philipse Manor Hall', 'state historic site', 'Yonkers Raceway', "St. Joseph's Seminary", 'Williamsburg', 'Westchester County, New York', 'Dutch colonists', 'Greenwich Village', 'New York Stock Exchange', 'American Music Awards', '\tColumbia University', 'democratic National Committee', 'Stuyvesant', 'Sony', 'King of Pop', 'New York Harbor', 'Manhattan', 'Ridge Hill Mall', 'Elisha Otis', "world's first elevator factory in Yonkers", 'Italian immigrants', 'trading post', 'Michael Jackson', 'New York metropolitan area', 'Former President Bill Clinton', 'United Nations', 'Headquarters', 'overdose of propofol', 'ATV Music catalog', 'Muzaffarabad District', 'European settlement', 'Florentine explorer', 'Central Park', 'New York City', 'estate', 'Kashmir']
+
+gpt_entity_particular(): filtered entity: 
+ ['Statue of Liberty', 'Empire State Building', 'Greenwich Village', 'Central Park', 'New York City']
+After GPT, entity:  {'Paul', 'Building', 'Ridge', 'Committee', "Jackson's", 'Washington', 'Michael', 'County', 'Bushwick', 'Yonkers,', 'Hudson River', 'Statue of Liberty', 'Highland', 'Harbor', 'Nasdaq', 'Philipse', 'States', 'Puerto', 'Conrad', 'Guatemala', 'Exchange', 'Liberty', 'National', 'II', 'Jersey', 'Winfrey', 'Peter', 'Empire', 'Park', 'XVI', 'Brownsville', 'New', 'Stonewall', 'Verrazzano', 'Democratic', 'Rico', '"Marble', 'Marty', 'Central', 'Stuyvesant', 'Motown', 'Clinton', 'Mexico', 'Mick', 'Stock', 'Benedict', 'Murray', 'Greenwich', 'State', 'Stockholm', 'Hudson', 'Mall', 'Charles', 'Continental', 'Inn', '"Khyber', 'Narrows', 'Jagger', 'Getty', 'York', 'Elisha', 'Dominican', 'Westchester', 'Pop', 'Korea', 'Statue', 'Yonkers', 'Columbia', 'Bernie', 'Kashmir', 'Muzaffarabad', 'Bedford', 'Fund', 'Hall', 'Sanders', 'Bushwick,', 'Roll', 'Army', 'Empire State Building', 'Fame', 'Carnegie', 'Village', 'The Statue of Liberty', 'Joseph', 'River', 'John', 'Brooklyn', 'Bridge', 'Joe', 'McCartney', 'Williamsburg', 'College', 'Azad Kashmir', 'Greenwich Village', 'Otis', 'City', 'Street', 'Fort', 'Sony', '"King', 'University', 'Republic', 'Bandier', 'Manhattan', 'Rock', 'Negro', 'da', 'Azad', 'Square', 'Oprah', 'Bill', 'United', 'United Nations', 'Manor', 'Hill', 'Raceway', 'Battle', 'Central Park', 'New York City', 'Andrew', 'Giovanni', 'Pakhtunkhwa', 'Pope', 'Jackson'}
+Total time:  259.6757917404175
+Entity conversion done on 1_10 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_10_entity_conversion_hash.json. Check the entity.
+ In which city's seminary would you find the institution where both successor and predecessor to the individual 06A 042 performed for made visits?
+
+
+
+Done. Check final_query/id_1_10_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_10_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_10_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_10_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_10_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_10_final_result_ratio25_unmasked.txt

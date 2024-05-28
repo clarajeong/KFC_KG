@@ -1,0 +1,147 @@
+Got argument: Mexico, 2, 2_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Mexico", "shares maritime borders with", "the Pacific Ocean")', 'start word': 'Mexico', 'end word': 'Pacific Ocean', 'source': {'name': 'Mexico', 'line': 5}, 'cpnet': {'start word': 'mexico', 'end word': 'pacific_ocean'}}
+
+utils/question.py extract_hops(Pacific Ocean, [], ['Mexico']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Pacific_Ocean_info.json file
+extract_info(Pacific Ocean) Start.
+utils/preprocess.py extract_info(): Checking good links on Pacific Ocean
+Arctic Ocean is Geography
+1 / 30 )  Arctic Ocean Arctic Ocean arctic_ocean
+Southern Ocean is Geography
+2 / 30 )  Southern Ocean Southern Ocean southern_ocean
+Americas is Geography
+3 / 30 )  Americas Americas americas
+Ocean is Geography
+4 / 30 )  World Ocean Ocean ocean
+Land and water hemispheres is Geography
+5 / 30 )  Water Hemisphere Land and water hemispheres land_hemisphere
+Western Hemisphere is Geography
+6 / 30 )  Western Hemisphere Western Hemisphere western_hemisphere
+Pole of inaccessibility is Geography
+7 / 30 )  oceanic pole of inaccessibility Pole of inaccessibility arctic_pole
+Equator is Geography
+8 / 30 )  equator Equator equator
+International Date Line is Geography
+9 / 30 )  International Date Line International Date Line international_date_line
+North America is Geography
+10 / 30 )  North America North America north_america
+Oceania is Geography
+11 / 30 )  Oceania Oceania oceania
+Challenger Deep is Geography
+12 / 30 )  Challenger Deep Challenger Deep challenger_deep
+Mariana Trench is Geography
+13 / 30 )  Mariana Trench Mariana Trench mariana_trench
+Southern Hemisphere is Geography
+14 / 30 )  Southern Hemisphere Southern Hemisphere southern_hemisphere
+Philippine Sea is Geography
+15 / 30 )  Philippine Sea Philippine Sea philippine_sea
+South China Sea is Geography
+16 / 30 )  South China Sea South China Sea south_china_sea
+East China Sea is Geography
+17 / 30 )  East China Sea East China Sea east_china_sea
+Sea of Japan is Geography
+18 / 30 )  Sea of Japan Sea of Japan sea_of_japan
+Sea of Okhotsk is Geography
+19 / 30 )  Sea of Okhotsk Sea of Okhotsk sea_of_okhotsk
+Bering Sea is Geography
+20 / 30 )  Bering Sea Bering Sea bering_sea
+Gulf of Alaska is Geography
+21 / 30 )  Gulf of Alaska Gulf of Alaska gulf_of_alaska
+Tasman Sea is Geography
+22 / 30 )  Tasman Sea Tasman Sea tasman_sea
+Coral Sea is Geography
+23 / 30 )  Coral Sea Coral Sea coral_sea
+Vasco Núñez de Balboa is People
+24 / 30 )  Vasco Núñez de Balboa Vasco Núñez de Balboa vasco_nunez_de_balboa
+Isthmus of Panama is Geography
+25 / 30 )  Isthmus of Panama Isthmus of Panama isthmus_of_panama
+Ferdinand Magellan is People
+26 / 30 )  Ferdinand Magellan Ferdinand Magellan ferdinand_magellan
+Australia  is Geography
+27 / 30 )  Australia Australia  commonwealth_of_australia
+Atoll is Geography
+28 / 30 )  atolls Atoll atoll
+New Guinea is Geography
+29 / 30 )  New Guinea New Guinea new_guinea
+Taiwan is Geography
+30 / 30 )  Taiwan Taiwan taiwan
+extract_triplet(Pacific Ocean)
+Got GPT's response. String length : 1632
+subject_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+object_words:  [['Arctic Ocean', 'Arctic Ocean', 'arctic_ocean'], ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+object_words:  [['Southern Ocean', 'Southern Ocean', 'southern_ocean'], ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+object_words:  [['Americas', 'Americas', 'americas']]
+subject_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+object_words:  [['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Water Hemisphere', 'Land and water hemispheres', 'land_hemisphere']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Western Hemisphere', 'Western Hemisphere', 'western_hemisphere']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['oceanic pole of inaccessibility', 'Pole of inaccessibility', 'arctic_pole']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean')]
+subject_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+object_words:  [['International Date Line', 'International Date Line', 'international_date_line']]
+subject_words:  [['North America', 'North America', 'north_america']]
+object_words:  []
+subject_words:  [['Oceania', 'Oceania', 'oceania']]
+object_words:  []
+subject_words:  [['Challenger Deep', 'Challenger Deep', 'challenger_deep']]
+object_words:  [['Mariana Trench', 'Mariana Trench', 'mariana_trench']]
+subject_words:  [['Challenger Deep', 'Challenger Deep', 'challenger_deep']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Mariana Trench', 'Mariana Trench', 'mariana_trench']]
+object_words:  []
+subject_words:  [['Southern Hemisphere', 'Southern Hemisphere', 'southern_hemisphere']]
+object_words:  []
+subject_words:  [['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['South China Sea', 'South China Sea', 'south_china_sea']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['East China Sea', 'East China Sea', 'east_china_sea']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Sea of Japan', 'Sea of Japan', 'sea_of_japan']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Sea of Okhotsk', 'Sea of Okhotsk', 'sea_of_okhotsk']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Bering Sea', 'Bering Sea', 'bering_sea']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Gulf of Alaska', 'Gulf of Alaska', 'gulf_of_alaska']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Tasman Sea', 'Tasman Sea', 'tasman_sea']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Coral Sea', 'Coral Sea', 'coral_sea']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Vasco Núñez de Balboa', 'Vasco Núñez de Balboa', 'vasco_nunez_de_balboa']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Isthmus of Panama', 'Isthmus of Panama', 'isthmus_of_panama']]
+object_words:  [['Vasco Núñez de Balboa', 'Vasco Núñez de Balboa', 'vasco_nunez_de_balboa']]
+subject_words:  [['Ferdinand Magellan', 'Ferdinand Magellan', 'ferdinand_magellan']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Australia', 'Australia ', 'commonwealth_of_australia']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['atolls', 'Atoll', 'atoll']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['New Guinea', 'New Guinea', 'new_guinea']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [['Taiwan', 'Taiwan', 'taiwan']]
+object_words:  [(None, 'Pacific Ocean', 'pacific_ocean'), ['World Ocean', 'Ocean', 'ocean']]
+second_hop:  {'triplet': '("Pacific Ocean", "extends to", "Southern Ocean")', 'start word': 'Pacific Ocean', 'end word': 'Ocean', 'source': {'name': 'Pacific Ocean', 'line': 2}, 'cpnet': {'start word': 'pacific_ocean', 'end word': 'ocean'}}
+
+utils/question.py extract_hops(Ocean, [], ['Mexico', 'Pacific Ocean']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Ocean_info.json file
+third_hop:  {'triplet': '("Sea", "interconnected system includes", "Indian Ocean")', 'start word': 'Ocean', 'end word': 'Sea', 'source': {'name': 'Sea', 'line': 11}, 'cpnet': {'start word': 'ocean', 'end word': 'sea'}}
+generate_question(2_6, ['("Mexico", "shares maritime borders with", "the Pacific Ocean")', '("Pacific Ocean", "extends to", "Southern Ocean")', '("Sea", "interconnected system includes", "Indian Ocean")'], ['Pacific Ocean', 'Ocean', 'Sea'], [('Mexico', 'Pacific Ocean'), ('Pacific Ocean', 'Ocean'), ('Ocean', 'Sea')], Sea, [{'name': 'Mexico', 'line': 5}, {'name': 'Pacific Ocean', 'line': 2}, {'name': 'Sea', 'line': 11}]) called
+GPT output is:  Q: What type of interconnected system includes the body of water to which Mexico's western maritime boundaries extend southward?
+A: Sea
+final_choice(Sea, options = 5) started
+[]
+entity_type(Sea) called

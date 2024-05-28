@@ -1,0 +1,1056 @@
+Got argument: Immanuel Kant, 6, 6_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop1:  {'triplet': '("Lithuania", "northern border of", "Kaliningrad Oblast")', 'start word': 'Kaliningrad', 'end word': 'Lithuania', 'source': {'name': 'Königsberg', 'line': 31}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'lithuania'}}
+
+utils/question.py extract_hops(Lithuania, [], ['Immanuel Kant', 'Kaliningrad']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Lithuania_info.json file
+last_hop:  {'triplet': '("Kaunas", "is a major city in", "Lithuania")', 'start word': 'Lithuania', 'end word': 'Kaunas', 'source': {'name': 'Lithuania', 'line': 9}, 'cpnet': {'start word': 'lithuania', 'end word': 'kaunas'}}
+
+utils/question.py extract_hops(Kaliningrad, ['Lithuania'], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop2:  {'triplet': '("Kaliningrad", "former German city of", "Königsberg")', 'start word': 'Kaliningrad', 'end word': 'Königsberg', 'source': {'name': 'Königsberg', 'line': 25}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'königsberg'}}
+generate_question(6_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Lithuania", "northern border of", "Kaliningrad Oblast")', '("Kaliningrad", "former German city of", "Königsberg")', '("Kaunas", "is a major city in", "Lithuania")'], ['Immanuel Kant', 'Kaliningrad', 'Kaliningrad', 'Lithuania'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Lithuania'), ('Kaliningrad', 'Königsberg'), ('Lithuania', 'Kaunas')], Immanuel Kant, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Königsberg', 'line': 31}, {'name': 'Königsberg', 'line': 25}, {'name': 'Lithuania', 'line': 9}]) called
+GPT output is:  Q: Who is buried in the former Königsberg, which is a city adjacent to the northern border of the country where Kaunas is a major city?
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called
+Immanuel Kant is People
+check_matchscore(Immanuel Kant, German epistemologists):  0.0
+choose_by_wiki_recur(German epistemologists)
+   Pages in German epistemologists: ['Theodor W. Adorno', 'Hans Albert', 'Julius Bahnsen', 'Bruno Bauch', 'Peter Baumann (philosopher)', 'Jakob Böhme', 'Moritz Brasch', 'Wilhelm Dilthey', 'Ludwig Feuerbach', 'Alexander Fidora', 'Eugen Fink', 'Gottlob Frege', 'Bruno von Freytag-Löringhoff', 'Moritz Geiger', 'Ernst von Glasersfeld', 'Jürgen Habermas', 'Martin Heidegger', 'Dieter Henrich', 'Johann Friedrich Herbart', 'Max Horkheimer', 'Immanuel Kant', 'Björn Kraus', 'Karl Christian Friedrich Krause', 'Martin Kusch', 'Christian List', 'Niklas Luhmann', 'Friedrich Nietzsche', 'Rudolf Otto', 'Friedrich Paulsen', 'Hans Reichenbach', 'Ernst Christian Gottlieb Reinhold', 'Heinrich Rickert', 'Hartmut Rosa', 'Max Scheler', 'Friedrich Wilhelm Joseph Schelling', 'Friedrich Schlegel', 'Friedrich Schleiermacher', 'Arthur Schopenhauer', 'Oswald Spengler', 'Wolfgang Spohn', 'Wilhelm Windelband', 'Eduard Zeller']
+      Friedrich Nietzsche in ['Friedrich Nietzsche', 'Björn Kraus', 'Johann Friedrich Herbart', 'Friedrich Schlegel']
+Friedrich Nietzsche is People
+      Björn Kraus in ['Friedrich Nietzsche', 'Björn Kraus', 'Johann Friedrich Herbart', 'Friedrich Schlegel']
+      Johann Friedrich Herbart in ['Friedrich Nietzsche', 'Björn Kraus', 'Johann Friedrich Herbart', 'Friedrich Schlegel', 'Eduard Zeller']
+Johann Friedrich Herbart is People
+      Friedrich Schlegel in ['Friedrich Nietzsche', 'Björn Kraus', 'Johann Friedrich Herbart', 'Friedrich Schlegel', 'Eduard Zeller']
+Friedrich Schlegel is People
+      Eduard Zeller in ['Friedrich Nietzsche', 'Björn Kraus', 'Johann Friedrich Herbart', 'Friedrich Schlegel', 'Eduard Zeller', 'Jakob Böhme']
+      Jakob Böhme in ['Friedrich Nietzsche', 'Björn Kraus', 'Johann Friedrich Herbart', 'Friedrich Schlegel', 'Eduard Zeller', 'Jakob Böhme', 'Bruno von Freytag-Löringhoff']
+Jakob Böhme is People
+      Bruno von Freytag-Löringhoff in ['Friedrich Nietzsche', 'Björn Kraus', 'Johann Friedrich Herbart', 'Friedrich Schlegel', 'Eduard Zeller', 'Jakob Böhme', 'Bruno von Freytag-Löringhoff']
+Bruno von Freytag-Löringhoff is People
+      Gottlob Frege in ['Friedrich Nietzsche', 'Björn Kraus', 'Johann Friedrich Herbart', 'Friedrich Schlegel', 'Eduard Zeller', 'Jakob Böhme', 'Bruno von Freytag-Löringhoff', 'Gottlob Frege']
+Gottlob Frege is People
+['Friedrich Nietzsche', 'Johann Friedrich Herbart', 'Jakob Böhme', 'Gottlob Frege']
+Ended after 2.5 hierarchy
+(2.5, ['Jakob Böhme', 'Gottlob Frege', 'Friedrich Nietzsche', 'Johann Friedrich Herbart'])
+
+extract_info(Friedrich Nietzsche) Start.
+utils/preprocess.py extract_info(): Checking good links on Friedrich Nietzsche
+Zoroaster is People
+1 / 30 )  Zoroaster Zoroaster zoroaster
+Arthur Schopenhauer is People
+2 / 30 )  Arthur Schopenhauer Arthur Schopenhauer arthur_schopenhauer
+Ralph Waldo Emerson is People
+3 / 30 )  Ralph Waldo Emerson Ralph Waldo Emerson ralph_waldo_emerson
+Richard Wagner is People
+4 / 30 )  Richard Wagner Richard Wagner richard_wagner
+Johann Wolfgang von Goethe is People
+5 / 30 )  Johann Wolfgang von Goethe Johann Wolfgang von Goethe johann_wolfgang_von_goethe
+Walter Kaufmann  is People
+6 / 30 )  Walter Kaufmann Walter Kaufmann  decidophobia
+Georges Bataille is People
+7 / 30 )  Georges Bataille Georges Bataille bataillean
+Röcken is Geography
+8 / 30 )  Röcken Röcken rocken
+Leipzig is Geography
+9 / 30 )  Leipzig Leipzig leipzig
+University of Bonn is Geography
+10 / 30 )  University of Bonn University of Bonn university_of_bonn
+Franconia is Geography
+11 / 30 )  Frankonia Franconia franconia
+Ludwig Feuerbach is People
+12 / 30 )  Ludwig Feuerbach Ludwig Feuerbach ludwig_feuerbach
+s:Schopenhauer as Educator is People
+13 / 30 )  Schopenhauer as Educator s:Schopenhauer as Educator schopenhauer
+Immanuel Kant is People
+14 / 30 )  Kant Immanuel Kant immanuel_kant
+Charles Darwin is People
+15 / 30 )  Charles Darwin Charles Darwin charles_darwin
+Basel is Geography
+16 / 30 )  Basel Basel basel
+German Empire is Geography
+17 / 30 )  German Empire German Empire german_empire
+Otto von Bismarck is Geography
+18 / 30 )  Otto von Bismarck Otto von Bismarck otto_von_bismarck
+Jacob Burckhardt is People
+19 / 30 )  Jacob Burckhardt Jacob Burckhardt burckhardtian
+Franz Liszt is People
+20 / 30 )  Franz Liszt Franz Liszt franz_liszt
+Genoa is Geography
+21 / 30 )  Genoa Genoa genoa
+Turin is Geography
+22 / 30 )  Turin Turin turin
+Nice is Geography
+23 / 30 )  Nice Nice nice
+Tunis is Geography
+24 / 30 )  Tunis Tunis tunis
+Epicurus is People
+25 / 30 )  Epicurus Epicurus epicurus
+Fyodor Dostoevsky is People
+26 / 30 )  Fyodor Dostoyevsky Fyodor Dostoevsky fyodor_dostoevsky
+Søren Kierkegaard is People
+27 / 30 )  Søren Kierkegaard Søren Kierkegaard kierkegaard
+Copenhagen is Geography
+28 / 30 )  Copenhagen Copenhagen copenhagen
+August Strindberg is People
+29 / 30 )  August Strindberg August Strindberg august_strindberg
+Wilhelm II is People
+30 / 30 )  Wilhelm Wilhelm II wilhelm_ii
+extract_triplet(Friedrich Nietzsche)
+Got GPT's response. String length : 3579
+subject_words:  [(None, 'Friedrich Nietzsche', 'friedrich_nietzsche')]
+object_words:  []
+subject_words:  [(None, 'Friedrich Nietzsche', 'friedrich_nietzsche')]
+object_words:  [['Basel', 'Basel', 'basel']]
+subject_words:  [(None, 'Friedrich Nietzsche', 'friedrich_nietzsche')]
+object_words:  []
+subject_words:  [(None, 'Friedrich Nietzsche', 'friedrich_nietzsche')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Zoroaster', 'Zoroaster', 'zoroaster'], ['Arthur Schopenhauer', 'Arthur Schopenhauer', 'arthur_schopenhauer']]
+subject_words:  []
+object_words:  [['Ralph Waldo Emerson', 'Ralph Waldo Emerson', 'ralph_waldo_emerson'], ['Richard Wagner', 'Richard Wagner', 'richard_wagner']]
+['', 'Elisabeth became the curator and editor of', "Nietzsche's manuscripts", '']
+subject_words:  [['Georges Bataille', 'Georges Bataille', 'bataillean']]
+object_words:  []
+subject_words:  []
+object_words:  [['Röcken', 'Röcken', 'rocken']]
+subject_words:  []
+object_words:  [['Wilhelm', 'Wilhelm II', 'wilhelm_ii']]
+subject_words:  []
+object_words:  [['University of Bonn', 'University of Bonn', 'university_of_bonn']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Turin', 'Turin', 'turin']]
+subject_words:  []
+object_words:  [['Tunis', 'Tunis', 'tunis']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Copenhagen', 'Copenhagen', 'copenhagen']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Röcken', 'Röcken', 'rocken']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+['', "Nietzsche's", 'early work', 'critiqued', 'Schopenhauer and Wagner', '']
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+['', "Nietzsche's", 'reputation was revived after World War II due to accurate translations and interpretations', '']
+extract_info(Gottlob Frege) Start.
+utils/preprocess.py extract_info(): Checking good links on Gottlob Frege
+Giuseppe Peano is People
+1 / 30 )  Giuseppe Peano Giuseppe Peano peano
+Bertrand Russell is People
+2 / 30 )  Bertrand Russell Bertrand Russell bertrand_russell
+Ludwig Wittgenstein is People
+3 / 30 )  Ludwig Wittgenstein Ludwig Wittgenstein ludwig_wittgenstein
+Aristotle is People
+4 / 30 )  Aristotle Aristotle aristotle
+Philip Melanchthon is People
+5 / 30 )  Philipp Melanchthon Philip Melanchthon melanchthon
+Große Stadtschule Wismar  is People
+6 / 30 )  Große Stadtschule Wismar Große Stadtschule Wismar  fregean
+de:Große Stadtschule Wismar is People
+7 / 30 )  de de:Große Stadtschule Wismar fregean
+North German Confederation is Geography
+8 / 30 )  North German Confederation North German Confederation north_german_confederation
+Wilhelm Eduard Weber is People
+9 / 30 )  Wilhelm Eduard Weber Wilhelm Eduard Weber wilhelm_eduard_weber
+Kurt Gödel is People
+10 / 30 )  Kurt Gödel Kurt Gödel kurt_godel
+Alfred Tarski is People
+11 / 30 )  Alfred Tarski Alfred Tarski tarski
+George Boole is People
+12 / 30 )  George Boole George Boole george_boole
+Rudolf Carnap is People
+13 / 30 )  Rudolf Carnap Rudolf Carnap carnap
+United Kingdom is Geography
+14 / 30 )  United Kingdom United Kingdom united_kingdom
+Saul Kripke is People
+15 / 30 )  Saul Kripke Saul Kripke kripkean
+Otto von Bismarck is Geography
+16 / 30 )  Bismarck Otto von Bismarck otto_von_bismarck
+Adolf Hitler is People
+17 / 30 )  Adolf Hitler Adolf Hitler adolf_hitler
+extract_triplet(Gottlob Frege)
+Got GPT's response. String length : 1805
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  []
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  []
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  [['Aristotle', 'Aristotle', 'aristotle']]
+subject_words:  [['Giuseppe Peano', 'Giuseppe Peano', 'peano']]
+object_words:  []
+subject_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+object_words:  []
+subject_words:  [['Ludwig Wittgenstein', 'Ludwig Wittgenstein', 'ludwig_wittgenstein']]
+object_words:  []
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  []
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  []
+subject_words:  [['Philipp Melanchthon', 'Philip Melanchthon', 'melanchthon']]
+object_words:  []
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  [['Große Stadtschule Wismar', 'Große Stadtschule Wismar ', 'fregean']]
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  [['North German Confederation', 'North German Confederation', 'north_german_confederation']]
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  [['North German Confederation', 'North German Confederation', 'north_german_confederation']]
+subject_words:  [['Wilhelm Eduard Weber', 'Wilhelm Eduard Weber', 'wilhelm_eduard_weber']]
+object_words:  [(None, 'Gottlob Frege', 'fregean')]
+subject_words:  [['Kurt Gödel', 'Kurt Gödel', 'kurt_godel']]
+object_words:  []
+subject_words:  [['Alfred Tarski', 'Alfred Tarski', 'tarski']]
+object_words:  []
+subject_words:  [['George Boole', 'George Boole', 'george_boole']]
+object_words:  []
+subject_words:  [['Rudolf Carnap', 'Rudolf Carnap', 'carnap']]
+object_words:  []
+subject_words:  []
+object_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell'], ['Ludwig Wittgenstein', 'Ludwig Wittgenstein', 'ludwig_wittgenstein']]
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+subject_words:  [['Saul Kripke', 'Saul Kripke', 'kripkean']]
+object_words:  []
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  [['Bismarck', 'Otto von Bismarck', 'otto_von_bismarck']]
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  [['Adolf Hitler', 'Adolf Hitler', 'adolf_hitler']]
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  []
+subject_words:  [(None, 'Gottlob Frege', 'fregean')]
+object_words:  []
+extract_info(Jakob Böhme) Start.
+utils/preprocess.py extract_info(): Checking good links on Jakob Böhme
+Georg Wilhelm Friedrich Hegel is People
+1 / 30 )  Hegel Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Görlitz is Geography
+2 / 30 )  Görlitz Görlitz görlitz
+Upper Lusatia is Geography
+3 / 30 )  Upper Lusatia Upper Lusatia upper_lusatia
+Paracelsus is Geography
+4 / 30 )  Paracelsus Paracelsus paracelsus
+Prague is Geography
+5 / 30 )  Prague Prague prague
+Gregorius Richter  is People
+6 / 30 )  Gregorius Richter Gregorius Richter  jakob_boehme
+Dresden is Geography
+7 / 30 )  Dresden Dresden dresden
+Jakob Böhme is People
+8 / 30 )  Behmenists Jakob Böhme jakob_boehme
+Amsterdam is Geography
+9 / 30 )  Amsterdam Amsterdam amsterdam
+Eve is People
+10 / 30 )  Eve Eve eve
+Adam is People
+11 / 30 )  Adam Adam adam
+Martin Luther is People
+12 / 30 )  Luther Martin Luther martin_luther
+Legnica is Geography
+13 / 30 )  Liegnitz Legnica legnica
+Holy Land is Incident
+14 / 30 )  Holy Land Holy Land holy_land
+Thuringia is Geography
+15 / 30 )  Thuringian Thuringia thuringia
+William Blake is People
+16 / 30 )  William Blake William Blake william_blake
+Michelangelo is People
+17 / 30 )  Michel Angelo Michelangelo michelangelo
+Baruch Spinoza is People
+18 / 30 )  Opera Posthuma Baruch Spinoza spinoza
+John Milton is People
+19 / 30 )  John Milton John Milton john_milton
+Samuel Taylor Coleridge is People
+20 / 30 )  Coleridge Samuel Taylor Coleridge samuel_taylor_coleridge
+Arthur Schopenhauer is People
+21 / 30 )  Schopenhauer Arthur Schopenhauer arthur_schopenhauer
+George Gurdjieff is People
+22 / 30 )  George Gurdjieff George Gurdjieff gurdjieffian
+extract_triplet(Jakob Böhme)
+Got GPT's response. String length : 2261
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Hegel', 'Georg Wilhelm Friedrich Hegel', 'georg_wilhelm_friedrich_hegel']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Görlitz', 'Görlitz', 'görlitz'], ['Upper Lusatia', 'Upper Lusatia', 'upper_lusatia']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Paracelsus', 'Paracelsus', 'paracelsus']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Prague', 'Prague', 'prague']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Gregorius Richter', 'Gregorius Richter ', 'jakob_boehme']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Görlitz', 'Görlitz', 'görlitz']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Görlitz', 'Görlitz', 'görlitz']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['William Blake', 'William Blake', 'william_blake']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Amsterdam', 'Amsterdam', 'amsterdam']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Paracelsus', 'Paracelsus', 'paracelsus']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['George Gurdjieff', 'George Gurdjieff', 'gurdjieffian']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Luther', 'Martin Luther', 'martin_luther']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme')]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Prague', 'Prague', 'prague']]
+subject_words:  []
+object_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+subject_words:  [['Gregorius Richter', 'Gregorius Richter ', 'jakob_boehme']]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Dresden', 'Dresden', 'dresden']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Dresden', 'Dresden', 'dresden']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Dresden', 'Dresden', 'dresden']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme')]
+object_words:  [['Gregorius Richter', 'Gregorius Richter ', 'jakob_boehme']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme')]
+object_words:  []
+subject_words:  [['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Amsterdam', 'Amsterdam', 'amsterdam']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme')]
+object_words:  []
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['William Blake', 'William Blake', 'william_blake']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Michel Angelo', 'Michelangelo', 'michelangelo']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme')]
+object_words:  [['Opera Posthuma', 'Baruch Spinoza', 'spinoza']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['John Milton', 'John Milton', 'john_milton']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['George Gurdjieff', 'George Gurdjieff', 'gurdjieffian']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Schopenhauer', 'Arthur Schopenhauer', 'arthur_schopenhauer']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['George Gurdjieff', 'George Gurdjieff', 'gurdjieffian']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Coleridge', 'Samuel Taylor Coleridge', 'samuel_taylor_coleridge']]
+subject_words:  [(None, 'Jakob Böhme', 'jakob_boehme'), ['Behmenists', 'Jakob Böhme', 'jakob_boehme']]
+object_words:  [['Liegnitz', 'Legnica', 'legnica']]
+subject_words:  [['Liegnitz', 'Legnica', 'legnica']]
+object_words:  [['Holy Land', 'Holy Land', 'holy_land']]
+extract_info(Johann Friedrich Herbart) Start.
+utils/preprocess.py extract_info(): Checking good links on Johann Friedrich Herbart
+Immanuel Kant is People
+1 / 30 )  post-Kantian Immanuel Kant immanuel_kant
+Georg Wilhelm Friedrich Hegel is People
+2 / 30 )  Hegel Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Johann Gottlieb Fichte is People
+3 / 30 )  Fichte Johann Gottlieb Fichte fichte
+Interlaken is Geography
+4 / 30 )  Interlaken Interlaken interlaken
+Switzerland is Geography
+5 / 30 )  Switzerland Switzerland switzerland
+Johann Heinrich Pestalozzi is People
+6 / 30 )  Pestalozzi Johann Heinrich Pestalozzi pestalozzian
+Göttingen is Geography
+7 / 30 )  Göttingen Göttingen göttingen
+John Locke is People
+8 / 30 )  Locke John Locke john_locke
+Gottfried Wilhelm Leibniz is People
+9 / 30 )  Leibniz's Gottfried Wilhelm Leibniz gottfried_wilhelm_leibniz
+Isaac Newton is People
+10 / 30 )  Newton's Isaac Newton isaac_newton
+extract_triplet(Johann Friedrich Herbart)
+Got GPT's response. String length : 1267
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  []
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  [['Hegel', 'Georg Wilhelm Friedrich Hegel', 'georg_wilhelm_friedrich_hegel']]
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  [['Fichte', 'Johann Gottlieb Fichte', 'fichte']]
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  [['Interlaken', 'Interlaken', 'interlaken']]
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  [['Switzerland', 'Switzerland', 'switzerland'], ['Pestalozzi', 'Johann Heinrich Pestalozzi', 'pestalozzian']]
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  [['Göttingen', 'Göttingen', 'göttingen']]
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  [["Leibniz's", 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz']]
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  [["Newton's", 'Isaac Newton', 'isaac_newton']]
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  []
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  []
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  [["Leibniz's", 'Gottfried Wilhelm Leibniz', 'gottfried_wilhelm_leibniz']]
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  []
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  []
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  []
+subject_words:  [(None, 'Johann Friedrich Herbart', 'johann_friedrich_herbart')]
+object_words:  []
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Kaunas", "is a major city in", "Lithuania")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Lithuania", "is located in", "the Baltic region of Europe")\n', '("Lithuania", "lies on", "the eastern shore of the Baltic Sea")\n', '("Lithuania", "borders", "Latvia to the north")\n', '("Lithuania", "borders", "Belarus to the east and south")\n', '("Lithuania", "borders", "Poland to the south")\n', '("Lithuania", "borders", "Russia to the southwest")\n', '("Lithuania", "has a maritime border with", "Sweden to the west")\n', '("Vilnius", "is the capital and largest city of", "Lithuania")\n', '("Klaipėda", "is a major city in", "Lithuania")\n', '("Šiauliai", "is a major city in", "Lithuania")\n', '("Panevėžys", "is a major city in", "Lithuania")\n', '("Lithuanians", "speak", "Lithuanian")\n', '("Lithuanian language", "is part of", "the Baltic branch of the Indo-European language family")\n', '("Lithuania", "was united by", "Mindaugas in 1230s")\n', '("Kingdom of Lithuania", "was formed by", "Mindaugas on 6 July 1253")\n', '("Grand Duchy of Lithuania", "was the largest country in Europe by", "the 14th century")\n', '("Polish-Lithuanian Commonwealth", "was formed in", "1569")\n', '("Lithuanian independence", "was declared in", "1918")\n', '("Lithuanian Soviet Socialist Republic", "was proclaimed", "on 21 July 1940")\n', '("Lithuania", "reestablished its independence from", "the Soviet Union on 11 March 1990")\n', '("Lithuania", "is a member of", "the European Union")\n', '("Lithuania", "is a member of", "the Council of Europe")\n', '("Lithuania", "is a member of", "NATO")\n', '("Lithuania", "is a member of", "the eurozone")\n', '("Lithuania", "is a member of", "the Nordic Investment Bank")\n', '("Lithuania", "is a member of", "the Schengen Agreement")\n', '("Lithuania", "is a member of", "OECD")\n', '("Lithuania", "participates in", "the Nordic-Baltic Eight regional co-operation format")\n', '("Lietuva", "is recorded in", "the Quedlinburg Chronicle of 9 March 1009")\n', '("Daugava", "is associated with", "Lithuanian history and the early state")\n', '("Lithuania", "experienced", "raids by the Vikings in the 9th to 11th centuries")\n', '("Kievan Rus\'", "collected tribute from", "Lithuanian territories in the 10–11th centuries")\n', '("The Battle of Saulė", "took place near", "Šiauliai")\n', '("Kyiv", "was brought under the control of", "the expanding Grand Duchy of Lithuania after 1362")\n', '("Lithuania", "became a direct neighbor and rival of", "the Grand Duchy of Moscow")\n', '("Tsar Boris Godunov", "extended a truce with", "the Polish–Lithuanian Commonwealth in 1600")\n', '("German Empire", "was associated with", "Lithuania during World War I")\n', '("Courland", "was occupied by", "Germany during World War I")\n', '("Lithuanian Soviet Socialist Republic", "was established after", "World War II")\n', '("East Prussia", "is related to", "Germany and Lithuania\'s historical context")\n', '("Lithuania", "joined the", "European Union\'s single currency on 1 January 2015")\n', '("Lithuania", "joined", "OECD on 4 July 2018")\n', '("Denmark", "collected tribute at times from", "coastal Balts during the 9–11th centuries")\n', '("Lithuania", "was part of", "the larger state of Poland-Lithuania")\n', '("Lithuania", "was part of", "the Russian Empire after the partitions")\n', '("Italy", "has historical connections with", "Nobles from Lithuania")\n', '("Switzerland", "Lithuanian noblemen usually hired chefs from", "Switzerland during historical times")\n', '("Moscow", "is a significant historical reference regarding", "Lithuania")\n', '("Lithuanian language", "has influences from", "Italian artists")\n', '("Daugavpils", "is associated with", "Lithuanian territory during the Grand Duchy of Lithuania")\n', '("Friedrich Nietzsche", "was", "a German philosopher")\n', '("Friedrich Nietzsche", "became the youngest person to hold", "the Chair of Classical Philology at the University of Basel")\n', '("Friedrich Nietzsche", "suffered", "a collapse and after a complete loss of his mental faculties")\n', '("Friedrich Nietzsche", "lived his remaining years in the care of", "his mother and sister Elisabeth Förster-Nietzsche")\n', '("Nietzsche", "died after experiencing", "pneumonia and multiple strokes")\n', '("Nietzsche", "created", "philosophical polemics, poetry, cultural criticism, and fiction")\n', '("Nietzsche", "developed", "the concepts of the Übermensch and the doctrine of eternal return")\n', '("Nietzsche", "drew inspiration from", "figures such as Zoroaster and Arthur Schopenhauer")\n', '("Nietzsche", "was influenced by", "Ralph Waldo Emerson and Richard Wagner")\n', '("Walter Kaufmann, R. J. Hollingdale, and Georges Bataille", "defended", "Nietzsche against the association with fascism and Nazism")\n', '("Nietzsche", "grew up in", "the town of Röcken")\n', '("Nietzsche", "was named after", "King Friedrich Wilhelm IV of Prussia")\n', '("Nietzsche", "attended", "the University of Bonn")\n', '("Nietzsche", "had to resign his position at Basel and was pensioned due to", "health problems")\n', '("Nietzsche", "traveled to climates more conducive to his health", "including Genoa, Rapallo, and Turin")\n', '("Nietzsche", "planned to travel to", "Tunis to view Europe from the outside")\n', '("Nietzsche", "used", "the Hansen Writing Ball due to his failing eyesight")\n', '("Nietzsche", "made contact with the music-critic", "Carl Fuchs")\n', '("Nietzsche", "found affinity with the work of Fyodor Dostoyevsky and Søren Kierkegaard", "and considered visiting Copenhagen to read Kierkegaard with Georg Brandes")\n', '("Nietzsche", "wrote", "Thus Spoke Zarathustra in only ten days while in Rapallo")\n', '("Nietzsche", "suffered from", "mental illness leading to his death")\n', '("Nietzsche\'s insanity", "was originally diagnosed as", "tertiary syphilis and later reconsidered to be possibly dementia, frontotemporal dementia, or CADASIL")\n', '("Nietzsche", "buried beside", "his father at the church in Röcken")\n', '("Nietzsche", "had his writings published posthumously as", "The Will to Power by his sister Elisabeth")\n', '("Nietzsche", "was labelled as", "a \'German philosopher\'")\n', '("Nietzsche", "renounced", "his Prussian citizenship")\n', '("Nietzsche", "believed his ancestors were", "Polish")\n', '("Nietzsche", "claimed to be proud of his", "Polish descent")\n', '("Nietzsche", "was", "never married")\n', '("Nietzsche", "proposed to", "Lou Salomé")\n', '("Nietzsche", "critiqued Christian morality as", "a sign of general decay")\n', '("Nietzsche\'s", "view of tragedy was influenced by", "the poet Hölderlin")\n', '("Nietzsche", "rejected", "the idea of objective reality")\n', '("Nietzsche", "proposed the concept of", "eternal return")\n', '("Nietzsche", "introduced the idea of", "Übermensch in Also Sprach Zarathustra")\n', '("Nietzsche", "read works by", "Kant, Plato, Mill, Schopenhauer, and Spir")\n', '("Nietzsche", "had a thorough knowledge of", "Greek philosophy")\n', '("Nietzsche", "influenced", "philosophers such as Heidegger, Sartre, and Foucault")\n', '("Nietzsche\'s", "ideas were associated with", "anarchism during his lifetime")\n', '("Nietzsche\'s", "philosophy became associated with", "Nazism due to misinterpretation of his work by the Nazis and his sister\'s editing")\n', '("Gottlob Frege", "is known as", "the father of analytic philosophy")\n', '("Gottlob Frege", "is a pioneer in", "the philosophy of language, logic, and mathematics")\n', '("Gottlob Frege", "is considered to be", "the greatest logician since Aristotle")\n', '("Giuseppe Peano", "introduced", "Frege\'s work to later generations")\n', '("Bertrand Russell", "introduced", "Frege\'s work to later generations")\n', '("Ludwig Wittgenstein", "introduced", "Frege\'s work to later generations")\n', '("Gottlob Frege", "wrote the book", "the Foundations of Arithmetic")\n', '("Gottlob Frege", "argues for", "Platonism against psychologism or formalism")\n', '("Philipp Melanchthon", "is an ancestor of", "Frege\'s mother")\n', '("Gottlob Frege", "studied at", "Große Stadtschule Wismar")\n', '("Gottlob Frege", "was a citizen of", "North German Confederation")\n', '("Gottlob Frege", "attended universities Jena and Göttingen in", "North German Confederation")\n', '("Wilhelm Eduard Weber", "was a teacher of", "Gottlob Frege")\n', '("Kurt Gödel", "was influenced by", "Frege\'s work")\n', '("Alfred Tarski", "was influenced by", "Frege\'s work")\n', '("George Boole", "had an approach to logic different from", "Frege")\n', '("Rudolf Carnap", "was a student and admirer of", "Frege")\n', '("Frege\'s work", "spread through", "the writings of Bertrand Russell and Ludwig Wittgenstein")\n', '("Gottlob Frege", "received a letter from", "Bertrand Russell about the paradox")\n', '("Gottlob Frege", "received political opinions opposing from", "Bertrand Russell")\n', '("Saul Kripke", "discussed", "Frege\'s theory of names and necessity")\n', '("Gottlob Frege", "sympathized with", "Bismarck")\n', '("Gottlob Frege", "was an anti-Semitic influenced by", "Adolf Hitler and others")\n', '("Gottlob Frege", "was born in", "Wismar, Mecklenburg-Schwerin")\n', '("Gottlob Frege", "died in", "Bad Kleinen which is now part of Mecklenburg-Vorpommern")\n', '("Jakob Böhme", "is considered", "the first German philosopher by Hegel")\n', '("Jakob Böhme", "was born", "near Görlitz in Upper Lusatia")\n', '("Böhme\'s father", "was", "Lutheran")\n', '("Jakob Böhme", "apprenticed as", "a shoemaker")\n', '("Jakob Böhme", "read works by", "Paracelsus")\n', '("Jakob Böhme", "visited", "Prague")\n', '("Jakob Böhme", "wrote book for", "Gregorius Richter")\n', '("Jakob Böhme", "had mystical experiences in", "Görlitz")\n', '("Jakob Böhme", "was master of craft", "in Görlitz")\n', '("Jakob Böhme", "was mentor to", "Behmenists")\n', '("Jakob Böhme", "influenced", "William Blake")\n', '("Jakob Böhme", "writings published in", "Amsterdam")\n', '("Jakob Böhme", "influenced by", "Paracelsus")\n', '("Jakob Böhme", "influenced", "George Gurdjieff")\n', '("Jakob Böhme", "associated with", "Luther")\n', '("Jakob Böhme\'s mentor", "was", "Abraham Behem")\n', '("Jakob Böhme", "joined group organized by", "Martin Moller")\n', '("Jakob Böhme", "had vision that revealed", "spiritual structure of the world")\n', '("Jakob Böhme", "sold woollen gloves", "to Prague")\n', '("Aurora", "written by", "Jakob Böhme")\n', '("Gregorius Richter", "attacked Aurora", "as being heretical")\n', '("Jakob Böhme", "experienced inner vision about", "unity of the cosmos")\n', '("Jakob Böhme", "visited", "Dresden")\n', '("Jakob Böhme", "stayed with", "court physician in Dresden")\n', '("Jakob Böhme", "was accepted by", "nobility and high clergy in Dresden")\n', '("Jakob Böhme\'s adversary", "was", "Gregorius Richter")\n', '("Jakob Böhme", "fell terminally ill with", "bowel complaint")\n', '("Jakob Böhme", "influenced", "German Romantic philosophy")\n', '("Jakob Böhme\'s followers", "were known as", "Behmenists")\n', '("Behmenists", "published Jakob Böhme\'s work in", "Amsterdam")\n', '("Jakob Böhme\'s works", "were influenced by", "Neoplatonist")\n', '("Jakob Böhme", "influenced", "William Blake")\n', '("Jakob Böhme", "influenced", "Michel Angelo")\n', '("Jakob Böhme\'s influence", "included", "Opera Posthuma")\n', '("Jakob Böhme", "influenced", "John Milton")\n', '("Jakob Böhme", "ideas similar to", "George Gurdjieff")\n', '("Jakob Böhme", "influenced", "Schopenhauer")\n', '("Jakob Böhme", "influenced", "George Gurdjieff")\n', '("Jakob Böhme", "influenced", "Coleridge")\n', '("Jakob Böhme", "mentor and disciple was", "Liegnitz physician Balthasar Walther")\n', '("Liegnitz physician Balthasar Walther", "travelled to", "Holy Land")\n', '("Johann Friedrich Herbart", "is associated with", "post-Kantian philosophy")\n', '("Johann Friedrich Herbart", "contrasts with", "Hegel in relation to aesthetics")\n', '("Johann Friedrich Herbart", "disagreed with", "Fichte at Jena")\n', '("Johann Friedrich Herbart", "tutored in", "Interlaken")\n', '("Johann Friedrich Herbart", "met", "Pestalozzi in Switzerland")\n', '("Johann Friedrich Herbart", "studied at", "Göttingen")\n', '("Johann Friedrich Herbart", "developed philosophy rejecting", "Locke\'s and Leibniz\'s ideas")\n', '("Johann Friedrich Herbart", "was influenced by", "Newton\'s mechanical principles")\n', '("Johann Friedrich Herbart\'s educational philosophy", "is known as", "Herbartianism")\n', '("Johann Friedrich Herbart\'s pedagogy", "emphasized", "connection between individual development and societal contribution")\n', '("Johann Friedrich Herbart", "challenged", "Leibniz\'s monads concept")\n', '("Johann Friedrich Herbart", "saw importance of", "psychology in education")\n', '("Johann Friedrich Herbart\'s ideas about reality", "influenced by", "Leibniz and Newton")\n', '("Johann Friedrich Herbart", "advocated for", "education based on literature and historical stories")\n', '("Johann Friedrich Herbart\'s legacy", "includes", "National Society for the Scientific Study of Education as National Herbart Society")\n']
+range(1, 319) 4
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Kaunas", "is a major city in", "Lithuania")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Lithuania", "is located in", "the Baltic region of Europe")\n', '("Lithuania", "lies on", "the eastern shore of the Baltic Sea")\n', '("Lithuania", "borders", "Latvia to the north")\n', '("Lithuania", "borders", "Belarus to the east and south")\n', '("Lithuania", "borders", "Poland to the south")\n', '("Lithuania", "borders", "Russia to the southwest")\n', '("Lithuania", "has a maritime border with", "Sweden to the west")\n', '("Vilnius", "is the capital and largest city of", "Lithuania")\n', '("Klaipėda", "is a major city in", "Lithuania")\n', '("Šiauliai", "is a major city in", "Lithuania")\n', '("Panevėžys", "is a major city in", "Lithuania")\n', '("Lithuanians", "speak", "Lithuanian")\n', '("Lithuanian language", "is part of", "the Baltic branch of the Indo-European language family")\n', '("Lithuania", "was united by", "Mindaugas in 1230s")\n', '("Kingdom of Lithuania", "was formed by", "Mindaugas on 6 July 1253")\n', '("Grand Duchy of Lithuania", "was the largest country in Europe by", "the 14th century")\n', '("Polish-Lithuanian Commonwealth", "was formed in", "1569")\n', '("Lithuanian independence", "was declared in", "1918")\n', '("Lithuanian Soviet Socialist Republic", "was proclaimed", "on 21 July 1940")\n', '("Lithuania", "reestablished its independence from", "the Soviet Union on 11 March 1990")\n', '("Lithuania", "is a member of", "the European Union")\n', '("Lithuania", "is a member of", "the Council of Europe")\n', '("Lithuania", "is a member of", "NATO")\n', '("Lithuania", "is a member of", "the eurozone")\n', '("Lithuania", "is a member of", "the Nordic Investment Bank")\n', '("Lithuania", "is a member of", "the Schengen Agreement")\n', '("Lithuania", "is a member of", "OECD")\n', '("Lithuania", "participates in", "the Nordic-Baltic Eight regional co-operation format")\n', '("Lietuva", "is recorded in", "the Quedlinburg Chronicle of 9 March 1009")\n', '("Daugava", "is associated with", "Lithuanian history and the early state")\n', '("Lithuania", "experienced", "raids by the Vikings in the 9th to 11th centuries")\n', '("Kievan Rus\'", "collected tribute from", "Lithuanian territories in the 10–11th centuries")\n', '("The Battle of Saulė", "took place near", "Šiauliai")\n', '("Kyiv", "was brought under the control of", "the expanding Grand Duchy of Lithuania after 1362")\n', '("Lithuania", "became a direct neighbor and rival of", "the Grand Duchy of Moscow")\n', '("Tsar Boris Godunov", "extended a truce with", "the Polish–Lithuanian Commonwealth in 1600")\n', '("German Empire", "was associated with", "Lithuania during World War I")\n', '("Courland", "was occupied by", "Germany during World War I")\n', '("Lithuanian Soviet Socialist Republic", "was established after", "World War II")\n', '("East Prussia", "is related to", "Germany and Lithuania\'s historical context")\n', '("Lithuania", "joined the", "European Union\'s single currency on 1 January 2015")\n', '("Lithuania", "joined", "OECD on 4 July 2018")\n', '("Denmark", "collected tribute at times from", "coastal Balts during the 9–11th centuries")\n', '("Lithuania", "was part of", "the larger state of Poland-Lithuania")\n', '("Lithuania", "was part of", "the Russian Empire after the partitions")\n', '("Italy", "has historical connections with", "Nobles from Lithuania")\n', '("Switzerland", "Lithuanian noblemen usually hired chefs from", "Switzerland during historical times")\n', '("Moscow", "is a significant historical reference regarding", "Lithuania")\n', '("Lithuanian language", "has influences from", "Italian artists")\n', '("Daugavpils", "is associated with", "Lithuanian territory during the Grand Duchy of Lithuania")\n', '("Friedrich Nietzsche", "was", "a German philosopher")\n', '("Friedrich Nietzsche", "became the youngest person to hold", "the Chair of Classical Philology at the University of Basel")\n', '("Friedrich Nietzsche", "suffered", "a collapse and after a complete loss of his mental faculties")\n', '("Friedrich Nietzsche", "lived his remaining years in the care of", "his mother and sister Elisabeth Förster-Nietzsche")\n', '("Nietzsche", "died after experiencing", "pneumonia and multiple strokes")\n', '("Nietzsche", "created", "philosophical polemics, poetry, cultural criticism, and fiction")\n', '("Nietzsche", "developed", "the concepts of the Übermensch and the doctrine of eternal return")\n', '("Nietzsche", "drew inspiration from", "figures such as Zoroaster and Arthur Schopenhauer")\n', '("Nietzsche", "was influenced by", "Ralph Waldo Emerson and Richard Wagner")\n', '("Walter Kaufmann, R. J. Hollingdale, and Georges Bataille", "defended", "Nietzsche against the association with fascism and Nazism")\n', '("Nietzsche", "grew up in", "the town of Röcken")\n', '("Nietzsche", "was named after", "King Friedrich Wilhelm IV of Prussia")\n', '("Nietzsche", "attended", "the University of Bonn")\n', '("Nietzsche", "had to resign his position at Basel and was pensioned due to", "health problems")\n', '("Nietzsche", "traveled to climates more conducive to his health", "including Genoa, Rapallo, and Turin")\n', '("Nietzsche", "planned to travel to", "Tunis to view Europe from the outside")\n', '("Nietzsche", "used", "the Hansen Writing Ball due to his failing eyesight")\n', '("Nietzsche", "made contact with the music-critic", "Carl Fuchs")\n', '("Nietzsche", "found affinity with the work of Fyodor Dostoyevsky and Søren Kierkegaard", "and considered visiting Copenhagen to read Kierkegaard with Georg Brandes")\n', '("Nietzsche", "wrote", "Thus Spoke Zarathustra in only ten days while in Rapallo")\n', '("Nietzsche", "suffered from", "mental illness leading to his death")\n', '("Nietzsche\'s insanity", "was originally diagnosed as", "tertiary syphilis and later reconsidered to be possibly dementia, frontotemporal dementia, or CADASIL")\n', '("Nietzsche", "buried beside", "his father at the church in Röcken")\n', '("Nietzsche", "had his writings published posthumously as", "The Will to Power by his sister Elisabeth")\n', '("Nietzsche", "was labelled as", "a \'German philosopher\'")\n', '("Nietzsche", "renounced", "his Prussian citizenship")\n', '("Nietzsche", "believed his ancestors were", "Polish")\n', '("Nietzsche", "claimed to be proud of his", "Polish descent")\n', '("Nietzsche", "was", "never married")\n', '("Nietzsche", "proposed to", "Lou Salomé")\n', '("Nietzsche", "critiqued Christian morality as", "a sign of general decay")\n', '("Nietzsche\'s", "view of tragedy was influenced by", "the poet Hölderlin")\n', '("Nietzsche", "rejected", "the idea of objective reality")\n', '("Nietzsche", "proposed the concept of", "eternal return")\n', '("Nietzsche", "introduced the idea of", "Übermensch in Also Sprach Zarathustra")\n', '("Nietzsche", "read works by", "Kant, Plato, Mill, Schopenhauer, and Spir")\n', '("Nietzsche", "had a thorough knowledge of", "Greek philosophy")\n', '("Nietzsche", "influenced", "philosophers such as Heidegger, Sartre, and Foucault")\n', '("Nietzsche\'s", "ideas were associated with", "anarchism during his lifetime")\n', '("Nietzsche\'s", "philosophy became associated with", "Nazism due to misinterpretation of his work by the Nazis and his sister\'s editing")\n', '("Gottlob Frege", "is known as", "the father of analytic philosophy")\n', '("Gottlob Frege", "is a pioneer in", "the philosophy of language, logic, and mathematics")\n', '("Gottlob Frege", "is considered to be", "the greatest logician since Aristotle")\n', '("Giuseppe Peano", "introduced", "Frege\'s work to later generations")\n', '("Bertrand Russell", "introduced", "Frege\'s work to later generations")\n', '("Ludwig Wittgenstein", "introduced", "Frege\'s work to later generations")\n', '("Gottlob Frege", "wrote the book", "the Foundations of Arithmetic")\n', '("Gottlob Frege", "argues for", "Platonism against psychologism or formalism")\n', '("Philipp Melanchthon", "is an ancestor of", "Frege\'s mother")\n', '("Gottlob Frege", "studied at", "Große Stadtschule Wismar")\n', '("Gottlob Frege", "was a citizen of", "North German Confederation")\n', '("Gottlob Frege", "attended universities Jena and Göttingen in", "North German Confederation")\n', '("Wilhelm Eduard Weber", "was a teacher of", "Gottlob Frege")\n', '("Kurt Gödel", "was influenced by", "Frege\'s work")\n', '("Alfred Tarski", "was influenced by", "Frege\'s work")\n', '("George Boole", "had an approach to logic different from", "Frege")\n', '("Rudolf Carnap", "was a student and admirer of", "Frege")\n', '("Frege\'s work", "spread through", "the writings of Bertrand Russell and Ludwig Wittgenstein")\n', '("Gottlob Frege", "received a letter from", "Bertrand Russell about the paradox")\n', '("Gottlob Frege", "received political opinions opposing from", "Bertrand Russell")\n', '("Saul Kripke", "discussed", "Frege\'s theory of names and necessity")\n', '("Gottlob Frege", "sympathized with", "Bismarck")\n', '("Gottlob Frege", "was an anti-Semitic influenced by", "Adolf Hitler and others")\n', '("Gottlob Frege", "was born in", "Wismar, Mecklenburg-Schwerin")\n', '("Gottlob Frege", "died in", "Bad Kleinen which is now part of Mecklenburg-Vorpommern")\n', '("Jakob Böhme", "is considered", "the first German philosopher by Hegel")\n', '("Jakob Böhme", "was born", "near Görlitz in Upper Lusatia")\n', '("Böhme\'s father", "was", "Lutheran")\n', '("Jakob Böhme", "apprenticed as", "a shoemaker")\n', '("Jakob Böhme", "read works by", "Paracelsus")\n', '("Jakob Böhme", "visited", "Prague")\n', '("Jakob Böhme", "wrote book for", "Gregorius Richter")\n', '("Jakob Böhme", "had mystical experiences in", "Görlitz")\n', '("Jakob Böhme", "was master of craft", "in Görlitz")\n', '("Jakob Böhme", "was mentor to", "Behmenists")\n', '("Jakob Böhme", "influenced", "William Blake")\n', '("Jakob Böhme", "writings published in", "Amsterdam")\n', '("Jakob Böhme", "influenced by", "Paracelsus")\n', '("Jakob Böhme", "influenced", "George Gurdjieff")\n', '("Jakob Böhme", "associated with", "Luther")\n', '("Jakob Böhme\'s mentor", "was", "Abraham Behem")\n', '("Jakob Böhme", "joined group organized by", "Martin Moller")\n', '("Jakob Böhme", "had vision that revealed", "spiritual structure of the world")\n', '("Jakob Böhme", "sold woollen gloves", "to Prague")\n', '("Aurora", "written by", "Jakob Böhme")\n', '("Gregorius Richter", "attacked Aurora", "as being heretical")\n', '("Jakob Böhme", "experienced inner vision about", "unity of the cosmos")\n', '("Jakob Böhme", "visited", "Dresden")\n', '("Jakob Böhme", "stayed with", "court physician in Dresden")\n', '("Jakob Böhme", "was accepted by", "nobility and high clergy in Dresden")\n', '("Jakob Böhme\'s adversary", "was", "Gregorius Richter")\n', '("Jakob Böhme", "fell terminally ill with", "bowel complaint")\n', '("Jakob Böhme", "influenced", "German Romantic philosophy")\n', '("Jakob Böhme\'s followers", "were known as", "Behmenists")\n', '("Behmenists", "published Jakob Böhme\'s work in", "Amsterdam")\n', '("Jakob Böhme\'s works", "were influenced by", "Neoplatonist")\n', '("Jakob Böhme", "influenced", "William Blake")\n', '("Jakob Böhme", "influenced", "Michel Angelo")\n', '("Jakob Böhme\'s influence", "included", "Opera Posthuma")\n', '("Jakob Böhme", "influenced", "John Milton")\n', '("Jakob Böhme", "ideas similar to", "George Gurdjieff")\n', '("Jakob Böhme", "influenced", "Schopenhauer")\n', '("Jakob Böhme", "influenced", "George Gurdjieff")\n', '("Jakob Böhme", "influenced", "Coleridge")\n', '("Jakob Böhme", "mentor and disciple was", "Liegnitz physician Balthasar Walther")\n', '("Liegnitz physician Balthasar Walther", "travelled to", "Holy Land")\n', '("Johann Friedrich Herbart", "is associated with", "post-Kantian philosophy")\n', '("Johann Friedrich Herbart", "contrasts with", "Hegel in relation to aesthetics")\n', '("Johann Friedrich Herbart", "disagreed with", "Fichte at Jena")\n', '("Johann Friedrich Herbart", "tutored in", "Interlaken")\n', '("Johann Friedrich Herbart", "met", "Pestalozzi in Switzerland")\n', '("Johann Friedrich Herbart", "studied at", "Göttingen")\n', '("Johann Friedrich Herbart", "developed philosophy rejecting", "Locke\'s and Leibniz\'s ideas")\n', '("Johann Friedrich Herbart", "was influenced by", "Newton\'s mechanical principles")\n', '("Johann Friedrich Herbart\'s educational philosophy", "is known as", "Herbartianism")\n', '("Johann Friedrich Herbart\'s pedagogy", "emphasized", "connection between individual development and societal contribution")\n', '("Johann Friedrich Herbart", "challenged", "Leibniz\'s monads concept")\n', '("Johann Friedrich Herbart", "saw importance of", "psychology in education")\n', '("Johann Friedrich Herbart\'s ideas about reality", "influenced by", "Leibniz and Newton")\n', '("Johann Friedrich Herbart", "advocated for", "education based on literature and historical stories")\n', '("Johann Friedrich Herbart\'s legacy", "includes", "National Society for the Scientific Study of Education as National Herbart Society")\n']
+range(1, 319) 4
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Kaunas", "is a major city in", "Lithuania")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Lithuania", "is located in", "the Baltic region of Europe")\n', '("Lithuania", "lies on", "the eastern shore of the Baltic Sea")\n', '("Lithuania", "borders", "Latvia to the north")\n', '("Lithuania", "borders", "Belarus to the east and south")\n', '("Lithuania", "borders", "Poland to the south")\n', '("Lithuania", "borders", "Russia to the southwest")\n', '("Lithuania", "has a maritime border with", "Sweden to the west")\n', '("Vilnius", "is the capital and largest city of", "Lithuania")\n', '("Klaipėda", "is a major city in", "Lithuania")\n', '("Šiauliai", "is a major city in", "Lithuania")\n', '("Panevėžys", "is a major city in", "Lithuania")\n', '("Lithuanians", "speak", "Lithuanian")\n', '("Lithuanian language", "is part of", "the Baltic branch of the Indo-European language family")\n', '("Lithuania", "was united by", "Mindaugas in 1230s")\n', '("Kingdom of Lithuania", "was formed by", "Mindaugas on 6 July 1253")\n', '("Grand Duchy of Lithuania", "was the largest country in Europe by", "the 14th century")\n', '("Polish-Lithuanian Commonwealth", "was formed in", "1569")\n', '("Lithuanian independence", "was declared in", "1918")\n', '("Lithuanian Soviet Socialist Republic", "was proclaimed", "on 21 July 1940")\n', '("Lithuania", "reestablished its independence from", "the Soviet Union on 11 March 1990")\n', '("Lithuania", "is a member of", "the European Union")\n', '("Lithuania", "is a member of", "the Council of Europe")\n', '("Lithuania", "is a member of", "NATO")\n', '("Lithuania", "is a member of", "the eurozone")\n', '("Lithuania", "is a member of", "the Nordic Investment Bank")\n', '("Lithuania", "is a member of", "the Schengen Agreement")\n', '("Lithuania", "is a member of", "OECD")\n', '("Lithuania", "participates in", "the Nordic-Baltic Eight regional co-operation format")\n', '("Lietuva", "is recorded in", "the Quedlinburg Chronicle of 9 March 1009")\n', '("Daugava", "is associated with", "Lithuanian history and the early state")\n', '("Lithuania", "experienced", "raids by the Vikings in the 9th to 11th centuries")\n', '("Kievan Rus\'", "collected tribute from", "Lithuanian territories in the 10–11th centuries")\n', '("The Battle of Saulė", "took place near", "Šiauliai")\n', '("Kyiv", "was brought under the control of", "the expanding Grand Duchy of Lithuania after 1362")\n', '("Lithuania", "became a direct neighbor and rival of", "the Grand Duchy of Moscow")\n', '("Tsar Boris Godunov", "extended a truce with", "the Polish–Lithuanian Commonwealth in 1600")\n', '("German Empire", "was associated with", "Lithuania during World War I")\n', '("Courland", "was occupied by", "Germany during World War I")\n', '("Lithuanian Soviet Socialist Republic", "was established after", "World War II")\n', '("East Prussia", "is related to", "Germany and Lithuania\'s historical context")\n', '("Lithuania", "joined the", "European Union\'s single currency on 1 January 2015")\n', '("Lithuania", "joined", "OECD on 4 July 2018")\n', '("Denmark", "collected tribute at times from", "coastal Balts during the 9–11th centuries")\n', '("Lithuania", "was part of", "the larger state of Poland-Lithuania")\n', '("Lithuania", "was part of", "the Russian Empire after the partitions")\n', '("Italy", "has historical connections with", "Nobles from Lithuania")\n', '("Switzerland", "Lithuanian noblemen usually hired chefs from", "Switzerland during historical times")\n', '("Moscow", "is a significant historical reference regarding", "Lithuania")\n', '("Lithuanian language", "has influences from", "Italian artists")\n', '("Daugavpils", "is associated with", "Lithuanian territory during the Grand Duchy of Lithuania")\n', '("Friedrich Nietzsche", "was", "a German philosopher")\n', '("Friedrich Nietzsche", "became the youngest person to hold", "the Chair of Classical Philology at the University of Basel")\n', '("Friedrich Nietzsche", "suffered", "a collapse and after a complete loss of his mental faculties")\n', '("Friedrich Nietzsche", "lived his remaining years in the care of", "his mother and sister Elisabeth Förster-Nietzsche")\n', '("Nietzsche", "died after experiencing", "pneumonia and multiple strokes")\n', '("Nietzsche", "created", "philosophical polemics, poetry, cultural criticism, and fiction")\n', '("Nietzsche", "developed", "the concepts of the Übermensch and the doctrine of eternal return")\n', '("Nietzsche", "drew inspiration from", "figures such as Zoroaster and Arthur Schopenhauer")\n', '("Nietzsche", "was influenced by", "Ralph Waldo Emerson and Richard Wagner")\n', '("Walter Kaufmann, R. J. Hollingdale, and Georges Bataille", "defended", "Nietzsche against the association with fascism and Nazism")\n', '("Nietzsche", "grew up in", "the town of Röcken")\n', '("Nietzsche", "was named after", "King Friedrich Wilhelm IV of Prussia")\n', '("Nietzsche", "attended", "the University of Bonn")\n', '("Nietzsche", "had to resign his position at Basel and was pensioned due to", "health problems")\n', '("Nietzsche", "traveled to climates more conducive to his health", "including Genoa, Rapallo, and Turin")\n', '("Nietzsche", "planned to travel to", "Tunis to view Europe from the outside")\n', '("Nietzsche", "used", "the Hansen Writing Ball due to his failing eyesight")\n', '("Nietzsche", "made contact with the music-critic", "Carl Fuchs")\n', '("Nietzsche", "found affinity with the work of Fyodor Dostoyevsky and Søren Kierkegaard", "and considered visiting Copenhagen to read Kierkegaard with Georg Brandes")\n', '("Nietzsche", "wrote", "Thus Spoke Zarathustra in only ten days while in Rapallo")\n', '("Nietzsche", "suffered from", "mental illness leading to his death")\n', '("Nietzsche\'s insanity", "was originally diagnosed as", "tertiary syphilis and later reconsidered to be possibly dementia, frontotemporal dementia, or CADASIL")\n', '("Nietzsche", "buried beside", "his father at the church in Röcken")\n', '("Nietzsche", "had his writings published posthumously as", "The Will to Power by his sister Elisabeth")\n', '("Nietzsche", "was labelled as", "a \'German philosopher\'")\n', '("Nietzsche", "renounced", "his Prussian citizenship")\n', '("Nietzsche", "believed his ancestors were", "Polish")\n', '("Nietzsche", "claimed to be proud of his", "Polish descent")\n', '("Nietzsche", "was", "never married")\n', '("Nietzsche", "proposed to", "Lou Salomé")\n', '("Nietzsche", "critiqued Christian morality as", "a sign of general decay")\n', '("Nietzsche\'s", "view of tragedy was influenced by", "the poet Hölderlin")\n', '("Nietzsche", "rejected", "the idea of objective reality")\n', '("Nietzsche", "proposed the concept of", "eternal return")\n', '("Nietzsche", "introduced the idea of", "Übermensch in Also Sprach Zarathustra")\n', '("Nietzsche", "read works by", "Kant, Plato, Mill, Schopenhauer, and Spir")\n', '("Nietzsche", "had a thorough knowledge of", "Greek philosophy")\n', '("Nietzsche", "influenced", "philosophers such as Heidegger, Sartre, and Foucault")\n', '("Nietzsche\'s", "ideas were associated with", "anarchism during his lifetime")\n', '("Nietzsche\'s", "philosophy became associated with", "Nazism due to misinterpretation of his work by the Nazis and his sister\'s editing")\n', '("Gottlob Frege", "is known as", "the father of analytic philosophy")\n', '("Gottlob Frege", "is a pioneer in", "the philosophy of language, logic, and mathematics")\n', '("Gottlob Frege", "is considered to be", "the greatest logician since Aristotle")\n', '("Giuseppe Peano", "introduced", "Frege\'s work to later generations")\n', '("Bertrand Russell", "introduced", "Frege\'s work to later generations")\n', '("Ludwig Wittgenstein", "introduced", "Frege\'s work to later generations")\n', '("Gottlob Frege", "wrote the book", "the Foundations of Arithmetic")\n', '("Gottlob Frege", "argues for", "Platonism against psychologism or formalism")\n', '("Philipp Melanchthon", "is an ancestor of", "Frege\'s mother")\n', '("Gottlob Frege", "studied at", "Große Stadtschule Wismar")\n', '("Gottlob Frege", "was a citizen of", "North German Confederation")\n', '("Gottlob Frege", "attended universities Jena and Göttingen in", "North German Confederation")\n', '("Wilhelm Eduard Weber", "was a teacher of", "Gottlob Frege")\n', '("Kurt Gödel", "was influenced by", "Frege\'s work")\n', '("Alfred Tarski", "was influenced by", "Frege\'s work")\n', '("George Boole", "had an approach to logic different from", "Frege")\n', '("Rudolf Carnap", "was a student and admirer of", "Frege")\n', '("Frege\'s work", "spread through", "the writings of Bertrand Russell and Ludwig Wittgenstein")\n', '("Gottlob Frege", "received a letter from", "Bertrand Russell about the paradox")\n', '("Gottlob Frege", "received political opinions opposing from", "Bertrand Russell")\n', '("Saul Kripke", "discussed", "Frege\'s theory of names and necessity")\n', '("Gottlob Frege", "sympathized with", "Bismarck")\n', '("Gottlob Frege", "was an anti-Semitic influenced by", "Adolf Hitler and others")\n', '("Gottlob Frege", "was born in", "Wismar, Mecklenburg-Schwerin")\n', '("Gottlob Frege", "died in", "Bad Kleinen which is now part of Mecklenburg-Vorpommern")\n', '("Jakob Böhme", "is considered", "the first German philosopher by Hegel")\n', '("Jakob Böhme", "was born", "near Görlitz in Upper Lusatia")\n', '("Böhme\'s father", "was", "Lutheran")\n', '("Jakob Böhme", "apprenticed as", "a shoemaker")\n', '("Jakob Böhme", "read works by", "Paracelsus")\n', '("Jakob Böhme", "visited", "Prague")\n', '("Jakob Böhme", "wrote book for", "Gregorius Richter")\n', '("Jakob Böhme", "had mystical experiences in", "Görlitz")\n', '("Jakob Böhme", "was master of craft", "in Görlitz")\n', '("Jakob Böhme", "was mentor to", "Behmenists")\n', '("Jakob Böhme", "influenced", "William Blake")\n', '("Jakob Böhme", "writings published in", "Amsterdam")\n', '("Jakob Böhme", "influenced by", "Paracelsus")\n', '("Jakob Böhme", "influenced", "George Gurdjieff")\n', '("Jakob Böhme", "associated with", "Luther")\n', '("Jakob Böhme\'s mentor", "was", "Abraham Behem")\n', '("Jakob Böhme", "joined group organized by", "Martin Moller")\n', '("Jakob Böhme", "had vision that revealed", "spiritual structure of the world")\n', '("Jakob Böhme", "sold woollen gloves", "to Prague")\n', '("Aurora", "written by", "Jakob Böhme")\n', '("Gregorius Richter", "attacked Aurora", "as being heretical")\n', '("Jakob Böhme", "experienced inner vision about", "unity of the cosmos")\n', '("Jakob Böhme", "visited", "Dresden")\n', '("Jakob Böhme", "stayed with", "court physician in Dresden")\n', '("Jakob Böhme", "was accepted by", "nobility and high clergy in Dresden")\n', '("Jakob Böhme\'s adversary", "was", "Gregorius Richter")\n', '("Jakob Böhme", "fell terminally ill with", "bowel complaint")\n', '("Jakob Böhme", "influenced", "German Romantic philosophy")\n', '("Jakob Böhme\'s followers", "were known as", "Behmenists")\n', '("Behmenists", "published Jakob Böhme\'s work in", "Amsterdam")\n', '("Jakob Böhme\'s works", "were influenced by", "Neoplatonist")\n', '("Jakob Böhme", "influenced", "William Blake")\n', '("Jakob Böhme", "influenced", "Michel Angelo")\n', '("Jakob Böhme\'s influence", "included", "Opera Posthuma")\n', '("Jakob Böhme", "influenced", "John Milton")\n', '("Jakob Böhme", "ideas similar to", "George Gurdjieff")\n', '("Jakob Böhme", "influenced", "Schopenhauer")\n', '("Jakob Böhme", "influenced", "George Gurdjieff")\n', '("Jakob Böhme", "influenced", "Coleridge")\n', '("Jakob Böhme", "mentor and disciple was", "Liegnitz physician Balthasar Walther")\n', '("Liegnitz physician Balthasar Walther", "travelled to", "Holy Land")\n', '("Johann Friedrich Herbart", "is associated with", "post-Kantian philosophy")\n', '("Johann Friedrich Herbart", "contrasts with", "Hegel in relation to aesthetics")\n', '("Johann Friedrich Herbart", "disagreed with", "Fichte at Jena")\n', '("Johann Friedrich Herbart", "tutored in", "Interlaken")\n', '("Johann Friedrich Herbart", "met", "Pestalozzi in Switzerland")\n', '("Johann Friedrich Herbart", "studied at", "Göttingen")\n', '("Johann Friedrich Herbart", "developed philosophy rejecting", "Locke\'s and Leibniz\'s ideas")\n', '("Johann Friedrich Herbart", "was influenced by", "Newton\'s mechanical principles")\n', '("Johann Friedrich Herbart\'s educational philosophy", "is known as", "Herbartianism")\n', '("Johann Friedrich Herbart\'s pedagogy", "emphasized", "connection between individual development and societal contribution")\n', '("Johann Friedrich Herbart", "challenged", "Leibniz\'s monads concept")\n', '("Johann Friedrich Herbart", "saw importance of", "psychology in education")\n', '("Johann Friedrich Herbart\'s ideas about reality", "influenced by", "Leibniz and Newton")\n', '("Johann Friedrich Herbart", "advocated for", "education based on literature and historical stories")\n', '("Johann Friedrich Herbart\'s legacy", "includes", "National Society for the Scientific Study of Education as National Herbart Society")\n']
+range(1, 319) 4
+{'id': '6_3', 'Question': ' Who is buried in the former Königsberg, which is a city adjacent to the northern border of the country where Kaunas is a major city?\n', 'Answer': 'Immanuel Kant', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Friedrich Nietzsche'}, {'label': 'B', 'text': 'Immanuel Kant'}, {'label': 'C', 'text': 'Gottlob Frege'}, {'label': 'D', 'text': 'Jakob Böhme'}, {'label': 'E', 'text': 'Johann Friedrich Herbart'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'friedrich_nietzsche'}, {'label': 'B', 'text': 'immanuel_kant'}, {'label': 'C', 'text': 'fregean'}, {'label': 'D', 'text': 'jakob_boehme'}, {'label': 'E', 'text': 'johann_friedrich_herbart'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who is buried in Kaliningrad?\nA1: Immanuel Kant\n\n', '2: What does the northern border of Lithuania, in the context of oblasts, touch?\nA2: Kaliningrad\n\n', '3: Which city used to be known as Königsberg?\nA3: Kaliningrad\n\n', '4: In which country is Kaunas a major city?\nA4: Lithuania'], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Lithuania'), ('Kaliningrad', 'Königsberg'), ('Lithuania', 'Kaunas')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'lithuania'), ('kaliningrad', 'königsberg'), ('lithuania', 'kaunas')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Lithuania", "northern border of", "Kaliningrad Oblast")', '("Kaliningrad", "former German city of", "Königsberg")', '("Kaunas", "is a major city in", "Lithuania")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Königsberg', 'line': 31}, {'name': 'Königsberg', 'line': 25}, {'name': 'Lithuania', 'line': 9}], 'Question_triplet_answer': {100: [137, 145, 157, 265], 50: [36, 150, 180, 296], 25: [97, 153, 262, 280]}}
+time passed:  3358.5333383083344
+Expected dollar:  0.005
+Königsberg is Geography
+Kievan Rus' is Geography
+Jakob Böhme's is People
+Johann Friedrich Herbart is People
+Wilhelm Eduard Weber is People
+Gottlob Frege is People
+Jakob Böhme is People
+John Milton is People
+Berlin is Geography
+Johann Friedrich Herbart's is People
+Nietzsche is People
+Fyodor Dostoyevsky is People
+Søren Kierkegaard is People
+Copenhagen is Geography
+Kierkegaard is People
+Poland is Geography
+Kant is People
+Lithuania is Geography
+William Blake is People
+Basel is Geography
+Dresden is Geography
+Breslau is Geography
+Carl Fuchs is Geography
+Vistula Lagoon is Geography
+Amsterdam is Geography
+Immanuel Kant is People
+Schopenhauer is People
+Riga is Geography
+Denmark is Geography
+Vilnius is Geography
+Lithuanian and is Geography
+Mikhail Kalinin is People
+George Gurdjieff is People
+Abraham Behem is People
+Rudolf Carnap is People
+Latvia is Geography
+Germany is Geography
+Duchy of Prussia is Geography
+Walter Kaufmann is People
+R. J. Hollingdale is People
+Georges Bataille is People
+Kaliningrad is Geography
+Fichte at Jena is People
+University of Königsberg is Geography
+Immanuel Kant's is People
+Jena is Geography
+North German Confederation is Geography
+Klaipėda is Geography
+Sweden is Geography
+Bertrand Russell is People
+Liegnitz is Geography
+"Holy Land is Incident
+Prague is Geography
+the Soviet Union is Geography
+Zoroaster is People
+Arthur Schopenhauer is People
+the Baltic Sea is Geography
+the University of Bonn is Geography
+Hölderlin is People
+Bad Kleinen is Geography
+Mecklenburg Vorpommern is Geography
+Frederick William III is People
+Napoleon is People
+Wismar is Geography
+Mecklenburg Schwerin is Geography
+Moscow is Geography
+Kant Society is People
+Full Professor of Logic and Metaphysics at University of Königsberg is People
+Ludwig Wittgenstein is People
+National Herbart Society is People
+Italy is Geography
+Jean Piaget is People
+Carl Gustav Jung is People
+Russia is Geography
+Görlitz is Geography
+Napoleon Bonaparte is People
+Daugava is Geography
+Kaunas is Geography
+Emanuel Swedenborg's Dreams of a Spirit is People
+Friedrich Nietzsche is People
+Elisabeth Förster Nietzsche is People
+Große Stadtschule Wismar is People
+The Battle of Saulė is Geography
+Jürgen Habermas is People
+John Rawls is People
+Polish Lithuanian Commonwealth is Geography
+entities:  {'Basel', 'Gustav', 'Abraham', 'Böhme', 'Balthasar', 'Jakob', 'German', 'Wismar', 'Görlitz', 'George', 'Daugava', 'Milton', 'Fichte', 'Eduard', 'Prague', 'Vorpommern', 'Sweden', 'Dresden', 'Society', 'Kant', 'Latvia', 'Land', 'Fyodor', 'Riga', 'Amsterdam', 'Baltic', 'Weber', 'Jung', 'Fuchs', 'Elisabeth', 'Newton', 'Dreams', 'Rudolf', 'III', 'Kleinen', 'Rawls', 'North', 'Prussia', 'Wittgenstein', 'republican', 'Bonn', 'Hölderlin', 'Italy', 'Johann', 'Mikhail', 'Große', "Herbart's", 'Union', 'Klaipėda', 'Jürgen', 'Zoroaster', 'Bad', 'Dostoyevsky', 'Kaliningrad', "Swedenborg's", 'Emanuel', 'Aurora', 'J.', 'Schopenhauer', 'Russia', 'Liegnitz', "Böhme's", 'Frederick', 'Professor', 'Plato', 'Kievan', 'Martin', 'Europe', 'Sea', '"Holy', 'Kaufmann', 'Spirit', 'Battle', 'Soviet', 'Breslau', 'Boris', 'Germany', 'Kierkegaard', "Rus'", 'Jean', 'Logic', 'Schwerin', 'Albertina', 'Metaphysics', 'Hegel', 'Swedenborg', 'Hollingdale', 'Petersburg', 'Gottlob', 'Piaget', 'Copenhagen', 'Moscow', 'Berlin', 'Ludwig', 'Bonaparte', 'Behem', 'Habermas', 'Poland', 'William', 'Walter', 'Vistula', 'Nietzsche', 'Lagoon', "Kant's", 'R.', 'Confederation', 'Herbart', 'Giuseppe', 'National', 'Friedrich', 'Carl', 'Kaunas', 'Godunov', 'Arthur', 'Belarus', 'Förster', 'Georges', 'Gurdjieff', 'Immanuel', 'Bataille', 'Commonwealth', 'Jena', 'Napoleon', 'Wilhelm', 'John', 'Blake', 'Denmark', 'Lithuanian', 'Bertrand', 'Russell', 'Königsberg', 'Full', 'University', 'Saulė', 'Lithuania', 'NATO', 'Duchy', 'Kalinin', 'Søren', 'Saul', 'Carnap', 'Vilnius', 'Frege', 'Stadtschule', 'Mecklenburg', 'Polish'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kaliningrad
+Pillau
+Kievan Rus'
+Lithuanian territories
+Königsberg
+Teutonic Knights
+Jakob Böhme's adversary
+Gregorius Richter
+Johann Friedrich Herbart
+Leibniz's monads concept
+Wilhelm Eduard Weber
+Gottlob Frege
+E. T. A. Hoffmann
+John Milton
+Lithuanian language
+French
+Prussia
+Friedrich Dostoyevsky
+Søren Kierkegaard
+Copenhagen
+Prussian
+Poland
+eternal return
+Kant
+republican ideals and forms of governance
+the Baltic branch
+EU
+Hansen Writing Ball
+William Blake
+John Milton
+psychology
+Gottlob Frege
+Immanuel Kant
+Kaliningrad Oblast
+Polish
+Königsberg Oblast
+German
+Lithuanian
+Polish
+Lithuanian
+Indo-European language family
+Grand Duchy of Lithuania
+Lithuania
+Russian Empire
+Markiewicz and Yasha Levine
+Grand Duchy of Lithuania
+Königsberg
+
+(Words in brackets are not entities)
+
+gpt_entity_particular(): entity list: 
+ ['the Baltic branch', 'Gregorius Richter', 'Hansen Writing Ball', 'Prussia', 'German', 'Pillau', 'Indo-European language family', 'Søren Kierkegaard', 'Wilhelm Eduard Weber', '(Words in brackets are not entities)', 'Immanuel Kant', 'EU', 'Johann Friedrich Herbart', 'Gottlob Frege', 'Teutonic Knights', 'Lithuanian language', 'eternal return', "Leibniz's monads concept", 'Kaliningrad Oblast', 'Königsberg Oblast', 'Lithuanian territories', 'Lithuanian', 'Kant', 'Kaliningrad', 'Copenhagen', 'Königsberg', 'republican ideals and forms of governance', 'Grand Duchy of Lithuania', 'William Blake', 'Lithuania', 'French', 'Prussian', 'psychology', 'John Milton', "Jakob Böhme's adversary", 'Russian Empire', 'Poland', 'E. T. A. Hoffmann', 'Friedrich Dostoyevsky', 'Polish', 'Markiewicz and Yasha Levine', "Kievan Rus'"]
+
+gpt_entity_particular(): filtered entity: 
+ ['Königsberg']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gottlob Frege' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gottlob Frege
+Bertrand Russell
+Wilhelm Eduard Weber
+Rudolf Carnap
+Ludwig Wittgenstein
+Giuseppe Peano
+Saul Kripke
+
+gpt_entity_particular(): entity list: 
+ ['Gottlob Frege', 'Rudolf Carnap', 'Saul Kripke', 'Giuseppe Peano', 'Ludwig Wittgenstein', 'Wilhelm Eduard Weber', 'Bertrand Russell']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Königsberg' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Königsberg
+Lithuanian territories
+East Prussia
+Teutonic Knights
+Kievan Rus'
+Poland
+Kaliningrad Oblast
+Lithuania
+German
+King Ottokar II of Bohemia
+Duchy of Prussia
+State of the Teutonic Order
+Latvia
+Sweden
+University of Königsberg
+Grand Duchy of Lithuania
+Riga
+the Grand Duchy of Moscow
+Switzerland
+Lutheran
+Berlin
+Nobles
+Emanuel Swedenborg
+Große Stadtschule Wismar
+Bad Kleinen
+Nietzsche
+Napoleon Bonaparte
+Emanuel Swedenborg
+Emanuel Swedenborg
+Neoplatonist
+E. T. A. Hoffmann
+Görlitz
+Opera Posthuma
+Albertina University
+Lecture on Anthropology
+Latin
+Religious Instruction
+Physics
+Plato
+Zoroaster
+Görlitz
+Treatment at the University of Bonn
+Lutheran Literature
+The Battle of Saulė
+the Quedlinburg Chronicle of 9 March 1009
+The Milkey Way
+Große Stadtschule Wismar
+The Foundation of Arithmetic
+Philosophy, Plato, Mill, Schopenhauer, and Spir
+Lutheran Literature
+Quedlinburg Chronicle of 9 March 1009
+
+gpt_entity_particular(): entity list: 
+ ['East Prussia', 'Treatment at the University of Bonn', 'German', 'The Battle of Saulė', 'Görlitz', 'Philosophy, Plato, Mill, Schopenhauer, and Spir', 'Lutheran Literature', 'Albertina University', 'Neoplatonist', 'Physics', 'Emanuel Swedenborg', 'Religious Instruction', 'Teutonic Knights', 'State of the Teutonic Order', 'Napoleon Bonaparte', 'Kaliningrad Oblast', 'Sweden', 'University of Königsberg', 'The Foundation of Arithmetic', 'Latin', 'Lithuanian territories', 'Zoroaster', 'Latvia', 'Riga', 'Königsberg', 'Berlin', 'the Quedlinburg Chronicle of 9 March 1009', 'Grand Duchy of Lithuania', 'Lithuania', 'King Ottokar II of Bohemia', 'the Grand Duchy of Moscow', 'Nobles', 'Große Stadtschule Wismar', 'Lecture on Anthropology', 'Bad Kleinen', 'Lutheran', 'Poland', 'Duchy of Prussia', 'Switzerland', 'Opera Posthuma', 'E. T. A. Hoffmann', 'Plato', 'The Milkey Way', 'Nietzsche', 'Quedlinburg Chronicle of 9 March 1009', "Kievan Rus'"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Jakob Böhme' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Jakob Böhme
+Jakob Böhme's adversary
+Königsberg
+Königsberg
+Jakob Böhme
+E. T. A. Hoffmann
+Jakob Böhme
+French
+
+gpt_entity_particular(): entity list: 
+ ["Jakob Böhme's adversary", 'Königsberg', 'Jakob Böhme', 'E. T. A. Hoffmann', 'French']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Lithuania' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Lithuania
+Kievan Rus'
+Lithuanian language
+Lithuanian language
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Vilnius
+Kyiv
+Lithuania
+Lithuania
+Lithuania
+Soviet Union
+Lithuania
+Kaliningrad Oblast
+Kaliningrad Oblast
+Lithuania
+Lithuanian
+Lithuanian
+Lithuanian
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuanian
+Lithuanian 
+Lithuania
+Lithuania
+Lithuania
+
+gpt_entity_particular(): entity list: 
+ ['Vilnius', 'Lithuanian ', 'Lithuanian language', 'Lithuania', 'Kaliningrad Oblast', 'Soviet Union', 'Lithuanian', 'Kyiv', "Kievan Rus'"]
+
+gpt_entity_particular(): filtered entity: 
+ ['Vilnius', 'Soviet Union', 'Lithuanian']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Johann Friedrich Herbart' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Johann Friedrich Herbart
+Leibniz's monads concept
+Leibniz's monads concept
+Herbartianism
+psychology in education
+education based on literature and historical stories
+Fichte at Jena
+Newton's mechanical principles
+Newton's mechanical principles
+newton's mechanical principles
+pedagogy
+connection between individual development and societal contribution
+tutored in
+Interlaken
+
+gpt_entity_particular(): entity list: 
+ ['pedagogy', 'psychology in education', 'Fichte at Jena', "newton's mechanical principles", "Leibniz's monads concept", 'Johann Friedrich Herbart', 'Herbartianism', "Newton's mechanical principles", 'tutored in', 'connection between individual development and societal contribution', 'Interlaken', 'education based on literature and historical stories']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Friedrich Nietzsche' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Friedrich Nietzsche
+Gottlob Frege
+E. T. A. Hoffmann
+Walter Kaufmann
+R. J. Hollingdale
+Immanuel Kant
+Gregorius Richter
+Mikhail Kalinin
+Jakob Böhme
+Johann Friedrich Herbart
+
+gpt_entity_particular(): entity list: 
+ ['Gottlob Frege', 'Gregorius Richter', 'Jakob Böhme', 'E. T. A. Hoffmann', 'Walter Kaufmann', 'Mikhail Kalinin', 'R. J. Hollingdale', 'Friedrich Nietzsche', 'Johann Friedrich Herbart', 'Immanuel Kant']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaunas' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Königsberg
+Lithuanian territories
+East Prussia
+Königsberg
+Kievan Rus'
+Lithuanian territories
+German
+Lithuanian
+Baltic branch
+Lithuanian language
+German
+Lithuania
+OECD
+Nietzsche
+Königsberg
+Poland
+Königsberg
+Poland
+Poland
+Germany
+Lithuanian and Polish
+Königsberg
+Lithuanian and Polish
+Kaliningrad Oblast
+Polish
+Lithuania
+European Union
+European Union
+European Union
+Kaliningrad Oblast
+Kaliningrad Oblast
+Lithuania
+Lithuania
+German
+Lithuania
+Lithuania
+Polish
+Lithuania
+Latvia
+Lithuania
+Lithuania
+Lithuania
+Russian Empire
+John Milton
+Italy
+German Empire
+Russians
+Germany
+Lithuania
+Lithuania
+Kaunas
+Lithuania
+Opera Posthuma
+Lithuania
+Lithuania
+
+gpt_entity_particular(): entity list: 
+ ['East Prussia', 'German', 'Germany', 'Russians', 'Kaunas', 'Baltic branch', 'Lithuanian language', 'Italy', 'Kaliningrad Oblast', 'Lithuanian territories', 'Lithuanian', 'Latvia', 'Königsberg', 'German Empire', 'Lithuania', 'John Milton', 'Russian Empire', 'Poland', 'European Union', 'Opera Posthuma', 'OECD', 'Lithuanian and Polish', 'Nietzsche', 'Polish', "Kievan Rus'"]
+
+gpt_entity_particular(): filtered entity: 
+ ['Lithuania']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Kant
+Immanuel Kant's
+
+gpt_entity_particular(): entity list: 
+ ["Immanuel Kant's", 'Kant', 'Immanuel Kant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant']
+After GPT, entity:  {'Basel', 'Gustav', 'Abraham', 'Böhme', 'Balthasar', 'Jakob', 'German', 'Wismar', 'Görlitz', 'George', 'Daugava', 'Milton', 'Fichte', 'Eduard', 'Prague', 'Vorpommern', 'Sweden', 'Dresden', 'Society', 'Kant', 'Latvia', 'Land', 'Fyodor', 'Riga', 'Amsterdam', 'Baltic', 'Weber', 'Jung', 'Fuchs', 'Elisabeth', 'Newton', 'Dreams', 'Rudolf', 'III', 'Kleinen', 'Rawls', 'North', 'Prussia', 'Wittgenstein', 'republican', 'Bonn', 'Hölderlin', 'Italy', 'Johann', 'Mikhail', 'Große', "Herbart's", 'Union', 'Klaipėda', 'Jürgen', 'Zoroaster', 'Bad', 'Dostoyevsky', 'Kaliningrad', "Swedenborg's", 'Emanuel', 'Aurora', 'J.', 'Schopenhauer', 'Russia', 'Liegnitz', "Böhme's", 'Frederick', 'Professor', 'Plato', 'Kievan', 'Martin', 'Europe', 'Sea', '"Holy', 'Kaufmann', 'Spirit', 'Battle', 'Soviet', 'Breslau', 'Boris', 'Germany', 'Kierkegaard', "Rus'", 'Jean', 'Logic', 'Schwerin', 'Albertina', 'Metaphysics', 'Hegel', 'Swedenborg', 'Hollingdale', 'Petersburg', 'Gottlob', 'Piaget', 'Copenhagen', 'Moscow', 'Berlin', 'Ludwig', 'Bonaparte', 'Behem', 'Habermas', 'Poland', 'William', 'Walter', 'Vistula', 'Nietzsche', 'Lagoon', "Kant's", 'R.', 'Confederation', 'Herbart', 'Giuseppe', 'National', 'Friedrich', 'Carl', 'Kaunas', 'Godunov', 'Arthur', 'Belarus', 'Förster', 'Georges', 'Gurdjieff', 'Immanuel', 'Bataille', 'Commonwealth', 'Jena', 'Napoleon', 'Wilhelm', 'John', 'Blake', 'Denmark', 'Lithuanian', 'Bertrand', 'Russell', 'Königsberg', 'Full', 'University', 'Saulė', 'Lithuania', 'NATO', 'Duchy', 'Kalinin', 'Soviet Union', 'Søren', 'Saul', 'Carnap', 'Vilnius', 'Frege', 'Stadtschule', 'Mecklenburg', 'Polish'}
+Total time:  399.89452958106995
+Entity conversion done on 6_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_6_3_entity_conversion_hash.json. Check the entity.
+ Who is buried in the former Königsberg, which is a city adjacent to the eastern border of the country where 05D is a major city?
+
+
+
+Done. Check final_query/id_6_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

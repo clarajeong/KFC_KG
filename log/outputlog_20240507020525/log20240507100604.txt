@@ -1,0 +1,1215 @@
+Got argument: Napoleon, 1, 1_4
+
+utils/question.py extract_hops(Napoleon, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Napoleon", "made another attempt at crossing the Danube during", "the Battle of Wagram")', 'start word': 'Napoleon', 'end word': 'Battle of Wagram', 'source': {'name': 'Napoleon', 'line': 40}, 'cpnet': {'start word': 'napoleon', 'end word': 'battle_of_wagram'}}
+next_word: Battle of Wagram
+
+utils/question.py extract_hops(Battle of Wagram, [], ['Napoleon']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Battle_of_Wagram_info.json file
+extract_info(Battle of Wagram) Start.
+utils/preprocess.py extract_info(): Checking good links on Battle of Wagram
+Napoleon is People
+1 / 30 )  Napoleon Napoleon napoleon
+Vienna is Geography
+2 / 30 )  Vienna Vienna vienna
+Danube is Geography
+3 / 30 )  Danube Danube danube
+Bohemia is Geography
+4 / 30 )  Bohemia Bohemia bohemia
+First French Empire is Geography
+5 / 30 )  First French Empire First French Empire first_french_empire
+United Kingdom of Great Britain and Ireland is Geography
+6 / 30 )  United Kingdom United Kingdom of Great Britain and Ireland united_kingdom_of_great_britain_and_ireland
+Brazil is Geography
+7 / 30 )  Brazil Brazil brazil
+Spain is Geography
+8 / 30 )  Spain Spain spain
+Battle of Austerlitz is Geography
+9 / 30 )  Austerlitz Battle of Austerlitz battle_of_austerlitz
+Duchy of Warsaw is Geography
+10 / 30 )  Poland Duchy of Warsaw duchy_of_warsaw
+Francis II, Holy Roman Emperor is People
+11 / 30 )  Francis I of Austria Francis II, Holy Roman Emperor emperor_francis_ii
+Great Britain is Geography
+12 / 30 )  Great Britain Great Britain great_britain
+Moravia is Geography
+13 / 30 )  Moravia Moravia moravia
+Bratislava is Geography
+14 / 30 )  Pressburg Bratislava bratislava
+Breintlee  is Geography
+15 / 30 )  Breintlee Breintlee  battle_of_wagram
+Deutsch-Wagram is Geography
+16 / 30 )  Wagram Deutsch-Wagram wagram
+Süssenbrunn  is Geography
+17 / 30 )  Süssenbrunn Süssenbrunn  battle_of_wagram
+Baumersdorf  is Geography
+18 / 30 )  Baumersdorf Baumersdorf  battle_of_wagram
+Antoine Charles Louis de Lasalle is People
+19 / 30 )  Lasalle Antoine Charles Louis de Lasalle lasalle
+Brno is Geography
+20 / 30 )  Brünn Brno brno
+extract_triplet(Battle of Wagram)
+Got GPT's response. String length : 2326
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [(None, 'Battle of Wagram', 'battle_of_wagram'), ['Wagram', 'Deutsch-Wagram', 'wagram']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Battle of Wagram', 'battle_of_wagram'), ['Wagram', 'Deutsch-Wagram', 'wagram']]
+object_words:  []
+subject_words:  [['Wagram', 'Deutsch-Wagram', 'wagram']]
+object_words:  []
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [['Vienna', 'Vienna', 'vienna']]
+subject_words:  []
+object_words:  [['Danube', 'Danube', 'danube']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  []
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [['Vienna', 'Vienna', 'vienna']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [(None, 'Battle of Wagram', 'battle_of_wagram'), ['Wagram', 'Deutsch-Wagram', 'wagram']]
+subject_words:  []
+object_words:  [['Wagram', 'Deutsch-Wagram', 'wagram']]
+subject_words:  []
+object_words:  [['Wagram', 'Deutsch-Wagram', 'wagram']]
+subject_words:  []
+object_words:  [['Wagram', 'Deutsch-Wagram', 'wagram']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [['Wagram', 'Deutsch-Wagram', 'wagram']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [['Wagram', 'Deutsch-Wagram', 'wagram']]
+subject_words:  []
+object_words:  [(None, 'Battle of Wagram', 'battle_of_wagram'), ['Wagram', 'Deutsch-Wagram', 'wagram']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Wagram', 'Deutsch-Wagram', 'wagram']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+subject_words:  []
+object_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+subject_words:  [['Brazil', 'Brazil', 'brazil']]
+object_words:  []
+subject_words:  []
+object_words:  [['Napoleon', 'Napoleon', 'napoleon'], ['Spain', 'Spain', 'spain']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Bohemia', 'Bohemia', 'bohemia']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+
+utils/question.py extract_hops(Napoleon, ['Battle of Wagram'], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Frederick William III and Queen Louise", "fled from", "Napoleon")', 'start word': 'Napoleon', 'end word': 'Frederick William III of Prussia', 'source': {'name': 'East Prussia', 'line': 13}, 'cpnet': {'start word': 'napoleon', 'end word': 'frederick_william_iii'}}
+next_word: Frederick William III of Prussia
+
+utils/question.py extract_hops(Frederick William III of Prussia, [], ['Napoleon']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Frederick_William_III_of_Prussia_info.json file
+extract_info(Frederick William III of Prussia) Start.
+utils/preprocess.py extract_info(): Checking good links on Frederick William III of Prussia
+Frederick William, Elector of Brandenburg is People
+1 / 30 )  Elector of Brandenburg Frederick William, Elector of Brandenburg great_elector
+Gerhard von Scharnhorst is People
+2 / 30 )  Gerhard von Scharnhorst Gerhard von Scharnhorst scharnhorst
+Ludwig van Beethoven is People
+3 / 30 )  Beethoven Ludwig van Beethoven ludwig_van_beethoven
+Potsdam is Geography
+4 / 30 )  Potsdam Potsdam potsdam
+Battle of Jena–Auerstedt is Geography
+5 / 30 )  Battle of Jena-Auerstädt Battle of Jena–Auerstedt battle_of_jena
+First French Empire is Geography
+6 / 30 )  French First French Empire first_french_empire
+Klaipėda is Geography
+7 / 30 )  Memel Klaipėda klaipėda
+East Prussia is Geography
+8 / 30 )  East Prussia East Prussia east_prussia
+Neman is Geography
+9 / 30 )  Niemen Neman neman
+Napoleon is People
+10 / 30 )  Napoleon Napoleon napoleon
+Elbe is Geography
+11 / 30 )  Elbe Elbe elbe
+Francis II, Holy Roman Emperor is People
+12 / 30 )  Francis of Austria Francis II, Holy Roman Emperor emperor_francis_ii
+extract_triplet(Frederick William III of Prussia)
+Got GPT's response. String length : 1503
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['Elector of Brandenburg', 'Frederick William, Elector of Brandenburg', 'great_elector']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  []
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  []
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  []
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  []
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['Gerhard von Scharnhorst', 'Gerhard von Scharnhorst', 'scharnhorst']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  []
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['Potsdam', 'Potsdam', 'potsdam']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  []
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['French', 'First French Empire', 'first_french_empire']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['Memel', 'Klaipėda', 'klaipėda']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['Niemen', 'Neman', 'neman']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+subject_words:  [['East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  []
+object_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+subject_words:  [(None, 'Frederick William III of Prussia', 'frederick_william_iii')]
+object_words:  [['Francis of Austria', 'Francis II, Holy Roman Emperor', 'emperor_francis_ii']]
+generate_question(1_4, ['("Frederick William III and Queen Louise", "fled from", "Napoleon")', '("Frederick William III of Prussia", "family fled to", "Memel")'], ['Frederick William III of Prussia', 'Klaipėda'], [('Napoleon', 'Frederick William III of Prussia'), ('Frederick William III of Prussia', 'Klaipėda')], Klaipėda, [{'name': 'East Prussia', 'line': 13}, {'name': 'Frederick William III of Prussia', 'line': 12}]) called
+GPT output is:  Q: Under what historical name is the city known where the royals who escaped Napoleon took refuge? 
+A: Klaipėda
+final_choice(Klaipėda, options = 5) started
+[]
+entity_type(Klaipėda) called
+Klaipėda is Geography
+check_matchscore(Klaipėda, Port cities and towns of the Baltic Sea):  0.0
+choose_by_wiki_recur(Port cities and towns of the Baltic Sea)
+   Pages in Port cities and towns of the Baltic Sea: ['Ports of the Baltic Sea', 'Aabenraa', 'Åhus', 'Ainaži', 'Arnager', 'Baltiysk', 'Copenhagen', 'Darłowo', 'Dziwnów', 'Dźwirzyno', 'Eckernförde', 'Elbląg', 'Flensburg', 'Frombork', 'Gdańsk', 'Gdynia', 'Gedser', 'Greifswald', 'Hanko, Finland', 'Heiligenhafen', 'Hel, Poland', 'Helsinki', 'Jastarnia', 'Kaliningrad', 'Kalmar', 'Kapellskär', 'Kappelshamn', 'Karlshamn', 'Karlskrona', 'Katthammarsvik', 'Kiel', 'Klaipėda', 'Køge', 'Kołobrzeg', 'Kotka', 'Krynica Morska', 'Łeba', 'Liepāja', 'Lübeck', 'Lubin, Kamień County', 'Lumparland', 'Malmö', 'Mariehamn', 'Mērsrags', 'Międzyzdroje', 'Mönsterås', 'Mrzeżyno', 'Muuga Harbour', 'Naantali', 'Nexø', 'Norrköping', 'Norrtälje', 'Nowa Pasłęka', 'Nowe Warpno', 'Nykøbing Falster', 'Nynäshamn', 'Oskarshamn', 'Oulu', 'Oxelösund', 'Paldiski', 'Pärnu', 'Pāvilosta', 'Pori', 'Primorsk, Leningrad Oblast', 'Puttgarden', 'Rauma, Finland', 'Riga', 'Rødby', 'Rønne', 'Rostock', 'Saint Petersburg', 'Salacgrīva', 'Sassnitz', 'Simrishamn', 'Slite', 'Södertälje', 'Sölvesborg', 'Sønderborg', 'Sopot', 'Stepnica', 'Stockholm', 'Stralsund', 'Świnoujście', 'Szczecin', 'Tallinn', 'Travemünde', 'Trelleborg', 'Trzebież', 'Turku', 'Ueckermünde', 'Ustka', 'Ventspils', 'Visby', 'Vysotsk', 'Wismar', 'Władysławowo', 'Wolgast', 'Wolin (town)', 'Ystad']
+      Saint Petersburg in ['Saint Petersburg', 'Primorsk, Leningrad Oblast', 'Ustka', 'Puttgarden']
+      Primorsk, Leningrad Oblast in ['Saint Petersburg', 'Primorsk, Leningrad Oblast', 'Ustka', 'Puttgarden']
+      Ustka in ['Saint Petersburg', 'Primorsk, Leningrad Oblast', 'Ustka', 'Puttgarden', 'Helsinki']
+      Puttgarden in ['Saint Petersburg', 'Primorsk, Leningrad Oblast', 'Ustka', 'Puttgarden', 'Helsinki', 'Oulu']
+      Helsinki in ['Saint Petersburg', 'Primorsk, Leningrad Oblast', 'Ustka', 'Puttgarden', 'Helsinki', 'Oulu', 'Ventspils']
+      Oulu in ['Saint Petersburg', 'Primorsk, Leningrad Oblast', 'Ustka', 'Puttgarden', 'Helsinki', 'Oulu', 'Ventspils']
+      Ventspils in ['Saint Petersburg', 'Primorsk, Leningrad Oblast', 'Ustka', 'Puttgarden', 'Helsinki', 'Oulu', 'Ventspils']
+['Saint Petersburg', 'Helsinki', 'Oulu', 'Ventspils']
+Ended after 2.5 hierarchy
+(2.5, ['Ventspils', 'Saint Petersburg', 'Oulu', 'Helsinki'])
+
+extract_info(Oulu) Start.
+utils/preprocess.py extract_info(): Checking good links on Oulu
+Murmansk is Geography
+1 / 30 )  Murmansk Murmansk murmansk
+Norilsk is Geography
+2 / 30 )  Norilsk Norilsk norilsk
+Kuopio is Geography
+3 / 30 )  Kuopio Kuopio kuopio
+Tampere is Geography
+4 / 30 )  Tampere Tampere tampere
+Salmon is Animal
+5 / 30 )  salmon Salmon salmon
+Gulf of Bothnia is Geography
+6 / 30 )  Gulf of Bothnia Gulf of Bothnia gulf_of_bothnia
+Helsinki is Geography
+7 / 30 )  Helsinki Helsinki helsinki
+Bothnian Bay is Geography
+8 / 30 )  Bothnian Bay Bothnian Bay bothnian_bay
+Sweden is Geography
+9 / 30 )  Swedish mainland Sweden sweden
+Raahe is Geography
+10 / 30 )  Raahe Raahe raahe
+Espoo is Geography
+11 / 30 )  Espoo Espoo espoo
+Vantaa is Geography
+12 / 30 )  Vantaa Vantaa vantaa
+Turku is Geography
+13 / 30 )  Turku Turku turku
+Soviet Union is Geography
+14 / 30 )  Soviet Union Soviet Union soviet_union
+Iraq is Geography
+15 / 30 )  Iraq Iraq iraq
+Oulu is Geography
+16 / 30 )  The Irish Festival of Oulu Oulu oulu
+Oulu Airport is Geography
+17 / 30 )  Oulu Airport Oulu Airport oul
+Kolari is Geography
+18 / 30 )  Kolari Kolari kolari
+Rovaniemi is Geography
+19 / 30 )  Rovaniemi Rovaniemi rovaniemi
+Seinäjoki is Geography
+20 / 30 )  Seinäjoki Seinäjoki seinäjoki
+Utsjoki is Geography
+21 / 30 )  Utsjoki Utsjoki utsjoki
+Lahti is Geography
+22 / 30 )  Lahti Lahti lahti
+Jyväskylä is Geography
+23 / 30 )  Jyväskylä Jyväskylä jyväskylä
+Kemi is Geography
+24 / 30 )  Kemi Kemi kemi
+Kajaani is Geography
+25 / 30 )  Kajaani Kajaani kajaani
+Arctic Circle is Geography
+26 / 30 )  Arctic Circle Arctic Circle arctic_circle
+extract_triplet(Oulu)
+Got GPT's response. String length : 2655
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [['Kuopio', 'Kuopio', 'kuopio']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [['salmon', 'Salmon', 'salmon']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [['Swedish mainland', 'Sweden', 'sweden']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [['Gulf of Bothnia', 'Gulf of Bothnia', 'gulf_of_bothnia']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [['Bothnian Bay', 'Bothnian Bay', 'bothnian_bay']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  [['Espoo', 'Espoo', 'espoo']]
+object_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [['Tampere', 'Tampere', 'tampere']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union'], ['Iraq', 'Iraq', 'iraq']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu'], ['Oulu Airport', 'Oulu Airport', 'oul']]
+object_words:  []
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu'], ['Oulu Airport', 'Oulu Airport', 'oul']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [['Tampere', 'Tampere', 'tampere']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  []
+subject_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+object_words:  [(None, 'Oulu', 'oulu'), ['The Irish Festival of Oulu', 'Oulu', 'oulu']]
+extract_info(Ventspils) Start.
+utils/preprocess.py extract_info(): Checking good links on Ventspils
+Latvia is Geography
+1 / 30 )  Latvia Latvia latvia
+Courland is Geography
+2 / 30 )  Courland Courland courland
+Baltic Sea is Geography
+3 / 30 )  Baltic Sea Baltic Sea baltic_sea
+The Gambia is Geography
+4 / 30 )  Gambia The Gambia gambia
+Tobago is Geography
+5 / 30 )  Tobago Tobago tobago
+Ventspils is Geography
+6 / 30 )  VIRAC Ventspils ventspils
+USS Cole  is Geography
+7 / 30 )  USS Cole USS Cole  uss_cole_bombing
+Russia is Geography
+8 / 30 )  Russia Russia russia
+extract_triplet(Ventspils)
+Got GPT's response. String length : 385
+subject_words:  [(None, 'Ventspils', 'ventspils'), ['VIRAC', 'Ventspils', 'ventspils']]
+object_words:  [['Latvia', 'Latvia', 'latvia']]
+subject_words:  [(None, 'Ventspils', 'ventspils'), ['VIRAC', 'Ventspils', 'ventspils']]
+object_words:  [['Courland', 'Courland', 'courland']]
+subject_words:  [(None, 'Ventspils', 'ventspils'), ['VIRAC', 'Ventspils', 'ventspils']]
+object_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [(None, 'Ventspils', 'ventspils'), ['VIRAC', 'Ventspils', 'ventspils']]
+object_words:  [['Gambia', 'The Gambia', 'gambia'], ['Tobago', 'Tobago', 'tobago']]
+subject_words:  [['VIRAC', 'Ventspils', 'ventspils']]
+object_words:  [(None, 'Ventspils', 'ventspils'), ['VIRAC', 'Ventspils', 'ventspils']]
+subject_words:  []
+object_words:  [(None, 'Ventspils', 'ventspils'), ['VIRAC', 'Ventspils', 'ventspils']]
+subject_words:  [(None, 'Ventspils', 'ventspils'), ['VIRAC', 'Ventspils', 'ventspils']]
+object_words:  [['Russia', 'Russia', 'russia']]
+extract_info(Helsinki) Start.
+utils/preprocess.py extract_info(): Checking good links on Helsinki
+Finland is Geography
+1 / 30 )  Finland Finland finland
+Gulf of Finland is Geography
+2 / 30 )  Gulf of Finland Gulf of Finland gulf_of_finland
+Uusimaa is Geography
+3 / 30 )  Uusimaa Uusimaa uusimaa
+Tallinn is Geography
+4 / 30 )  Tallinn, Estonia Tallinn tallinn
+Riga is Geography
+5 / 30 )  Riga, Latvia Riga riga
+Stockholm is Geography
+6 / 30 )  Stockholm, Sweden Stockholm stockholm
+Saint Petersburg is Geography
+7 / 30 )  Saint Petersburg, Russia Saint Petersburg saint_petersburg
+Espoo is Geography
+8 / 30 )  Espoo Espoo espoo
+Vantaa is Geography
+9 / 30 )  Vantaa Vantaa vantaa
+Oslo is Geography
+10 / 30 )  Oslo Oslo oslo
+London is Geography
+11 / 30 )  London London london
+New York City is Geography
+12 / 30 )  New York City New York City new_york_city
+Rovaniemi is Geography
+13 / 30 )  Rovaniemi Rovaniemi rovaniemi
+Sweden is Geography
+14 / 30 )  Sweden Sweden sweden
+Uppland is Geography
+15 / 30 )  Uppland Uppland uppland
+Helsingør is Geography
+16 / 30 )  Helsingør Helsingør helsingør
+Helsingborg is Geography
+17 / 30 )  Helsingborg Helsingborg helsingborg
+Vanhankaupunginkoski  is Geography
+18 / 30 )  Vanhankaupunginkoski Vanhankaupunginkoski  capital_of_finland
+Turku is Geography
+19 / 30 )  Turku Turku turku
+Kingdom of Sweden  is Geography
+20 / 30 )  Kingdom of Sweden Kingdom of Sweden  sverige
+Norrland is Geography
+21 / 30 )  Norrland Norrland norrland
+Vartiokylä hillfort  is Geography
+22 / 30 )  Vartiokylä hillfort Vartiokylä hillfort  capital_of_finland
+Baltic Sea is Geography
+23 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Vyborg is Geography
+24 / 30 )  Vyborg Vyborg vyborg
+Fish is Animal
+25 / 30 )  fish Fish fish
+Gustav Vasa is People
+26 / 30 )  Gustav I of Sweden Gustav Vasa gustavus_i
+Porvoo is Geography
+27 / 30 )  Porvoo Porvoo porvoo
+Central Park  is Geography
+28 / 30 )  Helsinki Central Park Central Park  central_park
+Acer platanoides is Animal
+29 / 30 )  Norway maple Acer platanoides acer_platanoides
+Red squirrel is Animal
+30 / 30 )  red squirrel Red squirrel red_squirrel
+extract_triplet(Helsinki)
+Got GPT's response. String length : 4801
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Finland', 'Finland', 'finland']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Finland', 'Finland', 'finland'], ['Gulf of Finland', 'Gulf of Finland', 'gulf_of_finland']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Uusimaa', 'Uusimaa', 'uusimaa']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Tallinn, Estonia', 'Tallinn', 'tallinn']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Riga, Latvia', 'Riga', 'riga']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Stockholm, Sweden', 'Stockholm', 'stockholm'], ['Sweden', 'Sweden', 'sweden']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Saint Petersburg, Russia', 'Saint Petersburg', 'saint_petersburg']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Espoo', 'Espoo', 'espoo']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Vantaa', 'Vantaa', 'vantaa']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Vantaa', 'Vantaa', 'vantaa']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Rovaniemi', 'Rovaniemi', 'rovaniemi']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Vanhankaupunginkoski', 'Vanhankaupunginkoski ', 'capital_of_finland']]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [['Sweden', 'Sweden', 'sweden'], ['Gustav I of Sweden', 'Gustav Vasa', 'gustavus_i']]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  [['Sweden', 'Sweden', 'sweden'], ['Gustav I of Sweden', 'Gustav Vasa', 'gustavus_i']]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  []
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  []
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  []
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  [(None, 'Helsinki', 'helsinki'), ['Helsinki Central Park', 'Central Park ', 'central_park']]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [['Norway maple', 'Acer platanoides', 'acer_platanoides']]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [['red squirrel', 'Red squirrel', 'red_squirrel']]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Finland', 'Finland', 'finland']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+['', "Helsinki's three major areas are Helsinki Downtown, North Helsinki, and", 'East Helsinki', '']
+subject_words:  []
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  []
+object_words:  [['Finland', 'Finland', 'finland']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  []
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Finland', 'Finland', 'finland']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [(None, 'Helsinki', 'helsinki'), ['Vantaa', 'Vantaa', 'vantaa']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [['Saint Petersburg, Russia', 'Saint Petersburg', 'saint_petersburg']]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  [(None, 'Helsinki', 'helsinki')]
+subject_words:  [(None, 'Helsinki', 'helsinki')]
+object_words:  []
+extract_info(Saint Petersburg) Start.
+utils/preprocess.py extract_info(): Checking good links on Saint Petersburg
+Russia is Geography
+1 / 30 )  Russia Russia russia
+Moscow is Geography
+2 / 30 )  Moscow Moscow moscow
+Neva is Geography
+3 / 30 )  River Neva Neva neva
+Gulf of Finland is Geography
+4 / 30 )  Gulf of Finland Gulf of Finland gulf_of_finland
+Baltic Sea is Geography
+5 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Saint Peter is People
+6 / 30 )  Saint Peter Saint Peter saint_peter
+Hermitage Museum is Geography
+7 / 30 )  Hermitage Hermitage Museum hermitage_museum
+Russian Orthodox Church is Geography
+8 / 30 )  Russian Orthodox Church Russian Orthodox Church russian_orthodox_church
+Paul the Apostle is People
+9 / 30 )  Paul Paul the Apostle apostle_paul
+Mikhail Lomonosov is People
+10 / 30 )  Mikhail Lomonosov Mikhail Lomonosov mikhail_lomonosov
+Alexander Pushkin is People
+11 / 30 )  Alexander Pushkin Alexander Pushkin alexander_pushkin
+Nicholas II is People
+12 / 30 )  Nicholas II Nicholas II nicholas_ii
+Vladimir Lenin is People
+13 / 30 )  Vladimir Lenin Vladimir Lenin vladimir_lenin
+Leningrad Oblast is Geography
+14 / 30 )  Leningrad Leningrad Oblast leningrad_oblast
+Venice is Geography
+15 / 30 )  Venice Venice venice
+Palmyra is Geography
+16 / 30 )  Palmyra Palmyra palmyra
+Ingria is Geography
+17 / 30 )  Ingermanland Ingria ingria
+Arkhangelsk is Geography
+18 / 30 )  Arkhangelsk Arkhangelsk arkhangelsk
+White Sea is Geography
+19 / 30 )  White Sea White Sea white_sea
+Winter Palace is Geography
+20 / 30 )  Winter Palace Winter Palace winter_palace
+First French Empire is Geography
+21 / 30 )  Napoleonic France First French Empire first_french_empire
+Leon Trotsky is People
+22 / 30 )  Leon Trotsky Leon Trotsky leon_trotsky
+Estonia is Geography
+23 / 30 )  Estonia Estonia estonia
+Russian cruiser Aurora is Geography
+24 / 30 )  cruiser Aurora Russian cruiser Aurora russian_cruiser_aurora
+Joseph Stalin is People
+25 / 30 )  Stalin Joseph Stalin joseph_stalin
+Nazi Germany is Geography
+26 / 30 )  German forces Nazi Germany nazi_germany
+Lake Ladoga is Geography
+27 / 30 )  Lake Ladoga Lake Ladoga lake_ladoga
+Battle of Stalingrad is Geography
+28 / 30 )  Stalingrad Battle of Stalingrad battle_of_stalingrad
+Sevastopol is Geography
+29 / 30 )  Sevastopol Sevastopol sevastopol
+Odesa is Geography
+30 / 30 )  Odesa Odesa odesa
+extract_triplet(Saint Petersburg)
+Got GPT's response. String length : 2662
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  [['Leningrad', 'Leningrad Oblast', 'leningrad_oblast']]
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  [['River Neva', 'Neva', 'neva']]
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  [['Gulf of Finland', 'Gulf of Finland', 'gulf_of_finland'], ['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  []
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  []
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  [['Leningrad', 'Leningrad Oblast', 'leningrad_oblast']]
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+object_words:  [['Hermitage', 'Hermitage Museum', 'hermitage_museum']]
+subject_words:  [['River Neva', 'Neva', 'neva']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Gulf of Finland', 'Gulf of Finland', 'gulf_of_finland']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Saint Peter', 'Saint Peter', 'saint_peter']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Hermitage', 'Hermitage Museum', 'hermitage_museum']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Russian Orthodox Church', 'Russian Orthodox Church', 'russian_orthodox_church']]
+object_words:  [['Paul', 'Paul the Apostle', 'apostle_paul']]
+subject_words:  [['Paul', 'Paul the Apostle', 'apostle_paul']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg'), ['Russian Orthodox Church', 'Russian Orthodox Church', 'russian_orthodox_church']]
+subject_words:  [['Mikhail Lomonosov', 'Mikhail Lomonosov', 'mikhail_lomonosov']]
+object_words:  []
+subject_words:  [['Alexander Pushkin', 'Alexander Pushkin', 'alexander_pushkin']]
+object_words:  []
+subject_words:  [['Nicholas II', 'Nicholas II', 'nicholas_ii']]
+object_words:  []
+subject_words:  [['Vladimir Lenin', 'Vladimir Lenin', 'vladimir_lenin']]
+object_words:  [['Leningrad', 'Leningrad Oblast', 'leningrad_oblast']]
+subject_words:  [['Leningrad', 'Leningrad Oblast', 'leningrad_oblast']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Venice', 'Venice', 'venice']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Palmyra', 'Palmyra', 'palmyra']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Ingermanland', 'Ingria', 'ingria']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Arkhangelsk', 'Arkhangelsk', 'arkhangelsk']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['White Sea', 'White Sea', 'white_sea']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Winter Palace', 'Winter Palace', 'winter_palace']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Napoleonic France', 'First French Empire', 'first_french_empire']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Leon Trotsky', 'Leon Trotsky', 'leon_trotsky']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Estonia', 'Estonia', 'estonia']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['cruiser Aurora', 'Russian cruiser Aurora', 'russian_cruiser_aurora']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['Stalin', 'Joseph Stalin', 'joseph_stalin']]
+object_words:  [(None, 'Saint Petersburg', 'saint_petersburg')]
+subject_words:  [['German forces', 'Nazi Germany', 'nazi_germany']]
+object_words:  [['Leningrad', 'Leningrad Oblast', 'leningrad_oblast']]
+subject_words:  [['Lake Ladoga', 'Lake Ladoga', 'lake_ladoga']]
+object_words:  [['Leningrad', 'Leningrad Oblast', 'leningrad_oblast']]
+subject_words:  [['Stalingrad', 'Battle of Stalingrad', 'battle_of_stalingrad']]
+object_words:  []
+subject_words:  [['Sevastopol', 'Sevastopol', 'sevastopol']]
+object_words:  []
+subject_words:  [['Odesa', 'Odesa', 'odesa']]
+object_words:  []
+['("Frederick William III and Queen Louise", "fled from", "Napoleon")\n', '("Frederick William III of Prussia", "family fled to", "Memel")\n']
+
+['("The capital city of East Prussia", "was", "Königsberg")\n', '("Königsberg", "is present-day", "Kaliningrad")\n', '("East Prussia", "was the main part of the region of", "Prussia along the southeastern Baltic Coast")\n', '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")\n', '("Germans", "became the dominant ethnic group in", "East Prussia")\n', '("Poles and Lithuanians", "formed minorities in", "East Prussia")\n', '("The Duchy of Prussia", "became a vassal of", "the Polish crown by the Prussian Homage")\n', '("The Treaty of Versailles", "made East Prussia an exclave of", "Weimar Germany")\n', '("Joseph Stalin", "insisted on the division of", "East Prussia")\n', '("The German and the Masurian population of East Prussia", "was largely evacuated or expelled", "after World War II")\n', '("The capital of the Province of East Prussia", "was", "Marienwerder")\n', '("Napoleon", "occupied", "Berlin")\n', '("Adolf Hitler", "rose to power in", "Nazi Germany")\n', '("The Polish Corridor", "separated East Prussia from the rest of", "Germany after World War I")\n', '("The Kingdom of Prussia", "became the leading state of", "the German Empire")\n', '("The Russian Empire", "invaded", "East Prussia during World War I")\n', '("The city of Königsberg", "was renamed", "Kaliningrad")\n', '("Frederick William III of Prussia", "was concurrently", "Elector of Brandenburg")\n', '("Frederick William III of Prussia", "ruled during", "the Napoleonic Wars")\n', '("Frederick William III of Prussia", "joined", "the Sixth Coalition against Napoleon")\n', '("Frederick William III of Prussia", "took part in", "the Congress of Vienna")\n', '("Frederick William III of Prussia", "primary interests were internal, including the reform of", "Prussia\'s Protestant churches")\n', '("Frederick William III of Prussia", "aimed to unify", "the Protestant churches in the Prussian Union of Churches")\n', '("Frederick William III of Prussia", "was advised by", "Gerhard von Scharnhorst")\n', '("Frederick William III of Prussia", "was the dedicatee of", "Beethoven\'s Ninth Symphony")\n', '("Frederick William III of Prussia", "was born in", "Potsdam")\n', '("Frederick William III of Prussia", "fought at", "the Battle of Jena-Auerstädt")\n', '("Frederick William III of Prussia", "was defeated by", "the French")\n', '("Frederick William III of Prussia", "retreated to", "East Prussia")\n', '("Frederick William III of Prussia", "met with Napoleon at", "Tilsit on the Niemen")\n', '("Frederick William III of Prussia", "had territory taken by", "Napoleon")\n', '("East Prussia", "became a refuge for the royal family after", "the Battle of Jena-Auerstädt")\n', '("Prussian territories west of the", "Elbe", "were lost after defeat to Napoleon")\n', '("Frederick William III of Prussia", "allied with", "Francis of Austria")\n', '("Oulu", "is a city in", "Finland")\n', '("Oulu", "is located at", "the mouth of the River Oulu")\n', '("Oulu", "is the most populous city in", "Northern Finland")\n', '("Oulu", "has been called the", "capital of Northern Finland")\n', '("Oulu", "is one of Europe\'s living labs where residents experiment with new technologies on a community-wide scale", "")\n', '("University of Oulu", "is regionally renowned in the field of", "information technology")\n', '("Oulu", "was tied with", "Kuopio as the second most attractive city in Finland")\n', '("Oulu", "was once known for wood tar and", "salmon")\n', '("Oulu", "became a major high-tech centre, particularly in", "IT and wellness technology")\n', '("Oulu", "was founded by", "King Charles IX of Sweden")\n', '("Oulu", "is situated by the", "Gulf of Bothnia")\n', '("Oulu", "s coast sits at the", "Bothnian Bay")\n', '("Oulu", "has a subarctic climate", "")\n', '("Espoo", "has a larger percentage of people with a foreign background than", "Oulu")\n', '("Oulu", "is the second largest monolingual Finnish-speaking municipality in Finland after", "Tampere")\n', '("Immigrants in Oulu", "come mostly from the former", "Soviet Union and Iraq")\n', '("Oulu Airport", "is the second largest airport in Finland by passenger volume", "")\n', '("Oulu", "is served by", "Oulu Airport")\n', '("Oulu", "has transport destinations including", "Kolari, Rovaniemi, Seinäjoki, and Tampere")\n', '("Oulu", "has a dedicated transportation network for", "non-motor vehicular traffic")\n', '("Winter Cycling Federation", "was founded in", "Oulu")\n', '("Oulu", "hosts", "The Irish Festival of Oulu")\n', '("University of Oulu", "is located in", "Oulu")\n', '("Oulu", "is home to the most northerly architecture school in the world", "")\n', '("Kalmah", "is a band from", "Oulu")\n', '("Oulu", "has one well-known bandy club,", "OLS")\n', '("University of Oulu and Oulu University of Applied Sciences", "have their main campuses located in", "Oulu")\n', '("Ventspils", "is a city in", "northwestern Latvia")\n', '("Ventspils", "is located in", "Courland")\n', '("Ventspils", "has a port on", "the Baltic Sea")\n', '("Ventspils", "was the point of origin for colonization attempts of", "Gambia and Tobago")\n', '("VIRAC", "is located near", "Ventspils")\n', '("USS Cole", "visited the port of", "Ventspils")\n', '("Ventspils", "has historical connections with", "Russia")\n', '("Helsinki", "is the capital and most populous city of", "Finland")\n', '("Helsinki", "is located on the shore of", "the Gulf of Finland")\n', '("Helsinki", "serves as the seat of", "Uusimaa region")\n', '("Helsinki", "is situated to the north of", "Tallinn, Estonia")\n', '("Helsinki", "is situated to the north of", "Riga, Latvia")\n', '("Helsinki", "is situated to the east of", "Stockholm, Sweden")\n', '("Helsinki", "is situated to the west of", "Saint Petersburg, Russia")\n', '("Helsinki", "forms the metropolitan area with", "Espoo")\n', '("Helsinki", "forms the metropolitan area with", "Vantaa")\n', '("Helsinki", "is considered Finland\'s only metropolis and", "the world\'s northernmost metropolitan area with over one million inhabitants")\n', '("Helsinki", "is the third largest municipality in", "the Nordic countries")\n', '("Helsinki Airport", "serves", "Helsinki")\n', '("Helsinki", "airport is located in", "Vantaa")\n', '("Helsinki", "is a bilingual municipality with official languages", "Finnish and Swedish")\n', '("Jason Lepojärvi", "mentions", "Helsinki")\n', '("Helsinki", "is classified as", "a major port city")\n', '("Helsinki", "was ranked the third best city in the world to live in by", "the Boston Consulting Group and the BCG Henderson Institute")\n', '("Helsinki", "is one of Finland\'s most important tourist cities along with", "Rovaniemi in Lapland")\n', '("Swedish colonisation of the Finnish coast", "led to the naming of", "Helsinge")\n', '("Vanhankaupunginkoski", "refers to", "the rapids at the mouth of the river where Helsinki was founded")\n', '("Gustav I of Sweden", "founded", "Helsinki")\n', '("Helsinki", "rivalled the Hanseatic city of", "Reval (now Tallinn)")\n', '("King Gustav I of Sweden", "ordered the bourgeoisie of Porvoo, Raseborg, Rauma, and Ulvila to move to", "Helsinki")\n', '("Sveaborg (Viapori in Finnish)", "helped to improve", "Helsinki\'s status")\n', '("Alexander I of Russia", "moved the capital of Finland from Turku to", "Helsinki")\n', '("The construction of", "Sveaborg (now also called Suomenlinna) fortress", "occurred in Helsinki")\n', '("Helsinki", "is known as the Daughter of the Baltic or the Pearl of the Baltic", "")\n', '("Helsinki Central Park", "is an important recreational area for residents of", "Helsinki")\n', '("Helsinki\'s main islands include", "Korkeasaari, which is home to", "Finland\'s largest zoo, Korkeasaari Zoo")\n', '("Vanhankaupunginselkä", "is the largest nature reserve within", "Helsinki")\n', '("Norway maple", "is", "Helsinki\'s official plant")\n', '("Red squirrel", "is", "Helsinki\'s official animal")\n', '("Helsinki Metropolitan Area", "is the most densely populated area of", "Finland")\n', '("Helsinki", "has a climate classified as", "humid continental")\n', '("The Finnish National Theatre", "is one of the major theatres in", "Helsinki")\n', '("The Finnish National Opera", "is the only full-time, professional opera company in", "Finland")\n', '("Helsinki International Film Festival – Love & Anarchy", "is a film festival that takes place in", "Helsinki")\n', '("Helsinki Festival", "takes place every", "August")\n', '("Vappu", "is an annual carnival in", "Helsinki")\n', '("Ring I, Ring II, and Ring III", "are the three semicircular beltways in", "Helsinki")\n', '("Helsinki Central Railway Station", "is the main terminus of the rail network in", "Finland")\n', '("Helsinki\'s commuter rail system includes", "the Ring Rail Line with a station at", "Helsinki Airport")\n', '("Helsinki Airport", "is the main airport serving", "Helsinki and is located in Vantaa")\n', '("Regular ferry traffic from Helsinki", "is to", "Stockholm, Tallinn, and Saint Petersburg")\n', '("Helsinki Regional Transport Authority", "manages public transportation in", "the Helsinki metropolitan area")\n', '("The Helsinki region", "generates approximately one third of", "Finland\'s GDP")\n', '("Saint Petersburg", "formerly known as", "Petrograd and later Leningrad")\n', '("Saint Petersburg", "is the second-largest city in", "Russia")\n', '("Saint Petersburg", "situated on", "the River Neva")\n', '("Saint Petersburg", "located at the head of", "the Gulf of Finland on the Baltic Sea")\n', '("Saint Petersburg", "founded by", "Tsar Peter the Great")\n', '("Saint Petersburg", "named after", "the apostle Saint Peter")\n', '("Saint Petersburg", "served as capital of", "the Tsardom of Russia and the Russian Empire")\n', '("Saint Petersburg", "renamed to", "Leningrad after Lenin\'s death")\n', '("Saint Petersburg", "known as", "the Northern Capital of Russia")\n', '("Saint Petersburg", "home to", "the Hermitage")\n', '("River Neva", "part of", "Saint Petersburg")\n', '("Gulf of Finland", "part of", "Saint Petersburg")\n', '("Baltic Sea", "connected by", "Saint Petersburg")\n', '("Saint Peter", "city named after", "Saint Petersburg")\n', '("Hermitage", "located in", "Saint Petersburg")\n', '("Russian Orthodox Church", "observes the memory of", "apostles Peter and Paul")\n', '("Paul", "associated with", "Russian Orthodox Church in Saint Petersburg")\n', '("Mikhail Lomonosov", "used spelling of city\'s name", "Петрополис or Petropol\'")\n', '("Alexander Pushkin", "translated city name to", "Petrograd")\n', '("Nicholas II", "renamed city to", "Petrograd")\n', '("Vladimir Lenin", "after death city renamed to", "Leningrad")\n', '("Leningrad", "previous name of", "Saint Petersburg")\n', '("Venice of the North", "nickname for", "Saint Petersburg")\n', '("Palmyra of the North", "nickname for", "Saint Petersburg")\n', '("Ingermanland", "Fortress captured on site of", "Saint Petersburg")\n', '("Arkhangelsk", "seaport replaced by", "Saint Petersburg")\n', '("White Sea", "Arkhangelsk located on", "connected to Saint Petersburg")\n', '("Winter Palace", "located in", "Saint Petersburg")\n', '("Napoleonic France", "commemorated by monuments in", "Saint Petersburg")\n', '("Leon Trotsky", "associated with", "political history of Saint Petersburg")\n', '("Estonia", "historic population moved to", "Saint Petersburg region")\n', '("cruiser Aurora", "symbol of", "the October Revolution in Saint Petersburg")\n', '("Stalin", "era remembered for", "the pivotal events in Saint Petersburg")\n', '("German forces", "besieged", "Leningrad during World War II")\n', '("Lake Ladoga", "provided the Road of Life during", "the siege of Leningrad")\n', '("Stalingrad", "along with Leningrad", "named hero cities of the war")\n', '("Sevastopol", "along with Leningrad", "named hero cities of the war")\n', '("Odesa", "along with Leningrad", "named hero cities of the war")\n']
+range(1, 155) 2
+['("Frederick William III and Queen Louise", "fled from", "Napoleon")\n', '("Frederick William III of Prussia", "family fled to", "Memel")\n']
+
+['("The capital city of East Prussia", "was", "Königsberg")\n', '("Königsberg", "is present-day", "Kaliningrad")\n', '("East Prussia", "was the main part of the region of", "Prussia along the southeastern Baltic Coast")\n', '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")\n', '("Germans", "became the dominant ethnic group in", "East Prussia")\n', '("Poles and Lithuanians", "formed minorities in", "East Prussia")\n', '("The Duchy of Prussia", "became a vassal of", "the Polish crown by the Prussian Homage")\n', '("The Treaty of Versailles", "made East Prussia an exclave of", "Weimar Germany")\n', '("Joseph Stalin", "insisted on the division of", "East Prussia")\n', '("The German and the Masurian population of East Prussia", "was largely evacuated or expelled", "after World War II")\n', '("The capital of the Province of East Prussia", "was", "Marienwerder")\n', '("Napoleon", "occupied", "Berlin")\n', '("Adolf Hitler", "rose to power in", "Nazi Germany")\n', '("The Polish Corridor", "separated East Prussia from the rest of", "Germany after World War I")\n', '("The Kingdom of Prussia", "became the leading state of", "the German Empire")\n', '("The Russian Empire", "invaded", "East Prussia during World War I")\n', '("The city of Königsberg", "was renamed", "Kaliningrad")\n', '("Frederick William III of Prussia", "was concurrently", "Elector of Brandenburg")\n', '("Frederick William III of Prussia", "ruled during", "the Napoleonic Wars")\n', '("Frederick William III of Prussia", "joined", "the Sixth Coalition against Napoleon")\n', '("Frederick William III of Prussia", "took part in", "the Congress of Vienna")\n', '("Frederick William III of Prussia", "primary interests were internal, including the reform of", "Prussia\'s Protestant churches")\n', '("Frederick William III of Prussia", "aimed to unify", "the Protestant churches in the Prussian Union of Churches")\n', '("Frederick William III of Prussia", "was advised by", "Gerhard von Scharnhorst")\n', '("Frederick William III of Prussia", "was the dedicatee of", "Beethoven\'s Ninth Symphony")\n', '("Frederick William III of Prussia", "was born in", "Potsdam")\n', '("Frederick William III of Prussia", "fought at", "the Battle of Jena-Auerstädt")\n', '("Frederick William III of Prussia", "was defeated by", "the French")\n', '("Frederick William III of Prussia", "retreated to", "East Prussia")\n', '("Frederick William III of Prussia", "met with Napoleon at", "Tilsit on the Niemen")\n', '("Frederick William III of Prussia", "had territory taken by", "Napoleon")\n', '("East Prussia", "became a refuge for the royal family after", "the Battle of Jena-Auerstädt")\n', '("Prussian territories west of the", "Elbe", "were lost after defeat to Napoleon")\n', '("Frederick William III of Prussia", "allied with", "Francis of Austria")\n', '("Oulu", "is a city in", "Finland")\n', '("Oulu", "is located at", "the mouth of the River Oulu")\n', '("Oulu", "is the most populous city in", "Northern Finland")\n', '("Oulu", "has been called the", "capital of Northern Finland")\n', '("Oulu", "is one of Europe\'s living labs where residents experiment with new technologies on a community-wide scale", "")\n', '("University of Oulu", "is regionally renowned in the field of", "information technology")\n', '("Oulu", "was tied with", "Kuopio as the second most attractive city in Finland")\n', '("Oulu", "was once known for wood tar and", "salmon")\n', '("Oulu", "became a major high-tech centre, particularly in", "IT and wellness technology")\n', '("Oulu", "was founded by", "King Charles IX of Sweden")\n', '("Oulu", "is situated by the", "Gulf of Bothnia")\n', '("Oulu", "s coast sits at the", "Bothnian Bay")\n', '("Oulu", "has a subarctic climate", "")\n', '("Espoo", "has a larger percentage of people with a foreign background than", "Oulu")\n', '("Oulu", "is the second largest monolingual Finnish-speaking municipality in Finland after", "Tampere")\n', '("Immigrants in Oulu", "come mostly from the former", "Soviet Union and Iraq")\n', '("Oulu Airport", "is the second largest airport in Finland by passenger volume", "")\n', '("Oulu", "is served by", "Oulu Airport")\n', '("Oulu", "has transport destinations including", "Kolari, Rovaniemi, Seinäjoki, and Tampere")\n', '("Oulu", "has a dedicated transportation network for", "non-motor vehicular traffic")\n', '("Winter Cycling Federation", "was founded in", "Oulu")\n', '("Oulu", "hosts", "The Irish Festival of Oulu")\n', '("University of Oulu", "is located in", "Oulu")\n', '("Oulu", "is home to the most northerly architecture school in the world", "")\n', '("Kalmah", "is a band from", "Oulu")\n', '("Oulu", "has one well-known bandy club,", "OLS")\n', '("University of Oulu and Oulu University of Applied Sciences", "have their main campuses located in", "Oulu")\n', '("Ventspils", "is a city in", "northwestern Latvia")\n', '("Ventspils", "is located in", "Courland")\n', '("Ventspils", "has a port on", "the Baltic Sea")\n', '("Ventspils", "was the point of origin for colonization attempts of", "Gambia and Tobago")\n', '("VIRAC", "is located near", "Ventspils")\n', '("USS Cole", "visited the port of", "Ventspils")\n', '("Ventspils", "has historical connections with", "Russia")\n', '("Helsinki", "is the capital and most populous city of", "Finland")\n', '("Helsinki", "is located on the shore of", "the Gulf of Finland")\n', '("Helsinki", "serves as the seat of", "Uusimaa region")\n', '("Helsinki", "is situated to the north of", "Tallinn, Estonia")\n', '("Helsinki", "is situated to the north of", "Riga, Latvia")\n', '("Helsinki", "is situated to the east of", "Stockholm, Sweden")\n', '("Helsinki", "is situated to the west of", "Saint Petersburg, Russia")\n', '("Helsinki", "forms the metropolitan area with", "Espoo")\n', '("Helsinki", "forms the metropolitan area with", "Vantaa")\n', '("Helsinki", "is considered Finland\'s only metropolis and", "the world\'s northernmost metropolitan area with over one million inhabitants")\n', '("Helsinki", "is the third largest municipality in", "the Nordic countries")\n', '("Helsinki Airport", "serves", "Helsinki")\n', '("Helsinki", "airport is located in", "Vantaa")\n', '("Helsinki", "is a bilingual municipality with official languages", "Finnish and Swedish")\n', '("Jason Lepojärvi", "mentions", "Helsinki")\n', '("Helsinki", "is classified as", "a major port city")\n', '("Helsinki", "was ranked the third best city in the world to live in by", "the Boston Consulting Group and the BCG Henderson Institute")\n', '("Helsinki", "is one of Finland\'s most important tourist cities along with", "Rovaniemi in Lapland")\n', '("Swedish colonisation of the Finnish coast", "led to the naming of", "Helsinge")\n', '("Vanhankaupunginkoski", "refers to", "the rapids at the mouth of the river where Helsinki was founded")\n', '("Gustav I of Sweden", "founded", "Helsinki")\n', '("Helsinki", "rivalled the Hanseatic city of", "Reval (now Tallinn)")\n', '("King Gustav I of Sweden", "ordered the bourgeoisie of Porvoo, Raseborg, Rauma, and Ulvila to move to", "Helsinki")\n', '("Sveaborg (Viapori in Finnish)", "helped to improve", "Helsinki\'s status")\n', '("Alexander I of Russia", "moved the capital of Finland from Turku to", "Helsinki")\n', '("The construction of", "Sveaborg (now also called Suomenlinna) fortress", "occurred in Helsinki")\n', '("Helsinki", "is known as the Daughter of the Baltic or the Pearl of the Baltic", "")\n', '("Helsinki Central Park", "is an important recreational area for residents of", "Helsinki")\n', '("Helsinki\'s main islands include", "Korkeasaari, which is home to", "Finland\'s largest zoo, Korkeasaari Zoo")\n', '("Vanhankaupunginselkä", "is the largest nature reserve within", "Helsinki")\n', '("Norway maple", "is", "Helsinki\'s official plant")\n', '("Red squirrel", "is", "Helsinki\'s official animal")\n', '("Helsinki Metropolitan Area", "is the most densely populated area of", "Finland")\n', '("Helsinki", "has a climate classified as", "humid continental")\n', '("The Finnish National Theatre", "is one of the major theatres in", "Helsinki")\n', '("The Finnish National Opera", "is the only full-time, professional opera company in", "Finland")\n', '("Helsinki International Film Festival – Love & Anarchy", "is a film festival that takes place in", "Helsinki")\n', '("Helsinki Festival", "takes place every", "August")\n', '("Vappu", "is an annual carnival in", "Helsinki")\n', '("Ring I, Ring II, and Ring III", "are the three semicircular beltways in", "Helsinki")\n', '("Helsinki Central Railway Station", "is the main terminus of the rail network in", "Finland")\n', '("Helsinki\'s commuter rail system includes", "the Ring Rail Line with a station at", "Helsinki Airport")\n', '("Helsinki Airport", "is the main airport serving", "Helsinki and is located in Vantaa")\n', '("Regular ferry traffic from Helsinki", "is to", "Stockholm, Tallinn, and Saint Petersburg")\n', '("Helsinki Regional Transport Authority", "manages public transportation in", "the Helsinki metropolitan area")\n', '("The Helsinki region", "generates approximately one third of", "Finland\'s GDP")\n', '("Saint Petersburg", "formerly known as", "Petrograd and later Leningrad")\n', '("Saint Petersburg", "is the second-largest city in", "Russia")\n', '("Saint Petersburg", "situated on", "the River Neva")\n', '("Saint Petersburg", "located at the head of", "the Gulf of Finland on the Baltic Sea")\n', '("Saint Petersburg", "founded by", "Tsar Peter the Great")\n', '("Saint Petersburg", "named after", "the apostle Saint Peter")\n', '("Saint Petersburg", "served as capital of", "the Tsardom of Russia and the Russian Empire")\n', '("Saint Petersburg", "renamed to", "Leningrad after Lenin\'s death")\n', '("Saint Petersburg", "known as", "the Northern Capital of Russia")\n', '("Saint Petersburg", "home to", "the Hermitage")\n', '("River Neva", "part of", "Saint Petersburg")\n', '("Gulf of Finland", "part of", "Saint Petersburg")\n', '("Baltic Sea", "connected by", "Saint Petersburg")\n', '("Saint Peter", "city named after", "Saint Petersburg")\n', '("Hermitage", "located in", "Saint Petersburg")\n', '("Russian Orthodox Church", "observes the memory of", "apostles Peter and Paul")\n', '("Paul", "associated with", "Russian Orthodox Church in Saint Petersburg")\n', '("Mikhail Lomonosov", "used spelling of city\'s name", "Петрополис or Petropol\'")\n', '("Alexander Pushkin", "translated city name to", "Petrograd")\n', '("Nicholas II", "renamed city to", "Petrograd")\n', '("Vladimir Lenin", "after death city renamed to", "Leningrad")\n', '("Leningrad", "previous name of", "Saint Petersburg")\n', '("Venice of the North", "nickname for", "Saint Petersburg")\n', '("Palmyra of the North", "nickname for", "Saint Petersburg")\n', '("Ingermanland", "Fortress captured on site of", "Saint Petersburg")\n', '("Arkhangelsk", "seaport replaced by", "Saint Petersburg")\n', '("White Sea", "Arkhangelsk located on", "connected to Saint Petersburg")\n', '("Winter Palace", "located in", "Saint Petersburg")\n', '("Napoleonic France", "commemorated by monuments in", "Saint Petersburg")\n', '("Leon Trotsky", "associated with", "political history of Saint Petersburg")\n', '("Estonia", "historic population moved to", "Saint Petersburg region")\n', '("cruiser Aurora", "symbol of", "the October Revolution in Saint Petersburg")\n', '("Stalin", "era remembered for", "the pivotal events in Saint Petersburg")\n', '("German forces", "besieged", "Leningrad during World War II")\n', '("Lake Ladoga", "provided the Road of Life during", "the siege of Leningrad")\n', '("Stalingrad", "along with Leningrad", "named hero cities of the war")\n', '("Sevastopol", "along with Leningrad", "named hero cities of the war")\n', '("Odesa", "along with Leningrad", "named hero cities of the war")\n']
+range(1, 155) 2
+['("Frederick William III and Queen Louise", "fled from", "Napoleon")\n', '("Frederick William III of Prussia", "family fled to", "Memel")\n']
+
+['("The capital city of East Prussia", "was", "Königsberg")\n', '("Königsberg", "is present-day", "Kaliningrad")\n', '("East Prussia", "was the main part of the region of", "Prussia along the southeastern Baltic Coast")\n', '("East Prussia", "was part of", "the monastic state of the Teutonic Knights")\n', '("Germans", "became the dominant ethnic group in", "East Prussia")\n', '("Poles and Lithuanians", "formed minorities in", "East Prussia")\n', '("The Duchy of Prussia", "became a vassal of", "the Polish crown by the Prussian Homage")\n', '("The Treaty of Versailles", "made East Prussia an exclave of", "Weimar Germany")\n', '("Joseph Stalin", "insisted on the division of", "East Prussia")\n', '("The German and the Masurian population of East Prussia", "was largely evacuated or expelled", "after World War II")\n', '("The capital of the Province of East Prussia", "was", "Marienwerder")\n', '("Napoleon", "occupied", "Berlin")\n', '("Adolf Hitler", "rose to power in", "Nazi Germany")\n', '("The Polish Corridor", "separated East Prussia from the rest of", "Germany after World War I")\n', '("The Kingdom of Prussia", "became the leading state of", "the German Empire")\n', '("The Russian Empire", "invaded", "East Prussia during World War I")\n', '("The city of Königsberg", "was renamed", "Kaliningrad")\n', '("Frederick William III of Prussia", "was concurrently", "Elector of Brandenburg")\n', '("Frederick William III of Prussia", "ruled during", "the Napoleonic Wars")\n', '("Frederick William III of Prussia", "joined", "the Sixth Coalition against Napoleon")\n', '("Frederick William III of Prussia", "took part in", "the Congress of Vienna")\n', '("Frederick William III of Prussia", "primary interests were internal, including the reform of", "Prussia\'s Protestant churches")\n', '("Frederick William III of Prussia", "aimed to unify", "the Protestant churches in the Prussian Union of Churches")\n', '("Frederick William III of Prussia", "was advised by", "Gerhard von Scharnhorst")\n', '("Frederick William III of Prussia", "was the dedicatee of", "Beethoven\'s Ninth Symphony")\n', '("Frederick William III of Prussia", "was born in", "Potsdam")\n', '("Frederick William III of Prussia", "fought at", "the Battle of Jena-Auerstädt")\n', '("Frederick William III of Prussia", "was defeated by", "the French")\n', '("Frederick William III of Prussia", "retreated to", "East Prussia")\n', '("Frederick William III of Prussia", "met with Napoleon at", "Tilsit on the Niemen")\n', '("Frederick William III of Prussia", "had territory taken by", "Napoleon")\n', '("East Prussia", "became a refuge for the royal family after", "the Battle of Jena-Auerstädt")\n', '("Prussian territories west of the", "Elbe", "were lost after defeat to Napoleon")\n', '("Frederick William III of Prussia", "allied with", "Francis of Austria")\n', '("Oulu", "is a city in", "Finland")\n', '("Oulu", "is located at", "the mouth of the River Oulu")\n', '("Oulu", "is the most populous city in", "Northern Finland")\n', '("Oulu", "has been called the", "capital of Northern Finland")\n', '("Oulu", "is one of Europe\'s living labs where residents experiment with new technologies on a community-wide scale", "")\n', '("University of Oulu", "is regionally renowned in the field of", "information technology")\n', '("Oulu", "was tied with", "Kuopio as the second most attractive city in Finland")\n', '("Oulu", "was once known for wood tar and", "salmon")\n', '("Oulu", "became a major high-tech centre, particularly in", "IT and wellness technology")\n', '("Oulu", "was founded by", "King Charles IX of Sweden")\n', '("Oulu", "is situated by the", "Gulf of Bothnia")\n', '("Oulu", "s coast sits at the", "Bothnian Bay")\n', '("Oulu", "has a subarctic climate", "")\n', '("Espoo", "has a larger percentage of people with a foreign background than", "Oulu")\n', '("Oulu", "is the second largest monolingual Finnish-speaking municipality in Finland after", "Tampere")\n', '("Immigrants in Oulu", "come mostly from the former", "Soviet Union and Iraq")\n', '("Oulu Airport", "is the second largest airport in Finland by passenger volume", "")\n', '("Oulu", "is served by", "Oulu Airport")\n', '("Oulu", "has transport destinations including", "Kolari, Rovaniemi, Seinäjoki, and Tampere")\n', '("Oulu", "has a dedicated transportation network for", "non-motor vehicular traffic")\n', '("Winter Cycling Federation", "was founded in", "Oulu")\n', '("Oulu", "hosts", "The Irish Festival of Oulu")\n', '("University of Oulu", "is located in", "Oulu")\n', '("Oulu", "is home to the most northerly architecture school in the world", "")\n', '("Kalmah", "is a band from", "Oulu")\n', '("Oulu", "has one well-known bandy club,", "OLS")\n', '("University of Oulu and Oulu University of Applied Sciences", "have their main campuses located in", "Oulu")\n', '("Ventspils", "is a city in", "northwestern Latvia")\n', '("Ventspils", "is located in", "Courland")\n', '("Ventspils", "has a port on", "the Baltic Sea")\n', '("Ventspils", "was the point of origin for colonization attempts of", "Gambia and Tobago")\n', '("VIRAC", "is located near", "Ventspils")\n', '("USS Cole", "visited the port of", "Ventspils")\n', '("Ventspils", "has historical connections with", "Russia")\n', '("Helsinki", "is the capital and most populous city of", "Finland")\n', '("Helsinki", "is located on the shore of", "the Gulf of Finland")\n', '("Helsinki", "serves as the seat of", "Uusimaa region")\n', '("Helsinki", "is situated to the north of", "Tallinn, Estonia")\n', '("Helsinki", "is situated to the north of", "Riga, Latvia")\n', '("Helsinki", "is situated to the east of", "Stockholm, Sweden")\n', '("Helsinki", "is situated to the west of", "Saint Petersburg, Russia")\n', '("Helsinki", "forms the metropolitan area with", "Espoo")\n', '("Helsinki", "forms the metropolitan area with", "Vantaa")\n', '("Helsinki", "is considered Finland\'s only metropolis and", "the world\'s northernmost metropolitan area with over one million inhabitants")\n', '("Helsinki", "is the third largest municipality in", "the Nordic countries")\n', '("Helsinki Airport", "serves", "Helsinki")\n', '("Helsinki", "airport is located in", "Vantaa")\n', '("Helsinki", "is a bilingual municipality with official languages", "Finnish and Swedish")\n', '("Jason Lepojärvi", "mentions", "Helsinki")\n', '("Helsinki", "is classified as", "a major port city")\n', '("Helsinki", "was ranked the third best city in the world to live in by", "the Boston Consulting Group and the BCG Henderson Institute")\n', '("Helsinki", "is one of Finland\'s most important tourist cities along with", "Rovaniemi in Lapland")\n', '("Swedish colonisation of the Finnish coast", "led to the naming of", "Helsinge")\n', '("Vanhankaupunginkoski", "refers to", "the rapids at the mouth of the river where Helsinki was founded")\n', '("Gustav I of Sweden", "founded", "Helsinki")\n', '("Helsinki", "rivalled the Hanseatic city of", "Reval (now Tallinn)")\n', '("King Gustav I of Sweden", "ordered the bourgeoisie of Porvoo, Raseborg, Rauma, and Ulvila to move to", "Helsinki")\n', '("Sveaborg (Viapori in Finnish)", "helped to improve", "Helsinki\'s status")\n', '("Alexander I of Russia", "moved the capital of Finland from Turku to", "Helsinki")\n', '("The construction of", "Sveaborg (now also called Suomenlinna) fortress", "occurred in Helsinki")\n', '("Helsinki", "is known as the Daughter of the Baltic or the Pearl of the Baltic", "")\n', '("Helsinki Central Park", "is an important recreational area for residents of", "Helsinki")\n', '("Helsinki\'s main islands include", "Korkeasaari, which is home to", "Finland\'s largest zoo, Korkeasaari Zoo")\n', '("Vanhankaupunginselkä", "is the largest nature reserve within", "Helsinki")\n', '("Norway maple", "is", "Helsinki\'s official plant")\n', '("Red squirrel", "is", "Helsinki\'s official animal")\n', '("Helsinki Metropolitan Area", "is the most densely populated area of", "Finland")\n', '("Helsinki", "has a climate classified as", "humid continental")\n', '("The Finnish National Theatre", "is one of the major theatres in", "Helsinki")\n', '("The Finnish National Opera", "is the only full-time, professional opera company in", "Finland")\n', '("Helsinki International Film Festival – Love & Anarchy", "is a film festival that takes place in", "Helsinki")\n', '("Helsinki Festival", "takes place every", "August")\n', '("Vappu", "is an annual carnival in", "Helsinki")\n', '("Ring I, Ring II, and Ring III", "are the three semicircular beltways in", "Helsinki")\n', '("Helsinki Central Railway Station", "is the main terminus of the rail network in", "Finland")\n', '("Helsinki\'s commuter rail system includes", "the Ring Rail Line with a station at", "Helsinki Airport")\n', '("Helsinki Airport", "is the main airport serving", "Helsinki and is located in Vantaa")\n', '("Regular ferry traffic from Helsinki", "is to", "Stockholm, Tallinn, and Saint Petersburg")\n', '("Helsinki Regional Transport Authority", "manages public transportation in", "the Helsinki metropolitan area")\n', '("The Helsinki region", "generates approximately one third of", "Finland\'s GDP")\n', '("Saint Petersburg", "formerly known as", "Petrograd and later Leningrad")\n', '("Saint Petersburg", "is the second-largest city in", "Russia")\n', '("Saint Petersburg", "situated on", "the River Neva")\n', '("Saint Petersburg", "located at the head of", "the Gulf of Finland on the Baltic Sea")\n', '("Saint Petersburg", "founded by", "Tsar Peter the Great")\n', '("Saint Petersburg", "named after", "the apostle Saint Peter")\n', '("Saint Petersburg", "served as capital of", "the Tsardom of Russia and the Russian Empire")\n', '("Saint Petersburg", "renamed to", "Leningrad after Lenin\'s death")\n', '("Saint Petersburg", "known as", "the Northern Capital of Russia")\n', '("Saint Petersburg", "home to", "the Hermitage")\n', '("River Neva", "part of", "Saint Petersburg")\n', '("Gulf of Finland", "part of", "Saint Petersburg")\n', '("Baltic Sea", "connected by", "Saint Petersburg")\n', '("Saint Peter", "city named after", "Saint Petersburg")\n', '("Hermitage", "located in", "Saint Petersburg")\n', '("Russian Orthodox Church", "observes the memory of", "apostles Peter and Paul")\n', '("Paul", "associated with", "Russian Orthodox Church in Saint Petersburg")\n', '("Mikhail Lomonosov", "used spelling of city\'s name", "Петрополис or Petropol\'")\n', '("Alexander Pushkin", "translated city name to", "Petrograd")\n', '("Nicholas II", "renamed city to", "Petrograd")\n', '("Vladimir Lenin", "after death city renamed to", "Leningrad")\n', '("Leningrad", "previous name of", "Saint Petersburg")\n', '("Venice of the North", "nickname for", "Saint Petersburg")\n', '("Palmyra of the North", "nickname for", "Saint Petersburg")\n', '("Ingermanland", "Fortress captured on site of", "Saint Petersburg")\n', '("Arkhangelsk", "seaport replaced by", "Saint Petersburg")\n', '("White Sea", "Arkhangelsk located on", "connected to Saint Petersburg")\n', '("Winter Palace", "located in", "Saint Petersburg")\n', '("Napoleonic France", "commemorated by monuments in", "Saint Petersburg")\n', '("Leon Trotsky", "associated with", "political history of Saint Petersburg")\n', '("Estonia", "historic population moved to", "Saint Petersburg region")\n', '("cruiser Aurora", "symbol of", "the October Revolution in Saint Petersburg")\n', '("Stalin", "era remembered for", "the pivotal events in Saint Petersburg")\n', '("German forces", "besieged", "Leningrad during World War II")\n', '("Lake Ladoga", "provided the Road of Life during", "the siege of Leningrad")\n', '("Stalingrad", "along with Leningrad", "named hero cities of the war")\n', '("Sevastopol", "along with Leningrad", "named hero cities of the war")\n', '("Odesa", "along with Leningrad", "named hero cities of the war")\n']
+range(1, 155) 2
+{'id': '1_4', 'Question': ' Under what historical name is the city known where the royals who escaped Napoleon took refuge? \n', 'Answer': 'Klaipėda', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Klaipėda'}, {'label': 'B', 'text': 'Oulu'}, {'label': 'C', 'text': 'Ventspils'}, {'label': 'D', 'text': 'Helsinki'}, {'label': 'E', 'text': 'Saint Petersburg'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'klaipėda'}, {'label': 'B', 'text': 'oulu'}, {'label': 'C', 'text': 'ventspils'}, {'label': 'D', 'text': 'helsinki'}, {'label': 'E', 'text': 'saint_petersburg'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which royals escaped Napoleon and sought refuge in the east?\nA1: Frederick William III of Prussia\n\n', "2: Under which city's historical name did the family of Frederick William III seek asylum after fleeing their homeland?\nA2: Klaipėda"], 'Hops_wiki': [('Napoleon', 'Frederick William III of Prussia'), ('Frederick William III of Prussia', 'Klaipėda')], 'Hops_cpnet': [('napoleon', 'frederick_william_iii'), ('frederick_william_iii', 'klaipėda')], 'Triplets': ['("Frederick William III and Queen Louise", "fled from", "Napoleon")', '("Frederick William III of Prussia", "family fled to", "Memel")'], 'Referred_files': [{'name': 'East Prussia', 'line': 13}, {'name': 'Frederick William III of Prussia', 'line': 12}], 'Question_triplet_answer': {100: [53, 97], 50: [30, 142], 25: [12, 105]}}
+time passed:  6823.481113195419
+Expected dollar:  0.005
+Helsinki Central Park is Geography
+Saint Petersburg is Geography
+Helsinki is Geography
+Stockholm is Geography
+Tallinn is Geography
+"USS Cole is Geography
+Leningrad is Geography
+Vladimir Lenin is People
+The Finnish National Opera is Geography
+Finland is Geography
+Frederick William III is People
+Kuopio is Geography
+Riga is Geography
+Latvia is Geography
+the Congress of Vienna is Geography
+Helsinki Airport is Geography
+Napoleon is People
+the Battle of Jena Auerstädt is Geography
+Saint Peter is People
+Russia is Geography
+Norway is Geography
+East Prussia is Geography
+Königsberg is Geography
+University of Oulu and Oulu University of Applied Sciences is Geography
+Immigrants in Oulu is Geography
+Soviet Union is Geography
+Iraq is Geography
+the River Neva is Geography
+Winter Palace is Geography
+Beethoven is People
+Korkeasaari is Geography
+Korkeasaari Zoo is Geography
+University of Oulu is Geography
+Ingermanland is Geography
+Lenin is People
+The Irish Festival of Oulu is Geography
+Lake Ladoga is Geography
+the Road of Life is Geography
+Queen Louise is People
+Weimar Germany is Geography
+Baltic Coast is Geography
+White Sea is Geography
+Northern Finland is Geography
+Sweden is Geography
+Brandenburg is Geography
+Helsinki Central Railway Station is Geography
+Helsinge is Geography
+Palmyra of the North is Geography
+The Finnish National Theatre" is Geography
+Estonia is Geography
+Napoleonic France is Geography
+Germany is Geography
+Gulf of Bothnia is Geography
+the German Empire is Geography
+Adolf Hitler is People
+Nazi Germany is Geography
+Turku is Geography
+the River Oulu is Geography
+Russian Orthodox Church is Geography
+the BCG Henderson Institute is People
+the Gulf of Finland is Geography
+Oulu Airport is Geography
+Joseph Stalin is People
+Tsar Peter the is People
+Gerhard von Scharnhorst is People
+Petrograd is Geography
+Bothnian Bay is Geography
+entities:  {'Ventspils', 'Prussia', 'East', 'National', 'Alexander', 'Stockholm', 'Saint', 'Beethoven', 'Norway', 'France', 'German', 'Adolf', 'Coast', 'Joseph', 'Battle', 'Europe', 'Peter', 'Oulu', 'Winter', 'Northern', 'Louise', 'Neva', '"USS', 'Tallinn', 'Boston', 'Kuopio', 'North', 'Henderson', 'Park', 'Finnish', 'Gulf', 'Helsinki', 'Russia', 'Brandenburg', 'Irish', 'Airport', 'Petersburg', 'Weimar', 'Klaipėda', 'Hitler', 'Orthodox', 'BCG', 'Lepojärvi', 'Lake', 'Palace', 'Gerhard', 'Queen', 'Vienna', 'Theatre"', 'Russian', 'Lenin', 'Jena', 'Palmyra', 'Jason', 'Central', 'humid', 'Latvia', 'Bothnian', 'Petrograd', 'Stalin', 'Applied', 'Empire', 'Station', 'Turku', 'Helsinge', 'Ladoga', 'Arkhangelsk', 'Railway', 'III', 'Leningrad', 'von', 'Group', 'River', 'Bay', 'Institute', 'Ingermanland', 'Estonia', 'Auerstädt', 'Vladimir', 'Napoleonic', 'Congress', 'Cole', 'Zoo', 'Festival', 'Frederick', 'Opera', 'Riga', 'Union', 'Paul', 'Church', 'Finland', 'Road', 'Sweden', 'Sea', 'Baltic', 'Nazi', 'Sciences', 'Soviet', 'Iraq', 'Life', 'University', 'continental', 'Bothnia', 'Scharnhorst', 'William', 'Germany', 'Immigrants', 'Königsberg', 'Korkeasaari', 'Napoleon', 'Tsar', 'White'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Klaipėda' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Helsinki
+Finnish National Opera
+Ring I
+Ring II
+Ring III
+Finnish National Opera
+Saint Peter
+Helsinki Festival
+Oulu
+Helsinki
+East Prussia
+Leningrad
+Saint Petersburg
+Oulu
+Saint Petersburg
+Oulu
+University of Oulu
+Kalmah
+University of Oulu
+Helsinki
+Saint Petersburg
+Oulu
+Lake Ladoga
+Lake Ladoga
+VIRAC
+Helsinki
+Saint Petersburg
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Saint Petersburg
+Helsinki
+Helsinki
+Saint Petersburg
+Helsinki
+Saint Petersburg
+Helsinki
+Helsinki
+Saint Petersburg
+East Prussia
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Kalmah
+Oulu
+Kalmah
+Helsinki
+Winter Cycling Federation
+Oulu
+VIRAC
+German forces
+University of Oulu
+
+gpt_entity_particular(): entity list: 
+ ['VIRAC', 'German forces', 'Ring II', 'Saint Petersburg', 'Winter Cycling Federation', 'University of Oulu', 'Kalmah', 'Lake Ladoga', 'East Prussia', 'Oulu', 'Finnish National Opera', 'Helsinki', 'Helsinki Festival', 'Ring I', 'Ring III', 'Leningrad', 'Saint Peter']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ventspils' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Helsinki
+Stockholm
+Tallinn
+Saint Petersburg
+Leningrad
+Riga, Latvia
+Napoleon
+Kuopio
+Oulu
+Soviet Union
+Warsaw
+Helsinki Airport
+Prussia
+Königsberg
+Memel
+East Prussia
+Helsinki Festival
+Kaliningrad
+River Neva
+Elefant
+the Irish Festival of Oulu
+
+gpt_entity_particular(): entity list: 
+ ['Prussia', 'Stockholm', 'Kaliningrad', 'Leningrad', 'River Neva', 'Saint Petersburg', 'Oulu', 'Warsaw', 'Memel', 'Tallinn', 'Kuopio', 'Helsinki', 'Helsinki Festival', 'Elefant', 'Soviet Union', 'Riga, Latvia', 'Helsinki Airport', 'East Prussia', 'Königsberg', 'Napoleon', 'the Irish Festival of Oulu']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Saint Petersburg' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Saint Peter
+Winter Palace
+Stalingrad
+Sevastopol
+Leningrad
+The Hermitage
+The Russian Orthodox Church
+VIRAC
+The Winter Cycling Federation
+The Finnish National Theatre
+The Winter Palace
+
+gpt_entity_particular(): entity list: 
+ ['VIRAC', 'The Winter Palace', 'The Russian Orthodox Church', 'Sevastopol', 'Winter Palace', 'The Hermitage', 'Stalingrad', 'The Finnish National Theatre', 'Leningrad', 'Saint Peter', 'The Winter Cycling Federation']
+
+gpt_entity_particular(): filtered entity: 
+ ['Leningrad']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Frederick William III of Prussia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Frederick William III of Prussia
+Napoleon
+Congress of Vienna
+The Sixth Coalition
+Tilsit on the Niemen
+the Napoleonic Wars
+Elector of Brandenburg
+Königsberg
+East Prussia
+Prussia
+the Battle of Jena-Auerstädt
+bothnian Bay
+Memel
+Gerhard von Scharnhorst
+
+gpt_entity_particular(): entity list: 
+ ['Elector of Brandenburg', 'the Battle of Jena-Auerstädt', 'Gerhard von Scharnhorst', 'The Sixth Coalition', 'Prussia', 'Memel', 'Frederick William III of Prussia', 'bothnian Bay', 'Congress of Vienna', 'the Napoleonic Wars', 'East Prussia', 'Königsberg', 'Tilsit on the Niemen', 'Napoleon']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Oulu' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Oulu
+Vladimir Lenin
+Finnish National Opera
+Ring I, Ring II, and Ring III
+Helsinki
+Helsinki Festival
+Kuopio
+University of Oulu and Oulu University of Applied Sciences
+Immigrants
+Soviet Union
+Iraq
+Northern Finland
+Lake Ladoga
+Gulf of Bothnia
+Gulf of Finland
+Oulu Airport
+Non-motor vehicular traffic
+Bothnian Bay
+
+gpt_entity_particular(): entity list: 
+ ['Northern Finland', 'University of Oulu and Oulu University of Applied Sciences', 'Ring I, Ring II, and Ring III', 'Non-motor vehicular traffic', 'Gulf of Bothnia', 'Bothnian Bay', 'Vladimir Lenin', 'Kuopio', 'Lake Ladoga', 'Oulu Airport', 'Immigrants', 'Oulu', 'Finnish National Opera', 'Helsinki', 'Helsinki Festival', 'Gulf of Finland', 'Iraq', 'Soviet Union']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Helsinki' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Helsinki
+Helsinki
+Helsinki
+Helsinki Central Park
+Helsinki
+Helsinki
+Helsinki
+Helsinki Festival
+Helsinki
+Helsinki Airport
+Helsinki Metropolitan Area
+Helsinki
+Helsinki
+Helsinki
+Helsinki Airport
+Helsinki
+Helsinki Regional Transport Authority
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki's commuter rail system
+Helsinki International Film Festival – Love & Anarchy
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki's main islands
+Helsinki's commuter rail system
+Helsinki Central Railway Station
+Helsinki
+Helsinki
+Helsinki's main islands
+Helsinki Airport
+Helsinki Central Railway Station
+Helsinki
+Helsinki Central Railway Station
+Helsinki
+Helsinki Metropolitan Area
+Helsinki
+Helsinki's main islands
+Helsinki
+Helsinki
+Helsinki Regional Transport Authority
+Helsinki
+Helsinki
+Helsinki
+Helsinki's main islands
+Helsinki
+Helsinki
+Helsinki's main islands
+Helsinki
+Helsinki
+Helsinki Metropolitan Area
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki Central Railway Station
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki Airport
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki Regional Transport Authority
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki Central Railway Station
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki Central Railway Station
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki
+Helsinki Central Railway Station
+Helsinki
+Helsinki
+Helsinki
+H
+
+gpt_entity_particular(): entity list: 
+ ["Helsinki's commuter rail system", 'Helsinki Metropolitan Area', 'H', 'Helsinki International Film Festival – Love & Anarchy', 'Helsinki Airport', 'Helsinki Central Park', 'Helsinki Regional Transport Authority', 'Helsinki Central Railway Station', 'Helsinki Festival', 'Helsinki', "Helsinki's main islands"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Napoleon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Napoleon
+the Congress of Vienna
+Treaty of Versailles
+the Napoleonic Wars
+the French
+the Battle of Jena-Auerstädt
+Napoleonic France
+the Sixth Coalition against Napoleon
+
+gpt_entity_particular(): entity list: 
+ ['the Battle of Jena-Auerstädt', 'the Congress of Vienna', 'Napoleonic France', 'the French', 'the Napoleonic Wars', 'Treaty of Versailles', 'Napoleon', 'the Sixth Coalition against Napoleon']
+
+gpt_entity_particular(): filtered entity: 
+ ['the French']
+After GPT, entity:  {'Ventspils', 'Prussia', 'East', 'National', 'Alexander', 'Stockholm', 'Saint', 'Beethoven', 'Norway', 'France', 'German', 'Adolf', 'Coast', 'Joseph', 'Battle', 'Europe', 'Peter', 'Oulu', 'Winter', 'Northern', 'Louise', 'Neva', '"USS', 'Tallinn', 'Boston', 'Kuopio', 'North', 'Henderson', 'Park', 'Finnish', 'Gulf', 'Helsinki', 'Russia', 'Brandenburg', 'Irish', 'Airport', 'Petersburg', 'Weimar', 'Klaipėda', 'Hitler', 'Orthodox', 'BCG', 'Lepojärvi', 'Lake', 'Palace', 'Gerhard', 'Queen', 'Vienna', 'Theatre"', 'Russian', 'Lenin', 'Jena', 'Palmyra', 'Jason', 'Central', 'humid', 'Latvia', 'Bothnian', 'Petrograd', 'Stalin', 'Applied', 'Empire', 'Station', 'Turku', 'Helsinge', 'Ladoga', 'Arkhangelsk', 'Railway', 'III', 'Leningrad', 'von', 'Group', 'River', 'Bay', 'Institute', 'Ingermanland', 'Estonia', 'Auerstädt', 'Vladimir', 'Napoleonic', 'Congress', 'Cole', 'Zoo', 'Festival', 'Frederick', 'Opera', 'Riga', 'Union', 'Paul', 'Church', 'Finland', 'the French', 'Road', 'Sweden', 'Sea', 'Baltic', 'Nazi', 'Sciences', 'Soviet', 'Iraq', 'Life', 'University', 'continental', 'Bothnia', 'Scharnhorst', 'William', 'Germany', 'Immigrants', 'Königsberg', 'Korkeasaari', 'Napoleon', 'Tsar', 'White'}
+Total time:  329.17397236824036
+Entity conversion done on 1_4 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_4_entity_conversion_hash.json. Check the entity.
+ Under what historical name is the city known where the royals who escaped 056 took refuge? 
+
+
+
+Done. Check final_query/id_1_4_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_4_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_4_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_4_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_4_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_4_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_4_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

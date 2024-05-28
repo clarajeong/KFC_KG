@@ -1,0 +1,14 @@
+Got argument: Turtle, 6, 6_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', 'start word': 'Turtle', 'end word': 'Cretaceous', 'source': {'name': 'Turtle', 'line': 41}, 'cpnet': {'start word': 'turtle', 'end word': 'cretaceous'}}
+
+utils/question.py extract_hops(Cretaceous, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cretaceous_info.json file
+second_hop1:  {'triplet': '("Cretaceous", "was a period", "Mesozoic Era")', 'start word': 'Cretaceous', 'end word': 'Mesozoic', 'source': {'name': 'Cretaceous', 'line': 1}, 'cpnet': {'start word': 'cretaceous', 'end word': 'mesozoic'}}
+
+utils/question.py extract_hops(Mesozoic, [], ['Turtle', 'Cretaceous']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mesozoic_info.json file
+extract_info(Mesozoic) Start.
+utils/preprocess.py extract_info(): Checking good links on Mesozoic

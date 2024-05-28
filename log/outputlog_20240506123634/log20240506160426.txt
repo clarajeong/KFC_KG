@@ -1,0 +1,24 @@
+Got argument: Napoleon, 6, 6_4
+
+utils/question.py extract_hops(Napoleon, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Napoleon\'s ancestors, the Buonapartes", "emigrated to Corsica from", "a minor Tuscan noble family")', 'start word': 'Napoleon', 'end word': 'Tuscany', 'source': {'name': 'Napoleon', 'line': 19}, 'cpnet': {'start word': 'napoleon', 'end word': 'tuscany'}}
+
+utils/question.py extract_hops(Tuscany, [], ['Napoleon']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Tuscany_info.json file
+extract_info(Tuscany) Start.
+utils/preprocess.py extract_info(): Checking good links on Tuscany
+Central Italy is Geography
+1 / 30 )  central Italy Central Italy central_italy
+Florence is Geography
+2 / 30 )  Florence Florence florence
+Dante Alighieri is People
+3 / 30 )  Dante Alighieri Dante Alighieri dante_alighieri
+Petrarch is People
+4 / 30 )  Petrarch Petrarch petrarch
+Giovanni Boccaccio is People
+5 / 30 )  Giovanni Boccaccio Giovanni Boccaccio giovanni_boccaccio
+Niccolò Machiavelli is People
+6 / 30 )  Niccolò Machiavelli Niccolò Machiavelli machiavelli
+Uffizi is Geography
+7 / 30 )  Uffizi Uffizi uffizi

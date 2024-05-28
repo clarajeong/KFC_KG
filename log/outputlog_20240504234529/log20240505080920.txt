@@ -1,0 +1,1223 @@
+Got argument: Immanuel Kant, 2, 2_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop:  {'triplet': '("Kaliningrad", "was captured by", "the Soviet Union in 1945")', 'start word': 'Kaliningrad', 'end word': 'Soviet Union', 'source': {'name': 'Kaliningrad', 'line': 13}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'soviet_union'}}
+
+utils/question.py extract_hops(Soviet Union, [], ['Immanuel Kant', 'Kaliningrad']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Soviet_Union_info.json file
+extract_info(Soviet Union) Start.
+utils/preprocess.py extract_info(): Checking good links on Soviet Union
+Eurasia is Geography
+1 / 30 )  Eurasia Eurasia eurasia
+Vladimir Lenin is People
+2 / 30 )  Vladimir Lenin Vladimir Lenin vladimir_lenin
+Joseph Stalin is People
+3 / 30 )  Joseph Stalin Joseph Stalin joseph_stalin
+United States is Geography
+4 / 30 )  United States United States united_states
+Nikita Khrushchev is People
+5 / 30 )  Nikita Khrushchev Nikita Khrushchev nikita_khrushchev
+Mikhail Gorbachev is People
+6 / 30 )  Mikhail Gorbachev Mikhail Gorbachev mikhail_gorbachev
+Boris Yeltsin is People
+7 / 30 )  Boris Yeltsin Boris Yeltsin yeltsin
+Russia is Geography
+8 / 30 )  Russian Federation Russia russia
+Soviet  is Geography
+9 / 30 )  soviet Soviet  ussr
+Ukrainian Soviet Socialist Republic is Geography
+10 / 30 )  Ukrainian SSR Ukrainian Soviet Socialist Republic ukrainian_soviet_socialist_republic
+Schutzstaffel is Geography
+11 / 30 )  Schutzstaffel Schutzstaffel schutzstaffel
+Nazi Germany is Geography
+12 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Nicholas II is People
+13 / 30 )  Emperor Nicholas II Nicholas II nicholas_ii
+Winter Palace is Geography
+14 / 30 )  Winter Palace Winter Palace winter_palace
+Byelorussian Soviet Socialist Republic is Geography
+15 / 30 )  Byelorussian SSR Byelorussian Soviet Socialist Republic byelorussian_soviet_socialist_republic
+Mikhail Kalinin is People
+16 / 30 )  Mikhail Kalinin Mikhail Kalinin mikhail_kalinin
+Leon Trotsky is People
+17 / 30 )  Leon Trotsky Leon Trotsky leon_trotsky
+Francoist Spain is Geography
+18 / 30 )  Nationalists Francoist Spain francoist
+NKVD is Geography
+19 / 30 )  NKVD NKVD nkvd
+Finland is Geography
+20 / 30 )  Republic of Finland Finland finland
+Saint Petersburg is Geography
+21 / 30 )  Leningrad Saint Petersburg saint_petersburg
+Empire of Japan is Geography
+22 / 30 )  Empire of Japan Empire of Japan empire_of_japan
+Manchukuo is Geography
+23 / 30 )  Manchukuo Manchukuo manchukuo
+Battle of Stalingrad is Geography
+24 / 30 )  Battle of Stalingrad Battle of Stalingrad battle_of_stalingrad
+Yalta Conference is Geography
+25 / 30 )  Yalta Conference Yalta Conference yalta_conference
+East Germany is Geography
+26 / 30 )  East Germany East Germany east_germany
+Hungarian People's Republic is Geography
+27 / 30 )  Hungary Hungarian People's Republic hungarian_people's_republic
+People's Republic of Bulgaria is Geography
+28 / 30 )  Bulgaria People's Republic of Bulgaria people's_republic_of_bulgaria
+Mao Zedong is People
+29 / 30 )  Mao Zedong Mao Zedong mao_zedong
+Yuri Gagarin is Geography
+30 / 30 )  Yuri Gagarin Yuri Gagarin yuri_gagarin
+extract_triplet(Soviet Union)
+Got GPT's response. String length : 1379
+subject_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Vladimir Lenin', 'Vladimir Lenin', 'vladimir_lenin']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Joseph Stalin', 'Joseph Stalin', 'joseph_stalin']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+object_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+subject_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+object_words:  []
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+subject_words:  []
+object_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+subject_words:  [['Nikita Khrushchev', 'Nikita Khrushchev', 'nikita_khrushchev']]
+object_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+subject_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+object_words:  []
+subject_words:  [['Mikhail Gorbachev', 'Mikhail Gorbachev', 'mikhail_gorbachev']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Russian Federation', 'Russia', 'russia']]
+object_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+subject_words:  [['Boris Yeltsin', 'Boris Yeltsin', 'yeltsin']]
+object_words:  [['Russian Federation', 'Russia', 'russia']]
+subject_words:  [(None, 'Soviet Union', 'soviet_union'), ['soviet', 'Soviet ', 'ussr']]
+object_words:  []
+third_hop:  {'triplet': '("United States", "ideologically opposed by", "Soviet Union during Cold War")', 'start word': 'Soviet Union', 'end word': 'United States', 'source': {'name': 'Soviet Union', 'line': 14}, 'cpnet': {'start word': 'soviet_union', 'end word': 'united_states'}}
+generate_question(2_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")', '("United States", "ideologically opposed by", "Soviet Union during Cold War")'], ['Kaliningrad', 'Soviet Union', 'United States'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Soviet Union'), ('Soviet Union', 'United States')], United States, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 13}, {'name': 'Soviet Union', 'line': 14}]) called
+GPT output is:  Q: Which country was ideologically opposed by the nation that captured the city where philosopher Immanuel Kant was buried?
+A: United States
+final_choice(United States, options = 5) started
+[]
+entity_type(United States) called
+United States is Geography
+check_matchscore(United States, English-speaking countries and territories):  0.0
+choose_by_wiki_recur(English-speaking countries and territories)
+   Pages in English-speaking countries and territories: ['English-speaking world', 'Akrotiri and Dhekelia', 'American Samoa', 'Anguilla', 'Arunachal Pradesh', 'Ascension Island', 'Assam', 'Australia', 'Bahrain', 'Bailiwick of Guernsey', 'Bay Islands Department', 'Bermuda', 'British America', 'British Guinea', 'British Indian Ocean Territory', 'British North America', 'British Virgin Islands', 'Brunei', 'Cayman Islands', 'Channel Islands', 'Christmas Island', 'Commonwealth Caribbean', 'Commonwealth of Nations', 'Cook Islands', 'Corn Islands', 'Daman and Diu', 'England', 'Falkland Islands', 'Federation of Rhodesia and Nyasaland', 'Free State (province)', 'Gibraltar', 'Guam', 'Guernsey', 'Hong Kong', 'Republic of Ireland', 'Isle of Man', 'Jersey', 'Johor', 'Little England beyond Wales', 'Malawi', 'Meghalaya', 'Mizoram', 'Montserrat', 'Nagaland', 'New Brunswick', 'New Zealand', 'Niue', 'Northern Ireland', 'Northern Mariana Islands', 'Northern Rhodesia', 'Nyasaland', 'Patsho Khiamniungan', 'Perak', 'Pitcairn Islands', 'Puducherry (union territory)', 'Rodrigues', 'Saint Helena', 'Sarawak', 'Scotland', 'Sierra Leone', 'Sint Maarten', 'Somaliland', 'Southern Cameroons', 'Southern Rhodesia', 'Sudan', 'Tokelau', 'Tristan da Cunha', 'Turks and Caicos Islands', 'United Kingdom', 'United States', 'United States Virgin Islands', 'Wales', 'Zambesia', 'Zambia']
+      Guernsey in ['Guernsey', 'Northern Mariana Islands', 'Zambesia', 'United States']
+      Northern Mariana Islands in ['Guernsey', 'Northern Mariana Islands', 'Zambesia', 'United States']
+      Zambesia in ['Guernsey', 'Northern Mariana Islands', 'Zambesia', 'United States']
+      United States in ['Guernsey', 'Northern Mariana Islands', 'Zambesia', 'United States', 'Anguilla']
+      Anguilla in ['Guernsey', 'Northern Mariana Islands', 'Zambesia', 'United States', 'Anguilla', 'Hong Kong']
+      Hong Kong in ['Guernsey', 'Northern Mariana Islands', 'Zambesia', 'United States', 'Anguilla', 'Hong Kong']
+['Guernsey', 'Northern Mariana Islands', 'Anguilla', 'Hong Kong']
+Ended after 2.5 hierarchy
+(2.5, ['Anguilla', 'Hong Kong', 'Guernsey', 'Northern Mariana Islands'])
+
+extract_info(Anguilla) Start.
+utils/preprocess.py extract_info(): Checking good links on Anguilla
+Caribbean is Geography
+1 / 30 )  Caribbean Caribbean caribbean
+Leeward Islands is Geography
+2 / 30 )  Leeward Islands Leeward Islands leeward_islands
+Lesser Antilles is Geography
+3 / 30 )  Lesser Antilles Lesser Antilles lesser_antilles
+Puerto Rico is Geography
+4 / 30 )  Puerto Rico Puerto Rico puerto_rico
+Virgin Islands is Geography
+5 / 30 )  Virgin Islands Virgin Islands virgin_islands
+Cay is Geography
+6 / 30 )  cays Cay cay
+The Valley, Anguilla is Geography
+7 / 30 )  The Valley The Valley, Anguilla capital_of_anguilla
+Christopher Columbus is People
+8 / 30 )  Christopher Columbus Christopher Columbus christopher_columbus
+Saint Kitts is Geography
+9 / 30 )  Saint Kitts Saint Kitts saint_kitts
+Senegal is Geography
+10 / 30 )  Senegal Senegal senegal
+Nevis is Geography
+11 / 30 )  Nevis Nevis nevis
+Coral is Animal
+12 / 30 )  coral Coral coral
+Caribbean Sea is Geography
+13 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Coral reef is Geography
+14 / 30 )  coral reefs Coral reef coral_reef
+Eocene is Geography
+15 / 30 )  Eocene Eocene eocene
+Miocene is Geography
+16 / 30 )  Miocene Miocene miocene
+Saint Kitts and Nevis is Geography
+17 / 30 )  St Kitts & Nevis Saint Kitts and Nevis saint_kitts_and_nevis
+Dominican Republic is Geography
+18 / 30 )  Dominican Republic Dominican Republic dominican_republic
+Jamaica is Geography
+19 / 30 )  Jamaica Jamaica jamaica
+Nigeria is Geography
+20 / 30 )  Nigeria Nigeria nigeria
+Martinique is Geography
+21 / 30 )  Martinique Martinique martinique
+Guadeloupe is Geography
+22 / 30 )  Guadeloupe Guadeloupe guadeloupe
+Spiny lobster is Animal
+23 / 30 )  spiny lobster Spiny lobster spiny_lobster
+Mahi-mahi is Animal
+24 / 30 )  mahi-mahi Mahi-mahi mahi_mahi
+Marlin is Animal
+25 / 30 )  marlin Marlin marlin
+Grouper is Animal
+26 / 30 )  grouper Grouper grouper
+Pigeon pea is Animal
+27 / 30 )  pigeon peas Pigeon pea pigeon_pea
+Citrus is Animal
+28 / 30 )  citrus fruits Citrus citrus
+Breadfruit is Animal
+29 / 30 )  breadfruit Breadfruit breadfruit
+Great Britain is Geography
+30 / 30 )  Great Britain Great Britain great_britain
+extract_triplet(Anguilla)
+Got GPT's response. String length : 2358
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['Caribbean', 'Caribbean', 'caribbean']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['Leeward Islands', 'Leeward Islands', 'leeward_islands'], ['Lesser Antilles', 'Lesser Antilles', 'lesser_antilles']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['Puerto Rico', 'Puerto Rico', 'puerto_rico'], ['Virgin Islands', 'Virgin Islands', 'virgin_islands']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['The Valley', 'The Valley, Anguilla', 'capital_of_anguilla']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['Christopher Columbus', 'Christopher Columbus', 'christopher_columbus']]
+subject_words:  []
+object_words:  [(None, 'Anguilla', 'anguilla')]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Anguilla', 'anguilla')]
+subject_words:  []
+object_words:  [(None, 'Anguilla', 'anguilla')]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['Nevis', 'Nevis', 'nevis'], ['St Kitts & Nevis', 'Saint Kitts and Nevis', 'saint_kitts_and_nevis']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['coral', 'Coral', 'coral']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['Caribbean', 'Caribbean', 'caribbean'], ['Caribbean Sea', 'Caribbean Sea', 'caribbean_sea']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['Miocene', 'Miocene', 'miocene']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['coral', 'Coral', 'coral'], ['coral reefs', 'Coral reef', 'coral_reef']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Anguilla', 'anguilla')]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Anguilla', 'anguilla')]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['grouper', 'Grouper', 'grouper']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['pigeon peas', 'Pigeon pea', 'pigeon_pea']]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  [['citrus fruits', 'Citrus', 'citrus'], ['breadfruit', 'Breadfruit', 'breadfruit']]
+subject_words:  [['Great Britain', 'Great Britain', 'great_britain']]
+object_words:  [(None, 'Anguilla', 'anguilla')]
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+subject_words:  [(None, 'Anguilla', 'anguilla')]
+object_words:  []
+extract_info(Hong Kong) Start.
+utils/preprocess.py extract_info(): Checking good links on Hong Kong
+China is Geography
+1 / 30 )  People's Republic of China China china
+Qing dynasty is Geography
+2 / 30 )  Qing dynasty Qing dynasty qing_dynasty
+Hong Kong Island is Geography
+3 / 30 )  Hong Kong Island Hong Kong Island hong_kong_island
+Kowloon Peninsula is Geography
+4 / 30 )  Kowloon Peninsula Kowloon Peninsula kowloon_peninsula
+New Territories is Geography
+5 / 30 )  New Territories New Territories new_territories
+Empire of Japan is Geography
+6 / 30 )  Japan Empire of Japan empire_of_japan
+Kowloon is Geography
+7 / 30 )  Kowloon Kowloon kowloon
+Victoria Harbour is Geography
+8 / 30 )  Victoria Harbour Victoria Harbour victoria_harbor
+Kowloon City is Geography
+9 / 30 )  Kowloon City Kowloon City kowloon_city
+Yuan dynasty is Geography
+10 / 30 )  Yuan dynasty Yuan dynasty yuan_dynasty
+Macau is Geography
+11 / 30 )  Macau Macau macau
+Kangxi Emperor is People
+12 / 30 )  Kangxi Emperor Kangxi Emperor kangxi
+Guangzhou is Geography
+13 / 30 )  Canton Guangzhou guangzhou
+Daoguang Emperor is People
+14 / 30 )  Daoguang Emperor Daoguang Emperor daoguang_emperor
+Lin Zexu is People
+15 / 30 )  Lin Zexu Lin Zexu lin_zexu
+United Kingdom of Great Britain and Ireland is Geography
+16 / 30 )  United Kingdom United Kingdom of Great Britain and Ireland united_kingdom_of_great_britain_and_ireland
+Stonecutters Island is Geography
+17 / 30 )  Stonecutters Island Stonecutters Island stonecutters_island
+University of Hong Kong is Geography
+18 / 30 )  University of Hong Kong University of Hong Kong university_of_hong_kong
+Kai Tak Airport is Geography
+19 / 30 )  Kai Tak Airport Kai Tak Airport kai_tak_airport
+Attack on Pearl Harbor is Geography
+20 / 30 )  attack on Pearl Harbor Attack on Pearl Harbor attack_on_pearl_harbor
+Deng Xiaoping is People
+21 / 30 )  Deng Xiaoping Deng Xiaoping deng_xiaoping
+World Trade Organization is Geography
+22 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+International Olympic Committee is Geography
+23 / 30 )  International Olympic Committee International Olympic Committee international_olympic_committee
+Pearl River Delta is Geography
+24 / 30 )  Pearl River estuary Pearl River Delta pearl_river_delta
+South China Sea is Geography
+25 / 30 )  South China Sea South China Sea south_china_sea
+Guangdong is Geography
+26 / 30 )  Guangdong Guangdong guangdong
+Shenzhen is Geography
+27 / 30 )  Shenzhen Shenzhen shenzhen
+Vascular plant is Animal
+28 / 30 )  vascular plants Vascular plant vascular_plant
+Tropic of Cancer is Geography
+29 / 30 )  Tropic of Cancer Tropic of Cancer tropic_of_cancer
+Hong Kong Wetland Park is Geography
+30 / 30 )  Wetland Park Hong Kong Wetland Park hong_kong_wetland_park
+extract_triplet(Hong Kong)
+Got GPT's response. String length : 4691
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  [["People's Republic of China", 'China', 'china']]
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong'), ['Hong Kong Island', 'Hong Kong Island', 'hong_kong_island']]
+object_words:  [['Qing dynasty', 'Qing dynasty', 'qing_dynasty'], ['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+subject_words:  [['Kowloon Peninsula', 'Kowloon Peninsula', 'kowloon_peninsula'], ['Kowloon', 'Kowloon', 'kowloon']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+object_words:  [['New Territories', 'New Territories', 'new_territories']]
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  [['Japan', 'Empire of Japan', 'empire_of_japan']]
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  [["People's Republic of China", 'China', 'china'], ['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  [["People's Republic of China", 'China', 'china']]
+['', 'Hong Kong', "is one of the world's most significant financial centres and commercial ports", '']
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong'), ['Hong Kong Island', 'Hong Kong Island', 'hong_kong_island']]
+object_words:  []
+subject_words:  [['Victoria Harbour', 'Victoria Harbour', 'victoria_harbor']]
+object_words:  []
+subject_words:  [['Qing dynasty', 'Qing dynasty', 'qing_dynasty']]
+object_words:  [(None, 'Hong Kong', 'hong_kong'), ["People's Republic of China", 'China', 'china']]
+subject_words:  [['Kowloon', 'Kowloon', 'kowloon'], ['Kowloon City', 'Kowloon City', 'kowloon_city']]
+object_words:  [["People's Republic of China", 'China', 'china']]
+subject_words:  [['Qing dynasty', 'Qing dynasty', 'qing_dynasty']]
+object_words:  [['Canton', 'Guangzhou', 'guangzhou']]
+subject_words:  [['Daoguang Emperor', 'Daoguang Emperor', 'daoguang_emperor']]
+object_words:  [['Lin Zexu', 'Lin Zexu', 'lin_zexu']]
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  [['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+subject_words:  [(None, 'Hong Kong', 'hong_kong'), ['University of Hong Kong', 'University of Hong Kong', 'university_of_hong_kong']]
+object_words:  []
+subject_words:  [['Kai Tak Airport', 'Kai Tak Airport', 'kai_tak_airport']]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  [['attack on Pearl Harbor', 'Attack on Pearl Harbor', 'attack_on_pearl_harbor']]
+subject_words:  [['Deng Xiaoping', 'Deng Xiaoping', 'deng_xiaoping']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  [['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+subject_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+object_words:  []
+subject_words:  [['International Olympic Committee', 'International Olympic Committee', 'international_olympic_committee']]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  [["People's Republic of China", 'China', 'china'], ['South China Sea', 'South China Sea', 'south_china_sea']]
+subject_words:  [['Pearl River estuary', 'Pearl River Delta', 'pearl_river_delta']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [["People's Republic of China", 'China', 'china'], ['South China Sea', 'South China Sea', 'south_china_sea']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['Guangdong', 'Guangdong', 'guangdong']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['Shenzhen', 'Shenzhen', 'shenzhen']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['vascular plants', 'Vascular plant', 'vascular_plant']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['Tropic of Cancer', 'Tropic of Cancer', 'tropic_of_cancer']]
+object_words:  []
+subject_words:  [['Wetland Park', 'Hong Kong Wetland Park', 'hong_kong_wetland_park']]
+object_words:  []
+subject_words:  [(None, 'Hong Kong', 'hong_kong')]
+object_words:  []
+subject_words:  [['Macau', 'Macau', 'macau']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['Kangxi Emperor', 'Kangxi Emperor', 'kangxi']]
+object_words:  []
+subject_words:  [['Canton', 'Guangzhou', 'guangzhou']]
+object_words:  [['Canton', 'Guangzhou', 'guangzhou']]
+subject_words:  [['Lin Zexu', 'Lin Zexu', 'lin_zexu']]
+object_words:  []
+subject_words:  [['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+object_words:  []
+subject_words:  [['Stonecutters Island', 'Stonecutters Island', 'stonecutters_island']]
+object_words:  [['United Kingdom', 'United Kingdom of Great Britain and Ireland', 'united_kingdom_of_great_britain_and_ireland']]
+subject_words:  [(None, 'Hong Kong', 'hong_kong'), ['University of Hong Kong', 'University of Hong Kong', 'university_of_hong_kong']]
+object_words:  []
+subject_words:  [['Kai Tak Airport', 'Kai Tak Airport', 'kai_tak_airport']]
+object_words:  []
+subject_words:  [['attack on Pearl Harbor', 'Attack on Pearl Harbor', 'attack_on_pearl_harbor']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['Deng Xiaoping', 'Deng Xiaoping', 'deng_xiaoping']]
+object_words:  []
+subject_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+object_words:  []
+subject_words:  [['International Olympic Committee', 'International Olympic Committee', 'international_olympic_committee']]
+object_words:  []
+subject_words:  [['Pearl River estuary', 'Pearl River Delta', 'pearl_river_delta']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [["People's Republic of China", 'China', 'china'], ['South China Sea', 'South China Sea', 'south_china_sea']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['Guangdong', 'Guangdong', 'guangdong']]
+object_words:  [(None, 'Hong Kong', 'hong_kong'), ['Shenzhen', 'Shenzhen', 'shenzhen']]
+subject_words:  [['Shenzhen', 'Shenzhen', 'shenzhen']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['vascular plants', 'Vascular plant', 'vascular_plant']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+subject_words:  [['Tropic of Cancer', 'Tropic of Cancer', 'tropic_of_cancer']]
+object_words:  []
+subject_words:  [['Wetland Park', 'Hong Kong Wetland Park', 'hong_kong_wetland_park']]
+object_words:  [(None, 'Hong Kong', 'hong_kong')]
+extract_info(Guernsey) Start.
+utils/preprocess.py extract_info(): Checking good links on Guernsey
+Channel Islands is Geography
+1 / 30 )  Channel Islands Channel Islands channel_islands
+Cotentin Peninsula is Geography
+2 / 30 )  Cotentin Peninsula Cotentin Peninsula cotentin_peninsula
+Normandy is Geography
+3 / 30 )  Normandy Normandy normandy
+Nazi Germany is Geography
+4 / 30 )  Nazi Germany Nazi Germany nazi_germany
+United Kingdom is Geography
+5 / 30 )  United Kingdom United Kingdom united_kingdom
+Saint Peter Port is Geography
+6 / 30 )  Saint Peter Port Saint Peter Port saint_peter_port
+Great Britain is Geography
+7 / 30 )  Britain Great Britain great_britain
+Jersey is Geography
+8 / 30 )  Jersey Jersey jersey
+English Channel is Geography
+9 / 30 )  English Channel English Channel english_channel
+Herculaneum is Geography
+10 / 30 )  Herculaneum Herculaneum herculaneum
+Brittany is Geography
+11 / 30 )  Brittany Brittany brittany
+Cnut is People
+12 / 30 )  Canute Cnut cnut
+John, King of England is People
+13 / 30 )  King John John, King of England john_lackland
+Philip II of France is People
+14 / 30 )  Philip II of France Philip II of France philip_augustus
+Kingdom of Aragon is Geography
+15 / 30 )  Aragonese Kingdom of Aragon kingdom_of_aragon
+Pope Sixtus IV is People
+16 / 30 )  Pope Sixtus IV Pope Sixtus IV sixtus_iv
+Guernsey County, Ohio is Geography
+17 / 30 )  Guernsey County Guernsey County, Ohio guernsey_county
+Napoleon is People
+18 / 30 )  Napoleon Napoleon napoleon
+Armorican Massif is Geography
+19 / 30 )  Armorican Massif Armorican Massif armorican_massif
+Republic of Ireland is Geography
+20 / 30 )  Republic of Ireland Republic of Ireland republic_of_ireland
+Alderney is Geography
+21 / 30 )  Alderney Alderney alderney
+Sark is Geography
+22 / 30 )  Sark Sark sark
+Archbishop of Canterbury is Incident
+23 / 30 )  See of Canterbury Archbishop of Canterbury archbishop_of_canterbury
+Freesia is Animal
+24 / 30 )  freesias Freesia freesia
+North Sea is Geography
+25 / 30 )  North Sea North Sea north_sea
+Isle of Man is Geography
+26 / 30 )  Isle of Man Isle of Man isle_of_man
+Abalone is Animal
+27 / 30 )  ormer Abalone abalone
+Paris is Geography
+28 / 30 )  Paris Paris paris
+extract_triplet(Guernsey)
+Got GPT's response. String length : 1729
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Channel Islands', 'Channel Islands', 'channel_islands']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Normandy', 'Normandy', 'normandy']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Normandy', 'Normandy', 'normandy']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  []
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  []
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Saint Peter Port', 'Saint Peter Port', 'saint_peter_port']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Britain', 'Great Britain', 'great_britain']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Normandy', 'Normandy', 'normandy']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  []
+subject_words:  [['English Channel', 'English Channel', 'english_channel']]
+object_words:  [(None, 'Guernsey', 'guernsey'), ['Cotentin Peninsula', 'Cotentin Peninsula', 'cotentin_peninsula']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Herculaneum', 'Herculaneum', 'herculaneum']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Canute', 'Cnut', 'cnut']]
+['', 'Guernsey', 'had lands granted to', 'the abbot of St. Michael by', 'King John', '']
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Aragonese', 'Kingdom of Aragon', 'kingdom_of_aragon']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Pope Sixtus IV', 'Pope Sixtus IV', 'sixtus_iv']]
+subject_words:  [(None, 'Guernsey', 'guernsey'), ['Guernsey County', 'Guernsey County, Ohio', 'guernsey_county']]
+object_words:  [(None, 'Guernsey', 'guernsey')]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Armorican Massif', 'Armorican Massif', 'armorican_massif']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [(None, 'Guernsey', 'guernsey')]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Alderney', 'Alderney', 'alderney'], ['Sark', 'Sark', 'sark']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['See of Canterbury', 'Archbishop of Canterbury', 'archbishop_of_canterbury']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['freesias', 'Freesia', 'freesia']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['North Sea', 'North Sea', 'north_sea']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Isle of Man', 'Isle of Man', 'isle_of_man']]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['ormer', 'Abalone', 'abalone']]
+subject_words:  []
+object_words:  [(None, 'Guernsey', 'guernsey')]
+subject_words:  [(None, 'Guernsey', 'guernsey')]
+object_words:  [['Paris', 'Paris', 'paris']]
+extract_info(Northern Mariana Islands) Start.
+utils/preprocess.py extract_info(): Checking good links on Northern Mariana Islands
+United States is Geography
+1 / 30 )  United States United States united_states
+Mariana Islands is Geography
+2 / 30 )  Mariana Archipelago Mariana Islands mariana_islands
+Guam is Geography
+3 / 30 )  Guam Guam guam
+Empire of Japan is Geography
+4 / 30 )  Japanese Empire of Japan empire_of_japan
+Saipan is Geography
+5 / 30 )  Saipan Saipan saipan
+Tinian is Geography
+6 / 30 )  Tinian Tinian tinian
+Philippines is Geography
+7 / 30 )  Philippines Philippines philippines
+Caroline Islands is Geography
+8 / 30 )  Caroline Islands Caroline Islands caroline_islands
+Mexico is Geography
+9 / 30 )  Mexico Mexico mexico
+German Empire is Geography
+10 / 30 )  Germany German Empire german_empire
+German New Guinea is Geography
+11 / 30 )  German New Guinea German New Guinea german_new_guinea
+Equator is Geography
+12 / 30 )  Equator Equator equator
+Attack on Pearl Harbor is Geography
+13 / 30 )  attack on Pearl Harbor Attack on Pearl Harbor attack_on_pearl_harbor
+Enola Gay is Geography
+14 / 30 )  Enola Gay Enola Gay enola_gay
+Hiroshima is Geography
+15 / 30 )  Hiroshima Hiroshima hiroshima
+Japanese archipelago is Geography
+16 / 30 )  Japanese home islands Japanese archipelago japanese_archipelago
+United States Congress is Geography
+17 / 30 )  United States Congress United States Congress united_states_congress
+United States House of Representatives is Geography
+18 / 30 )  U.S. House of Representatives United States House of Representatives united_states_house_of_representatives
+Coral is Animal
+19 / 30 )  coral Coral coral
+Aleutian Islands is Geography
+20 / 30 )  Aleutians Aleutian Islands aleutian_islands
+2016 Republican National Convention is Geography
+21 / 30 )  2016 Republican National Convention 2016 Republican National Convention evening_in_america
+Superior Court of the Commonwealth of the Northern Mariana Islands  is Geography
+22 / 30 )  Superior Court of the Commonwealth of the Northern Mariana Islands Superior Court of the Commonwealth of the Northern Mariana Islands  northern_marianas
+Coconut is Animal
+23 / 30 )  coconuts Coconut coconut
+Breadfruit is Animal
+24 / 30 )  breadfruit Breadfruit breadfruit
+Palau is Geography
+25 / 30 )  Palau Palau palau
+Greg Norman is People
+26 / 30 )  Greg Norman Greg Norman greg_norman
+World Trade Organization is Geography
+27 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+Cameroon is Geography
+28 / 30 )  Cameroon Cameroon cameroon
+United States Minor Outlying Islands is Geography
+29 / 30 )  U.S. Minor Outlying Islands United States Minor Outlying Islands united_states_minor_outlying_islands
+American Samoa is Geography
+30 / 30 )  American Samoa American Samoa american_samoa
+extract_triplet(Northern Mariana Islands)
+Got GPT's response. String length : 1998
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [['Guam', 'Guam', 'guam']]
+object_words:  [['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  []
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  []
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['Japanese', 'Empire of Japan', 'empire_of_japan']]
+subject_words:  [['United States', 'United States', 'united_states'], ['United States Congress', 'United States Congress', 'united_states_congress']]
+object_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+subject_words:  []
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [['Saipan', 'Saipan', 'saipan']]
+object_words:  []
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['Philippines', 'Philippines', 'philippines']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['Caroline Islands', 'Caroline Islands', 'caroline_islands']]
+subject_words:  []
+object_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands'], ['Germany', 'German Empire', 'german_empire']]
+subject_words:  []
+object_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands'], ['Japanese', 'Empire of Japan', 'empire_of_japan'], ['Saipan', 'Saipan', 'saipan']]
+subject_words:  [['Enola Gay', 'Enola Gay', 'enola_gay']]
+object_words:  [['Tinian', 'Tinian', 'tinian'], ['Hiroshima', 'Hiroshima', 'hiroshima']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['U.S. House of Representatives', 'United States House of Representatives', 'united_states_house_of_representatives']]
+subject_words:  []
+object_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['breadfruit', 'Breadfruit', 'breadfruit']]
+subject_words:  [['Tinian', 'Tinian', 'tinian']]
+object_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands'], ['Superior Court of the Commonwealth of the Northern Mariana Islands', 'Superior Court of the Commonwealth of the Northern Mariana Islands ', 'northern_marianas']]
+object_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [(None, 'Northern Mariana Islands', 'northern_mariana_islands'), ['Mariana Archipelago', 'Mariana Islands', 'mariana_islands']]
+object_words:  [['2016 Republican National Convention', '2016 Republican National Convention', 'evening_in_america']]
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("United States", "ideologically opposed by", "Soviet Union during Cold War")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Soviet Union", "spanned Eurasia from", "1922 to 1991")\n', '("Russian Empire", "organized into", "federal union")\n', '("Russian SFSR", "established by", "Vladimir Lenin")\n', '("Russian Civil War", "involved", "Bolsheviks and anti-communist Whites")\n', '("Soviet Union", "formed in", "December 1922")\n', '("Russian Empire", "dissolved by", "Russian Provisional Government")\n', '("Joseph Stalin", "inaugurated period of", "industrialization and collectivization")\n', '("Gulag", "expanded in", "Stalin\'s period")\n', '("Stalin", "conducted", "Great Purge")\n', '("Nazi Germany", "signed nonaggression pact with", "USSR")\n', '("USSR", "defeated", "Axis powers in 1945")\n', '("Nazi Germany", "invaded", "Soviet Union in 1941")\n', '("Soviet Union", "consolidated territory after", "World War II")\n', '("NATO", "formed in response to", "Soviet Union")\n', '("Nikita Khrushchev", "undertook de-Stalinization campaign", "in Soviet Union")\n', '("Soviet Union", "expanded space exploration efforts during", "1950s")\n', '("Mikhail Gorbachev", "sought to reform country with", "glasnost and perestroika")\n', '("Warsaw Pact countries", "overthrew regimes in", "1989")\n', '("Russian Federation", "became successor state to", "Soviet Union")\n', '("Boris Yeltsin", "oversaw reconstitution into", "Russian Federation")\n', '("Soviet Union", "recognized as one of two superpowers before", "dissolution")\n', '("Anguilla", "is a", "British Overseas Territory in the Caribbean")\n', '("Anguilla", "is one of the most northerly of the", "Leeward Islands in the Lesser Antilles")\n', '("Anguilla", "lies east of", "Puerto Rico and the Virgin Islands")\n', '("Anguilla", "has capital called", "The Valley")\n', '("Anguilla", "was named by", "Christopher Columbus")\n', '("Indigenous Amerindian peoples", "first settled", "Anguilla")\n', '("Anguilla", "has petroglyph sites at", "Big Spring and Fountain Cavern")\n', '("English settlers from", "Saint Kitts", "colonised Anguilla in 1650")\n', '("Enslaved Africans", "arrived in", "Anguilla by 1683")\n', '("Anguilla", "was first administered by the British through", "Antigua")\n', '("Anguilla", "was federated with", "St Kitts & Nevis in 1882")\n', '("Anguilla", "has a flat landscape composed of", "coral and limestone")\n', '("Anguilla", "is surrounded by the", "Caribbean Sea")\n', '("Anguilla Formation", "is of", "reefal limestone")\n', '("Anguilla", "was largely submerged during", "the Miocene")\n', '("Anguilla", "has ecologically important", "coral reefs")\n', '("Anguilla", "underwent tectonic subsidence since the", "late Pleistocene")\n', '("Anguilla", "is cooled by", "northeastern trade winds")\n', '("Anguilla", "suffered damage from", "Hurricane Irma in 2017")\n', '("Anguilla", "is an", "internally self-governing overseas territory of the United Kingdom")\n', '("The United Kingdom", "is responsible for", "Anguilla\'s military defence")\n', '("Majority of residents in Anguilla", "are", "black")\n', '("Citizens of", "St Kitts & Nevis, the Dominican Republic, Jamaica and Nigeria", "are part of Anguilla\'s population")\n', '("Anguilla\'s predominant religion", "is", "Christianity")\n', '("Anguillan cuisine", "includes", "seafood like spiny lobster, mahi-mahi, marlin, and grouper")\n', '("The national food of Anguilla", "is", "pigeon peas and rice")\n', '("Anguilla", "imports produce like", "citrus fruits and breadfruit")\n', '("Great Britain", "has a", "cultural influence in Anguilla")\n', '("Anguillan", "sports include", "boat racing and cricket")\n', '("Anguillan", "economy relies on", "tourism, offshore finance, and fishing")\n', '("Anguilla", "aims to obtain 15% of its energy from", "solar power")\n', '("Anguilla", "profit from demand for web addresses ending with", ".ai")\n', '("Anguilla", "is served by", "Clayton J. Lloyd International Airport")\n', '("Cars in Anguilla", "drive on the", "left")\n', '("Anguilla", "has regular ferries to", "Saint Martin")\n', '("Hong Kong", "is a", "special administrative region of the People\'s Republic of China")\n', '("Hong Kong", "has a population of", "7.4 million residents")\n', '("Hong Kong", "was established as a colony of", "the British Empire")\n', '("Hong Kong Island", "was ceded to", "the United Kingdom after the Qing dynasty lost the First Opium War")\n', '("Kowloon Peninsula", "expanded to", "Hong Kong in 1860")\n', '("United Kingdom", "obtained a 99-year lease of", "the New Territories")\n', '("Hong Kong", "was occupied by", "Japan from 1941 to 1945 during World War II")\n', '("Hong Kong", "was handed over from", "the United Kingdom to China in 1997")\n', '("Hong Kong", "maintains separate governing and economic systems from", "mainland China")\n', '("Hong Kong dollar", "is the", "ninth most traded currency in the world")\n', '("Hong Kong", "has the largest number of", "ultra high-net-worth individuals")\n', '("Hong Kong", "has the largest number of", "skyscrapers of any city in the world")\n', '("Hong Kong", "has a Human Development Index of", "0.956")\n', '("Hong Kong", "has one of the highest", "life expectancies in the world")\n', '("Hong Kong Island", "was originally referred to by the name", "He-Ong-Kong")\n', '("Victoria Harbour", "was developed after", "Aberdeen Harbour")\n', '("Qing dynasty", "incorporated", "Hong Kong into China for the first time in 214 BCE")\n', '("Kowloon City", "was the location of the Southern Song court during the", "Mongol conquest of China")\n', '("Qing dynasty", "established the", "Canton System in 1757 to regulate trade")\n', '("Daoguang Emperor", "rejected proposals to legalise and tax opium and ordered", "Lin Zexu to eradicate opium trade")\n', '("Hong Kong", "was ceded to", "the United Kingdom in the 1842 Treaty of Nanking")\n', '("University of Hong Kong", "was established in", "1911")\n', '("Kai Tak Airport", "began operation in", "1924")\n', '("Hong Kong", "declared a neutral zone during", "the start of the Second Sino-Japanese War in 1937")\n', '("Hong Kong", "was attacked on", "8 December 1941, the same morning as the attack on Pearl Harbor")\n', '("Deng Xiaoping", "was involved in the discussion about", "Hong Kong\'s status with Governor Murray MacLehose in 1979")\n', '("Hong Kong", "became a special administrative region of China after handover by the", "United Kingdom in 1997")\n', '("World Trade Organization", "Hong Kong actively participates in", "")\n', '("International Olympic Committee", "Hong Kong actively participates in", "")\n', '("Hong Kong", "is surrounded by the", "South China Sea")\n', '("Pearl River estuary", "is located to the north of", "Hong Kong nearing the Sham Chun River")\n', '("South China Sea", "surrounds", "Hong Kong on all sides except the north")\n', '("Guangdong", "is the neighbouring city of", "Shenzhen, which borders Hong Kong")\n', '("Shenzhen", "borders", "Hong Kong")\n', '("vascular plants", "of over 3,000 species occur in", "Hong Kong")\n', '("Tropic of Cancer", "is closely bordered with Hong Kong\'s", "humid subtropical climate")\n', '("Wetland Park", "recorded the highest temperature in all of Hong Kong at", "39.0 °C")\n', '("Hong Kong", "is densely populated with", "most people being Han Chinese")\n', '("Macau", "is located 60 km (37 mi) west of", "Hong Kong")\n', '("Kangxi Emperor", "lifted the maritime trade prohibition", "")\n', '("Canton", "is an alternative name for", "Guangzhou")\n', '("Lin Zexu", "pursued aggressive actions to halt the opium trade", "")\n', '("United Kingdom", "forces began controlling Hong Kong shortly after the signing of the convention from", "26 January 1841")\n', '("Stonecutters Island", "was given up by the Qing in the Convention of Peking to the", "United Kingdom")\n', '("University of Hong Kong", "was established as the territory\'s first institution of higher education in", "1911")\n', '("Kai Tak Airport", "began operation in", "1924")\n', '("attack on Pearl Harbor", "occurred on the same morning as the Imperial Japanese Army attacked", "Hong Kong")\n', '("Deng Xiaoping", "was involved in the question of Hong Kong\'s status raised by Governor", "Murray MacLehose in 1979")\n', '("World Trade Organization", "Hong Kong actively participates in", "")\n', '("International Olympic Committee", "Hong Kong actively participates in", "")\n', '("Pearl River estuary", "influences the sweet taste of the freshwater influx to", "Hong Kong")\n', '("South China Sea", "surrounds", "Hong Kong")\n', '("Guangdong", "neighbours the", "Sham Chun River which borders Hong Kong and Shenzhen")\n', '("Shenzhen", "along the", "Sham Chun River, borders Hong Kong")\n', '("vascular plants", "over 3,000 species of", "are present in Hong Kong")\n', '("Tropic of Cancer", "Hong Kong\'s climate is influenced by its proximity to the", "")\n', '("Wetland Park", "recorded the highest temperature of", "39.0 °C in Hong Kong")\n', '("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n']
+range(1, 247) 3
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("United States", "ideologically opposed by", "Soviet Union during Cold War")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Soviet Union", "spanned Eurasia from", "1922 to 1991")\n', '("Russian Empire", "organized into", "federal union")\n', '("Russian SFSR", "established by", "Vladimir Lenin")\n', '("Russian Civil War", "involved", "Bolsheviks and anti-communist Whites")\n', '("Soviet Union", "formed in", "December 1922")\n', '("Russian Empire", "dissolved by", "Russian Provisional Government")\n', '("Joseph Stalin", "inaugurated period of", "industrialization and collectivization")\n', '("Gulag", "expanded in", "Stalin\'s period")\n', '("Stalin", "conducted", "Great Purge")\n', '("Nazi Germany", "signed nonaggression pact with", "USSR")\n', '("USSR", "defeated", "Axis powers in 1945")\n', '("Nazi Germany", "invaded", "Soviet Union in 1941")\n', '("Soviet Union", "consolidated territory after", "World War II")\n', '("NATO", "formed in response to", "Soviet Union")\n', '("Nikita Khrushchev", "undertook de-Stalinization campaign", "in Soviet Union")\n', '("Soviet Union", "expanded space exploration efforts during", "1950s")\n', '("Mikhail Gorbachev", "sought to reform country with", "glasnost and perestroika")\n', '("Warsaw Pact countries", "overthrew regimes in", "1989")\n', '("Russian Federation", "became successor state to", "Soviet Union")\n', '("Boris Yeltsin", "oversaw reconstitution into", "Russian Federation")\n', '("Soviet Union", "recognized as one of two superpowers before", "dissolution")\n', '("Anguilla", "is a", "British Overseas Territory in the Caribbean")\n', '("Anguilla", "is one of the most northerly of the", "Leeward Islands in the Lesser Antilles")\n', '("Anguilla", "lies east of", "Puerto Rico and the Virgin Islands")\n', '("Anguilla", "has capital called", "The Valley")\n', '("Anguilla", "was named by", "Christopher Columbus")\n', '("Indigenous Amerindian peoples", "first settled", "Anguilla")\n', '("Anguilla", "has petroglyph sites at", "Big Spring and Fountain Cavern")\n', '("English settlers from", "Saint Kitts", "colonised Anguilla in 1650")\n', '("Enslaved Africans", "arrived in", "Anguilla by 1683")\n', '("Anguilla", "was first administered by the British through", "Antigua")\n', '("Anguilla", "was federated with", "St Kitts & Nevis in 1882")\n', '("Anguilla", "has a flat landscape composed of", "coral and limestone")\n', '("Anguilla", "is surrounded by the", "Caribbean Sea")\n', '("Anguilla Formation", "is of", "reefal limestone")\n', '("Anguilla", "was largely submerged during", "the Miocene")\n', '("Anguilla", "has ecologically important", "coral reefs")\n', '("Anguilla", "underwent tectonic subsidence since the", "late Pleistocene")\n', '("Anguilla", "is cooled by", "northeastern trade winds")\n', '("Anguilla", "suffered damage from", "Hurricane Irma in 2017")\n', '("Anguilla", "is an", "internally self-governing overseas territory of the United Kingdom")\n', '("The United Kingdom", "is responsible for", "Anguilla\'s military defence")\n', '("Majority of residents in Anguilla", "are", "black")\n', '("Citizens of", "St Kitts & Nevis, the Dominican Republic, Jamaica and Nigeria", "are part of Anguilla\'s population")\n', '("Anguilla\'s predominant religion", "is", "Christianity")\n', '("Anguillan cuisine", "includes", "seafood like spiny lobster, mahi-mahi, marlin, and grouper")\n', '("The national food of Anguilla", "is", "pigeon peas and rice")\n', '("Anguilla", "imports produce like", "citrus fruits and breadfruit")\n', '("Great Britain", "has a", "cultural influence in Anguilla")\n', '("Anguillan", "sports include", "boat racing and cricket")\n', '("Anguillan", "economy relies on", "tourism, offshore finance, and fishing")\n', '("Anguilla", "aims to obtain 15% of its energy from", "solar power")\n', '("Anguilla", "profit from demand for web addresses ending with", ".ai")\n', '("Anguilla", "is served by", "Clayton J. Lloyd International Airport")\n', '("Cars in Anguilla", "drive on the", "left")\n', '("Anguilla", "has regular ferries to", "Saint Martin")\n', '("Hong Kong", "is a", "special administrative region of the People\'s Republic of China")\n', '("Hong Kong", "has a population of", "7.4 million residents")\n', '("Hong Kong", "was established as a colony of", "the British Empire")\n', '("Hong Kong Island", "was ceded to", "the United Kingdom after the Qing dynasty lost the First Opium War")\n', '("Kowloon Peninsula", "expanded to", "Hong Kong in 1860")\n', '("United Kingdom", "obtained a 99-year lease of", "the New Territories")\n', '("Hong Kong", "was occupied by", "Japan from 1941 to 1945 during World War II")\n', '("Hong Kong", "was handed over from", "the United Kingdom to China in 1997")\n', '("Hong Kong", "maintains separate governing and economic systems from", "mainland China")\n', '("Hong Kong dollar", "is the", "ninth most traded currency in the world")\n', '("Hong Kong", "has the largest number of", "ultra high-net-worth individuals")\n', '("Hong Kong", "has the largest number of", "skyscrapers of any city in the world")\n', '("Hong Kong", "has a Human Development Index of", "0.956")\n', '("Hong Kong", "has one of the highest", "life expectancies in the world")\n', '("Hong Kong Island", "was originally referred to by the name", "He-Ong-Kong")\n', '("Victoria Harbour", "was developed after", "Aberdeen Harbour")\n', '("Qing dynasty", "incorporated", "Hong Kong into China for the first time in 214 BCE")\n', '("Kowloon City", "was the location of the Southern Song court during the", "Mongol conquest of China")\n', '("Qing dynasty", "established the", "Canton System in 1757 to regulate trade")\n', '("Daoguang Emperor", "rejected proposals to legalise and tax opium and ordered", "Lin Zexu to eradicate opium trade")\n', '("Hong Kong", "was ceded to", "the United Kingdom in the 1842 Treaty of Nanking")\n', '("University of Hong Kong", "was established in", "1911")\n', '("Kai Tak Airport", "began operation in", "1924")\n', '("Hong Kong", "declared a neutral zone during", "the start of the Second Sino-Japanese War in 1937")\n', '("Hong Kong", "was attacked on", "8 December 1941, the same morning as the attack on Pearl Harbor")\n', '("Deng Xiaoping", "was involved in the discussion about", "Hong Kong\'s status with Governor Murray MacLehose in 1979")\n', '("Hong Kong", "became a special administrative region of China after handover by the", "United Kingdom in 1997")\n', '("World Trade Organization", "Hong Kong actively participates in", "")\n', '("International Olympic Committee", "Hong Kong actively participates in", "")\n', '("Hong Kong", "is surrounded by the", "South China Sea")\n', '("Pearl River estuary", "is located to the north of", "Hong Kong nearing the Sham Chun River")\n', '("South China Sea", "surrounds", "Hong Kong on all sides except the north")\n', '("Guangdong", "is the neighbouring city of", "Shenzhen, which borders Hong Kong")\n', '("Shenzhen", "borders", "Hong Kong")\n', '("vascular plants", "of over 3,000 species occur in", "Hong Kong")\n', '("Tropic of Cancer", "is closely bordered with Hong Kong\'s", "humid subtropical climate")\n', '("Wetland Park", "recorded the highest temperature in all of Hong Kong at", "39.0 °C")\n', '("Hong Kong", "is densely populated with", "most people being Han Chinese")\n', '("Macau", "is located 60 km (37 mi) west of", "Hong Kong")\n', '("Kangxi Emperor", "lifted the maritime trade prohibition", "")\n', '("Canton", "is an alternative name for", "Guangzhou")\n', '("Lin Zexu", "pursued aggressive actions to halt the opium trade", "")\n', '("United Kingdom", "forces began controlling Hong Kong shortly after the signing of the convention from", "26 January 1841")\n', '("Stonecutters Island", "was given up by the Qing in the Convention of Peking to the", "United Kingdom")\n', '("University of Hong Kong", "was established as the territory\'s first institution of higher education in", "1911")\n', '("Kai Tak Airport", "began operation in", "1924")\n', '("attack on Pearl Harbor", "occurred on the same morning as the Imperial Japanese Army attacked", "Hong Kong")\n', '("Deng Xiaoping", "was involved in the question of Hong Kong\'s status raised by Governor", "Murray MacLehose in 1979")\n', '("World Trade Organization", "Hong Kong actively participates in", "")\n', '("International Olympic Committee", "Hong Kong actively participates in", "")\n', '("Pearl River estuary", "influences the sweet taste of the freshwater influx to", "Hong Kong")\n', '("South China Sea", "surrounds", "Hong Kong")\n', '("Guangdong", "neighbours the", "Sham Chun River which borders Hong Kong and Shenzhen")\n', '("Shenzhen", "along the", "Sham Chun River, borders Hong Kong")\n', '("vascular plants", "over 3,000 species of", "are present in Hong Kong")\n', '("Tropic of Cancer", "Hong Kong\'s climate is influenced by its proximity to the", "")\n', '("Wetland Park", "recorded the highest temperature of", "39.0 °C in Hong Kong")\n', '("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n']
+range(1, 247) 3
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("United States", "ideologically opposed by", "Soviet Union during Cold War")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Soviet Union", "spanned Eurasia from", "1922 to 1991")\n', '("Russian Empire", "organized into", "federal union")\n', '("Russian SFSR", "established by", "Vladimir Lenin")\n', '("Russian Civil War", "involved", "Bolsheviks and anti-communist Whites")\n', '("Soviet Union", "formed in", "December 1922")\n', '("Russian Empire", "dissolved by", "Russian Provisional Government")\n', '("Joseph Stalin", "inaugurated period of", "industrialization and collectivization")\n', '("Gulag", "expanded in", "Stalin\'s period")\n', '("Stalin", "conducted", "Great Purge")\n', '("Nazi Germany", "signed nonaggression pact with", "USSR")\n', '("USSR", "defeated", "Axis powers in 1945")\n', '("Nazi Germany", "invaded", "Soviet Union in 1941")\n', '("Soviet Union", "consolidated territory after", "World War II")\n', '("NATO", "formed in response to", "Soviet Union")\n', '("Nikita Khrushchev", "undertook de-Stalinization campaign", "in Soviet Union")\n', '("Soviet Union", "expanded space exploration efforts during", "1950s")\n', '("Mikhail Gorbachev", "sought to reform country with", "glasnost and perestroika")\n', '("Warsaw Pact countries", "overthrew regimes in", "1989")\n', '("Russian Federation", "became successor state to", "Soviet Union")\n', '("Boris Yeltsin", "oversaw reconstitution into", "Russian Federation")\n', '("Soviet Union", "recognized as one of two superpowers before", "dissolution")\n', '("Anguilla", "is a", "British Overseas Territory in the Caribbean")\n', '("Anguilla", "is one of the most northerly of the", "Leeward Islands in the Lesser Antilles")\n', '("Anguilla", "lies east of", "Puerto Rico and the Virgin Islands")\n', '("Anguilla", "has capital called", "The Valley")\n', '("Anguilla", "was named by", "Christopher Columbus")\n', '("Indigenous Amerindian peoples", "first settled", "Anguilla")\n', '("Anguilla", "has petroglyph sites at", "Big Spring and Fountain Cavern")\n', '("English settlers from", "Saint Kitts", "colonised Anguilla in 1650")\n', '("Enslaved Africans", "arrived in", "Anguilla by 1683")\n', '("Anguilla", "was first administered by the British through", "Antigua")\n', '("Anguilla", "was federated with", "St Kitts & Nevis in 1882")\n', '("Anguilla", "has a flat landscape composed of", "coral and limestone")\n', '("Anguilla", "is surrounded by the", "Caribbean Sea")\n', '("Anguilla Formation", "is of", "reefal limestone")\n', '("Anguilla", "was largely submerged during", "the Miocene")\n', '("Anguilla", "has ecologically important", "coral reefs")\n', '("Anguilla", "underwent tectonic subsidence since the", "late Pleistocene")\n', '("Anguilla", "is cooled by", "northeastern trade winds")\n', '("Anguilla", "suffered damage from", "Hurricane Irma in 2017")\n', '("Anguilla", "is an", "internally self-governing overseas territory of the United Kingdom")\n', '("The United Kingdom", "is responsible for", "Anguilla\'s military defence")\n', '("Majority of residents in Anguilla", "are", "black")\n', '("Citizens of", "St Kitts & Nevis, the Dominican Republic, Jamaica and Nigeria", "are part of Anguilla\'s population")\n', '("Anguilla\'s predominant religion", "is", "Christianity")\n', '("Anguillan cuisine", "includes", "seafood like spiny lobster, mahi-mahi, marlin, and grouper")\n', '("The national food of Anguilla", "is", "pigeon peas and rice")\n', '("Anguilla", "imports produce like", "citrus fruits and breadfruit")\n', '("Great Britain", "has a", "cultural influence in Anguilla")\n', '("Anguillan", "sports include", "boat racing and cricket")\n', '("Anguillan", "economy relies on", "tourism, offshore finance, and fishing")\n', '("Anguilla", "aims to obtain 15% of its energy from", "solar power")\n', '("Anguilla", "profit from demand for web addresses ending with", ".ai")\n', '("Anguilla", "is served by", "Clayton J. Lloyd International Airport")\n', '("Cars in Anguilla", "drive on the", "left")\n', '("Anguilla", "has regular ferries to", "Saint Martin")\n', '("Hong Kong", "is a", "special administrative region of the People\'s Republic of China")\n', '("Hong Kong", "has a population of", "7.4 million residents")\n', '("Hong Kong", "was established as a colony of", "the British Empire")\n', '("Hong Kong Island", "was ceded to", "the United Kingdom after the Qing dynasty lost the First Opium War")\n', '("Kowloon Peninsula", "expanded to", "Hong Kong in 1860")\n', '("United Kingdom", "obtained a 99-year lease of", "the New Territories")\n', '("Hong Kong", "was occupied by", "Japan from 1941 to 1945 during World War II")\n', '("Hong Kong", "was handed over from", "the United Kingdom to China in 1997")\n', '("Hong Kong", "maintains separate governing and economic systems from", "mainland China")\n', '("Hong Kong dollar", "is the", "ninth most traded currency in the world")\n', '("Hong Kong", "has the largest number of", "ultra high-net-worth individuals")\n', '("Hong Kong", "has the largest number of", "skyscrapers of any city in the world")\n', '("Hong Kong", "has a Human Development Index of", "0.956")\n', '("Hong Kong", "has one of the highest", "life expectancies in the world")\n', '("Hong Kong Island", "was originally referred to by the name", "He-Ong-Kong")\n', '("Victoria Harbour", "was developed after", "Aberdeen Harbour")\n', '("Qing dynasty", "incorporated", "Hong Kong into China for the first time in 214 BCE")\n', '("Kowloon City", "was the location of the Southern Song court during the", "Mongol conquest of China")\n', '("Qing dynasty", "established the", "Canton System in 1757 to regulate trade")\n', '("Daoguang Emperor", "rejected proposals to legalise and tax opium and ordered", "Lin Zexu to eradicate opium trade")\n', '("Hong Kong", "was ceded to", "the United Kingdom in the 1842 Treaty of Nanking")\n', '("University of Hong Kong", "was established in", "1911")\n', '("Kai Tak Airport", "began operation in", "1924")\n', '("Hong Kong", "declared a neutral zone during", "the start of the Second Sino-Japanese War in 1937")\n', '("Hong Kong", "was attacked on", "8 December 1941, the same morning as the attack on Pearl Harbor")\n', '("Deng Xiaoping", "was involved in the discussion about", "Hong Kong\'s status with Governor Murray MacLehose in 1979")\n', '("Hong Kong", "became a special administrative region of China after handover by the", "United Kingdom in 1997")\n', '("World Trade Organization", "Hong Kong actively participates in", "")\n', '("International Olympic Committee", "Hong Kong actively participates in", "")\n', '("Hong Kong", "is surrounded by the", "South China Sea")\n', '("Pearl River estuary", "is located to the north of", "Hong Kong nearing the Sham Chun River")\n', '("South China Sea", "surrounds", "Hong Kong on all sides except the north")\n', '("Guangdong", "is the neighbouring city of", "Shenzhen, which borders Hong Kong")\n', '("Shenzhen", "borders", "Hong Kong")\n', '("vascular plants", "of over 3,000 species occur in", "Hong Kong")\n', '("Tropic of Cancer", "is closely bordered with Hong Kong\'s", "humid subtropical climate")\n', '("Wetland Park", "recorded the highest temperature in all of Hong Kong at", "39.0 °C")\n', '("Hong Kong", "is densely populated with", "most people being Han Chinese")\n', '("Macau", "is located 60 km (37 mi) west of", "Hong Kong")\n', '("Kangxi Emperor", "lifted the maritime trade prohibition", "")\n', '("Canton", "is an alternative name for", "Guangzhou")\n', '("Lin Zexu", "pursued aggressive actions to halt the opium trade", "")\n', '("United Kingdom", "forces began controlling Hong Kong shortly after the signing of the convention from", "26 January 1841")\n', '("Stonecutters Island", "was given up by the Qing in the Convention of Peking to the", "United Kingdom")\n', '("University of Hong Kong", "was established as the territory\'s first institution of higher education in", "1911")\n', '("Kai Tak Airport", "began operation in", "1924")\n', '("attack on Pearl Harbor", "occurred on the same morning as the Imperial Japanese Army attacked", "Hong Kong")\n', '("Deng Xiaoping", "was involved in the question of Hong Kong\'s status raised by Governor", "Murray MacLehose in 1979")\n', '("World Trade Organization", "Hong Kong actively participates in", "")\n', '("International Olympic Committee", "Hong Kong actively participates in", "")\n', '("Pearl River estuary", "influences the sweet taste of the freshwater influx to", "Hong Kong")\n', '("South China Sea", "surrounds", "Hong Kong")\n', '("Guangdong", "neighbours the", "Sham Chun River which borders Hong Kong and Shenzhen")\n', '("Shenzhen", "along the", "Sham Chun River, borders Hong Kong")\n', '("vascular plants", "over 3,000 species of", "are present in Hong Kong")\n', '("Tropic of Cancer", "Hong Kong\'s climate is influenced by its proximity to the", "")\n', '("Wetland Park", "recorded the highest temperature of", "39.0 °C in Hong Kong")\n', '("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n']
+range(1, 247) 3
+{'id': '2_3', 'Question': ' Which country was ideologically opposed by the nation that captured the city where philosopher Immanuel Kant was buried?\n', 'Answer': 'United States', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Anguilla'}, {'label': 'B', 'text': 'United States'}, {'label': 'C', 'text': 'Hong Kong'}, {'label': 'D', 'text': 'Guernsey'}, {'label': 'E', 'text': 'Northern Mariana Islands'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'anguilla'}, {'label': 'B', 'text': 'united_states'}, {'label': 'C', 'text': 'hong_kong'}, {'label': 'D', 'text': 'guernsey'}, {'label': 'E', 'text': 'northern_mariana_islands'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: In which city was Immanuel Kant buried?\nA1: Kaliningrad\n\n', '2: Who captured Kaliningrad in 1945?\nA2: Soviet Union\n\n', '3: Which country was ideologically opposed by the Soviet Union during the Cold War?\nA3: United States'], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Soviet Union'), ('Soviet Union', 'United States')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'soviet_union'), ('soviet_union', 'united_states')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")', '("United States", "ideologically opposed by", "Soviet Union during Cold War")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 13}, {'name': 'Soviet Union', 'line': 14}], 'Question_triplet_answer': {100: [179, 191, 222], 50: [48, 186, 200], 25: [118, 193, 205]}}
+time passed:  9205.816065788269
+Expected dollar:  0.005
+Guam is Geography
+the Mariana Archipelago is Geography
+Mikhail Gorbachev is People
+Anguilla is Geography
+Anguillan is Geography
+Northern Mariana is Geography
+the United States is Geography
+Soviet Union is Geography
+Northern Mariana Islands is Geography
+the Battle of Saipan is Geography
+Lithuania is Geography
+Poland is Geography
+Hong Kong is Geography
+China is Geography
+Hong Kong Island is Geography
+the United Kingdom is Geography
+the Qing dynasty is Geography
+Japan is Geography
+University of Hong Kong is Geography
+Guernsey is Geography
+Normandy is Geography
+Stalin is People
+Königsberg is Geography
+Saint Peter Port is Geography
+South China Sea is Geography
+the Duchy of Normandy is Geography
+Kowloon City is Geography
+Kangxi Emperor is People
+Christopher Columbus is People
+Pearl Harbor is Geography
+"Saint Kitts is Geography
+World Trade Organization is Geography
+USSR is Geography
+Guernsey County is Geography
+Ohio is Geography
+Mikhail Kalinin is People
+St Kitts is Geography
+the Dominican Republic is Geography
+Jamaica is Geography
+Nigeria is Geography
+Novalis is People
+Nazi Germany is Geography
+Kai Tak Airport is Geography
+German Empire is Geography
+Russia is Geography
+Anguilla Formation is Geography
+the New Territories is Geography
+Macau is Geography
+37 mi is Geography
+Leeward Islands is Geography
+the Lesser Antilles is Geography
+Victoria Harbour is Geography
+Aberdeen Harbour is Geography
+Northwestern Federal District is Geography
+The United Kingdom is Geography
+Leonid Brezhnev's is People
+the Northern Mariana is Geography
+Samuel Taylor is People
+University of Königsberg is Geography
+Spain is Geography
+Germany is Geography
+North German Confederation is Geography
+Philippines is Geography
+North Sea is Geography
+Guangdong is Geography
+Shenzhen is Geography
+Weimar Germany is Geography
+Cars in Anguilla is Geography
+International Olympic Committee is Geography
+Sham Chun River is Geography
+Puerto Rico is Geography
+the Virgin Islands is Geography
+Caribbean Sea is Geography
+Armorican Massif is Geography
+Pearl River is Geography
+the Sham Chun River is Geography
+Lin Zexu is People
+the Soviet Union is Geography
+United States is Geography
+Deng Xiaoping is People
+Hong Kong's is Geography
+Murray MacLehose is People
+the Caroline Islands is Geography
+Kaliningrad is Geography
+Caribbean is Geography
+Tropic of Cancer is Geography
+the Cotentin Peninsula is Geography
+Joseph Stalin is People
+Lin Zexu" is Geography
+entities:  {'Trade', 'Kingdom', 'Committee', 'Kant', 'Shenzhen', 'Jamaica', 'Spain', 'Emperor', 'Zexu', 'Zexu"', 'Christopher', 'Alexander', 'Chun', 'Leonid', 'Soviet', 'Sea', 'Nazi', 'Organization', 'Kowloon', 'Puerto', 'St', 'Caroline', 'Republic', 'Normandy', 'North', 'Union', 'mi', 'Guangdong', 'University', 'Japan', 'Anna', 'Saipan', 'USSR', 'Swedenborg', 'Port', 'Sham', 'Lithuania', 'Ohio', 'Nigeria', 'Murray', 'Qing', 'Poland', 'City', 'Germany', 'Taylor', 'Rico', 'Reuter', 'Kitts', 'Carl', 'Cars', 'Mariana', 'Kangxi', 'Guernsey', 'Stalin', 'Dominican', 'Lesser', "Brezhnev's", 'Airport', 'Armorican', 'Deng', 'Kong', 'South', 'Samuel', 'Kalinin', 'Northwestern', 'Johann', 'Tak', 'Confederation', "Kong's", 'Königsberg', 'Hegel', 'District', 'Peter', 'dynasty', 'United', 'Formation', 'John', 'Hong', 'Mikhail', 'Kai', 'Territories', 'Harbor', 'County', '37', 'China', 'Caribbean', 'Victoria', 'Regina', 'Khrushchev', 'Gorbachev', 'Antilles', 'Anguilla', 'River', 'Lin', 'Xiaoping', 'Novalis', 'Nikita', 'International', 'Massif', 'Columbus', 'Kaliningrad', 'Pearl', 'Saint', 'Cotentin', 'Aberdeen', 'Britain', 'Philippines', 'German', 'Islands', 'Battle', 'Immanuel', 'Northern', 'Cancer', 'Guam', 'Jürgen', 'States', 'Peninsula', 'Federal', 'Anguillan', 'MacLehose', 'Harbour', 'Archipelago', 'Virgin', 'Island', 'World', 'Empire', '"Saint', 'Duchy', 'Olympic', 'Wendt', 'Weimar', 'Leeward', 'Macau', 'Tropic', 'Russia', 'Joseph', 'New', 'Nevis'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kaliningrad
+Kaliningrad
+Kaliningrad
+Königsberg 
+Königsberg 
+Kant
+Lithuania
+Poland
+Mikhail Kalinin
+Kant Society
+Kant
+University of Königsberg
+Königsberg 
+Kaliningrad 
+Guernsey
+Victor Hugo
+Herculaneum
+Kant Society
+Kaliningrad Oblast
+Northwestern Federal District
+Kant
+Königsberg 
+Germany
+St Kitts
+Saint Kitts
+Jamaica
+Nigeria
+Anguilla
+Population of Northern Mariana Islands
+Spain
+Germany
+Memel
+Japan
+Japanese
+Russia
+
+gpt_entity_particular(): entity list: 
+ ['Victor Hugo', 'Germany', 'Kant', 'Jamaica', 'Kant Society', 'Spain', 'Kaliningrad ', 'Memel', 'Königsberg ', 'Guernsey', 'Northwestern Federal District', 'Saint Kitts', 'Anguilla', 'Population of Northern Mariana Islands', 'Herculaneum', 'Mikhail Kalinin', 'St Kitts', 'Japanese', 'Kaliningrad', 'Japan', 'University of Königsberg', 'Russia', 'Lithuania', 'Nigeria', 'Poland', 'Kaliningrad Oblast']
+
+gpt_entity_particular(): filtered entity: 
+ ['Russia']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Anguilla' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Anguilla
+Mariana Archipelago
+Christianity
+tourism
+offshore finance
+fishing
+economy
+solar power
+energy
+Christopher Columbus
+St Kitts
+Nevis
+Dominican Republic
+Jamaica
+Nigeria
+population
+black
+web addresses
+coral reefs
+citrus fruits
+breadfruit
+Puerto Rico
+Virgin Islands
+Caribbean Sea
+left
+Hong Kong
+British Empire
+democracy
+United Kingdom
+military defense
+British Overseas Territory
+
+gpt_entity_particular(): entity list: 
+ ['fishing', 'tourism', 'Mariana Archipelago', 'left', 'Jamaica', 'British Overseas Territory', 'Dominican Republic', 'breadfruit', 'solar power', 'Hong Kong', 'British Empire', 'black', 'web addresses', 'Virgin Islands', 'Anguilla', 'United Kingdom', 'population', 'offshore finance', 'St Kitts', 'Caribbean Sea', 'economy', 'citrus fruits', 'energy', 'Puerto Rico', 'military defense', 'coral reefs', 'democracy', 'Christianity', 'Christopher Columbus', 'Nigeria', 'Nevis']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hong Kong' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hong Kong
+the South China Sea
+Kowloon City
+the South China Sea
+Hong Kong Island
+the United Kingdom
+the First Opium War
+the South China Sea
+the Qing dynasty
+Canton System
+the University of Hong Kong
+the South China Sea
+the South China Sea
+the South China Sea
+the Southern Song court
+the South China Sea
+the Königsberg
+the English crown
+the South China Sea
+Saint Kitts
+Imperial Japanese Army
+the South China Sea
+the ninth most traded currency
+the Canton System
+the South China Sea
+the ninth most traded currency
+the Ninth Century
+the World Trade Organization
+the South China Sea
+the ninth most traded currency
+the ninth most traded currency
+the German Empire
+the South China Sea
+the South China Sea
+the South China Sea
+the South China Sea
+The United Kingdom
+the ninth most traded currency
+the South China Sea
+the ninth most traded currency
+the South China Sea
+the World Trade Organization
+the South China Sea
+the World Trade Organization
+
+gpt_entity_particular(): entity list: 
+ ['the World Trade Organization', 'the ninth most traded currency', 'the First Opium War', 'The United Kingdom', 'the Qing dynasty', 'Hong Kong Island', 'the South China Sea', 'the Canton System', 'the University of Hong Kong', 'the German Empire', 'Hong Kong', 'Canton System', 'the United Kingdom', 'Saint Kitts', 'Kowloon City', 'the Southern Song court', 'the Königsberg', 'the English crown', 'Imperial Japanese Army', 'the Ninth Century']
+
+gpt_entity_particular(): filtered entity: 
+ ['The United Kingdom', 'Hong Kong Island', 'the South China Sea', 'the United Kingdom']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Guernsey' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Guernsey
+Mariana Archipelago
+Kant
+Spinozism
+pantheism
+Mikhail Gorbachev
+Christianity
+economy
+Anguilla's
+tourism
+fishing
+islands
+commonwealth
+United States
+Nikita Khrushchev
+glasnost
+perestroika
+banking
+finance
+government
+Hong Kong
+mainland China
+Kowloon
+Kai Tak Airport
+Siege of China
+World Trade Organization
+United Kingdom
+Duchy of Normandy
+Saint Peter Port
+Hercules House
+Victor Hugo
+Pope Sixtus IV
+
+gpt_entity_particular(): entity list: 
+ ['Victor Hugo', 'perestroika', 'fishing', 'tourism', 'Mariana Archipelago', 'Kant', 'United States', 'Nikita Khrushchev', 'mainland China', 'World Trade Organization', 'Hong Kong', 'Guernsey', 'Pope Sixtus IV', 'Kai Tak Airport', 'commonwealth', 'Spinozism', 'glasnost', 'Kowloon', 'Duchy of Normandy', 'islands', 'Hercules House', 'United Kingdom', 'Mikhail Gorbachev', 'Saint Peter Port', 'economy', 'finance', "Anguilla's", 'pantheism', 'Christianity', 'government', 'Siege of China', 'banking']
+
+gpt_entity_particular(): filtered entity: 
+ ['Saint Peter Port']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant 
+Kant 
+Mikhail Gorbachev 
+Mikhail Kalinin 
+Königsberg 
+Kaliningrad 
+Kant Society 
+Reinhold 
+Fichte 
+Schelling 
+Hegel 
+Novalis 
+Jean Piaget 
+Carl Gustav Jung 
+Marxism 
+Positivism 
+Phenomenology 
+Victor Hugo 
+Jean Piaget 
+Jürgen Habermas 
+John Rawls 
+Guangdong 
+Shenzhen 
+Lin Zexu 
+Murray MacLehose 
+Joseph Stalin 
+Deng Xiaoping 
+Johann Georg Kant 
+Memel
+
+gpt_entity_particular(): entity list: 
+ ['John Rawls ', 'Carl Gustav Jung ', 'Schelling ', 'Mikhail Kalinin ', 'Joseph Stalin ', 'Deng Xiaoping ', 'Fichte ', 'Kaliningrad ', 'Memel', 'Königsberg ', 'Mikhail Gorbachev ', 'Johann Georg Kant ', 'Kant ', 'Phenomenology ', 'Jürgen Habermas ', 'Guangdong ', 'Victor Hugo ', 'Hegel ', 'Marxism ', 'Positivism ', 'Reinhold ', 'Kant Society ', 'Immanuel Kant ', 'Murray MacLehose ', 'Lin Zexu ', 'Shenzhen ', 'Jean Piaget ', 'Novalis ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'United States' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Guam
+Mariana Archipelago
+Mikhail Gorbachev
+Soviet Union
+Northern Mariana Islands
+United States
+Battle of Saipan
+Japan
+League of Nations
+Pope Sixtus IV
+Duchy of Normandy
+State of the Teutonic Order 
+Saint Peter Port
+Singapore
+South China Sea
+Stalin
+Königsberg
+
+gpt_entity_particular(): entity list: 
+ ['Japan', 'Königsberg', 'Mariana Archipelago', 'Mikhail Gorbachev', 'South China Sea', 'Saint Peter Port', 'Battle of Saipan', 'Stalin', 'United States', 'League of Nations', 'Pope Sixtus IV', 'State of the Teutonic Order ', 'Guam', 'Duchy of Normandy', 'Soviet Union', 'Singapore', 'Northern Mariana Islands']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Soviet Union' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Soviet Union
+Mikhail Gorbachev
+Nikita Khrushchev
+USSR
+Joseph Stalin
+
+gpt_entity_particular(): entity list: 
+ ['Mikhail Gorbachev', 'USSR', 'Joseph Stalin', 'Nikita Khrushchev', 'Soviet Union']
+
+gpt_entity_particular(): filtered entity: 
+ ['USSR']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Northern Mariana Islands' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Northern Mariana Islands
+Mariana Archipelago
+United States
+Battle of Saipan
+Imperial Japanese Army
+World Trade Organization
+League of Nations mandate 
+Germany
+Japanese
+Philippines
+Carolina Islands
+
+gpt_entity_particular(): entity list: 
+ ['Germany', 'Mariana Archipelago', 'Battle of Saipan', 'Carolina Islands', 'United States', 'Imperial Japanese Army', 'League of Nations mandate ', 'Philippines', 'Japanese', 'World Trade Organization', 'Northern Mariana Islands']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Trade', 'Kingdom', 'Committee', 'Kant', 'Shenzhen', 'Jamaica', 'Spain', 'Emperor', 'Zexu', 'Zexu"', 'Christopher', 'The United Kingdom', 'Alexander', 'Chun', 'Leonid', 'Soviet', 'Sea', 'Nazi', 'Organization', 'Kowloon', 'Puerto', 'St', 'Caroline', 'Republic', 'Normandy', 'North', 'Union', 'mi', 'Guangdong', 'University', 'Japan', 'Anna', 'Saipan', 'USSR', 'Swedenborg', 'Port', 'Sham', 'Lithuania', 'Ohio', 'Nigeria', 'Murray', 'Qing', 'Poland', 'City', 'Germany', 'Taylor', 'Rico', 'Reuter', 'Kitts', 'Carl', 'Hong Kong Island', 'Cars', 'Mariana', 'Kangxi', 'Guernsey', 'Stalin', 'Dominican', 'Lesser', "Brezhnev's", 'Airport', 'the United Kingdom', 'Armorican', 'Deng', 'Kong', 'South', 'Samuel', 'Kalinin', 'Northwestern', 'Johann', 'Tak', 'Confederation', "Kong's", 'Königsberg', 'Hegel', 'District', 'Peter', 'dynasty', 'United', 'Formation', 'John', 'Hong', 'Mikhail', 'Kai', 'Territories', 'Harbor', 'County', '37', 'China', 'Caribbean', 'Victoria', 'Regina', 'Khrushchev', 'Gorbachev', 'Antilles', 'Anguilla', 'River', 'Saint Peter Port', 'Lin', 'Xiaoping', 'Novalis', 'Nikita', 'International', 'Massif', 'Columbus', 'Kaliningrad', 'Pearl', 'Saint', 'Cotentin', 'Aberdeen', 'Britain', 'Philippines', 'German', 'Islands', 'Battle', 'Immanuel', 'Northern', 'Cancer', 'Guam', 'Jürgen', 'States', 'the South China Sea', 'Peninsula', 'Federal', 'Anguillan', 'MacLehose', 'Harbour', 'Archipelago', 'Virgin', 'Island', 'World', 'Empire', '"Saint', 'Duchy', 'Olympic', 'Wendt', 'Weimar', 'Leeward', 'Macau', 'Tropic', 'Russia', 'Joseph', 'New', 'Nevis'}
+Total time:  432.6560261249542
+Entity conversion done on 2_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_2_3_entity_conversion_hash.json. Check the entity.
+ Which country was ideologically opposed by the nation that captured the 025 where philosopher 049 00B was buried?
+
+
+
+Done. Check final_query/id_2_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

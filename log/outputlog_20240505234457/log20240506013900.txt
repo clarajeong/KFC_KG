@@ -1,0 +1,928 @@
+Got argument: Turtle, 5, 5_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', 'start word': 'Turtle', 'end word': 'Cretaceous', 'source': {'name': 'Turtle', 'line': 41}, 'cpnet': {'start word': 'turtle', 'end word': 'cretaceous'}}
+
+utils/question.py extract_hops(Cretaceous, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cretaceous_info.json file
+second_hop:  {'triplet': '("Turonian", "is an age within", "Late Cretaceous")', 'start word': 'Cretaceous', 'end word': 'Turonian', 'source': {'name': 'Cretaceous', 'line': 29}, 'cpnet': {'start word': 'cretaceous', 'end word': 'turonian'}}
+
+utils/question.py extract_hops(Turonian, [], ['Turtle', 'Cretaceous']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turonian_info.json file
+third_hop1:  {'triplet': '("Turonian", "follows", "Cenomanian Stage")', 'start word': 'Turonian', 'end word': 'Cenomanian', 'source': {'name': 'Turonian', 'line': 2}, 'cpnet': {'start word': 'turonian', 'end word': 'cenomanian'}}
+
+utils/question.py extract_hops(Turonian, ['Cenomanian'], ['Turtle', 'Cretaceous']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turonian_info.json file
+third_hop2:  {'triplet': '("Turonian", "origin type locality is", "Tours")', 'start word': 'Turonian', 'end word': 'Tours', 'source': {'name': 'Turonian', 'line': 8}, 'cpnet': {'start word': 'turonian', 'end word': 'tours'}}
+extraction_done:  True
+generate_question(5_2, ['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', '("Turonian", "is an age within", "Late Cretaceous")', '("Turonian", "follows", "Cenomanian Stage")', '("Turonian", "origin type locality is", "Tours")'], ['Turtle', 'Cretaceous', 'Turonian', 'Turonian'], [('Turtle', 'Cretaceous'), ('Cretaceous', 'Turonian'), ('Turonian', 'Cenomanian'), ('Turonian', 'Tours')], Turtle, [{'name': 'Turtle', 'line': 41}, {'name': 'Cretaceous', 'line': 29}, {'name': 'Turonian', 'line': 2}, {'name': 'Turonian', 'line': 8}]) called
+GPT output is:  Q: Which reptile is experiencing a faster rate of extinction than it did during the period that succeeded the Cenomanian Stage and took its name from a city with the same name as this geological age?
+A: Turtle
+final_choice(Turtle, options = 5) started
+[]
+entity_type(Turtle) called
+Turtle is Animal
+check_matchscore(Turtle, Extant Late Jurassic first appearances):  0.0
+choose_by_wiki_recur(Extant Late Jurassic first appearances)
+   Pages in Extant Late Jurassic first appearances: ['Achelata', 'Acipenseriformes', 'Alytidae', 'Ampullariidae', 'Angelshark', 'Avialae', 'Bonefishes', 'Brown algae', 'Catshark', 'Cheilostomatida', 'Cow shark', 'Craniscus', 'Cryptobranchoidea', 'Dromioidea', 'European spadefoot toad', 'Eutheria', 'Gar', 'Ginglymostomatidae', 'Guitarfish', 'Gymnotiformes', 'Hemiscylliidae', 'Tabanidae', 'Hydrolagus matallanasi', 'Maniraptora', 'Maniraptoriformes', 'Munididae', 'Neoceratodus', 'Osteoglossiformes', 'Osteoglossomorpha', 'Otinidae', 'Paraves', 'Pennaraptora', 'Porcelain crab', 'Protacanthopterygii', 'Pylochelidae', 'Rhinobatidae', 'Salamander', 'Salamandroidea', 'Sawshark', 'Squaliformes', 'Turritella', 'Turtle', 'Wobbegong']
+      Salamandroidea in ['Salamandroidea', 'Wobbegong', 'Gar', 'Cow shark']
+Salamandroidea is Animal
+      Wobbegong in ['Salamandroidea', 'Wobbegong', 'Gar', 'Cow shark']
+Wobbegong is Animal
+      Gar in ['Salamandroidea', 'Wobbegong', 'Gar', 'Cow shark']
+Gar is Animal
+      Cow shark in ['Salamandroidea', 'Wobbegong', 'Gar', 'Cow shark']
+Cow shark is Animal
+['Salamandroidea', 'Wobbegong', 'Gar', 'Cow shark']
+Ended after 2.5 hierarchy
+(2.5, ['Salamandroidea', 'Wobbegong', 'Gar', 'Cow shark'])
+
+extract_info(Gar) Start.
+utils/preprocess.py extract_info(): Checking good links on Gar
+North America is Geography
+1 / 30 )  North America North America north_america
+Cuba is Geography
+2 / 30 )  Cuba Cuba cuba
+Caribbean is Geography
+3 / 30 )  Caribbean Caribbean caribbean
+Ginglymodi is Animal
+4 / 30 )  Ginglymodi Ginglymodi ginglymodian
+Triassic is Geography
+5 / 30 )  Triassic Triassic triassic
+Holostei is Animal
+6 / 30 )  holosteian Holostei holostei
+Bowfin is Animal
+7 / 30 )  bowfins Bowfin bowfin
+Esocidae is Animal
+8 / 30 )  Esocidae Esocidae esocidae
+Alligator gar is Animal
+9 / 30 )  alligator gar Alligator gar alligator_gar
+Needlefish is Animal
+10 / 30 )  needlefish Needlefish needlefish
+Osteichthyes is Animal
+11 / 30 )  bony fish Osteichthyes osteichthyes
+Mesozoic is Geography
+12 / 30 )  Mesozoic Mesozoic mesozoic
+Permian is Geography
+13 / 30 )  Late Permian Permian permian
+Obaichthyidae is Animal
+14 / 30 )  Obaichthyidae Obaichthyidae obaichthyid
+Mexico is Geography
+15 / 30 )  Mexico Mexico mexico
+Late Cretaceous is Geography
+16 / 30 )  Late Cretaceous Late Cretaceous upper_cretaceous
+Morocco is Geography
+17 / 30 )  Morocco Morocco morocco
+Cenozoic is Geography
+18 / 30 )  Cenozoic Cenozoic cenozoic
+Eocene is Geography
+19 / 30 )  Eocene Eocene eocene
+Atractosteus is Animal
+20 / 30 )  Atractosteus Atractosteus gator_gar
+Lepisosteus is Animal
+21 / 30 )  Lepisosteus Lepisosteus lepisosteus
+Actinopterygii is Animal
+22 / 30 )  actinopterygians Actinopterygii actinopterygii
+Spotted gar is Animal
+23 / 30 )  L. oculatus Spotted gar spotted_gar
+Longnose gar is Animal
+24 / 30 )  L. osseus Longnose gar longnose_gar
+Shortnose gar is Animal
+25 / 30 )  L. platostomus Shortnose gar shortnose_gar
+Alligator is Animal
+26 / 30 )  alligator Alligator alligator
+Texas is Geography
+27 / 30 )  Texas Texas texas
+Oklahoma is Geography
+28 / 30 )  Oklahoma Oklahoma oklahoma
+Louisiana is Geography
+29 / 30 )  Louisiana Louisiana louisiana
+Mississippi River is Geography
+30 / 30 )  Mississippi River Mississippi River mississippi_river
+extract_triplet(Gar)
+Got GPT's response. String length : 3555
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  [['North America', 'North America', 'north_america'], ['Cuba', 'Cuba', 'cuba']]
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  [['Ginglymodi', 'Ginglymodi', 'ginglymodian']]
+subject_words:  [['Ginglymodi', 'Ginglymodi', 'ginglymodian']]
+object_words:  [['Triassic', 'Triassic', 'triassic']]
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  [['holosteian', 'Holostei', 'holostei']]
+subject_words:  [['holosteian', 'Holostei', 'holostei']]
+object_words:  [(None, 'Gar', 'gar'), ['bowfins', 'Bowfin', 'bowfin']]
+subject_words:  [['bowfins', 'Bowfin', 'bowfin']]
+object_words:  [(None, 'Gar', 'gar')]
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  [(None, 'Gar', 'gar')]
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  []
+object_words:  [['Esocidae', 'Esocidae', 'esocidae']]
+subject_words:  [(None, 'Gar', 'gar'), ['alligator gar', 'Alligator gar', 'alligator_gar'], ['alligator', 'Alligator', 'alligator']]
+object_words:  [(None, 'Gar', 'gar')]
+subject_words:  [(None, 'Gar', 'gar'), ['alligator gar', 'Alligator gar', 'alligator_gar'], ['alligator', 'Alligator', 'alligator']]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar'), ['alligator gar', 'Alligator gar', 'alligator_gar'], ['alligator', 'Alligator', 'alligator']]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  [['needlefish', 'Needlefish', 'needlefish']]
+subject_words:  [['needlefish', 'Needlefish', 'needlefish']]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Atractosteus', 'Atractosteus', 'gator_gar']]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  [['Ginglymodi', 'Ginglymodi', 'ginglymodian']]
+subject_words:  [['Ginglymodi', 'Ginglymodi', 'ginglymodian']]
+object_words:  [['Mesozoic', 'Mesozoic', 'mesozoic']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [['bowfins', 'Bowfin', 'bowfin']]
+object_words:  [(None, 'Gar', 'gar')]
+subject_words:  [['holosteian', 'Holostei', 'holostei']]
+object_words:  [(None, 'Gar', 'gar'), ['bowfins', 'Bowfin', 'bowfin']]
+subject_words:  [['Obaichthyidae', 'Obaichthyidae', 'obaichthyid']]
+object_words:  [(None, 'Gar', 'gar')]
+subject_words:  []
+object_words:  [['Mexico', 'Mexico', 'mexico']]
+subject_words:  [['Atractosteus', 'Atractosteus', 'gator_gar'], ['Lepisosteus', 'Lepisosteus', 'lepisosteus']]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [['Atractosteus', 'Atractosteus', 'gator_gar']]
+object_words:  [['Cenozoic', 'Cenozoic', 'cenozoic']]
+subject_words:  []
+object_words:  [['Eocene', 'Eocene', 'eocene']]
+subject_words:  [['Lepisosteus', 'Lepisosteus', 'lepisosteus']]
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [(None, 'Gar', 'gar'), ['North America', 'North America', 'north_america']]
+object_words:  [['Mexico', 'Mexico', 'mexico']]
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar'), ['alligator gar', 'Alligator gar', 'alligator_gar'], ['alligator', 'Alligator', 'alligator']]
+object_words:  [(None, 'Gar', 'gar')]
+subject_words:  [(None, 'Gar', 'gar'), ['alligator gar', 'Alligator gar', 'alligator_gar'], ['alligator', 'Alligator', 'alligator']]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar'), ['alligator gar', 'Alligator gar', 'alligator_gar'], ['alligator', 'Alligator', 'alligator']]
+object_words:  [['Mexico', 'Mexico', 'mexico']]
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar'), ['L. oculatus', 'Spotted gar', 'spotted_gar']]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar'), ['L. platostomus', 'Shortnose gar', 'shortnose_gar']]
+object_words:  [['Louisiana', 'Louisiana', 'louisiana'], ['Mississippi River', 'Mississippi River', 'mississippi_river']]
+subject_words:  [(None, 'Gar', 'gar'), ['L. osseus', 'Longnose gar', 'longnose_gar']]
+object_words:  [['Mexico', 'Mexico', 'mexico']]
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+subject_words:  [(None, 'Gar', 'gar')]
+object_words:  []
+extract_info(Wobbegong) Start.
+utils/preprocess.py extract_info(): Checking good links on Wobbegong
+Tasselled wobbegong is Animal
+1 / 30 )  Eucrossorhinus Tasselled wobbegong tasselled_wobbegong
+Orectolobus is Animal
+2 / 30 )  Orectolobus Orectolobus orectolobus
+Carpet shark is Animal
+3 / 30 )  carpet sharks Carpet shark carpet_shark
+Pacific Ocean is Geography
+4 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Indian Ocean is Geography
+5 / 30 )  Indian Ocean Indian Ocean indian_ocean
+Australia is Geography
+6 / 30 )  Australia Australia australia
+Indonesia is Geography
+7 / 30 )  Indonesia Indonesia indonesia
+Japan is Geography
+8 / 30 )  Japan Japan japan
+Spotted wobbegong is Animal
+9 / 30 )  spotted wobbegong Spotted wobbegong spotted_wobbegong
+Wobbegong is Animal
+10 / 30 )  banded wobbegong Wobbegong wobbegong
+extract_triplet(Wobbegong)
+Got GPT's response. String length : 1262
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  [['carpet sharks', 'Carpet shark', 'carpet_shark']]
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  []
+subject_words:  [['carpet sharks', 'Carpet shark', 'carpet_shark']]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [['carpet sharks', 'Carpet shark', 'carpet_shark']]
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  [['Australia', 'Australia', 'australia']]
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  [['Indonesia', 'Indonesia', 'indonesia']]
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  []
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  []
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['spotted wobbegong', 'Spotted wobbegong', 'spotted_wobbegong'], ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  [['Orectolobus', 'Orectolobus', 'orectolobus']]
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  [['Orectolobus', 'Orectolobus', 'orectolobus']]
+subject_words:  [(None, 'Wobbegong', 'wobbegong')]
+object_words:  []
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  []
+subject_words:  [(None, 'Wobbegong', 'wobbegong')]
+object_words:  []
+subject_words:  [(None, 'Wobbegong', 'wobbegong')]
+object_words:  []
+subject_words:  [(None, 'Wobbegong', 'wobbegong')]
+object_words:  []
+subject_words:  [(None, 'Wobbegong', 'wobbegong')]
+object_words:  [['Australia', 'Australia', 'australia']]
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['Eucrossorhinus', 'Tasselled wobbegong', 'tasselled_wobbegong'], ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  []
+subject_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+object_words:  []
+subject_words:  [['Eucrossorhinus', 'Tasselled wobbegong', 'tasselled_wobbegong']]
+object_words:  [(None, 'Wobbegong', 'wobbegong'), ['Eucrossorhinus', 'Tasselled wobbegong', 'tasselled_wobbegong'], ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+subject_words:  [['Orectolobus', 'Orectolobus', 'orectolobus']]
+object_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+subject_words:  [['Orectolobus', 'Orectolobus', 'orectolobus']]
+object_words:  [(None, 'Wobbegong', 'wobbegong'), ['spotted wobbegong', 'Spotted wobbegong', 'spotted_wobbegong'], ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+subject_words:  [['Orectolobus', 'Orectolobus', 'orectolobus']]
+object_words:  [(None, 'Wobbegong', 'wobbegong'), ['banded wobbegong', 'Wobbegong', 'wobbegong']]
+extract_info(Cow shark) Start.
+utils/preprocess.py extract_info(): Checking good links on Cow shark
+Shark is Animal
+1 / 30 )  shark Shark shark
+Sharpnose sevengill shark is Animal
+2 / 30 )  Heptranchias Sharpnose sevengill shark sharpnose_sevengill_shark
+Hexanchus is Animal
+3 / 30 )  Hexanchus Hexanchus hexanchus
+Notorynchus is Animal
+4 / 30 )  Notorynchus Notorynchus notorynchus
+extract_triplet(Cow shark)
+Got GPT's response. String length : 1151
+subject_words:  [(None, 'Cow shark', 'cow_shark'), ['shark', 'Shark', 'shark']]
+object_words:  []
+subject_words:  [(None, 'Cow shark', 'cow_shark'), ['shark', 'Shark', 'shark']]
+object_words:  [['Heptranchias', 'Sharpnose sevengill shark', 'sharpnose_sevengill_shark']]
+subject_words:  [(None, 'Cow shark', 'cow_shark'), ['shark', 'Shark', 'shark']]
+object_words:  [['Hexanchus', 'Hexanchus', 'hexanchus']]
+subject_words:  [(None, 'Cow shark', 'cow_shark'), ['shark', 'Shark', 'shark']]
+object_words:  [['Notorynchus', 'Notorynchus', 'notorynchus']]
+subject_words:  [(None, 'Cow shark', 'cow_shark')]
+object_words:  []
+subject_words:  [(None, 'Cow shark', 'cow_shark')]
+object_words:  []
+subject_words:  [(None, 'Cow shark', 'cow_shark')]
+object_words:  []
+subject_words:  [(None, 'Cow shark', 'cow_shark')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Cow shark', 'cow_shark'), ['shark', 'Shark', 'shark']]
+subject_words:  [(None, 'Cow shark', 'cow_shark'), ['shark', 'Shark', 'shark']]
+object_words:  []
+subject_words:  [(None, 'Cow shark', 'cow_shark'), ['shark', 'Shark', 'shark']]
+object_words:  []
+subject_words:  [['Heptranchias', 'Sharpnose sevengill shark', 'sharpnose_sevengill_shark']]
+object_words:  [['shark', 'Shark', 'shark'], ['Heptranchias', 'Sharpnose sevengill shark', 'sharpnose_sevengill_shark']]
+subject_words:  [['Hexanchus', 'Hexanchus', 'hexanchus']]
+object_words:  [['shark', 'Shark', 'shark']]
+subject_words:  [['Hexanchus', 'Hexanchus', 'hexanchus']]
+object_words:  [['shark', 'Shark', 'shark']]
+subject_words:  [['Hexanchus', 'Hexanchus', 'hexanchus']]
+object_words:  [['shark', 'Shark', 'shark']]
+subject_words:  [['Notorynchus', 'Notorynchus', 'notorynchus']]
+object_words:  [['shark', 'Shark', 'shark']]
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Turonian", "follows", "Cenomanian Stage")\n', '("Turonian", "origin type locality is", "Tours")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age in", "Late Cretaceous Epoch")\n', '("Turonian", "precedes", "Coniacian Stage")\n', '("Turonian", "witnessed oceanic anoxic event", "OAE 2")\n', '("Turonian", "related to", "Cenomanian-Turonian boundary event")\n', '("Turonian", "defined by", "French paleontologist")\n', '("Alcide d\'Orbigny", "named", "Turonian")\n', '("Turonian", "origin type locality is", "Tours")\n', '("Tours", "is in the region of", "Touraine")\n', '("Turonian", "is an age in", "Late Cretaceous Epoch")\n', '("Turonian", "follows", "Cenomanian Stage")\n', '("Turonian", "precedes", "Coniacian Stage")\n', '("Turonian", "witnessed oceanic anoxic event", "OAE 2")\n', '("Turonian", "related to", "Cenomanian-Turonian boundary event")\n', '("Turonian", "defined by", "French paleontologist")\n', '("Alcide d\'Orbigny", "named", "Turonian")\n', '("Tours", "is in the region of", "Touraine")\n', '("Gars", "are an ancient group of", "ray-finned fish")\n', '("Gars", "are in the family", "Lepisosteidae")\n', '("Gars", "inhabit", "North America, Central America and Cuba")\n', '("Gars", "are the only surviving members of", "Ginglymodi")\n', '("Ginglymodi", "appeared during the", "Triassic")\n', '("Gars", "are one of the surviving groups of", "holosteian fish")\n', '("Holosteian fish", "include", "gars and bowfins")\n', '("Bowfins", "have a distribution similar to", "gars")\n', '("Gars", "are armored with", "ganoid scales")\n', '("Gars", "are elongated bodies with jaws and teeth", "long and sharp")\n', '("Gars", "are sometimes referred to as", "garpike")\n', '("Garpike", "are not related to", "pike")\n', '("Pike", "are in the family", "Esocidae")\n', '("Alligator gar", "is the largest species of", "gars")\n', '("Alligator gar", "can grow over", "2 m (6.5 ft) and 45 kg (100 lb)")\n', '("Alligator gar", "specimens reported up to", "3 m (9.8 ft)")\n', '("Gars", "surface periodically to take a gulp of", "air")\n', '("Gar flesh", "is", "edible")\n', '("Gar eggs", "are", "highly toxic")\n', '("Gar name", "was originally used for", "needlefish")\n', '("Needlefish", "found in", "North Atlantic")\n', '("Gar name", "likely originated from Old English word for", "spear")\n', '("Garfish", "is also used for other species of", "Belonidae family")\n', '("Lepisosteidae", "derived from Greek words", "lepis and osteon")\n', '("Atractosteus", "derived from Greek word", "atraktos")\n', '("Gars", "are the only surviving members of the", "Ginglymodi")\n', '("Ginglymodi", "flourished in the", "Mesozoic")\n', '("Ginglymodians", "appeared over", "240 million years ago")\n', '("Gars", "have the slowest known rate of", "molecular evolution")\n', '("Bowfin", "closest living relatives of", "gars")\n', '("Holostei", "clade formed by", "gars and bowfin")\n', '("Obaichthyidae", "are extinct relatives of", "gars")\n', '("Nhanulepisosteus", "oldest anatomically modern gar from", "Upper Jurassic Mexico")\n', '("Atractosteus and Lepisosteus", "diverged by end of", "Early Cretaceous")\n', '("Gars", "dispersed to regions like Africa, India, South America, and Europe", "by end of Cretaceous")\n', '("Atractosteus grandei", "oldest known animal of the", "Cenozoic")\n', '("Masillosteus and Cuneatus", "gar genera from the", "Eocene")\n', '("Lepisosteus", "underwent diversification in", "Eastern North America")\n', '("Gars", "formerly had a wider distribution", "worldwide")\n', '("Living gars", "are confined to", "North America")\n', '("Gars in North America", "live in shallow, brackish waters off of", "Texas, Louisiana, and eastern coast of Mexico")\n', '("Gar bodies", "are elongated and armored with", "ganoid scales")\n', '("Gar swim bladders", "function as", "lungs")\n', '("Gar", "can tolerate conditions that most other fish", "cannot survive")\n', '("Gar anatomy", "includes paired pectoral fins and pelvic fins", "as well as anal, caudal, and dorsal fins")\n', '("Alligator gar", "largest member of the", "gar family")\n', '("Alligator gar", "can measure up to", "10 feet long and weigh over 300 pounds")\n', '("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")\n', '("Florida gar", "found in", "Ocklockonee river, Florida, and Georgia")\n', '("Spotted gar", "prefers to live in", "clear shallow water")\n', '("Shortnose gar", "found in", "Mississippi River Basin, Indiana, Wisconsin, Montana, Alabama, and Louisiana")\n', '("Longnose gar", "lives in habitat ranging from", "Florida to Quebec, all Great Lakes except Lake Superior, Missouri, Mississippi, Texas, and northern Mexico")\n', '("Gar roe", "contains", "ichthyotoxin toxic to humans")\n', '("Gars", "significance to humans includes", "aquarium trade and use in jewelry")\n', '("Wobbegong", "is common name for", "12 species of carpet sharks")\n', '("Wobbegong", "part of family", "Orectolobidae")\n', '("Carpet sharks", "located in", "Pacific Ocean")\n', '("Carpet sharks", "located in", "Indian Ocean")\n', '("Wobbegong", "found around", "Australia")\n', '("Wobbegong", "found around", "Indonesia")\n', '("Japanese wobbegong", "is species found up to", "Japan")\n', '("Wobbegong", "meaning in Aboriginal language", "shaggy beard")\n', '("Spotted wobbegong", "is species", "Orectolobus maculatus")\n', '("Banded wobbegong", "is species", "Orectolobus halei")\n', '("Wobbegongs", "are bottom-dwelling sharks", "resting on sea floor")\n', '("Wobbegong", "use camouflage to", "catch smaller fish")\n', '("Wobbegongs", "have powerful jaw with teeth for", "catching prey")\n', '("Wobbegongs", "have been described for", "blood cells")\n', '("Wobbegongs", "can attack", "humans")\n', '("Wobbegongs", "skin is used in", "Australia for leather")\n', '("Tasselled wobbegong", "is a small species suitable for", "home aquaria")\n', '("Ward\'s wobbegong", "is considered ideal for", "home aquaria")\n', '("Eucrossorhinus dasypogon", "known as", "tasselled wobbegong")\n', '("Orectolobus japonicus", "known as", "Japanese wobbegong")\n', '("Orectolobus maculatus", "known as", "spotted wobbegong")\n', '("Orectolobus halei", "known as", "banded wobbegong")\n', '("Cow shark", "is characterized by", "an additional pair or pairs of gill slits")\n', '("Cow shark", "has species placed within the genera", "Heptranchias")\n', '("Cow shark", "has species placed within the genera", "Hexanchus")\n', '("Cow shark", "has species placed within the genera", "Notorynchus")\n', '("Cow sharks", "are considered", "the most primitive of all the sharks")\n', '("Cow sharks", "range from", "1.4 to 5.5 m in adult body length")\n', '("Cow sharks", "are", "ovoviviparous")\n', '("Cow sharks", "feed on", "large fish of all kinds, including other sharks, as well as on crustaceans and carrion")\n', '("The fossil records of", "consist of", "the cow shark mainly only isolated teeth")\n', '("The cow shark", "has fossil remains found from", "the Jurassic time period")\n', '("The cow shark", "is now considered a more", "diverse and numerous species")\n', '("Heptranchias perlo", "is known as", "sharpnose sevengill shark")\n', '("Hexanchus griseus", "is known as", "bluntnose sixgill shark")\n', '("Hexanchus nakamurai", "is known as", "bigeyed sixgill shark")\n', '("Hexanchus vitulus", "is known as", "atlantic sixgill shark")\n', '("Notorynchus cepedianus", "is known as", "broadnose sevengill shark")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n']
+range(1, 188) 4
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Turonian", "follows", "Cenomanian Stage")\n', '("Turonian", "origin type locality is", "Tours")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age in", "Late Cretaceous Epoch")\n', '("Turonian", "precedes", "Coniacian Stage")\n', '("Turonian", "witnessed oceanic anoxic event", "OAE 2")\n', '("Turonian", "related to", "Cenomanian-Turonian boundary event")\n', '("Turonian", "defined by", "French paleontologist")\n', '("Alcide d\'Orbigny", "named", "Turonian")\n', '("Turonian", "origin type locality is", "Tours")\n', '("Tours", "is in the region of", "Touraine")\n', '("Turonian", "is an age in", "Late Cretaceous Epoch")\n', '("Turonian", "follows", "Cenomanian Stage")\n', '("Turonian", "precedes", "Coniacian Stage")\n', '("Turonian", "witnessed oceanic anoxic event", "OAE 2")\n', '("Turonian", "related to", "Cenomanian-Turonian boundary event")\n', '("Turonian", "defined by", "French paleontologist")\n', '("Alcide d\'Orbigny", "named", "Turonian")\n', '("Tours", "is in the region of", "Touraine")\n', '("Gars", "are an ancient group of", "ray-finned fish")\n', '("Gars", "are in the family", "Lepisosteidae")\n', '("Gars", "inhabit", "North America, Central America and Cuba")\n', '("Gars", "are the only surviving members of", "Ginglymodi")\n', '("Ginglymodi", "appeared during the", "Triassic")\n', '("Gars", "are one of the surviving groups of", "holosteian fish")\n', '("Holosteian fish", "include", "gars and bowfins")\n', '("Bowfins", "have a distribution similar to", "gars")\n', '("Gars", "are armored with", "ganoid scales")\n', '("Gars", "are elongated bodies with jaws and teeth", "long and sharp")\n', '("Gars", "are sometimes referred to as", "garpike")\n', '("Garpike", "are not related to", "pike")\n', '("Pike", "are in the family", "Esocidae")\n', '("Alligator gar", "is the largest species of", "gars")\n', '("Alligator gar", "can grow over", "2 m (6.5 ft) and 45 kg (100 lb)")\n', '("Alligator gar", "specimens reported up to", "3 m (9.8 ft)")\n', '("Gars", "surface periodically to take a gulp of", "air")\n', '("Gar flesh", "is", "edible")\n', '("Gar eggs", "are", "highly toxic")\n', '("Gar name", "was originally used for", "needlefish")\n', '("Needlefish", "found in", "North Atlantic")\n', '("Gar name", "likely originated from Old English word for", "spear")\n', '("Garfish", "is also used for other species of", "Belonidae family")\n', '("Lepisosteidae", "derived from Greek words", "lepis and osteon")\n', '("Atractosteus", "derived from Greek word", "atraktos")\n', '("Gars", "are the only surviving members of the", "Ginglymodi")\n', '("Ginglymodi", "flourished in the", "Mesozoic")\n', '("Ginglymodians", "appeared over", "240 million years ago")\n', '("Gars", "have the slowest known rate of", "molecular evolution")\n', '("Bowfin", "closest living relatives of", "gars")\n', '("Holostei", "clade formed by", "gars and bowfin")\n', '("Obaichthyidae", "are extinct relatives of", "gars")\n', '("Nhanulepisosteus", "oldest anatomically modern gar from", "Upper Jurassic Mexico")\n', '("Atractosteus and Lepisosteus", "diverged by end of", "Early Cretaceous")\n', '("Gars", "dispersed to regions like Africa, India, South America, and Europe", "by end of Cretaceous")\n', '("Atractosteus grandei", "oldest known animal of the", "Cenozoic")\n', '("Masillosteus and Cuneatus", "gar genera from the", "Eocene")\n', '("Lepisosteus", "underwent diversification in", "Eastern North America")\n', '("Gars", "formerly had a wider distribution", "worldwide")\n', '("Living gars", "are confined to", "North America")\n', '("Gars in North America", "live in shallow, brackish waters off of", "Texas, Louisiana, and eastern coast of Mexico")\n', '("Gar bodies", "are elongated and armored with", "ganoid scales")\n', '("Gar swim bladders", "function as", "lungs")\n', '("Gar", "can tolerate conditions that most other fish", "cannot survive")\n', '("Gar anatomy", "includes paired pectoral fins and pelvic fins", "as well as anal, caudal, and dorsal fins")\n', '("Alligator gar", "largest member of the", "gar family")\n', '("Alligator gar", "can measure up to", "10 feet long and weigh over 300 pounds")\n', '("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")\n', '("Florida gar", "found in", "Ocklockonee river, Florida, and Georgia")\n', '("Spotted gar", "prefers to live in", "clear shallow water")\n', '("Shortnose gar", "found in", "Mississippi River Basin, Indiana, Wisconsin, Montana, Alabama, and Louisiana")\n', '("Longnose gar", "lives in habitat ranging from", "Florida to Quebec, all Great Lakes except Lake Superior, Missouri, Mississippi, Texas, and northern Mexico")\n', '("Gar roe", "contains", "ichthyotoxin toxic to humans")\n', '("Gars", "significance to humans includes", "aquarium trade and use in jewelry")\n', '("Wobbegong", "is common name for", "12 species of carpet sharks")\n', '("Wobbegong", "part of family", "Orectolobidae")\n', '("Carpet sharks", "located in", "Pacific Ocean")\n', '("Carpet sharks", "located in", "Indian Ocean")\n', '("Wobbegong", "found around", "Australia")\n', '("Wobbegong", "found around", "Indonesia")\n', '("Japanese wobbegong", "is species found up to", "Japan")\n', '("Wobbegong", "meaning in Aboriginal language", "shaggy beard")\n', '("Spotted wobbegong", "is species", "Orectolobus maculatus")\n', '("Banded wobbegong", "is species", "Orectolobus halei")\n', '("Wobbegongs", "are bottom-dwelling sharks", "resting on sea floor")\n', '("Wobbegong", "use camouflage to", "catch smaller fish")\n', '("Wobbegongs", "have powerful jaw with teeth for", "catching prey")\n', '("Wobbegongs", "have been described for", "blood cells")\n', '("Wobbegongs", "can attack", "humans")\n', '("Wobbegongs", "skin is used in", "Australia for leather")\n', '("Tasselled wobbegong", "is a small species suitable for", "home aquaria")\n', '("Ward\'s wobbegong", "is considered ideal for", "home aquaria")\n', '("Eucrossorhinus dasypogon", "known as", "tasselled wobbegong")\n', '("Orectolobus japonicus", "known as", "Japanese wobbegong")\n', '("Orectolobus maculatus", "known as", "spotted wobbegong")\n', '("Orectolobus halei", "known as", "banded wobbegong")\n', '("Cow shark", "is characterized by", "an additional pair or pairs of gill slits")\n', '("Cow shark", "has species placed within the genera", "Heptranchias")\n', '("Cow shark", "has species placed within the genera", "Hexanchus")\n', '("Cow shark", "has species placed within the genera", "Notorynchus")\n', '("Cow sharks", "are considered", "the most primitive of all the sharks")\n', '("Cow sharks", "range from", "1.4 to 5.5 m in adult body length")\n', '("Cow sharks", "are", "ovoviviparous")\n', '("Cow sharks", "feed on", "large fish of all kinds, including other sharks, as well as on crustaceans and carrion")\n', '("The fossil records of", "consist of", "the cow shark mainly only isolated teeth")\n', '("The cow shark", "has fossil remains found from", "the Jurassic time period")\n', '("The cow shark", "is now considered a more", "diverse and numerous species")\n', '("Heptranchias perlo", "is known as", "sharpnose sevengill shark")\n', '("Hexanchus griseus", "is known as", "bluntnose sixgill shark")\n', '("Hexanchus nakamurai", "is known as", "bigeyed sixgill shark")\n', '("Hexanchus vitulus", "is known as", "atlantic sixgill shark")\n', '("Notorynchus cepedianus", "is known as", "broadnose sevengill shark")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n']
+range(1, 188) 4
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Turonian", "follows", "Cenomanian Stage")\n', '("Turonian", "origin type locality is", "Tours")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age in", "Late Cretaceous Epoch")\n', '("Turonian", "precedes", "Coniacian Stage")\n', '("Turonian", "witnessed oceanic anoxic event", "OAE 2")\n', '("Turonian", "related to", "Cenomanian-Turonian boundary event")\n', '("Turonian", "defined by", "French paleontologist")\n', '("Alcide d\'Orbigny", "named", "Turonian")\n', '("Turonian", "origin type locality is", "Tours")\n', '("Tours", "is in the region of", "Touraine")\n', '("Turonian", "is an age in", "Late Cretaceous Epoch")\n', '("Turonian", "follows", "Cenomanian Stage")\n', '("Turonian", "precedes", "Coniacian Stage")\n', '("Turonian", "witnessed oceanic anoxic event", "OAE 2")\n', '("Turonian", "related to", "Cenomanian-Turonian boundary event")\n', '("Turonian", "defined by", "French paleontologist")\n', '("Alcide d\'Orbigny", "named", "Turonian")\n', '("Tours", "is in the region of", "Touraine")\n', '("Gars", "are an ancient group of", "ray-finned fish")\n', '("Gars", "are in the family", "Lepisosteidae")\n', '("Gars", "inhabit", "North America, Central America and Cuba")\n', '("Gars", "are the only surviving members of", "Ginglymodi")\n', '("Ginglymodi", "appeared during the", "Triassic")\n', '("Gars", "are one of the surviving groups of", "holosteian fish")\n', '("Holosteian fish", "include", "gars and bowfins")\n', '("Bowfins", "have a distribution similar to", "gars")\n', '("Gars", "are armored with", "ganoid scales")\n', '("Gars", "are elongated bodies with jaws and teeth", "long and sharp")\n', '("Gars", "are sometimes referred to as", "garpike")\n', '("Garpike", "are not related to", "pike")\n', '("Pike", "are in the family", "Esocidae")\n', '("Alligator gar", "is the largest species of", "gars")\n', '("Alligator gar", "can grow over", "2 m (6.5 ft) and 45 kg (100 lb)")\n', '("Alligator gar", "specimens reported up to", "3 m (9.8 ft)")\n', '("Gars", "surface periodically to take a gulp of", "air")\n', '("Gar flesh", "is", "edible")\n', '("Gar eggs", "are", "highly toxic")\n', '("Gar name", "was originally used for", "needlefish")\n', '("Needlefish", "found in", "North Atlantic")\n', '("Gar name", "likely originated from Old English word for", "spear")\n', '("Garfish", "is also used for other species of", "Belonidae family")\n', '("Lepisosteidae", "derived from Greek words", "lepis and osteon")\n', '("Atractosteus", "derived from Greek word", "atraktos")\n', '("Gars", "are the only surviving members of the", "Ginglymodi")\n', '("Ginglymodi", "flourished in the", "Mesozoic")\n', '("Ginglymodians", "appeared over", "240 million years ago")\n', '("Gars", "have the slowest known rate of", "molecular evolution")\n', '("Bowfin", "closest living relatives of", "gars")\n', '("Holostei", "clade formed by", "gars and bowfin")\n', '("Obaichthyidae", "are extinct relatives of", "gars")\n', '("Nhanulepisosteus", "oldest anatomically modern gar from", "Upper Jurassic Mexico")\n', '("Atractosteus and Lepisosteus", "diverged by end of", "Early Cretaceous")\n', '("Gars", "dispersed to regions like Africa, India, South America, and Europe", "by end of Cretaceous")\n', '("Atractosteus grandei", "oldest known animal of the", "Cenozoic")\n', '("Masillosteus and Cuneatus", "gar genera from the", "Eocene")\n', '("Lepisosteus", "underwent diversification in", "Eastern North America")\n', '("Gars", "formerly had a wider distribution", "worldwide")\n', '("Living gars", "are confined to", "North America")\n', '("Gars in North America", "live in shallow, brackish waters off of", "Texas, Louisiana, and eastern coast of Mexico")\n', '("Gar bodies", "are elongated and armored with", "ganoid scales")\n', '("Gar swim bladders", "function as", "lungs")\n', '("Gar", "can tolerate conditions that most other fish", "cannot survive")\n', '("Gar anatomy", "includes paired pectoral fins and pelvic fins", "as well as anal, caudal, and dorsal fins")\n', '("Alligator gar", "largest member of the", "gar family")\n', '("Alligator gar", "can measure up to", "10 feet long and weigh over 300 pounds")\n', '("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")\n', '("Florida gar", "found in", "Ocklockonee river, Florida, and Georgia")\n', '("Spotted gar", "prefers to live in", "clear shallow water")\n', '("Shortnose gar", "found in", "Mississippi River Basin, Indiana, Wisconsin, Montana, Alabama, and Louisiana")\n', '("Longnose gar", "lives in habitat ranging from", "Florida to Quebec, all Great Lakes except Lake Superior, Missouri, Mississippi, Texas, and northern Mexico")\n', '("Gar roe", "contains", "ichthyotoxin toxic to humans")\n', '("Gars", "significance to humans includes", "aquarium trade and use in jewelry")\n', '("Wobbegong", "is common name for", "12 species of carpet sharks")\n', '("Wobbegong", "part of family", "Orectolobidae")\n', '("Carpet sharks", "located in", "Pacific Ocean")\n', '("Carpet sharks", "located in", "Indian Ocean")\n', '("Wobbegong", "found around", "Australia")\n', '("Wobbegong", "found around", "Indonesia")\n', '("Japanese wobbegong", "is species found up to", "Japan")\n', '("Wobbegong", "meaning in Aboriginal language", "shaggy beard")\n', '("Spotted wobbegong", "is species", "Orectolobus maculatus")\n', '("Banded wobbegong", "is species", "Orectolobus halei")\n', '("Wobbegongs", "are bottom-dwelling sharks", "resting on sea floor")\n', '("Wobbegong", "use camouflage to", "catch smaller fish")\n', '("Wobbegongs", "have powerful jaw with teeth for", "catching prey")\n', '("Wobbegongs", "have been described for", "blood cells")\n', '("Wobbegongs", "can attack", "humans")\n', '("Wobbegongs", "skin is used in", "Australia for leather")\n', '("Tasselled wobbegong", "is a small species suitable for", "home aquaria")\n', '("Ward\'s wobbegong", "is considered ideal for", "home aquaria")\n', '("Eucrossorhinus dasypogon", "known as", "tasselled wobbegong")\n', '("Orectolobus japonicus", "known as", "Japanese wobbegong")\n', '("Orectolobus maculatus", "known as", "spotted wobbegong")\n', '("Orectolobus halei", "known as", "banded wobbegong")\n', '("Cow shark", "is characterized by", "an additional pair or pairs of gill slits")\n', '("Cow shark", "has species placed within the genera", "Heptranchias")\n', '("Cow shark", "has species placed within the genera", "Hexanchus")\n', '("Cow shark", "has species placed within the genera", "Notorynchus")\n', '("Cow sharks", "are considered", "the most primitive of all the sharks")\n', '("Cow sharks", "range from", "1.4 to 5.5 m in adult body length")\n', '("Cow sharks", "are", "ovoviviparous")\n', '("Cow sharks", "feed on", "large fish of all kinds, including other sharks, as well as on crustaceans and carrion")\n', '("The fossil records of", "consist of", "the cow shark mainly only isolated teeth")\n', '("The cow shark", "has fossil remains found from", "the Jurassic time period")\n', '("The cow shark", "is now considered a more", "diverse and numerous species")\n', '("Heptranchias perlo", "is known as", "sharpnose sevengill shark")\n', '("Hexanchus griseus", "is known as", "bluntnose sixgill shark")\n', '("Hexanchus nakamurai", "is known as", "bigeyed sixgill shark")\n', '("Hexanchus vitulus", "is known as", "atlantic sixgill shark")\n', '("Notorynchus cepedianus", "is known as", "broadnose sevengill shark")\n', '("Salamandroidea", "are a suborder of", "salamanders")\n', '("Salamandroidea", "are found worldwide except in", "Antarctica")\n', '("Salamandroidea", "are found worldwide except in", "Oceania")\n', '("Qinglongtriton gangouensis", "is suggested to be one of the earliest", "salamandroids")\n', '("Salamandroidea", "are dated back to the", "Jurassic")\n', '("Qinglongtriton gangouensis", "is from the Tiaojishan Formation dated to the Late", "Jurassic")\n']
+range(1, 188) 4
+{'id': '5_2', 'Question': ' Which reptile is experiencing a faster rate of extinction than it did during the period that succeeded the Cenomanian Stage and took its name from a city with the same name as this geological age?\n', 'Answer': 'Turtle', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Gar'}, {'label': 'B', 'text': 'Wobbegong'}, {'label': 'C', 'text': 'Turtle'}, {'label': 'D', 'text': 'Cow shark'}, {'label': 'E', 'text': 'Salamandroidea'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'gar'}, {'label': 'B', 'text': 'wobbegong'}, {'label': 'C', 'text': 'turtle'}, {'label': 'D', 'text': 'cow_shark'}, {'label': 'E', 'text': 'salamandroidea'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Question_decompositions': ["1: This reptile's extinction is progressing faster than during the Cretaceous-Tertiary extinction event. \nA1: Turtle\n\n", '2: The Turonian is an age within which period of the Mesozoic Era? \nA2: Cretaceous\n\n', '3: What geological age comes after the Cenomanian Stage? \nA3: Turonian\n\n', '4: Which city gives its name to the origin type locality of the Turonian? \nA4: Turonian'], 'Hops_wiki': [('Turtle', 'Cretaceous'), ('Cretaceous', 'Turonian'), ('Turonian', 'Cenomanian'), ('Turonian', 'Tours')], 'Hops_cpnet': [('turtle', 'cretaceous'), ('cretaceous', 'turonian'), ('turonian', 'cenomanian'), ('turonian', 'tours')], 'Triplets': ['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', '("Turonian", "is an age within", "Late Cretaceous")', '("Turonian", "follows", "Cenomanian Stage")', '("Turonian", "origin type locality is", "Tours")'], 'Referred_files': [{'name': 'Turtle', 'line': 41}, {'name': 'Cretaceous', 'line': 29}, {'name': 'Turonian', 'line': 2}, {'name': 'Turonian', 'line': 8}], 'Question_triplet_answer': {100: [10, 118, 124, 184], 50: [16, 90, 105, 138], 25: [47, 89, 166, 179]}}
+time passed:  771.9804949760437
+Expected dollar:  0.005
+Lepisosteus is Animal
+North America is Geography
+Alligator is Animal
+Tours is Geography
+Cretaceous is Geography
+Jurassic is Geography
+sevengill shark is Animal
+Gars is Animal
+Late Cretaceous is Geography
+Mississippi River Basin is Geography
+Indiana is Geography
+Wisconsin is Geography
+Montana is Geography
+Alabama is Geography
+Louisiana is Geography
+Wobbegongs is Animal
+Turtles is Animal
+Denmark is Geography
+Gar is Animal
+Late Cretaceous Epoch is Geography
+Hexanchus is Animal
+Florida is Geography
+Quebec is Geography
+Great Lakes is Geography
+Lake Superior is Geography
+Missouri is Geography
+Mississippi is Geography
+Texas is Geography
+Mexico is Geography
+Ginglymodi is Animal
+Oceania is Geography
+Turtle is Animal
+Alcide d'Orbigny is People
+Valanginian is Geography
+Ginglymodians is Animal
+Belonidae is Animal
+Indian Ocean is Geography
+China is Geography
+Antarctica is Geography
+Cuba is Geography
+Japan is Geography
+Mesozoic Era is Geography
+Atlantic Ocean is Geography
+Orectolobus is Animal
+Upper Jurassic Mexico is Geography
+Qinglongtriton is Animal
+Masillosteus and Cuneatus is Animal
+gar genera is Animal
+Eocene is Geography
+Atractosteus and Lepisosteus is Animal
+Holosteian is Animal
+Bowfin is Animal
+Gulf of Mexico is Geography
+Chalk Group is Incident
+North Sea is Geography
+Australia is Geography
+Hauterivian is Geography
+Wobbegong is Animal
+the Tiaojishan Formation is Geography
+Cenozoic Era is Geography
+Paleozoic Era is Geography
+Triassic is Geography
+Pacific Ocean is Geography
+Kansas is Geography
+Oklahoma is Geography
+the Mississippi River is Geography
+Indonesia is Geography
+entities:  {'Indonesia', 'Louisiana', 'Chalk', 'Pacific', 'Amazon', 'Epoch', 'Hexanchus', 'Indiana', 'Triassic', 'Atlantic', 'Bowfin', 'America', 'Hauterivian', 'Ocean', 'Paleozoic', 'Atractosteus', 'gar', 'China', 'Alcide', 'Munididae', 'Upper', 'Late', 'Cretaceous', 'Lepisosteus', 'Tiaojishan', 'Oklahoma', 'Missouri', 'Cenozoic', 'Wobbegong', 'Valanginian', 'Superior', 'Wobbegongs', 'Orectolobus', 'Greenland', 'Gulf', 'North', 'Kansas', 'Turtles', 'genera', 'Masillosteus', 'Asia', 'spadefoot', 'Basin', 'Qinglongtriton', 'Gars', 'Japan', 'toad', 'Cuneatus', 'Belonidae', 'Antarctica', 'Tours', 'shark', 'Alligator', 'Ginglymodi', 'Holosteian', 'Florida', 'Denmark', 'Cuba', 'Mexico', 'sevengill', 'Great', 'Ginglymodians', 'Wisconsin', 'Sea', 'Jurassic', "d'Orbigny", 'Guitarfish', 'Georgia', 'Quebec', 'Eocene', 'Southeast', 'Alvin', 'Oceania', 'Lake', 'Group', 'River', 'Alabama', 'Montana', 'DSV', 'Texas', 'Lakes', 'European', 'Mississippi', 'Gar', 'Era', 'Turtle', 'Mesozoic', 'Australia', 'Angelshark', 'Indian', 'Formation'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Guitarfish' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Guitarfish
+Gars
+Alligator gar
+Tours
+Cow sharks
+Notorynchus cepedianus
+Turonian
+Shortnose gar
+Wobbegongs
+Turtles
+Hexanchus vitulus
+Longnose gar
+Ginglymodi
+Salamandroidea
+Lepisosteidae
+Turtleneck
+Spotted gar
+Garfish
+Alcide d'Orbigny
+Ward's wobbegong
+Turtle shell
+Sea turtles
+Japanese wobbegong
+Bowfin
+Gar roe
+Salamandroidea
+Valanginian
+Cow shark
+
+gpt_entity_particular(): entity list: 
+ ['Gars', 'Tours', 'Japanese wobbegong', 'Shortnose gar', 'Ginglymodi', 'Hexanchus vitulus', 'Turtleneck', 'Cow shark', 'Bowfin', 'Cow sharks', 'Turonian', 'Longnose gar', 'Guitarfish', "Ward's wobbegong", 'Garfish', 'Lepisosteidae', 'Valanginian', 'Alligator gar', 'Wobbegongs', 'Salamandroidea', 'Spotted gar', "Alcide d'Orbigny", 'Gar roe', 'Notorynchus cepedianus', 'Sea turtles', 'Turtles', 'Turtle shell']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mexico
+North America
+Mississippi River Basin
+Alabama
+Louisiana
+Florida
+Texas
+Great Lakes
+Cuba
+Oceania
+Quebec
+Indiana
+Wisconsin
+Montana
+Touraine
+Greenland
+China
+Denmark
+Cuba
+Japan
+Alaska
+India
+Australia
+Amazon basin
+Gulf of Mexico
+Antarctica
+Tours
+Touraine
+Amazon basin
+Gulf of Mexico
+South and Southeast Asia
+Mississippi River
+Pacific Ocean
+Texas
+Mississippi River
+Louisiana
+Tethys Ocean
+Circa
+Texas
+Oklahoma
+South Pole
+Tethys Ocean
+Northern Mexico
+Mexico
+Eastern North America
+Northern Mexico
+Eastern North America
+Upper Jurassic Mexico
+Northern Mexico
+
+gpt_entity_particular(): entity list: 
+ ['Japan', 'Louisiana', 'Antarctica', 'Eastern North America', 'Tours', 'Upper Jurassic Mexico', 'Northern Mexico', 'Indiana', 'North America', 'Denmark', 'Florida', 'Cuba', 'Pacific Ocean', 'Mississippi River Basin', 'India', 'Mexico', 'Tethys Ocean', 'Wisconsin', 'Touraine', 'China', 'Quebec', 'South and Southeast Asia', 'Oklahoma', 'Mississippi River', 'Oceania', 'Circa', 'Amazon basin', 'Alabama', 'Montana', 'Texas', 'South Pole', 'Great Lakes', 'Alaska', 'Greenland', 'Gulf of Mexico', 'Australia']
+
+gpt_entity_particular(): filtered entity: 
+ ['North America', 'China']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Munididae' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Munididae
+Munidopsis
+Decapods
+Munida
+
+gpt_entity_particular(): entity list: 
+ ['Munidopsis', 'Munididae', 'Munida', 'Decapods']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'European spadefoot toad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ European spadefoot toad
+
+gpt_entity_particular(): entity list: 
+ ['European spadefoot toad']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gulf of Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+Eastern North America
+North America
+Mississippi River Basin, Indiana, Wisconsin, Montana, Alabama, and Louisiana
+Florida to Quebec, all Great Lakes except Lake Superior, Missouri, Mississippi, Texas, and northern Mexico
+North America, Central America and Cuba
+Late Cretaceous
+Mesozoic
+Central America and Cuba
+North Sea
+Amazon basin, Gulf of Mexico drainages, South and Southeast Asia
+Gulf of Mexico
+Cenozoic Era
+Antarctica
+Greenland
+Atlantic Ocean
+Gulf of Mexico
+Atlantic Ocean
+Pacific Ocean
+
+gpt_entity_particular(): entity list: 
+ ['Central America and Cuba', 'Antarctica', 'Eastern North America', 'Mississippi River Basin, Indiana, Wisconsin, Montana, Alabama, and Louisiana', 'Atlantic Ocean', 'Florida to Quebec, all Great Lakes except Lake Superior, Missouri, Mississippi, Texas, and northern Mexico', 'North America, Central America and Cuba', 'Late Cretaceous', 'Greenland', 'Gulf of Mexico', 'Cenozoic Era', 'Amazon basin, Gulf of Mexico drainages, South and Southeast Asia', 'Mesozoic', 'North Sea', 'North America', 'Pacific Ocean']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'DSV Alvin' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ DSV Alvin
+Tours 
+Cretaceous
+Cow sharks 
+Notorynchus cepedianus 
+Gars 
+Turonian 
+Turtles 
+Spotted gar 
+Wobbegongs 
+Hexanchus vitulus 
+Longnose gar 
+Ginglymodi 
+Atlantic sixgill shark 
+Salamandroidea 
+Alcide d'Orbigny 
+Obaichthyidae 
+Japanese wobbegong 
+Qinglongtriton gangouensis 
+Heptranchias 
+Bluntnose sixgill shark 
+Bowfin 
+Hauterivian 
+Chalk Group 
+Nhanulepisosteus 
+Archelon ischyros 
+Orectolobus maculatus 
+Eocene 
+Orectolobus halei 
+Red sea 
+Indian Ocean 
+Greenland 
+Amazon basin
+South and Southeast Asia 
+North Sea 
+Pacific Ocean 
+Antarctica
+Tethys Ocean
+
+gpt_entity_particular(): entity list: 
+ ['Indian Ocean ', 'Orectolobus halei ', 'Longnose gar ', 'Antarctica', 'Notorynchus cepedianus ', 'Eocene ', 'Hexanchus vitulus ', 'Bowfin ', 'Spotted gar ', 'Atlantic sixgill shark ', 'North Sea ', 'Archelon ischyros ', 'Turtles ', "Alcide d'Orbigny ", 'Tethys Ocean', 'Cow sharks ', 'Ginglymodi ', 'DSV Alvin', 'Wobbegongs ', 'Chalk Group ', 'Pacific Ocean ', 'Japanese wobbegong ', 'Heptranchias ', 'Nhanulepisosteus ', 'Cretaceous', 'Turonian ', 'Gars ', 'Obaichthyidae ', 'Bluntnose sixgill shark ', 'Greenland ', 'Amazon basin', 'Salamandroidea ', 'Red sea ', 'Orectolobus maculatus ', 'Hauterivian ', 'Tours ', 'South and Southeast Asia ', 'Qinglongtriton gangouensis ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Turtle' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Tours
+Cretaceous
+Cow sharks
+Alligator gar
+Cenomanian
+Gars
+Notorynchus cepedianus
+Turonian
+Shortnose gar
+Wobbegongs
+Cenomanian-Turonian boundary event
+Turtle
+Denmark
+Mississippi River Basin
+Ginglymodi
+Salamandroidea
+Turtle shells
+Living amniotes
+Valanginian
+Sea turtles
+Florida to Quebec
+Oceania
+Bony secondary palate
+History
+Bluntnose sixgill shark
+Antarctica
+Atlantic Ocean
+Japanese wobbegong
+Greenland
+Jurassic
+Molecular evolution
+Mesozoic
+Living gars
+Ward's wobbegong
+Indian Ocean
+North Sea
+Mesozoic Era
+South pole
+Amazon basin, Gulf of Mexico drainages, South and Southeast Asia
+Chalk Group
+Mesozoic Era
+Gulf of Mexico
+Salamanders
+Nhanulepisosteus
+Oceania
+Alcide d'Orbigny
+Gars and bowfins
+Heptranchias
+French word tortue
+Cenozoic Era
+Adult sea turtles
+Aheat waves
+Hauterivian
+Iberian Peninsula
+North America
+Home aquaria
+Gar eggs
+Tethys Ocean
+Anthropocene
+Orectolobus halei
+Jurassic
+Quinglongtriton gangouensis
+Kansas
+Eucrossorhinus dasypogon
+Tours-Greenland
+Pleurodira
+Ectotherms
+Indonesia
+
+gpt_entity_particular(): entity list: 
+ ['Gars', 'Indonesia', 'Antarctica', 'Anthropocene', 'Tours', 'Japanese wobbegong', 'Shortnose gar', 'Florida to Quebec', 'Ginglymodi', 'Turtle shells', 'Cenozoic Era', 'Cenomanian-Turonian boundary event', 'History', 'North America', 'Denmark', 'Molecular evolution', 'Nhanulepisosteus', 'Ectotherms', 'Mississippi River Basin', 'Tours-Greenland', 'Hauterivian', 'Pleurodira', 'Cow sharks', 'Turonian', 'Tethys Ocean', 'Quinglongtriton gangouensis', 'Salamanders', 'Jurassic', 'French word tortue', 'South pole', 'Iberian Peninsula', 'Bluntnose sixgill shark', 'Bony secondary palate', 'Living gars', "Ward's wobbegong", 'Atlantic Ocean', 'Cretaceous', 'Indian Ocean', 'Adult sea turtles', 'Cenomanian', 'Oceania', 'Eucrossorhinus dasypogon', 'North Sea', 'Gars and bowfins', 'Valanginian', 'Alligator gar', 'Wobbegongs', 'Salamandroidea', "Alcide d'Orbigny", 'Living amniotes', 'Gar eggs', 'Chalk Group', 'Notorynchus cepedianus', 'Heptranchias', 'Aheat waves', 'Greenland', 'Home aquaria', 'Gulf of Mexico', 'Sea turtles', 'Amazon basin, Gulf of Mexico drainages, South and Southeast Asia', 'Turtle', 'Mesozoic', 'Kansas', 'Mesozoic Era', 'Orectolobus halei']
+
+gpt_entity_particular(): filtered entity: 
+ ['Pleurodira']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Angelshark' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Lepisosteus
+Living gars
+Alligator gar
+Tours
+Cretaceous
+Cow sharks
+Notorynchus cepedianus
+Gars
+Turonian
+Shortnose gar
+Wobbegongs
+Turtles
+Hexanchus vitulus
+Longnose gar
+Ginglymodi
+Salamandroidea
+Turtle shells
+Spotted gar
+Alcide d'Orbigny
+Obaichthyidae
+Turtle skull
+Gar
+Valanginian
+Sea turtles
+Ward's wobbegong
+Carpet sharks
+Shortnose gar
+Garfish
+Japanese wobbegong
+Gar roe
+Qinglongtriton gangouensis
+Masillosteus and Cuneatus
+Orectolobus maculatus
+Holosteian fish
+Bowfin
+Gulf of Mexico
+Salamanders
+Hauterivian
+Adult sea turtles
+Iberian Peninsula
+Amazon
+French word
+Bony
+North Sea
+Greenland
+Antarctica
+Cenozoic Era
+Heptranchias
+Salamander
+Banded wobbegong
+Side necked turtles
+Eucrossorhinus dasypogon
+Pleurodira
+Kansas
+Marine fossils
+Ectotherms
+Indonesia
+
+gpt_entity_particular(): entity list: 
+ ['Gars', 'Indonesia', 'Qinglongtriton gangouensis', 'Antarctica', 'Salamander', 'Tours', 'Japanese wobbegong', 'Shortnose gar', 'Ginglymodi', 'Hexanchus vitulus', 'Turtle shells', 'Cenozoic Era', 'Bony', 'French word', 'Ectotherms', 'Side necked turtles', 'Turtle skull', 'Bowfin', 'Hauterivian', 'Pleurodira', 'Cow sharks', 'Turonian', 'Carpet sharks', 'Longnose gar', 'Obaichthyidae', 'Salamanders', 'Iberian Peninsula', 'Living gars', "Ward's wobbegong", 'Cretaceous', 'Lepisosteus', 'Garfish', 'Adult sea turtles', 'Eucrossorhinus dasypogon', 'North Sea', 'Orectolobus maculatus', 'Valanginian', 'Alligator gar', 'Masillosteus and Cuneatus', 'Wobbegongs', 'Salamandroidea', 'Spotted gar', "Alcide d'Orbigny", 'Holosteian fish', 'Gar roe', 'Marine fossils', 'Notorynchus cepedianus', 'Heptranchias', 'Gar', 'Greenland', 'Gulf of Mexico', 'Sea turtles', 'Turtles', 'Banded wobbegong', 'Kansas', 'Amazon']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Cuba' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Cuba
+Cuba
+
+gpt_entity_particular(): entity list: 
+ ['Cuba']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Indonesia', 'Louisiana', 'Chalk', 'Pacific', 'Amazon', 'Epoch', 'Hexanchus', 'Indiana', 'Triassic', 'Atlantic', 'North America', 'Bowfin', 'America', 'Hauterivian', 'Ocean', 'Paleozoic', 'Atractosteus', 'gar', 'China', 'Alcide', 'Munididae', 'Upper', 'Late', 'Cretaceous', 'Lepisosteus', 'Tiaojishan', 'Oklahoma', 'Missouri', 'Cenozoic', 'Wobbegong', 'Valanginian', 'Superior', 'Wobbegongs', 'Orectolobus', 'Greenland', 'Gulf', 'North', 'Kansas', 'Turtles', 'genera', 'Masillosteus', 'Asia', 'spadefoot', 'Basin', 'Qinglongtriton', 'Gars', 'Japan', 'toad', 'Cuneatus', 'Belonidae', 'Antarctica', 'Tours', 'shark', 'Alligator', 'Ginglymodi', 'Holosteian', 'Florida', 'Denmark', 'Cuba', 'Mexico', 'sevengill', 'Pleurodira', 'Great', 'Ginglymodians', 'Wisconsin', 'Sea', 'Jurassic', "d'Orbigny", 'Guitarfish', 'Georgia', 'Quebec', 'Eocene', 'Southeast', 'Alvin', 'Oceania', 'Lake', 'Group', 'River', 'Alabama', 'Montana', 'DSV', 'Texas', 'Lakes', 'European', 'Mississippi', 'Gar', 'Era', 'Turtle', 'Mesozoic', 'Australia', 'Angelshark', 'Indian', 'Formation'}
+Total time:  262.3247995376587
+Entity conversion done on 5_2 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_5_2_entity_conversion_hash.json. Check the entity.
+ What is the species with the greatest variety of non-marine chelonians known to inhabit the region that benefits from the fisheries, where the United States, Cuba, and a country with a specific hypersaline underwater feature explored by the 021 submersible, that is also encompassed by six states from this Eastern country?
+
+
+
+
+Done. Check final_query/id_5_2_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

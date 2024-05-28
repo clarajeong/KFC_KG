@@ -1,0 +1,48 @@
+Got argument: Turtle, 5, 5_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', 'start word': 'Turtle', 'end word': 'Cretaceous', 'source': {'name': 'Turtle', 'line': 41}, 'cpnet': {'start word': 'turtle', 'end word': 'cretaceous'}}
+
+utils/question.py extract_hops(Cretaceous, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cretaceous_info.json file
+second_hop:  {'triplet': '("Cretaceous", "had high eustatic sea levels creating", "oceans")', 'start word': 'Cretaceous', 'end word': 'Ocean', 'source': {'name': 'Cretaceous', 'line': 24}, 'cpnet': {'start word': 'cretaceous', 'end word': 'ocean'}}
+
+utils/question.py extract_hops(Ocean, [], ['Turtle', 'Cretaceous']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Ocean_info.json file
+third_hop1:  {'triplet': '("Sea", "interconnected system includes", "Arctic Ocean")', 'start word': 'Ocean', 'end word': 'Sea', 'source': {'name': 'Sea', 'line': 13}, 'cpnet': {'start word': 'ocean', 'end word': 'sea'}}
+
+utils/question.py extract_hops(Ocean, ['Sea'], ['Turtle', 'Cretaceous']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Ocean_info.json file
+third_hop2:  {'triplet': '("Seven Seas", "reference in arts and popular culture to", "oceans")', 'start word': 'Ocean', 'end word': 'Seven Seas', 'source': {'name': 'Seven Seas', 'line': 6}, 'cpnet': {'start word': 'ocean', 'end word': 'seven_seas'}}
+extraction_done:  True
+generate_question(5_2, ['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', '("Cretaceous", "had high eustatic sea levels creating", "oceans")', '("Sea", "interconnected system includes", "Arctic Ocean")', '("Seven Seas", "reference in arts and popular culture to", "oceans")'], ['Turtle', 'Cretaceous', 'Ocean', 'Ocean'], [('Turtle', 'Cretaceous'), ('Cretaceous', 'Ocean'), ('Ocean', 'Sea'), ('Ocean', 'Seven Seas')], Turtle, [{'name': 'Turtle', 'line': 41}, {'name': 'Cretaceous', 'line': 24}, {'name': 'Sea', 'line': 13}, {'name': 'Seven Seas', 'line': 6}]) called
+GPT output is:  Q: Which shelled reptile's rate of disappearance was quicker during a geological period characterized by high water levels that formed vast expanses of a saline water body, which includes a frigid maritime region at the Earth's extreme north and is often depicted in artistic and cultural expressions?
+A: Turtle
+final_choice(Turtle, options = 5) started
+[]
+entity_type(Turtle) called
+Turtle is Animal
+check_matchscore(Turtle, Turtle taxonomy):  0.5
+choose_by_wiki_recur(Turtle taxonomy)
+   Pages in Turtle taxonomy: ['Cheloniology', 'Turtle', 'Turtle classification', 'Turtle Taxonomy Working Group']
+   Upper category of Turtle taxonomy: ['Reptile taxonomy', 'Turtles']
+choose_by_wiki_recur(Reptile taxonomy)
+check_matchscore(Turtle, Turtles):  1.0
+check_matchscore(Turtle, Kimmeridgian first appearances):  0.0
+choose_by_wiki_recur(Kimmeridgian first appearances)
+   Pages in Kimmeridgian first appearances: ['Allosauridae', 'Aulacostephanidae', 'Bonefishes', 'Brachiosauridae', 'Carcharodontosauridae', 'Coeluridae', 'Compsemydidae', 'Cycnorhamphus suevicus', 'Dsungaripteridae', 'Haploceratidae', 'Lusitanisuchus', 'Marginocephalia', 'Mazapilitinae', 'Multituberculata', 'Neosauropoda', 'Nodosauridae', 'Paurodontidae', 'Platypterygiinae', 'Pygope', 'Salamandroidea', 'Somphospondyli', 'Spinosauridae', 'Titanosauria', 'Turtle']
+      Coeluridae in ['Coeluridae', 'Somphospondyli', 'Paurodontidae', 'Neosauropoda']
+Coeluridae is Animal
+      Somphospondyli in ['Coeluridae', 'Somphospondyli', 'Paurodontidae', 'Neosauropoda']
+Somphospondyli is Animal
+      Paurodontidae in ['Coeluridae', 'Somphospondyli', 'Paurodontidae', 'Neosauropoda']
+Paurodontidae is Animal
+      Neosauropoda in ['Coeluridae', 'Somphospondyli', 'Paurodontidae', 'Neosauropoda']
+Neosauropoda is Animal
+['Coeluridae', 'Somphospondyli', 'Paurodontidae', 'Neosauropoda']
+Ended after 2.5 hierarchy
+(2.5, ['Coeluridae', 'Somphospondyli', 'Paurodontidae', 'Neosauropoda'])
+
+extract_info(Neosauropoda) Start.
+utils/preprocess.py extract_info(): Checking good links on Neosauropoda

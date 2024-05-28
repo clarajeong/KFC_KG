@@ -1,0 +1,1453 @@
+Got argument: Mexico, 5, 5_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")', 'start word': 'Mexico', 'end word': 'Gulf of Mexico', 'source': {'name': 'Gulf of Mexico', 'line': 2}, 'cpnet': {'start word': 'mexico', 'end word': 'gulf_of_mexico'}}
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+second_hop:  {'triplet': '("Christopher Columbus", "did not reach", "Gulf of Mexico")', 'start word': 'Gulf of Mexico', 'end word': 'Christopher Columbus', 'source': {'name': 'Gulf of Mexico', 'line': 29}, 'cpnet': {'start word': 'gulf_of_mexico', 'end word': 'christopher_columbus'}}
+
+utils/question.py extract_hops(Christopher Columbus, [], ['Mexico', 'Gulf of Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Christopher_Columbus_info.json file
+third_hop1:  {'triplet': '("Christopher Columbus", "made landfall in", "the Bahamas")', 'start word': 'Christopher Columbus', 'end word': 'The Bahamas', 'source': {'name': 'Christopher Columbus', 'line': 9}, 'cpnet': {'start word': 'christopher_columbus', 'end word': 'bahamas'}}
+
+utils/question.py extract_hops(Christopher Columbus, ['The Bahamas'], ['Mexico', 'Gulf of Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Christopher_Columbus_info.json file
+third_hop2:  {'triplet': '("Christopher Columbus", "traveled as far north as", "the British Isles")', 'start word': 'Christopher Columbus', 'end word': 'British Isles', 'source': {'name': 'Christopher Columbus', 'line': 2}, 'cpnet': {'start word': 'christopher_columbus', 'end word': 'british_isles'}}
+extraction_done:  True
+generate_question(5_6, ['("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")', '("Christopher Columbus", "did not reach", "Gulf of Mexico")', '("Christopher Columbus", "made landfall in", "the Bahamas")', '("Christopher Columbus", "traveled as far north as", "the British Isles")'], ['Mexico', 'Gulf of Mexico', 'Christopher Columbus', 'Christopher Columbus'], [('Mexico', 'Gulf of Mexico'), ('Gulf of Mexico', 'Christopher Columbus'), ('Christopher Columbus', 'The Bahamas'), ('Christopher Columbus', 'British Isles')], Mexico, [{'name': 'Gulf of Mexico', 'line': 2}, {'name': 'Gulf of Mexico', 'line': 29}, {'name': 'Christopher Columbus', 'line': 9}, {'name': 'Christopher Columbus', 'line': 2}]) called
+GPT output is:  Q: Which country's states border the significant body of water that the famous navigator known for reaching the Bahamas, but not for voyaging as far north as the British Isles, did not explore?
+A: Mexico
+final_choice(Mexico, options = 5) started
+[]
+entity_type(Mexico) called
+Mexico is Geography
+check_matchscore(Mexico, Former Spanish colonies):  0.0
+choose_by_wiki_recur(Former Spanish colonies)
+   Pages in Former Spanish colonies: ['Algiers', 'Alta California', 'Spanish colonization of the Americas', 'Annobón', 'Antillean Confederation', 'Argentina', 'Colonial Argentina', 'Arizona', 'Aruba', 'Béjaïa', 'Belize', 'Bioko', 'Bolivia', 'California', 'Province of Las Californias', 'The Californias', 'Cape Juby', 'Captaincy General of Chile', 'Captaincy General of the Philippines', 'Caroline Islands', 'Cayman Islands', 'Chile', 'Colombia', 'Colorado', 'Costa Rica', 'Cuba', 'Dominican Republic', 'Ecuador', 'El Salvador', 'Elobey, Annobón, and Corisco', 'Equatorial Guinea', 'Espiritu Santo', 'Florida', 'Fort of Santa Cruz (Oran)', 'German–Spanish Treaty (1899)', 'Governorate of New León', 'Governorate of Paraguay', 'Governorate of Terra Australis', 'Guam', 'Guatemala', 'Haiti', 'Honduras', 'Ibero-America', 'Ibero-American Summit', 'Ifni', 'La Isabela', 'Jamaica', 'Larache', 'Insular Region (Equatorial Guinea)', 'Louisiana', 'Louisiana (New Spain)', 'Maluku Islands', 'Mariana Islands', 'Mers El Kébir', 'Mexico', 'Federated States of Micronesia', 'Spanish Morocco', 'Mosquito Coast', 'La Navidad', 'Nevada', 'Governorate of New Andalusia', 'New Guinea', 'New Kingdom of León', 'New Mexico', 'New Spain', 'Nicaragua', 'Northern Mariana Islands', 'Northern Mexico', 'Nueva Cádiz', 'Oran', 'Palau', 'Paraguay', 'Peru', 'Philippines', 'Puerto Rico', 'Río de Oro', 'Río Muni', 'Saguia el-Hamra', 'Spanish Sahara', 'Sahrawi Arab Democratic Republic', 'Santa Cruz de la Mar Pequeña', 'Santa Cruz Islands', 'Colony of Santiago', 'Spanish East Indies', 'Spanish Formosa', 'Spanish Guinea', 'Spanish Guyana', 'Spanish occupation of the Philippines', 'Spanish protectorate in Morocco', 'Spanish West Africa', 'Spanish West Indies', 'Spice Islands', 'Texas', 'Trinidad', 'Trinidad and Tobago', 'Uruguay', 'Utah', 'Vavaʻu', 'Venezuela', 'Colonial Venezuela', 'Viceroyalty of New Granada', 'Viceroyalty of New Spain', 'West Florida', 'Western Sahara', 'Willing Expedition']
+      Arizona in ['Arizona', 'Guam', 'Paraguay', 'Belize']
+      Guam in ['Arizona', 'Guam', 'Paraguay', 'Belize']
+      Paraguay in ['Arizona', 'Guam', 'Paraguay', 'Belize']
+      Belize in ['Arizona', 'Guam', 'Paraguay', 'Belize']
+['Arizona', 'Guam', 'Paraguay', 'Belize']
+Ended after 2.5 hierarchy
+(2.5, ['Paraguay', 'Arizona', 'Guam', 'Belize'])
+
+extract_info(Guam) Start.
+utils/preprocess.py extract_info(): Checking good links on Guam
+Pacific Ocean is Geography
+1 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Hagåtña, Guam is Geography
+2 / 30 )  Hagåtña Hagåtña, Guam agana
+Oceania is Geography
+3 / 30 )  Oceania Oceania oceania
+Mariana Islands is Geography
+4 / 30 )  Mariana Islands Mariana Islands mariana_islands
+Philippines is Geography
+5 / 30 )  Philippines Philippines philippines
+Palauan language is Geography
+6 / 30 )  Palauan Palauan language belauan
+Ferdinand Magellan is People
+7 / 30 )  Ferdinand Magellan Ferdinand Magellan ferdinand_magellan
+Spain is Geography
+8 / 30 )  Spain Spain spain
+Wake Island is Geography
+9 / 30 )  Wake Island Wake Island wake_island
+American Samoa is Geography
+10 / 30 )  American Samoa American Samoa american_samoa
+Hawaii is Geography
+11 / 30 )  Hawaii Hawaii hawaii
+Attack on Pearl Harbor is Geography
+12 / 30 )  attack on Pearl Harbor Attack on Pearl Harbor attack_on_pearl_harbor
+Empire of Japan is Geography
+13 / 30 )  Japanese Empire of Japan empire_of_japan
+International Date Line is Geography
+14 / 30 )  International Date Line International Date Line international_date_line
+Caroline Islands is Geography
+15 / 30 )  Caroline Islands Caroline Islands caroline_islands
+Indonesia is Geography
+16 / 30 )  Indonesia Indonesia indonesia
+Northern Mariana Islands is Geography
+17 / 30 )  Northern Mariana Islands Northern Mariana Islands northern_mariana_islands
+Acapulco is Geography
+18 / 30 )  Acapulco Acapulco acapulco
+Manila is Geography
+19 / 30 )  Manila Manila manila
+Mexico City is Geography
+20 / 30 )  Mexico City Mexico City mexico_city
+Jesuits is Geography
+21 / 30 )  Jesuit Jesuits jesuits
+William McKinley is People
+22 / 30 )  William McKinley William McKinley william_mckinley
+German Empire is Geography
+23 / 30 )  German Empire German Empire german_empire
+United States Congress is Geography
+24 / 30 )  Congressional United States Congress united_states_congress
+United States is Geography
+25 / 30 )  United States United States united_states
+University of Guam is Geography
+26 / 30 )  University of Guam University of Guam university_of_guam
+Mariana Trench is Geography
+27 / 30 )  Mariana Trench Mariana Trench mariana_trench
+Eocene is Geography
+28 / 30 )  Eocene Eocene eocene
+Coral reef is Geography
+29 / 30 )  coral reef Coral reef coral_reef
+Challenger Deep is Geography
+30 / 30 )  Challenger Deep Challenger Deep challenger_deep
+extract_triplet(Guam)
+Got GPT's response. String length : 2207
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['Hagåtña', 'Hagåtña, Guam', 'agana']]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['Mariana Islands', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Palauan', 'Palauan language', 'belauan']]
+subject_words:  [['Ferdinand Magellan', 'Ferdinand Magellan', 'ferdinand_magellan']]
+object_words:  [(None, 'Guam', 'guam')]
+subject_words:  [['Spain', 'Spain', 'spain']]
+object_words:  [(None, 'Guam', 'guam')]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['Philippines', 'Philippines', 'philippines'], ['Wake Island', 'Wake Island', 'wake_island'], ['American Samoa', 'American Samoa', 'american_samoa'], ['Hawaii', 'Hawaii', 'hawaii']]
+subject_words:  [['Japanese', 'Empire of Japan', 'empire_of_japan']]
+object_words:  [(None, 'Guam', 'guam'), ['attack on Pearl Harbor', 'Attack on Pearl Harbor', 'attack_on_pearl_harbor']]
+subject_words:  [['International Date Line', 'International Date Line', 'international_date_line']]
+object_words:  [(None, 'Guam', 'guam')]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['Mariana Trench', 'Mariana Trench', 'mariana_trench']]
+subject_words:  []
+object_words:  [['Challenger Deep', 'Challenger Deep', 'challenger_deep']]
+subject_words:  []
+object_words:  [(None, 'Guam', 'guam'), ['Mariana Islands', 'Mariana Islands', 'mariana_islands']]
+subject_words:  [['William McKinley', 'William McKinley', 'william_mckinley']]
+object_words:  [(None, 'Guam', 'guam'), ['United States', 'United States', 'united_states']]
+subject_words:  []
+object_words:  [(None, 'Guam', 'guam')]
+subject_words:  [(None, 'Guam', 'guam'), ['University of Guam', 'University of Guam', 'university_of_guam']]
+object_words:  []
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  [(None, 'Guam', 'guam')]
+subject_words:  []
+object_words:  [(None, 'Guam', 'guam')]
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  []
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  []
+subject_words:  [(None, 'Guam', 'guam')]
+object_words:  [(None, 'Guam', 'guam')]
+extract_info(Arizona) Start.
+utils/preprocess.py extract_info(): Checking good links on Arizona
+Southwestern United States is Geography
+1 / 30 )  Southwestern Southwestern United States southwestern_united_states
+United States is Geography
+2 / 30 )  United States United States united_states
+Four Corners is Geography
+3 / 30 )  Four Corners Four Corners four_corners
+Utah is Geography
+4 / 30 )  Utah Utah utah
+Colorado is Geography
+5 / 30 )  Colorado Colorado colorado
+New Mexico is Geography
+6 / 30 )  New Mexico New Mexico new_mexico
+Nevada is Geography
+7 / 30 )  Nevada Nevada nevada
+California is Geography
+8 / 30 )  California California california
+Sonora is Geography
+9 / 30 )  Sonora Sonora sonora
+Baja California is Geography
+10 / 30 )  Baja California Baja California baja_california
+List of largest cities is Geography
+11 / 30 )  largest city List of largest cities big_cities
+Phoenix, Arizona is Geography
+12 / 30 )  Phoenix Phoenix, Arizona capital_of_arizona
+Douglas fir is Animal
+13 / 30 )  Douglas fir Douglas fir douglas_fir
+Spruce is Animal
+14 / 30 )  spruce Spruce spruce
+Colorado Plateau is Geography
+15 / 30 )  Colorado Plateau Colorado Plateau colorado_plateau
+Tucson, Arizona is Geography
+16 / 30 )  Tucson Tucson, Arizona tucson
+Grand Canyon National Park is Geography
+17 / 30 )  Grand Canyon National Park Grand Canyon National Park grand_canyon_national_park
+Barry Goldwater is People
+18 / 30 )  Barry Goldwater Barry Goldwater goldwater
+John McCain is People
+19 / 30 )  John McCain John McCain john_mccain
+Jesuits is Geography
+20 / 30 )  Society of Jesus Jesuits jesuits
+Spain is Geography
+21 / 30 )  Kingdom of Spain Spain spain
+Mexico City is Geography
+22 / 30 )  Mexico City Mexico City mexico_city
+Gila River is Geography
+23 / 30 )  Gila River Gila River gila_river
+Jefferson Davis is People
+24 / 30 )  Jefferson Davis Jefferson Davis jefferson_davis
+Washington, D.C. is Geography
+25 / 30 )  Washington, D.C. Washington, D.C. district_of_columbia
+Abraham Lincoln is People
+26 / 30 )  Abraham Lincoln Abraham Lincoln abraham_lincoln
+Brigham Young is Geography
+27 / 30 )  Brigham Young Brigham Young brigham_young
+Salt Lake City is Geography
+28 / 30 )  Salt Lake City Salt Lake City salt_lake_city
+Pancho Villa is People
+29 / 30 )  Pancho Villa Pancho Villa pancho_villa
+Northeastern United States is Geography
+30 / 30 )  Northeast Northeastern United States northeastern_united_states
+extract_triplet(Arizona)
+Got GPT's response. String length : 1650
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Southwestern', 'Southwestern United States', 'southwestern_united_states'], ['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Four Corners', 'Four Corners', 'four_corners']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Utah', 'Utah', 'utah']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Colorado', 'Colorado', 'colorado'], ['Northeast', 'Northeastern United States', 'northeastern_united_states']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['New Mexico', 'New Mexico', 'new_mexico']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Nevada', 'Nevada', 'nevada']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['California', 'California', 'california']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Sonora', 'Sonora', 'sonora']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['California', 'California', 'california'], ['Baja California', 'Baja California', 'baja_california']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Phoenix', 'Phoenix, Arizona', 'capital_of_arizona']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Douglas fir', 'Douglas fir', 'douglas_fir']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['spruce', 'Spruce', 'spruce']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Colorado', 'Colorado', 'colorado'], ['Colorado Plateau', 'Colorado Plateau', 'colorado_plateau']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Tucson', 'Tucson, Arizona', 'tucson']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Grand Canyon National Park', 'Grand Canyon National Park', 'grand_canyon_national_park']]
+subject_words:  [['Barry Goldwater', 'Barry Goldwater', 'goldwater']]
+object_words:  [(None, 'Arizona', 'arizona')]
+subject_words:  [['John McCain', 'John McCain', 'john_mccain']]
+object_words:  [(None, 'Arizona', 'arizona')]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['California', 'California', 'california'], ['Kingdom of Spain', 'Spain', 'spain']]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  []
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Mexico City', 'Mexico City', 'mexico_city']]
+subject_words:  [['Gila River', 'Gila River', 'gila_river']]
+object_words:  [(None, 'Arizona', 'arizona')]
+subject_words:  [['Jefferson Davis', 'Jefferson Davis', 'jefferson_davis']]
+object_words:  [(None, 'Arizona', 'arizona')]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Washington, D.C.', 'Washington, D.C.', 'district_of_columbia']]
+subject_words:  [['Abraham Lincoln', 'Abraham Lincoln', 'abraham_lincoln']]
+object_words:  [(None, 'Arizona', 'arizona')]
+subject_words:  [['Brigham Young', 'Brigham Young', 'brigham_young']]
+object_words:  [(None, 'Arizona', 'arizona')]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Salt Lake City', 'Salt Lake City', 'salt_lake_city']]
+subject_words:  [['Pancho Villa', 'Pancho Villa', 'pancho_villa']]
+object_words:  [(None, 'Arizona', 'arizona')]
+subject_words:  [(None, 'Arizona', 'arizona')]
+object_words:  [['Northeast', 'Northeastern United States', 'northeastern_united_states']]
+extract_info(Belize) Start.
+utils/preprocess.py extract_info(): Checking good links on Belize
+Mexico is Geography
+1 / 30 )  Mexico Mexico mexico
+Caribbean Sea is Geography
+2 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Guatemala is Geography
+3 / 30 )  Guatemala Guatemala guatemala
+Honduras is Geography
+4 / 30 )  Honduras Honduras honduras
+Christopher Columbus is People
+5 / 30 )  Christopher Columbus Christopher Columbus christopher_columbus
+Kingdom of Great Britain is Geography
+6 / 30 )  Britain Kingdom of Great Britain kingdom_of_great_britain
+British Honduras is Geography
+7 / 30 )  a British colony British Honduras british_honduras
+Coral reef is Geography
+8 / 30 )  coral reefs Coral reef coral_reef
+Caribbean is Geography
+9 / 30 )  Caribbean Caribbean caribbean
+Belmopan is Geography
+10 / 30 )  Belmopan Belmopan belmopan
+Belize City is Geography
+11 / 30 )  Belize City Belize City belize_city
+Yucatán Peninsula is Geography
+12 / 30 )  Yucatán Peninsula Yucatán Peninsula yucatan_peninsula
+Cucurbita is Animal
+13 / 30 )  squash Cucurbita cucurbita
+Caracol is Geography
+14 / 30 )  Caracol Caracol caracol
+Haematoxylum campechianum is Animal
+15 / 30 )  logwood Haematoxylum campechianum haematoxylum_campechianum
+World Health Organization is Geography
+16 / 30 )  WHO World Health Organization world_health_organization
+Organization of American States is Geography
+17 / 30 )  Organization of American States Organization of American States organization_of_american_states
+World Trade Organization is Geography
+18 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+International Court of Justice is Geography
+19 / 30 )  International Court of Justice International Court of Justice international_court_of_justice
+Quintana Roo is Geography
+20 / 30 )  Quintana Roo Quintana Roo quintana_roo
+El Salvador is Geography
+21 / 30 )  El Salvador El Salvador el_salvador
+Israel is Geography
+22 / 30 )  Israel Israel israel
+New Jersey is Geography
+23 / 30 )  New Jersey New Jersey new_jersey
+Wales is Geography
+24 / 30 )  Wales Wales wales
+North America is Geography
+25 / 30 )  North North America north_america
+Armadillo is Animal
+26 / 30 )  armadillos Armadillo armadillo
+Monkey is Animal
+27 / 30 )  monkeys Monkey monkey
+Jaguar is Animal
+28 / 30 )  jaguar Jaguar jaguar
+Great Barrier Reef is Geography
+29 / 30 )  Great Barrier Reef Great Barrier Reef great_barrier_reef
+NASA is Geography
+30 / 30 )  NASA NASA nasa
+extract_triplet(Belize)
+Got GPT's response. String length : 5163
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Mexico', 'Mexico', 'mexico'], ['North', 'North America', 'north_america']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Caribbean Sea', 'Caribbean Sea', 'caribbean_sea'], ['Caribbean', 'Caribbean', 'caribbean']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Guatemala', 'Guatemala', 'guatemala']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Honduras', 'Honduras', 'honduras']]
+subject_words:  [['Christopher Columbus', 'Christopher Columbus', 'christopher_columbus']]
+object_words:  [['Honduras', 'Honduras', 'honduras']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Belmopan', 'Belmopan', 'belmopan']]
+subject_words:  [(None, 'Belize', 'belize'), ['Belize City', 'Belize City', 'belize_city']]
+object_words:  [(None, 'Belize', 'belize')]
+subject_words:  [['Caracol', 'Caracol', 'caracol']]
+object_words:  []
+subject_words:  []
+object_words:  [['logwood', 'Haematoxylum campechianum', 'haematoxylum_campechianum']]
+subject_words:  [['Britain', 'Kingdom of Great Britain', 'kingdom_of_great_britain']]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Britain', 'Kingdom of Great Britain', 'kingdom_of_great_britain']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Organization of American States', 'Organization of American States', 'organization_of_american_states']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['International Court of Justice', 'International Court of Justice', 'international_court_of_justice']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Yucatán Peninsula', 'Yucatán Peninsula', 'yucatan_peninsula']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['International Court of Justice', 'International Court of Justice', 'international_court_of_justice']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Quintana Roo', 'Quintana Roo', 'quintana_roo']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['Wales', 'Wales', 'wales']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [['WHO', 'World Health Organization', 'world_health_organization']]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  [(None, 'Belize', 'belize')]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Belize', 'belize')]
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+subject_words:  [(None, 'Belize', 'belize')]
+object_words:  []
+['("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Christopher Columbus", "made landfall in", "the Bahamas")\n', '("Christopher Columbus", "traveled as far north as", "the British Isles")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Christopher Columbus", "was born in the Republic of Genoa", "between 25 August and 31 October 1451")\n', '("Christopher Columbus", "traveled as far north as", "the British Isles")\n', '("Christopher Columbus", "traveled as far south as", "what is now Ghana")\n', '("Christopher Columbus", "married", "Portuguese noblewoman Filipa Moniz Perestrelo")\n', '("Christopher Columbus", "later took a mistress named", "Beatriz Enríquez de Arana")\n', '("Christopher Columbus", "was based in", "Lisbon")\n', '("Christopher Columbus", "had a plan for a western sea passage to", "the East Indies")\n', '("Christopher Columbus", "sponsored by", "Queen Isabella I and King Ferdinand II")\n', '("Christopher Columbus", "visited island now known as", "Cuba")\n', '("Christopher Columbus", "established a colony in what is now", "Haiti")\n', '("Christopher Columbus", "explored", "the Lesser Antilles")\n', '("Christopher Columbus", "explored", "Trinidad")\n', '("Christopher Columbus", "explored the northern coast of", "South America")\n', '("Christopher Columbus", "many geographical features named by him are in", "the East Indies")\n', '("Christopher Columbus", "came up with the name", "Indios")\n', '("Christopher Columbus", "later arrested and removed from", "Hispaniola")\n', '("Christopher Columbus", "inaugurated a period of exploration called", "the Columbian exchange")\n', '("Christopher Columbus", "many places bear his name including", "Colombia")\n', '("Christopher Columbus", "many places bear his name including", "British Columbia")\n', '("Christopher Columbus", "many places bear his name including", "District of Columbia")\n', '("Christopher Columbus", "worked as a business agent for", "wealthy Genoese families")\n', '("Christopher Columbus", "made a trip to", "Chios in the Aegean Sea")\n', '("Christopher Columbus", "probably visited", "Bristol")\n', '("Christopher Columbus", "made a trip to", "Galway")\n', '("Christopher Columbus", "sailed from", "Galway to Lisbon")\n', '("Christopher Columbus", "moved to", "Savona")\n', '("Christopher Columbus", "never wrote in", "his first language Ligurian")\n', '("Christopher Columbus", "read widely about", "astronomy")\n', '("Christopher Columbus", "read widely about", "geography")\n', '("Christopher Columbus", "read widely about", "history")\n', '("Christopher Columbus", "read the works of", "Ptolemy")\n', '("Christopher Columbus", "read the works of", "Marco Polo")\n', '("Christopher Columbus", "read the works of", "Pliny")\n', '("Christopher Columbus", "read the works of", "Pope Pius II")\n', '("Christopher Columbus", "sailed to reach", "the Maluku Islands")\n', '("Christopher Columbus", "sailed to reach", "China")\n', '("Christopher Columbus", "sailed to reach", "India")\n', '("Christopher Columbus", "utilized the trade winds", "during his Atlantic navigation")\n', '("Christopher Columbus", "sailed to the Canary Islands", "to repair and restock")\n', '("Christopher Columbus", "made landfall in the Americas on", "12 October 1492")\n', '("Christopher Columbus", "was born in the Republic of Genoa", "between 25 August and 31 October 1451")\n', '("Christopher Columbus", "traveled as far south as", "what is now Ghana")\n', '("Christopher Columbus", "married", "Portuguese noblewoman Filipa Moniz Perestrelo")\n', '("Christopher Columbus", "later took a mistress named", "Beatriz Enríquez de Arana")\n', '("Christopher Columbus", "was based in", "Lisbon")\n', '("Christopher Columbus", "had a plan for a western sea passage to", "the East Indies")\n', '("Christopher Columbus", "sponsored by", "Queen Isabella I and King Ferdinand II")\n', '("Christopher Columbus", "made landfall in", "the Bahamas")\n', '("Christopher Columbus", "visited island now known as", "Cuba")\n', '("Christopher Columbus", "established a colony in what is now", "Haiti")\n', '("Christopher Columbus", "explored", "the Lesser Antilles")\n', '("Christopher Columbus", "explored", "Trinidad")\n', '("Christopher Columbus", "explored the northern coast of", "South America")\n', '("Christopher Columbus", "many geographical features named by him are in", "the East Indies")\n', '("Christopher Columbus", "came up with the name", "Indios")\n', '("Christopher Columbus", "later arrested and removed from", "Hispaniola")\n', '("Christopher Columbus", "inaugurated a period of exploration called", "the Columbian exchange")\n', '("Christopher Columbus", "many places bear his name including", "Colombia")\n', '("Christopher Columbus", "many places bear his name including", "British Columbia")\n', '("Christopher Columbus", "many places bear his name including", "District of Columbia")\n', '("Christopher Columbus", "worked as a business agent for", "wealthy Genoese families")\n', '("Christopher Columbus", "made a trip to", "Chios in the Aegean Sea")\n', '("Christopher Columbus", "probably visited", "Bristol")\n', '("Christopher Columbus", "made a trip to", "Galway")\n', '("Christopher Columbus", "sailed from", "Galway to Lisbon")\n', '("Christopher Columbus", "moved to", "Savona")\n', '("Christopher Columbus", "never wrote in", "his first language Ligurian")\n', '("Christopher Columbus", "read widely about", "astronomy")\n', '("Christopher Columbus", "read widely about", "geography")\n', '("Christopher Columbus", "read widely about", "history")\n', '("Christopher Columbus", "read the works of", "Ptolemy")\n', '("Christopher Columbus", "read the works of", "Marco Polo")\n', '("Christopher Columbus", "read the works of", "Pliny")\n', '("Christopher Columbus", "read the works of", "Pope Pius II")\n', '("Christopher Columbus", "sailed to reach", "the Maluku Islands")\n', '("Christopher Columbus", "sailed to reach", "China")\n', '("Christopher Columbus", "sailed to reach", "India")\n', '("Christopher Columbus", "utilized the trade winds", "during his Atlantic navigation")\n', '("Christopher Columbus", "sailed to the Canary Islands", "to repair and restock")\n', '("Christopher Columbus", "made landfall in the Americas on", "12 October 1492")\n', '("Guam", "is an organized, unincorporated territory of", "the United States")\n', '("Guam\'s capital", "is", "Hagåtña")\n', '("Guam", "is located in", "the Micronesia subregion of the western Pacific Ocean")\n', '("Guam", "is the largest and southernmost island of", "the Mariana Islands")\n', '("Guam", "is the largest island in", "Micronesia")\n', '("Chamorro people", "are related to", "Austronesian peoples of the Malay Archipelago, the Philippines, Taiwan, and Polynesia")\n', '("Chamorro language", "is related to", "Palauan")\n', '("Ferdinand Magellan", "was the first European to visit", "Guam")\n', '("Spain", "colonized", "Guam")\n', '("Guam", "was captured by", "the United States during the Spanish–American War")\n', '("Guam", "was one of five American jurisdictions in the Pacific Ocean along with", "Wake Island in Micronesia, American Samoa and Hawaii in Polynesia, and the Philippines")\n', '("Japanese", "occupied", "Guam after the attack on Pearl Harbor")\n', '("International Date Line", "is in the proximity of", "Guam")\n', '("Guam", "is the closest land mass to", "the Mariana Trench")\n', '("Mount Lamlam", "is considered the tallest mountain from the base in", "Challenger Deep")\n', '("Chamorros", "settled", "Guam and the Mariana islands")\n', '("William McKinley", "ordered", "Guam to be transferred to the United States Navy control")\n', '("SMS Cormoran", "sought port at", "Apra Harbor on Guam")\n', '("University of Guam", "expanded", "by Maryly Van Leer Peck")\n', '("Guam\'s tourism industry", "was supported by", "the United States military")\n', '("Guam", "received \'Compact Impact\' aid from", "the United States")\n', '("United States", "maintains jurisdiction over", "military bases on Guam")\n', '("Antonio B. Won Pat International Airport", "serves", "Guam")\n', '("Guam", "has state-of-the-art mobile phone services and high-speed internet widely available through", "cable or DSL")\n', '("Guam", "is a part of", "the U.S. Postal System")\n', '("Guam", "is served by", "the Guam Regional Transit Authority")\n', '("Paraguay", "is bordered by", "Argentina to the south and southwest")\n', '("Paraguay", "is bordered by", "Brazil to the east and northeast")\n', '("Paraguay", "is bordered by", "Bolivia to the northwest")\n', '("Paraguay", "has its capital and largest city in", "Asunción")\n', '("Paraguay", "is a member of", "Organization of American States")\n', '("Asunción", "is the seat of", "South American Football Confederation")\n', '("Paraguay", "has ports on", "Paraguay and Paraná rivers")\n', '("Asunción", "was established as the first capital of", "the Governorate of the Río de la Plata")\n', '("Jean-Jacques Rousseau\'s", "Social Contract influenced", "José Gaspar Rodríguez de Francia")\n', '("Paraguay", "faced a major international conflict against", "Bolivia in the Chaco War")\n', '("Paraguay", "lost half its prewar population in", "the Paraguayan War")\n', '("Hermes Rafael Saguier", "was imprisoned for", "sedition")\n', '("Paraguay", "is a founding member of", "UNASUR")\n', '("Paraguay", "contains the", "Pantanal region")\n', '("Paraguay", "is home to the", "coypu species")\n', '("Paraguay", "is a large producer of", "soybean")\n', '("Paraguay", "is a member of", "International Monetary Fund")\n', '("Asunción", "is an important stopover for", "international airlines")\n', '("Paraguay", "has an important city", "Ciudad del Este")\n', '("Ciudad del Este", "is the third most important free commercial zone after", "Miami and Hong Kong")\n', '("Paraguay", "is a large producer of", "maize")\n', '("Paraguay", "is a large producer of", "cassava")\n', '("Paraguay", "is a large producer of", "wheat")\n', '("Paraguay", "is an important producer of", "sorghum")\n', '("Paraguay", "does not have access to the", "ocean")\n', '("Paraguay", "utilizes", "hydropower")\n', '("Paraguay", "cooperates with Brazil, Argentina, and others to operate the", "Itaipu Dam")\n', '("Arizona", "is a state in", "the Southwestern region of the United States")\n', '("Arizona", "is part of", "the Four Corners region")\n', '("Arizona", "borders", "Utah to the north")\n', '("Arizona", "borders", "Colorado to the northeast")\n', '("Arizona", "borders", "New Mexico to the east")\n', '("Arizona", "borders", "Nevada to the northwest")\n', '("Arizona", "borders", "California to the west")\n', '("Arizona", "borders", "Sonora to the south and southwest")\n', '("Arizona", "borders", "Baja California to the south and southwest")\n', '("Arizona", "has as its capital and largest city", "Phoenix")\n', '("Arizona", "is known for forests of", "Douglas fir")\n', '("Arizona", "is known for forests of", "spruce")\n', '("Arizona", "features", "the Colorado Plateau")\n', '("Arizona", "includes", "Tucson")\n', '("Arizona", "includes", "Grand Canyon National Park")\n', '("Barry Goldwater", "is a notable politician from", "Arizona")\n', '("John McCain", "is a notable politician from", "Arizona")\n', '("Arizona", "was historically part of", "the territory of Alta California and Nuevo México in New Spain")\n', '("Arizona", "acquired the southernmost portion of the state through", "the Gadsden Purchase")\n', '("Arizona", "acquired land from", "Mexico City")\n', '("Gila River", "is located in", "Arizona")\n', '("Jefferson Davis", "approved", "the Territory of Arizona")\n', '("Arizona", "had its territory established by", "Washington, D.C.")\n', '("Abraham Lincoln", "signed the bill that read", "Arizona")\n', '("Brigham Young", "sent Mormons to", "Arizona")\n', '("Arizona", "is home to", "Salt Lake City")\n', '("Pancho Villa", "is associated with", "Arizona")\n', '("Arizona", "is part of the", "Northeast")\n', '("Belize", "is bordered by", "Mexico to the north")\n', '("Belize", "is bordered by", "the Caribbean Sea to the east")\n', '("Belize", "is bordered by", "Guatemala to the west and south")\n', '("Belize", "shares a water boundary with", "Honduras to the southeast")\n', '("Christopher Columbus", "sailed along", "the Gulf of Honduras")\n', '("Belize\'s", "capital is", "Belmopan")\n', '("Belize City", "is", "the largest city in Belize")\n', '("Caracol", "was", "an urban political centre of Maya civilization")\n', '("English settlers", "cut", "logwood trees")\n', '("Britain", "defeated the Spanish in the", "Battle of St. George\'s Caye")\n', '("Belize", "was claimed by", "Spain and Britain")\n', '("Belize", "is a member of", "the Organization of American States")\n', '("Belize", "is a member of", "the World Trade Organization")\n', '("Belize", "is a member of", "the International Court of Justice")\n', '("Belize", "is next to", "the Yucatán Peninsula")\n', '("The Maya", "domesticated crops such as", "corn, beans, squash, and chili peppers")\n', '("Belize\'s", "area of coral reefs is part of", "the Mesoamerican Biological Corridor")\n', '("Belize\'s", "economy is based on", "agriculture, agro-based industry, and merchandising")\n', '("Belize", "will take cases to", "the International Court of Justice related to the Guatemalan territorial dispute")\n', '("Belize", "has", "a diverse society composed of many cultures and languages")\n', '("Belize", "is the only Central American country where", "English is the official language")\n', '("Belize", "shares its northern border with", "the Mexican state of Quintana Roo")\n', '("Belize", "shares its southern border with", "the Guatemalan department of Izabal")\n', '("Belize\'s", "coastline flanks the", "second-longest barrier reef in the world")\n', '("Belize\'s", "land area is slightly larger than", "El Salvador, Israel, New Jersey, or Wales")\n', '("Belize\'s", "barrier reef is part of", "the Mesoamerican Barrier Reef System")\n', '("The Belize Barrier Reef", "is home to", "a large diversity of plants and animals")\n', '("Belize\'s", "Barrier Reef was declared a World Heritage Site by", "UNESCO")\n', '("Belize", "has a tropical climate with", "pronounced wet and dry seasons")\n', '("Belize", "experienced devastating hurricanes such as", "Hurricane Hattie")\n', '("Belize\'s", "population growth rate is", "the second-highest in the region")\n', '("Belize", "has a small, mostly private enterprise economy that is based primarily on", "agriculture, agro-based industry, and merchandising")\n', '("Belize\'s", "agriculture is notably characterized by", "sugar as the chief crop")\n', '("Belize", "achieved certification for the elimination of malaria by", "the WHO")\n', '("Belize", "is a parliamentary constitutional monarchy with", "King Charles III as its monarch and head of state")\n', '("Belize\'s", "legal system is modelled on the", "common law of England")\n', '("Belize", "is divided into", "six districts")\n', '("Belize", "is known to have a number of economically important minerals", "but none in quantities large enough to warrant mining")\n', '("Belize", "utilizes", "biocapacity and has an ecological footprint of consumption")\n', '("Belizeans", "speak", "English and Belizean Creole")\n', '("The Maya in Belize", "speak", "their native languages and Spanish")\n', '("Belize", "has moderate rates of", "violent crime")\n', '("Belize\'s", "crime is largely due to", "gang warfare")\n', '("Belize", "is a country with", "enduring differences in the distribution of wealth, power, and prestige")\n', '("Belizean culture", "includes the legends of", "Lang Bobi Suzi, La Llorona, and Tata Duende")\n', '("Belizeans", "celebrate", "Garifuna Settlement Day and Heroes and Benefactors\' Day")\n', '("Belizean cuisine", "is", "an amalgamation of all ethnicities in the nation")\n', '("Belize", "is influenced by", "music genres such as punta and brukdown")\n', '("Football, basketball, volleyball, and cycling", "are major sports in", "Belize")\n', '("The national flower of Belize", "is", "the black orchid (Prosthechea cochleata)")\n', '("The national tree of Belize", "is", "the mahogany tree (Swietenia macrophylla)")\n', '("The national ground-dwelling animal of Belize", "is", "the Baird\'s tapir")\n', '("The national bird of Belize", "is", "the keel-billed toucan (Ramphastos sulphuratus)")\n']
+range(1, 301) 4
+['("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Christopher Columbus", "made landfall in", "the Bahamas")\n', '("Christopher Columbus", "traveled as far north as", "the British Isles")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Christopher Columbus", "was born in the Republic of Genoa", "between 25 August and 31 October 1451")\n', '("Christopher Columbus", "traveled as far north as", "the British Isles")\n', '("Christopher Columbus", "traveled as far south as", "what is now Ghana")\n', '("Christopher Columbus", "married", "Portuguese noblewoman Filipa Moniz Perestrelo")\n', '("Christopher Columbus", "later took a mistress named", "Beatriz Enríquez de Arana")\n', '("Christopher Columbus", "was based in", "Lisbon")\n', '("Christopher Columbus", "had a plan for a western sea passage to", "the East Indies")\n', '("Christopher Columbus", "sponsored by", "Queen Isabella I and King Ferdinand II")\n', '("Christopher Columbus", "visited island now known as", "Cuba")\n', '("Christopher Columbus", "established a colony in what is now", "Haiti")\n', '("Christopher Columbus", "explored", "the Lesser Antilles")\n', '("Christopher Columbus", "explored", "Trinidad")\n', '("Christopher Columbus", "explored the northern coast of", "South America")\n', '("Christopher Columbus", "many geographical features named by him are in", "the East Indies")\n', '("Christopher Columbus", "came up with the name", "Indios")\n', '("Christopher Columbus", "later arrested and removed from", "Hispaniola")\n', '("Christopher Columbus", "inaugurated a period of exploration called", "the Columbian exchange")\n', '("Christopher Columbus", "many places bear his name including", "Colombia")\n', '("Christopher Columbus", "many places bear his name including", "British Columbia")\n', '("Christopher Columbus", "many places bear his name including", "District of Columbia")\n', '("Christopher Columbus", "worked as a business agent for", "wealthy Genoese families")\n', '("Christopher Columbus", "made a trip to", "Chios in the Aegean Sea")\n', '("Christopher Columbus", "probably visited", "Bristol")\n', '("Christopher Columbus", "made a trip to", "Galway")\n', '("Christopher Columbus", "sailed from", "Galway to Lisbon")\n', '("Christopher Columbus", "moved to", "Savona")\n', '("Christopher Columbus", "never wrote in", "his first language Ligurian")\n', '("Christopher Columbus", "read widely about", "astronomy")\n', '("Christopher Columbus", "read widely about", "geography")\n', '("Christopher Columbus", "read widely about", "history")\n', '("Christopher Columbus", "read the works of", "Ptolemy")\n', '("Christopher Columbus", "read the works of", "Marco Polo")\n', '("Christopher Columbus", "read the works of", "Pliny")\n', '("Christopher Columbus", "read the works of", "Pope Pius II")\n', '("Christopher Columbus", "sailed to reach", "the Maluku Islands")\n', '("Christopher Columbus", "sailed to reach", "China")\n', '("Christopher Columbus", "sailed to reach", "India")\n', '("Christopher Columbus", "utilized the trade winds", "during his Atlantic navigation")\n', '("Christopher Columbus", "sailed to the Canary Islands", "to repair and restock")\n', '("Christopher Columbus", "made landfall in the Americas on", "12 October 1492")\n', '("Christopher Columbus", "was born in the Republic of Genoa", "between 25 August and 31 October 1451")\n', '("Christopher Columbus", "traveled as far south as", "what is now Ghana")\n', '("Christopher Columbus", "married", "Portuguese noblewoman Filipa Moniz Perestrelo")\n', '("Christopher Columbus", "later took a mistress named", "Beatriz Enríquez de Arana")\n', '("Christopher Columbus", "was based in", "Lisbon")\n', '("Christopher Columbus", "had a plan for a western sea passage to", "the East Indies")\n', '("Christopher Columbus", "sponsored by", "Queen Isabella I and King Ferdinand II")\n', '("Christopher Columbus", "made landfall in", "the Bahamas")\n', '("Christopher Columbus", "visited island now known as", "Cuba")\n', '("Christopher Columbus", "established a colony in what is now", "Haiti")\n', '("Christopher Columbus", "explored", "the Lesser Antilles")\n', '("Christopher Columbus", "explored", "Trinidad")\n', '("Christopher Columbus", "explored the northern coast of", "South America")\n', '("Christopher Columbus", "many geographical features named by him are in", "the East Indies")\n', '("Christopher Columbus", "came up with the name", "Indios")\n', '("Christopher Columbus", "later arrested and removed from", "Hispaniola")\n', '("Christopher Columbus", "inaugurated a period of exploration called", "the Columbian exchange")\n', '("Christopher Columbus", "many places bear his name including", "Colombia")\n', '("Christopher Columbus", "many places bear his name including", "British Columbia")\n', '("Christopher Columbus", "many places bear his name including", "District of Columbia")\n', '("Christopher Columbus", "worked as a business agent for", "wealthy Genoese families")\n', '("Christopher Columbus", "made a trip to", "Chios in the Aegean Sea")\n', '("Christopher Columbus", "probably visited", "Bristol")\n', '("Christopher Columbus", "made a trip to", "Galway")\n', '("Christopher Columbus", "sailed from", "Galway to Lisbon")\n', '("Christopher Columbus", "moved to", "Savona")\n', '("Christopher Columbus", "never wrote in", "his first language Ligurian")\n', '("Christopher Columbus", "read widely about", "astronomy")\n', '("Christopher Columbus", "read widely about", "geography")\n', '("Christopher Columbus", "read widely about", "history")\n', '("Christopher Columbus", "read the works of", "Ptolemy")\n', '("Christopher Columbus", "read the works of", "Marco Polo")\n', '("Christopher Columbus", "read the works of", "Pliny")\n', '("Christopher Columbus", "read the works of", "Pope Pius II")\n', '("Christopher Columbus", "sailed to reach", "the Maluku Islands")\n', '("Christopher Columbus", "sailed to reach", "China")\n', '("Christopher Columbus", "sailed to reach", "India")\n', '("Christopher Columbus", "utilized the trade winds", "during his Atlantic navigation")\n', '("Christopher Columbus", "sailed to the Canary Islands", "to repair and restock")\n', '("Christopher Columbus", "made landfall in the Americas on", "12 October 1492")\n', '("Guam", "is an organized, unincorporated territory of", "the United States")\n', '("Guam\'s capital", "is", "Hagåtña")\n', '("Guam", "is located in", "the Micronesia subregion of the western Pacific Ocean")\n', '("Guam", "is the largest and southernmost island of", "the Mariana Islands")\n', '("Guam", "is the largest island in", "Micronesia")\n', '("Chamorro people", "are related to", "Austronesian peoples of the Malay Archipelago, the Philippines, Taiwan, and Polynesia")\n', '("Chamorro language", "is related to", "Palauan")\n', '("Ferdinand Magellan", "was the first European to visit", "Guam")\n', '("Spain", "colonized", "Guam")\n', '("Guam", "was captured by", "the United States during the Spanish–American War")\n', '("Guam", "was one of five American jurisdictions in the Pacific Ocean along with", "Wake Island in Micronesia, American Samoa and Hawaii in Polynesia, and the Philippines")\n', '("Japanese", "occupied", "Guam after the attack on Pearl Harbor")\n', '("International Date Line", "is in the proximity of", "Guam")\n', '("Guam", "is the closest land mass to", "the Mariana Trench")\n', '("Mount Lamlam", "is considered the tallest mountain from the base in", "Challenger Deep")\n', '("Chamorros", "settled", "Guam and the Mariana islands")\n', '("William McKinley", "ordered", "Guam to be transferred to the United States Navy control")\n', '("SMS Cormoran", "sought port at", "Apra Harbor on Guam")\n', '("University of Guam", "expanded", "by Maryly Van Leer Peck")\n', '("Guam\'s tourism industry", "was supported by", "the United States military")\n', '("Guam", "received \'Compact Impact\' aid from", "the United States")\n', '("United States", "maintains jurisdiction over", "military bases on Guam")\n', '("Antonio B. Won Pat International Airport", "serves", "Guam")\n', '("Guam", "has state-of-the-art mobile phone services and high-speed internet widely available through", "cable or DSL")\n', '("Guam", "is a part of", "the U.S. Postal System")\n', '("Guam", "is served by", "the Guam Regional Transit Authority")\n', '("Paraguay", "is bordered by", "Argentina to the south and southwest")\n', '("Paraguay", "is bordered by", "Brazil to the east and northeast")\n', '("Paraguay", "is bordered by", "Bolivia to the northwest")\n', '("Paraguay", "has its capital and largest city in", "Asunción")\n', '("Paraguay", "is a member of", "Organization of American States")\n', '("Asunción", "is the seat of", "South American Football Confederation")\n', '("Paraguay", "has ports on", "Paraguay and Paraná rivers")\n', '("Asunción", "was established as the first capital of", "the Governorate of the Río de la Plata")\n', '("Jean-Jacques Rousseau\'s", "Social Contract influenced", "José Gaspar Rodríguez de Francia")\n', '("Paraguay", "faced a major international conflict against", "Bolivia in the Chaco War")\n', '("Paraguay", "lost half its prewar population in", "the Paraguayan War")\n', '("Hermes Rafael Saguier", "was imprisoned for", "sedition")\n', '("Paraguay", "is a founding member of", "UNASUR")\n', '("Paraguay", "contains the", "Pantanal region")\n', '("Paraguay", "is home to the", "coypu species")\n', '("Paraguay", "is a large producer of", "soybean")\n', '("Paraguay", "is a member of", "International Monetary Fund")\n', '("Asunción", "is an important stopover for", "international airlines")\n', '("Paraguay", "has an important city", "Ciudad del Este")\n', '("Ciudad del Este", "is the third most important free commercial zone after", "Miami and Hong Kong")\n', '("Paraguay", "is a large producer of", "maize")\n', '("Paraguay", "is a large producer of", "cassava")\n', '("Paraguay", "is a large producer of", "wheat")\n', '("Paraguay", "is an important producer of", "sorghum")\n', '("Paraguay", "does not have access to the", "ocean")\n', '("Paraguay", "utilizes", "hydropower")\n', '("Paraguay", "cooperates with Brazil, Argentina, and others to operate the", "Itaipu Dam")\n', '("Arizona", "is a state in", "the Southwestern region of the United States")\n', '("Arizona", "is part of", "the Four Corners region")\n', '("Arizona", "borders", "Utah to the north")\n', '("Arizona", "borders", "Colorado to the northeast")\n', '("Arizona", "borders", "New Mexico to the east")\n', '("Arizona", "borders", "Nevada to the northwest")\n', '("Arizona", "borders", "California to the west")\n', '("Arizona", "borders", "Sonora to the south and southwest")\n', '("Arizona", "borders", "Baja California to the south and southwest")\n', '("Arizona", "has as its capital and largest city", "Phoenix")\n', '("Arizona", "is known for forests of", "Douglas fir")\n', '("Arizona", "is known for forests of", "spruce")\n', '("Arizona", "features", "the Colorado Plateau")\n', '("Arizona", "includes", "Tucson")\n', '("Arizona", "includes", "Grand Canyon National Park")\n', '("Barry Goldwater", "is a notable politician from", "Arizona")\n', '("John McCain", "is a notable politician from", "Arizona")\n', '("Arizona", "was historically part of", "the territory of Alta California and Nuevo México in New Spain")\n', '("Arizona", "acquired the southernmost portion of the state through", "the Gadsden Purchase")\n', '("Arizona", "acquired land from", "Mexico City")\n', '("Gila River", "is located in", "Arizona")\n', '("Jefferson Davis", "approved", "the Territory of Arizona")\n', '("Arizona", "had its territory established by", "Washington, D.C.")\n', '("Abraham Lincoln", "signed the bill that read", "Arizona")\n', '("Brigham Young", "sent Mormons to", "Arizona")\n', '("Arizona", "is home to", "Salt Lake City")\n', '("Pancho Villa", "is associated with", "Arizona")\n', '("Arizona", "is part of the", "Northeast")\n', '("Belize", "is bordered by", "Mexico to the north")\n', '("Belize", "is bordered by", "the Caribbean Sea to the east")\n', '("Belize", "is bordered by", "Guatemala to the west and south")\n', '("Belize", "shares a water boundary with", "Honduras to the southeast")\n', '("Christopher Columbus", "sailed along", "the Gulf of Honduras")\n', '("Belize\'s", "capital is", "Belmopan")\n', '("Belize City", "is", "the largest city in Belize")\n', '("Caracol", "was", "an urban political centre of Maya civilization")\n', '("English settlers", "cut", "logwood trees")\n', '("Britain", "defeated the Spanish in the", "Battle of St. George\'s Caye")\n', '("Belize", "was claimed by", "Spain and Britain")\n', '("Belize", "is a member of", "the Organization of American States")\n', '("Belize", "is a member of", "the World Trade Organization")\n', '("Belize", "is a member of", "the International Court of Justice")\n', '("Belize", "is next to", "the Yucatán Peninsula")\n', '("The Maya", "domesticated crops such as", "corn, beans, squash, and chili peppers")\n', '("Belize\'s", "area of coral reefs is part of", "the Mesoamerican Biological Corridor")\n', '("Belize\'s", "economy is based on", "agriculture, agro-based industry, and merchandising")\n', '("Belize", "will take cases to", "the International Court of Justice related to the Guatemalan territorial dispute")\n', '("Belize", "has", "a diverse society composed of many cultures and languages")\n', '("Belize", "is the only Central American country where", "English is the official language")\n', '("Belize", "shares its northern border with", "the Mexican state of Quintana Roo")\n', '("Belize", "shares its southern border with", "the Guatemalan department of Izabal")\n', '("Belize\'s", "coastline flanks the", "second-longest barrier reef in the world")\n', '("Belize\'s", "land area is slightly larger than", "El Salvador, Israel, New Jersey, or Wales")\n', '("Belize\'s", "barrier reef is part of", "the Mesoamerican Barrier Reef System")\n', '("The Belize Barrier Reef", "is home to", "a large diversity of plants and animals")\n', '("Belize\'s", "Barrier Reef was declared a World Heritage Site by", "UNESCO")\n', '("Belize", "has a tropical climate with", "pronounced wet and dry seasons")\n', '("Belize", "experienced devastating hurricanes such as", "Hurricane Hattie")\n', '("Belize\'s", "population growth rate is", "the second-highest in the region")\n', '("Belize", "has a small, mostly private enterprise economy that is based primarily on", "agriculture, agro-based industry, and merchandising")\n', '("Belize\'s", "agriculture is notably characterized by", "sugar as the chief crop")\n', '("Belize", "achieved certification for the elimination of malaria by", "the WHO")\n', '("Belize", "is a parliamentary constitutional monarchy with", "King Charles III as its monarch and head of state")\n', '("Belize\'s", "legal system is modelled on the", "common law of England")\n', '("Belize", "is divided into", "six districts")\n', '("Belize", "is known to have a number of economically important minerals", "but none in quantities large enough to warrant mining")\n', '("Belize", "utilizes", "biocapacity and has an ecological footprint of consumption")\n', '("Belizeans", "speak", "English and Belizean Creole")\n', '("The Maya in Belize", "speak", "their native languages and Spanish")\n', '("Belize", "has moderate rates of", "violent crime")\n', '("Belize\'s", "crime is largely due to", "gang warfare")\n', '("Belize", "is a country with", "enduring differences in the distribution of wealth, power, and prestige")\n', '("Belizean culture", "includes the legends of", "Lang Bobi Suzi, La Llorona, and Tata Duende")\n', '("Belizeans", "celebrate", "Garifuna Settlement Day and Heroes and Benefactors\' Day")\n', '("Belizean cuisine", "is", "an amalgamation of all ethnicities in the nation")\n', '("Belize", "is influenced by", "music genres such as punta and brukdown")\n', '("Football, basketball, volleyball, and cycling", "are major sports in", "Belize")\n', '("The national flower of Belize", "is", "the black orchid (Prosthechea cochleata)")\n', '("The national tree of Belize", "is", "the mahogany tree (Swietenia macrophylla)")\n', '("The national ground-dwelling animal of Belize", "is", "the Baird\'s tapir")\n', '("The national bird of Belize", "is", "the keel-billed toucan (Ramphastos sulphuratus)")\n']
+range(1, 301) 4
+['("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Christopher Columbus", "made landfall in", "the Bahamas")\n', '("Christopher Columbus", "traveled as far north as", "the British Isles")\n']
+
+['("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Christopher Columbus", "was born in the Republic of Genoa", "between 25 August and 31 October 1451")\n', '("Christopher Columbus", "traveled as far north as", "the British Isles")\n', '("Christopher Columbus", "traveled as far south as", "what is now Ghana")\n', '("Christopher Columbus", "married", "Portuguese noblewoman Filipa Moniz Perestrelo")\n', '("Christopher Columbus", "later took a mistress named", "Beatriz Enríquez de Arana")\n', '("Christopher Columbus", "was based in", "Lisbon")\n', '("Christopher Columbus", "had a plan for a western sea passage to", "the East Indies")\n', '("Christopher Columbus", "sponsored by", "Queen Isabella I and King Ferdinand II")\n', '("Christopher Columbus", "visited island now known as", "Cuba")\n', '("Christopher Columbus", "established a colony in what is now", "Haiti")\n', '("Christopher Columbus", "explored", "the Lesser Antilles")\n', '("Christopher Columbus", "explored", "Trinidad")\n', '("Christopher Columbus", "explored the northern coast of", "South America")\n', '("Christopher Columbus", "many geographical features named by him are in", "the East Indies")\n', '("Christopher Columbus", "came up with the name", "Indios")\n', '("Christopher Columbus", "later arrested and removed from", "Hispaniola")\n', '("Christopher Columbus", "inaugurated a period of exploration called", "the Columbian exchange")\n', '("Christopher Columbus", "many places bear his name including", "Colombia")\n', '("Christopher Columbus", "many places bear his name including", "British Columbia")\n', '("Christopher Columbus", "many places bear his name including", "District of Columbia")\n', '("Christopher Columbus", "worked as a business agent for", "wealthy Genoese families")\n', '("Christopher Columbus", "made a trip to", "Chios in the Aegean Sea")\n', '("Christopher Columbus", "probably visited", "Bristol")\n', '("Christopher Columbus", "made a trip to", "Galway")\n', '("Christopher Columbus", "sailed from", "Galway to Lisbon")\n', '("Christopher Columbus", "moved to", "Savona")\n', '("Christopher Columbus", "never wrote in", "his first language Ligurian")\n', '("Christopher Columbus", "read widely about", "astronomy")\n', '("Christopher Columbus", "read widely about", "geography")\n', '("Christopher Columbus", "read widely about", "history")\n', '("Christopher Columbus", "read the works of", "Ptolemy")\n', '("Christopher Columbus", "read the works of", "Marco Polo")\n', '("Christopher Columbus", "read the works of", "Pliny")\n', '("Christopher Columbus", "read the works of", "Pope Pius II")\n', '("Christopher Columbus", "sailed to reach", "the Maluku Islands")\n', '("Christopher Columbus", "sailed to reach", "China")\n', '("Christopher Columbus", "sailed to reach", "India")\n', '("Christopher Columbus", "utilized the trade winds", "during his Atlantic navigation")\n', '("Christopher Columbus", "sailed to the Canary Islands", "to repair and restock")\n', '("Christopher Columbus", "made landfall in the Americas on", "12 October 1492")\n', '("Christopher Columbus", "was born in the Republic of Genoa", "between 25 August and 31 October 1451")\n', '("Christopher Columbus", "traveled as far south as", "what is now Ghana")\n', '("Christopher Columbus", "married", "Portuguese noblewoman Filipa Moniz Perestrelo")\n', '("Christopher Columbus", "later took a mistress named", "Beatriz Enríquez de Arana")\n', '("Christopher Columbus", "was based in", "Lisbon")\n', '("Christopher Columbus", "had a plan for a western sea passage to", "the East Indies")\n', '("Christopher Columbus", "sponsored by", "Queen Isabella I and King Ferdinand II")\n', '("Christopher Columbus", "made landfall in", "the Bahamas")\n', '("Christopher Columbus", "visited island now known as", "Cuba")\n', '("Christopher Columbus", "established a colony in what is now", "Haiti")\n', '("Christopher Columbus", "explored", "the Lesser Antilles")\n', '("Christopher Columbus", "explored", "Trinidad")\n', '("Christopher Columbus", "explored the northern coast of", "South America")\n', '("Christopher Columbus", "many geographical features named by him are in", "the East Indies")\n', '("Christopher Columbus", "came up with the name", "Indios")\n', '("Christopher Columbus", "later arrested and removed from", "Hispaniola")\n', '("Christopher Columbus", "inaugurated a period of exploration called", "the Columbian exchange")\n', '("Christopher Columbus", "many places bear his name including", "Colombia")\n', '("Christopher Columbus", "many places bear his name including", "British Columbia")\n', '("Christopher Columbus", "many places bear his name including", "District of Columbia")\n', '("Christopher Columbus", "worked as a business agent for", "wealthy Genoese families")\n', '("Christopher Columbus", "made a trip to", "Chios in the Aegean Sea")\n', '("Christopher Columbus", "probably visited", "Bristol")\n', '("Christopher Columbus", "made a trip to", "Galway")\n', '("Christopher Columbus", "sailed from", "Galway to Lisbon")\n', '("Christopher Columbus", "moved to", "Savona")\n', '("Christopher Columbus", "never wrote in", "his first language Ligurian")\n', '("Christopher Columbus", "read widely about", "astronomy")\n', '("Christopher Columbus", "read widely about", "geography")\n', '("Christopher Columbus", "read widely about", "history")\n', '("Christopher Columbus", "read the works of", "Ptolemy")\n', '("Christopher Columbus", "read the works of", "Marco Polo")\n', '("Christopher Columbus", "read the works of", "Pliny")\n', '("Christopher Columbus", "read the works of", "Pope Pius II")\n', '("Christopher Columbus", "sailed to reach", "the Maluku Islands")\n', '("Christopher Columbus", "sailed to reach", "China")\n', '("Christopher Columbus", "sailed to reach", "India")\n', '("Christopher Columbus", "utilized the trade winds", "during his Atlantic navigation")\n', '("Christopher Columbus", "sailed to the Canary Islands", "to repair and restock")\n', '("Christopher Columbus", "made landfall in the Americas on", "12 October 1492")\n', '("Guam", "is an organized, unincorporated territory of", "the United States")\n', '("Guam\'s capital", "is", "Hagåtña")\n', '("Guam", "is located in", "the Micronesia subregion of the western Pacific Ocean")\n', '("Guam", "is the largest and southernmost island of", "the Mariana Islands")\n', '("Guam", "is the largest island in", "Micronesia")\n', '("Chamorro people", "are related to", "Austronesian peoples of the Malay Archipelago, the Philippines, Taiwan, and Polynesia")\n', '("Chamorro language", "is related to", "Palauan")\n', '("Ferdinand Magellan", "was the first European to visit", "Guam")\n', '("Spain", "colonized", "Guam")\n', '("Guam", "was captured by", "the United States during the Spanish–American War")\n', '("Guam", "was one of five American jurisdictions in the Pacific Ocean along with", "Wake Island in Micronesia, American Samoa and Hawaii in Polynesia, and the Philippines")\n', '("Japanese", "occupied", "Guam after the attack on Pearl Harbor")\n', '("International Date Line", "is in the proximity of", "Guam")\n', '("Guam", "is the closest land mass to", "the Mariana Trench")\n', '("Mount Lamlam", "is considered the tallest mountain from the base in", "Challenger Deep")\n', '("Chamorros", "settled", "Guam and the Mariana islands")\n', '("William McKinley", "ordered", "Guam to be transferred to the United States Navy control")\n', '("SMS Cormoran", "sought port at", "Apra Harbor on Guam")\n', '("University of Guam", "expanded", "by Maryly Van Leer Peck")\n', '("Guam\'s tourism industry", "was supported by", "the United States military")\n', '("Guam", "received \'Compact Impact\' aid from", "the United States")\n', '("United States", "maintains jurisdiction over", "military bases on Guam")\n', '("Antonio B. Won Pat International Airport", "serves", "Guam")\n', '("Guam", "has state-of-the-art mobile phone services and high-speed internet widely available through", "cable or DSL")\n', '("Guam", "is a part of", "the U.S. Postal System")\n', '("Guam", "is served by", "the Guam Regional Transit Authority")\n', '("Paraguay", "is bordered by", "Argentina to the south and southwest")\n', '("Paraguay", "is bordered by", "Brazil to the east and northeast")\n', '("Paraguay", "is bordered by", "Bolivia to the northwest")\n', '("Paraguay", "has its capital and largest city in", "Asunción")\n', '("Paraguay", "is a member of", "Organization of American States")\n', '("Asunción", "is the seat of", "South American Football Confederation")\n', '("Paraguay", "has ports on", "Paraguay and Paraná rivers")\n', '("Asunción", "was established as the first capital of", "the Governorate of the Río de la Plata")\n', '("Jean-Jacques Rousseau\'s", "Social Contract influenced", "José Gaspar Rodríguez de Francia")\n', '("Paraguay", "faced a major international conflict against", "Bolivia in the Chaco War")\n', '("Paraguay", "lost half its prewar population in", "the Paraguayan War")\n', '("Hermes Rafael Saguier", "was imprisoned for", "sedition")\n', '("Paraguay", "is a founding member of", "UNASUR")\n', '("Paraguay", "contains the", "Pantanal region")\n', '("Paraguay", "is home to the", "coypu species")\n', '("Paraguay", "is a large producer of", "soybean")\n', '("Paraguay", "is a member of", "International Monetary Fund")\n', '("Asunción", "is an important stopover for", "international airlines")\n', '("Paraguay", "has an important city", "Ciudad del Este")\n', '("Ciudad del Este", "is the third most important free commercial zone after", "Miami and Hong Kong")\n', '("Paraguay", "is a large producer of", "maize")\n', '("Paraguay", "is a large producer of", "cassava")\n', '("Paraguay", "is a large producer of", "wheat")\n', '("Paraguay", "is an important producer of", "sorghum")\n', '("Paraguay", "does not have access to the", "ocean")\n', '("Paraguay", "utilizes", "hydropower")\n', '("Paraguay", "cooperates with Brazil, Argentina, and others to operate the", "Itaipu Dam")\n', '("Arizona", "is a state in", "the Southwestern region of the United States")\n', '("Arizona", "is part of", "the Four Corners region")\n', '("Arizona", "borders", "Utah to the north")\n', '("Arizona", "borders", "Colorado to the northeast")\n', '("Arizona", "borders", "New Mexico to the east")\n', '("Arizona", "borders", "Nevada to the northwest")\n', '("Arizona", "borders", "California to the west")\n', '("Arizona", "borders", "Sonora to the south and southwest")\n', '("Arizona", "borders", "Baja California to the south and southwest")\n', '("Arizona", "has as its capital and largest city", "Phoenix")\n', '("Arizona", "is known for forests of", "Douglas fir")\n', '("Arizona", "is known for forests of", "spruce")\n', '("Arizona", "features", "the Colorado Plateau")\n', '("Arizona", "includes", "Tucson")\n', '("Arizona", "includes", "Grand Canyon National Park")\n', '("Barry Goldwater", "is a notable politician from", "Arizona")\n', '("John McCain", "is a notable politician from", "Arizona")\n', '("Arizona", "was historically part of", "the territory of Alta California and Nuevo México in New Spain")\n', '("Arizona", "acquired the southernmost portion of the state through", "the Gadsden Purchase")\n', '("Arizona", "acquired land from", "Mexico City")\n', '("Gila River", "is located in", "Arizona")\n', '("Jefferson Davis", "approved", "the Territory of Arizona")\n', '("Arizona", "had its territory established by", "Washington, D.C.")\n', '("Abraham Lincoln", "signed the bill that read", "Arizona")\n', '("Brigham Young", "sent Mormons to", "Arizona")\n', '("Arizona", "is home to", "Salt Lake City")\n', '("Pancho Villa", "is associated with", "Arizona")\n', '("Arizona", "is part of the", "Northeast")\n', '("Belize", "is bordered by", "Mexico to the north")\n', '("Belize", "is bordered by", "the Caribbean Sea to the east")\n', '("Belize", "is bordered by", "Guatemala to the west and south")\n', '("Belize", "shares a water boundary with", "Honduras to the southeast")\n', '("Christopher Columbus", "sailed along", "the Gulf of Honduras")\n', '("Belize\'s", "capital is", "Belmopan")\n', '("Belize City", "is", "the largest city in Belize")\n', '("Caracol", "was", "an urban political centre of Maya civilization")\n', '("English settlers", "cut", "logwood trees")\n', '("Britain", "defeated the Spanish in the", "Battle of St. George\'s Caye")\n', '("Belize", "was claimed by", "Spain and Britain")\n', '("Belize", "is a member of", "the Organization of American States")\n', '("Belize", "is a member of", "the World Trade Organization")\n', '("Belize", "is a member of", "the International Court of Justice")\n', '("Belize", "is next to", "the Yucatán Peninsula")\n', '("The Maya", "domesticated crops such as", "corn, beans, squash, and chili peppers")\n', '("Belize\'s", "area of coral reefs is part of", "the Mesoamerican Biological Corridor")\n', '("Belize\'s", "economy is based on", "agriculture, agro-based industry, and merchandising")\n', '("Belize", "will take cases to", "the International Court of Justice related to the Guatemalan territorial dispute")\n', '("Belize", "has", "a diverse society composed of many cultures and languages")\n', '("Belize", "is the only Central American country where", "English is the official language")\n', '("Belize", "shares its northern border with", "the Mexican state of Quintana Roo")\n', '("Belize", "shares its southern border with", "the Guatemalan department of Izabal")\n', '("Belize\'s", "coastline flanks the", "second-longest barrier reef in the world")\n', '("Belize\'s", "land area is slightly larger than", "El Salvador, Israel, New Jersey, or Wales")\n', '("Belize\'s", "barrier reef is part of", "the Mesoamerican Barrier Reef System")\n', '("The Belize Barrier Reef", "is home to", "a large diversity of plants and animals")\n', '("Belize\'s", "Barrier Reef was declared a World Heritage Site by", "UNESCO")\n', '("Belize", "has a tropical climate with", "pronounced wet and dry seasons")\n', '("Belize", "experienced devastating hurricanes such as", "Hurricane Hattie")\n', '("Belize\'s", "population growth rate is", "the second-highest in the region")\n', '("Belize", "has a small, mostly private enterprise economy that is based primarily on", "agriculture, agro-based industry, and merchandising")\n', '("Belize\'s", "agriculture is notably characterized by", "sugar as the chief crop")\n', '("Belize", "achieved certification for the elimination of malaria by", "the WHO")\n', '("Belize", "is a parliamentary constitutional monarchy with", "King Charles III as its monarch and head of state")\n', '("Belize\'s", "legal system is modelled on the", "common law of England")\n', '("Belize", "is divided into", "six districts")\n', '("Belize", "is known to have a number of economically important minerals", "but none in quantities large enough to warrant mining")\n', '("Belize", "utilizes", "biocapacity and has an ecological footprint of consumption")\n', '("Belizeans", "speak", "English and Belizean Creole")\n', '("The Maya in Belize", "speak", "their native languages and Spanish")\n', '("Belize", "has moderate rates of", "violent crime")\n', '("Belize\'s", "crime is largely due to", "gang warfare")\n', '("Belize", "is a country with", "enduring differences in the distribution of wealth, power, and prestige")\n', '("Belizean culture", "includes the legends of", "Lang Bobi Suzi, La Llorona, and Tata Duende")\n', '("Belizeans", "celebrate", "Garifuna Settlement Day and Heroes and Benefactors\' Day")\n', '("Belizean cuisine", "is", "an amalgamation of all ethnicities in the nation")\n', '("Belize", "is influenced by", "music genres such as punta and brukdown")\n', '("Football, basketball, volleyball, and cycling", "are major sports in", "Belize")\n', '("The national flower of Belize", "is", "the black orchid (Prosthechea cochleata)")\n', '("The national tree of Belize", "is", "the mahogany tree (Swietenia macrophylla)")\n', '("The national ground-dwelling animal of Belize", "is", "the Baird\'s tapir")\n', '("The national bird of Belize", "is", "the keel-billed toucan (Ramphastos sulphuratus)")\n']
+range(1, 301) 4
+{'id': '5_6', 'Question': " Which country's states border the significant body of water that the famous navigator known for reaching the Bahamas, but not for voyaging as far north as the British Isles, did not explore?\n", 'Answer': 'Mexico', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Mexico'}, {'label': 'B', 'text': 'Guam'}, {'label': 'C', 'text': 'Paraguay'}, {'label': 'D', 'text': 'Arizona'}, {'label': 'E', 'text': 'Belize'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'mexico'}, {'label': 'B', 'text': 'guam'}, {'label': 'C', 'text': 'paraguay'}, {'label': 'D', 'text': 'arizona'}, {'label': 'E', 'text': 'belize'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ["1: The Gulf of Mexico is bounded by which country's states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and ", 'uintana Roo?\nA1: Mexico\n\n', '2: Which significant body of water did Christopher Columbus not reach during his voyages?\nA2: Gulf of Mexico\n\n', '3: Which explorer made landfall in the Bahamas during his historical sea voyages?\nA3: Christopher Columbus\n\n', '4: Which famous navigator is known to have traveled as far north as the area where the British Isles are located?\nA4: Christopher Columbus'], 'Hops_wiki': [('Mexico', 'Gulf of Mexico'), ('Gulf of Mexico', 'Christopher Columbus'), ('Christopher Columbus', 'The Bahamas'), ('Christopher Columbus', 'British Isles')], 'Hops_cpnet': [('mexico', 'gulf_of_mexico'), ('gulf_of_mexico', 'christopher_columbus'), ('christopher_columbus', 'bahamas'), ('christopher_columbus', 'british_isles')], 'Triplets': ['("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")', '("Christopher Columbus", "did not reach", "Gulf of Mexico")', '("Christopher Columbus", "made landfall in", "the Bahamas")', '("Christopher Columbus", "traveled as far north as", "the British Isles")'], 'Referred_files': [{'name': 'Gulf of Mexico', 'line': 2}, {'name': 'Gulf of Mexico', 'line': 29}, {'name': 'Christopher Columbus', 'line': 9}, {'name': 'Christopher Columbus', 'line': 2}], 'Question_triplet_answer': {100: [3, 100, 158, 205], 50: [14, 32, 214, 251], 25: [77, 83, 131, 231]}}
+time passed:  3791.2019889354706
+Expected dollar:  0.005
+Christopher Columbus is People
+District of Columbia is Geography
+Belize is Geography
+Bahamas is Geography
+the Maluku Islands is Geography
+England is Geography
+the Lesser Antilles is Geography
+the Gulf of Mexico is Geography
+Gulf of Mexico is Geography
+Bristol is Geography
+Guam is Geography
+Cuba is Geography
+the International Court of Justice is Geography
+Ramphastos is Animal
+the United States is Geography
+Florida Platform is Geography
+Jurassic is Geography
+the Atlantic Ocean is Geography
+Brutus is People
+Ciudad del Este" is Geography
+Miami is Geography
+Hong Kong is Geography
+Tamaulipas is Geography
+Veracruz is Geography
+Tabasco is Geography
+Campeche is Geography
+Yucatán is Geography
+Quintana Roo is Geography
+Mexico is Geography
+Atlantic is Geography
+Paraguay is Geography
+the Organization of American States is Geography
+Asunción is Geography
+the United States' is Geography
+British Columbia is Geography
+Colombia is Geography
+Triassic is Geography
+Ghana is Geography
+the Robert E. Lee is People
+Arizona is Geography
+Baja California is Geography
+India is Geography
+Texas is Geography
+Louisiana is Geography
+Mississippi is Geography
+Alabama is Geography
+Florida is Geography
+Ferdinand Magellan is People
+the World Trade Organization is Geography
+27,000 is Geography
+Hernán Cortés is People
+Swietenia is Animal
+El Salvador is Geography
+Israel is Geography
+New Jersey is Geography
+Wales is Geography
+Pacific Ocean is Geography
+Guam after the attack is Geography
+Pearl Harbor is Geography
+International Date Line is Geography
+Barrier Reef is Geography
+Marco Polo is Geography
+Organization of American States is Geography
+the East Indies is Geography
+China is Geography
+United States is Geography
+Jefferson Davis is People
+the Territory of Arizona is Geography
+University of Guam is Geography
+Maryly Van Leer Peck is People
+Guam's is Geography
+Hagåtña is Geography
+Brigham Young is Geography
+Belmopan is Geography
+the Mariana Islands is Geography
+Americas is Geography
+Spain is Geography
+the Yucatán Peninsula is Geography
+Hispaniola is Geography
+the Republic of Genoa is Geography
+31 October 1451 is People
+Bolivia is Geography
+New Mexico is Geography
+International Hydrographic Organization is Incident
+the Río de la Plata is Geography
+Nevada is Geography
+Salt Lake City is Geography
+the Gulf of Honduras is Geography
+Gila River is Geography
+Izabal is Geography
+the Aegean Sea is Geography
+Mississippi Embayment is Geography
+the Colorado Plateau is Geography
+Mount Lamlam is Geography
+Challenger Deep is Geography
+Galway is Geography
+Abraham Lincoln is People
+Oklahoma is Geography
+the Caribbean Sea is Geography
+Barry Goldwater is People
+California is Geography
+Sierra Madre Oriental is Geography
+the Canary Islands is Geography
+Battle of St. George's is Geography
+William McKinley is People
+Antonio B. Won Pat International Airport is Geography
+Benefactors' Day is People
+entities:  {'Tamaulipas', 'Bobi', 'attack', 'Perestrelo', 'World', 'George', 'la', 'Platform', 'Enríquez', 'Maryly', 'Barrier', 'del', 'McKinley', 'Peninsula', 'Louisiana', 'Pangaea', 'Texas', 'Organization', 'Britain', 'Colombia', 'Cortés', 'Plata', 'Mariana', 'Yucatán', 'Ghana', 'William', 'Mexico', 'Pacific', 'Young', 'Salt', 'Antonio', 'Este"', 'Battle', 'Columbus', 'Canary', 'Ocean', 'Peck', 'Río', 'Veracruz', 'Honduras', 'China', 'England', 'Hispaniola', "George's", 'Navy', '27,000', 'Justice', 'Israel', 'Hong', 'Deep', 'Quintana', 'Asunción', 'Antilles', 'Triassic', 'Phoenix', 'St.', 'Maluku', "States'", 'International', 'Kong', 'Ramphastos', 'Jurassic', 'Marco', 'October', 'Micronesia', 'Baja', 'Hernán', 'Colorado', 'Reef', '31', 'Arana', '1451', 'British', 'Izabal', 'American', 'Guam', 'America', 'Swietenia', 'Sierra', 'Galway', 'Lake', 'States', 'Lang', 'Spain', 'Aegean', 'Polo', 'Louann', 'Belmopan', 'Brutus', 'Sea', 'City', 'Hagåtña', 'Isles', 'Bolivia', 'Trinidad', 'Oklahoma', 'Haiti', 'Bristol', 'Mount', 'California', 'El', 'Brigham', 'Tabasco', 'Madre', 'Filipa', 'Lincoln', 'Robert', 'Trade', 'Mississippi', 'Roo', 'de', 'Beatriz', 'Christopher', 'Americas', 'Leer', 'Oriental', 'Nevada', 'Pat', 'Shell', 'Court', 'Day', 'Arizona', 'New', 'Magellan', 'Bahamas', 'Challenger', 'Caribbean', 'Lamlam', 'Paraguay', 'Hydrographic', 'Date', 'East', "Benefactors'", 'Jersey', 'Genoa', 'Ciudad', 'Barry', 'Columbia', 'Harbor', 'Pearl', 'Miami', 'Davis', 'Van', "Guam's", 'Goldwater', 'Airport', 'Territory', 'Rafael', 'Alvin', 'Ferdinand', 'Jefferson', 'Gila', 'Cuba', 'Atlantic', 'District', 'Islands', 'United', 'Lee', 'Line', 'River', 'Florida', 'B.', 'University', 'Republic', 'Plateau', 'India', 'Campeche', 'Salvador', 'Wales', 'Alabama', 'Lesser', 'Abraham', 'Indies', 'E.', 'Belize', 'Gulf', 'Embayment'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gulf of Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+Gulf Stream
+Gulf of Mexico basin
+Florida Platform
+Yucatán
+Florida platforms
+Sigsbee Deep
+Mississippi Embayment
+Louann Salt
+Gila River
+Gulf of Honduras
+Challenger Deep
+Sea Floor Spreading
+Hermes Rafael Saguier
+Chamorro language
+Hagåtña
+Sierra Madre Oriental
+Guam's tourism industry
+University of Guam
+Alvin
+Gulf of Mexico
+Abandoned oil and gas wells
+Coral reefs
+
+gpt_entity_particular(): entity list: 
+ ['Hagåtña', 'Florida Platform', 'Louann Salt', 'Gulf Stream', 'Gila River', "Guam's tourism industry", 'Sigsbee Deep', 'Alvin', 'Coral reefs', 'Yucatán', 'Hermes Rafael Saguier', 'Sierra Madre Oriental', 'Sea Floor Spreading', 'Gulf of Mexico', 'Gulf of Honduras', 'Abandoned oil and gas wells', 'Challenger Deep', 'University of Guam', 'Chamorro language', 'Mississippi Embayment', 'Gulf of Mexico basin', 'Florida platforms']
+
+gpt_entity_particular(): filtered entity: 
+ ['Gulf Stream']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Christopher Columbus' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Christopher Columbus
+District of Columbia
+Bahamas
+Maluku Islands
+Lesser Antilles
+history
+Bristol
+Lisbon
+Belize
+International Court of Justice
+Lang Bobi Suzi, La Llorona, and Tata Duende
+punta and brukdown
+offshore petroleum production
+Belizean culture
+football, basketball, volleyball, and cycling
+International Court of Justice
+Organization of American States
+Mesoamerican Biological Corridor
+International Court of Justice
+Barrier Reef
+Belizean Creole
+World Trade Organization
+International Hydrographic Organization
+Organizational of American States
+Mardi Gras shipwreck
+Gulf of Mexico
+East Indies
+Abyssal plain
+World Heritage Site
+Melchiorre Gioja
+Ligurian
+Guam
+Gulf of Mexico
+Explorer's Asteroid
+Mardi Gras shipwreck
+Arizona
+Baja California
+Gulf of Mexico
+Christopher Columbus
+Gulf of Mexico
+Christopher Columbus
+Gulf of Mexico
+Robert E. Lee shipwreck
+Arizona
+Gulf of Mexico
+Indios
+Mardi Gras shipwreck
+Gulf of Mexico
+Mardi Gras shipwreck
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+San Miguel Prime
+Robert E. Lee
+Arizona
+Gulf of Mexico
+Belize City
+Christopher Columbus
+Gulf of Mexico
+Christopher Columbus
+Christopher Columbus
+Gulf of Mexico
+Mardi Gras shipwreck
+Belize
+Guatemala
+Guam
+Micronesia
+Arizona
+Belize
+English
+Guam
+Christopher Columbus
+Arizona
+Guam
+Cuba
+Gulf of Mexico
+Belize
+Gulf of Mexico
+Nicholas Duncan
+Belize
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Palauan
+Mesoamerican Biological Corridor
+World Trade Organization
+Arizona
+Christopher Columbus
+Christopher Columbus
+Gulf of Mexico
+Christopher Columbus
+Guam
+Belize
+Arizona
+Gulf of Mexico
+Arizona
+Belize City
+Gulf of Mexico
+Paraguay
+Gulf of Mexico
+Guam
+Belize
+Guam
+Guatemala
+Gulf of Mexico
+University of Guam
+Gulf of Mexico
+Gulf of Mexico
+Guam
+Gulf of Mexico
+Belize
+Gulf of Mexico
+Belize City
+Gulf of Mexico
+Guam
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Guam
+Gulf of Mexico
+Gulf of Mexico
+Christopher Columbus
+United States
+Belize
+Hernán Cortés
+Belize
+Golf of Mexico
+William McKinley
+Christopher Columbus
+Arizona
+Arizona
+
+gpt_entity_particular(): entity list: 
+ ['International Hydrographic Organization', 'Nicholas Duncan', 'Lang Bobi Suzi, La Llorona, and Tata Duende', 'English', 'International Court of Justice', 'Bristol', 'United States', 'offshore petroleum production', 'District of Columbia', 'Micronesia', 'Indios', 'East Indies', 'William McKinley', 'history', 'Robert E. Lee shipwreck', 'Organization of American States', 'Palauan', 'Belizean Creole', 'World Trade Organization', 'Melchiorre Gioja', 'Baja California', 'Mesoamerican Biological Corridor', 'Cuba', 'Guam', 'Maluku Islands', "Explorer's Asteroid", 'Belize City', 'Robert E. Lee', 'Gulf of Mexico', 'Ligurian', 'Barrier Reef', 'Lesser Antilles', 'World Heritage Site', 'football, basketball, volleyball, and cycling', 'Lisbon', 'Abyssal plain', 'Arizona', 'University of Guam', 'Bahamas', 'punta and brukdown', 'Guatemala', 'Christopher Columbus', 'Hernán Cortés', 'Belizean culture', 'Paraguay', 'Golf of Mexico', 'San Miguel Prime', 'Belize', 'Organizational of American States', 'Mardi Gras shipwreck']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'The Bahamas' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ District of Columbia
+Prosthechea cochleata
+Bahamas
+Maluku Islands
+Common law of England
+Lesser Antilles
+Gulf Stream
+Gulf of Mexico
+Cuba
+International Court of Justice
+Ramphastos sulphuratus
+Punta
+Brakdown
+Atlantic Ocean
+Mardi Gras shipwreck
+Bristol
+Gulf Coast of the United States
+Florida Platform
+Mardi Gras shipwreck
+Belize Barrier Reef
+Gulf Coast of the United States
+Organ of American States
+Mardi Gras shipwreck
+The Bahamas
+Gulf of Mexico
+Oil
+Guam
+Micronesia
+The Bahamas
+Micronesia
+Mardi Gras shipwreck
+The Bahamas
+Gulf of Mexico
+Guatemala
+The Bahamas
+Christopher Columbus
+Guatemala
+The Bahamas
+The Bahamas
+UNESCO
+Arizona
+Chios
+Belize
+Belmopan
+The Bahamas
+Belmopan
+Guam
+Micronesia
+The Bahamas
+Barry Goldwater
+The Bahamas
+UNASUR
+Christopher Columbus
+Grenada
+Gulf of Honduras
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Mexico
+The Bahamas
+Maryland
+Guam
+The Bahamas
+Christopher Columbus
+The Bahamas
+Belize
+Mesoamerican Biological Corridor
+The Bahamas
+Palauan
+Belize
+Organization of American States
+The Bahamas
+The Bahamas
+The Bahamas
+Guam
+The Bahamas
+The Bahamas
+Mesoamerican Biological Corridor
+Belize
+The Bahamas
+Belize
+The Bahamas
+Guatemala
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Kenya
+Belize
+The Bahamas
+Guam
+The Bahamas
+The Bahamas
+Belize
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Queen Isabella I and King Ferdinand II
+Haiti
+Guam
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Guam
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Belize
+The Bahamas
+The Bahamas
+The Bahamas
+Gulf of Mexico
+Chios
+The Bahamas
+The Bahamas
+The Bahamas
+Commander
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Mexico
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Christopher Columbus
+Trinidad
+The Bahamas
+Chios
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Belize
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Alvin
+Gulf of Mexico
+The Bahamas
+The Bahamas
+Belize
+The Bahamas
+Belizeans
+The Bahamas
+Arizona
+The Bahamas
+The Bahamas
+The Bahamas
+Guam
+The Bahamas
+Christopher Columbus
+Pliny
+The Bahamas
+Arizona
+The Bahamas
+The Bahamas
+Christopher Columbus
+Cuba
+The Bahamas
+The Bahamas
+Belize
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Christopher Columbus
+Pliny
+Arizona
+Mexico
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Arizona
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Arizona
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Guam
+The Bahamas
+Hernán Cortés
+The Bahamas
+Christopher Columbus
+The Bahamas
+Christopher Columbus
+The Bahamas
+The Bahamas
+The Bahamas
+Belize
+The Bahamas
+The Bahamas
+Christopher Columbus
+Cuba
+Christopher Columbus
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Arizona
+The Bahamas
+Arizona
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+California
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Guam
+The Bahamas
+Arizona
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Hernán Cortés
+The Bahamas
+Yucatán
+The Bahamas
+Belize
+The Bahamas
+The Bahamas
+The Bahamas
+The Bahamas
+Hernán Cortés
+The Bahamas
+Arizona
+New Mexico
+Christopher Columbus
+The Bahamas
+The Bahamas
+The Bahamas
+Arizona
+The Bahamas
+The Bahamas
+Hernán Cortés
+The Bahamas
+Belize
+The Bahamas
+The Bahamas
+The Bahamas
+
+gpt_entity_particular(): entity list: 
+ ['Barry Goldwater', 'Pliny', 'International Court of Justice', 'Gulf Coast of the United States', 'Florida Platform', 'Trinidad', 'UNESCO', 'Belizeans', 'New Mexico', 'Haiti', 'Gulf Stream', 'Bristol', 'Prosthechea cochleata', 'Commander', 'District of Columbia', 'Micronesia', 'California', 'Alvin', 'Organization of American States', 'Belize Barrier Reef', 'Palauan', 'Atlantic Ocean', 'Cuba', 'Mesoamerican Biological Corridor', 'Guam', 'UNASUR', 'Yucatán', 'Maluku Islands', 'Queen Isabella I and King Ferdinand II', 'Mexico', 'Punta', 'Gulf of Mexico', 'Brakdown', 'Kenya', 'Gulf of Honduras', 'Lesser Antilles', 'Arizona', 'Bahamas', 'Chios', 'Belmopan', 'Guatemala', 'Christopher Columbus', 'The Bahamas', 'Maryland', 'Hernán Cortés', 'Ramphastos sulphuratus', 'Common law of England', 'Oil', 'Belize', 'Grenada', 'Organ of American States', 'Mardi Gras shipwreck']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Paraguay' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Paraguay
+hydropower
+cassava
+soybean
+
+gpt_entity_particular(): entity list: 
+ ['hydropower', 'cassava', 'Paraguay', 'soybean']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'British Isles' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ British Isles
+British Columbia
+his association with the British Isles
+the British Isles
+the British Isles
+as far north as the British Isles
+British Columbia
+many places bear his name including British Columbia
+
+gpt_entity_particular(): entity list: 
+ ['British Columbia', 'British Isles', 'his association with the British Isles', 'many places bear his name including British Columbia', 'the British Isles', 'as far north as the British Isles']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Guam' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Guam
+Mariana Islands
+William McKinley
+United States Navy
+Christopher Columbus
+Northern Mariana Islands
+International Date Line
+Hagåtña
+Antonio B. Won Pat International Airport
+
+gpt_entity_particular(): entity list: 
+ ['Hagåtña', 'International Date Line', 'Christopher Columbus', 'Northern Mariana Islands', 'Mariana Islands', 'Antonio B. Won Pat International Airport', 'Guam', 'United States Navy', 'William McKinley']
+
+gpt_entity_particular(): filtered entity: 
+ ['Hagåtña', 'Mariana Islands']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Belize' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Belize
+Christopher Columbus
+flower
+black orchid
+Belize's
+system
+law
+England
+maluku islands
+national bird
+keel-billed toucan
+culture
+music genres
+punta
+brukdown
+offshore petroleum production
+Gulf Coast
+World Trade Organization
+economically important minerals
+society
+different cultures
+Guam
+largest island
+Micronesia
+Legends
+Gulf of Mexico
+offshore petroleum production
+bordered by
+Mexico
+trade winds
+major sports
+Belize City
+Hydropower
+Organization of American States
+Chamorro language
+related to
+Palauan
+International Court of Justice
+Guatemalan territorial dispute
+second-longest barrier reef
+founding member
+UNASUR
+abandoned oil and gas wells
+Haiti
+area
+coral reefs
+Mesoamerican Biological Corridor
+Gulf of Mexico
+affected by
+Chaco War
+oil drilling
+Lisbon
+Texas
+Louisiana
+Mississippi
+Alabama
+Florida
+Dominant cultures
+Navajo
+Hopi
+Spanish-speaking
+Guam
+founding member
+pantanal region
+Pangaea
+Laramide Orogeny
+third-longest river
+Rio Grande
+Challenger Deep
+next to
+Yucatán Peninsula
+Gulf Stream
+salt and anhydrite evaporites
+Jurassic
+Bolivia
+Chaco war
+
+Mid-Cretaceous
+Sediment
+Roman Empire
+Cabo de Santo Agostinho
+Pope Innocent
+India
+Columbian exchange
+
+gpt_entity_particular(): entity list: 
+ ['Sediment', 'coral reefs', 'Dominant cultures', 'Gulf Stream', 'major sports', 'Louisiana', 'Pangaea', 'Texas', 'Navajo', 'economically important minerals', 'brukdown', 'World Trade Organization', 'Yucatán Peninsula', 'Mesoamerican Biological Corridor', 'related to', 'Spanish-speaking', 'Laramide Orogeny', 'Mexico', 'Gulf of Mexico', 'flower', 'bordered by', 'area', 'Challenger Deep', 'England', 'Pope Innocent', 'Guatemalan territorial dispute', 'law', 'Jurassic', 'Micronesia', 'second-longest barrier reef', 'Organization of American States', 'Guam', 'founding member', 'keel-billed toucan', 'Rio Grande', 'Lisbon', 'system', 'next to', 'Bolivia', 'punta', 'national bird', 'Haiti', 'offshore petroleum production', 'maluku islands', 'Palauan', 'abandoned oil and gas wells', 'music genres', 'UNASUR', 'trade winds', 'Mississippi', 'Legends', 'Chaco war', 'Columbian exchange', 'Christopher Columbus', 'black orchid', 'Gulf Coast', 'salt and anhydrite evaporites', 'third-longest river', 'oil drilling', 'International Court of Justice', 'Hydropower', 'affected by', 'largest island', 'Belize City', 'society', 'Florida', 'culture', 'pantanal region', 'Cabo de Santo Agostinho', 'India', 'Roman Empire', 'Alabama', 'different cultures', "Belize's", 'Chamorro language', 'Chaco War', 'Mid-Cretaceous', 'Hopi', 'Belize']
+
+gpt_entity_particular(): filtered entity: 
+ ['Belize City']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Arizona' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+Arizona
+
+gpt_entity_particular(): entity list: 
+ ['Arizona']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Columbus
+flower
+Bahamas
+islands
+legal system
+law
+petroleum production
+music genres
+offshore petroleum
+history
+football
+volleyball
+cycling
+culture
+legends
+languages
+sugar
+tourism
+barrier reef
+economy
+bases
+domesticated crops
+Portuguese noblewoman
+airport
+corn
+Phoenix
+spruce
+Battle of St. George's Caye
+transfer
+Phoenix
+Battle of St. George's Caye
+Navy control
+Islands
+Grand Duchy of Lithuania
+Guam
+
+gpt_entity_particular(): entity list: 
+ ['Phoenix', 'spruce', 'law', 'Portuguese noblewoman', 'offshore petroleum', 'legends', 'volleyball', 'history', 'economy', 'legal system', 'islands', 'petroleum production', 'music genres', 'Guam', 'Islands', 'Navy control', 'flower', 'culture', "Battle of St. George's Caye", 'corn', 'Columbus', 'airport', 'domesticated crops', 'Bahamas', 'cycling', 'sugar', 'football', 'barrier reef', 'tourism', 'Grand Duchy of Lithuania', 'bases', 'transfer', 'languages']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Tamaulipas', 'Bobi', 'attack', 'Perestrelo', 'World', 'George', 'la', 'Platform', 'Enríquez', 'Maryly', 'Barrier', 'del', 'McKinley', 'Gulf Stream', 'Peninsula', 'Louisiana', 'Pangaea', 'Texas', 'Organization', 'Britain', 'Colombia', 'Cortés', 'Plata', 'Mariana', 'Yucatán', 'Ghana', 'William', 'Mexico', 'Pacific', 'Young', 'Salt', 'Antonio', 'Este"', 'Battle', 'Columbus', 'Canary', 'Ocean', 'Peck', 'Río', 'Veracruz', 'Honduras', 'China', 'England', 'Hispaniola', "George's", 'Navy', '27,000', 'Justice', 'Israel', 'Hong', 'Deep', 'Quintana', 'Asunción', 'Antilles', 'Triassic', 'Phoenix', 'St.', 'Maluku', "States'", 'International', 'Kong', 'Ramphastos', 'Jurassic', 'Marco', 'October', 'Micronesia', 'Baja', 'Hernán', 'Colorado', 'Reef', '31', 'Arana', '1451', 'British', 'Izabal', 'American', 'Guam', 'America', 'Swietenia', 'Sierra', 'Galway', 'Lake', 'States', 'Lang', 'Spain', 'Aegean', 'Polo', 'Louann', 'Belmopan', 'Brutus', 'Sea', 'City', 'Hagåtña', 'Isles', 'Bolivia', 'Trinidad', 'Oklahoma', 'Haiti', 'Bristol', 'Mount', 'California', 'El', 'Brigham', 'Tabasco', 'Madre', 'Filipa', 'Lincoln', 'Robert', 'Trade', 'Mississippi', 'Roo', 'de', 'Beatriz', 'Christopher', 'Americas', 'Leer', 'Oriental', 'Nevada', 'Pat', 'Shell', 'Court', 'Day', 'Arizona', 'New', 'Magellan', 'Bahamas', 'Challenger', 'Caribbean', 'Mariana Islands', 'Lamlam', 'Paraguay', 'Hydrographic', 'Date', 'East', "Benefactors'", 'Jersey', 'Genoa', 'Ciudad', 'Barry', 'Columbia', 'Harbor', 'Pearl', 'Miami', 'Davis', 'Van', "Guam's", 'Goldwater', 'Airport', 'Territory', 'Rafael', 'Alvin', 'Ferdinand', 'Jefferson', 'Gila', 'Cuba', 'Atlantic', 'District', 'Islands', 'United', 'Belize City', 'Lee', 'Line', 'River', 'Florida', 'B.', 'University', 'Republic', 'Plateau', 'India', 'Campeche', 'Salvador', 'Wales', 'Alabama', 'Lesser', 'Abraham', 'Indies', 'E.', 'Belize', 'Gulf', 'Embayment'}
+Total time:  482.80755972862244
+Entity conversion done on 5_6 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_5_6_entity_conversion_hash.json. Check the entity.
+ Which country's 09D border the significant body of water that the famous navigator known for reaching the Bahamas, but not for voyaging as far east as the 044 Isles, did not explore?
+
+
+
+Done. Check final_query/id_5_6_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_5_6_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_5_6_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_5_6_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_5_6_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_5_6_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_6_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

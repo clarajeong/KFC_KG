@@ -1,0 +1,35 @@
+Got argument: Turtle, 1, 1_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', 'start word': 'Turtle', 'end word': 'Gulf of Mexico', 'source': {'name': 'Turtle', 'line': 39}, 'cpnet': {'start word': 'turtle', 'end word': 'gulf_of_mexico'}}
+next_word: Gulf of Mexico
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Turtle']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+extract_info(Gulf of Mexico) Start.
+utils/preprocess.py extract_info(): Checking good links on Gulf of Mexico
+Mexico is Geography
+1 / 30 )  Mexican Mexico mexico
+Tamaulipas is Geography
+2 / 30 )  Tamaulipas Tamaulipas tamaulipas
+Veracruz is Geography
+3 / 30 )  Veracruz Veracruz veracruz
+Tabasco is Geography
+4 / 30 )  Tabasco Tabasco tabasco
+Campeche is Geography
+5 / 30 )  Campeche Campeche campeche
+Yucatán is Geography
+6 / 30 )  Yucatán Yucatán yucatán
+Quintana Roo is Geography
+7 / 30 )  Quintana Roo Quintana Roo quintana_roo
+Cuba is Geography
+8 / 30 )  Cuba Cuba cuba
+Texas is Geography
+9 / 30 )  Texas Texas texas
+Louisiana is Geography
+10 / 30 )  Louisiana Louisiana louisiana
+Mississippi is Geography
+11 / 30 )  Mississippi Mississippi mississippi
+Alabama is Geography
+12 / 30 )  Alabama Alabama alabama

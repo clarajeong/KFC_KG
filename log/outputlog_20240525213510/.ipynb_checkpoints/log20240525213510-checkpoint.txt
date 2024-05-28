@@ -1,0 +1,22 @@
+Got argument: Abraham Lincoln, 0, 0_1, normal_test: False, blanked: True
+
+utils/question.py extract_hops(Abraham Lincoln, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Abraham Lincoln", "was assassinated by", "John Wilkes Booth")', 'start word': 'Abraham Lincoln', 'end word': 'John Wilkes Booth', 'source': {'name': 'Abraham Lincoln', 'line': 11}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'john_wilkes_booth'}}
+next_word: John Wilkes Booth
+generate_question(0_1, ['("Abraham Lincoln", "was assassinated by", "John Wilkes Booth")'], ['John Wilkes Booth'], [('Abraham Lincoln', 'John Wilkes Booth')], John Wilkes Booth, [{'name': 'Abraham Lincoln', 'line': 11}]) called
+GPT output is:  Given your restrictions and the single pair of a question and answer you've provided, it's not possible to create a multi-hop question since a multi-hop question, by definition, requires the combination of information from multiple single-hop questions to reach the final answer. Since I only have one question-answer pair, I can't generate a multi-hop question that adheres to your rules. Please provide additional related small questions so I can appropriately generate a multi-hop question for you.
+final_choice(John Wilkes Booth, options = 5) started
+[]
+entity_type(John Wilkes Booth) called
+John Wilkes Booth is Geography
+check_matchscore(John Wilkes Booth, Lincoln assassination conspirators):  0.0
+choose_by_wiki_recur(Lincoln assassination conspirators)
+   Pages in Lincoln assassination conspirators: ['Samuel Arnold (conspirator)', 'George Atzerodt', 'John Wilkes Booth', 'Cipriano Ferrandini', 'David Herold', 'Samuel Mudd', "Michael O'Laughlen", 'Lewis Powell (conspirator)', 'Edmund Spangler', 'John Surratt', 'Mary Surratt']
+      Lewis Powell (conspirator) in ['Lewis Powell (conspirator)', 'John Surratt', 'Samuel Mudd', 'Cipriano Ferrandini']
+      John Surratt in ['Lewis Powell (conspirator)', 'John Surratt', 'Samuel Mudd', 'Cipriano Ferrandini', 'Samuel Arnold (conspirator)']
+      Samuel Mudd in ['Lewis Powell (conspirator)', 'John Surratt', 'Samuel Mudd', 'Cipriano Ferrandini', 'Samuel Arnold (conspirator)', 'John Wilkes Booth']
+      Cipriano Ferrandini in ['Lewis Powell (conspirator)', 'John Surratt', 'Samuel Mudd', 'Cipriano Ferrandini', 'Samuel Arnold (conspirator)', 'John Wilkes Booth', 'Mary Surratt']
+      Samuel Arnold (conspirator) in ['Lewis Powell (conspirator)', 'John Surratt', 'Samuel Mudd', 'Cipriano Ferrandini', 'Samuel Arnold (conspirator)', 'John Wilkes Booth', 'Mary Surratt', 'David Herold']
+      John Wilkes Booth in ['Lewis Powell (conspirator)', 'John Surratt', 'Samuel Mudd', 'Cipriano Ferrandini', 'Samuel Arnold (conspirator)', 'John Wilkes Booth', 'Mary Surratt', 'David Herold', "Michael O'Laughlen"]
+      Mary Surratt in ['Lewis Powell (conspirator)', 'John Surratt', 'Samuel Mudd', 'Cipriano Ferrandini', 'Samuel Arnold (conspirator)', 'John Wilkes Booth', 'Mary Surratt', 'David Herold', "Michael O'Laughlen", 'Edmund Spangler']

@@ -1,0 +1,419 @@
+Got argument: Tom Cruise, 2, 2_8, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Tom Cruise, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Tom_Cruise_info.json file
+first_hop:  {'triplet': '("Tom Cruise", "performance praised by", "Anne Rice")', 'start word': 'Tom Cruise', 'end word': 'Anne Rice', 'source': {'name': 'Tom Cruise', 'line': 15}, 'cpnet': {'start word': 'tom_cruise', 'end word': 'roquelaure'}}
+
+utils/question.py extract_hops(Anne Rice, [], ['Tom Cruise']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Anne_Rice_info.json file
+extract_info(Anne Rice) Start.
+utils/preprocess.py extract_info(): Checking good links on Anne Rice
+New Orleans is Geography
+1 / 30 )  New Orleans New Orleans new_orleans
+Texas is Geography
+2 / 30 )  Texas Texas texas
+San Francisco is Geography
+3 / 30 )  San Francisco San Francisco san_francisco
+Haight-Ashbury is Geography
+4 / 30 )  Haight-Ashbury Haight-Ashbury haight_ashbury
+Jesuits is Geography
+5 / 30 )  Jesuit Jesuits jesuits
+Castro District, San Francisco is Geography
+6 / 30 )  Castro District Castro District, San Francisco castro
+San Francisco State University is Geography
+7 / 30 )  San Francisco State University San Francisco State University san_francisco_state_university
+University of California, Berkeley is Geography
+8 / 30 )  University of California, Berkeley University of California, Berkeley university_of_california_at_berkeley
+Charles Dickens is Geography
+9 / 30 )  Charles Dickens Charles Dickens charles_dickens
+Virginia Woolf is People
+10 / 30 )  Virginia Woolf Virginia Woolf virginia_woolf
+John Milton is People
+11 / 30 )  John Milton John Milton john_milton
+Ernest Hemingway is People
+12 / 30 )  Ernest Hemingway Ernest Hemingway ernest_hemingway
+William Shakespeare is People
+13 / 30 )  William Shakespeare William Shakespeare william_shakespeare
+Jean-Paul Sartre is People
+14 / 30 )  Jean-Paul Sartre Jean-Paul Sartre jean_paul_sartre
+Henry James is People
+15 / 30 )  Henry James Henry James henry_james
+Arthur Conan Doyle is People
+16 / 30 )  Arthur Conan Doyle Arthur Conan Doyle arthur_conan_doyle
+H. Rider Haggard is People
+17 / 30 )  H. Rider Haggard H. Rider Haggard rider_haggard
+Stephen King is People
+18 / 30 )  Stephen King Stephen King stephen_king
+EBay is Geography
+19 / 30 )  eBay EBay ebay
+Tom Cruise is People
+20 / 30 )  Tom Cruise Tom Cruise tom_cruise
+Brad Pitt is People
+21 / 30 )  Brad Pitt Brad Pitt brad_pitt
+Aaliyah is People
+22 / 30 )  Aaliyah Aaliyah aaliyah
+Elton John is People
+23 / 30 )  Elton John Elton John elton_john
+extract_triplet(Anne Rice)
+Got GPT's response. String length : 1207
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['New Orleans', 'New Orleans', 'new_orleans']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['Texas', 'Texas', 'texas']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['San Francisco', 'San Francisco', 'san_francisco']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  []
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['San Francisco', 'San Francisco', 'san_francisco']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['San Francisco', 'San Francisco', 'san_francisco'], ['San Francisco State University', 'San Francisco State University', 'san_francisco_state_university']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['University of California, Berkeley', 'University of California, Berkeley', 'university_of_california_at_berkeley']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['Charles Dickens', 'Charles Dickens', 'charles_dickens']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['Virginia Woolf', 'Virginia Woolf', 'virginia_woolf']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['John Milton', 'John Milton', 'john_milton']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['Ernest Hemingway', 'Ernest Hemingway', 'ernest_hemingway']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['William Shakespeare', 'William Shakespeare', 'william_shakespeare']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  []
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['Henry James', 'Henry James', 'henry_james']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['Arthur Conan Doyle', 'Arthur Conan Doyle', 'arthur_conan_doyle']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['H. Rider Haggard', 'H. Rider Haggard', 'rider_haggard']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  [['Stephen King', 'Stephen King', 'stephen_king']]
+subject_words:  [(None, 'Anne Rice', 'roquelaure')]
+object_words:  []
+subject_words:  []
+object_words:  [['Tom Cruise', 'Tom Cruise', 'tom_cruise']]
+subject_words:  []
+object_words:  [['Brad Pitt', 'Brad Pitt', 'brad_pitt']]
+subject_words:  []
+object_words:  [['Aaliyah', 'Aaliyah', 'aaliyah']]
+subject_words:  []
+object_words:  [['Elton John', 'Elton John', 'elton_john']]
+second_hop:  {'triplet': '("Anne Rice", "was influenced by", "H. Rider Haggard")', 'start word': 'Anne Rice', 'end word': 'H. Rider Haggard', 'source': {'name': 'Anne Rice', 'line': 16}, 'cpnet': {'start word': 'roquelaure', 'end word': 'rider_haggard'}}
+
+utils/question.py extract_hops(H. Rider Haggard, [], ['Tom Cruise', 'Anne Rice']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/H._Rider_Haggard_info.json file
+extract_info(H. Rider Haggard) Start.
+utils/preprocess.py extract_info(): Checking good links on H. Rider Haggard
+Saint Petersburg is Geography
+1 / 30 )  Saint Petersburg Saint Petersburg saint_petersburg
+Garsington is Geography
+2 / 30 )  Garsington Garsington garsington
+Foreign, Commonwealth and Development Office is Geography
+3 / 30 )  British Foreign Office Foreign, Commonwealth and Development Office foreign_office
+Pretoria is Geography
+4 / 30 )  Pretoria Pretoria pretoria
+South African Republic is Geography
+5 / 30 )  Transvaal South African Republic south_african_republic
+Ditchingham is Geography
+6 / 30 )  Ditchingham Ditchingham ditchingham
+Kessingland is Geography
+7 / 30 )  Kessingland Kessingland kessingland
+Bungay is Geography
+8 / 30 )  Bungay, Suffolk Bungay bungay
+Hammersmith is Geography
+9 / 30 )  Hammersmith Hammersmith hammersmith
+Bulawayo is Geography
+10 / 30 )  Bulawayo Bulawayo bulawayo
+Rudyard Kipling is People
+11 / 30 )  Rudyard Kipling Rudyard Kipling rudyard_kipling
+London is Geography
+12 / 30 )  London London london
+Carl Jung is People
+13 / 30 )  Carl Jung Carl Jung carl_jung
+Edgar Rice Burroughs is People
+14 / 30 )  Edgar Rice Burroughs Edgar Rice Burroughs edgar_rice_burroughs
+Robert E. Howard is People
+15 / 30 )  Robert E. Howard Robert E. Howard reh
+Graham Greene is People
+16 / 30 )  Graham Greene Graham Greene graham_greene
+Oxford is Geography
+17 / 30 )  Oxford Oxford oxford
+Robert Louis Stevenson is People
+18 / 30 )  Robert Louis Stevenson Robert Louis Stevenson robert_louis_stevenson
+extract_triplet(H. Rider Haggard)
+Got GPT's response. String length : 2409
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  []
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  []
+subject_words:  []
+object_words:  [['Saint Petersburg', 'Saint Petersburg', 'saint_petersburg']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Garsington', 'Garsington', 'garsington']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['British Foreign Office', 'Foreign, Commonwealth and Development Office', 'foreign_office']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Pretoria', 'Pretoria', 'pretoria']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Transvaal', 'South African Republic', 'south_african_republic']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Pretoria', 'Pretoria', 'pretoria']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Transvaal', 'South African Republic', 'south_african_republic']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  []
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Kessingland', 'Kessingland', 'kessingland']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Bungay, Suffolk', 'Bungay', 'bungay']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Hammersmith', 'Hammersmith', 'hammersmith']]
+subject_words:  []
+object_words:  [['Bulawayo', 'Bulawayo', 'bulawayo']]
+subject_words:  []
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+subject_words:  [['Rudyard Kipling', 'Rudyard Kipling', 'rudyard_kipling']]
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Rudyard Kipling', 'Rudyard Kipling', 'rudyard_kipling']]
+subject_words:  [['Carl Jung', 'Carl Jung', 'carl_jung']]
+object_words:  []
+subject_words:  [['Edgar Rice Burroughs', 'Edgar Rice Burroughs', 'edgar_rice_burroughs']]
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+subject_words:  [['Robert E. Howard', 'Robert E. Howard', 'reh']]
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+subject_words:  [['Graham Greene', 'Graham Greene', 'graham_greene']]
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Robert Louis Stevenson', 'Robert Louis Stevenson', 'robert_louis_stevenson']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Ditchingham', 'Ditchingham', 'ditchingham']]
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+subject_words:  []
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+subject_words:  []
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+object_words:  [['Ditchingham', 'Ditchingham', 'ditchingham']]
+subject_words:  []
+object_words:  [(None, 'H. Rider Haggard', 'rider_haggard')]
+third_hop:  {'triplet': '("H. Rider Haggard", "was present at official announcement in", "Pretoria")', 'start word': 'H. Rider Haggard', 'end word': 'Pretoria', 'source': {'name': 'H. Rider Haggard', 'line': 8}, 'cpnet': {'start word': 'rider_haggard', 'end word': 'pretoria'}}
+generate_question(2_8, ['("Tom Cruise", "performance praised by", "Anne Rice")', '("Anne Rice", "was influenced by", "H. Rider Haggard")', '("H. Rider Haggard", "was present at official announcement in", "Pretoria")'], ['Anne Rice', 'H. Rider Haggard', 'Pretoria'], [('Tom Cruise', 'Anne Rice'), ('Anne Rice', 'H. Rider Haggard'), ('H. Rider Haggard', 'Pretoria')], Pretoria, [{'name': 'Tom Cruise', 'line': 15}, {'name': 'Anne Rice', 'line': 16}, {'name': 'H. Rider Haggard', 'line': 8}]) called
+GPT output is:  Q: In which city was the author, whose work greatly influenced the writer who praised Tom Cruise for his performance, present for an official announcement?
+A: Pretoria
+final_choice(Pretoria, options = 5) started
+[]
+entity_type(Pretoria) called
+Pretoria is Geography
+check_matchscore(Pretoria, 1855 in South Africa):  0.0
+choose_by_wiki_recur(1855 in South Africa)
+   Pages in 1855 in South Africa: ['1855 in South Africa', 'Pretoria']
+   Upper category of 1855 in South Africa: ['1855 by country', 'Years of the 19th century in South Africa', '1850s in South Africa', '1855 in Africa']
+choose_by_wiki_recur(1855 by country)
+check_matchscore(Pretoria, Populated places in the City of Tshwane):  0.0
+choose_by_wiki_recur(Populated places in the City of Tshwane)
+   Pages in Populated places in the City of Tshwane: ['Bronkhorstspruit', 'Centurion, South Africa', 'Cullinan, South Africa', 'Ekangala', 'Ga-Rankuwa', 'Hammanskraal', 'Kleinfontein', 'Mabopane', 'Mamelodi', 'Nuwe Eersterus', 'Onderstepoort', 'Onverwacht, Gauteng', 'Pretoria', 'Rayton', 'Refilwe', 'Rosslyn, South Africa', 'Saulsville', 'Sonskyn Hoekie', 'Soshanguve', 'Temba, South Africa', 'Winterveld', 'Zithobeni']
+      Cullinan, South Africa in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni']
+      Rosslyn, South Africa in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe']
+      Mamelodi in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa']
+      Zithobeni in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus']
+      Refilwe in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville']
+      Centurion, South Africa in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa']
+      Nuwe Eersterus in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort']
+      Saulsville in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit']
+      Temba, South Africa in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie']
+      Onderstepoort in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala']
+      Bronkhorstspruit in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton']
+      Sonskyn Hoekie in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa']
+      Ekangala in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane']
+      Rayton in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein']
+      Ga-Rankuwa in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein', 'Pretoria']
+      Mabopane in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein', 'Pretoria', 'Winterveld']
+      Kleinfontein in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein', 'Pretoria', 'Winterveld', 'Hammanskraal']
+      Pretoria in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein', 'Pretoria', 'Winterveld', 'Hammanskraal', 'Onverwacht, Gauteng']
+      Winterveld in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein', 'Pretoria', 'Winterveld', 'Hammanskraal', 'Onverwacht, Gauteng', 'Soshanguve']
+      Hammanskraal in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein', 'Pretoria', 'Winterveld', 'Hammanskraal', 'Onverwacht, Gauteng', 'Soshanguve']
+      Onverwacht, Gauteng in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein', 'Pretoria', 'Winterveld', 'Hammanskraal', 'Onverwacht, Gauteng', 'Soshanguve']
+      Soshanguve in ['Cullinan, South Africa', 'Rosslyn, South Africa', 'Mamelodi', 'Zithobeni', 'Refilwe', 'Centurion, South Africa', 'Nuwe Eersterus', 'Saulsville', 'Temba, South Africa', 'Onderstepoort', 'Bronkhorstspruit', 'Sonskyn Hoekie', 'Ekangala', 'Rayton', 'Ga-Rankuwa', 'Mabopane', 'Kleinfontein', 'Pretoria', 'Winterveld', 'Hammanskraal', 'Onverwacht, Gauteng', 'Soshanguve']
+   Upper category of Populated places in the City of Tshwane: ['City of Tshwane Metropolitan Municipality', 'Populated places in Gauteng']
+choose_by_wiki_recur(City of Tshwane Metropolitan Municipality)
+check_matchscore(Pretoria, Pretoria):  1.0
+check_matchscore(Pretoria, Geographical naming disputes):  0.0
+choose_by_wiki_recur(Geographical naming disputes)
+   Pages in Geographical naming disputes: ['List of geographical naming disputes', 'Africanization', 'American (word)', 'Busta Rhymes Island', 'Names of Chittagong', 'Name of the Czech Republic', 'Denali–Mount McKinley naming dispute', 'Derry/Londonderry name dispute', 'List of Falkland Islands placenames', 'Gdańsk', 'Geographical renaming', 'Hyphen War', 'Renaming of cities in India', 'Name of Iran', 'Names of the Irish state', 'Judea and Samaria Area', 'Names of Khyber Pakhtunkhwa', 'Macedonia naming dispute', 'Names of Myanmar', 'Names of China', 'Names of the British Isles', 'Names of the Valencian Community', 'Negro Mountain', 'New Zealand Geographic Board', 'New Zealand place names', 'Alternative names for Northern Ireland', 'Persian Gulf naming dispute', 'Persian Gulf Online Organization', 'Pretoria', 'Sea of Japan naming dispute', 'Southern Provinces', 'Taiwan, China', 'West Philippine Sea', 'Whanganui']
+      Judea and Samaria Area in ['Judea and Samaria Area', 'Names of China', 'Derry/Londonderry name dispute', 'Sea of Japan naming dispute']
+      Names of China in ['Judea and Samaria Area', 'Names of China', 'Derry/Londonderry name dispute', 'Sea of Japan naming dispute']
+      Derry/Londonderry name dispute in ['Judea and Samaria Area', 'Names of China', 'Derry/Londonderry name dispute', 'Sea of Japan naming dispute', 'Names of Khyber Pakhtunkhwa']
+      Sea of Japan naming dispute in ['Judea and Samaria Area', 'Names of China', 'Derry/Londonderry name dispute', 'Sea of Japan naming dispute', 'Names of Khyber Pakhtunkhwa']
+      Names of Khyber Pakhtunkhwa in ['Judea and Samaria Area', 'Names of China', 'Derry/Londonderry name dispute', 'Sea of Japan naming dispute', 'Names of Khyber Pakhtunkhwa', 'Macedonia naming dispute']
+      Macedonia naming dispute in ['Judea and Samaria Area', 'Names of China', 'Derry/Londonderry name dispute', 'Sea of Japan naming dispute', 'Names of Khyber Pakhtunkhwa', 'Macedonia naming dispute']
+      Renaming of cities in India in ['Judea and Samaria Area', 'Names of China', 'Derry/Londonderry name dispute', 'Sea of Japan naming dispute', 'Names of Khyber Pakhtunkhwa', 'Macedonia naming dispute', 'Renaming of cities in India']
+      West Philippine Sea in ['Judea and Samaria Area', 'Names of China', 'Derry/Londonderry name dispute', 'Sea of Japan naming dispute', 'Names of Khyber Pakhtunkhwa', 'Macedonia naming dispute', 'Renaming of cities in India', 'West Philippine Sea']
+['Judea and Samaria Area', 'Derry/Londonderry name dispute', 'Names of Khyber Pakhtunkhwa', 'West Philippine Sea']
+Ended after 2.5 hierarchy
+(2.5, ['Derry/Londonderry name dispute', 'West Philippine Sea', 'Names of Khyber Pakhtunkhwa', 'Judea and Samaria Area'])
+
+extract_info(Names of Khyber Pakhtunkhwa) Start.
+utils/preprocess.py extract_info(): Checking good links on Names of Khyber Pakhtunkhwa
+Pakistan is Geography
+1 / 30 )  Pakistani Pakistan pakistan
+Khyber Pakhtunkhwa is Geography
+2 / 30 )  Khyber Pakhtunkhwa Khyber Pakhtunkhwa khyber_pakhtunkhwa
+Nawaz Sharif is People
+3 / 30 )  Nawaz Sharif Nawaz Sharif nawaz_sharif
+Asif Ali Zardari is People
+4 / 30 )  Asif Zardari Asif Ali Zardari asif_ali_zardari
+Khyber Pass is Geography
+5 / 30 )  Khyber Khyber Pass khyber_pass
+Abbottabad is Geography
+6 / 30 )  Abbottabad Abbottabad abbottabad
+Gandhara is Geography
+7 / 30 )  Gandhara Gandhara gandhara
+Taxila is Geography
+8 / 30 )  Taxila Taxila taxila
+Kabul is Geography
+9 / 30 )  Kabul valley Kabul kabul
+Karakoram is Geography
+10 / 30 )  Karakoram Karakoram karakoram
+Peshawar is Geography
+11 / 30 )  Peshawar Peshawar peshawar
+extract_triplet(Names of Khyber Pakhtunkhwa)
+Got GPT's response. String length : 1239
+subject_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+object_words:  [['Pakistani', 'Pakistan', 'pakistan']]
+subject_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+object_words:  []
+subject_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+object_words:  []
+subject_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+object_words:  []
+subject_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+object_words:  []
+subject_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+object_words:  [['Gandhara', 'Gandhara', 'gandhara']]
+subject_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+object_words:  [['Khyber', 'Khyber Pass', 'khyber_pass']]
+subject_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+object_words:  [['Abbottabad', 'Abbottabad', 'abbottabad']]
+subject_words:  [['Gandhara', 'Gandhara', 'gandhara']]
+object_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa'], ['Khyber', 'Khyber Pass', 'khyber_pass']]
+subject_words:  [['Taxila', 'Taxila', 'taxila']]
+object_words:  [['Gandhara', 'Gandhara', 'gandhara']]
+subject_words:  [['Kabul valley', 'Kabul', 'kabul']]
+object_words:  [['Gandhara', 'Gandhara', 'gandhara']]
+subject_words:  [['Karakoram', 'Karakoram', 'karakoram']]
+object_words:  [['Gandhara', 'Gandhara', 'gandhara']]
+subject_words:  [['Peshawar', 'Peshawar', 'peshawar']]
+object_words:  [['Gandhara', 'Gandhara', 'gandhara']]
+subject_words:  [['Nawaz Sharif', 'Nawaz Sharif', 'nawaz_sharif']]
+object_words:  [['Khyber', 'Khyber Pass', 'khyber_pass']]
+subject_words:  [['Asif Zardari', 'Asif Ali Zardari', 'asif_ali_zardari']]
+object_words:  []
+subject_words:  [['Karakoram', 'Karakoram', 'karakoram']]
+object_words:  [['Gandhara', 'Gandhara', 'gandhara']]
+subject_words:  [['Peshawar', 'Peshawar', 'peshawar']]
+object_words:  [['Gandhara', 'Gandhara', 'gandhara']]
+extract_info(West Philippine Sea) Start.
+utils/preprocess.py extract_info(): Checking good links on West Philippine Sea
+South China Sea is Geography
+1 / 30 )  South China Sea South China Sea south_china_sea
+Benigno Aquino III is People
+2 / 30 )  Benigno Aquino III Benigno Aquino III noynoy
+Scarborough Shoal is Geography
+3 / 30 )  Scarborough Shoal Scarborough Shoal scarborough_shoal
+PAGASA is Geography
+4 / 30 )  PAGASA PAGASA pagasa
+Philippine Sea is Geography
+5 / 30 )  Philippine Sea Philippine Sea philippine_sea
+extract_triplet(West Philippine Sea)
+Got GPT's response. String length : 793
+subject_words:  [(None, 'West Philippine Sea', 'west_philippine_sea'), ['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+object_words:  [['South China Sea', 'South China Sea', 'south_china_sea']]
+subject_words:  [(None, 'West Philippine Sea', 'west_philippine_sea'), ['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+object_words:  [['Benigno Aquino III', 'Benigno Aquino III', 'noynoy']]
+subject_words:  [(None, 'West Philippine Sea', 'west_philippine_sea'), ['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+object_words:  [['Scarborough Shoal', 'Scarborough Shoal', 'scarborough_shoal']]
+subject_words:  []
+object_words:  [(None, 'West Philippine Sea', 'west_philippine_sea'), ['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+subject_words:  [['PAGASA', 'PAGASA', 'pagasa']]
+object_words:  [(None, 'West Philippine Sea', 'west_philippine_sea'), ['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+subject_words:  [(None, 'West Philippine Sea', 'west_philippine_sea'), ['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+object_words:  [['South China Sea', 'South China Sea', 'south_china_sea']]
+subject_words:  [(None, 'West Philippine Sea', 'west_philippine_sea'), ['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+object_words:  []
+extract_info(Judea and Samaria Area) Start.
+utils/preprocess.py extract_info(): Checking good links on Judea and Samaria Area
+Israel is Geography
+1 / 30 )  Israel Israel israel
+West Bank is Geography
+2 / 30 )  West Bank West Bank west_bank
+Palestinian Authority is Geography
+3 / 30 )  Palestinian National Authority Palestinian Authority palestine_authority
+Palestinian territories is Geography
+4 / 30 )  Palestinian territories Palestinian territories palestinian_territories
+Judea is Geography
+5 / 30 )  Judea Judea judea
+Samaria is Geography
+6 / 30 )  Samaria Samaria samaria
+Jordan River is Geography
+7 / 30 )  Jordan River Jordan River jordan_river
+Menachem Begin is People
+8 / 30 )  Menachem Begin Menachem Begin menachem_begin
+Jerusalem is Geography
+9 / 30 )  Jerusalem Jerusalem jerusalem
+Jordan is Geography
+10 / 30 )  Jordan Jordan jordan
+International Court of Justice is Geography
+11 / 30 )  International Court of Justice International Court of Justice international_court_of_justice
+Amnesty International is Incident
+12 / 30 )  Amnesty International Amnesty International amnesty_international
+Knesset is Geography
+13 / 30 )  Knesset Knesset knesset
+Benjamin Netanyahu is People
+14 / 30 )  Benjamin Netanyahu Benjamin Netanyahu benjamin_netanyahu
+extract_triplet(Judea and Samaria Area)
+Got GPT's response. String length : 1426
+subject_words:  [(None, 'Judea and Samaria Area', 'judea_and_samaria'), ['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+object_words:  [['Israel', 'Israel', 'israel']]
+subject_words:  [(None, 'Judea and Samaria Area', 'judea_and_samaria'), ['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+object_words:  [['West Bank', 'West Bank', 'west_bank']]
+subject_words:  [(None, 'Judea and Samaria Area', 'judea_and_samaria'), ['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+object_words:  [['Israel', 'Israel', 'israel']]
+subject_words:  [['Jerusalem', 'Jerusalem', 'jerusalem']]
+object_words:  [(None, 'Judea and Samaria Area', 'judea_and_samaria'), ['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria'], ['Jerusalem', 'Jerusalem', 'jerusalem']]
+subject_words:  [['Palestinian National Authority', 'Palestinian Authority', 'palestine_authority']]
+object_words:  []
+subject_words:  [['Palestinian territories', 'Palestinian territories', 'palestinian_territories']]
+object_words:  [['West Bank', 'West Bank', 'west_bank']]
+subject_words:  [['West Bank', 'West Bank', 'west_bank']]
+object_words:  [['Israel', 'Israel', 'israel'], ['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+subject_words:  [['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+object_words:  []
+subject_words:  []
+object_words:  [['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+subject_words:  [['Menachem Begin', 'Menachem Begin', 'menachem_begin']]
+object_words:  [['Israel', 'Israel', 'israel'], ['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+subject_words:  [['Israel', 'Israel', 'israel']]
+object_words:  [['Jerusalem', 'Jerusalem', 'jerusalem']]
+subject_words:  [['International Court of Justice', 'International Court of Justice', 'international_court_of_justice']]
+object_words:  [['West Bank', 'West Bank', 'west_bank'], ['Palestinian territories', 'Palestinian territories', 'palestinian_territories']]
+subject_words:  [['Amnesty International', 'Amnesty International', 'amnesty_international']]
+object_words:  [['West Bank', 'West Bank', 'west_bank'], ['Palestinian territories', 'Palestinian territories', 'palestinian_territories']]
+subject_words:  [['Knesset', 'Knesset', 'knesset']]
+object_words:  [(None, 'Judea and Samaria Area', 'judea_and_samaria'), ['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+subject_words:  [['Benjamin Netanyahu', 'Benjamin Netanyahu', 'benjamin_netanyahu']]
+object_words:  []
+subject_words:  []
+object_words:  [['Judea', 'Judea', 'judea'], ['Samaria', 'Samaria', 'samaria']]
+subject_words:  [['Menachem Begin', 'Menachem Begin', 'menachem_begin']]
+object_words:  [['Israel', 'Israel', 'israel']]
+extract_info(Derry/Londonderry name dispute) Start.

@@ -1,0 +1,1477 @@
+Got argument: Seoul, 1, 1_5
+
+utils/question.py extract_hops(Seoul, [], []) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Seoul_info.json file
+extract_info(Seoul) Start.
+utils/preprocess.py extract_info(): Checking good links on Seoul
+South Korea is Geography
+1 / 30 )  Republic of Korea South Korea south_korea
+Gyeonggi Province is Geography
+2 / 30 )  Gyeonggi province Gyeonggi Province gyeonggi_province
+Incheon is Geography
+3 / 30 )  Incheon Incheon incheon
+Tokyo is Geography
+4 / 30 )  Tokyo Tokyo tokyo
+New York City is Geography
+5 / 30 )  New York City New York City new_york_city
+Los Angeles is Geography
+6 / 30 )  Los Angeles Los Angeles los_angeles
+Joseon is Geography
+7 / 30 )  Joseon Joseon joseon
+Empire of Japan is Geography
+8 / 30 )  Japanese Empire Empire of Japan empire_of_japan
+Goguryeo is Geography
+9 / 30 )  Goguryeo Goguryeo goguryeo
+Goryeo is Geography
+10 / 30 )  Goryeo Goryeo goryeo
+Korean Empire is Geography
+11 / 30 )  Korean Empire Korean Empire korean_empire
+Busan is Geography
+12 / 30 )  Busan Busan busan
+Park Chung Hee is People
+13 / 30 )  Park Park Chung Hee park_chung_hee
+Namsan Mountain is Geography
+14 / 30 )  Namsan Namsan Mountain namsan
+World Health Organization is Geography
+15 / 30 )  World Health Organization World Health Organization world_health_organization
+Rome is Geography
+16 / 30 )  Rome Rome rome
+Paris is Geography
+17 / 30 )  Paris Paris paris
+China is Geography
+18 / 30 )  Chinese China china
+Seoul National University is Geography
+19 / 30 )  Seoul National University Seoul National University seoul_national_university
+Gangnam District is Geography
+20 / 30 )  Gangnam district Gangnam District gangnam_district
+Times Square is Geography
+21 / 30 )  Times Square Times Square times_square
+Seoul Museum of Art is Geography
+22 / 30 )  Seoul Museum of Art Seoul Museum of Art sema
+South Chungcheong Province is Geography
+23 / 30 )  Chungnam South Chungcheong Province south_chungcheong_province
+Haneda Airport is Geography
+24 / 30 )  Tokyo Haneda Haneda Airport haneda_airport
+Shanghai Hongqiao International Airport is Geography
+25 / 30 )  Shanghai Hongqiao Shanghai Hongqiao International Airport hongqiao_airport
+Beijing Capital International Airport is Geography
+26 / 30 )  Beijing Capital Beijing Capital International Airport beijing_capital_international_airport
+extract_triplet(Seoul)
+Got GPT's response. String length : 1273
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Republic of Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Gyeonggi province', 'Gyeonggi Province', 'gyeonggi_province']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Republic of Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Incheon', 'Incheon', 'incheon']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Los Angeles', 'Los Angeles', 'los_angeles']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  []
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Joseon', 'Joseon', 'joseon']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Japanese Empire', 'Empire of Japan', 'empire_of_japan']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  []
+['', 'Seoul', 'was the capital of', 'Goguryeo', 'at some point', '']
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Goryeo', 'Goryeo', 'goryeo']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Korean Empire', 'Korean Empire', 'korean_empire']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Namsan', 'Namsan Mountain', 'namsan']]
+subject_words:  [(None, 'Seoul', 'seoul'), ['Seoul National University', 'Seoul National University', 'seoul_national_university']]
+object_words:  [(None, 'Seoul', 'seoul')]
+subject_words:  [['Gangnam district', 'Gangnam District', 'gangnam_district']]
+object_words:  [(None, 'Seoul', 'seoul')]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Times Square', 'Times Square', 'times_square']]
+subject_words:  [(None, 'Seoul', 'seoul'), ['Seoul Museum of Art', 'Seoul Museum of Art', 'sema']]
+object_words:  [(None, 'Seoul', 'seoul')]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Chungnam', 'South Chungcheong Province', 'south_chungcheong_province']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Tokyo', 'Tokyo', 'tokyo'], ['Tokyo Haneda', 'Haneda Airport', 'haneda_airport']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Shanghai Hongqiao', 'Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+subject_words:  [(None, 'Seoul', 'seoul')]
+object_words:  [['Beijing Capital', 'Beijing Capital International Airport', 'beijing_capital_international_airport']]
+first_hop:  {'triplet': '("Seoul", "has regular flights to", "Tokyo Haneda")', 'start word': 'Seoul', 'end word': 'Haneda Airport', 'source': {'name': 'Seoul', 'line': 18}, 'cpnet': {'start word': 'seoul', 'end word': 'haneda_airport'}}
+next_word: Haneda Airport
+
+utils/question.py extract_hops(Haneda Airport, [], ['Seoul']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Haneda_Airport_info.json file
+extract_info(Haneda Airport) Start.
+utils/preprocess.py extract_info(): Checking good links on Haneda Airport
+Greater Tokyo Area is Geography
+1 / 30 )  Greater Tokyo Area Greater Tokyo Area mobile_suica
+Tokyo is Geography
+2 / 30 )  Tokyo Tokyo tokyo
+Singapore is Geography
+3 / 30 )  Singapore Singapore singapore
+Qatar is Geography
+4 / 30 )  Qatar Qatar qatar
+Tokyo Bay is Geography
+5 / 30 )  Tokyo Bay Tokyo Bay tokyo_bay
+Dalian is Geography
+6 / 30 )  Dalian Dalian dalian
+Taiwan is Geography
+7 / 30 )  Taiwan Taiwan taiwan
+Korea is Geography
+8 / 30 )  Korea Korea korea
+Manchuria is Geography
+9 / 30 )  Manchuria Manchuria manchuria
+Changchun is Geography
+10 / 30 )  Xinjing Changchun changchun
+Kōtō is Geography
+11 / 30 )  Koto Ward Kōtō kōtō
+Berlin is Geography
+12 / 30 )  Berlin Berlin berlin
+Douglas MacArthur is People
+13 / 30 )  Douglas MacArthur Douglas MacArthur douglas_macarthur
+Tokyo Stock Exchange is Geography
+14 / 30 )  TYO Tokyo Stock Exchange tokyo_stock_exchange
+Copenhagen is Geography
+15 / 30 )  Copenhagen Copenhagen copenhagen
+Anchorage, Alaska is Geography
+16 / 30 )  Anchorage Anchorage, Alaska anchorage
+China is Geography
+17 / 30 )  People's Republic of China China china
+Taipei is Geography
+18 / 30 )  Taipei Taipei taipei
+Honolulu is Geography
+19 / 30 )  Honolulu Honolulu honolulu
+Seoul is Geography
+20 / 30 )  Seoul Seoul seoul
+Shinzo Abe is People
+21 / 30 )  Shinzo Abe Shinzo Abe abe_shinzo
+Wen Jiabao is People
+22 / 30 )  Wen Jiabao Wen Jiabao wen_jiabao
+Shanghai Hongqiao International Airport is Geography
+23 / 30 )  Shanghai Hongqiao International Airport Shanghai Hongqiao International Airport hongqiao_airport
+Shanghai Pudong International Airport is Geography
+24 / 30 )  Shanghai Pudong International Airport Shanghai Pudong International Airport pudong_airport
+Beijing Nanyuan Airport is Geography
+25 / 30 )  Beijing Nanyuan Airport Beijing Nanyuan Airport beijing_nanyuan_airport
+Beijing Capital International Airport is Geography
+26 / 30 )  Beijing Capital International Airport Beijing Capital International Airport beijing_capital_international_airport
+Vancouver is Geography
+27 / 30 )  Vancouver Vancouver vancouver
+Detroit is Geography
+28 / 30 )  Detroit Detroit detroit
+Seattle is Geography
+29 / 30 )  Seattle Seattle seattle
+Los Angeles is Geography
+30 / 30 )  Los Angeles Los Angeles los_angeles
+extract_triplet(Haneda Airport)
+Got GPT's response. String length : 5396
+subject_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+object_words:  [['Greater Tokyo Area', 'Greater Tokyo Area', 'mobile_suica'], ['Tokyo', 'Tokyo', 'tokyo']]
+subject_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+object_words:  []
+subject_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+object_words:  []
+subject_words:  []
+object_words:  [['Tokyo', 'Tokyo', 'tokyo']]
+subject_words:  []
+object_words:  [['Tokyo', 'Tokyo', 'tokyo']]
+subject_words:  []
+object_words:  [['Tokyo', 'Tokyo', 'tokyo']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+object_words:  []
+subject_words:  []
+object_words:  [['Manchuria', 'Manchuria', 'manchuria']]
+subject_words:  []
+object_words:  [['Koto Ward', 'Kōtō', 'kōtō']]
+subject_words:  [['Douglas MacArthur', 'Douglas MacArthur', 'douglas_macarthur']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Anchorage', 'Anchorage, Alaska', 'anchorage']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [["People's Republic of China", 'China', 'china']]
+object_words:  [['Taipei', 'Taipei', 'taipei'], ['Honolulu', 'Honolulu', 'honolulu']]
+subject_words:  []
+object_words:  []
+subject_words:  [["People's Republic of China", 'China', 'china']]
+object_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+subject_words:  [["People's Republic of China", 'China', 'china']]
+object_words:  [["People's Republic of China", 'China', 'china']]
+subject_words:  [['Shinzo Abe', 'Shinzo Abe', 'abe_shinzo']]
+object_words:  [['Shanghai Hongqiao International Airport', 'Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+subject_words:  [['Wen Jiabao', 'Wen Jiabao', 'wen_jiabao']]
+object_words:  [['Shanghai Hongqiao International Airport', 'Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Seattle', 'Seattle', 'seattle']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+['', 'Haneda flights depart and arrive using circular routes over', 'Tokyo Bay', '']
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+object_words:  [['Tokyo', 'Tokyo', 'tokyo']]
+subject_words:  [(None, 'Haneda Airport', 'haneda_airport')]
+object_words:  []
+subject_words:  []
+object_words:  []
+generate_question(1_5, ['("Seoul", "has regular flights to", "Tokyo Haneda")', '("Republic of China", "used", "Haneda Airport")'], ['Haneda Airport', 'China'], [('Seoul', 'Haneda Airport'), ('Haneda Airport', 'China')], China, [{'name': 'Seoul', 'line': 18}, {'name': 'Haneda Airport', 'line': 25}]) called
+GPT output is:  Q: Which nation, formerly known as the Republic that regularly operates flights to the airport in Tokyo that receives flights from Seoul?
+A: China
+final_choice(China, options = 5) started
+[]
+entity_type(China) called
+China is Geography
+check_matchscore(China, Cradle of civilization):  0.0
+choose_by_wiki_recur(Cradle of civilization)
+   Pages in Cradle of civilization: ['Cradle of civilization', 'Ancient Egypt', 'China', 'Fertile Crescent', 'Indus Valley Civilisation', 'Peru']
+      China in ['China', 'Indus Valley Civilisation', 'Peru', 'Fertile Crescent']
+      Indus Valley Civilisation in ['China', 'Indus Valley Civilisation', 'Peru', 'Fertile Crescent', 'Ancient Egypt']
+      Peru in ['China', 'Indus Valley Civilisation', 'Peru', 'Fertile Crescent', 'Ancient Egypt']
+      Fertile Crescent in ['China', 'Indus Valley Civilisation', 'Peru', 'Fertile Crescent', 'Ancient Egypt']
+      Ancient Egypt in ['China', 'Indus Valley Civilisation', 'Peru', 'Fertile Crescent', 'Ancient Egypt']
+['Indus Valley Civilisation', 'Peru', 'Fertile Crescent', 'Ancient Egypt']
+Ended after 2.5 hierarchy
+(2.5, ['Ancient Egypt', 'Fertile Crescent', 'Indus Valley Civilisation', 'Peru'])
+
+extract_info(Peru) Start.
+utils/preprocess.py extract_info(): Checking good links on Peru
+Ecuador is Geography
+1 / 30 )  Ecuador Ecuador ecuador
+Colombia is Geography
+2 / 30 )  Colombia Colombia colombia
+Brazil is Geography
+3 / 30 )  Brazil Brazil brazil
+Bolivia is Geography
+4 / 30 )  Bolivia Bolivia bolivia
+Chile is Geography
+5 / 30 )  Chile Chile chile
+Andes is Geography
+6 / 30 )  Andes Andes andes
+Amazon basin is Geography
+7 / 30 )  Amazon basin Amazon basin amazon_basin
+Amazon River is Geography
+8 / 30 )  Amazon River Amazon River amazon_river
+Lima is Geography
+9 / 30 )  Lima Lima lima
+Simón Bolívar is People
+10 / 30 )  Simón Bolívar Simón Bolívar bolívar
+World Trade Organization is Geography
+11 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+Francisco Pizarro is People
+12 / 30 )  Francisco Pizarro Francisco Pizarro francisco_pizarro
+Camelidae is Animal
+13 / 30 )  camelid Camelidae camelidae
+Lake Titicaca is Geography
+14 / 30 )  Lake Titicaca Lake Titicaca lake_titicaca
+Ayacucho is Geography
+15 / 30 )  Ayacucho Ayacucho ayacucho
+Cusco is Geography
+16 / 30 )  Cusco Cusco cusco
+Buenos Aires is Geography
+17 / 30 )  Buenos Aires Buenos Aires buenos_aires
+Bogotá is Geography
+18 / 30 )  Bogotá Bogotá bogotá
+Guayaquil is Geography
+19 / 30 )  Guayaquil Guayaquil guayaquil
+Error: Expecting value: line 1 column 1 (char 0)
+United States is Geography
+20 / 30 )  United States United States united_states
+Augusto Pinochet is People
+21 / 30 )  general Pinochet Augusto Pinochet augusto_pinochet
+Túpac Amaru Revolutionary Movement is Incident
+22 / 30 )  MRTA Túpac Amaru Revolutionary Movement tupac_amaru_revolutionary_movement
+Alejandro Toledo is People
+23 / 30 )  Alejandro Toledo Alejandro Toledo alejandro_toledo
+Union of South American Nations is Geography
+24 / 30 )  Union of South American Nations Union of South American Nations usan
+Mexico is Geography
+25 / 30 )  Mexican Mexico mexico
+Organization of American States is Geography
+26 / 30 )  Organization of American States Organization of American States organization_of_american_states
+Southern Hemisphere is Geography
+27 / 30 )  Southern Hemisphere Southern Hemisphere southern_hemisphere
+Equator is Geography
+28 / 30 )  equator Equator equator
+Altiplano is Geography
+29 / 30 )  Altiplano Altiplano altiplano
+Huascarán is Geography
+30 / 30 )  Huascarán Huascarán huascaran
+extract_triplet(Peru)
+Got GPT's response. String length : 1923
+['Here are the triplets based on the provided text and keywords:']
+subject_words:  [(None, 'Peru', 'peru')]
+object_words:  [['Ecuador', 'Ecuador', 'ecuador']]
+subject_words:  [(None, 'Peru', 'peru')]
+object_words:  [['Colombia', 'Colombia', 'colombia']]
+subject_words:  [(None, 'Peru', 'peru')]
+object_words:  [['Brazil', 'Brazil', 'brazil']]
+subject_words:  [(None, 'Peru', 'peru')]
+object_words:  [['Bolivia', 'Bolivia', 'bolivia']]
+subject_words:  [(None, 'Peru', 'peru')]
+object_words:  [['Chile', 'Chile', 'chile']]
+subject_words:  [['Andes', 'Andes', 'andes']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Amazon River', 'Amazon River', 'amazon_river']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Lima', 'Lima', 'lima']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Simón Bolívar', 'Simón Bolívar', 'bolívar']]
+object_words:  [(None, 'Peru', 'peru')]
+['', 'The World Trade Organization', 'counts Peru as a member', '']
+subject_words:  [['Francisco Pizarro', 'Francisco Pizarro', 'francisco_pizarro']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['camelid', 'Camelidae', 'camelidae']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Lake Titicaca', 'Lake Titicaca', 'lake_titicaca']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Ayacucho', 'Ayacucho', 'ayacucho']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Cusco', 'Cusco', 'cusco']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Buenos Aires', 'Buenos Aires', 'buenos_aires'], ['Bogotá', 'Bogotá', 'bogotá']]
+object_words:  [(None, 'Peru', 'peru'), ['Lima', 'Lima', 'lima']]
+subject_words:  [['Guayaquil', 'Guayaquil', 'guayaquil']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  []
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['MRTA', 'Túpac Amaru Revolutionary Movement', 'tupac_amaru_revolutionary_movement']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Alejandro Toledo', 'Alejandro Toledo', 'alejandro_toledo']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Union of South American Nations', 'Union of South American Nations', 'usan']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Mexican', 'Mexico', 'mexico']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Organization of American States', 'Organization of American States', 'organization_of_american_states']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Southern Hemisphere', 'Southern Hemisphere', 'southern_hemisphere']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['equator', 'Equator', 'equator']]
+object_words:  [(None, 'Peru', 'peru')]
+subject_words:  [['Altiplano', 'Altiplano', 'altiplano'], ['Huascarán', 'Huascarán', 'huascaran']]
+object_words:  [(None, 'Peru', 'peru')]
+extract_info(Fertile Crescent) Start.
+utils/preprocess.py extract_info(): Checking good links on Fertile Crescent
+Middle East is Geography
+1 / 30 )  Middle East Middle East middle_east
+Iraq is Geography
+2 / 30 )  Iraq Iraq iraq
+Israel is Geography
+3 / 30 )  Israel Israel israel
+Jordan is Geography
+4 / 30 )  Jordan Jordan jordan
+Lebanon is Geography
+5 / 30 )  Lebanon Lebanon lebanon
+State of Palestine is Geography
+6 / 30 )  Palestine State of Palestine state_of_palestine
+Syria is Geography
+7 / 30 )  Syria Syria syria
+Kuwait is Geography
+8 / 30 )  Kuwait Kuwait kuwait
+Turkey is Geography
+9 / 30 )  Turkey Turkey turkey
+Iran is Geography
+10 / 30 )  Iran Iran iran
+Cyprus is Geography
+11 / 30 )  Cyprus Cyprus cyprus
+Egypt is Geography
+12 / 30 )  Egypt Egypt egypt
+Sumer is Geography
+13 / 30 )  Sumer Sumer sumer
+Alfred Thayer Mahan is People
+14 / 30 )  Alfred Thayer Mahan's Alfred Thayer Mahan alfred_thayer_mahan
+Tigris is Geography
+15 / 30 )  Tigris Tigris tigris
+Euphrates is Geography
+16 / 30 )  Euphrates Euphrates euphrates
+Jordan River is Geography
+17 / 30 )  Jordan River Jordan River jordan_river
+Syrian Desert is Geography
+18 / 30 )  Syrian Desert Syrian Desert syrian_desert
+Anatolia is Geography
+19 / 30 )  Anatolian Anatolia anatolia
+Armenian highlands is Geography
+20 / 30 )  Armenian highlands Armenian highlands armenian_plateau
+Sahara is Geography
+21 / 30 )  Sahara Desert Sahara sahara
+Sudan is Geography
+22 / 30 )  Sudan Sudan sudan
+Iranian Plateau is Geography
+23 / 30 )  Iranian plateau Iranian Plateau iranian_plateau
+Eurasia is Geography
+24 / 30 )  Eurasia Eurasia eurasia
+Mediterranean Sea is Geography
+25 / 30 )  Mediterranean Sea Mediterranean Sea mediterranean_sea
+Cattle is Animal
+26 / 30 )  cows Cattle cattle
+Goat is Animal
+27 / 30 )  goats Goat goat
+Sheep is Animal
+28 / 30 )  sheep Sheep sheep
+Pig is Animal
+29 / 30 )  pigs Pig pig
+Horse is Animal
+30 / 30 )  horse Horse horse
+extract_triplet(Fertile Crescent)
+Got GPT's response. String length : 2742
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Middle East', 'Middle East', 'middle_east']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Syria', 'Syria', 'syria']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Kuwait', 'Kuwait', 'kuwait']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Turkey', 'Turkey', 'turkey']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Iran', 'Iran', 'iran']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Cyprus', 'Cyprus', 'cyprus'], ['Egypt', 'Egypt', 'egypt']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  []
+subject_words:  [['Sumer', 'Sumer', 'sumer']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Tigris', 'Tigris', 'tigris'], ['Euphrates', 'Euphrates', 'euphrates']]
+subject_words:  [['Jordan', 'Jordan', 'jordan'], ['Jordan River', 'Jordan River', 'jordan_river']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [['Syrian Desert', 'Syrian Desert', 'syrian_desert']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [['Anatolian', 'Anatolia', 'anatolia']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [['Armenian highlands', 'Armenian highlands', 'armenian_plateau']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [['Sahara Desert', 'Sahara', 'sahara']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [['Sudan', 'Sudan', 'sudan']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [['Iranian plateau', 'Iranian Plateau', 'iranian_plateau']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Eurasia', 'Eurasia', 'eurasia']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Mediterranean Sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['cows', 'Cattle', 'cattle']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['goats', 'Goat', 'goat']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['sheep', 'Sheep', 'sheep']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['pigs', 'Pig', 'pig']]
+subject_words:  [['horse', 'Horse', 'horse']]
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Jordan', 'Jordan', 'jordan'], ['Euphrates', 'Euphrates', 'euphrates']]
+subject_words:  []
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  []
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  []
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  [['Jordan', 'Jordan', 'jordan']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  []
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  []
+subject_words:  []
+object_words:  [['Iraq', 'Iraq', 'iraq']]
+subject_words:  []
+object_words:  [['Iran', 'Iran', 'iran']]
+subject_words:  [(None, 'Fertile Crescent', 'fertile_crescent')]
+object_words:  []
+extract_info(Indus Valley Civilisation) Start.
+utils/preprocess.py extract_info(): Checking good links on Indus Valley Civilisation
+Near East is Geography
+1 / 30 )  Near East Near East near_east
+Pakistan is Geography
+2 / 30 )  Pakistan Pakistan pakistan
+Afghanistan is Geography
+3 / 30 )  Afghanistan Afghanistan afghanistan
+Indus River is Geography
+4 / 30 )  Indus River Indus River indus_river
+Harappa is Geography
+5 / 30 )  Harappa Harappa harappa
+Mohenjo-daro is Geography
+6 / 30 )  Mohenjo-daro Mohenjo-daro moenjo_daro
+Balochistan is Geography
+7 / 30 )  Balochistan Balochistan balochistan
+Punjab is Geography
+8 / 30 )  Punjab region Punjab punjab
+Gujarat is Geography
+9 / 30 )  Gujarat Gujarat gujarat
+Haryana is Geography
+10 / 30 )  Haryana Haryana haryana
+Nile is Geography
+11 / 30 )  Nile Nile nile
+Euphrates is Geography
+12 / 30 )  Euphrates Euphrates euphrates
+Tigris is Geography
+13 / 30 )  Tigris Tigris tigris
+China is Geography
+14 / 30 )  China China china
+Yellow River is Geography
+15 / 30 )  Yellow River Yellow River yellow_river
+Yangtze is Geography
+16 / 30 )  Yangtze Yangtze yangtze
+Uttar Pradesh is Geography
+17 / 30 )  Uttar Pradesh Uttar Pradesh uttar_pradesh
+Rajasthan is Geography
+18 / 30 )  Rajasthan Rajasthan rajasthan
+Sindh is Geography
+19 / 30 )  Sindh Sindh sindh
+Amu Darya is Geography
+20 / 30 )  Oxus River Amu Darya amu_darya
+Jammu is Geography
+21 / 30 )  Jammu Jammu jammu
+Maharashtra is Geography
+22 / 30 )  Maharashtra Maharashtra maharashtra
+Multan is Geography
+23 / 30 )  Multan Multan multan
+Lahore is Geography
+24 / 30 )  Lahore Lahore lahore
+Heinrich Schliemann is People
+25 / 30 )  Schliemann Heinrich Schliemann heinrich_schliemann
+Mycenae is Geography
+26 / 30 )  Mycenae Mycenae mycenae
+Mortimer Wheeler is People
+27 / 30 )  Mortimer Wheeler Mortimer Wheeler sir_mortimer_wheeler
+RWTH Aachen University is Geography
+28 / 30 )  Aachen RWTH Aachen University rwth_aachen_university
+Pea is Animal
+29 / 30 )  peas Pea pea
+Sesame is Animal
+30 / 30 )  sesame seeds Sesame sesame
+extract_triplet(Indus Valley Civilisation)
+Got GPT's response. String length : 2416
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  []
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  []
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Near East', 'Near East', 'near_east']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Pakistan', 'Pakistan', 'pakistan']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Indus River', 'Indus River', 'indus_river']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Indus River', 'Indus River', 'indus_river']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Harappa', 'Harappa', 'harappa']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  []
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Balochistan', 'Balochistan', 'balochistan'], ['Uttar Pradesh', 'Uttar Pradesh', 'uttar_pradesh']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Rajasthan', 'Rajasthan', 'rajasthan']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Sindh', 'Sindh', 'sindh']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Oxus River', 'Amu Darya', 'amu_darya']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Gujarat', 'Gujarat', 'gujarat']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Haryana', 'Haryana', 'haryana']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Tigris', 'Tigris', 'tigris']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['China', 'China', 'china'], ['Yellow River', 'Yellow River', 'yellow_river'], ['Yangtze', 'Yangtze', 'yangtze']]
+subject_words:  []
+object_words:  [['Indus River', 'Indus River', 'indus_river']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Tigris', 'Tigris', 'tigris']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Yellow River', 'Yellow River', 'yellow_river'], ['Yangtze', 'Yangtze', 'yangtze']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  []
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['Balochistan', 'Balochistan', 'balochistan']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['peas', 'Pea', 'pea']]
+subject_words:  [(None, 'Indus Valley Civilisation', 'indus_civilization')]
+object_words:  [['sesame seeds', 'Sesame', 'sesame']]
+extract_info(Ancient Egypt) Start.
+utils/preprocess.py extract_info(): Checking good links on Ancient Egypt
+Nile is Geography
+1 / 30 )  Nile River Nile nile
+Egypt is Geography
+2 / 30 )  Egypt Egypt egypt
+Egyptian pyramids is Geography
+3 / 30 )  pyramids Egyptian pyramids egyptian_pyramids
+Pleistocene is Geography
+4 / 30 )  Middle Pleistocene Pleistocene pleistocene
+Ungulate is Animal
+5 / 30 )  ungulates Ungulate ungulate
+Anseriformes is Animal
+6 / 30 )  waterfowl Anseriformes anseriformes
+Nile Delta is Geography
+7 / 30 )  Nile Nile Delta pelusiac
+Libyan Desert is Geography
+8 / 30 )  western desert Libyan Desert libyan_desert
+Near East is Geography
+9 / 30 )  Near East Near East near_east
+Sumer is Geography
+10 / 30 )  Sumerian Sumer sumer
+Akkadian Empire is Geography
+11 / 30 )  Akkadian Akkadian Empire akkadian_empire
+Elam is Geography
+12 / 30 )  Elam Elam elam
+Giza pyramid complex is Geography
+13 / 30 )  Giza pyramids Giza pyramid complex great_pyramids
+Great Sphinx of Giza is Geography
+14 / 30 )  Great Sphinx Great Sphinx of Giza great_sphinx
+Canaan is Geography
+15 / 30 )  Canaanite Canaan canaan
+Syria is Geography
+16 / 30 )  Syria Syria syria
+Karnak is Geography
+17 / 30 )  Karnak Karnak karnak
+Aegean Sea is Geography
+18 / 30 )  Aegean Sea Aegean Sea aegean_sea
+Tanis is Geography
+19 / 30 )  Tanis Tanis tanis
+Leontopolis is Geography
+20 / 30 )  Leontopolis Leontopolis leontopolis
+Naucratis is Geography
+21 / 30 )  Naucratis Naucratis naucratis
+Sais, Egypt is Geography
+22 / 30 )  Sais Sais, Egypt sais
+Cyprus is Geography
+23 / 30 )  Cyprus Cyprus cyprus
+Phoenicia is Geography
+24 / 30 )  Phoenicia Phoenicia phoenicia
+Alexandria is Geography
+25 / 30 )  Alexandria Alexandria alexandria
+Mark Antony is People
+26 / 30 )  Mark Antony Mark Antony mark_antony
+Augustus is People
+27 / 30 )  Octavian Augustus augustus
+Diocletian is People
+28 / 30 )  Diocletian Diocletian diocletian
+Theodosius I is People
+29 / 30 )  Theodosius Theodosius I theodosius_i
+Constantinople is Geography
+30 / 30 )  Constantinople Constantinople constantinople
+extract_triplet(Ancient Egypt)
+Got GPT's response. String length : 3354
+subject_words:  [(None, 'Ancient Egypt', 'ancient_egypt'), ['Egypt', 'Egypt', 'egypt']]
+object_words:  []
+subject_words:  [(None, 'Ancient Egypt', 'ancient_egypt'), ['Egypt', 'Egypt', 'egypt']]
+object_words:  []
+subject_words:  [(None, 'Ancient Egypt', 'ancient_egypt'), ['Egypt', 'Egypt', 'egypt']]
+object_words:  [['Nile River', 'Nile', 'nile'], ['Nile', 'Nile Delta', 'pelusiac']]
+subject_words:  [(None, 'Ancient Egypt', 'ancient_egypt'), ['Egypt', 'Egypt', 'egypt']]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [(None, 'Ancient Egypt', 'ancient_egypt'), ['Egypt', 'Egypt', 'egypt']]
+object_words:  []
+subject_words:  [['Nile River', 'Nile', 'nile'], ['Nile', 'Nile Delta', 'pelusiac']]
+object_words:  []
+subject_words:  [['Middle Pleistocene', 'Pleistocene', 'pleistocene']]
+object_words:  [['Nile River', 'Nile', 'nile'], ['Nile', 'Nile Delta', 'pelusiac']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Ancient Egypt', 'ancient_egypt')]
+object_words:  [['Nile River', 'Nile', 'nile'], ['Nile', 'Nile Delta', 'pelusiac']]
+subject_words:  [['Nile River', 'Nile', 'nile'], ['Nile', 'Nile Delta', 'pelusiac']]
+object_words:  [['waterfowl', 'Anseriformes', 'anseriformes']]
+subject_words:  []
+object_words:  []
+subject_words:  [['ungulates', 'Ungulate', 'ungulate']]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [['western desert', 'Libyan Desert', 'libyan_desert']]
+object_words:  []
+subject_words:  [(None, 'Ancient Egypt', 'ancient_egypt')]
+object_words:  []
+subject_words:  [(None, 'Ancient Egypt', 'ancient_egypt')]
+object_words:  []
+subject_words:  [['Egypt', 'Egypt', 'egypt']]
+object_words:  []
+subject_words:  [['Near East', 'Near East', 'near_east']]
+object_words:  [(None, 'Ancient Egypt', 'ancient_egypt'), ['Egypt', 'Egypt', 'egypt']]
+subject_words:  [['Sumerian', 'Sumer', 'sumer'], ['Akkadian', 'Akkadian Empire', 'akkadian_empire']]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [['Akkadian', 'Akkadian Empire', 'akkadian_empire']]
+object_words:  [(None, 'Ancient Egypt', 'ancient_egypt'), ['Egypt', 'Egypt', 'egypt']]
+subject_words:  [['Elam', 'Elam', 'elam']]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [['pyramids', 'Egyptian pyramids', 'egyptian_pyramids'], ['Giza pyramids', 'Giza pyramid complex', 'great_pyramids']]
+object_words:  []
+subject_words:  [['Great Sphinx', 'Great Sphinx of Giza', 'great_sphinx']]
+object_words:  []
+subject_words:  [['Canaanite', 'Canaan', 'canaan']]
+object_words:  []
+subject_words:  [['Syria', 'Syria', 'syria']]
+object_words:  [(None, 'Ancient Egypt', 'ancient_egypt'), ['Egypt', 'Egypt', 'egypt']]
+['', 'Karnak temple', 'is the largest Egyptian temple ever built', '']
+subject_words:  [['Aegean Sea', 'Aegean Sea', 'aegean_sea']]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [['Tanis', 'Tanis', 'tanis']]
+object_words:  []
+subject_words:  [['Leontopolis', 'Leontopolis', 'leontopolis']]
+object_words:  []
+subject_words:  [['Naucratis', 'Naucratis', 'naucratis']]
+object_words:  [['Nile River', 'Nile', 'nile'], ['Nile', 'Nile Delta', 'pelusiac']]
+subject_words:  [['Sais', 'Sais, Egypt', 'sais']]
+object_words:  []
+subject_words:  [['Cyprus', 'Cyprus', 'cyprus'], ['Phoenicia', 'Phoenicia', 'phoenicia']]
+object_words:  []
+subject_words:  [['Alexandria', 'Alexandria', 'alexandria']]
+object_words:  []
+subject_words:  [['Mark Antony', 'Mark Antony', 'mark_antony']]
+object_words:  [['Octavian', 'Augustus', 'augustus']]
+subject_words:  [['Octavian', 'Augustus', 'augustus']]
+object_words:  []
+subject_words:  [['Constantinople', 'Constantinople', 'constantinople']]
+object_words:  []
+['("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Republic of China", "used", "Haneda Airport")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Peru", "is bordered by", "Ecuador")\n', '("Peru", "is bordered by", "Colombia")\n', '("Peru", "is bordered by", "Brazil")\n', '("Peru", "is bordered by", "Bolivia")\n', '("Peru", "is bordered by", "Chile")\n', '("The Andes mountains", "extend from the north to the southeast of", "Peru")\n', '("The Amazon River", "runs through the tropical Amazon basin in the east of", "Peru")\n', '("Lima", "is the capital and largest city of", "Peru")\n', '("Simón Bolívar", "and José de San Martín", "played roles in Peru\'s independence")\n', '("Francisco Pizarro", "conquered the region known as", "Peru")\n', '("The camelid", "was an important part of", "Andean societies in Peru")\n', '("Lake Titicaca", "is located in", "Peru")\n', '("Ayacucho", "is near the large urban settlement and wide-ranging state system developed by", "the Wari culture in Peru")\n', '("Cusco", "was the capital of", "the Inca Empire in Peru")\n', '("Buenos Aires and Bogotá", "gained prominence over", "Lima after the creation of new viceroyalties reduced the power of the Viceroyalty of Peru")\n', '("Guayaquil", "was occupied by rebel forces during the liberation movement of", "Peru")\n', '("The United States", "is a major trade partner of", "Peru")\n', '("General Pinochet\'s", "coup d\'état prompted tense relations with", "Peru")\n', '("The MRTA", "was one of the guerrilla groups in conflict with the state of", "Peru")\n', '("Alejandro Toledo", "became president of", "Peru")\n', '("The Union of South American Nations", "includes", "Peru")\n', '("Mexican", "governor Don Sebastian Hurtado de Corcuera was responsible for settling Zamboanga City employing", "Peruvian soldiers")\n', '("The Organization of American States", "includes", "Peru as a member")\n', '("The Southern Hemisphere", "contains the entire territory of", "Peru")\n', '("The equator", "is north of", "Peru")\n', '("The Altiplano plateau and Huascarán", "are located in", "Peru")\n', '("Fertile Crescent", "is a region in", "the Middle East")\n', '("Fertile Crescent", "spans", "Iraq, Israel, Jordan, Lebanon, Palestine, and Syria")\n', '("Fertile Crescent", "includes", "northern Kuwait")\n', '("Fertile Crescent", "spans", "south-eastern Turkey")\n', '("Fertile Crescent", "spans", "western Iran")\n', '("Fertile Crescent", "includes", "Cyprus and northern Egypt according to some authors")\n', '("Fertile Crescent", "was the first region for", "settled farming")\n', '("Sumer", "flourished in", "the Fertile Crescent")\n', '("Fertile Crescent", "witnessed the development of", "agriculture and use of irrigation")\n', '("James Henry Breasted", "popularized the term", "Fertile Crescent")\n', '("Fertile Crescent", "includes", "Tigris and Euphrates rivers")\n', '("Jordan River", "is a riverwater source in", "the Fertile Crescent")\n', '("Syrian Desert", "delimits the inner boundary of", "the Fertile Crescent")\n', '("Anatolian highlands", "are around the outer boundary of", "the Fertile Crescent")\n', '("Armenian highlands", "are around the outer boundary of", "the Fertile Crescent")\n', '("Sahara Desert", "is to the west of", "the Fertile Crescent")\n', '("Sudan", "is to the south of", "the Fertile Crescent")\n', '("Iranian plateau", "is to the east of", "the Fertile Crescent")\n', '("Fertile Crescent", "is a bridge between", "North Africa and Eurasia")\n', '("Fertile Crescent", "is bordered by", "the Mediterranean Sea")\n', '("Fertile Crescent", "was home to domesticated", "cows")\n', '("Fertile Crescent", "was home to domesticated", "goats")\n', '("Fertile Crescent", "was home to domesticated", "sheep")\n', '("Fertile Crescent", "was home to domesticated", "pigs")\n', '("Horse", "lived nearby", "the Fertile Crescent")\n', '("Fertile Crescent", "saw the first Neolithic farming settlements in", "Jordan and upper Euphrates rivers")\n', '("Mesopotamia", "lies in the east of", "the Fertile Crescent")\n', '("Fertile Crescent", "is nicknamed", "The cradle of civilization")\n', '("Nippur and Ebla", "had the oldest known libraries in", "the Fertile Crescent")\n', '("Fertile Crescent", "has seen repeated cycles of decline and recovery", "over the last two millennia")\n', '("Fertile Crescent", "experiencing problem of", "salination from irrigation")\n', '("Fertile Crescent", "had prehistoric fig trees planted in", "Jordan Valley")\n', '("Fertile Crescent", "had domestication of", "cattle, sheep, goat, domestic pig, cat, and domestic goose")\n', '("Fertile Crescent", "is linguistically diverse with", "Semitic languages and language isolates")\n', '("Sumerian language", "is a non-Semitic language isolate in", "Iraq")\n', '("Elamite language", "is a language isolate", "in Iran")\n', '("Fertile Crescent", "saw the emergence of", "Proto-Euphratean, Sumerian, Elamite, Semitic, Egyptian, and Hurro-Urartian languages")\n', '("Indus Valley Civilisation", "also known as", "Indus Civilisation")\n', '("Indus Valley Civilisation", "was a", "Bronze Age civilisation")\n', '("Indus Valley Civilisation", "was one of three early civilisations of the", "Near East")\n', '("Indus Valley Civilisation", "sites spanned from", "Pakistan")\n', '("Indus Valley Civilisation", "flourished in the", "Indus River plain")\n', '("Indus Civilisation", "is referred to as", "Harappan")\n', '("Indus Civilisation", "included sites along the", "Indus River")\n', '("Indus Civilisation", "cities noted for", "urban planning")\n', '("Harappa", "type site of", "Indus Civilisation")\n', '("Mohenjo-daro", "site of", "Indus Valley Civilisation")\n', '("Indus Valley Civilisation", "may have contained between", "one and five million individuals")\n', '("Indus Valley Civilisation", "spread from", "Balochistan to Uttar Pradesh")\n', '("Indus Valley Civilisation", "spread to", "Rajasthan")\n', '("Indus Valley Civilisation", "spread to", "Sindh")\n', '("Indus Valley Civilisation", "site found", "on the Oxus River")\n', '("Indus Valley Civilisation", "include sites in", "Gujarat")\n', '("Indus Valley Civilisation", "include sites in", "Haryana")\n', '("Indus Valley Civilisation", "contemporary with", "civilisations along Nile, Euphrates, Tigris")\n', '("Indus Valley Civilisation", "contemporary with", "China along Yellow River and Yangtze")\n', '("Indus Civilisation", "named after", "Indus River")\n', '("Indus Civilisation", "also called", "Sindhu-Saraswati Civilisation")\n', '("Indus Valley Civilisation", "compared with", "civilisations along Nile, Euphrates, Tigris")\n', '("Indus Valley Civilisation", "compared with", "civilisations along Yellow River and Yangtze")\n', '("Indus Valley Civilisation", "related proto-cultures at", "Mehrgarh")\n', '("Indus Valley Civilisation", "agriculture emerged in", "Balochistan")\n', '("Mohenjo-daro", "a UNESCO World Heritage Site as", "Archaeological Ruins at Moenjodaro")\n', '("Dholavira", "a UNESCO World Heritage Site as", "Dholavira: A Harappan City")\n', '("Indus Civilisation", "language affiliations are", "uncertain")\n', '("Indus Civilisation", "language might be related to", "Dravidian")\n', '("Indus Civilisation", "language affiliations might be related to", "Elamo-Dravidian")\n', '("Indus Valley Civilisation", "cultivated", "peas")\n', '("Indus Valley Civilisation", "cultivated", "sesame seeds")\n', '("Ancient Egypt", "was a civilization of", "ancient Northeast Africa")\n', '("Ancient Egypt", "had a political unification under", "Menes")\n', '("Ancient Egypt", "was concentrated along", "the Nile River")\n', '("Ancient Egypt", "is now the country", "Egypt")\n', '("Ancient Egypt", "reached the pinnacle of its power during", "the New Kingdom")\n', '("Nile River", "provided the opportunity to develop", "a settled agricultural economy and a more sophisticated, centralized society")\n', '("Middle Pleistocene", "hunter-gatherers began living in", "the Nile valley")\n', '("Egyptian civilization", "followed", "prehistoric Egypt")\n', '("Ancient Egypt\'s", "success came partly from adapting to conditions of", "the Nile River valley for agriculture")\n', '("Nile", "valley supported large populations of", "waterfowl")\n', '("Egyptian", "climate was much less arid during", "Predynastic and Early Dynastic times")\n', '("Ungulates", "were grazing in", "Large regions of Egypt which were covered in treed savanna")\n', '("Western desert", "originated the Badarian culture known for", "high-quality ceramics, stone tools, and use of copper")\n', '("Ancient Egyptians", "traded with", "Nubia, the oases of the western desert, Levant, Mesopotamia")\n', '("Ancient Egyptian civilization", "was invaded or conquered by", "Hyksos, Nubians, Assyrians, Achaemenid Persians, Macedonians")\n', '("Egypt", "fell to the", "Roman Empire and became a Roman province")\n', '("Near East", "had trade established with", "ancient Egypt during Naqada II")\n', '("Sumerian-Akkadian civilization", "was contemporary to", "the Early Dynastic Period of Egypt")\n', '("Akkadian civilization", "had interactions with", "ancient Egypt")\n', '("Elam", "was contemporary with", "the Early Dynastic Period of Egypt")\n', '("Giza pyramids", "were constructed during", "the Old Kingdom")\n', '("Great Sphinx", "was constructed during", "the Old Kingdom")\n', '("Canaanite settlers", "began to assume greater control of the Delta region during", "the Second Intermediate Period")\n', '("Syria", "was part of the empire that", "Ancient Egypt ruled during the New Kingdom")\n', '("Aegean Sea", "was home to the Sea Peoples who invaded", "Egypt")\n', '("Tanis", "became the northern seat of power during", "the Third Intermediate Period")\n', '("Leontopolis", "emerged as a rival dynasty in", "the Delta during the Third Intermediate Period")\n', '("Naucratis", "became the home of", "Greeks in the Nile Delta")\n', '("Sais", "witnessed a brief but spirited resurgence in the economy and culture during", "the Saite kings")\n', '("Cyprus and Phoenicia", "formed the sixth satrapy with Egypt during", "the Achaemenid Persian Empire")\n', '("Alexandria", "became an important center of Hellenistic culture and trade under", "the Ptolemaic Kingdom")\n', '("Mark Antony and Cleopatra VII", "were defeated by", "Octavian")\n', '("Octavian", "turned Egypt into a province of", "the Roman Empire")\n', '("Constantinople", "became the capital of the Eastern Roman Empire which Egypt was part of after", "the fourth century AD")\n']
+range(1, 193) 2
+['("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Republic of China", "used", "Haneda Airport")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Peru", "is bordered by", "Ecuador")\n', '("Peru", "is bordered by", "Colombia")\n', '("Peru", "is bordered by", "Brazil")\n', '("Peru", "is bordered by", "Bolivia")\n', '("Peru", "is bordered by", "Chile")\n', '("The Andes mountains", "extend from the north to the southeast of", "Peru")\n', '("The Amazon River", "runs through the tropical Amazon basin in the east of", "Peru")\n', '("Lima", "is the capital and largest city of", "Peru")\n', '("Simón Bolívar", "and José de San Martín", "played roles in Peru\'s independence")\n', '("Francisco Pizarro", "conquered the region known as", "Peru")\n', '("The camelid", "was an important part of", "Andean societies in Peru")\n', '("Lake Titicaca", "is located in", "Peru")\n', '("Ayacucho", "is near the large urban settlement and wide-ranging state system developed by", "the Wari culture in Peru")\n', '("Cusco", "was the capital of", "the Inca Empire in Peru")\n', '("Buenos Aires and Bogotá", "gained prominence over", "Lima after the creation of new viceroyalties reduced the power of the Viceroyalty of Peru")\n', '("Guayaquil", "was occupied by rebel forces during the liberation movement of", "Peru")\n', '("The United States", "is a major trade partner of", "Peru")\n', '("General Pinochet\'s", "coup d\'état prompted tense relations with", "Peru")\n', '("The MRTA", "was one of the guerrilla groups in conflict with the state of", "Peru")\n', '("Alejandro Toledo", "became president of", "Peru")\n', '("The Union of South American Nations", "includes", "Peru")\n', '("Mexican", "governor Don Sebastian Hurtado de Corcuera was responsible for settling Zamboanga City employing", "Peruvian soldiers")\n', '("The Organization of American States", "includes", "Peru as a member")\n', '("The Southern Hemisphere", "contains the entire territory of", "Peru")\n', '("The equator", "is north of", "Peru")\n', '("The Altiplano plateau and Huascarán", "are located in", "Peru")\n', '("Fertile Crescent", "is a region in", "the Middle East")\n', '("Fertile Crescent", "spans", "Iraq, Israel, Jordan, Lebanon, Palestine, and Syria")\n', '("Fertile Crescent", "includes", "northern Kuwait")\n', '("Fertile Crescent", "spans", "south-eastern Turkey")\n', '("Fertile Crescent", "spans", "western Iran")\n', '("Fertile Crescent", "includes", "Cyprus and northern Egypt according to some authors")\n', '("Fertile Crescent", "was the first region for", "settled farming")\n', '("Sumer", "flourished in", "the Fertile Crescent")\n', '("Fertile Crescent", "witnessed the development of", "agriculture and use of irrigation")\n', '("James Henry Breasted", "popularized the term", "Fertile Crescent")\n', '("Fertile Crescent", "includes", "Tigris and Euphrates rivers")\n', '("Jordan River", "is a riverwater source in", "the Fertile Crescent")\n', '("Syrian Desert", "delimits the inner boundary of", "the Fertile Crescent")\n', '("Anatolian highlands", "are around the outer boundary of", "the Fertile Crescent")\n', '("Armenian highlands", "are around the outer boundary of", "the Fertile Crescent")\n', '("Sahara Desert", "is to the west of", "the Fertile Crescent")\n', '("Sudan", "is to the south of", "the Fertile Crescent")\n', '("Iranian plateau", "is to the east of", "the Fertile Crescent")\n', '("Fertile Crescent", "is a bridge between", "North Africa and Eurasia")\n', '("Fertile Crescent", "is bordered by", "the Mediterranean Sea")\n', '("Fertile Crescent", "was home to domesticated", "cows")\n', '("Fertile Crescent", "was home to domesticated", "goats")\n', '("Fertile Crescent", "was home to domesticated", "sheep")\n', '("Fertile Crescent", "was home to domesticated", "pigs")\n', '("Horse", "lived nearby", "the Fertile Crescent")\n', '("Fertile Crescent", "saw the first Neolithic farming settlements in", "Jordan and upper Euphrates rivers")\n', '("Mesopotamia", "lies in the east of", "the Fertile Crescent")\n', '("Fertile Crescent", "is nicknamed", "The cradle of civilization")\n', '("Nippur and Ebla", "had the oldest known libraries in", "the Fertile Crescent")\n', '("Fertile Crescent", "has seen repeated cycles of decline and recovery", "over the last two millennia")\n', '("Fertile Crescent", "experiencing problem of", "salination from irrigation")\n', '("Fertile Crescent", "had prehistoric fig trees planted in", "Jordan Valley")\n', '("Fertile Crescent", "had domestication of", "cattle, sheep, goat, domestic pig, cat, and domestic goose")\n', '("Fertile Crescent", "is linguistically diverse with", "Semitic languages and language isolates")\n', '("Sumerian language", "is a non-Semitic language isolate in", "Iraq")\n', '("Elamite language", "is a language isolate", "in Iran")\n', '("Fertile Crescent", "saw the emergence of", "Proto-Euphratean, Sumerian, Elamite, Semitic, Egyptian, and Hurro-Urartian languages")\n', '("Indus Valley Civilisation", "also known as", "Indus Civilisation")\n', '("Indus Valley Civilisation", "was a", "Bronze Age civilisation")\n', '("Indus Valley Civilisation", "was one of three early civilisations of the", "Near East")\n', '("Indus Valley Civilisation", "sites spanned from", "Pakistan")\n', '("Indus Valley Civilisation", "flourished in the", "Indus River plain")\n', '("Indus Civilisation", "is referred to as", "Harappan")\n', '("Indus Civilisation", "included sites along the", "Indus River")\n', '("Indus Civilisation", "cities noted for", "urban planning")\n', '("Harappa", "type site of", "Indus Civilisation")\n', '("Mohenjo-daro", "site of", "Indus Valley Civilisation")\n', '("Indus Valley Civilisation", "may have contained between", "one and five million individuals")\n', '("Indus Valley Civilisation", "spread from", "Balochistan to Uttar Pradesh")\n', '("Indus Valley Civilisation", "spread to", "Rajasthan")\n', '("Indus Valley Civilisation", "spread to", "Sindh")\n', '("Indus Valley Civilisation", "site found", "on the Oxus River")\n', '("Indus Valley Civilisation", "include sites in", "Gujarat")\n', '("Indus Valley Civilisation", "include sites in", "Haryana")\n', '("Indus Valley Civilisation", "contemporary with", "civilisations along Nile, Euphrates, Tigris")\n', '("Indus Valley Civilisation", "contemporary with", "China along Yellow River and Yangtze")\n', '("Indus Civilisation", "named after", "Indus River")\n', '("Indus Civilisation", "also called", "Sindhu-Saraswati Civilisation")\n', '("Indus Valley Civilisation", "compared with", "civilisations along Nile, Euphrates, Tigris")\n', '("Indus Valley Civilisation", "compared with", "civilisations along Yellow River and Yangtze")\n', '("Indus Valley Civilisation", "related proto-cultures at", "Mehrgarh")\n', '("Indus Valley Civilisation", "agriculture emerged in", "Balochistan")\n', '("Mohenjo-daro", "a UNESCO World Heritage Site as", "Archaeological Ruins at Moenjodaro")\n', '("Dholavira", "a UNESCO World Heritage Site as", "Dholavira: A Harappan City")\n', '("Indus Civilisation", "language affiliations are", "uncertain")\n', '("Indus Civilisation", "language might be related to", "Dravidian")\n', '("Indus Civilisation", "language affiliations might be related to", "Elamo-Dravidian")\n', '("Indus Valley Civilisation", "cultivated", "peas")\n', '("Indus Valley Civilisation", "cultivated", "sesame seeds")\n', '("Ancient Egypt", "was a civilization of", "ancient Northeast Africa")\n', '("Ancient Egypt", "had a political unification under", "Menes")\n', '("Ancient Egypt", "was concentrated along", "the Nile River")\n', '("Ancient Egypt", "is now the country", "Egypt")\n', '("Ancient Egypt", "reached the pinnacle of its power during", "the New Kingdom")\n', '("Nile River", "provided the opportunity to develop", "a settled agricultural economy and a more sophisticated, centralized society")\n', '("Middle Pleistocene", "hunter-gatherers began living in", "the Nile valley")\n', '("Egyptian civilization", "followed", "prehistoric Egypt")\n', '("Ancient Egypt\'s", "success came partly from adapting to conditions of", "the Nile River valley for agriculture")\n', '("Nile", "valley supported large populations of", "waterfowl")\n', '("Egyptian", "climate was much less arid during", "Predynastic and Early Dynastic times")\n', '("Ungulates", "were grazing in", "Large regions of Egypt which were covered in treed savanna")\n', '("Western desert", "originated the Badarian culture known for", "high-quality ceramics, stone tools, and use of copper")\n', '("Ancient Egyptians", "traded with", "Nubia, the oases of the western desert, Levant, Mesopotamia")\n', '("Ancient Egyptian civilization", "was invaded or conquered by", "Hyksos, Nubians, Assyrians, Achaemenid Persians, Macedonians")\n', '("Egypt", "fell to the", "Roman Empire and became a Roman province")\n', '("Near East", "had trade established with", "ancient Egypt during Naqada II")\n', '("Sumerian-Akkadian civilization", "was contemporary to", "the Early Dynastic Period of Egypt")\n', '("Akkadian civilization", "had interactions with", "ancient Egypt")\n', '("Elam", "was contemporary with", "the Early Dynastic Period of Egypt")\n', '("Giza pyramids", "were constructed during", "the Old Kingdom")\n', '("Great Sphinx", "was constructed during", "the Old Kingdom")\n', '("Canaanite settlers", "began to assume greater control of the Delta region during", "the Second Intermediate Period")\n', '("Syria", "was part of the empire that", "Ancient Egypt ruled during the New Kingdom")\n', '("Aegean Sea", "was home to the Sea Peoples who invaded", "Egypt")\n', '("Tanis", "became the northern seat of power during", "the Third Intermediate Period")\n', '("Leontopolis", "emerged as a rival dynasty in", "the Delta during the Third Intermediate Period")\n', '("Naucratis", "became the home of", "Greeks in the Nile Delta")\n', '("Sais", "witnessed a brief but spirited resurgence in the economy and culture during", "the Saite kings")\n', '("Cyprus and Phoenicia", "formed the sixth satrapy with Egypt during", "the Achaemenid Persian Empire")\n', '("Alexandria", "became an important center of Hellenistic culture and trade under", "the Ptolemaic Kingdom")\n', '("Mark Antony and Cleopatra VII", "were defeated by", "Octavian")\n', '("Octavian", "turned Egypt into a province of", "the Roman Empire")\n', '("Constantinople", "became the capital of the Eastern Roman Empire which Egypt was part of after", "the fourth century AD")\n']
+range(1, 193) 2
+['("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Republic of China", "used", "Haneda Airport")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Peru", "is bordered by", "Ecuador")\n', '("Peru", "is bordered by", "Colombia")\n', '("Peru", "is bordered by", "Brazil")\n', '("Peru", "is bordered by", "Bolivia")\n', '("Peru", "is bordered by", "Chile")\n', '("The Andes mountains", "extend from the north to the southeast of", "Peru")\n', '("The Amazon River", "runs through the tropical Amazon basin in the east of", "Peru")\n', '("Lima", "is the capital and largest city of", "Peru")\n', '("Simón Bolívar", "and José de San Martín", "played roles in Peru\'s independence")\n', '("Francisco Pizarro", "conquered the region known as", "Peru")\n', '("The camelid", "was an important part of", "Andean societies in Peru")\n', '("Lake Titicaca", "is located in", "Peru")\n', '("Ayacucho", "is near the large urban settlement and wide-ranging state system developed by", "the Wari culture in Peru")\n', '("Cusco", "was the capital of", "the Inca Empire in Peru")\n', '("Buenos Aires and Bogotá", "gained prominence over", "Lima after the creation of new viceroyalties reduced the power of the Viceroyalty of Peru")\n', '("Guayaquil", "was occupied by rebel forces during the liberation movement of", "Peru")\n', '("The United States", "is a major trade partner of", "Peru")\n', '("General Pinochet\'s", "coup d\'état prompted tense relations with", "Peru")\n', '("The MRTA", "was one of the guerrilla groups in conflict with the state of", "Peru")\n', '("Alejandro Toledo", "became president of", "Peru")\n', '("The Union of South American Nations", "includes", "Peru")\n', '("Mexican", "governor Don Sebastian Hurtado de Corcuera was responsible for settling Zamboanga City employing", "Peruvian soldiers")\n', '("The Organization of American States", "includes", "Peru as a member")\n', '("The Southern Hemisphere", "contains the entire territory of", "Peru")\n', '("The equator", "is north of", "Peru")\n', '("The Altiplano plateau and Huascarán", "are located in", "Peru")\n', '("Fertile Crescent", "is a region in", "the Middle East")\n', '("Fertile Crescent", "spans", "Iraq, Israel, Jordan, Lebanon, Palestine, and Syria")\n', '("Fertile Crescent", "includes", "northern Kuwait")\n', '("Fertile Crescent", "spans", "south-eastern Turkey")\n', '("Fertile Crescent", "spans", "western Iran")\n', '("Fertile Crescent", "includes", "Cyprus and northern Egypt according to some authors")\n', '("Fertile Crescent", "was the first region for", "settled farming")\n', '("Sumer", "flourished in", "the Fertile Crescent")\n', '("Fertile Crescent", "witnessed the development of", "agriculture and use of irrigation")\n', '("James Henry Breasted", "popularized the term", "Fertile Crescent")\n', '("Fertile Crescent", "includes", "Tigris and Euphrates rivers")\n', '("Jordan River", "is a riverwater source in", "the Fertile Crescent")\n', '("Syrian Desert", "delimits the inner boundary of", "the Fertile Crescent")\n', '("Anatolian highlands", "are around the outer boundary of", "the Fertile Crescent")\n', '("Armenian highlands", "are around the outer boundary of", "the Fertile Crescent")\n', '("Sahara Desert", "is to the west of", "the Fertile Crescent")\n', '("Sudan", "is to the south of", "the Fertile Crescent")\n', '("Iranian plateau", "is to the east of", "the Fertile Crescent")\n', '("Fertile Crescent", "is a bridge between", "North Africa and Eurasia")\n', '("Fertile Crescent", "is bordered by", "the Mediterranean Sea")\n', '("Fertile Crescent", "was home to domesticated", "cows")\n', '("Fertile Crescent", "was home to domesticated", "goats")\n', '("Fertile Crescent", "was home to domesticated", "sheep")\n', '("Fertile Crescent", "was home to domesticated", "pigs")\n', '("Horse", "lived nearby", "the Fertile Crescent")\n', '("Fertile Crescent", "saw the first Neolithic farming settlements in", "Jordan and upper Euphrates rivers")\n', '("Mesopotamia", "lies in the east of", "the Fertile Crescent")\n', '("Fertile Crescent", "is nicknamed", "The cradle of civilization")\n', '("Nippur and Ebla", "had the oldest known libraries in", "the Fertile Crescent")\n', '("Fertile Crescent", "has seen repeated cycles of decline and recovery", "over the last two millennia")\n', '("Fertile Crescent", "experiencing problem of", "salination from irrigation")\n', '("Fertile Crescent", "had prehistoric fig trees planted in", "Jordan Valley")\n', '("Fertile Crescent", "had domestication of", "cattle, sheep, goat, domestic pig, cat, and domestic goose")\n', '("Fertile Crescent", "is linguistically diverse with", "Semitic languages and language isolates")\n', '("Sumerian language", "is a non-Semitic language isolate in", "Iraq")\n', '("Elamite language", "is a language isolate", "in Iran")\n', '("Fertile Crescent", "saw the emergence of", "Proto-Euphratean, Sumerian, Elamite, Semitic, Egyptian, and Hurro-Urartian languages")\n', '("Indus Valley Civilisation", "also known as", "Indus Civilisation")\n', '("Indus Valley Civilisation", "was a", "Bronze Age civilisation")\n', '("Indus Valley Civilisation", "was one of three early civilisations of the", "Near East")\n', '("Indus Valley Civilisation", "sites spanned from", "Pakistan")\n', '("Indus Valley Civilisation", "flourished in the", "Indus River plain")\n', '("Indus Civilisation", "is referred to as", "Harappan")\n', '("Indus Civilisation", "included sites along the", "Indus River")\n', '("Indus Civilisation", "cities noted for", "urban planning")\n', '("Harappa", "type site of", "Indus Civilisation")\n', '("Mohenjo-daro", "site of", "Indus Valley Civilisation")\n', '("Indus Valley Civilisation", "may have contained between", "one and five million individuals")\n', '("Indus Valley Civilisation", "spread from", "Balochistan to Uttar Pradesh")\n', '("Indus Valley Civilisation", "spread to", "Rajasthan")\n', '("Indus Valley Civilisation", "spread to", "Sindh")\n', '("Indus Valley Civilisation", "site found", "on the Oxus River")\n', '("Indus Valley Civilisation", "include sites in", "Gujarat")\n', '("Indus Valley Civilisation", "include sites in", "Haryana")\n', '("Indus Valley Civilisation", "contemporary with", "civilisations along Nile, Euphrates, Tigris")\n', '("Indus Valley Civilisation", "contemporary with", "China along Yellow River and Yangtze")\n', '("Indus Civilisation", "named after", "Indus River")\n', '("Indus Civilisation", "also called", "Sindhu-Saraswati Civilisation")\n', '("Indus Valley Civilisation", "compared with", "civilisations along Nile, Euphrates, Tigris")\n', '("Indus Valley Civilisation", "compared with", "civilisations along Yellow River and Yangtze")\n', '("Indus Valley Civilisation", "related proto-cultures at", "Mehrgarh")\n', '("Indus Valley Civilisation", "agriculture emerged in", "Balochistan")\n', '("Mohenjo-daro", "a UNESCO World Heritage Site as", "Archaeological Ruins at Moenjodaro")\n', '("Dholavira", "a UNESCO World Heritage Site as", "Dholavira: A Harappan City")\n', '("Indus Civilisation", "language affiliations are", "uncertain")\n', '("Indus Civilisation", "language might be related to", "Dravidian")\n', '("Indus Civilisation", "language affiliations might be related to", "Elamo-Dravidian")\n', '("Indus Valley Civilisation", "cultivated", "peas")\n', '("Indus Valley Civilisation", "cultivated", "sesame seeds")\n', '("Ancient Egypt", "was a civilization of", "ancient Northeast Africa")\n', '("Ancient Egypt", "had a political unification under", "Menes")\n', '("Ancient Egypt", "was concentrated along", "the Nile River")\n', '("Ancient Egypt", "is now the country", "Egypt")\n', '("Ancient Egypt", "reached the pinnacle of its power during", "the New Kingdom")\n', '("Nile River", "provided the opportunity to develop", "a settled agricultural economy and a more sophisticated, centralized society")\n', '("Middle Pleistocene", "hunter-gatherers began living in", "the Nile valley")\n', '("Egyptian civilization", "followed", "prehistoric Egypt")\n', '("Ancient Egypt\'s", "success came partly from adapting to conditions of", "the Nile River valley for agriculture")\n', '("Nile", "valley supported large populations of", "waterfowl")\n', '("Egyptian", "climate was much less arid during", "Predynastic and Early Dynastic times")\n', '("Ungulates", "were grazing in", "Large regions of Egypt which were covered in treed savanna")\n', '("Western desert", "originated the Badarian culture known for", "high-quality ceramics, stone tools, and use of copper")\n', '("Ancient Egyptians", "traded with", "Nubia, the oases of the western desert, Levant, Mesopotamia")\n', '("Ancient Egyptian civilization", "was invaded or conquered by", "Hyksos, Nubians, Assyrians, Achaemenid Persians, Macedonians")\n', '("Egypt", "fell to the", "Roman Empire and became a Roman province")\n', '("Near East", "had trade established with", "ancient Egypt during Naqada II")\n', '("Sumerian-Akkadian civilization", "was contemporary to", "the Early Dynastic Period of Egypt")\n', '("Akkadian civilization", "had interactions with", "ancient Egypt")\n', '("Elam", "was contemporary with", "the Early Dynastic Period of Egypt")\n', '("Giza pyramids", "were constructed during", "the Old Kingdom")\n', '("Great Sphinx", "was constructed during", "the Old Kingdom")\n', '("Canaanite settlers", "began to assume greater control of the Delta region during", "the Second Intermediate Period")\n', '("Syria", "was part of the empire that", "Ancient Egypt ruled during the New Kingdom")\n', '("Aegean Sea", "was home to the Sea Peoples who invaded", "Egypt")\n', '("Tanis", "became the northern seat of power during", "the Third Intermediate Period")\n', '("Leontopolis", "emerged as a rival dynasty in", "the Delta during the Third Intermediate Period")\n', '("Naucratis", "became the home of", "Greeks in the Nile Delta")\n', '("Sais", "witnessed a brief but spirited resurgence in the economy and culture during", "the Saite kings")\n', '("Cyprus and Phoenicia", "formed the sixth satrapy with Egypt during", "the Achaemenid Persian Empire")\n', '("Alexandria", "became an important center of Hellenistic culture and trade under", "the Ptolemaic Kingdom")\n', '("Mark Antony and Cleopatra VII", "were defeated by", "Octavian")\n', '("Octavian", "turned Egypt into a province of", "the Roman Empire")\n', '("Constantinople", "became the capital of the Eastern Roman Empire which Egypt was part of after", "the fourth century AD")\n']
+range(1, 193) 2
+{'id': '1_5', 'Question': ' Which nation, formerly known as the Republic that regularly operates flights to the airport in Tokyo that receives flights from Seoul?\n', 'Answer': 'China', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Peru'}, {'label': 'B', 'text': 'Fertile Crescent'}, {'label': 'C', 'text': 'Indus Valley Civilisation'}, {'label': 'D', 'text': 'Ancient Egypt'}, {'label': 'E', 'text': 'China'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'peru'}, {'label': 'B', 'text': 'fertile_crescent'}, {'label': 'C', 'text': 'indus_civilization'}, {'label': 'D', 'text': 'ancient_egypt'}, {'label': 'E', 'text': 'china'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Regular flights operate to which airport from Seoul?\nA1: Haneda Airport\n\n', '2: Which nation formerly known as the Republic used this particular Japanese airport for its air travel?\nA2: China'], 'Hops_wiki': [('Seoul', 'Haneda Airport'), ('Haneda Airport', 'China')], 'Hops_cpnet': [('seoul', 'haneda_airport'), ('haneda_airport', 'china')], 'Triplets': ['("Seoul", "has regular flights to", "Tokyo Haneda")', '("Republic of China", "used", "Haneda Airport")'], 'Referred_files': [{'name': 'Seoul', 'line': 18}, {'name': 'Haneda Airport', 'line': 25}], 'Question_triplet_answer': {100: [54, 191], 50: [13, 44], 25: [87, 131]}}
+time passed:  10905.081798791885
+Expected dollar:  0.005
+Copenhagen is Geography
+Sudan is Geography
+the Fertile Crescent is Geography
+Seoul is Geography
+Gyeonggi is Geography
+Haneda is Geography
+Indus River is Geography
+Narita is Geography
+Egypt is Geography
+Fertile Crescent is Geography
+Shanghai is Geography
+Dholavira is Geography
+Peru is Geography
+Ecuador is Geography
+Before Haneda Airport is Geography
+Nile is Geography
+China is Geography
+Yellow River is Geography
+Yangtze is Geography
+Archaeological Ruins is Geography
+Moenjodaro is Geography
+Taiwan is Geography
+Korea is Geography
+Manchuria is Geography
+Haneda Airport is Geography
+Japan is Geography
+Giza is Geography
+Douglas MacArthur is People
+the Greater Tokyo Area is Geography
+Jordan River is Geography
+Andean is Geography
+Jordan is Geography
+Euphrates is Geography
+Tigris is Geography
+Guayaquil is Geography
+Cusco is Geography
+Colombia is Geography
+Haneda Air Force Base is Geography
+Tachikawa Airfield is Geography
+Tokyo is Geography
+Gangnam district is Geography
+the Oxus River is Geography
+South Korea is Geography
+Mark Antony is People
+the Japanese Empire is Geography
+Lima is Geography
+Shinzo Abe is People
+Shanghai Hongqiao International Airport is Geography
+Moscow is Geography
+Akkadian is Geography
+Harappa is Geography
+Nile, Euphrates is Geography
+Tokyo Municipal Airport is Geography
+Koto Ward is Geography
+Buenos Aires is Geography
+Bogotá is Geography
+The Andes is Geography
+Taipei is Geography
+Honolulu is Geography
+Narita International Airport is Geography
+the Middle East is Geography
+Eurasia is Geography
+Turkey is Geography
+fig is Animal
+Jordan Valley is Geography
+London is Geography
+Beijing Capital is Geography
+Kuwait is Geography
+Badarian is Geography
+Detroit is Geography
+Seattle is Geography
+Huascarán is Geography
+Sahara Desert" is Geography
+the Mediterranean Sea is Geography
+The Amazon River is Geography
+Haryana is Geography
+Seoul National University is Geography
+Sumerian is Geography
+Elamite is Geography
+Gujarat is Geography
+Syria is Geography
+Namsan is Geography
+Sindh is Geography
+Tokyo Haneda is Geography
+entities:  {'Buenos', 'Area', 'Gyeonggi', 'fig', 'National', 'Yangtze', 'Airfield', 'Aires', 'Toledo', 'Fertile', 'Akkadian', 'Mediterranean', 'Air', 'Sindh', 'Syria', 'Gujarat', 'Tigris', 'Ruins', 'Abe', 'Crescent', 'Japanese', 'Antony', 'Cusco', 'Copenhagen', 'East', 'Dholavira', 'Delta', 'MacArthur', 'Tachikawa', 'Andean', 'Valley', 'Capital', 'Gangnam', 'Sumerian', 'Desert"', 'JFK', 'Base', 'Nippon', 'Douglas', 'district', 'Moenjodaro', 'Giza', 'Asia', 'Seoul', 'Rajasthan', 'Harappa', 'China', 'Detroit', 'Municipal', 'Beijing', 'Honolulu', 'Nile,', 'Civilisation', 'Japan', 'Shinzo', 'Hongqiao', 'Narita', 'Peru', 'Elamite', 'Sea', 'Bogotá', 'Ancient', 'Mark', 'Ward', 'Sudan', 'Colombia', 'Koto', 'South', 'London', 'Amazon', 'Proto', 'Euphrates', 'Seattle', 'Africa', 'Northwest', 'Force', 'Jordan', 'International', 'Guayaquil', 'Airport', 'Taipei', 'Turkey', 'Manchuria', 'Namsan', 'Andes', 'Huascarán', 'Moscow', 'Empire', 'Indus', 'Oxus', 'Ecuador', 'Taiwan', 'Haryana', 'Lima', 'Egypt', 'Archaeological', 'University', 'Middle', 'Yellow', 'Korea', 'Nile', 'River', 'Tokyo', 'Sahara', 'Haneda', 'Greater', 'Shanghai', 'Kuwait', 'Badarian', 'Eurasia'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Haneda Airport' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Haneda Airport
+Copenhagen
+Anchorage
+Hokkaido
+Narita
+Indus Valley Civilisation
+Elam
+Gyeonggi
+Seoul
+Syrian Desert
+Haneda Airport
+Taiwan
+Korea
+Manchuria
+Japan's two largest airlines
+Egypt
+Roman Empire
+Japan Airlines
+The Nile valley
+China
+Yellow River
+Yangtze
+Rajasthan
+All Nippon Airways
+The camelid
+Andean societies
+Peru
+Ecuador
+Middle Pleistocene
+hunter-gatherers
+The Indus River
+Haneda Air Force Base
+Northwest Orient Airlines
+Large regions of Egypt
+Tachikawa Airfield
+urban planning
+Haneda
+Beijing Capital
+Shanghai Hongqiao International
+Airport
+Shinzo Abe
+Japan Airlines
+Moscow
+Keisei
+Narita
+Akkadian civilization
+ancient Egypt
+Harappa
+Elamo-Dravidian
+Brilliant Earth
+the Third Intermediate Period
+animal diversity
+Cusco
+the Inca Empire
+civilizations along Nile, Euphrates, Tigris
+peripheral to Haneda
+separate family names
+Egypt
+prehistoric Egypt
+Salt does not cover the entire area
+Continents: Africa, Asia
+Sahara Desert
+another prominent international carrier
+a long hiatus
+Haneda
+Tokyo
+Earth is possible
+Direct service from an airport
+climatically unfavorable
+Haneda
+East Asia
+the free encyclopedia
+
+gpt_entity_particular(): entity list: 
+ ['Sahara Desert', 'Narita', 'Haneda Airport', 'Shinzo Abe', 'a long hiatus', 'Peru', 'Gyeonggi', 'Yangtze', 'Continents: Africa, Asia', 'Anchorage', 'Elam', 'Indus Valley Civilisation', 'Beijing Capital', 'East Asia', 'another prominent international carrier', 'Roman Empire', 'Andean societies', 'Yellow River', 'Hokkaido', 'civilizations along Nile, Euphrates, Tigris', 'hunter-gatherers', 'separate family names', 'Cusco', 'Copenhagen', 'Direct service from an airport', 'Haneda Air Force Base', 'urban planning', 'the Inca Empire', 'ancient Egypt', 'Syrian Desert', 'Airport', 'The Indus River', 'Brilliant Earth', 'animal diversity', 'Manchuria', 'Ecuador', 'The Nile valley', 'The camelid', "Japan's two largest airlines", 'Moscow', 'the Third Intermediate Period', 'Taiwan', 'Middle Pleistocene', 'Keisei', 'Tachikawa Airfield', 'Egypt', 'peripheral to Haneda', 'Salt does not cover the entire area', 'Seoul', 'Rajasthan', 'Korea', 'Harappa', 'Elamo-Dravidian', 'Tokyo', 'All Nippon Airways', 'China', 'the free encyclopedia', 'Earth is possible', 'Japan Airlines', 'Large regions of Egypt', 'Haneda', 'climatically unfavorable', 'Northwest Orient Airlines', 'Shanghai Hongqiao International', 'Akkadian civilization', 'prehistoric Egypt']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Peru' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Peru
+Andean societies
+Horse
+Cusco
+Camelid
+Lima
+Andes mountains
+Huascarán
+Ayacucho
+The Amazon River
+Alejandro Toledo
+
+gpt_entity_particular(): entity list: 
+ ['Andean societies', 'Peru', 'Horse', 'Ayacucho', 'Huascarán', 'The Amazon River', 'Camelid', 'Andes mountains', 'Cusco', 'Lima', 'Alejandro Toledo']
+
+gpt_entity_particular(): filtered entity: 
+ ['Lima']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'China' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ China
+China
+China
+China
+China along Yellow River and Yangtze
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China along Yellow River and Yangtze
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China along Yellow River and Yangtze
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+China
+
+gpt_entity_particular(): entity list: 
+ ['China along Yellow River and Yangtze', 'China']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ancient Egypt' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ancient Egypt
+Indus Valley Civilisation
+China along Yellow River and Yangtze
+Elam
+Tigris and Euphrates rivers
+Mohenjo-daro
+Sais
+Egyptian civilization
+Sumer
+Akkadian civilization
+ancient Egypt
+Tanis
+Syria
+the New Kingdom
+
+gpt_entity_particular(): entity list: 
+ ['Sumer', 'Tanis', 'Syria', 'Mohenjo-daro', 'China along Yellow River and Yangtze', 'Ancient Egypt', 'Egyptian civilization', 'ancient Egypt', 'the New Kingdom', 'Akkadian civilization', 'Elam', 'Sais', 'Indus Valley Civilisation', 'Tigris and Euphrates rivers']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Fertile Crescent' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Sudan
+Syrian Desert
+Hokkaido
+Indus Valley Civilisation
+Japanese government
+Elam
+Fertile Crescent
+Indus Civilisation
+Seoul
+Haneda
+Haneda Airport
+Japanese government
+Haneda Air Force Base
+Fertile Crescent
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda
+Haneda
+Haneda
+Haneda Airport
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Horse
+Elam
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda Airport
+Haneda
+Fertile Crescent
+Fertile Crescent
+Fertile Crescent
+Fertile Crescent
+Horse
+Fertile Crescent
+Fertile Crescent
+Fertile Crescent
+Fertile Crescent
+Fertile Crescent
+Fertile Crescent
+Jordan River
+Fertile Crescent
+Dholavira
+Peru
+Mohenjo-daro
+Fertile Crescent
+Fertile Crescent
+Indus Valley Civilisation
+Fertile Crescent
+Fertile Crescent
+Guayaquil
+Indus Valley Civilisation
+Haneda
+Western desert
+Indus Valley Civilisation
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Sumer
+Fertile Crescent
+SAS
+Sudan
+Syrian Desert
+Haneda
+Haneda
+Haneda
+Haneda
+SAS
+Indus Valley Civilisation
+British Airways
+Peru
+Indus Civilisation
+Indus Valley Civilisation
+Sais
+Indus Civilisation
+Indus Valley Civilisation
+Haneda
+Indus Civilisation
+Peru
+Haneda
+Haneda
+Ungulates
+Ancient Egypt
+Iranian plateau
+Delta Air Lines
+The Altiplano plateau and Huascarán
+Ayacucho
+Sahara Desert
+General Douglas MacArthur
+Sahara Desert
+The Union of South American Nations
+Fertile Crescent
+Ancient Egypt
+The Amazon River
+Alejandro Toledo
+Western desert
+Haneda
+Indus Civilisation
+Indus Valley Civilisation
+Fertile Crescent
+Indus Valley Civilisation
+Haneda Airport
+Fertile Crescent
+Fertile Crescent
+Haneda
+Seoul National University
+Fertile Crescent
+Haneda Airport
+Haneda Airport
+Indus Civilisation
+Fertile Crescent
+Indus Valley Civilisation
+Indus Valley Civilisation
+Haneda Airport
+Syria
+Seoul
+Seoul
+Fertile Crescent
+Fertile Crescent
+Fertile Crescent
+Mohenjo-daro
+The equator
+Alejandro Toledo
+Haneda
+
+gpt_entity_particular(): entity list: 
+ ['Sahara Desert', 'Haneda Airport', 'Peru', 'The Amazon River', 'Ancient Egypt', 'Sudan', 'Alejandro Toledo', 'Elam', 'Sumer', 'Indus Valley Civilisation', 'Syria', 'Horse', 'Ayacucho', 'Hokkaido', 'Dholavira', 'Guayaquil', 'Haneda Air Force Base', 'Seoul National University', 'The equator', 'Jordan River', 'Syrian Desert', 'Mohenjo-daro', 'Iranian plateau', 'General Douglas MacArthur', 'British Airways', 'Ungulates', 'Western desert', 'Fertile Crescent', 'The Altiplano plateau and Huascarán', 'Seoul', 'SAS', 'The Union of South American Nations', 'Delta Air Lines', 'Indus Civilisation', 'Japanese government', 'Haneda', 'Sais']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Indus Valley Civilisation' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indus Valley Civilisation
+Indus River plain
+Indus Civilisation
+China along Yellow River and Yangtze
+Rajasthan
+Elamo-Dravidian
+Harappan City
+peas
+urban planning
+Sindhu-Saraswati Civilisation
+Haryana
+Sesame seeds
+Gujarat
+sesame seeds
+Sindh
+
+gpt_entity_particular(): entity list: 
+ ['Rajasthan', 'Gujarat', 'Elamo-Dravidian', 'Harappan City', 'China along Yellow River and Yangtze', 'peas', 'Sesame seeds', 'Indus Civilisation', 'sesame seeds', 'Haryana', 'urban planning', 'Indus River plain', 'Indus Valley Civilisation', 'Sindhu-Saraswati Civilisation', 'Sindh']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Seoul' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Seoul
+Seoul
+Seoul
+Seoul
+Gangnam district
+Seoul
+Seoul
+Seoul
+Seoul National University
+Seoul
+
+gpt_entity_particular(): entity list: 
+ ['Seoul National University', 'Gangnam district', 'Seoul']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Buenos', 'Area', 'Gyeonggi', 'fig', 'National', 'Yangtze', 'Airfield', 'Aires', 'Toledo', 'Fertile', 'Akkadian', 'Mediterranean', 'Air', 'Sindh', 'Syria', 'Gujarat', 'Tigris', 'Ruins', 'Abe', 'Crescent', 'Japanese', 'Antony', 'Cusco', 'Copenhagen', 'East', 'Dholavira', 'Delta', 'MacArthur', 'Tachikawa', 'Andean', 'Valley', 'Capital', 'Gangnam', 'Sumerian', 'Desert"', 'JFK', 'Base', 'Nippon', 'Douglas', 'district', 'Moenjodaro', 'Giza', 'Asia', 'Seoul', 'Rajasthan', 'Harappa', 'China', 'Detroit', 'Municipal', 'Beijing', 'Honolulu', 'Nile,', 'Civilisation', 'Japan', 'Shinzo', 'Hongqiao', 'Narita', 'Peru', 'Elamite', 'Sea', 'Bogotá', 'Ancient', 'Mark', 'Ward', 'Sudan', 'Colombia', 'Koto', 'South', 'London', 'Amazon', 'Proto', 'Euphrates', 'Seattle', 'Africa', 'Northwest', 'Force', 'Jordan', 'International', 'Guayaquil', 'Airport', 'Taipei', 'Turkey', 'Manchuria', 'Namsan', 'Andes', 'Huascarán', 'Moscow', 'Empire', 'Indus', 'Oxus', 'Ecuador', 'Taiwan', 'Haryana', 'Lima', 'Egypt', 'Archaeological', 'University', 'Middle', 'Yellow', 'Korea', 'Nile', 'River', 'Tokyo', 'Sahara', 'Haneda', 'Greater', 'Shanghai', 'Kuwait', 'Badarian', 'Eurasia'}
+Total time:  393.1921532154083
+Entity conversion done on 1_5 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_5_entity_conversion_hash.json. Check the entity.
+ Which nation, formerly known as the Republic that regularly operates flights to the 03F in 066 that receives flights from Seoul?
+
+
+
+Done. Check final_query/id_1_5_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_5_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_5_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_5_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_5_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_5_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_5_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

@@ -1,0 +1,1299 @@
+Got argument: Mount Everest, 0, 0_11, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Mount Everest, [], []) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mount_Everest_info.json file
+extract_info(Mount Everest) Start.
+utils/preprocess.py extract_info(): Checking good links on Mount Everest
+List of highest mountains on Earth is Geography
+1 / 30 )  Earth's highest mountain List of highest mountains on Earth highest_mountain
+Himalayas is Geography
+2 / 30 )  Himalayas Himalayas himalayas
+Tibet is Geography
+3 / 30 )  Tibet Tibet tibet
+Tenzing Norgay is People
+4 / 30 )  Tenzing Norgay Tenzing Norgay tenzing_norgay
+Edmund Hillary is People
+5 / 30 )  Edmund Hillary Edmund Hillary edmund_hillary
+Qing dynasty is Geography
+6 / 30 )  Qing Qing dynasty qing_dynasty
+Kangxi Emperor is People
+7 / 30 )  Emperor Kangxi Kangxi Emperor kangxi
+Kathmandu is Geography
+8 / 30 )  Kathmandu Kathmandu kathmandu
+Kingdom of Nepal is Geography
+9 / 30 )  Nepal Kingdom of Nepal kingdom_of_nepal
+Kangchenjunga is Geography
+10 / 30 )  Kangchenjunga Kangchenjunga kangchenjunga
+Patna is Geography
+11 / 30 )  Patna Patna patna
+Dehradun is Geography
+12 / 30 )  Dehradun Dehradun dehradun
+Kolkata is Geography
+13 / 30 )  Calcutta Kolkata kolkata
+Global Positioning System is Geography
+14 / 30 )  GPS Global Positioning System global_positioning_system
+Lhotse is Geography
+15 / 30 )  Lhotse Lhotse lhotse
+Chinese Academy of Sciences is Incident
+16 / 30 )  Chinese Academy of Sciences Chinese Academy of Sciences chinese_academy_of_science
+Mauna Kea is Geography
+17 / 30 )  Mauna Kea Mauna Kea mauna_kea
+Denali is Geography
+18 / 30 )  Denali Denali denali
+Alaska is Geography
+19 / 30 )  Alaska Alaska alaska
+Tibetan Plateau is Geography
+20 / 30 )  Tibetan Plateau Tibetan Plateau tibetan_plateau
+Chimborazo is Geography
+21 / 30 )  Chimborazo Chimborazo chimborazo
+Ecuador is Geography
+22 / 30 )  Ecuador Ecuador ecuador
+Nuptse is Geography
+23 / 30 )  Nuptse Nuptse nuptse
+Ordovician is Geography
+24 / 30 )  Ordovician Ordovician ordovician
+Crinoid is Animal
+25 / 30 )  crinoids Crinoid crinoid
+Trilobite is Animal
+26 / 30 )  trilobites Trilobite trilobite
+Ostracod is Animal
+27 / 30 )  ostracods Ostracod ostracod
+Cyanobacteria is Animal
+28 / 30 )  cyanobacteria Cyanobacteria cyanobacteria
+Marble is Geography
+29 / 30 )  marble Marble marble
+Cambrian is Geography
+30 / 30 )  Cambrian Cambrian cambrian
+extract_triplet(Mount Everest)
+Got GPT's response. String length : 2290
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  [["Earth's highest mountain", 'List of highest mountains on Earth', 'highest_mountain']]
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  [['Himalayas', 'Himalayas', 'himalayas']]
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  [['Nepal', 'Kingdom of Nepal', 'kingdom_of_nepal']]
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  []
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  []
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  []
+subject_words:  []
+object_words:  []
+['', "Mount Everest's Nepali/Sanskrit name is", 'Sagarmāthā', '']
+['', 'The Tibetan name for Everest is', 'Qomolangma', '']
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  []
+subject_words:  [['Kangchenjunga', 'Kangchenjunga', 'kangchenjunga']]
+object_words:  []
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  [['Mauna Kea', 'Mauna Kea', 'mauna_kea'], ['Denali', 'Denali', 'denali']]
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  []
+subject_words:  [['Ordovician', 'Ordovician', 'ordovician']]
+object_words:  [(None, 'Mount Everest', 'mount_everest')]
+subject_words:  [['cyanobacteria', 'Cyanobacteria', 'cyanobacteria']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Mount Everest', 'mount_everest')]
+object_words:  []
+subject_words:  []
+object_words:  [['Nepal', 'Kingdom of Nepal', 'kingdom_of_nepal']]
+subject_words:  []
+object_words:  [['Tibet', 'Tibet', 'tibet']]
+subject_words:  []
+object_words:  [['GPS', 'Global Positioning System', 'global_positioning_system']]
+first_hop:  {'triplet': '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")', 'start word': 'Mount Everest', 'end word': 'Himalayas', 'source': {'name': 'Mount Everest', 'line': 2}, 'cpnet': {'start word': 'mount_everest', 'end word': 'himalayas'}}
+next_word: Himalayas
+generate_question(0_11, ['("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")'], ['Himalayas'], [('Mount Everest', 'Himalayas')], Himalayas, [{'name': 'Mount Everest', 'line': 2}]) called
+GPT output is:  Q: In which mountain range will you find both the Mahalangur Himal sub-range and Mount Everest?
+A: Himalayas
+final_choice(Himalayas, options = 5) started
+[]
+entity_type(Himalayas) called
+Himalayas is Geography
+check_matchscore(Himalayas, Landforms of South Asia):  0.0
+choose_by_wiki_recur(Landforms of South Asia)
+   Pages in Landforms of South Asia: ['Geology of the Himalayas', 'Himalayas', 'Hindu Kush', 'Iranian Plateau', 'Maldives', 'Tibetan Plateau']
+      Hindu Kush in ['Hindu Kush', 'Iranian Plateau', 'Geology of the Himalayas', 'Maldives']
+      Iranian Plateau in ['Hindu Kush', 'Iranian Plateau', 'Geology of the Himalayas', 'Maldives']
+      Geology of the Himalayas in ['Hindu Kush', 'Iranian Plateau', 'Geology of the Himalayas', 'Maldives']
+      Maldives in ['Hindu Kush', 'Iranian Plateau', 'Geology of the Himalayas', 'Maldives', 'Himalayas']
+      Himalayas in ['Hindu Kush', 'Iranian Plateau', 'Geology of the Himalayas', 'Maldives', 'Himalayas']
+      Tibetan Plateau in ['Hindu Kush', 'Iranian Plateau', 'Geology of the Himalayas', 'Maldives', 'Himalayas', 'Tibetan Plateau']
+['Hindu Kush', 'Iranian Plateau', 'Maldives', 'Tibetan Plateau']
+Ended after 2.5 hierarchy
+(2.5, ['Tibetan Plateau', 'Hindu Kush', 'Maldives', 'Iranian Plateau'])
+
+extract_info(Maldives) Start.
+utils/preprocess.py extract_info(): Checking good links on Maldives
+Indian Ocean is Geography
+1 / 30 )  Indian Ocean Indian Ocean indian_ocean
+Sri Lanka is Geography
+2 / 30 )  Sri Lanka Sri Lanka sri_lanka
+India is Geography
+3 / 30 )  India India india
+Equator is Geography
+4 / 30 )  equator Equator equator
+Malé is Geography
+5 / 30 )  Malé Malé malé
+Chagos Archipelago is Geography
+6 / 30 )  Chagos Archipelago Chagos Archipelago chagos_archipelago
+Lakshadweep is Geography
+7 / 30 )  Lakshadweep Lakshadweep lakshadweep
+Ibn Battuta is Geography
+8 / 30 )  Ibn Battuta Ibn Battuta battuta
+Ashoka is People
+9 / 30 )  Asoka Ashoka ashoka
+Malabar Coast is Geography
+10 / 30 )  Malabar Malabar Coast malabar_coast
+Berbera is Geography
+11 / 30 )  Berbera Berbera berbera
+Somalia is Geography
+12 / 30 )  Somalia Somalia somalia
+Mogadishu is Geography
+13 / 30 )  Mogadishu Mogadishu mogadishu
+Tabriz is Geography
+14 / 30 )  Tabriz Tabriz tabriz
+Basra is Geography
+15 / 30 )  Basra Basra basra
+Cowrie is Animal
+16 / 30 )  cowrie shells Cowrie cowrie
+Coconut is Animal
+17 / 30 )  coconut Coconut coconut
+Sindh is Geography
+18 / 30 )  Sindh Sindh sindh
+China is Geography
+19 / 30 )  China China china
+Yemen is Geography
+20 / 30 )  Yemen Yemen yemen
+Persian Gulf is Geography
+21 / 30 )  Persian Gulf Persian Gulf persian_gulf
+Goa is Geography
+22 / 30 )  Goa Goa goa
+Zanzibar is Geography
+23 / 30 )  Zanzibar Zanzibar zanzibar
+Colombo is Geography
+24 / 30 )  Colombo Colombo colombo
+Atoll is Geography
+25 / 30 )  atoll Atoll atoll
+Agra is Geography
+26 / 30 )  Agra Agra agra
+Coral reef is Geography
+27 / 30 )  coral reefs Coral reef coral_reef
+Marshall Islands is Geography
+28 / 30 )  Marshall Islands Marshall Islands marshall_islands
+Sea turtle is Animal
+29 / 30 )  sea turtle Sea turtle sea_turtle
+Tetraodontidae is Animal
+30 / 30 )  pufferfish Tetraodontidae tetraodontidae
+extract_triplet(Maldives)
+Got GPT's response. String length : 10599
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [['Sri Lanka', 'Sri Lanka', 'sri_lanka']]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [['India', 'India', 'india']]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [['equator', 'Equator', 'equator']]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [['Malé', 'Malé', 'malé']]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [['Chagos Archipelago', 'Chagos Archipelago', 'chagos_archipelago'], ['Lakshadweep', 'Lakshadweep', 'lakshadweep']]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [['Malé', 'Malé', 'malé']]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives'), ['Sri Lanka', 'Sri Lanka', 'sri_lanka']]
+subject_words:  []
+object_words:  []
+['', 'First settlers known as Dheyvis came from', 'Kalibanga in India', '']
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Ibn Battuta', 'Ibn Battuta', 'battuta']]
+object_words:  []
+subject_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+['', 'Cowry shell trade', 'largest shell currency trade network in history', '']
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+['', 'Dutch', 'established hegemony over Maldives affairs', '']
+subject_words:  []
+object_words:  []
+['', 'Chief Minister', "took over Sultan's powers during British period", '']
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [['coral reefs', 'Coral reef', 'coral_reef']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  []
+['', 'Land-dwelling reptiles in Maldives', 'limited due to island size', '']
+subject_words:  []
+object_words:  []
+subject_words:  [['sea turtle', 'Sea turtle', 'sea_turtle']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+['', 'Maldives', 'presidential constitutional republic', '']
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+['', 'Heritage Maldivian coral mosques', 'listed as UNESCO tentative sites', '']
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  [(None, 'Maldives', 'maldives')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Maldives', 'maldives')]
+extract_info(Hindu Kush) Start.
+utils/preprocess.py extract_info(): Checking good links on Hindu Kush
+Iranian Plateau is Geography
+1 / 30 )  Iranian Plateau Iranian Plateau iranian_plateau
+Himalayas is Geography
+2 / 30 )  Himalayas Himalayas himalayas
+Afghanistan is Geography
+3 / 30 )  Afghanistan Afghanistan afghanistan
+Pakistan is Geography
+4 / 30 )  Pakistan Pakistan pakistan
+Tajikistan is Geography
+5 / 30 )  Tajikistan Tajikistan tajikistan
+Pamir Mountains is Geography
+6 / 30 )  Pamir Mountains Pamir Mountains pamir_mountains
+Karakoram is Geography
+7 / 30 )  Karakoram Karakoram karakoram
+Kabul River is Geography
+8 / 30 )  Kabul River Kabul River kabul_river
+Amu Darya is Geography
+9 / 30 )  Amu Darya Amu Darya amu_darya
+Indus River is Geography
+10 / 30 )  Indus River Indus River indus_river
+Terich Mir is Geography
+11 / 30 )  Tirich Mir Terich Mir tirich_mir
+Khyber Pakhtunkhwa is Geography
+12 / 30 )  Khyber Pakhtunkhwa Khyber Pakhtunkhwa khyber_pakhtunkhwa
+Ibn Battuta is Geography
+13 / 30 )  Ibn Battuta Ibn Battuta battuta
+Kabul is Geography
+14 / 30 )  Kabul Kabul kabul
+Khyber Pass is Geography
+15 / 30 )  Khyber Pass Khyber Pass khyber_pass
+Middle Jurassic is Geography
+16 / 30 )  Middle Jurassic Middle Jurassic middle_jurassic
+Australia is Geography
+17 / 30 )  Australia Australia australia
+Paleocene is Geography
+18 / 30 )  Palaeocene Paleocene paleocene
+Oak is Animal
+19 / 30 )  Quercus Oak oak
+Olea is Animal
+20 / 30 )  Olea Olea olea
+Cedrus is Animal
+21 / 30 )  Cedrus Cedrus cedrus
+Spruce is Animal
+22 / 30 )  Picea Spruce spruce
+Fir is Animal
+23 / 30 )  Abies Fir fir
+Pine is Animal
+24 / 30 )  Pinus Pine pine
+Juniper is Animal
+25 / 30 )  junipers Juniper juniper
+Taliban is Incident
+26 / 30 )  Taliban Taliban taliban
+Al-Qaeda is Incident
+27 / 30 )  al-Qaeda Al-Qaeda al_qaida
+Peshawar is Geography
+28 / 30 )  Peshawar Peshawar peshawar
+Strabo is People
+29 / 30 )  Strabo Strabo strabo
+Ghazni is Geography
+30 / 30 )  Ghazna Ghazni ghazni
+extract_triplet(Hindu Kush)
+Got GPT's response. String length : 2256
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Iranian Plateau', 'Iranian Plateau', 'iranian_plateau']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Afghanistan', 'Afghanistan', 'afghanistan']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Pakistan', 'Pakistan', 'pakistan']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Tajikistan', 'Tajikistan', 'tajikistan']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Pamir Mountains', 'Pamir Mountains', 'pamir_mountains']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Karakoram', 'Karakoram', 'karakoram']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Kabul River', 'Kabul River', 'kabul_river'], ['Kabul', 'Kabul', 'kabul']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Amu Darya', 'Amu Darya', 'amu_darya'], ['Indus River', 'Indus River', 'indus_river']]
+subject_words:  [['Tirich Mir', 'Terich Mir', 'tirich_mir']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Khyber Pakhtunkhwa', 'Khyber Pakhtunkhwa', 'khyber_pakhtunkhwa']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Ibn Battuta', 'Ibn Battuta', 'battuta']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  []
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  []
+subject_words:  [['Ibn Battuta', 'Ibn Battuta', 'battuta']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  []
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  []
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['Himalayas', 'Himalayas', 'himalayas'], ['Pamir Mountains', 'Pamir Mountains', 'pamir_mountains']]
+subject_words:  [['Tirich Mir', 'Terich Mir', 'tirich_mir']]
+object_words:  []
+subject_words:  [['Kabul', 'Kabul', 'kabul']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [['Himalayas', 'Himalayas', 'himalayas']]
+object_words:  []
+subject_words:  [['Strabo', 'Strabo', 'strabo']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [['Ghazna', 'Ghazni', 'ghazni']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [['Taliban', 'Taliban', 'taliban']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [['Peshawar', 'Peshawar', 'peshawar']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  []
+subject_words:  [['Karakoram', 'Karakoram', 'karakoram']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  [['junipers', 'Juniper', 'juniper']]
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  []
+subject_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [['Khyber Pass', 'Khyber Pass', 'khyber_pass']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [['Middle Jurassic', 'Middle Jurassic', 'middle_jurassic']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [['Australia', 'Australia', 'australia']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+subject_words:  [['Palaeocene', 'Paleocene', 'paleocene']]
+object_words:  [(None, 'Hindu Kush', 'hindu_kush')]
+extract_info(Iranian Plateau) Start.
+utils/preprocess.py extract_info(): Checking good links on Iranian Plateau
+Zagros Mountains is Geography
+1 / 30 )  Zagros Mountains Zagros Mountains zagros
+Caspian Sea is Geography
+2 / 30 )  Caspian Sea Caspian Sea caspian_sea
+Armenian highlands is Geography
+3 / 30 )  Armenian Highlands Armenian highlands armenian_plateau
+Caucasus Mountains is Geography
+4 / 30 )  Caucasus Mountains Caucasus Mountains caucasus_mountains
+Strait of Hormuz is Geography
+5 / 30 )  Strait of Hormuz Strait of Hormuz strait_of_hormuz
+Persian Gulf is Geography
+6 / 30 )  Persian Gulf Persian Gulf persian_gulf
+Khuzestan province is Geography
+7 / 30 )  Khuzestan Khuzestan province khuzistan
+Elam is Geography
+8 / 30 )  Elam Elam elam
+Balochistan is Geography
+9 / 30 )  Balochistan Balochistan balochistan
+Iran is Geography
+10 / 30 )  Iran Iran iran
+Afghanistan is Geography
+11 / 30 )  Afghanistan Afghanistan afghanistan
+Pakistan is Geography
+12 / 30 )  Pakistan Pakistan pakistan
+Indus River is Geography
+13 / 30 )  Indus River Indus River indus_river
+Hindu Kush is Geography
+14 / 30 )  Hindu Kush Hindu Kush hindu_kush
+Dasht-e Lut is Geography
+15 / 30 )  Lut Desert Dasht-e Lut lut_desert
+Kerman is Geography
+16 / 30 )  Kerman Kerman kerman
+Eurasia is Geography
+17 / 30 )  Eurasian continent Eurasia eurasia
+Azerbaijan is Geography
+18 / 30 )  Republic of Azerbaijan Azerbaijan azerbaijan
+Iraqi Kurdistan is Geography
+19 / 30 )  Iraqi Kurdistan Iraqi Kurdistan iraqi_kurdistan
+Turkmenistan is Geography
+20 / 30 )  Turkmenistan Turkmenistan turkmenistan
+Taurus Mountains is Geography
+21 / 30 )  Taurus Mountains Taurus Mountains taurus_mountains
+Anti-Taurus Mountains is Geography
+22 / 30 )  Anti-Taurus Anti-Taurus Mountains antitaurus
+Mount Ararat is Geography
+23 / 30 )  Mount Ararat Mount Ararat mount_ararat
+Turkey is Geography
+24 / 30 )  Turkey Turkey turkey
+Lake Van is Geography
+25 / 30 )  Lake Van Lake Van lake_van
+Aras (river) is Geography
+26 / 30 )  Aras River Aras (river) araxes
+Euphrates is Geography
+27 / 30 )  Euphrates Euphrates euphrates
+Tigris is Geography
+28 / 30 )  Tigris Tigris tigris
+Iraq is Geography
+29 / 30 )  Iraq Iraq iraq
+Black Sea is Geography
+30 / 30 )  Black Sea Black Sea black_sea
+extract_triplet(Iranian Plateau)
+Got GPT's response. String length : 2468
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Zagros Mountains', 'Zagros Mountains', 'zagros'], ['Caspian Sea', 'Caspian Sea', 'caspian_sea']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Caspian Sea', 'Caspian Sea', 'caspian_sea']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Armenian Highlands', 'Armenian highlands', 'armenian_plateau'], ['Caucasus Mountains', 'Caucasus Mountains', 'caucasus_mountains']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Strait of Hormuz', 'Strait of Hormuz', 'strait_of_hormuz'], ['Persian Gulf', 'Persian Gulf', 'persian_gulf']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Khuzestan', 'Khuzestan province', 'khuzistan']]
+subject_words:  []
+object_words:  [['Elam', 'Elam', 'elam']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Balochistan', 'Balochistan', 'balochistan']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  []
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Afghanistan', 'Afghanistan', 'afghanistan']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Pakistan', 'Pakistan', 'pakistan']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Indus River', 'Indus River', 'indus_river']]
+subject_words:  []
+object_words:  [['Hindu Kush', 'Hindu Kush', 'hindu_kush']]
+subject_words:  [['Lut Desert', 'Dasht-e Lut', 'lut_desert']]
+object_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Eurasian continent', 'Eurasia', 'eurasia']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Republic of Azerbaijan', 'Azerbaijan', 'azerbaijan']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Iraqi Kurdistan', 'Iraqi Kurdistan', 'iraqi_kurdistan']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Turkmenistan', 'Turkmenistan', 'turkmenistan']]
+subject_words:  []
+object_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+subject_words:  [['Mount Ararat', 'Mount Ararat', 'mount_ararat']]
+object_words:  []
+subject_words:  [['Turkey', 'Turkey', 'turkey']]
+object_words:  [['Mount Ararat', 'Mount Ararat', 'mount_ararat']]
+subject_words:  [['Lake Van', 'Lake Van', 'lake_van']]
+object_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+subject_words:  [['Aras River', 'Aras (river)', 'araxes']]
+object_words:  [['Caspian Sea', 'Caspian Sea', 'caspian_sea']]
+subject_words:  [['Euphrates', 'Euphrates', 'euphrates'], ['Tigris', 'Tigris', 'tigris']]
+object_words:  [['Iraq', 'Iraq', 'iraq']]
+subject_words:  [['Euphrates', 'Euphrates', 'euphrates'], ['Tigris', 'Tigris', 'tigris']]
+object_words:  [['Persian Gulf', 'Persian Gulf', 'persian_gulf']]
+subject_words:  [['Indus River', 'Indus River', 'indus_river']]
+object_words:  [['Pakistan', 'Pakistan', 'pakistan']]
+subject_words:  [['Indus River', 'Indus River', 'indus_river']]
+object_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+subject_words:  [['Black Sea', 'Black Sea', 'black_sea']]
+object_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+subject_words:  []
+object_words:  [['Zagros Mountains', 'Zagros Mountains', 'zagros']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  []
+subject_words:  []
+object_words:  [['Balochistan', 'Balochistan', 'balochistan']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  []
+subject_words:  [['Elam', 'Elam', 'elam']]
+object_words:  [['Zagros Mountains', 'Zagros Mountains', 'zagros']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  []
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  []
+['', 'Iranian Plateau', 'contains historical oak and poplar forests', '']
+subject_words:  [['Iran', 'Iran', 'iran']]
+object_words:  []
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  []
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  [['Caspian Sea', 'Caspian Sea', 'caspian_sea'], ['Persian Gulf', 'Persian Gulf', 'persian_gulf']]
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  []
+subject_words:  [['Iran', 'Iran', 'iran']]
+object_words:  []
+subject_words:  [(None, 'Iranian Plateau', 'iranian_plateau')]
+object_words:  []
+extract_info(Tibetan Plateau) Start.
+utils/preprocess.py extract_info(): Checking good links on Tibetan Plateau
+Qinghai is Geography
+1 / 30 )  Qinghai Qinghai qinghai
+Sichuan is Geography
+2 / 30 )  Sichuan Sichuan sichuan
+Gansu is Geography
+3 / 30 )  Gansu Gansu gansu
+Xinjiang is Geography
+4 / 30 )  Xinjiang Xinjiang xinjiang
+Bhutan is Geography
+5 / 30 )  Bhutan Bhutan bhutan
+Ladakh is Geography
+6 / 30 )  Ladakh Ladakh ladakh
+Lahaul and Spiti district is Geography
+7 / 30 )  Lahaul and Spiti Lahaul and Spiti district lahaul_and_spiti_district
+Gilgit-Baltistan is Geography
+8 / 30 )  Gilgit-Baltistan Gilgit-Baltistan federally_administered_northern_areas
+Pakistan is Geography
+9 / 30 )  Pakistan Pakistan pakistan
+Nepal is Geography
+10 / 30 )  Nepal Nepal nepal
+Tajikistan is Geography
+11 / 30 )  Tajikistan Tajikistan tajikistan
+Kyrgyzstan is Geography
+12 / 30 )  Kyrgyzstan Kyrgyzstan kyrgyzstan
+Mount Everest is Geography
+13 / 30 )  Mount Everest Mount Everest mount_everest
+K2 is Geography
+14 / 30 )  K2 K2 k2
+River source is Geography
+15 / 30 )  headwaters River source river_source
+Himalayas is Geography
+16 / 30 )  inner Himalayan range Himalayas himalayas
+Kunlun Mountains is Geography
+17 / 30 )  Kunlun Mountains Kunlun Mountains kunlun_mountains
+Tarim Basin is Geography
+18 / 30 )  Tarim Basin Tarim Basin tarim_basin
+Qilian Mountains is Geography
+19 / 30 )  Qilian Mountains Qilian Mountains qilian_mountains
+Hexi Corridor is Geography
+20 / 30 )  Hexi Corridor Hexi Corridor hexi_corridor
+Gobi Desert is Geography
+21 / 30 )  Gobi Desert Gobi Desert gobi_desert
+Salween River is Geography
+22 / 30 )  Salween Salween River salween_river
+Mekong is Geography
+23 / 30 )  Mekong Mekong mekong
+Yangtze is Geography
+24 / 30 )  Yangtze Yangtze yangtze
+Yunnan is Geography
+25 / 30 )  Yunnan Yunnan yunnan
+Karakoram is Geography
+26 / 30 )  Karakoram Karakoram karakoram
+Kashmir is Geography
+27 / 30 )  Kashmir Kashmir kashmir
+Indus River is Geography
+28 / 30 )  Indus River Indus River indus_river
+Dunhuang is Geography
+29 / 30 )  Dunhuang Dunhuang dunhuang
+Golmud is Geography
+30 / 30 )  Golmud Golmud golmud
+extract_triplet(Tibetan Plateau)
+Got GPT's response. String length : 2803
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Qinghai', 'Qinghai', 'qinghai']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Sichuan', 'Sichuan', 'sichuan']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Gansu', 'Gansu', 'gansu']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Xinjiang', 'Xinjiang', 'xinjiang']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Bhutan', 'Bhutan', 'bhutan']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Ladakh', 'Ladakh', 'ladakh'], ['Lahaul and Spiti', 'Lahaul and Spiti district', 'lahaul_and_spiti_district']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Pakistan', 'Pakistan', 'pakistan']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Nepal', 'Nepal', 'nepal']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Tajikistan', 'Tajikistan', 'tajikistan']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Kyrgyzstan', 'Kyrgyzstan', 'kyrgyzstan']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+subject_words:  [['Yangtze', 'Yangtze', 'yangtze']]
+object_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+subject_words:  [['Mekong', 'Mekong', 'mekong']]
+object_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['inner Himalayan range', 'Himalayas', 'himalayas']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Kunlun Mountains', 'Kunlun Mountains', 'kunlun_mountains']]
+subject_words:  [['Kunlun Mountains', 'Kunlun Mountains', 'kunlun_mountains']]
+object_words:  [['Tarim Basin', 'Tarim Basin', 'tarim_basin']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Qilian Mountains', 'Qilian Mountains', 'qilian_mountains']]
+subject_words:  [['Qilian Mountains', 'Qilian Mountains', 'qilian_mountains']]
+object_words:  [['Hexi Corridor', 'Hexi Corridor', 'hexi_corridor'], ['Gobi Desert', 'Gobi Desert', 'gobi_desert']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Karakoram', 'Karakoram', 'karakoram'], ['Kashmir', 'Kashmir', 'kashmir']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Indus River', 'Indus River', 'indus_river']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['headwaters', 'River source', 'river_source'], ['Salween', 'Salween River', 'salween_river'], ['Mekong', 'Mekong', 'mekong'], ['Yunnan', 'Yunnan', 'yunnan']]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  [['Gobi Desert', 'Gobi Desert', 'gobi_desert']]
+subject_words:  []
+object_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+subject_words:  [['inner Himalayan range', 'Himalayas', 'himalayas']]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+subject_words:  [(None, 'Tibetan Plateau', 'tibetan_plateau')]
+object_words:  []
+['("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Maldives", "officially known as", "Republic of Maldives")\n', '("Maldives", "historically known as", "Maldive Islands")\n', '("Maldives", "located in", "South Asia")\n', '("Maldives", "located in", "Indian Ocean")\n', '("Maldives", "southwest of", "Sri Lanka")\n', '("Maldives", "southwest of", "India")\n', '("Maldives", "stretches across", "equator")\n', '("Maldives", "capital city is", "Malé")\n', '("Maldives", "located on", "Chagos–Laccadive Ridge")\n', '("Maldives", "forms terrestrial ecoregion with", "Chagos Archipelago and Lakshadweep")\n', '("Maldives", "smallest Asian country by", "land area")\n', '("Maldives", "most populated city is", "Malé")\n', '("Maldives", "also known as", "King\'s Island")\n', '("Maldives", "consolidated as", "sultanate")\n', '("Maldives", "developed commercial ties with", "Asia and Africa")\n', '("Maldives", "founding member of", "SAARC")\n', '("Maldives", "member of", "United Nations")\n', '("Maldives", "member of", "Commonwealth of Nations")\n', '("Maldives", "member of", "Organisation of Islamic Cooperation")\n', '("Maldives", "member of", "Non-Aligned Movement")\n', '("Maldives", "classified by World Bank as", "upper-middle income economy")\n', '("Maldives", "Dialogue Partner of", "Shanghai Cooperation Organisation")\n', '("Maldives", "dominant economic activity is", "fishing")\n', '("Tourism industry", "rapidly growing in", "Maldives")\n', '("Maldives", "rates high on", "Human Development Index")\n', '("First settlers of Maldives", "known as", "Dheyvis")\n', '("First Kingdom of Maldives", "known as", "Dheeva Maari Kingdom")\n', '("Name Maldives", "may derive from Sanskrit terms", "माला mālā (garland) and द्वीप dvīpa (island)")\n', '("Maldivian people", "called", "Dhivehin")\n', '("Mahiladiva", "mentioned in Mahavamsa as", "Island of Women")\n', '("Maldives", "called by medieval Muslim travellers as", "Maḥal Dībīyāt")\n', '("Maldives\' classical name", "said by Berber traveller as", "palace")\n', '("Dutch", "referred to Maldives as", "Maldivische Eilanden")\n', '("Maldivian people", "call their country in Dhivehi as", "Dhivehi Raajje")\n', '("Mahāvaṃsa records", "emigration from", "Sri Lanka to Maldives")\n', '("Historians believe", "Maldives\' settlement during", "Indus Valley civilisation")\n', '("Buddhist period", "long an important part of", "Maldivian history")\n', '("Early Maldivian Kings", "promoted", "Buddhism")\n', '("Archaeological remains in Maldives", "from", "Buddhist stupas and monasteries")\n', '("Conversion to Islam in Maldives", "initiated by last Buddhist king", "Dhovemi")\n', '("Sultan Muhammad al-Adil", "initiated", "six Islamic dynasties")\n', '("Maldives", "converted by Arab from Berbera, Somalia", "Abu al-Barakat Yusuf al-Barbari")\n', '("Islamic dynasties", "formed after", "conversion to Islam")\n', '("Ibn Battuta", "traveled to Maldives, served as", "chief judge")\n', '("Trade in Indian Ocean involved", "cowrie shells and", "coir fibre")\n', '("Bengal Sultanate", "trading partner with", "Maldives")\n', '("Portuguese", "established in Maldives", "as overseer of factory")\n', '("Muhammad Thakurufaanu al-A\'uẓam", "drove out", "Portuguese")\n', '("British", "included Maldives as", "British protectorate")\n', '("Maldivian Democratic Party", "founded by", "Mohamed Nasheed")\n', '("Mohamed Muizzu", "sworn in as,", "eighth President of the Republic of Maldives")\n', '("Largest island of Maldives ", "is", "Gan")\n', '("Climate of Maldives", "tropical monsoon", "influenced by Indian Ocean")\n', '("Monsoon in Maldives", "two seasons dominate", "dry and rainy")\n', '("Intergovernmental Panel on Climate Change", "warned about", "Maldives uninhabitable conditions")\n', '("Environment issues in Maldives", "include", "bad waste disposal and sand theft")\n', '("Marine ecosystem of Maldives", "includes", "different habitats")\n', '("Coral reef regeneration", "initiated by scientists using", "electrified cones for larval coral attachment")\n', '("Maldivian fauna", "diversity varies greatly between", "atolls and neighbouring atolls")\n', '("Wildlife of Maldives", "includes", "flora and fauna of islands, reefs, and ocean")\n', '("Maldivian terrestrial life", "threatened by", "intensive development")\n', '("Sea" , "surrounding Maldives hosts", "diverse reptilian life")\n', '("Green sea turtle among others", "use Maldivian beaches as", "nesting grounds")\n', '("Saltwater crocodiles", "occasionally reach", "Maldives islands")\n', '("Location of Maldives", "results in avifauna mainly restricted to", "pelagic birds")\n', '("Members of Majlis", "serve", "five-year terms")\n', '("Order of Nishanizzuddeen", "highest civilian honor in", "Maldives")\n', '("Judiciary in Maldives", "independent", "subject only to Constitution and law")\n', '("Islam", "official religion of", "Maldives")\n', '("Non-Muslims", "prohibited from becoming", "citizens")\n', '("Same-sex relations", "illegal in", "Maldives")\n', '("Same-sex relations", "tourist resorts operate as", "exceptions to the law")\n', '("Maldives", "founding member of", "SAARC")\n', '("Russian oligarchs", "sought refuge for mega-yachts in", "Maldives")\n', '("Maldives National Defence Force", "responsible for", "defending security and sovereignty of Maldives")\n', '("Coast Guard", "vital role in", "Maldives")\n', '("Maldives", "signed UN treaty on", "Prohibition of Nuclear Weapons")\n', '("Human rights in Maldives", "contentious issue, described as", "Partly Free by Freedom House")\n', '("Maldives", "corruption and lack of religious freedom noted by", "United States Bureau of Democracy, Human Rights and Labor")\n', '("Administrative divisions in Maldives", "twenty-six natural atolls divided into", "twenty-one administrative divisions")\n', '("Economy of Maldives", "tourism and fisheries are", "dominant sectors")\n', '("Historical economy", "cowry shells used as", "international currency")\n', '("Maldives", "known as \'Money Isles\' by", "Arabs")\n', '("Fishing industry in Maldives", "entirely dependent on", "fisheries")\n', '("Maldives National Defence Force", "combined security organisation responsible for", "defending security and sovereignty")\n', '("Dhivehin", "largest ethnic group in", "Maldives")\n', '("Dhivehin", "speak", "Dhivehi language")\n', '("Giraavaru people", "small Tamil population in", "Maldives")\n', '("Mohamed Nasheed, former", "president perceived as", "critic")\n', '("Proselytism by", "non-Muslims", "illegal in Maldives")\n', '("Sharia by", "court", "considered in legal cases where law is silent")\n', '("Divehi", "is an Indo-Aryan language", "closely related to Sinhala")\n', '("Thaana script", "used for Dhivehi is", "written right to left")\n', '("Fishery is the", "second-largest sector after tourism in", "Maldives")\n', '("Hindu Kush", "located on", "Iranian Plateau")\n', '("Hindu Kush", "stretches from", "central and eastern Afghanistan")\n', '("Hindu Kush", "extends into", "northwestern Pakistan")\n', '("Hindu Kush", "reaches", "far southeastern Tajikistan")\n', '("Hindu Kush", "forms western section of", "Hindu Kush Himalayan Region")\n', '("Hindu Kush", "buttresses", "Pamir Mountains")\n', '("Hindu Kush", "connects with", "Karakoram Range")\n', '("Hindu Kush", "is near", "Kabul River")\n', '("Hindu Kush", "divides", "Amu Darya and Indus River valley")\n', '("Tirich Mir", "is the highest point of", "Hindu Kush")\n', '("Hindu Kush", "located in", "Khyber Pakhtunkhwa")\n', '("Hindu Kush", "name first used by", "Ibn Battuta")\n', '("Hindu Kush", "translates to", "Killer of Hindu or Hindu-Killer")\n', '("Hindu Kush", "also known as", "Hindukush")\n', '("Ibn Battuta", "associated with", "Hindu Kush")\n', '("Hindu Kush", "once called", "upariśyena in Sanskrit and upāirisaēna in Avestan")\n', '("Hindu Kush", "also was known as", "Caucasus Indicus and Paropamisos")\n', '("Hindu Kush", "part of", "Pamir Mountains and Himalayas")\n', '("Tirich Mir", "located in", "Chitral District")\n', '("Kabul", "connected with", "Hindu Kush by Spin Ghar Range")\n', '("Himalayas", "influenced by", "Eastern Himalaya biodiversity")\n', '("Strabo", "wrote about", "Hindu Kush")\n', '("Ghazna", "related to", "ancient mines producing lapis lazuli")\n', '("Buddhism", "predominant in", "Hindu Kush")\n', '("Taliban and al-Qaeda", "grew in", "Hindu Kush")\n', '("Peshawar", "near", "Hindu Kush")\n', '("Hindu Kush", "experienced", "warming in climate change")\n', '("Karakoram", "less affected by", "glacier retreat compared to Hindu Kush")\n', '("Hindu Kush", "has flora such as", "Quercus, Olea, Cedrus, Picea, Abies, Pinus, junipers")\n', '("Hindu Kush", "passageway for", "Timur\'s invasion to Indian subcontinent")\n', '("Hindu Kush", "involved in", "slave trading between Central and South Asia")\n', '("Al-Biruni", "visited and wrote about", "Hindu Kush region")\n', '("Khyber Pass", "is a route through", "Hindu Kush")\n', '("Middle Jurassic", "period relates to", "formation of Hindu Kush") \n', '("Australia", "separated from", "region of Hindu Kush during Gondwana drift")\n', '("Palaeocene", "era during which Indian subcontinent collided with Eurasian Plate forming", "Hindu Kush")\n', '("Iranian Plateau", "is situated between", "Zagros Mountains and the Caspian Sea")\n', '("Iranian Plateau", "is situated between", "Caspian Sea and the Köpet Dag")\n', '("Iranian Plateau", "is situated between", "Armenian Highlands and the Caucasus Mountains")\n', '("Iranian Plateau", "is situated between", "Strait of Hormuz and the Persian Gulf")\n', '("Iranian Plateau", "includes", "Khuzestan")\n', '("Encyclopædia Britannica", "characterizes", "Elam")\n', '("Iranian Plateau", "extends from", "the Caspian to Balochistan")\n', '("Iranian Plateau", "includes", "Iran")\n', '("Iranian Plateau", "includes", "Afghanistan")\n', '("Iranian Plateau", "includes parts of", "Pakistan")\n', '("Iranian Plateau", "is near", "Indus River")\n', '("Noshaq", "is the highest point in", "Hindu Kush")\n', '("Lut Desert", "is the lowest point in", "Iranian Plateau")\n', '("Iranian Plateau", "is part of", "Eurasian continent")\n', '("Iranian Plateau", "includes parts of", "Republic of Azerbaijan")\n', '("Iranian Plateau", "includes parts of", "Iraqi Kurdistan")\n', '("Iranian Plateau", "includes parts of", "Turkmenistan")\n', '("Anti-Taurus", "is a region in", "Iranian Plateau")\n', '("Mount Ararat", "is located in", "the Anti-Taurus")\n', '("Turkey", "contains", "Mount Ararat")\n', '("Lake Van", "is situated in", "Iranian Plateau mountains")\n', '("Aras River", "flows into", "Caspian Sea")\n', '("Euphrates and Tigris", "join in", "Iraq")\n', '("Euphrates and Tigris", "flow into", "Persian Gulf")\n', '("Indus River", "flows the length of", "Pakistan")\n', '("Indus River", "traces the eastern edge of", "Iranian Plateau")\n', '("Black Sea", "receives small streams from", "Iranian Plateau mountains")\n', '("Southwest Iranian Ranges", "include", "Zagros Mountains")\n', '("Central Iranian Plateau", "contains", "Kūh-e Hazār and Kuh-e Jebal Barez")\n', '("Eastern Iranian Ranges", "include", "Kopet Dag and Balochistan mountains")\n', '("Iranian Plateau", "was route for expansion of", "modern humans")\n', '("Elam", "stretched across", "Zagros mountains")\n', '("Iranian Plateau", "was known as", "Persia")\n', '("Iranian Plateau", "is referenced as", "Middle Persian Erān")\n', '("Iran", "has oak forests around", "Shiraz")\n', '("Iranian Plateau", "is abundant with wildlife including", "leopards and bears")\n', '("Iranian Plateau", "houses aquatic birds along shores of", "Caspian Sea and Persian Gulf")\n', '("Iranian Plateau", "harvests trees for", "making doors and ploughs")\n', '("Iran", "grows fruits like", "pears and apples")\n', '("Iranian Plateau", "produces", "wheat and barley")\n', '("Tibetan Plateau", "also known as", "Qinghai–Tibet Plateau and Qing–Zang Plateau")\n', '("Tibetan Plateau", "located at", "intersection of Central, South, and East Asia")\n', '("Tibetan Plateau", "covers most of", "Tibet Autonomous Region")\n', '("Tibetan Plateau", "covers most of", "Qinghai")\n', '("Tibetan Plateau", "covers western half of", "Sichuan")\n', '("Tibetan Plateau", "covers southern", "Gansu provinces in Western China")\n', '("Tibetan Plateau", "located in", "southern Xinjiang")\n', '("Tibetan Plateau", "located in", "Bhutan")\n', '("Tibetan Plateau", "includes Indian regions of", "Ladakh and Lahaul and Spiti")\n', '("Tibetan Plateau", "includes", "Gilgit-Baltistan in Pakistan")\n', '("Tibetan Plateau", "located in", "northwestern Nepal")\n', '("Tibetan Plateau", "located in", "eastern Tajikistan")\n', '("Tibetan Plateau", "located in", "southern Kyrgyzstan")\n', '("Tibetan Plateau", "is the world\'s highest and largest", "plateau above sea level")\n', '("Tibetan Plateau", "contains the headwaters of", "most streams and rivers in surrounding regions")\n', '("Yellow River", "headwaters are contained in", "Tibetan Plateau")\n', '("Yangtze River", "headwaters are contained in", "Tibetan Plateau")\n', '("Mekong River", "headwaters are contained in", "Tibetan Plateau")\n', '("Tibetan Plateau", "bordered to south by", "inner Himalayan range")\n', '("Tibetan Plateau", "bordered to north by", "Kunlun Mountains")\n', '("Kunlun Mountains", "separate from", "Tarim Basin")\n', '("Tibetan Plateau", "bordered to northeast by", "Qilian Mountains")\n', '("Qilian Mountains", "separate from", "Hexi Corridor and Gobi Desert")\n', '("Tibetan Plateau", "surrounded by", "Karakoram range of northern Kashmir")\n', '("Tibetan Plateau", "origin of", "Indus River is near Lake Manasarovar")\n', '("Tibetan Plateau", "gives way to", "Salween and Mekong headwaters in northwest Yunnan")\n', '("Tibetan Plateau", "part of the", "Gobi Desert")\n', '("Changtang region", "part of", "northwestern Tibetan Plateau with extremely inhospitable environment")\n', '("Himalayas", "formed from", "continental collision along convergent boundary between Indo-Australian Plate and Eurasian Plate")\n', '("Tibetan Plateau", "supports", "variety of ecosystems")\n', '("Yarlung Zangpo river Valley", "location of", "most permanent human population on Tibetan Plateau")\n', '("Tibetan Plateau", "role in", "monsoon formation due to differential warming")\n', '("Tibetan Plateau", "covered by an ice sheet during", "Last Glacial Maximum")\n', '("Tibetan Plateau", "contains", "the world\'s third-largest store of ice")\n', '("Tibetan Plateau", "glaciers are retreating at", "higher speed than any other part of the world")\n', '("Tibetan Plateau", "vulnerable to", "global warming and permafrost thaw")\n']
+range(1, 225) 1
+['("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Maldives", "officially known as", "Republic of Maldives")\n', '("Maldives", "historically known as", "Maldive Islands")\n', '("Maldives", "located in", "South Asia")\n', '("Maldives", "located in", "Indian Ocean")\n', '("Maldives", "southwest of", "Sri Lanka")\n', '("Maldives", "southwest of", "India")\n', '("Maldives", "stretches across", "equator")\n', '("Maldives", "capital city is", "Malé")\n', '("Maldives", "located on", "Chagos–Laccadive Ridge")\n', '("Maldives", "forms terrestrial ecoregion with", "Chagos Archipelago and Lakshadweep")\n', '("Maldives", "smallest Asian country by", "land area")\n', '("Maldives", "most populated city is", "Malé")\n', '("Maldives", "also known as", "King\'s Island")\n', '("Maldives", "consolidated as", "sultanate")\n', '("Maldives", "developed commercial ties with", "Asia and Africa")\n', '("Maldives", "founding member of", "SAARC")\n', '("Maldives", "member of", "United Nations")\n', '("Maldives", "member of", "Commonwealth of Nations")\n', '("Maldives", "member of", "Organisation of Islamic Cooperation")\n', '("Maldives", "member of", "Non-Aligned Movement")\n', '("Maldives", "classified by World Bank as", "upper-middle income economy")\n', '("Maldives", "Dialogue Partner of", "Shanghai Cooperation Organisation")\n', '("Maldives", "dominant economic activity is", "fishing")\n', '("Tourism industry", "rapidly growing in", "Maldives")\n', '("Maldives", "rates high on", "Human Development Index")\n', '("First settlers of Maldives", "known as", "Dheyvis")\n', '("First Kingdom of Maldives", "known as", "Dheeva Maari Kingdom")\n', '("Name Maldives", "may derive from Sanskrit terms", "माला mālā (garland) and द्वीप dvīpa (island)")\n', '("Maldivian people", "called", "Dhivehin")\n', '("Mahiladiva", "mentioned in Mahavamsa as", "Island of Women")\n', '("Maldives", "called by medieval Muslim travellers as", "Maḥal Dībīyāt")\n', '("Maldives\' classical name", "said by Berber traveller as", "palace")\n', '("Dutch", "referred to Maldives as", "Maldivische Eilanden")\n', '("Maldivian people", "call their country in Dhivehi as", "Dhivehi Raajje")\n', '("Mahāvaṃsa records", "emigration from", "Sri Lanka to Maldives")\n', '("Historians believe", "Maldives\' settlement during", "Indus Valley civilisation")\n', '("Buddhist period", "long an important part of", "Maldivian history")\n', '("Early Maldivian Kings", "promoted", "Buddhism")\n', '("Archaeological remains in Maldives", "from", "Buddhist stupas and monasteries")\n', '("Conversion to Islam in Maldives", "initiated by last Buddhist king", "Dhovemi")\n', '("Sultan Muhammad al-Adil", "initiated", "six Islamic dynasties")\n', '("Maldives", "converted by Arab from Berbera, Somalia", "Abu al-Barakat Yusuf al-Barbari")\n', '("Islamic dynasties", "formed after", "conversion to Islam")\n', '("Ibn Battuta", "traveled to Maldives, served as", "chief judge")\n', '("Trade in Indian Ocean involved", "cowrie shells and", "coir fibre")\n', '("Bengal Sultanate", "trading partner with", "Maldives")\n', '("Portuguese", "established in Maldives", "as overseer of factory")\n', '("Muhammad Thakurufaanu al-A\'uẓam", "drove out", "Portuguese")\n', '("British", "included Maldives as", "British protectorate")\n', '("Maldivian Democratic Party", "founded by", "Mohamed Nasheed")\n', '("Mohamed Muizzu", "sworn in as,", "eighth President of the Republic of Maldives")\n', '("Largest island of Maldives ", "is", "Gan")\n', '("Climate of Maldives", "tropical monsoon", "influenced by Indian Ocean")\n', '("Monsoon in Maldives", "two seasons dominate", "dry and rainy")\n', '("Intergovernmental Panel on Climate Change", "warned about", "Maldives uninhabitable conditions")\n', '("Environment issues in Maldives", "include", "bad waste disposal and sand theft")\n', '("Marine ecosystem of Maldives", "includes", "different habitats")\n', '("Coral reef regeneration", "initiated by scientists using", "electrified cones for larval coral attachment")\n', '("Maldivian fauna", "diversity varies greatly between", "atolls and neighbouring atolls")\n', '("Wildlife of Maldives", "includes", "flora and fauna of islands, reefs, and ocean")\n', '("Maldivian terrestrial life", "threatened by", "intensive development")\n', '("Sea" , "surrounding Maldives hosts", "diverse reptilian life")\n', '("Green sea turtle among others", "use Maldivian beaches as", "nesting grounds")\n', '("Saltwater crocodiles", "occasionally reach", "Maldives islands")\n', '("Location of Maldives", "results in avifauna mainly restricted to", "pelagic birds")\n', '("Members of Majlis", "serve", "five-year terms")\n', '("Order of Nishanizzuddeen", "highest civilian honor in", "Maldives")\n', '("Judiciary in Maldives", "independent", "subject only to Constitution and law")\n', '("Islam", "official religion of", "Maldives")\n', '("Non-Muslims", "prohibited from becoming", "citizens")\n', '("Same-sex relations", "illegal in", "Maldives")\n', '("Same-sex relations", "tourist resorts operate as", "exceptions to the law")\n', '("Maldives", "founding member of", "SAARC")\n', '("Russian oligarchs", "sought refuge for mega-yachts in", "Maldives")\n', '("Maldives National Defence Force", "responsible for", "defending security and sovereignty of Maldives")\n', '("Coast Guard", "vital role in", "Maldives")\n', '("Maldives", "signed UN treaty on", "Prohibition of Nuclear Weapons")\n', '("Human rights in Maldives", "contentious issue, described as", "Partly Free by Freedom House")\n', '("Maldives", "corruption and lack of religious freedom noted by", "United States Bureau of Democracy, Human Rights and Labor")\n', '("Administrative divisions in Maldives", "twenty-six natural atolls divided into", "twenty-one administrative divisions")\n', '("Economy of Maldives", "tourism and fisheries are", "dominant sectors")\n', '("Historical economy", "cowry shells used as", "international currency")\n', '("Maldives", "known as \'Money Isles\' by", "Arabs")\n', '("Fishing industry in Maldives", "entirely dependent on", "fisheries")\n', '("Maldives National Defence Force", "combined security organisation responsible for", "defending security and sovereignty")\n', '("Dhivehin", "largest ethnic group in", "Maldives")\n', '("Dhivehin", "speak", "Dhivehi language")\n', '("Giraavaru people", "small Tamil population in", "Maldives")\n', '("Mohamed Nasheed, former", "president perceived as", "critic")\n', '("Proselytism by", "non-Muslims", "illegal in Maldives")\n', '("Sharia by", "court", "considered in legal cases where law is silent")\n', '("Divehi", "is an Indo-Aryan language", "closely related to Sinhala")\n', '("Thaana script", "used for Dhivehi is", "written right to left")\n', '("Fishery is the", "second-largest sector after tourism in", "Maldives")\n', '("Hindu Kush", "located on", "Iranian Plateau")\n', '("Hindu Kush", "stretches from", "central and eastern Afghanistan")\n', '("Hindu Kush", "extends into", "northwestern Pakistan")\n', '("Hindu Kush", "reaches", "far southeastern Tajikistan")\n', '("Hindu Kush", "forms western section of", "Hindu Kush Himalayan Region")\n', '("Hindu Kush", "buttresses", "Pamir Mountains")\n', '("Hindu Kush", "connects with", "Karakoram Range")\n', '("Hindu Kush", "is near", "Kabul River")\n', '("Hindu Kush", "divides", "Amu Darya and Indus River valley")\n', '("Tirich Mir", "is the highest point of", "Hindu Kush")\n', '("Hindu Kush", "located in", "Khyber Pakhtunkhwa")\n', '("Hindu Kush", "name first used by", "Ibn Battuta")\n', '("Hindu Kush", "translates to", "Killer of Hindu or Hindu-Killer")\n', '("Hindu Kush", "also known as", "Hindukush")\n', '("Ibn Battuta", "associated with", "Hindu Kush")\n', '("Hindu Kush", "once called", "upariśyena in Sanskrit and upāirisaēna in Avestan")\n', '("Hindu Kush", "also was known as", "Caucasus Indicus and Paropamisos")\n', '("Hindu Kush", "part of", "Pamir Mountains and Himalayas")\n', '("Tirich Mir", "located in", "Chitral District")\n', '("Kabul", "connected with", "Hindu Kush by Spin Ghar Range")\n', '("Himalayas", "influenced by", "Eastern Himalaya biodiversity")\n', '("Strabo", "wrote about", "Hindu Kush")\n', '("Ghazna", "related to", "ancient mines producing lapis lazuli")\n', '("Buddhism", "predominant in", "Hindu Kush")\n', '("Taliban and al-Qaeda", "grew in", "Hindu Kush")\n', '("Peshawar", "near", "Hindu Kush")\n', '("Hindu Kush", "experienced", "warming in climate change")\n', '("Karakoram", "less affected by", "glacier retreat compared to Hindu Kush")\n', '("Hindu Kush", "has flora such as", "Quercus, Olea, Cedrus, Picea, Abies, Pinus, junipers")\n', '("Hindu Kush", "passageway for", "Timur\'s invasion to Indian subcontinent")\n', '("Hindu Kush", "involved in", "slave trading between Central and South Asia")\n', '("Al-Biruni", "visited and wrote about", "Hindu Kush region")\n', '("Khyber Pass", "is a route through", "Hindu Kush")\n', '("Middle Jurassic", "period relates to", "formation of Hindu Kush") \n', '("Australia", "separated from", "region of Hindu Kush during Gondwana drift")\n', '("Palaeocene", "era during which Indian subcontinent collided with Eurasian Plate forming", "Hindu Kush")\n', '("Iranian Plateau", "is situated between", "Zagros Mountains and the Caspian Sea")\n', '("Iranian Plateau", "is situated between", "Caspian Sea and the Köpet Dag")\n', '("Iranian Plateau", "is situated between", "Armenian Highlands and the Caucasus Mountains")\n', '("Iranian Plateau", "is situated between", "Strait of Hormuz and the Persian Gulf")\n', '("Iranian Plateau", "includes", "Khuzestan")\n', '("Encyclopædia Britannica", "characterizes", "Elam")\n', '("Iranian Plateau", "extends from", "the Caspian to Balochistan")\n', '("Iranian Plateau", "includes", "Iran")\n', '("Iranian Plateau", "includes", "Afghanistan")\n', '("Iranian Plateau", "includes parts of", "Pakistan")\n', '("Iranian Plateau", "is near", "Indus River")\n', '("Noshaq", "is the highest point in", "Hindu Kush")\n', '("Lut Desert", "is the lowest point in", "Iranian Plateau")\n', '("Iranian Plateau", "is part of", "Eurasian continent")\n', '("Iranian Plateau", "includes parts of", "Republic of Azerbaijan")\n', '("Iranian Plateau", "includes parts of", "Iraqi Kurdistan")\n', '("Iranian Plateau", "includes parts of", "Turkmenistan")\n', '("Anti-Taurus", "is a region in", "Iranian Plateau")\n', '("Mount Ararat", "is located in", "the Anti-Taurus")\n', '("Turkey", "contains", "Mount Ararat")\n', '("Lake Van", "is situated in", "Iranian Plateau mountains")\n', '("Aras River", "flows into", "Caspian Sea")\n', '("Euphrates and Tigris", "join in", "Iraq")\n', '("Euphrates and Tigris", "flow into", "Persian Gulf")\n', '("Indus River", "flows the length of", "Pakistan")\n', '("Indus River", "traces the eastern edge of", "Iranian Plateau")\n', '("Black Sea", "receives small streams from", "Iranian Plateau mountains")\n', '("Southwest Iranian Ranges", "include", "Zagros Mountains")\n', '("Central Iranian Plateau", "contains", "Kūh-e Hazār and Kuh-e Jebal Barez")\n', '("Eastern Iranian Ranges", "include", "Kopet Dag and Balochistan mountains")\n', '("Iranian Plateau", "was route for expansion of", "modern humans")\n', '("Elam", "stretched across", "Zagros mountains")\n', '("Iranian Plateau", "was known as", "Persia")\n', '("Iranian Plateau", "is referenced as", "Middle Persian Erān")\n', '("Iran", "has oak forests around", "Shiraz")\n', '("Iranian Plateau", "is abundant with wildlife including", "leopards and bears")\n', '("Iranian Plateau", "houses aquatic birds along shores of", "Caspian Sea and Persian Gulf")\n', '("Iranian Plateau", "harvests trees for", "making doors and ploughs")\n', '("Iran", "grows fruits like", "pears and apples")\n', '("Iranian Plateau", "produces", "wheat and barley")\n', '("Tibetan Plateau", "also known as", "Qinghai–Tibet Plateau and Qing–Zang Plateau")\n', '("Tibetan Plateau", "located at", "intersection of Central, South, and East Asia")\n', '("Tibetan Plateau", "covers most of", "Tibet Autonomous Region")\n', '("Tibetan Plateau", "covers most of", "Qinghai")\n', '("Tibetan Plateau", "covers western half of", "Sichuan")\n', '("Tibetan Plateau", "covers southern", "Gansu provinces in Western China")\n', '("Tibetan Plateau", "located in", "southern Xinjiang")\n', '("Tibetan Plateau", "located in", "Bhutan")\n', '("Tibetan Plateau", "includes Indian regions of", "Ladakh and Lahaul and Spiti")\n', '("Tibetan Plateau", "includes", "Gilgit-Baltistan in Pakistan")\n', '("Tibetan Plateau", "located in", "northwestern Nepal")\n', '("Tibetan Plateau", "located in", "eastern Tajikistan")\n', '("Tibetan Plateau", "located in", "southern Kyrgyzstan")\n', '("Tibetan Plateau", "is the world\'s highest and largest", "plateau above sea level")\n', '("Tibetan Plateau", "contains the headwaters of", "most streams and rivers in surrounding regions")\n', '("Yellow River", "headwaters are contained in", "Tibetan Plateau")\n', '("Yangtze River", "headwaters are contained in", "Tibetan Plateau")\n', '("Mekong River", "headwaters are contained in", "Tibetan Plateau")\n', '("Tibetan Plateau", "bordered to south by", "inner Himalayan range")\n', '("Tibetan Plateau", "bordered to north by", "Kunlun Mountains")\n', '("Kunlun Mountains", "separate from", "Tarim Basin")\n', '("Tibetan Plateau", "bordered to northeast by", "Qilian Mountains")\n', '("Qilian Mountains", "separate from", "Hexi Corridor and Gobi Desert")\n', '("Tibetan Plateau", "surrounded by", "Karakoram range of northern Kashmir")\n', '("Tibetan Plateau", "origin of", "Indus River is near Lake Manasarovar")\n', '("Tibetan Plateau", "gives way to", "Salween and Mekong headwaters in northwest Yunnan")\n', '("Tibetan Plateau", "part of the", "Gobi Desert")\n', '("Changtang region", "part of", "northwestern Tibetan Plateau with extremely inhospitable environment")\n', '("Himalayas", "formed from", "continental collision along convergent boundary between Indo-Australian Plate and Eurasian Plate")\n', '("Tibetan Plateau", "supports", "variety of ecosystems")\n', '("Yarlung Zangpo river Valley", "location of", "most permanent human population on Tibetan Plateau")\n', '("Tibetan Plateau", "role in", "monsoon formation due to differential warming")\n', '("Tibetan Plateau", "covered by an ice sheet during", "Last Glacial Maximum")\n', '("Tibetan Plateau", "contains", "the world\'s third-largest store of ice")\n', '("Tibetan Plateau", "glaciers are retreating at", "higher speed than any other part of the world")\n', '("Tibetan Plateau", "vulnerable to", "global warming and permafrost thaw")\n']
+range(1, 225) 1
+['("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Maldives", "officially known as", "Republic of Maldives")\n', '("Maldives", "historically known as", "Maldive Islands")\n', '("Maldives", "located in", "South Asia")\n', '("Maldives", "located in", "Indian Ocean")\n', '("Maldives", "southwest of", "Sri Lanka")\n', '("Maldives", "southwest of", "India")\n', '("Maldives", "stretches across", "equator")\n', '("Maldives", "capital city is", "Malé")\n', '("Maldives", "located on", "Chagos–Laccadive Ridge")\n', '("Maldives", "forms terrestrial ecoregion with", "Chagos Archipelago and Lakshadweep")\n', '("Maldives", "smallest Asian country by", "land area")\n', '("Maldives", "most populated city is", "Malé")\n', '("Maldives", "also known as", "King\'s Island")\n', '("Maldives", "consolidated as", "sultanate")\n', '("Maldives", "developed commercial ties with", "Asia and Africa")\n', '("Maldives", "founding member of", "SAARC")\n', '("Maldives", "member of", "United Nations")\n', '("Maldives", "member of", "Commonwealth of Nations")\n', '("Maldives", "member of", "Organisation of Islamic Cooperation")\n', '("Maldives", "member of", "Non-Aligned Movement")\n', '("Maldives", "classified by World Bank as", "upper-middle income economy")\n', '("Maldives", "Dialogue Partner of", "Shanghai Cooperation Organisation")\n', '("Maldives", "dominant economic activity is", "fishing")\n', '("Tourism industry", "rapidly growing in", "Maldives")\n', '("Maldives", "rates high on", "Human Development Index")\n', '("First settlers of Maldives", "known as", "Dheyvis")\n', '("First Kingdom of Maldives", "known as", "Dheeva Maari Kingdom")\n', '("Name Maldives", "may derive from Sanskrit terms", "माला mālā (garland) and द्वीप dvīpa (island)")\n', '("Maldivian people", "called", "Dhivehin")\n', '("Mahiladiva", "mentioned in Mahavamsa as", "Island of Women")\n', '("Maldives", "called by medieval Muslim travellers as", "Maḥal Dībīyāt")\n', '("Maldives\' classical name", "said by Berber traveller as", "palace")\n', '("Dutch", "referred to Maldives as", "Maldivische Eilanden")\n', '("Maldivian people", "call their country in Dhivehi as", "Dhivehi Raajje")\n', '("Mahāvaṃsa records", "emigration from", "Sri Lanka to Maldives")\n', '("Historians believe", "Maldives\' settlement during", "Indus Valley civilisation")\n', '("Buddhist period", "long an important part of", "Maldivian history")\n', '("Early Maldivian Kings", "promoted", "Buddhism")\n', '("Archaeological remains in Maldives", "from", "Buddhist stupas and monasteries")\n', '("Conversion to Islam in Maldives", "initiated by last Buddhist king", "Dhovemi")\n', '("Sultan Muhammad al-Adil", "initiated", "six Islamic dynasties")\n', '("Maldives", "converted by Arab from Berbera, Somalia", "Abu al-Barakat Yusuf al-Barbari")\n', '("Islamic dynasties", "formed after", "conversion to Islam")\n', '("Ibn Battuta", "traveled to Maldives, served as", "chief judge")\n', '("Trade in Indian Ocean involved", "cowrie shells and", "coir fibre")\n', '("Bengal Sultanate", "trading partner with", "Maldives")\n', '("Portuguese", "established in Maldives", "as overseer of factory")\n', '("Muhammad Thakurufaanu al-A\'uẓam", "drove out", "Portuguese")\n', '("British", "included Maldives as", "British protectorate")\n', '("Maldivian Democratic Party", "founded by", "Mohamed Nasheed")\n', '("Mohamed Muizzu", "sworn in as,", "eighth President of the Republic of Maldives")\n', '("Largest island of Maldives ", "is", "Gan")\n', '("Climate of Maldives", "tropical monsoon", "influenced by Indian Ocean")\n', '("Monsoon in Maldives", "two seasons dominate", "dry and rainy")\n', '("Intergovernmental Panel on Climate Change", "warned about", "Maldives uninhabitable conditions")\n', '("Environment issues in Maldives", "include", "bad waste disposal and sand theft")\n', '("Marine ecosystem of Maldives", "includes", "different habitats")\n', '("Coral reef regeneration", "initiated by scientists using", "electrified cones for larval coral attachment")\n', '("Maldivian fauna", "diversity varies greatly between", "atolls and neighbouring atolls")\n', '("Wildlife of Maldives", "includes", "flora and fauna of islands, reefs, and ocean")\n', '("Maldivian terrestrial life", "threatened by", "intensive development")\n', '("Sea" , "surrounding Maldives hosts", "diverse reptilian life")\n', '("Green sea turtle among others", "use Maldivian beaches as", "nesting grounds")\n', '("Saltwater crocodiles", "occasionally reach", "Maldives islands")\n', '("Location of Maldives", "results in avifauna mainly restricted to", "pelagic birds")\n', '("Members of Majlis", "serve", "five-year terms")\n', '("Order of Nishanizzuddeen", "highest civilian honor in", "Maldives")\n', '("Judiciary in Maldives", "independent", "subject only to Constitution and law")\n', '("Islam", "official religion of", "Maldives")\n', '("Non-Muslims", "prohibited from becoming", "citizens")\n', '("Same-sex relations", "illegal in", "Maldives")\n', '("Same-sex relations", "tourist resorts operate as", "exceptions to the law")\n', '("Maldives", "founding member of", "SAARC")\n', '("Russian oligarchs", "sought refuge for mega-yachts in", "Maldives")\n', '("Maldives National Defence Force", "responsible for", "defending security and sovereignty of Maldives")\n', '("Coast Guard", "vital role in", "Maldives")\n', '("Maldives", "signed UN treaty on", "Prohibition of Nuclear Weapons")\n', '("Human rights in Maldives", "contentious issue, described as", "Partly Free by Freedom House")\n', '("Maldives", "corruption and lack of religious freedom noted by", "United States Bureau of Democracy, Human Rights and Labor")\n', '("Administrative divisions in Maldives", "twenty-six natural atolls divided into", "twenty-one administrative divisions")\n', '("Economy of Maldives", "tourism and fisheries are", "dominant sectors")\n', '("Historical economy", "cowry shells used as", "international currency")\n', '("Maldives", "known as \'Money Isles\' by", "Arabs")\n', '("Fishing industry in Maldives", "entirely dependent on", "fisheries")\n', '("Maldives National Defence Force", "combined security organisation responsible for", "defending security and sovereignty")\n', '("Dhivehin", "largest ethnic group in", "Maldives")\n', '("Dhivehin", "speak", "Dhivehi language")\n', '("Giraavaru people", "small Tamil population in", "Maldives")\n', '("Mohamed Nasheed, former", "president perceived as", "critic")\n', '("Proselytism by", "non-Muslims", "illegal in Maldives")\n', '("Sharia by", "court", "considered in legal cases where law is silent")\n', '("Divehi", "is an Indo-Aryan language", "closely related to Sinhala")\n', '("Thaana script", "used for Dhivehi is", "written right to left")\n', '("Fishery is the", "second-largest sector after tourism in", "Maldives")\n', '("Hindu Kush", "located on", "Iranian Plateau")\n', '("Hindu Kush", "stretches from", "central and eastern Afghanistan")\n', '("Hindu Kush", "extends into", "northwestern Pakistan")\n', '("Hindu Kush", "reaches", "far southeastern Tajikistan")\n', '("Hindu Kush", "forms western section of", "Hindu Kush Himalayan Region")\n', '("Hindu Kush", "buttresses", "Pamir Mountains")\n', '("Hindu Kush", "connects with", "Karakoram Range")\n', '("Hindu Kush", "is near", "Kabul River")\n', '("Hindu Kush", "divides", "Amu Darya and Indus River valley")\n', '("Tirich Mir", "is the highest point of", "Hindu Kush")\n', '("Hindu Kush", "located in", "Khyber Pakhtunkhwa")\n', '("Hindu Kush", "name first used by", "Ibn Battuta")\n', '("Hindu Kush", "translates to", "Killer of Hindu or Hindu-Killer")\n', '("Hindu Kush", "also known as", "Hindukush")\n', '("Ibn Battuta", "associated with", "Hindu Kush")\n', '("Hindu Kush", "once called", "upariśyena in Sanskrit and upāirisaēna in Avestan")\n', '("Hindu Kush", "also was known as", "Caucasus Indicus and Paropamisos")\n', '("Hindu Kush", "part of", "Pamir Mountains and Himalayas")\n', '("Tirich Mir", "located in", "Chitral District")\n', '("Kabul", "connected with", "Hindu Kush by Spin Ghar Range")\n', '("Himalayas", "influenced by", "Eastern Himalaya biodiversity")\n', '("Strabo", "wrote about", "Hindu Kush")\n', '("Ghazna", "related to", "ancient mines producing lapis lazuli")\n', '("Buddhism", "predominant in", "Hindu Kush")\n', '("Taliban and al-Qaeda", "grew in", "Hindu Kush")\n', '("Peshawar", "near", "Hindu Kush")\n', '("Hindu Kush", "experienced", "warming in climate change")\n', '("Karakoram", "less affected by", "glacier retreat compared to Hindu Kush")\n', '("Hindu Kush", "has flora such as", "Quercus, Olea, Cedrus, Picea, Abies, Pinus, junipers")\n', '("Hindu Kush", "passageway for", "Timur\'s invasion to Indian subcontinent")\n', '("Hindu Kush", "involved in", "slave trading between Central and South Asia")\n', '("Al-Biruni", "visited and wrote about", "Hindu Kush region")\n', '("Khyber Pass", "is a route through", "Hindu Kush")\n', '("Middle Jurassic", "period relates to", "formation of Hindu Kush") \n', '("Australia", "separated from", "region of Hindu Kush during Gondwana drift")\n', '("Palaeocene", "era during which Indian subcontinent collided with Eurasian Plate forming", "Hindu Kush")\n', '("Iranian Plateau", "is situated between", "Zagros Mountains and the Caspian Sea")\n', '("Iranian Plateau", "is situated between", "Caspian Sea and the Köpet Dag")\n', '("Iranian Plateau", "is situated between", "Armenian Highlands and the Caucasus Mountains")\n', '("Iranian Plateau", "is situated between", "Strait of Hormuz and the Persian Gulf")\n', '("Iranian Plateau", "includes", "Khuzestan")\n', '("Encyclopædia Britannica", "characterizes", "Elam")\n', '("Iranian Plateau", "extends from", "the Caspian to Balochistan")\n', '("Iranian Plateau", "includes", "Iran")\n', '("Iranian Plateau", "includes", "Afghanistan")\n', '("Iranian Plateau", "includes parts of", "Pakistan")\n', '("Iranian Plateau", "is near", "Indus River")\n', '("Noshaq", "is the highest point in", "Hindu Kush")\n', '("Lut Desert", "is the lowest point in", "Iranian Plateau")\n', '("Iranian Plateau", "is part of", "Eurasian continent")\n', '("Iranian Plateau", "includes parts of", "Republic of Azerbaijan")\n', '("Iranian Plateau", "includes parts of", "Iraqi Kurdistan")\n', '("Iranian Plateau", "includes parts of", "Turkmenistan")\n', '("Anti-Taurus", "is a region in", "Iranian Plateau")\n', '("Mount Ararat", "is located in", "the Anti-Taurus")\n', '("Turkey", "contains", "Mount Ararat")\n', '("Lake Van", "is situated in", "Iranian Plateau mountains")\n', '("Aras River", "flows into", "Caspian Sea")\n', '("Euphrates and Tigris", "join in", "Iraq")\n', '("Euphrates and Tigris", "flow into", "Persian Gulf")\n', '("Indus River", "flows the length of", "Pakistan")\n', '("Indus River", "traces the eastern edge of", "Iranian Plateau")\n', '("Black Sea", "receives small streams from", "Iranian Plateau mountains")\n', '("Southwest Iranian Ranges", "include", "Zagros Mountains")\n', '("Central Iranian Plateau", "contains", "Kūh-e Hazār and Kuh-e Jebal Barez")\n', '("Eastern Iranian Ranges", "include", "Kopet Dag and Balochistan mountains")\n', '("Iranian Plateau", "was route for expansion of", "modern humans")\n', '("Elam", "stretched across", "Zagros mountains")\n', '("Iranian Plateau", "was known as", "Persia")\n', '("Iranian Plateau", "is referenced as", "Middle Persian Erān")\n', '("Iran", "has oak forests around", "Shiraz")\n', '("Iranian Plateau", "is abundant with wildlife including", "leopards and bears")\n', '("Iranian Plateau", "houses aquatic birds along shores of", "Caspian Sea and Persian Gulf")\n', '("Iranian Plateau", "harvests trees for", "making doors and ploughs")\n', '("Iran", "grows fruits like", "pears and apples")\n', '("Iranian Plateau", "produces", "wheat and barley")\n', '("Tibetan Plateau", "also known as", "Qinghai–Tibet Plateau and Qing–Zang Plateau")\n', '("Tibetan Plateau", "located at", "intersection of Central, South, and East Asia")\n', '("Tibetan Plateau", "covers most of", "Tibet Autonomous Region")\n', '("Tibetan Plateau", "covers most of", "Qinghai")\n', '("Tibetan Plateau", "covers western half of", "Sichuan")\n', '("Tibetan Plateau", "covers southern", "Gansu provinces in Western China")\n', '("Tibetan Plateau", "located in", "southern Xinjiang")\n', '("Tibetan Plateau", "located in", "Bhutan")\n', '("Tibetan Plateau", "includes Indian regions of", "Ladakh and Lahaul and Spiti")\n', '("Tibetan Plateau", "includes", "Gilgit-Baltistan in Pakistan")\n', '("Tibetan Plateau", "located in", "northwestern Nepal")\n', '("Tibetan Plateau", "located in", "eastern Tajikistan")\n', '("Tibetan Plateau", "located in", "southern Kyrgyzstan")\n', '("Tibetan Plateau", "is the world\'s highest and largest", "plateau above sea level")\n', '("Tibetan Plateau", "contains the headwaters of", "most streams and rivers in surrounding regions")\n', '("Yellow River", "headwaters are contained in", "Tibetan Plateau")\n', '("Yangtze River", "headwaters are contained in", "Tibetan Plateau")\n', '("Mekong River", "headwaters are contained in", "Tibetan Plateau")\n', '("Tibetan Plateau", "bordered to south by", "inner Himalayan range")\n', '("Tibetan Plateau", "bordered to north by", "Kunlun Mountains")\n', '("Kunlun Mountains", "separate from", "Tarim Basin")\n', '("Tibetan Plateau", "bordered to northeast by", "Qilian Mountains")\n', '("Qilian Mountains", "separate from", "Hexi Corridor and Gobi Desert")\n', '("Tibetan Plateau", "surrounded by", "Karakoram range of northern Kashmir")\n', '("Tibetan Plateau", "origin of", "Indus River is near Lake Manasarovar")\n', '("Tibetan Plateau", "gives way to", "Salween and Mekong headwaters in northwest Yunnan")\n', '("Tibetan Plateau", "part of the", "Gobi Desert")\n', '("Changtang region", "part of", "northwestern Tibetan Plateau with extremely inhospitable environment")\n', '("Himalayas", "formed from", "continental collision along convergent boundary between Indo-Australian Plate and Eurasian Plate")\n', '("Tibetan Plateau", "supports", "variety of ecosystems")\n', '("Yarlung Zangpo river Valley", "location of", "most permanent human population on Tibetan Plateau")\n', '("Tibetan Plateau", "role in", "monsoon formation due to differential warming")\n', '("Tibetan Plateau", "covered by an ice sheet during", "Last Glacial Maximum")\n', '("Tibetan Plateau", "contains", "the world\'s third-largest store of ice")\n', '("Tibetan Plateau", "glaciers are retreating at", "higher speed than any other part of the world")\n', '("Tibetan Plateau", "vulnerable to", "global warming and permafrost thaw")\n']
+range(1, 225) 1
+{'id': '0_11', 'Question': ' In which mountain range will you find both the Mahalangur Himal sub-range and Mount Everest?\n', 'Answer': 'Himalayas', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Maldives'}, {'label': 'B', 'text': 'Hindu Kush'}, {'label': 'C', 'text': 'Iranian Plateau'}, {'label': 'D', 'text': 'Himalayas'}, {'label': 'E', 'text': 'Tibetan Plateau'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'maldives'}, {'label': 'B', 'text': 'hindu_kush'}, {'label': 'C', 'text': 'iranian_plateau'}, {'label': 'D', 'text': 'himalayas'}, {'label': 'E', 'text': 'tibetan_plateau'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Where are the Mahalangur Himal sub-range and Mount Everest situated?\nA1: Himalayas'], 'Hops_wiki': [('Mount Everest', 'Himalayas')], 'Hops_cpnet': [('mount_everest', 'himalayas')], 'Triplets': ['("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")'], 'Referred_files': [{'name': 'Mount Everest', 'line': 2}], 'Question_triplet_answer': {100: [87], 50: [93], 25: [40]}}
+time passed:  4442.609767913818
+Expected dollar:  0.0
+Mount Everest is Geography
+Maldives is Geography
+Tibetan Plateau is Geography
+Kunlun Mountains is Geography
+Indus River is Geography
+Lake Manasarovar is Geography
+Kabul River is Geography
+Afghanistan is Geography
+Zagros Mountains is Geography
+the Caspian Sea is Geography
+Location of Maldives is Geography
+avifauna is Animal
+Eurasian is Geography
+Caucasus Indicus is Geography
+Paropamisos is Geography
+Pamir Mountains is Geography
+Maḥal Dībīyāt is Geography
+Balochistan is Geography
+Qilian Mountains" is Geography
+Hexi Corridor is Geography
+Gobi Desert is Geography
+'Money Isles' is Geography
+the Khumbu Icefall is Geography
+Green sea is Animal
+Kyrgyzstan is Geography
+Khyber Pass is Geography
+Indian Ocean is Geography
+Pakistan is Geography
+Kopet Dag is Geography
+Chagos Archipelago is Geography
+Lakshadweep is Geography
+Sri Lanka is Geography
+Himalayas is Geography
+"Khumbu Glacier and is Geography
+Everest is Geography
+Mohamed Muizzu is People
+the Republic of Maldives is Geography
+Qilian Mountains is Geography
+Muhammad al Adil is People
+Nepal is Geography
+Tigris is Geography
+Iraq is Geography
+Gansu is Geography
+Quercus, Olea is Animal
+Cedrus is Animal
+Picea, Abies, Pinus is Animal
+Bhutan is Geography
+George Everest is People
+Kabul is Geography
+Lake Van is Geography
+India is Geography
+Iran is Geography
+Armenian Highlands and the Caucasus Mountains is Geography
+the Anti Taurus is Geography
+Persian Gulf is Geography
+Karakoram Range is Geography
+Caspian Sea and the Köpet Dag is Geography
+Mauna Kea is Geography
+Denali is Geography
+Aras River is Geography
+Caspian Sea is Geography
+Saltwater is Animal
+Kunlun Mountains" is Geography
+Tarim Basin is Geography
+Mohamed Nasheed is People
+Maldive Islands is Geography
+Dhovemi is People
+Killer of Hindu or Hindu Killer is Geography
+Monsoon in Maldives is Geography
+Tirich Mir is Geography
+Al Biruni is People
+Qinghai is Geography
+Turkmenistan is Geography
+Taliban is Incident
+al Qaeda is Incident
+Chitral District is Geography
+Ibn Battuta is Geography
+Timur is People
+Tajikistan is Geography
+Persia is Geography
+Salween is Geography
+Mekong is Geography
+Yunnan is Geography
+Sichuan is Geography
+Gilgit Baltistan is Geography
+China is Geography
+Berbera is Geography
+Somalia is Geography
+Ordovician is Geography
+entities:  {'Pakistan', 'Sri', 'Lake', 'Manasarovar', 'Muizzu', 'Iran', 'Monsoon', 'Biruni', '"Khumbu', 'Persia', 'Glacier', 'Shanghai', 'Plateau', 'Tibetan', 'Hindu', 'Iraq', 'Tarim', 'Corridor', 'Balochistan', 'Tajikistan', 'reptilian', 'Turkmenistan', 'Berbera', 'Gansu', 'Icefall', 'Anti', 'Taliban', 'Desert', 'Paropamisos', 'Picea,', 'Battuta', 'Pamir', 'United', 'Indus', 'Muhammad', 'Al', 'Ordovician', 'Mir', 'Taurus', 'Hexi', 'Dībīyāt', 'Archipelago', 'Republic', 'Qinghai', 'Lanka', 'Adil', 'Asia', 'George', 'Mekong', 'Khumbu', 'Denali', 'Mohamed', 'Baltistan', 'Indian', 'Caucasus', 'Pass', 'Chagos', 'Strabo', 'River', 'al', 'Basin', 'Mount', 'Nepal', 'Kea', 'Ararat', 'Khyber', 'Olea', 'Köpet', 'Qaeda', 'Indicus', 'Aras', 'Dhovemi', 'Saltwater', 'Bhutan', 'Quercus,', 'Avestan', 'Pinus', 'Eurasian', 'Mountains', 'Everest', 'Kabul', 'Abies,', 'Sea', 'District', 'Kopet', 'Africa', 'Caspian', 'Dag', 'Sichuan', 'Karakoram', 'Mauna', 'Azerbaijan', 'Tigris', 'India', 'Zagros', 'Gilgit', 'Maldives', 'Himalayas', "Isles'", 'Lakshadweep', 'sea', 'Salween', 'China', 'Gobi', 'Iranian', 'Highlands', 'Kush', 'Mountains"', 'Qilian', 'Range', 'Kunlun', 'Yusuf', 'Somalia', 'Armenian', 'Persian', 'Cedrus', 'Timur', 'Nasheed', 'avifauna', 'Tirich', 'Green', 'Ibn', 'Yunnan', 'Tibet', 'Maldive', 'Ocean', 'Location', 'Maḥal', 'Chitral', 'Van', 'Gulf', 'Islands', "'Money", 'Kyrgyzstan', 'Killer', 'Afghanistan'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Tibetan Plateau' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Plateau
+Kunlun Mountains
+monsoon
+Indus River
+Gansu
+Kyrgyzstan
+Nepal
+Sichuan
+Qinghai
+Tibet Autonomous Region
+Salween
+Mekong
+Yunnan
+Gilgit-Baltistan
+
+gpt_entity_particular(): entity list: 
+ ['Qinghai', 'Tibet Autonomous Region', 'Gilgit-Baltistan', 'Sichuan', 'monsoon', 'Plateau', 'Salween', 'Gansu', 'Kunlun Mountains', 'Yunnan', 'Mekong', 'Kyrgyzstan', 'Nepal', 'Indus River']
+
+gpt_entity_particular(): filtered entity: 
+ ['Plateau']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hindu Kush' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hindu Kush
+Kabul River
+Caucasus Indicus
+Paropamisos
+slave trading
+Pamir Mountains
+Karakoram Range
+Himalayas
+Pamir Mountains
+Quercus
+Olea
+Cedrus
+Picea
+Abies
+Pinus
+junipers
+Buddhism
+Pamir Mountains
+Timur's invasion
+central and eastern Afghanistan
+far southeastern Tajikistan
+
+gpt_entity_particular(): entity list: 
+ ['Olea', 'Pamir Mountains', 'slave trading', 'Himalayas', 'Abies', "Timur's invasion", 'Kabul River', 'central and eastern Afghanistan', 'Pinus', 'Cedrus', 'Hindu Kush', 'Buddhism', 'Karakoram Range', 'far southeastern Tajikistan', 'Paropamisos', 'Caucasus Indicus', 'Quercus', 'Picea', 'junipers']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Maldives' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Maldives
+Mount Everest
+First settlers of Maldives
+court
+Tibetan Plateau
+Sharia
+Kunlun Mountains
+Maldivian Kings
+Hindu Kush
+Iranian Plateau
+Constitution
+Location of Maldives
+Mount Everest
+Elam
+Green sea turtle
+Zagros mountains
+Maldives
+Iranian Plateau
+Tibetan Plateau
+Mount Everest
+Mount Ararat
+Qilian Mountains
+Maldives
+Mount Everest
+Khyber Pass
+Greens sea turtle
+Maldives
+Tibetan Plateau
+Kabul River
+Maldives
+Judiciary
+Iranian Plateau
+Indus River
+Maldives
+Iranian Plateau
+Eastern Iranian Ranges
+Maldives
+Tibetan Plateau
+Mount Everest
+Presidency
+Tibetan Plateau
+Independence
+Indus River
+Maldives
+Mount Everest
+Maldives
+Iranian Plateau
+Mount Everest
+Hindu Kush
+Maldives
+Buddhism
+Tibetan Plateau
+Khyber Pass
+Maldives
+Iranian Plateau
+Maldives
+Tibetan Plateau
+Saltwater crocodile
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Coral reefs
+Maldives
+Maldives
+Saltwater crocodile
+Maldives
+Kunlun Mountains
+Dhivehin
+Maldives
+Maldives
+Tibetan Plateau
+Mount Everest
+Maldives
+Maldives
+Maldives
+Saltwater crocodile
+Maldives
+Buddhist period
+Maldives
+Maldives
+Maldives
+Dhivehin
+Maldives
+Thaana script
+Maldives
+Buddhist period
+Maldives
+Maldives
+Dhivehin
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+
+gpt_entity_particular(): entity list: 
+ ['Qilian Mountains', 'Maldives', 'Buddhist period', 'Judiciary', 'Maldivian Kings', 'Presidency', 'Kabul River', 'Zagros mountains', 'Kunlun Mountains', 'Mount Ararat', 'Location of Maldives', 'Green sea turtle', 'Coral reefs', 'Iranian Plateau', 'Dhivehin', 'Indus River', 'court', 'Constitution', 'Hindu Kush', 'Buddhism', 'Eastern Iranian Ranges', 'Mount Everest', 'Independence', 'Greens sea turtle', 'Saltwater crocodile', 'First settlers of Maldives', 'Khyber Pass', 'Elam', 'Thaana script', 'Sharia', 'Tibetan Plateau']
+
+gpt_entity_particular(): filtered entity: 
+ ['Judiciary']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Himalayas' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mount Everest
+Tibetan Plateau
+Tibetan Plateau
+Indus River
+Kunlun Mountains
+Indus River
+Hindu Kush
+Indus River
+Kabul River
+Maldives
+Mount Everest
+Everest's
+Buddhism
+Kabul River
+Kunlun Mountains
+Kunlun Mountains
+Buddhism
+Himalayas
+Khumbu Glacier
+Mount Everest
+Glacier
+Sea
+Maldives
+Tourism industry
+Maldives
+Maldives
+Maldives
+Maldives
+Abu al-Barakat Yusuf al-Barbari
+Himalayas
+
+gpt_entity_particular(): entity list: 
+ ['Tourism industry', 'Khumbu Glacier', 'Glacier', 'Kabul River', 'Kunlun Mountains', "Everest's", 'Abu al-Barakat Yusuf al-Barbari', 'Sea', 'Hindu Kush', 'Buddhism', 'Maldives', 'Himalayas', 'Mount Everest', 'Tibetan Plateau', 'Indus River']
+
+gpt_entity_particular(): filtered entity: 
+ ['Mount Everest']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mount Everest' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mount Everest
+Hazard
+Avalanches
+Khumbu Icefall
+Summit
+Border
+China
+Nepal
+
+gpt_entity_particular(): entity list: 
+ ['China', 'Hazard', 'Border', 'Khumbu Icefall', 'Avalanches', 'Mount Everest', 'Nepal', 'Summit']
+
+gpt_entity_particular(): filtered entity: 
+ ['China', 'Nepal']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Iranian Plateau' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Iranian Plateau
+Zagros Mountains
+Caspian Sea
+Balochistan
+Eurasian continent
+Caucasus Mountains
+Indus River
+Afghanistan
+Caspian Sea
+Persian Gulf
+Armenian Highlands
+Leopards
+Bears
+Indus River
+Caspian Sea
+Persia
+Persian Gulf
+Republic of Azerbaijan
+
+gpt_entity_particular(): entity list: 
+ ['Caspian Sea', 'Balochistan', 'Armenian Highlands', 'Persian Gulf', 'Leopards', 'Caucasus Mountains', 'Persia', 'Republic of Azerbaijan', 'Bears', 'Eurasian continent', 'Afghanistan', 'Iranian Plateau', 'Zagros Mountains', 'Indus River']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Pakistan', 'Sri', 'Lake', 'Manasarovar', 'Muizzu', 'Iran', 'Monsoon', 'Biruni', '"Khumbu', 'Persia', 'Glacier', 'Shanghai', 'Plateau', 'Tibetan', 'Hindu', 'Iraq', 'Tarim', 'Corridor', 'Balochistan', 'Tajikistan', 'reptilian', 'Turkmenistan', 'Berbera', 'Gansu', 'Icefall', 'Anti', 'Taliban', 'Desert', 'Paropamisos', 'Picea,', 'Battuta', 'Pamir', 'United', 'Indus', 'Muhammad', 'Al', 'Ordovician', 'Mir', 'Taurus', 'Hexi', 'Judiciary', 'Dībīyāt', 'Archipelago', 'Republic', 'Qinghai', 'Lanka', 'Adil', 'Asia', 'George', 'Mekong', 'Khumbu', 'Denali', 'Mohamed', 'Baltistan', 'Indian', 'Caucasus', 'Pass', 'Chagos', 'Strabo', 'River', 'al', 'Basin', 'Mount', 'Nepal', 'Kea', 'Ararat', 'Khyber', 'Olea', 'Köpet', 'Qaeda', 'Indicus', 'Aras', 'Dhovemi', 'Saltwater', 'Bhutan', 'Quercus,', 'Avestan', 'Pinus', 'Eurasian', 'Mountains', 'Everest', 'Kabul', 'Abies,', 'Sea', 'District', 'Kopet', 'Africa', 'Caspian', 'Dag', 'Sichuan', 'Karakoram', 'Mauna', 'Azerbaijan', 'Tigris', 'India', 'Zagros', 'Gilgit', 'Maldives', 'Himalayas', "Isles'", 'Lakshadweep', 'sea', 'Salween', 'China', 'Gobi', 'Iranian', 'Highlands', 'Kush', 'Mountains"', 'Qilian', 'Range', 'Kunlun', 'Yusuf', 'Somalia', 'Armenian', 'Persian', 'Cedrus', 'Timur', 'Nasheed', 'avifauna', 'Tirich', 'Green', 'Ibn', 'Yunnan', 'Tibet', 'Mount Everest', 'Maldive', 'Ocean', 'Location', 'Maḥal', 'Chitral', 'Van', 'Gulf', 'Islands', "'Money", 'Kyrgyzstan', 'Killer', 'Afghanistan'}
+Total time:  378.5730619430542
+Entity conversion done on 0_11 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_0_11_entity_conversion_hash.json. Check the entity.
+ In which mountain 04D will you find both the Mahalangur Himal sub-range and 006 Everest?
+
+
+
+Done. Check final_query/id_0_11_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_0_11_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_0_11_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_0_11_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_0_11_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_0_11_final_result_ratio25_unmasked.txt

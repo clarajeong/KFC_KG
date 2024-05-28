@@ -1,0 +1,27 @@
+Got argument: Abraham Lincoln, 0, 0_1, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Abraham Lincoln, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")', 'start word': 'Abraham Lincoln', 'end word': 'John Wilkes Booth', 'source': {'name': 'Andrew Johnson', 'line': 129}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'john_wilkes_booth'}}
+next_word: John Wilkes Booth
+generate_question(0_1, ['("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")'], ['John Wilkes Booth'], [('Abraham Lincoln', 'John Wilkes Booth')], John Wilkes Booth, [{'name': 'Andrew Johnson', 'line': 129}]) called
+GPT output is:  Q: Who was the assassin responsible for the fatal injury of the U.S. president at Ford's Theatre?
+A: John Wilkes Booth
+final_choice(John Wilkes Booth, options = 5) started
+[]
+entity_type(John Wilkes Booth) called
+John Wilkes Booth is Geography
+check_matchscore(John Wilkes Booth, Criminals from Maryland):  0.0
+choose_by_wiki_recur(Criminals from Maryland)
+   Pages in Criminals from Maryland: ['John Wilkes Booth', 'Nicholas Waggoner Browning', 'Patrick Tracy Burris', 'Korryn Gaines', 'Freddie Gray', 'Willis Haynes', 'Dustin Higgs', 'James J. Lee', 'Derrick Miller', 'Ronald Lee Moore', 'Allan Patterson Newman', 'Brian Nichols', 'Brittany Norwood', 'Reginald Oates', 'Geraldine Parrish', 'Jarrod Ramos', 'Wendi Michelle Scott', 'Charles Andrew Williams', 'Melvin Williams (actor)', 'William Zantzinger']
+      Wendi Michelle Scott in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish']
+      Dustin Higgs in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris']
+      Willis Haynes in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman']
+      Geraldine Parrish in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray']
+      Patrick Tracy Burris in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore']
+      Allan Patterson Newman in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning']
+      Freddie Gray in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood']
+      Ronald Lee Moore in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger']
+      Nicholas Waggoner Browning in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)']
+      Brittany Norwood in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos']
+      William Zantzinger in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines']

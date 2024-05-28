@@ -1,0 +1,1369 @@
+Got argument: Immanuel Kant, 1, 1_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+next_word: Kaliningrad
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+generate_question(1_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")'], ['Kaliningrad', 'Germany'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Germany')], Germany, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 22}]) called
+GPT output is:  Q: Which country controlled the city where the philosopher Immanuel Kant is buried when it was formerly known as Königsberg?
+A: Germany
+final_choice(Germany, options = 5) started
+[]
+entity_type(Germany) called
+Germany is Geography
+check_matchscore(Germany, Member states of the European Union):  0.0
+choose_by_wiki_recur(Member states of the European Union)
+   Pages in Member states of the European Union: ['Member state of the European Union', 'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Republic of Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Kingdom of the Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden']
+      Romania in ['Romania', 'Croatia', 'Estonia', 'Portugal']
+      Croatia in ['Romania', 'Croatia', 'Estonia', 'Portugal']
+      Estonia in ['Romania', 'Croatia', 'Estonia', 'Portugal']
+      Portugal in ['Romania', 'Croatia', 'Estonia', 'Portugal']
+['Romania', 'Croatia', 'Estonia', 'Portugal']
+Ended after 2.5 hierarchy
+(2.5, ['Croatia', 'Romania', 'Estonia', 'Portugal'])
+
+extract_info(Croatia) Start.
+utils/preprocess.py extract_info(): Checking good links on Croatia
+Adriatic Sea is Geography
+1 / 30 )  Adriatic Sea Adriatic Sea adriatic_sea
+Slovenia is Geography
+2 / 30 )  Slovenia Slovenia slovenia
+Hungary is Geography
+3 / 30 )  Hungary Hungary hungary
+Serbia is Geography
+4 / 30 )  Serbia Serbia serbia
+Bosnia and Herzegovina is Geography
+5 / 30 )  Bosnia and Herzegovina Bosnia and Herzegovina bosnia_and_herzegovina
+Montenegro is Geography
+6 / 30 )  Montenegro Montenegro montenegro
+Italy is Geography
+7 / 30 )  Italy Italy italy
+Zagreb is Geography
+8 / 30 )  Zagreb Zagreb zagreb
+Rijeka is Geography
+9 / 30 )  Rijeka Rijeka rijeka
+Osijek is Geography
+10 / 30 )  Osijek Osijek osijek
+Kingdom of Hungary is Geography
+11 / 30 )  Hungary Kingdom of Hungary kingdom_of_hungary
+Kingdom of Yugoslavia is Geography
+12 / 30 )  Kingdom of Yugoslavia Kingdom of Yugoslavia kingdom_of_yugoslavia
+Socialist Federal Republic of Yugoslavia is Geography
+13 / 30 )  Socialist Federal Republic of Yugoslavia Socialist Federal Republic of Yugoslavia socialist_federal_republic_of_yugoslavia
+Schengen Area is Geography
+14 / 30 )  Schengen Area Schengen Area schengen_area
+World Trade Organization is Geography
+15 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+International Security Assistance Force is Incident
+16 / 30 )  International Security Assistance Force International Security Assistance Force isaf
+Krk is Geography
+17 / 30 )  Krk Krk krk
+Trogir is Geography
+18 / 30 )  Trogir Trogir trogir
+Benkovac is Geography
+19 / 30 )  Benkovac Benkovac benkovac
+Neanderthal is Animal
+20 / 30 )  Neanderthal Neanderthal neanderthal
+La Tène culture is Geography
+21 / 30 )  La Tène culture La Tène culture la_tène
+Hvar is Geography
+22 / 30 )  Hvar Hvar hvar
+Korčula is Geography
+23 / 30 )  Korčula Korčula korčula
+Diocletian is People
+24 / 30 )  Diocletian Diocletian diocletian
+Dubrovnik is Geography
+25 / 30 )  Dubrovnik Dubrovnik dubrovnik
+Iranian peoples is Geography
+26 / 30 )  Iranian Iranian peoples iranic
+Francia is Geography
+27 / 30 )  Francia Francia francia
+Drava is Geography
+28 / 30 )  Drava Drava drava
+Sava is Geography
+29 / 30 )  Sava Sava sava
+Sisak is Geography
+30 / 30 )  Sisak Sisak sisak
+extract_triplet(Croatia)
+Got GPT's response. String length : 1667
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  []
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['Adriatic Sea', 'Adriatic Sea', 'adriatic_sea']]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['Slovenia', 'Slovenia', 'slovenia']]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['Hungary', 'Hungary', 'hungary'], ['Hungary', 'Kingdom of Hungary', 'kingdom_of_hungary']]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['Serbia', 'Serbia', 'serbia']]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['Bosnia and Herzegovina', 'Bosnia and Herzegovina', 'bosnia_and_herzegovina'], ['Montenegro', 'Montenegro', 'montenegro']]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['Italy', 'Italy', 'italy']]
+subject_words:  [['Zagreb', 'Zagreb', 'zagreb']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Rijeka', 'Rijeka', 'rijeka']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Osijek', 'Osijek', 'osijek']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  []
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['Hungary', 'Hungary', 'hungary'], ['Hungary', 'Kingdom of Hungary', 'kingdom_of_hungary']]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  []
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  []
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['Schengen Area', 'Schengen Area', 'schengen_area']]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+subject_words:  [(None, 'Croatia', 'croatia')]
+object_words:  [['International Security Assistance Force', 'International Security Assistance Force', 'isaf']]
+subject_words:  [['Krk', 'Krk', 'krk']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Trogir', 'Trogir', 'trogir']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Benkovac', 'Benkovac', 'benkovac']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Neanderthal', 'Neanderthal', 'neanderthal']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['La Tène culture', 'La Tène culture', 'la_tène']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Hvar', 'Hvar', 'hvar']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Korčula', 'Korčula', 'korčula']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Diocletian', 'Diocletian', 'diocletian']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Dubrovnik', 'Dubrovnik', 'dubrovnik']]
+object_words:  []
+subject_words:  [['Iranian', 'Iranian peoples', 'iranic']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Francia', 'Francia', 'francia']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Drava', 'Drava', 'drava']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Sava', 'Sava', 'sava']]
+object_words:  [(None, 'Croatia', 'croatia')]
+subject_words:  [['Sisak', 'Sisak', 'sisak']]
+object_words:  [(None, 'Croatia', 'croatia')]
+extract_info(Romania) Start.
+utils/preprocess.py extract_info(): Checking good links on Romania
+Eastern Europe is Geography
+1 / 30 )  Eastern Eastern Europe eastern_europe
+Ukraine is Geography
+2 / 30 )  Ukraine Ukraine ukraine
+Hungary is Geography
+3 / 30 )  Hungary Hungary hungary
+Serbia is Geography
+4 / 30 )  Serbia Serbia serbia
+Bulgaria is Geography
+5 / 30 )  Bulgaria Bulgaria bulgaria
+Moldova is Geography
+6 / 30 )  Moldova Moldova moldova
+Black Sea is Geography
+7 / 30 )  Black Sea Black Sea black_sea
+Bucharest is Geography
+8 / 30 )  Bucharest Bucharest bucharest
+Cluj-Napoca is Geography
+9 / 30 )  Cluj-Napoca Cluj-Napoca cluj_napoca
+Iași is Geography
+10 / 30 )  Iași Iași iași
+Timișoara is Geography
+11 / 30 )  Timișoara Timișoara timișoara
+Constanța is Geography
+12 / 30 )  Constanța Constanța constanța
+Craiova is Geography
+13 / 30 )  Craiova Craiova craiova
+Brașov is Geography
+14 / 30 )  Brașov Brașov brașov
+Galați is Geography
+15 / 30 )  Galați Galați galați
+Danube is Geography
+16 / 30 )  Danube Danube danube
+Black Forest is Geography
+17 / 30 )  Black Forest Black Forest black_forest
+Carpathian Mountains is Geography
+18 / 30 )  Carpathian Mountains Carpathian Mountains carpathian_mountains
+Dacia is Geography
+19 / 30 )  Dacia Dacia dacia
+Wallachia is Geography
+20 / 30 )  Wallachia Wallachia wallachia
+Bessarabia is Geography
+21 / 30 )  Bessarabia Bessarabia bessarabia
+Banat is Geography
+22 / 30 )  Banat Banat banat
+Soviet Union is Geography
+23 / 30 )  Soviet Union Soviet Union soviet_union
+Schengen Area is Geography
+24 / 30 )  Schengen Area Schengen Area schengen_area
+World Trade Organization is Geography
+25 / 30 )  WTO World Trade Organization world_trade_organization
+Human is Animal
+26 / 30 )  Homo sapiens Human human
+Thessaly is Geography
+27 / 30 )  Thessaly Thessaly thessaly
+Tisza is Geography
+28 / 30 )  Tisza Tisza tisza
+Dobruja is Geography
+29 / 30 )  Dobruja Dobruja dobruja
+Balkan Mountains is Geography
+30 / 30 )  Balkan Mountains Balkan Mountains balkan_mountains
+extract_triplet(Romania)
+Got GPT's response. String length : 5032
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Eastern', 'Eastern Europe', 'eastern_europe']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Ukraine', 'Ukraine', 'ukraine']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Hungary', 'Hungary', 'hungary']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Serbia', 'Serbia', 'serbia']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Bulgaria', 'Bulgaria', 'bulgaria']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Moldova', 'Moldova', 'moldova']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Black Sea', 'Black Sea', 'black_sea']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Bucharest', 'Bucharest', 'bucharest']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Galați', 'Galați', 'galați']]
+subject_words:  [['Danube', 'Danube', 'danube']]
+object_words:  [['Black Forest', 'Black Forest', 'black_forest']]
+subject_words:  [['Carpathian Mountains', 'Carpathian Mountains', 'carpathian_mountains']]
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Wallachia', 'Wallachia', 'wallachia']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Hungary', 'Hungary', 'hungary']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['WTO', 'World Trade Organization', 'world_trade_organization']]
+subject_words:  [['Homo sapiens', 'Human', 'human']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Romania', 'romania'), ['Thessaly', 'Thessaly', 'thessaly']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  []
+object_words:  [['Dacia', 'Dacia', 'dacia']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Danube', 'Danube', 'danube']]
+subject_words:  []
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  [['Hungary', 'Hungary', 'hungary']]
+object_words:  [['Danube', 'Danube', 'danube']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Bulgaria', 'Bulgaria', 'bulgaria']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [['Bessarabia', 'Bessarabia', 'bessarabia']]
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  []
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [(None, 'Romania', 'romania')]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Eastern', 'Eastern Europe', 'eastern_europe']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  [['Eastern', 'Eastern Europe', 'eastern_europe']]
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+subject_words:  [(None, 'Romania', 'romania')]
+object_words:  []
+extract_info(Portugal) Start.
+utils/preprocess.py extract_info(): Checking good links on Portugal
+Iberian Peninsula is Geography
+1 / 30 )  Iberian Peninsula Iberian Peninsula iberian_peninsula
+Macaronesia is Geography
+2 / 30 )  Macaronesian Macaronesia macaronesia
+Azores is Geography
+3 / 30 )  Azores Azores azores
+Atlantic Ocean is Geography
+4 / 30 )  North Atlantic Ocean Atlantic Ocean atlantic_ocean
+Lisbon is Geography
+5 / 30 )  Lisbon Lisbon lisbon
+Porto is Geography
+6 / 30 )  Porto Porto porto
+Algarve is Geography
+7 / 30 )  Algarve Algarve algarve
+Phoenicia is Geography
+8 / 30 )  Phoenicians Phoenicia phoenicia
+Kingdom of León is Geography
+9 / 30 )  Kingdom of León Kingdom of León kingdom_of_león
+Schengen Area is Geography
+10 / 30 )  Schengen Area Schengen Area schengen_area
+Homo heidelbergensis is Animal
+11 / 30 )  Homo heidelbergensis Homo heidelbergensis homo_heidelbergensis
+Neanderthal is Animal
+12 / 30 )  Neanderthals Neanderthal neanderthal
+Human taxonomy is Animal
+13 / 30 )  Homo sapiens sapiens Human taxonomy homo_sapiens_sapiens
+Hispania Tarraconensis is Geography
+14 / 30 )  Tarraconensis Hispania Tarraconensis hispania_tarraconensis
+Diocletian is People
+15 / 30 )  Diocletian Diocletian diocletian
+Hispania is Geography
+16 / 30 )  Hispania Hispania hispania
+Braga is Geography
+17 / 30 )  Braga Braga braga
+Al-Andalus is Geography
+18 / 30 )  al-Andalus Al-Andalus al_andalus
+Damascus is Geography
+19 / 30 )  Damascus Damascus damascus
+Rif is Geography
+20 / 30 )  Rif Mountains Rif rif
+Douro is Geography
+21 / 30 )  Douro Douro douro
+Cantabrian Mountains is Geography
+22 / 30 )  Cantabrian Mountains Cantabrian Mountains cantabrian_mountains
+Indian Ocean is Geography
+23 / 30 )  Indian Ocean Indian Ocean indian_ocean
+Ceuta is Geography
+24 / 30 )  Ceuta Ceuta ceuta
+Cape of Good Hope is Geography
+25 / 30 )  Cape of Good Hope Cape of Good Hope cape_of_good_hope
+Christopher Columbus is People
+26 / 30 )  Christopher Columbus Christopher Columbus christopher_columbus
+Cape Verde is Geography
+27 / 30 )  Cape Verde Cape Verde cape_verde
+Vasco da Gama is People
+28 / 30 )  Vasco da Gama Vasco da Gama vasco_da_gamma
+Canada is Geography
+29 / 30 )  Canada Canada canada
+Goa is Geography
+30 / 30 )  Goa Goa goa
+extract_triplet(Portugal)
+Got GPT's response. String length : 7615
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  [['Iberian Peninsula', 'Iberian Peninsula', 'iberian_peninsula']]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  [['Macaronesian', 'Macaronesia', 'macaronesia'], ['Azores', 'Azores', 'azores']]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  [['North Atlantic Ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Porto', 'Porto', 'porto']]
+object_words:  [['Lisbon', 'Lisbon', 'lisbon'], ['Algarve', 'Algarve', 'algarve']]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [['Phoenicians', 'Phoenicia', 'phoenicia']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Kingdom of León', 'Kingdom of León', 'kingdom_of_león']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  [['Schengen Area', 'Schengen Area', 'schengen_area']]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [['Homo heidelbergensis', 'Homo heidelbergensis', 'homo_heidelbergensis']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Neanderthals', 'Neanderthal', 'neanderthal']]
+object_words:  [['Iberian Peninsula', 'Iberian Peninsula', 'iberian_peninsula']]
+subject_words:  [['Homo sapiens sapiens', 'Human taxonomy', 'homo_sapiens_sapiens']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Phoenicians', 'Phoenicia', 'phoenicia']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [['Tarraconensis', 'Hispania Tarraconensis', 'hispania_tarraconensis']]
+subject_words:  [['Damascus', 'Damascus', 'damascus']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Rif Mountains', 'Rif', 'rif']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Douro', 'Douro', 'douro']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Cantabrian Mountains', 'Cantabrian Mountains', 'cantabrian_mountains']]
+object_words:  []
+subject_words:  [['Ceuta', 'Ceuta', 'ceuta']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Cape of Good Hope', 'Cape of Good Hope', 'cape_of_good_hope']]
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [['Christopher Columbus', 'Christopher Columbus', 'christopher_columbus']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Cape Verde', 'Cape Verde', 'cape_verde']]
+object_words:  []
+subject_words:  [['Vasco da Gama', 'Vasco da Gama', 'vasco_da_gamma']]
+object_words:  []
+subject_words:  [['Canada', 'Canada', 'canada']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Goa', 'Goa', 'goa']]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [['North Atlantic Ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+object_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+subject_words:  []
+object_words:  [['Azores', 'Azores', 'azores']]
+subject_words:  [['Azores', 'Azores', 'azores']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+object_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Azores', 'Azores', 'azores']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [['Algarve', 'Algarve', 'algarve']]
+object_words:  []
+subject_words:  []
+object_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [['Azores', 'Azores', 'azores']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [['Azores', 'Azores', 'azores']]
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+subject_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+['', 'Modernist painters in Portugal include', 'Amadeo de Souza-Cardoso and Almada Negreiros', '']
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  []
+object_words:  [(None, 'Portugal', 'portugal')]
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  []
+subject_words:  [(None, 'Portugal', 'portugal')]
+object_words:  [['Lisbon', 'Lisbon', 'lisbon'], ['Porto', 'Porto', 'porto']]
+extract_info(Estonia) Start.
+utils/preprocess.py extract_info(): Checking good links on Estonia
+Baltic Sea is Geography
+1 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Gulf of Finland is Geography
+2 / 30 )  Gulf of Finland Gulf of Finland gulf_of_finland
+Finland is Geography
+3 / 30 )  Finland Finland finland
+Sweden is Geography
+4 / 30 )  Sweden Sweden sweden
+Latvia is Geography
+5 / 30 )  Latvia Latvia latvia
+Lake Peipus is Geography
+6 / 30 )  Lake Peipus Lake Peipus lake_peipus
+Russia is Geography
+7 / 30 )  Russia Russia russia
+Saaremaa is Geography
+8 / 30 )  Saaremaa Saaremaa saaremaa
+Hiiumaa is Geography
+9 / 30 )  Hiiumaa Hiiumaa hiiumaa
+Tallinn is Geography
+10 / 30 )  Tallinn Tallinn tallinn
+Tartu is Geography
+11 / 30 )  Tartu Tartu tartu
+Pope is Incident
+12 / 30 )  Papal Pope pope
+State of the Teutonic Order is Geography
+13 / 30 )  Teutonic Order State of the Teutonic Order ordensstaat
+German Empire is Geography
+14 / 30 )  German German Empire german_empire
+Soviet Union is Geography
+15 / 30 )  Soviet Union Soviet Union soviet_union
+Nazi Germany is Geography
+16 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Schengen Area is Geography
+17 / 30 )  Schengen Area Schengen Area schengen_area
+Kievan Rus' is Geography
+18 / 30 )  Kievan Rus Kievan Rus' kievan_russia
+Saare County is Geography
+19 / 30 )  Saaremaa Saare County saare_county
+Oak is Animal
+20 / 30 )  oak Oak oak
+Pope Innocent III is People
+21 / 30 )  Innocent III Pope Innocent III innocent_iii
+Pärnu is Geography
+22 / 30 )  Pernau Pärnu pärnu
+Viljandi is Geography
+23 / 30 )  Fellin Viljandi viljandi
+Novgorod Republic is Geography
+24 / 30 )  Novgorod Novgorod Republic novgorodian
+Ivan the Terrible is People
+25 / 30 )  Ivan the Terrible Ivan the Terrible ivan_iv
+Gustavus Adolphus is People
+26 / 30 )  Gustaf II Adolf Gustavus Adolphus gustavus_adolphus
+Narva is Geography
+27 / 30 )  Narva Narva narva
+Joseph Stalin is People
+28 / 30 )  Stalin Joseph Stalin joseph_stalin
+Estonian Soviet Socialist Republic is Geography
+29 / 30 )  Estonian SSR Estonian Soviet Socialist Republic estonian_soviet_socialist_republic
+NKVD is Geography
+30 / 30 )  NKVD NKVD nkvd
+extract_triplet(Estonia)
+Got GPT's response. String length : 1570
+['"Estonia', 'is bordered by', 'the Baltic Sea', '']
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Gulf of Finland', 'Gulf of Finland', 'gulf_of_finland'], ['Finland', 'Finland', 'finland']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Finland', 'Finland', 'finland']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Sweden', 'Sweden', 'sweden']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Latvia', 'Latvia', 'latvia']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Lake Peipus', 'Lake Peipus', 'lake_peipus']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Saaremaa', 'Saaremaa', 'saaremaa'], ['Saaremaa', 'Saare County', 'saare_county']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Hiiumaa', 'Hiiumaa', 'hiiumaa']]
+subject_words:  [['Tallinn', 'Tallinn', 'tallinn']]
+object_words:  [(None, 'Estonia', 'estonia')]
+subject_words:  [['Tartu', 'Tartu', 'tartu']]
+object_words:  [(None, 'Estonia', 'estonia')]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Papal', 'Pope', 'pope']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Teutonic Order', 'State of the Teutonic Order', 'ordensstaat']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  []
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Sweden', 'Sweden', 'sweden']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  []
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Schengen Area', 'Schengen Area', 'schengen_area']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Kievan Rus', "Kievan Rus'", 'kievan_russia']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['oak', 'Oak', 'oak']]
+subject_words:  [['Innocent III', 'Pope Innocent III', 'innocent_iii']]
+object_words:  []
+subject_words:  [['Tallinn', 'Tallinn', 'tallinn']]
+object_words:  [['Novgorod', 'Novgorod Republic', 'novgorodian']]
+subject_words:  [['Pernau', 'Pärnu', 'pärnu']]
+object_words:  [['Novgorod', 'Novgorod Republic', 'novgorodian']]
+subject_words:  [['Gustaf II Adolf', 'Gustavus Adolphus', 'gustavus_adolphus']]
+object_words:  [(None, 'Estonia', 'estonia')]
+subject_words:  [['Narva', 'Narva', 'narva']]
+object_words:  [['Kievan Rus', "Kievan Rus'", 'kievan_russia']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['Stalin', 'Joseph Stalin', 'joseph_stalin']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  [['NKVD', 'NKVD', 'nkvd']]
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  []
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  []
+subject_words:  [(None, 'Estonia', 'estonia')]
+object_words:  []
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Croatia", "is located at", "the crossroads of Central and Southeast Europe")\n', '("Croatia\'s coast", "lies entirely on", "the Adriatic Sea")\n', '("Croatia", "borders", "Slovenia to the northwest")\n', '("Croatia", "borders", "Hungary to the northeast")\n', '("Croatia", "borders", "Serbia to the east")\n', '("Croatia", "borders", "Bosnia and Herzegovina and Montenegro to the southeast")\n', '("Croatia", "shares a maritime border with", "Italy to the west")\n', '("Zagreb", "is the capital and largest city of", "Croatia")\n', '("Rijeka", "is a major urban center in", "Croatia")\n', '("Osijek", "is a major urban center in", "Croatia")\n', '("Croatia", "was part of", "Roman Illyria in the 6th century")\n', '("Croatia", "entered a personal union with", "Hungary in 1102")\n', '("Croatia", "declared independence on", "25 June 1991")\n', '("Croatia", "is a member of", "the European Union")\n', '("Croatia", "is a member of", "the Schengen Area")\n', '("Croatia", "is a member of", "the World Trade Organization")\n', '("Croatia", "contributed troops to", "the International Security Assistance Force")\n', '("Krk", "is an island in", "Croatia")\n', '("Trogir", "is located in", "Croatia")\n', '("Benkovac", "is located in", "Croatia")\n', '("Neanderthal fossils", "were found in", "Croatia")\n', '("La Tène culture", "is associated with", "Croatia")\n', '("Hvar", "is an island in", "Croatia")\n', '("Korčula", "is an island in", "Croatia")\n', '("Diocletian", "was native to", "Croatia")\n', '("Dubrovnik", "was founded by", "Roman survivors")\n', '("Iranian theory", "proposes Iranian origin for", "Croatia")\n', '("Francia", "had vassal states of", "Croatia in the 9th century")\n', '("Drava", "is a river in", "Croatia")\n', '("Sava", "is a river in", "Croatia")\n', '("Sisak", "is located in", "Croatia")\n', '("Romania", "is located at", "the crossroads of Central, Eastern and Southeastern Europe")\n', '("Romania", "borders", "Ukraine to the north and east")\n', '("Romania", "borders", "Hungary to the west")\n', '("Romania", "borders", "Serbia to the southwest")\n', '("Romania", "borders", "Bulgaria to the south")\n', '("Romania", "borders", "Moldova to the east")\n', '("Romania", "borders", "the Black Sea to the southeast")\n', '("Romania", "has", "a predominantly continental climate")\n', '("Romania", "is the twelfth-largest country in", "Europe")\n', '("Romania", "is the sixth-most populous member state of", "the European Union")\n', '("Romania\'s", "capital and largest city is", "Bucharest")\n', '("Romania", "has cities including", "Cluj-Napoca, Iași, Timișoara, Constanța, Craiova, Brașov, Galați")\n', '("The Danube", "rises in", "Germany\'s Black Forest")\n', '("The Carpathian Mountains", "cross", "Romania from the north to the southwest")\n', '("Romania", "includes", "Moldoveanu Peak")\n', '("Romania", "has a settlement history starting from", "the Lower Paleolithic")\n', '("Romania", "was founded through a personal union of", "the Danubian Principalities of Moldavia and Wallachia")\n', '("Romania", "officially named since", "1866")\n', '("Romania", "gained independence from", "the Ottoman Empire in 1877")\n', '("Romania", "fought with the Allied Powers from", "1916")\n', '("Romania", "ceded Bessarabia and Northern Bukovina to", "the Soviet Union")\n', '("Romania", "ceded Northern Transylvania to", "Hungary")\n', '("Romania", "signed the Tripartite Pact and entered World War II on the Axis side against", "the Soviet Union")\n', '("Romania", "joined the Allies and recovered", "Northern Transylvania")\n', '("Romania", "became a socialist republic and a member of", "the Warsaw Pact")\n', '("Romania", "began a transition towards", "democracy and a market economy after the 1989 Revolution")\n', '("Romania", "is a member of", "the United Nations, the European Union, the Schengen Area, NATO, the Council of Europe, BSEC, and WTO")\n', '("Homo sapiens", "oldest known in Europe found in", "Peștera cu Oase")\n', '("Neolithic agriculture", "spread from", "Thessaly to Romania")\n', '("Salt production", "began in", "Lunca in the 5th to 4th millennium BC")\n', '("The Getae", "were part of", "the Dacians")\n', '("Romania", "conquered by", "the Roman Empire during late antiquity")\n', '("The Carpians, Goths and other tribes", "made raids against", "Dacia")\n', '("The Goths", "were overrun by", "the Huns")\n', '("The Huns", "forced the local population into", "submission")\n', '("The Goths", "occupied", "the Lower Danube region in 376")\n', '("Place names of Slavic origin", "indicate", "a significant Slavic-speaking population in Romania")\n', '("Hungary", "took control of", "the steppes north of the Lower Danube")\n', '("The First Bulgarian Empire", "had a population consisting of", "Bulgars, Slavs, and Vlachs")\n', '("Romanians", "established a cultural association to promote", "the use of Romanian")\n', '("Romania", "secretly joined the Triple Alliance of", "Germany, Austria-Hungary, and Italy")\n', '("Romania", "seized Southern Dobruja from", "Bulgaria")\n', '("Treaty of Paris", "put the Danubian Principalities under the collective guardianship of", "the Great Powers")\n', '("Romania", "the united principalities officially adopted the name", "in 1862")\n', '("The Great Powers", "acknowledged Romania\'s full independence at", "the Congress of Berlin")\n', '("Romania\'s", "king was crowned in", "1881")\n', '("Romania", "entered World War I against", "the Central Powers in 1916")\n', '("Romania", "signed a peace treaty with", "the Central Powers in May 1918")\n', '("Bessarabia", "united with", "Romania")\n', '("Transylvania, Banat, Crișana, and Maramureș", "became part of", "the Kingdom of Romania")\n', '("Romania", "terminated its mission in", "Iraq and withdrew its last troops on 24 July 2009")\n', '("Romania", "joined", "the European Union on 1 January 2007")\n', '("Romania", "adopted", "the Romanian leu as its currency since 1867")\n', '("Romania", "plans to adopt", "the euro in 2029")\n', '("Romania", "population was", "19,053,815 according to the 2021 Romanian census")\n', '("Romania", "official language is", "Romanian")\n', '("Romanian", "is similar to", "Aromanian, Megleno-Romanian, and Istro-Romanian")\n', '("Romania", "is a secular state with", "no state religion")\n', '("Romania", "majority of the population identify themselves as", "Christians")\n', '("Romania", "is", "an autocephalous Eastern Orthodox Church")\n', '("Romania", "has", "the world\'s third-largest Eastern Orthodox population")\n', '("Romania", "most popular sport is", "football")\n', '("Romania", "has", "over 219,000 registered players for football")\n', '("Romania national football team", "played its first match in", "1922")\n', '("Romania", "has played in", "seven World Cups")\n', '("Gheorghe Hagi", "was nicknamed", "Maradona of the Carpathians")\n', '("Steaua București", "was the first Eastern European team to win", "the UEFA Champions League in 1986")\n', '("Simona Halep", "won", "the French Open in 2018 and Wimbledon in 2019")\n', '("Romania", "has", "306 all-time Summer Olympics medals")\n', '("Romania", "has", "the world\'s second-largest gymnast Nadia Comăneci")\n', '("Romania", "has", "a universal health care system")\n', '("Portugal", "is located on", "the Iberian Peninsula")\n', '("Portugal", "includes territory of", "the Macaronesian archipelagos of the Azores and Madeira")\n', '("Portugal", "borders with", "the North Atlantic Ocean")\n', '("Portugal-Spain border", "constitutes", "the longest uninterrupted border-line in the European Union")\n', '("Lisbon", "is the capital and largest city of", "Portugal")\n', '("Porto", "is a main spot for tourists alongside", "Lisbon and Algarve")\n', '("Portugal", "territory has been continuously settled since", "prehistoric times")\n', '("Portugal", "was inhabited by", "Celtic and Iberian peoples")\n', '("Phoenicians", "had commercial and cultural contact with", "Portugal")\n', '("Portugal", "was later ruled by", "the Romans")\n', '("Romans", "conquered Cale and renamed it to", "Portus Cale")\n', '("Kingdom of León", "founded first as a county within", "Portugal in 868")\n', '("Portugal", "gained independence with", "the Treaty of Zamora in 1143")\n', '("Portugal", "led the Age of Discovery during", "the 15th and 16th centuries")\n', '("Portugal", "is a member of", "the United Nations, the European Union, the Schengen Area and the Council of Europe")\n', '("Portugal", "was one of the founding members of", "NATO, the eurozone, the OECD")\n', '("Homo heidelbergensis", "entered the area now known as", "Portugal around 400,000 years ago")\n', '("Neanderthals", "roamed the", "northern Iberian peninsula")\n', '("Homo sapiens sapiens", "arrived in Portugal around", "35,000 years ago")\n', '("Portuguese Republic", "officially known as", "Portugal")\n', '("Phoenicians and Carthaginians", "founded coastal settlements in southern", "Portugal")\n', '("Romans", "invaded the Iberian Peninsula including", "Portugal in 219 BC")\n', '("Diocletian\'s reforms", "created the province of", "Tarraconensis")\n', '("Damascus", "was the empire that included continental", "Portugal as part of al-Andalus")\n', '("Rif Mountains Berbers", "were part of population in the region during", "Islamic period in Portugal")\n', '("Douro", "region around Portus Cale became known as", "Portugale")\n', '("Cantabrian Mountains", "located in the", "north-west Spain were the stronghold during the Reconquista")\n', '("Ceuta", "was the first colony acquired by", "Portugal in 1415")\n', '("Cape of Good Hope", "Portuguese India Armadas sailed via", "to reach Indian Ocean")\n', '("Christopher Columbus", "divided newly located lands between", "Portugal and Spain")\n', '("Cape Verde", "was encountered by", "Portuguese explorers")\n', '("Vasco da Gama", "was the first European to reach", "India by sea")\n', '("Canada", "Portuguese explorers reached what is now known as", "and founded town of Portugal Cove-St. Philip\'s")\n', '("Goa", "was conquered by", "Portuguese under Afonso de Albuquerque")\n', '("Portugal", "has the westernmost point in", "continental Europe")\n', '("Portugal", "is split by its main river", "the Tagus")\n', '("North Atlantic Ocean", "is where the Tagus river disgorges in the", "Tagus Estuary at Lisbon")\n', '("Mount Pico", "is Portugal\'s highest peak on", "Pico Island in the Azores")\n', '("Azores", "straddle the", "Mid-Atlantic Ridge")\n', '("Madeira", "along a range formed by", "in-plate hotspot geology")\n', '("Portugal", "has exclusive economic zone covering", "1,727,408 km2")\n', '("Lisbon", "has the", "largest aquarium in Europe, the Lisbon Oceanarium")\n', '("Portugal", "characterized by", "a Mediterranean climate")\n', '("Beja District", "has a semi-arid climate in parts of the", "far south")\n', '("Azores", "has a tropical savanna climate", "in Madeira")\n', '("Mediterranean climate", "is present in", "Portugal")\n', '("Portugal", "is one of the warmest countries in", "Europe")\n', '("Algarve", "has a climate similar to", "the southern coastal areas of Spain or Southwest Australia")\n', '("Tagus Estuary", "is located at", "Lisbon")\n', '("Portugal", "is part of the", "Mediterranean Basin biodiversity hotspot")\n', '("Azores temperate mixed forests", "are located in", "Portugal")\n', '("Northwest Iberian montane forests", "are an ecoregion in", "Portugal")\n', '("Portugal", "is home to", "six terrestrial ecoregions")\n', '("Cork", "Portugal is the top producer of", "in the world")\n', '("Portugal", "is the third largest exporter of", "chestnuts")\n', '("Portugal", "holds the", "14th largest gold reserve")\n', '("Portugal", "has the", "8th largest proven reserves of lithium")\n', '("Portugal", "is a developed and high-income country with a", "GDP per capita of 83% of the EU27 average in 2023")\n', '("Tourism", "is an extremely important part of", "Portugal\'s economy")\n', '("Portugal", "is among the top 20 most-visited countries", "receiving an average of 20,000,000 foreign tourists each year")\n', '("Science and technology research", "is mainly conducted within a network of R&D units belonging to", "public universities and state-managed autonomous research institutions in Portugal")\n', '("International Iberian Nanotechnology Laboratory", "is a part of Iberian bilateral state-supported research efforts", "in Portugal")\n', '("Portuguese", "is the official language of", "Portugal")\n', '("Mirandese", "is recognized as a co-official regional language in", "Portugal")\n', '("Barranquenho", "is officially recognized and protected in", "Portugal")\n', '("Global Innovation Index", "ranked Portugal 30th in", "2023")\n', '("European Innovation Scoreboard", "placed Portugal-based innovation 15th in", "2011")\n', '("Portugal", "has a road network of", "68,732 km")\n', '("Lajes Air Base", "is a military presence maintained by", "the United States in Portugal")\n', '("Portugal", "has international airports located near", "Lisbon, Porto, Faro and Beja")\n', '("Guarda Nacional Republicana", "is a security force in", "Portugal")\n', '("Portugal", "administratively divided into", "308 municipalities")\n', '("Aveiro", "is one of the 18 districts of", "mainland Portugal")\n', '("Azores", "are governed as", "an autonomous region of Portugal")\n', '("Madeira", "is a region within", "the exclusive economic zone of Portugal")\n', '("Portuguese", "is spoken by", "interested in acquiring Portuguese citizenship")\n', '("Roman Catholicism", "remains the dominant religion in", "Portugal")\n', '("Fado", "is a renowned genre of music that originated in", "Lisbon")\n', '("Lisbon", "attracts the sixteenth-most tourists among", "European cities")\n', '("Golf", "is one of the sports where", "Portugal is a world leading destination")\n', '("Portugal", "has produced renowned", "footballers like Eusébio, Figo and Cristiano Ronaldo")\n', '("UEFA European Championship", "was won by", "the Portugal national football team in 2016")\n', '("UNESCO World Heritage Sites", "in Portugal ranks it 9th in", "Europe and 18th in the world")\n', '("Manueline", "is a style of architecture also known as", "Portuguese late Gothic")\n', '("Hard Portuguese style", "is an interpretation of traditional architecture found in", "major cities like Lisbon")\n', '("Azulejo", "is a typical element among", "Portugal\'s traditional building materials")\n', '("Portuguese cuisine", "is diverse with many recipes for", "dry cod (bacalhau)")\n', '("Pastel de nata", "is a typical and popular egg custard tart pastry originating from", "Portugal")\n', '("Port wine", "is among the best", "Portuguese wines")\n', '("Portugal", "developed a rich history in", "painting with influences from Northern European painting during the Renaissance")\n', '("Portuguese", "is the official language spoken in", "Portugal")\n', '("Education", "is divided into preschool, basic education, secondary education, and higher education in", "Portugal")\n', '("Portugal", "is home to the oldest engineering school of the Americas in", "Rio de Janeiro")\n', '("Healthcare system in Portugal", "ranked as 40th best worldwide in", "2023")\n', '("Portugal", "cultural activities include", "Belém Cultural Centre in Lisbon and Serralves Foundation in Porto")\n', '("Estonia", "is bordered by", "the Gulf of Finland")\n', '("Estonia", "is bordered by", "Finland")\n', '("Estonia", "is bordered by", "Sweden")\n', '("Estonia", "is bordered by", "Latvia")\n', '("Estonia", "is bordered by", "Lake Peipus")\n', '("Estonia", "is bordered by", "Russia")\n', '("Estonia", "includes", "Saaremaa")\n', '("Estonia", "includes", "Hiiumaa")\n', '("Tallinn", "is the capital city of", "Estonia")\n', '("Tartu", "is an urban area in", "Estonia")\n', '("Estonia", "adopted Christianity after", "Papal-sanctioned Northern Crusades")\n', '("Estonia", "was ruled by", "the Teutonic Order")\n', '("Estonia", "was ruled by", "Denmark")\n', '("Estonia", "was ruled by", "Sweden")\n', '("Estonia", "was ruled by", "the Russian Empire")\n', '("Estonia", "has gained independence from", "the Soviet Union")\n', '("Estonia", "has gained independence from", "Nazi Germany")\n', '("Estonia", "is a part of", "the Schengen Area")\n', '("Estonia", "was affected by", "Kievan Rus")\n', '("Estonia", "is associated with", "oak trees")\n', '("Innocent III", "sanctioned", "Northern Crusades")\n', '("Tallinn", "acted as a trade intermediary between", "Novgorod")\n', '("Pernau", "acted as a trade intermediary between", "Novgorod")\n', '("Gustaf II Adolf", "established gymnasiums in", "Estonia")\n', '("Narva", "was a location of conflict with", "Kievan Rus")\n', '("Estonia", "experienced mass deportations by", "Stalin")\n', '("Estonia", "experienced mass deportations by", "NKVD")\n', '("Estonia", "is part of", "the European Union")\n', '("Estonia", "experienced economic growth", "since regaining independence")\n', '("Estonia", "is a member of", "the OECD")\n']
+range(1, 308) 2
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Croatia", "is located at", "the crossroads of Central and Southeast Europe")\n', '("Croatia\'s coast", "lies entirely on", "the Adriatic Sea")\n', '("Croatia", "borders", "Slovenia to the northwest")\n', '("Croatia", "borders", "Hungary to the northeast")\n', '("Croatia", "borders", "Serbia to the east")\n', '("Croatia", "borders", "Bosnia and Herzegovina and Montenegro to the southeast")\n', '("Croatia", "shares a maritime border with", "Italy to the west")\n', '("Zagreb", "is the capital and largest city of", "Croatia")\n', '("Rijeka", "is a major urban center in", "Croatia")\n', '("Osijek", "is a major urban center in", "Croatia")\n', '("Croatia", "was part of", "Roman Illyria in the 6th century")\n', '("Croatia", "entered a personal union with", "Hungary in 1102")\n', '("Croatia", "declared independence on", "25 June 1991")\n', '("Croatia", "is a member of", "the European Union")\n', '("Croatia", "is a member of", "the Schengen Area")\n', '("Croatia", "is a member of", "the World Trade Organization")\n', '("Croatia", "contributed troops to", "the International Security Assistance Force")\n', '("Krk", "is an island in", "Croatia")\n', '("Trogir", "is located in", "Croatia")\n', '("Benkovac", "is located in", "Croatia")\n', '("Neanderthal fossils", "were found in", "Croatia")\n', '("La Tène culture", "is associated with", "Croatia")\n', '("Hvar", "is an island in", "Croatia")\n', '("Korčula", "is an island in", "Croatia")\n', '("Diocletian", "was native to", "Croatia")\n', '("Dubrovnik", "was founded by", "Roman survivors")\n', '("Iranian theory", "proposes Iranian origin for", "Croatia")\n', '("Francia", "had vassal states of", "Croatia in the 9th century")\n', '("Drava", "is a river in", "Croatia")\n', '("Sava", "is a river in", "Croatia")\n', '("Sisak", "is located in", "Croatia")\n', '("Romania", "is located at", "the crossroads of Central, Eastern and Southeastern Europe")\n', '("Romania", "borders", "Ukraine to the north and east")\n', '("Romania", "borders", "Hungary to the west")\n', '("Romania", "borders", "Serbia to the southwest")\n', '("Romania", "borders", "Bulgaria to the south")\n', '("Romania", "borders", "Moldova to the east")\n', '("Romania", "borders", "the Black Sea to the southeast")\n', '("Romania", "has", "a predominantly continental climate")\n', '("Romania", "is the twelfth-largest country in", "Europe")\n', '("Romania", "is the sixth-most populous member state of", "the European Union")\n', '("Romania\'s", "capital and largest city is", "Bucharest")\n', '("Romania", "has cities including", "Cluj-Napoca, Iași, Timișoara, Constanța, Craiova, Brașov, Galați")\n', '("The Danube", "rises in", "Germany\'s Black Forest")\n', '("The Carpathian Mountains", "cross", "Romania from the north to the southwest")\n', '("Romania", "includes", "Moldoveanu Peak")\n', '("Romania", "has a settlement history starting from", "the Lower Paleolithic")\n', '("Romania", "was founded through a personal union of", "the Danubian Principalities of Moldavia and Wallachia")\n', '("Romania", "officially named since", "1866")\n', '("Romania", "gained independence from", "the Ottoman Empire in 1877")\n', '("Romania", "fought with the Allied Powers from", "1916")\n', '("Romania", "ceded Bessarabia and Northern Bukovina to", "the Soviet Union")\n', '("Romania", "ceded Northern Transylvania to", "Hungary")\n', '("Romania", "signed the Tripartite Pact and entered World War II on the Axis side against", "the Soviet Union")\n', '("Romania", "joined the Allies and recovered", "Northern Transylvania")\n', '("Romania", "became a socialist republic and a member of", "the Warsaw Pact")\n', '("Romania", "began a transition towards", "democracy and a market economy after the 1989 Revolution")\n', '("Romania", "is a member of", "the United Nations, the European Union, the Schengen Area, NATO, the Council of Europe, BSEC, and WTO")\n', '("Homo sapiens", "oldest known in Europe found in", "Peștera cu Oase")\n', '("Neolithic agriculture", "spread from", "Thessaly to Romania")\n', '("Salt production", "began in", "Lunca in the 5th to 4th millennium BC")\n', '("The Getae", "were part of", "the Dacians")\n', '("Romania", "conquered by", "the Roman Empire during late antiquity")\n', '("The Carpians, Goths and other tribes", "made raids against", "Dacia")\n', '("The Goths", "were overrun by", "the Huns")\n', '("The Huns", "forced the local population into", "submission")\n', '("The Goths", "occupied", "the Lower Danube region in 376")\n', '("Place names of Slavic origin", "indicate", "a significant Slavic-speaking population in Romania")\n', '("Hungary", "took control of", "the steppes north of the Lower Danube")\n', '("The First Bulgarian Empire", "had a population consisting of", "Bulgars, Slavs, and Vlachs")\n', '("Romanians", "established a cultural association to promote", "the use of Romanian")\n', '("Romania", "secretly joined the Triple Alliance of", "Germany, Austria-Hungary, and Italy")\n', '("Romania", "seized Southern Dobruja from", "Bulgaria")\n', '("Treaty of Paris", "put the Danubian Principalities under the collective guardianship of", "the Great Powers")\n', '("Romania", "the united principalities officially adopted the name", "in 1862")\n', '("The Great Powers", "acknowledged Romania\'s full independence at", "the Congress of Berlin")\n', '("Romania\'s", "king was crowned in", "1881")\n', '("Romania", "entered World War I against", "the Central Powers in 1916")\n', '("Romania", "signed a peace treaty with", "the Central Powers in May 1918")\n', '("Bessarabia", "united with", "Romania")\n', '("Transylvania, Banat, Crișana, and Maramureș", "became part of", "the Kingdom of Romania")\n', '("Romania", "terminated its mission in", "Iraq and withdrew its last troops on 24 July 2009")\n', '("Romania", "joined", "the European Union on 1 January 2007")\n', '("Romania", "adopted", "the Romanian leu as its currency since 1867")\n', '("Romania", "plans to adopt", "the euro in 2029")\n', '("Romania", "population was", "19,053,815 according to the 2021 Romanian census")\n', '("Romania", "official language is", "Romanian")\n', '("Romanian", "is similar to", "Aromanian, Megleno-Romanian, and Istro-Romanian")\n', '("Romania", "is a secular state with", "no state religion")\n', '("Romania", "majority of the population identify themselves as", "Christians")\n', '("Romania", "is", "an autocephalous Eastern Orthodox Church")\n', '("Romania", "has", "the world\'s third-largest Eastern Orthodox population")\n', '("Romania", "most popular sport is", "football")\n', '("Romania", "has", "over 219,000 registered players for football")\n', '("Romania national football team", "played its first match in", "1922")\n', '("Romania", "has played in", "seven World Cups")\n', '("Gheorghe Hagi", "was nicknamed", "Maradona of the Carpathians")\n', '("Steaua București", "was the first Eastern European team to win", "the UEFA Champions League in 1986")\n', '("Simona Halep", "won", "the French Open in 2018 and Wimbledon in 2019")\n', '("Romania", "has", "306 all-time Summer Olympics medals")\n', '("Romania", "has", "the world\'s second-largest gymnast Nadia Comăneci")\n', '("Romania", "has", "a universal health care system")\n', '("Portugal", "is located on", "the Iberian Peninsula")\n', '("Portugal", "includes territory of", "the Macaronesian archipelagos of the Azores and Madeira")\n', '("Portugal", "borders with", "the North Atlantic Ocean")\n', '("Portugal-Spain border", "constitutes", "the longest uninterrupted border-line in the European Union")\n', '("Lisbon", "is the capital and largest city of", "Portugal")\n', '("Porto", "is a main spot for tourists alongside", "Lisbon and Algarve")\n', '("Portugal", "territory has been continuously settled since", "prehistoric times")\n', '("Portugal", "was inhabited by", "Celtic and Iberian peoples")\n', '("Phoenicians", "had commercial and cultural contact with", "Portugal")\n', '("Portugal", "was later ruled by", "the Romans")\n', '("Romans", "conquered Cale and renamed it to", "Portus Cale")\n', '("Kingdom of León", "founded first as a county within", "Portugal in 868")\n', '("Portugal", "gained independence with", "the Treaty of Zamora in 1143")\n', '("Portugal", "led the Age of Discovery during", "the 15th and 16th centuries")\n', '("Portugal", "is a member of", "the United Nations, the European Union, the Schengen Area and the Council of Europe")\n', '("Portugal", "was one of the founding members of", "NATO, the eurozone, the OECD")\n', '("Homo heidelbergensis", "entered the area now known as", "Portugal around 400,000 years ago")\n', '("Neanderthals", "roamed the", "northern Iberian peninsula")\n', '("Homo sapiens sapiens", "arrived in Portugal around", "35,000 years ago")\n', '("Portuguese Republic", "officially known as", "Portugal")\n', '("Phoenicians and Carthaginians", "founded coastal settlements in southern", "Portugal")\n', '("Romans", "invaded the Iberian Peninsula including", "Portugal in 219 BC")\n', '("Diocletian\'s reforms", "created the province of", "Tarraconensis")\n', '("Damascus", "was the empire that included continental", "Portugal as part of al-Andalus")\n', '("Rif Mountains Berbers", "were part of population in the region during", "Islamic period in Portugal")\n', '("Douro", "region around Portus Cale became known as", "Portugale")\n', '("Cantabrian Mountains", "located in the", "north-west Spain were the stronghold during the Reconquista")\n', '("Ceuta", "was the first colony acquired by", "Portugal in 1415")\n', '("Cape of Good Hope", "Portuguese India Armadas sailed via", "to reach Indian Ocean")\n', '("Christopher Columbus", "divided newly located lands between", "Portugal and Spain")\n', '("Cape Verde", "was encountered by", "Portuguese explorers")\n', '("Vasco da Gama", "was the first European to reach", "India by sea")\n', '("Canada", "Portuguese explorers reached what is now known as", "and founded town of Portugal Cove-St. Philip\'s")\n', '("Goa", "was conquered by", "Portuguese under Afonso de Albuquerque")\n', '("Portugal", "has the westernmost point in", "continental Europe")\n', '("Portugal", "is split by its main river", "the Tagus")\n', '("North Atlantic Ocean", "is where the Tagus river disgorges in the", "Tagus Estuary at Lisbon")\n', '("Mount Pico", "is Portugal\'s highest peak on", "Pico Island in the Azores")\n', '("Azores", "straddle the", "Mid-Atlantic Ridge")\n', '("Madeira", "along a range formed by", "in-plate hotspot geology")\n', '("Portugal", "has exclusive economic zone covering", "1,727,408 km2")\n', '("Lisbon", "has the", "largest aquarium in Europe, the Lisbon Oceanarium")\n', '("Portugal", "characterized by", "a Mediterranean climate")\n', '("Beja District", "has a semi-arid climate in parts of the", "far south")\n', '("Azores", "has a tropical savanna climate", "in Madeira")\n', '("Mediterranean climate", "is present in", "Portugal")\n', '("Portugal", "is one of the warmest countries in", "Europe")\n', '("Algarve", "has a climate similar to", "the southern coastal areas of Spain or Southwest Australia")\n', '("Tagus Estuary", "is located at", "Lisbon")\n', '("Portugal", "is part of the", "Mediterranean Basin biodiversity hotspot")\n', '("Azores temperate mixed forests", "are located in", "Portugal")\n', '("Northwest Iberian montane forests", "are an ecoregion in", "Portugal")\n', '("Portugal", "is home to", "six terrestrial ecoregions")\n', '("Cork", "Portugal is the top producer of", "in the world")\n', '("Portugal", "is the third largest exporter of", "chestnuts")\n', '("Portugal", "holds the", "14th largest gold reserve")\n', '("Portugal", "has the", "8th largest proven reserves of lithium")\n', '("Portugal", "is a developed and high-income country with a", "GDP per capita of 83% of the EU27 average in 2023")\n', '("Tourism", "is an extremely important part of", "Portugal\'s economy")\n', '("Portugal", "is among the top 20 most-visited countries", "receiving an average of 20,000,000 foreign tourists each year")\n', '("Science and technology research", "is mainly conducted within a network of R&D units belonging to", "public universities and state-managed autonomous research institutions in Portugal")\n', '("International Iberian Nanotechnology Laboratory", "is a part of Iberian bilateral state-supported research efforts", "in Portugal")\n', '("Portuguese", "is the official language of", "Portugal")\n', '("Mirandese", "is recognized as a co-official regional language in", "Portugal")\n', '("Barranquenho", "is officially recognized and protected in", "Portugal")\n', '("Global Innovation Index", "ranked Portugal 30th in", "2023")\n', '("European Innovation Scoreboard", "placed Portugal-based innovation 15th in", "2011")\n', '("Portugal", "has a road network of", "68,732 km")\n', '("Lajes Air Base", "is a military presence maintained by", "the United States in Portugal")\n', '("Portugal", "has international airports located near", "Lisbon, Porto, Faro and Beja")\n', '("Guarda Nacional Republicana", "is a security force in", "Portugal")\n', '("Portugal", "administratively divided into", "308 municipalities")\n', '("Aveiro", "is one of the 18 districts of", "mainland Portugal")\n', '("Azores", "are governed as", "an autonomous region of Portugal")\n', '("Madeira", "is a region within", "the exclusive economic zone of Portugal")\n', '("Portuguese", "is spoken by", "interested in acquiring Portuguese citizenship")\n', '("Roman Catholicism", "remains the dominant religion in", "Portugal")\n', '("Fado", "is a renowned genre of music that originated in", "Lisbon")\n', '("Lisbon", "attracts the sixteenth-most tourists among", "European cities")\n', '("Golf", "is one of the sports where", "Portugal is a world leading destination")\n', '("Portugal", "has produced renowned", "footballers like Eusébio, Figo and Cristiano Ronaldo")\n', '("UEFA European Championship", "was won by", "the Portugal national football team in 2016")\n', '("UNESCO World Heritage Sites", "in Portugal ranks it 9th in", "Europe and 18th in the world")\n', '("Manueline", "is a style of architecture also known as", "Portuguese late Gothic")\n', '("Hard Portuguese style", "is an interpretation of traditional architecture found in", "major cities like Lisbon")\n', '("Azulejo", "is a typical element among", "Portugal\'s traditional building materials")\n', '("Portuguese cuisine", "is diverse with many recipes for", "dry cod (bacalhau)")\n', '("Pastel de nata", "is a typical and popular egg custard tart pastry originating from", "Portugal")\n', '("Port wine", "is among the best", "Portuguese wines")\n', '("Portugal", "developed a rich history in", "painting with influences from Northern European painting during the Renaissance")\n', '("Portuguese", "is the official language spoken in", "Portugal")\n', '("Education", "is divided into preschool, basic education, secondary education, and higher education in", "Portugal")\n', '("Portugal", "is home to the oldest engineering school of the Americas in", "Rio de Janeiro")\n', '("Healthcare system in Portugal", "ranked as 40th best worldwide in", "2023")\n', '("Portugal", "cultural activities include", "Belém Cultural Centre in Lisbon and Serralves Foundation in Porto")\n', '("Estonia", "is bordered by", "the Gulf of Finland")\n', '("Estonia", "is bordered by", "Finland")\n', '("Estonia", "is bordered by", "Sweden")\n', '("Estonia", "is bordered by", "Latvia")\n', '("Estonia", "is bordered by", "Lake Peipus")\n', '("Estonia", "is bordered by", "Russia")\n', '("Estonia", "includes", "Saaremaa")\n', '("Estonia", "includes", "Hiiumaa")\n', '("Tallinn", "is the capital city of", "Estonia")\n', '("Tartu", "is an urban area in", "Estonia")\n', '("Estonia", "adopted Christianity after", "Papal-sanctioned Northern Crusades")\n', '("Estonia", "was ruled by", "the Teutonic Order")\n', '("Estonia", "was ruled by", "Denmark")\n', '("Estonia", "was ruled by", "Sweden")\n', '("Estonia", "was ruled by", "the Russian Empire")\n', '("Estonia", "has gained independence from", "the Soviet Union")\n', '("Estonia", "has gained independence from", "Nazi Germany")\n', '("Estonia", "is a part of", "the Schengen Area")\n', '("Estonia", "was affected by", "Kievan Rus")\n', '("Estonia", "is associated with", "oak trees")\n', '("Innocent III", "sanctioned", "Northern Crusades")\n', '("Tallinn", "acted as a trade intermediary between", "Novgorod")\n', '("Pernau", "acted as a trade intermediary between", "Novgorod")\n', '("Gustaf II Adolf", "established gymnasiums in", "Estonia")\n', '("Narva", "was a location of conflict with", "Kievan Rus")\n', '("Estonia", "experienced mass deportations by", "Stalin")\n', '("Estonia", "experienced mass deportations by", "NKVD")\n', '("Estonia", "is part of", "the European Union")\n', '("Estonia", "experienced economic growth", "since regaining independence")\n', '("Estonia", "is a member of", "the OECD")\n']
+range(1, 308) 2
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Croatia", "is located at", "the crossroads of Central and Southeast Europe")\n', '("Croatia\'s coast", "lies entirely on", "the Adriatic Sea")\n', '("Croatia", "borders", "Slovenia to the northwest")\n', '("Croatia", "borders", "Hungary to the northeast")\n', '("Croatia", "borders", "Serbia to the east")\n', '("Croatia", "borders", "Bosnia and Herzegovina and Montenegro to the southeast")\n', '("Croatia", "shares a maritime border with", "Italy to the west")\n', '("Zagreb", "is the capital and largest city of", "Croatia")\n', '("Rijeka", "is a major urban center in", "Croatia")\n', '("Osijek", "is a major urban center in", "Croatia")\n', '("Croatia", "was part of", "Roman Illyria in the 6th century")\n', '("Croatia", "entered a personal union with", "Hungary in 1102")\n', '("Croatia", "declared independence on", "25 June 1991")\n', '("Croatia", "is a member of", "the European Union")\n', '("Croatia", "is a member of", "the Schengen Area")\n', '("Croatia", "is a member of", "the World Trade Organization")\n', '("Croatia", "contributed troops to", "the International Security Assistance Force")\n', '("Krk", "is an island in", "Croatia")\n', '("Trogir", "is located in", "Croatia")\n', '("Benkovac", "is located in", "Croatia")\n', '("Neanderthal fossils", "were found in", "Croatia")\n', '("La Tène culture", "is associated with", "Croatia")\n', '("Hvar", "is an island in", "Croatia")\n', '("Korčula", "is an island in", "Croatia")\n', '("Diocletian", "was native to", "Croatia")\n', '("Dubrovnik", "was founded by", "Roman survivors")\n', '("Iranian theory", "proposes Iranian origin for", "Croatia")\n', '("Francia", "had vassal states of", "Croatia in the 9th century")\n', '("Drava", "is a river in", "Croatia")\n', '("Sava", "is a river in", "Croatia")\n', '("Sisak", "is located in", "Croatia")\n', '("Romania", "is located at", "the crossroads of Central, Eastern and Southeastern Europe")\n', '("Romania", "borders", "Ukraine to the north and east")\n', '("Romania", "borders", "Hungary to the west")\n', '("Romania", "borders", "Serbia to the southwest")\n', '("Romania", "borders", "Bulgaria to the south")\n', '("Romania", "borders", "Moldova to the east")\n', '("Romania", "borders", "the Black Sea to the southeast")\n', '("Romania", "has", "a predominantly continental climate")\n', '("Romania", "is the twelfth-largest country in", "Europe")\n', '("Romania", "is the sixth-most populous member state of", "the European Union")\n', '("Romania\'s", "capital and largest city is", "Bucharest")\n', '("Romania", "has cities including", "Cluj-Napoca, Iași, Timișoara, Constanța, Craiova, Brașov, Galați")\n', '("The Danube", "rises in", "Germany\'s Black Forest")\n', '("The Carpathian Mountains", "cross", "Romania from the north to the southwest")\n', '("Romania", "includes", "Moldoveanu Peak")\n', '("Romania", "has a settlement history starting from", "the Lower Paleolithic")\n', '("Romania", "was founded through a personal union of", "the Danubian Principalities of Moldavia and Wallachia")\n', '("Romania", "officially named since", "1866")\n', '("Romania", "gained independence from", "the Ottoman Empire in 1877")\n', '("Romania", "fought with the Allied Powers from", "1916")\n', '("Romania", "ceded Bessarabia and Northern Bukovina to", "the Soviet Union")\n', '("Romania", "ceded Northern Transylvania to", "Hungary")\n', '("Romania", "signed the Tripartite Pact and entered World War II on the Axis side against", "the Soviet Union")\n', '("Romania", "joined the Allies and recovered", "Northern Transylvania")\n', '("Romania", "became a socialist republic and a member of", "the Warsaw Pact")\n', '("Romania", "began a transition towards", "democracy and a market economy after the 1989 Revolution")\n', '("Romania", "is a member of", "the United Nations, the European Union, the Schengen Area, NATO, the Council of Europe, BSEC, and WTO")\n', '("Homo sapiens", "oldest known in Europe found in", "Peștera cu Oase")\n', '("Neolithic agriculture", "spread from", "Thessaly to Romania")\n', '("Salt production", "began in", "Lunca in the 5th to 4th millennium BC")\n', '("The Getae", "were part of", "the Dacians")\n', '("Romania", "conquered by", "the Roman Empire during late antiquity")\n', '("The Carpians, Goths and other tribes", "made raids against", "Dacia")\n', '("The Goths", "were overrun by", "the Huns")\n', '("The Huns", "forced the local population into", "submission")\n', '("The Goths", "occupied", "the Lower Danube region in 376")\n', '("Place names of Slavic origin", "indicate", "a significant Slavic-speaking population in Romania")\n', '("Hungary", "took control of", "the steppes north of the Lower Danube")\n', '("The First Bulgarian Empire", "had a population consisting of", "Bulgars, Slavs, and Vlachs")\n', '("Romanians", "established a cultural association to promote", "the use of Romanian")\n', '("Romania", "secretly joined the Triple Alliance of", "Germany, Austria-Hungary, and Italy")\n', '("Romania", "seized Southern Dobruja from", "Bulgaria")\n', '("Treaty of Paris", "put the Danubian Principalities under the collective guardianship of", "the Great Powers")\n', '("Romania", "the united principalities officially adopted the name", "in 1862")\n', '("The Great Powers", "acknowledged Romania\'s full independence at", "the Congress of Berlin")\n', '("Romania\'s", "king was crowned in", "1881")\n', '("Romania", "entered World War I against", "the Central Powers in 1916")\n', '("Romania", "signed a peace treaty with", "the Central Powers in May 1918")\n', '("Bessarabia", "united with", "Romania")\n', '("Transylvania, Banat, Crișana, and Maramureș", "became part of", "the Kingdom of Romania")\n', '("Romania", "terminated its mission in", "Iraq and withdrew its last troops on 24 July 2009")\n', '("Romania", "joined", "the European Union on 1 January 2007")\n', '("Romania", "adopted", "the Romanian leu as its currency since 1867")\n', '("Romania", "plans to adopt", "the euro in 2029")\n', '("Romania", "population was", "19,053,815 according to the 2021 Romanian census")\n', '("Romania", "official language is", "Romanian")\n', '("Romanian", "is similar to", "Aromanian, Megleno-Romanian, and Istro-Romanian")\n', '("Romania", "is a secular state with", "no state religion")\n', '("Romania", "majority of the population identify themselves as", "Christians")\n', '("Romania", "is", "an autocephalous Eastern Orthodox Church")\n', '("Romania", "has", "the world\'s third-largest Eastern Orthodox population")\n', '("Romania", "most popular sport is", "football")\n', '("Romania", "has", "over 219,000 registered players for football")\n', '("Romania national football team", "played its first match in", "1922")\n', '("Romania", "has played in", "seven World Cups")\n', '("Gheorghe Hagi", "was nicknamed", "Maradona of the Carpathians")\n', '("Steaua București", "was the first Eastern European team to win", "the UEFA Champions League in 1986")\n', '("Simona Halep", "won", "the French Open in 2018 and Wimbledon in 2019")\n', '("Romania", "has", "306 all-time Summer Olympics medals")\n', '("Romania", "has", "the world\'s second-largest gymnast Nadia Comăneci")\n', '("Romania", "has", "a universal health care system")\n', '("Portugal", "is located on", "the Iberian Peninsula")\n', '("Portugal", "includes territory of", "the Macaronesian archipelagos of the Azores and Madeira")\n', '("Portugal", "borders with", "the North Atlantic Ocean")\n', '("Portugal-Spain border", "constitutes", "the longest uninterrupted border-line in the European Union")\n', '("Lisbon", "is the capital and largest city of", "Portugal")\n', '("Porto", "is a main spot for tourists alongside", "Lisbon and Algarve")\n', '("Portugal", "territory has been continuously settled since", "prehistoric times")\n', '("Portugal", "was inhabited by", "Celtic and Iberian peoples")\n', '("Phoenicians", "had commercial and cultural contact with", "Portugal")\n', '("Portugal", "was later ruled by", "the Romans")\n', '("Romans", "conquered Cale and renamed it to", "Portus Cale")\n', '("Kingdom of León", "founded first as a county within", "Portugal in 868")\n', '("Portugal", "gained independence with", "the Treaty of Zamora in 1143")\n', '("Portugal", "led the Age of Discovery during", "the 15th and 16th centuries")\n', '("Portugal", "is a member of", "the United Nations, the European Union, the Schengen Area and the Council of Europe")\n', '("Portugal", "was one of the founding members of", "NATO, the eurozone, the OECD")\n', '("Homo heidelbergensis", "entered the area now known as", "Portugal around 400,000 years ago")\n', '("Neanderthals", "roamed the", "northern Iberian peninsula")\n', '("Homo sapiens sapiens", "arrived in Portugal around", "35,000 years ago")\n', '("Portuguese Republic", "officially known as", "Portugal")\n', '("Phoenicians and Carthaginians", "founded coastal settlements in southern", "Portugal")\n', '("Romans", "invaded the Iberian Peninsula including", "Portugal in 219 BC")\n', '("Diocletian\'s reforms", "created the province of", "Tarraconensis")\n', '("Damascus", "was the empire that included continental", "Portugal as part of al-Andalus")\n', '("Rif Mountains Berbers", "were part of population in the region during", "Islamic period in Portugal")\n', '("Douro", "region around Portus Cale became known as", "Portugale")\n', '("Cantabrian Mountains", "located in the", "north-west Spain were the stronghold during the Reconquista")\n', '("Ceuta", "was the first colony acquired by", "Portugal in 1415")\n', '("Cape of Good Hope", "Portuguese India Armadas sailed via", "to reach Indian Ocean")\n', '("Christopher Columbus", "divided newly located lands between", "Portugal and Spain")\n', '("Cape Verde", "was encountered by", "Portuguese explorers")\n', '("Vasco da Gama", "was the first European to reach", "India by sea")\n', '("Canada", "Portuguese explorers reached what is now known as", "and founded town of Portugal Cove-St. Philip\'s")\n', '("Goa", "was conquered by", "Portuguese under Afonso de Albuquerque")\n', '("Portugal", "has the westernmost point in", "continental Europe")\n', '("Portugal", "is split by its main river", "the Tagus")\n', '("North Atlantic Ocean", "is where the Tagus river disgorges in the", "Tagus Estuary at Lisbon")\n', '("Mount Pico", "is Portugal\'s highest peak on", "Pico Island in the Azores")\n', '("Azores", "straddle the", "Mid-Atlantic Ridge")\n', '("Madeira", "along a range formed by", "in-plate hotspot geology")\n', '("Portugal", "has exclusive economic zone covering", "1,727,408 km2")\n', '("Lisbon", "has the", "largest aquarium in Europe, the Lisbon Oceanarium")\n', '("Portugal", "characterized by", "a Mediterranean climate")\n', '("Beja District", "has a semi-arid climate in parts of the", "far south")\n', '("Azores", "has a tropical savanna climate", "in Madeira")\n', '("Mediterranean climate", "is present in", "Portugal")\n', '("Portugal", "is one of the warmest countries in", "Europe")\n', '("Algarve", "has a climate similar to", "the southern coastal areas of Spain or Southwest Australia")\n', '("Tagus Estuary", "is located at", "Lisbon")\n', '("Portugal", "is part of the", "Mediterranean Basin biodiversity hotspot")\n', '("Azores temperate mixed forests", "are located in", "Portugal")\n', '("Northwest Iberian montane forests", "are an ecoregion in", "Portugal")\n', '("Portugal", "is home to", "six terrestrial ecoregions")\n', '("Cork", "Portugal is the top producer of", "in the world")\n', '("Portugal", "is the third largest exporter of", "chestnuts")\n', '("Portugal", "holds the", "14th largest gold reserve")\n', '("Portugal", "has the", "8th largest proven reserves of lithium")\n', '("Portugal", "is a developed and high-income country with a", "GDP per capita of 83% of the EU27 average in 2023")\n', '("Tourism", "is an extremely important part of", "Portugal\'s economy")\n', '("Portugal", "is among the top 20 most-visited countries", "receiving an average of 20,000,000 foreign tourists each year")\n', '("Science and technology research", "is mainly conducted within a network of R&D units belonging to", "public universities and state-managed autonomous research institutions in Portugal")\n', '("International Iberian Nanotechnology Laboratory", "is a part of Iberian bilateral state-supported research efforts", "in Portugal")\n', '("Portuguese", "is the official language of", "Portugal")\n', '("Mirandese", "is recognized as a co-official regional language in", "Portugal")\n', '("Barranquenho", "is officially recognized and protected in", "Portugal")\n', '("Global Innovation Index", "ranked Portugal 30th in", "2023")\n', '("European Innovation Scoreboard", "placed Portugal-based innovation 15th in", "2011")\n', '("Portugal", "has a road network of", "68,732 km")\n', '("Lajes Air Base", "is a military presence maintained by", "the United States in Portugal")\n', '("Portugal", "has international airports located near", "Lisbon, Porto, Faro and Beja")\n', '("Guarda Nacional Republicana", "is a security force in", "Portugal")\n', '("Portugal", "administratively divided into", "308 municipalities")\n', '("Aveiro", "is one of the 18 districts of", "mainland Portugal")\n', '("Azores", "are governed as", "an autonomous region of Portugal")\n', '("Madeira", "is a region within", "the exclusive economic zone of Portugal")\n', '("Portuguese", "is spoken by", "interested in acquiring Portuguese citizenship")\n', '("Roman Catholicism", "remains the dominant religion in", "Portugal")\n', '("Fado", "is a renowned genre of music that originated in", "Lisbon")\n', '("Lisbon", "attracts the sixteenth-most tourists among", "European cities")\n', '("Golf", "is one of the sports where", "Portugal is a world leading destination")\n', '("Portugal", "has produced renowned", "footballers like Eusébio, Figo and Cristiano Ronaldo")\n', '("UEFA European Championship", "was won by", "the Portugal national football team in 2016")\n', '("UNESCO World Heritage Sites", "in Portugal ranks it 9th in", "Europe and 18th in the world")\n', '("Manueline", "is a style of architecture also known as", "Portuguese late Gothic")\n', '("Hard Portuguese style", "is an interpretation of traditional architecture found in", "major cities like Lisbon")\n', '("Azulejo", "is a typical element among", "Portugal\'s traditional building materials")\n', '("Portuguese cuisine", "is diverse with many recipes for", "dry cod (bacalhau)")\n', '("Pastel de nata", "is a typical and popular egg custard tart pastry originating from", "Portugal")\n', '("Port wine", "is among the best", "Portuguese wines")\n', '("Portugal", "developed a rich history in", "painting with influences from Northern European painting during the Renaissance")\n', '("Portuguese", "is the official language spoken in", "Portugal")\n', '("Education", "is divided into preschool, basic education, secondary education, and higher education in", "Portugal")\n', '("Portugal", "is home to the oldest engineering school of the Americas in", "Rio de Janeiro")\n', '("Healthcare system in Portugal", "ranked as 40th best worldwide in", "2023")\n', '("Portugal", "cultural activities include", "Belém Cultural Centre in Lisbon and Serralves Foundation in Porto")\n', '("Estonia", "is bordered by", "the Gulf of Finland")\n', '("Estonia", "is bordered by", "Finland")\n', '("Estonia", "is bordered by", "Sweden")\n', '("Estonia", "is bordered by", "Latvia")\n', '("Estonia", "is bordered by", "Lake Peipus")\n', '("Estonia", "is bordered by", "Russia")\n', '("Estonia", "includes", "Saaremaa")\n', '("Estonia", "includes", "Hiiumaa")\n', '("Tallinn", "is the capital city of", "Estonia")\n', '("Tartu", "is an urban area in", "Estonia")\n', '("Estonia", "adopted Christianity after", "Papal-sanctioned Northern Crusades")\n', '("Estonia", "was ruled by", "the Teutonic Order")\n', '("Estonia", "was ruled by", "Denmark")\n', '("Estonia", "was ruled by", "Sweden")\n', '("Estonia", "was ruled by", "the Russian Empire")\n', '("Estonia", "has gained independence from", "the Soviet Union")\n', '("Estonia", "has gained independence from", "Nazi Germany")\n', '("Estonia", "is a part of", "the Schengen Area")\n', '("Estonia", "was affected by", "Kievan Rus")\n', '("Estonia", "is associated with", "oak trees")\n', '("Innocent III", "sanctioned", "Northern Crusades")\n', '("Tallinn", "acted as a trade intermediary between", "Novgorod")\n', '("Pernau", "acted as a trade intermediary between", "Novgorod")\n', '("Gustaf II Adolf", "established gymnasiums in", "Estonia")\n', '("Narva", "was a location of conflict with", "Kievan Rus")\n', '("Estonia", "experienced mass deportations by", "Stalin")\n', '("Estonia", "experienced mass deportations by", "NKVD")\n', '("Estonia", "is part of", "the European Union")\n', '("Estonia", "experienced economic growth", "since regaining independence")\n', '("Estonia", "is a member of", "the OECD")\n']
+range(1, 308) 2
+{'id': '1_3', 'Question': ' Which country controlled the city where the philosopher Immanuel Kant is buried when it was formerly known as Königsberg?\n', 'Answer': 'Germany', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Croatia'}, {'label': 'B', 'text': 'Romania'}, {'label': 'C', 'text': 'Portugal'}, {'label': 'D', 'text': 'Estonia'}, {'label': 'E', 'text': 'Germany'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'croatia'}, {'label': 'B', 'text': 'romania'}, {'label': 'C', 'text': 'portugal'}, {'label': 'D', 'text': 'estonia'}, {'label': 'E', 'text': 'germany'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: In which city is the philosopher Immanuel Kant buried?\nA1: Kaliningrad\n\n', "2: Kaliningrad, the city where Immanuel Kant is buried, was earlier known as Königsberg during which European country's control?\nA2: Germany"], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Germany')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'germany')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 22}], 'Question_triplet_answer': {100: [192, 273], 50: [78, 196], 25: [117, 203]}}
+time passed:  6235.007192373276
+Expected dollar:  0.005
+Romania is Geography
+Moldoveanu Peak is Geography
+Damascus is Geography
+Portugal is Geography
+al Andalus is Geography
+Croatia is Geography
+Hungary is Geography
+Nadia Comăneci is People
+Simona Halep is People
+Königsberg is Geography
+Kaliningrad is Geography
+Mediterranean is Geography
+Germany is Geography
+Hvar is Geography
+Trogir is Geography
+Bessarabia is Geography
+Portugal 30th is Geography
+Mikhail Kalinin is People
+the Kingdom of Romania is Geography
+Danube is Geography
+Black Forest is Geography
+the International Security Assistance Force is Incident
+Thessaly is Geography
+Bosnia and Herzegovina is Geography
+Montenegro is Geography
+Phoenicians is Geography
+Estonia is Geography
+Douro is Geography
+Portus Cale is Geography
+Canada is Geography
+Lithuania is Geography
+Poland is Geography
+Lisbon is Geography
+Narva is Geography
+Kievan Rus is Geography
+BSEC is Incident
+WTO is Geography
+Denmark is Geography
+the Soviet Union is Geography
+Cluj Napoca, Iași, Timișoara, is Geography
+Constanța is Geography
+Craiova is Geography
+Brașov is Geography
+Galați is Geography
+Stalin is People
+Christopher Columbus is People
+Spain is Geography
+Neanderthal is Animal
+La Tène is Geography
+the Black Sea is Geography
+North Atlantic Ocean is Geography
+Tagus is Geography
+Tagus Estuary at Lisbon is Geography
+Bulgaria is Geography
+Rijeka is Geography
+University of Königsberg is Geography
+Dubrovnik is Geography
+Cape of Good Hope is Geography
+Indian Ocean is Geography
+Korčula is Geography
+The Carpathian Mountains is Geography
+NKVD is Geography
+40th is People
+Novalis is People
+Eastern European is Geography
+Pico Island is Geography
+Kingdom of León is Geography
+the Lower Danube is Geography
+Lajes Air Base is Geography
+the United States is Geography
+Diocletian is People
+Nazi Germany is Geography
+the North Atlantic Ocean is Geography
+Eusébio is Incident
+Lake Peipus is Geography
+Hiiumaa is Geography
+India is Geography
+Russia is Geography
+Italy is Geography
+Slovenia is Geography
+Drava is Geography
+Cantabrian Mountains is Geography
+Baltic Sea is Geography
+Wallachia is Geography
+Serbia is Geography
+Afonso de Albuquerque is People
+Lisbon and Algarve is Geography
+Dacia is Geography
+the Schengen Area is Geography
+the Gulf of Finland is Geography
+entities:  {'Hvar', 'Force', 'Thessaly', 'Tène', '40th', 'Europe', 'University', 'Germany', 'Union', 'Portus', 'Constanța', 'Anna', 'Poland', 'Hegel', 'Moldoveanu', 'Eastern', 'Bulgaria', 'Baltic', 'Douro', 'Christopher', 'Krk', 'Carpathian', 'Portugal', 'Carl', 'Iași,', 'Napoca', 'al', 'Iași', 'Narva', 'Cape', 'International', 'Kaliningrad', 'Alexander', 'NKVD', 'Herzegovina', 'Rus', 'Brașov', 'Neanderthal', 'Pico', 'Good', 'Columbus', 'Simona', 'Andalus', 'Galați', 'United', 'Lithuania', 'Area', 'Security', 'Serbia', 'Königsberg', 'Hiiumaa', 'BSEC', 'León', 'Forest', 'Soviet', 'Illyria', 'Lower', 'Lajes', 'Bessarabia', 'Danube', 'Ocean', 'Denmark', 'Black', 'Gulf', 'Diocletian', 'Johann', 'Comăneci', 'Stalin', 'Iberian', 'Atlantic', 'Mountains', 'European', 'Russia', 'Sea', 'Mediterranean', 'WTO', 'Republicana', 'Island', 'Kant', 'Craiova', 'Cluj', 'Base', 'Hope', 'La', 'Lake', 'Kingdom', 'Cristiano', 'Halep', 'Timișoara,', 'Tagus', 'North', 'Spain', 'Transylvania', 'Cantabrian', 'NATO', 'States', 'Algarve', 'Kalinin', 'Slovenia', 'Eusébio', 'Immanuel', 'Korčula', 'Madeira', 'Estonia', 'Finland', '30th', 'Indian', 'Estuary', 'Air', 'Montenegro', 'Ronaldo', 'Wendt', 'Peak', 'Damascus', 'Nadia', 'Peipus', 'Hungary', 'Cale', 'Croatia', 'Reuter', 'Assistance', 'Moldavia', 'Regina', 'Phoenicians', 'Romania', 'Mikhail', 'Canada', 'Dacia', 'Guarda', 'Bosnia', 'Italy', 'India', 'Wallachia', 'Albuquerque', 'Dubrovnik', 'Drava', 'Peninsula', 'Novalis', 'Rijeka', 'de', 'Afonso', 'Napoca,', 'Philip', 'Lisbon', 'Schengen', 'Kievan', 'Trogir', 'Memel', 'Nazi'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Romania' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Romania
+Moldoveanu Peak
+Romans
+Portugal
+Nadia Comăneci
+Simona Halep
+Bessarabia
+Nadia Comăneci
+Cluj-Napoca
+Iași
+Timișoara
+Constanța
+Craiova
+Brașov
+Galați
+Cluj-Napoca
+Iași
+Timișoara
+Constanța
+Craiova
+Brașov
+Galați
+Transylvania
+Banat
+Crișana
+Maramureș
+Bessarabia
+Christians
+Bulgaria
+Black Sea
+Northern Transylvania
+Romanian leu
+Bucharest
+Moldavia
+Wallachia
+Central Powers
+Aromanian
+Megleno-Romanian
+Istro-Romanian
+Moldoveanu Peak
+Serbia
+Northern Transylvania
+Rus
+Romanian
+Huns
+Nadia Comăneci
+Bucharest
+Tagus
+Nadia Comăneci
+Serbia
+Northern Transylvania
+
+gpt_entity_particular(): entity list: 
+ ['Galați', 'Central Powers', 'Serbia', 'Craiova', 'Constanța', 'Nadia Comăneci', 'Aromanian', 'Huns', 'Timișoara', 'Bulgaria', 'Romans', 'Bessarabia', 'Megleno-Romanian', 'Simona Halep', 'Maramureș', 'Northern Transylvania', 'Banat', 'Tagus', 'Portugal', 'Black Sea', 'Istro-Romanian', 'Romanian leu', 'Transylvania', 'Moldavia', 'Iași', 'Romania', 'Moldoveanu Peak', 'Bucharest', 'Romanian', 'Wallachia', 'Rus', 'Cluj-Napoca', 'Brașov', 'Crișana', 'Christians']
+
+gpt_entity_particular(): filtered entity: 
+ ['Serbia', 'Craiova', 'Constanța', 'Timișoara', 'Bulgaria', 'Banat', 'Transylvania', 'Moldavia', 'Iași', 'Bucharest', 'Romanian', 'Wallachia', 'Brașov']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Estonia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Estonia
+Tallinn
+Hiiumaa
+Lake Peipus
+NKVD
+Nazi Germany
+Denmark
+the Teutonic Order
+the Schengen Area
+the Soviet Union
+
+gpt_entity_particular(): entity list: 
+ ['NKVD', 'the Teutonic Order', 'Tallinn', 'Lake Peipus', 'Denmark', 'Nazi Germany', 'the Schengen Area', 'Estonia', 'Hiiumaa', 'the Soviet Union']
+
+gpt_entity_particular(): filtered entity: 
+ ['Tallinn', 'Lake Peipus', 'Hiiumaa', 'the Soviet Union']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Germany' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Germany
+Königsberg
+Black Forest
+Germany
+Germany
+Germany
+Germany
+Germany
+Germany
+Germany
+Königsberg
+Königsberg
+Germany
+Königsberg
+Germany
+Königsberg
+Germany
+Königsberg
+Germany
+Königsberg
+Germany
+Königsberg
+Germany
+Königsberg
+University of Königsberg
+Germany
+Königsberg
+Königsberg
+Germany
+Königsberg
+Königsberg
+Königsberg
+Königsberg
+Germany
+Germany
+Germany
+Königsberg
+Königsberg
+Königsberg
+
+gpt_entity_particular(): entity list: 
+ ['Königsberg', 'University of Königsberg', 'Germany', 'Black Forest']
+
+gpt_entity_particular(): filtered entity: 
+ ['Black Forest']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Croatia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Romania
+Memel
+Romania
+Moldoveanu Peak
+Damascus
+Portugal
+Romans
+Portugal
+Kant
+Democracy
+Croatia
+Hungary
+Romania
+Simona Halep
+Wimbledon
+Königsberg
+Mediterranean climate
+Königsberg
+Germany
+Portugal
+Romania
+Roman Illyria
+Immanuel Kant
+Portugal
+Johann Georg Kant
+Memel
+Romania
+Portugal
+Roman Illyria
+Immanuel Kant
+Croatia
+Portugal
+Immanuel Kant
+Croatia
+Kant
+Trogir
+Croatia
+Portugal
+Immanuel Kant
+Bessarabia
+Portugal
+Kant
+Portugal
+Portugal
+Kant
+Croatia
+Croatia
+Bosnia and Herzegovina
+Montenegro
+Romania
+Portugal
+Kant
+Kant
+Kaliningrad
+Roman Illyria
+Kant
+Trogir
+Croatia
+Romania
+Kant
+Croatia
+Hungary
+Croatia
+Croatia
+Romania
+Transylvania
+Banat
+Crișana
+Maramureș
+Douro
+Portugal
+Portugal
+Kant
+Kant
+Croatia
+Hvar
+Korčula
+Croatia
+Croatia
+Croatia
+Diocletian
+Johann Georg Kant
+Roman survivors
+Dubrovnik
+Croatia
+Trogir
+Croatia
+Cantabrian Mountains
+Croatia
+TAGUS
+Romania
+Madeira
+Croatia
+Kant
+Kant
+Kant
+Fados
+Trogir
+Portugal
+Neanderthal fossils
+Croatia
+Kant
+Croatia
+La Tène culture
+UEFA European Championship
+Croatia
+Croatia
+Immanuel Kant
+Croatia
+Croatia
+Croatia
+Croatia
+Romania
+Korčula
+Portugal
+Croatia
+Portuguese
+Croatia
+Korčula
+Croatia
+Romania
+Croatia
+Portugal
+Portuguese
+Croatia
+Korčula
+Croatia
+Gulf
+Croatia
+Croatia
+Croatia
+Croatia
+Croatia
+
+gpt_entity_particular(): entity list: 
+ ['Hvar', 'Portuguese', 'Montenegro', 'Kant', 'Königsberg', 'Fados', 'Mediterranean climate', 'Germany', 'La Tène culture', 'Damascus', 'Democracy', 'Bosnia and Herzegovina', 'Neanderthal fossils', 'Romans', 'Bessarabia', 'Douro', 'Simona Halep', 'Maramureș', 'Hungary', 'Banat', 'Croatia', 'Portugal', 'Transylvania', 'UEFA European Championship', 'Romania', 'Roman survivors', 'Diocletian', 'Gulf', 'Moldoveanu Peak', 'Cantabrian Mountains', 'Kaliningrad', 'Korčula', 'Immanuel Kant', 'Dubrovnik', 'TAGUS', 'Madeira', 'Wimbledon', 'Crișana', 'Trogir', 'Memel', 'Johann Georg Kant', 'Roman Illyria']
+
+gpt_entity_particular(): filtered entity: 
+ ['Dubrovnik', 'Trogir']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kaliningrad
+Königsberg
+Mikhail Kalinin
+Kaliningrad Oblast
+Germany
+Lithuania
+Poland
+Memel
+WWII
+Allied bombing
+Nazi Germany period
+
+gpt_entity_particular(): entity list: 
+ ['Lithuania', 'Kaliningrad Oblast', 'Allied bombing', 'Memel', 'Königsberg', 'WWII', 'Germany', 'Nazi Germany period', 'Kaliningrad', 'Poland', 'Mikhail Kalinin']
+
+gpt_entity_particular(): filtered entity: 
+ ['Königsberg']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kant
+Immanuel Kant
+Königsberg
+University of Königsberg
+Kaliningrad
+father of modern aesthetics
+father of modern ethics
+education focused on
+Latin and religious instruction
+believed in
+unity of humanity
+called
+nature as the great artist
+opposed
+democracy meaning direct democracy at his time
+reduced
+religiosity to rationality and religion to morality
+religion to morality
+wrote Universal Natural History and Theory of the Heavens supporting
+nebular hypothesis
+born in
+Königsberg
+
+gpt_entity_particular(): entity list: 
+ ['nature as the great artist', 'religion to morality', 'Kant', 'Königsberg', 'reduced', 'wrote Universal Natural History and Theory of the Heavens supporting', 'father of modern ethics', 'father of modern aesthetics', 'democracy meaning direct democracy at his time', 'nebular hypothesis', 'Latin and religious instruction', 'University of Königsberg', 'called', 'Kaliningrad', 'unity of humanity', 'education focused on', 'opposed', 'born in', 'believed in', 'religiosity to rationality and religion to morality', 'Immanuel Kant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Portugal' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Portugal
+Mediterranean climate
+Tagus
+Portugale
+Lisbon
+Ceuta
+Neanderthal
+Tagus Estuary
+Port wine
+Eusébio
+Figo
+Cristiano Ronaldo
+Francia
+Akrotiri and Dhekelia
+Phoenicians
+Christopher Columbus
+Portuguese Republic
+Hard Portuguese style
+Port wine
+Croatia
+Romans
+Portus Cale
+Romanians
+Hungary
+Portuguese cuisine
+Kant
+Lajes Air Base
+Port wine
+Goa
+Tallinn
+Vasco da Gama
+Madeira
+Golf
+Romania
+Bucharest
+Romanians
+Istvan
+Roman Illyria
+Roman Catholicism
+Dino Crocetti
+Porto
+The Huns
+Joan Miró
+Portuguese wines
+Philippines
+Holy Roman Empire
+Port wine
+Vasco da Gama
+Figo
+Port wine
+
+gpt_entity_particular(): entity list: 
+ ['Lajes Air Base', 'Roman Catholicism', 'Akrotiri and Dhekelia', 'Portuguese Republic', 'Kant', 'Mediterranean climate', 'Hard Portuguese style', 'Portugale', 'Joan Miró', 'Dino Crocetti', 'Portuguese cuisine', 'Holy Roman Empire', 'Vasco da Gama', 'Romans', 'Christopher Columbus', 'Port wine', 'Portuguese wines', 'Cristiano Ronaldo', 'Hungary', 'Figo', 'Tagus', 'Portugal', 'Croatia', 'Istvan', 'The Huns', 'Phoenicians', 'Ceuta', 'Golf', 'Romania', 'Portus Cale', 'Philippines', 'Eusébio', 'Bucharest', 'Francia', 'Tagus Estuary', 'Goa', 'Tallinn', 'Neanderthal', 'Madeira', 'Porto', 'Lisbon', 'Roman Illyria', 'Romanians']
+
+gpt_entity_particular(): filtered entity: 
+ ['Portuguese Republic', 'Port wine', 'Tagus', 'Madeira', 'Porto', 'Lisbon']
+After GPT, entity:  {'Hvar', 'Force', 'Thessaly', 'Tène', '40th', 'Europe', 'Portuguese Republic', 'University', 'Germany', 'Union', 'Portus', 'Constanța', 'Anna', 'Poland', 'Hegel', 'Moldoveanu', 'Eastern', 'Bulgaria', 'Baltic', 'Timișoara', 'Douro', 'Christopher', 'Krk', 'Banat', 'Carpathian', 'Portugal', 'Carl', 'Iași,', 'Napoca', 'al', 'Iași', 'Narva', 'Cape', 'International', 'Kaliningrad', 'Alexander', 'NKVD', 'Herzegovina', 'Rus', 'Brașov', 'Neanderthal', 'Pico', 'Good', 'Columbus', 'Simona', 'Andalus', 'Galați', 'United', 'Lithuania', 'Area', 'Security', 'Serbia', 'Königsberg', 'Hiiumaa', 'BSEC', 'León', 'Forest', 'Soviet', 'Illyria', 'Lower', 'Lajes', 'Bessarabia', 'Danube', 'Ocean', 'Denmark', 'Black', 'Gulf', 'Diocletian', 'Johann', 'Comăneci', 'Stalin', 'the Soviet Union', 'Iberian', 'Atlantic', 'Mountains', 'European', 'Russia', 'Sea', 'Porto', 'Mediterranean', 'Black Forest', 'WTO', 'Republicana', 'Lake Peipus', 'Island', 'Kant', 'Craiova', 'Cluj', 'Base', 'Hope', 'La', 'Lake', 'Kingdom', 'Cristiano', 'Halep', 'Timișoara,', 'Tagus', 'North', 'Spain', 'Transylvania', 'Cantabrian', 'NATO', 'States', 'Algarve', 'Kalinin', 'Slovenia', 'Eusébio', 'Immanuel', 'Korčula', 'Romanian', 'Madeira', 'Estonia', 'Finland', '30th', 'Indian', 'Estuary', 'Air', 'Montenegro', 'Ronaldo', 'Wendt', 'Peak', 'Damascus', 'Port wine', 'Nadia', 'Peipus', 'Hungary', 'Cale', 'Croatia', 'Reuter', 'Assistance', 'Moldavia', 'Regina', 'Phoenicians', 'Romania', 'Mikhail', 'Canada', 'Dacia', 'Guarda', 'Bosnia', 'Bucharest', 'Italy', 'India', 'Wallachia', 'Albuquerque', 'Dubrovnik', 'Drava', 'Peninsula', 'Tallinn', 'Novalis', 'Rijeka', 'de', 'Afonso', 'Napoca,', 'Philip', 'Lisbon', 'Schengen', 'Kievan', 'Trogir', 'Memel', 'Nazi'}
+Total time:  537.0158314704895
+Entity conversion done on 1_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_3_entity_conversion_hash.json. Check the entity.
+ Which country controlled the city where the philosopher 08D 083 is buried when it was formerly known as Königsberg?
+
+
+
+Done. Check final_query/id_1_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

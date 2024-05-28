@@ -1,0 +1,48 @@
+Got argument: Mexico, 1, 1_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Napoleon Bonaparte", "invaded", "Spain, impacting Mexico\'s independence")', 'start word': 'Mexico', 'end word': 'Napoleon', 'source': {'name': 'Mexico', 'line': 24}, 'cpnet': {'start word': 'mexico', 'end word': 'napoleon'}}
+next_word: Napoleon
+
+utils/question.py extract_hops(Napoleon, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+generate_question(1_6, ['("Napoleon Bonaparte", "invaded", "Spain, impacting Mexico\'s independence")', '("Napoleon", "was exiled to", "the remote island of Saint Helena")'], ['Napoleon', 'Saint Helena'], [('Mexico', 'Napoleon'), ('Napoleon', 'Saint Helena')], Saint Helena, [{'name': 'Mexico', 'line': 24}, {'name': 'Napoleon', 'line': 16}]) called
+GPT output is:  Q: To which remote island was the French emperor exiled, whose invasion of Spain contributed to the Mexican struggle for independence?
+A: Saint Helena
+final_choice(Saint Helena, options = 5) started
+[]
+entity_type(Saint Helena) called
+Saint Helena is Geography
+check_matchscore(Saint Helena, Former British colonies and protectorates in Africa):  0.07142857142857142
+choose_by_wiki_recur(Former British colonies and protectorates in Africa)
+   Pages in Former British colonies and protectorates in Africa: ['Ascension Island', 'Ashanti Protectorate', 'Barotseland', 'Barotziland–North-Western Rhodesia', 'Basutoland', 'Bechuanaland Protectorate', 'British Kaffraria', 'British Swaziland', 'British West Africa', 'British Cameroon', 'Southern Cameroons', 'Cape Colony', 'British Central Africa Protectorate', 'Central African Federation', 'East Africa Protectorate', 'Federation of Rhodesia and Nyasaland', 'Gambia Colony and Protectorate', 'Gold Coast (British colony)', 'Griqualand East', 'Griqualand West', 'British Guinea', 'Kenya Colony', 'Khedivate of Egypt', 'Lagos', 'Lagos Colony', 'Malabo', 'Malawi', 'Mashonaland', 'Matabeleland', 'British Mauritius', 'Mombasa', 'Colony of Natal', 'Ngoni Kingdom', 'Niger Coast Protectorate', 'Nigeria', 'Colonial Nigeria', 'North-Eastern Rhodesia', 'North-Western Rhodesia', 'Northern Nigeria Protectorate', 'Nyasaland', 'Orange River Colony', 'Orange River Sovereignty', 'Protectorate of Uganda', 'Northern Rhodesia', 'Saint Helena', 'Sierra Leone Colony and Protectorate', 'British Somaliland', 'Southern Nigeria Protectorate', 'Southern Rhodesia', 'Sultanate of Egypt', 'British Togoland', 'Transvaal Colony', 'Tristan da Cunha', 'Union of South Africa', 'Walvis Bay', 'Wituland', 'Sultanate of Zanzibar', 'Zimbabwe', 'Zulu Kingdom']
+      Lagos in ['Lagos', 'Ascension Island', 'British Kaffraria', 'Cape Colony']
+      Ascension Island in ['Lagos', 'Ascension Island', 'British Kaffraria', 'Cape Colony']
+      British Kaffraria in ['Lagos', 'Ascension Island', 'British Kaffraria', 'Cape Colony']
+      Cape Colony in ['Lagos', 'Ascension Island', 'British Kaffraria', 'Cape Colony', 'Bechuanaland Protectorate']
+      Bechuanaland Protectorate in ['Lagos', 'Ascension Island', 'British Kaffraria', 'Cape Colony', 'Bechuanaland Protectorate']
+['Lagos', 'Ascension Island', 'Cape Colony', 'Bechuanaland Protectorate']
+Ended after 2.5 hierarchy
+(2.5, ['Bechuanaland Protectorate', 'Lagos', 'Cape Colony', 'Ascension Island'])
+
+extract_info(Bechuanaland Protectorate) Start.
+utils/preprocess.py extract_info(): Checking good links on Bechuanaland Protectorate
+United Kingdom is Geography
+1 / 30 )  United Kingdom United Kingdom united_kingdom
+Botswana is Geography
+2 / 30 )  Republic of Botswana Botswana botswana
+Cape Town is Geography
+3 / 30 )  Cape Town Cape Town cape_town
+Caprivi Strip is Geography
+4 / 30 )  Caprivi strip Caprivi Strip caprivi_strip
+Namibia is Geography
+5 / 30 )  Namibia Namibia namibia
+Matabeleland is Geography
+6 / 30 )  Matabeleland Matabeleland matabeleland
+Cecil Rhodes is People
+7 / 30 )  Cecil Rhodes Cecil Rhodes cecil_rhodes
+Seretse Khama is People
+8 / 30 )  Seretse Seretse Khama sir_seretse_khama
+A United Kingdom is Geography
+9 / 30 )  A United Kingdom A United Kingdom united_kingdom

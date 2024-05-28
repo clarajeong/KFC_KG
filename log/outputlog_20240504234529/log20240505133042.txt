@@ -1,0 +1,191 @@
+Got argument: Immanuel Kant, 6, 6_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop1:  {'triplet': '("Kaliningrad", "is situated between", "Lithuania and Poland")', 'start word': 'Kaliningrad', 'end word': 'Lithuania', 'source': {'name': 'Kaliningrad', 'line': 3}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'lithuania'}}
+
+utils/question.py extract_hops(Lithuania, [], ['Immanuel Kant', 'Kaliningrad']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Lithuania_info.json file
+extract_info(Lithuania) Start.
+utils/preprocess.py extract_info(): Checking good links on Lithuania
+Baltic Sea is Geography
+1 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Latvia is Geography
+2 / 30 )  Latvia Latvia latvia
+Belarus is Geography
+3 / 30 )  Belarus Belarus belarus
+Poland is Geography
+4 / 30 )  Poland Poland poland
+Russia is Geography
+5 / 30 )  Russia Russia russia
+Sweden is Geography
+6 / 30 )  Sweden Sweden sweden
+Vilnius is Geography
+7 / 30 )  Vilnius Vilnius vilnius
+Kaunas is Geography
+8 / 30 )  Kaunas Kaunas kaunas
+Klaipėda is Geography
+9 / 30 )  Klaipėda Klaipėda klaipėda
+Šiauliai is Geography
+10 / 30 )  Šiauliai Šiauliai šiauliai
+Panevėžys is Geography
+11 / 30 )  Panevėžys Panevėžys panevėžys
+Denmark is Geography
+12 / 30 )  Denmark Denmark denmark
+Kievan Rus' is Geography
+13 / 30 )  Kievan Rus' Kievan Rus' kievan_russia
+Polotsk is Geography
+14 / 30 )  Polotsk Polotsk polock
+Pskov is Geography
+15 / 30 )  Pskov Pskov pskov
+Novgorod Republic is Geography
+16 / 30 )  Novgorod Republic Novgorod Republic novgorodian
+Daugava is Geography
+17 / 30 )  Daugava Daugava daugava
+Ukraine is Geography
+18 / 30 )  Ukraine Ukraine ukraine
+Kyiv is Geography
+19 / 30 )  Kyiv Kyiv kyiv
+Kingdom of Hungary  is Geography
+20 / 30 )  Hungary Kingdom of Hungary  kingdom_of_hungary
+Boris Godunov is People
+21 / 30 )  Boris Godunov Boris Godunov boris_godunov
+Sejm is Geography
+22 / 30 )  parliament Sejm sejm
+Moscow is Geography
+23 / 30 )  Moscow Moscow moscow
+German Empire is Geography
+24 / 30 )  German Empire German Empire german_empire
+Courland is Geography
+25 / 30 )  Courland Courland courland
+Lithuanian Soviet Socialist Republic  is Geography
+26 / 30 )  Lithuanian Soviet Socialist Republic Lithuanian Soviet Socialist Republic  lithuanian_ssr
+East Prussia is Geography
+27 / 30 )  East Prussia East Prussia east_prussia
+Germany is Geography
+28 / 30 )  Germany Germany germany
+Italy is Geography
+29 / 30 )  Italy Italy italy
+Switzerland is Geography
+30 / 30 )  Switzerland Switzerland switzerland
+extract_triplet(Lithuania)
+Got GPT's response. String length : 3519
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [['Latvia', 'Latvia', 'latvia']]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [['Belarus', 'Belarus', 'belarus']]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [['Sweden', 'Sweden', 'sweden']]
+subject_words:  [['Vilnius', 'Vilnius', 'vilnius']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [['Kaunas', 'Kaunas', 'kaunas']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [['Klaipėda', 'Klaipėda', 'klaipėda']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [['Šiauliai', 'Šiauliai', 'šiauliai']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [['Panevėžys', 'Panevėžys', 'panevėžys']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania'), ['Lithuanian Soviet Socialist Republic', 'Lithuanian Soviet Socialist Republic ', 'lithuanian_ssr']]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Daugava', 'Daugava', 'daugava']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [["Kievan Rus'", "Kievan Rus'", 'kievan_russia']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  []
+object_words:  [['Šiauliai', 'Šiauliai', 'šiauliai']]
+subject_words:  [['Kyiv', 'Kyiv', 'kyiv']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [['Moscow', 'Moscow', 'moscow']]
+['', 'Lithuanian Commonwealth', 'was engaged in the Livonian War', '']
+subject_words:  [['Boris Godunov', 'Boris Godunov', 'boris_godunov']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [['German Empire', 'German Empire', 'german_empire']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [['Courland', 'Courland', 'courland']]
+object_words:  [['Germany', 'Germany', 'germany']]
+subject_words:  [(None, 'Lithuania', 'lithuania'), ['Lithuanian Soviet Socialist Republic', 'Lithuanian Soviet Socialist Republic ', 'lithuanian_ssr']]
+object_words:  []
+subject_words:  [['East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [(None, 'Lithuania', 'lithuania'), ['Germany', 'Germany', 'germany']]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [['Denmark', 'Denmark', 'denmark']]
+object_words:  []
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  [(None, 'Lithuania', 'lithuania'), ['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  [['Italy', 'Italy', 'italy']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [['Switzerland', 'Switzerland', 'switzerland']]
+object_words:  [['Switzerland', 'Switzerland', 'switzerland']]
+subject_words:  [['Moscow', 'Moscow', 'moscow']]
+object_words:  [(None, 'Lithuania', 'lithuania')]
+subject_words:  [(None, 'Lithuania', 'lithuania')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Lithuania', 'lithuania')]
+last_hop:  {'triplet': '("Lithuania", "has a maritime border with", "Sweden to the west")', 'start word': 'Lithuania', 'end word': 'Sweden', 'source': {'name': 'Lithuania', 'line': 7}, 'cpnet': {'start word': 'lithuania', 'end word': 'sweden'}}
+
+utils/question.py extract_hops(Kaliningrad, ['Lithuania'], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop2:  {'triplet': '("Kaliningrad", "was part of", "German Confederation")', 'start word': 'Kaliningrad', 'end word': 'German Confederation', 'source': {'name': 'Kaliningrad', 'line': 18}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'german_confederation'}}
+generate_question(6_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "is situated between", "Lithuania and Poland")', '("Kaliningrad", "was part of", "German Confederation")', '("Lithuania", "has a maritime border with", "Sweden to the west")'], ['Immanuel Kant', 'Kaliningrad', 'Kaliningrad', 'Lithuania'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Lithuania'), ('Kaliningrad', 'German Confederation'), ('Lithuania', 'Sweden')], Immanuel Kant, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 3}, {'name': 'Kaliningrad', 'line': 18}, {'name': 'Lithuania', 'line': 7}]) called
+GPT output is:  Q: Which philosopher is buried in the city that was once a part of the German Confederation and is now situated between northeastern Poland and southern Lithuania, sharing a maritime border to the west with a Scandinavian kingdom?
+
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called

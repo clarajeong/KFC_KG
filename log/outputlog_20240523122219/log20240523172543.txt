@@ -1,0 +1,1547 @@
+Got argument: Mexico, 2, 2_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")', 'start word': 'Mexico', 'end word': 'Yucatán Peninsula', 'source': {'name': 'Yucatán Peninsula', 'line': 4}, 'cpnet': {'start word': 'mexico', 'end word': 'yucatan_peninsula'}}
+
+utils/question.py extract_hops(Yucatán Peninsula, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Yucatán_Peninsula_info.json file
+second_hop:  {'triplet': '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")', 'start word': 'Yucatán Peninsula', 'end word': 'Gulf of Mexico', 'source': {'name': 'Yucatán Peninsula', 'line': 4}, 'cpnet': {'start word': 'yucatan_peninsula', 'end word': 'gulf_of_mexico'}}
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Mexico', 'Yucatán Peninsula']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+third_hop:  {'triplet': '("Gulf of Mexico", "is bordered by", "Cuba")', 'start word': 'Gulf of Mexico', 'end word': 'Cuba', 'source': {'name': 'Gulf of Mexico', 'line': 33}, 'cpnet': {'start word': 'gulf_of_mexico', 'end word': 'cuba'}}
+generate_question(2_6, ['("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")', '("Gulf of Mexico", "is bordered by", "Cuba")'], ['Yucatán Peninsula', 'Gulf of Mexico', 'Cuba'], [('Mexico', 'Yucatán Peninsula'), ('Yucatán Peninsula', 'Gulf of Mexico'), ('Gulf of Mexico', 'Cuba')], Cuba, [{'name': 'Yucatán Peninsula', 'line': 4}, {'name': 'Yucatán Peninsula', 'line': 4}, {'name': 'Gulf of Mexico', 'line': 33}]) called
+GPT output is:  Q: Which country is located to the southeast of the landform that separates the Gulf of Mexico from the Caribbean Sea?
+A: Cuba
+final_choice(Cuba, options = 5) started
+[]
+entity_type(Cuba) called
+Cuba is Geography
+check_matchscore(Cuba, Spanish-speaking countries and territories):  0.0
+choose_by_wiki_recur(Spanish-speaking countries and territories)
+   Pages in Spanish-speaking countries and territories: ['Hispanidad', 'Alta California', 'Andorra', 'Argentina', 'Belize', 'Bolivia', 'Captaincy General of Chile', 'Captaincy General of Cuba', 'Captaincy General of Guatemala', 'Captaincy General of Puerto Rico', 'Captaincy General of Santo Domingo', 'Captaincy General of the Philippines', 'Captaincy General of Venezuela', 'Captaincy General of Yucatán', 'Chile', 'Colombia', 'Costa Rica', 'Cuba', 'Dominican Republic', 'Ecuador', 'El Salvador', 'Equatorial Guinea', 'Guatemala', 'Honduras', 'Insular Government of Porto Rico', 'Mexico', 'New Spain', 'Nicaragua', 'Panama', 'Paraguay', 'Peru', 'Province of Las Californias', 'Provincias Internas', 'Puerto Rico', 'Sahrawi Arab Democratic Republic', 'Intendancy of San Salvador', 'Colony of Santiago', 'Spain', 'Spanish West Indies', 'Republic of Texas', 'Upper Peru', 'Uruguay', 'Venezuela', 'Viceroyalty of New Granada', 'Viceroyalty of Peru', 'Western Sahara', 'Republic of Yucatán']
+      Republic of Texas in ['Republic of Texas', 'Andorra', 'Ecuador', 'Captaincy General of Santo Domingo']
+      Andorra in ['Republic of Texas', 'Andorra', 'Ecuador', 'Captaincy General of Santo Domingo', 'Captaincy General of Puerto Rico']
+      Ecuador in ['Republic of Texas', 'Andorra', 'Ecuador', 'Captaincy General of Santo Domingo', 'Captaincy General of Puerto Rico']
+      Captaincy General of Santo Domingo in ['Republic of Texas', 'Andorra', 'Ecuador', 'Captaincy General of Santo Domingo', 'Captaincy General of Puerto Rico']
+      Captaincy General of Puerto Rico in ['Republic of Texas', 'Andorra', 'Ecuador', 'Captaincy General of Santo Domingo', 'Captaincy General of Puerto Rico', 'Paraguay']
+      Paraguay in ['Republic of Texas', 'Andorra', 'Ecuador', 'Captaincy General of Santo Domingo', 'Captaincy General of Puerto Rico', 'Paraguay', 'New Spain']
+      New Spain in ['Republic of Texas', 'Andorra', 'Ecuador', 'Captaincy General of Santo Domingo', 'Captaincy General of Puerto Rico', 'Paraguay', 'New Spain']
+['Andorra', 'Ecuador', 'Paraguay', 'New Spain']
+Ended after 2.5 hierarchy
+(2.5, ['New Spain', 'Andorra', 'Ecuador', 'Paraguay'])
+
+extract_info(Andorra) Start.
+utils/preprocess.py extract_info(): Checking good links on Andorra
+Iberian Peninsula is Geography
+1 / 30 )  Iberian Peninsula Iberian Peninsula iberian_peninsula
+Pyrenees is Geography
+2 / 30 )  Pyrenees Pyrenees pyrenees
+France is Geography
+3 / 30 )  France France france
+Spain is Geography
+4 / 30 )  Spain Spain spain
+Charlemagne is People
+5 / 30 )  Charlemagne Charlemagne charlemagne
+Andorra la Vella is Geography
+6 / 30 )  Andorra la Vella Andorra la Vella andorra_la_vella
+Polybius is People
+7 / 30 )  Polybius Polybius polybius
+Canaan is Geography
+8 / 30 )  Canaanite Canaan canaan
+Occitania is Geography
+9 / 30 )  Occitania Occitania occitania
+Encamp is Geography
+10 / 30 )  Encamp Encamp encamp
+Al-Andalus is Geography
+11 / 30 )  Muslim Empire of Al-Andalus Al-Andalus al_andalus
+Francia is Geography
+12 / 30 )  Franks Francia francia
+Cerdanya is Geography
+13 / 30 )  Cerdanya Cerdanya cerdanya
+Catalonia is Geography
+14 / 30 )  Catalonia Catalonia catalonia
+Henry IV of France is People
+15 / 30 )  Henry III of Navarre Henry IV of France henry_of_navarre
+Napoleon is People
+16 / 30 )  Napoleon I Napoleon napoleon
+First French Empire is Geography
+17 / 30 )  First French Empire First French Empire first_french_empire
+Francoist Spain is Geography
+18 / 30 )  Francoist Spain Francoist Spain francoist
+Nazi Germany is Geography
+19 / 30 )  Nazi Nazi Germany nazi_germany
+MI6 is Geography
+20 / 30 )  MI6 MI6 mi6
+Gestapo is Geography
+21 / 30 )  Gestapo Gestapo gestapo
+Charles de Gaulle is People
+22 / 30 )  Charles de Gaulle Charles de Gaulle charles_de_gaulle
+Portugal is Geography
+23 / 30 )  Portugal Portugal portugal
+World Trade Organization is Geography
+24 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+International Monetary Fund is Geography
+25 / 30 )  International Monetary Fund International Monetary Fund international_monetary_fund
+Red-billed chough is Animal
+26 / 30 )  red-billed choughs Red-billed chough cornish_chough
+Citril finch is Animal
+27 / 30 )  citril finches Citril finch citril_finch
+Rock bunting is Animal
+28 / 30 )  rock buntings Rock bunting rock_bunting
+François Hollande is People
+29 / 30 )  François Hollande François Hollande françois_hollande
+Andorra is Geography
+30 / 30 )  Andorrans Andorra andorra
+extract_triplet(Andorra)
+Got GPT's response. String length : 3247
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  [['Iberian Peninsula', 'Iberian Peninsula', 'iberian_peninsula']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  [['Pyrenees', 'Pyrenees', 'pyrenees']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  [['France', 'France', 'france']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  [['Spain', 'Spain', 'spain']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  [['Charlemagne', 'Charlemagne', 'charlemagne']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  []
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  [['France', 'France', 'france'], ['Spain', 'Spain', 'spain']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorra la Vella', 'Andorra la Vella', 'andorra_la_vella'], ['Andorrans', 'Andorra', 'andorra']]
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  []
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  []
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorra la Vella', 'Andorra la Vella', 'andorra_la_vella'], ['Andorrans', 'Andorra', 'andorra']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  []
+subject_words:  [['Polybius', 'Polybius', 'polybius']]
+object_words:  []
+subject_words:  [['Polybius', 'Polybius', 'polybius']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  []
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  []
+subject_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+object_words:  []
+subject_words:  []
+object_words:  [['Iberian Peninsula', 'Iberian Peninsula', 'iberian_peninsula']]
+subject_words:  [['Pyrenees', 'Pyrenees', 'pyrenees']]
+object_words:  []
+subject_words:  [['Charlemagne', 'Charlemagne', 'charlemagne']]
+object_words:  [(None, 'Andorra', 'andorra')]
+subject_words:  [(None, 'Andorra', 'andorra')]
+object_words:  [['Franks', 'Francia', 'francia']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  []
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  [['Henry III of Navarre', 'Henry IV of France', 'henry_of_navarre']]
+object_words:  [['France', 'France', 'france']]
+subject_words:  [['Henry III of Navarre', 'Henry IV of France', 'henry_of_navarre']]
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  [['First French Empire', 'First French Empire', 'first_french_empire']]
+object_words:  []
+subject_words:  [['Spain', 'Spain', 'spain'], ['Francoist Spain', 'Francoist Spain', 'francoist']]
+object_words:  [(None, 'Andorra', 'andorra')]
+subject_words:  [['Gestapo', 'Gestapo', 'gestapo']]
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  [['Charles de Gaulle', 'Charles de Gaulle', 'charles_de_gaulle']]
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  [['Portugal', 'Portugal', 'portugal']]
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+subject_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+object_words:  []
+subject_words:  [['Pyrenees', 'Pyrenees', 'pyrenees']]
+object_words:  [['rock buntings', 'Rock bunting', 'rock_bunting']]
+subject_words:  [['François Hollande', 'François Hollande', 'françois_hollande']]
+object_words:  [(None, 'Andorra', 'andorra'), ['Andorrans', 'Andorra', 'andorra']]
+extract_info(New Spain) Start.
+utils/preprocess.py extract_info(): Checking good links on New Spain
+Mexico City is Geography
+1 / 30 )  Mexico City Mexico City mexico_city
+North America is Geography
+2 / 30 )  North America North America north_america
+Mexico is Geography
+3 / 30 )  Mexico Mexico mexico
+Southwestern United States is Geography
+4 / 30 )  Southwestern United States Southwestern United States southwestern_united_states
+California is Geography
+5 / 30 )  California California california
+Florida is Geography
+6 / 30 )  Florida Florida florida
+Louisiana  is Geography
+7 / 30 )  Louisiana Louisiana  lousiana
+Caribbean is Geography
+8 / 30 )  Caribbean Caribbean caribbean
+Pacific Ocean is Geography
+9 / 30 )  Pacific Pacific Ocean pacific_ocean
+Philippines is Geography
+10 / 30 )  Philippines Philippines philippines
+Guam is Geography
+11 / 30 )  Guam Guam guam
+Taiwan is Geography
+12 / 30 )  Taiwan Taiwan taiwan
+Hernán Cortés is People
+13 / 30 )  Hernán Cortés Hernán Cortés hernando_cortes
+Tenochtitlan is Geography
+14 / 30 )  Tenochtitlan Tenochtitlan tenochtitlan
+Zacatecas is Geography
+15 / 30 )  Zacatecas Zacatecas zacatecas
+Acapulco is Geography
+16 / 30 )  Acapulco Acapulco acapulco
+Isabella I of Castile is People
+17 / 30 )  Queen Isabella Isabella I of Castile isabella_i
+Iberian Peninsula is Geography
+18 / 30 )  Iberian Peninsula Iberian Peninsula iberian_peninsula
+Panama is Geography
+19 / 30 )  Panama Panama panama
+Hispaniola is Geography
+20 / 30 )  Hispaniola Hispaniola hispaniola
+Cayman Islands is Geography
+21 / 30 )  Cayman Islands Cayman Islands cayman_islands
+Trinidad is Geography
+22 / 30 )  Trinidad Trinidad trinidad
+Mariana Islands is Geography
+23 / 30 )  Mariana Islands Mariana Islands mariana_islands
+Caroline Islands is Geography
+24 / 30 )  Caroline Islands Caroline Islands caroline_islands
+Maluku Islands is Geography
+25 / 30 )  Moluccas Maluku Islands maluku_islands
+Baja California is Geography
+26 / 30 )  Baja California Baja California baja_california
+Baja California Sur is Geography
+27 / 30 )  Baja California Sur Baja California Sur baja_california_sur
+Santo Domingo is Geography
+28 / 30 )  Santo Domingo Santo Domingo santo_domingo
+Amaranth is Animal
+29 / 30 )  amaranth Amaranth amaranth
+Puebla (city) is Geography
+30 / 30 )  Puebla de los Angeles Puebla (city) puebla_de_los_ángeles
+extract_triplet(New Spain)
+Got GPT's response. String length : 3551
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  []
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  [['Mexico City', 'Mexico City', 'mexico_city'], ['Mexico', 'Mexico', 'mexico']]
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  [['Mexico', 'Mexico', 'mexico'], ['Southwestern United States', 'Southwestern United States', 'southwestern_united_states']]
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  [['Louisiana', 'Louisiana ', 'lousiana']]
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  []
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  [['Pacific', 'Pacific Ocean', 'pacific_ocean'], ['Philippines', 'Philippines', 'philippines'], ['Guam', 'Guam', 'guam']]
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  [['Taiwan', 'Taiwan', 'taiwan']]
+object_words:  []
+subject_words:  [['Hernán Cortés', 'Hernán Cortés', 'hernando_cortes']]
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  [['Mexico City', 'Mexico City', 'mexico_city'], ['Mexico', 'Mexico', 'mexico']]
+object_words:  [['Tenochtitlan', 'Tenochtitlan', 'tenochtitlan']]
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  [['Acapulco', 'Acapulco', 'acapulco']]
+object_words:  [['Philippines', 'Philippines', 'philippines']]
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  []
+subject_words:  [['Queen Isabella', 'Isabella I of Castile', 'isabella_i']]
+object_words:  []
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  [['Iberian Peninsula', 'Iberian Peninsula', 'iberian_peninsula']]
+subject_words:  []
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [(None, 'New Spain', 'new_spain')]
+object_words:  []
+subject_words:  [['Mexico', 'Mexico', 'mexico']]
+object_words:  [['Mexico', 'Mexico', 'mexico']]
+subject_words:  []
+object_words:  []
+subject_words:  [['California', 'California', 'california']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Mexico City', 'Mexico City', 'mexico_city'], ['Mexico', 'Mexico', 'mexico']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Santo Domingo', 'Santo Domingo', 'santo_domingo']]
+object_words:  []
+subject_words:  [['Florida', 'Florida', 'florida'], ['Louisiana', 'Louisiana ', 'lousiana']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  [['Mexico City', 'Mexico City', 'mexico_city'], ['Mexico', 'Mexico', 'mexico']]
+object_words:  []
+subject_words:  []
+object_words:  [['Mexico City', 'Mexico City', 'mexico_city'], ['Mexico', 'Mexico', 'mexico']]
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+subject_words:  []
+object_words:  [(None, 'New Spain', 'new_spain')]
+['These triplets follow the provided format, representing key relationships and historical information extracted from the given text about New Spain.']
+extract_info(Ecuador) Start.
+utils/preprocess.py extract_info(): Checking good links on Ecuador
+Colombia is Geography
+1 / 30 )  Colombia Colombia colombia
+Peru is Geography
+2 / 30 )  Peru Peru peru
+Pacific Ocean is Geography
+3 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Galápagos Islands is Geography
+4 / 30 )  Galápagos Islands Galápagos Islands galápagos_islands
+Quito is Geography
+5 / 30 )  Quito Quito quito
+Guayaquil is Geography
+6 / 30 )  Guayaquil Guayaquil guayaquil
+Gran Colombia is Geography
+7 / 30 )  Gran Colombia Gran Colombia gran_colombia
+Organization of American States is Geography
+8 / 30 )  Organization of American States Organization of American States organization_of_american_states
+Equator is Geography
+9 / 30 )  Equator Equator equator
+North America is Geography
+10 / 30 )  North North America north_america
+Huayna Capac is People
+11 / 30 )  Huayna Capac Huayna Capac huayna_capac
+Cajamarca is Geography
+12 / 30 )  Cajamarca Cajamarca cajamarca
+Francisco Pizarro is People
+13 / 30 )  Pizarro Francisco Pizarro francisco_pizarro
+Alexander von Humboldt is People
+14 / 30 )  Alexander von Humboldt Alexander von Humboldt baron_friedrich_heinrich_alexander_von_humboldt
+Simón Bolívar is People
+15 / 30 )  Simón Bolívar Simón Bolívar bolívar
+Venezuela is Geography
+16 / 30 )  Venezuela Venezuela venezuela
+Panama is Geography
+17 / 30 )  Panama Panama panama
+Pasto, Colombia is Geography
+18 / 30 )  Pasto Pasto, Colombia pasto
+Popayán is Geography
+19 / 30 )  Popayán Popayán popayán
+Iquitos is Geography
+20 / 30 )  Iquitos Iquitos iquitos
+Abel is People
+21 / 30 )  Abel Abel abel
+Cain is People
+22 / 30 )  Cain Cain cain
+Marco Subia Martinez  is Geography
+23 / 30 )  Marco Subia Martinez Marco Subia Martinez  republic_of_ecuador
+Union of South American Nations is Geography
+24 / 30 )  Union of South American Nations Union of South American Nations usan
+Amnesty International is Incident
+25 / 30 )  Amnesty International Amnesty International amnesty_international
+Oceania is Geography
+26 / 30 )  Oceania Oceania oceania
+Cotopaxi is Geography
+27 / 30 )  Cotopaxi Cotopaxi cotopaxi
+Chimborazo is Geography
+28 / 30 )  Mount Chimborazo Chimborazo chimborazo
+Amazon basin is Geography
+29 / 30 )  Amazon Amazon basin amazon_basin
+World Trade Organization is Geography
+30 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+extract_triplet(Ecuador)
+Got GPT's response. String length : 1756
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Colombia', 'Colombia', 'colombia']]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Peru', 'Peru', 'peru']]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Galápagos Islands', 'Galápagos Islands', 'galápagos_islands']]
+subject_words:  [['Quito', 'Quito', 'quito']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [['Guayaquil', 'Guayaquil', 'guayaquil']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Colombia', 'Colombia', 'colombia'], ['Gran Colombia', 'Gran Colombia', 'gran_colombia']]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Organization of American States', 'Organization of American States', 'organization_of_american_states']]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Equator', 'Equator', 'equator']]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  []
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  []
+subject_words:  [['Huayna Capac', 'Huayna Capac', 'huayna_capac']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [['Cajamarca', 'Cajamarca', 'cajamarca']]
+object_words:  [['Pizarro', 'Francisco Pizarro', 'francisco_pizarro']]
+subject_words:  [['Simón Bolívar', 'Simón Bolívar', 'bolívar']]
+object_words:  [['Colombia', 'Colombia', 'colombia'], ['Gran Colombia', 'Gran Colombia', 'gran_colombia']]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Peru', 'Peru', 'peru']]
+['', 'Venezuela', 'Panama', 'Colombia', 'Ecuador', 'were part of', 'Gran Colombia', '']
+['', 'Pasto', 'Popayán', 'were included in the territory of', 'the Gran Colombia', '']
+subject_words:  [['Iquitos', 'Iquitos', 'iquitos']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [['Cain', 'Cain', 'cain']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Peru', 'Peru', 'peru']]
+subject_words:  [['Marco Subia Martinez', 'Marco Subia Martinez ', 'republic_of_ecuador']]
+object_words:  []
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Union of South American Nations', 'Union of South American Nations', 'usan']]
+subject_words:  [['Amnesty International', 'Amnesty International', 'amnesty_international']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['Galápagos Islands', 'Galápagos Islands', 'galápagos_islands'], ['Oceania', 'Oceania', 'oceania']]
+subject_words:  [['Cotopaxi', 'Cotopaxi', 'cotopaxi']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [['Mount Chimborazo', 'Chimborazo', 'chimborazo']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [['Amazon', 'Amazon basin', 'amazon_basin']]
+object_words:  [(None, 'Ecuador', 'ecuador')]
+subject_words:  [(None, 'Ecuador', 'ecuador')]
+object_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+extract_info(Paraguay) Start.
+utils/preprocess.py extract_info(): Checking good links on Paraguay
+Argentina is Geography
+1 / 30 )  Argentina Argentina argentina
+Brazil is Geography
+2 / 30 )  Brazil Brazil brazil
+Bolivia is Geography
+3 / 30 )  Bolivia Bolivia bolivia
+Asunción is Geography
+4 / 30 )  Asunción Asunción asunción
+Organization of American States is Geography
+5 / 30 )  Organization of American States Organization of American States organization_of_american_states
+Luque is Geography
+6 / 30 )  Luque Luque luque
+Paraguay River is Geography
+7 / 30 )  Paraguay Paraguay River paraguay_river
+Paraná River is Geography
+8 / 30 )  Paraná Paraná River paraná_river
+Jesuits is Geography
+9 / 30 )  Jesuit Jesuits jesuits
+Geneva is Geography
+10 / 30 )  Genevan Geneva geneva
+Jean-Jacques Rousseau is People
+11 / 30 )  Jean-Jacques Rousseau Jean-Jacques Rousseau jean_jacques_rousseau
+Yerba mate is Animal
+12 / 30 )  yerba mate Yerba mate yerba_mate
+Americas is Geography
+13 / 30 )  The Americas Americas americas
+Rio de Janeiro is Geography
+14 / 30 )  Rio de Janeiro Rio de Janeiro rio_de_janeiro
+Hermes Rafael Saguier  is Geography
+15 / 30 )  Hermes Rafael Saguier Hermes Rafael Saguier  paraguayan
+es:Hermes Rafael Saguier is Geography
+16 / 30 )  es es:Hermes Rafael Saguier paraguayan
+Union of South American Nations is Geography
+17 / 30 )  UNASUR Union of South American Nations usan
+Pantanal is Geography
+18 / 30 )  Pantanal Pantanal pantanal
+Nutria is Animal
+19 / 30 )  coypu Nutria nutria
+Soybean is Animal
+20 / 30 )  soybean Soybean soybean
+International Monetary Fund is Geography
+21 / 30 )  International Monetary Fund International Monetary Fund international_monetary_fund
+Miami is Geography
+22 / 30 )  Miami Miami miami
+Hong Kong is Geography
+23 / 30 )  Hong Kong Hong Kong hong_kong
+Maize is Animal
+24 / 30 )  maize Maize maize
+Cassava is Animal
+25 / 30 )  cassava Cassava cassava
+Wheat is Animal
+26 / 30 )  wheat Wheat wheat
+Sorghum is Animal
+27 / 30 )  sorghum Sorghum sorghum
+Atlantic Ocean is Geography
+28 / 30 )  ocean Atlantic Ocean atlantic_ocean
+Hydroelectricity is Geography
+29 / 30 )  hydropower Hydroelectricity hydroelectricity
+Itaipu Dam is Geography
+30 / 30 )  Itaipu Dam Itaipu Dam itaipu_dam
+extract_triplet(Paraguay)
+Got GPT's response. String length : 1819
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['Argentina', 'Argentina', 'argentina']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['Brazil', 'Brazil', 'brazil']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['Bolivia', 'Bolivia', 'bolivia']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['Asunción', 'Asunción', 'asunción']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['Organization of American States', 'Organization of American States', 'organization_of_american_states']]
+subject_words:  [['Asunción', 'Asunción', 'asunción']]
+object_words:  []
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river'], ['Paraná', 'Paraná River', 'paraná_river']]
+subject_words:  [['Asunción', 'Asunción', 'asunción']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['Bolivia', 'Bolivia', 'bolivia']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [(None, 'Paraguay', 'paraguay')]
+subject_words:  [['Hermes Rafael Saguier', 'Hermes Rafael Saguier ', 'paraguayan']]
+object_words:  []
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['UNASUR', 'Union of South American Nations', 'usan']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['Pantanal', 'Pantanal', 'pantanal']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['coypu', 'Nutria', 'nutria']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['soybean', 'Soybean', 'soybean']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['International Monetary Fund', 'International Monetary Fund', 'international_monetary_fund']]
+subject_words:  [['Asunción', 'Asunción', 'asunción']]
+object_words:  []
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  []
+subject_words:  []
+object_words:  [['Miami', 'Miami', 'miami'], ['Hong Kong', 'Hong Kong', 'hong_kong']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['maize', 'Maize', 'maize']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['cassava', 'Cassava', 'cassava']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['wheat', 'Wheat', 'wheat']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['sorghum', 'Sorghum', 'sorghum']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['hydropower', 'Hydroelectricity', 'hydroelectricity']]
+subject_words:  [(None, 'Paraguay', 'paraguay'), ['Paraguay', 'Paraguay River', 'paraguay_river']]
+object_words:  [['Itaipu Dam', 'Itaipu Dam', 'itaipu_dam']]
+['("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n']
+
+['("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "extends towards the", "northeast")\n', '("Yucatán Channel", "connects", "Gulf of Mexico and the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of the", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán", "lies within", "Yucatán Peninsula")\n', '("Hernán Cortés", "told the story of the origin of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid during the", "Cretaceous Period")\n', '("Yucatán Peninsula", "contained diverse groups of people during the transition from", "Pleistocene to Holocene")\n', '("Maya Civilization", "was centered in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "extended into", "Guatemala, Honduras, and Chiapas")\n', '("Mayan languages", "are spoken in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "is composed of", "limestone and other soluble rocks")\n', '("Chicxulub crater", "is located off the", "north coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "has a", "tropical climate")\n', '("Yucatán Peninsula", "is affected by", "hurricanes")\n', '("Yucatán Peninsula", "has no aboveground rivers due to", "karst landscape")\n', '("cenotes", "provide access to groundwater in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "has", "dry forests and rainforests")\n', '("Yucatán Peninsula", "has", "mangroves and barrier reef")\n', '("Mesoamerican Barrier Reef System", "is along", "the east coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises", "Yucatán, Campeche, and Quintana Roo")\n', '("Yucatán Peninsula", "includes", "Petén (Guatemala) and almost all of Belize")\n', '("Yucatán Peninsula", "has economy oriented towards", "tourism")\n', '("Cancún", "is located in", "Yucatán Peninsula")\n', '("Riviera Maya", "stretches along", "the east coast of the Yucatán Peninsula")\n', '("Xcaret", "is an ecological park in", "Yucatán Peninsula")\n', '("Mérida", "is the most populated area in", "Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "population consists of", "Maya and Mestizos")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "extends towards the", "northeast")\n', '("Yucatán Channel", "connects", "Gulf of Mexico and the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of the", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán", "lies within", "Yucatán Peninsula")\n', '("Hernán Cortés", "told the story of the origin of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid during the", "Cretaceous Period")\n', '("Yucatán Peninsula", "contained diverse groups of people during the transition from", "Pleistocene to Holocene")\n', '("Maya Civilization", "was centered in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "extended into", "Guatemala, Honduras, and Chiapas")\n', '("Mayan languages", "are spoken in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "is composed of", "limestone and other soluble rocks")\n', '("Chicxulub crater", "is located off the", "north coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "has a", "tropical climate")\n', '("Yucatán Peninsula", "is affected by", "hurricanes")\n', '("Yucatán Peninsula", "has no aboveground rivers due to", "karst landscape")\n', '("cenotes", "provide access to groundwater in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "has", "dry forests and rainforests")\n', '("Yucatán Peninsula", "has", "mangroves and barrier reef")\n', '("Mesoamerican Barrier Reef System", "is along", "the east coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises", "Yucatán, Campeche, and Quintana Roo")\n', '("Yucatán Peninsula", "includes", "Petén (Guatemala) and almost all of Belize")\n', '("Yucatán Peninsula", "has economy oriented towards", "tourism")\n', '("Cancún", "is located in", "Yucatán Peninsula")\n', '("Riviera Maya", "stretches along", "the east coast of the Yucatán Peninsula")\n', '("Xcaret", "is an ecological park in", "Yucatán Peninsula")\n', '("Mérida", "is the most populated area in", "Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "population consists of", "Maya and Mestizos")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Andorra", "is officially known as", "the Principality of Andorra")\n', '("Andorra", "is a sovereign country on", "the Iberian Peninsula")\n', '("Andorra", "is in", "the eastern Pyrenees")\n', '("Andorra", "is bordered by", "France to the north")\n', '("Andorra", "is bordered by", "Spain to the south")\n', '("Andorra", "was believed to be created by", "Charlemagne")\n', '("Andorra", "was transferred to", "the Roman Catholic Diocese of Urgell")\n', '("Andorra", "is headed by two co-princes:", "the bishop of Urgell in Spain and the president of France")\n', '("Andorra la Vella", "is the capital and largest city of", "Andorra")\n', '("Andorra", "is the sixth-smallest state in", "Europe")\n', '("Andorrans", "are closely related to", "Catalans")\n', '("Andorra la Vella", "is the highest capital city in", "Europe")\n', '("Catalan", "is the official language of", "Andorra")\n', '("Andorra", "is not a member state of", "the European Union")\n', '("Polybius", "describes", "the Andosins")\n', '("Polybius", "wrote about", "an Iberian Pre-Roman tribe")\n', '("The word Andosini or Andosins", "may derive from", "the Basque handia, meaning \'big\' or \'giant\'")\n', '("Andorra", "shows evidence of Basque language in", "the area")\n', '("Andorra", "may derive from the old word", "Anorra")\n', '("Andorra", "may derive from Arabic", "ad-dārra")\n', '("The Moors", "conquered", "the Iberian Peninsula")\n', '("The valleys of the High Pyrenees", "were not administered by", "Muslims")\n', '("Charlemagne", "granted a charter to", "the Andorran people")\n', '("The Andorran valleys", "were sheltered from Arab invaders by", "the Franks")\n', '("Borrell II of Urgell", "gave the Andorran valleys to", "the Diocese of Urgell")\n', '("The bishop of Urgell", "has been co-prince of", "Andorra")\n', '("The Acta de Consagració i Dotació de la Catedral de la Seu d\'Urgell", "is the first document mentioning", "Andorra as a territory")\n', '("Henry III of Navarre", "became", "king of France")\n', '("Henry III of Navarre", "issued an edict establishing", "the head of the French state and the bishop of Urgell as Co-Princes of Andorra")\n', '("The First French Empire", "annexed Catalonia during", "the Peninsular War")\n', '("Francoist Spain", "was faced with", "Andorran neutrality during WWII")\n', '("The Gestapo", "had agents in", "Andorra")\n', '("Charles de Gaulle", "approved the economic boom for", "Andorra")\n', '("Portugal", "is one of the countries neighboring", "Iberian Peninsula, where Andorra is located")\n', '("World Trade Organization", "gave Andorra", "observer status")\n', '("The Pyrenees", "is home to", "red-billed choughs, citril finches, and rock buntings")\n', '("François Hollande", "was the French President and Prince of", "Andorra")\n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("Ecuador", "bordered by", "Colombia")\n', '("Ecuador", "bordered by", "Peru")\n', '("Ecuador", "bordered by", "the Pacific Ocean")\n', '("Ecuador", "includes", "the Galápagos Islands")\n', '("Quito", "is the capital of", "Ecuador")\n', '("Guayaquil", "is the largest city in", "Ecuador")\n', '("Ecuador", "was part of", "Gran Colombia")\n', '("Ecuador", "is a member of", "the Organization of American States")\n', '("Ecuador", "name means", "Equator")\n', '("Ecuador", "is located in", "the northwestern part of South America")\n', '("Ecuador", "was colonized by", "the Spanish Empire")\n', '("Huayna Capac", "ruled over", "the territory of Ecuador")\n', '("Cajamarca", "was the place where", "Atahualpa was captured by Pizarro")\n', '("Simón Bolívar", "included Ecuador in", "the Republic of Gran Colombia")\n', '("Ecuador", "has a dispute with", "Peru over territories")\n', '("Iquitos", "was claimed by", "Ecuador")\n', '("Cain", "is referenced in", "the Cenepa War context by Ecuadorians")\n', '("Ecuador", "signed the Brasilia Presidential Act with", "Peru")\n', '("Marco Subia Martinez", "was the minister of defense who died in a plane crash with", "Jaime Roldós Aguilera")\n', '("Ecuador", "is a founding member of", "the Union of South American Nations")\n', '("Amnesty International", "reports on human rights issues in", "Ecuador")\n', '("Ecuador", "is considered part of", "Oceania due to the Galápagos Islands")\n', '("Cotopaxi", "is a volcano in", "Ecuador")\n', '("Mount Chimborazo", "is located in", "Ecuador")\n', '("Amazon", "rainforest region extends into", "Ecuador")\n', '("Ecuador", "is a member of", "World Trade Organization")\n', '("Paraguay", "is bordered by", "Argentina to the south and southwest")\n', '("Paraguay", "is bordered by", "Brazil to the east and northeast")\n', '("Paraguay", "is bordered by", "Bolivia to the northwest")\n', '("Paraguay", "has its capital and largest city in", "Asunción")\n', '("Paraguay", "is a member of", "Organization of American States")\n', '("Asunción", "is the seat of", "South American Football Confederation")\n', '("Paraguay", "has ports on", "Paraguay and Paraná rivers")\n', '("Asunción", "was established as the first capital of", "the Governorate of the Río de la Plata")\n', '("Jean-Jacques Rousseau\'s", "Social Contract influenced", "José Gaspar Rodríguez de Francia")\n', '("Paraguay", "faced a major international conflict against", "Bolivia in the Chaco War")\n', '("Paraguay", "lost half its prewar population in", "the Paraguayan War")\n', '("Hermes Rafael Saguier", "was imprisoned for", "sedition")\n', '("Paraguay", "is a founding member of", "UNASUR")\n', '("Paraguay", "contains the", "Pantanal region")\n', '("Paraguay", "is home to the", "coypu species")\n', '("Paraguay", "is a large producer of", "soybean")\n', '("Paraguay", "is a member of", "International Monetary Fund")\n', '("Asunción", "is an important stopover for", "international airlines")\n', '("Paraguay", "has an important city", "Ciudad del Este")\n', '("Ciudad del Este", "is the third most important free commercial zone after", "Miami and Hong Kong")\n', '("Paraguay", "is a large producer of", "maize")\n', '("Paraguay", "is a large producer of", "cassava")\n', '("Paraguay", "is a large producer of", "wheat")\n', '("Paraguay", "is an important producer of", "sorghum")\n', '("Paraguay", "does not have access to the", "ocean")\n', '("Paraguay", "utilizes", "hydropower")\n', '("Paraguay", "cooperates with Brazil, Argentina, and others to operate the", "Itaipu Dam")\n']
+range(1, 239) 3
+['("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n']
+
+['("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "extends towards the", "northeast")\n', '("Yucatán Channel", "connects", "Gulf of Mexico and the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of the", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán", "lies within", "Yucatán Peninsula")\n', '("Hernán Cortés", "told the story of the origin of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid during the", "Cretaceous Period")\n', '("Yucatán Peninsula", "contained diverse groups of people during the transition from", "Pleistocene to Holocene")\n', '("Maya Civilization", "was centered in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "extended into", "Guatemala, Honduras, and Chiapas")\n', '("Mayan languages", "are spoken in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "is composed of", "limestone and other soluble rocks")\n', '("Chicxulub crater", "is located off the", "north coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "has a", "tropical climate")\n', '("Yucatán Peninsula", "is affected by", "hurricanes")\n', '("Yucatán Peninsula", "has no aboveground rivers due to", "karst landscape")\n', '("cenotes", "provide access to groundwater in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "has", "dry forests and rainforests")\n', '("Yucatán Peninsula", "has", "mangroves and barrier reef")\n', '("Mesoamerican Barrier Reef System", "is along", "the east coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises", "Yucatán, Campeche, and Quintana Roo")\n', '("Yucatán Peninsula", "includes", "Petén (Guatemala) and almost all of Belize")\n', '("Yucatán Peninsula", "has economy oriented towards", "tourism")\n', '("Cancún", "is located in", "Yucatán Peninsula")\n', '("Riviera Maya", "stretches along", "the east coast of the Yucatán Peninsula")\n', '("Xcaret", "is an ecological park in", "Yucatán Peninsula")\n', '("Mérida", "is the most populated area in", "Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "population consists of", "Maya and Mestizos")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "extends towards the", "northeast")\n', '("Yucatán Channel", "connects", "Gulf of Mexico and the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of the", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán", "lies within", "Yucatán Peninsula")\n', '("Hernán Cortés", "told the story of the origin of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid during the", "Cretaceous Period")\n', '("Yucatán Peninsula", "contained diverse groups of people during the transition from", "Pleistocene to Holocene")\n', '("Maya Civilization", "was centered in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "extended into", "Guatemala, Honduras, and Chiapas")\n', '("Mayan languages", "are spoken in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "is composed of", "limestone and other soluble rocks")\n', '("Chicxulub crater", "is located off the", "north coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "has a", "tropical climate")\n', '("Yucatán Peninsula", "is affected by", "hurricanes")\n', '("Yucatán Peninsula", "has no aboveground rivers due to", "karst landscape")\n', '("cenotes", "provide access to groundwater in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "has", "dry forests and rainforests")\n', '("Yucatán Peninsula", "has", "mangroves and barrier reef")\n', '("Mesoamerican Barrier Reef System", "is along", "the east coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises", "Yucatán, Campeche, and Quintana Roo")\n', '("Yucatán Peninsula", "includes", "Petén (Guatemala) and almost all of Belize")\n', '("Yucatán Peninsula", "has economy oriented towards", "tourism")\n', '("Cancún", "is located in", "Yucatán Peninsula")\n', '("Riviera Maya", "stretches along", "the east coast of the Yucatán Peninsula")\n', '("Xcaret", "is an ecological park in", "Yucatán Peninsula")\n', '("Mérida", "is the most populated area in", "Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "population consists of", "Maya and Mestizos")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Andorra", "is officially known as", "the Principality of Andorra")\n', '("Andorra", "is a sovereign country on", "the Iberian Peninsula")\n', '("Andorra", "is in", "the eastern Pyrenees")\n', '("Andorra", "is bordered by", "France to the north")\n', '("Andorra", "is bordered by", "Spain to the south")\n', '("Andorra", "was believed to be created by", "Charlemagne")\n', '("Andorra", "was transferred to", "the Roman Catholic Diocese of Urgell")\n', '("Andorra", "is headed by two co-princes:", "the bishop of Urgell in Spain and the president of France")\n', '("Andorra la Vella", "is the capital and largest city of", "Andorra")\n', '("Andorra", "is the sixth-smallest state in", "Europe")\n', '("Andorrans", "are closely related to", "Catalans")\n', '("Andorra la Vella", "is the highest capital city in", "Europe")\n', '("Catalan", "is the official language of", "Andorra")\n', '("Andorra", "is not a member state of", "the European Union")\n', '("Polybius", "describes", "the Andosins")\n', '("Polybius", "wrote about", "an Iberian Pre-Roman tribe")\n', '("The word Andosini or Andosins", "may derive from", "the Basque handia, meaning \'big\' or \'giant\'")\n', '("Andorra", "shows evidence of Basque language in", "the area")\n', '("Andorra", "may derive from the old word", "Anorra")\n', '("Andorra", "may derive from Arabic", "ad-dārra")\n', '("The Moors", "conquered", "the Iberian Peninsula")\n', '("The valleys of the High Pyrenees", "were not administered by", "Muslims")\n', '("Charlemagne", "granted a charter to", "the Andorran people")\n', '("The Andorran valleys", "were sheltered from Arab invaders by", "the Franks")\n', '("Borrell II of Urgell", "gave the Andorran valleys to", "the Diocese of Urgell")\n', '("The bishop of Urgell", "has been co-prince of", "Andorra")\n', '("The Acta de Consagració i Dotació de la Catedral de la Seu d\'Urgell", "is the first document mentioning", "Andorra as a territory")\n', '("Henry III of Navarre", "became", "king of France")\n', '("Henry III of Navarre", "issued an edict establishing", "the head of the French state and the bishop of Urgell as Co-Princes of Andorra")\n', '("The First French Empire", "annexed Catalonia during", "the Peninsular War")\n', '("Francoist Spain", "was faced with", "Andorran neutrality during WWII")\n', '("The Gestapo", "had agents in", "Andorra")\n', '("Charles de Gaulle", "approved the economic boom for", "Andorra")\n', '("Portugal", "is one of the countries neighboring", "Iberian Peninsula, where Andorra is located")\n', '("World Trade Organization", "gave Andorra", "observer status")\n', '("The Pyrenees", "is home to", "red-billed choughs, citril finches, and rock buntings")\n', '("François Hollande", "was the French President and Prince of", "Andorra")\n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("Ecuador", "bordered by", "Colombia")\n', '("Ecuador", "bordered by", "Peru")\n', '("Ecuador", "bordered by", "the Pacific Ocean")\n', '("Ecuador", "includes", "the Galápagos Islands")\n', '("Quito", "is the capital of", "Ecuador")\n', '("Guayaquil", "is the largest city in", "Ecuador")\n', '("Ecuador", "was part of", "Gran Colombia")\n', '("Ecuador", "is a member of", "the Organization of American States")\n', '("Ecuador", "name means", "Equator")\n', '("Ecuador", "is located in", "the northwestern part of South America")\n', '("Ecuador", "was colonized by", "the Spanish Empire")\n', '("Huayna Capac", "ruled over", "the territory of Ecuador")\n', '("Cajamarca", "was the place where", "Atahualpa was captured by Pizarro")\n', '("Simón Bolívar", "included Ecuador in", "the Republic of Gran Colombia")\n', '("Ecuador", "has a dispute with", "Peru over territories")\n', '("Iquitos", "was claimed by", "Ecuador")\n', '("Cain", "is referenced in", "the Cenepa War context by Ecuadorians")\n', '("Ecuador", "signed the Brasilia Presidential Act with", "Peru")\n', '("Marco Subia Martinez", "was the minister of defense who died in a plane crash with", "Jaime Roldós Aguilera")\n', '("Ecuador", "is a founding member of", "the Union of South American Nations")\n', '("Amnesty International", "reports on human rights issues in", "Ecuador")\n', '("Ecuador", "is considered part of", "Oceania due to the Galápagos Islands")\n', '("Cotopaxi", "is a volcano in", "Ecuador")\n', '("Mount Chimborazo", "is located in", "Ecuador")\n', '("Amazon", "rainforest region extends into", "Ecuador")\n', '("Ecuador", "is a member of", "World Trade Organization")\n', '("Paraguay", "is bordered by", "Argentina to the south and southwest")\n', '("Paraguay", "is bordered by", "Brazil to the east and northeast")\n', '("Paraguay", "is bordered by", "Bolivia to the northwest")\n', '("Paraguay", "has its capital and largest city in", "Asunción")\n', '("Paraguay", "is a member of", "Organization of American States")\n', '("Asunción", "is the seat of", "South American Football Confederation")\n', '("Paraguay", "has ports on", "Paraguay and Paraná rivers")\n', '("Asunción", "was established as the first capital of", "the Governorate of the Río de la Plata")\n', '("Jean-Jacques Rousseau\'s", "Social Contract influenced", "José Gaspar Rodríguez de Francia")\n', '("Paraguay", "faced a major international conflict against", "Bolivia in the Chaco War")\n', '("Paraguay", "lost half its prewar population in", "the Paraguayan War")\n', '("Hermes Rafael Saguier", "was imprisoned for", "sedition")\n', '("Paraguay", "is a founding member of", "UNASUR")\n', '("Paraguay", "contains the", "Pantanal region")\n', '("Paraguay", "is home to the", "coypu species")\n', '("Paraguay", "is a large producer of", "soybean")\n', '("Paraguay", "is a member of", "International Monetary Fund")\n', '("Asunción", "is an important stopover for", "international airlines")\n', '("Paraguay", "has an important city", "Ciudad del Este")\n', '("Ciudad del Este", "is the third most important free commercial zone after", "Miami and Hong Kong")\n', '("Paraguay", "is a large producer of", "maize")\n', '("Paraguay", "is a large producer of", "cassava")\n', '("Paraguay", "is a large producer of", "wheat")\n', '("Paraguay", "is an important producer of", "sorghum")\n', '("Paraguay", "does not have access to the", "ocean")\n', '("Paraguay", "utilizes", "hydropower")\n', '("Paraguay", "cooperates with Brazil, Argentina, and others to operate the", "Itaipu Dam")\n']
+range(1, 239) 3
+['("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n']
+
+['("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "extends towards the", "northeast")\n', '("Yucatán Channel", "connects", "Gulf of Mexico and the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of the", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán", "lies within", "Yucatán Peninsula")\n', '("Hernán Cortés", "told the story of the origin of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid during the", "Cretaceous Period")\n', '("Yucatán Peninsula", "contained diverse groups of people during the transition from", "Pleistocene to Holocene")\n', '("Maya Civilization", "was centered in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "extended into", "Guatemala, Honduras, and Chiapas")\n', '("Mayan languages", "are spoken in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "is composed of", "limestone and other soluble rocks")\n', '("Chicxulub crater", "is located off the", "north coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "has a", "tropical climate")\n', '("Yucatán Peninsula", "is affected by", "hurricanes")\n', '("Yucatán Peninsula", "has no aboveground rivers due to", "karst landscape")\n', '("cenotes", "provide access to groundwater in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "has", "dry forests and rainforests")\n', '("Yucatán Peninsula", "has", "mangroves and barrier reef")\n', '("Mesoamerican Barrier Reef System", "is along", "the east coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises", "Yucatán, Campeche, and Quintana Roo")\n', '("Yucatán Peninsula", "includes", "Petén (Guatemala) and almost all of Belize")\n', '("Yucatán Peninsula", "has economy oriented towards", "tourism")\n', '("Cancún", "is located in", "Yucatán Peninsula")\n', '("Riviera Maya", "stretches along", "the east coast of the Yucatán Peninsula")\n', '("Xcaret", "is an ecological park in", "Yucatán Peninsula")\n', '("Mérida", "is the most populated area in", "Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "population consists of", "Maya and Mestizos")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "extends towards the", "northeast")\n', '("Yucatán Channel", "connects", "Gulf of Mexico and the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of the", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán", "lies within", "Yucatán Peninsula")\n', '("Hernán Cortés", "told the story of the origin of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid during the", "Cretaceous Period")\n', '("Yucatán Peninsula", "contained diverse groups of people during the transition from", "Pleistocene to Holocene")\n', '("Maya Civilization", "was centered in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "extended into", "Guatemala, Honduras, and Chiapas")\n', '("Mayan languages", "are spoken in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "is composed of", "limestone and other soluble rocks")\n', '("Chicxulub crater", "is located off the", "north coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "has a", "tropical climate")\n', '("Yucatán Peninsula", "is affected by", "hurricanes")\n', '("Yucatán Peninsula", "has no aboveground rivers due to", "karst landscape")\n', '("cenotes", "provide access to groundwater in", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "has", "dry forests and rainforests")\n', '("Yucatán Peninsula", "has", "mangroves and barrier reef")\n', '("Mesoamerican Barrier Reef System", "is along", "the east coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises", "Yucatán, Campeche, and Quintana Roo")\n', '("Yucatán Peninsula", "includes", "Petén (Guatemala) and almost all of Belize")\n', '("Yucatán Peninsula", "has economy oriented towards", "tourism")\n', '("Cancún", "is located in", "Yucatán Peninsula")\n', '("Riviera Maya", "stretches along", "the east coast of the Yucatán Peninsula")\n', '("Xcaret", "is an ecological park in", "Yucatán Peninsula")\n', '("Mérida", "is the most populated area in", "Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "Yucatán Peninsula")\n', '("Yucatán Peninsula", "population consists of", "Maya and Mestizos")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Andorra", "is officially known as", "the Principality of Andorra")\n', '("Andorra", "is a sovereign country on", "the Iberian Peninsula")\n', '("Andorra", "is in", "the eastern Pyrenees")\n', '("Andorra", "is bordered by", "France to the north")\n', '("Andorra", "is bordered by", "Spain to the south")\n', '("Andorra", "was believed to be created by", "Charlemagne")\n', '("Andorra", "was transferred to", "the Roman Catholic Diocese of Urgell")\n', '("Andorra", "is headed by two co-princes:", "the bishop of Urgell in Spain and the president of France")\n', '("Andorra la Vella", "is the capital and largest city of", "Andorra")\n', '("Andorra", "is the sixth-smallest state in", "Europe")\n', '("Andorrans", "are closely related to", "Catalans")\n', '("Andorra la Vella", "is the highest capital city in", "Europe")\n', '("Catalan", "is the official language of", "Andorra")\n', '("Andorra", "is not a member state of", "the European Union")\n', '("Polybius", "describes", "the Andosins")\n', '("Polybius", "wrote about", "an Iberian Pre-Roman tribe")\n', '("The word Andosini or Andosins", "may derive from", "the Basque handia, meaning \'big\' or \'giant\'")\n', '("Andorra", "shows evidence of Basque language in", "the area")\n', '("Andorra", "may derive from the old word", "Anorra")\n', '("Andorra", "may derive from Arabic", "ad-dārra")\n', '("The Moors", "conquered", "the Iberian Peninsula")\n', '("The valleys of the High Pyrenees", "were not administered by", "Muslims")\n', '("Charlemagne", "granted a charter to", "the Andorran people")\n', '("The Andorran valleys", "were sheltered from Arab invaders by", "the Franks")\n', '("Borrell II of Urgell", "gave the Andorran valleys to", "the Diocese of Urgell")\n', '("The bishop of Urgell", "has been co-prince of", "Andorra")\n', '("The Acta de Consagració i Dotació de la Catedral de la Seu d\'Urgell", "is the first document mentioning", "Andorra as a territory")\n', '("Henry III of Navarre", "became", "king of France")\n', '("Henry III of Navarre", "issued an edict establishing", "the head of the French state and the bishop of Urgell as Co-Princes of Andorra")\n', '("The First French Empire", "annexed Catalonia during", "the Peninsular War")\n', '("Francoist Spain", "was faced with", "Andorran neutrality during WWII")\n', '("The Gestapo", "had agents in", "Andorra")\n', '("Charles de Gaulle", "approved the economic boom for", "Andorra")\n', '("Portugal", "is one of the countries neighboring", "Iberian Peninsula, where Andorra is located")\n', '("World Trade Organization", "gave Andorra", "observer status")\n', '("The Pyrenees", "is home to", "red-billed choughs, citril finches, and rock buntings")\n', '("François Hollande", "was the French President and Prince of", "Andorra")\n', '("New Spain", "established by", "Habsburg Spain")\n', '("New Spain", "had its capital in", "Mexico City")\n', '("New Spain", "comprised", "territory in North America")\n', '("New Spain", "included what is now", "Mexico and the Southwestern United States")\n', '("New Spain", "included", "California, Florida, and Louisiana")\n', '("New Spain", "jurisdiction extended to", "Central America, the Caribbean, and parts of South America")\n', '("New Spain", "held territory in", "the Pacific including the Philippines and Guam")\n', '("Spanish Formosa", "was part of", "New Spain")\n', '("Taiwan", "formerly known as", "Spanish Formosa")\n', '("Hernán Cortés", "named the territory", "New Spain")\n', '("Mexico City", "established on the site of", "Tenochtitlan")\n', '("New Spain", "served as base for", "expeditions of exploration and conquest")\n', '("Antonio de Mendoza", "appointed as first viceroy of", "New Spain")\n', '("New Spain and Peru", "had dense populations at conquest for", "source of labor and wealth")\n', '("Silver mining", "integral to development of", "New Spain")\n', '("Acapulco", "became terminus of transpacific trade with", "the Philippines")\n', '("New Spain", "became vital link between", "Spanish New World empire and East Indies empire")\n', '("Agustín de Iturbide", "crowned as emperor of", "Mexican Empire")\n', '("New Spain", "originally established following Spanish conquest of", "Aztec Empire")\n', '("Queen Isabella", "provided initial funds for", "exploration")\n', '("New Spain", "was a kingdom subject to the monarch on the", "Iberian Peninsula")\n', '("Spanish crown", "claimed on mainland of the Americas much of", "North America south of Canada")\n', '("New Spain", "asserted jurisdiction over Spanish East Indies territories in", "Asia and Oceania")\n', '("Central Mexico", "had no large-scale deposits of silver", "unlike Northern Mexico")\n', '("Spanish borderlands", "territory that did not attract many Spanish settlers", "due to indigenous populations and mineral wealth")\n', '("California", "gold discovered after", "Mexican–American War")\n', '("Viceroyalty", "was administered by", "a viceroy")\n', '("Viceroy", "resided in", "Mexico City")\n', '("Captaincies general and governorates", "were relatively autonomous from", "the viceroyalty")\n', '("Santo Domingo", "established as", "Captaincy General")\n', '("Louisiana and Florida", "established as", "Governorate")\n', '("High courts", "established in major areas of", "Spanish settlement")\n', '("Local-level administration", "consisted of districts headed by", "corregidors or town councils")\n', '("Intendancies", "part of Bourbon Reforms to improve", "efficiency of empire")\n', '("New Laws", "issued to protect natives in", "New Spain")\n', '("Mexico City", "capital of New Spain and center of", "Spanish cultural expansion")\n', '("First printing press in New World", "brought to", "Mexico City")\n', '("Bernal Díaz del Castillo", "finished his account of the conquest in", "New Spain")\n', '("Sor Juana Inés de la Cruz", "notable contributor to Spanish Literature in", "New Spain")\n', '("El Mercurio Volante", "first newspaper published in", "New Spain")\n', '("Mexican Churrigueresque architecture", "produced in", "New Spain")\n', '("Music of Baroque period", "composed by musicians in", "New Spain") \n', '("Ecuador", "bordered by", "Colombia")\n', '("Ecuador", "bordered by", "Peru")\n', '("Ecuador", "bordered by", "the Pacific Ocean")\n', '("Ecuador", "includes", "the Galápagos Islands")\n', '("Quito", "is the capital of", "Ecuador")\n', '("Guayaquil", "is the largest city in", "Ecuador")\n', '("Ecuador", "was part of", "Gran Colombia")\n', '("Ecuador", "is a member of", "the Organization of American States")\n', '("Ecuador", "name means", "Equator")\n', '("Ecuador", "is located in", "the northwestern part of South America")\n', '("Ecuador", "was colonized by", "the Spanish Empire")\n', '("Huayna Capac", "ruled over", "the territory of Ecuador")\n', '("Cajamarca", "was the place where", "Atahualpa was captured by Pizarro")\n', '("Simón Bolívar", "included Ecuador in", "the Republic of Gran Colombia")\n', '("Ecuador", "has a dispute with", "Peru over territories")\n', '("Iquitos", "was claimed by", "Ecuador")\n', '("Cain", "is referenced in", "the Cenepa War context by Ecuadorians")\n', '("Ecuador", "signed the Brasilia Presidential Act with", "Peru")\n', '("Marco Subia Martinez", "was the minister of defense who died in a plane crash with", "Jaime Roldós Aguilera")\n', '("Ecuador", "is a founding member of", "the Union of South American Nations")\n', '("Amnesty International", "reports on human rights issues in", "Ecuador")\n', '("Ecuador", "is considered part of", "Oceania due to the Galápagos Islands")\n', '("Cotopaxi", "is a volcano in", "Ecuador")\n', '("Mount Chimborazo", "is located in", "Ecuador")\n', '("Amazon", "rainforest region extends into", "Ecuador")\n', '("Ecuador", "is a member of", "World Trade Organization")\n', '("Paraguay", "is bordered by", "Argentina to the south and southwest")\n', '("Paraguay", "is bordered by", "Brazil to the east and northeast")\n', '("Paraguay", "is bordered by", "Bolivia to the northwest")\n', '("Paraguay", "has its capital and largest city in", "Asunción")\n', '("Paraguay", "is a member of", "Organization of American States")\n', '("Asunción", "is the seat of", "South American Football Confederation")\n', '("Paraguay", "has ports on", "Paraguay and Paraná rivers")\n', '("Asunción", "was established as the first capital of", "the Governorate of the Río de la Plata")\n', '("Jean-Jacques Rousseau\'s", "Social Contract influenced", "José Gaspar Rodríguez de Francia")\n', '("Paraguay", "faced a major international conflict against", "Bolivia in the Chaco War")\n', '("Paraguay", "lost half its prewar population in", "the Paraguayan War")\n', '("Hermes Rafael Saguier", "was imprisoned for", "sedition")\n', '("Paraguay", "is a founding member of", "UNASUR")\n', '("Paraguay", "contains the", "Pantanal region")\n', '("Paraguay", "is home to the", "coypu species")\n', '("Paraguay", "is a large producer of", "soybean")\n', '("Paraguay", "is a member of", "International Monetary Fund")\n', '("Asunción", "is an important stopover for", "international airlines")\n', '("Paraguay", "has an important city", "Ciudad del Este")\n', '("Ciudad del Este", "is the third most important free commercial zone after", "Miami and Hong Kong")\n', '("Paraguay", "is a large producer of", "maize")\n', '("Paraguay", "is a large producer of", "cassava")\n', '("Paraguay", "is a large producer of", "wheat")\n', '("Paraguay", "is an important producer of", "sorghum")\n', '("Paraguay", "does not have access to the", "ocean")\n', '("Paraguay", "utilizes", "hydropower")\n', '("Paraguay", "cooperates with Brazil, Argentina, and others to operate the", "Itaipu Dam")\n']
+range(1, 239) 3
+{'id': '2_6', 'Question': ' Which country is located to the southeast of the landform that separates the Gulf of Mexico from the Caribbean Sea?\n', 'Answer': 'Cuba', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Andorra'}, {'label': 'B', 'text': 'New Spain'}, {'label': 'C', 'text': 'Ecuador'}, {'label': 'D', 'text': 'Paraguay'}, {'label': 'E', 'text': 'Cuba'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'andorra'}, {'label': 'B', 'text': 'new_spain'}, {'label': 'C', 'text': 'ecuador'}, {'label': 'D', 'text': 'paraguay'}, {'label': 'E', 'text': 'cuba'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: What landform separates the Gulf of Mexico from the Caribbean Sea?\nA1: Yucatán Peninsula\n\n', '2: Along with the Caribbean Sea, what body of water does the Yucatán Peninsula separate?\nA2: Gulf of Mexico\n\n', '3: What country borders the Gulf of Mexico to the southeast?\nA3: Cuba'], 'Hops_wiki': [('Mexico', 'Yucatán Peninsula'), ('Yucatán Peninsula', 'Gulf of Mexico'), ('Gulf of Mexico', 'Cuba')], 'Hops_cpnet': [('mexico', 'yucatan_peninsula'), ('yucatan_peninsula', 'gulf_of_mexico'), ('gulf_of_mexico', 'cuba')], 'Triplets': ['("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")', '("Gulf of Mexico", "is bordered by", "Cuba")'], 'Referred_files': [{'name': 'Yucatán Peninsula', 'line': 4}, {'name': 'Yucatán Peninsula', 'line': 4}, {'name': 'Gulf of Mexico', 'line': 33}], 'Question_triplet_answer': {100: [30, 75, 213], 50: [11, 16, 218], 25: [112, 140, 151]}}
+time passed:  6756.47666478157
+Expected dollar:  0.005
+Ecuador is Geography
+the Galápagos Islands is Geography
+Spain is Geography
+Cancún is Geography
+Yucatán Peninsula is Geography
+Gulf of Mexico is Geography
+Triassic is Geography
+Atahualpa is People
+Pizarro is People
+Mexico is Geography
+the Southwestern United States is Geography
+Guatemala is Geography
+Honduras is Geography
+Cotopaxi is Geography
+Bernal Díaz del Castillo is People
+Acapulco is Geography
+Philippines is Geography
+Quintana Roo is Geography
+Urgell is Geography
+The Acta de Consagració i Dotació de la Catedral de la Seu d'Urgell is Geography
+Andorrans is Geography
+Xcaret is Geography
+Louisiana is Geography
+Florida is Geography
+the Caribbean Sea is Geography
+California is Geography
+the Yucatán Peninsula is Geography
+Brutus is People
+The Pyrenees is Geography
+East Indies is Geography
+Oceania is Geography
+Paraguay is Geography
+Organization of American States is Geography
+Cuba is Geography
+Sierra Madre Oriental is Geography
+Amnesty International is Incident
+Jean Jacques Rousseau's is People
+José Gaspar Rodríguez de Francia is People
+Marco Subia Martinez is Geography
+Jaime Roldós Aguilera is People
+Charles de Gaulle is People
+Brazil is Geography
+Argentina is Geography
+Itaipu Dam is Geography
+Taiwan is Geography
+Pacific is Geography
+Guam is Geography
+Jurassic is Geography
+Pleistocene to Holocene is Geography
+Florida Platform is Geography
+Hernán Cortés is People
+Peru is Geography
+Yucatán is Geography
+Riviera Maya is Geography
+Christopher Columbus is People
+Asunción is Geography
+the Río de la Plata is Geography
+Central Mexico is Geography
+François Hollande is People
+Bolivia is Geography
+Belize is Geography
+Alabama is Geography
+Mississippi is Geography
+Texas is Geography
+Henry III of Navarre is People
+Francoist Spain is Geography
+Ciudad del Este" is Geography
+Miami is Geography
+Hong Kong is Geography
+Isthmus of Tehuantepec is Geography
+the Atlantic Ocean is Geography
+Mount Chimborazo is Geography
+27,000 is Geography
+Americas is Geography
+North America is Geography
+Canada is Geography
+Catalonia is Geography
+Huayna Capac is People
+Portugal is Geography
+Andorra is Geography
+Equator is Geography
+the Gulf of Mexico is Geography
+Anorra is Geography
+the Union of South American Nations is Geography
+the United States' is Geography
+International Hydrographic Organization is Incident
+Andorra la Vella is Geography
+Colombia is Geography
+International Monetary Fund is Geography
+Quito is Geography
+Yucatán, Campeche is Geography
+France is Geography
+Gran Colombia is Geography
+Deepwater Horizon is Geography
+the Robert E. Lee is People
+Simón Bolívar is People
+the Republic of Gran Colombia is Geography
+Andosins is Geography
+entities:  {'Oceania', 'Pleistocene', 'Río', 'Acta', 'International', 'Brazil', 'Gaulle', 'Equator', 'Lee', 'Kong', 'East', 'Taiwan', 'Catalonia', 'Hong', 'Hollande', 'Francoist', 'Riviera', 'Louisiana', 'Brutus', 'Gran', 'Andosins', 'Canada', 'Roo', 'Anorra', 'Paraguay', 'Atahualpa', 'Mississippi', 'Republic', 'Platform', 'Christopher', 'Dam', 'Ecuador', 'Plata', 'Yucatán,', 'de', 'Atlantic', 'Maya', 'Rousseau', 'Pacific', 'Peru', 'Madre', 'Guatemala', 'Robert', 'North', 'Southwestern', 'Simón', 'Cotopaxi', 'Navarre', 'del', 'Acapulco', 'Tenochtitlan', 'Subia', 'Jacques', 'Tehuantepec', 'Organization', 'New', 'America', 'Fund', 'Andorra', 'Hernán', 'Isthmus', 'France', 'Francia', 'Yucatán', 'Philippines', 'Argentina', 'Americas', 'Gaspar', 'Belize', 'Spain', 'Henry', 'Hydrographic', 'Deepwater', 'Sea', 'Bolivia', 'Holocene', '27,000', 'Asunción', 'Castillo', 'Martinez', 'Ciudad', 'Sierra', 'Habsburg', 'Ocean', 'South', 'Union', 'United', 'Aguilera', 'la', 'Cuba', 'Jaime', 'Itaipu', 'Bernal', 'Consagració', 'Miami', 'American', "d'Urgell", 'Colombia', 'Rodríguez', 'Peninsula', 'Oriental', 'Charles', 'Seu', 'Díaz', 'Cortés', 'François', 'Florida', 'Quito', 'Catedral', 'Mount', 'E.', 'Cancún', 'Xcaret', 'Jean', 'Pizarro', 'Nations', 'Guam', 'Capac', 'Monetary', 'Roldós', 'Pyrenees', 'Huayna', 'California', 'Texas', 'Central', 'Islands', 'Jurassic', "Rousseau's", 'Bolívar', 'Portugal', 'Quintana', 'Dotació', 'Alvin', 'Galápagos', 'Andorrans', 'Chimborazo', 'Columbus', 'Alabama', 'Indies', 'Urgell', 'Asia', 'Amnesty', "States'", 'Horizon', 'José', 'Campeche', 'Iberian', 'Gulf', 'Honduras', 'III', 'Marco', 'Mexico', 'Vella', 'States', 'Este"', 'Caribbean', 'Triassic'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Andorra' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Andorra
+Cotopaxi
+Sierra Madre Oriental
+New Spain
+Atahaulpa
+Yucatán Peninsula
+Hurricanes
+Isthmus of Tehuantepec
+Charlemagne
+Bernal Díaz del Castillo
+Guatemala
+Cementoes
+Cretaceous Period
+Maya and Mestizos
+Basque Language
+José Gaspar Rodríguez de Francia
+Jaime Roldós Aguilera
+Asunción
+UNASUR
+Social Contract
+Mardi Gras shipwreck
+Corregidors
+Quintana Roo
+Iberian Peninsula
+Francoist Spain
+Alvin
+UNASUR
+Priincipality of Andorra
+Mangroves
+Chicxulub
+Queens Isabella
+Pleistocene
+Christopher Columbus
+
+gpt_entity_particular(): entity list: 
+ ['Pleistocene', 'Chicxulub', 'José Gaspar Rodríguez de Francia', 'Francoist Spain', 'Bernal Díaz del Castillo', 'Guatemala', 'New Spain', 'Social Contract', 'Cotopaxi', 'Mangroves', 'Cementoes', 'UNASUR', 'Mardi Gras shipwreck', 'Jaime Roldós Aguilera', 'Cretaceous Period', 'Andorra', 'Alvin', 'Queens Isabella', 'Charlemagne', 'Hurricanes', 'Yucatán Peninsula', 'Atahaulpa', 'Asunción', 'Quintana Roo', 'Christopher Columbus', 'Iberian Peninsula', 'Sierra Madre Oriental', 'Priincipality of Andorra', 'Corregidors', 'Basque Language', 'Isthmus of Tehuantepec', 'Maya and Mestizos']
+
+gpt_entity_particular(): filtered entity: 
+ ['Iberian Peninsula']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ecuador' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ecuador
+Galápagos Islands
+Local-level administration
+Music of Baroque period
+New Spain
+Cancún
+Gulf of Mexico
+High courts
+Cajamarca
+Yucatán Peninsula
+Cotopaxi
+Bernal Díaz del Castillo
+Acapulco
+Quintana Roo
+Philippines
+Guam
+California
+Chicxulub crater
+Cretaceous Period
+Acapulco
+Yucatán Peninsula
+Paraguay
+Andorra
+Cajamarca
+Paraguay
+Yucatán Peninsula
+Andorra
+Andorrans
+Catalans
+Xcaret
+Louisiana
+Florida
+Cuba
+Sierra Madre Oriental
+Ecuador
+Yucatán Peninsula
+New Spain
+Yucatán Peninsula
+Baroque period
+Yucatán Peninsula
+Chicxulub crater
+Gulf of Mexico
+Andorra
+Andorra
+Ecuador
+Gulf of Mexico
+Gulf of Mexico
+Ecuador
+Yucatán Peninsula
+Ecuador
+Yucatán Peninsula
+Yucatán Peninsula
+Ecuador
+Ecuador
+Gulf of Mexico
+Ecuador
+France
+Ecuador
+Yucatán Peninsula
+Ecuador
+Ecuador
+Andorra
+Chimborazo
+Gulf of Mexico
+Gulf of Mexico
+Ecuador
+Louisiana
+Florida
+Gulf of Mexico
+Andorra
+Gulf of Mexico
+Paris
+Ecuador
+Michoacán
+Quito
+Yucatán Peninsula
+British
+Ecuador
+United States
+Ecuador
+Gulf of Mexico
+Peru
+Ecuador
+Yucatán Peninsula
+Tikal
+New Spain
+Bolivia
+Guatemala
+Ecuador
+Yucatán
+Gulf of Mexico
+Yucatán Peninsula
+Andorra
+Gulf of Mexico
+Ecuador
+New Spain
+Gulf of Mexico
+Yucatán Peninsula
+Ecuador
+Quito
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+
+gpt_entity_particular(): entity list: 
+ ['Cancún', 'Paris', 'High courts', 'Catalans', 'Bernal Díaz del Castillo', 'Guatemala', 'Xcaret', 'New Spain', 'Chicxulub crater', 'Guam', 'British', 'Cotopaxi', 'Acapulco', 'Cuba', 'California', 'Baroque period', 'Louisiana', 'Cretaceous Period', 'Andorra', 'France', 'Philippines', 'Yucatán', 'Andorrans', 'Cajamarca', 'Chimborazo', 'Paraguay', 'Yucatán Peninsula', 'Bolivia', 'Florida', 'Ecuador', 'Gulf of Mexico', 'Michoacán', 'United States', 'Quintana Roo', 'Quito', 'Music of Baroque period', 'Sierra Madre Oriental', 'Local-level administration', 'Tikal', 'Peru', 'Galápagos Islands']
+
+gpt_entity_particular(): filtered entity: 
+ ['Cotopaxi', 'Chimborazo', 'Quito']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gulf of Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+New Spain
+New Spain
+New Spain
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+New Spain
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+
+gpt_entity_particular(): entity list: 
+ ['Yucatán Peninsula', 'New Spain', 'Gulf of Mexico']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Cuba' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Quintana Roo
+Cancún
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Chiapas
+Gulf of Mexico
+Yucatán Peninsula
+Florida
+Honduras
+Gulf of Mexico
+Belize
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Hurricanes
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+cenotes
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Yucatán Peninsula
+Paraguay
+Gulf of Mexico
+Ecuador
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Mesoamerican Barrier Reef System
+Yucatán Peninsula
+Yucatán Peninsula
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Yucatán
+Yucatán Peninsula
+Paraguay
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Uracca Range
+Cuba
+Yucatán Peninsula
+Yucatán Peninsula  
+Cuba  
+Yucatán Peninsula  
+Yucatán Peninsula  
+Cuba  
+Yucatán Peninsula  
+Gulf of Mexico  
+Cuba
+
+gpt_entity_particular(): entity list: 
+ ['Cancún', 'Yucatán Peninsula  ', 'Uracca Range', 'Cuba', 'Cuba  ', 'Chiapas', 'Gulf of Mexico  ', 'Yucatán', 'Hurricanes', 'Belize', 'Paraguay', 'Yucatán Peninsula', 'Florida', 'Ecuador', 'Gulf of Mexico', 'Honduras', 'Quintana Roo', 'Mesoamerican Barrier Reef System', 'cenotes']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mexico
+Galápagos Islands
+Music
+Baroque period
+New Spain
+Yucatán Peninsula
+Gulf of Mexico
+High courts
+Cancún
+Districts
+Music
+Baroque period
+New Spain
+Yucatán Peninsula
+Gulf of Mexico
+Atahualpa
+Guatemala
+Chiapas
+Bernal Díaz del Castillo
+Mexico
+Southwestern United States
+Cotopaxi
+Bernal Díaz del Castillo
+Gulf of Mexico
+Chicxulub crater
+Shell's Brutus oil rig
+Yucatán Peninsula
+Maria Roldós Aguilera
+Quintana Roo
+Bernal Díaz del Castillo
+Paraguay
+Gulf of Mexico
+Sierra Madre Oriental
+Amnesty International
+Mesoamerican Barrier Reef System
+Yucatán Peninsula
+Mestizos
+Quintana Roo
+California
+New Spain
+Riviera Maya
+Yucatán Peninsula
+Florida Platform
+Gulf of Mexico
+Chicxulub crater
+Yucatán Peninsula
+Mérida
+Sierra Madre Oriental
+Maya Civilization
+Catalans
+Xcaret
+Ecuador
+Chicxulub crater
+Unasur
+Mayan languages
+Florida Platform
+Maya Civilization
+Gulf of Mexico
+Chicxulub crater
+Mesoamerican Barrier Reef System
+Yucatán Peninsula
+Gulf of Mexico
+Spanish crown
+Yucatán Peninsula
+Sierra Madre Oriental
+Cassava
+Mount Chimborazo
+Quintana Roo
+Gulf of Mexico
+New Spain
+Mexico City
+Mount Chimborazo
+Gulf of Mexico
+Christopher Columbus
+Gulf of Mexico
+Mexico City
+Maya Civilization
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico 
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Paraguay 
+Yucatán Peninsula 
+Andorra 
+Coregídors
+Mesoamerican Barrier Reef System 
+Deepwater Horizon oil platform
+New Spain
+Paraguay 
+Egypt 
+Gold production 
+Ecuador 
+Paraguay 
+Yucatán Peninsula 
+Maya 
+Maya Civilization 
+New Spain 
+Ecuador 
+Paraguay 
+Spain 
+Gulf of Mexico 
+Yucatán Peninsula
+
+gpt_entity_particular(): entity list: 
+ ['Galápagos Islands', 'Cancún', 'Mestizos', 'Ecuador ', 'High courts', 'Mexico City', 'Catalans', 'Bernal Díaz del Castillo', 'Guatemala', 'Coregídors', 'Xcaret', 'New Spain', 'Gulf of Mexico ', 'Yucatán Peninsula ', 'Maria Roldós Aguilera', 'Chicxulub crater', 'Mesoamerican Barrier Reef System', 'Riviera Maya', 'Cotopaxi', 'Egypt ', 'Florida Platform', 'California', 'Chiapas', 'Baroque period', 'Mount Chimborazo', "Shell's Brutus oil rig", 'Unasur', 'Spain ', 'Andorra ', 'Maya ', 'New Spain ', 'Paraguay', 'Atahualpa', 'Paraguay ', 'Yucatán Peninsula', 'Mayan languages', 'Music', 'Maya Civilization ', 'Mérida', 'Deepwater Horizon oil platform', 'Amnesty International', 'Ecuador', 'Gulf of Mexico', 'Spanish crown', 'Quintana Roo', 'Christopher Columbus', 'Gold production ', 'Mexico', 'Sierra Madre Oriental', 'Mesoamerican Barrier Reef System ', 'Cassava', 'Districts', 'Southwestern United States', 'Maya Civilization']
+
+gpt_entity_particular(): filtered entity: 
+ ['Cancún', 'Mexico City', 'Xcaret', 'Chiapas', 'Mérida', 'Quintana Roo', 'Sierra Madre Oriental']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Paraguay' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Paraguay
+Paraguay
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+high courts
+New Spain
+Yucatán Peninsula
+Cotopaxi
+Yucatán Peninsula
+cenotes
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+New Spain
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Gulf of Mexico
+Paraguay
+Gulf of Mexico
+Paraguay
+Yucatán Peninsula
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Paraguay
+Yucatán Peninsula
+Yucatán Peninsula
+Yucatán Peninsula
+Yucatán Peninsula
+Paraguay
+
+gpt_entity_particular(): entity list: 
+ ['Gulf of Mexico', 'Paraguay', 'Yucatán Peninsula', 'New Spain', 'high courts', 'cenotes', 'Cotopaxi']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Yucatán Peninsula' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Peninsula
+Cancún
+Gulf
+Chiapas
+Guatemala 
+Ecuador
+Galápagos Islands
+Music 
+Baroque period
+New Spain
+Gulf of Mexico
+High courts
+the place
+Atahualpa
+Pizarro
+What
+Yucatán Peninsula
+Mérida
+Ecuador 
+Mount Chimborazo
+Quito
+Dependency
+Choque
+Chachapoya
+Francisco
+Flores
+Marco Subia Martinez
+Gulf Stream
+Alvin
+Cain
+Cenepa War
+Deepwater Horizon oil platform
+Gran Colombia
+Simón Bolívar
+Republic of Gran Colombia
+the Robert E. Lee
+sinking
+Francisco
+Flores
+Cain
+Elsewhere
+Charles de Gaulle
+Francia
+Elsewhere
+Córdoba
+Mariano Zamorano
+Taiwan
+Governorate 
+Louisiana and Florida
+Taiwan
+Governorate
+Elsewhere
+Pre-Roman tribe
+Tiwanaku
+Potosí
+Iquitos
+mountain
+Hernández de Cabrera
+Mount
+Chimborazo
+Gibraltar
+Navarre
+
+gpt_entity_particular(): entity list: 
+ ['Cancún', 'Ecuador ', 'High courts', 'Gran Colombia', 'Potosí', 'Mount', 'Governorate', 'Hernández de Cabrera', 'Charles de Gaulle', 'New Spain', 'Mariano Zamorano', 'What', 'mountain', 'Pizarro', 'Choque', 'Navarre', 'Governorate ', 'Taiwan', 'Chiapas', 'the place', 'Chachapoya', 'Baroque period', 'Mount Chimborazo', 'Córdoba', 'Guatemala ', 'Gibraltar', 'sinking', 'the Robert E. Lee', 'Marco Subia Martinez', 'Alvin', 'Cenepa War', 'Francia', 'Iquitos', 'Chimborazo', 'Atahualpa', 'Peninsula', 'Yucatán Peninsula', 'Simón Bolívar', 'Francisco', 'Mérida', 'Cain', 'Deepwater Horizon oil platform', 'Ecuador', 'Gulf of Mexico', 'Gulf', 'Republic of Gran Colombia', 'Quito', 'Gulf Stream', 'Tiwanaku', 'Pre-Roman tribe', 'Dependency', 'Flores', 'Galápagos Islands', 'Louisiana and Florida', 'Music ', 'Elsewhere']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'New Spain' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ New Spain
+Music of Baroque period
+
+gpt_entity_particular(): entity list: 
+ ['Music of Baroque period', 'New Spain']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Oceania', 'Pleistocene', 'Río', 'Mexico City', 'Acta', 'International', 'Brazil', 'Gaulle', 'Equator', 'Lee', 'Kong', 'East', 'Taiwan', 'Catalonia', 'Hong', 'Hollande', 'Francoist', 'Riviera', 'Louisiana', 'Brutus', 'Gran', 'Andosins', 'Canada', 'Roo', 'Anorra', 'Paraguay', 'Atahualpa', 'Mississippi', 'Republic', 'Platform', 'Christopher', 'Dam', 'Ecuador', 'Plata', 'Yucatán,', 'de', 'Atlantic', 'Maya', 'Rousseau', 'Pacific', 'Peru', 'Madre', 'Guatemala', 'Robert', 'North', 'Southwestern', 'Simón', 'Cotopaxi', 'Navarre', 'del', 'Acapulco', 'Tenochtitlan', 'Subia', 'Chiapas', 'Jacques', 'Tehuantepec', 'Organization', 'New', 'America', 'Fund', 'Andorra', 'Hernán', 'Isthmus', 'France', 'Francia', 'Yucatán', 'Philippines', 'Argentina', 'Americas', 'Gaspar', 'Belize', 'Spain', 'Henry', 'Hydrographic', 'Deepwater', 'Sea', 'Bolivia', 'Holocene', '27,000', 'Asunción', 'Castillo', 'Martinez', 'Ciudad', 'Sierra', 'Habsburg', 'Ocean', 'South', 'Union', 'United', 'Aguilera', 'la', 'Cuba', 'Jaime', 'Itaipu', 'Bernal', 'Consagració', 'Miami', 'American', "d'Urgell", 'Colombia', 'Rodríguez', 'Peninsula', 'Oriental', 'Charles', 'Seu', 'Díaz', 'Cortés', 'François', 'Florida', 'Mérida', 'Quintana Roo', 'Quito', 'Catedral', 'Mount', 'E.', 'Cancún', 'Xcaret', 'Jean', 'Pizarro', 'Nations', 'Guam', 'Capac', 'Monetary', 'Roldós', 'Pyrenees', 'Huayna', 'California', 'Texas', 'Central', 'Islands', 'Jurassic', "Rousseau's", 'Bolívar', 'Portugal', 'Quintana', 'Dotació', 'Alvin', 'Galápagos', 'Andorrans', 'Chimborazo', 'Columbus', 'Alabama', 'Indies', 'Urgell', 'Asia', 'Amnesty', "States'", 'Horizon', 'José', 'Campeche', 'Iberian', 'Gulf', 'Honduras', 'III', 'Marco', 'Iberian Peninsula', 'Mexico', 'Sierra Madre Oriental', 'Vella', 'States', 'Este"', 'Caribbean', 'Triassic'}
+Total time:  439.9860713481903
+Entity conversion done on 2_6 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_2_6_entity_conversion_hash.json. Check the entity.
+ Which country is located to the northwest of the landform that separates the 0A0 of 09D from the 083 Sea?
+
+
+
+Done. Check final_query/id_2_6_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_2_6_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_2_6_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_2_6_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_2_6_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_2_6_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_6_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

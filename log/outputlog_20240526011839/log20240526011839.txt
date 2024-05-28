@@ -1,0 +1,1011 @@
+Got argument: Abraham Lincoln, 0, 0_1, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Abraham Lincoln, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")', 'start word': 'Abraham Lincoln', 'end word': 'John Wilkes Booth', 'source': {'name': 'Andrew Johnson', 'line': 129}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'john_wilkes_booth'}}
+next_word: John Wilkes Booth
+generate_question(0_1, ['("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")'], ['John Wilkes Booth'], [('Abraham Lincoln', 'John Wilkes Booth')], John Wilkes Booth, [{'name': 'Andrew Johnson', 'line': 129}]) called
+GPT output is:  Q: Who was the assassin responsible for the fatal injury of the U.S. president at Ford's Theatre?
+A: John Wilkes Booth
+final_choice(John Wilkes Booth, options = 5) started
+[]
+entity_type(John Wilkes Booth) called
+John Wilkes Booth is Geography
+check_matchscore(John Wilkes Booth, Criminals from Maryland):  0.0
+choose_by_wiki_recur(Criminals from Maryland)
+   Pages in Criminals from Maryland: ['John Wilkes Booth', 'Nicholas Waggoner Browning', 'Patrick Tracy Burris', 'Korryn Gaines', 'Freddie Gray', 'Willis Haynes', 'Dustin Higgs', 'James J. Lee', 'Derrick Miller', 'Ronald Lee Moore', 'Allan Patterson Newman', 'Brian Nichols', 'Brittany Norwood', 'Reginald Oates', 'Geraldine Parrish', 'Jarrod Ramos', 'Wendi Michelle Scott', 'Charles Andrew Williams', 'Melvin Williams (actor)', 'William Zantzinger']
+      Wendi Michelle Scott in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish']
+      Dustin Higgs in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris']
+      Willis Haynes in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman']
+      Geraldine Parrish in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray']
+      Patrick Tracy Burris in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore']
+      Allan Patterson Newman in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning']
+      Freddie Gray in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood']
+      Ronald Lee Moore in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger']
+      Nicholas Waggoner Browning in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)']
+      Brittany Norwood in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos']
+      William Zantzinger in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines']
+      Melvin Williams (actor) in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams']
+      Jarrod Ramos in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams', 'James J. Lee']
+      Korryn Gaines in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams', 'James J. Lee', 'Derrick Miller']
+      Charles Andrew Williams in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams', 'James J. Lee', 'Derrick Miller', 'Reginald Oates']
+      James J. Lee in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams', 'James J. Lee', 'Derrick Miller', 'Reginald Oates', 'John Wilkes Booth']
+      Derrick Miller in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams', 'James J. Lee', 'Derrick Miller', 'Reginald Oates', 'John Wilkes Booth', 'Brian Nichols']
+      Reginald Oates in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams', 'James J. Lee', 'Derrick Miller', 'Reginald Oates', 'John Wilkes Booth', 'Brian Nichols']
+      John Wilkes Booth in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams', 'James J. Lee', 'Derrick Miller', 'Reginald Oates', 'John Wilkes Booth', 'Brian Nichols']
+      Brian Nichols in ['Wendi Michelle Scott', 'Dustin Higgs', 'Willis Haynes', 'Geraldine Parrish', 'Patrick Tracy Burris', 'Allan Patterson Newman', 'Freddie Gray', 'Ronald Lee Moore', 'Nicholas Waggoner Browning', 'Brittany Norwood', 'William Zantzinger', 'Melvin Williams (actor)', 'Jarrod Ramos', 'Korryn Gaines', 'Charles Andrew Williams', 'James J. Lee', 'Derrick Miller', 'Reginald Oates', 'John Wilkes Booth', 'Brian Nichols']
+   Upper category of Criminals from Maryland: ['American criminals by state or territory', 'Crime in Maryland', 'History of Maryland', 'People from Maryland', 'People from Maryland by occupation']
+choose_by_wiki_recur(American criminals by state or territory)
+check_matchscore(John Wilkes Booth, Maryland Know Nothings):  0.0
+choose_by_wiki_recur(Maryland Know Nothings)
+   Pages in Maryland Know Nothings: ['Baltimore Know-Nothing riots of 1856', 'Plug Uglies', 'Rip Raps', 'Thomas M. Bacon', 'John Wilkes Booth', 'Charles D. Bouldin', 'Anna Ella Carroll', 'William Daniel (Maryland politician)', 'Robert E. Duvall', 'Harry D. Gough', 'Thomas Holliday Hicks', 'Samuel Hinks', 'James H. Jarrett', 'Anthony Kennedy (Maryland politician)', 'Cornelius Leary', 'Ann Manley', 'Richard B. McCoy', 'William Henry Purnell', 'Isaac Freeman Rasin', 'Thomas Sappington', 'Henry A. Silver', 'Thomas Swann', 'Severn Teackle Wallis', 'George C. Washington']
+      Henry A. Silver in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann']
+      William Henry Purnell in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)']
+      Baltimore Know-Nothing riots of 1856 in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth']
+      Thomas Swann in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin']
+      Anthony Kennedy (Maryland politician) in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll']
+      John Wilkes Booth in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington']
+      Isaac Freeman Rasin in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin']
+      Anna Ella Carroll in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall']
+      George C. Washington in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett']
+      Charles D. Bouldin in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks']
+      Robert E. Duvall in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps']
+      James H. Jarrett in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon']
+      Thomas Holliday Hicks in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks']
+      Rip Raps in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies']
+      Thomas M. Bacon in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington']
+      Samuel Hinks in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis']
+      Plug Uglies in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis', 'Harry D. Gough']
+      Thomas Sappington in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis', 'Harry D. Gough']
+      Severn Teackle Wallis in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis', 'Harry D. Gough', 'Richard B. McCoy']
+      Harry D. Gough in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis', 'Harry D. Gough', 'Richard B. McCoy', 'Ann Manley']
+      Richard B. McCoy in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis', 'Harry D. Gough', 'Richard B. McCoy', 'Ann Manley', 'Cornelius Leary']
+      Ann Manley in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis', 'Harry D. Gough', 'Richard B. McCoy', 'Ann Manley', 'Cornelius Leary', 'William Daniel (Maryland politician)']
+      Cornelius Leary in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis', 'Harry D. Gough', 'Richard B. McCoy', 'Ann Manley', 'Cornelius Leary', 'William Daniel (Maryland politician)']
+      William Daniel (Maryland politician) in ['Henry A. Silver', 'William Henry Purnell', 'Baltimore Know-Nothing riots of 1856', 'Thomas Swann', 'Anthony Kennedy (Maryland politician)', 'John Wilkes Booth', 'Isaac Freeman Rasin', 'Anna Ella Carroll', 'George C. Washington', 'Charles D. Bouldin', 'Robert E. Duvall', 'James H. Jarrett', 'Thomas Holliday Hicks', 'Rip Raps', 'Thomas M. Bacon', 'Samuel Hinks', 'Plug Uglies', 'Thomas Sappington', 'Severn Teackle Wallis', 'Harry D. Gough', 'Richard B. McCoy', 'Ann Manley', 'Cornelius Leary', 'William Daniel (Maryland politician)']
+   Upper category of Maryland Know Nothings: ['Maryland politicians by party', 'Know Nothings', 'British-American culture in Maryland', 'Protestantism in Maryland']
+choose_by_wiki_recur(Maryland politicians by party)
+check_matchscore(John Wilkes Booth, Extrajudicial killings by the United States military):  0.0
+choose_by_wiki_recur(Extrajudicial killings by the United States military)
+   Pages in Extrajudicial killings by the United States military: ['Abu Ghadiya', '2008 Abu Kamal raid', 'Bee Creek Massacre', 'John Wilkes Booth', 'Samuel Cromwell', 'Dachau liberation reprisals', 'Dhusamareb airstrike', 'Hamdania incident', 'Huntsville massacre', 'January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Saleh Ali Saleh Nabhan', 'Sacking of Osceola', 'Elisha Small', 'Somers Affair', 'Philip Spencer (sailor)', 'Heinrich Wicker']
+      January 2005 Tal Afar shootings in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid']
+      Killing of Muhamad Husain Kadir in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell']
+      Dachau liberation reprisals in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan']
+      2008 Abu Kamal raid in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre']
+      Samuel Cromwell in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth']
+      Saleh Ali Saleh Nabhan in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre']
+      Bee Creek Massacre in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair']
+      John Wilkes Booth in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)']
+      Huntsville massacre in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya']
+      Somers Affair in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya', 'Elisha Small']
+      Philip Spencer (sailor) in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya', 'Elisha Small', 'Sacking of Osceola']
+      Abu Ghadiya in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya', 'Elisha Small', 'Sacking of Osceola', 'Dhusamareb airstrike']
+      Elisha Small in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya', 'Elisha Small', 'Sacking of Osceola', 'Dhusamareb airstrike', 'Hamdania incident']
+      Sacking of Osceola in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya', 'Elisha Small', 'Sacking of Osceola', 'Dhusamareb airstrike', 'Hamdania incident', 'Heinrich Wicker']
+      Dhusamareb airstrike in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya', 'Elisha Small', 'Sacking of Osceola', 'Dhusamareb airstrike', 'Hamdania incident', 'Heinrich Wicker']
+      Hamdania incident in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya', 'Elisha Small', 'Sacking of Osceola', 'Dhusamareb airstrike', 'Hamdania incident', 'Heinrich Wicker']
+      Heinrich Wicker in ['January 2005 Tal Afar shootings', 'Killing of Muhamad Husain Kadir', 'Dachau liberation reprisals', '2008 Abu Kamal raid', 'Samuel Cromwell', 'Saleh Ali Saleh Nabhan', 'Bee Creek Massacre', 'John Wilkes Booth', 'Huntsville massacre', 'Somers Affair', 'Philip Spencer (sailor)', 'Abu Ghadiya', 'Elisha Small', 'Sacking of Osceola', 'Dhusamareb airstrike', 'Hamdania incident', 'Heinrich Wicker']
+   Upper category of Extrajudicial killings by the United States military: ['Extrajudicial killings by perpetrator', 'Government killings in the United States', 'People killed by armed forces', 'United States war crimes', 'Extrajudicial killings in the United States']
+choose_by_wiki_recur(Extrajudicial killings by perpetrator)
+check_matchscore(John Wilkes Booth, 19th-century American criminals):  0.0
+choose_by_wiki_recur(19th-century American criminals)
+   Pages in 19th-century American criminals: ['Peter Alston', 'Paula Angel', 'Bloody Benders', 'Billy the Kid', 'Black Bart (outlaw)', 'Lou Blonger', 'C. L. Blood', 'John Wilkes Booth', 'Cordelia Botkin', 'Laura Bullion', 'Eugene Butler (serial killer)', 'Ann Carson', 'Butch Cassidy', 'Boston Charley', 'Charlton Street Gang', 'Billy Claiborne', 'Billy Clanton', 'Ike Clanton', 'Clubfoot George', 'John C. Colt', 'Mary Cowan', 'Pat Crowe', 'George Curry (Wild Bunch)', 'Dead Rabbits', 'Denver Strangler', 'Archibald S. Dobbins', 'Sadie Farrell', 'James Ford (pirate)', 'Robert Ford (outlaw)', 'Giosue Gallucci', 'Reno Gang', 'Abe Greenthal', 'Belle Gunness', 'Andreas Hall', 'Lizzie Halliday', 'Harpe brothers', 'George Hayford', 'Harry Head', 'Francis Hermann', 'Bertha Heyman', 'The High Fives Gang', 'Richard Honeck', 'Hungry Joe', 'Innocents (gang)', 'Frank James', 'Jesse James', 'The Kelly Family (serial killers)', 'Lizzie Lloyd King', 'William Kunnecke', 'Harvey Logan', 'Jimmy Logue', 'Fredericka Mandelbaum', 'Samuel Mason', 'Florence Maybrick', 'Frank McLaury', 'Tom McLaury', 'Harmon Murray', 'John Murrell (bandit)', 'Carrie Nation', 'Ellen E. Peck', 'Thomas W. Piper', 'Henry Plummer', 'Isaiah L. Potts', 'Pleasant Pruitt', 'Annie Reilly', 'John Wesley Robinson', 'Sarah Jane Robinson', 'Robert Schuyler', 'Servant Girl Annihilator', 'Lydia Sherman', 'Slobbery Jim', 'Soapy Smith', 'Belle Starr', 'Martin Stickles', 'George Streeter', 'Sturdivant Gang', 'Sundance Kid', 'Mary Sweeny', 'Jane Toppan', 'Jonathan Walker (abolitionist)', 'Cole Younger']
+      Sturdivant Gang in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang']
+      George Hayford in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan']
+      Butch Cassidy in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck']
+      The High Fives Gang in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)']
+      Harvey Logan in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley']
+      Richard Honeck in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders']
+      Jonathan Walker (abolitionist) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood']
+      Boston Charley in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles']
+      Bloody Benders in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe']
+      C. L. Blood in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton']
+      Martin Stickles in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury']
+      Hungry Joe in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly']
+      Ike Clanton in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler']
+      Frank McLaury in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger']
+      Annie Reilly in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue']
+      Robert Schuyler in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman']
+      Cole Younger in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton']
+      Jimmy Logue in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)']
+      Bertha Heyman in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan']
+      Billy Clanton in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)']
+      Robert Ford (outlaw) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe']
+      Jane Toppan in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday']
+      George Curry (Wild Bunch) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer']
+      Pat Crowe in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits']
+      Lizzie Halliday in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts']
+      Henry Plummer in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)']
+      Dead Rabbits in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth']
+      Isaiah L. Potts in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal']
+      James Ford (pirate) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith']
+      John Wilkes Booth in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness']
+      Abe Greenthal in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury']
+      Soapy Smith in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny']
+      Belle Gunness in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head']
+      Tom McLaury in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)']
+      Mary Sweeny in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann']
+      Harry Head in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)']
+      Innocents (gang) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers']
+      Francis Hermann in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang']
+      John Murrell (bandit) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James']
+      Harpe brothers in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator']
+      Charlton Street Gang in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion']
+      Frank James in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins']
+      Servant Girl Annihilator in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper']
+      Laura Bullion in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci']
+      Archibald S. Dobbins in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall']
+      Thomas W. Piper in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick']
+      Giosue Gallucci in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler']
+      Andreas Hall in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson']
+      Florence Maybrick in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke']
+      Denver Strangler in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation']
+      John Wesley Robinson in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin']
+      William Kunnecke in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid']
+      Carrie Nation in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang']
+      Cordelia Botkin in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang']
+      Sundance Kid in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George']
+      Reno Gang in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson']
+      Clubfoot George in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt']
+      Sarah Jane Robinson in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum']
+      Pleasant Pruitt in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid']
+      Fredericka Mandelbaum in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne']
+      Billy the Kid in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman']
+      Billy Claiborne in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman']
+      Lydia Sherman in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray']
+      Harmon Murray in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr']
+      Belle Starr in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason']
+      Samuel Mason in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston']
+      Peter Alston in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King']
+      Lizzie Lloyd King in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim']
+      Slobbery Jim in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger']
+      Lou Blonger in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck']
+      Ellen E. Peck in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt']
+      John C. Colt in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James']
+      Jesse James in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel']
+      Paula Angel in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel']
+      The Kelly Family (serial killers) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel', 'The Kelly Family (serial killers)']
+      Mary Cowan in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel', 'The Kelly Family (serial killers)', 'Mary Cowan']
+      Ann Carson in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel', 'The Kelly Family (serial killers)', 'Mary Cowan', 'Ann Carson']
+      Sadie Farrell in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel', 'The Kelly Family (serial killers)', 'Mary Cowan', 'Ann Carson', 'Sadie Farrell']
+      Eugene Butler (serial killer) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel', 'The Kelly Family (serial killers)', 'Mary Cowan', 'Ann Carson', 'Sadie Farrell', 'Eugene Butler (serial killer)']
+      George Streeter in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel', 'The Kelly Family (serial killers)', 'Mary Cowan', 'Ann Carson', 'Sadie Farrell', 'Eugene Butler (serial killer)', 'George Streeter']
+      Black Bart (outlaw) in ['Sturdivant Gang', 'George Hayford', 'Butch Cassidy', 'The High Fives Gang', 'Harvey Logan', 'Richard Honeck', 'Jonathan Walker (abolitionist)', 'Boston Charley', 'Bloody Benders', 'C. L. Blood', 'Martin Stickles', 'Hungry Joe', 'Ike Clanton', 'Frank McLaury', 'Annie Reilly', 'Robert Schuyler', 'Cole Younger', 'Jimmy Logue', 'Bertha Heyman', 'Billy Clanton', 'Robert Ford (outlaw)', 'Jane Toppan', 'George Curry (Wild Bunch)', 'Pat Crowe', 'Lizzie Halliday', 'Henry Plummer', 'Dead Rabbits', 'Isaiah L. Potts', 'James Ford (pirate)', 'John Wilkes Booth', 'Abe Greenthal', 'Soapy Smith', 'Belle Gunness', 'Tom McLaury', 'Mary Sweeny', 'Harry Head', 'Innocents (gang)', 'Francis Hermann', 'John Murrell (bandit)', 'Harpe brothers', 'Charlton Street Gang', 'Frank James', 'Servant Girl Annihilator', 'Laura Bullion', 'Archibald S. Dobbins', 'Thomas W. Piper', 'Giosue Gallucci', 'Andreas Hall', 'Florence Maybrick', 'Denver Strangler', 'John Wesley Robinson', 'William Kunnecke', 'Carrie Nation', 'Cordelia Botkin', 'Sundance Kid', 'Reno Gang', 'Clubfoot George', 'Sarah Jane Robinson', 'Pleasant Pruitt', 'Fredericka Mandelbaum', 'Billy the Kid', 'Billy Claiborne', 'Lydia Sherman', 'Harmon Murray', 'Belle Starr', 'Samuel Mason', 'Peter Alston', 'Lizzie Lloyd King', 'Slobbery Jim', 'Lou Blonger', 'Ellen E. Peck', 'John C. Colt', 'Jesse James', 'Paula Angel', 'The Kelly Family (serial killers)', 'Mary Cowan', 'Ann Carson', 'Sadie Farrell', 'Eugene Butler (serial killer)', 'George Streeter', 'Black Bart (outlaw)']
+   Upper category of 19th-century American criminals: ['19th-century criminals by nationality', '19th-century American people by occupation', 'American criminals']
+choose_by_wiki_recur(19th-century criminals by nationality)
+['Plug Uglies', 'Carrie Nation', 'Billy the Kid', 'Jesse James']
+Ended after 2.5 hierarchy
+(2.5, ['Jesse James', 'Billy the Kid', 'Plug Uglies', 'Carrie Nation'])
+
+extract_info(Plug Uglies) Start.
+utils/preprocess.py extract_info(): Checking good links on Plug Uglies
+Baltimore is Geography
+1 / 30 )  Baltimore, Maryland Baltimore baltimore
+New York City is Geography
+2 / 30 )  New York City New York City new_york_city
+Philadelphia is Geography
+3 / 30 )  Philadelphia Philadelphia philadelphia
+Washington, D.C. is Geography
+4 / 30 )  Washington, D.C. Washington, D.C. district_of_columbia
+extract_triplet(Plug Uglies)
+Got GPT's response. String length : 519
+subject_words:  [(None, 'Plug Uglies', 'plug_ugly')]
+object_words:  [['Baltimore, Maryland', 'Baltimore', 'baltimore']]
+subject_words:  [(None, 'Plug Uglies', 'plug_ugly')]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [(None, 'Plug Uglies', 'plug_ugly')]
+object_words:  [['Philadelphia', 'Philadelphia', 'philadelphia']]
+subject_words:  [(None, 'Plug Uglies', 'plug_ugly')]
+object_words:  [['Washington, D.C.', 'Washington, D.C.', 'district_of_columbia']]
+subject_words:  [(None, 'Plug Uglies', 'plug_ugly')]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [['New York City', 'New York City', 'new_york_city']]
+object_words:  [(None, 'Plug Uglies', 'plug_ugly')]
+subject_words:  []
+object_words:  [(None, 'Plug Uglies', 'plug_ugly')]
+extract_info(Billy the Kid) Start.
+utils/preprocess.py extract_info(): Checking good links on Billy the Kid
+New Mexico is Geography
+1 / 30 )  New Mexico New Mexico new_mexico
+New York City is Geography
+2 / 30 )  New York City New York City new_york_city
+Indianapolis is Geography
+3 / 30 )  Indianapolis, Indiana Indianapolis indianapolis
+Pecos River is Geography
+4 / 30 )  Pecos River Pecos River pecos_river
+Dallas is Geography
+5 / 30 )  Dallas Dallas dallas
+Fresno, California is Geography
+6 / 30 )  Fresno, California Fresno, California fresno
+extract_triplet(Billy the Kid)
+Got GPT's response. String length : 1479
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['Fresno, California', 'Fresno, California', 'fresno']]
+subject_words:  []
+object_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  []
+object_words:  [['Indianapolis, Indiana', 'Indianapolis', 'indianapolis']]
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['Pecos River', 'Pecos River', 'pecos_river']]
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['Dallas', 'Dallas', 'dallas']]
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['New Mexico', 'New Mexico', 'new_mexico']]
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['Dallas', 'Dallas', 'dallas']]
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['New Mexico', 'New Mexico', 'new_mexico']]
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  []
+subject_words:  [(None, 'Billy the Kid', 'william_h_bonney')]
+object_words:  [['Pecos River', 'Pecos River', 'pecos_river']]
+extract_info(Jesse James) Start.
+utils/preprocess.py extract_info(): Checking good links on Jesse James
+Missouri is Geography
+1 / 30 )  Missouri Missouri missouri
+Kentucky is Geography
+2 / 30 )  Kentucky Kentucky kentucky
+Tennessee is Geography
+3 / 30 )  Tennessee Tennessee tennessee
+California is Geography
+4 / 30 )  California California california
+Iowa is Geography
+5 / 30 )  Iowa Iowa iowa
+Texas is Geography
+6 / 30 )  Texas Texas texas
+West Virginia is Geography
+7 / 30 )  West Virginia West Virginia west_virginia
+Kansas City, Missouri is Geography
+8 / 30 )  Kansas City Kansas City, Missouri kansas_city_missouri
+Los Angeles is Geography
+9 / 30 )  Los Angeles, California Los Angeles los_angeles
+Chicago is Geography
+10 / 30 )  Chicago Chicago chicago
+Library of Congress is Geography
+11 / 30 )  Library of Congress Library of Congress library_of_congress
+Mississippi is Geography
+12 / 30 )  Mississippi Mississippi mississippi
+New Orleans is Geography
+13 / 30 )  New Orleans New Orleans new_orleans
+Louisiana is Geography
+14 / 30 )  Louisiana Louisiana louisiana
+Virginia is Geography
+15 / 30 )  Virginia Virginia virginia
+Platte City, Missouri is Geography
+16 / 30 )  Platte City Platte City, Missouri platte_city
+Creede, Colorado is Geography
+17 / 30 )  Creede, Colorado Creede, Colorado creede
+Granbury, Texas is Geography
+18 / 30 )  Granbury, Texas Granbury, Texas granbury
+United States Senate is Geography
+19 / 30 )  U.S. Senators United States Senate united_states_senate
+Jersey County, Illinois is Geography
+20 / 30 )  Jersey County, Illinois Jersey County, Illinois jersey_county
+McDonald County, Missouri is Geography
+21 / 30 )  McDonald County McDonald County, Missouri mcdonald_county
+Henry Fonda is People
+22 / 30 )  Henry Fonda Henry Fonda henry_fonda
+extract_triplet(Jesse James)
+Got GPT's response. String length : 2312
+['Based on your instructions, here are the triplets extracted from the given text:']
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Kentucky', 'Kentucky', 'kentucky']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  []
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Mississippi', 'Mississippi', 'mississippi']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Iowa', 'Iowa', 'iowa']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  []
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Kentucky', 'Kentucky', 'kentucky']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Kentucky', 'Kentucky', 'kentucky']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['California', 'California', 'california'], ['Los Angeles, California', 'Los Angeles', 'los_angeles']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Kentucky', 'Kentucky', 'kentucky']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Louisiana', 'Louisiana', 'louisiana']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Texas', 'Texas', 'texas']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Texas', 'Texas', 'texas'], ['Granbury, Texas', 'Granbury, Texas', 'granbury']]
+subject_words:  []
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  [['Missouri', 'Missouri', 'missouri']]
+subject_words:  [(None, 'Jesse James', 'jesse_james')]
+object_words:  []
+['Please note that some important keywords provided are not directly mentioned in the text or are not related to Jesse James, and as such may not appear in the triplets. For instance, "Henry Fonda" is mentioned in the context of the cast of a film about Jesse James, but not in direct relation to Jesse James himself, which would not meet the criteria for the triplets according to your instructions.']
+extract_info(Carrie Nation) Start.
+utils/preprocess.py extract_info(): Checking good links on Carrie Nation
+Garrard County, Kentucky is Geography
+1 / 30 )  Garrard County, Kentucky Garrard County, Kentucky garrard_county
+Queen Victoria is People
+2 / 30 )  Queen Victoria Queen Victoria queen_victoria
+High Grove Farm  is People
+3 / 30 )  High Grove Farm High Grove Farm  carry_nation
+Brazoria County, Texas is Geography
+4 / 30 )  Brazoria County, Texas Brazoria County, Texas brazoria_county
+Topeka, Kansas is Geography
+5 / 30 )  Topeka, Kansas Topeka, Kansas topeka
+Washington, D.C. is Geography
+6 / 30 )  Washington, D.C. Washington, D.C. district_of_columbia
+Eureka Springs, Arkansas is Geography
+7 / 30 )  Eureka Springs, Arkansas Eureka Springs, Arkansas eureka_springs
+Kurt Vonnegut is People
+8 / 30 )  Kurt Vonnegut Kurt Vonnegut kurt_vonnegut
+J. Edgar Hoover is People
+9 / 30 )  J. Edgar Hoover J. Edgar Hoover j_edgar_hoover
+Carry Nation  is People
+10 / 30 )  Carry Nation Carry Nation  carry_nation
+Carry A. Nation House  is People
+11 / 30 )  Carry A. Nation House Carry A. Nation House  carry_nation
+United States is Geography
+12 / 30 )  United States United States united_states
+Carrie Nation is People
+13 / 30 )  Carrie Nation House Carrie Nation carry_nation
+extract_triplet(Carrie Nation)
+Got GPT's response. String length : 2778
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  []
+object_words:  [['Garrard County, Kentucky', 'Garrard County, Kentucky', 'garrard_county']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Queen Victoria', 'Queen Victoria', 'queen_victoria']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['High Grove Farm', 'High Grove Farm ', 'carry_nation']]
+subject_words:  []
+object_words:  [['Brazoria County, Texas', 'Brazoria County, Texas', 'brazoria_county']]
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  [['Topeka, Kansas', 'Topeka, Kansas', 'topeka']]
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  [['Carry Nation', 'Carry Nation ', 'carry_nation']]
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  [['Eureka Springs, Arkansas', 'Eureka Springs, Arkansas', 'eureka_springs']]
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+object_words:  []
+subject_words:  [['Carry A. Nation House', 'Carry A. Nation House ', 'carry_nation']]
+object_words:  [['Garrard County, Kentucky', 'Garrard County, Kentucky', 'garrard_county']]
+subject_words:  []
+object_words:  [(None, 'Carrie Nation', 'carry_nation'), ['Carrie Nation House', 'Carrie Nation', 'carry_nation']]
+['("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")\n']
+
+['("Andrew Johnson", "assumed the presidency following the assassination of", "Abraham Lincoln")\n', '("Andrew Johnson", "was vice president at the time of", "Abraham Lincoln\'s assassination")\n', '("Andrew Johnson", "was a Democrat who ran with", "Abraham Lincoln on the National Union Party ticket")\n', '("Andrew Johnson", "favored quick restoration of", "the seceded states to the Union")\n', '("Andrew Johnson", "led to conflict with", "the Republican-dominated Congress")\n', '("Congress", "culminating in", "the impeachment of Andrew Johnson")\n', '("Andrew Johnson", "was acquitted in the Senate by", "one vote")\n', '("Andrew Johnson", "was apprenticed as a", "tailor")\n', '("Andrew Johnson", "worked in", "frontier towns before settling in Greeneville, Tennessee")\n', '("Andrew Johnson", "served as", "an alderman and mayor")\n', '("Andrew Johnson", "was elected to", "the Tennessee House of Representatives in 1835")\n', '("Andrew Johnson", "after briefly serving in", "the Tennessee Senate, was elected to the House of Representatives in 1843")\n', '("Andrew Johnson", "became governor of", "Tennessee for four years")\n', '("Andrew Johnson", "was elected by the legislature to", "the Senate in 1857")\n', '("Andrew Johnson", "sought passage of", "the Homestead Bill")\n', '("Confederate States of America", "included", "Tennessee")\n', '("Andrew Johnson", "remained firmly with", "the Union")\n', '("Andrew Johnson", "was the only sitting senator from a Confederate state who did not resign his seat upon learning of", "his state\'s secession")\n', '("Abraham Lincoln", "appointed", "Andrew Johnson as Military Governor of Tennessee after most of it had been retaken")\n', '("Andrew Johnson", "was a logical choice as running mate for", "Abraham Lincoln")\n', '("Andrew Johnson", "implemented his own form of", "Presidential Reconstruction")\n', '("Southern states", "passed", "Black Codes to deprive the freedmen of many civil liberties")\n', '("Congressional Republicans", "refused to seat legislators from", "those states and advanced legislation to overrule the Southern actions")\n', '("Andrew Johnson", "opposed", "the Fourteenth Amendment which gave citizenship to former slaves")\n', '("Andrew Johnson", "went on an unprecedented national tour promoting", "his executive policies")\n', '("Congress", "passed the Tenure of Office Act restricting", "Andrew Johnson\'s ability to fire Cabinet officials")\n', '("Andrew Johnson", "persisted in trying to dismiss", "Secretary of War Edwin Stanton")\n', '("House of Representatives", "impeached", "Andrew Johnson")\n', '("Andrew Johnson", "narrowly avoided conviction in", "the Senate")\n', '("Andrew Johnson", "returned to Tennessee after his presidency and gained some vindication when he was elected to", "the Senate in 1875")\n', '("Andrew Johnson", "was born in", "Raleigh, North Carolina")\n', '("Andrew Johnson", "father was", "Jacob Johnson")\n', '("Andrew Johnson", "mother was", "Mary (\'Polly\') McDonough")\n', '("Jacob Johnson", "was appointed by", "William Polk, a relative of President James K. Polk")\n', '("Andrew Johnson", "had a brother named", "William")\n', '("Andrew Johnson", "grew up in", "poverty")\n', '("Andrew Johnson", "became an apprentice in", "Selby\'s shop at age ten")\n', '("Andrew Johnson", "ran away from the subscriber with his brother", "William")\n', '("Andrew Johnson", "left North Carolina for", "Tennessee")\n', '("Andrew Johnson", "worked as a tailor in", "Columbia, Tennessee")\n', '("Andrew Johnson", "established a successful tailoring business in the front of his home in", "Greeneville")\n', '("Andrew Johnson", "married", "Eliza McCardle")\n', '("Andrew Johnson", "became prosperous and purchased the land where he had first camped in", "Greeneville")\n', '("Andrew Johnson", "purchased his first slave named", "Dolly")\n', '("Dolly", "had three children named", "Liz, Florence, and William")\n', '("Andrew Johnson", "purchased Dolly\'s half-brother named", "Sam")\n', '("Sam Johnson", "became a commissioner of the", "Freedmen\'s Bureau")\n', '("Andrew Johnson", "gave a tract of land for free to", "Sam in 1867")\n', '("Andrew Johnson", "purchased a slave who was 13 at the time named", "Henry")\n', '("Andrew Johnson", "freed his slaves on", "August 8, 1863")\n', '("Andrew Johnson", "helped organize a Mechanics\' (Working Men\'s) ticket in", "the 1829 Greeneville municipal election")\n', '("Andrew Johnson", "elected town alderman with his friends", "Blackston McDannel and Mordecai Lincoln")\n', '("Andrew Johnson", "elected", "mayor of Greeneville")\n', '("Andrew Johnson", "joined the Tennessee Militia as a member of the", "90th Regiment")\n', '("Andrew Johnson", "revered", "President Andrew Jackson")\n', '("Andrew Johnson", "supported the Democratic party and built a powerful political machine in", "Greene County")\n', '("Andrew Johnson", "saw election to Congress as the next step in his political career and defeated", "John A. Aiken")\n', '("Andrew Johnson", "in his second term opposed the", "Wilmot Proviso")\n', '("Andrew Johnson", "supported the Polk administration\'s decision to fight the", "Mexican War")\n', '("Tennessee", "failed to carry by", "Lewis Cass")\n', '("Andrew Johnson", "campaigned for", "Martin Van Buren")\n', '("Andrew Johnson", "successful campaign provided him with", "statewide exposure")\n', '("Andrew Johnson", "elected to the Tennessee Senate in", "1841")\n', '("Andrew Johnson", "voted for", "all the provisions except for the abolition of the slave trade in the nation\'s capital")\n', '("Andrew Johnson", "pressed resolutions for", "constitutional amendments to provide for popular election of senators and of the president, and limiting the tenure of federal judges")\n', '("Andrew Johnson", "defeated by", "Brookins Campbell")\n', '("Andrew Johnson", "supported the Democratic party and built a powerful political machine in", "Greene County")\n', '("James K. Polk", "was elected president in", "1844")\n', '("Andrew Johnson", "campaigned for", "James K. Polk")\n', '("Andrew Johnson", "elected to the Tennessee Senate in", "1841")\n', '("Andrew Johnson", "acquired additional real estate, including a larger home and a farm, and among his assets numbered", "eight or nine slaves")\n', '("Andrew Johnson", "saw election to Congress as the next step in his political career and defeated", "John A. Aiken")\n', '("Andrew Johnson", "defeated", "William G. Brownlow")\n', '("Andrew Johnson", "voted for", "all the provisions except for the abolition of the slave trade in the nation\'s capital")\n', '("Andrew Johnson", "pressed resolutions for", "constitutional amendments to provide for popular election of senators and of the president, and limiting the tenure of federal judges")\n', '("Andrew Johnson", "elected to Congress and represented a Democratic majority in the", "House of Representatives")\n', '("Andrew Johnson", "led a successful move in the House to", "pass the Homestead Bill in 1852")\n', '("Andrew Johnson", "won the election by more than", "1,600 votes")\n', '("Andrew Johnson", "retired from politics", "upon deciding not to seek reelection to Congress")\n', '("Andrew Johnson", "Democratic convention nominated unanimously for", "governor of Tennessee")\n', '("Andrew Johnson", "debated with the Whigs opposition nominee", "Henry")\n', '("Whigs", "won the gubernatorial elections in", "Tennessee")\n', '("Andrew Johnson", "won the election by", "63,413 votes")\n', '("Andrew Johnson", "sought to increase funding via taxes for", "improvements to Tennessee\'s infrastructure")\n', '("Andrew Johnson", "was not often seen during", "the Civil War")\n', '("Democratic Party", "nominated and defeated", "Henry Gentry")\n', '("Democrats", "nominated", "Andrew Johnson as a \'favorite son\'")\n', '("Democratic Party", "split over the slavery issue", "in the Southern states")\n', '("James Buchanan", "was elected but failed to carry", "Tennessee")\n', '("William Henry Harrison", "defeated", "Martin Van Buren in the presidential election of 1848")\n', '("Henry Clay", "introduced the Compromise of 1850 in the", "Senate")\n', '("Henry Clay", "intended that slavery could not be prohibited in the territories in", "the Compromise of 1850")\n', '("Dred Scott v. Sandford", "complicated the issue of slavery by ruling that", "slavery could not be prohibited in the territories")\n', '("Democratic National Convention", "nominated", "James Buchanan in 1856")\n', '("Andrew Johnson", "campaigned for", "James Buchanan and John C. Breckinridge")\n', '("James Buchanan", "was not impressed by", "Andrew Johnson")\n', '("James Buchanan", "elected president, but he failed to carry", "Tennessee")\n', '("Whig Party", "redrew the boundaries of Johnson\'s First District to make it a safe seat for", "their party")\n', '("Whig Party", "had controlled the Tennessee legislature and passed legislation", "against Andrew Johnson")\n', '("Andrew Johnson", "made statements that he had no political future due to the", "Henry-mandering")\n', '("Andrew Johnson", "desired to be elected governor again and sought the nomination of the", "Democratic convention")\n', '("Whigs", "nominated", "Meredith P. Gentry")\n', '("Andrew Johnson", "debated against", "Gentry")\n', '("Andrew Johnson", "victorious in the gubernatorial election of", "1855")\n', '("Andrew Johnson", "hoped to be nominated for president by the", "Democratic party")\n', '("Democratic Party", "split over the slavery issue at the convention", "in Charleston, South Carolina")\n', '("Democratic Party", "deadlocked at the", "1860 Democratic National Convention")\n', '("Stephen Douglas", "backed by Northerners as the Democrat nominee for president", "after the split in the party")\n', '("Democratic Party", "split led to the nomination of", "Jefferson Davis by Southerners")\n', '("Republican Party", "elected its first president, former Illinois representative", "Abraham Lincoln")\n', '("Andrew Johnson", "went on the Senate floor after the presidential election and declared", "I will not give up this government")\n', '("Andrew Johnson", "stated in response to Jefferson Davis", "if Southerners would only hold to their seats, the Democrats would control the Senate")\n', '("Andrew Johnson", "fled through the", "Cumberland Gap")\n', '("Andrew Johnson", "spent congressional recesses in", "Kentucky and Ohio")\n', '("Andrew Johnson", "tried in vain to convince Union commanders to conduct an operation into", "East Tennessee")\n', '("Joseph E. Johnston", "part of the armistice agreement with Union General William T. Sherman for surrender of", "Confederate forces in North Carolina")\n', '("Congress", "refused to count", "Tennessee\'s electoral votes")\n', '("Andrew Johnson", "coached by Seward on quiet diplomacy regarding", "French intervention in Mexico")\n', '("William H. Seward", "considered several War Democrats for the vice-presidential ticket in", "1864")\n', '("William Seward", "influenced by to frustrate the vice-presidential candidacy of fellow New Yorker", "Daniel S. Dickinson")\n', '("William Seward", "saw the new Republican majority in the House of Representatives as", "an obstacle to Grant\'s ambitions")\n', '("William Seward", "signed the treaty for the sale of Alaska with Russian minister", "Baron Eduard de Stoeckl")\n', '("Salmon P. Chase", "swore in", "Andrew Johnson as vice president")\n', '("William T. Sherman", "defeated the Confederates at", "Murfreesboro")\n', '("Andrew Johnson", "went to Washington to be sworn in as", "vice president")\n', '("Andrew Johnson", "campaigned in Tennessee, Kentucky, Ohio, and Indiana after being nominated as", "Lincoln\'s running mate")\n', '("Grant", "captured the Confederate capital of", "Richmond")\n', '("Lincoln", "stated in response to criticism of Johnson\'s behavior", "Andy ain’t a drunkard")\n', '("Andrew Johnson", "sworn in as president between 10 and 11 am with", "Chief Justice Salmon P. Chase presiding")\n', '("Mary Surratt", "executed for her part in", "Lincoln\'s assassination")\n', '("Congress", "reconvened in December 1865 and Johnson\'s conciliatory annual message was", "well received")\n', '("Congress", "refused to seat", "Southern legislators")\n', '("Radical Republicans", "sought voting and other civil rights for", "African Americans")\n', '("Northern Democrats", "favored the unconditional restoration of the", "Southern states")\n', '("Lyman Trumbull", "ushered through Congress a bill extending the", "Freedmen\'s Bureau")\n', '("Lyman Trumbull", "met several times with", "Andrew Johnson and was convinced the President would sign the measures")\n', '("Southern states", "passed", "Black Codes, binding African-American laborers to farms on annual contracts they could not quit")\n', '("Thaddeus Stevens", "introduced legislation to dissolve the", "Southern state governments")\n', '("Congress", "added to the bill that restoration to the Union would follow the state\'s ratification of", "the Fourteenth Amendment")\n', '("Andrew Johnson", "vetoed the Freedman\'s Bureau bill and the Civil Rights Bill of", "1866")\n', '("Congress", "overrode", "Andrew Johnson\'s veto of the Civil Rights Bill of 1866")\n', '("Congressional Republicans", "overrode", "Andrew Johnson\'s vetoes")\n', '("Tennessee", "ratified the Fourteenth Amendment despite", "Andrew Johnson\'s opposition")\n', '("Tennessee", "ratified a new constitution, which abolished slavery, on", "February 22, 1865")\n', '("Andrew Johnson", "may have been ill", "during his inauguration as vice president")\n', '("White House", "hosted a public reception on", "Andrew Johnson\'s final full day in office")\n', '("Congress", "passed a Reconstruction Act against", "Andrew Johnson\'s position")\n', '("Senate", "disapproved of", "Andrew Johnson\'s action and reinstated Stanton")\n', '("House of Representatives", "passed eleven articles of impeachment", "against Andrew Johnson")\n', '("William M. Evarts, Benjamin R. Curtis and former Attorney General Stanbery", "were", "Andrew Johnson\'s counsel in his impeachment trial")\n', '("Congressmen George S. Boutwell, Benjamin Butler and Thaddeus Stevens", "acted as managers for the", "House")\n', '("Senate", "adjourned for the", "Republican National Convention")\n', '("Senate", "returned and voted on the second and third articles of impeachment with identical", "35–19 results")\n', '("William Seward", "signed the treaty for the sale of Alaska with Russian minister", "Baron Eduard de Stoeckl")\n', '("Senate", "ratified the treaty for the sale of Alaska", "37–2")\n', '("Congress", "overrode", "Andrew Johnson\'s veto of the Southern Homestead Act")\n', '("Johnson-Clarendon convention", "negotiated for settlement of the", "Alabama Claims")\n', '("National Union Party", "called a convention", "against Congressional Republicans")\n', '("Johnson-Clarendon convention", "negotiated in settlement of the", "Alabama Claims")\n', '("Andrew Johnson", "returned to Greeneville for the first time in", "eight years")\n', '("Andrew Johnson", "greeted with large public celebrations along the way to", "Tennessee")\n', '("Senate", "elected", "Henry Cooper over Johnson")\n', '("Plug Uglies", "operated in", "Baltimore, Maryland")\n', '("Plug Uglies", "referred as", "gangs in New York City")\n', '("Plug Uglies", "referred as", "gangs in Philadelphia")\n', '("Plug Uglies", "involved in violent activities in", "Washington, D.C.")\n', '("Plug Uglies", "allied with", "the New York City Irish Dead Rabbits gang")\n', '("New York City draft riots", "involvement of", "Plug Uglies")\n', '("Washington riot", "gained widespread notoriety for", "Plug Uglies")\n', '("Billy the Kid", "was an", "American outlaw and gunfighter")\n', '("Billy the Kid", "involved in", "New Mexico\'s Lincoln County War")\n', '("Billy the Kid", "charged with", "killing of Lincoln County Sheriff William J. Brady")\n', '("Billy the Kid", "became well known in", "New York City")\n', '("Billy the Kid\'s", "photograph taken at", "Fresno, California")\n', '("Henry McCarty", "alias", "Billy the Kid")\n', '("Billy the Kid", "born in", "New York City")\n', '("McCarty family", "moved to", "Indianapolis, Indiana")\n', '("Billy the Kid", "affiliated with", "Regulators in Lincoln County War")\n', '("Billy the Kid", "took part in", "Battle of Lincoln")\n', '("Billy the Kid", "born near the", "Pecos River")\n', '("Billy the Kid", "charged with the murder near", "Mescalero Indian Agency")\n', '("Billy the Kid", "had friends in", "Dallas")\n', '("Billy the Kid\'s", "legends discussed in", "Hico, Texas")\n', '("Billy the Kid", "became a fugitive in", "New Mexico Territory")\n', '("Billy the Kid", "rumored to have survived in", "Dallas")\n', '("Billy the Kid", "convicted in", "Mesilla, New Mexico")\n', '("Billy the Kid", "shot by", "Pat Garrett in Fort Sumner")\n', '("Billy the Kid\'s", "grave marked in", "Fort Sumner Cemetery")\n', '("Billy the Kid", "pardon request denied by", "Governor Bill Richardson")\n', '("Billy the Kid", "death potentially staged near", "Pecos River")\n', '("Jesse James", "was born in", "Clay County, Missouri")\n', '("Jesse James", "had Southern sympathies due to being raised in", "Missouri")\n', '("Jesse James\'s", "father farmed commercial hemp in", "Kentucky")\n', '("Jesse James", "joined pro-Confederate guerrillas known as bushwhackers in", "Missouri")\n', '("Jesse James", "was accused of committing atrocities against Union soldiers in", "Kansas")\n', '("Jesse James", "robbed banks, stagecoaches, and trains across", "Mississippi")\n', '("Jesse James", "was part of the Centralia Massacre in", "Missouri")\n', '("Jesse James\'s", "gang continued crimes after the Civil War in", "Iowa")\n', '("Jesse James\'s", "gang attempted robbery in", "Northfield, Minnesota")\n', '("Jesse James", "was killed in", "St. Joseph, Missouri")\n', '("Jesse James\'s", "body was confirmed through DNA typing from ancestry in", "Kentucky")\n', '("Jesse James", "was rumored to be associated with", "Mammoth Cave National Park in Kentucky")\n', '("Jesse James\'s", "ancestors were suggested to be from", "Los Angeles, California")\n', '("Jesse James", "participated in a robbery in", "Russellville, Kentucky")\n', '("Jesse James", "allegedly occupied some of the cave\'s inner areas in", "Louisiana")\n', '("The James-Younger Gang", "was destroyed except for", "Jesse and Frank James")\n', '("Jesse James\'s", "gang fled to", "Texas")\n', '("Jesse James\'s", "death led to rumors of survival and sightings in places such as", "Granbury, Texas")\n', '("James\'s", "original grave was located on family property in", "Kearney, Missouri")\n', '("Jesse James\'s", "turn to crime helped cement his place in American life from the era of", "Missouri")\n', '("Jesse James Days", "is celebrated in", "Pineville, Missouri")\n', '("Jesse James\'s", "legacy includes museums and historical sites in", "Missouri")\n', '("Jesse James", "is recognized in cultural depictions and historical narratives concerning", "the Wild West")\n', '("Carrie Nation", "was a member of", "the temperance movement")\n', '("Carrie Nation", "attacked", "alcohol-serving establishments")\n', '("Carrie Nation", "was previously known as", "Carrie Moore")\n', '("Carrie Nation", "was previously known as", "Carrie Gloyd")\n', '("Carrie Nation", "was known for", "charity and religious work")\n', '("Carrie Nation", "considered", "drunkenness a cause of society\'s problems")\n', '("Carrie Nation", "attempted to help", "people in prison")\n', '("Carrie Nation", "founded", "sewing circle in Medicine Lodge, Kansas")\n', '("Carrie Nation", "established", "shelter in Kansas City, Missouri")\n', '("Carrie Nation", "opposed", "Freemasonry")\n', '("Carrie Nation", "urged women not to wear", "corsets")\n', '("Carrie Nation", "described herself as", "a bulldog running at the feet of Jesus")\n', '("Caroline Amelia Moore", "was born in", "Garrard County, Kentucky")\n', '("Caroline Amelia Moore", "was the daughter of", "George Moore and Mary Campbell")\n', '("Caroline Amelia Moore", "lived", "in Belton, Missouri")\n', '("Mary Campbell", "had delusions", "being Queen Victoria")\n', '("Mary Campbell", "lived in", "insane asylum in Nevada, Missouri")\n', '("Carrie Nation", "met", "Charles Gloyd")\n', '("Carrie Gloyd", "developed a passionate activism against", "alcohol")\n', '("Carrie Gloyd", "moved to", "High Grove Farm in Cass County")\n', '("David A. Nation", "purchased", "cotton plantation in Brazoria County, Texas")\n', '("Carrie Nation", "started local branch of", "Woman\'s Christian Temperance Union")\n', '("Carrie Nation", "campaigned for", "enforcement of Kansas\' ban on liquor sale")\n', '("Carrie Nation", "received answer from", "God")\n', '("Carrie Nation", "destroyed", "Dobson\'s Saloon in Kiowa")\n', '("Carrie Nation", "lived in", "Guthrie, Oklahoma")\n', '("Carrie Nation", "conducted", "women\'s rights marches in Topeka, Kansas")\n', '("Carrie Nation", "was sponsored by", "W. D. Twichell in Amarillo, Texas")\n', '("Carrie Nation", "published", "The Smasher\'s Mail and The Hatchet")\n', '("Carrie Nation", "erected", "a drinking fountain in Naftzger Memorial Park, Wichita, Kansas")\n', '("Carrie Nation", "was subject of", "play Carry Nation")\n', '("Carrie Nation", "was portrayed by", "Vanessa Bayer in Drunk History")\n', '("Carrie Nation", "moved to", "Eureka Springs, Arkansas")\n', '("Carrie Nation Spring", "is named after", "Carrie Nation")\n', '("Carrie Nation", "died in", "Evergreen Place Hospital in Leavenworth, Kansas")\n', '("Carrie Nation", "is buried in", "Belton Cemetery in Belton, Missouri")\n', '("Carry A. Nation House", "is listed on", "the National Register of Historic Places in Garrard County, Kentucky")\n', '("The Woman\'s Christian Temperance Union", "bought", "Carrie Nation House in Medicine Lodge, Kansas")\n']
+range(1, 253) 1
+['("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")\n']
+
+['("Andrew Johnson", "assumed the presidency following the assassination of", "Abraham Lincoln")\n', '("Andrew Johnson", "was vice president at the time of", "Abraham Lincoln\'s assassination")\n', '("Andrew Johnson", "was a Democrat who ran with", "Abraham Lincoln on the National Union Party ticket")\n', '("Andrew Johnson", "favored quick restoration of", "the seceded states to the Union")\n', '("Andrew Johnson", "led to conflict with", "the Republican-dominated Congress")\n', '("Congress", "culminating in", "the impeachment of Andrew Johnson")\n', '("Andrew Johnson", "was acquitted in the Senate by", "one vote")\n', '("Andrew Johnson", "was apprenticed as a", "tailor")\n', '("Andrew Johnson", "worked in", "frontier towns before settling in Greeneville, Tennessee")\n', '("Andrew Johnson", "served as", "an alderman and mayor")\n', '("Andrew Johnson", "was elected to", "the Tennessee House of Representatives in 1835")\n', '("Andrew Johnson", "after briefly serving in", "the Tennessee Senate, was elected to the House of Representatives in 1843")\n', '("Andrew Johnson", "became governor of", "Tennessee for four years")\n', '("Andrew Johnson", "was elected by the legislature to", "the Senate in 1857")\n', '("Andrew Johnson", "sought passage of", "the Homestead Bill")\n', '("Confederate States of America", "included", "Tennessee")\n', '("Andrew Johnson", "remained firmly with", "the Union")\n', '("Andrew Johnson", "was the only sitting senator from a Confederate state who did not resign his seat upon learning of", "his state\'s secession")\n', '("Abraham Lincoln", "appointed", "Andrew Johnson as Military Governor of Tennessee after most of it had been retaken")\n', '("Andrew Johnson", "was a logical choice as running mate for", "Abraham Lincoln")\n', '("Andrew Johnson", "implemented his own form of", "Presidential Reconstruction")\n', '("Southern states", "passed", "Black Codes to deprive the freedmen of many civil liberties")\n', '("Congressional Republicans", "refused to seat legislators from", "those states and advanced legislation to overrule the Southern actions")\n', '("Andrew Johnson", "opposed", "the Fourteenth Amendment which gave citizenship to former slaves")\n', '("Andrew Johnson", "went on an unprecedented national tour promoting", "his executive policies")\n', '("Congress", "passed the Tenure of Office Act restricting", "Andrew Johnson\'s ability to fire Cabinet officials")\n', '("Andrew Johnson", "persisted in trying to dismiss", "Secretary of War Edwin Stanton")\n', '("House of Representatives", "impeached", "Andrew Johnson")\n', '("Andrew Johnson", "narrowly avoided conviction in", "the Senate")\n', '("Andrew Johnson", "returned to Tennessee after his presidency and gained some vindication when he was elected to", "the Senate in 1875")\n', '("Andrew Johnson", "was born in", "Raleigh, North Carolina")\n', '("Andrew Johnson", "father was", "Jacob Johnson")\n', '("Andrew Johnson", "mother was", "Mary (\'Polly\') McDonough")\n', '("Jacob Johnson", "was appointed by", "William Polk, a relative of President James K. Polk")\n', '("Andrew Johnson", "had a brother named", "William")\n', '("Andrew Johnson", "grew up in", "poverty")\n', '("Andrew Johnson", "became an apprentice in", "Selby\'s shop at age ten")\n', '("Andrew Johnson", "ran away from the subscriber with his brother", "William")\n', '("Andrew Johnson", "left North Carolina for", "Tennessee")\n', '("Andrew Johnson", "worked as a tailor in", "Columbia, Tennessee")\n', '("Andrew Johnson", "established a successful tailoring business in the front of his home in", "Greeneville")\n', '("Andrew Johnson", "married", "Eliza McCardle")\n', '("Andrew Johnson", "became prosperous and purchased the land where he had first camped in", "Greeneville")\n', '("Andrew Johnson", "purchased his first slave named", "Dolly")\n', '("Dolly", "had three children named", "Liz, Florence, and William")\n', '("Andrew Johnson", "purchased Dolly\'s half-brother named", "Sam")\n', '("Sam Johnson", "became a commissioner of the", "Freedmen\'s Bureau")\n', '("Andrew Johnson", "gave a tract of land for free to", "Sam in 1867")\n', '("Andrew Johnson", "purchased a slave who was 13 at the time named", "Henry")\n', '("Andrew Johnson", "freed his slaves on", "August 8, 1863")\n', '("Andrew Johnson", "helped organize a Mechanics\' (Working Men\'s) ticket in", "the 1829 Greeneville municipal election")\n', '("Andrew Johnson", "elected town alderman with his friends", "Blackston McDannel and Mordecai Lincoln")\n', '("Andrew Johnson", "elected", "mayor of Greeneville")\n', '("Andrew Johnson", "joined the Tennessee Militia as a member of the", "90th Regiment")\n', '("Andrew Johnson", "revered", "President Andrew Jackson")\n', '("Andrew Johnson", "supported the Democratic party and built a powerful political machine in", "Greene County")\n', '("Andrew Johnson", "saw election to Congress as the next step in his political career and defeated", "John A. Aiken")\n', '("Andrew Johnson", "in his second term opposed the", "Wilmot Proviso")\n', '("Andrew Johnson", "supported the Polk administration\'s decision to fight the", "Mexican War")\n', '("Tennessee", "failed to carry by", "Lewis Cass")\n', '("Andrew Johnson", "campaigned for", "Martin Van Buren")\n', '("Andrew Johnson", "successful campaign provided him with", "statewide exposure")\n', '("Andrew Johnson", "elected to the Tennessee Senate in", "1841")\n', '("Andrew Johnson", "voted for", "all the provisions except for the abolition of the slave trade in the nation\'s capital")\n', '("Andrew Johnson", "pressed resolutions for", "constitutional amendments to provide for popular election of senators and of the president, and limiting the tenure of federal judges")\n', '("Andrew Johnson", "defeated by", "Brookins Campbell")\n', '("Andrew Johnson", "supported the Democratic party and built a powerful political machine in", "Greene County")\n', '("James K. Polk", "was elected president in", "1844")\n', '("Andrew Johnson", "campaigned for", "James K. Polk")\n', '("Andrew Johnson", "elected to the Tennessee Senate in", "1841")\n', '("Andrew Johnson", "acquired additional real estate, including a larger home and a farm, and among his assets numbered", "eight or nine slaves")\n', '("Andrew Johnson", "saw election to Congress as the next step in his political career and defeated", "John A. Aiken")\n', '("Andrew Johnson", "defeated", "William G. Brownlow")\n', '("Andrew Johnson", "voted for", "all the provisions except for the abolition of the slave trade in the nation\'s capital")\n', '("Andrew Johnson", "pressed resolutions for", "constitutional amendments to provide for popular election of senators and of the president, and limiting the tenure of federal judges")\n', '("Andrew Johnson", "elected to Congress and represented a Democratic majority in the", "House of Representatives")\n', '("Andrew Johnson", "led a successful move in the House to", "pass the Homestead Bill in 1852")\n', '("Andrew Johnson", "won the election by more than", "1,600 votes")\n', '("Andrew Johnson", "retired from politics", "upon deciding not to seek reelection to Congress")\n', '("Andrew Johnson", "Democratic convention nominated unanimously for", "governor of Tennessee")\n', '("Andrew Johnson", "debated with the Whigs opposition nominee", "Henry")\n', '("Whigs", "won the gubernatorial elections in", "Tennessee")\n', '("Andrew Johnson", "won the election by", "63,413 votes")\n', '("Andrew Johnson", "sought to increase funding via taxes for", "improvements to Tennessee\'s infrastructure")\n', '("Andrew Johnson", "was not often seen during", "the Civil War")\n', '("Democratic Party", "nominated and defeated", "Henry Gentry")\n', '("Democrats", "nominated", "Andrew Johnson as a \'favorite son\'")\n', '("Democratic Party", "split over the slavery issue", "in the Southern states")\n', '("James Buchanan", "was elected but failed to carry", "Tennessee")\n', '("William Henry Harrison", "defeated", "Martin Van Buren in the presidential election of 1848")\n', '("Henry Clay", "introduced the Compromise of 1850 in the", "Senate")\n', '("Henry Clay", "intended that slavery could not be prohibited in the territories in", "the Compromise of 1850")\n', '("Dred Scott v. Sandford", "complicated the issue of slavery by ruling that", "slavery could not be prohibited in the territories")\n', '("Democratic National Convention", "nominated", "James Buchanan in 1856")\n', '("Andrew Johnson", "campaigned for", "James Buchanan and John C. Breckinridge")\n', '("James Buchanan", "was not impressed by", "Andrew Johnson")\n', '("James Buchanan", "elected president, but he failed to carry", "Tennessee")\n', '("Whig Party", "redrew the boundaries of Johnson\'s First District to make it a safe seat for", "their party")\n', '("Whig Party", "had controlled the Tennessee legislature and passed legislation", "against Andrew Johnson")\n', '("Andrew Johnson", "made statements that he had no political future due to the", "Henry-mandering")\n', '("Andrew Johnson", "desired to be elected governor again and sought the nomination of the", "Democratic convention")\n', '("Whigs", "nominated", "Meredith P. Gentry")\n', '("Andrew Johnson", "debated against", "Gentry")\n', '("Andrew Johnson", "victorious in the gubernatorial election of", "1855")\n', '("Andrew Johnson", "hoped to be nominated for president by the", "Democratic party")\n', '("Democratic Party", "split over the slavery issue at the convention", "in Charleston, South Carolina")\n', '("Democratic Party", "deadlocked at the", "1860 Democratic National Convention")\n', '("Stephen Douglas", "backed by Northerners as the Democrat nominee for president", "after the split in the party")\n', '("Democratic Party", "split led to the nomination of", "Jefferson Davis by Southerners")\n', '("Republican Party", "elected its first president, former Illinois representative", "Abraham Lincoln")\n', '("Andrew Johnson", "went on the Senate floor after the presidential election and declared", "I will not give up this government")\n', '("Andrew Johnson", "stated in response to Jefferson Davis", "if Southerners would only hold to their seats, the Democrats would control the Senate")\n', '("Andrew Johnson", "fled through the", "Cumberland Gap")\n', '("Andrew Johnson", "spent congressional recesses in", "Kentucky and Ohio")\n', '("Andrew Johnson", "tried in vain to convince Union commanders to conduct an operation into", "East Tennessee")\n', '("Joseph E. Johnston", "part of the armistice agreement with Union General William T. Sherman for surrender of", "Confederate forces in North Carolina")\n', '("Congress", "refused to count", "Tennessee\'s electoral votes")\n', '("Andrew Johnson", "coached by Seward on quiet diplomacy regarding", "French intervention in Mexico")\n', '("William H. Seward", "considered several War Democrats for the vice-presidential ticket in", "1864")\n', '("William Seward", "influenced by to frustrate the vice-presidential candidacy of fellow New Yorker", "Daniel S. Dickinson")\n', '("William Seward", "saw the new Republican majority in the House of Representatives as", "an obstacle to Grant\'s ambitions")\n', '("William Seward", "signed the treaty for the sale of Alaska with Russian minister", "Baron Eduard de Stoeckl")\n', '("Salmon P. Chase", "swore in", "Andrew Johnson as vice president")\n', '("William T. Sherman", "defeated the Confederates at", "Murfreesboro")\n', '("Andrew Johnson", "went to Washington to be sworn in as", "vice president")\n', '("Andrew Johnson", "campaigned in Tennessee, Kentucky, Ohio, and Indiana after being nominated as", "Lincoln\'s running mate")\n', '("Grant", "captured the Confederate capital of", "Richmond")\n', '("Lincoln", "stated in response to criticism of Johnson\'s behavior", "Andy ain’t a drunkard")\n', '("Andrew Johnson", "sworn in as president between 10 and 11 am with", "Chief Justice Salmon P. Chase presiding")\n', '("Mary Surratt", "executed for her part in", "Lincoln\'s assassination")\n', '("Congress", "reconvened in December 1865 and Johnson\'s conciliatory annual message was", "well received")\n', '("Congress", "refused to seat", "Southern legislators")\n', '("Radical Republicans", "sought voting and other civil rights for", "African Americans")\n', '("Northern Democrats", "favored the unconditional restoration of the", "Southern states")\n', '("Lyman Trumbull", "ushered through Congress a bill extending the", "Freedmen\'s Bureau")\n', '("Lyman Trumbull", "met several times with", "Andrew Johnson and was convinced the President would sign the measures")\n', '("Southern states", "passed", "Black Codes, binding African-American laborers to farms on annual contracts they could not quit")\n', '("Thaddeus Stevens", "introduced legislation to dissolve the", "Southern state governments")\n', '("Congress", "added to the bill that restoration to the Union would follow the state\'s ratification of", "the Fourteenth Amendment")\n', '("Andrew Johnson", "vetoed the Freedman\'s Bureau bill and the Civil Rights Bill of", "1866")\n', '("Congress", "overrode", "Andrew Johnson\'s veto of the Civil Rights Bill of 1866")\n', '("Congressional Republicans", "overrode", "Andrew Johnson\'s vetoes")\n', '("Tennessee", "ratified the Fourteenth Amendment despite", "Andrew Johnson\'s opposition")\n', '("Tennessee", "ratified a new constitution, which abolished slavery, on", "February 22, 1865")\n', '("Andrew Johnson", "may have been ill", "during his inauguration as vice president")\n', '("White House", "hosted a public reception on", "Andrew Johnson\'s final full day in office")\n', '("Congress", "passed a Reconstruction Act against", "Andrew Johnson\'s position")\n', '("Senate", "disapproved of", "Andrew Johnson\'s action and reinstated Stanton")\n', '("House of Representatives", "passed eleven articles of impeachment", "against Andrew Johnson")\n', '("William M. Evarts, Benjamin R. Curtis and former Attorney General Stanbery", "were", "Andrew Johnson\'s counsel in his impeachment trial")\n', '("Congressmen George S. Boutwell, Benjamin Butler and Thaddeus Stevens", "acted as managers for the", "House")\n', '("Senate", "adjourned for the", "Republican National Convention")\n', '("Senate", "returned and voted on the second and third articles of impeachment with identical", "35–19 results")\n', '("William Seward", "signed the treaty for the sale of Alaska with Russian minister", "Baron Eduard de Stoeckl")\n', '("Senate", "ratified the treaty for the sale of Alaska", "37–2")\n', '("Congress", "overrode", "Andrew Johnson\'s veto of the Southern Homestead Act")\n', '("Johnson-Clarendon convention", "negotiated for settlement of the", "Alabama Claims")\n', '("National Union Party", "called a convention", "against Congressional Republicans")\n', '("Johnson-Clarendon convention", "negotiated in settlement of the", "Alabama Claims")\n', '("Andrew Johnson", "returned to Greeneville for the first time in", "eight years")\n', '("Andrew Johnson", "greeted with large public celebrations along the way to", "Tennessee")\n', '("Senate", "elected", "Henry Cooper over Johnson")\n', '("Plug Uglies", "operated in", "Baltimore, Maryland")\n', '("Plug Uglies", "referred as", "gangs in New York City")\n', '("Plug Uglies", "referred as", "gangs in Philadelphia")\n', '("Plug Uglies", "involved in violent activities in", "Washington, D.C.")\n', '("Plug Uglies", "allied with", "the New York City Irish Dead Rabbits gang")\n', '("New York City draft riots", "involvement of", "Plug Uglies")\n', '("Washington riot", "gained widespread notoriety for", "Plug Uglies")\n', '("Billy the Kid", "was an", "American outlaw and gunfighter")\n', '("Billy the Kid", "involved in", "New Mexico\'s Lincoln County War")\n', '("Billy the Kid", "charged with", "killing of Lincoln County Sheriff William J. Brady")\n', '("Billy the Kid", "became well known in", "New York City")\n', '("Billy the Kid\'s", "photograph taken at", "Fresno, California")\n', '("Henry McCarty", "alias", "Billy the Kid")\n', '("Billy the Kid", "born in", "New York City")\n', '("McCarty family", "moved to", "Indianapolis, Indiana")\n', '("Billy the Kid", "affiliated with", "Regulators in Lincoln County War")\n', '("Billy the Kid", "took part in", "Battle of Lincoln")\n', '("Billy the Kid", "born near the", "Pecos River")\n', '("Billy the Kid", "charged with the murder near", "Mescalero Indian Agency")\n', '("Billy the Kid", "had friends in", "Dallas")\n', '("Billy the Kid\'s", "legends discussed in", "Hico, Texas")\n', '("Billy the Kid", "became a fugitive in", "New Mexico Territory")\n', '("Billy the Kid", "rumored to have survived in", "Dallas")\n', '("Billy the Kid", "convicted in", "Mesilla, New Mexico")\n', '("Billy the Kid", "shot by", "Pat Garrett in Fort Sumner")\n', '("Billy the Kid\'s", "grave marked in", "Fort Sumner Cemetery")\n', '("Billy the Kid", "pardon request denied by", "Governor Bill Richardson")\n', '("Billy the Kid", "death potentially staged near", "Pecos River")\n', '("Jesse James", "was born in", "Clay County, Missouri")\n', '("Jesse James", "had Southern sympathies due to being raised in", "Missouri")\n', '("Jesse James\'s", "father farmed commercial hemp in", "Kentucky")\n', '("Jesse James", "joined pro-Confederate guerrillas known as bushwhackers in", "Missouri")\n', '("Jesse James", "was accused of committing atrocities against Union soldiers in", "Kansas")\n', '("Jesse James", "robbed banks, stagecoaches, and trains across", "Mississippi")\n', '("Jesse James", "was part of the Centralia Massacre in", "Missouri")\n', '("Jesse James\'s", "gang continued crimes after the Civil War in", "Iowa")\n', '("Jesse James\'s", "gang attempted robbery in", "Northfield, Minnesota")\n', '("Jesse James", "was killed in", "St. Joseph, Missouri")\n', '("Jesse James\'s", "body was confirmed through DNA typing from ancestry in", "Kentucky")\n', '("Jesse James", "was rumored to be associated with", "Mammoth Cave National Park in Kentucky")\n', '("Jesse James\'s", "ancestors were suggested to be from", "Los Angeles, California")\n', '("Jesse James", "participated in a robbery in", "Russellville, Kentucky")\n', '("Jesse James", "allegedly occupied some of the cave\'s inner areas in", "Louisiana")\n', '("The James-Younger Gang", "was destroyed except for", "Jesse and Frank James")\n', '("Jesse James\'s", "gang fled to", "Texas")\n', '("Jesse James\'s", "death led to rumors of survival and sightings in places such as", "Granbury, Texas")\n', '("James\'s", "original grave was located on family property in", "Kearney, Missouri")\n', '("Jesse James\'s", "turn to crime helped cement his place in American life from the era of", "Missouri")\n', '("Jesse James Days", "is celebrated in", "Pineville, Missouri")\n', '("Jesse James\'s", "legacy includes museums and historical sites in", "Missouri")\n', '("Jesse James", "is recognized in cultural depictions and historical narratives concerning", "the Wild West")\n', '("Carrie Nation", "was a member of", "the temperance movement")\n', '("Carrie Nation", "attacked", "alcohol-serving establishments")\n', '("Carrie Nation", "was previously known as", "Carrie Moore")\n', '("Carrie Nation", "was previously known as", "Carrie Gloyd")\n', '("Carrie Nation", "was known for", "charity and religious work")\n', '("Carrie Nation", "considered", "drunkenness a cause of society\'s problems")\n', '("Carrie Nation", "attempted to help", "people in prison")\n', '("Carrie Nation", "founded", "sewing circle in Medicine Lodge, Kansas")\n', '("Carrie Nation", "established", "shelter in Kansas City, Missouri")\n', '("Carrie Nation", "opposed", "Freemasonry")\n', '("Carrie Nation", "urged women not to wear", "corsets")\n', '("Carrie Nation", "described herself as", "a bulldog running at the feet of Jesus")\n', '("Caroline Amelia Moore", "was born in", "Garrard County, Kentucky")\n', '("Caroline Amelia Moore", "was the daughter of", "George Moore and Mary Campbell")\n', '("Caroline Amelia Moore", "lived", "in Belton, Missouri")\n', '("Mary Campbell", "had delusions", "being Queen Victoria")\n', '("Mary Campbell", "lived in", "insane asylum in Nevada, Missouri")\n', '("Carrie Nation", "met", "Charles Gloyd")\n', '("Carrie Gloyd", "developed a passionate activism against", "alcohol")\n', '("Carrie Gloyd", "moved to", "High Grove Farm in Cass County")\n', '("David A. Nation", "purchased", "cotton plantation in Brazoria County, Texas")\n', '("Carrie Nation", "started local branch of", "Woman\'s Christian Temperance Union")\n', '("Carrie Nation", "campaigned for", "enforcement of Kansas\' ban on liquor sale")\n', '("Carrie Nation", "received answer from", "God")\n', '("Carrie Nation", "destroyed", "Dobson\'s Saloon in Kiowa")\n', '("Carrie Nation", "lived in", "Guthrie, Oklahoma")\n', '("Carrie Nation", "conducted", "women\'s rights marches in Topeka, Kansas")\n', '("Carrie Nation", "was sponsored by", "W. D. Twichell in Amarillo, Texas")\n', '("Carrie Nation", "published", "The Smasher\'s Mail and The Hatchet")\n', '("Carrie Nation", "erected", "a drinking fountain in Naftzger Memorial Park, Wichita, Kansas")\n', '("Carrie Nation", "was subject of", "play Carry Nation")\n', '("Carrie Nation", "was portrayed by", "Vanessa Bayer in Drunk History")\n', '("Carrie Nation", "moved to", "Eureka Springs, Arkansas")\n', '("Carrie Nation Spring", "is named after", "Carrie Nation")\n', '("Carrie Nation", "died in", "Evergreen Place Hospital in Leavenworth, Kansas")\n', '("Carrie Nation", "is buried in", "Belton Cemetery in Belton, Missouri")\n', '("Carry A. Nation House", "is listed on", "the National Register of Historic Places in Garrard County, Kentucky")\n', '("The Woman\'s Christian Temperance Union", "bought", "Carrie Nation House in Medicine Lodge, Kansas")\n']
+range(1, 253) 1
+['("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")\n']
+
+['("Andrew Johnson", "assumed the presidency following the assassination of", "Abraham Lincoln")\n', '("Andrew Johnson", "was vice president at the time of", "Abraham Lincoln\'s assassination")\n', '("Andrew Johnson", "was a Democrat who ran with", "Abraham Lincoln on the National Union Party ticket")\n', '("Andrew Johnson", "favored quick restoration of", "the seceded states to the Union")\n', '("Andrew Johnson", "led to conflict with", "the Republican-dominated Congress")\n', '("Congress", "culminating in", "the impeachment of Andrew Johnson")\n', '("Andrew Johnson", "was acquitted in the Senate by", "one vote")\n', '("Andrew Johnson", "was apprenticed as a", "tailor")\n', '("Andrew Johnson", "worked in", "frontier towns before settling in Greeneville, Tennessee")\n', '("Andrew Johnson", "served as", "an alderman and mayor")\n', '("Andrew Johnson", "was elected to", "the Tennessee House of Representatives in 1835")\n', '("Andrew Johnson", "after briefly serving in", "the Tennessee Senate, was elected to the House of Representatives in 1843")\n', '("Andrew Johnson", "became governor of", "Tennessee for four years")\n', '("Andrew Johnson", "was elected by the legislature to", "the Senate in 1857")\n', '("Andrew Johnson", "sought passage of", "the Homestead Bill")\n', '("Confederate States of America", "included", "Tennessee")\n', '("Andrew Johnson", "remained firmly with", "the Union")\n', '("Andrew Johnson", "was the only sitting senator from a Confederate state who did not resign his seat upon learning of", "his state\'s secession")\n', '("Abraham Lincoln", "appointed", "Andrew Johnson as Military Governor of Tennessee after most of it had been retaken")\n', '("Andrew Johnson", "was a logical choice as running mate for", "Abraham Lincoln")\n', '("Andrew Johnson", "implemented his own form of", "Presidential Reconstruction")\n', '("Southern states", "passed", "Black Codes to deprive the freedmen of many civil liberties")\n', '("Congressional Republicans", "refused to seat legislators from", "those states and advanced legislation to overrule the Southern actions")\n', '("Andrew Johnson", "opposed", "the Fourteenth Amendment which gave citizenship to former slaves")\n', '("Andrew Johnson", "went on an unprecedented national tour promoting", "his executive policies")\n', '("Congress", "passed the Tenure of Office Act restricting", "Andrew Johnson\'s ability to fire Cabinet officials")\n', '("Andrew Johnson", "persisted in trying to dismiss", "Secretary of War Edwin Stanton")\n', '("House of Representatives", "impeached", "Andrew Johnson")\n', '("Andrew Johnson", "narrowly avoided conviction in", "the Senate")\n', '("Andrew Johnson", "returned to Tennessee after his presidency and gained some vindication when he was elected to", "the Senate in 1875")\n', '("Andrew Johnson", "was born in", "Raleigh, North Carolina")\n', '("Andrew Johnson", "father was", "Jacob Johnson")\n', '("Andrew Johnson", "mother was", "Mary (\'Polly\') McDonough")\n', '("Jacob Johnson", "was appointed by", "William Polk, a relative of President James K. Polk")\n', '("Andrew Johnson", "had a brother named", "William")\n', '("Andrew Johnson", "grew up in", "poverty")\n', '("Andrew Johnson", "became an apprentice in", "Selby\'s shop at age ten")\n', '("Andrew Johnson", "ran away from the subscriber with his brother", "William")\n', '("Andrew Johnson", "left North Carolina for", "Tennessee")\n', '("Andrew Johnson", "worked as a tailor in", "Columbia, Tennessee")\n', '("Andrew Johnson", "established a successful tailoring business in the front of his home in", "Greeneville")\n', '("Andrew Johnson", "married", "Eliza McCardle")\n', '("Andrew Johnson", "became prosperous and purchased the land where he had first camped in", "Greeneville")\n', '("Andrew Johnson", "purchased his first slave named", "Dolly")\n', '("Dolly", "had three children named", "Liz, Florence, and William")\n', '("Andrew Johnson", "purchased Dolly\'s half-brother named", "Sam")\n', '("Sam Johnson", "became a commissioner of the", "Freedmen\'s Bureau")\n', '("Andrew Johnson", "gave a tract of land for free to", "Sam in 1867")\n', '("Andrew Johnson", "purchased a slave who was 13 at the time named", "Henry")\n', '("Andrew Johnson", "freed his slaves on", "August 8, 1863")\n', '("Andrew Johnson", "helped organize a Mechanics\' (Working Men\'s) ticket in", "the 1829 Greeneville municipal election")\n', '("Andrew Johnson", "elected town alderman with his friends", "Blackston McDannel and Mordecai Lincoln")\n', '("Andrew Johnson", "elected", "mayor of Greeneville")\n', '("Andrew Johnson", "joined the Tennessee Militia as a member of the", "90th Regiment")\n', '("Andrew Johnson", "revered", "President Andrew Jackson")\n', '("Andrew Johnson", "supported the Democratic party and built a powerful political machine in", "Greene County")\n', '("Andrew Johnson", "saw election to Congress as the next step in his political career and defeated", "John A. Aiken")\n', '("Andrew Johnson", "in his second term opposed the", "Wilmot Proviso")\n', '("Andrew Johnson", "supported the Polk administration\'s decision to fight the", "Mexican War")\n', '("Tennessee", "failed to carry by", "Lewis Cass")\n', '("Andrew Johnson", "campaigned for", "Martin Van Buren")\n', '("Andrew Johnson", "successful campaign provided him with", "statewide exposure")\n', '("Andrew Johnson", "elected to the Tennessee Senate in", "1841")\n', '("Andrew Johnson", "voted for", "all the provisions except for the abolition of the slave trade in the nation\'s capital")\n', '("Andrew Johnson", "pressed resolutions for", "constitutional amendments to provide for popular election of senators and of the president, and limiting the tenure of federal judges")\n', '("Andrew Johnson", "defeated by", "Brookins Campbell")\n', '("Andrew Johnson", "supported the Democratic party and built a powerful political machine in", "Greene County")\n', '("James K. Polk", "was elected president in", "1844")\n', '("Andrew Johnson", "campaigned for", "James K. Polk")\n', '("Andrew Johnson", "elected to the Tennessee Senate in", "1841")\n', '("Andrew Johnson", "acquired additional real estate, including a larger home and a farm, and among his assets numbered", "eight or nine slaves")\n', '("Andrew Johnson", "saw election to Congress as the next step in his political career and defeated", "John A. Aiken")\n', '("Andrew Johnson", "defeated", "William G. Brownlow")\n', '("Andrew Johnson", "voted for", "all the provisions except for the abolition of the slave trade in the nation\'s capital")\n', '("Andrew Johnson", "pressed resolutions for", "constitutional amendments to provide for popular election of senators and of the president, and limiting the tenure of federal judges")\n', '("Andrew Johnson", "elected to Congress and represented a Democratic majority in the", "House of Representatives")\n', '("Andrew Johnson", "led a successful move in the House to", "pass the Homestead Bill in 1852")\n', '("Andrew Johnson", "won the election by more than", "1,600 votes")\n', '("Andrew Johnson", "retired from politics", "upon deciding not to seek reelection to Congress")\n', '("Andrew Johnson", "Democratic convention nominated unanimously for", "governor of Tennessee")\n', '("Andrew Johnson", "debated with the Whigs opposition nominee", "Henry")\n', '("Whigs", "won the gubernatorial elections in", "Tennessee")\n', '("Andrew Johnson", "won the election by", "63,413 votes")\n', '("Andrew Johnson", "sought to increase funding via taxes for", "improvements to Tennessee\'s infrastructure")\n', '("Andrew Johnson", "was not often seen during", "the Civil War")\n', '("Democratic Party", "nominated and defeated", "Henry Gentry")\n', '("Democrats", "nominated", "Andrew Johnson as a \'favorite son\'")\n', '("Democratic Party", "split over the slavery issue", "in the Southern states")\n', '("James Buchanan", "was elected but failed to carry", "Tennessee")\n', '("William Henry Harrison", "defeated", "Martin Van Buren in the presidential election of 1848")\n', '("Henry Clay", "introduced the Compromise of 1850 in the", "Senate")\n', '("Henry Clay", "intended that slavery could not be prohibited in the territories in", "the Compromise of 1850")\n', '("Dred Scott v. Sandford", "complicated the issue of slavery by ruling that", "slavery could not be prohibited in the territories")\n', '("Democratic National Convention", "nominated", "James Buchanan in 1856")\n', '("Andrew Johnson", "campaigned for", "James Buchanan and John C. Breckinridge")\n', '("James Buchanan", "was not impressed by", "Andrew Johnson")\n', '("James Buchanan", "elected president, but he failed to carry", "Tennessee")\n', '("Whig Party", "redrew the boundaries of Johnson\'s First District to make it a safe seat for", "their party")\n', '("Whig Party", "had controlled the Tennessee legislature and passed legislation", "against Andrew Johnson")\n', '("Andrew Johnson", "made statements that he had no political future due to the", "Henry-mandering")\n', '("Andrew Johnson", "desired to be elected governor again and sought the nomination of the", "Democratic convention")\n', '("Whigs", "nominated", "Meredith P. Gentry")\n', '("Andrew Johnson", "debated against", "Gentry")\n', '("Andrew Johnson", "victorious in the gubernatorial election of", "1855")\n', '("Andrew Johnson", "hoped to be nominated for president by the", "Democratic party")\n', '("Democratic Party", "split over the slavery issue at the convention", "in Charleston, South Carolina")\n', '("Democratic Party", "deadlocked at the", "1860 Democratic National Convention")\n', '("Stephen Douglas", "backed by Northerners as the Democrat nominee for president", "after the split in the party")\n', '("Democratic Party", "split led to the nomination of", "Jefferson Davis by Southerners")\n', '("Republican Party", "elected its first president, former Illinois representative", "Abraham Lincoln")\n', '("Andrew Johnson", "went on the Senate floor after the presidential election and declared", "I will not give up this government")\n', '("Andrew Johnson", "stated in response to Jefferson Davis", "if Southerners would only hold to their seats, the Democrats would control the Senate")\n', '("Andrew Johnson", "fled through the", "Cumberland Gap")\n', '("Andrew Johnson", "spent congressional recesses in", "Kentucky and Ohio")\n', '("Andrew Johnson", "tried in vain to convince Union commanders to conduct an operation into", "East Tennessee")\n', '("Joseph E. Johnston", "part of the armistice agreement with Union General William T. Sherman for surrender of", "Confederate forces in North Carolina")\n', '("Congress", "refused to count", "Tennessee\'s electoral votes")\n', '("Andrew Johnson", "coached by Seward on quiet diplomacy regarding", "French intervention in Mexico")\n', '("William H. Seward", "considered several War Democrats for the vice-presidential ticket in", "1864")\n', '("William Seward", "influenced by to frustrate the vice-presidential candidacy of fellow New Yorker", "Daniel S. Dickinson")\n', '("William Seward", "saw the new Republican majority in the House of Representatives as", "an obstacle to Grant\'s ambitions")\n', '("William Seward", "signed the treaty for the sale of Alaska with Russian minister", "Baron Eduard de Stoeckl")\n', '("Salmon P. Chase", "swore in", "Andrew Johnson as vice president")\n', '("William T. Sherman", "defeated the Confederates at", "Murfreesboro")\n', '("Andrew Johnson", "went to Washington to be sworn in as", "vice president")\n', '("Andrew Johnson", "campaigned in Tennessee, Kentucky, Ohio, and Indiana after being nominated as", "Lincoln\'s running mate")\n', '("Grant", "captured the Confederate capital of", "Richmond")\n', '("Lincoln", "stated in response to criticism of Johnson\'s behavior", "Andy ain’t a drunkard")\n', '("Andrew Johnson", "sworn in as president between 10 and 11 am with", "Chief Justice Salmon P. Chase presiding")\n', '("Mary Surratt", "executed for her part in", "Lincoln\'s assassination")\n', '("Congress", "reconvened in December 1865 and Johnson\'s conciliatory annual message was", "well received")\n', '("Congress", "refused to seat", "Southern legislators")\n', '("Radical Republicans", "sought voting and other civil rights for", "African Americans")\n', '("Northern Democrats", "favored the unconditional restoration of the", "Southern states")\n', '("Lyman Trumbull", "ushered through Congress a bill extending the", "Freedmen\'s Bureau")\n', '("Lyman Trumbull", "met several times with", "Andrew Johnson and was convinced the President would sign the measures")\n', '("Southern states", "passed", "Black Codes, binding African-American laborers to farms on annual contracts they could not quit")\n', '("Thaddeus Stevens", "introduced legislation to dissolve the", "Southern state governments")\n', '("Congress", "added to the bill that restoration to the Union would follow the state\'s ratification of", "the Fourteenth Amendment")\n', '("Andrew Johnson", "vetoed the Freedman\'s Bureau bill and the Civil Rights Bill of", "1866")\n', '("Congress", "overrode", "Andrew Johnson\'s veto of the Civil Rights Bill of 1866")\n', '("Congressional Republicans", "overrode", "Andrew Johnson\'s vetoes")\n', '("Tennessee", "ratified the Fourteenth Amendment despite", "Andrew Johnson\'s opposition")\n', '("Tennessee", "ratified a new constitution, which abolished slavery, on", "February 22, 1865")\n', '("Andrew Johnson", "may have been ill", "during his inauguration as vice president")\n', '("White House", "hosted a public reception on", "Andrew Johnson\'s final full day in office")\n', '("Congress", "passed a Reconstruction Act against", "Andrew Johnson\'s position")\n', '("Senate", "disapproved of", "Andrew Johnson\'s action and reinstated Stanton")\n', '("House of Representatives", "passed eleven articles of impeachment", "against Andrew Johnson")\n', '("William M. Evarts, Benjamin R. Curtis and former Attorney General Stanbery", "were", "Andrew Johnson\'s counsel in his impeachment trial")\n', '("Congressmen George S. Boutwell, Benjamin Butler and Thaddeus Stevens", "acted as managers for the", "House")\n', '("Senate", "adjourned for the", "Republican National Convention")\n', '("Senate", "returned and voted on the second and third articles of impeachment with identical", "35–19 results")\n', '("William Seward", "signed the treaty for the sale of Alaska with Russian minister", "Baron Eduard de Stoeckl")\n', '("Senate", "ratified the treaty for the sale of Alaska", "37–2")\n', '("Congress", "overrode", "Andrew Johnson\'s veto of the Southern Homestead Act")\n', '("Johnson-Clarendon convention", "negotiated for settlement of the", "Alabama Claims")\n', '("National Union Party", "called a convention", "against Congressional Republicans")\n', '("Johnson-Clarendon convention", "negotiated in settlement of the", "Alabama Claims")\n', '("Andrew Johnson", "returned to Greeneville for the first time in", "eight years")\n', '("Andrew Johnson", "greeted with large public celebrations along the way to", "Tennessee")\n', '("Senate", "elected", "Henry Cooper over Johnson")\n', '("Plug Uglies", "operated in", "Baltimore, Maryland")\n', '("Plug Uglies", "referred as", "gangs in New York City")\n', '("Plug Uglies", "referred as", "gangs in Philadelphia")\n', '("Plug Uglies", "involved in violent activities in", "Washington, D.C.")\n', '("Plug Uglies", "allied with", "the New York City Irish Dead Rabbits gang")\n', '("New York City draft riots", "involvement of", "Plug Uglies")\n', '("Washington riot", "gained widespread notoriety for", "Plug Uglies")\n', '("Billy the Kid", "was an", "American outlaw and gunfighter")\n', '("Billy the Kid", "involved in", "New Mexico\'s Lincoln County War")\n', '("Billy the Kid", "charged with", "killing of Lincoln County Sheriff William J. Brady")\n', '("Billy the Kid", "became well known in", "New York City")\n', '("Billy the Kid\'s", "photograph taken at", "Fresno, California")\n', '("Henry McCarty", "alias", "Billy the Kid")\n', '("Billy the Kid", "born in", "New York City")\n', '("McCarty family", "moved to", "Indianapolis, Indiana")\n', '("Billy the Kid", "affiliated with", "Regulators in Lincoln County War")\n', '("Billy the Kid", "took part in", "Battle of Lincoln")\n', '("Billy the Kid", "born near the", "Pecos River")\n', '("Billy the Kid", "charged with the murder near", "Mescalero Indian Agency")\n', '("Billy the Kid", "had friends in", "Dallas")\n', '("Billy the Kid\'s", "legends discussed in", "Hico, Texas")\n', '("Billy the Kid", "became a fugitive in", "New Mexico Territory")\n', '("Billy the Kid", "rumored to have survived in", "Dallas")\n', '("Billy the Kid", "convicted in", "Mesilla, New Mexico")\n', '("Billy the Kid", "shot by", "Pat Garrett in Fort Sumner")\n', '("Billy the Kid\'s", "grave marked in", "Fort Sumner Cemetery")\n', '("Billy the Kid", "pardon request denied by", "Governor Bill Richardson")\n', '("Billy the Kid", "death potentially staged near", "Pecos River")\n', '("Jesse James", "was born in", "Clay County, Missouri")\n', '("Jesse James", "had Southern sympathies due to being raised in", "Missouri")\n', '("Jesse James\'s", "father farmed commercial hemp in", "Kentucky")\n', '("Jesse James", "joined pro-Confederate guerrillas known as bushwhackers in", "Missouri")\n', '("Jesse James", "was accused of committing atrocities against Union soldiers in", "Kansas")\n', '("Jesse James", "robbed banks, stagecoaches, and trains across", "Mississippi")\n', '("Jesse James", "was part of the Centralia Massacre in", "Missouri")\n', '("Jesse James\'s", "gang continued crimes after the Civil War in", "Iowa")\n', '("Jesse James\'s", "gang attempted robbery in", "Northfield, Minnesota")\n', '("Jesse James", "was killed in", "St. Joseph, Missouri")\n', '("Jesse James\'s", "body was confirmed through DNA typing from ancestry in", "Kentucky")\n', '("Jesse James", "was rumored to be associated with", "Mammoth Cave National Park in Kentucky")\n', '("Jesse James\'s", "ancestors were suggested to be from", "Los Angeles, California")\n', '("Jesse James", "participated in a robbery in", "Russellville, Kentucky")\n', '("Jesse James", "allegedly occupied some of the cave\'s inner areas in", "Louisiana")\n', '("The James-Younger Gang", "was destroyed except for", "Jesse and Frank James")\n', '("Jesse James\'s", "gang fled to", "Texas")\n', '("Jesse James\'s", "death led to rumors of survival and sightings in places such as", "Granbury, Texas")\n', '("James\'s", "original grave was located on family property in", "Kearney, Missouri")\n', '("Jesse James\'s", "turn to crime helped cement his place in American life from the era of", "Missouri")\n', '("Jesse James Days", "is celebrated in", "Pineville, Missouri")\n', '("Jesse James\'s", "legacy includes museums and historical sites in", "Missouri")\n', '("Jesse James", "is recognized in cultural depictions and historical narratives concerning", "the Wild West")\n', '("Carrie Nation", "was a member of", "the temperance movement")\n', '("Carrie Nation", "attacked", "alcohol-serving establishments")\n', '("Carrie Nation", "was previously known as", "Carrie Moore")\n', '("Carrie Nation", "was previously known as", "Carrie Gloyd")\n', '("Carrie Nation", "was known for", "charity and religious work")\n', '("Carrie Nation", "considered", "drunkenness a cause of society\'s problems")\n', '("Carrie Nation", "attempted to help", "people in prison")\n', '("Carrie Nation", "founded", "sewing circle in Medicine Lodge, Kansas")\n', '("Carrie Nation", "established", "shelter in Kansas City, Missouri")\n', '("Carrie Nation", "opposed", "Freemasonry")\n', '("Carrie Nation", "urged women not to wear", "corsets")\n', '("Carrie Nation", "described herself as", "a bulldog running at the feet of Jesus")\n', '("Caroline Amelia Moore", "was born in", "Garrard County, Kentucky")\n', '("Caroline Amelia Moore", "was the daughter of", "George Moore and Mary Campbell")\n', '("Caroline Amelia Moore", "lived", "in Belton, Missouri")\n', '("Mary Campbell", "had delusions", "being Queen Victoria")\n', '("Mary Campbell", "lived in", "insane asylum in Nevada, Missouri")\n', '("Carrie Nation", "met", "Charles Gloyd")\n', '("Carrie Gloyd", "developed a passionate activism against", "alcohol")\n', '("Carrie Gloyd", "moved to", "High Grove Farm in Cass County")\n', '("David A. Nation", "purchased", "cotton plantation in Brazoria County, Texas")\n', '("Carrie Nation", "started local branch of", "Woman\'s Christian Temperance Union")\n', '("Carrie Nation", "campaigned for", "enforcement of Kansas\' ban on liquor sale")\n', '("Carrie Nation", "received answer from", "God")\n', '("Carrie Nation", "destroyed", "Dobson\'s Saloon in Kiowa")\n', '("Carrie Nation", "lived in", "Guthrie, Oklahoma")\n', '("Carrie Nation", "conducted", "women\'s rights marches in Topeka, Kansas")\n', '("Carrie Nation", "was sponsored by", "W. D. Twichell in Amarillo, Texas")\n', '("Carrie Nation", "published", "The Smasher\'s Mail and The Hatchet")\n', '("Carrie Nation", "erected", "a drinking fountain in Naftzger Memorial Park, Wichita, Kansas")\n', '("Carrie Nation", "was subject of", "play Carry Nation")\n', '("Carrie Nation", "was portrayed by", "Vanessa Bayer in Drunk History")\n', '("Carrie Nation", "moved to", "Eureka Springs, Arkansas")\n', '("Carrie Nation Spring", "is named after", "Carrie Nation")\n', '("Carrie Nation", "died in", "Evergreen Place Hospital in Leavenworth, Kansas")\n', '("Carrie Nation", "is buried in", "Belton Cemetery in Belton, Missouri")\n', '("Carry A. Nation House", "is listed on", "the National Register of Historic Places in Garrard County, Kentucky")\n', '("The Woman\'s Christian Temperance Union", "bought", "Carrie Nation House in Medicine Lodge, Kansas")\n']
+range(1, 253) 1
+{'id': '0_1', 'Question': " Who was the assassin responsible for the fatal injury of the U.S. president at Ford's Theatre?\n", 'Answer': 'John Wilkes Booth', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Plug Uglies'}, {'label': 'B', 'text': 'John Wilkes Booth'}, {'label': 'C', 'text': 'Billy the Kid'}, {'label': 'D', 'text': 'Jesse James'}, {'label': 'E', 'text': 'Carrie Nation'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'plug_ugly'}, {'label': 'B', 'text': 'john_wilkes_booth'}, {'label': 'C', 'text': 'william_h_bonney'}, {'label': 'D', 'text': 'jesse_james'}, {'label': 'E', 'text': 'carry_nation'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ["1: Who shot and mortally wounded Abraham Lincoln at Ford's Theatre?\nA1: John Wilkes Booth"], 'Hops_wiki': [('Abraham Lincoln', 'John Wilkes Booth')], 'Hops_cpnet': [('abraham_lincoln', 'john_wilkes_booth')], 'Triplets': ['("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")'], 'Referred_files': [{'name': 'Andrew Johnson', 'line': 129}], 'Question_triplet_answer': {100: [128], 50: [47], 25: [100]}}
+time passed:  4165.784376144409
+Expected dollar:  0.0
+Tennessee is Geography
+Andrew Johnson is People
+North Carolina is Geography
+Carrie Nation is People
+Carrie Gloyd is People
+Baltimore is Geography
+Maryland is Geography
+New York City is Geography
+Jesse James is People
+Billy the Kid is Geography
+John A. Aiken is People
+Meredith P. Gentry is People
+Jesse James's is People
+Missouri is Geography
+Henry Clay is People
+Greeneville is Geography
+Kansas City is Geography
+Andrew Johnson's is People
+Pecos River is Geography
+Garrard County is Geography
+Kentucky is Geography
+Abraham Lincoln is People
+Johnson Clarendon is People
+Topeka is Geography
+Kansas is Geography
+Jefferson Davis is People
+William Henry Harrison is People
+Martin Van Buren is People
+The James Younger Gang is Incident
+Frank James is People
+Abraham Lincoln's is People
+Sam Johnson is People
+Oklahoma is Geography
+Los Angeles is Geography
+California is Geography
+D.C. is Geography
+Carrie Nation House is People
+Ohio is Geography
+William G. Brownlow is People
+Mississippi is Geography
+Salmon P. Chase is People
+Stephen Douglas" is People
+Louisiana is Geography
+James K. Polk is People
+War Edwin Stanton is People
+Caroline Amelia Moore is People
+Carrie Nation Spring is People
+James Buchanan is People
+New Mexico Territory is Geography
+Mammoth Cave National Park is Geography
+Andrew Jackson is People
+Dallas is Geography
+the Tennessee Senate is Geography
+Lyman Trumbull is People
+Queen Victoria is People
+Eureka Springs is Geography
+Arkansas is Geography
+George S. Boutwell is People
+Benjamin Butler is People
+Thaddeus Stevens is People
+Alaska is Geography
+New Mexico is Geography
+Vanessa Bayer in Drunk History is People
+John Wilkes Booth is Geography
+William M. Evarts is People
+Benjamin R. Curtis is People
+Stanbery is People
+Dolly is People
+the Tennessee House of Representatives is Geography
+Joseph E. Johnston is People
+William T. Sherman is People
+Carry Nation is People
+William Seward is People
+Mary Surratt is People
+Carrie Moore is People
+Belton Cemetery is People
+Indiana is Geography
+John C. Breckinridge is People
+Raleigh is Geography
+Minnesota is Geography
+Texas is Geography
+White House is Geography
+Billy the Kid's is Geography
+Fresno is Geography
+63,413 is People
+Naftzger Memorial Park is People
+Selby is Geography
+entities:  {'Alabama', 'Indiana', 'California', '63,413', 'Thaddeus', 'Kentucky', 'Dallas', 'Carry', 'Pineville', 'Bureau', 'Boutwell', 'Baltimore', 'Andrew', 'Sam', 'New', 'Stevens', 'Wichita', 'Benjamin', 'Chase', 'Jackson', 'Arkansas', 'Whig', 'Mary', 'Carrie', 'Plug', 'Washington', 'Van', 'Edwin', 'Dolly', 'Fresno', 'Johnson', 'North', 'C.', 'Breckinridge', 'Belton', 'Missouri', 'Ohio', 'Moore', 'Clarendon', 'Texas', 'Maryland', 'Territory', 'Pecos', 'Vanessa', 'Congress', 'Kid', 'Los', 'Springs', 'Clay', 'Kansas', 'Seward', 'Polk', 'G.', 'Douglas', 'Nation', "Kid's", 'Spring', "Lincoln's", 'Douglas"', 'Trumbull', 'George', 'Harrison', 'Caroline', 'Drunk', 'Surratt', 'White', 'Johnston', 'Senate', 'Memorial', 'Younger', 'Tennessee', 'Davis', 'Gang', 'York', 'County', 'William', 'House', 'Stephen', 'Martin', 'Sherman', 'R.', 'D.C.', 'Richmond', 'Russellville', 'Mammoth', 'Guthrie', 'Louisiana', 'Salmon', 'Joseph', 'Wilkes', 'Greeneville', 'Mesilla', 'Gloyd', 'James', 'Buchanan', 'Mexico', 'S.', 'P.', 'Bayer', 'Mississippi', 'Abraham', 'Curtis', 'America', "Johnson's", 'Carolina', 'Evarts', 'Brownlow', 'Billy', 'Representatives', 'Eureka', 'Minnesota', 'Stanton', 'John', 'Henry', 'Jefferson', 'Freedman', 'Lyman', 'Meredith', 'Cave', 'Grant', 'National', 'Liz', 'K.', 'Cemetery', 'Amelia', 'Angeles', 'Victoria', 'Raleigh', 'T.', 'Topeka', 'E.', 'History', 'Uglies', 'Jesse', 'Lincoln', 'Queen', 'A.', 'Frank', 'Butler', 'Ford', 'War', 'M.', 'Park', 'Selby', 'Booth', 'Naftzger', 'Columbia', "James's", 'Aiken', 'McCardle', 'Dobson', 'Jacob', 'Gentry', 'Stanbery', 'City', 'Buren', 'Oklahoma', 'Garrard', 'River', 'Alaska'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Abraham Lincoln' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Abraham Lincoln
+Andrew Johnson
+Tennessee legislature
+House of Representatives
+Tennessee
+New York City draft riots
+statewide exposure
+Jesse James
+the Wild West
+Billy the Kid
+Regulators
+John A. Aiken
+Meredith P. Gentry
+Tennessee ratification
+New York City Irish Dead Rabbits gang
+House of Representatives
+Jefferson Davis
+William Henry Harrison
+Sam Johnson
+Democratic National Convention
+Pecos River
+Greeneville
+Jefferson Davis
+Billy the Kid's
+Andrew Johnson's
+John Wilkes Booth
+House of Representatives
+William M. Evarts
+Freedmen's Bureau
+House of Representatives
+James Buchanan
+Martin Van Buren
+Kentucky
+Missouri
+Caroline Amelia Moore
+Greene County
+Russellville
+Dolly
+House of Representatives
+Freedman's Bureau
+Tennessee
+Mesilla
+Woman's Christian Temperance Union
+Missouri
+Tennessee
+Alabama
+Kansas City, Missouri
+Selby
+Woman's Christian Temperance Union
+
+gpt_entity_particular(): entity list: 
+ ['Greeneville', 'Mesilla', 'Regulators', 'Alabama', 'New York City draft riots', 'Kansas City, Missouri', "Freedmen's Bureau", 'Martin Van Buren', 'Kentucky', 'Andrew Johnson', 'New York City Irish Dead Rabbits gang', 'Billy the Kid', "Freedman's Bureau", 'Democratic National Convention', 'William M. Evarts', 'Caroline Amelia Moore', 'Selby', 'House of Representatives', 'Tennessee legislature', 'Pecos River', 'Abraham Lincoln', 'the Wild West', 'Tennessee', "Billy the Kid's", 'Dolly', 'John Wilkes Booth', 'Tennessee ratification', 'John A. Aiken', "Andrew Johnson's", 'Greene County', 'Sam Johnson', 'Missouri', 'Jesse James', "Woman's Christian Temperance Union", 'Russellville', 'statewide exposure', 'William Henry Harrison', 'James Buchanan', 'Meredith P. Gentry', 'Jefferson Davis']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Jesse James' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Whig Party
+Tennessee legislature
+Andrew Johnson
+Democratic majority
+House of Representatives
+Tennessee
+Carrie Nation
+Plug Uglies
+Maryland
+New York City draft riots
+Missouri
+Wild West
+Billy the Kid
+Regulators
+Lincoln County War
+John A. Aiken
+Meredith P. Gentry
+Whigs
+Tennessee
+Jefferson Davis
+Henry Gentry
+Southerners
+House
+Senators
+Homestead Act
+Black Codes
+Carrie Nation House
+Tennessee
+Abolition of slavery
+New York City
+Jefferson Davis
+1884
+Jesse James
+Missouri
+Mississippi
+Louisiana
+Democratic
+Council House
+8 years
+Tennessee House
+Kentucky
+Jefferson Davis
+Southern states
+Black codes
+Kearney, Missouri
+Mississippi
+Martin Van Buren
+Whigs
+Homestead Bill
+Meredith P. Gentry
+House of Representatives
+Eleven articles
+Congress
+Reconstruction
+Lincoln's assassination
+Freedman's Bureau bill
+Civil Rights Bill
+William M. Evarts
+Radical Republicans
+Mexican War
+Tennessee
+Greene County
+Democratic party
+Caroline Amelia Moore
+George Moore
+Mary Campbell
+William
+James Buchanan
+Tennessee
+Jacob Johnson
+Raleigh, North Carolina
+Greeneville
+Democratic
+Polk administration
+Swedish dance
+Greeneville
+Democratic
+Congress
+Whigs
+Frontier towns
+Greeneville
+Republican Party
+Frontier towns
+Greeneville
+Black Codes
+George Moore
+Mary Campbell
+Billy the Kid
+Mesilla, New Mexico
+Republican National Convention
+Carrie Nation
+Missouri
+Dobson's Saloon
+Ale
+Fredonia
+  Nashville Whigs
+House of Representatives
+Aldermen
+Mayor
+Charlotte, North Carolina
+Sherman's
+house
+Dolly
+Sam
+Mexican War
+Mary Campbell
+African Americans
+Tennessee
+John Wilkes Booth
+Gerald McWherter
+Gerald McWherter
+Jack McWherter
+William Dorris James
+Amanda
+Alma and Zerelda Mimms
+Russellville, Kentucky
+Northfield, Minnesota
+Texas
+Tenure of Office Act
+Abolition of the slave trade
+Cumberland Gap
+Black Codes
+What's Fault
+British overseen
+Alaska
+
+gpt_entity_particular(): entity list: 
+ ['Reconstruction', "Dobson's Saloon", '  Nashville Whigs', 'Kentucky', 'Billy the Kid', 'Sam', 'Democratic majority', 'Council House', 'Homestead Act', 'Dolly', 'John A. Aiken', 'Whigs', 'British overseen', 'Missouri', 'George Moore', 'Jesse James', 'Texas', 'Maryland', 'Civil Rights Bill', 'Henry Gentry', 'Charlotte, North Carolina', 'Congress', 'Russellville, Kentucky', 'Wild West', 'Regulators', 'Swedish dance', 'Cumberland Gap', 'Lincoln County War', 'Polk administration', "Lincoln's assassination", 'Tennessee House', 'William M. Evarts', 'Tenure of Office Act', 'Caroline Amelia Moore', 'Tennessee legislature', 'Jack McWherter', 'Tennessee', 'Democratic party', 'Democratic', 'Mary Campbell', 'Eleven articles', "What's Fault", 'Abolition of the slave trade', 'William', 'House', 'Senators', 'Republican National Convention', "Freedman's Bureau bill", 'Fredonia', 'Louisiana', 'Jefferson Davis', 'Greeneville', 'Southerners', 'Alma and Zerelda Mimms', 'Gerald McWherter', 'Amanda', 'Ale', 'Carrie Nation House', 'Mississippi', 'Republican Party', 'Raleigh, North Carolina', 'Jacob Johnson', 'William Dorris James', 'New York City', 'Greene County', 'Abolition of slavery', 'house', 'Plug Uglies', "Sherman's", 'Whig Party', 'James Buchanan', 'Mexican War', 'Frontier towns', 'Northfield, Minnesota', 'Carrie Nation', 'New York City draft riots', 'Martin Van Buren', '8 years', 'Mayor', 'Andrew Johnson', 'Mesilla, New Mexico', 'House of Representatives', '1884', 'African Americans', 'Kearney, Missouri', 'Radical Republicans', 'John Wilkes Booth', 'Southern states', 'Black Codes', 'Aldermen', 'Black codes', 'Homestead Bill', 'Meredith P. Gentry', 'Alaska']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Carrie Nation' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Carrie Nation
+Carrie Gloyd
+Kansas City
+Shelter
+
+gpt_entity_particular(): entity list: 
+ ['Shelter', 'Kansas City', 'Carrie Nation', 'Carrie Gloyd']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'John Wilkes Booth' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ John Wilkes Booth
+Abraham Lincoln's assassination
+
+gpt_entity_particular(): entity list: 
+ ['John Wilkes Booth', "Abraham Lincoln's assassination"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Billy the Kid' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Andrew Johnson
+Billy the Kid
+Regulators in Lincoln County War
+Andrew Johnson
+Tennessee
+Carrie Nation
+Carrie Gloyd
+Plug Uglies
+New York City draft riots
+Northern Democrats
+Jesse James
+Billy the Kid
+Abraham Lincoln
+Lincoln County War
+Andrew Johnson
+House of Representatives
+Andrew Johnson
+Congressional Republicans
+Jefferson Davis
+Missouri
+Garrard County, Kentucky
+Greeneville
+Republican National Convention
+Confederate forces
+House
+Kentucky
+Tennessee
+Radical Republicans
+African Americans
+Mary Campbell
+Dolly
+Senate
+Kentucky
+Confederate States of America
+Jesse James
+Meredith P. Gentry
+House of Representatives
+Andrew Johnson
+Democratic party
+Pecos River
+Abraham Lincoln
+Kentucky
+William G. Brownlow
+James Buchanan
+Mesilla, New Mexico
+Carrie Moore
+Black Codes
+Southern states
+Black Codes
+Mexico
+Democratic party
+Democratic party
+James Buchanan
+Pecos River
+Frederick A. Pile
+Pecos River
+Robert S. Matson
+Hist
+Robert S. Gould and L. Wallace
+Harvey Lewis
+C. Wright
+George Scarborough
+JD Shaw
+Jesse James
+Valentine Dalrymple
+Garrett Family
+Byron A. Johnson
+Read or relato Hancock
+Mother and Clouse
+Joseph King
+Sheriff Pat Garrett
+Widoff and Keet
+Billy Barlow
+Fred Waite
+Taylor Pickett
+Dick Brewer
+Bill Morton
+Black Jack Christian
+Tom Hill
+Buck Board and Frank Jones
+Downtown Las Vegas
+Fresno
+Charles Fredrick
+West of Otis malls
+Will Wood Cooper
+Nevada
+Missouri
+
+gpt_entity_particular(): entity list: 
+ ['Greeneville', 'George Scarborough', 'Carrie Nation', 'New York City draft riots', 'JD Shaw', 'Valentine Dalrymple', 'Nevada', 'Byron A. Johnson', 'Read or relato Hancock', 'Kentucky', 'Billy Barlow', 'Andrew Johnson', 'Mexico', 'Billy the Kid', 'Lincoln County War', 'Frederick A. Pile', 'Garrett Family', 'Tom Hill', 'Carrie Gloyd', 'Robert S. Matson', 'Carrie Moore', 'Congressional Republicans', 'Mesilla, New Mexico', 'Will Wood Cooper', 'House of Representatives', 'Sheriff Pat Garrett', 'Charles Fredrick', 'Senate', 'Confederate States of America', 'African Americans', 'Abraham Lincoln', 'Pecos River', 'Tennessee', 'Democratic party', 'Dolly', 'Taylor Pickett', 'Radical Republicans', 'Buck Board and Frank Jones', 'Fresno', 'Mary Campbell', 'William G. Brownlow', 'Hist', 'Dick Brewer', 'Garrard County, Kentucky', 'West of Otis malls', 'Regulators in Lincoln County War', 'House', 'Southern states', 'Plug Uglies', 'Black Jack Christian', 'Missouri', 'Jesse James', 'Bill Morton', 'Black Codes', 'Mother and Clouse', 'C. Wright', 'Confederate forces', 'Republican National Convention', 'Fred Waite', 'Harvey Lewis', 'James Buchanan', 'Meredith P. Gentry', 'Joseph King', 'Downtown Las Vegas', 'Robert S. Gould and L. Wallace', 'Jefferson Davis', 'Widoff and Keet', 'Northern Democrats']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Plug Uglies' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Plug Uglies
+Carrie Nation
+Andrew Johnson
+New York City draft riots
+Southern Homestead Act
+Selby's shop
+Tennessee
+Baltimore, Maryland
+Greeneville
+House of Representatives
+Congressional Republicans
+Meredith P. Gentry
+Henry
+Kentucky
+Washington, D.C.
+
+gpt_entity_particular(): entity list: 
+ ['Tennessee', 'Greeneville', 'Southern Homestead Act', 'Carrie Nation', 'New York City draft riots', 'Washington, D.C.', 'Congressional Republicans', 'Henry', 'Meredith P. Gentry', 'Andrew Johnson', 'Kentucky', 'Baltimore, Maryland', 'House of Representatives', 'Plug Uglies', "Selby's shop"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Alabama', 'Indiana', 'California', '63,413', 'Thaddeus', 'Kentucky', 'Dallas', 'Carry', 'Pineville', 'Bureau', 'Boutwell', 'Baltimore', 'Andrew', 'Sam', 'New', 'Stevens', 'Wichita', 'Benjamin', 'Chase', 'Jackson', 'Arkansas', 'Whig', 'Mary', 'Carrie', 'Plug', 'Washington', 'Van', 'Edwin', 'Dolly', 'Fresno', 'Johnson', 'North', 'C.', 'Breckinridge', 'Belton', 'Missouri', 'Ohio', 'Moore', 'Clarendon', 'Texas', 'Maryland', 'Territory', 'Pecos', 'Vanessa', 'Congress', 'Kid', 'Los', 'Springs', 'Clay', 'Kansas', 'Seward', 'Polk', 'G.', 'Douglas', 'Nation', "Kid's", 'Spring', "Lincoln's", 'Douglas"', 'Trumbull', 'George', 'Harrison', 'Caroline', 'Drunk', 'Surratt', 'White', 'Johnston', 'Senate', 'Memorial', 'Younger', 'Tennessee', 'Davis', 'Gang', 'York', 'County', 'William', 'House', 'Stephen', 'Martin', 'Sherman', 'R.', 'D.C.', 'Richmond', 'Russellville', 'Mammoth', 'Guthrie', 'Louisiana', 'Salmon', 'Joseph', 'Wilkes', 'Greeneville', 'Mesilla', 'Gloyd', 'James', 'Buchanan', 'Mexico', 'S.', 'P.', 'Bayer', 'Mississippi', 'Abraham', 'Curtis', 'America', "Johnson's", 'Carolina', 'Evarts', 'Brownlow', 'Billy', 'Representatives', 'Eureka', 'Minnesota', 'Stanton', 'John', 'Henry', 'Jefferson', 'Freedman', 'Lyman', 'Meredith', 'Cave', 'Grant', 'National', 'Liz', 'K.', 'Cemetery', 'Amelia', 'Angeles', 'Victoria', 'Raleigh', 'T.', 'Topeka', 'E.', 'History', 'Uglies', 'Jesse', 'Lincoln', 'Queen', 'A.', 'Frank', 'Butler', 'Ford', 'War', 'M.', 'Park', 'Selby', 'Booth', 'Naftzger', 'Columbia', "James's", 'Aiken', 'McCardle', 'Dobson', 'Jacob', 'Gentry', 'Stanbery', 'City', 'Buren', 'Oklahoma', 'Garrard', 'River', 'Alaska'}
+Total time:  468.91740250587463
+Entity conversion done on 0_1 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_0_1_entity_conversion_hash.json. Check the entity.
+ Who was the assassin responsible for the fatal injury of the U.S. president at Ford's Theatre?
+
+
+
+Done. Check final_query/id_0_1_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_0_1_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_0_1_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_0_1_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_0_1_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_0_1_final_result_ratio25_unmasked.txt

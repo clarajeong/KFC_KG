@@ -1,0 +1,1147 @@
+Got argument: Abraham Lincoln, 5, 5_1
+
+utils/question.py extract_hops(Abraham Lincoln, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Abraham Lincoln", "shot and mortally wounded at Ford\'s Theatre by", "John Wilkes Booth")', 'start word': 'Abraham Lincoln', 'end word': 'John Wilkes Booth', 'source': {'name': 'Andrew Johnson', 'line': 129}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'john_wilkes_booth'}}
+
+utils/question.py extract_hops(John Wilkes Booth, [], ['Abraham Lincoln']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/John_Wilkes_Booth_info.json file
+second_hop:  None
+
+utils/question.py extract_hops(Abraham Lincoln, ['John Wilkes Booth'], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Abraham Lincoln", "named", "Andrew Johnson as military governor of Tennessee")', 'start word': 'Abraham Lincoln', 'end word': 'Tennessee', 'source': {'name': 'Abraham Lincoln', 'line': 28}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'tennessee'}}
+
+utils/question.py extract_hops(Tennessee, [], ['Abraham Lincoln']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Tennessee_info.json file
+second_hop:  {'triplet': '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")', 'start word': 'Tennessee', 'end word': 'Indiana', 'source': {'name': 'Indiana', 'line': 16}, 'cpnet': {'start word': 'tennessee', 'end word': 'indiana'}}
+
+utils/question.py extract_hops(Indiana, [], ['Abraham Lincoln', 'Tennessee']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Indiana_info.json file
+third_hop1:  {'triplet': '("Indiana", "borders", "the Ohio River")', 'start word': 'Indiana', 'end word': 'Ohio', 'source': {'name': 'Indiana', 'line': 5}, 'cpnet': {'start word': 'indiana', 'end word': 'ohio'}}
+
+utils/question.py extract_hops(Indiana, ['Ohio'], ['Abraham Lincoln', 'Tennessee']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Indiana_info.json file
+third_hop2:  {'triplet': '("Indiana", "hosts", "the Indianapolis 500")', 'start word': 'Indiana', 'end word': 'Indianapolis', 'source': {'name': 'Indiana', 'line': 19}, 'cpnet': {'start word': 'indiana', 'end word': 'indianapolis'}}
+extraction_done:  True
+generate_question(5_1, ['("Abraham Lincoln", "named", "Andrew Johnson as military governor of Tennessee")', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")', '("Indiana", "borders", "the Ohio River")', '("Indiana", "hosts", "the Indianapolis 500")'], ['Abraham Lincoln', 'Tennessee', 'Indiana', 'Indiana'], [('Abraham Lincoln', 'Tennessee'), ('Tennessee', 'Indiana'), ('Indiana', 'Ohio'), ('Indiana', 'Indianapolis')], Abraham Lincoln, [{'name': 'Abraham Lincoln', 'line': 28}, {'name': 'Indiana', 'line': 16}, {'name': 'Indiana', 'line': 5}, {'name': 'Indiana', 'line': 19}]) called
+GPT output is:  Q: Which President appointed the person as military governor who came from the same state that, along with Kentucky, helped populate a region known for an annual motorsport event and shares its southern border with the Ohio River?
+A: Abraham Lincoln
+final_choice(Abraham Lincoln, options = 5) started
+[]
+entity_type(Abraham Lincoln) called
+Abraham Lincoln is People
+check_matchscore(Abraham Lincoln, People with mood disorders):  0.0
+choose_by_wiki_recur(People with mood disorders)
+   Pages in People with mood disorders: ['360 (rapper)', 'Ryan Adams', 'Hasil Adkins', 'Buzz Aldrin', 'Yashar Ali', 'Hideaki Anno', 'Diane Arbus', 'Heather Armstrong', 'Kinjirō Ashiwara', 'Tommy Blake', 'Anthony Bourdain', 'Richard Brautigan', 'Antuan Bronshtein', 'Tiffany Lee Brown', 'Nick Burbridge', 'Cage (rapper)', 'Beverley Callard', 'Michael Carneal', 'Mark David Chapman', 'Christine Chubbuck', 'Winston Churchill', 'John Clare', 'Rebecca Clarke (composer)', 'Robbie Coburn', 'Billy Corgan', 'Chris Cornell', 'Julee Cruise', 'Ian Curtis', 'Gregory Davis', 'Rob Delaney', 'Barry Dickins', 'Siobhán Donaghy', 'Charmaine Dragun', 'Nick Drake', 'Karyn Dwyer', 'Inger Edelfeldt', 'Richey Edwards', 'James Dallas Egbert III', 'Peter-Ernst Eiffe', 'Harlan Ellison', 'Robert Farquharson', 'John Fetterman', 'John Fitzgerald (Wisconsin politician)', 'Vince Foster', 'Jackson C. Frank', 'Tyson Fury', 'Jeff Garlin', 'Michael Gerson', 'Georges Gilles de la Tourette', 'Chrissie Glazebrook', 'Michael Gothard', 'Devin Grayson', 'Steve Halliwell', 'Tom Hardy', 'Henry VIII', 'Patricia Highsmith', 'John Hinckley Jr.', 'Daryl Holton', 'Doug Hopkins', 'Alex Hribal', 'Greg Hyatt', 'Jordon Ibe', 'Josip Iličić', 'Alice de Janzé', 'Richard Jeni', 'Andrew Jenks', 'Samuel Johnson', 'Kevan Jones', 'Andre Jordan', 'David Katz (gamer)', 'Roman Kemp', 'Kid Cudi', 'Kip Kinkel', 'Tim Kretschmer', 'Norma Angélica Ladrón de Guevara', 'Jenny Lawson', 'Amy Levy', "Lil' Chris", 'Abraham Lincoln', 'Max Linder', 'Stanley Lingar', 'Bartolo Longo', 'Barry Loukaitis', 'Billy Mackenzie', 'Rafe Mair', 'Joseph Mann (shooting victim)', 'Walter M. Miller Jr.', 'Miroslava Stern', 'Joseph Mitchell (writer)', 'Marilyn Monroe', 'Morrissey', 'Audrey Munson', 'Naive John', 'Nam Tae-hyun', 'Shain Neumeier', 'Lisa Nowak', "Elaine O'Hara", "Georgia O'Keeffe", "Dolores O'Riordan", 'Aileen Palmer', 'Pina Pellicer', 'David Pereira', 'Marcus-David Peters', 'Karen Carter Peterson', 'Philip V of Spain', 'Robert M. Pirsig', 'Sylvia Plath', 'Nour El-Refai', 'Henriette Roland Holst', 'Fred Rosen (author)', 'Suicide of Terry Rossland', 'Roszaidi Osman', 'Death of Conrad Roy', 'Michael Steven Sandford', 'Cher Scarlett', 'Sarah Silverman', 'Elliott Smith', 'Susan Smith', 'Sylville Smith', 'Andrew Solomon', 'William Styron', 'Darren Sutherland', 'Tan Ping Koon', 'Torquato Tasso', 'Alexis Vastine', 'Lupe Vélez', 'Ned Vizzini', 'David Foster Wallace', 'Denise Welch', 'Robison Wells', 'Wil Wheaton', 'Robbie Williams', 'Robin Williams', 'Elizabeth Wurtzel']
+      Tim Kretschmer in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins']
+      Darren Sutherland in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain']
+Darren Sutherland is People
+      Billy Corgan in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill']
+Billy Corgan is People
+      Hasil Adkins in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison']
+      Philip V of Spain in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein']
+Philip V of Spain is People
+      Winston Churchill in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan']
+Winston Churchill is People
+      Harlan Ellison in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan']
+Harlan Ellison is People
+      Antuan Bronshtein in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan']
+      Andre Jordan in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern']
+Andre Jordan is People
+      Miroslava Stern in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern', 'Richard Brautigan']
+Miroslava Stern is People
+      Richard Brautigan in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern', 'Richard Brautigan', 'Marilyn Monroe']
+Richard Brautigan is People
+      Marilyn Monroe in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern', 'Richard Brautigan', 'Marilyn Monroe', 'Heather Armstrong']
+Marilyn Monroe is People
+      Heather Armstrong in ['Tim Kretschmer', 'Darren Sutherland', 'Billy Corgan', 'Hasil Adkins', 'Philip V of Spain', 'Winston Churchill', 'Harlan Ellison', 'Antuan Bronshtein', 'Andre Jordan', 'Miroslava Stern', 'Richard Brautigan', 'Marilyn Monroe', 'Heather Armstrong']
+Heather Armstrong is People
+['Winston Churchill', 'Harlan Ellison', 'Marilyn Monroe', 'Heather Armstrong']
+Ended after 2.5 hierarchy
+(2.5, ['Heather Armstrong', 'Harlan Ellison', 'Marilyn Monroe', 'Winston Churchill'])
+
+extract_info(Heather Armstrong) Start.
+utils/preprocess.py extract_info(): Checking good links on Heather Armstrong
+Salt Lake City is Geography
+1 / 30 )  Salt Lake City Salt Lake City salt_lake_city
+Brigham Young University is Geography
+2 / 30 )  Brigham Young University Brigham Young University brigham_young_university
+Utah is Geography
+3 / 30 )  Utah Utah utah
+Oprah Winfrey is People
+4 / 30 )  Oprah Oprah Winfrey oprah
+United States Senate is Geography
+5 / 30 )  U.S. Senate United States Senate united_states_senate
+extract_triplet(Heather Armstrong)
+Got GPT's response. String length : 405
+subject_words:  [(None, 'Heather Armstrong', 'dooced')]
+object_words:  [['Utah', 'Utah', 'utah']]
+subject_words:  [(None, 'Heather Armstrong', 'dooced')]
+object_words:  [['Brigham Young University', 'Brigham Young University', 'brigham_young_university']]
+subject_words:  [(None, 'Heather Armstrong', 'dooced')]
+object_words:  [['Utah', 'Utah', 'utah']]
+subject_words:  [(None, 'Heather Armstrong', 'dooced')]
+object_words:  [['Oprah', 'Oprah Winfrey', 'oprah']]
+subject_words:  [(None, 'Heather Armstrong', 'dooced')]
+object_words:  []
+subject_words:  []
+object_words:  [['U.S. Senate', 'United States Senate', 'united_states_senate']]
+subject_words:  []
+object_words:  [(None, 'Heather Armstrong', 'dooced')]
+extract_info(Marilyn Monroe) Start.
+utils/preprocess.py extract_info(): Checking good links on Marilyn Monroe
+Lee Strasberg is People
+1 / 30 )  Lee Strasberg Lee Strasberg lee_strasberg
+Arthur Miller is People
+2 / 30 )  Arthur Miller Arthur Miller arthur_miller
+Mexico is Geography
+3 / 30 )  Mexico Mexico mexico
+Kentucky is Geography
+4 / 30 )  Kentucky Kentucky kentucky
+Compton, California is Geography
+5 / 30 )  Compton Compton, California cpt
+West Virginia is Geography
+6 / 30 )  West Virginia West Virginia west_virginia
+Ronald Reagan is People
+7 / 30 )  Ronald Reagan Ronald Reagan ronald_reagan
+Darryl F. Zanuck is People
+8 / 30 )  Darryl F. Zanuck Darryl F. Zanuck darryl_francis_zanuck
+John Huston is People
+9 / 30 )  John Huston John Huston john_huston
+Elia Kazan is People
+10 / 30 )  Elia Kazan Elia Kazan elia_kazan
+Monterey, California is Geography
+11 / 30 )  Monterey Monterey, California monterey
+Cary Grant is People
+12 / 30 )  Cary Grant Cary Grant cary_grant
+Charles Laughton is People
+13 / 30 )  Charles Laughton Charles Laughton charles_laughton
+Joan Crawford is People
+14 / 30 )  Joan Crawford Joan Crawford joan_crawford
+Betty Grable is People
+15 / 30 )  Betty Grable Betty Grable legs
+Hugh Hefner is People
+16 / 30 )  Hugh Hefner Hugh Hefner hefnerian
+San Luis Obispo, California is Geography
+17 / 30 )  San Luis Obispo San Luis Obispo, California san_luis_obispo
+United Service Organizations is Incident
+18 / 30 )  USO United Service Organizations uso
+Billy Wilder is People
+19 / 30 )  Billy Wilder Billy Wilder billy_wilder
+Marlon Brando is People
+20 / 30 )  Marlon Brando Marlon Brando marlon_brando
+Federal Bureau of Investigation is Geography
+21 / 30 )  FBI Federal Bureau of Investigation federal_bureau_of_investigation
+Charlie Chaplin is People
+22 / 30 )  Charlie Chaplin Charlie Chaplin charlie_chaplin
+Terence Rattigan is People
+23 / 30 )  Terence Rattigan Terence Rattigan terence_rattigan
+Laurence Olivier is People
+24 / 30 )  Laurence Olivier Laurence Olivier laurence_olivier
+Vivien Leigh is People
+25 / 30 )  Vivien Leigh Vivien Leigh vivien_leigh
+Connecticut is Geography
+26 / 30 )  Connecticut Connecticut connecticut
+Long Island is Geography
+27 / 30 )  Long Island Long Island long_island
+Jack Lemmon is People
+28 / 30 )  Jack Lemmon Jack Lemmon jack_lemmon
+Adolf Hitler is People
+29 / 30 )  Hitler Adolf Hitler adolf_hitler
+Clark Gable is People
+30 / 30 )  Clark Gable Clark Gable clark_gable
+extract_triplet(Marilyn Monroe)
+Got GPT's response. String length : 3000
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  [['Lee Strasberg', 'Lee Strasberg', 'lee_strasberg']]
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  [['Arthur Miller', 'Arthur Miller', 'arthur_miller']]
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [['Ronald Reagan', 'Ronald Reagan', 'ronald_reagan']]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [['Darryl F. Zanuck', 'Darryl F. Zanuck', 'darryl_francis_zanuck']]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  [['Elia Kazan', 'Elia Kazan', 'elia_kazan']]
+subject_words:  []
+object_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+subject_words:  [(None, 'Marilyn Monroe', 'marilyn_monroe')]
+object_words:  []
+extract_info(Harlan Ellison) Start.
+utils/preprocess.py extract_info(): Checking good links on Harlan Ellison
+Cleveland is Geography
+1 / 30 )  Cleveland Cleveland cleveland
+Painesville, Ohio is Geography
+2 / 30 )  Painesville Painesville, Ohio painesville
+Galveston, Texas is Geography
+3 / 30 )  Galveston Galveston, Texas galveston
+North Carolina is Geography
+4 / 30 )  North Carolina North Carolina north_carolina
+Ohio State University is Geography
+5 / 30 )  Ohio State University Ohio State University ohio_state_university
+Fort Knox is Geography
+6 / 30 )  Fort Knox Fort Knox fort_knox
+Martin Luther King Jr. is People
+7 / 30 )  Martin Luther King Jr. Martin Luther King Jr. martin_luther_king_jr
+Frank Sinatra is People
+8 / 30 )  Frank Sinatra Frank Sinatra frank_sinatra
+Isaac Asimov is People
+9 / 30 )  Isaac Asimov Isaac Asimov isaac_asimov
+Screen Actors Guild is Incident
+10 / 30 )  Screen Actors Guild Screen Actors Guild sag
+Stephen King is People
+11 / 30 )  Stephen King Stephen King stephen_king
+Gopher is Animal
+12 / 30 )  gopher Gopher gopher
+Donald Trump is People
+13 / 30 )  Trump Donald Trump donald_trump
+Connie Willis is People
+14 / 30 )  Connie Willis Connie Willis connie_willis
+AOL is Geography
+15 / 30 )  AOL AOL aol
+extract_triplet(Harlan Ellison)
+Got GPT's response. String length : 1180
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Painesville', 'Painesville, Ohio', 'painesville']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Cleveland', 'Cleveland', 'cleveland']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Galveston', 'Galveston, Texas', 'galveston']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['North Carolina', 'North Carolina', 'north_carolina']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Ohio State University', 'Ohio State University', 'ohio_state_university']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Frank Sinatra', 'Frank Sinatra', 'frank_sinatra']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Isaac Asimov', 'Isaac Asimov', 'isaac_asimov']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Screen Actors Guild', 'Screen Actors Guild', 'sag']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Stephen King', 'Stephen King', 'stephen_king']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  [['Connie Willis', 'Connie Willis', 'connie_willis']]
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+subject_words:  [(None, 'Harlan Ellison', 'harlan_ellison')]
+object_words:  []
+extract_info(Winston Churchill) Start.
+utils/preprocess.py extract_info(): Checking good links on Winston Churchill
+Oxfordshire is Geography
+1 / 30 )  Oxfordshire Oxfordshire oxfordshire
+Gallipoli campaign is Geography
+2 / 30 )  Gallipoli campaign Gallipoli campaign dardanelles_campaign
+Stanley Baldwin is People
+3 / 30 )  Stanley Baldwin Stanley Baldwin stanley_baldwin
+Nazi Germany is Geography
+4 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Neville Chamberlain is People
+5 / 30 )  Neville Chamberlain Neville Chamberlain neville_chamberlain
+Soviet Union is Geography
+6 / 30 )  Soviet Union Soviet Union soviet_union
+Iron Curtain is Geography
+7 / 30 )  iron curtain Iron Curtain iron_curtain
+John Churchill, 1st Duke of Marlborough is People
+8 / 30 )  John Churchill, 1st Duke of Marlborough John Churchill, 1st Duke of Marlborough john_churchill
+Woodstock  is Geography
+9 / 30 )  Woodstock Woodstock  woodstock_music_and_art_festival
+Dublin is Geography
+10 / 30 )  Dublin Dublin dublin
+Hove is Geography
+11 / 30 )  Hove Hove hove
+Aldershot is Geography
+12 / 30 )  Aldershot Aldershot aldershot
+Mumbai is Geography
+13 / 30 )  Bombay Mumbai mumbai
+Bangalore is Geography
+14 / 30 )  Bangalore Bangalore bangalore
+Kolkata is Geography
+15 / 30 )  Calcutta Kolkata kolkata
+Hyderabad is Geography
+16 / 30 )  Hyderabad Hyderabad hyderabad
+Plato is People
+17 / 30 )  Plato Plato plato
+Edward Gibbon is People
+18 / 30 )  Edward Gibbon Edward Gibbon edward_gibbon
+Charles Darwin is People
+19 / 30 )  Charles Darwin Charles Darwin charles_darwin
+Thomas Babington Macaulay is People
+20 / 30 )  Thomas Babington Macaulay Thomas Babington Macaulay thomas_babington_macaulay
+Herbert Kitchener, 1st Earl Kitchener is People
+21 / 30 )  Herbert Kitchener Herbert Kitchener, 1st Earl Kitchener horatio_herbert_kitchener
+Battle of Omdurman is Geography
+22 / 30 )  Battle of Omdurman Battle of Omdurman battle_of_omdurman
+Omdurman is Geography
+23 / 30 )  Omdurman Omdurman omdurman
+Pretoria is Geography
+24 / 30 )  Pretoria Pretoria pretoria
+Mayfair is Geography
+25 / 30 )  Mayfair Mayfair mayfair
+Mark Twain is People
+26 / 30 )  Mark Twain Mark Twain mark_twain
+William McKinley is People
+27 / 30 )  President McKinley William McKinley william_mckinley
+Theodore Roosevelt is People
+28 / 30 )  Theodore Roosevelt Theodore Roosevelt theodore_roosevelt
+House of Commons of the United Kingdom is Geography
+29 / 30 )  House of Commons House of Commons of the United Kingdom british_house_of_commons
+Arthur Balfour is People
+30 / 30 )  Arthur Balfour Arthur Balfour arthur_james_balfour
+extract_triplet(Winston Churchill)
+Got GPT's response. String length : 6150
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Oxfordshire', 'Oxfordshire', 'oxfordshire']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Gallipoli campaign', 'Gallipoli campaign', 'dardanelles_campaign']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Neville Chamberlain', 'Neville Chamberlain', 'neville_chamberlain']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['iron curtain', 'Iron Curtain', 'iron_curtain']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['John Churchill, 1st Duke of Marlborough', 'John Churchill, 1st Duke of Marlborough', 'john_churchill']]
+subject_words:  []
+object_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+subject_words:  []
+object_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [['Herbert Kitchener', 'Herbert Kitchener, 1st Earl Kitchener', 'horatio_herbert_kitchener']]
+object_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Battle of Omdurman', 'Battle of Omdurman', 'battle_of_omdurman'], ['Omdurman', 'Omdurman', 'omdurman']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Mayfair', 'Mayfair', 'mayfair']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Mark Twain', 'Mark Twain', 'mark_twain']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['President McKinley', 'William McKinley', 'william_mckinley']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Theodore Roosevelt', 'Theodore Roosevelt', 'theodore_roosevelt']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['House of Commons', 'House of Commons of the United Kingdom', 'british_house_of_commons']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [['Arthur Balfour', 'Arthur Balfour', 'arthur_james_balfour']]
+object_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+['', 'Winston Churchill', 'and Clementine Hozier', 'married', 'in September 1908', '']
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [['Neville Chamberlain', 'Neville Chamberlain', 'neville_chamberlain']]
+object_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+subject_words:  []
+object_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  [['Hove', 'Hove', 'hove']]
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  [(None, 'Winston Churchill', 'winston_churchill')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+['("Abraham Lincoln", "named", "Andrew Johnson as military governor of Tennessee")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "hosts", "the Indianapolis 500")\n']
+
+['("Abraham Lincoln", "served as", "the 16th president of the United States")\n', '("Abraham Lincoln", "led the United States through", "the American Civil War")\n', '("Abraham Lincoln", "played a major role in", "the abolition of slavery")\n', '("Abraham Lincoln", "expanded", "the power of the federal government")\n', '("Abraham Lincoln", "modernized", "the U.S. economy")\n', '("Abraham Lincoln", "was born in", "a log cabin in Hodgenville, Kentucky")\n', '("Abraham Lincoln", "was self-educated and became", "a lawyer")\n', '("Abraham Lincoln", "became a leader of", "the new Republican Party")\n', '("Abraham Lincoln", "debated against", "Stephen A. Douglas")\n', '("Abraham Lincoln", "issued", "the Emancipation Proclamation")\n', '("Abraham Lincoln", "was assassinated by", "John Wilkes Booth")\n', '("Abraham Lincoln", "delivered", "the Gettysburg Address")\n', '("Abraham Lincoln", "is remembered as", "a martyr and a national hero")\n', '("Abraham Lincoln", "is often ranked as one of", "the greatest presidents in American history")\n', '("Abraham Lincoln", "promoted", "Thirteenth Amendment to the U.S. Constitution")\n', '("Abraham Lincoln", "suspended", "habeas corpus in Maryland and elsewhere")\n', '("Abraham Lincoln", "averted", "British intervention by defusing the Trent Affair")\n', '("Abraham Lincoln\'s", "father was", "Thomas Lincoln")\n', '("Abraham Lincoln\'s", "mother was", "Nancy Hanks Lincoln")\n', '("Abraham Lincoln", "moved with his family to", "Indiana")\n', '("Abraham Lincoln", "began his political career in", "the Illinois state legislature")\n', '("Abraham Lincoln", "was a member of", "the U.S. House of Representatives")\n', '("Abraham Lincoln", "enacted", "the Homestead Act")\n', '("Abraham Lincoln", "established", "the Department of Agriculture")\n', '("Abraham Lincoln", "signed", "the Pacific Railway Acts")\n', '("Abraham Lincoln", "focused on", "preserving the Union and abolishing slavery")\n', '("Abraham Lincoln", "appointed", "Salmon P. Chase as Chief Justice")\n', '("Abraham Lincoln\'s", "wife was", "Mary Todd")\n', '("Abraham Lincoln", "favored", "economic modernization")\n', '("Abraham Lincoln", "advocated for free-soil stance", "opposing both slavery and abolition")\n', '("Abraham Lincoln\'s", "assassination led to", "severe national mourning")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana", "hosts", "the Indianapolis 500")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana", "hosts", "the Indianapolis 500")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Heather Armstrong", "was from", "Salt Lake City, Utah")\n', '("Heather Armstrong", "studied at", "Brigham Young University")\n', '("Heather Armstrong", "majored in English in", "Utah")\n', '("Heather Armstrong", "appeared on", "Oprah")\n', '("Heather Armstrong", "was romantically involved with", "Pete Ashdown")\n', '("Pete Ashdown", "was a candidate for the", "U.S. Senate")\n', '("Pete Ashdown", "found", "Heather Armstrong dead")\n', '("Marilyn Monroe", "was born as", "Norma Jeane Mortenson")\n', '("Marilyn Monroe", "had a career as", "an American actress and model")\n', '("Marilyn Monroe", "became", "an emblem of the era\'s sexual revolution")\n', '("Marilyn Monroe", "films grossed", "$200 million by the time of her death")\n', '("Marilyn Monroe", "is ranked", "the sixth-greatest female screen legend by the American Film Institute")\n', '("Marilyn Monroe", "married", "James Dougherty")\n', '("Marilyn Monroe", "met", "photographer from the First Motion Picture Unit")\n', '("Marilyn Monroe", "had film contracts with", "20th Century Fox and Columbia Pictures")\n', '("Marilyn Monroe", "faced a scandal", "for posing for nude photographs")\n', '("Marilyn Monroe", "was one of", "the most marketable Hollywood stars in 1953")\n', '("Playboy", "featured", "Marilyn Monroe as the cover and centerfold")\n', '("Marilyn Monroe", "founded", "her own film production company in 1954")\n', '("Marilyn Monroe", "studied method acting under", "Lee Strasberg at the Actors Studio")\n', '("Marilyn Monroe", "was married to", "Arthur Miller")\n', '("Marilyn Monroe", "died from", "an overdose of barbiturates")\n', '("Marilyn Monroe", "mother was", "Gladys Pearl Baker")\n', '("Marilyn Monroe", "modeled after", "Rita Hayworth at Columbia")\n', '("Marilyn Monroe", "signed a contract with", "Ben Lyon, a 20th Century-Fox executive")\n', '("Marilyn Monroe", "observed film-making at", "the Actors\' Laboratory Theatre")\n', '("Marilyn Monroe", "worked with", "studio\'s head drama coach Natasha Lytess")\n', '("Ronald Reagan", "sent", "photographer David Conover to the factory Monroe worked at")\n', '("Marilyn Monroe", "modeled for", "Blue Book Model Agency")\n', '("Marilyn Monroe", "had a screen-test by", "Ben Lyon")\n', '("Marilyn Monroe", "selected stage name with", "Ben Lyon")\n', '("Darryl F. Zanuck", "was head executive at", "20th Century-Fox where Monroe worked")\n', '("Marilyn Monroe", "had role in", "All About Eve and The Asphalt Jungle")\n', '("Marilyn Monroe", "dating", "Joe DiMaggio in early 1952")\n', '("Marilyn Monroe", "romantically involved with", "Elia Kazan")\n', '("Joe DiMaggio", "was married to", "Marilyn Monroe")\n', '("Marilyn Monroe", "posed for nude calendar", "in 1949")\n', '("Marilyn Monroe", "received top billing in", "films after calendar scandal")\n', '("Marilyn Monroe", "starred in", "Niagara and Gentlemen Prefer Blondes")\n', '("Marilyn Monroe", "won", "Golden Globe for Best Actress for Some Like It Hot")\n', '("Marilyn Monroe", "last completed film was", "the drama The Misfits")\n', '("Marilyn Monroe", "was the protégée and mistress of", "Johnny Hyde")\n', '("Marilyn Monroe", "roles often included", "chorus girls, secretaries, or models")\n', '("Marilyn Monroe", "was often compared to", "Jean Harlow")\n', '("Marilyn Monroe", "created her public image", "strategically")\n', '("Marilyn Monroe", "sex symbol persona was crafted for", "the male gaze")\n', '("Marilyn Monroe", "professional respect was hindered by", "her public persona")\n', '("Marilyn Monroe", "death caused", "speculations and conspiracy theories")\n', '("Marilyn Monroe", "remains a pop culture icon", "long after her death")\n', '("Harlan Ellison", "was born in", "Cleveland, Ohio")\n', '("Harlan Ellison", "moved to", "Painesville, Ohio")\n', '("Harlan Ellison", "returned to", "Cleveland")\n', '("Harlan Ellison", "worked as", "tuna fisherman off the coast of Galveston")\n', '("Harlan Ellison", "drove truck in", "North Carolina")\n', '("Harlan Ellison", "attended", "Ohio State University")\n', '("Harlan Ellison", "underwent basic training at", "Fort Benning, Georgia")\n', '("Harlan Ellison", "served at", "Fort Knox, Kentucky")\n', '("Harlan Ellison", "participated in", "Selma to Montgomery marches")\n', '("Harlan Ellison", "had an altercation with", "Frank Sinatra")\n', '("Harlan Ellison", "friend of", "Isaac Asimov")\n', '("Harlan Ellison", "was a member of", "Screen Actors Guild")\n', '("Harlan Ellison", "sued by", "Stephen King")\n', '("Harlan Ellison", "sent a dead gopher to", "publisher")\n', '("Harlan Ellison", "engaged in a long-standing feud with", "Nancy A. Collins")\n', '("Harlan Ellison", "worked with", "Connie Willis")\n', '("Harlan Ellison", "had a website called", "harlanellison.com")\n', '("Harlan Ellison", "had a stroke on", "October 10, 2014")\n', '("Harlan Ellison", "died in", "Los Angeles")\n', '("Harlan Ellison", "estate is executed by", "J. Michael Straczynski")\n', '("Winston Churchill", "was born", "in Oxfordshire")\n', '("Winston Churchill", "served as", "Prime Minister of the United Kingdom")\n', '("Winston Churchill", "represented", "five constituencies as Member of Parliament")\n', '("Winston Churchill", "led", "the Conservative Party")\n', '("Winston Churchill", "was a member of", "the Liberal Party from 1904 to 1924")\n', '("Winston Churchill", "saw action in", "British India")\n', '("Winston Churchill", "saw action in", "the Mahdist War")\n', '("Winston Churchill", "saw action in", "the Second Boer War")\n', '("Winston Churchill", "served as", "President of the Board of Trade")\n', '("Winston Churchill", "served as", "Home Secretary")\n', '("Winston Churchill", "oversaw", "the Gallipoli campaign")\n', '("Winston Churchill", "served as", "Chancellor of the Exchequer in Stanley Baldwin\'s Conservative government")\n', '("Winston Churchill", "took the lead in calling for", "British rearmament against Nazi Germany")\n', '("Winston Churchill", "succeeded", "Neville Chamberlain as prime minister")\n', '("Winston Churchill", "oversaw", "British involvement in the Allied war effort against Axis powers")\n', '("Winston Churchill", "warned of", "iron curtain of Soviet influence in Europe")\n', '("Winston Churchill", "was awarded", "the Nobel Prize for Literature in 1953")\n', '("Winston Churchill", "resigned as", "prime minister in 1955")\n', '("Winston Churchill", "remains popular in", "the UK and the rest of the Anglosphere")\n', '("Winston Churchill", "is ranked as", "the greatest prime minister in British history by historians")\n', '("Winston Churchill", "was born at", "Blenheim Palace")\n', '("Winston Churchill", "was a descendant of", "John Churchill, 1st Duke of Marlborough")\n', '("Lord Randolph Churchill", "was", "Winston Churchill\'s father")\n', '("Jennie", "was", "Winston Churchill\'s mother")\n', '("Winston Churchill", "attended", "Harrow School")\n', '("Winston Churchill", "graduated from", "the Royal Military College, Sandhurst")\n', '("Winston Churchill", "wrote about", "his campaigns in The River War")\n', '("Herbert Kitchener", "employed", "Winston Churchill as a journalist")\n', '("Winston Churchill", "fought in", "the Battle of Omdurman")\n', '("Winston Churchill", "covered", "the Second Boer War as a war correspondent")\n', '("Winston Churchill", "served in", "the South African Light Horse regiment")\n', '("Winston Churchill", "was captured as a", "prisoner of war")\n', '("Winston Churchill", "escaped from", "a Boer POW camp")\n', '("Winston Churchill", "resigned his lieutenancy", "after the Boer War")\n', '("Winston Churchill", "rented", "a flat in London\'s Mayfair")\n', '("Winston Churchill", "stood as a Conservative candidate at", "Oldham")\n', '("Winston Churchill", "met", "Mark Twain")\n', '("Winston Churchill", "met", "President McKinley")\n', '("Winston Churchill", "met", "Theodore Roosevelt")\n', '("Winston Churchill", "took his seat in", "the House of Commons")\n', '("Winston Churchill", "associated with", "the Hughligans")\n', '("Winston Churchill", "was influenced by", "H. H. Asquith")\n', '("Winston Churchill", "defected to", "the Liberal Party")\n', '("Winston Churchill", "opposed", "the Aliens Bill")\n', '("Arthur Balfour", "announced protectionist legislation", "opposed by Winston Churchill")\n', '("Winston Churchill", "was selected as a Conservative candidate", "after his defection to the Liberals")\n', '("Winston Churchill", "proposed marriage to", "Clementine Hozier")\n', '("Winston Churchill", "arbitrated in", "an industrial dispute among ship-workers")\n', '("Winston Churchill", "worked with", "David Lloyd George on social reform")\n', '("Winston Churchill", "introduced the Mines Eight Hours Bill", "for miners")\n', '("Winston Churchill", "proposed", "the Labour Exchanges Bill")\n', '("Winston Churchill", "promoted", "unemployment insurance scheme")\n', '("Winston Churchill", "championed", "naval expansion")\n', '("Winston Churchill", "threatened to resign over", "naval expenditure")\n', '("Winston Churchill", "purchased shares in", "Anglo-Persian Oil Company for the navy")\n', '("Winston Churchill", "supported", "Irish Home Rule")\n', '("Winston Churchill", "became part of", "an all-party coalition government")\n', '("Winston Churchill", "resented", "demotion to Chancellor of the Duchy of Lancaster")\n', '("Winston Churchill", "resigned from", "the government")\n', '("Winston Churchill", "returned to", "active service with the army")\n', '("Winston Churchill", "commanded", "the 6th Royal Scots Fusiliers")\n', '("Winston Churchill", "was promoted to", "lieutenant-colonel")\n', '("Winston Churchill", "resigned his military commission", "in 1916")\n', '("Winston Churchill", "advocated for", "conscription in Ireland")\n', '("Winston Churchill", "wrote about", "mechanical power in warfare")\n', '("Winston Churchill", "was criticised for", "the Gallipoli disaster")\n', '("David Lloyd George", "appointed Winston Churchill", "Minister of Munitions")\n', '("Winston Churchill", "negotiated an end to", "a strike in munitions factories") \n', '("Winston Churchill", "supported", "the Representation of the People Act 1918 for women\'s voting rights")\n', '("Winston Churchill", "married", "Clementine Hozier in 1908")\n', '("Winston Churchill", "had his first child", "Diana in 1909")\n', '("Winston Churchill", "bought", "Chartwell in 1922")\n', '("Winston Churchill", "campaigned for", "a Conservative-Liberal coalition")\n', '("Winston Churchill", "stood as an independent anti-socialist", "in the Westminster Abbey by-election")\n', '("Winston Churchill", "stood as a Constitutionalist", "in the general election of 1924")\n', '("Neville Chamberlain", "succeeded by", "Winston Churchill")\n', '("Ernest Bevin", "was selected by", "Winston Churchill for applause on VE Day")\n', '("Winston Churchill", "has been depicted on stage and screen", "in various films and series")\n', '("Winston Churchill", "attended", "Brunswick School in Hove")\n', '("Winston Churchill", "narrowly passed the entrance exam for", "Harrow School")\n', '("Winston Churchill", "was unsuccessful in attempts to gain admittance to", "the Royal Military College, Sandhurst")\n', '("Churchill", "put forward", "operation Jupiter")\n', '("Churchill", "initiated", "the Western Desert campaign")\n', '("Churchill", "opposed", "anti-Semitism")\n', '("Churchill", "funded", "Operation Overlord with Admiralty funds")\n', '("Churchill", "called for", "European unity")\n']
+range(1, 275) 4
+['("Abraham Lincoln", "named", "Andrew Johnson as military governor of Tennessee")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "hosts", "the Indianapolis 500")\n']
+
+['("Abraham Lincoln", "served as", "the 16th president of the United States")\n', '("Abraham Lincoln", "led the United States through", "the American Civil War")\n', '("Abraham Lincoln", "played a major role in", "the abolition of slavery")\n', '("Abraham Lincoln", "expanded", "the power of the federal government")\n', '("Abraham Lincoln", "modernized", "the U.S. economy")\n', '("Abraham Lincoln", "was born in", "a log cabin in Hodgenville, Kentucky")\n', '("Abraham Lincoln", "was self-educated and became", "a lawyer")\n', '("Abraham Lincoln", "became a leader of", "the new Republican Party")\n', '("Abraham Lincoln", "debated against", "Stephen A. Douglas")\n', '("Abraham Lincoln", "issued", "the Emancipation Proclamation")\n', '("Abraham Lincoln", "was assassinated by", "John Wilkes Booth")\n', '("Abraham Lincoln", "delivered", "the Gettysburg Address")\n', '("Abraham Lincoln", "is remembered as", "a martyr and a national hero")\n', '("Abraham Lincoln", "is often ranked as one of", "the greatest presidents in American history")\n', '("Abraham Lincoln", "promoted", "Thirteenth Amendment to the U.S. Constitution")\n', '("Abraham Lincoln", "suspended", "habeas corpus in Maryland and elsewhere")\n', '("Abraham Lincoln", "averted", "British intervention by defusing the Trent Affair")\n', '("Abraham Lincoln\'s", "father was", "Thomas Lincoln")\n', '("Abraham Lincoln\'s", "mother was", "Nancy Hanks Lincoln")\n', '("Abraham Lincoln", "moved with his family to", "Indiana")\n', '("Abraham Lincoln", "began his political career in", "the Illinois state legislature")\n', '("Abraham Lincoln", "was a member of", "the U.S. House of Representatives")\n', '("Abraham Lincoln", "enacted", "the Homestead Act")\n', '("Abraham Lincoln", "established", "the Department of Agriculture")\n', '("Abraham Lincoln", "signed", "the Pacific Railway Acts")\n', '("Abraham Lincoln", "focused on", "preserving the Union and abolishing slavery")\n', '("Abraham Lincoln", "appointed", "Salmon P. Chase as Chief Justice")\n', '("Abraham Lincoln\'s", "wife was", "Mary Todd")\n', '("Abraham Lincoln", "favored", "economic modernization")\n', '("Abraham Lincoln", "advocated for free-soil stance", "opposing both slavery and abolition")\n', '("Abraham Lincoln\'s", "assassination led to", "severe national mourning")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana", "hosts", "the Indianapolis 500")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana", "hosts", "the Indianapolis 500")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Heather Armstrong", "was from", "Salt Lake City, Utah")\n', '("Heather Armstrong", "studied at", "Brigham Young University")\n', '("Heather Armstrong", "majored in English in", "Utah")\n', '("Heather Armstrong", "appeared on", "Oprah")\n', '("Heather Armstrong", "was romantically involved with", "Pete Ashdown")\n', '("Pete Ashdown", "was a candidate for the", "U.S. Senate")\n', '("Pete Ashdown", "found", "Heather Armstrong dead")\n', '("Marilyn Monroe", "was born as", "Norma Jeane Mortenson")\n', '("Marilyn Monroe", "had a career as", "an American actress and model")\n', '("Marilyn Monroe", "became", "an emblem of the era\'s sexual revolution")\n', '("Marilyn Monroe", "films grossed", "$200 million by the time of her death")\n', '("Marilyn Monroe", "is ranked", "the sixth-greatest female screen legend by the American Film Institute")\n', '("Marilyn Monroe", "married", "James Dougherty")\n', '("Marilyn Monroe", "met", "photographer from the First Motion Picture Unit")\n', '("Marilyn Monroe", "had film contracts with", "20th Century Fox and Columbia Pictures")\n', '("Marilyn Monroe", "faced a scandal", "for posing for nude photographs")\n', '("Marilyn Monroe", "was one of", "the most marketable Hollywood stars in 1953")\n', '("Playboy", "featured", "Marilyn Monroe as the cover and centerfold")\n', '("Marilyn Monroe", "founded", "her own film production company in 1954")\n', '("Marilyn Monroe", "studied method acting under", "Lee Strasberg at the Actors Studio")\n', '("Marilyn Monroe", "was married to", "Arthur Miller")\n', '("Marilyn Monroe", "died from", "an overdose of barbiturates")\n', '("Marilyn Monroe", "mother was", "Gladys Pearl Baker")\n', '("Marilyn Monroe", "modeled after", "Rita Hayworth at Columbia")\n', '("Marilyn Monroe", "signed a contract with", "Ben Lyon, a 20th Century-Fox executive")\n', '("Marilyn Monroe", "observed film-making at", "the Actors\' Laboratory Theatre")\n', '("Marilyn Monroe", "worked with", "studio\'s head drama coach Natasha Lytess")\n', '("Ronald Reagan", "sent", "photographer David Conover to the factory Monroe worked at")\n', '("Marilyn Monroe", "modeled for", "Blue Book Model Agency")\n', '("Marilyn Monroe", "had a screen-test by", "Ben Lyon")\n', '("Marilyn Monroe", "selected stage name with", "Ben Lyon")\n', '("Darryl F. Zanuck", "was head executive at", "20th Century-Fox where Monroe worked")\n', '("Marilyn Monroe", "had role in", "All About Eve and The Asphalt Jungle")\n', '("Marilyn Monroe", "dating", "Joe DiMaggio in early 1952")\n', '("Marilyn Monroe", "romantically involved with", "Elia Kazan")\n', '("Joe DiMaggio", "was married to", "Marilyn Monroe")\n', '("Marilyn Monroe", "posed for nude calendar", "in 1949")\n', '("Marilyn Monroe", "received top billing in", "films after calendar scandal")\n', '("Marilyn Monroe", "starred in", "Niagara and Gentlemen Prefer Blondes")\n', '("Marilyn Monroe", "won", "Golden Globe for Best Actress for Some Like It Hot")\n', '("Marilyn Monroe", "last completed film was", "the drama The Misfits")\n', '("Marilyn Monroe", "was the protégée and mistress of", "Johnny Hyde")\n', '("Marilyn Monroe", "roles often included", "chorus girls, secretaries, or models")\n', '("Marilyn Monroe", "was often compared to", "Jean Harlow")\n', '("Marilyn Monroe", "created her public image", "strategically")\n', '("Marilyn Monroe", "sex symbol persona was crafted for", "the male gaze")\n', '("Marilyn Monroe", "professional respect was hindered by", "her public persona")\n', '("Marilyn Monroe", "death caused", "speculations and conspiracy theories")\n', '("Marilyn Monroe", "remains a pop culture icon", "long after her death")\n', '("Harlan Ellison", "was born in", "Cleveland, Ohio")\n', '("Harlan Ellison", "moved to", "Painesville, Ohio")\n', '("Harlan Ellison", "returned to", "Cleveland")\n', '("Harlan Ellison", "worked as", "tuna fisherman off the coast of Galveston")\n', '("Harlan Ellison", "drove truck in", "North Carolina")\n', '("Harlan Ellison", "attended", "Ohio State University")\n', '("Harlan Ellison", "underwent basic training at", "Fort Benning, Georgia")\n', '("Harlan Ellison", "served at", "Fort Knox, Kentucky")\n', '("Harlan Ellison", "participated in", "Selma to Montgomery marches")\n', '("Harlan Ellison", "had an altercation with", "Frank Sinatra")\n', '("Harlan Ellison", "friend of", "Isaac Asimov")\n', '("Harlan Ellison", "was a member of", "Screen Actors Guild")\n', '("Harlan Ellison", "sued by", "Stephen King")\n', '("Harlan Ellison", "sent a dead gopher to", "publisher")\n', '("Harlan Ellison", "engaged in a long-standing feud with", "Nancy A. Collins")\n', '("Harlan Ellison", "worked with", "Connie Willis")\n', '("Harlan Ellison", "had a website called", "harlanellison.com")\n', '("Harlan Ellison", "had a stroke on", "October 10, 2014")\n', '("Harlan Ellison", "died in", "Los Angeles")\n', '("Harlan Ellison", "estate is executed by", "J. Michael Straczynski")\n', '("Winston Churchill", "was born", "in Oxfordshire")\n', '("Winston Churchill", "served as", "Prime Minister of the United Kingdom")\n', '("Winston Churchill", "represented", "five constituencies as Member of Parliament")\n', '("Winston Churchill", "led", "the Conservative Party")\n', '("Winston Churchill", "was a member of", "the Liberal Party from 1904 to 1924")\n', '("Winston Churchill", "saw action in", "British India")\n', '("Winston Churchill", "saw action in", "the Mahdist War")\n', '("Winston Churchill", "saw action in", "the Second Boer War")\n', '("Winston Churchill", "served as", "President of the Board of Trade")\n', '("Winston Churchill", "served as", "Home Secretary")\n', '("Winston Churchill", "oversaw", "the Gallipoli campaign")\n', '("Winston Churchill", "served as", "Chancellor of the Exchequer in Stanley Baldwin\'s Conservative government")\n', '("Winston Churchill", "took the lead in calling for", "British rearmament against Nazi Germany")\n', '("Winston Churchill", "succeeded", "Neville Chamberlain as prime minister")\n', '("Winston Churchill", "oversaw", "British involvement in the Allied war effort against Axis powers")\n', '("Winston Churchill", "warned of", "iron curtain of Soviet influence in Europe")\n', '("Winston Churchill", "was awarded", "the Nobel Prize for Literature in 1953")\n', '("Winston Churchill", "resigned as", "prime minister in 1955")\n', '("Winston Churchill", "remains popular in", "the UK and the rest of the Anglosphere")\n', '("Winston Churchill", "is ranked as", "the greatest prime minister in British history by historians")\n', '("Winston Churchill", "was born at", "Blenheim Palace")\n', '("Winston Churchill", "was a descendant of", "John Churchill, 1st Duke of Marlborough")\n', '("Lord Randolph Churchill", "was", "Winston Churchill\'s father")\n', '("Jennie", "was", "Winston Churchill\'s mother")\n', '("Winston Churchill", "attended", "Harrow School")\n', '("Winston Churchill", "graduated from", "the Royal Military College, Sandhurst")\n', '("Winston Churchill", "wrote about", "his campaigns in The River War")\n', '("Herbert Kitchener", "employed", "Winston Churchill as a journalist")\n', '("Winston Churchill", "fought in", "the Battle of Omdurman")\n', '("Winston Churchill", "covered", "the Second Boer War as a war correspondent")\n', '("Winston Churchill", "served in", "the South African Light Horse regiment")\n', '("Winston Churchill", "was captured as a", "prisoner of war")\n', '("Winston Churchill", "escaped from", "a Boer POW camp")\n', '("Winston Churchill", "resigned his lieutenancy", "after the Boer War")\n', '("Winston Churchill", "rented", "a flat in London\'s Mayfair")\n', '("Winston Churchill", "stood as a Conservative candidate at", "Oldham")\n', '("Winston Churchill", "met", "Mark Twain")\n', '("Winston Churchill", "met", "President McKinley")\n', '("Winston Churchill", "met", "Theodore Roosevelt")\n', '("Winston Churchill", "took his seat in", "the House of Commons")\n', '("Winston Churchill", "associated with", "the Hughligans")\n', '("Winston Churchill", "was influenced by", "H. H. Asquith")\n', '("Winston Churchill", "defected to", "the Liberal Party")\n', '("Winston Churchill", "opposed", "the Aliens Bill")\n', '("Arthur Balfour", "announced protectionist legislation", "opposed by Winston Churchill")\n', '("Winston Churchill", "was selected as a Conservative candidate", "after his defection to the Liberals")\n', '("Winston Churchill", "proposed marriage to", "Clementine Hozier")\n', '("Winston Churchill", "arbitrated in", "an industrial dispute among ship-workers")\n', '("Winston Churchill", "worked with", "David Lloyd George on social reform")\n', '("Winston Churchill", "introduced the Mines Eight Hours Bill", "for miners")\n', '("Winston Churchill", "proposed", "the Labour Exchanges Bill")\n', '("Winston Churchill", "promoted", "unemployment insurance scheme")\n', '("Winston Churchill", "championed", "naval expansion")\n', '("Winston Churchill", "threatened to resign over", "naval expenditure")\n', '("Winston Churchill", "purchased shares in", "Anglo-Persian Oil Company for the navy")\n', '("Winston Churchill", "supported", "Irish Home Rule")\n', '("Winston Churchill", "became part of", "an all-party coalition government")\n', '("Winston Churchill", "resented", "demotion to Chancellor of the Duchy of Lancaster")\n', '("Winston Churchill", "resigned from", "the government")\n', '("Winston Churchill", "returned to", "active service with the army")\n', '("Winston Churchill", "commanded", "the 6th Royal Scots Fusiliers")\n', '("Winston Churchill", "was promoted to", "lieutenant-colonel")\n', '("Winston Churchill", "resigned his military commission", "in 1916")\n', '("Winston Churchill", "advocated for", "conscription in Ireland")\n', '("Winston Churchill", "wrote about", "mechanical power in warfare")\n', '("Winston Churchill", "was criticised for", "the Gallipoli disaster")\n', '("David Lloyd George", "appointed Winston Churchill", "Minister of Munitions")\n', '("Winston Churchill", "negotiated an end to", "a strike in munitions factories") \n', '("Winston Churchill", "supported", "the Representation of the People Act 1918 for women\'s voting rights")\n', '("Winston Churchill", "married", "Clementine Hozier in 1908")\n', '("Winston Churchill", "had his first child", "Diana in 1909")\n', '("Winston Churchill", "bought", "Chartwell in 1922")\n', '("Winston Churchill", "campaigned for", "a Conservative-Liberal coalition")\n', '("Winston Churchill", "stood as an independent anti-socialist", "in the Westminster Abbey by-election")\n', '("Winston Churchill", "stood as a Constitutionalist", "in the general election of 1924")\n', '("Neville Chamberlain", "succeeded by", "Winston Churchill")\n', '("Ernest Bevin", "was selected by", "Winston Churchill for applause on VE Day")\n', '("Winston Churchill", "has been depicted on stage and screen", "in various films and series")\n', '("Winston Churchill", "attended", "Brunswick School in Hove")\n', '("Winston Churchill", "narrowly passed the entrance exam for", "Harrow School")\n', '("Winston Churchill", "was unsuccessful in attempts to gain admittance to", "the Royal Military College, Sandhurst")\n', '("Churchill", "put forward", "operation Jupiter")\n', '("Churchill", "initiated", "the Western Desert campaign")\n', '("Churchill", "opposed", "anti-Semitism")\n', '("Churchill", "funded", "Operation Overlord with Admiralty funds")\n', '("Churchill", "called for", "European unity")\n']
+range(1, 275) 4
+['("Abraham Lincoln", "named", "Andrew Johnson as military governor of Tennessee")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "hosts", "the Indianapolis 500")\n']
+
+['("Abraham Lincoln", "served as", "the 16th president of the United States")\n', '("Abraham Lincoln", "led the United States through", "the American Civil War")\n', '("Abraham Lincoln", "played a major role in", "the abolition of slavery")\n', '("Abraham Lincoln", "expanded", "the power of the federal government")\n', '("Abraham Lincoln", "modernized", "the U.S. economy")\n', '("Abraham Lincoln", "was born in", "a log cabin in Hodgenville, Kentucky")\n', '("Abraham Lincoln", "was self-educated and became", "a lawyer")\n', '("Abraham Lincoln", "became a leader of", "the new Republican Party")\n', '("Abraham Lincoln", "debated against", "Stephen A. Douglas")\n', '("Abraham Lincoln", "issued", "the Emancipation Proclamation")\n', '("Abraham Lincoln", "was assassinated by", "John Wilkes Booth")\n', '("Abraham Lincoln", "delivered", "the Gettysburg Address")\n', '("Abraham Lincoln", "is remembered as", "a martyr and a national hero")\n', '("Abraham Lincoln", "is often ranked as one of", "the greatest presidents in American history")\n', '("Abraham Lincoln", "promoted", "Thirteenth Amendment to the U.S. Constitution")\n', '("Abraham Lincoln", "suspended", "habeas corpus in Maryland and elsewhere")\n', '("Abraham Lincoln", "averted", "British intervention by defusing the Trent Affair")\n', '("Abraham Lincoln\'s", "father was", "Thomas Lincoln")\n', '("Abraham Lincoln\'s", "mother was", "Nancy Hanks Lincoln")\n', '("Abraham Lincoln", "moved with his family to", "Indiana")\n', '("Abraham Lincoln", "began his political career in", "the Illinois state legislature")\n', '("Abraham Lincoln", "was a member of", "the U.S. House of Representatives")\n', '("Abraham Lincoln", "enacted", "the Homestead Act")\n', '("Abraham Lincoln", "established", "the Department of Agriculture")\n', '("Abraham Lincoln", "signed", "the Pacific Railway Acts")\n', '("Abraham Lincoln", "focused on", "preserving the Union and abolishing slavery")\n', '("Abraham Lincoln", "appointed", "Salmon P. Chase as Chief Justice")\n', '("Abraham Lincoln\'s", "wife was", "Mary Todd")\n', '("Abraham Lincoln", "favored", "economic modernization")\n', '("Abraham Lincoln", "advocated for free-soil stance", "opposing both slavery and abolition")\n', '("Abraham Lincoln\'s", "assassination led to", "severe national mourning")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana", "hosts", "the Indianapolis 500")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana", "hosts", "the Indianapolis 500")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Indiana", "is located in", "the Midwestern region of the United States")\n', '("Indiana", "borders", "Lake Michigan")\n', '("Indiana", "borders", "Michigan")\n', '("Indiana", "borders", "Ohio")\n', '("Indiana", "borders", "the Ohio River")\n', '("Indiana", "is bordered by", "Kentucky")\n', '("Indiana", "is bordered by", "the Wabash River")\n', '("Indiana", "is bordered by", "Illinois")\n', '("Indiana", "has its capital and largest city as", "Indianapolis")\n', '("Indiana", "was admitted to", "the United States")\n', '("Indiana", "has indigenous peoples expelled by", "the U.S. government")\n', '("Indiana", "was named for being", "largely possessed by native tribes")\n', '("Indiana", "has settlement patterns reflecting cultural segmentation present in", "the Eastern United States")\n', '("Indiana", "has its northernmost tier settled by people from", "New England and New York")\n', '("Central Indiana", "was settled by migrants from", "the Mid-Atlantic states and adjacent Ohio")\n', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")\n', '("Indiana", "has a professional sports team called", "the NFL\'s Indianapolis Colts")\n', '("Indiana", "has a professional sports team called", "the NBA\'s Indiana Pacers")\n', '("Indiana\'s name", "means", "Land of the Indians")\n', '("Indiana Territory", "was created by legislation from", "the United States Congress")\n', '("The word Indiana", "dates from", "1768 and was used by a Philadelphia trading company")\n', '("Indiana Land Company", "was the first recorded use of the word", "Indiana")\n', '("The land claim in present-day West Virginia", "was named \'Indiana\' in honor of", "the Iroquois")\n', '("The U.S. Supreme Court", "denied the right to the claim to", "the Indiana Land Company")\n', '("A Hoosier", "is known as", "a native or resident of Indiana")\n', '("The term Hoosier", "originated in", "Virginia, Kentucky, the Carolinas, and Tennessee")\n', '("Indiana", "had its first inhabitants known as", "the Paleo-Indians")\n', '("The Angel Mounds", "was one such complex of", "the Mississippian culture")\n', '("Heather Armstrong", "was from", "Salt Lake City, Utah")\n', '("Heather Armstrong", "studied at", "Brigham Young University")\n', '("Heather Armstrong", "majored in English in", "Utah")\n', '("Heather Armstrong", "appeared on", "Oprah")\n', '("Heather Armstrong", "was romantically involved with", "Pete Ashdown")\n', '("Pete Ashdown", "was a candidate for the", "U.S. Senate")\n', '("Pete Ashdown", "found", "Heather Armstrong dead")\n', '("Marilyn Monroe", "was born as", "Norma Jeane Mortenson")\n', '("Marilyn Monroe", "had a career as", "an American actress and model")\n', '("Marilyn Monroe", "became", "an emblem of the era\'s sexual revolution")\n', '("Marilyn Monroe", "films grossed", "$200 million by the time of her death")\n', '("Marilyn Monroe", "is ranked", "the sixth-greatest female screen legend by the American Film Institute")\n', '("Marilyn Monroe", "married", "James Dougherty")\n', '("Marilyn Monroe", "met", "photographer from the First Motion Picture Unit")\n', '("Marilyn Monroe", "had film contracts with", "20th Century Fox and Columbia Pictures")\n', '("Marilyn Monroe", "faced a scandal", "for posing for nude photographs")\n', '("Marilyn Monroe", "was one of", "the most marketable Hollywood stars in 1953")\n', '("Playboy", "featured", "Marilyn Monroe as the cover and centerfold")\n', '("Marilyn Monroe", "founded", "her own film production company in 1954")\n', '("Marilyn Monroe", "studied method acting under", "Lee Strasberg at the Actors Studio")\n', '("Marilyn Monroe", "was married to", "Arthur Miller")\n', '("Marilyn Monroe", "died from", "an overdose of barbiturates")\n', '("Marilyn Monroe", "mother was", "Gladys Pearl Baker")\n', '("Marilyn Monroe", "modeled after", "Rita Hayworth at Columbia")\n', '("Marilyn Monroe", "signed a contract with", "Ben Lyon, a 20th Century-Fox executive")\n', '("Marilyn Monroe", "observed film-making at", "the Actors\' Laboratory Theatre")\n', '("Marilyn Monroe", "worked with", "studio\'s head drama coach Natasha Lytess")\n', '("Ronald Reagan", "sent", "photographer David Conover to the factory Monroe worked at")\n', '("Marilyn Monroe", "modeled for", "Blue Book Model Agency")\n', '("Marilyn Monroe", "had a screen-test by", "Ben Lyon")\n', '("Marilyn Monroe", "selected stage name with", "Ben Lyon")\n', '("Darryl F. Zanuck", "was head executive at", "20th Century-Fox where Monroe worked")\n', '("Marilyn Monroe", "had role in", "All About Eve and The Asphalt Jungle")\n', '("Marilyn Monroe", "dating", "Joe DiMaggio in early 1952")\n', '("Marilyn Monroe", "romantically involved with", "Elia Kazan")\n', '("Joe DiMaggio", "was married to", "Marilyn Monroe")\n', '("Marilyn Monroe", "posed for nude calendar", "in 1949")\n', '("Marilyn Monroe", "received top billing in", "films after calendar scandal")\n', '("Marilyn Monroe", "starred in", "Niagara and Gentlemen Prefer Blondes")\n', '("Marilyn Monroe", "won", "Golden Globe for Best Actress for Some Like It Hot")\n', '("Marilyn Monroe", "last completed film was", "the drama The Misfits")\n', '("Marilyn Monroe", "was the protégée and mistress of", "Johnny Hyde")\n', '("Marilyn Monroe", "roles often included", "chorus girls, secretaries, or models")\n', '("Marilyn Monroe", "was often compared to", "Jean Harlow")\n', '("Marilyn Monroe", "created her public image", "strategically")\n', '("Marilyn Monroe", "sex symbol persona was crafted for", "the male gaze")\n', '("Marilyn Monroe", "professional respect was hindered by", "her public persona")\n', '("Marilyn Monroe", "death caused", "speculations and conspiracy theories")\n', '("Marilyn Monroe", "remains a pop culture icon", "long after her death")\n', '("Harlan Ellison", "was born in", "Cleveland, Ohio")\n', '("Harlan Ellison", "moved to", "Painesville, Ohio")\n', '("Harlan Ellison", "returned to", "Cleveland")\n', '("Harlan Ellison", "worked as", "tuna fisherman off the coast of Galveston")\n', '("Harlan Ellison", "drove truck in", "North Carolina")\n', '("Harlan Ellison", "attended", "Ohio State University")\n', '("Harlan Ellison", "underwent basic training at", "Fort Benning, Georgia")\n', '("Harlan Ellison", "served at", "Fort Knox, Kentucky")\n', '("Harlan Ellison", "participated in", "Selma to Montgomery marches")\n', '("Harlan Ellison", "had an altercation with", "Frank Sinatra")\n', '("Harlan Ellison", "friend of", "Isaac Asimov")\n', '("Harlan Ellison", "was a member of", "Screen Actors Guild")\n', '("Harlan Ellison", "sued by", "Stephen King")\n', '("Harlan Ellison", "sent a dead gopher to", "publisher")\n', '("Harlan Ellison", "engaged in a long-standing feud with", "Nancy A. Collins")\n', '("Harlan Ellison", "worked with", "Connie Willis")\n', '("Harlan Ellison", "had a website called", "harlanellison.com")\n', '("Harlan Ellison", "had a stroke on", "October 10, 2014")\n', '("Harlan Ellison", "died in", "Los Angeles")\n', '("Harlan Ellison", "estate is executed by", "J. Michael Straczynski")\n', '("Winston Churchill", "was born", "in Oxfordshire")\n', '("Winston Churchill", "served as", "Prime Minister of the United Kingdom")\n', '("Winston Churchill", "represented", "five constituencies as Member of Parliament")\n', '("Winston Churchill", "led", "the Conservative Party")\n', '("Winston Churchill", "was a member of", "the Liberal Party from 1904 to 1924")\n', '("Winston Churchill", "saw action in", "British India")\n', '("Winston Churchill", "saw action in", "the Mahdist War")\n', '("Winston Churchill", "saw action in", "the Second Boer War")\n', '("Winston Churchill", "served as", "President of the Board of Trade")\n', '("Winston Churchill", "served as", "Home Secretary")\n', '("Winston Churchill", "oversaw", "the Gallipoli campaign")\n', '("Winston Churchill", "served as", "Chancellor of the Exchequer in Stanley Baldwin\'s Conservative government")\n', '("Winston Churchill", "took the lead in calling for", "British rearmament against Nazi Germany")\n', '("Winston Churchill", "succeeded", "Neville Chamberlain as prime minister")\n', '("Winston Churchill", "oversaw", "British involvement in the Allied war effort against Axis powers")\n', '("Winston Churchill", "warned of", "iron curtain of Soviet influence in Europe")\n', '("Winston Churchill", "was awarded", "the Nobel Prize for Literature in 1953")\n', '("Winston Churchill", "resigned as", "prime minister in 1955")\n', '("Winston Churchill", "remains popular in", "the UK and the rest of the Anglosphere")\n', '("Winston Churchill", "is ranked as", "the greatest prime minister in British history by historians")\n', '("Winston Churchill", "was born at", "Blenheim Palace")\n', '("Winston Churchill", "was a descendant of", "John Churchill, 1st Duke of Marlborough")\n', '("Lord Randolph Churchill", "was", "Winston Churchill\'s father")\n', '("Jennie", "was", "Winston Churchill\'s mother")\n', '("Winston Churchill", "attended", "Harrow School")\n', '("Winston Churchill", "graduated from", "the Royal Military College, Sandhurst")\n', '("Winston Churchill", "wrote about", "his campaigns in The River War")\n', '("Herbert Kitchener", "employed", "Winston Churchill as a journalist")\n', '("Winston Churchill", "fought in", "the Battle of Omdurman")\n', '("Winston Churchill", "covered", "the Second Boer War as a war correspondent")\n', '("Winston Churchill", "served in", "the South African Light Horse regiment")\n', '("Winston Churchill", "was captured as a", "prisoner of war")\n', '("Winston Churchill", "escaped from", "a Boer POW camp")\n', '("Winston Churchill", "resigned his lieutenancy", "after the Boer War")\n', '("Winston Churchill", "rented", "a flat in London\'s Mayfair")\n', '("Winston Churchill", "stood as a Conservative candidate at", "Oldham")\n', '("Winston Churchill", "met", "Mark Twain")\n', '("Winston Churchill", "met", "President McKinley")\n', '("Winston Churchill", "met", "Theodore Roosevelt")\n', '("Winston Churchill", "took his seat in", "the House of Commons")\n', '("Winston Churchill", "associated with", "the Hughligans")\n', '("Winston Churchill", "was influenced by", "H. H. Asquith")\n', '("Winston Churchill", "defected to", "the Liberal Party")\n', '("Winston Churchill", "opposed", "the Aliens Bill")\n', '("Arthur Balfour", "announced protectionist legislation", "opposed by Winston Churchill")\n', '("Winston Churchill", "was selected as a Conservative candidate", "after his defection to the Liberals")\n', '("Winston Churchill", "proposed marriage to", "Clementine Hozier")\n', '("Winston Churchill", "arbitrated in", "an industrial dispute among ship-workers")\n', '("Winston Churchill", "worked with", "David Lloyd George on social reform")\n', '("Winston Churchill", "introduced the Mines Eight Hours Bill", "for miners")\n', '("Winston Churchill", "proposed", "the Labour Exchanges Bill")\n', '("Winston Churchill", "promoted", "unemployment insurance scheme")\n', '("Winston Churchill", "championed", "naval expansion")\n', '("Winston Churchill", "threatened to resign over", "naval expenditure")\n', '("Winston Churchill", "purchased shares in", "Anglo-Persian Oil Company for the navy")\n', '("Winston Churchill", "supported", "Irish Home Rule")\n', '("Winston Churchill", "became part of", "an all-party coalition government")\n', '("Winston Churchill", "resented", "demotion to Chancellor of the Duchy of Lancaster")\n', '("Winston Churchill", "resigned from", "the government")\n', '("Winston Churchill", "returned to", "active service with the army")\n', '("Winston Churchill", "commanded", "the 6th Royal Scots Fusiliers")\n', '("Winston Churchill", "was promoted to", "lieutenant-colonel")\n', '("Winston Churchill", "resigned his military commission", "in 1916")\n', '("Winston Churchill", "advocated for", "conscription in Ireland")\n', '("Winston Churchill", "wrote about", "mechanical power in warfare")\n', '("Winston Churchill", "was criticised for", "the Gallipoli disaster")\n', '("David Lloyd George", "appointed Winston Churchill", "Minister of Munitions")\n', '("Winston Churchill", "negotiated an end to", "a strike in munitions factories") \n', '("Winston Churchill", "supported", "the Representation of the People Act 1918 for women\'s voting rights")\n', '("Winston Churchill", "married", "Clementine Hozier in 1908")\n', '("Winston Churchill", "had his first child", "Diana in 1909")\n', '("Winston Churchill", "bought", "Chartwell in 1922")\n', '("Winston Churchill", "campaigned for", "a Conservative-Liberal coalition")\n', '("Winston Churchill", "stood as an independent anti-socialist", "in the Westminster Abbey by-election")\n', '("Winston Churchill", "stood as a Constitutionalist", "in the general election of 1924")\n', '("Neville Chamberlain", "succeeded by", "Winston Churchill")\n', '("Ernest Bevin", "was selected by", "Winston Churchill for applause on VE Day")\n', '("Winston Churchill", "has been depicted on stage and screen", "in various films and series")\n', '("Winston Churchill", "attended", "Brunswick School in Hove")\n', '("Winston Churchill", "narrowly passed the entrance exam for", "Harrow School")\n', '("Winston Churchill", "was unsuccessful in attempts to gain admittance to", "the Royal Military College, Sandhurst")\n', '("Churchill", "put forward", "operation Jupiter")\n', '("Churchill", "initiated", "the Western Desert campaign")\n', '("Churchill", "opposed", "anti-Semitism")\n', '("Churchill", "funded", "Operation Overlord with Admiralty funds")\n', '("Churchill", "called for", "European unity")\n']
+range(1, 275) 4
+{'id': '5_1', 'Question': ' Which President appointed the person as military governor who came from the same state that, along with Kentucky, helped populate a region known for an annual motorsport event and shares its southern border with the Ohio River?\n', 'Answer': 'Abraham Lincoln', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Abraham Lincoln'}, {'label': 'B', 'text': 'Heather Armstrong'}, {'label': 'C', 'text': 'Marilyn Monroe'}, {'label': 'D', 'text': 'Harlan Ellison'}, {'label': 'E', 'text': 'Winston Churchill'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'abraham_lincoln'}, {'label': 'B', 'text': 'dooced'}, {'label': 'C', 'text': 'marilyn_monroe'}, {'label': 'D', 'text': 'harlan_ellison'}, {'label': 'E', 'text': 'winston_churchill'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who named Andrew Johnson as military governor of Tennessee during his presidency?\nA1: Abraham Lincoln\n\n', "2: Along with Kentucky, which other state's people settled Southern Indiana?\nA2: Tennessee\n\n", '3: Which U.S. state shares its southern border with the Ohio River?\nA3: Indiana\n\n', '4: Which state is known for hosting a famous annual motorsport race at the Speedway?\nA4: Indiana'], 'Hops_wiki': [('Abraham Lincoln', 'Tennessee'), ('Tennessee', 'Indiana'), ('Indiana', 'Ohio'), ('Indiana', 'Indianapolis')], 'Hops_cpnet': [('abraham_lincoln', 'tennessee'), ('tennessee', 'indiana'), ('indiana', 'ohio'), ('indiana', 'indianapolis')], 'Triplets': ['("Abraham Lincoln", "named", "Andrew Johnson as military governor of Tennessee")', '("Southern Indiana", "was settled by people from", "Kentucky and Tennessee")', '("Indiana", "borders", "the Ohio River")', '("Indiana", "hosts", "the Indianapolis 500")'], 'Referred_files': [{'name': 'Abraham Lincoln', 'line': 28}, {'name': 'Indiana', 'line': 16}, {'name': 'Indiana', 'line': 5}, {'name': 'Indiana', 'line': 19}], 'Question_triplet_answer': {100: [38, 68, 117, 220], 50: [25, 34, 46, 184], 25: [67, 121, 135, 263]}}
+time passed:  5981.244345664978
+Expected dollar:  0.005
+Indiana is Geography
+Michigan is Geography
+Abraham Lincoln's is People
+Mary Todd" is People
+Lake Michigan is Geography
+Winston Churchill is People
+the United States is Geography
+H. H. Asquith is People
+Abraham Lincoln is People
+Marilyn Monroe is People
+Cleveland is Geography
+Ohio is Geography
+Indianapolis is Geography
+Gallipoli is Geography
+Darryl F. Zanuck is People
+Theodore Roosevelt is People
+Stephen A. Douglas is People
+the Westminster Abbey is Geography
+John Wilkes Booth is Geography
+Ireland is Geography
+Isaac Asimov is People
+Los Angeles is Geography
+the Ohio River is Geography
+Fort Benning is Geography
+The Angel Mounds is Geography
+Salmon P. Chase is People
+Norma Jeane Mortenson is People
+Kentucky is Geography
+the Royal Military College is Geography
+Ernest Bevin is People
+Johnny Hyde is People
+Neville Chamberlain is People
+Winston Churchill" is People
+Ben Lyon is People
+Andrew Johnson is People
+Tennessee is Geography
+Herbert Kitchener is People
+David Lloyd George" is People
+Ronald Reagan is People
+the U.S. House of Representatives is Geography
+Clementine Hozier is People
+Screen Actors Guild is Incident
+Fort Knox is Geography
+U.S. is Geography
+Utah is Geography
+NBA is Geography
+Indiana Pacers is Incident
+Illinois is Geography
+Gladys Pearl Baker" is People
+UK is Geography
+Nancy A. Collins is People
+Blenheim Palace is Geography
+Blue Book Model Agency is People
+Virginia is Geography
+Carolinas is Geography
+U.S. Senate is Geography
+South African is Geography
+Elia Kazan is People
+Harrow School is Geography
+James Dougherty is People
+Thomas Lincoln is People
+the Wabash River is Geography
+Soviet is Geography
+The U.S. Supreme Court is Geography
+the Indiana Land Company" is Geography
+New England is Geography
+the Battle of Omdurman is Geography
+the Department of Agriculture is Geography
+Salt Lake City is Geography
+Oprah is People
+North Carolina is Geography
+Oxfordshire is Geography
+Painesville is Geography
+Stanley Baldwin's is People
+Galveston is Geography
+Arthur Balfour is People
+Rita Hayworth is People
+Mark Twain is People
+Stephen King is People
+the United Kingdom is Geography
+Maryland is Geography
+Philadelphia is Geography
+entities:  {'P.', 'George"', 'Baker"', 'Theodore', 'Darryl', 'George', 'Booth', 'Jeane', 'Frank', 'Fort', 'Painesville', 'Agriculture', 'Herbert', 'Dougherty', 'Joe', 'Land', 'Hayworth', 'Company"', 'Heather', 'Norma', 'Ohio', 'Churchill', 'Guild', 'H.', 'Thomas', 'Europe', 'Royal', 'Ben', 'A.', 'U.S.', 'Senate', 'Twain', 'Andrew', 'Balfour', 'Asimov', 'Galveston', 'Harrow', 'Asquith', 'Congress', 'Marilyn', 'Clementine', 'Department', 'Angel', 'Supreme', 'Fox', 'Wabash', 'Winston', 'Ronald', 'England', 'Monroe', 'Lake', 'Mounds', 'Baldwin', 'Mark', 'Zanuck', 'King', 'Palace', 'Indianapolis', 'Salmon', 'Soviet', 'Baker', 'Johnny', 'Pacers', 'Lyon', 'Neville', 'House', 'Agency', 'Mortenson', 'Blenheim', 'Gladys', 'Knox', 'Arthur', 'Kentucky', 'Screen', 'UK', 'Chamberlain', 'Tennessee', 'Abbey', 'Ireland', 'Columbia', 'Ellison', 'Douglas', 'North', 'Churchill"', 'Abraham', 'South', 'Carolina', "Lincoln's", 'Carolinas', 'Lincoln', 'James', 'Model', 'Collins', 'Hozier', 'Illinois', 'Philadelphia', 'Bevin', 'Utah', 'Conover', 'F.', 'Johnson', 'School', 'Military', 'Oxfordshire', 'Chase', 'Harlan', 'Michigan', 'Actors', 'John', 'Ashdown', 'Blue', 'Lloyd', 'River', 'Reagan', 'States', 'David', 'Elia', 'Ernest', 'Salt', 'Georgia', 'NBA', 'Armstrong', 'Isaac', 'Kingdom', 'Nancy', 'Kazan', 'Gallipoli', 'Mid', 'Stephen', 'African', 'Virginia', 'Omdurman', 'Montgomery', 'Hyde', 'College', 'Westminster', 'Court', 'Maryland', 'NFL', 'Representatives', 'Cleveland', 'Battle', 'United', 'Angeles', 'City', 'Eastern', 'Book', 'Los', 'Pearl', 'Roosevelt', 'Kitchener', 'Mary', 'Rita', 'Benning', 'Oprah', 'Stanley', 'Indiana', 'Todd"', "Baldwin's", 'New', 'Wilkes'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Indianapolis' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indianapolis
+Indiana Pacers
+Indianapolis 500
+Indianapolis Colts
+
+gpt_entity_particular(): entity list: 
+ ['Indianapolis', 'Indiana Pacers', 'Indianapolis 500', 'Indianapolis Colts']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ohio' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indiana
+Michigan
+Winston Churchill
+H. H. Asquith
+Harlan Ellison
+Cleveland
+Ohio River
+Indianapolis
+Abraham Lincoln
+Indianapolis 500
+Stephen A. Douglas
+Harland Ellison
+Fort Benning, Georgia
+Salmon P. Chase
+Kentucky
+Cleveland, Ohio
+American Civil War
+Marilyn Monroe
+Norma Jeane Mortenson
+20th Century-Fox
+Johnny Hyde
+Peter Ashdown
+Worcester Abbey
+Fort Benning, Georgia
+Marilyn Monroe
+Pete Ashdown
+Indiana Land Company
+Painesville, Ohio
+Frank Sinatra
+Nancy A. Collins
+David Conover
+Ronald Reagan
+Marilyn Monroe
+
+gpt_entity_particular(): entity list: 
+ ['Ohio River', 'David Conover', 'Worcester Abbey', 'Stephen A. Douglas', 'Harlan Ellison', 'Salmon P. Chase', 'Painesville, Ohio', 'Nancy A. Collins', '20th Century-Fox', 'Fort Benning, Georgia', 'Indianapolis', 'H. H. Asquith', 'Ronald Reagan', 'American Civil War', 'Marilyn Monroe', 'Peter Ashdown', 'Cleveland', 'Michigan', 'Cleveland, Ohio', 'Kentucky', 'Harland Ellison', 'Pete Ashdown', 'Indiana Land Company', 'Winston Churchill', 'Frank Sinatra', 'Indianapolis 500', 'Indiana', 'Abraham Lincoln', 'Johnny Hyde', 'Norma Jeane Mortenson']
+
+gpt_entity_particular(): filtered entity: 
+ ['Ohio River', 'Cleveland']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Tennessee' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indiana
+Michigan
+Lake Michigan
+Indianapolis
+Midwestern region
+Indianapolis 500
+Indianapolis Colts
+Ohio
+Ohio River
+Kentucky
+Mid-Atlantic states 
+Wabash River
+Paleo-Indians
+
+gpt_entity_particular(): entity list: 
+ ['Indianapolis', 'Ohio', 'Indianapolis 500', 'Ohio River', 'Michigan', 'Indiana', 'Lake Michigan', 'Indianapolis Colts', 'Midwestern region', 'Paleo-Indians', 'Kentucky', 'Wabash River', 'Mid-Atlantic states ']
+
+gpt_entity_particular(): filtered entity: 
+ ['Ohio', 'Kentucky']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Indiana' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indiana
+Michigan
+Lake Michigan
+Indianapolis
+Ohio
+Ohio River
+The Ohio River
+Indiana Territory
+Indiana Land Company
+New England
+New York
+Western Chicago
+Texas
+Salt Lake City
+Cleveland
+Columbus
+American\Mississippi a detail Hoosier
+Marilyn Monroe
+Abraham Lincoln
+Nobel Prize for Literature
+Ernest Bevin
+Churchill
+John Wilkes Booth
+Lincoln
+United States
+The United States
+UK
+America
+American
+European
+Union
+Salmon P. Chase
+
+gpt_entity_particular(): entity list: 
+ ['Salt Lake City', 'American\\Mississippi a detail Hoosier', 'Ohio River', 'Lake Michigan', 'Lincoln', 'Salmon P. Chase', 'Indiana Territory', 'United States', 'Indianapolis', 'Western Chicago', 'Ohio', 'Churchill', 'The United States', 'Texas', 'Marilyn Monroe', 'Cleveland', 'America', 'Michigan', 'Ernest Bevin', 'European', 'The Ohio River', 'New York', 'Union', 'Nobel Prize for Literature', 'John Wilkes Booth', 'UK', 'Indiana Land Company', 'American', 'Indiana', 'New England', 'Abraham Lincoln', 'Columbus']
+
+gpt_entity_particular(): filtered entity: 
+ ['United States', 'Indianapolis', 'The United States', 'Columbus']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Abraham Lincoln' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indiana
+Michigan
+wife
+Mary Todd
+lawsyer
+abolition
+slavery
+homestead Act
+United States
+president
+House of Representatives
+Chief Justice
+Salmon P. Chase
+John Wilkes Booth
+American Civil War
+new Republican Party
+Marilyn Monroe
+film production company
+Actress
+model
+Norma Jeane Mortenson
+Harlan Ellison
+Cleveland, Ohio
+Screen Actors Guild
+Fort Benning, Georgia
+Isaac Asimov
+Frank Sinatra
+
+gpt_entity_particular(): entity list: 
+ ['Screen Actors Guild', 'House of Representatives', 'Salmon P. Chase', 'Harlan Ellison', 'United States', 'film production company', 'Fort Benning, Georgia', 'slavery', 'homestead Act', 'American Civil War', 'Marilyn Monroe', 'new Republican Party', 'Mary Todd', 'Isaac Asimov', 'president', 'Michigan', 'Cleveland, Ohio', 'Actress', 'model', 'lawsyer', 'Chief Justice', 'John Wilkes Booth', 'wife', 'abolition', 'Frank Sinatra', 'Indiana', 'Norma Jeane Mortenson']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Harlan Ellison' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Harlan Ellison
+Isaac Asimov
+Frank Sinatra
+Cleveland, Ohio
+Los Angeles
+Fort Benning, Georgia
+Screen Actors Guild
+Fort Knox, Kentucky
+Painesville, Ohio
+
+gpt_entity_particular(): entity list: 
+ ['Frank Sinatra', 'Cleveland, Ohio', 'Screen Actors Guild', 'Los Angeles', 'Fort Knox, Kentucky', 'Harlan Ellison', 'Painesville, Ohio', 'Isaac Asimov', 'Fort Benning, Georgia']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Marilyn Monroe' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Marilyn Monroe
+Hollywood stars
+Canadian-based astrologer
+Norma Jeane Mortenson
+Johnny Hyde
+American actress
+Film production company
+Gladys Pearl Baker
+Nude photographs
+Blue Book Model Agency
+Screen test
+Elia Kazan
+Joe DiMaggio
+
+gpt_entity_particular(): entity list: 
+ ['Elia Kazan', 'Nude photographs', 'Film production company', 'Canadian-based astrologer', 'American actress', 'Gladys Pearl Baker', 'Hollywood stars', 'Screen test', 'Joe DiMaggio', 'Marilyn Monroe', 'Johnny Hyde', 'Blue Book Model Agency', 'Norma Jeane Mortenson']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Heather Armstrong' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Pete Ashdown
+Utah
+Salt Lake City
+Oprah
+
+gpt_entity_particular(): entity list: 
+ ['Salt Lake City', 'Utah', 'Pete Ashdown', 'Oprah']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Winston Churchill' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Winston Churchill
+H. H. Asquith
+Theodore Roosevelt
+Chancellor of the Duchy of Lancaster
+Member of Parliament
+Lieutenant-Colonel
+Nobel Prize for Literature in 1953
+House of Commons
+Harrow School
+Blenheim Palace
+British history
+Prime Minister
+Royal Military College, Sandhurst
+Conservative
+Home Secretary
+Chancellor of the Exchequer in Stanley Baldwin's Conservative government
+South African Light Horse regiment
+Battle of Omdurman
+The River War
+Prisoner of war
+Admiralty funds
+Operation Overlord
+Amnesty Bill
+Labor Exchanges Bill
+An all-party coalition government
+Iron Curtain
+Royal Military College, Sandhurst
+Clementine Hozier
+Salmon P. Chase as Chief Justice
+Minister of Munitions
+Unemployment insurance scheme
+Iron curtain of Soviet influence in Europe
+House of Commons
+Chancellor of the Duchy of Lancaster
+Gallipoli campaign
+Gallipoli disaster
+Gallipoli campaign
+Frank Sinatra
+Nancy A. Collins
+Screen Actors Guild
+Cleveland
+The River War
+Harlan Ellison
+Screen Actors Guild
+Cleveland
+An all-party coalition government
+An all-party coalition government
+Iron Curtain
+Aaronical Minister
+Instrumental in the formation of a union
+Operation Overlord
+Active service with the army
+Arbitrated in an industrial dispute among ship-workers
+Championed naval expansion
+British involvement in the Allied war effort against Axis powers
+Personality and personal life
+Winston Churchill
+Indiana
+Michigan
+Lake Michigan
+The Angel Mounds
+Marilyn Monroe
+Johnny Hyde
+Norma Jeane Mortenson
+Actress and model
+20th Century-Fox
+Columbia Pictures
+Her own film production company
+All About Eve and The Asphalt Jungle
+Joe DiMaggio
+Photographer David Conover
+Marilyn Monroe
+Blue Book Model Agency
+Material wealth
+Calendar scandal
+Sex symbol persona
+All About Eve and The Asphalt Jungle
+Norma Jeane Mortenson
+The free-soil stance
+Abraham Lincoln
+Mary Todd
+Salmon P. Chase as Chief Justice
+Abolition of slavery
+Pacific Railway Acts
+Land of the Indians
+Paleo-Indians
+Illinois state legislature
+The U.S. House of Representatives
+16th president of the United States
+Department of Agriculture
+Free-soil stance
+Habeas corpus in Maryland and elsewhere
+Abraham Lincoln and his assassination
+Operation Overlord and first inhabitants
+Midwestern region of the United States
+New England and New York
+The Ohio River
+Kentucky
+The Wabash River
+Illinois
+David Conover
+Barbiturates
+Violence and substance abuse
+Hugh Hefner's tabloid magazine
+Columbia Pictures
+David Conover
+Marilyn Monroe's guardians
+Her own film production company
+Samuel French
+Norma Jeane Mortenson
+
+gpt_entity_particular(): entity list: 
+ ['Columbia Pictures', 'Active service with the army', 'Harlan Ellison', 'Nancy A. Collins', 'Sex symbol persona', 'Conservative', 'Labor Exchanges Bill', 'Violence and substance abuse', 'British history', 'Royal Military College, Sandhurst', 'Gallipoli campaign', 'Home Secretary', 'Calendar scandal', 'Joe DiMaggio', 'Paleo-Indians', 'Johnny Hyde', 'Blenheim Palace', '16th president of the United States', 'Midwestern region of the United States', 'Her own film production company', 'Nobel Prize for Literature in 1953', 'South African Light Horse regiment', 'Minister of Munitions', 'Theodore Roosevelt', 'Member of Parliament', 'Admiralty funds', 'Land of the Indians', 'The Wabash River', 'An all-party coalition government', 'Abolition of slavery', 'Prisoner of war', 'All About Eve and The Asphalt Jungle', 'Gallipoli disaster', 'Kentucky', 'Amnesty Bill', 'Habeas corpus in Maryland and elsewhere', 'Abraham Lincoln', 'Salmon P. Chase as Chief Justice', 'Arbitrated in an industrial dispute among ship-workers', 'Screen Actors Guild', 'Lake Michigan', 'The U.S. House of Representatives', 'Championed naval expansion', 'New England and New York', 'Illinois', '20th Century-Fox', 'The Angel Mounds', 'H. H. Asquith', 'Actress and model', 'Illinois state legislature', 'House of Commons', 'Instrumental in the formation of a union', 'Michigan', 'Clementine Hozier', 'Iron curtain of Soviet influence in Europe', 'Abraham Lincoln and his assassination', 'Department of Agriculture', 'Chancellor of the Duchy of Lancaster', 'Winston Churchill', 'Photographer David Conover', "Hugh Hefner's tabloid magazine", 'Lieutenant-Colonel', 'The River War', 'Harrow School', 'Operation Overlord and first inhabitants', 'Norma Jeane Mortenson', 'Operation Overlord', 'Prime Minister', 'David Conover', 'Iron Curtain', 'Marilyn Monroe', 'Blue Book Model Agency', 'Mary Todd', 'Cleveland', 'British involvement in the Allied war effort against Axis powers', 'Barbiturates', 'Material wealth', 'The Ohio River', 'Samuel French', 'The free-soil stance', 'Free-soil stance', 'Unemployment insurance scheme', 'Frank Sinatra', 'Aaronical Minister', 'Personality and personal life', 'Pacific Railway Acts', 'Indiana', "Chancellor of the Exchequer in Stanley Baldwin's Conservative government", 'Battle of Omdurman', "Marilyn Monroe's guardians"]
+
+gpt_entity_particular(): filtered entity: 
+ ['Member of Parliament']
+After GPT, entity:  {'P.', 'George"', 'Baker"', 'Theodore', 'Darryl', 'George', 'Booth', 'Jeane', 'Ohio River', 'Frank', 'Fort', 'Painesville', 'Agriculture', 'Herbert', 'Dougherty', 'Joe', 'Land', 'Hayworth', 'Company"', 'Heather', 'Norma', 'Ohio', 'Churchill', 'The United States', 'Guild', 'H.', 'Thomas', 'Europe', 'Royal', 'Ben', 'A.', 'U.S.', 'Senate', 'Twain', 'Andrew', 'Balfour', 'Asimov', 'Galveston', 'Harrow', 'Asquith', 'Congress', 'Marilyn', 'Clementine', 'Department', 'Angel', 'Supreme', 'Fox', 'Wabash', 'Winston', 'Ronald', 'England', 'Monroe', 'Lake', 'Mounds', 'Baldwin', 'Mark', 'Zanuck', 'King', 'Palace', 'Indianapolis', 'Salmon', 'Soviet', 'Member of Parliament', 'Baker', 'Johnny', 'Pacers', 'Lyon', 'Neville', 'House', 'Agency', 'Mortenson', 'Blenheim', 'Gladys', 'Knox', 'Arthur', 'Kentucky', 'Screen', 'UK', 'Chamberlain', 'Tennessee', 'Abbey', 'Ireland', 'Columbia', 'Ellison', 'Douglas', 'North', 'Columbus', 'Churchill"', 'Abraham', 'South', 'Carolina', "Lincoln's", 'Carolinas', 'Lincoln', 'James', 'Model', 'Collins', 'Hozier', 'Illinois', 'Philadelphia', 'Bevin', 'Utah', 'Conover', 'F.', 'Johnson', 'School', 'Military', 'Oxfordshire', 'Chase', 'Harlan', 'Michigan', 'Actors', 'John', 'Ashdown', 'Blue', 'Lloyd', 'River', 'Reagan', 'States', 'David', 'Elia', 'Ernest', 'Salt', 'Georgia', 'NBA', 'Armstrong', 'Isaac', 'Kingdom', 'Nancy', 'Kazan', 'Gallipoli', 'Mid', 'Stephen', 'African', 'Virginia', 'Omdurman', 'Montgomery', 'United States', 'Hyde', 'College', 'Westminster', 'Court', 'Maryland', 'NFL', 'Representatives', 'Cleveland', 'Battle', 'United', 'Angeles', 'City', 'Eastern', 'Book', 'Los', 'Pearl', 'Roosevelt', 'Kitchener', 'Mary', 'Rita', 'Benning', 'Oprah', 'Stanley', 'Indiana', 'Todd"', "Baldwin's", 'New', 'Wilkes'}
+Total time:  414.7263536453247
+Entity conversion done on 5_1 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_5_1_entity_conversion_hash.json. Check the entity.
+ Which President appointed the person as 08B governor who came from the same state that, along with Kentucky, helped populate a region known for an annual motorsport event and shares its 008 border with the 04D River?
+
+
+
+Done. Check final_query/id_5_1_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_5_1_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_5_1_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_5_1_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_5_1_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_5_1_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_1_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

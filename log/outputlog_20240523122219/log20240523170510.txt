@@ -1,0 +1,713 @@
+Got argument: Mexico, 1, 1_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Mexico", "shares maritime borders with", "the Pacific Ocean")', 'start word': 'Mexico', 'end word': 'Pacific Ocean', 'source': {'name': 'Mexico', 'line': 5}, 'cpnet': {'start word': 'mexico', 'end word': 'pacific_ocean'}}
+next_word: Pacific Ocean
+
+utils/question.py extract_hops(Pacific Ocean, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Pacific_Ocean_info.json file
+generate_question(1_6, ['("Mexico", "shares maritime borders with", "the Pacific Ocean")', '("Pacific Ocean", "extends to", "Southern Ocean")'], ['Pacific Ocean', 'Southern Ocean'], [('Mexico', 'Pacific Ocean'), ('Pacific Ocean', 'Southern Ocean')], Southern Ocean, [{'name': 'Mexico', 'line': 5}, {'name': 'Pacific Ocean', 'line': 2}]) called
+GPT output is:  Q: To which ocean does Mexico extend its maritime borders that also connects to the extension of the Pacific Ocean?
+A: Southern Ocean
+final_choice(Southern Ocean, options = 5) started
+[]
+entity_type(Southern Ocean) called
+Southern Ocean is Geography
+check_matchscore(Southern Ocean, Marine realms):  0.0
+choose_by_wiki_recur(Marine realms)
+   Pages in Marine realms: ['Arctic realm', 'Central Indo-Pacific', 'Eastern Indo-Pacific', 'Indo-Pacific', 'Southern Ocean', 'Temperate Australasia', 'Temperate Northern Atlantic', 'Temperate Northern Pacific', 'Temperate South America', 'Temperate Southern Africa', 'Tropical Atlantic', 'Tropical Eastern Pacific', 'Western Indo-Pacific']
+      Western Indo-Pacific in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic']
+      Arctic realm in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic']
+      Temperate Northern Pacific in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean']
+      Temperate Northern Atlantic in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia']
+      Tropical Atlantic in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific']
+      Southern Ocean in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific', 'Indo-Pacific']
+      Temperate Australasia in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific', 'Indo-Pacific', 'Central Indo-Pacific']
+      Tropical Eastern Pacific in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific', 'Indo-Pacific', 'Central Indo-Pacific', 'Eastern Indo-Pacific']
+      Indo-Pacific in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific', 'Indo-Pacific', 'Central Indo-Pacific', 'Eastern Indo-Pacific', 'Temperate South America']
+      Central Indo-Pacific in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific', 'Indo-Pacific', 'Central Indo-Pacific', 'Eastern Indo-Pacific', 'Temperate South America']
+      Eastern Indo-Pacific in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific', 'Indo-Pacific', 'Central Indo-Pacific', 'Eastern Indo-Pacific', 'Temperate South America']
+      Temperate South America in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific', 'Indo-Pacific', 'Central Indo-Pacific', 'Eastern Indo-Pacific', 'Temperate South America', 'Temperate Southern Africa']
+      Temperate Southern Africa in ['Western Indo-Pacific', 'Arctic realm', 'Temperate Northern Pacific', 'Temperate Northern Atlantic', 'Tropical Atlantic', 'Southern Ocean', 'Temperate Australasia', 'Tropical Eastern Pacific', 'Indo-Pacific', 'Central Indo-Pacific', 'Eastern Indo-Pacific', 'Temperate South America', 'Temperate Southern Africa']
+   Upper category of Marine realms: ['Marine ecoregions', 'Biogeographic realms', 'Biogeography']
+choose_by_wiki_recur(Marine ecoregions)
+check_matchscore(Southern Ocean, Landforms of the Southern Ocean):  0.3
+choose_by_wiki_recur(Landforms of the Southern Ocean)
+   Pages in Landforms of the Southern Ocean: ['Southern Ocean', 'Kirkby Shoal', 'Larsen Bank', 'Pobeda Ice Island', 'Ross Canyon']
+      Pobeda Ice Island in ['Pobeda Ice Island', 'Larsen Bank', 'Kirkby Shoal', 'Ross Canyon']
+      Larsen Bank in ['Pobeda Ice Island', 'Larsen Bank', 'Kirkby Shoal', 'Ross Canyon']
+      Kirkby Shoal in ['Pobeda Ice Island', 'Larsen Bank', 'Kirkby Shoal', 'Ross Canyon']
+      Ross Canyon in ['Pobeda Ice Island', 'Larsen Bank', 'Kirkby Shoal', 'Ross Canyon']
+   Upper category of Landforms of the Southern Ocean: ['Geography of the Southern Ocean', 'Landforms by sea or ocean', 'Landforms of Antarctica by region']
+choose_by_wiki_recur(Geography of the Southern Ocean)
+check_matchscore(Southern Ocean, Oceans):  0.5
+choose_by_wiki_recur(Oceans)
+   Pages in Oceans: ['Ocean', 'Ocean temperature', 'Portal:Oceans', 'Sea', 'List of ancient oceans', 'Arctic Ocean', 'Atlantic Ocean', 'Beach nourishment', 'Borders of the oceans', 'Central Indo-Pacific', 'Chicxulub crater', 'Coastal hydrogeology', 'Ocean colonization', 'Wind generated current', 'Deep sea mining', 'Deep-sea mining regulations in Nauru', 'Deepsea mining in Namibia', 'Effects of climate change on oceans', 'European Atlas of the Seas', 'ICES Statistical Rectangles', 'Indian Ocean', 'Indo-Pacific', 'Land and water hemispheres', 'Lisbon Principles', 'Marine Day', 'Vector measuring current meter', 'Neutral density', 'Ocean development', 'Ocean Explorers Grand Slam', 'Ocean fisheries', 'Ocean governance', 'Ocean world', 'Oceanic dispersal', 'Oceans (film)', 'Open ocean convection', 'Pacific Ocean', 'Past sea level', 'Retroflect', 'Sea surface skin temperature', 'Seven Seas', 'Shallow water marine environment', 'Southern Ocean', 'Topographic Rossby waves', 'Western Indo-Pacific', 'World Oceans Day']
+      Land and water hemispheres in ['Land and water hemispheres', 'Borders of the oceans', 'Western Indo-Pacific', 'Retroflect']
+      Borders of the oceans in ['Land and water hemispheres', 'Borders of the oceans', 'Western Indo-Pacific', 'Retroflect']
+      Western Indo-Pacific in ['Land and water hemispheres', 'Borders of the oceans', 'Western Indo-Pacific', 'Retroflect', 'Beach nourishment']
+      Retroflect in ['Land and water hemispheres', 'Borders of the oceans', 'Western Indo-Pacific', 'Retroflect', 'Beach nourishment', 'Neutral density']
+      Beach nourishment in ['Land and water hemispheres', 'Borders of the oceans', 'Western Indo-Pacific', 'Retroflect', 'Beach nourishment', 'Neutral density']
+      Neutral density in ['Land and water hemispheres', 'Borders of the oceans', 'Western Indo-Pacific', 'Retroflect', 'Beach nourishment', 'Neutral density']
+['Indo-Pacific', 'Central Indo-Pacific', 'Land and water hemispheres', 'Retroflect', 'Beach nourishment', 'Neutral density']
+Ended after 2.5 hierarchy
+(2.5, ['Retroflect', 'Indo-Pacific', 'Central Indo-Pacific', 'Neutral density', 'Land and water hemispheres', 'Beach nourishment'])
+
+extract_info(Retroflect) Start.
+utils/preprocess.py extract_info(): Checking good links on Retroflect
+Atlantic Ocean is Geography
+1 / 30 )  Atlantic Ocean Atlantic Ocean atlantic_ocean
+Indian Ocean is Geography
+2 / 30 )  Indian Ocean Indian Ocean indian_ocean
+extract_triplet(Retroflect)
+Got GPT's response. String length : 854
+subject_words:  [(None, 'Retroflect', 'retroflect')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Atlantic Ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Retroflect', 'retroflect')]
+object_words:  []
+subject_words:  [(None, 'Retroflect', 'retroflect')]
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  []
+object_words:  []
+extract_info(Neutral-density filter) Start.
+utils/preprocess.py extract_info(): Checking good links on Neutral-density filter
+extract_triplet(Neutral-density filter)
+Got GPT's response. String length : 1966
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+['("Mexico", "shares maritime borders with", "the Pacific Ocean")\n', '("Pacific Ocean", "extends to", "Southern Ocean")\n']
+
+['("Mexico", "is officially called", "the United Mexican States")\n', '("Mexico", "is located in", "North America")\n', '("Mexico City", "is the capital of", "Mexico")\n', '("Mexico", "shares borders with", "the United States")\n', '("Mexico", "shares maritime borders with", "the Caribbean Sea")\n', '("Mexico", "shares maritime borders with", "the Gulf of Mexico")\n', '("Human presence in", "dates back to", "Mexico in 8,000 BC")\n', '("Teotihuacan", "hosted", "various civilizations")\n', '("Tenochtitlan", "was the capital of", "the Aztec Empire")\n', '("Benito Juárez", "led the Republican resistance against", "the French intervention in Mexico")\n', '("Chiapas", "experienced a rebellion amidst", "the signing of the North American Free Trade Agreement")\n', '("Mexico", "is a member of", "the World Trade Organization")\n', '("Mexico", "is a member of", "the Organization of American States")\n', '("The Valley of Mexico", "was part of", "the heartland of the Aztec Empire")\n', '("The State of Mexico", "was known as", "New Spain during the colonial era")\n', '("Humans", "domesticated", "beans in Mexico")\n', '("Xochicalco", "was an important political center during", "the early post-classic era")\n', '("Oaxaca", "was dominated by", "the Mixtec during the early post-classic era")\n', '("The Caribbean", "was a maritime border of", "Mexico")\n', '("Hernán Cortés", "conquered", "the Aztec Empire")\n', '("Havana", "connected to", "Veracruz via the Spanish Empire\'s trade route")\n', '("Manila", "connected to", "Acapulco via the Spanish Empire\'s trade route")\n', '("Napoleon Bonaparte", "invaded", "Spain, impacting Mexico\'s independence")\n', '("Antonio López de Santa Anna", "emerged as a national hero during", "the Pastry War")\n', '("Napoleon III", "sought to place Maximilian Habsburg as head of state in", "Mexico")\n', '("The Battle of Cinco de Mayo", "involved", "the French invasion attempt in Mexico")\n', '("Emiliano Zapata", "was a leading figure in", "the Mexican Revolution")\n', '("Pancho Villa", "was a Constitutionalist general", "in the Mexican Revolution")\n', '("Woodrow Wilson", "refused to recognize", "Victoriano Huerta\'s regime in Mexico")\n', '("John J. Pershing", "led a U.S. attempt to capture", "Pancho Villa")\n', '("Pacific Ocean", "extends from", "Arctic Ocean")\n', '("Pacific Ocean", "bounded by", "Americas")\n', '("Pacific Ocean", "largest division of", "World Ocean")\n', '("Water Hemisphere", "center is in", "Pacific Ocean")\n', '("Western Hemisphere", "center is in", "Pacific Ocean")\n', '("oceanic pole of inaccessibility", "is in", "Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "North Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "South Pacific Ocean")\n', '("Pacific Ocean", "informally divided by", "International Date Line")\n', '("North America", "coast off", "Northeast Pacific")\n', '("Oceania", "surrounds", "Southwest Pacific")\n', '("Challenger Deep", "is in", "Mariana Trench")\n', '("Challenger Deep", "deepest part of", "Pacific Ocean")\n', '("Mariana Trench", "located in", "northwestern Pacific")\n', '("Southern Hemisphere", "contains", "Horizon Deep")\n', '("Philippine Sea", "part of", "Pacific Ocean")\n', '("South China Sea", "part of", "Pacific Ocean")\n', '("East China Sea", "part of", "Pacific Ocean")\n', '("Sea of Japan", "part of", "Pacific Ocean")\n', '("Sea of Okhotsk", "part of", "Pacific Ocean")\n', '("Bering Sea", "part of", "Pacific Ocean")\n', '("Gulf of Alaska", "part of", "Pacific Ocean")\n', '("Tasman Sea", "part of", "Pacific Ocean")\n', '("Coral Sea", "part of", "Pacific Ocean")\n', '("Vasco Núñez de Balboa", "sighted", "Pacific Ocean")\n', '("Isthmus of Panama", "crossed by", "Vasco Núñez de Balboa")\n', '("Ferdinand Magellan", "coined current name of", "Pacific Ocean")\n', '("Australia", "bounded by", "Pacific Ocean")\n', '("atolls", "are in", "Pacific Ocean")\n', '("New Guinea", "bounded by", "Pacific Ocean")\n', '("Taiwan", "bounded by", "Pacific Ocean")\n', '("Retroflection", "was first used by", "Nils Bang")\n', '("Nils Bang", "was an oceanographer from", "University of Cape Town")\n', '("Agulhas Current", "retroflects at", "southern tip of Africa")\n', '("Agulhas Current", "becomes", "Agulhas Return Current")\n', '("Agulhas Return Current", "rejoins", "Indian Ocean Gyre")\n', '("North Brazil Current", "feeds", "North Equatorial Countercurrent")\n', '("North Brazil Current", "feeds", "North Equatorial Undercurrent")\n', '("North Brazil Current", "sheds anticyclonic rings impacting", "meridional transport in Atlantic Ocean")\n', '("Agulhas Retroflection", "occurs due to interactions with", "Antarctic Circumpolar Current")\n', '("Agulhas Retroflection", "contributes to net transport returned to", "Indian Ocean")\n', '("Agulhas Leakage", "transports water into", "South Atlantic Gyre")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Neutral-density filter", "reduces intensity of", "all wavelengths")\n', '("Neutral-density filter", "gives no changes in", "hue of color rendition")\n', '("Neutral-density filter", "can be", "colorless or grey")\n', '("Neutral-density filter", "reduces amount of light entering", "the lens")\n', '("Photographer", "selects combinations of", "aperture, exposure time, and sensor sensitivity")\n', '("Photographer", "achieves effects such as", "shallower depth of field or motion blur")\n', '("Photographer", "photographs with", "slow shutter speed")\n', '("Photographer", "uses", "neutral-density filter to prevent overexposure")\n', '("Neutral-density filter", "is equivalent of stopping down", "additional stops")\n', '("ND filter with optical density d", "transmitted optical power can be calculated", "Fractional transmittance")\n', '("Photographer", "uses larger aperture that is at or below", "the diffraction limit")\n', '("ND filter", "used to reduce", "depth of field")\n', '("Photographer", "can add", "ND filter to limit light")\n', '("Photographer", "sets", "shutter speed for desired motion")\n', '("Neutral-density filter", "controls exposure with", "photographic catadioptric lenses")\n', '("Neutral-density filter", "finds applications in", "high-precision laser experiments")\n', '("Neutral-density filter", "increases contrast for", "the Moon and planets")\n', '("Graduated ND filter", "intensity varies across", "the surface of the filter")\n', '("ND-filter wheel", "has progressively denser coating", "for varying transmission")\n', '("Neutral-density filter", "are not perfect", "do not reduce intensity of all wavelengths equally")\n', '("Variable ND filter", "created to counter", "different situations needing different filters")\n', '("Variable ND filter", "works by placing", "two polarizing filters together")\n', '("Extreme ND filters", "used to create", "ethereal looking landscapes and seascapes")\n', '("Neutral-density filter", "quantified by", "optical density or f-stop reduction")\n']
+range(1, 195) 2
+['("Mexico", "shares maritime borders with", "the Pacific Ocean")\n', '("Pacific Ocean", "extends to", "Southern Ocean")\n']
+
+['("Mexico", "is officially called", "the United Mexican States")\n', '("Mexico", "is located in", "North America")\n', '("Mexico City", "is the capital of", "Mexico")\n', '("Mexico", "shares borders with", "the United States")\n', '("Mexico", "shares maritime borders with", "the Caribbean Sea")\n', '("Mexico", "shares maritime borders with", "the Gulf of Mexico")\n', '("Human presence in", "dates back to", "Mexico in 8,000 BC")\n', '("Teotihuacan", "hosted", "various civilizations")\n', '("Tenochtitlan", "was the capital of", "the Aztec Empire")\n', '("Benito Juárez", "led the Republican resistance against", "the French intervention in Mexico")\n', '("Chiapas", "experienced a rebellion amidst", "the signing of the North American Free Trade Agreement")\n', '("Mexico", "is a member of", "the World Trade Organization")\n', '("Mexico", "is a member of", "the Organization of American States")\n', '("The Valley of Mexico", "was part of", "the heartland of the Aztec Empire")\n', '("The State of Mexico", "was known as", "New Spain during the colonial era")\n', '("Humans", "domesticated", "beans in Mexico")\n', '("Xochicalco", "was an important political center during", "the early post-classic era")\n', '("Oaxaca", "was dominated by", "the Mixtec during the early post-classic era")\n', '("The Caribbean", "was a maritime border of", "Mexico")\n', '("Hernán Cortés", "conquered", "the Aztec Empire")\n', '("Havana", "connected to", "Veracruz via the Spanish Empire\'s trade route")\n', '("Manila", "connected to", "Acapulco via the Spanish Empire\'s trade route")\n', '("Napoleon Bonaparte", "invaded", "Spain, impacting Mexico\'s independence")\n', '("Antonio López de Santa Anna", "emerged as a national hero during", "the Pastry War")\n', '("Napoleon III", "sought to place Maximilian Habsburg as head of state in", "Mexico")\n', '("The Battle of Cinco de Mayo", "involved", "the French invasion attempt in Mexico")\n', '("Emiliano Zapata", "was a leading figure in", "the Mexican Revolution")\n', '("Pancho Villa", "was a Constitutionalist general", "in the Mexican Revolution")\n', '("Woodrow Wilson", "refused to recognize", "Victoriano Huerta\'s regime in Mexico")\n', '("John J. Pershing", "led a U.S. attempt to capture", "Pancho Villa")\n', '("Pacific Ocean", "extends from", "Arctic Ocean")\n', '("Pacific Ocean", "bounded by", "Americas")\n', '("Pacific Ocean", "largest division of", "World Ocean")\n', '("Water Hemisphere", "center is in", "Pacific Ocean")\n', '("Western Hemisphere", "center is in", "Pacific Ocean")\n', '("oceanic pole of inaccessibility", "is in", "Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "North Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "South Pacific Ocean")\n', '("Pacific Ocean", "informally divided by", "International Date Line")\n', '("North America", "coast off", "Northeast Pacific")\n', '("Oceania", "surrounds", "Southwest Pacific")\n', '("Challenger Deep", "is in", "Mariana Trench")\n', '("Challenger Deep", "deepest part of", "Pacific Ocean")\n', '("Mariana Trench", "located in", "northwestern Pacific")\n', '("Southern Hemisphere", "contains", "Horizon Deep")\n', '("Philippine Sea", "part of", "Pacific Ocean")\n', '("South China Sea", "part of", "Pacific Ocean")\n', '("East China Sea", "part of", "Pacific Ocean")\n', '("Sea of Japan", "part of", "Pacific Ocean")\n', '("Sea of Okhotsk", "part of", "Pacific Ocean")\n', '("Bering Sea", "part of", "Pacific Ocean")\n', '("Gulf of Alaska", "part of", "Pacific Ocean")\n', '("Tasman Sea", "part of", "Pacific Ocean")\n', '("Coral Sea", "part of", "Pacific Ocean")\n', '("Vasco Núñez de Balboa", "sighted", "Pacific Ocean")\n', '("Isthmus of Panama", "crossed by", "Vasco Núñez de Balboa")\n', '("Ferdinand Magellan", "coined current name of", "Pacific Ocean")\n', '("Australia", "bounded by", "Pacific Ocean")\n', '("atolls", "are in", "Pacific Ocean")\n', '("New Guinea", "bounded by", "Pacific Ocean")\n', '("Taiwan", "bounded by", "Pacific Ocean")\n', '("Retroflection", "was first used by", "Nils Bang")\n', '("Nils Bang", "was an oceanographer from", "University of Cape Town")\n', '("Agulhas Current", "retroflects at", "southern tip of Africa")\n', '("Agulhas Current", "becomes", "Agulhas Return Current")\n', '("Agulhas Return Current", "rejoins", "Indian Ocean Gyre")\n', '("North Brazil Current", "feeds", "North Equatorial Countercurrent")\n', '("North Brazil Current", "feeds", "North Equatorial Undercurrent")\n', '("North Brazil Current", "sheds anticyclonic rings impacting", "meridional transport in Atlantic Ocean")\n', '("Agulhas Retroflection", "occurs due to interactions with", "Antarctic Circumpolar Current")\n', '("Agulhas Retroflection", "contributes to net transport returned to", "Indian Ocean")\n', '("Agulhas Leakage", "transports water into", "South Atlantic Gyre")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Neutral-density filter", "reduces intensity of", "all wavelengths")\n', '("Neutral-density filter", "gives no changes in", "hue of color rendition")\n', '("Neutral-density filter", "can be", "colorless or grey")\n', '("Neutral-density filter", "reduces amount of light entering", "the lens")\n', '("Photographer", "selects combinations of", "aperture, exposure time, and sensor sensitivity")\n', '("Photographer", "achieves effects such as", "shallower depth of field or motion blur")\n', '("Photographer", "photographs with", "slow shutter speed")\n', '("Photographer", "uses", "neutral-density filter to prevent overexposure")\n', '("Neutral-density filter", "is equivalent of stopping down", "additional stops")\n', '("ND filter with optical density d", "transmitted optical power can be calculated", "Fractional transmittance")\n', '("Photographer", "uses larger aperture that is at or below", "the diffraction limit")\n', '("ND filter", "used to reduce", "depth of field")\n', '("Photographer", "can add", "ND filter to limit light")\n', '("Photographer", "sets", "shutter speed for desired motion")\n', '("Neutral-density filter", "controls exposure with", "photographic catadioptric lenses")\n', '("Neutral-density filter", "finds applications in", "high-precision laser experiments")\n', '("Neutral-density filter", "increases contrast for", "the Moon and planets")\n', '("Graduated ND filter", "intensity varies across", "the surface of the filter")\n', '("ND-filter wheel", "has progressively denser coating", "for varying transmission")\n', '("Neutral-density filter", "are not perfect", "do not reduce intensity of all wavelengths equally")\n', '("Variable ND filter", "created to counter", "different situations needing different filters")\n', '("Variable ND filter", "works by placing", "two polarizing filters together")\n', '("Extreme ND filters", "used to create", "ethereal looking landscapes and seascapes")\n', '("Neutral-density filter", "quantified by", "optical density or f-stop reduction")\n']
+range(1, 195) 2
+['("Mexico", "shares maritime borders with", "the Pacific Ocean")\n', '("Pacific Ocean", "extends to", "Southern Ocean")\n']
+
+['("Mexico", "is officially called", "the United Mexican States")\n', '("Mexico", "is located in", "North America")\n', '("Mexico City", "is the capital of", "Mexico")\n', '("Mexico", "shares borders with", "the United States")\n', '("Mexico", "shares maritime borders with", "the Caribbean Sea")\n', '("Mexico", "shares maritime borders with", "the Gulf of Mexico")\n', '("Human presence in", "dates back to", "Mexico in 8,000 BC")\n', '("Teotihuacan", "hosted", "various civilizations")\n', '("Tenochtitlan", "was the capital of", "the Aztec Empire")\n', '("Benito Juárez", "led the Republican resistance against", "the French intervention in Mexico")\n', '("Chiapas", "experienced a rebellion amidst", "the signing of the North American Free Trade Agreement")\n', '("Mexico", "is a member of", "the World Trade Organization")\n', '("Mexico", "is a member of", "the Organization of American States")\n', '("The Valley of Mexico", "was part of", "the heartland of the Aztec Empire")\n', '("The State of Mexico", "was known as", "New Spain during the colonial era")\n', '("Humans", "domesticated", "beans in Mexico")\n', '("Xochicalco", "was an important political center during", "the early post-classic era")\n', '("Oaxaca", "was dominated by", "the Mixtec during the early post-classic era")\n', '("The Caribbean", "was a maritime border of", "Mexico")\n', '("Hernán Cortés", "conquered", "the Aztec Empire")\n', '("Havana", "connected to", "Veracruz via the Spanish Empire\'s trade route")\n', '("Manila", "connected to", "Acapulco via the Spanish Empire\'s trade route")\n', '("Napoleon Bonaparte", "invaded", "Spain, impacting Mexico\'s independence")\n', '("Antonio López de Santa Anna", "emerged as a national hero during", "the Pastry War")\n', '("Napoleon III", "sought to place Maximilian Habsburg as head of state in", "Mexico")\n', '("The Battle of Cinco de Mayo", "involved", "the French invasion attempt in Mexico")\n', '("Emiliano Zapata", "was a leading figure in", "the Mexican Revolution")\n', '("Pancho Villa", "was a Constitutionalist general", "in the Mexican Revolution")\n', '("Woodrow Wilson", "refused to recognize", "Victoriano Huerta\'s regime in Mexico")\n', '("John J. Pershing", "led a U.S. attempt to capture", "Pancho Villa")\n', '("Pacific Ocean", "extends from", "Arctic Ocean")\n', '("Pacific Ocean", "bounded by", "Americas")\n', '("Pacific Ocean", "largest division of", "World Ocean")\n', '("Water Hemisphere", "center is in", "Pacific Ocean")\n', '("Western Hemisphere", "center is in", "Pacific Ocean")\n', '("oceanic pole of inaccessibility", "is in", "Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "North Pacific Ocean")\n', '("Pacific Ocean", "subdivides into", "South Pacific Ocean")\n', '("Pacific Ocean", "informally divided by", "International Date Line")\n', '("North America", "coast off", "Northeast Pacific")\n', '("Oceania", "surrounds", "Southwest Pacific")\n', '("Challenger Deep", "is in", "Mariana Trench")\n', '("Challenger Deep", "deepest part of", "Pacific Ocean")\n', '("Mariana Trench", "located in", "northwestern Pacific")\n', '("Southern Hemisphere", "contains", "Horizon Deep")\n', '("Philippine Sea", "part of", "Pacific Ocean")\n', '("South China Sea", "part of", "Pacific Ocean")\n', '("East China Sea", "part of", "Pacific Ocean")\n', '("Sea of Japan", "part of", "Pacific Ocean")\n', '("Sea of Okhotsk", "part of", "Pacific Ocean")\n', '("Bering Sea", "part of", "Pacific Ocean")\n', '("Gulf of Alaska", "part of", "Pacific Ocean")\n', '("Tasman Sea", "part of", "Pacific Ocean")\n', '("Coral Sea", "part of", "Pacific Ocean")\n', '("Vasco Núñez de Balboa", "sighted", "Pacific Ocean")\n', '("Isthmus of Panama", "crossed by", "Vasco Núñez de Balboa")\n', '("Ferdinand Magellan", "coined current name of", "Pacific Ocean")\n', '("Australia", "bounded by", "Pacific Ocean")\n', '("atolls", "are in", "Pacific Ocean")\n', '("New Guinea", "bounded by", "Pacific Ocean")\n', '("Taiwan", "bounded by", "Pacific Ocean")\n', '("Retroflection", "was first used by", "Nils Bang")\n', '("Nils Bang", "was an oceanographer from", "University of Cape Town")\n', '("Agulhas Current", "retroflects at", "southern tip of Africa")\n', '("Agulhas Current", "becomes", "Agulhas Return Current")\n', '("Agulhas Return Current", "rejoins", "Indian Ocean Gyre")\n', '("North Brazil Current", "feeds", "North Equatorial Countercurrent")\n', '("North Brazil Current", "feeds", "North Equatorial Undercurrent")\n', '("North Brazil Current", "sheds anticyclonic rings impacting", "meridional transport in Atlantic Ocean")\n', '("Agulhas Retroflection", "occurs due to interactions with", "Antarctic Circumpolar Current")\n', '("Agulhas Retroflection", "contributes to net transport returned to", "Indian Ocean")\n', '("Agulhas Leakage", "transports water into", "South Atlantic Gyre")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Neutral-density filter", "reduces intensity of", "all wavelengths")\n', '("Neutral-density filter", "gives no changes in", "hue of color rendition")\n', '("Neutral-density filter", "can be", "colorless or grey")\n', '("Neutral-density filter", "reduces amount of light entering", "the lens")\n', '("Photographer", "selects combinations of", "aperture, exposure time, and sensor sensitivity")\n', '("Photographer", "achieves effects such as", "shallower depth of field or motion blur")\n', '("Photographer", "photographs with", "slow shutter speed")\n', '("Photographer", "uses", "neutral-density filter to prevent overexposure")\n', '("Neutral-density filter", "is equivalent of stopping down", "additional stops")\n', '("ND filter with optical density d", "transmitted optical power can be calculated", "Fractional transmittance")\n', '("Photographer", "uses larger aperture that is at or below", "the diffraction limit")\n', '("ND filter", "used to reduce", "depth of field")\n', '("Photographer", "can add", "ND filter to limit light")\n', '("Photographer", "sets", "shutter speed for desired motion")\n', '("Neutral-density filter", "controls exposure with", "photographic catadioptric lenses")\n', '("Neutral-density filter", "finds applications in", "high-precision laser experiments")\n', '("Neutral-density filter", "increases contrast for", "the Moon and planets")\n', '("Graduated ND filter", "intensity varies across", "the surface of the filter")\n', '("ND-filter wheel", "has progressively denser coating", "for varying transmission")\n', '("Neutral-density filter", "are not perfect", "do not reduce intensity of all wavelengths equally")\n', '("Variable ND filter", "created to counter", "different situations needing different filters")\n', '("Variable ND filter", "works by placing", "two polarizing filters together")\n', '("Extreme ND filters", "used to create", "ethereal looking landscapes and seascapes")\n', '("Neutral-density filter", "quantified by", "optical density or f-stop reduction")\n']
+range(1, 195) 2
+{'id': '1_6', 'Question': ' To which ocean does Mexico extend its maritime borders that also connects to the extension of the Pacific Ocean?\n', 'Answer': 'Southern Ocean', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Retroflect'}, {'label': 'B', 'text': 'Indo-Pacific'}, {'label': 'C', 'text': 'Indo-Pacific'}, {'label': 'D', 'text': 'Neutral-density filter'}, {'label': 'E', 'text': 'Southern Ocean'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'retroflect'}, {'label': 'B', 'text': 'indopacific'}, {'label': 'C', 'text': 'indopacific'}, {'label': 'D', 'text': 'neutral_density_filter'}, {'label': 'E', 'text': 'southern_ocean'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: With which ocean does Mexico share maritime borders?\nA1: Pacific Ocean\n\n', '2: To which ocean does the Pacific Ocean extend?\nA2: Southern Ocean'], 'Hops_wiki': [('Mexico', 'Pacific Ocean'), ('Pacific Ocean', 'Southern Ocean')], 'Hops_cpnet': [('mexico', 'pacific_ocean'), ('pacific_ocean', 'southern_ocean')], 'Triplets': ['("Mexico", "shares maritime borders with", "the Pacific Ocean")', '("Pacific Ocean", "extends to", "Southern Ocean")'], 'Referred_files': [{'name': 'Mexico', 'line': 5}, {'name': 'Pacific Ocean', 'line': 2}], 'Question_triplet_answer': {100: [79, 160], 50: [3, 129], 25: [37, 164]}}
+time passed:  523.370680809021
+Expected dollar:  0.005
+Americas is Geography
+Pacific Ocean is Geography
+Bering Sea is Geography
+Marshall Islands is Geography
+Easter Island is Geography
+ASEAN is Geography
+India is Geography
+South Africa is Geography
+Pacific is Geography
+Napoleon Bonaparte is People
+Spain is Geography
+Mexico is Geography
+Southern Hemisphere is Geography
+Horizon Deep is Geography
+Russia is Geography
+Madagascar is Geography
+Agulhas Current is Geography
+Agulhas Return Current is Geography
+New Guinea is Geography
+North America is Geography
+Northeast Pacific is Geography
+Japan is Geography
+World Ocean is Geography
+Sea of Okhotsk is Geography
+The Battle of Cinco de Mayo is Geography
+Vasco Núñez de Balboa is People
+Havana is Geography
+Veracruz is Geography
+Oceania is Geography
+Joe Biden is People
+University of Cape Town is Geography
+Oaxaca is Geography
+Maximilian Habsburg is People
+Chile is Geography
+Juan Fernández Islands is Geography
+the World Trade Organization is Geography
+International Date Line is Geography
+The State of Mexico is Geography
+Challenger Deep is Geography
+Emiliano Zapata is People
+Arctic Ocean is Geography
+Fiji is Geography
+South China Sea is Geography
+the Pacific Ocean is Geography
+Ferdinand Magellan is People
+Weimar Germany is Geography
+Philippine Sea is Geography
+Hawaii is Geography
+Indian Ocean is Geography
+Solomon Islands is Geography
+Australia is Geography
+the Gulf of Mexico is Geography
+Western Hemisphere is Geography
+Benito Juárez is People
+North Pacific Ocean is Geography
+John J. Pershing is People
+U.S. is Geography
+Teotihuacan is Geography
+The Caribbean is Geography
+the United Mexican States is Geography
+New Caledonia is Geography
+Pacific Oceans is Geography
+Hernán Cortés is People
+Southern Ocean is Geography
+the Organization of American States is Geography
+the Indian Ocean is Geography
+Isthmus of Panama is Geography
+Antonio López de Santa Anna is People
+Taiwan is Geography
+entities:  {'Hawaii', 'Africa', 'Date', 'Eastern', 'Indo-Pacific', 'Pershing', 'Joe', 'Oceania', 'Current', 'Havana', 'World', 'Organization', 'Okhotsk', 'Benito', 'Veracruz', 'Biden', 'Maximilian', 'Challenger', 'Western', 'State', 'Pacific', 'North', 'Return', 'Gulf', 'Cortés', 'Neutral-density', 'Santa', 'Teotihuacan', 'Caribbean', 'John', 'Germany', 'ASEAN', 'Núñez', 'Fernández', 'Zapata', 'Line', 'Ferdinand', 'New', 'Philippine', 'Hernán', 'Bonaparte', 'Trade', 'American', 'America', 'Sea', 'Guinea', 'Battle', 'Cape', 'Australia', 'Napoleon', 'Islands', 'Vasco', 'Juárez', 'Mexican', 'Caledonia', 'Madagascar', 'Solomon', 'Mayo', 'Americas', 'Deep', 'International', 'filter', 'Arctic', 'Russia', 'Cinco', 'China', 'States', 'United', 'López', 'Spain', 'Oceans', 'Magellan', 'Antonio', 'Taiwan', 'Agulhas', 'de', 'Oaxaca', 'Fiji', 'Chile', 'Indian', 'Northeast', 'University', 'Anna', 'Hemisphere', 'coast', 'Island', 'Horizon', 'Mexico', 'Weimar', 'Habsburg', 'Easter', 'Southern', 'Marshall', 'Tenochtitlan', 'Emiliano', 'Juan', 'U.S.', 'Japan', 'Panama', 'India', 'Ocean', 'Bering', 'South', 'Balboa', 'J.', 'Town', 'Retroflect', 'Isthmus'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Neutral-density filter' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Neutral-density filter
+
+gpt_entity_particular(): entity list: 
+ ['Neutral-density filter']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Indo-Pacific' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indo-Pacific
+Bering Sea
+Marshall Islands
+Easter Island
+ASEAN countries
+India
+South Africa
+500 species
+3,000 species
+Russia
+Agulhas Current
+Agulhas Return Current
+Quadrilateral Security Dialogue
+Japan
+neutral-density filter
+shutter speed
+Photographer
+Maritime borders
+Mexico
+Gulf of Mexico
+Seychelles
+IPEF
+Australia
+Philippine Sea
+Arctic Ocean
+South China Sea
+North Pacific Ocean
+New Guinea
+North America
+World Trade Organization
+Tropical Eastern Pacific
+Madagascar
+Oceania
+Solomon Islands
+Coral Triangle
+Southern Ocean
+Indo-West Pacific
+Indo-Pacific Asia
+Organization of American States
+Signed border
+Japan and Oceania
+Madagascar
+Organization of American States
+World Trade Organization
+CR friendship
+Indo-Pacific Economic Corridor
+U.S.–India Strategic Dialogue
+Isthmus of Panama
+Vasco Núñez de Balboa
+IPEF
+photographic catadioptric lenses
+Europeans
+Horizon Deep
+Antonio López de Santa Anna
+Napoleon Bonaparte
+Spain
+Russia
+Sea of Okhotsk
+Taiwan
+
+gpt_entity_particular(): entity list: 
+ ['500 species', 'Indo-Pacific', 'New Guinea', 'Isthmus of Panama', 'Bering Sea', 'Antonio López de Santa Anna', 'neutral-density filter', 'Russia', 'Seychelles', 'Vasco Núñez de Balboa', 'Napoleon Bonaparte', 'Oceania', 'Sea of Okhotsk', 'Marshall Islands', 'North America', 'Solomon Islands', 'Organization of American States', 'Signed border', 'Indo-Pacific Asia', 'Spain', 'Taiwan', 'Agulhas Current', 'Japan and Oceania', '3,000 species', 'Southern Ocean', 'Coral Triangle', 'Photographer', 'Quadrilateral Security Dialogue', 'Philippine Sea', 'Tropical Eastern Pacific', 'Maritime borders', 'Indo-West Pacific', 'shutter speed', 'Mexico', 'IPEF', 'photographic catadioptric lenses', 'Europeans', 'South Africa', 'Easter Island', 'CR friendship', 'Indo-Pacific Economic Corridor', 'Japan', 'World Trade Organization', 'India', 'Horizon Deep', 'ASEAN countries', 'Agulhas Return Current', 'Gulf of Mexico', 'U.S.–India Strategic Dialogue', 'Australia', 'South China Sea', 'Arctic Ocean', 'Madagascar', 'North Pacific Ocean']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Southern Ocean' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indo-Pacific
+Tropical Eastern Pacific
+Pacific Ocean
+Marshall Islands
+Easter Island
+ASEAN countries
+Photographer
+India
+South Africa
+500 species of reef building corals
+3,000 species of fish
+seas between Indian
+Napoleon Bonaparte
+Southern Hemisphere
+Horizon Deep
+Quadrilateral Security Dialogue
+Russia
+Madagascar
+Agulhas Current
+Agulhas Return Current
+Western Indo-Pacific
+New Guinea
+Northeast Pacific
+Graduated ND filter
+Mexico City
+Tenochtitlan
+Quadrilateral Security Dialogue
+World Ocean
+High-precision laser experiments
+Mexico
+Sea of Okhotsk
+The Battle of Cinco de Mayo
+Vasco Núñez de Balboa
+Spain
+Havana
+Veracruz
+Xochicalco
+Oceania
+Agulhas Return Current
+symbiotic link
+Cape Town
+Tonga
+Mexico
+Arctic Ocean
+NICHD
+Easter Island
+Philippine Sea
+ND-filter wheel
+Chile
+Juan Fernández Islands
+Mexico
+8,000 BC
+Mexican Revolution
+Challenger Deep
+NICHD
+Bering Sea
+John J. Pershing
+North Equatorial Undercurrent
+Fiji
+South China Sea
+North America
+Hernán Cortés
+Solomon Islands
+Coral Triangle
+Indo-West Pacific
+Indo-Pacific Economic Circle
+Japan
+Mongol Empire
+Ghengis Khan
+Neutral-density filter
+United Mexican States
+New Caledonia
+Umgeni River
+Mexico
+Vietnam
+Southern Ocean
+Organization of American States
+U.S.–India Strategic Dialogue of 2013
+
+gpt_entity_particular(): entity list: 
+ ['Neutral-density filter', 'Southern Hemisphere', 'Indo-Pacific', 'New Guinea', 'North Equatorial Undercurrent', 'Vietnam', 'Napoleon Bonaparte', 'High-precision laser experiments', 'Bering Sea', 'Russia', 'Umgeni River', 'Vasco Núñez de Balboa', 'symbiotic link', 'Sea of Okhotsk', 'Havana', 'Oceania', 'United Mexican States', 'Marshall Islands', 'North America', 'Solomon Islands', 'Organization of American States', 'Northeast Pacific', 'Spain', 'Veracruz', 'Juan Fernández Islands', 'Western Indo-Pacific', 'Agulhas Current', '8,000 BC', 'Fiji', 'ND-filter wheel', 'Indo-Pacific Economic Circle', 'Chile', 'Southern Ocean', 'Tonga', 'seas between Indian', 'Xochicalco', 'John J. Pershing', 'The Battle of Cinco de Mayo', 'Mongol Empire', 'Cape Town', 'Coral Triangle', 'Photographer', 'Quadrilateral Security Dialogue', 'Philippine Sea', '500 species of reef building corals', 'Graduated ND filter', 'Tropical Eastern Pacific', 'World Ocean', 'Mexican Revolution', 'Indo-West Pacific', 'Ghengis Khan', 'Mexico City', 'Mexico', 'South Africa', 'Easter Island', 'Tenochtitlan', 'NICHD', 'Horizon Deep', 'Japan', 'India', '3,000 species of fish', 'ASEAN countries', 'Agulhas Return Current', 'New Caledonia', 'South China Sea', 'Challenger Deep', 'Hernán Cortés', 'Pacific Ocean', 'Arctic Ocean', 'Madagascar', 'U.S.–India Strategic Dialogue of 2013']
+
+gpt_entity_particular(): filtered entity: 
+ ['World Ocean']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mexico
+Mexico City
+New Spain
+Mexican Revolution
+North America
+Gulf of Mexico
+North American Free Trade Agreement
+
+gpt_entity_particular(): entity list: 
+ ['New Spain', 'Mexican Revolution', 'Gulf of Mexico', 'Mexico City', 'North America', 'North American Free Trade Agreement', 'Mexico']
+
+gpt_entity_particular(): filtered entity: 
+ ['Mexican Revolution', 'Mexico City', 'North America']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Pacific Ocean' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Pacific Ocean
+Pacific Ocean
+Bering Sea
+Eastern Indo-Pacific
+Easter Island
+Central Indo-Pacific
+Eastern Indo-Pacific
+Quadrilateral Security Dialogue
+Pacific Ocean
+Pacific Ocean
+Oceanography
+Marshall Islands
+Easter Island
+Quadrilateral Security Dialogue
+Quadrilateral Security Dialogue
+Pacific Ocean
+Pacific Ocean
+Pacific Ocean
+Vanuatu
+Pacific Ocean
+Philippine Sea
+Fiji
+Pazifik
+Pacific Ocean
+Quadrilateral Security Dialogue
+Pacific Ocean
+Pacific Ocean
+Pacific Ocean
+Japan
+Marshall Islands
+Horizon Deep
+Pacific Ocean
+South China Sea
+Pacific Ocean
+North Pacific Ocean
+Quadrilateral Security Dialogue
+India
+Joe Biden
+Photographer
+Pacific Ocean
+Indian Ocean
+Centre
+Pacific Ocean
+Easter Island
+New Guinea
+Solomon Isalnds
+Coral Triangle
+Pacific Ocean
+Pacific Ocean
+Coral Triangle
+Neutral-density filter
+Pacific Ocean
+Madagascar
+Pacific Ocean
+Organization
+Oceania
+Neutral-density filter
+Pacific Ocean
+North Equatorial Undercurrent
+International Date Line
+Central Indo-Pacific
+Hernan Cortes
+Pacific Ocean
+Madagascar
+Madagascar
+Organization
+High-precision laser experiments
+Pacific Ocean
+Central Indo-Pacific
+Photographer
+Central Indo-Pacific
+Vasco Nunez de Balboa
+North Equatorial Undercurrent
+Central Indo-Pacific
+High-precision laser experiments
+International Date Line
+Joe Biden
+Photographer
+Horizon Deep
+Pacific Ocean
+Taiwan
+High-precision laser experiments
+Russia
+500 species of reef building corals
+
+gpt_entity_particular(): entity list: 
+ ['Neutral-density filter', 'Hernan Cortes', 'New Guinea', 'Pazifik', 'North Equatorial Undercurrent', 'Bering Sea', 'High-precision laser experiments', 'Russia', 'Eastern Indo-Pacific', 'Central Indo-Pacific', 'Pacific Ocean', 'Oceania', 'Marshall Islands', 'Organization', 'Oceanography', 'Taiwan', 'Fiji', 'International Date Line', 'Solomon Isalnds', 'Coral Triangle', 'Photographer', 'Quadrilateral Security Dialogue', 'Philippine Sea', '500 species of reef building corals', 'Indian Ocean', 'Vasco Nunez de Balboa', 'Easter Island', 'Joe Biden', 'Japan', 'Horizon Deep', 'India', 'Centre', 'Vanuatu', 'South China Sea', 'Madagascar', 'North Pacific Ocean']
+
+gpt_entity_particular(): filtered entity: 
+ ['New Guinea', 'International Date Line', 'Philippine Sea', 'Japan', 'South China Sea']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Retroflect' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Indo-Pacific
+Photographer
+neutral-density filter
+Marshall Islands
+Easter Island
+ASEAN countries
+India
+South Africa
+500 species of reef building corals
+3,000 species of fish
+India and South Africa
+Napoleon Bonaparte
+Spain
+Mexico's independence
+Southern Hemisphere
+Horizon Deep
+Russia
+Madagascar
+Agulhas Current
+Agulhas Return Current
+western and central Pacific Ocean
+New Guinea
+Pacific Ocean
+Northeast Pacific
+Graduated ND filter
+Intensity
+Mexico City
+Mexico
+Seychelles
+Quadrilateral Security Dialogue
+Japan
+World Ocean
+Americas
+Naoleon III
+Maximilian Habsburg
+ND-filter wheel
+Chile
+Mexico City
+Mexico
+International Date Line
+New Spain
+North America
+North Pacific Ocean
+temperate and polar regions of the Indian and Pacific oceans
+South China Sea
+Indian Ocean
+Australia
+Seychelles
+Southwest Pacific
+Vanuatu
+Solomon Islands
+Coral Triangle
+Indo-West Pacific or Indo-Pacific Asia
+Indian and Pacific Oceans
+Coral Triangle
+Southern Ocean
+Organization of American States
+Madagascar to Japan and Oceania
+Indo-Pacific Economic Corridor
+U.S.–India Strategic Dialogue of 2013
+Tropical Eastern Pacific along Pacific coast of Americas
+Joe Biden
+Indo-Pacific Economic Framework for Prosperity
+Ichthyology
+Hernán Cortés
+Vasco Núñez de Balboa
+Isthmus of Panama
+Altonio López de Santa Anna
+the Pastry War
+New Guinea
+Napoleon Bonaparte
+Spain
+the North American Free Trade Agreement
+Chiapas
+the signing of the North American Free Trade Agreement
+Taiwan
+
+gpt_entity_particular(): entity list: 
+ ['Americas', 'New Spain', 'Southern Hemisphere', 'Indo-Pacific', 'New Guinea', 'Madagascar to Japan and Oceania', 'Isthmus of Panama', 'Napoleon Bonaparte', 'neutral-density filter', 'Russia', 'western and central Pacific Ocean', 'Seychelles', 'Indo-West Pacific or Indo-Pacific Asia', 'Vasco Núñez de Balboa', 'Marshall Islands', 'North America', 'Maximilian Habsburg', 'Solomon Islands', 'temperate and polar regions of the Indian and Pacific oceans', 'Organization of American States', 'Northeast Pacific', 'U.S.–India Strategic Dialogue of 2013', 'Chiapas', 'Spain', 'Taiwan', 'Agulhas Current', 'the Pastry War', 'ND-filter wheel', 'International Date Line', 'Chile', 'India and South Africa', 'Naoleon III', 'Southern Ocean', 'the signing of the North American Free Trade Agreement', 'Coral Triangle', 'Photographer', 'Quadrilateral Security Dialogue', '500 species of reef building corals', 'Graduated ND filter', 'World Ocean', 'Intensity', 'Indo-Pacific Economic Framework for Prosperity', 'Indian Ocean', 'Mexico City', 'Mexico', 'South Africa', 'Easter Island', 'Southwest Pacific', 'Tropical Eastern Pacific along Pacific coast of Americas', 'Altonio López de Santa Anna', 'Joe Biden', 'Indo-Pacific Economic Corridor', 'Horizon Deep', 'Japan', 'India', '3,000 species of fish', 'Ichthyology', 'ASEAN countries', 'Agulhas Return Current', 'the North American Free Trade Agreement', 'South China Sea', "Mexico's independence", 'Australia', 'Indian and Pacific Oceans', 'Vanuatu', 'Hernán Cortés', 'Pacific Ocean', 'Madagascar', 'North Pacific Ocean']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Hawaii', 'Africa', 'Date', 'Eastern', 'Indo-Pacific', 'Pershing', 'Joe', 'Oceania', 'Current', 'Havana', 'World', 'Organization', 'Okhotsk', 'Benito', 'Veracruz', 'Biden', 'Maximilian', 'Challenger', 'International Date Line', 'Western', 'State', 'Pacific', 'North', 'Return', 'Gulf', 'Cortés', 'Philippine Sea', 'Neutral-density', 'Santa', 'Teotihuacan', 'Caribbean', 'John', 'Germany', 'ASEAN', 'Núñez', 'Fernández', 'Zapata', 'Mexico City', 'Line', 'Ferdinand', 'New', 'Philippine', 'Hernán', 'Bonaparte', 'Trade', 'American', 'America', 'Sea', 'Guinea', 'Battle', 'Cape', 'Australia', 'Napoleon', 'Islands', 'Vasco', 'Juárez', 'Mexican', 'Caledonia', 'South China Sea', 'Madagascar', 'Solomon', 'Mayo', 'Americas', 'Deep', 'International', 'filter', 'New Guinea', 'Arctic', 'Russia', 'Cinco', 'China', 'States', 'United', 'North America', 'López', 'Spain', 'Oceans', 'Magellan', 'Antonio', 'Taiwan', 'Agulhas', 'de', 'Oaxaca', 'Fiji', 'Chile', 'Indian', 'Northeast', 'University', 'Anna', 'Hemisphere', 'World Ocean', 'Mexican Revolution', 'coast', 'Island', 'Horizon', 'Mexico', 'Weimar', 'Habsburg', 'Easter', 'Southern', 'Marshall', 'Tenochtitlan', 'Emiliano', 'Juan', 'U.S.', 'Japan', 'Panama', 'India', 'Ocean', 'Bering', 'South', 'Balboa', 'J.', 'Town', 'Retroflect', 'Isthmus'}
+Total time:  335.53724360466003
+Entity conversion done on 1_6 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_6_entity_conversion_hash.json. Check the entity.
+ To which 01A does 03A extend its maritime borders that also connects to the extension of the 045 Ocean?
+
+
+
+Done. Check final_query/id_1_6_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_6_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_6_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_6_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_6_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_6_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_6_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

@@ -1,0 +1,302 @@
+Got argument: Immanuel Kant, 5, 5_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Hannah Arendt", "was influenced by", "the philosophy of Kant")', 'start word': 'Immanuel Kant', 'end word': 'Hannah Arendt', 'source': {'name': 'Hannah Arendt', 'line': 26}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'hannah_arendt'}}
+
+utils/question.py extract_hops(Hannah Arendt, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Hannah_Arendt_info.json file
+second_hop:  {'triplet': '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")', 'start word': 'Hannah Arendt', 'end word': 'Königsberg', 'source': {'name': 'Hannah Arendt', 'line': 5}, 'cpnet': {'start word': 'hannah_arendt', 'end word': 'königsberg'}}
+
+utils/question.py extract_hops(Königsberg, [], ['Immanuel Kant', 'Hannah Arendt']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Königsberg_info.json file
+third_hop1:  {'triplet': '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")', 'start word': 'Königsberg', 'end word': 'Frederick William, Elector of Brandenburg', 'source': {'name': 'Königsberg', 'line': 37}, 'cpnet': {'start word': 'königsberg', 'end word': 'great_elector'}}
+
+utils/question.py extract_hops(Königsberg, ['Frederick William, Elector of Brandenburg'], ['Immanuel Kant', 'Hannah Arendt']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Königsberg_info.json file
+third_hop2:  {'triplet': '("Königsberg", "was the easternmost large city in", "Germany before WW II")', 'start word': 'Königsberg', 'end word': 'Germany', 'source': {'name': 'Kaliningrad', 'line': 10}, 'cpnet': {'start word': 'königsberg', 'end word': 'germany'}}
+extraction_done:  True
+generate_question(5_3, ['("Hannah Arendt", "was influenced by", "the philosophy of Kant")', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")', '("Königsberg", "was the easternmost large city in", "Germany before WW II")'], ['Immanuel Kant', 'Hannah Arendt', 'Königsberg', 'Königsberg'], [('Immanuel Kant', 'Hannah Arendt'), ('Hannah Arendt', 'Königsberg'), ('Königsberg', 'Frederick William, Elector of Brandenburg'), ('Königsberg', 'Germany')], Immanuel Kant, [{'name': 'Hannah Arendt', 'line': 26}, {'name': 'Hannah Arendt', 'line': 5}, {'name': 'Königsberg', 'line': 37}, {'name': 'Kaliningrad', 'line': 10}]) called
+GPT output is:  Q: Which philosopher's ideas significantly influenced the thinker who moved to the city that was the easternmost large German city before World War II and also the capital during the rule of the Electors of Brandenburg in the Duchy of Prussia?
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called
+Immanuel Kant is People
+check_matchscore(Immanuel Kant, Idealists):  0.0
+choose_by_wiki_recur(Idealists)
+   Pages in Idealists: ['Abhinavagupta', 'Samuel Alexander', 'Devlet Bahçeli', 'George Berkeley', 'Brand Blanshard', 'George Blewett', 'Benjamin Paul Blood', 'John Elof Boodin', 'Walter Borg', 'Bernard Bosanquet (philosopher)', 'F. H. Bradley', 'Paul Brunton', 'Edward Caird', 'Ernst Cassirer', 'Frank Harold Cleobury', 'Arthur Collier', 'R. G. Collingwood', 'Benedetto Croce', 'Thomas Davidson (philosopher)', 'Dharmakirti', 'Dignāga', 'Julius Evola', 'Al-Farabi', 'Edward Douglas Fawcett', 'Eugen Fink', 'John Foster (philosopher)', 'Alexander Campbell Fraser', 'Gaudapada', 'Giovanni Gentile', 'Ionel Gherea', 'W. R. Boyce Gibson', 'Govindapada', 'T. H. Green', 'John Grote', 'Alastair Hannay', 'William Ernest Hocking', 'George Holmes Howison', 'James Jeans', 'Harold H. Joachim', 'Henry Jones (philosopher)', 'Immanuel Kant', 'Ladislav Klíma', 'David Kolb', 'James Lindsay (theologian)', 'A. A. Luce', 'John Stuart Mackenzie', 'Stewart Andrew McDowall', 'J. M. E. McTaggart', 'Franklin Merrell-Wolff', 'Ellen Mitchell (philosopher)', 'J. H. Muirhead', 'G. R. G. Mure', 'R. L. Nettleship', 'Michael Oakeshott', 'Rudolf Otto', 'Charles Sanders Peirce', 'Branislav Petronijević', 'Plato', 'Prajñakaragupta', 'Hastings Rashdall', 'Ratnakīrti', 'Eugen Relgis', 'Charles Renouvier', 'David George Ritchie', 'Howard Robinson', 'Josiah Royce', 'Śāntarakṣita', 'Alexander Schnell', 'Vasily Seseman', 'Andrew Seth Pringle-Pattison', 'Adi Shankara', 'May Sinclair', 'John Alexander Smith', 'William Ritchie Sorley', 'Bertrando Spaventa', 'Silvio Spaventa', 'Ugo Spirito', 'Timothy Sprigge', 'Günther Storck', 'Alfred Edward Taylor', 'Ralph Waldo Trine', 'Alparslan Türkeş', 'Tuğrul Türkeş', 'John Evan Turner', 'Utpaladeva', 'Vasubandhu', 'Sadhguru', 'William Wallace (philosopher)', 'Wang Ji (philosopher)', 'Wang Yangming', 'John Watson (philosopher)', 'Pamfil Yurkevich']
+      Henry Jones (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce']
+Henry Jones (philosopher) is People
+      John Evan Turner in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor']
+John Evan Turner is People
+      Giovanni Gentile in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie']
+Giovanni Gentile is People
+      A. A. Luce in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito']
+      Alfred Edward Taylor in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman']
+Alfred Edward Taylor is People
+      John Stuart Mackenzie in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett']
+      Ugo Spirito in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)']
+      Vasily Seseman in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair']
+      Edward Douglas Fawcett in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa']
+Edward Douglas Fawcett is People
+      James Lindsay (theologian) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb']
+James Lindsay (theologian) is People
+      May Sinclair in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada']
+May Sinclair is People
+      Silvio Spaventa in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis']
+Silvio Spaventa is People
+      David Kolb in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea']
+David Kolb is People
+      Gaudapada in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck']
+      Eugen Relgis in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson']
+Eugen Relgis is People
+      Ionel Gherea in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma']
+Ionel Gherea is People
+      Günther Storck in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury']
+Günther Storck is People
+      Howard Robinson in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli']
+      Ladislav Klíma in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)']
+      Frank Harold Cleobury in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)']
+      Devlet Bahçeli in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)']
+Devlet Bahçeli is People
+      Bernard Bosanquet (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)']
+Bernard Bosanquet (philosopher) is People
+      William Wallace (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş']
+      Ellen Mitchell (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita']
+      Wang Ji (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)']
+      Alparslan Türkeş in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada']
+Alparslan Türkeş is People
+      Śāntarakṣita in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith']
+Śāntarakṣita is People
+      Thomas Davidson (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall']
+Thomas Davidson (philosopher) is People
+      Govindapada in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall']
+      John Alexander Smith in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink']
+John Alexander Smith is People
+      Stewart Andrew McDowall in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş']
+Stewart Andrew McDowall is People
+      Eugen Fink in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević']
+Eugen Fink is People
+      Tuğrul Türkeş in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison']
+Tuğrul Türkeş is People
+      Branislav Petronijević in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru']
+Branislav Petronijević is People
+      Andrew Seth Pringle-Pattison in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)']
+      Sadhguru in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta']
+Sadhguru is People
+      John Watson (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie']
+John Watson (philosopher) is People
+      Abhinavagupta in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa']
+Abhinavagupta is People
+      David George Ritchie in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart']
+David George Ritchie is People
+      Bertrando Spaventa in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine']
+Bertrando Spaventa is People
+      J. M. E. McTaggart in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato']
+J. M. E. McTaggart is People
+      Ralph Waldo Trine in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure']
+Ralph Waldo Trine is People
+      Plato in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce']
+Plato is People
+      G. R. G. Mure in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce']
+G. R. G. Mure is People
+      Josiah Royce in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce', 'J. H. Muirhead']
+Josiah Royce is People
+      J. H. Muirhead in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce', 'J. H. Muirhead', 'Julius Evola']
+J. H. Muirhead is People
+      Julius Evola in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce', 'J. H. Muirhead', 'Julius Evola', 'F. H. Bradley']
+Julius Evola is People
+      F. H. Bradley in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce', 'J. H. Muirhead', 'Julius Evola', 'F. H. Bradley']
+F. H. Bradley is People
+['Thomas Davidson (philosopher)', 'Plato', 'Julius Evola', 'F. H. Bradley']
+Ended after 2.5 hierarchy
+(2.5, ['Thomas Davidson (philosopher)', 'F. H. Bradley', 'Julius Evola', 'Plato'])
+
+extract_info(Plato) Start.
+utils/preprocess.py extract_info(): Checking good links on Plato
+Platonic Academy is Geography
+1 / 30 )  Platonic Academy Platonic Academy plato's_academy
+Pythagoras is People
+2 / 30 )  Pythagoras Pythagoras pythagoras
+Heraclitus is People
+3 / 30 )  Heraclitus Heraclitus heraclitus
+Parmenides is People
+4 / 30 )  Parmenides Parmenides parmenides
+Socrates is People
+5 / 30 )  Socrates Socrates socrates
+Aristotle is People
+6 / 30 )  Aristotle Aristotle aristotle
+Alfred North Whitehead is People
+7 / 30 )  Alfred North Whitehead Alfred North Whitehead alfred_north_whitehead
+Seneca the Younger is People
+8 / 30 )  Seneca Seneca the Younger lucius_annaeus_seneca
+Aegina is Geography
+9 / 30 )  Aegina Aegina aegina
+Solon is People
+10 / 30 )  Solon Solon solon
+Sicily is Geography
+11 / 30 )  Sicily Sicily sicily
+Sulla is People
+12 / 30 )  Sulla Sulla sulla
+Syracuse, Sicily is Geography
+13 / 30 )  Syracuse Syracuse, Sicily syracusan
+Tertullian is People
+14 / 30 )  Tertullian Tertullian tertullian
+Leo Strauss is People
+15 / 30 )  Leo Strauss Leo Strauss straussian
+Xenophon is People
+16 / 30 )  Xenophon Xenophon xenophon
+Aristophanes is People
+17 / 30 )  Aristophanes Aristophanes aristophanes
+Cicero is People
+18 / 30 )  Cicero Cicero cicero
+Xenophanes is People
+19 / 30 )  Xenophanes Xenophanes xenophanes
+Zeno of Elea is People
+20 / 30 )  Zeno Zeno of Elea zeno_of_elea
+Anaxagoras is People
+21 / 30 )  Anaxagoras Anaxagoras anaxagoras
+Karl Popper is People
+22 / 30 )  Karl Popper Karl Popper karl_popper
+Geneva is Geography
+23 / 30 )  Geneva Geneva geneva
+Plotinus is People
+24 / 30 )  Plotinus Plotinus plotinus
+Constantinople is Geography
+25 / 30 )  Constantinople Constantinople constantinople
+Maimonides is People
+26 / 30 )  Maimonides Maimonides maimonides
+Avicenna is People
+27 / 30 )  Avicenna Avicenna avicenna
+Lorenzo de' Medici is People
+28 / 30 )  Lorenzo Lorenzo de' Medici lorenzo_de'medici
+Gottlob Frege is People
+29 / 30 )  Gottlob Frege Gottlob Frege fregean
+Albert Einstein is People
+30 / 30 )  Albert Einstein Albert Einstein albert_einstein
+extract_triplet(Plato)
+Got GPT's response. String length : 2100
+['Based on the given text, here are triplets that satisfy the requirements:']
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [(None, 'Plato', 'plato'), ['Platonic Academy', 'Platonic Academy', "plato's_academy"]]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Pythagoras', 'Pythagoras', 'pythagoras']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Heraclitus', 'Heraclitus', 'heraclitus']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Parmenides', 'Parmenides', 'parmenides']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Socrates', 'Socrates', 'socrates']]
+subject_words:  [['Aristotle', 'Aristotle', 'aristotle']]
+object_words:  [(None, 'Plato', 'plato')]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Alfred North Whitehead', 'Alfred North Whitehead', 'alfred_north_whitehead']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Seneca', 'Seneca the Younger', 'lucius_annaeus_seneca']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Aegina', 'Aegina', 'aegina']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Solon', 'Solon', 'solon']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Sulla', 'Sulla', 'sulla']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Syracuse', 'Syracuse, Sicily', 'syracusan']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Tertullian', 'Tertullian', 'tertullian']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Socrates', 'Socrates', 'socrates'], ['Leo Strauss', 'Leo Strauss', 'straussian']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Xenophon', 'Xenophon', 'xenophon']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Aristophanes', 'Aristophanes', 'aristophanes']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Cicero', 'Cicero', 'cicero']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Xenophanes', 'Xenophanes', 'xenophanes']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Zeno', 'Zeno of Elea', 'zeno_of_elea']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Anaxagoras', 'Anaxagoras', 'anaxagoras']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Karl Popper', 'Karl Popper', 'karl_popper']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Geneva', 'Geneva', 'geneva']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Plotinus', 'Plotinus', 'plotinus']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Constantinople', 'Constantinople', 'constantinople']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Maimonides', 'Maimonides', 'maimonides']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Avicenna', 'Avicenna', 'avicenna']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Lorenzo', "Lorenzo de' Medici", "lorenzo_de'medici"]]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Gottlob Frege', 'Gottlob Frege', 'fregean']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Albert Einstein', 'Albert Einstein', 'albert_einstein']]
+extract_info(Julius Evola) Start.
+utils/preprocess.py extract_info(): Checking good links on Julius Evola
+Nazi Germany is Geography
+1 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Rome is Geography
+2 / 30 )  Rome Rome rome
+Vienna is Geography
+3 / 30 )  Vienna Vienna vienna
+Sicily is Geography
+4 / 30 )  Sicily Sicily sicily
+Oscar Wilde is People
+5 / 30 )  Oscar Wilde Oscar Wilde oscar_wilde
+Friedrich Nietzsche is People
+6 / 30 )  Friedrich Nietzsche Friedrich Nietzsche friedrich_nietzsche
+Georg Wilhelm Friedrich Hegel is People
+7 / 30 )  post-Hegelian Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Max Stirner is People
+8 / 30 )  Max Stirner Max Stirner stirnerism
+Asiago is Geography
+9 / 30 )  Asiago Asiago asiago
+Carl Jung is People
+10 / 30 )  Carl Jung Carl Jung carl_jung
+Plato is People
+11 / 30 )  Plato Plato plato
+Thomas Aquinas is People
+12 / 30 )  Thomas Aquinas Thomas Aquinas thomas_aquinas
+Martin Heidegger is People
+13 / 30 )  Martin Heidegger Martin Heidegger martin_heidegger
+Benito Mussolini is People
+14 / 30 )  Benito Mussolini Benito Mussolini benito_mussolini
+Adolf Hitler is People
+15 / 30 )  Adolf Hitler Adolf Hitler adolf_hitler
+Sorrento is Geography
+16 / 30 )  Sorrento Sorrento sorrento
+Hermann Hesse is People
+17 / 30 )  Hermann Hesse Hermann Hesse hermann_hesse
+Cremona is Geography
+18 / 30 )  Cremona Cremona cremona
+Oswald Spengler is People
+19 / 30 )  Oswald Spengler Oswald Spengler oswald_spengler
+José Ortega y Gasset is People
+20 / 30 )  Ortega y Gasset José Ortega y Gasset jose_ortega_y_gasset
+Schutzstaffel is Geography
+21 / 30 )  Nazi SS Schutzstaffel schutzstaffel
+Berlin is Geography
+22 / 30 )  Berlin Berlin berlin
+Victor Emmanuel III is People
+23 / 30 )  King Victor Emmanuel III Victor Emmanuel III victor_emanuel_iii
+Heinrich Himmler is People
+24 / 30 )  Heinrich Himmler Heinrich Himmler heinrich_himmler
+Soviet Union is Geography
+25 / 30 )  Soviet Union Soviet Union soviet_union
+Knut Hamsun is People
+26 / 30 )  Knut Hamsun Knut Hamsun knut_hamsun
+Vidkun Quisling is People
+27 / 30 )  Vidkun Quisling Vidkun Quisling universism
+Charles Maurras is People
+28 / 30 )  Charles Maurras Charles Maurras maurras
+Dante Alighieri is People
+29 / 30 )  Dante Dante Alighieri dante_alighieri
+Otto von Bismarck is Geography
+30 / 30 )  Otto von Bismarck Otto von Bismarck otto_von_bismarck
+extract_triplet(Julius Evola)
+Got GPT's response. String length : 2685

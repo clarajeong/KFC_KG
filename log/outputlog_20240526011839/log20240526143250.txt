@@ -1,0 +1,973 @@
+Got argument: Tom Cruise, 4, 4_8, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Tom Cruise, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Tom_Cruise_info.json file
+first_hop:  {'triplet': '("Tom Cruise", "starred in films directed by", "John Woo")', 'start word': 'Tom Cruise', 'end word': 'John Woo', 'source': {'name': 'Tom Cruise', 'line': 17}, 'cpnet': {'start word': 'tom_cruise', 'end word': 'john_woo'}}
+
+utils/question.py extract_hops(John Woo, [], ['Tom Cruise']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/John_Woo_info.json file
+extract_info(John Woo) Start.
+utils/preprocess.py extract_info(): Checking good links on John Woo
+John Woo is People
+1 / 30 )  Lion Rock Productions John Woo john_woo
+Guangzhou is Geography
+2 / 30 )  Guangzhou Guangzhou guangzhou
+Mao Zedong is People
+3 / 30 )  Mao Zedong Mao Zedong mao_zedong
+Hong Kong is Geography
+4 / 30 )  Hong Kong Hong Kong hong_kong
+Bob Dylan is People
+5 / 30 )  Bob Dylan Bob Dylan bob_dylan
+Jackie Chan is People
+6 / 30 )  Jackie Chan Jackie Chan jackie_chan
+Tsui Hark is People
+7 / 30 )  Tsui Hark Tsui Hark tsui_hark
+Chow Yun-fat is People
+8 / 30 )  Chow Yun-Fat Chow Yun-fat chow_yun_fat
+John Travolta is People
+9 / 30 )  John Travolta John Travolta john_travolta
+Tom Cruise is People
+10 / 30 )  Tom Cruise Tom Cruise tom_cruise
+Appleseed  is People
+11 / 30 )  Appleseed Appleseed  johnny_appleseed
+Titanic is Geography
+12 / 30 )  Titanic Titanic titanic
+Osaka is Geography
+13 / 30 )  Osaka Osaka osaka
+Peacock  is Animal
+14 / 30 )  Peacock Peacock  peahen
+Jesus is People
+15 / 30 )  Jesus Jesus jesus
+Lawrence of Arabia  is People
+16 / 30 )  Lawrence of Arabia Lawrence of Arabia  thomas_edward_lawrence
+Akira Kurosawa is People
+17 / 30 )  Akira Kurosawa Akira Kurosawa akira_kurosawa
+extract_triplet(John Woo)
+Got GPT's response. String length : 1144
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  [['Hong Kong', 'Hong Kong', 'hong_kong']]
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  [['Lion Rock Productions', 'John Woo', 'john_woo']]
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  [['Guangzhou', 'Guangzhou', 'guangzhou']]
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  [['Bob Dylan', 'Bob Dylan', 'bob_dylan']]
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  [['Jackie Chan', 'Jackie Chan', 'jackie_chan']]
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  [['Tsui Hark', 'Tsui Hark', 'tsui_hark']]
+subject_words:  []
+object_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  [['Hong Kong', 'Hong Kong', 'hong_kong']]
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [['John Travolta', 'John Travolta', 'john_travolta']]
+object_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  []
+subject_words:  [(None, 'John Woo', 'john_woo'), ['Lion Rock Productions', 'John Woo', 'john_woo']]
+object_words:  [['Jesus', 'Jesus', 'jesus']]
+subject_words:  [(None, 'John Woo', 'john_woo')]
+object_words:  [['Lawrence of Arabia', 'Lawrence of Arabia ', 'thomas_edward_lawrence'], ['Akira Kurosawa', 'Akira Kurosawa', 'akira_kurosawa']]
+second_hop:  {'triplet': '("John Woo", "directed films before leaving", "Hong Kong")', 'start word': 'John Woo', 'end word': 'Hong Kong', 'source': {'name': 'John Woo', 'line': 13}, 'cpnet': {'start word': 'john_woo', 'end word': 'hong_kong'}}
+
+utils/question.py extract_hops(Hong Kong, [], ['Tom Cruise', 'John Woo']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Hong_Kong_info.json file
+third_hop:  {'triplet': '("vascular plants", "of over 3,000 species occur in", "Hong Kong")', 'start word': 'Hong Kong', 'end word': 'Vascular plant', 'source': {'name': 'Hong Kong', 'line': 35}, 'cpnet': {'start word': 'hong_kong', 'end word': 'vascular_plant'}}
+
+utils/question.py extract_hops(Vascular plant, [], ['Tom Cruise', 'John Woo', 'Hong Kong']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Vascular_plant_info.json file
+extract_info(Vascular plant) Start.
+utils/preprocess.py extract_info(): Checking good links on Vascular plant
+Embryophyte is Animal
+1 / 30 )  land plants Embryophyte embryophyte
+Lycopodiopsida is Animal
+2 / 30 )  clubmosses Lycopodiopsida lycopodiopsida
+Equisetum is Animal
+3 / 30 )  horsetails Equisetum equisetum
+Fern is Animal
+4 / 30 )  ferns Fern fern
+Gymnosperm is Animal
+5 / 30 )  gymnosperms Gymnosperm gymnosperm
+Rhyniophyte is Animal
+6 / 30 )  rhyniophytes Rhyniophyte rhyniophyte
+Lycophyte is Animal
+7 / 30 )  Lycopodiophyta Lycophyte lycophyte
+Zosterophyll is Animal
+8 / 30 )  Zosterophyllophyta Zosterophyll zosterophyll
+Cladoxylopsida is Animal
+9 / 30 )  Cladoxylopsida Cladoxylopsida cladoxylopsid
+Equisetidae is Animal
+10 / 30 )  Equisetopsida Equisetidae equisetidae
+Marattiaceae is Animal
+11 / 30 )  Marattiopsida Marattiaceae marattiaceae
+Ophioglossidae is Animal
+12 / 30 )  Psilotopsida Ophioglossidae psilotophyta
+Leptosporangiate fern is Animal
+13 / 30 )  Pteridopsida Leptosporangiate fern leptosporangiate_fern
+Progymnosperm is Animal
+14 / 30 )  Progymnospermophyta Progymnosperm progymnosperm
+Cycad is Animal
+15 / 30 )  Cycadophyta Cycad cycad
+Ginkgoopsida is Animal
+16 / 30 )  Ginkgophyta Ginkgoopsida ginkgophyta
+Gnetophyta is Animal
+17 / 30 )  Gnetophyta Gnetophyta gnetophyta
+Conifer is Animal
+18 / 30 )  Pinophyta Conifer conifer
+Flowering plant is Animal
+19 / 30 )  Magnoliophyta Flowering plant flowering_plant
+Pteridospermatophyta is Animal
+20 / 30 )  Pteridospermatophyta Pteridospermatophyta pteridospermatophyta
+Euphyllophyte is Animal
+21 / 30 )  euphyllophyte Euphyllophyte euphyllophyte
+Pauthecophyton  is Animal
+22 / 30 )  Pauthecophyton Pauthecophyton  tracheobionta
+Seed plant is Animal
+23 / 30 )  Spermatophytes Seed plant seed_plant
+extract_triplet(Vascular plant)
+Got GPT's response. String length : 2434
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  [['clubmosses', 'Lycopodiopsida', 'lycopodiopsida']]
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  [['horsetails', 'Equisetum', 'equisetum']]
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  [['ferns', 'Fern', 'fern']]
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  [['gymnosperms', 'Gymnosperm', 'gymnosperm']]
+subject_words:  [['gymnosperms', 'Gymnosperm', 'gymnosperm']]
+object_words:  []
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['rhyniophytes', 'Rhyniophyte', 'rhyniophyte']]
+object_words:  []
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  []
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Vascular plant', 'vascular_plant')]
+subject_words:  []
+object_words:  [(None, 'Vascular plant', 'vascular_plant')]
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  [(None, 'Vascular plant', 'vascular_plant')]
+subject_words:  []
+object_words:  [(None, 'Vascular plant', 'vascular_plant')]
+subject_words:  [(None, 'Vascular plant', 'vascular_plant')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Vascular plant', 'vascular_plant')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+forth_hop:  {'triplet': '("Vascular plant", "includes", "clubmosses")', 'start word': 'Vascular plant', 'end word': 'Lycopodiopsida', 'source': {'name': 'Vascular plant', 'line': 1}, 'cpnet': {'start word': 'vascular_plant', 'end word': 'lycopodiopsida'}}
+generate_question(4_8, ['("Tom Cruise", "starred in films directed by", "John Woo")', '("John Woo", "directed films before leaving", "Hong Kong")', '("vascular plants", "of over 3,000 species occur in", "Hong Kong")', '("Vascular plant", "includes", "clubmosses")'], ['John Woo', 'Hong Kong', 'Vascular plant', 'Lycopodiopsida'], [('Tom Cruise', 'John Woo'), ('John Woo', 'Hong Kong'), ('Hong Kong', 'Vascular plant'), ('Vascular plant', 'Lycopodiopsida')], Lycopodiopsida, [{'name': 'Tom Cruise', 'line': 17}, {'name': 'John Woo', 'line': 13}, {'name': 'Hong Kong', 'line': 35}, {'name': 'Vascular plant', 'line': 1}]) called
+GPT output is:  Q: What is the scientific name for the category of plants that are part of the diversity found in the special administrative region of China where a filmmaker, who has worked with Tom Cruise, started his career?
+A: Lycopodiopsida
+final_choice(Lycopodiopsida, options = 5) started
+[]
+entity_type(Lycopodiopsida) called
+Lycopodiopsida is Animal
+check_matchscore(Lycopodiopsida, Lycophytes):  0.0
+choose_by_wiki_recur(Lycophytes)
+   Pages in Lycophytes: ['Lycophyta', 'Lycophyte', 'Lycophytina', 'Lycopodiophyta', 'Lycopodiophytina', 'Cyclodendron', 'Isoetaceae', 'Isoetales', 'Isoetopsida', 'List of lycophytes of South Africa', 'Lycopodiales', 'Lycopodiopsida', 'Selaginellaceae', 'Selaginellales', 'Selaginellopsida']
+      Lycopodiophyta in ['Lycopodiophyta', 'Selaginellales', 'Isoetopsida', 'Lycophytina']
+Lycopodiophyta is Animal
+      Selaginellales in ['Lycopodiophyta', 'Selaginellales', 'Isoetopsida', 'Lycophytina']
+Selaginellales is Animal
+      Isoetopsida in ['Lycopodiophyta', 'Selaginellales', 'Isoetopsida', 'Lycophytina']
+Isoetopsida is Animal
+      Lycophytina in ['Lycopodiophyta', 'Selaginellales', 'Isoetopsida', 'Lycophytina', 'Lycopodiopsida']
+Lycophytina is Animal
+      Lycopodiopsida in ['Lycopodiophyta', 'Selaginellales', 'Isoetopsida', 'Lycophytina', 'Lycopodiopsida']
+Lycopodiopsida is Animal
+      Isoetales in ['Lycopodiophyta', 'Selaginellales', 'Isoetopsida', 'Lycophytina', 'Lycopodiopsida', 'Isoetales']
+Isoetales is Animal
+['Lycopodiophyta', 'Selaginellales', 'Lycophytina', 'Isoetales']
+Ended after 2.5 hierarchy
+(2.5, ['Lycophytina', 'Selaginellales', 'Lycopodiophyta', 'Isoetales'])
+
+extract_info(Lycophyte) Start.
+utils/preprocess.py extract_info(): Checking good links on Lycophyte
+Vascular plant is Animal
+1 / 30 )  vascular plants Vascular plant vascular_plant
+Lycopodiopsida is Animal
+2 / 30 )  clubmosses Lycopodiopsida lycopodiopsida
+Silurian is Geography
+3 / 30 )  Silurian Silurian silurian
+Carboniferous is Geography
+4 / 30 )  Carboniferous Carboniferous carboniferous
+Lepidodendrales is Animal
+5 / 30 )  Lepidodendrales Lepidodendrales lepidodendrales
+Zosterophyll is Animal
+6 / 30 )  zosterophylls Zosterophyll zosterophyll
+Euphyllophyte is Animal
+7 / 30 )  euphyllophytes Euphyllophyte euphyllophyte
+Fern is Animal
+8 / 30 )  ferns Fern fern
+Gymnosperm is Animal
+9 / 30 )  gymnosperms Gymnosperm gymnosperm
+Flowering plant is Animal
+10 / 30 )  flowering plants Flowering plant flowering_plant
+Rhyniophyte is Animal
+11 / 30 )  rhyniophytes Rhyniophyte rhyniophyte
+Lycopodiaceae is Animal
+12 / 30 )  Lycopodiales Lycopodiaceae lycopodiaceae
+Selaginella is Animal
+13 / 30 )  Selaginellales Selaginella selaginella
+Isoetales is Animal
+14 / 30 )  Isoetales Isoetales isoetales
+Devonian is Geography
+15 / 30 )  Devonian Devonian devonian
+extract_triplet(Lycophyte)
+Got GPT's response. String length : 1886
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['vascular plants', 'Vascular plant', 'vascular_plant']]
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['clubmosses', 'Lycopodiopsida', 'lycopodiopsida']]
+['', 'Lycophytes', 'include', 'extinct plants dated from the', 'Silurian', '']
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['Carboniferous', 'Carboniferous', 'carboniferous']]
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['Lepidodendrales', 'Lepidodendrales', 'lepidodendrales']]
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  []
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['euphyllophytes', 'Euphyllophyte', 'euphyllophyte']]
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['ferns', 'Fern', 'fern']]
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['gymnosperms', 'Gymnosperm', 'gymnosperm']]
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['flowering plants', 'Flowering plant', 'flowering_plant']]
+subject_words:  [(None, 'Lycophyte', 'lycophyte')]
+object_words:  [['euphyllophytes', 'Euphyllophyte', 'euphyllophyte']]
+subject_words:  []
+object_words:  [['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+subject_words:  []
+object_words:  [['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+subject_words:  []
+object_words:  [['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+subject_words:  []
+object_words:  [['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+subject_words:  []
+object_words:  [(None, 'Lycophyte', 'lycophyte'), ['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+subject_words:  []
+object_words:  [(None, 'Lycophyte', 'lycophyte')]
+subject_words:  [['clubmosses', 'Lycopodiopsida', 'lycopodiopsida']]
+object_words:  [(None, 'Lycophyte', 'lycophyte')]
+subject_words:  [['Lycopodiales', 'Lycopodiaceae', 'lycopodiaceae']]
+object_words:  [['clubmosses', 'Lycopodiopsida', 'lycopodiopsida']]
+subject_words:  [['Selaginellales', 'Selaginella', 'selaginella']]
+object_words:  [['clubmosses', 'Lycopodiopsida', 'lycopodiopsida']]
+subject_words:  [['Isoetales', 'Isoetales', 'isoetales']]
+object_words:  [['clubmosses', 'Lycopodiopsida', 'lycopodiopsida']]
+subject_words:  [['Lepidodendrales', 'Lepidodendrales', 'lepidodendrales']]
+object_words:  [['Carboniferous', 'Carboniferous', 'carboniferous']]
+subject_words:  [['Lepidodendrales', 'Lepidodendrales', 'lepidodendrales']]
+object_words:  []
+subject_words:  [['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+object_words:  []
+subject_words:  [['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+object_words:  []
+subject_words:  [['Devonian', 'Devonian', 'devonian']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Lycophyte', 'lycophyte'), ['zosterophylls', 'Zosterophyll', 'zosterophyll']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['rhyniophytes', 'Rhyniophyte', 'rhyniophyte']]
+object_words:  []
+subject_words:  []
+object_words:  [['zosterophylls', 'Zosterophyll', 'zosterophyll'], ['rhyniophytes', 'Rhyniophyte', 'rhyniophyte']]
+extract_info(Isoetales) Start.
+utils/preprocess.py extract_info(): Checking good links on Isoetales
+Isoetaceae is Animal
+1 / 30 )  Isoetaceae Isoetaceae isoetaceae
+Pleuromeiaceae is Animal
+2 / 30 )  Pleuromeiaceae Pleuromeiaceae pleuromeiaceae
+Lycopodiopsida is Animal
+3 / 30 )  Lycopodiopsida Lycopodiopsida lycopodiopsida
+Isoetes is Animal
+4 / 30 )  Isoetes Isoetes isoetes
+Pteridophyte is Animal
+5 / 30 )  pteridophytes Pteridophyte pteridophyte
+Carboniferous is Geography
+6 / 30 )  Carboniferous Carboniferous carboniferous
+Lepidodendrales is Animal
+7 / 30 )  Lepidodendrales Lepidodendrales lepidodendrales
+Permian is Geography
+8 / 30 )  Permian Permian permian
+Triassic is Geography
+9 / 30 )  Triassic Triassic triassic
+extract_triplet(Isoetales)
+Got GPT's response. String length : 639
+subject_words:  [(None, 'Isoetales', 'isoetales')]
+object_words:  [['Lycopodiopsida', 'Lycopodiopsida', 'lycopodiopsida']]
+subject_words:  [(None, 'Isoetales', 'isoetales')]
+object_words:  [['Isoetes', 'Isoetes', 'isoetes']]
+subject_words:  [['Isoetes', 'Isoetes', 'isoetes']]
+object_words:  []
+subject_words:  [['Isoetes', 'Isoetes', 'isoetes']]
+object_words:  []
+subject_words:  [['Isoetes', 'Isoetes', 'isoetes']]
+object_words:  []
+subject_words:  [['Isoetes', 'Isoetes', 'isoetes']]
+object_words:  []
+subject_words:  [['Isoetes', 'Isoetes', 'isoetes']]
+object_words:  []
+subject_words:  [['Isoetes', 'Isoetes', 'isoetes']]
+object_words:  [['Permian', 'Permian', 'permian'], ['Triassic', 'Triassic', 'triassic']]
+subject_words:  []
+object_words:  [(None, 'Isoetales', 'isoetales'), ['Triassic', 'Triassic', 'triassic']]
+subject_words:  []
+object_words:  []
+extract_info(Selaginella) Start.
+utils/preprocess.py extract_info(): Checking good links on Selaginella
+Vascular plant is Animal
+1 / 30 )  vascular plant Vascular plant vascular_plant
+Lycopodiaceae is Animal
+2 / 30 )  Lycopodiaceae Lycopodiaceae lycopodiaceae
+United States Department of Energy is Geography
+3 / 30 )  United States Department of Energy United States Department of Energy us_department_of_energy
+Selaginella selaginoides is Animal
+4 / 30 )  Selaginella selaginoides Selaginella selaginoides lesser_clubmoss
+Carboniferous is Geography
+5 / 30 )  Carboniferous Carboniferous carboniferous
+Lycopodiopsida is Animal
+6 / 30 )  Lycopodiopsida Lycopodiopsida lycopodiopsida
+Selaginella plumosa  is Animal
+7 / 30 )  Selaginella plumosa Selaginella plumosa  selaginellales
+Selaginella is Animal
+8 / 30 )  Bryodesma Selaginella selaginella
+Articulatae  is Animal
+9 / 30 )  Articulatae Articulatae  selaginellales
+Fern is Animal
+10 / 30 )  ferns Fern fern
+extract_triplet(Selaginella)
+Got GPT's response. String length : 2147
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [(None, 'Selaginella', 'selaginella')]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [['vascular plant', 'Vascular plant', 'vascular_plant']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [['Lycopodiaceae', 'Lycopodiaceae', 'lycopodiaceae']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [['ferns', 'Fern', 'fern']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Selaginella selaginoides', 'Selaginella selaginoides', 'lesser_clubmoss'], ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [['Carboniferous', 'Carboniferous', 'carboniferous']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [['Lycopodiopsida', 'Lycopodiopsida', 'lycopodiopsida']]
+subject_words:  [['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+subject_words:  [['Articulatae', 'Articulatae ', 'selaginellales']]
+object_words:  [(None, 'Selaginella', 'selaginella'), ['Selaginella plumosa', 'Selaginella plumosa ', 'selaginellales'], ['Bryodesma', 'Selaginella', 'selaginella']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Selaginella selaginoides', 'Selaginella selaginoides', 'lesser_clubmoss'], ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  [(None, 'Selaginella', 'selaginella'), ['Bryodesma', 'Selaginella', 'selaginella']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['ferns', 'Fern', 'fern']]
+subject_words:  []
+object_words:  []
+['("Tom Cruise", "starred in films directed by", "John Woo")\n', '("John Woo", "directed films before leaving", "Hong Kong")\n', '("Vascular plant", "includes", "clubmosses")\n']
+
+['("Tom Cruise", "nominated for", "four Academy Awards")\n', '("Tom Cruise", "received", "Honorary Palme d\'Or")\n', '("Tom Cruise", "received", "three Golden Globe Awards")\n', '("Tom Cruise", "performance in", "Magnolia")\n', '("Tom Cruise", "married to", "Mimi Rogers")\n', '("Tom Cruise", "married to", "Nicole Kidman")\n', '("Tom Cruise", "advocate for", "Church of Scientology")\n', '("Tom Cruise", "spent part of his", "childhood in Canada")\n', '("Tom Cruise", "attended", "St. Francis Seminary in Cincinnati")\n', '("Tom Cruise", "worked with", "Francis Ford Coppola")\n', '("Tom Cruise", "worked with", "Martin Scorsese")\n', '("Tom Cruise", "starred with", "Dustin Hoffman")\n', '("Tom Cruise", "worked with", "Oliver Stone")\n', '("Tom Cruise", "starred with", "Brad Pitt")\n', '("Tom Cruise", "performance praised by", "Anne Rice")\n', '("Tom Cruise", "starred in films directed by", "Stanley Kubrick")\n', '("Tom Cruise", "starred in films directed by", "Steven Spielberg")\n', '("Tom Cruise", "film based on works of", "H. G. Wells")\n', '("Tom Cruise", "starred with", "Ben Stiller")\n', '("Tom Cruise", "performance compared to", "Keith Richards")\n', '("Tom Cruise", "starred with", "Morgan Freeman")\n', '("Tom Cruise", "rebooted work of", "Boris Karloff")\n', '("Tom Cruise", "film premiered same-day as", "Greta Gerwig")\n', '("Tom Cruise", "portrayed", "Adolf Hitler")\n', '("Tom Cruise", "co-starred with", "Meryl Streep")\n', '("Tom Cruise", "lives in", "Beverly Hills, California")\n', '("Tom Cruise", "lived in", "Dulwich")\n', '("Tom Cruise", "lived in", "East Grinstead")\n', '("Tom Cruise", "dated", "Cher")\n', '("Tom Cruise", "film was shot in", "Rome")\n', '("Tom Cruise", "lobbied", "David Beckham")\n', '("Tom Cruise", "lobbied", "Nicolas Sarkozy")\n', '("John Woo", "is a filmmaker from", "Hong Kong")\n', '("John Woo", "known for", "chaotic bullet ballet")\n', '("John Woo", "founder and chairman of", "Lion Rock Productions")\n', '("John Woo", "was born in", "Guangzhou")\n', '("John Woo", "faced persecution during", "Mao Zedong\'s early anti-bourgeois purges")\n', '("John Woo", "was inspired by", "Bob Dylan")\n', '("John Woo", "influenced by", "French New Wave")\n', '("John Woo", "worked with", "Jackie Chan")\n', '("John Woo", "helped by", "Tsui Hark")\n', '("Chow Yun-Fat", "starred in films directed by", "John Woo")\n', '("John Woo", "created comic series", "Seven Brothers")\n', '("John Woo", "produced anime movie", "Appleseed: Ex Machina")\n', '("John Woo", "worked on", "Hard Boiled")\n', '("John Travolta", "worked with", "John Woo on Face/Off")\n', '("John Woo", "made", "Silent Night")\n', '("John Woo", "has plans to remake", "The Killer")\n', '("John Woo", "to use", "IMAX cameras for Flying Tigers project")\n', '("John Woo", "has admiration for", "Jesus")\n', '("John Woo\'s", "favorite films include", "Lawrence of Arabia by Akira Kurosawa")\n', '("Hong Kong", "is a", "special administrative region of the People\'s Republic of China")\n', '("Hong Kong", "was established as a colony by", "the British Empire after the Qing dynasty")\n', '("Hong Kong\'s", "financial centers include", "the University of Hong Kong")\n', '("Hong Kong\'s status with", "Deng Xiaoping discussed by", "Governor Murray MacLehose")\n', '("Hong Kong", "is a member of", "World Trade Organization")\n', '("Hong Kong", "participates in", "International Olympic Committee")\n', '("Hong Kong", "is located at the", "Pearl River estuary")\n', '("Hong Kong", "is surrounded by", "South China Sea")\n', '("Guangdong", "is adjacent to", "Hong Kong")\n', '("Shenzhen", "neighbors", "Hong Kong")\n', '("Hong Kong", "is located north of", "Tropic of Cancer")\n', '("Hong Kong", "features", "Wetland Park")\n', '("Vascular plant", "includes", "horsetails")\n', '("Vascular plant", "includes", "ferns")\n', '("Vascular plant", "includes", "gymnosperms")\n', '("Gymnosperms", "include", "conifers")\n', '("Vascular plant", "includes", "angiosperms")\n', '("Angiosperms", "also known as", "flowering plants")\n', '("Rhyniophytes", "are early land plants with", "less developed vascular tissue")\n', '("Vascular plants", "have lignified tissues for", "conducting water and minerals")\n', '("Vascular plants", "have", "specialized non-lignified tissue called phloem")\n', '("Xylem and phloem", "are part of", "vascular tissue")\n', '("Tracheophyta", "is a scientific name for", "vascular plants")\n', '("Eutracheophyte", "term is used for", "vascular plants with developed vascular tissue")\n', '("Vascular plants", "were known as", "higher plants")\n', '("Higher plants", "considered more complex than", "other plants")\n', '("Vascular plants", "have", "vascular tissues")\n', '("Vascular tissues", "distribute resources through", "the plant")\n', '("Xylem and phloem", "are two kinds of", "vascular tissue")\n', '("Vascular bundle", "consists of", "one xylem and one phloem strand")\n', '("Vascular plants", "can evolve to larger sizes than", "non-vascular plants")\n', '("Sporophyte", "is the principal generation phase in", "vascular plants")\n', '("Vascular plants", "have true", "roots, leaves, and stems")\n', '("Eutracheophytes", "category includes", "all living vascular plants")\n', '("Xylem", "transports", "water and inorganic solutes")\n', '("Phloem", "distributes", "organic compounds like sucrose")\n', '("Xylem cells", "are dead hard-walled hollow cells that", "form tubes")\n', '("Tracheid cell-wall", "usually contains the polymer", "lignin")\n', '("Phloem", "consists of", "living cells called sieve-tube members")\n', '("Sieve-tube members", "lack nuclei or ribosomes but are kept alive by", "companion cells")\n', '("Transpiration", "main process of water movement within", "plant tissues")\n', '("Hydathodes", "excrete excess water when", "stomata are closed")\n', '("Transpiration pull", "creates tension in the water-column in", "xylem vessels or tracheids")\n', '("Osmosis", "assists movement of water into", "the roots")\n', '("Root pressure", "is created by", "osmosis in absence of transpiration pull")\n', '("Xylem", "is the water-conducting tissue and provides raw material for", "the forest products industry")\n', '("Phloem", "conducts", "sugars throughout the plant")\n', '("Nutrients", "are absorbed in the roots and transported to", "the shoots")\n', '("Lycophytes", "include", "vascular plants")\n', '("Lycophytes", "include", "clubmosses")\n', '("Lycophytes", "were dominating during", "Carboniferous")\n', '("Lycophytes", "include tree-like", "Lepidodendrales")\n', '("Lycophytes", "have", "microphylls")\n', '("Lycophytes", "are distinct from", "euphyllophytes")\n', '("Lycophytes", "are distinct from", "ferns")\n', '("Lycophytes", "are distinct from", "gymnosperms")\n', '("Lycophytes", "are distinct from", "flowering plants")\n', '("Lycophytes", "represent evolution line different from", "euphyllophytes")\n', '("Lycopodiophyta", "may include", "zosterophylls")\n', '("Lycopodiophyta", "may exclude", "zosterophylls")\n', '("Lycophyta", "may include", "zosterophylls")\n', '("Lycophyta", "may exclude", "zosterophylls")\n', '("Lycopodiophytina", "is used to include", "extinct zosterophylls and extant lycophytes")\n', '("Lycopodiophytina", "is used to refer to", "lycophytes")\n', '("Lycopodiopsida", "includes", "extant lycophytes")\n', '("Lycopodiales", "is an order of", "Lycopodiopsida")\n', '("Selaginellales", "is an order of", "Lycopodiopsida")\n', '("Isoetales", "is an order of", "Lycopodiopsida")\n', '("Lepidodendrales", "were tree-like and dominated the landscape during", "Carboniferous")\n', '("Lepidodendrales", "contributed to", "formation of coal")\n', '("Zosterophylls", "comprise a group that is", "paraphyletic")\n', '("Zosterophylls", "range from", "Hicklingia to Nothia")\n', '("Devonian", "zosterophyll Zosterophyllum myretonianum had", "smooth stems")\n', '("Sawdonia ornata", "had", "unvascularized spines or enations")\n', '("Asteroxylon", "represents transition between", "zosterophylls and extant lycophyte species")\n', '("Asteroxylon", "had", "vascular traces to base of enations")\n', '("Leclercqia", "possessed", "fully vascularized microphylls")\n', '("Rhyniophytes", "have", "terminal sporangia")\n', '("Renalia", "has characteristics of", "rhyniophytes and zosterophylls")\n', '("Lycophytes", "include", "vascular plants")\n', '("Lycophytes", "include", "clubmosses")\n', '("Lycophytes", "were dominating during", "Carboniferous")\n', '("Lycophytes", "include tree-like", "Lepidodendrales")\n', '("Lycophytes", "have", "microphylls")\n', '("Lycophytes", "are distinct from", "euphyllophytes")\n', '("Lycophytes", "are distinct from", "ferns")\n', '("Lycophytes", "are distinct from", "gymnosperms")\n', '("Lycophytes", "are distinct from", "flowering plants")\n', '("Lycophytes", "represent evolution line different from", "euphyllophytes")\n', '("Lycopodiophyta", "may include", "zosterophylls")\n', '("Lycopodiophyta", "may exclude", "zosterophylls")\n', '("Lycophyta", "may include", "zosterophylls")\n', '("Lycophyta", "may exclude", "zosterophylls")\n', '("Lycopodiophytina", "is used to include", "extinct zosterophylls and extant lycophytes")\n', '("Lycopodiophytina", "is used to refer to", "lycophytes")\n', '("Lycopodiopsida", "includes", "extant lycophytes")\n', '("Lycopodiales", "is an order of", "Lycopodiopsida")\n', '("Selaginellales", "is an order of", "Lycopodiopsida")\n', '("Isoetales", "is an order of", "Lycopodiopsida")\n', '("Lepidodendrales", "were tree-like and dominated the landscape during", "Carboniferous")\n', '("Lepidodendrales", "contributed to", "formation of coal")\n', '("Zosterophylls", "comprise a group that is", "paraphyletic")\n', '("Zosterophylls", "range from", "Hicklingia to Nothia")\n', '("Devonian", "zosterophyll Zosterophyllum myretonianum had", "smooth stems")\n', '("Sawdonia ornata", "had", "unvascularized spines or enations")\n', '("Asteroxylon", "represents transition between", "zosterophylls and extant lycophyte species")\n', '("Asteroxylon", "had", "vascular traces to base of enations")\n', '("Leclercqia", "possessed", "fully vascularized microphylls")\n', '("Rhyniophytes", "have", "terminal sporangia")\n', '("Renalia", "has characteristics of", "rhyniophytes and zosterophylls")\n', '("Isoetales", "is an order in", "Lycopodiopsida")\n', '("Isoetales", "contains the genus", "Isoetes")\n', '("Isoetes", "are", "aquatic or semi-aquatic")\n', '("Isoetes", "have leaves that attach to", "a bulb-like, underground corm")\n', '("Isoetes", "have male and female sporangia in", "a swollen base")\n', '("Isoetes", "is identified by", "megaspores under a microscope")\n', '("Isoetes", "is capable of", "secondary growth")\n', '("Isoetes beestonii", "is a fossil from", "latest Permian-earliest Triassic")\n', '("Pleuromeia", "is a member of", "Isoetales from the Early Triassic")\n', '("Isoetites rolandii", "is a fossil resembling modern", "quillworts from the Late Jurassic")\n', '("Selaginella", "is the sole genus in", "the Selaginellaceae family")\n', '("Selaginella", "is a kind of", "vascular plant")\n', '("Selaginella", "is distinguished from", "Lycopodiaceae")\n', '("Selaginella", "has scale-leaves bearing a", "ligule")\n', '("Selaginella", "has spores of two types", "")\n', '("Selaginella", "is sometimes included in", "fern allies")\n', '("S. moellendorffii", "is an important", "model organism")\n', '("United States Department of Energy\'s Joint Genome Institute", "sequenced the genome of", "S. moellendorffii")\n', '("Selaginella selaginoides", "was first described in the genus", "Selaginella by Palisot de Beauvois")\n', '("Selaginella", "occurs mostly in", "tropical regions")\n', '("Selaginella", "has fossils known from the", "Late Carboniferous")\n', '("Selaginella species", "include", "Selaginella kraussiana")\n', '("Selaginella species", "include", "Selaginella trachyphylla")\n', '("Selaginella species", "include", "Selaginella erythropus")\n', '("Selaginella", "contains vascular steles which are", "polystelic protosteles")\n', '("Selaginella", "has microphylls and sporophylls with a", "ligule")\n', '("Selaginella", "is heterosporous with", "megaspores and microspores")\n', '("Selaginella species", "can survive", "dehydration")\n', '("Selaginella bryopteris", "is referred to as a", "resurrection plant")\n', '("Selaginella", "has no evidence of", "whole genome duplication")\n', '("Selaginella", "underwent", "tandem gene duplications")\n', '("Selaginella", "is placed in the class", "Lycopodiopsida")\n', '("Bryodesma Sojak", "is recognized as a division of", "Selaginella")\n', '("Articulatae", "is known as", "Selaginella plumosa")\n', '("Selaginella apoda", "is known as", "meadow spikemoss")\n', '("Selaginella erythropus", "is an example of", "Selaginella species")\n', '("Selaginella selaginoides", "is a species found in", "north temperate Europe, Asia and North America")\n', '("Selaginella rupestris", "is known as", "rock spikemoss")\n', '("Selaginella kraussiana", "is used for", "cultivation")\n', '("S. kraussiana", "is also known as", "golden clubmoss")\n', '("S. martensii", "is also known as", "frosty fern")\n', '("S. lepidophylla", "is also known as", "resurrection plant")\n']
+range(1, 207) 3
+['("Tom Cruise", "starred in films directed by", "John Woo")\n', '("John Woo", "directed films before leaving", "Hong Kong")\n', '("Vascular plant", "includes", "clubmosses")\n']
+
+['("Tom Cruise", "nominated for", "four Academy Awards")\n', '("Tom Cruise", "received", "Honorary Palme d\'Or")\n', '("Tom Cruise", "received", "three Golden Globe Awards")\n', '("Tom Cruise", "performance in", "Magnolia")\n', '("Tom Cruise", "married to", "Mimi Rogers")\n', '("Tom Cruise", "married to", "Nicole Kidman")\n', '("Tom Cruise", "advocate for", "Church of Scientology")\n', '("Tom Cruise", "spent part of his", "childhood in Canada")\n', '("Tom Cruise", "attended", "St. Francis Seminary in Cincinnati")\n', '("Tom Cruise", "worked with", "Francis Ford Coppola")\n', '("Tom Cruise", "worked with", "Martin Scorsese")\n', '("Tom Cruise", "starred with", "Dustin Hoffman")\n', '("Tom Cruise", "worked with", "Oliver Stone")\n', '("Tom Cruise", "starred with", "Brad Pitt")\n', '("Tom Cruise", "performance praised by", "Anne Rice")\n', '("Tom Cruise", "starred in films directed by", "Stanley Kubrick")\n', '("Tom Cruise", "starred in films directed by", "Steven Spielberg")\n', '("Tom Cruise", "film based on works of", "H. G. Wells")\n', '("Tom Cruise", "starred with", "Ben Stiller")\n', '("Tom Cruise", "performance compared to", "Keith Richards")\n', '("Tom Cruise", "starred with", "Morgan Freeman")\n', '("Tom Cruise", "rebooted work of", "Boris Karloff")\n', '("Tom Cruise", "film premiered same-day as", "Greta Gerwig")\n', '("Tom Cruise", "portrayed", "Adolf Hitler")\n', '("Tom Cruise", "co-starred with", "Meryl Streep")\n', '("Tom Cruise", "lives in", "Beverly Hills, California")\n', '("Tom Cruise", "lived in", "Dulwich")\n', '("Tom Cruise", "lived in", "East Grinstead")\n', '("Tom Cruise", "dated", "Cher")\n', '("Tom Cruise", "film was shot in", "Rome")\n', '("Tom Cruise", "lobbied", "David Beckham")\n', '("Tom Cruise", "lobbied", "Nicolas Sarkozy")\n', '("John Woo", "is a filmmaker from", "Hong Kong")\n', '("John Woo", "known for", "chaotic bullet ballet")\n', '("John Woo", "founder and chairman of", "Lion Rock Productions")\n', '("John Woo", "was born in", "Guangzhou")\n', '("John Woo", "faced persecution during", "Mao Zedong\'s early anti-bourgeois purges")\n', '("John Woo", "was inspired by", "Bob Dylan")\n', '("John Woo", "influenced by", "French New Wave")\n', '("John Woo", "worked with", "Jackie Chan")\n', '("John Woo", "helped by", "Tsui Hark")\n', '("Chow Yun-Fat", "starred in films directed by", "John Woo")\n', '("John Woo", "created comic series", "Seven Brothers")\n', '("John Woo", "produced anime movie", "Appleseed: Ex Machina")\n', '("John Woo", "worked on", "Hard Boiled")\n', '("John Travolta", "worked with", "John Woo on Face/Off")\n', '("John Woo", "made", "Silent Night")\n', '("John Woo", "has plans to remake", "The Killer")\n', '("John Woo", "to use", "IMAX cameras for Flying Tigers project")\n', '("John Woo", "has admiration for", "Jesus")\n', '("John Woo\'s", "favorite films include", "Lawrence of Arabia by Akira Kurosawa")\n', '("Hong Kong", "is a", "special administrative region of the People\'s Republic of China")\n', '("Hong Kong", "was established as a colony by", "the British Empire after the Qing dynasty")\n', '("Hong Kong\'s", "financial centers include", "the University of Hong Kong")\n', '("Hong Kong\'s status with", "Deng Xiaoping discussed by", "Governor Murray MacLehose")\n', '("Hong Kong", "is a member of", "World Trade Organization")\n', '("Hong Kong", "participates in", "International Olympic Committee")\n', '("Hong Kong", "is located at the", "Pearl River estuary")\n', '("Hong Kong", "is surrounded by", "South China Sea")\n', '("Guangdong", "is adjacent to", "Hong Kong")\n', '("Shenzhen", "neighbors", "Hong Kong")\n', '("Hong Kong", "is located north of", "Tropic of Cancer")\n', '("Hong Kong", "features", "Wetland Park")\n', '("Vascular plant", "includes", "horsetails")\n', '("Vascular plant", "includes", "ferns")\n', '("Vascular plant", "includes", "gymnosperms")\n', '("Gymnosperms", "include", "conifers")\n', '("Vascular plant", "includes", "angiosperms")\n', '("Angiosperms", "also known as", "flowering plants")\n', '("Rhyniophytes", "are early land plants with", "less developed vascular tissue")\n', '("Vascular plants", "have lignified tissues for", "conducting water and minerals")\n', '("Vascular plants", "have", "specialized non-lignified tissue called phloem")\n', '("Xylem and phloem", "are part of", "vascular tissue")\n', '("Tracheophyta", "is a scientific name for", "vascular plants")\n', '("Eutracheophyte", "term is used for", "vascular plants with developed vascular tissue")\n', '("Vascular plants", "were known as", "higher plants")\n', '("Higher plants", "considered more complex than", "other plants")\n', '("Vascular plants", "have", "vascular tissues")\n', '("Vascular tissues", "distribute resources through", "the plant")\n', '("Xylem and phloem", "are two kinds of", "vascular tissue")\n', '("Vascular bundle", "consists of", "one xylem and one phloem strand")\n', '("Vascular plants", "can evolve to larger sizes than", "non-vascular plants")\n', '("Sporophyte", "is the principal generation phase in", "vascular plants")\n', '("Vascular plants", "have true", "roots, leaves, and stems")\n', '("Eutracheophytes", "category includes", "all living vascular plants")\n', '("Xylem", "transports", "water and inorganic solutes")\n', '("Phloem", "distributes", "organic compounds like sucrose")\n', '("Xylem cells", "are dead hard-walled hollow cells that", "form tubes")\n', '("Tracheid cell-wall", "usually contains the polymer", "lignin")\n', '("Phloem", "consists of", "living cells called sieve-tube members")\n', '("Sieve-tube members", "lack nuclei or ribosomes but are kept alive by", "companion cells")\n', '("Transpiration", "main process of water movement within", "plant tissues")\n', '("Hydathodes", "excrete excess water when", "stomata are closed")\n', '("Transpiration pull", "creates tension in the water-column in", "xylem vessels or tracheids")\n', '("Osmosis", "assists movement of water into", "the roots")\n', '("Root pressure", "is created by", "osmosis in absence of transpiration pull")\n', '("Xylem", "is the water-conducting tissue and provides raw material for", "the forest products industry")\n', '("Phloem", "conducts", "sugars throughout the plant")\n', '("Nutrients", "are absorbed in the roots and transported to", "the shoots")\n', '("Lycophytes", "include", "vascular plants")\n', '("Lycophytes", "include", "clubmosses")\n', '("Lycophytes", "were dominating during", "Carboniferous")\n', '("Lycophytes", "include tree-like", "Lepidodendrales")\n', '("Lycophytes", "have", "microphylls")\n', '("Lycophytes", "are distinct from", "euphyllophytes")\n', '("Lycophytes", "are distinct from", "ferns")\n', '("Lycophytes", "are distinct from", "gymnosperms")\n', '("Lycophytes", "are distinct from", "flowering plants")\n', '("Lycophytes", "represent evolution line different from", "euphyllophytes")\n', '("Lycopodiophyta", "may include", "zosterophylls")\n', '("Lycopodiophyta", "may exclude", "zosterophylls")\n', '("Lycophyta", "may include", "zosterophylls")\n', '("Lycophyta", "may exclude", "zosterophylls")\n', '("Lycopodiophytina", "is used to include", "extinct zosterophylls and extant lycophytes")\n', '("Lycopodiophytina", "is used to refer to", "lycophytes")\n', '("Lycopodiopsida", "includes", "extant lycophytes")\n', '("Lycopodiales", "is an order of", "Lycopodiopsida")\n', '("Selaginellales", "is an order of", "Lycopodiopsida")\n', '("Isoetales", "is an order of", "Lycopodiopsida")\n', '("Lepidodendrales", "were tree-like and dominated the landscape during", "Carboniferous")\n', '("Lepidodendrales", "contributed to", "formation of coal")\n', '("Zosterophylls", "comprise a group that is", "paraphyletic")\n', '("Zosterophylls", "range from", "Hicklingia to Nothia")\n', '("Devonian", "zosterophyll Zosterophyllum myretonianum had", "smooth stems")\n', '("Sawdonia ornata", "had", "unvascularized spines or enations")\n', '("Asteroxylon", "represents transition between", "zosterophylls and extant lycophyte species")\n', '("Asteroxylon", "had", "vascular traces to base of enations")\n', '("Leclercqia", "possessed", "fully vascularized microphylls")\n', '("Rhyniophytes", "have", "terminal sporangia")\n', '("Renalia", "has characteristics of", "rhyniophytes and zosterophylls")\n', '("Lycophytes", "include", "vascular plants")\n', '("Lycophytes", "include", "clubmosses")\n', '("Lycophytes", "were dominating during", "Carboniferous")\n', '("Lycophytes", "include tree-like", "Lepidodendrales")\n', '("Lycophytes", "have", "microphylls")\n', '("Lycophytes", "are distinct from", "euphyllophytes")\n', '("Lycophytes", "are distinct from", "ferns")\n', '("Lycophytes", "are distinct from", "gymnosperms")\n', '("Lycophytes", "are distinct from", "flowering plants")\n', '("Lycophytes", "represent evolution line different from", "euphyllophytes")\n', '("Lycopodiophyta", "may include", "zosterophylls")\n', '("Lycopodiophyta", "may exclude", "zosterophylls")\n', '("Lycophyta", "may include", "zosterophylls")\n', '("Lycophyta", "may exclude", "zosterophylls")\n', '("Lycopodiophytina", "is used to include", "extinct zosterophylls and extant lycophytes")\n', '("Lycopodiophytina", "is used to refer to", "lycophytes")\n', '("Lycopodiopsida", "includes", "extant lycophytes")\n', '("Lycopodiales", "is an order of", "Lycopodiopsida")\n', '("Selaginellales", "is an order of", "Lycopodiopsida")\n', '("Isoetales", "is an order of", "Lycopodiopsida")\n', '("Lepidodendrales", "were tree-like and dominated the landscape during", "Carboniferous")\n', '("Lepidodendrales", "contributed to", "formation of coal")\n', '("Zosterophylls", "comprise a group that is", "paraphyletic")\n', '("Zosterophylls", "range from", "Hicklingia to Nothia")\n', '("Devonian", "zosterophyll Zosterophyllum myretonianum had", "smooth stems")\n', '("Sawdonia ornata", "had", "unvascularized spines or enations")\n', '("Asteroxylon", "represents transition between", "zosterophylls and extant lycophyte species")\n', '("Asteroxylon", "had", "vascular traces to base of enations")\n', '("Leclercqia", "possessed", "fully vascularized microphylls")\n', '("Rhyniophytes", "have", "terminal sporangia")\n', '("Renalia", "has characteristics of", "rhyniophytes and zosterophylls")\n', '("Isoetales", "is an order in", "Lycopodiopsida")\n', '("Isoetales", "contains the genus", "Isoetes")\n', '("Isoetes", "are", "aquatic or semi-aquatic")\n', '("Isoetes", "have leaves that attach to", "a bulb-like, underground corm")\n', '("Isoetes", "have male and female sporangia in", "a swollen base")\n', '("Isoetes", "is identified by", "megaspores under a microscope")\n', '("Isoetes", "is capable of", "secondary growth")\n', '("Isoetes beestonii", "is a fossil from", "latest Permian-earliest Triassic")\n', '("Pleuromeia", "is a member of", "Isoetales from the Early Triassic")\n', '("Isoetites rolandii", "is a fossil resembling modern", "quillworts from the Late Jurassic")\n', '("Selaginella", "is the sole genus in", "the Selaginellaceae family")\n', '("Selaginella", "is a kind of", "vascular plant")\n', '("Selaginella", "is distinguished from", "Lycopodiaceae")\n', '("Selaginella", "has scale-leaves bearing a", "ligule")\n', '("Selaginella", "has spores of two types", "")\n', '("Selaginella", "is sometimes included in", "fern allies")\n', '("S. moellendorffii", "is an important", "model organism")\n', '("United States Department of Energy\'s Joint Genome Institute", "sequenced the genome of", "S. moellendorffii")\n', '("Selaginella selaginoides", "was first described in the genus", "Selaginella by Palisot de Beauvois")\n', '("Selaginella", "occurs mostly in", "tropical regions")\n', '("Selaginella", "has fossils known from the", "Late Carboniferous")\n', '("Selaginella species", "include", "Selaginella kraussiana")\n', '("Selaginella species", "include", "Selaginella trachyphylla")\n', '("Selaginella species", "include", "Selaginella erythropus")\n', '("Selaginella", "contains vascular steles which are", "polystelic protosteles")\n', '("Selaginella", "has microphylls and sporophylls with a", "ligule")\n', '("Selaginella", "is heterosporous with", "megaspores and microspores")\n', '("Selaginella species", "can survive", "dehydration")\n', '("Selaginella bryopteris", "is referred to as a", "resurrection plant")\n', '("Selaginella", "has no evidence of", "whole genome duplication")\n', '("Selaginella", "underwent", "tandem gene duplications")\n', '("Selaginella", "is placed in the class", "Lycopodiopsida")\n', '("Bryodesma Sojak", "is recognized as a division of", "Selaginella")\n', '("Articulatae", "is known as", "Selaginella plumosa")\n', '("Selaginella apoda", "is known as", "meadow spikemoss")\n', '("Selaginella erythropus", "is an example of", "Selaginella species")\n', '("Selaginella selaginoides", "is a species found in", "north temperate Europe, Asia and North America")\n', '("Selaginella rupestris", "is known as", "rock spikemoss")\n', '("Selaginella kraussiana", "is used for", "cultivation")\n', '("S. kraussiana", "is also known as", "golden clubmoss")\n', '("S. martensii", "is also known as", "frosty fern")\n', '("S. lepidophylla", "is also known as", "resurrection plant")\n']
+range(1, 207) 3
+['("Tom Cruise", "starred in films directed by", "John Woo")\n', '("John Woo", "directed films before leaving", "Hong Kong")\n', '("Vascular plant", "includes", "clubmosses")\n']
+
+['("Tom Cruise", "nominated for", "four Academy Awards")\n', '("Tom Cruise", "received", "Honorary Palme d\'Or")\n', '("Tom Cruise", "received", "three Golden Globe Awards")\n', '("Tom Cruise", "performance in", "Magnolia")\n', '("Tom Cruise", "married to", "Mimi Rogers")\n', '("Tom Cruise", "married to", "Nicole Kidman")\n', '("Tom Cruise", "advocate for", "Church of Scientology")\n', '("Tom Cruise", "spent part of his", "childhood in Canada")\n', '("Tom Cruise", "attended", "St. Francis Seminary in Cincinnati")\n', '("Tom Cruise", "worked with", "Francis Ford Coppola")\n', '("Tom Cruise", "worked with", "Martin Scorsese")\n', '("Tom Cruise", "starred with", "Dustin Hoffman")\n', '("Tom Cruise", "worked with", "Oliver Stone")\n', '("Tom Cruise", "starred with", "Brad Pitt")\n', '("Tom Cruise", "performance praised by", "Anne Rice")\n', '("Tom Cruise", "starred in films directed by", "Stanley Kubrick")\n', '("Tom Cruise", "starred in films directed by", "Steven Spielberg")\n', '("Tom Cruise", "film based on works of", "H. G. Wells")\n', '("Tom Cruise", "starred with", "Ben Stiller")\n', '("Tom Cruise", "performance compared to", "Keith Richards")\n', '("Tom Cruise", "starred with", "Morgan Freeman")\n', '("Tom Cruise", "rebooted work of", "Boris Karloff")\n', '("Tom Cruise", "film premiered same-day as", "Greta Gerwig")\n', '("Tom Cruise", "portrayed", "Adolf Hitler")\n', '("Tom Cruise", "co-starred with", "Meryl Streep")\n', '("Tom Cruise", "lives in", "Beverly Hills, California")\n', '("Tom Cruise", "lived in", "Dulwich")\n', '("Tom Cruise", "lived in", "East Grinstead")\n', '("Tom Cruise", "dated", "Cher")\n', '("Tom Cruise", "film was shot in", "Rome")\n', '("Tom Cruise", "lobbied", "David Beckham")\n', '("Tom Cruise", "lobbied", "Nicolas Sarkozy")\n', '("John Woo", "is a filmmaker from", "Hong Kong")\n', '("John Woo", "known for", "chaotic bullet ballet")\n', '("John Woo", "founder and chairman of", "Lion Rock Productions")\n', '("John Woo", "was born in", "Guangzhou")\n', '("John Woo", "faced persecution during", "Mao Zedong\'s early anti-bourgeois purges")\n', '("John Woo", "was inspired by", "Bob Dylan")\n', '("John Woo", "influenced by", "French New Wave")\n', '("John Woo", "worked with", "Jackie Chan")\n', '("John Woo", "helped by", "Tsui Hark")\n', '("Chow Yun-Fat", "starred in films directed by", "John Woo")\n', '("John Woo", "created comic series", "Seven Brothers")\n', '("John Woo", "produced anime movie", "Appleseed: Ex Machina")\n', '("John Woo", "worked on", "Hard Boiled")\n', '("John Travolta", "worked with", "John Woo on Face/Off")\n', '("John Woo", "made", "Silent Night")\n', '("John Woo", "has plans to remake", "The Killer")\n', '("John Woo", "to use", "IMAX cameras for Flying Tigers project")\n', '("John Woo", "has admiration for", "Jesus")\n', '("John Woo\'s", "favorite films include", "Lawrence of Arabia by Akira Kurosawa")\n', '("Hong Kong", "is a", "special administrative region of the People\'s Republic of China")\n', '("Hong Kong", "was established as a colony by", "the British Empire after the Qing dynasty")\n', '("Hong Kong\'s", "financial centers include", "the University of Hong Kong")\n', '("Hong Kong\'s status with", "Deng Xiaoping discussed by", "Governor Murray MacLehose")\n', '("Hong Kong", "is a member of", "World Trade Organization")\n', '("Hong Kong", "participates in", "International Olympic Committee")\n', '("Hong Kong", "is located at the", "Pearl River estuary")\n', '("Hong Kong", "is surrounded by", "South China Sea")\n', '("Guangdong", "is adjacent to", "Hong Kong")\n', '("Shenzhen", "neighbors", "Hong Kong")\n', '("Hong Kong", "is located north of", "Tropic of Cancer")\n', '("Hong Kong", "features", "Wetland Park")\n', '("Vascular plant", "includes", "horsetails")\n', '("Vascular plant", "includes", "ferns")\n', '("Vascular plant", "includes", "gymnosperms")\n', '("Gymnosperms", "include", "conifers")\n', '("Vascular plant", "includes", "angiosperms")\n', '("Angiosperms", "also known as", "flowering plants")\n', '("Rhyniophytes", "are early land plants with", "less developed vascular tissue")\n', '("Vascular plants", "have lignified tissues for", "conducting water and minerals")\n', '("Vascular plants", "have", "specialized non-lignified tissue called phloem")\n', '("Xylem and phloem", "are part of", "vascular tissue")\n', '("Tracheophyta", "is a scientific name for", "vascular plants")\n', '("Eutracheophyte", "term is used for", "vascular plants with developed vascular tissue")\n', '("Vascular plants", "were known as", "higher plants")\n', '("Higher plants", "considered more complex than", "other plants")\n', '("Vascular plants", "have", "vascular tissues")\n', '("Vascular tissues", "distribute resources through", "the plant")\n', '("Xylem and phloem", "are two kinds of", "vascular tissue")\n', '("Vascular bundle", "consists of", "one xylem and one phloem strand")\n', '("Vascular plants", "can evolve to larger sizes than", "non-vascular plants")\n', '("Sporophyte", "is the principal generation phase in", "vascular plants")\n', '("Vascular plants", "have true", "roots, leaves, and stems")\n', '("Eutracheophytes", "category includes", "all living vascular plants")\n', '("Xylem", "transports", "water and inorganic solutes")\n', '("Phloem", "distributes", "organic compounds like sucrose")\n', '("Xylem cells", "are dead hard-walled hollow cells that", "form tubes")\n', '("Tracheid cell-wall", "usually contains the polymer", "lignin")\n', '("Phloem", "consists of", "living cells called sieve-tube members")\n', '("Sieve-tube members", "lack nuclei or ribosomes but are kept alive by", "companion cells")\n', '("Transpiration", "main process of water movement within", "plant tissues")\n', '("Hydathodes", "excrete excess water when", "stomata are closed")\n', '("Transpiration pull", "creates tension in the water-column in", "xylem vessels or tracheids")\n', '("Osmosis", "assists movement of water into", "the roots")\n', '("Root pressure", "is created by", "osmosis in absence of transpiration pull")\n', '("Xylem", "is the water-conducting tissue and provides raw material for", "the forest products industry")\n', '("Phloem", "conducts", "sugars throughout the plant")\n', '("Nutrients", "are absorbed in the roots and transported to", "the shoots")\n', '("Lycophytes", "include", "vascular plants")\n', '("Lycophytes", "include", "clubmosses")\n', '("Lycophytes", "were dominating during", "Carboniferous")\n', '("Lycophytes", "include tree-like", "Lepidodendrales")\n', '("Lycophytes", "have", "microphylls")\n', '("Lycophytes", "are distinct from", "euphyllophytes")\n', '("Lycophytes", "are distinct from", "ferns")\n', '("Lycophytes", "are distinct from", "gymnosperms")\n', '("Lycophytes", "are distinct from", "flowering plants")\n', '("Lycophytes", "represent evolution line different from", "euphyllophytes")\n', '("Lycopodiophyta", "may include", "zosterophylls")\n', '("Lycopodiophyta", "may exclude", "zosterophylls")\n', '("Lycophyta", "may include", "zosterophylls")\n', '("Lycophyta", "may exclude", "zosterophylls")\n', '("Lycopodiophytina", "is used to include", "extinct zosterophylls and extant lycophytes")\n', '("Lycopodiophytina", "is used to refer to", "lycophytes")\n', '("Lycopodiopsida", "includes", "extant lycophytes")\n', '("Lycopodiales", "is an order of", "Lycopodiopsida")\n', '("Selaginellales", "is an order of", "Lycopodiopsida")\n', '("Isoetales", "is an order of", "Lycopodiopsida")\n', '("Lepidodendrales", "were tree-like and dominated the landscape during", "Carboniferous")\n', '("Lepidodendrales", "contributed to", "formation of coal")\n', '("Zosterophylls", "comprise a group that is", "paraphyletic")\n', '("Zosterophylls", "range from", "Hicklingia to Nothia")\n', '("Devonian", "zosterophyll Zosterophyllum myretonianum had", "smooth stems")\n', '("Sawdonia ornata", "had", "unvascularized spines or enations")\n', '("Asteroxylon", "represents transition between", "zosterophylls and extant lycophyte species")\n', '("Asteroxylon", "had", "vascular traces to base of enations")\n', '("Leclercqia", "possessed", "fully vascularized microphylls")\n', '("Rhyniophytes", "have", "terminal sporangia")\n', '("Renalia", "has characteristics of", "rhyniophytes and zosterophylls")\n', '("Lycophytes", "include", "vascular plants")\n', '("Lycophytes", "include", "clubmosses")\n', '("Lycophytes", "were dominating during", "Carboniferous")\n', '("Lycophytes", "include tree-like", "Lepidodendrales")\n', '("Lycophytes", "have", "microphylls")\n', '("Lycophytes", "are distinct from", "euphyllophytes")\n', '("Lycophytes", "are distinct from", "ferns")\n', '("Lycophytes", "are distinct from", "gymnosperms")\n', '("Lycophytes", "are distinct from", "flowering plants")\n', '("Lycophytes", "represent evolution line different from", "euphyllophytes")\n', '("Lycopodiophyta", "may include", "zosterophylls")\n', '("Lycopodiophyta", "may exclude", "zosterophylls")\n', '("Lycophyta", "may include", "zosterophylls")\n', '("Lycophyta", "may exclude", "zosterophylls")\n', '("Lycopodiophytina", "is used to include", "extinct zosterophylls and extant lycophytes")\n', '("Lycopodiophytina", "is used to refer to", "lycophytes")\n', '("Lycopodiopsida", "includes", "extant lycophytes")\n', '("Lycopodiales", "is an order of", "Lycopodiopsida")\n', '("Selaginellales", "is an order of", "Lycopodiopsida")\n', '("Isoetales", "is an order of", "Lycopodiopsida")\n', '("Lepidodendrales", "were tree-like and dominated the landscape during", "Carboniferous")\n', '("Lepidodendrales", "contributed to", "formation of coal")\n', '("Zosterophylls", "comprise a group that is", "paraphyletic")\n', '("Zosterophylls", "range from", "Hicklingia to Nothia")\n', '("Devonian", "zosterophyll Zosterophyllum myretonianum had", "smooth stems")\n', '("Sawdonia ornata", "had", "unvascularized spines or enations")\n', '("Asteroxylon", "represents transition between", "zosterophylls and extant lycophyte species")\n', '("Asteroxylon", "had", "vascular traces to base of enations")\n', '("Leclercqia", "possessed", "fully vascularized microphylls")\n', '("Rhyniophytes", "have", "terminal sporangia")\n', '("Renalia", "has characteristics of", "rhyniophytes and zosterophylls")\n', '("Isoetales", "is an order in", "Lycopodiopsida")\n', '("Isoetales", "contains the genus", "Isoetes")\n', '("Isoetes", "are", "aquatic or semi-aquatic")\n', '("Isoetes", "have leaves that attach to", "a bulb-like, underground corm")\n', '("Isoetes", "have male and female sporangia in", "a swollen base")\n', '("Isoetes", "is identified by", "megaspores under a microscope")\n', '("Isoetes", "is capable of", "secondary growth")\n', '("Isoetes beestonii", "is a fossil from", "latest Permian-earliest Triassic")\n', '("Pleuromeia", "is a member of", "Isoetales from the Early Triassic")\n', '("Isoetites rolandii", "is a fossil resembling modern", "quillworts from the Late Jurassic")\n', '("Selaginella", "is the sole genus in", "the Selaginellaceae family")\n', '("Selaginella", "is a kind of", "vascular plant")\n', '("Selaginella", "is distinguished from", "Lycopodiaceae")\n', '("Selaginella", "has scale-leaves bearing a", "ligule")\n', '("Selaginella", "has spores of two types", "")\n', '("Selaginella", "is sometimes included in", "fern allies")\n', '("S. moellendorffii", "is an important", "model organism")\n', '("United States Department of Energy\'s Joint Genome Institute", "sequenced the genome of", "S. moellendorffii")\n', '("Selaginella selaginoides", "was first described in the genus", "Selaginella by Palisot de Beauvois")\n', '("Selaginella", "occurs mostly in", "tropical regions")\n', '("Selaginella", "has fossils known from the", "Late Carboniferous")\n', '("Selaginella species", "include", "Selaginella kraussiana")\n', '("Selaginella species", "include", "Selaginella trachyphylla")\n', '("Selaginella species", "include", "Selaginella erythropus")\n', '("Selaginella", "contains vascular steles which are", "polystelic protosteles")\n', '("Selaginella", "has microphylls and sporophylls with a", "ligule")\n', '("Selaginella", "is heterosporous with", "megaspores and microspores")\n', '("Selaginella species", "can survive", "dehydration")\n', '("Selaginella bryopteris", "is referred to as a", "resurrection plant")\n', '("Selaginella", "has no evidence of", "whole genome duplication")\n', '("Selaginella", "underwent", "tandem gene duplications")\n', '("Selaginella", "is placed in the class", "Lycopodiopsida")\n', '("Bryodesma Sojak", "is recognized as a division of", "Selaginella")\n', '("Articulatae", "is known as", "Selaginella plumosa")\n', '("Selaginella apoda", "is known as", "meadow spikemoss")\n', '("Selaginella erythropus", "is an example of", "Selaginella species")\n', '("Selaginella selaginoides", "is a species found in", "north temperate Europe, Asia and North America")\n', '("Selaginella rupestris", "is known as", "rock spikemoss")\n', '("Selaginella kraussiana", "is used for", "cultivation")\n', '("S. kraussiana", "is also known as", "golden clubmoss")\n', '("S. martensii", "is also known as", "frosty fern")\n', '("S. lepidophylla", "is also known as", "resurrection plant")\n']
+range(1, 207) 3
+{'id': '4_8', 'Question': ' What is the scientific name for the category of plants that are part of the diversity found in the special administrative region of China where a filmmaker, who has worked with Tom Cruise, started his career?\n', 'Answer': 'Lycopodiopsida', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Lycopodiopsida'}, {'label': 'B', 'text': 'Lycophyte'}, {'label': 'C', 'text': 'Lycophyte'}, {'label': 'D', 'text': 'Isoetales'}, {'label': 'E', 'text': 'Selaginella'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'lycopodiopsida'}, {'label': 'B', 'text': 'lycopodiophyta'}, {'label': 'C', 'text': 'lycopodiophyta'}, {'label': 'D', 'text': 'isoetales'}, {'label': 'E', 'text': 'selaginellales'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which director has Tom Cruise worked with on various film projects?\nA1: John Woo\n\n', '2: From which Asian region did a renowned filmmaker begin his career before achieving international acclaim?\nA2: Hong Kong\n\n', '3: This group, with a diversity that spans more than three thousand types, is found in which special administrative region of China?\nA3: Vascular plant\n\n', '4: What is the scientific name for the category of plants that clubmosses belong to?\nA4: Lycopodiopsida'], 'Hops_wiki': [('Tom Cruise', 'John Woo'), ('John Woo', 'Hong Kong'), ('Hong Kong', 'Vascular plant'), ('Vascular plant', 'Lycopodiopsida')], 'Hops_cpnet': [('tom_cruise', 'john_woo'), ('john_woo', 'hong_kong'), ('hong_kong', 'vascular_plant'), ('vascular_plant', 'lycopodiopsida')], 'Triplets': ['("Tom Cruise", "starred in films directed by", "John Woo")', '("John Woo", "directed films before leaving", "Hong Kong")', '("vascular plants", "of over 3,000 species occur in", "Hong Kong")', '("Vascular plant", "includes", "clubmosses")'], 'Referred_files': [{'name': 'Tom Cruise', 'line': 17}, {'name': 'John Woo', 'line': 13}, {'name': 'Hong Kong', 'line': 35}, {'name': 'Vascular plant', 'line': 1}], 'Question_triplet_answer': {100: [64, 135, 144], 50: [17, 58, 182], 25: [8, 124, 193]}}
+time passed:  2270.284051179886
+Expected dollar:  0.005
+Hong Kong is Geography
+the Qing dynasty is Geography
+Lycophytes is Animal
+International Olympic Committee is Geography
+Lycopodiopsida is Animal
+Tom Cruise is People
+Francis Ford Coppola is People
+Canada is Geography
+Nicole Kidman is People
+Lycopodiophytina is Animal
+John Travolta is People
+John Woo is People
+Martin Scorsese is People
+Permian is Geography
+Triassic is Geography
+Lycopodiophyta is Animal
+Oliver Stone is People
+Articulatae is Animal
+Carboniferous is Geography
+Lycopodiaceae is Animal
+South China Sea is Geography
+Gymnosperms is Animal
+Hong Kong's is Geography
+the University of Hong Kong is Geography
+Lycophyta is Animal
+Cincinnati is Geography
+John Woo's is People
+Lawrence of Arabia is People
+Akira Kurosawa is People
+Jackie Chan is People
+North America is Geography
+Zosterophyllum is Animal
+Steven Spielberg is People
+Zosterophylls is Animal
+Bob Dylan is People
+Pearl River is Geography
+Beverly Hills is Geography
+California is Geography
+Lion Rock Productions is People
+Jesus is People
+Hicklingia is Animal
+Keith Richards is People
+Tracheophyta is Animal
+Tropic of Cancer is Geography
+Selaginellaceae is Animal
+Ben Stiller is People
+Dustin Hoffman is People
+Meryl Streep is People
+Nicolas Sarkozy is People
+the People's Republic of China is Geography
+entities:  {'Lycophyte', 'Canada', 'Woo', 'Zosterophylls', 'Qing', 'Scorsese', 'Martin', 'River', "Kong's", 'Jesus', 'Isoetales', 'Cruise', 'Seminary', 'Nicole', 'Lycopodiophytina', 'California', 'North', 'Kidman', 'Hicklingia', 'Committee', 'Triassic', 'Energy', 'Lycophyta', 'Lawrence', 'Pearl', 'Rock', 'Carboniferous', 'Lycophytes', 'Olympic', 'Dustin', 'Sarkozy', 'Coppola', 'Ben', 'University', 'Ford', 'Richards', 'Vascular', 'Hong', 'John', 'Francis', 'Spielberg', "Woo's", 'Arabia', 'Kong', 'Hills', 'Tom', 'Tropic', 'Keith', 'Stiller', 'Akira', 'Articulatae', 'United', 'Lycopodiophyta', 'China', 'Kurosawa', 'Travolta', 'Productions', 'Europe', 'Lycopodiopsida', 'Lycopodiaceae', "People's", 'Steven', 'dynasty', 'International', 'Nicolas', 'Institute', 'Asia', 'plant', 'Lion', 'Selaginella', 'Hoffman', 'Selaginellaceae', 'Gymnosperms', 'Gerwig', 'Zosterophyllum', 'Cancer', 'Stone', 'Oliver', 'South', 'Republic', 'Streep', 'Meryl', 'Chan', 'Cincinnati', 'Permian', 'Bob', 'America', 'Beverly', 'Dylan', 'Jackie', 'Sea', 'Tracheophyta'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Lycophyte' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Lycophytes
+Asteroxylon
+S. lepidophylla
+Renalia
+Isoetales
+Eutracheophyte
+Lepidodendrales
+Selaginella bryopteris
+Isoetes
+Lycopodiophytina
+Lycopodiopsida
+S. kraussiana
+Rhyniophytes
+Transpiration pull
+Xylem vessels
+Gymnosperms
+Selaginella selaginoides
+S. moellendorffii
+United States Department of Energy's Joint Genome Institute
+Lycopodiales
+Leclercqia
+Sieve-tube members
+Selaginellales
+Pleuromeia
+Honorary Palme d'Or
+Devonian
+Isoetes
+Phloem
+John Woo
+Isoetes
+Tracheophyta
+Selaginella apoda
+Wetland Park
+Ben Stiller
+Dustin Hoffman
+Nicolas Sarkozy
+Meryl Streep
+Quillworts
+
+gpt_entity_particular(): entity list: 
+ ['Selaginellales', 'Transpiration pull', 'Lycopodiopsida', 'Phloem', 'Selaginella apoda', 'Isoetales', 'Lycopodiophytina', 'Selaginella bryopteris', 'Nicolas Sarkozy', 'John Woo', 'Lycopodiales', 'Xylem vessels', 'S. lepidophylla', "Honorary Palme d'Or", 'Pleuromeia', 'Gymnosperms', 'S. kraussiana', 'Dustin Hoffman', 'Lycophytes', 'Ben Stiller', 'Wetland Park', 'Isoetes', 'Quillworts', 'Rhyniophytes', 'Asteroxylon', 'S. moellendorffii', 'Eutracheophyte', 'Tracheophyta', 'Meryl Streep', 'Lepidodendrales', "United States Department of Energy's Joint Genome Institute", 'Sieve-tube members', 'Renalia', 'Leclercqia', 'Selaginella selaginoides', 'Devonian']
+
+gpt_entity_particular(): filtered entity: 
+ ['Lycophytes']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Isoetales' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Isoetales
+Sporophyte
+Lepidodendrales
+Tracheophyta
+Eutracheophytes
+Isoetes
+Isoetites rolandii
+Pleuromeia
+Lycophyta
+Phloem
+Xylem
+Ancipation
+Stomatal
+Renalia
+S. lepidophylla
+Selaginella
+Nicole Kidman
+Bud
+S. bryopteris
+Leaf
+S. moellendorffii
+Rhodochrosite
+Sieve-tube members
+Companion cells
+Tracheid cell-wall
+Lignin
+
+gpt_entity_particular(): entity list: 
+ ['Xylem', 'Leaf', 'Stomatal', 'Ancipation', 'Isoetites rolandii', 'Phloem', 'Isoetales', 'Tracheid cell-wall', 'S. bryopteris', 'S. lepidophylla', 'Selaginella', 'Bud', 'Lycophyta', 'Nicole Kidman', 'Pleuromeia', 'Sporophyte', 'Companion cells', 'Isoetes', 'Rhodochrosite', 'Eutracheophytes', 'S. moellendorffii', 'Lepidodendrales', 'Sieve-tube members', 'Renalia', 'Lignin', 'Tracheophyta']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'John Woo' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ John Woo
+Jackie Chan
+John Woo
+Bob Dylan
+Jesus
+Akira Kurosawa
+John Woo
+
+gpt_entity_particular(): entity list: 
+ ['Bob Dylan', 'John Woo', 'Jackie Chan', 'Akira Kurosawa', 'Jesus']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hong Kong' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hong Kong
+Lycophytes
+Asteroxylon
+S. lepidophylla
+Renalia
+International Olympic Committee
+Isoetales
+Tom Cruise
+Eutracheophyte
+Lepidodendrales
+Selaginella bryopteris
+Transpiration pull
+Gymnosperms
+Nicole Kidman
+Isoetes
+Lycopodiophytina
+Xylem and phloem
+Tom Cruise
+Lieutenant
+Temple Street Night Market
+Island
+Kowloon
+Kosher
+Kowloon Walled City
+Victoria
+Hughes Aircraft Company
+
+gpt_entity_particular(): entity list: 
+ ['Transpiration pull', 'Xylem and phloem', 'Isoetales', 'Lycopodiophytina', 'Selaginella bryopteris', 'Island', 'International Olympic Committee', 'Hong Kong', 'S. lepidophylla', 'Victoria', 'Nicole Kidman', 'Gymnosperms', 'Lycophytes', 'Kowloon Walled City', 'Kosher', 'Isoetes', 'Asteroxylon', 'Eutracheophyte', 'Hughes Aircraft Company', 'Lepidodendrales', 'Temple Street Night Market', 'Renalia', 'Lieutenant', 'Kowloon', 'Tom Cruise']
+
+gpt_entity_particular(): filtered entity: 
+ ['Island', 'Victoria', 'Kowloon']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Lycopodiopsida' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Lycopodiopsida
+Eutracheophytes
+Isoetales
+Lycophytes
+Lycophytes
+Lycophytes
+Isoetes
+Lycopodiophytina
+Lycophytes
+Isoetes
+Lycophytes
+Isoetes
+Selaginellales
+Selaginella
+Selaginellales
+Lycopodiopsida
+Lycopodiales
+Isoetes
+Lycopodiopsida
+Lycopodiales
+Selaginellales
+Selaginellales
+Selaginellales
+Selaginella
+Selaginella
+Lycopodiopsida
+Lycopodiopsida
+Lycopodiopsida
+Lycopodiopsida
+Lycopodiopsida
+Lycopodiopsida
+Selaginellales
+Selaginellales
+Lycopodiopsida
+Isoetes
+Isoetes
+Isoetes
+Isoetes
+Isoetes
+
+gpt_entity_particular(): entity list: 
+ ['Eutracheophytes', 'Selaginellales', 'Lycopodiophytina', 'Lycophytes', 'Lycopodiales', 'Isoetes', 'Lycopodiopsida', 'Selaginella', 'Isoetales']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Selaginella' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Selaginella
+S. lepidophylla
+S. bryopteris
+Selaginella species
+Selaginella erythropus
+S. kraussiana
+S. selaginoides
+S. moellendorffii
+S. trachyphylla
+S. apoda
+
+gpt_entity_particular(): entity list: 
+ ['S. selaginoides', 'S. moellendorffii', 'S. kraussiana', 'Selaginella species', 'S. bryopteris', 'S. lepidophylla', 'Selaginella erythropus', 'S. apoda', 'Selaginella', 'S. trachyphylla']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Tom Cruise' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Tom Cruise
+Francis Ford Coppola
+Nicole Kidman
+Martin Scorsese
+Oliver Stone
+Academy Awards
+John Woo
+Jackie Chan
+latest Permian-earliest Triassic
+Tom Cruise
+St. Francis Seminary in Cincinnati
+University of Hong Kong
+Tom Cruise
+John Woo
+Greta Gerwig
+Tom Cruise
+Steven Spielberg
+Tom Cruise
+Magnolia
+United States Department of Energy's Joint Genome Institute
+S. moellendorffii
+Keith Richards
+Bruce Lee
+Japan
+Pedro Almodóvar
+Beijing
+Tom Cruise
+Golden Globe Awards
+France
+Hong Kong
+South China Sea
+International Olympic Committee
+Breeding Law
+boutique
+Ann Hui
+Tony Leung
+Tokyo
+Berlin
+Cannes
+Egypt
+Electric Shadows
+Anne Hathaway
+Star Wars
+Zhang Yimou
+Mira Sorvino
+Church of Scientology
+Bafta Awards
+Edge of Tomorrow
+
+gpt_entity_particular(): entity list: 
+ ['France', 'Egypt', 'Beijing', 'Steven Spielberg', 'Golden Globe Awards', 'Francis Ford Coppola', 'St. Francis Seminary in Cincinnati', 'boutique', 'Oliver Stone', 'University of Hong Kong', 'Jackie Chan', 'South China Sea', 'Breeding Law', 'Electric Shadows', 'Zhang Yimou', 'Ann Hui', 'John Woo', 'latest Permian-earliest Triassic', 'Bruce Lee', 'International Olympic Committee', 'Martin Scorsese', 'Hong Kong', 'Edge of Tomorrow', 'Nicole Kidman', 'Tony Leung', 'Tokyo', 'Mira Sorvino', 'Pedro Almodóvar', 'Greta Gerwig', 'Church of Scientology', 'Magnolia', 'Bafta Awards', 'Berlin', 'Academy Awards', 'Cannes', 'Anne Hathaway', 'Star Wars', 'S. moellendorffii', "United States Department of Energy's Joint Genome Institute", 'Japan', 'Tom Cruise', 'Keith Richards']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Vascular plant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Vascular plant
+Vascular plants
+Selaginella
+Tracheophyta
+Eutracheophytes
+Resurrection plant
+Vascular tissue
+Lepidodendrales
+Xylem and phloem
+Water-column
+Isoetites rolandii
+Transpiration pull
+International Olympic Committee
+Isoetales
+St. Francis Seminary in Cincinnati
+Conifers
+Vascular plants
+Cole
+Rhyniophytes
+Lawrence of Arabia by Akira Kurosawa
+Bob Dylan
+Fern allies
+Gymnosperms
+Tropic of Cancer
+Megalophylls
+Secndary growth
+Frosty fern
+Palme d'Or
+Wetland Park
+Angiosperms
+Phloem
+Lignin
+Nicolas Sarkozy
+The Killer
+
+gpt_entity_particular(): entity list: 
+ ['Bob Dylan', 'Fern allies', 'St. Francis Seminary in Cincinnati', 'Transpiration pull', 'Isoetites rolandii', 'Xylem and phloem', 'Phloem', 'Megalophylls', 'Isoetales', 'Lawrence of Arabia by Akira Kurosawa', 'Nicolas Sarkozy', 'International Olympic Committee', 'Selaginella', 'The Killer', 'Vascular plant', 'Conifers', 'Gymnosperms', 'Cole', 'Vascular tissue', 'Wetland Park', 'Tropic of Cancer', "Palme d'Or", 'Rhyniophytes', 'Angiosperms', 'Eutracheophytes', 'Frosty fern', 'Lepidodendrales', 'Water-column', 'Secndary growth', 'Lignin', 'Vascular plants', 'Tracheophyta', 'Resurrection plant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Phloem', 'Vascular tissue', 'Vascular plants']
+After GPT, entity:  {'Lycophyte', 'Canada', 'Woo', 'Zosterophylls', 'Qing', 'Scorsese', 'Martin', 'River', "Kong's", 'Jesus', 'Isoetales', 'Cruise', 'Seminary', 'Nicole', 'Lycopodiophytina', 'California', 'Island', 'North', 'Kidman', 'Hicklingia', 'Committee', 'Triassic', 'Energy', 'Lycophyta', 'Lawrence', 'Pearl', 'Rock', 'Carboniferous', 'Lycophytes', 'Olympic', 'Dustin', 'Sarkozy', 'Coppola', 'Ben', 'University', 'Ford', 'Richards', 'Vascular', 'Hong', 'John', 'Francis', 'Spielberg', "Woo's", 'Arabia', 'Kong', 'Hills', 'Tom', 'Kowloon', 'Tropic', 'Vascular plants', 'Keith', 'Stiller', 'Akira', 'Articulatae', 'United', 'Lycopodiophyta', 'China', 'Kurosawa', 'Travolta', 'Productions', 'Europe', 'Lycopodiopsida', 'Lycopodiaceae', "People's", 'Steven', 'dynasty', 'Phloem', 'International', 'Nicolas', 'Institute', 'Asia', 'Victoria', 'plant', 'Lion', 'Selaginella', 'Hoffman', 'Selaginellaceae', 'Gymnosperms', 'Gerwig', 'Zosterophyllum', 'Cancer', 'Stone', 'Oliver', 'Vascular tissue', 'South', 'Republic', 'Streep', 'Meryl', 'Chan', 'Cincinnati', 'Permian', 'Bob', 'America', 'Beverly', 'Dylan', 'Jackie', 'Sea', 'Tracheophyta'}
+Total time:  206.8878355026245
+Entity conversion done on 4_8 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_8_entity_conversion_hash.json. Check the entity.
+ What is the scientific name for the category of 010s that are part of the diversity found in the special administrative region of 011 where a filmmaker, who has worked with 01F Cruise, started his career?
+
+
+
+Done. Check final_query/id_4_8_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_8_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_8_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_8_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_8_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_8_final_result_ratio25_unmasked.txt

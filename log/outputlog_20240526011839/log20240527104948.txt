@@ -1,0 +1,1662 @@
+Got argument: Julius Caesar, 1, 1_13, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Julius Caesar, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Julius_Caesar_info.json file
+first_hop:  {'triplet': '("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")', 'start word': 'Julius Caesar', 'end word': 'Pompey', 'source': {'name': 'Battle of Pharsalus', 'line': 10}, 'cpnet': {'start word': 'julius_caesar', 'end word': 'pompey'}}
+next_word: Pompey
+
+utils/question.py extract_hops(Pompey, [], ['Julius Caesar']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Pompey_info.json file
+extract_info(Pompey) Start.
+utils/preprocess.py extract_info(): Checking good links on Pompey
+Sulla is People
+1 / 30 )  Sulla Sulla sulla
+Julius Caesar is People
+2 / 30 )  Julius Caesar Julius Caesar julius_caesar
+Marcus Licinius Crassus is People
+3 / 30 )  Crassus Marcus Licinius Crassus crassus
+Battle of Pharsalus is Geography
+4 / 30 )  Battle of Pharsalus Battle of Pharsalus battle_of_pharsalus
+Rome is Geography
+5 / 30 )  Rome Rome rome
+Brindisi is Geography
+6 / 30 )  Brundusium Brindisi brindisi
+Campania is Geography
+7 / 30 )  Campania Campania campania
+Rimini is Geography
+8 / 30 )  Ariminium Rimini rimini
+Via Flaminia is Incident
+9 / 30 )  Via Flaminia Via Flaminia flaminian_way
+Spoleto is Geography
+10 / 30 )  Spoletium Spoleto spoleto
+Palestrina is Geography
+11 / 30 )  Praeneste Palestrina palestrina
+Umbria is Geography
+12 / 30 )  Umbria Umbria umbria
+Plutarch is People
+13 / 30 )  Plutarch Plutarch plutarch
+Gallia Narbonensis is Geography
+14 / 30 )  Transalpine Gaul Gallia Narbonensis transalpine
+Modena is Geography
+15 / 30 )  Mutina Modena modena
+Marcus Junius Brutus  is People
+16 / 30 )  Marcus Junius Brutus Marcus Junius Brutus  brutus
+Sardinia is Geography
+17 / 30 )  Sardinia Sardinia sardinia
+Hispania is Geography
+18 / 30 )  Hispania Hispania hispania
+Narbonne is Geography
+19 / 30 )  Narbo Martius Narbonne narbonne
+Ebro is Geography
+20 / 30 )  river Ebro Ebro ebro
+Lusitania is Geography
+21 / 30 )  Lusitania Lusitania lusitania
+Spartacus is People
+22 / 30 )  Spartacus Spartacus spartacus
+Cilicia is Geography
+23 / 30 )  Cilicia Cilicia cilicia
+Crete is Geography
+24 / 30 )  Crete Crete crete
+Calabria is Geography
+25 / 30 )  Calabria Calabria calabria
+Lucullus is People
+26 / 30 )  Lucius Licinius Lucullus Lucullus lucullus
+Cilicia  is Geography
+27 / 30 )  Cilicia Cilicia  cilician
+Bithynia is Geography
+28 / 30 )  Bithynia Bithynia bithynia
+Mithridates VI Eupator is People
+29 / 30 )  Mithridates VI Mithridates VI Eupator mithridates_vi
+Cappadocia is Geography
+30 / 30 )  Cappadocia Cappadocia cappadocia
+extract_triplet(Pompey)
+Got GPT's response. String length : 7879
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Sulla', 'Sulla', 'sulla']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Julius Caesar', 'Julius Caesar', 'julius_caesar']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Sulla', 'Sulla', 'sulla']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Julius Caesar', 'Julius Caesar', 'julius_caesar'], ['Crassus', 'Marcus Licinius Crassus', 'crassus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Battle of Pharsalus', 'Battle of Pharsalus', 'battle_of_pharsalus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [['Sulla', 'Sulla', 'sulla']]
+object_words:  []
+subject_words:  [['Sulla', 'Sulla', 'sulla']]
+object_words:  []
+subject_words:  [['Julius Caesar', 'Julius Caesar', 'julius_caesar']]
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [['Crassus', 'Marcus Licinius Crassus', 'crassus']]
+object_words:  [(None, 'Pompey', 'pompey'), ['Julius Caesar', 'Julius Caesar', 'julius_caesar']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Sulla', 'Sulla', 'sulla'], ['Brundusium', 'Brindisi', 'brindisi']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Praeneste', 'Palestrina', 'palestrina']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Mutina', 'Modena', 'modena']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Hispania', 'Hispania', 'hispania']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Transalpine Gaul', 'Gallia Narbonensis', 'transalpine']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Narbo Martius', 'Narbonne', 'narbonne']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Spoletium', 'Spoleto', 'spoleto']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Crassus', 'Marcus Licinius Crassus', 'crassus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Calabria', 'Calabria', 'calabria']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Spartacus', 'Spartacus', 'spartacus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Crassus', 'Marcus Licinius Crassus', 'crassus'], ['Spartacus', 'Spartacus', 'spartacus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Transalpine Gaul', 'Gallia Narbonensis', 'transalpine']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Mutina', 'Modena', 'modena'], ['Marcus Junius Brutus', 'Marcus Junius Brutus ', 'brutus']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Hispania', 'Hispania', 'hispania']]
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Hispania', 'Hispania', 'hispania']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Transalpine Gaul', 'Gallia Narbonensis', 'transalpine'], ['Hispania', 'Hispania', 'hispania']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Sulla', 'Sulla', 'sulla']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Lusitania', 'Lusitania', 'lusitania']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Hispania', 'Hispania', 'hispania']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Spartacus', 'Spartacus', 'spartacus']]
+subject_words:  [['Crassus', 'Marcus Licinius Crassus', 'crassus']]
+object_words:  [['Spartacus', 'Spartacus', 'spartacus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Transalpine Gaul', 'Gallia Narbonensis', 'transalpine']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Cilicia', 'Cilicia', 'cilicia'], ['Cilicia', 'Cilicia ', 'cilician']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [['Lucius Licinius Lucullus', 'Lucullus', 'lucullus']]
+object_words:  [['Mithridates VI', 'Mithridates VI Eupator', 'mithridates_vi']]
+subject_words:  [['Mithridates VI', 'Mithridates VI Eupator', 'mithridates_vi']]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Mithridates VI', 'Mithridates VI Eupator', 'mithridates_vi']]
+subject_words:  [['Mithridates VI', 'Mithridates VI Eupator', 'mithridates_vi']]
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [['Mithridates VI', 'Mithridates VI Eupator', 'mithridates_vi']]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [['Bithynia', 'Bithynia', 'bithynia']]
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [['Cappadocia', 'Cappadocia', 'cappadocia']]
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [['Cilicia', 'Cilicia', 'cilicia'], ['Cilicia', 'Cilicia ', 'cilician']]
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Hispania', 'Hispania', 'hispania']]
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [['Crassus', 'Marcus Licinius Crassus', 'crassus']]
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Battle of Pharsalus', 'Battle of Pharsalus', 'battle_of_pharsalus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  [['Battle of Pharsalus', 'Battle of Pharsalus', 'battle_of_pharsalus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+['', 'Gnaeus Pompeus', 'son of Pompey and Mucia Tertia', '']
+['', 'Sextus Pompeus', 'son of Pompey and Mucia Tertia', '']
+['', 'Pompeia Magna', 'daughter of Pompey and Mucia Tertia', '']
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  [['Lucius Licinius Lucullus', 'Lucullus', 'lucullus']]
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  [(None, 'Pompey', 'pompey')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Pompey', 'pompey')]
+subject_words:  [['Plutarch', 'Plutarch', 'plutarch']]
+object_words:  []
+subject_words:  []
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+generate_question(1_13, ['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")', '("Pompey", "assigned", "Hispania and Africa as provinces")'], ['Pompey', 'Hispania'], [('Julius Caesar', 'Pompey'), ('Pompey', 'Hispania')], Hispania, [{'name': 'Battle of Pharsalus', 'line': 10}, {'name': 'Pompey', 'line': 78}]) called
+GPT output is:  Q: Which European country did the individual whose territories as provinces included Hispania withdraw from due to Julius Caesar?
+A: Hispania
+final_choice(Hispania, options = 5) started
+[]
+entity_type(Hispania) called
+Hispania is Geography
+check_matchscore(Hispania, 210s BC establishments):  0.0
+choose_by_wiki_recur(210s BC establishments)
+   Pages in 210s BC establishments: ['Book censorship in China', 'Cremona', 'Guangzhou', 'Hispania', 'Ludi Apollinares', 'Piacenza']
+      Cremona in ['Cremona', 'Hispania', 'Piacenza', 'Ludi Apollinares']
+      Hispania in ['Cremona', 'Hispania', 'Piacenza', 'Ludi Apollinares']
+      Piacenza in ['Cremona', 'Hispania', 'Piacenza', 'Ludi Apollinares', 'Book censorship in China']
+      Ludi Apollinares in ['Cremona', 'Hispania', 'Piacenza', 'Ludi Apollinares', 'Book censorship in China']
+      Book censorship in China in ['Cremona', 'Hispania', 'Piacenza', 'Ludi Apollinares', 'Book censorship in China', 'Guangzhou']
+      Guangzhou in ['Cremona', 'Hispania', 'Piacenza', 'Ludi Apollinares', 'Book censorship in China', 'Guangzhou']
+   Upper category of 210s BC establishments: ['3rd-century BC establishments', '210s BC', 'Establishments by decade']
+choose_by_wiki_recur(3rd-century BC establishments)
+check_matchscore(Hispania, 5th-century disestablishments in the Roman Empire):  0.0
+choose_by_wiki_recur(5th-century disestablishments in the Roman Empire)
+   Pages in 5th-century disestablishments in the Roman Empire: ['Africa (Roman province)', 'Cohors II Delmatarum', 'Cornuti', 'Diocese of Pannonia', 'Gallia Aquitania', 'Gallia Belgica', 'Gallia Narbonensis', 'Hispania', 'Legio IV Flavia Felix', 'Pannonia Prima', 'Pannonia Savia', 'Pannonia Secunda', 'Pannonia Valeria', 'Roman Gaul', 'Temple of Isis and Serapis', 'Viennensis']
+      Pannonia Secunda in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia']
+      Viennensis in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis']
+      Gallia Narbonensis in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania']
+      Pannonia Savia in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania']
+      Temple of Isis and Serapis in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti']
+      Gallia Aquitania in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul']
+      Cornuti in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul']
+      Roman Gaul in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix']
+      Legio IV Flavia Felix in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix', 'Cohors II Delmatarum']
+      Cohors II Delmatarum in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix', 'Cohors II Delmatarum', 'Pannonia Valeria']
+      Pannonia Valeria in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix', 'Cohors II Delmatarum', 'Pannonia Valeria', 'Africa (Roman province)']
+      Africa (Roman province) in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix', 'Cohors II Delmatarum', 'Pannonia Valeria', 'Africa (Roman province)', 'Gallia Belgica']
+      Gallia Belgica in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix', 'Cohors II Delmatarum', 'Pannonia Valeria', 'Africa (Roman province)', 'Gallia Belgica']
+      Diocese of Pannonia in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix', 'Cohors II Delmatarum', 'Pannonia Valeria', 'Africa (Roman province)', 'Gallia Belgica', 'Diocese of Pannonia']
+      Hispania in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix', 'Cohors II Delmatarum', 'Pannonia Valeria', 'Africa (Roman province)', 'Gallia Belgica', 'Diocese of Pannonia', 'Hispania']
+      Pannonia Prima in ['Pannonia Secunda', 'Viennensis', 'Gallia Narbonensis', 'Pannonia Savia', 'Temple of Isis and Serapis', 'Gallia Aquitania', 'Cornuti', 'Roman Gaul', 'Legio IV Flavia Felix', 'Cohors II Delmatarum', 'Pannonia Valeria', 'Africa (Roman province)', 'Gallia Belgica', 'Diocese of Pannonia', 'Hispania', 'Pannonia Prima']
+   Upper category of 5th-century disestablishments in the Roman Empire: ['5th-century disestablishments by country', '1st-millennium disestablishments in the Roman Empire', 'Disestablishments in the Roman Empire by century', '5th century in the Roman Empire']
+choose_by_wiki_recur(5th-century disestablishments by country)
+['Cremona', 'Piacenza', 'Guangzhou', 'Gallia Narbonensis', 'Gallia Aquitania', 'Africa (Roman province)']
+Ended after 2.5 hierarchy
+(2.5, ['Gallia Aquitania', 'Africa (Roman province)', 'Cremona', 'Gallia Narbonensis', 'Guangzhou', 'Piacenza'])
+
+extract_info(Gallia Narbonensis) Start.
+utils/preprocess.py extract_info(): Checking good links on Gallia Narbonensis
+Provence is Geography
+1 / 30 )  Provence Provence provence
+Alps is Geography
+2 / 30 )  Alps Alps alps
+Pyrenees is Geography
+3 / 30 )  Pyrenees Mountains Pyrenees pyrenees
+Cévennes is Geography
+4 / 30 )  Cévennes Cévennes cévennes
+Rhône is Geography
+5 / 30 )  Rhone Rhône rhône
+Septimania is Geography
+6 / 30 )  Septimania Septimania septimania
+Narbonne is Geography
+7 / 30 )  Colonia Narbo Martius Narbonne narbonne
+Gnaeus Pullius Pollio  is Geography
+8 / 30 )  Gnaeus Pullius Pollio Gnaeus Pullius Pollio  transalpine
+Phocaea is Geography
+9 / 30 )  Phocaea Phocaea phocaea
+Carthage is Geography
+10 / 30 )  Carthaginians Carthage carthage
+Hispania is Geography
+11 / 30 )  Hispania Hispania hispania
+Italy is Geography
+12 / 30 )  Italia Italy italy
+Iberian Peninsula is Geography
+13 / 30 )  Iberian peninsula Iberian Peninsula iberian_peninsula
+Julius Caesar is People
+14 / 30 )  Julius Caesar Julius Caesar julius_caesar
+Arles is Geography
+15 / 30 )  Arles Arles arles
+Mark Antony is People
+16 / 30 )  Mark Antony Mark Antony mark_antony
+Augustus is People
+17 / 30 )  Augustus Augustus augustus
+Diocletian is People
+18 / 30 )  Diocletian Diocletian diocletian
+extract_triplet(Gallia Narbonensis)
+Got GPT's response. String length : 1608
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Provence', 'Provence', 'provence']]
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Pyrenees Mountains', 'Pyrenees', 'pyrenees']]
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Cévennes', 'Cévennes', 'cévennes']]
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Alps', 'Alps', 'alps']]
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Rhone', 'Rhône', 'rhône']]
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Septimania', 'Septimania', 'septimania']]
+subject_words:  [['Colonia Narbo Martius', 'Narbonne', 'narbonne']]
+object_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Gnaeus Pullius Pollio', 'Gnaeus Pullius Pollio ', 'transalpine']]
+subject_words:  [['Provence', 'Provence', 'provence']]
+object_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+subject_words:  []
+object_words:  [['Phocaea', 'Phocaea', 'phocaea']]
+subject_words:  [['Carthaginians', 'Carthage', 'carthage']]
+object_words:  []
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Hispania', 'Hispania', 'hispania']]
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  [['Italia', 'Italy', 'italy']]
+subject_words:  [['Julius Caesar', 'Julius Caesar', 'julius_caesar']]
+object_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+subject_words:  [['Arles', 'Arles', 'arles']]
+object_words:  [['Julius Caesar', 'Julius Caesar', 'julius_caesar']]
+subject_words:  [['Mark Antony', 'Mark Antony', 'mark_antony']]
+object_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+subject_words:  [['Augustus', 'Augustus', 'augustus']]
+object_words:  []
+subject_words:  [['Diocletian', 'Diocletian', 'diocletian']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+object_words:  []
+subject_words:  [['Septimania', 'Septimania', 'septimania']]
+object_words:  [['Rhone', 'Rhône', 'rhône']]
+subject_words:  [['Provence', 'Provence', 'provence']]
+object_words:  [['Rhone', 'Rhône', 'rhône']]
+subject_words:  [['Gnaeus Pullius Pollio', 'Gnaeus Pullius Pollio ', 'transalpine']]
+object_words:  [(None, 'Gallia Narbonensis', 'transalpine')]
+extract_info(Piacenza) Start.
+utils/preprocess.py extract_info(): Checking good links on Piacenza
+Emilia-Romagna is Geography
+1 / 30 )  Emilia-Romagna Emilia-Romagna emilia_romagna
+Lombardy is Geography
+2 / 30 )  Lombardy Lombardy lombardy
+Milan is Geography
+3 / 30 )  Milan Milan milan
+Leonardo da Vinci is People
+4 / 30 )  Leonardo da Vinci Leonardo da Vinci leonardo_da_vinci
+Liguria is Geography
+5 / 30 )  Ligurian Liguria liguria
+Piedmont is Geography
+6 / 30 )  Piedmontese Piedmont piedmont
+Bologna is Geography
+7 / 30 )  Bologna Bologna bologna
+Brescia is Geography
+8 / 30 )  Brescia Brescia brescia
+Turin is Geography
+9 / 30 )  Turin Turin turin
+Trebbia is Geography
+10 / 30 )  Trebbia Trebbia trebbia
+Apennine Mountains is Geography
+11 / 30 )  Apennine Mountains Apennine Mountains apennine_mountains
+Taro  is Animal
+12 / 30 )  Taro River Taro  colocasia_esculenta
+Polybius is People
+13 / 30 )  Polybius Polybius polybius
+Cremona is Geography
+14 / 30 )  Cremona Cremona cremona
+Carthage is Geography
+15 / 30 )  Carthage Carthage carthage
+Modena is Geography
+16 / 30 )  Mutina Modena modena
+Procopius is People
+17 / 30 )  Procopius Procopius procopios
+Justinian I is People
+18 / 30 )  Justinian I Justinian I justinian_i
+Francia is Geography
+19 / 30 )  Francia Francia francia
+Rome is Geography
+20 / 30 )  Rome Rome rome
+Frederick Barbarossa is People
+21 / 30 )  Frederick I, Holy Roman Emperor Frederick Barbarossa frederick_barbarossa
+Pavia is Geography
+22 / 30 )  Pavia Pavia pavia
+Parma is Geography
+23 / 30 )  Parma Parma parma
+Genoa is Geography
+24 / 30 )  Genoa Genoa genoa
+France is Geography
+25 / 30 )  France France france
+Pope Leo X is People
+26 / 30 )  Pope Leo X Pope Leo X leo_x
+Papal States is Geography
+27 / 30 )  Papal States Papal States papal_states
+Pope Paul III is People
+28 / 30 )  Pope Paul III Pope Paul III paul_iii
+Napoleon is People
+29 / 30 )  Napoleon Napoleon napoleon
+Russia is Geography
+30 / 30 )  Russia Russia russia
+extract_triplet(Piacenza)
+Got GPT's response. String length : 2152
+['Based on the provided text and keywords, here are the triplets:']
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  []
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Lombardy', 'Lombardy', 'lombardy']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  []
+subject_words:  [['Leonardo da Vinci', 'Leonardo da Vinci', 'leonardo_da_vinci']]
+object_words:  [(None, 'Piacenza', 'piacenza')]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Ligurian', 'Liguria', 'liguria']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Piedmontese', 'Piedmont', 'piedmont']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Milan', 'Milan', 'milan'], ['Bologna', 'Bologna', 'bologna']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Brescia', 'Brescia', 'brescia'], ['Turin', 'Turin', 'turin']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Trebbia', 'Trebbia', 'trebbia']]
+subject_words:  [['Trebbia', 'Trebbia', 'trebbia']]
+object_words:  [['Apennine Mountains', 'Apennine Mountains', 'apennine_mountains']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  []
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  []
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Milan', 'Milan', 'milan']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Parma', 'Parma', 'parma']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [(None, 'Piacenza', 'piacenza')]
+subject_words:  [['Polybius', 'Polybius', 'polybius']]
+object_words:  []
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Cremona', 'Cremona', 'cremona']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  []
+subject_words:  [['Carthage', 'Carthage', 'carthage']]
+object_words:  [(None, 'Piacenza', 'piacenza')]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  []
+subject_words:  [['Procopius', 'Procopius', 'procopios']]
+object_words:  []
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Francia', 'Francia', 'francia']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [['Frederick I, Holy Roman Emperor', 'Frederick Barbarossa', 'frederick_barbarossa']]
+object_words:  []
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Genoa', 'Genoa', 'genoa']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Papal States', 'Papal States', 'papal_states']]
+subject_words:  [['Pope Leo X', 'Pope Leo X', 'leo_x']]
+object_words:  [(None, 'Piacenza', 'piacenza')]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  [['Pope Paul III', 'Pope Paul III', 'paul_iii']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [['France', 'France', 'france']]
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  []
+subject_words:  [(None, 'Piacenza', 'piacenza')]
+object_words:  []
+subject_words:  [['Russia', 'Russia', 'russia']]
+object_words:  [(None, 'Piacenza', 'piacenza')]
+extract_info(Gallia Aquitania) Start.
+utils/preprocess.py extract_info(): Checking good links on Gallia Aquitania
+Aquitaine is Geography
+1 / 30 )  Aquitaine Aquitaine aquitaine
+France is Geography
+2 / 30 )  France France france
+Gallia Narbonensis is Geography
+3 / 30 )  Gallia Narbonensis Gallia Narbonensis transalpine
+Hispania Tarraconensis is Geography
+4 / 30 )  Hispania Tarraconensis Hispania Tarraconensis hispania_tarraconensis
+Pyrenees is Geography
+5 / 30 )  Pyrenees Pyrenees pyrenees
+Mediterranean Sea is Geography
+6 / 30 )  Mediterranean Mediterranean Sea mediterranean_sea
+Lake Geneva is Geography
+7 / 30 )  Lake Geneva Lake Geneva lake_geneva
+Narbonne is Geography
+8 / 30 )  Narbo Narbonne narbonne
+Provence is Geography
+9 / 30 )  Provence Provence provence
+Vercingetorix is People
+10 / 30 )  Vercingetorix Vercingetorix vercingetorix
+Julius Caesar is People
+11 / 30 )  Julius Caesar Julius Caesar julius_caesar
+Garonne is Geography
+12 / 30 )  Garonne Garonne garonne
+Publius Licinius Crassus  is People
+13 / 30 )  Publius Crassus Publius Licinius Crassus  crassus
+Marcus Vipsanius Agrippa is People
+14 / 30 )  Agrippa Marcus Vipsanius Agrippa marcus_vipsanius_agrippa
+Augustus is People
+15 / 30 )  Augustus Augustus augustus
+Strabo is People
+16 / 30 )  Strabo Strabo strabo
+Diocletian is People
+17 / 30 )  Diocletian Diocletian diocletian
+Bourges is Geography
+18 / 30 )  Avaricum Biturigum Bourges bourges
+Iberian Peninsula is Geography
+19 / 30 )  Iberian Peninsula Iberian Peninsula iberian_peninsula
+extract_triplet(Gallia Aquitania)
+Got GPT's response. String length : 1304
+subject_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+object_words:  [['Aquitaine', 'Aquitaine', 'aquitaine']]
+subject_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+object_words:  [['France', 'France', 'france']]
+subject_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+object_words:  [['Gallia Narbonensis', 'Gallia Narbonensis', 'transalpine']]
+subject_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+object_words:  [['Hispania Tarraconensis', 'Hispania Tarraconensis', 'hispania_tarraconensis']]
+subject_words:  []
+object_words:  [['Pyrenees', 'Pyrenees', 'pyrenees']]
+subject_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Hispania Tarraconensis', 'Hispania Tarraconensis', 'hispania_tarraconensis']]
+object_words:  [['Mediterranean', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Strabo', 'Strabo', 'strabo']]
+object_words:  []
+subject_words:  [['Julius Caesar', 'Julius Caesar', 'julius_caesar']]
+object_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+subject_words:  [['Garonne', 'Garonne', 'garonne']]
+object_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+subject_words:  [['Publius Crassus', 'Publius Licinius Crassus ', 'crassus']]
+object_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+subject_words:  [['Agrippa', 'Marcus Vipsanius Agrippa', 'marcus_vipsanius_agrippa']]
+object_words:  []
+subject_words:  [(None, 'Gallia Aquitania', 'aquitania')]
+object_words:  []
+subject_words:  [['Diocletian', 'Diocletian', 'diocletian']]
+object_words:  []
+subject_words:  [['Avaricum Biturigum', 'Bourges', 'bourges']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Iberian Peninsula', 'Iberian Peninsula', 'iberian_peninsula']]
+object_words:  []
+extract_info(Guangzhou) Start.
+utils/preprocess.py extract_info(): Checking good links on Guangzhou
+Guangdong is Geography
+1 / 30 )  Guangdong Guangdong guangdong
+Pearl River is Geography
+2 / 30 )  Pearl River Pearl River pearl_river
+Hong Kong is Geography
+3 / 30 )  Hong Kong Hong Kong hong_kong
+Macau is Geography
+4 / 30 )  Macau Macau macau
+United Kingdom is Geography
+5 / 30 )  British United Kingdom united_kingdom
+Shanghai is Geography
+6 / 30 )  Shanghai Shanghai shanghai
+Robert Peel is People
+7 / 30 )  Sir Robert Peel Robert Peel robert_peel
+Queen Victoria is People
+8 / 30 )  Queen Victoria Queen Victoria queen_victoria
+Lin Zexu is People
+9 / 30 )  Lin Zexu Lin Zexu lin_zexu
+Daoguang Emperor is People
+10 / 30 )  Emperor Xuanzong Daoguang Emperor daoguang_emperor
+Guangzhou Baiyun International Airport is Geography
+11 / 30 )  Guangzhou Baiyun International Airport Guangzhou Baiyun International Airport baiyun_airport
+Foshan is Geography
+12 / 30 )  Foshan Foshan foshan
+Dongguan is Geography
+13 / 30 )  Dongguan Dongguan dongguan
+Zhongshan is Geography
+14 / 30 )  Zhongshan Zhongshan zhongshan
+Shenzhen is Geography
+15 / 30 )  Shenzhen Shenzhen shenzhen
+Jiangmen is Geography
+16 / 30 )  Jiangmen Jiangmen jiangmen
+Huizhou is Geography
+17 / 30 )  Huizhou Huizhou huizhou
+Zhuhai is Geography
+18 / 30 )  Zhuhai Zhuhai zhuhai
+Beijing is Geography
+19 / 30 )  Beijing Beijing beijing
+Chongqing is Geography
+20 / 30 )  Chongqing Chongqing chongqing
+South China University of Technology is Geography
+21 / 30 )  South China University of Technology South China University of Technology south_china_university_of_technology
+Guangzhou University of Chinese Medicine is Geography
+22 / 30 )  Guangzhou University of Chinese Medicine Guangzhou University of Chinese Medicine guangzhou_university_of_chinese_medicine
+Panyu, Guangzhou is Geography
+23 / 30 )  one of Guangzhou's districts Panyu, Guangzhou panyu
+Huang Chao is People
+24 / 30 )  Huang Chao Huang Chao huang_chao
+Ibn Battuta is Geography
+25 / 30 )  Ibn Battuta Ibn Battuta battuta
+Hongwu Emperor is People
+26 / 30 )  Hongwu Emperor Hongwu Emperor hongwu_emperor
+Quanzhou is Geography
+27 / 30 )  Quanzhou Quanzhou quanzhou
+Ningbo is Geography
+28 / 30 )  Ningbo Ningbo ningbo
+Lampacau is Geography
+29 / 30 )  Lampacau Lampacau lampacau
+Qing dynasty is Geography
+30 / 30 )  Qing Qing dynasty qing_dynasty
+extract_triplet(Guangzhou)
+Got GPT's response. String length : 3410
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['Guangdong', 'Guangdong', 'guangdong']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['Pearl River', 'Pearl River', 'pearl_river']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['Hong Kong', 'Hong Kong', 'hong_kong']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['Macau', 'Macau', 'macau']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['British', 'United Kingdom', 'united_kingdom']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['Hong Kong', 'Hong Kong', 'hong_kong'], ['Shanghai', 'Shanghai', 'shanghai']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['Macau', 'Macau', 'macau'], ['Zhuhai', 'Zhuhai', 'zhuhai']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['Shenzhen', 'Shenzhen', 'shenzhen'], ['Chongqing', 'Chongqing', 'chongqing']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [(None, 'Guangzhou', 'guangzhou'), ['South China University of Technology', 'South China University of Technology', 'south_china_university_of_technology'], ['Guangzhou University of Chinese Medicine', 'Guangzhou University of Chinese Medicine', 'guangzhou_university_of_chinese_medicine']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [(None, 'Guangzhou', 'guangzhou'), ["one of Guangzhou's districts", 'Panyu, Guangzhou', 'panyu']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [['Pearl River', 'Pearl River', 'pearl_river']]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  [(None, 'Guangzhou', 'guangzhou')]
+subject_words:  [(None, 'Guangzhou', 'guangzhou')]
+object_words:  []
+['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")\n', '("Pompey", "assigned", "Hispania and Africa as provinces")\n']
+
+['("Battle of Pharsalus", "was", "decisive battle of Caesar\'s Civil War")\n', '("Battle of Pharsalus", "occurred near", "Pharsalus in Central Greece")\n', '("Julius Caesar", "formed up opposite", "army of the Roman Republic")\n', '("Pompey", "commanded", "army of the Roman Republic against Julius Caesar")\n', '("Pompey", "had backing of", "majority of Roman senators")\n', '("Pompey\'s army", "outnumbered", "Caesarian legions")\n', '("Pompey", "suffered", "overwhelming defeat at Battle of Pharsalus")\n', '("Pompey", "eventually fled to", "Egypt")\n', '("Julius Caesar", "captured", "Rome at start of Civil War")\n', '("Julius Caesar", "advanced on", "Dyrrachium")\n', '("Julius Caesar", "withdrew east into", "Thessaly")\n', '("Julius Caesar", "besieged", "Gomphi")\n', '("Metellus Scipio\'s forces", "arriving from", "Syria")\n', '("Pompey", "pursued", "Caesar")\n', '("Pompey", "sought to spare", "Italy from invasion by concluding war on Greek soil")\n', '("Strabo", "mentions", "Pharsaloi")\n', '("Pharsalus", "disputed location according to", "scholars")\n', '("Strabo", "mentions", "Thetideion and temple to Thetis near Pharsalus")\n', '("Krini", "probable location of", "Palaepharsalus according to Morgan")\n', '("Marcus Tullius Cicero", "calls battle", "Pharsālicum proelium")\n', '("Lucan", "uses the name", "Pharsālia for the battle")\n', '("Plutarch", "refers to battle", "at Pharsalus")\n', '("Caesarian legions", "recruited Greek light infantry from", "Dolopia, Acarnania, and Aetolia")\n', '("Pompey\'s forces", "contained soldiers from", "Phoenicians")\n', '("Pompey\'s forces", "contained soldiers from", "Cappadocian")\n', '("Mark Antony", "commanded", "Caesar\'s left flank at the Battle of Pharsalus")\n', '("Marcus Junius Brutus", "sought", "Caesar\'s pardon after battle")\n', '("Alexandria", "Caesar landed in", "after pursuing Pompey")\n', '("Alexandre Dumas", "mentions", "Battle of Pharsalus in The Three Musketeers")\n', '("Pompey", "known in English as", "Pompey the Great")\n', '("Pompey", "played a role in", "transformation of Rome")\n', '("Pompey", "protege of", "Sulla")\n', '("Pompey", "became enemy of", "Julius Caesar")\n', '("Pompey", "rose to prominence serving", "Sulla")\n', '("Pompey", "elected as consul on", "three occasions")\n', '("Pompey", "joined", "Crassus and Julius Caesar in the First Triumvirate")\n', '("Pompey", "married", "Julia, daughter of Caesar")\n', '("Pompey", "defeated at", "Battle of Pharsalus")\n', '("Pompey", "assassinated in", "Egypt")\n', '("Sulla", "sent Pompey to", "Sicily and Africa")\n', '("Sulla", "persuaded Pompey to divorce", "Antistia ")\n', '("Julius Caesar", "political ally, and finally the enemy, of", "Pompey")\n', '("Crassus", "joined", "Pompey and Julius Caesar in the First Triumvirate")\n', '("Pompey", "recruited", "legion from his father\'s clients and veterans in Picenum")\n', '("Pompey", "landed in", "Brundusium with Sulla")\n', '("Pompey", "campaigned against", "Gaius Papirius Carbo in Cisalpine Gaul")\n', '("Pompey", "commander in", "Third Servile War")\n', '("Pompey", "advanced directly to his first consulship without", "traditional cursus honorum")\n', '("Pompey", "defeated Carbo\'s lieutenant in", "battle at the river Aesis")\n', '("Pompey", "pursued government forces to", "Praeneste")\n', '("Pompey", "married", "Mucia Tertia")\n', '("Pompey", "supported", "Marcus Aemilius Lepidus as consul")\n', '("Pompey", "besieged", "Mutina")\n', '("Pompey", "appointed military commander in", "Spain")\n', '("Pompey", "initiated a rebellion in", "Hispania")\n', '("Pompey", "commanded troops in", "Gallia Narbonensis")\n', '("Pompey", "entered winter quarters near", "Narbo Martius")\n', '("Pompey", "defeated by Sertorius at", "Battle of Lauron")\n', '("Pompey", "ambushed a large force under Censorinus", "outside Spoletium")\n', '("Pompey", "exited", "Censorinus")\n', '("Metellus Scipio", "supported by", "Pompey")\n', '("Metellus Scipio", "defeated", "Gaius Marcius Censorinus")\n', '("Pompey", "joined", "Marcus Licinius Crassus ")\n', '("Pompey", "claimed lands in", "Libya and Calabria")\n', '("Pompey", "defeated", "Spartacus in Third Servile War")\n', '("Pompey", "claimed victory in Hispania", "after Crassus defeated Spartacus")\n', '("Pompey", "assigned the governorship of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "raised troops from", "Picenum")\n', '("Pompey", "defeated", "Marcus Junius Brutus in Mutina")\n', '("Quintus Sertorius", "joined by", "Perpenna ")\n', '("Quintus Caecilius Metellus Pius", "forced out of", "Hispania Ulterior by Sertorius")\n', '("Metellus Pius", "allied with", "Pompey")\n', '("Pompey", "recruited", "infantry and cavalry for Hispania")\n', '("Pompey", "subdued rebellion in", "Gallia Narbonensis during route to Hispania")\n', '("Pompey", "crossed the Col de Portet into", "Iberian peninsula")\n', '("Pompey", "defeated Perpenna and Gaius Herennius outside", "Valencia")\n', '("Pompey", "battle position at", "Battle of Sacriportus with Sulla ")\n', '("Pompey", "met", "Perpenna in Lusitania")\n', '("Pompey", "restructured the local Roman administration in", "Hispania and southern Gaul")\n', '("Pompey", "charged with suppressing", "Third Servile War of Spartacus")\n', '("Crassus", "campaign against", "Spartacus")\n', '("Pompey", "massacred fugitives from", "Crassus\'s battle")\n', '("Pompey", "proconsul of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "fought pirates based in", "Cilicia")\n', '("Pompey", "defeated pirates at", "Battle of Korakesion")\n', '("Pompey", "created province of", "Syria")\n', '("Lucius Licinius Lucullus", "commander against", "Mithridates VI")\n', '("Mithridates VI", "invaded Pontus and ", "Armenia")\n', '("Pompey", "granted powers to defeat", "Mithridates VI in lex Manilia")\n', '("Mithridates VI", "withdrew to", "Armenia pursued by Pompey")\n', '("Pompey", "defeated Mithridates VI at", "Lycus")\n', '("Mithridates VI", "took control of", "Cimmerian Bosporus")\n', '("Pompey", "defeated forces in", "Caucasia")\n', '("Tigranes the Great", "terms with", "Pompey")\n', '("Pompey", "settled", "conflicts between Phraates III and Tigranes")\n', '("Pharnaces II of Pontus", "surrendered to", "Pompey")\n', '("Pompey", "occupied cities in", "the Levant")\n', '("Pompey", "backed", "Hyrcanus II over Aristobulus II")\n', '("Hyrcanus II", "ruled", "Judea under Pompey")\n', '("Bithynia and Pontus", "created as province by", "Pompey")\n', '("Ariobarzanes I of Cappadocia", "restored by", "Pompey")\n', '("Lesser Armenia", "incorporated into", "Galatia by Pompey")\n', '("Cilicia", "received", "Pamphylia from Pompey")\n', '("Pompey", "builds", "Theatre of Pompey")\n', '("Pompey", "Senate refuses to ratify treaties made by", "in Eastern settlements")\n', '("Cato the Younger", "opposed", "Pompey\'s treaties")\n', '("Julia", "death removed obstacle between", "Pompey and Caesar")\n', '("Publius Crassus", "death removed obstacle between", "Pompey and Caesar")\n', '("Pompey", "elected sole consul after suspending elections due to", "violence")\n', '("Pompey", "married", "Cornelia Metella")\n', '("Pompey", "enacted legislation to trial elected candidates", "backing Senate")\n', '("Pompey", "required electoral candidates presence in", "Rome")\n', '("Pompey", "initiated legislation against", "Caesar")\n', '("Pompey", "gathered consular army funded by", "Senate")\n', '("Pompey", "fell ill recruiting in", "Naples")\n', '("Caesar", "rejected ultimatum regarding concessions by", "Senate")\n', '("Caesar", "crossed the Rubicon into", "Italy")\n', '("Pompey", "withdrew from Italy to", "Greece")\n', '("Pompey", "deployed troops at", "Battle of Pharsalus against Caesar")\n', '("Pompey", "escapes to", "Mytilene")\n', '("Ptolemy XIII", "absent ally of Pompey at", "Battle of Pharsalus")\n', '("Pompey", "took refuge in", "Egypt with Ptolemy XIII")\n', '("Pompey", "sails from Cyprus to Egypt", "with small fleet")\n', '("Pompey", "arrived at", "Pelusium in Egypt")\n', '("Pompey", "assassinated by", "Lucius Septimius")\n', '("Lucius Septimius", "Roman officer serving in", "Egyptian army")\n', '("Ptolemy XIII", "feared control of Egypt by", "Pompey")\n', '("Pompey", "cremated by", "two servants")\n', '("Pompey", "head returned to", "Cornelia")\n', '("Pompey", "villain the Alban Hills burial", "administered by Cicero")\n', '("Pompey", "military skills criticized by", "Sertorius and Lucullus")\n', '("Pompey", "commanded without genius on battlefield", "preferred gradual strategies")\n', '("Pompey", "not charismatic but inspiring bravery", "on battlefield")\n', '("Pompey", "commander known for stealing victories", "from other generals")\n', '("Pompey", "considered outstanding strategist and organizer", "military campaigns")\n', '("Pompey", "preferred military glory over political constraints", "lex Gabinia")\n', '("Pompey", "efficient tactics against", "pirates")\n', '("Pompey", "war of attrition against", "Sertorius")\n', '("Pompey", "decided victory against", "Perpenna ending Sertorian war")\n', '("Pompey", "strategy against Caesar in", "Greece")\n', '("Pompey", "defeated by Caesar due to", "tactics")\n', '("Lucan", "wrote epic De Bello Civili about", "Pompey")\n', '("Plutarch", "claims Pompey married", "Aemilia pregnant by former husband")\n', '("Colleen McCullough", "Pompey featured in", "Masters of Rome series")\n', '("Steven Saylor", "Pompey encounters Gordianus in", "Roma Sub Rosa novels")\n', '("Robert Harris", "Pompey plays part in historical background of", "Cicero trilogy")\n', '("Gallia Narbonensis", "was located in", "Occitania and Provence")\n', '("Gallia Narbonensis", "was bordered by", "the Pyrenees Mountains")\n', '("Gallia Narbonensis", "was bordered by", "the Cévennes")\n', '("Gallia Narbonensis", "was bordered by", "the Alps")\n', '("Gallia Narbonensis", "included", "the Rhone catchment")\n', '("Western region of Gallia Narbonensis", "was known as", "Septimania")\n', '("Colonia Narbo Martius", "was a Roman colony founded in", "Gallia Narbonensis")\n', '("Gallia Narbonensis", "first recorded use by", "Gnaeus Pullius Pollio")\n', '("Provence", "survives in", "the modern name for eastern Gallia Narbonensis")\n', '("Massalia", "founded by", "Phocaea")\n', '("Carthaginians", "were sea-borne rivals to", "Massalia")\n', '("Gallia Narbonensis", "had trading routes to", "Hispania")\n', '("Gallia Narbonensis", "had trading routes to", "Italia")\n', '("Julius Caesar", "granted citizenship to many communities in", "Gallia Narbonensis")\n', '("Arles", "was built by", "Julius Caesar")\n', '("Mark Antony", "was given the balance of", "Gallia Narbonensis")\n', '("Augustus", "made Gallia Narbonensis a senatorial province governed by", "a proconsul")\n', '("Diocletian", "merged Gallia Narbonensis and Gallia Aquitania into", "Dioecesis Viennensis")\n', '("Dioecesis Septem Provinciarum", "was the name changed from", "Dioecesis Viennensis")\n', '("Gallia Narbonensis", "incorporated into", "the Visigothic Kingdom")\n', '("Septimania", "generally known as", "Visigothic dominions west of the lower Rhone")\n', '("Provence", "came into use to the east of", "the lower Rhone after Gothic takeover")\n', '("Gnaeus Pullius Pollio", "was a proconsular governor of", "Gallia Narbonensis")\n', '("Piacenza", "is a city and comune in", "Emilia-Romagna")\n', '("Piacenza", "has strong relations with", "Lombardy")\n', '("Piacenza", "is the ninth largest city by population in", "Emilia-Romagna")\n', '("Leonardo da Vinci", "defined", "Piacenza as a \'Land of passage\'")\n', '("Piacenza", "integrates characteristics of", "Ligurian")\n', '("Piacenza", "integrates characteristics of", "Piedmontese")\n', '("Piacenza", "is located at the intersection of route between", "Bologna and Milan")\n', '("Piacenza", "is located at the intersection of route between", "Brescia and Turin")\n', '("Piacenza", "is at the confluence of the", "Trebbia")\n', '("Trebbia", "drains the", "Apennine Mountains")\n', '("Piacenza", "is located at the confluence of the", "Po")\n', '("Piacenza", "hosts", "Università Cattolica del Sacro Cuore")\n', '("Piacenza", "hosts", "Polytechnic University of Milan")\n', '("Piacenza", "hosts", "University of Parma")\n', '("Piacenza", "is the capital of the eponymous province", "Piacenza")\n', '("Polybius", "reported that", "Etruscans inhabited the areas before the Gauls took the Po Valley")\n', '("Piacenza", "was founded as a Roman military colony with", "Cremona")\n', '("Piacenza", "had legal status as", "Latin Rights")\n', '("Carthage", "declared war on", "Piacenza")\n', '("Piacenza", "was a colony placed by", "Rome")\n', '("Piacenza", "was the first among Gauls of the", "Po valley")\n', '("Procopius", "called Piacenza", "the principal city in the country of Aemilia")\n', '("Piacenza", "was conquered by", "Francia")\n', '("Piacenza", "was connected to the Holy Roman Empire with", "Rome")\n', '("Frederick I, Holy Roman Emperor", "had Piacenza participate in", "Lombard League")\n', '("Piacenza", "captured control of trading routes with", "Genoa")\n', '("Piacenza", "became part of the", "Papal States")\n', '("Pope Leo X", "ruled", "Piacenza")\n', '("Piacenza", "was created as Duchy by", "Pope Paul III")\n', '("Napoleon", "annexed Piacenza to", "France")\n', '("Piacenza", "was occupied by", "Austria")\n', '("Piacenza", "was declared \'Primogenita dell\'Unità di Italia\' by", "the monarch")\n', '("Russia", "received Piacentini recruits sent to fight from", "Piacenza")\n', '("Gallia Aquitania", "also known as", "Aquitaine")\n', '("Gallia Aquitania", "is in present-day", "southwest France")\n', '("Gallia Aquitania", "was bordered by", "Gallia Narbonensis")\n', '("Gallia Aquitania", "was bordered by", "Hispania Tarraconensis")\n', '("Aquitania", "stretches from", "Pyrenees in the south to the Liger (Loire) river in the north")\n', '("Gallia Aquitania", "included the tribes", "Petrocorii")\n', '("Aquitania", "produced", "linen from the Cadurci")\n', '("Hispania Tarraconensis", "is located near", "Mediterranean")\n', '("Ruteni and Gabales", "had", "silver mines")\n', '("Strabo", "described the Aquitani as", "wealthy")\n', '("Julius Caesar", "named", "Gallia Aquitania")\n', '("Garonne", "is a landmark in the triangle-shaped territory of", "Gallia Aquitania")\n', '("Publius Crassus", "assisted with military exploits in", "Gallia Aquitania")\n', '("Agrippa", "was victorious over", "Gauls of Aquitania")\n', '("Gallia Aquitania", "was under command of", "a former Praetor")\n', '("Diocletian", "reorganized Gallia Aquitania into", "Aquita Prima, Aquitania Secunda, and Aquitania Tertia")\n', '("Avaricum Biturigum", "became the see of", "Aquita Prima")\n', '("Aquitania Secunda\'s see", "was", "Burdigala (Bordeaux)")\n', '("Aquitania Tertia", "also known as", "Novempopulania")\n', '("Iberian Peninsula", "was partly occupied by", "Visigoths after the expansion")\n', '("Guangzhou", "capital of", "Guangdong province")\n', '("Guangzhou", "located on", "Pearl River")\n', '("Guangzhou", "north-northwest of", "Hong Kong")\n', '("Guangzhou", "north of", "Macau")\n', '("Guangzhou", "major terminus of", "Silk Road")\n', '("Guangzhou", "serves as", "transportation hub")\n', '("Guangzhou", "one of China\'s", "three largest cities")\n', '("Guangzhou", "only Chinese port accessible to", "most foreign traders")\n', '("Guangzhou", "captured by", "the British")\n', '("Guangzhou", "loss of trade to", "Hong Kong and Shanghai")\n', '("Guangzhou", "classified as", "Large-Port Megacity")\n', '("Guangzhou", "at the heart of", "the Guangdong–Hong Kong–Macau Greater Bay Area")\n', '("Guangzhou", "extends into", "Foshan, Dongguan, Zhongshan, Shenzhen, Jiangmen, Huizhou, Zhuhai and Macau")\n', '("Guangzhou", "one of China\'s", "nine National Central Cities")\n', '("Guangzhou", "has", "one of the most expensive real estate markets in China")\n', '("Guangzhou", "fifth most populous city by urban resident population in", "China after Shanghai, Beijing, Shenzhen and Chongqing")\n', '("Guangzhou", "known for", "its annual Canton Fair")\n', '("Guangzhou", "ranked as", "an Alpha global first-tier city together with San Francisco and Stockholm")\n', '("Guangzhou", "major", "Asia-Pacific finance hub")\n', '("Guangzhou", "major", "Asia-Pacific research and development hub")\n', '("Guangzhou", "home to", "South China University of Technology and Guangzhou University of Chinese Medicine")\n', '("Guangzhou", "contains", "one of Guangzhou\'s districts")\n', '("Guangzhou", "formerly known as", "Panyu")\n', '("Guangzhou", "known as", "Guangfu after its status as the capital of a prefecture")\n', '("Guangzhou", "nicknamed", "City of Rice and City of Rams")\n', '("Guangzhou", "known by medieval Persians as", "Khanfu")\n', '("Guangzhou", "English name derived from", "Cidade de Cantão")\n', '("Panyu", "seat of", "Qin Empire\'s Nanhai Commandery")\n', '("Panyu", "base for", "first invasion of the Baiyue lands in southern China")\n', '("Panyu", "was an expansive commercial center", "during the Nanyue period")\n', '("Guangzhou", "incorporated into the", "Han dynasty")\n', '("Guangzhou", "renamed to Xingwang Fu during", "Southern Han")\n', '("Guangzhou", "major contributor to the rise of", "the modern global economy")\n', '("Guangzhou", "maintained until", "the outbreak of the First Opium War")\n', '("Guangzhou", "briefly served as the capital of", "the Republican government")\n', '("Guangzhou", "main", "manufacturing hub of the Pearl River Delta")\n', '("Guangzhou", "considered one of", "the most prosperous cities in China")\n', '("Guangzhou", "has", "Guangzhou Higher Education Mega Center")\n', '("Guangzhou", "has", "Twin towns and sister cities relationships")\n']
+range(1, 264) 2
+['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")\n', '("Pompey", "assigned", "Hispania and Africa as provinces")\n']
+
+['("Battle of Pharsalus", "was", "decisive battle of Caesar\'s Civil War")\n', '("Battle of Pharsalus", "occurred near", "Pharsalus in Central Greece")\n', '("Julius Caesar", "formed up opposite", "army of the Roman Republic")\n', '("Pompey", "commanded", "army of the Roman Republic against Julius Caesar")\n', '("Pompey", "had backing of", "majority of Roman senators")\n', '("Pompey\'s army", "outnumbered", "Caesarian legions")\n', '("Pompey", "suffered", "overwhelming defeat at Battle of Pharsalus")\n', '("Pompey", "eventually fled to", "Egypt")\n', '("Julius Caesar", "captured", "Rome at start of Civil War")\n', '("Julius Caesar", "advanced on", "Dyrrachium")\n', '("Julius Caesar", "withdrew east into", "Thessaly")\n', '("Julius Caesar", "besieged", "Gomphi")\n', '("Metellus Scipio\'s forces", "arriving from", "Syria")\n', '("Pompey", "pursued", "Caesar")\n', '("Pompey", "sought to spare", "Italy from invasion by concluding war on Greek soil")\n', '("Strabo", "mentions", "Pharsaloi")\n', '("Pharsalus", "disputed location according to", "scholars")\n', '("Strabo", "mentions", "Thetideion and temple to Thetis near Pharsalus")\n', '("Krini", "probable location of", "Palaepharsalus according to Morgan")\n', '("Marcus Tullius Cicero", "calls battle", "Pharsālicum proelium")\n', '("Lucan", "uses the name", "Pharsālia for the battle")\n', '("Plutarch", "refers to battle", "at Pharsalus")\n', '("Caesarian legions", "recruited Greek light infantry from", "Dolopia, Acarnania, and Aetolia")\n', '("Pompey\'s forces", "contained soldiers from", "Phoenicians")\n', '("Pompey\'s forces", "contained soldiers from", "Cappadocian")\n', '("Mark Antony", "commanded", "Caesar\'s left flank at the Battle of Pharsalus")\n', '("Marcus Junius Brutus", "sought", "Caesar\'s pardon after battle")\n', '("Alexandria", "Caesar landed in", "after pursuing Pompey")\n', '("Alexandre Dumas", "mentions", "Battle of Pharsalus in The Three Musketeers")\n', '("Pompey", "known in English as", "Pompey the Great")\n', '("Pompey", "played a role in", "transformation of Rome")\n', '("Pompey", "protege of", "Sulla")\n', '("Pompey", "became enemy of", "Julius Caesar")\n', '("Pompey", "rose to prominence serving", "Sulla")\n', '("Pompey", "elected as consul on", "three occasions")\n', '("Pompey", "joined", "Crassus and Julius Caesar in the First Triumvirate")\n', '("Pompey", "married", "Julia, daughter of Caesar")\n', '("Pompey", "defeated at", "Battle of Pharsalus")\n', '("Pompey", "assassinated in", "Egypt")\n', '("Sulla", "sent Pompey to", "Sicily and Africa")\n', '("Sulla", "persuaded Pompey to divorce", "Antistia ")\n', '("Julius Caesar", "political ally, and finally the enemy, of", "Pompey")\n', '("Crassus", "joined", "Pompey and Julius Caesar in the First Triumvirate")\n', '("Pompey", "recruited", "legion from his father\'s clients and veterans in Picenum")\n', '("Pompey", "landed in", "Brundusium with Sulla")\n', '("Pompey", "campaigned against", "Gaius Papirius Carbo in Cisalpine Gaul")\n', '("Pompey", "commander in", "Third Servile War")\n', '("Pompey", "advanced directly to his first consulship without", "traditional cursus honorum")\n', '("Pompey", "defeated Carbo\'s lieutenant in", "battle at the river Aesis")\n', '("Pompey", "pursued government forces to", "Praeneste")\n', '("Pompey", "married", "Mucia Tertia")\n', '("Pompey", "supported", "Marcus Aemilius Lepidus as consul")\n', '("Pompey", "besieged", "Mutina")\n', '("Pompey", "appointed military commander in", "Spain")\n', '("Pompey", "initiated a rebellion in", "Hispania")\n', '("Pompey", "commanded troops in", "Gallia Narbonensis")\n', '("Pompey", "entered winter quarters near", "Narbo Martius")\n', '("Pompey", "defeated by Sertorius at", "Battle of Lauron")\n', '("Pompey", "ambushed a large force under Censorinus", "outside Spoletium")\n', '("Pompey", "exited", "Censorinus")\n', '("Metellus Scipio", "supported by", "Pompey")\n', '("Metellus Scipio", "defeated", "Gaius Marcius Censorinus")\n', '("Pompey", "joined", "Marcus Licinius Crassus ")\n', '("Pompey", "claimed lands in", "Libya and Calabria")\n', '("Pompey", "defeated", "Spartacus in Third Servile War")\n', '("Pompey", "claimed victory in Hispania", "after Crassus defeated Spartacus")\n', '("Pompey", "assigned the governorship of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "raised troops from", "Picenum")\n', '("Pompey", "defeated", "Marcus Junius Brutus in Mutina")\n', '("Quintus Sertorius", "joined by", "Perpenna ")\n', '("Quintus Caecilius Metellus Pius", "forced out of", "Hispania Ulterior by Sertorius")\n', '("Metellus Pius", "allied with", "Pompey")\n', '("Pompey", "recruited", "infantry and cavalry for Hispania")\n', '("Pompey", "subdued rebellion in", "Gallia Narbonensis during route to Hispania")\n', '("Pompey", "crossed the Col de Portet into", "Iberian peninsula")\n', '("Pompey", "defeated Perpenna and Gaius Herennius outside", "Valencia")\n', '("Pompey", "battle position at", "Battle of Sacriportus with Sulla ")\n', '("Pompey", "met", "Perpenna in Lusitania")\n', '("Pompey", "restructured the local Roman administration in", "Hispania and southern Gaul")\n', '("Pompey", "charged with suppressing", "Third Servile War of Spartacus")\n', '("Crassus", "campaign against", "Spartacus")\n', '("Pompey", "massacred fugitives from", "Crassus\'s battle")\n', '("Pompey", "proconsul of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "fought pirates based in", "Cilicia")\n', '("Pompey", "defeated pirates at", "Battle of Korakesion")\n', '("Pompey", "created province of", "Syria")\n', '("Lucius Licinius Lucullus", "commander against", "Mithridates VI")\n', '("Mithridates VI", "invaded Pontus and ", "Armenia")\n', '("Pompey", "granted powers to defeat", "Mithridates VI in lex Manilia")\n', '("Mithridates VI", "withdrew to", "Armenia pursued by Pompey")\n', '("Pompey", "defeated Mithridates VI at", "Lycus")\n', '("Mithridates VI", "took control of", "Cimmerian Bosporus")\n', '("Pompey", "defeated forces in", "Caucasia")\n', '("Tigranes the Great", "terms with", "Pompey")\n', '("Pompey", "settled", "conflicts between Phraates III and Tigranes")\n', '("Pharnaces II of Pontus", "surrendered to", "Pompey")\n', '("Pompey", "occupied cities in", "the Levant")\n', '("Pompey", "backed", "Hyrcanus II over Aristobulus II")\n', '("Hyrcanus II", "ruled", "Judea under Pompey")\n', '("Bithynia and Pontus", "created as province by", "Pompey")\n', '("Ariobarzanes I of Cappadocia", "restored by", "Pompey")\n', '("Lesser Armenia", "incorporated into", "Galatia by Pompey")\n', '("Cilicia", "received", "Pamphylia from Pompey")\n', '("Pompey", "builds", "Theatre of Pompey")\n', '("Pompey", "Senate refuses to ratify treaties made by", "in Eastern settlements")\n', '("Cato the Younger", "opposed", "Pompey\'s treaties")\n', '("Julia", "death removed obstacle between", "Pompey and Caesar")\n', '("Publius Crassus", "death removed obstacle between", "Pompey and Caesar")\n', '("Pompey", "elected sole consul after suspending elections due to", "violence")\n', '("Pompey", "married", "Cornelia Metella")\n', '("Pompey", "enacted legislation to trial elected candidates", "backing Senate")\n', '("Pompey", "required electoral candidates presence in", "Rome")\n', '("Pompey", "initiated legislation against", "Caesar")\n', '("Pompey", "gathered consular army funded by", "Senate")\n', '("Pompey", "fell ill recruiting in", "Naples")\n', '("Caesar", "rejected ultimatum regarding concessions by", "Senate")\n', '("Caesar", "crossed the Rubicon into", "Italy")\n', '("Pompey", "withdrew from Italy to", "Greece")\n', '("Pompey", "deployed troops at", "Battle of Pharsalus against Caesar")\n', '("Pompey", "escapes to", "Mytilene")\n', '("Ptolemy XIII", "absent ally of Pompey at", "Battle of Pharsalus")\n', '("Pompey", "took refuge in", "Egypt with Ptolemy XIII")\n', '("Pompey", "sails from Cyprus to Egypt", "with small fleet")\n', '("Pompey", "arrived at", "Pelusium in Egypt")\n', '("Pompey", "assassinated by", "Lucius Septimius")\n', '("Lucius Septimius", "Roman officer serving in", "Egyptian army")\n', '("Ptolemy XIII", "feared control of Egypt by", "Pompey")\n', '("Pompey", "cremated by", "two servants")\n', '("Pompey", "head returned to", "Cornelia")\n', '("Pompey", "villain the Alban Hills burial", "administered by Cicero")\n', '("Pompey", "military skills criticized by", "Sertorius and Lucullus")\n', '("Pompey", "commanded without genius on battlefield", "preferred gradual strategies")\n', '("Pompey", "not charismatic but inspiring bravery", "on battlefield")\n', '("Pompey", "commander known for stealing victories", "from other generals")\n', '("Pompey", "considered outstanding strategist and organizer", "military campaigns")\n', '("Pompey", "preferred military glory over political constraints", "lex Gabinia")\n', '("Pompey", "efficient tactics against", "pirates")\n', '("Pompey", "war of attrition against", "Sertorius")\n', '("Pompey", "decided victory against", "Perpenna ending Sertorian war")\n', '("Pompey", "strategy against Caesar in", "Greece")\n', '("Pompey", "defeated by Caesar due to", "tactics")\n', '("Lucan", "wrote epic De Bello Civili about", "Pompey")\n', '("Plutarch", "claims Pompey married", "Aemilia pregnant by former husband")\n', '("Colleen McCullough", "Pompey featured in", "Masters of Rome series")\n', '("Steven Saylor", "Pompey encounters Gordianus in", "Roma Sub Rosa novels")\n', '("Robert Harris", "Pompey plays part in historical background of", "Cicero trilogy")\n', '("Gallia Narbonensis", "was located in", "Occitania and Provence")\n', '("Gallia Narbonensis", "was bordered by", "the Pyrenees Mountains")\n', '("Gallia Narbonensis", "was bordered by", "the Cévennes")\n', '("Gallia Narbonensis", "was bordered by", "the Alps")\n', '("Gallia Narbonensis", "included", "the Rhone catchment")\n', '("Western region of Gallia Narbonensis", "was known as", "Septimania")\n', '("Colonia Narbo Martius", "was a Roman colony founded in", "Gallia Narbonensis")\n', '("Gallia Narbonensis", "first recorded use by", "Gnaeus Pullius Pollio")\n', '("Provence", "survives in", "the modern name for eastern Gallia Narbonensis")\n', '("Massalia", "founded by", "Phocaea")\n', '("Carthaginians", "were sea-borne rivals to", "Massalia")\n', '("Gallia Narbonensis", "had trading routes to", "Hispania")\n', '("Gallia Narbonensis", "had trading routes to", "Italia")\n', '("Julius Caesar", "granted citizenship to many communities in", "Gallia Narbonensis")\n', '("Arles", "was built by", "Julius Caesar")\n', '("Mark Antony", "was given the balance of", "Gallia Narbonensis")\n', '("Augustus", "made Gallia Narbonensis a senatorial province governed by", "a proconsul")\n', '("Diocletian", "merged Gallia Narbonensis and Gallia Aquitania into", "Dioecesis Viennensis")\n', '("Dioecesis Septem Provinciarum", "was the name changed from", "Dioecesis Viennensis")\n', '("Gallia Narbonensis", "incorporated into", "the Visigothic Kingdom")\n', '("Septimania", "generally known as", "Visigothic dominions west of the lower Rhone")\n', '("Provence", "came into use to the east of", "the lower Rhone after Gothic takeover")\n', '("Gnaeus Pullius Pollio", "was a proconsular governor of", "Gallia Narbonensis")\n', '("Piacenza", "is a city and comune in", "Emilia-Romagna")\n', '("Piacenza", "has strong relations with", "Lombardy")\n', '("Piacenza", "is the ninth largest city by population in", "Emilia-Romagna")\n', '("Leonardo da Vinci", "defined", "Piacenza as a \'Land of passage\'")\n', '("Piacenza", "integrates characteristics of", "Ligurian")\n', '("Piacenza", "integrates characteristics of", "Piedmontese")\n', '("Piacenza", "is located at the intersection of route between", "Bologna and Milan")\n', '("Piacenza", "is located at the intersection of route between", "Brescia and Turin")\n', '("Piacenza", "is at the confluence of the", "Trebbia")\n', '("Trebbia", "drains the", "Apennine Mountains")\n', '("Piacenza", "is located at the confluence of the", "Po")\n', '("Piacenza", "hosts", "Università Cattolica del Sacro Cuore")\n', '("Piacenza", "hosts", "Polytechnic University of Milan")\n', '("Piacenza", "hosts", "University of Parma")\n', '("Piacenza", "is the capital of the eponymous province", "Piacenza")\n', '("Polybius", "reported that", "Etruscans inhabited the areas before the Gauls took the Po Valley")\n', '("Piacenza", "was founded as a Roman military colony with", "Cremona")\n', '("Piacenza", "had legal status as", "Latin Rights")\n', '("Carthage", "declared war on", "Piacenza")\n', '("Piacenza", "was a colony placed by", "Rome")\n', '("Piacenza", "was the first among Gauls of the", "Po valley")\n', '("Procopius", "called Piacenza", "the principal city in the country of Aemilia")\n', '("Piacenza", "was conquered by", "Francia")\n', '("Piacenza", "was connected to the Holy Roman Empire with", "Rome")\n', '("Frederick I, Holy Roman Emperor", "had Piacenza participate in", "Lombard League")\n', '("Piacenza", "captured control of trading routes with", "Genoa")\n', '("Piacenza", "became part of the", "Papal States")\n', '("Pope Leo X", "ruled", "Piacenza")\n', '("Piacenza", "was created as Duchy by", "Pope Paul III")\n', '("Napoleon", "annexed Piacenza to", "France")\n', '("Piacenza", "was occupied by", "Austria")\n', '("Piacenza", "was declared \'Primogenita dell\'Unità di Italia\' by", "the monarch")\n', '("Russia", "received Piacentini recruits sent to fight from", "Piacenza")\n', '("Gallia Aquitania", "also known as", "Aquitaine")\n', '("Gallia Aquitania", "is in present-day", "southwest France")\n', '("Gallia Aquitania", "was bordered by", "Gallia Narbonensis")\n', '("Gallia Aquitania", "was bordered by", "Hispania Tarraconensis")\n', '("Aquitania", "stretches from", "Pyrenees in the south to the Liger (Loire) river in the north")\n', '("Gallia Aquitania", "included the tribes", "Petrocorii")\n', '("Aquitania", "produced", "linen from the Cadurci")\n', '("Hispania Tarraconensis", "is located near", "Mediterranean")\n', '("Ruteni and Gabales", "had", "silver mines")\n', '("Strabo", "described the Aquitani as", "wealthy")\n', '("Julius Caesar", "named", "Gallia Aquitania")\n', '("Garonne", "is a landmark in the triangle-shaped territory of", "Gallia Aquitania")\n', '("Publius Crassus", "assisted with military exploits in", "Gallia Aquitania")\n', '("Agrippa", "was victorious over", "Gauls of Aquitania")\n', '("Gallia Aquitania", "was under command of", "a former Praetor")\n', '("Diocletian", "reorganized Gallia Aquitania into", "Aquita Prima, Aquitania Secunda, and Aquitania Tertia")\n', '("Avaricum Biturigum", "became the see of", "Aquita Prima")\n', '("Aquitania Secunda\'s see", "was", "Burdigala (Bordeaux)")\n', '("Aquitania Tertia", "also known as", "Novempopulania")\n', '("Iberian Peninsula", "was partly occupied by", "Visigoths after the expansion")\n', '("Guangzhou", "capital of", "Guangdong province")\n', '("Guangzhou", "located on", "Pearl River")\n', '("Guangzhou", "north-northwest of", "Hong Kong")\n', '("Guangzhou", "north of", "Macau")\n', '("Guangzhou", "major terminus of", "Silk Road")\n', '("Guangzhou", "serves as", "transportation hub")\n', '("Guangzhou", "one of China\'s", "three largest cities")\n', '("Guangzhou", "only Chinese port accessible to", "most foreign traders")\n', '("Guangzhou", "captured by", "the British")\n', '("Guangzhou", "loss of trade to", "Hong Kong and Shanghai")\n', '("Guangzhou", "classified as", "Large-Port Megacity")\n', '("Guangzhou", "at the heart of", "the Guangdong–Hong Kong–Macau Greater Bay Area")\n', '("Guangzhou", "extends into", "Foshan, Dongguan, Zhongshan, Shenzhen, Jiangmen, Huizhou, Zhuhai and Macau")\n', '("Guangzhou", "one of China\'s", "nine National Central Cities")\n', '("Guangzhou", "has", "one of the most expensive real estate markets in China")\n', '("Guangzhou", "fifth most populous city by urban resident population in", "China after Shanghai, Beijing, Shenzhen and Chongqing")\n', '("Guangzhou", "known for", "its annual Canton Fair")\n', '("Guangzhou", "ranked as", "an Alpha global first-tier city together with San Francisco and Stockholm")\n', '("Guangzhou", "major", "Asia-Pacific finance hub")\n', '("Guangzhou", "major", "Asia-Pacific research and development hub")\n', '("Guangzhou", "home to", "South China University of Technology and Guangzhou University of Chinese Medicine")\n', '("Guangzhou", "contains", "one of Guangzhou\'s districts")\n', '("Guangzhou", "formerly known as", "Panyu")\n', '("Guangzhou", "known as", "Guangfu after its status as the capital of a prefecture")\n', '("Guangzhou", "nicknamed", "City of Rice and City of Rams")\n', '("Guangzhou", "known by medieval Persians as", "Khanfu")\n', '("Guangzhou", "English name derived from", "Cidade de Cantão")\n', '("Panyu", "seat of", "Qin Empire\'s Nanhai Commandery")\n', '("Panyu", "base for", "first invasion of the Baiyue lands in southern China")\n', '("Panyu", "was an expansive commercial center", "during the Nanyue period")\n', '("Guangzhou", "incorporated into the", "Han dynasty")\n', '("Guangzhou", "renamed to Xingwang Fu during", "Southern Han")\n', '("Guangzhou", "major contributor to the rise of", "the modern global economy")\n', '("Guangzhou", "maintained until", "the outbreak of the First Opium War")\n', '("Guangzhou", "briefly served as the capital of", "the Republican government")\n', '("Guangzhou", "main", "manufacturing hub of the Pearl River Delta")\n', '("Guangzhou", "considered one of", "the most prosperous cities in China")\n', '("Guangzhou", "has", "Guangzhou Higher Education Mega Center")\n', '("Guangzhou", "has", "Twin towns and sister cities relationships")\n']
+range(1, 264) 2
+['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")\n', '("Pompey", "assigned", "Hispania and Africa as provinces")\n']
+
+['("Battle of Pharsalus", "was", "decisive battle of Caesar\'s Civil War")\n', '("Battle of Pharsalus", "occurred near", "Pharsalus in Central Greece")\n', '("Julius Caesar", "formed up opposite", "army of the Roman Republic")\n', '("Pompey", "commanded", "army of the Roman Republic against Julius Caesar")\n', '("Pompey", "had backing of", "majority of Roman senators")\n', '("Pompey\'s army", "outnumbered", "Caesarian legions")\n', '("Pompey", "suffered", "overwhelming defeat at Battle of Pharsalus")\n', '("Pompey", "eventually fled to", "Egypt")\n', '("Julius Caesar", "captured", "Rome at start of Civil War")\n', '("Julius Caesar", "advanced on", "Dyrrachium")\n', '("Julius Caesar", "withdrew east into", "Thessaly")\n', '("Julius Caesar", "besieged", "Gomphi")\n', '("Metellus Scipio\'s forces", "arriving from", "Syria")\n', '("Pompey", "pursued", "Caesar")\n', '("Pompey", "sought to spare", "Italy from invasion by concluding war on Greek soil")\n', '("Strabo", "mentions", "Pharsaloi")\n', '("Pharsalus", "disputed location according to", "scholars")\n', '("Strabo", "mentions", "Thetideion and temple to Thetis near Pharsalus")\n', '("Krini", "probable location of", "Palaepharsalus according to Morgan")\n', '("Marcus Tullius Cicero", "calls battle", "Pharsālicum proelium")\n', '("Lucan", "uses the name", "Pharsālia for the battle")\n', '("Plutarch", "refers to battle", "at Pharsalus")\n', '("Caesarian legions", "recruited Greek light infantry from", "Dolopia, Acarnania, and Aetolia")\n', '("Pompey\'s forces", "contained soldiers from", "Phoenicians")\n', '("Pompey\'s forces", "contained soldiers from", "Cappadocian")\n', '("Mark Antony", "commanded", "Caesar\'s left flank at the Battle of Pharsalus")\n', '("Marcus Junius Brutus", "sought", "Caesar\'s pardon after battle")\n', '("Alexandria", "Caesar landed in", "after pursuing Pompey")\n', '("Alexandre Dumas", "mentions", "Battle of Pharsalus in The Three Musketeers")\n', '("Pompey", "known in English as", "Pompey the Great")\n', '("Pompey", "played a role in", "transformation of Rome")\n', '("Pompey", "protege of", "Sulla")\n', '("Pompey", "became enemy of", "Julius Caesar")\n', '("Pompey", "rose to prominence serving", "Sulla")\n', '("Pompey", "elected as consul on", "three occasions")\n', '("Pompey", "joined", "Crassus and Julius Caesar in the First Triumvirate")\n', '("Pompey", "married", "Julia, daughter of Caesar")\n', '("Pompey", "defeated at", "Battle of Pharsalus")\n', '("Pompey", "assassinated in", "Egypt")\n', '("Sulla", "sent Pompey to", "Sicily and Africa")\n', '("Sulla", "persuaded Pompey to divorce", "Antistia ")\n', '("Julius Caesar", "political ally, and finally the enemy, of", "Pompey")\n', '("Crassus", "joined", "Pompey and Julius Caesar in the First Triumvirate")\n', '("Pompey", "recruited", "legion from his father\'s clients and veterans in Picenum")\n', '("Pompey", "landed in", "Brundusium with Sulla")\n', '("Pompey", "campaigned against", "Gaius Papirius Carbo in Cisalpine Gaul")\n', '("Pompey", "commander in", "Third Servile War")\n', '("Pompey", "advanced directly to his first consulship without", "traditional cursus honorum")\n', '("Pompey", "defeated Carbo\'s lieutenant in", "battle at the river Aesis")\n', '("Pompey", "pursued government forces to", "Praeneste")\n', '("Pompey", "married", "Mucia Tertia")\n', '("Pompey", "supported", "Marcus Aemilius Lepidus as consul")\n', '("Pompey", "besieged", "Mutina")\n', '("Pompey", "appointed military commander in", "Spain")\n', '("Pompey", "initiated a rebellion in", "Hispania")\n', '("Pompey", "commanded troops in", "Gallia Narbonensis")\n', '("Pompey", "entered winter quarters near", "Narbo Martius")\n', '("Pompey", "defeated by Sertorius at", "Battle of Lauron")\n', '("Pompey", "ambushed a large force under Censorinus", "outside Spoletium")\n', '("Pompey", "exited", "Censorinus")\n', '("Metellus Scipio", "supported by", "Pompey")\n', '("Metellus Scipio", "defeated", "Gaius Marcius Censorinus")\n', '("Pompey", "joined", "Marcus Licinius Crassus ")\n', '("Pompey", "claimed lands in", "Libya and Calabria")\n', '("Pompey", "defeated", "Spartacus in Third Servile War")\n', '("Pompey", "claimed victory in Hispania", "after Crassus defeated Spartacus")\n', '("Pompey", "assigned the governorship of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "raised troops from", "Picenum")\n', '("Pompey", "defeated", "Marcus Junius Brutus in Mutina")\n', '("Quintus Sertorius", "joined by", "Perpenna ")\n', '("Quintus Caecilius Metellus Pius", "forced out of", "Hispania Ulterior by Sertorius")\n', '("Metellus Pius", "allied with", "Pompey")\n', '("Pompey", "recruited", "infantry and cavalry for Hispania")\n', '("Pompey", "subdued rebellion in", "Gallia Narbonensis during route to Hispania")\n', '("Pompey", "crossed the Col de Portet into", "Iberian peninsula")\n', '("Pompey", "defeated Perpenna and Gaius Herennius outside", "Valencia")\n', '("Pompey", "battle position at", "Battle of Sacriportus with Sulla ")\n', '("Pompey", "met", "Perpenna in Lusitania")\n', '("Pompey", "restructured the local Roman administration in", "Hispania and southern Gaul")\n', '("Pompey", "charged with suppressing", "Third Servile War of Spartacus")\n', '("Crassus", "campaign against", "Spartacus")\n', '("Pompey", "massacred fugitives from", "Crassus\'s battle")\n', '("Pompey", "proconsul of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "fought pirates based in", "Cilicia")\n', '("Pompey", "defeated pirates at", "Battle of Korakesion")\n', '("Pompey", "created province of", "Syria")\n', '("Lucius Licinius Lucullus", "commander against", "Mithridates VI")\n', '("Mithridates VI", "invaded Pontus and ", "Armenia")\n', '("Pompey", "granted powers to defeat", "Mithridates VI in lex Manilia")\n', '("Mithridates VI", "withdrew to", "Armenia pursued by Pompey")\n', '("Pompey", "defeated Mithridates VI at", "Lycus")\n', '("Mithridates VI", "took control of", "Cimmerian Bosporus")\n', '("Pompey", "defeated forces in", "Caucasia")\n', '("Tigranes the Great", "terms with", "Pompey")\n', '("Pompey", "settled", "conflicts between Phraates III and Tigranes")\n', '("Pharnaces II of Pontus", "surrendered to", "Pompey")\n', '("Pompey", "occupied cities in", "the Levant")\n', '("Pompey", "backed", "Hyrcanus II over Aristobulus II")\n', '("Hyrcanus II", "ruled", "Judea under Pompey")\n', '("Bithynia and Pontus", "created as province by", "Pompey")\n', '("Ariobarzanes I of Cappadocia", "restored by", "Pompey")\n', '("Lesser Armenia", "incorporated into", "Galatia by Pompey")\n', '("Cilicia", "received", "Pamphylia from Pompey")\n', '("Pompey", "builds", "Theatre of Pompey")\n', '("Pompey", "Senate refuses to ratify treaties made by", "in Eastern settlements")\n', '("Cato the Younger", "opposed", "Pompey\'s treaties")\n', '("Julia", "death removed obstacle between", "Pompey and Caesar")\n', '("Publius Crassus", "death removed obstacle between", "Pompey and Caesar")\n', '("Pompey", "elected sole consul after suspending elections due to", "violence")\n', '("Pompey", "married", "Cornelia Metella")\n', '("Pompey", "enacted legislation to trial elected candidates", "backing Senate")\n', '("Pompey", "required electoral candidates presence in", "Rome")\n', '("Pompey", "initiated legislation against", "Caesar")\n', '("Pompey", "gathered consular army funded by", "Senate")\n', '("Pompey", "fell ill recruiting in", "Naples")\n', '("Caesar", "rejected ultimatum regarding concessions by", "Senate")\n', '("Caesar", "crossed the Rubicon into", "Italy")\n', '("Pompey", "withdrew from Italy to", "Greece")\n', '("Pompey", "deployed troops at", "Battle of Pharsalus against Caesar")\n', '("Pompey", "escapes to", "Mytilene")\n', '("Ptolemy XIII", "absent ally of Pompey at", "Battle of Pharsalus")\n', '("Pompey", "took refuge in", "Egypt with Ptolemy XIII")\n', '("Pompey", "sails from Cyprus to Egypt", "with small fleet")\n', '("Pompey", "arrived at", "Pelusium in Egypt")\n', '("Pompey", "assassinated by", "Lucius Septimius")\n', '("Lucius Septimius", "Roman officer serving in", "Egyptian army")\n', '("Ptolemy XIII", "feared control of Egypt by", "Pompey")\n', '("Pompey", "cremated by", "two servants")\n', '("Pompey", "head returned to", "Cornelia")\n', '("Pompey", "villain the Alban Hills burial", "administered by Cicero")\n', '("Pompey", "military skills criticized by", "Sertorius and Lucullus")\n', '("Pompey", "commanded without genius on battlefield", "preferred gradual strategies")\n', '("Pompey", "not charismatic but inspiring bravery", "on battlefield")\n', '("Pompey", "commander known for stealing victories", "from other generals")\n', '("Pompey", "considered outstanding strategist and organizer", "military campaigns")\n', '("Pompey", "preferred military glory over political constraints", "lex Gabinia")\n', '("Pompey", "efficient tactics against", "pirates")\n', '("Pompey", "war of attrition against", "Sertorius")\n', '("Pompey", "decided victory against", "Perpenna ending Sertorian war")\n', '("Pompey", "strategy against Caesar in", "Greece")\n', '("Pompey", "defeated by Caesar due to", "tactics")\n', '("Lucan", "wrote epic De Bello Civili about", "Pompey")\n', '("Plutarch", "claims Pompey married", "Aemilia pregnant by former husband")\n', '("Colleen McCullough", "Pompey featured in", "Masters of Rome series")\n', '("Steven Saylor", "Pompey encounters Gordianus in", "Roma Sub Rosa novels")\n', '("Robert Harris", "Pompey plays part in historical background of", "Cicero trilogy")\n', '("Gallia Narbonensis", "was located in", "Occitania and Provence")\n', '("Gallia Narbonensis", "was bordered by", "the Pyrenees Mountains")\n', '("Gallia Narbonensis", "was bordered by", "the Cévennes")\n', '("Gallia Narbonensis", "was bordered by", "the Alps")\n', '("Gallia Narbonensis", "included", "the Rhone catchment")\n', '("Western region of Gallia Narbonensis", "was known as", "Septimania")\n', '("Colonia Narbo Martius", "was a Roman colony founded in", "Gallia Narbonensis")\n', '("Gallia Narbonensis", "first recorded use by", "Gnaeus Pullius Pollio")\n', '("Provence", "survives in", "the modern name for eastern Gallia Narbonensis")\n', '("Massalia", "founded by", "Phocaea")\n', '("Carthaginians", "were sea-borne rivals to", "Massalia")\n', '("Gallia Narbonensis", "had trading routes to", "Hispania")\n', '("Gallia Narbonensis", "had trading routes to", "Italia")\n', '("Julius Caesar", "granted citizenship to many communities in", "Gallia Narbonensis")\n', '("Arles", "was built by", "Julius Caesar")\n', '("Mark Antony", "was given the balance of", "Gallia Narbonensis")\n', '("Augustus", "made Gallia Narbonensis a senatorial province governed by", "a proconsul")\n', '("Diocletian", "merged Gallia Narbonensis and Gallia Aquitania into", "Dioecesis Viennensis")\n', '("Dioecesis Septem Provinciarum", "was the name changed from", "Dioecesis Viennensis")\n', '("Gallia Narbonensis", "incorporated into", "the Visigothic Kingdom")\n', '("Septimania", "generally known as", "Visigothic dominions west of the lower Rhone")\n', '("Provence", "came into use to the east of", "the lower Rhone after Gothic takeover")\n', '("Gnaeus Pullius Pollio", "was a proconsular governor of", "Gallia Narbonensis")\n', '("Piacenza", "is a city and comune in", "Emilia-Romagna")\n', '("Piacenza", "has strong relations with", "Lombardy")\n', '("Piacenza", "is the ninth largest city by population in", "Emilia-Romagna")\n', '("Leonardo da Vinci", "defined", "Piacenza as a \'Land of passage\'")\n', '("Piacenza", "integrates characteristics of", "Ligurian")\n', '("Piacenza", "integrates characteristics of", "Piedmontese")\n', '("Piacenza", "is located at the intersection of route between", "Bologna and Milan")\n', '("Piacenza", "is located at the intersection of route between", "Brescia and Turin")\n', '("Piacenza", "is at the confluence of the", "Trebbia")\n', '("Trebbia", "drains the", "Apennine Mountains")\n', '("Piacenza", "is located at the confluence of the", "Po")\n', '("Piacenza", "hosts", "Università Cattolica del Sacro Cuore")\n', '("Piacenza", "hosts", "Polytechnic University of Milan")\n', '("Piacenza", "hosts", "University of Parma")\n', '("Piacenza", "is the capital of the eponymous province", "Piacenza")\n', '("Polybius", "reported that", "Etruscans inhabited the areas before the Gauls took the Po Valley")\n', '("Piacenza", "was founded as a Roman military colony with", "Cremona")\n', '("Piacenza", "had legal status as", "Latin Rights")\n', '("Carthage", "declared war on", "Piacenza")\n', '("Piacenza", "was a colony placed by", "Rome")\n', '("Piacenza", "was the first among Gauls of the", "Po valley")\n', '("Procopius", "called Piacenza", "the principal city in the country of Aemilia")\n', '("Piacenza", "was conquered by", "Francia")\n', '("Piacenza", "was connected to the Holy Roman Empire with", "Rome")\n', '("Frederick I, Holy Roman Emperor", "had Piacenza participate in", "Lombard League")\n', '("Piacenza", "captured control of trading routes with", "Genoa")\n', '("Piacenza", "became part of the", "Papal States")\n', '("Pope Leo X", "ruled", "Piacenza")\n', '("Piacenza", "was created as Duchy by", "Pope Paul III")\n', '("Napoleon", "annexed Piacenza to", "France")\n', '("Piacenza", "was occupied by", "Austria")\n', '("Piacenza", "was declared \'Primogenita dell\'Unità di Italia\' by", "the monarch")\n', '("Russia", "received Piacentini recruits sent to fight from", "Piacenza")\n', '("Gallia Aquitania", "also known as", "Aquitaine")\n', '("Gallia Aquitania", "is in present-day", "southwest France")\n', '("Gallia Aquitania", "was bordered by", "Gallia Narbonensis")\n', '("Gallia Aquitania", "was bordered by", "Hispania Tarraconensis")\n', '("Aquitania", "stretches from", "Pyrenees in the south to the Liger (Loire) river in the north")\n', '("Gallia Aquitania", "included the tribes", "Petrocorii")\n', '("Aquitania", "produced", "linen from the Cadurci")\n', '("Hispania Tarraconensis", "is located near", "Mediterranean")\n', '("Ruteni and Gabales", "had", "silver mines")\n', '("Strabo", "described the Aquitani as", "wealthy")\n', '("Julius Caesar", "named", "Gallia Aquitania")\n', '("Garonne", "is a landmark in the triangle-shaped territory of", "Gallia Aquitania")\n', '("Publius Crassus", "assisted with military exploits in", "Gallia Aquitania")\n', '("Agrippa", "was victorious over", "Gauls of Aquitania")\n', '("Gallia Aquitania", "was under command of", "a former Praetor")\n', '("Diocletian", "reorganized Gallia Aquitania into", "Aquita Prima, Aquitania Secunda, and Aquitania Tertia")\n', '("Avaricum Biturigum", "became the see of", "Aquita Prima")\n', '("Aquitania Secunda\'s see", "was", "Burdigala (Bordeaux)")\n', '("Aquitania Tertia", "also known as", "Novempopulania")\n', '("Iberian Peninsula", "was partly occupied by", "Visigoths after the expansion")\n', '("Guangzhou", "capital of", "Guangdong province")\n', '("Guangzhou", "located on", "Pearl River")\n', '("Guangzhou", "north-northwest of", "Hong Kong")\n', '("Guangzhou", "north of", "Macau")\n', '("Guangzhou", "major terminus of", "Silk Road")\n', '("Guangzhou", "serves as", "transportation hub")\n', '("Guangzhou", "one of China\'s", "three largest cities")\n', '("Guangzhou", "only Chinese port accessible to", "most foreign traders")\n', '("Guangzhou", "captured by", "the British")\n', '("Guangzhou", "loss of trade to", "Hong Kong and Shanghai")\n', '("Guangzhou", "classified as", "Large-Port Megacity")\n', '("Guangzhou", "at the heart of", "the Guangdong–Hong Kong–Macau Greater Bay Area")\n', '("Guangzhou", "extends into", "Foshan, Dongguan, Zhongshan, Shenzhen, Jiangmen, Huizhou, Zhuhai and Macau")\n', '("Guangzhou", "one of China\'s", "nine National Central Cities")\n', '("Guangzhou", "has", "one of the most expensive real estate markets in China")\n', '("Guangzhou", "fifth most populous city by urban resident population in", "China after Shanghai, Beijing, Shenzhen and Chongqing")\n', '("Guangzhou", "known for", "its annual Canton Fair")\n', '("Guangzhou", "ranked as", "an Alpha global first-tier city together with San Francisco and Stockholm")\n', '("Guangzhou", "major", "Asia-Pacific finance hub")\n', '("Guangzhou", "major", "Asia-Pacific research and development hub")\n', '("Guangzhou", "home to", "South China University of Technology and Guangzhou University of Chinese Medicine")\n', '("Guangzhou", "contains", "one of Guangzhou\'s districts")\n', '("Guangzhou", "formerly known as", "Panyu")\n', '("Guangzhou", "known as", "Guangfu after its status as the capital of a prefecture")\n', '("Guangzhou", "nicknamed", "City of Rice and City of Rams")\n', '("Guangzhou", "known by medieval Persians as", "Khanfu")\n', '("Guangzhou", "English name derived from", "Cidade de Cantão")\n', '("Panyu", "seat of", "Qin Empire\'s Nanhai Commandery")\n', '("Panyu", "base for", "first invasion of the Baiyue lands in southern China")\n', '("Panyu", "was an expansive commercial center", "during the Nanyue period")\n', '("Guangzhou", "incorporated into the", "Han dynasty")\n', '("Guangzhou", "renamed to Xingwang Fu during", "Southern Han")\n', '("Guangzhou", "major contributor to the rise of", "the modern global economy")\n', '("Guangzhou", "maintained until", "the outbreak of the First Opium War")\n', '("Guangzhou", "briefly served as the capital of", "the Republican government")\n', '("Guangzhou", "main", "manufacturing hub of the Pearl River Delta")\n', '("Guangzhou", "considered one of", "the most prosperous cities in China")\n', '("Guangzhou", "has", "Guangzhou Higher Education Mega Center")\n', '("Guangzhou", "has", "Twin towns and sister cities relationships")\n']
+range(1, 264) 2
+{'id': '1_13', 'Question': ' Which European country did the individual whose territories as provinces included Hispania withdraw from due to Julius Caesar?\n', 'Answer': 'Hispania', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Gallia Narbonensis'}, {'label': 'B', 'text': 'Hispania'}, {'label': 'C', 'text': 'Piacenza'}, {'label': 'D', 'text': 'Gallia Aquitania'}, {'label': 'E', 'text': 'Guangzhou'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'transalpine'}, {'label': 'B', 'text': 'hispania'}, {'label': 'C', 'text': 'piacenza'}, {'label': 'D', 'text': 'aquitania'}, {'label': 'E', 'text': 'guangzhou'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which individual, along with his allies, withdrew from this European country because of Julius Caesar?\nA1: Pompey\n\n', '2: Which territories were designated by Pompey as provinces under his command?\nA2: Hispania'], 'Hops_wiki': [('Julius Caesar', 'Pompey'), ('Pompey', 'Hispania')], 'Hops_cpnet': [('julius_caesar', 'pompey'), ('pompey', 'hispania')], 'Triplets': ['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")', '("Pompey", "assigned", "Hispania and Africa as provinces")'], 'Referred_files': [{'name': 'Battle of Pharsalus', 'line': 10}, {'name': 'Pompey', 'line': 78}], 'Question_triplet_answer': {100: [66, 206], 50: [67, 211], 25: [13, 240]}}
+time passed:  4059.859096765518
+Expected dollar:  0.005
+Julius Caesar is People
+Rubicon is Geography
+Italy is Geography
+Guangzhou is Geography
+Cicero is People
+Thessaly is Geography
+China is Geography
+Shanghai is Geography
+Beijing is Geography
+Shenzhen is Geography
+Chongqing is Geography
+Lucan is People
+Dongguan is Geography
+Zhongshan is Geography
+Jiangmen is Geography
+Huizhou is Geography
+Zhuhai is Geography
+Macau is Geography
+Caesar is People
+Greece is Geography
+Gallia Narbonensis is Geography
+Hispania is Geography
+Università Cattolica del Sacro Cuore is Geography
+Trebbia is Geography
+Apennine Mountains is Geography
+Frederick I, Holy Roman Emperor is People
+Piacenza is Geography
+Egypt is Geography
+Battle of Pharsalus is Geography
+Rome is Geography
+Steven Saylor is People
+Pompey and Caesar is People
+Alban Hills is Geography
+Hispania Tarraconensis is Geography
+Mediterranean is Geography
+Xingwang Fu is Geography
+Emilia Romagna is Geography
+Crassus is People
+Occitania is Geography
+Burdigala (Bordeaux is Geography
+France is Geography
+Brundusium with Sulla is People
+Cyprus is Geography
+Quintus Sertorius is People
+Perpenna is People
+Colleen McCullough is People
+Sulla is People
+Diocletian is People
+Gnaeus Pullius Pollio is Geography
+Tigranes is People
+Pompey is People
+Gomphi is Geography
+San Francisco is Geography
+Stockholm is Geography
+Syria is Geography
+Guangdong is Geography
+Sertorius is People
+Lucullus is People
+Pharsaloi is Geography
+Mark Antony is People
+the Battle of Pharsalus is Geography
+Septimania is Geography
+Leo X is People
+City of Rice and City of Rams is Geography
+Panyu is Geography
+Tigranes the Great is People
+Mithridates VI" is People
+Cimmerian Bosporus is Geography
+Cévennes is Geography
+Primogenita dell'Unità is Geography
+Italia is Geography
+Naples is Geography
+Hong Kong is Geography
+Arles is Geography
+University of Parma is Geography
+Quintus Caecilius Metellus Pius is People
+Hispania Ulterior by Sertorius is People
+Mithridates VI is People
+Armenia is Geography
+Agrippa is People
+Guangzhou Higher Education is Geography
+Mega Center is Incident
+Pompey the Great is People
+Cremona is Geography
+Theatre of Pompey is Geography
+Bithynia and Pontus is Geography
+Leonardo da Vinci is People
+Alexandre Dumas is People
+Battle of Korakesion is Geography
+Mytilene is Geography
+Augustus is People
+Canton Fair is Geography
+Marcus Tullius Cicero is People
+Avaricum Biturigum is Geography
+Cilicia is Geography
+Large Port Megacity is Geography
+Spain is Geography
+Marcus Junius Brutus is People
+Mutina is Geography
+Perpenna ending Sertorian war" is People
+Libya is Geography
+Calabria is Geography
+Khanfu is Geography
+Spoletium is Geography
+Judea is Geography
+Cornelia Metella is People
+Narbo Martius is Geography
+Marcus Aemilius Lepidus is People
+entities:  {'Khanfu', 'Pius', 'Libya', 'Marcius', 'Genoa', 'Xingwang', 'Antony', 'Marcus', 'Mediterranean', 'Guangdong', 'Rice', 'China', 'Pollio', 'Mountains', 'Bithynia', 'Parma', 'war"', 'Sulla', 'Calabria', 'Julius', 'Pontus', 'Roman', 'Primogenita', 'Syria', 'Diocletian', 'Lepidus', 'Stockholm', 'Lucan', 'Tigranes', 'Biturigum', 'Pharsaloi', 'Africa', 'Cremona', 'Cornelia', 'Education', 'Sertorian', 'Cattolica', 'Trebbia', 'Hispania', 'Vinci', 'Emperor', 'Mega', 'Senate', 'Canton', 'VI', 'del', 'Quintus', 'Saylor', 'Occitania', 'Cappadocia', 'Gomphi', 'VI"', 'Perpenna', '(Bordeaux', 'Center', 'Gnaeus', 'Theatre', 'Aemilius', 'Robert', 'Cuore', 'Korakesion', 'Martius', 'Strabo', 'Macau', 'Mutina', 'Cimmerian', 'Gaius', 'Armenia', 'France', 'City', 'Sacro', 'University', 'Bello', 'McCullough', 'Greece', 'Crassus', 'Junius', 'Cilicia', 'Brutus', 'Hong', 'Arles', 'Huizhou', 'Spoletium', 'Colleen', 'Battle', 'Holy', 'Megacity', 'Rams', 'Spain', 'Thessaly', 'Mithridates', 'Fair', 'Leonardo', 'Apennine', 'Agrippa', 'Naples', 'Ulterior', 'San', 'Pompey', 'Caecilius', 'Emilia', 'Beijing', 'Large', 'Narbo', 'Italy', 'Sertorius', 'Jiangmen', 'Lucullus', 'Gallia', 'I,', 'Brundusium', 'Mark', 'Cyprus', 'Tertia', 'Tarraconensis', 'Metella', 'Shanghai', 'Dongguan', 'Cicero', 'Aquitania', 'Avaricum', 'Metellus', 'Steven', 'Bosporus', 'Egypt', 'Panyu', 'Alexandre', 'Università', 'Pullius', 'Caesar', 'Judea', 'X', 'Alban', 'Guangzhou', 'Fu', 'Septimania', 'Zhuhai', 'Augustus', 'Napoleon', 'Dumas', 'Port', 'Hills', 'Zhongshan', 'Higher', 'Burdigala', 'Tullius', 'Romagna', 'Italia', 'da', 'Harris', 'Mytilene', 'Chongqing', 'Great', 'Rome', 'Narbonensis', 'Leo', 'Secunda', 'Piacenza', 'Pharsalus', 'Francisco', 'Bay', 'Aquita', 'ending', 'Pope', "dell'Unità", 'Rubicon', 'Shenzhen', 'Cévennes', 'Kong', 'Scipio', 'Frederick'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Julius Caesar' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gallia Aquitania
+Julius Caesar
+Pompey
+Cornelia
+Iberian Peninsula
+Lucius Septimius
+Guangzhou
+Robert Harris
+Thessaly
+Gallia Aquitania
+Lucan
+Chongqing
+Napoleon
+Gallia Narbonensis
+Frederick I
+Pelusium
+Gallia Aquitania
+Macau
+Masters of Rome
+Southern Han
+Cicero
+Gallia Narbonensis
+Shenzhen
+Pompey
+Macau
+Francia
+Cicero
+Guangzhou
+Lombard League
+Gauls
+Papal States
+Pompey
+France
+Spartacus
+Gallia Narbonensis
+Biurigum
+Piacenza
+Lombard League
+Rome
+Lamb of the Firstborn of the Unity of Italy
+Piacenza
+Sertorius
+Papal States
+Gallia Aquitania
+Carthage
+Hispania Ulterior
+Guangzhou
+Masters of Rome
+Papal States
+Gallia Aquitania
+Guangzhou
+Julius Caesar
+Gallia Aquitania
+Emilia-Romagna
+Pompey
+Guangzhou
+Battle of Pharsalus
+Mercenaries
+Gallia Narbonensis
+Emilia-Romagna
+Pharsalos
+Bordeaux
+First Triumvirate
+Gauls
+Battle of Pharsalus
+Pompey
+Gauls
+Gallia Aquitania
+Arles
+Hispania
+Spartacus
+Pompey
+Spartacus
+Gallia Narbonensis
+Hispania
+Aquita Prima
+Pompey
+Guangzhou
+Emilia-Romagna
+Gallia Narbonensis
+Pianza
+Spain
+Gallia Narbonensis
+Dioecesis Viennensis
+Pompey
+Gauls
+Pompey
+Gauls
+Guangzhou
+Opium War
+Piacenza
+Tigranes
+Pompey
+Mithridates VI
+Aristobulus II
+Lycus
+Bordeaux
+National Central Cities
+Gallia Aquitania
+Gallia Narbonensis
+Piacenza
+Gallia Aquitania
+Piacenza
+Gaul
+Gallia Aquitania
+Guangzhou
+Aemilia
+Largest City
+Napoleon
+Piacenza
+Gallia Narbonensis
+Guangzhou
+Gallia Narbonensis
+Augustus
+Ptolemy
+Gallia Narbonensis
+Piacenza
+Pompey
+Pompey
+Italy
+Spain
+Italy
+Gallia Narbonensis
+Gaul
+Ancient Rome
+Qin Empire
+Emperor
+Gallia Narbonensis
+Guangzhou
+Gallia Narbonensis
+Gauls
+Guangzhou
+Guangzhou
+Salvius Otho
+Guangzhou
+Gallia Narbonensis
+Gallia Narbonensis
+Gallia Narbonensis
+Qin Empire
+Gallia Narbonensis
+Gaul
+Emperor
+
+gpt_entity_particular(): entity list: 
+ ['Papal States', 'Hispania Ulterior', 'Arles', 'Bordeaux', 'Masters of Rome', 'Frederick I', 'Spain', 'Thessaly', 'Aristobulus II', 'National Central Cities', 'Gallia Narbonensis', 'Guangzhou', 'Gaul', 'Napoleon', 'Augustus', 'Battle of Pharsalus', 'Ancient Rome', 'Pianza', 'Julius Caesar', 'Salvius Otho', 'Pompey', 'Robert Harris', 'Lamb of the Firstborn of the Unity of Italy', 'Lombard League', 'Mercenaries', 'Southern Han', 'Chongqing', 'Carthage', 'Macau', 'Italy', 'Lucan', 'Tigranes', 'Rome', 'Gallia Aquitania', 'France', 'Gauls', 'Sertorius', 'Aemilia', 'Ptolemy', 'First Triumvirate', 'Cornelia', 'Aquita Prima', 'Mithridates VI', 'Piacenza', 'Pharsalos', 'Lucius Septimius', 'Dioecesis Viennensis', 'Iberian Peninsula', 'Qin Empire', 'Biurigum', 'Shenzhen', 'Spartacus', 'Largest City', 'Francia', 'Opium War', 'Hispania', 'Cicero', 'Emperor', 'Pelusium', 'Lycus', 'Emilia-Romagna']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gallia Aquitania' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gallia Aquitania 
+Gauls 
+Visigoths 
+districts 
+Egyptian army 
+Levant 
+Greece 
+Narbonensis 
+Shanghai 
+Shenzhen 
+Chongqing 
+Francia
+Julia
+Foshan
+Dongguan 
+Zhongshan 
+Jiangmen 
+Huizhou 
+Zhuhai 
+Macau
+Thessaly 
+Apennine Mountains 
+Rome 
+Lombard League 
+Beijing 
+Shenzhen 
+Colleen McCullough 
+Gallia Narbonensis 
+Provence 
+Guangzhou 
+Guangdong 
+Pompey 
+Sertorius 
+Gallia Narbonensis 
+Gallia Aquitania 
+Guangzhou 
+Guangzhou 
+Guangzhou 
+Piacenza 
+Cicero
+Mediterranean 
+Piacenza
+Shanghai 
+Guangzhou 
+Piacenza 
+Julius 
+Gallia Aquitania 
+Piacenza 
+Emilia-Romagna
+Gallia Narbonensis 
+Ho-lu-ma-chou
+Thessaly 
+Caesar's Civil War 
+Gallia Narbonensis
+Bordeaux 
+Greece 
+Roman Republic 
+Caesar's left flank
+Gallia Narbonensis
+Latin 
+City of Rams
+Gallia Narbonensis 
+Caesar
+Narbonensis
+Emilia-Romagna 
+Papal States
+Aquitaine 
+Spartacus
+Cimmerian Bosporus
+Mediterranean 
+Pompey 
+Guangzhou
+Spartacus 
+Dioecesis Viennensis
+Gallia Narbonensis 
+Apennine Mountains 
+Pharsalus 
+Spartacus
+
+gpt_entity_particular(): entity list: 
+ ['Papal States', 'Huizhou ', 'Caesar', 'Levant ', 'Zhongshan ', 'Greece ', 'Gallia Narbonensis', 'Visigoths ', 'Pompey ', 'Guangzhou', 'Piacenza ', 'Mediterranean ', 'City of Rams', "Caesar's Civil War ", 'Shenzhen ', 'Zhuhai ', 'Roman Republic ', 'Lombard League ', 'Gallia Narbonensis ', 'Gallia Aquitania ', 'Egyptian army ', 'Emilia-Romagna ', 'Pharsalus ', 'Aquitaine ', 'Apennine Mountains ', 'Macau', 'Chongqing ', 'Rome ', 'Ho-lu-ma-chou', 'Spartacus ', 'Julius ', 'Narbonensis', 'Guangdong ', 'districts ', 'Shanghai ', 'Latin ', 'Dongguan ', 'Jiangmen ', 'Sertorius ', 'Foshan', "Caesar's left flank", 'Colleen McCullough ', 'Piacenza', 'Dioecesis Viennensis', 'Narbonensis ', 'Beijing ', 'Spartacus', 'Thessaly ', 'Provence ', 'Guangzhou ', 'Francia', 'Bordeaux ', 'Cicero', 'Cimmerian Bosporus', 'Gauls ', 'Julia', 'Emilia-Romagna']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Pompey' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Pompey
+Gallia Aquitania
+Iberian Peninsula
+Julius Caesar
+Lucius Septimius
+Guangzhou
+Robert Harris
+Lucan
+Caesar
+Pompey's army
+Pope Leo X
+Diocletian
+Carthage
+Mark Antony
+Arnold Von Winkelried
+Abraham Lincoln
+
+gpt_entity_particular(): entity list: 
+ ['Carthage', 'Iberian Peninsula', 'Lucan', 'Julius Caesar', 'Gallia Aquitania', 'Caesar', 'Pompey', 'Robert Harris', "Pompey's army", 'Arnold Von Winkelried', 'Pope Leo X', 'Abraham Lincoln', 'Mark Antony', 'Guangzhou', 'Lucius Septimius', 'Diocletian']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hispania' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hispania
+Greece
+Italy
+Thessaly
+Caucasia
+Gallia Narbonensis
+Levant
+Egypt
+Syria
+Rome
+Naples
+China
+Emilia-Romagna
+Pompey
+Cicero trilogy
+Alexandre Dumas
+Third Triumvirate
+Lucan
+Warriors
+Cilicia
+China
+Bordeaux
+Piacenza
+Friuli Venezia Giulia
+Gallia Aquitania
+Orleans
+Patavium
+Spartacus
+Guillermo Valencia
+Ebro
+Burdigala
+Octodurus
+Marcus Junius Brutus
+Battle of Sacriportus
+Northern Italy
+Marcus Aemilius Lepidus
+Roma Sub Rosa novels
+Gauls
+Thapsus
+Gaius Marcius Censorinus
+Francia
+Baiyue
+Judea
+Po Valley
+Battle of Philippi
+Aemilia
+Gallia Cisalpina
+
+gpt_entity_particular(): entity list: 
+ ['Guillermo Valencia', 'Levant', 'Bordeaux', 'Patavium', 'Judea', 'Thessaly', 'Octodurus', 'Gallia Narbonensis', 'Gallia Cisalpina', 'China', 'Naples', 'Caucasia', 'Pompey', 'Burdigala', 'Alexandre Dumas', 'Marcus Aemilius Lepidus', 'Ebro', 'Syria', 'Gaius Marcius Censorinus', 'Italy', 'Lucan', 'Aemilia', 'Rome', 'Cicero trilogy', 'Gallia Aquitania', 'Gauls', 'Baiyue', 'Po Valley', 'Orleans', 'Roma Sub Rosa novels', 'Battle of Sacriportus', 'Warriors', 'Friuli Venezia Giulia', 'Piacenza', 'Third Triumvirate', 'Marcus Junius Brutus', 'Battle of Philippi', 'Spartacus', 'Thapsus', 'Francia', 'Hispania', 'Greece', 'Northern Italy', 'Cilicia', 'Emilia-Romagna', 'Egypt']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gallia Narbonensis' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gallia Narbonensis
+Pompey
+Gallia Aquitania
+Italy
+Levant
+Egyptian army
+Greece
+Hispania
+Gaul
+Abellinum 
+Thebes 
+Caucasia
+Burdigala (Bordeaux)
+Armenia 
+Dioecesis Viennensis
+Latin and Gaul
+Roma Sub Rosa novels
+Syria
+Ocean
+Transalpine Gaul
+Border pillar 
+Narbonne 
+War
+Conflict 
+Cévennes
+Provence
+Cilicia 
+Drusus
+Drusus 
+Phocaea 
+Scarontis 
+Parthia
+Axius River
+Pirates 
+Messalina 
+Guangzhou 
+Emilia-Romagna 
+Sicily 
+Bucolica 
+Bordeaux 
+Celtic-speaking communities
+Narbo Martius
+Intemelii 
+Rome 
+Po valley 
+Carthaginian
+Spain 
+Roman Republic 
+Caesar
+Rome 
+Proprietor 
+Apennine Mountains 
+Foshan 
+Naples 
+League of the Palatine
+Pellehaut 
+Gnaeus Pullius Pollio 
+Frederick I, Holy Roman Emperor 
+Liuvigild
+Guan (prince)
+Caecilii 
+Dioecesis Viennensis
+Spartacus
+Vlera
+Narbonne
+Narbo 
+Aemilius 
+Ebro
+Sulia 
+Gaius Antonius
+Octavia 
+Quintus Sertorius
+
+gpt_entity_particular(): entity list: 
+ ['Levant', 'Egyptian army', 'Po valley ', 'Caesar', 'Frederick I, Holy Roman Emperor ', 'Aemilius ', 'Celtic-speaking communities', 'Pellehaut ', 'Gallia Narbonensis', 'Burdigala (Bordeaux)', 'Carthaginian', 'Gaul', 'Roman Republic ', 'Octavia ', 'Narbonne', 'Cilicia ', 'Naples ', 'Vlera', 'Caucasia', 'Drusus', 'Conflict ', 'Phocaea ', 'Border pillar ', 'Emilia-Romagna ', 'Pompey', 'Abellinum ', 'Messalina ', 'Narbo Martius', 'Axius River', 'Narbo ', 'Guan (prince)', 'Provence', 'Ebro', 'Pirates ', 'Thebes ', 'Syria', 'Gaius Antonius', 'Apennine Mountains ', 'Spain ', 'Italy', 'Rome ', 'Proprietor ', 'Narbonne ', 'Gallia Aquitania', 'Quintus Sertorius', 'Parthia', 'Caecilii ', 'Roma Sub Rosa novels', 'Foshan ', 'Sicily ', 'League of the Palatine', 'Drusus ', 'Ocean', 'Sulia ', 'Dioecesis Viennensis', 'Transalpine Gaul', 'Intemelii ', 'Spartacus', 'Latin and Gaul', 'Bucolica ', 'Guangzhou ', 'Bordeaux ', 'Scarontis ', 'Hispania', 'Greece', 'Cévennes', 'Armenia ', 'War', 'Gnaeus Pullius Pollio ', 'Liuvigild']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Guangzhou' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+Guangzhou
+China
+Shanghai
+Beijing
+Shenzhen
+Chongqing
+Xingwang Fu
+Greater Bay Area
+Southern Han
+Emilia-Romagna
+Asia-Pacific finance hub
+Canton Fair
+Panyu
+City of Rice and City of Rams
+University of Parma
+Guangzhou Higher Education Mega Center
+Twin towns and sister cities
+National Central Cities
+Large-Port Megacity
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+Piacenza
+University of Parma
+Primogenita dell'Unità di Italia
+Ligurian
+Trebbia
+Rome
+Cisalpine
+Transalpine Gaul
+Papal States
+Piacenza
+Italy
+
+gpt_entity_particular(): entity list: 
+ ['Papal States', 'Greater Bay Area', 'Panyu', 'National Central Cities', 'University of Parma', 'Guangzhou', 'China', 'Emilia-Romagna', 'Xingwang Fu', 'Canton Fair', 'Ligurian', 'Large-Port Megacity', 'Beijing', 'Asia-Pacific finance hub', 'Southern Han', 'Chongqing', 'Italy', 'Guangzhou Higher Education Mega Center', 'Rome', 'City of Rice and City of Rams', 'Piacenza', "Primogenita dell'Unità di Italia", 'Transalpine Gaul', 'Shenzhen', 'Shanghai', 'Trebbia', 'Twin towns and sister cities', 'Cisalpine']
+
+gpt_entity_particular(): filtered entity: 
+ ['Panyu', 'China']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Piacenza' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Pompey
+Cornelia
+Iberian Peninsula
+Visigoths
+Levant
+Italy
+Lucius Septimius
+Egyptian army
+Robert Harris
+Julius Caesar
+Gallia Aquitania
+China
+Lucan
+Università Cattolica del Sacro Cuore
+Trebbia
+Francia
+Greece
+Gallia Narbonensis
+Egypt
+Battle of Pharsalus
+Trebbia
+Holy Roman Empire
+Rome
+Metellus Scipio
+Steven Saylor
+Gaius Marcius Censorinus
+Hispania Tarraconensis
+Southern Han
+Sertorius
+Università Cattolica del Sacro Cuore
+Gallia Aquitania
+Foshan
+Dongguan
+Zhongshan
+Shenzhen
+Jiangmen
+Huizhou
+Zhuhai
+Macau
+France
+Italy
+First Triumvirate
+Po valley
+Occitania
+Province of Syria
+Roma Sub Rosa novels
+Perpenna
+Papal States
+Cicero
+Napoleon
+Southern Han
+Hispania
+Aquitaine
+Phoenicians
+Ligurian
+Mark Antony
+Gallia Narbonensis
+Pope Leo X
+Gnaeus Pullius Pollio
+Senatorial province governed by
+Gnaeus Pullius Pollio
+Gaius Marcius Censorinus
+Spartacus
+Arles
+Transportation hub
+Carthage
+Aquitania Tertia
+Thessaly
+Leonardo da Vinci
+Steven Saylor
+Land of passage
+Italy
+Julia
+Ariobarzanes I of Cappadocia
+Battle of Korakesion
+Mytilene
+A), B), A)) and B))
+Linens from the Cadurci
+Different cities being capital
+Crassus
+China
+Libya
+Caesar
+Brundusium with Sulla
+Greece
+Sertorius
+Plutarch
+Ariobarzanes I of Cappadocia
+Phocaea
+Arausio
+Battle of Arausio
+Piacenza
+Marc Antony
+Plutarch
+
+gpt_entity_particular(): entity list: 
+ ['Levant', 'Egyptian army', 'Libya', 'Gallia Narbonensis', 'China', 'Mark Antony', 'Università Cattolica del Sacro Cuore', 'Senatorial province governed by', 'Southern Han', 'Lucan', 'Cornelia', 'Province of Syria', 'Leonardo da Vinci', 'Trebbia', 'Hispania', 'Occitania', 'Perpenna', 'Julius Caesar', 'Arausio', 'Marc Antony', 'Carthage', 'Macau', 'Brundusium with Sulla', 'France', 'First Triumvirate', 'Battle of Korakesion', 'Iberian Peninsula', 'Linens from the Cadurci', 'Metellus Scipio', 'Francia', 'Greece', 'Crassus', 'A), B), A)) and B))', 'Land of passage', 'Arles', 'Huizhou', 'Thessaly', 'Phoenicians', 'Pompey', 'Ligurian', 'Hispania Tarraconensis', 'Italy', 'Gallia Aquitania', 'Sertorius', 'Visigoths', 'Jiangmen', 'Roma Sub Rosa novels', 'Steven Saylor', 'Foshan', 'Lucius Septimius', 'Spartacus', 'Dongguan', 'Cicero', 'Julia', 'Egypt', 'Papal States', 'Phocaea', 'Caesar', 'Plutarch', 'Napoleon', 'Zhuhai', 'Aquitaine', 'Aquitania Tertia', 'Battle of Pharsalus', 'Zhongshan', 'Po valley', 'Battle of Arausio', 'Robert Harris', 'Transportation hub', 'Mytilene', 'Gaius Marcius Censorinus', 'Rome', 'Piacenza', 'Shenzhen', 'Gnaeus Pullius Pollio', 'Ariobarzanes I of Cappadocia', 'Holy Roman Empire', 'Different cities being capital', 'Pope Leo X']
+
+gpt_entity_particular(): filtered entity: 
+ ['Italy']
+After GPT, entity:  {'Khanfu', 'Pius', 'Libya', 'Marcius', 'Genoa', 'Xingwang', 'Antony', 'Marcus', 'Mediterranean', 'Guangdong', 'Rice', 'China', 'Pollio', 'Mountains', 'Bithynia', 'Parma', 'war"', 'Sulla', 'Calabria', 'Julius', 'Pontus', 'Roman', 'Primogenita', 'Syria', 'Diocletian', 'Lepidus', 'Stockholm', 'Lucan', 'Tigranes', 'Biturigum', 'Pharsaloi', 'Africa', 'Cremona', 'Cornelia', 'Education', 'Sertorian', 'Cattolica', 'Trebbia', 'Hispania', 'Vinci', 'Emperor', 'Mega', 'Senate', 'Canton', 'VI', 'del', 'Quintus', 'Saylor', 'Occitania', 'Cappadocia', 'Gomphi', 'VI"', 'Perpenna', '(Bordeaux', 'Center', 'Gnaeus', 'Theatre', 'Aemilius', 'Robert', 'Cuore', 'Korakesion', 'Martius', 'Strabo', 'Macau', 'Mutina', 'Cimmerian', 'Gaius', 'Armenia', 'France', 'City', 'Sacro', 'University', 'Bello', 'McCullough', 'Greece', 'Crassus', 'Junius', 'Cilicia', 'Brutus', 'Hong', 'Arles', 'Huizhou', 'Spoletium', 'Colleen', 'Battle', 'Holy', 'Megacity', 'Rams', 'Spain', 'Thessaly', 'Mithridates', 'Fair', 'Leonardo', 'Apennine', 'Agrippa', 'Naples', 'Ulterior', 'San', 'Pompey', 'Caecilius', 'Emilia', 'Beijing', 'Large', 'Narbo', 'Italy', 'Sertorius', 'Jiangmen', 'Lucullus', 'Gallia', 'I,', 'Brundusium', 'Mark', 'Cyprus', 'Tertia', 'Tarraconensis', 'Metella', 'Shanghai', 'Dongguan', 'Cicero', 'Aquitania', 'Avaricum', 'Metellus', 'Steven', 'Bosporus', 'Egypt', 'Panyu', 'Alexandre', 'Università', 'Pullius', 'Caesar', 'Judea', 'X', 'Alban', 'Guangzhou', 'Fu', 'Septimania', 'Zhuhai', 'Augustus', 'Napoleon', 'Dumas', 'Port', 'Hills', 'Zhongshan', 'Higher', 'Burdigala', 'Tullius', 'Romagna', 'Italia', 'da', 'Harris', 'Mytilene', 'Chongqing', 'Great', 'Rome', 'Narbonensis', 'Leo', 'Secunda', 'Piacenza', 'Pharsalus', 'Francisco', 'Bay', 'Aquita', 'ending', 'Pope', "dell'Unità", 'Rubicon', 'Shenzhen', 'Cévennes', 'Kong', 'Scipio', 'Frederick'}
+Total time:  462.23329281806946
+Entity conversion done on 1_13 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_13_entity_conversion_hash.json. Check the entity.
+ Which European country did the individual whose territories as provinces included 05F withdraw from due to 09C Caesar?
+
+
+
+Done. Check final_query/id_1_13_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_13_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_13_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_13_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_13_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_13_final_result_ratio25_unmasked.txt

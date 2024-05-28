@@ -1,0 +1,1141 @@
+Got argument: Immanuel Kant, 6, 6_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Hannah Arendt", "was influenced by", "the philosophy of Kant")', 'start word': 'Immanuel Kant', 'end word': 'Hannah Arendt', 'source': {'name': 'Hannah Arendt', 'line': 26}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'hannah_arendt'}}
+
+utils/question.py extract_hops(Hannah Arendt, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Hannah_Arendt_info.json file
+second_hop1:  {'triplet': '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")', 'start word': 'Hannah Arendt', 'end word': 'Karl Jaspers', 'source': {'name': 'Hannah Arendt', 'line': 9}, 'cpnet': {'start word': 'hannah_arendt', 'end word': 'karl_jaspers'}}
+
+utils/question.py extract_hops(Karl Jaspers, [], ['Immanuel Kant', 'Hannah Arendt']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Karl_Jaspers_info.json file
+extract_info(Karl Jaspers) Start.
+utils/preprocess.py extract_info(): Checking good links on Karl Jaspers
+Heidelberg is Geography
+1 / 30 )  Heidelberg Heidelberg heidelberg
+Franz Nissl is People
+2 / 30 )  Franz Nissl Franz Nissl nissl_method
+Switzerland is Geography
+3 / 30 )  Switzerland Switzerland switzerland
+Sigmund Freud is People
+4 / 30 )  Freud Sigmund Freud sigmund_freud
+Friedrich Nietzsche is People
+5 / 30 )  Nietzsche Friedrich Nietzsche friedrich_nietzsche
+Søren Kierkegaard is People
+6 / 30 )  Kierkegaard Søren Kierkegaard kierkegaard
+Meister Eckhart is People
+7 / 30 )  Meister Eckhart Meister Eckhart meister_eckhart
+Rudolf Bultmann is People
+8 / 30 )  Rudolf Bultmann Rudolf Bultmann rudolf_bultmann
+Adolf Hitler is People
+9 / 30 )  Hitler Adolf Hitler adolf_hitler
+Nazi Germany is Geography
+10 / 30 )  Third Reich Nazi Germany nazi_germany
+Hans-Georg Gadamer is People
+11 / 30 )  Hans-Georg Gadamer Hans-Georg Gadamer gadamer
+Max Weber is People
+12 / 30 )  Max Weber Max Weber max_weber
+Immanuel Kant is People
+13 / 30 )  Immanuel Kant Immanuel Kant immanuel_kant
+Johann Wolfgang von Goethe is People
+14 / 30 )  Goethe Johann Wolfgang von Goethe johann_wolfgang_von_goethe
+Georg Wilhelm Friedrich Hegel is People
+15 / 30 )  Hegel Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Plato is People
+16 / 30 )  Plato Plato plato
+Walter Kaufmann  is People
+17 / 30 )  Walter Kaufmann Walter Kaufmann  decidophobia
+Baruch Spinoza is People
+18 / 30 )  Spinoza Baruch Spinoza spinoza
+extract_triplet(Karl Jaspers)
+Got GPT's response. String length : 1407
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  []
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Heidelberg', 'Heidelberg', 'heidelberg']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Heidelberg', 'Heidelberg', 'heidelberg']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Franz Nissl', 'Franz Nissl', 'nissl_method']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Heidelberg', 'Heidelberg', 'heidelberg']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Max Weber', 'Max Weber', 'max_weber']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Switzerland', 'Switzerland', 'switzerland']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  []
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  []
+subject_words:  [['Franz Nissl', 'Franz Nissl', 'nissl_method']]
+object_words:  []
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Freud', 'Sigmund Freud', 'sigmund_freud']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Nietzsche', 'Friedrich Nietzsche', 'friedrich_nietzsche']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Kierkegaard', 'Søren Kierkegaard', 'kierkegaard']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Meister Eckhart', 'Meister Eckhart', 'meister_eckhart']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Rudolf Bultmann', 'Rudolf Bultmann', 'rudolf_bultmann']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Hitler', 'Adolf Hitler', 'adolf_hitler']]
+subject_words:  [['Hitler', 'Adolf Hitler', 'adolf_hitler']]
+object_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Third Reich', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  []
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Max Weber', 'Max Weber', 'max_weber']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Immanuel Kant', 'Immanuel Kant', 'immanuel_kant']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Hegel', 'Georg Wilhelm Friedrich Hegel', 'georg_wilhelm_friedrich_hegel']]
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Plato', 'Plato', 'plato']]
+subject_words:  [['Walter Kaufmann', 'Walter Kaufmann ', 'decidophobia']]
+object_words:  []
+subject_words:  [(None, 'Karl Jaspers', 'karl_jaspers')]
+object_words:  [['Spinoza', 'Baruch Spinoza', 'spinoza']]
+last_hop:  {'triplet': '("Karl Jaspers", "was inspired by", "Spinoza")', 'start word': 'Karl Jaspers', 'end word': 'Baruch Spinoza', 'source': {'name': 'Karl Jaspers', 'line': 26}, 'cpnet': {'start word': 'karl_jaspers', 'end word': 'spinoza'}}
+
+utils/question.py extract_hops(Hannah Arendt, ['Karl Jaspers'], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Hannah_Arendt_info.json file
+second_hop2:  {'triplet': '("Hannah Arendt", "studied with", "Rudolf Bultmann")', 'start word': 'Hannah Arendt', 'end word': 'Rudolf Bultmann', 'source': {'name': 'Hannah Arendt', 'line': 20}, 'cpnet': {'start word': 'hannah_arendt', 'end word': 'rudolf_bultmann'}}
+generate_question(6_3, ['("Hannah Arendt", "was influenced by", "the philosophy of Kant")', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")', '("Hannah Arendt", "studied with", "Rudolf Bultmann")', '("Karl Jaspers", "was inspired by", "Spinoza")'], ['Immanuel Kant', 'Hannah Arendt', 'Hannah Arendt', 'Karl Jaspers'], [('Immanuel Kant', 'Hannah Arendt'), ('Hannah Arendt', 'Karl Jaspers'), ('Hannah Arendt', 'Rudolf Bultmann'), ('Karl Jaspers', 'Baruch Spinoza')], Immanuel Kant, [{'name': 'Hannah Arendt', 'line': 26}, {'name': 'Hannah Arendt', 'line': 9}, {'name': 'Hannah Arendt', 'line': 20}, {'name': 'Karl Jaspers', 'line': 26}]) called
+GPT output is:  Q: Which existentialist philosopher, known for taking ideas from a rationalist thinker recognized for "Ethics," influenced a 20th-century political theorist and student of a German Lutheran theologian, who completed her doctorate under the existentialist philosopher himself?
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called
+Immanuel Kant is People
+check_matchscore(Immanuel Kant, Theorists on Western civilization):  0.0
+choose_by_wiki_recur(Theorists on Western civilization)
+   Pages in Theorists on Western civilization: ['Tariq Ali', 'Martin Amis', 'John Anderson (philosopher)', 'Kwame Anthony Appiah', 'David Attenborough', 'Olivier Auber', 'Mikhail Bakunin', 'J. G. Ballard', 'James Blish', 'Mathieu Bock-Côté', 'Ray Bradbury', 'Rémi Brague', 'Fernand Braudel', 'John Brunner (author)', 'Noël Carroll', 'Cornelius Castoriadis', 'V. Gordon Childe', 'Noam Chomsky', 'Martin Cohen (philosopher)', 'Helena Cronin', 'Alfred W. Crosby', 'Adam Curtis', 'Whitney Davis', 'Guy Debord', 'Jacques Derrida', 'Jared Diamond', 'Wilhelm Dilthey', 'Will Durant', 'Umberto Eco', 'Loren Eiseley', 'Elizabeth Eisenstein', 'Friedrich Engels', 'Antonio Escohotado', 'Niall Ferguson', 'Ludwig Feuerbach', 'Luciano Floridi', 'Takis Fotopoulos', 'Charles Fourier', 'Benjamin Franklin', 'Nancy Fraser', 'Francis Fukuyama', 'Fukuzawa Yukichi', 'Ashok Gangadean', 'Timothy Garton Ash', 'Ernest Gellner', 'Edward Gibbon', 'William Gibson', 'Étienne Gilson', 'Jean-Luc Godard', 'Johann Wolfgang von Goethe', 'Amy Goodman', 'John Gray (philosopher)', 'Susan Haack', 'Victor Davis Hanson', 'Yuval Noah Harari', 'Peter Hewitt Hare', 'Václav Havel', 'Eric A. Havelock', 'Martin Heidegger', 'Kathleen Higgins', 'Christopher Hitchens', 'Thomas Hobbes', 'Robert L. Holmes', 'User:Bambino Dante/sandbox', 'Bell hooks', 'User:Melig24/sandbox', 'User:Trackstar04/sandbox', 'Victor Hugo', 'Wilhelm von Humboldt', 'David Hume', 'Samuel P. Huntington', 'Francis Hutcheson (philosopher)', 'Harold Innis', 'Mark Johnson (philosopher)', 'Immanuel Kant', 'Paul Kennedy', 'Michael Kidron', 'Ludwig Klages', 'Jerzy Kolendo', 'Robert Kurz', 'Corliss Lamont', 'Claude Lefort', 'Stanisław Lem', 'Claude Lévi-Strauss', 'Gilles Lipovetsky', 'Kishore Mahbubani', 'Tim Marshall (journalist)', 'Karl Marx', 'Marcel Mauss', 'Cormac McCarthy', 'Thomas A. McCarthy', 'Marshall McLuhan', 'William H. McNeill', 'Brian Herbert Medlin', 'Christia Mercer', 'James A. Michener', 'John Stuart Mill', 'Ellen Mitchell (philosopher)', 'Brendan Myers', 'Friedrich Nietzsche', 'Joyce Carol Oates', 'Michel Onfray', 'Walter J. Ong', 'George Orwell', 'Rudolf Otto', 'Thomas Paine', 'Ralph Barton Perry', 'Thomas Piketty', 'Plato', 'John L. Pollock', 'Karl Popper', 'Moishe Postone', 'Ezra Pound', 'Pierre-Joseph Proudhon', 'Lorenz Bruno Puntel', 'Carroll Quigley', 'Paul Rée', 'Robert Reich', 'J. M. Roberts', 'Jacques Rousseau (secular activist)', 'Arundhati Roy', 'Bertrand Russell', 'Jean-Paul Sartre', 'Arthur Schopenhauer', 'Michael Shermer', 'Georges Sorel', 'Oswald Spengler', 'John Shelby Spong', 'August Strindberg', 'Emanuel Swedenborg', 'Bruce Thornton (classicist)', 'Arnold J. Toynbee', 'Colin Murray Turbayne', 'J. P. S. Uberoi', 'Giambattista Vico', 'Gore Vidal', 'Voltaire', 'Kurt Vonnegut', 'Michel Weber', 'H. G. Wells', 'William Whewell', 'Ludwig Wittgenstein', 'George Woodcock', 'Francis Parker Yockey', 'Howard Zinn', 'Slavoj Žižek']
+      Brian Herbert Medlin in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber']
+Brian Herbert Medlin is People
+      Ashok Gangadean in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)']
+      Bertrand Russell in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron']
+Bertrand Russell is People
+      Olivier Auber in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron']
+      Ellen Mitchell (philosopher) in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne']
+      Michael Kidron in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne', 'Rudolf Otto']
+      Colin Murray Turbayne in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne', 'Rudolf Otto', 'Edward Gibbon']
+Colin Murray Turbayne is People
+      Rudolf Otto in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne', 'Rudolf Otto', 'Edward Gibbon', 'Ezra Pound']
+Rudolf Otto is People
+      Edward Gibbon in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne', 'Rudolf Otto', 'Edward Gibbon', 'Ezra Pound', 'Pierre-Joseph Proudhon']
+Edward Gibbon is People
+      Ezra Pound in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne', 'Rudolf Otto', 'Edward Gibbon', 'Ezra Pound', 'Pierre-Joseph Proudhon']
+      Pierre-Joseph Proudhon in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne', 'Rudolf Otto', 'Edward Gibbon', 'Ezra Pound', 'Pierre-Joseph Proudhon', 'William H. McNeill']
+Pierre-Joseph Proudhon is People
+      William H. McNeill in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne', 'Rudolf Otto', 'Edward Gibbon', 'Ezra Pound', 'Pierre-Joseph Proudhon', 'William H. McNeill']
+William H. McNeill is People
+      Ludwig Feuerbach in ['Brian Herbert Medlin', 'Ashok Gangadean', 'Bertrand Russell', 'Olivier Auber', 'Ellen Mitchell (philosopher)', 'Michael Kidron', 'Colin Murray Turbayne', 'Rudolf Otto', 'Edward Gibbon', 'Ezra Pound', 'Pierre-Joseph Proudhon', 'William H. McNeill', 'Ludwig Feuerbach']
+Ludwig Feuerbach is People
+['Bertrand Russell', 'Edward Gibbon', 'Pierre-Joseph Proudhon', 'Ludwig Feuerbach']
+Ended after 2.5 hierarchy
+(2.5, ['Bertrand Russell', 'Edward Gibbon', 'Pierre-Joseph Proudhon', 'Ludwig Feuerbach'])
+
+extract_info(Bertrand Russell) Start.
+utils/preprocess.py extract_info(): Checking good links on Bertrand Russell
+Gottlob Frege is People
+1 / 30 )  Gottlob Frege Gottlob Frege fregean
+G. E. Moore is People
+2 / 30 )  G. E. Moore G. E. Moore g_e_moore
+Ludwig Wittgenstein is People
+3 / 30 )  Ludwig Wittgenstein Ludwig Wittgenstein ludwig_wittgenstein
+Alfred North Whitehead is People
+4 / 30 )  A. N. Whitehead Alfred North Whitehead alfred_north_whitehead
+Adolf Hitler is People
+5 / 30 )  Adolf Hitler Adolf Hitler adolf_hitler
+Nazi Germany is Geography
+6 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Soviet Union is Geography
+7 / 30 )  Soviet Soviet Union soviet_union
+Trellech is Geography
+8 / 30 )  Trellech Trellech trellech
+John Stuart Mill is People
+9 / 30 )  John Stuart Mill John Stuart Mill john_stuart_mill
+John Russell, 1st Earl Russell is People
+10 / 30 )  Earl Russell John Russell, 1st Earl Russell earl_russell
+Napoleon is People
+11 / 30 )  Napoleon Bonaparte Napoleon napoleon
+Elba is Geography
+12 / 30 )  Elba Elba elba
+Percy Bysshe Shelley is People
+13 / 30 )  Percy Bysshe Shelley Percy Bysshe Shelley percy_bysshe_shelley
+Eiffel Tower is Geography
+14 / 30 )  Eiffel Tower Eiffel Tower eiffel_tower
+Fabian Society is Incident
+15 / 30 )  Fabian Fabian Society fabian_society
+Sidney Webb, 1st Baron Passfield is People
+16 / 30 )  Sidney Sidney Webb, 1st Baron Passfield sidney_james_webb
+Beatrice Webb is People
+17 / 30 )  Beatrice Webb Beatrice Webb beatrice_webb
+Giuseppe Peano is People
+18 / 30 )  Giuseppe Peano Giuseppe Peano peano
+Georg Cantor is People
+19 / 30 )  Georg Cantor Georg Cantor georg_cantor
+The Buddha is People
+20 / 30 )  Buddha The Buddha buddha
+University of Cambridge is Geography
+21 / 30 )  University of Cambridge University of Cambridge university_of_cambridge
+Lytton Strachey is People
+22 / 30 )  Strachey Lytton Strachey lytton_strachey
+House of Commons of the United Kingdom is Geography
+23 / 30 )  House of Commons House of Commons of the United Kingdom british_house_of_commons
+Vladimir Lenin is People
+24 / 30 )  Vladimir Lenin Vladimir Lenin vladimir_lenin
+Volga is Geography
+25 / 30 )  Volga Volga volga
+Beijing is Geography
+26 / 30 )  Peking Beijing beijing
+John Dewey is People
+27 / 30 )  John Dewey John Dewey john_dewey
+Rabindranath Tagore is People
+28 / 30 )  Rabindranath Tagore Rabindranath Tagore rabindranath_tagore
+Cornwall is Geography
+29 / 30 )  Cornwall Cornwall cornwall
+Harting is Geography
+30 / 30 )  Harting Harting harting
+extract_triplet(Bertrand Russell)
+Got GPT's response. String length : 4190
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Trellech', 'Trellech', 'trellech']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['A. N. Whitehead', 'Alfred North Whitehead', 'alfred_north_whitehead']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Adolf Hitler', 'Adolf Hitler', 'adolf_hitler']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Soviet', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Giuseppe Peano', 'Giuseppe Peano', 'peano']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Georg Cantor', 'Georg Cantor', 'georg_cantor']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['University of Cambridge', 'University of Cambridge', 'university_of_cambridge']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Ludwig Wittgenstein', 'Ludwig Wittgenstein', 'ludwig_wittgenstein']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Vladimir Lenin', 'Vladimir Lenin', 'vladimir_lenin']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Volga', 'Volga', 'volga']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Peking', 'Beijing', 'beijing']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['John Dewey', 'John Dewey', 'john_dewey'], ['Rabindranath Tagore', 'Rabindranath Tagore', 'rabindranath_tagore']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  []
+object_words:  [['Soviet', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [['John Dewey', 'John Dewey', 'john_dewey']]
+object_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  [['Soviet', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+subject_words:  [(None, 'Bertrand Russell', 'bertrand_russell')]
+object_words:  []
+extract_info(Edward Gibbon) Start.
+utils/preprocess.py extract_info(): Checking good links on Edward Gibbon
+Putney is Geography
+1 / 30 )  Putney Putney putney
+Surrey is Geography
+2 / 30 )  Surrey Surrey surrey
+Kingston upon Thames is Geography
+3 / 30 )  Kingston upon Thames Kingston upon Thames kingston_upon_thames
+Buriton is Geography
+4 / 30 )  Buriton Buriton buriton
+Lausanne is Geography
+5 / 30 )  Lausanne Lausanne lausanne
+Switzerland is Geography
+6 / 30 )  Switzerland Switzerland switzerland
+Louis XVI is People
+7 / 30 )  Louis XVI's Louis XVI louis_xvi
+Germaine de Staël is People
+8 / 30 )  Madame de Staël Germaine de Staël madame_de_stael
+Cicero is People
+9 / 30 )  Tully Cicero cicero
+Capitoline Hill is Geography
+10 / 30 )  Capitol Capitoline Hill capitoline_hill
+Oliver Goldsmith is People
+11 / 30 )  Oliver Goldsmith Oliver Goldsmith oliver_goldsmith
+Premier Grand Lodge of England is Incident
+12 / 30 )  Premier Grand Lodge of England Premier Grand Lodge of England moderns
+Adam Smith is People
+13 / 30 )  Adam Smith Adam Smith adam_smith
+Horace Walpole is People
+14 / 30 )  Horace Walpole Horace Walpole horace_walpole
+Joseph Priestley is People
+15 / 30 )  Joseph Priestley Joseph Priestley joseph_priestley
+Winston Churchill is People
+16 / 30 )  Winston Churchill Winston Churchill winston_churchill
+Isaac Asimov is People
+17 / 30 )  Isaac Asimov Isaac Asimov isaac_asimov
+Evelyn Waugh is People
+18 / 30 )  Evelyn Waugh Evelyn Waugh evelyn_waugh
+Tacitus is People
+19 / 30 )  Tacitus Tacitus tacitus
+Gibbon is Animal
+20 / 30 )  gibbon Gibbon gibbon
+extract_triplet(Edward Gibbon)
+Got GPT's response. String length : 2126
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Putney', 'Putney', 'putney']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Kingston upon Thames', 'Kingston upon Thames', 'kingston_upon_thames']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Buriton', 'Buriton', 'buriton']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Lausanne', 'Lausanne', 'lausanne']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  []
+object_words:  [["Louis XVI's", 'Louis XVI', 'louis_xvi']]
+subject_words:  []
+object_words:  [['Madame de Staël', 'Germaine de Staël', 'madame_de_stael']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Capitol', 'Capitoline Hill', 'capitoline_hill']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Oliver Goldsmith', 'Oliver Goldsmith', 'oliver_goldsmith']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Premier Grand Lodge of England', 'Premier Grand Lodge of England', 'moderns']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Adam Smith', 'Adam Smith', 'adam_smith']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Horace Walpole', 'Horace Walpole', 'horace_walpole']]
+subject_words:  []
+object_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [['Joseph Priestley', 'Joseph Priestley', 'joseph_priestley']]
+object_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Winston Churchill', 'Winston Churchill', 'winston_churchill']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Isaac Asimov', 'Isaac Asimov', 'isaac_asimov']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Evelyn Waugh', 'Evelyn Waugh', 'evelyn_waugh']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  [['Tacitus', 'Tacitus', 'tacitus']]
+subject_words:  [['Tacitus', 'Tacitus', 'tacitus']]
+object_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+subject_words:  [['Madame de Staël', 'Germaine de Staël', 'madame_de_stael']]
+object_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+subject_words:  [(None, 'Edward Gibbon', 'edward_gibbon'), ['gibbon', 'Gibbon', 'gibbon']]
+object_words:  []
+extract_info(Pierre-Joseph Proudhon) Start.
+utils/preprocess.py extract_info(): Checking good links on Pierre-Joseph Proudhon
+Besançon is Geography
+1 / 30 )  Besançon Besançon besançon
+Karl Marx is People
+2 / 30 )  Karl Marx Karl Marx karl_marx
+International Workingmen's Association is Incident
+3 / 30 )  International Working Men's Association International Workingmen's Association first_international
+Edmund Wilson is People
+4 / 30 )  Edmund Wilson Edmund Wilson edmund_wilson
+Mikhail Bakunin is People
+5 / 30 )  Mikhail Bakunin Mikhail Bakunin mikhail_bakunin
+Peter Kropotkin is People
+6 / 30 )  Peter Kropotkin Peter Kropotkin prince_peter_kropotkin
+Benjamin Tucker is People
+7 / 30 )  Benjamin Tucker Benjamin Tucker benjamin_ricketson_tucker
+Charles Fourier is People
+8 / 30 )  Charles Fourier Charles Fourier charles_fourier
+Michel de Montaigne is People
+9 / 30 )  Michel de Montaigne Michel de Montaigne michel_montaigne
+François Rabelais is People
+10 / 30 )  François Rabelais François Rabelais francois_rabelais
+Jean-Jacques Rousseau is People
+11 / 30 )  Jean-Jacques Rousseau Jean-Jacques Rousseau jean_jacques_rousseau
+Voltaire is People
+12 / 30 )  Voltaire Voltaire voltaire
+Denis Diderot is People
+13 / 30 )  Denis Diderot Denis Diderot denis_diderot
+Lyon is Geography
+14 / 30 )  Lyon Lyon lyon
+François-Noël Babeuf is People
+15 / 30 )  François-Noël Babeuf François-Noël Babeuf babeuf
+Max Stirner is People
+16 / 30 )  Max Stirner Max Stirner stirnerism
+Friedrich Engels is People
+17 / 30 )  Friedrich Engels Friedrich Engels friedrich_engels
+Vladimir Lenin is People
+18 / 30 )  Vladimir Lenin Vladimir Lenin vladimir_lenin
+Murray Bookchin is People
+19 / 30 )  Murray Bookchin Murray Bookchin bookchin
+Louis Auguste Blanqui is People
+20 / 30 )  Louis Blanqui Louis Auguste Blanqui blanqui
+Charles Maurras is People
+21 / 30 )  Charles Maurras Charles Maurras maurras
+Benito Mussolini is People
+22 / 30 )  Benito Mussolini Benito Mussolini benito_mussolini
+Heinrich Heine is People
+23 / 30 )  H. Heine Heinrich Heine heinrich_heine
+Gustave Courbet is People
+24 / 30 )  Gustave Courbet Gustave Courbet gustave_courbet
+extract_triplet(Pierre-Joseph Proudhon)
+Got GPT's response. String length : 2384
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Besançon', 'Besançon', 'besançon']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Karl Marx', 'Karl Marx', 'karl_marx']]
+subject_words:  [['Karl Marx', 'Karl Marx', 'karl_marx']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Mikhail Bakunin', 'Mikhail Bakunin', 'mikhail_bakunin']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Peter Kropotkin', 'Peter Kropotkin', 'prince_peter_kropotkin']]
+object_words:  []
+subject_words:  [['Benjamin Tucker', 'Benjamin Tucker', 'benjamin_ricketson_tucker']]
+object_words:  []
+subject_words:  []
+object_words:  [['Charles Fourier', 'Charles Fourier', 'charles_fourier']]
+subject_words:  [['Michel de Montaigne', 'Michel de Montaigne', 'michel_montaigne'], ['François Rabelais', 'François Rabelais', 'francois_rabelais']]
+object_words:  []
+subject_words:  [['Denis Diderot', 'Denis Diderot', 'denis_diderot']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Max Stirner', 'Max Stirner', 'stirnerism']]
+subject_words:  [['Friedrich Engels', 'Friedrich Engels', 'friedrich_engels']]
+object_words:  []
+subject_words:  [['Vladimir Lenin', 'Vladimir Lenin', 'vladimir_lenin']]
+object_words:  []
+subject_words:  [['Murray Bookchin', 'Murray Bookchin', 'bookchin']]
+object_words:  []
+subject_words:  []
+object_words:  [['Louis Blanqui', 'Louis Auguste Blanqui', 'blanqui']]
+subject_words:  [['Charles Maurras', 'Charles Maurras', 'maurras']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['H. Heine', 'Heinrich Heine', 'heinrich_heine']]
+object_words:  []
+subject_words:  [['Gustave Courbet', 'Gustave Courbet', 'gustave_courbet']]
+object_words:  []
+extract_info(Ludwig Feuerbach) Start.
+utils/preprocess.py extract_info(): Checking good links on Ludwig Feuerbach
+Charles Darwin is People
+1 / 30 )  Charles Darwin Charles Darwin charles_darwin
+Karl Marx is People
+2 / 30 )  Karl Marx Karl Marx karl_marx
+Sigmund Freud is People
+3 / 30 )  Sigmund Freud Sigmund Freud sigmund_freud
+Friedrich Engels is People
+4 / 30 )  Friedrich Engels Friedrich Engels friedrich_engels
+Mikhail Bakunin is People
+5 / 30 )  Mikhail Bakunin Mikhail Bakunin mikhail_bakunin
+Richard Wagner is People
+6 / 30 )  Richard Wagner Richard Wagner richard_wagner
+Friedrich Nietzsche is People
+7 / 30 )  Friedrich Nietzsche Friedrich Nietzsche friedrich_nietzsche
+Georg Wilhelm Friedrich Hegel is People
+8 / 30 )  Hegel Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Baruch Spinoza is People
+9 / 30 )  Spinozistic Baruch Spinoza spinoza
+Max Stirner is People
+10 / 30 )  Max Stirner Max Stirner stirnerism
+Albrecht Dürer is People
+11 / 30 )  Albrecht Dürer Albrecht Dürer albrecht_durer
+extract_triplet(Ludwig Feuerbach)
+Got GPT's response. String length : 1511
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Charles Darwin', 'Charles Darwin', 'charles_darwin']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Karl Marx', 'Karl Marx', 'karl_marx']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Sigmund Freud', 'Sigmund Freud', 'sigmund_freud']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Friedrich Engels', 'Friedrich Engels', 'friedrich_engels']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Mikhail Bakunin', 'Mikhail Bakunin', 'mikhail_bakunin']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Richard Wagner', 'Richard Wagner', 'richard_wagner']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Friedrich Nietzsche', 'Friedrich Nietzsche', 'friedrich_nietzsche']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Hegel', 'Georg Wilhelm Friedrich Hegel', 'georg_wilhelm_friedrich_hegel']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Hegel', 'Georg Wilhelm Friedrich Hegel', 'georg_wilhelm_friedrich_hegel']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  [['Max Stirner', 'Max Stirner', 'stirnerism']]
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [(None, 'Ludwig Feuerbach', 'ludwig_feuerbach')]
+object_words:  []
+subject_words:  [['Albrecht Dürer', 'Albrecht Dürer', 'albrecht_durer']]
+object_words:  []
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Karl Jaspers", "was inspired by", "Spinoza")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Karl Jaspers", "was born in", "Oldenburg")\n', '("Karl Jaspers", "studied law at", "the University of Heidelberg")\n', '("Karl Jaspers", "studied medicine at", "the University of Heidelberg")\n', '("Karl Jaspers", "worked under", "Franz Nissl")\n', '("Karl Jaspers", "turned to philosophical inquiry in", "Heidelberg")\n', '("Karl Jaspers", "was friends with", "Max Weber")\n', '("Karl Jaspers", "moved to", "Switzerland")\n', '("Karl Jaspers", "influenced", "modern theology")\n', '("Karl Jaspers", "argued for distinction between", "primary and secondary delusions")\n', '("Franz Nissl", "was predecessor of", "Emil Kraepelin and Karl Bonhoeffer")\n', '("Karl Jaspers", "criticized", "Freud")\n', '("Karl Jaspers", "drew upon", "Nietzsche")\n', '("Karl Jaspers", "drew upon", "Kierkegaard")\n', '("Karl Jaspers", "was influenced by", "Meister Eckhart")\n', '("Karl Jaspers", "debated with", "Rudolf Bultmann")\n', '("Karl Jaspers", "was threatened by", "Hitler")\n', '("Hitler", "posed a threat to", "Karl Jaspers")\n', '("Karl Jaspers", "examined the culpability of", "Third Reich")\n', '("Karl Jaspers", "displayed influence on", "Hans-Georg Gadamer")\n', '("Karl Jaspers", "held a political philosophy similar to", "Max Weber")\n', '("Karl Jaspers", "was influenced by", "Immanuel Kant")\n', '("Karl Jaspers", "valued", "Goethe")\n', '("Karl Jaspers", "owes to", "Hegel")\n', '("Karl Jaspers", "owes to", "Plato")\n', '("Walter Kaufmann", "argues Jaspers close to", "Kant")\n', '("Bertrand Russell", "was born", "Trellech")\n', '("Bertrand Russell", "influenced", "mathematics and logic")\n', '("Bertrand Russell", "co-authored with", "A. N. Whitehead")\n', '("Bertrand Russell", "wrote", "Principia Mathematica")\n', '("Bertrand Russell", "awarded", "Nobel Prize in Literature")\n', '("Bertrand Russell", "was", "pacifist")\n', '("Bertrand Russell", "supported", "anti-imperialism")\n', '("Bertrand Russell", "jailed for", "pacifism during World War I")\n', '("Bertrand Russell", "supported appeasement against", "Adolf Hitler")\n', '("Bertrand Russell", "welcomed hegemony of", "America over Soviet")\n', '("Bertrand Russell", "criticised", "Stalinist totalitarianism")\n', '("Bertrand Russell", "condemned", "United States\' involvement in the Vietnam War")\n', '("Bertrand Russell", "proponent of", "nuclear disarmament")\n', '("Bertrand Russell", "attendee at", "first International Congress of Philosophy")\n', '("Bertrand Russell", "met", "Giuseppe Peano")\n', '("Bertrand Russell", "read literature by", "Georg Cantor")\n', '("Bertrand Russell", "delivered lectures on", "logical atomism")\n', '("Bertrand Russell", "lecturer at", "University of Cambridge")\n', '("Bertrand Russell", "wrote essay titled", "On Denoting")\n', '("Bertrand Russell", "elected fellow of", "Royal Society")\n', '("Bertrand Russell", "political activity as", "Independent Liberal candidate")\n', '("Bertrand Russell", "dismissed from", "Trinity College")\n', '("Bertrand Russell", "championed case of", "Eric Chappelow")\n', '("Bertrand Russell", "participated in", "Leeds Convention")\n', '("Bertrand Russell", "convicted for", "lecturing against United States entering the war")\n', '("Bertrand Russell", "imprisoned in", "Brixton Prison")\n', '("Bertrand Russell", "approached by", "Ludwig Wittgenstein")\n', '("Bertrand Russell", "met", "Vladimir Lenin")\n', '("Bertrand Russell", "cruised down", "Volga")\n', '("Bertrand Russell", "wrote book titled", "The Practice and Theory of Bolshevism")\n', '("Bertrand Russell", "lectured in", "Peking")\n', '("Bertrand Russell", "time in China with other scholars like", "John Dewey and Rabindranath Tagore")\n', '("Bertrand Russell", "gravely ill with", "pneumonia in China")\n', '("Dora Black", "visited", "Soviet Russia")\n', '("Bertrand Russell", "founded", "Beacon Hill School")\n', '("Bertrand Russell", "works on", "education in book titled \'On Education\'")\n', '("Bertrand Russell", "taught at", "London School of Economics")\n', '("Bertrand Russell", "chaired", "India League")\n', '("Bertrand Russell", "opposed", "rearmament against Nazi Germany")\n', '("Bertrand Russell", "changed view to", "oppose appeasement in World War II")\n', '("Bertrand Russell", "taught at", "University of Chicago")\n', '("Bertrand Russell", "appointment annulled at", "City College of New York")\n', '("John Dewey", "protested treatment of", "Bertrand Russell")\n', '("Bertrand Russell", "lectured at", "Barnes Foundation")\n', '("Bertrand Russell", "returned to UK joining", "Trinity College faculty")\n', '("Bertrand Russell", "broadcasts over", "BBC")\n', '("Bertrand Russell", "survived", "aeroplane crash in Hommelvik")\n', '("Bertrand Russell", "argued for socialism in book titled", "The Scientific Outlook")\n', '("Bertrand Russell", "divorced by", "Patricia Spence")\n', '("Bertrand Russell", "married", "Edith Finch")\n', '("Bertrand Russell", "son suffered from", "mental illness")\n', '("Bertrand Russell", "role in", "Cuban Missile Crisis")\n', '("Bertrand Russell", "exchanged telegrams with", "Nikita Khrushchev")\n', '("Bertrand Russell", "political causes", "against war and for nuclear disarmament")\n', '("Bertrand Russell", "form a tribunal known as", "Russell Vietnam War Crimes Tribunal")\n', '("Bertrand Russell", "shocked observers suggesting preemptive nuclear strike on", "Soviet Union")\n', '("Bertrand Russell", "advocated for", "universal basic income")\n', '("Bertrand Russell", "published", "A History of Western Philosophy")\n', '("Bertrand Russell", "attended inaugural conference for", "Congress for Cultural Freedom")\n', '("Bertrand Russell", "divorced by", "Spence")\n', '("Bertrand Russell", "criticised", "concentration of power")\n', '("Edward Gibbon", "was born in", "Putney")\n', '("Edward Gibbon", "had a residence in", "Kingston upon Thames")\n', '("Edward Gibbon", "spent time at family home in", "Buriton")\n', '("Edward Gibbon", "lived under the care of", "Daniel Pavillard in Lausanne")\n', '("Edward Gibbon", "made a great friendship with", "Jacques Georges Deyverdun")\n', '("Edward Gibbon", "\'s conversion to Roman Catholicism", "influenced by Jacques-Bénigne Bossuet")\n', '("Edward Gibbon", "proposed marriage to", "Suzanne Curchod")\n', '("Suzanne Curchod", "became the wife of", "Louis XVI\'s finance minister Jacques Necker")\n', '("Suzanne Curchod", "was the mother of", "Madame de Staël")\n', '("Edward Gibbon", "had the Capitoline vision in", "Rome")\n', '("Edward Gibbon", "conceived the idea of", "The History of the Decline and Fall of the Roman Empire in Capitol")\n', '("Edward Gibbon", "succeeded", "Oliver Goldsmith at the Royal Academy")\n', '("Edward Gibbon", "was initiated into", "Premier Grand Lodge of England")\n', '("Edward Gibbon", "was a friend of", "Adam Smith")\n', '("Edward Gibbon", "received praise from", "Horace Walpole")\n', '("The History of the Decline and Fall of the Roman Empire", "written by", "Edward Gibbon")\n', '("Edward Gibbon", "criticized", "organized religion in his work")\n', '("Edward Gibbon", "suffered from", "gout and scrotal swelling")\n', '("Edward Gibbon", "was buried in", "Sheffield Mausoleum")\n', '("Edward Gibbon", "was influenced by", "Joseph Priestley\'s detractor")\n', '("Joseph Priestley", "criticized", "Edward Gibbon")\n', '("Edward Gibbon", "influenced", "Winston Churchill")\n', '("Edward Gibbon", "influenced", "Isaac Asimov")\n', '("Edward Gibbon", "was criticized for secular viewpoint by", "Evelyn Waugh")\n', '("Edward Gibbon", "wrote about", "Tacitus")\n', '("Tacitus", "mentioned in connection with", "Edward Gibbon")\n', '("Edward Gibbon", "known for his", "polemical criticism of organized religion")\n', '("Edward Gibbon", "impressed by", "Madame de Staël\'s intellect")\n', '("Madame de Staël", "was admired for intellect by", "Edward Gibbon")\n', '("Edward Gibbon", "was professor in ancient history at", "Royal Academy")\n', '("Pierre-Joseph Proudhon", "founded", "mutualist philosophy")\n', '("Pierre-Joseph Proudhon", "is considered the", "father of anarchism")\n', '("Pierre-Joseph Proudhon", "was born in", "Besançon")\n', '("Pierre-Joseph Proudhon", "taught himself", "Latin to print books in the language")\n', '("Pierre-Joseph Proudhon", "asserted", "\\"property is theft!\\"")\n', '("Pierre-Joseph Proudhon", "attracted the scrutiny of", "Karl Marx")\n', '("Karl Marx", "responded to Proudhon\'s work", "with The Poverty of Philosophy")\n', '("Pierre-Joseph Proudhon", "favored", "workers\' council and associations or cooperatives")\n', '("Pierre-Joseph Proudhon", "tried to create", "a national bank")\n', '("Mikhail Bakunin", "was a follower of", "Pierre-Joseph Proudhon")\n', '("Pierre-Joseph Proudhon\'s libertarian socialism", "diverged into", "individualist anarchism, collectivist anarchism, anarcho-communism and anarcho-syndicalism")\n', '("Peter Kropotkin", "was a notable proponent of", "Pierre-Joseph Proudhon\'s theories")\n', '("Benjamin Tucker", "was influenced by", "Pierre-Joseph Proudhon\'s libertarian socialism")\n', '("Pierre-Joseph Proudhon", "met with", "Charles Fourier")\n', '("Michel de Montaigne and François Rabelais", "were authors discussed by", "Pierre-Joseph Proudhon and Gustave Fallot")\n', '("Jean-Jacques Rousseau, Voltaire, and Denis Diderot", "works were explored by", "Pierre-Joseph Proudhon")\n', '("Pierre-Joseph Proudhon", "formed a close friendship with", "Gustave Fallot")\n', '("Pierre-Joseph Proudhon", "opposed", "François-Noël Babeuf")\n', '("Pierre-Joseph Proudhon", "was not influenced by", "Max Stirner according to his texts")\n', '("Friedrich Engels", "was an interlocutor against", "Pierre-Joseph Proudhon\'s ideas")\n', '("Vladimir Lenin", "adopted the concept of dual power first outlined by", "Pierre-Joseph Proudhon")\n', '("Murray Bookchin", "critiqued", "Pierre-Joseph Proudhon\'s later views")\n', '("Pierre-Joseph Proudhon", "modified his views on", "Louis Blanqui")\n', '("Charles Maurras", "used", "Pierre-Joseph Proudhon\'s ideas for right-wing nationalism")\n', '("Benito Mussolini\'s fascism", "has been linked to an interpretation of", "Pierre-Joseph Proudhon\'s ideas by the Cercle Proudhon")\n', '("H. Heine", "was accused of being a secret spy by", "Pierre-Joseph Proudhon")\n', '("Gustave Courbet", "painted the portrait of", "Pierre-Joseph Proudhon and His Children")\n', '("Ludwig Feuerbach", "influenced", "Charles Darwin")\n', '("Ludwig Feuerbach", "influenced", "Karl Marx")\n', '("Ludwig Feuerbach", "influenced", "Sigmund Freud")\n', '("Ludwig Feuerbach", "influenced", "Friedrich Engels")\n', '("Ludwig Feuerbach", "influenced", "Mikhail Bakunin")\n', '("Ludwig Feuerbach", "influenced", "Richard Wagner")\n', '("Ludwig Feuerbach", "influenced", "Friedrich Nietzsche")\n', '("Ludwig Feuerbach", "was an associate of", "Young Hegelian circles")\n', '("Ludwig Feuerbach", "advocated", "atheism")\n', '("Ludwig Feuerbach", "advocated", "anthropological materialism")\n', '("Ludwig Feuerbach", "recognized as a bridge between", "Hegel and Marx")\n', '("Ludwig Feuerbach", "presented his theory to", "professor of Hegel")\n', '("Ludwig Feuerbach", "book translated by", "Mary Ann Evans")\n', '("Ludwig Feuerbach", "criticized by", "Max Stirner")\n', '("Ludwig Feuerbach", "wrote thesis on", "De infinitate, unitate, atque, communitate, rationis")\n', '("Ludwig Feuerbach\'s", "work translated into English by", "George Eliot")\n', '("Ludwig Feuerbach", "wrote", "Das Wesen des Christentums")\n', '("Ludwig Feuerbach", "delivered", "public lectures")\n', '("Ludwig Feuerbach", "joined", "Social Democratic Party of Germany")\n', '("Ludwig Feuerbach", "is buried at", "Johannis-Friedhof Cemetery")\n', '("Ludwig Feuerbach", "gave anthropological explanation of", "religion\'s phenomena")\n', '("Ludwig Feuerbach", "thought religion was", "principally a matter of feeling")\n', '("Ludwig Feuerbach", "made projections of", "Gods")\n', '("Albrecht Dürer", "is interred at", "Johannis-Friedhof Cemetery")\n']
+range(1, 250) 4
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Karl Jaspers", "was inspired by", "Spinoza")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Karl Jaspers", "was born in", "Oldenburg")\n', '("Karl Jaspers", "studied law at", "the University of Heidelberg")\n', '("Karl Jaspers", "studied medicine at", "the University of Heidelberg")\n', '("Karl Jaspers", "worked under", "Franz Nissl")\n', '("Karl Jaspers", "turned to philosophical inquiry in", "Heidelberg")\n', '("Karl Jaspers", "was friends with", "Max Weber")\n', '("Karl Jaspers", "moved to", "Switzerland")\n', '("Karl Jaspers", "influenced", "modern theology")\n', '("Karl Jaspers", "argued for distinction between", "primary and secondary delusions")\n', '("Franz Nissl", "was predecessor of", "Emil Kraepelin and Karl Bonhoeffer")\n', '("Karl Jaspers", "criticized", "Freud")\n', '("Karl Jaspers", "drew upon", "Nietzsche")\n', '("Karl Jaspers", "drew upon", "Kierkegaard")\n', '("Karl Jaspers", "was influenced by", "Meister Eckhart")\n', '("Karl Jaspers", "debated with", "Rudolf Bultmann")\n', '("Karl Jaspers", "was threatened by", "Hitler")\n', '("Hitler", "posed a threat to", "Karl Jaspers")\n', '("Karl Jaspers", "examined the culpability of", "Third Reich")\n', '("Karl Jaspers", "displayed influence on", "Hans-Georg Gadamer")\n', '("Karl Jaspers", "held a political philosophy similar to", "Max Weber")\n', '("Karl Jaspers", "was influenced by", "Immanuel Kant")\n', '("Karl Jaspers", "valued", "Goethe")\n', '("Karl Jaspers", "owes to", "Hegel")\n', '("Karl Jaspers", "owes to", "Plato")\n', '("Walter Kaufmann", "argues Jaspers close to", "Kant")\n', '("Bertrand Russell", "was born", "Trellech")\n', '("Bertrand Russell", "influenced", "mathematics and logic")\n', '("Bertrand Russell", "co-authored with", "A. N. Whitehead")\n', '("Bertrand Russell", "wrote", "Principia Mathematica")\n', '("Bertrand Russell", "awarded", "Nobel Prize in Literature")\n', '("Bertrand Russell", "was", "pacifist")\n', '("Bertrand Russell", "supported", "anti-imperialism")\n', '("Bertrand Russell", "jailed for", "pacifism during World War I")\n', '("Bertrand Russell", "supported appeasement against", "Adolf Hitler")\n', '("Bertrand Russell", "welcomed hegemony of", "America over Soviet")\n', '("Bertrand Russell", "criticised", "Stalinist totalitarianism")\n', '("Bertrand Russell", "condemned", "United States\' involvement in the Vietnam War")\n', '("Bertrand Russell", "proponent of", "nuclear disarmament")\n', '("Bertrand Russell", "attendee at", "first International Congress of Philosophy")\n', '("Bertrand Russell", "met", "Giuseppe Peano")\n', '("Bertrand Russell", "read literature by", "Georg Cantor")\n', '("Bertrand Russell", "delivered lectures on", "logical atomism")\n', '("Bertrand Russell", "lecturer at", "University of Cambridge")\n', '("Bertrand Russell", "wrote essay titled", "On Denoting")\n', '("Bertrand Russell", "elected fellow of", "Royal Society")\n', '("Bertrand Russell", "political activity as", "Independent Liberal candidate")\n', '("Bertrand Russell", "dismissed from", "Trinity College")\n', '("Bertrand Russell", "championed case of", "Eric Chappelow")\n', '("Bertrand Russell", "participated in", "Leeds Convention")\n', '("Bertrand Russell", "convicted for", "lecturing against United States entering the war")\n', '("Bertrand Russell", "imprisoned in", "Brixton Prison")\n', '("Bertrand Russell", "approached by", "Ludwig Wittgenstein")\n', '("Bertrand Russell", "met", "Vladimir Lenin")\n', '("Bertrand Russell", "cruised down", "Volga")\n', '("Bertrand Russell", "wrote book titled", "The Practice and Theory of Bolshevism")\n', '("Bertrand Russell", "lectured in", "Peking")\n', '("Bertrand Russell", "time in China with other scholars like", "John Dewey and Rabindranath Tagore")\n', '("Bertrand Russell", "gravely ill with", "pneumonia in China")\n', '("Dora Black", "visited", "Soviet Russia")\n', '("Bertrand Russell", "founded", "Beacon Hill School")\n', '("Bertrand Russell", "works on", "education in book titled \'On Education\'")\n', '("Bertrand Russell", "taught at", "London School of Economics")\n', '("Bertrand Russell", "chaired", "India League")\n', '("Bertrand Russell", "opposed", "rearmament against Nazi Germany")\n', '("Bertrand Russell", "changed view to", "oppose appeasement in World War II")\n', '("Bertrand Russell", "taught at", "University of Chicago")\n', '("Bertrand Russell", "appointment annulled at", "City College of New York")\n', '("John Dewey", "protested treatment of", "Bertrand Russell")\n', '("Bertrand Russell", "lectured at", "Barnes Foundation")\n', '("Bertrand Russell", "returned to UK joining", "Trinity College faculty")\n', '("Bertrand Russell", "broadcasts over", "BBC")\n', '("Bertrand Russell", "survived", "aeroplane crash in Hommelvik")\n', '("Bertrand Russell", "argued for socialism in book titled", "The Scientific Outlook")\n', '("Bertrand Russell", "divorced by", "Patricia Spence")\n', '("Bertrand Russell", "married", "Edith Finch")\n', '("Bertrand Russell", "son suffered from", "mental illness")\n', '("Bertrand Russell", "role in", "Cuban Missile Crisis")\n', '("Bertrand Russell", "exchanged telegrams with", "Nikita Khrushchev")\n', '("Bertrand Russell", "political causes", "against war and for nuclear disarmament")\n', '("Bertrand Russell", "form a tribunal known as", "Russell Vietnam War Crimes Tribunal")\n', '("Bertrand Russell", "shocked observers suggesting preemptive nuclear strike on", "Soviet Union")\n', '("Bertrand Russell", "advocated for", "universal basic income")\n', '("Bertrand Russell", "published", "A History of Western Philosophy")\n', '("Bertrand Russell", "attended inaugural conference for", "Congress for Cultural Freedom")\n', '("Bertrand Russell", "divorced by", "Spence")\n', '("Bertrand Russell", "criticised", "concentration of power")\n', '("Edward Gibbon", "was born in", "Putney")\n', '("Edward Gibbon", "had a residence in", "Kingston upon Thames")\n', '("Edward Gibbon", "spent time at family home in", "Buriton")\n', '("Edward Gibbon", "lived under the care of", "Daniel Pavillard in Lausanne")\n', '("Edward Gibbon", "made a great friendship with", "Jacques Georges Deyverdun")\n', '("Edward Gibbon", "\'s conversion to Roman Catholicism", "influenced by Jacques-Bénigne Bossuet")\n', '("Edward Gibbon", "proposed marriage to", "Suzanne Curchod")\n', '("Suzanne Curchod", "became the wife of", "Louis XVI\'s finance minister Jacques Necker")\n', '("Suzanne Curchod", "was the mother of", "Madame de Staël")\n', '("Edward Gibbon", "had the Capitoline vision in", "Rome")\n', '("Edward Gibbon", "conceived the idea of", "The History of the Decline and Fall of the Roman Empire in Capitol")\n', '("Edward Gibbon", "succeeded", "Oliver Goldsmith at the Royal Academy")\n', '("Edward Gibbon", "was initiated into", "Premier Grand Lodge of England")\n', '("Edward Gibbon", "was a friend of", "Adam Smith")\n', '("Edward Gibbon", "received praise from", "Horace Walpole")\n', '("The History of the Decline and Fall of the Roman Empire", "written by", "Edward Gibbon")\n', '("Edward Gibbon", "criticized", "organized religion in his work")\n', '("Edward Gibbon", "suffered from", "gout and scrotal swelling")\n', '("Edward Gibbon", "was buried in", "Sheffield Mausoleum")\n', '("Edward Gibbon", "was influenced by", "Joseph Priestley\'s detractor")\n', '("Joseph Priestley", "criticized", "Edward Gibbon")\n', '("Edward Gibbon", "influenced", "Winston Churchill")\n', '("Edward Gibbon", "influenced", "Isaac Asimov")\n', '("Edward Gibbon", "was criticized for secular viewpoint by", "Evelyn Waugh")\n', '("Edward Gibbon", "wrote about", "Tacitus")\n', '("Tacitus", "mentioned in connection with", "Edward Gibbon")\n', '("Edward Gibbon", "known for his", "polemical criticism of organized religion")\n', '("Edward Gibbon", "impressed by", "Madame de Staël\'s intellect")\n', '("Madame de Staël", "was admired for intellect by", "Edward Gibbon")\n', '("Edward Gibbon", "was professor in ancient history at", "Royal Academy")\n', '("Pierre-Joseph Proudhon", "founded", "mutualist philosophy")\n', '("Pierre-Joseph Proudhon", "is considered the", "father of anarchism")\n', '("Pierre-Joseph Proudhon", "was born in", "Besançon")\n', '("Pierre-Joseph Proudhon", "taught himself", "Latin to print books in the language")\n', '("Pierre-Joseph Proudhon", "asserted", "\\"property is theft!\\"")\n', '("Pierre-Joseph Proudhon", "attracted the scrutiny of", "Karl Marx")\n', '("Karl Marx", "responded to Proudhon\'s work", "with The Poverty of Philosophy")\n', '("Pierre-Joseph Proudhon", "favored", "workers\' council and associations or cooperatives")\n', '("Pierre-Joseph Proudhon", "tried to create", "a national bank")\n', '("Mikhail Bakunin", "was a follower of", "Pierre-Joseph Proudhon")\n', '("Pierre-Joseph Proudhon\'s libertarian socialism", "diverged into", "individualist anarchism, collectivist anarchism, anarcho-communism and anarcho-syndicalism")\n', '("Peter Kropotkin", "was a notable proponent of", "Pierre-Joseph Proudhon\'s theories")\n', '("Benjamin Tucker", "was influenced by", "Pierre-Joseph Proudhon\'s libertarian socialism")\n', '("Pierre-Joseph Proudhon", "met with", "Charles Fourier")\n', '("Michel de Montaigne and François Rabelais", "were authors discussed by", "Pierre-Joseph Proudhon and Gustave Fallot")\n', '("Jean-Jacques Rousseau, Voltaire, and Denis Diderot", "works were explored by", "Pierre-Joseph Proudhon")\n', '("Pierre-Joseph Proudhon", "formed a close friendship with", "Gustave Fallot")\n', '("Pierre-Joseph Proudhon", "opposed", "François-Noël Babeuf")\n', '("Pierre-Joseph Proudhon", "was not influenced by", "Max Stirner according to his texts")\n', '("Friedrich Engels", "was an interlocutor against", "Pierre-Joseph Proudhon\'s ideas")\n', '("Vladimir Lenin", "adopted the concept of dual power first outlined by", "Pierre-Joseph Proudhon")\n', '("Murray Bookchin", "critiqued", "Pierre-Joseph Proudhon\'s later views")\n', '("Pierre-Joseph Proudhon", "modified his views on", "Louis Blanqui")\n', '("Charles Maurras", "used", "Pierre-Joseph Proudhon\'s ideas for right-wing nationalism")\n', '("Benito Mussolini\'s fascism", "has been linked to an interpretation of", "Pierre-Joseph Proudhon\'s ideas by the Cercle Proudhon")\n', '("H. Heine", "was accused of being a secret spy by", "Pierre-Joseph Proudhon")\n', '("Gustave Courbet", "painted the portrait of", "Pierre-Joseph Proudhon and His Children")\n', '("Ludwig Feuerbach", "influenced", "Charles Darwin")\n', '("Ludwig Feuerbach", "influenced", "Karl Marx")\n', '("Ludwig Feuerbach", "influenced", "Sigmund Freud")\n', '("Ludwig Feuerbach", "influenced", "Friedrich Engels")\n', '("Ludwig Feuerbach", "influenced", "Mikhail Bakunin")\n', '("Ludwig Feuerbach", "influenced", "Richard Wagner")\n', '("Ludwig Feuerbach", "influenced", "Friedrich Nietzsche")\n', '("Ludwig Feuerbach", "was an associate of", "Young Hegelian circles")\n', '("Ludwig Feuerbach", "advocated", "atheism")\n', '("Ludwig Feuerbach", "advocated", "anthropological materialism")\n', '("Ludwig Feuerbach", "recognized as a bridge between", "Hegel and Marx")\n', '("Ludwig Feuerbach", "presented his theory to", "professor of Hegel")\n', '("Ludwig Feuerbach", "book translated by", "Mary Ann Evans")\n', '("Ludwig Feuerbach", "criticized by", "Max Stirner")\n', '("Ludwig Feuerbach", "wrote thesis on", "De infinitate, unitate, atque, communitate, rationis")\n', '("Ludwig Feuerbach\'s", "work translated into English by", "George Eliot")\n', '("Ludwig Feuerbach", "wrote", "Das Wesen des Christentums")\n', '("Ludwig Feuerbach", "delivered", "public lectures")\n', '("Ludwig Feuerbach", "joined", "Social Democratic Party of Germany")\n', '("Ludwig Feuerbach", "is buried at", "Johannis-Friedhof Cemetery")\n', '("Ludwig Feuerbach", "gave anthropological explanation of", "religion\'s phenomena")\n', '("Ludwig Feuerbach", "thought religion was", "principally a matter of feeling")\n', '("Ludwig Feuerbach", "made projections of", "Gods")\n', '("Albrecht Dürer", "is interred at", "Johannis-Friedhof Cemetery")\n']
+range(1, 250) 4
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Karl Jaspers", "was inspired by", "Spinoza")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Karl Jaspers", "was born in", "Oldenburg")\n', '("Karl Jaspers", "studied law at", "the University of Heidelberg")\n', '("Karl Jaspers", "studied medicine at", "the University of Heidelberg")\n', '("Karl Jaspers", "worked under", "Franz Nissl")\n', '("Karl Jaspers", "turned to philosophical inquiry in", "Heidelberg")\n', '("Karl Jaspers", "was friends with", "Max Weber")\n', '("Karl Jaspers", "moved to", "Switzerland")\n', '("Karl Jaspers", "influenced", "modern theology")\n', '("Karl Jaspers", "argued for distinction between", "primary and secondary delusions")\n', '("Franz Nissl", "was predecessor of", "Emil Kraepelin and Karl Bonhoeffer")\n', '("Karl Jaspers", "criticized", "Freud")\n', '("Karl Jaspers", "drew upon", "Nietzsche")\n', '("Karl Jaspers", "drew upon", "Kierkegaard")\n', '("Karl Jaspers", "was influenced by", "Meister Eckhart")\n', '("Karl Jaspers", "debated with", "Rudolf Bultmann")\n', '("Karl Jaspers", "was threatened by", "Hitler")\n', '("Hitler", "posed a threat to", "Karl Jaspers")\n', '("Karl Jaspers", "examined the culpability of", "Third Reich")\n', '("Karl Jaspers", "displayed influence on", "Hans-Georg Gadamer")\n', '("Karl Jaspers", "held a political philosophy similar to", "Max Weber")\n', '("Karl Jaspers", "was influenced by", "Immanuel Kant")\n', '("Karl Jaspers", "valued", "Goethe")\n', '("Karl Jaspers", "owes to", "Hegel")\n', '("Karl Jaspers", "owes to", "Plato")\n', '("Walter Kaufmann", "argues Jaspers close to", "Kant")\n', '("Bertrand Russell", "was born", "Trellech")\n', '("Bertrand Russell", "influenced", "mathematics and logic")\n', '("Bertrand Russell", "co-authored with", "A. N. Whitehead")\n', '("Bertrand Russell", "wrote", "Principia Mathematica")\n', '("Bertrand Russell", "awarded", "Nobel Prize in Literature")\n', '("Bertrand Russell", "was", "pacifist")\n', '("Bertrand Russell", "supported", "anti-imperialism")\n', '("Bertrand Russell", "jailed for", "pacifism during World War I")\n', '("Bertrand Russell", "supported appeasement against", "Adolf Hitler")\n', '("Bertrand Russell", "welcomed hegemony of", "America over Soviet")\n', '("Bertrand Russell", "criticised", "Stalinist totalitarianism")\n', '("Bertrand Russell", "condemned", "United States\' involvement in the Vietnam War")\n', '("Bertrand Russell", "proponent of", "nuclear disarmament")\n', '("Bertrand Russell", "attendee at", "first International Congress of Philosophy")\n', '("Bertrand Russell", "met", "Giuseppe Peano")\n', '("Bertrand Russell", "read literature by", "Georg Cantor")\n', '("Bertrand Russell", "delivered lectures on", "logical atomism")\n', '("Bertrand Russell", "lecturer at", "University of Cambridge")\n', '("Bertrand Russell", "wrote essay titled", "On Denoting")\n', '("Bertrand Russell", "elected fellow of", "Royal Society")\n', '("Bertrand Russell", "political activity as", "Independent Liberal candidate")\n', '("Bertrand Russell", "dismissed from", "Trinity College")\n', '("Bertrand Russell", "championed case of", "Eric Chappelow")\n', '("Bertrand Russell", "participated in", "Leeds Convention")\n', '("Bertrand Russell", "convicted for", "lecturing against United States entering the war")\n', '("Bertrand Russell", "imprisoned in", "Brixton Prison")\n', '("Bertrand Russell", "approached by", "Ludwig Wittgenstein")\n', '("Bertrand Russell", "met", "Vladimir Lenin")\n', '("Bertrand Russell", "cruised down", "Volga")\n', '("Bertrand Russell", "wrote book titled", "The Practice and Theory of Bolshevism")\n', '("Bertrand Russell", "lectured in", "Peking")\n', '("Bertrand Russell", "time in China with other scholars like", "John Dewey and Rabindranath Tagore")\n', '("Bertrand Russell", "gravely ill with", "pneumonia in China")\n', '("Dora Black", "visited", "Soviet Russia")\n', '("Bertrand Russell", "founded", "Beacon Hill School")\n', '("Bertrand Russell", "works on", "education in book titled \'On Education\'")\n', '("Bertrand Russell", "taught at", "London School of Economics")\n', '("Bertrand Russell", "chaired", "India League")\n', '("Bertrand Russell", "opposed", "rearmament against Nazi Germany")\n', '("Bertrand Russell", "changed view to", "oppose appeasement in World War II")\n', '("Bertrand Russell", "taught at", "University of Chicago")\n', '("Bertrand Russell", "appointment annulled at", "City College of New York")\n', '("John Dewey", "protested treatment of", "Bertrand Russell")\n', '("Bertrand Russell", "lectured at", "Barnes Foundation")\n', '("Bertrand Russell", "returned to UK joining", "Trinity College faculty")\n', '("Bertrand Russell", "broadcasts over", "BBC")\n', '("Bertrand Russell", "survived", "aeroplane crash in Hommelvik")\n', '("Bertrand Russell", "argued for socialism in book titled", "The Scientific Outlook")\n', '("Bertrand Russell", "divorced by", "Patricia Spence")\n', '("Bertrand Russell", "married", "Edith Finch")\n', '("Bertrand Russell", "son suffered from", "mental illness")\n', '("Bertrand Russell", "role in", "Cuban Missile Crisis")\n', '("Bertrand Russell", "exchanged telegrams with", "Nikita Khrushchev")\n', '("Bertrand Russell", "political causes", "against war and for nuclear disarmament")\n', '("Bertrand Russell", "form a tribunal known as", "Russell Vietnam War Crimes Tribunal")\n', '("Bertrand Russell", "shocked observers suggesting preemptive nuclear strike on", "Soviet Union")\n', '("Bertrand Russell", "advocated for", "universal basic income")\n', '("Bertrand Russell", "published", "A History of Western Philosophy")\n', '("Bertrand Russell", "attended inaugural conference for", "Congress for Cultural Freedom")\n', '("Bertrand Russell", "divorced by", "Spence")\n', '("Bertrand Russell", "criticised", "concentration of power")\n', '("Edward Gibbon", "was born in", "Putney")\n', '("Edward Gibbon", "had a residence in", "Kingston upon Thames")\n', '("Edward Gibbon", "spent time at family home in", "Buriton")\n', '("Edward Gibbon", "lived under the care of", "Daniel Pavillard in Lausanne")\n', '("Edward Gibbon", "made a great friendship with", "Jacques Georges Deyverdun")\n', '("Edward Gibbon", "\'s conversion to Roman Catholicism", "influenced by Jacques-Bénigne Bossuet")\n', '("Edward Gibbon", "proposed marriage to", "Suzanne Curchod")\n', '("Suzanne Curchod", "became the wife of", "Louis XVI\'s finance minister Jacques Necker")\n', '("Suzanne Curchod", "was the mother of", "Madame de Staël")\n', '("Edward Gibbon", "had the Capitoline vision in", "Rome")\n', '("Edward Gibbon", "conceived the idea of", "The History of the Decline and Fall of the Roman Empire in Capitol")\n', '("Edward Gibbon", "succeeded", "Oliver Goldsmith at the Royal Academy")\n', '("Edward Gibbon", "was initiated into", "Premier Grand Lodge of England")\n', '("Edward Gibbon", "was a friend of", "Adam Smith")\n', '("Edward Gibbon", "received praise from", "Horace Walpole")\n', '("The History of the Decline and Fall of the Roman Empire", "written by", "Edward Gibbon")\n', '("Edward Gibbon", "criticized", "organized religion in his work")\n', '("Edward Gibbon", "suffered from", "gout and scrotal swelling")\n', '("Edward Gibbon", "was buried in", "Sheffield Mausoleum")\n', '("Edward Gibbon", "was influenced by", "Joseph Priestley\'s detractor")\n', '("Joseph Priestley", "criticized", "Edward Gibbon")\n', '("Edward Gibbon", "influenced", "Winston Churchill")\n', '("Edward Gibbon", "influenced", "Isaac Asimov")\n', '("Edward Gibbon", "was criticized for secular viewpoint by", "Evelyn Waugh")\n', '("Edward Gibbon", "wrote about", "Tacitus")\n', '("Tacitus", "mentioned in connection with", "Edward Gibbon")\n', '("Edward Gibbon", "known for his", "polemical criticism of organized religion")\n', '("Edward Gibbon", "impressed by", "Madame de Staël\'s intellect")\n', '("Madame de Staël", "was admired for intellect by", "Edward Gibbon")\n', '("Edward Gibbon", "was professor in ancient history at", "Royal Academy")\n', '("Pierre-Joseph Proudhon", "founded", "mutualist philosophy")\n', '("Pierre-Joseph Proudhon", "is considered the", "father of anarchism")\n', '("Pierre-Joseph Proudhon", "was born in", "Besançon")\n', '("Pierre-Joseph Proudhon", "taught himself", "Latin to print books in the language")\n', '("Pierre-Joseph Proudhon", "asserted", "\\"property is theft!\\"")\n', '("Pierre-Joseph Proudhon", "attracted the scrutiny of", "Karl Marx")\n', '("Karl Marx", "responded to Proudhon\'s work", "with The Poverty of Philosophy")\n', '("Pierre-Joseph Proudhon", "favored", "workers\' council and associations or cooperatives")\n', '("Pierre-Joseph Proudhon", "tried to create", "a national bank")\n', '("Mikhail Bakunin", "was a follower of", "Pierre-Joseph Proudhon")\n', '("Pierre-Joseph Proudhon\'s libertarian socialism", "diverged into", "individualist anarchism, collectivist anarchism, anarcho-communism and anarcho-syndicalism")\n', '("Peter Kropotkin", "was a notable proponent of", "Pierre-Joseph Proudhon\'s theories")\n', '("Benjamin Tucker", "was influenced by", "Pierre-Joseph Proudhon\'s libertarian socialism")\n', '("Pierre-Joseph Proudhon", "met with", "Charles Fourier")\n', '("Michel de Montaigne and François Rabelais", "were authors discussed by", "Pierre-Joseph Proudhon and Gustave Fallot")\n', '("Jean-Jacques Rousseau, Voltaire, and Denis Diderot", "works were explored by", "Pierre-Joseph Proudhon")\n', '("Pierre-Joseph Proudhon", "formed a close friendship with", "Gustave Fallot")\n', '("Pierre-Joseph Proudhon", "opposed", "François-Noël Babeuf")\n', '("Pierre-Joseph Proudhon", "was not influenced by", "Max Stirner according to his texts")\n', '("Friedrich Engels", "was an interlocutor against", "Pierre-Joseph Proudhon\'s ideas")\n', '("Vladimir Lenin", "adopted the concept of dual power first outlined by", "Pierre-Joseph Proudhon")\n', '("Murray Bookchin", "critiqued", "Pierre-Joseph Proudhon\'s later views")\n', '("Pierre-Joseph Proudhon", "modified his views on", "Louis Blanqui")\n', '("Charles Maurras", "used", "Pierre-Joseph Proudhon\'s ideas for right-wing nationalism")\n', '("Benito Mussolini\'s fascism", "has been linked to an interpretation of", "Pierre-Joseph Proudhon\'s ideas by the Cercle Proudhon")\n', '("H. Heine", "was accused of being a secret spy by", "Pierre-Joseph Proudhon")\n', '("Gustave Courbet", "painted the portrait of", "Pierre-Joseph Proudhon and His Children")\n', '("Ludwig Feuerbach", "influenced", "Charles Darwin")\n', '("Ludwig Feuerbach", "influenced", "Karl Marx")\n', '("Ludwig Feuerbach", "influenced", "Sigmund Freud")\n', '("Ludwig Feuerbach", "influenced", "Friedrich Engels")\n', '("Ludwig Feuerbach", "influenced", "Mikhail Bakunin")\n', '("Ludwig Feuerbach", "influenced", "Richard Wagner")\n', '("Ludwig Feuerbach", "influenced", "Friedrich Nietzsche")\n', '("Ludwig Feuerbach", "was an associate of", "Young Hegelian circles")\n', '("Ludwig Feuerbach", "advocated", "atheism")\n', '("Ludwig Feuerbach", "advocated", "anthropological materialism")\n', '("Ludwig Feuerbach", "recognized as a bridge between", "Hegel and Marx")\n', '("Ludwig Feuerbach", "presented his theory to", "professor of Hegel")\n', '("Ludwig Feuerbach", "book translated by", "Mary Ann Evans")\n', '("Ludwig Feuerbach", "criticized by", "Max Stirner")\n', '("Ludwig Feuerbach", "wrote thesis on", "De infinitate, unitate, atque, communitate, rationis")\n', '("Ludwig Feuerbach\'s", "work translated into English by", "George Eliot")\n', '("Ludwig Feuerbach", "wrote", "Das Wesen des Christentums")\n', '("Ludwig Feuerbach", "delivered", "public lectures")\n', '("Ludwig Feuerbach", "joined", "Social Democratic Party of Germany")\n', '("Ludwig Feuerbach", "is buried at", "Johannis-Friedhof Cemetery")\n', '("Ludwig Feuerbach", "gave anthropological explanation of", "religion\'s phenomena")\n', '("Ludwig Feuerbach", "thought religion was", "principally a matter of feeling")\n', '("Ludwig Feuerbach", "made projections of", "Gods")\n', '("Albrecht Dürer", "is interred at", "Johannis-Friedhof Cemetery")\n']
+range(1, 250) 4
+{'id': '6_3', 'Question': ' Which existentialist philosopher, known for taking ideas from a rationalist thinker recognized for "Ethics," influenced a 20th-century political theorist and student of a German Lutheran theologian, who completed her doctorate under the existentialist philosopher himself?\n', 'Answer': 'Immanuel Kant', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Bertrand Russell'}, {'label': 'B', 'text': 'Immanuel Kant'}, {'label': 'C', 'text': 'Edward Gibbon'}, {'label': 'D', 'text': 'Pierre-Joseph Proudhon'}, {'label': 'E', 'text': 'Ludwig Feuerbach'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'bertrand_russell'}, {'label': 'B', 'text': 'immanuel_kant'}, {'label': 'C', 'text': 'edward_gibbon'}, {'label': 'D', 'text': 'proudhon'}, {'label': 'E', 'text': 'ludwig_feuerbach'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who was influenced by the philosophy of the critic of traditional metaphysics and advocate for transcendental idealism?\nA1: Immanuel Kant\n\n', '2: Which political theorist completed her doctorate under the guidance of a German psychiatrist and existentialist philosopher?\nA2: Hannah Arendt\n\n', '3: Which prominent 20th-century political philosopher once studied with a German Lutheran theologian and professor of New Testament critical interpretation?\nA3: Hannah Arendt\n\n', '4: Which existentialist philosopher found inspiration from a rationalist thinker known for his work "Ethics"?\nA4: Karl Jaspers'], 'Hops_wiki': [('Immanuel Kant', 'Hannah Arendt'), ('Hannah Arendt', 'Karl Jaspers'), ('Hannah Arendt', 'Rudolf Bultmann'), ('Karl Jaspers', 'Baruch Spinoza')], 'Hops_cpnet': [('immanuel_kant', 'hannah_arendt'), ('hannah_arendt', 'karl_jaspers'), ('hannah_arendt', 'rudolf_bultmann'), ('karl_jaspers', 'spinoza')], 'Triplets': ['("Hannah Arendt", "was influenced by", "the philosophy of Kant")', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")', '("Hannah Arendt", "studied with", "Rudolf Bultmann")', '("Karl Jaspers", "was inspired by", "Spinoza")'], 'Referred_files': [{'name': 'Hannah Arendt', 'line': 26}, {'name': 'Hannah Arendt', 'line': 9}, {'name': 'Hannah Arendt', 'line': 20}, {'name': 'Karl Jaspers', 'line': 26}], 'Question_triplet_answer': {100: [73, 145, 195, 226], 50: [35, 105, 168, 217], 25: [4, 85, 109, 184]}}
+time passed:  4664.974953651428
+Expected dollar:  0.005
+Hannah Arendt is People
+Kant is People
+Ludwig Feuerbach is People
+Karl Marx is People
+Bertrand Russell is People
+Rudolf Bultmann is People
+Karl Jaspers is People
+Rosa Luxemburg is People
+The Practice and Theory of Bolshevism is People
+Barnes Foundation is Geography
+Mikhail Bakunin is People
+Augustine is People
+Edward Gibbon is People
+Horace Walpole is People
+Plato is People
+United States' is Geography
+Paul Arendt is People
+the Albertina (University of Königsberg is Geography
+Ludwig Wittgenstein is People
+Putney is Geography
+Gestapo is Geography
+Pierre Joseph Proudhon is People
+Max Stirner is People
+Sheffield Mausoleum is People
+Oliver Goldsmith is People
+the Royal Academy is Geography
+Winston Churchill" is People
+Germany is Geography
+Paris is Geography
+Peking is Geography
+Suzanne Curchod is People
+Martin Heidegger is People
+Rilke and Bertold Brecht is People
+Max Arendt is People
+Capitoline is Geography
+Rome is Geography
+Hegel is People
+Marx is People
+Aristotle is People
+UK is Geography
+Trinity College is Geography
+Max Weber is People
+Adolf Hitler is People
+Madame de Staël is People
+Hommelvik is Geography
+City College of New York is Geography
+Benito Mussolini's is People
+Pierre Joseph Proudhon's is People
+Kierkegaard is People
+Hannah Arendt's is People
+England is Geography
+François Rabelais is People
+Vladimir Lenin is People
+Jacques Bénigne Bossuet is People
+Royal Society is Geography
+Tacitus is People
+Youth Aliyah is Incident
+the University of Heidelberg is Geography
+Friedrich Engels is People
+Albrecht Dürer is People
+Johannis Friedhof Cemetery is People
+China is Geography
+America is Geography
+Soviet is Geography
+Walter Kaufmann is People
+Volga is Geography
+East Prussian is Geography
+Königsberg is Geography
+Friedrich Nietzsche is People
+Adam Smith is People
+London School of Economics is Geography
+University of Chicago is Geography
+Buriton is Geography
+Charles Fourier is People
+Immanuel Kant is People
+Edmund Husserl is People
+University of Cambridge is Geography
+Daniel Pavillard is People
+Lausanne is Geography
+Congress for Cultural Freedom is Incident
+Karl Marx" is People
+Proudhon is People
+entities:  {'Husserl', 'Pierre', 'Plato', 'Baruch', 'Bertold', 'Society', 'Gibbon', 'Pierre-Joseph', 'Madame', 'Max', 'Montaigne', 'Aliyah', 'Patricia', 'Joseph', 'Immanuel', 'United', 'Adolf', 'Putney', 'Stirner', 'de', "Mussolini's", 'Augustine', 'Bossuet', 'Ludwig', 'Volga', 'Churchill"', 'Lausanne', 'Karl', 'Luxemburg', 'Foundation', 'Hitler', 'Trinity', 'Bakunin', 'Chicago', 'Edmund', 'England', 'Smith', 'Winston', 'Theory', 'Capitol', 'York', 'America', 'Staël', 'Rilke', 'Whitehead', 'Feuerbach', 'School', 'Courbet', 'Rosa', 'Freedom', 'Spinoza', 'Heidelberg', 'Bertrand', 'Royal', 'Buriton', "Proudhon's", 'New', 'Paul', 'Hommelvik', 'Lenin', 'Marx"', 'Vladimir', 'Michel', 'College', 'Walpole', 'Peking', 'Bultmann', 'Kant', 'Barnes', 'Academy', 'Brecht', 'Friedrich', 'City', 'Prussian', 'Gestapo', 'Bolshevism', 'Curchod', 'Sheffield', 'Cultural', 'Edward', 'François', 'Rome', 'Horace', 'Goldsmith', 'Bénigne', 'Economics', 'Giuseppe', 'Arendt', 'Rabelais', 'Meister', 'BBC', 'Albrecht', 'Martha', 'Albertina', 'Aristotle', 'Hannah', 'Capitoline', 'Martin', 'Mikhail', 'Marx', 'Kingston', '(University', 'Hegel', 'Kierkegaard', 'Adam', 'Cambridge', 'Königsberg', "States'", 'Friedhof', 'Germany', 'Russell', 'Linden', 'Mausoleum', 'East', 'Rudolf', 'Fourier', 'Suzanne', 'UK', 'Charles', 'London', 'Jacques', 'Soviet', 'Heidegger', 'Youth', 'Cemetery', 'Jaspers', 'Weber', 'Congress', 'Kaufmann', 'Engels', 'Johannis', 'Oliver', 'China', 'Nietzsche', 'Tacitus', 'Practice', 'University', 'Dürer', 'Deyverdun', 'Pavillard', 'Benito', "Arendt's", 'Walter', 'Wittgenstein', 'Proudhon', 'Paris', 'Daniel'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Baruch Spinoza' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Spinoza
+Karl Jaspers
+Spinoza
+Spinoza
+Meister Eckhart
+Spinoza
+Spinoza
+Spinoza
+Spinoza
+Spinoza
+Spinoza
+Spinoza
+Spinoza
+Spinoza
+Spinoza
+
+gpt_entity_particular(): entity list: 
+ ['Spinoza', 'Karl Jaspers', 'Meister Eckhart']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hannah Arendt' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hannah Arendt
+Kant
+Rudolf Bultmann
+Aristotle
+Plato
+Augustine
+Martin Heidegger
+Rosa Luxemburg
+Karl Jaspers
+Paul Arendt
+Günther Stern
+Mikhail Bakunin
+Max Stirner
+Rahel Varnhagen
+Oliver Goldsmith
+Edward Gibbon
+Horace Walpole
+Winston Churchill
+Charles Fourier
+Madame de Staël
+Jacques Georges Deyverdun
+Jacques-Bénigne Bossuet
+Adam Smith
+Pierre-Joseph Proudhon
+Vladimir Lenin
+Friedrich Engels
+Patricia Spence
+Albrecht Dürer
+Meister Eckhart
+Madame de Staël
+Michel de Montaigne
+François Rabelais
+Gustave Fallot
+Pierre-Joseph Proudhon's Children
+Karl Marx
+H. Heine
+Gustave Courbet
+Spinoza
+Max Weber
+Ludwig Wittgestein
+Goethe
+Jacques Pavillard
+Madame de Staël's children
+Kierkegaard
+Plato's East Prussian family
+Walter Kaufmann
+Paulinia Neisse
+Jacques-Théodore Deyverdun
+
+gpt_entity_particular(): entity list: 
+ ['Kant', 'Jacques-Théodore Deyverdun', 'François Rabelais', 'Pierre-Joseph Proudhon', 'Gustave Courbet', 'Plato', "Plato's East Prussian family", 'Horace Walpole', 'Adam Smith', 'Madame de Staël', 'Ludwig Wittgestein', 'Hannah Arendt', 'Walter Kaufmann', 'Albrecht Dürer', 'Oliver Goldsmith', 'Rudolf Bultmann', 'Friedrich Engels', 'Jacques Georges Deyverdun', 'Karl Marx', 'Jacques-Bénigne Bossuet', 'Rosa Luxemburg', 'Vladimir Lenin', 'Günther Stern', 'Edward Gibbon', 'Max Weber', 'Michel de Montaigne', 'Spinoza', "Madame de Staël's children", 'Patricia Spence', "Pierre-Joseph Proudhon's Children", 'Paulinia Neisse', 'Karl Jaspers', 'Gustave Fallot', 'Aristotle', 'Charles Fourier', 'Augustine', 'Paul Arendt', 'Meister Eckhart', 'Martin Heidegger', 'Goethe', 'Max Stirner', 'Winston Churchill', 'Jacques Pavillard', 'Kierkegaard', 'Mikhail Bakunin', 'H. Heine', 'Rahel Varnhagen']
+
+gpt_entity_particular(): filtered entity: 
+ ['Karl Jaspers', 'Martin Heidegger']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Edward Gibbon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Edward Gibbon 
+Horace Walpole
+Suzanne Curchod
+Oliver Goldsmith
+Winston Churchill
+Jacques Georges Deyverdun
+Adam Smith
+Madame de Staël
+Daniel Pavillard
+
+gpt_entity_particular(): entity list: 
+ ['Suzanne Curchod', 'Adam Smith', 'Winston Churchill', 'Oliver Goldsmith', 'Horace Walpole', 'Edward Gibbon ', 'Jacques Georges Deyverdun', 'Daniel Pavillard', 'Madame de Staël']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Pierre-Joseph Proudhon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hannah Arendt
+Ludwig Feuerbach
+Karl Marx
+Rosa Luxemburg
+Max Stirner
+Jacques Georges Deyverdun
+Winston Churchill
+Rilke and Bertold Brecht
+Horace Walpole
+Madame de Staël
+Adam Smith
+Immanuel Kant
+Meister Eckhart
+Edmund Husserl
+Erich Heller
+Marcel Mauss
+Émile Durkheim
+Auguste Comte
+Spinoza
+Aristotle
+Plato
+Pyrrho of Elis
+Mikhail Bakunin
+Giuseppe Peano
+Adolf Hitler
+Soviet Union
+Aristotle and Plato
+Vladimir Lenin
+Suzanne Curchod
+Madame de Staël
+Nicolas de Condorcet
+Paul Robin
+just Proudhon
+Marx
+Hadditt
+Alphonse Bernoud
+Karl Marx
+
+gpt_entity_particular(): entity list: 
+ ['Soviet Union', 'Marcel Mauss', 'Erich Heller', 'Émile Durkheim', 'Ludwig Feuerbach', 'Rilke and Bertold Brecht', 'Plato', 'Immanuel Kant', 'Horace Walpole', 'Paul Robin', 'Adam Smith', 'Alphonse Bernoud', 'Madame de Staël', 'Hannah Arendt', 'Suzanne Curchod', 'Jacques Georges Deyverdun', 'Karl Marx', 'Rosa Luxemburg', 'Adolf Hitler', 'Hadditt', 'Vladimir Lenin', 'Auguste Comte', 'Spinoza', 'Aristotle', 'just Proudhon', 'Giuseppe Peano', 'Meister Eckhart', 'Pyrrho of Elis', 'Marx', 'Max Stirner', 'Winston Churchill', 'Nicolas de Condorcet', 'Mikhail Bakunin', 'Edmund Husserl', 'Aristotle and Plato']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ludwig Feuerbach' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ludwig Feuerbach
+Karl Marx
+Mikhail Bakunin
+Das Wesen des Christentums
+atheism
+anthropological materialism
+public lectures
+presented his theory to
+professor of Hegel
+
+gpt_entity_particular(): entity list: 
+ ['public lectures', 'presented his theory to', 'professor of Hegel', 'Ludwig Feuerbach', 'Das Wesen des Christentums', 'atheism', 'Mikhail Bakunin', 'Karl Marx', 'anthropological materialism']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Rudolf Bultmann' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Rudolf Bultmann
+Rudolf Bultmann
+
+gpt_entity_particular(): entity list: 
+ ['Rudolf Bultmann']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Entity 1
+Kant
+
+gpt_entity_particular(): entity list: 
+ ['Entity 1', 'Kant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Karl Jaspers' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Karl Jaspers
+the University of Heidelberg
+Plato
+Spinoza
+Max Weber
+Kierkegaard
+Immanuel Kant
+Meister Eckhart
+Edmund Husserl
+Third Reich
+primary and secondary delusions
+Rudolf Bultmann
+
+gpt_entity_particular(): entity list: 
+ ['Meister Eckhart', 'the University of Heidelberg', 'Max Weber', 'Plato', 'Kierkegaard', 'Spinoza', 'Rudolf Bultmann', 'Immanuel Kant', 'primary and secondary delusions', 'Karl Jaspers', 'Edmund Husserl', 'Third Reich']
+
+gpt_entity_particular(): filtered entity: 
+ ['Meister Eckhart', 'Max Weber', 'Immanuel Kant']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Bertrand Russell' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Bertrand Russell
+Giuseppe Peano
+Ludwig Wittgenstein
+Giuseppe Peano
+Edward Gibbon
+Horace Walpole
+Rosa Luxemburg
+Vladimir Lenin
+Rudolf Bultmann
+Ludwig Wittgenstein
+The Practice and Theory of Bolshevism
+Karl Marx
+Mikhail Bakunin
+Ludwig Feuerbach
+Das Wesen des Christentums
+Rahel Varnhagen
+Ludwig Feuerbach
+Mikhail Bakunin
+Giuseppe Peano
+The Origins of Totalitarianism
+Martin Heidegger
+Rilke and Bertold Brecht
+City College of New York
+Vladimir Lenin
+Adolf Hitler
+Soviet Union
+Madame de Staël
+Nobel Prize in Literature
+Royal Society
+Trinity College faculty
+London School of Economics
+Leeds Convention
+A. N. Whitehead
+The Scientific Outlook
+University of Chicago
+pacifist
+On Denoting
+logical atomism
+BBC
+Congress for Cultural Freedom
+Martin Heidegger
+
+gpt_entity_particular(): entity list: 
+ ['City College of New York', 'Soviet Union', 'Ludwig Feuerbach', 'Rilke and Bertold Brecht', 'Horace Walpole', 'Madame de Staël', 'London School of Economics', 'Das Wesen des Christentums', 'The Scientific Outlook', 'Rudolf Bultmann', 'logical atomism', 'Karl Marx', 'On Denoting', 'Bertrand Russell', 'pacifist', 'Rosa Luxemburg', 'Adolf Hitler', 'Leeds Convention', 'BBC', 'A. N. Whitehead', 'Vladimir Lenin', 'Ludwig Wittgenstein', 'Edward Gibbon', 'Royal Society', 'The Origins of Totalitarianism', 'University of Chicago', 'Giuseppe Peano', 'The Practice and Theory of Bolshevism', 'Martin Heidegger', 'Mikhail Bakunin', 'Rahel Varnhagen', 'Congress for Cultural Freedom', 'Trinity College faculty', 'Nobel Prize in Literature']
+
+gpt_entity_particular(): filtered entity: 
+ ['Ludwig Wittgenstein']
+After GPT, entity:  {'Husserl', 'Pierre', 'Plato', 'Baruch', 'Bertold', 'Society', 'Gibbon', 'Pierre-Joseph', 'Madame', 'Max', 'Montaigne', 'Aliyah', 'Patricia', 'Joseph', 'Immanuel', 'United', 'Adolf', 'Putney', 'Stirner', 'de', "Mussolini's", 'Augustine', 'Bossuet', 'Ludwig', 'Volga', 'Churchill"', 'Martin Heidegger', 'Lausanne', 'Karl', 'Luxemburg', 'Foundation', 'Hitler', 'Trinity', 'Bakunin', 'Chicago', 'Edmund', 'England', 'Smith', 'Winston', 'Theory', 'Capitol', 'York', 'America', 'Staël', 'Rilke', 'Whitehead', 'Feuerbach', 'School', 'Courbet', 'Rosa', 'Freedom', 'Spinoza', 'Heidelberg', 'Bertrand', 'Royal', 'Buriton', "Proudhon's", 'New', 'Paul', 'Hommelvik', 'Lenin', 'Marx"', 'Vladimir', 'Michel', 'College', 'Walpole', 'Peking', 'Bultmann', 'Kant', 'Barnes', 'Academy', 'Brecht', 'Friedrich', 'City', 'Prussian', 'Immanuel Kant', 'Gestapo', 'Bolshevism', 'Curchod', 'Sheffield', 'Cultural', 'Edward', 'François', 'Rome', 'Horace', 'Goldsmith', 'Bénigne', 'Economics', 'Giuseppe', 'Arendt', 'Rabelais', 'Meister', 'BBC', 'Albrecht', 'Martha', 'Max Weber', 'Albertina', 'Aristotle', 'Hannah', 'Capitoline', 'Martin', 'Meister Eckhart', 'Mikhail', 'Marx', 'Kingston', '(University', 'Hegel', 'Kierkegaard', 'Adam', 'Cambridge', 'Königsberg', "States'", 'Friedhof', 'Germany', 'Russell', 'Linden', 'Mausoleum', 'East', 'Rudolf', 'Fourier', 'Suzanne', 'UK', 'Charles', 'London', 'Jacques', 'Soviet', 'Heidegger', 'Youth', 'Cemetery', 'Jaspers', 'Weber', 'Congress', 'Kaufmann', 'Engels', 'Johannis', 'Ludwig Wittgenstein', 'Oliver', 'China', 'Nietzsche', 'Tacitus', 'Karl Jaspers', 'Practice', 'University', 'Dürer', 'Deyverdun', 'Pavillard', 'Benito', "Arendt's", 'Walter', 'Wittgenstein', 'Proudhon', 'Paris', 'Daniel'}
+Total time:  341.01605463027954
+Entity conversion done on 6_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_6_3_entity_conversion_hash.json. Check the entity.
+ Which existentialist philosopher, known for taking ideas from a rationalist thinker recognized for "Ethics," influenced a 20th-century political theorist and student of a German Lutheran theologian, who completed her doctorate under the existentialist philosopher himself?
+
+
+
+Done. Check final_query/id_6_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_6_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

@@ -1,0 +1,34 @@
+Got argument: Napoleon, 5, 5_4
+
+utils/question.py extract_hops(Napoleon, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")', 'start word': 'Napoleon', 'end word': 'Königsberg', 'source': {'name': 'Königsberg', 'line': 38}, 'cpnet': {'start word': 'napoleon', 'end word': 'königsberg'}}
+
+utils/question.py extract_hops(Königsberg, [], ['Napoleon']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Königsberg_info.json file
+second_hop:  {'triplet': '("Königsberg", "renamed", "Kaliningrad in 1946")', 'start word': 'Königsberg', 'end word': 'Kaliningrad', 'source': {'name': 'Königsberg', 'line': 19}, 'cpnet': {'start word': 'königsberg', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Napoleon', 'Königsberg']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+third_hop1:  {'triplet': '("Kaliningrad", "was part of", "North German Confederation")', 'start word': 'Kaliningrad', 'end word': 'German Confederation', 'source': {'name': 'Kaliningrad', 'line': 19}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'german_confederation'}}
+
+utils/question.py extract_hops(Kaliningrad, ['German Confederation'], ['Napoleon', 'Königsberg']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+third_hop2:  {'triplet': '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")', 'start word': 'Kaliningrad', 'end word': 'Kaliningrad Oblast', 'source': {'name': 'Kaliningrad', 'line': 2}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'kaliningrad_oblast'}}
+extraction_done:  True
+generate_question(5_4, ['("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")', '("Königsberg", "renamed", "Kaliningrad in 1946")', '("Kaliningrad", "was part of", "North German Confederation")', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")'], ['Napoleon', 'Königsberg', 'Kaliningrad', 'Kaliningrad'], [('Napoleon', 'Königsberg'), ('Königsberg', 'Kaliningrad'), ('Kaliningrad', 'German Confederation'), ('Kaliningrad', 'Kaliningrad Oblast')], Napoleon, [{'name': 'Königsberg', 'line': 38}, {'name': 'Königsberg', 'line': 19}, {'name': 'Kaliningrad', 'line': 19}, {'name': 'Kaliningrad', 'line': 2}]) called
+GPT output is:  Q: Which historical figure was defeated by Prussians and fled to a city that was a part of the North German Confederation, later became a Russian exclave and serves as the administrative centre of its namesake oblast?
+
+A: Napoleon
+final_choice(Napoleon, options = 5) started
+[]
+entity_type(Napoleon) called
+Napoleon is People
+check_matchscore(Napoleon, People of Tuscan descent):  0.0
+choose_by_wiki_recur(People of Tuscan descent)
+   Pages in People of Tuscan descent: ['Akhenaton (rapper)', 'Adam Alexi-Malle', 'César Baldaccini', 'Folco de Baroncelli-Javon', 'Jacques de Baroncelli', 'Ottavio Barsanti', 'Frida Boccara', 'Charles Joseph Bonaparte', 'Vera Franceschi', 'Francesco Galli Bibiena', 'Giovanni Carlo Galli-Bibiena', 'Matilde Gioli', 'Francesco Guccini', 'Felicity Jones', 'Roger Meï', 'Renzo Montagnani', 'Giovanni Moscardini', 'Gianni Musy', 'Napoleon', 'Claude Nougaro', 'Paolo Nutini', 'Giovanni Pacini', 'Joseph Paruta', 'Astor Piazzolla', 'Luciano Pistoi', 'Giulio Pontedera', 'Jean-François Raffaëlli', 'Primo Reggiani', 'Thekla Reuten', 'John Romano (physician)', 'Roberto Rossellini', 'Judith Sargentini', 'Monica Scattini', 'Caterina Sforza', 'Calahan Skogman', 'Angelo Sormani', 'Giuseppe Tartini', 'Marisa Tomei', 'Dolores Turchi', 'Albert Uderzo', 'Carlo Verdone', 'Christian Vieri', 'Max Vieri', 'Alice Volpi', 'Luca Ward', 'Monica Ward']
+      Renzo Montagnani in ['Renzo Montagnani', 'Akhenaton (rapper)', 'César Baldaccini', 'Giovanni Moscardini']
+Renzo Montagnani is People
+      Akhenaton (rapper) in ['Renzo Montagnani', 'Akhenaton (rapper)', 'César Baldaccini', 'Giovanni Moscardini', 'Joseph Paruta']
+      César Baldaccini in ['Renzo Montagnani', 'Akhenaton (rapper)', 'César Baldaccini', 'Giovanni Moscardini', 'Joseph Paruta', 'Monica Ward']
+César Baldaccini is People

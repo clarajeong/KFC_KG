@@ -1,0 +1,1380 @@
+Got argument: Immanuel Kant, 3, 3_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second1_hop:  {'triplet': '("Kaliningrad", "is located in", "Russia")', 'start word': 'Kaliningrad', 'end word': 'Russia', 'source': {'name': 'Kaliningrad', 'line': 4}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'russia'}}
+
+utils/question.py extract_hops(Kaliningrad, ['Russia'], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second2_hop:  {'triplet': '("Kaliningrad", "former German city of", "Königsberg")', 'start word': 'Kaliningrad', 'end word': 'Königsberg', 'source': {'name': 'Königsberg', 'line': 25}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'königsberg'}}
+generate_question(3_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "is located in", "Russia")', '("Kaliningrad", "former German city of", "Königsberg")'], ['Immanuel Kant', 'Kaliningrad', 'Kaliningrad'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Russia'), ('Kaliningrad', 'Königsberg')], Immanuel Kant, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 4}, {'name': 'Königsberg', 'line': 25}]) called
+GPT output is:  Q: Which philosopher is interred in the city that was once known as Königsberg but is now a Russian city sharing its name with his burial place?
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called
+Immanuel Kant is People
+check_matchscore(Immanuel Kant, German ethicists):  0.0
+choose_by_wiki_recur(German ethicists)
+   Pages in German ethicists: ['Karl-Otto Apel', 'Hannah Arendt', 'Franz Xaver von Baader', 'Friedrich Eduard Beneke', 'Gernot Böhme', 'Moritz Brasch', 'Wilhelm Dietler', 'Wilhelm Dilthey', 'Johann Albert Fabricius', 'Yiftach Fehige', 'Alexander Filipović', 'Sigfrid Gauch', 'Johann Wolfgang von Goethe', 'Friedhelm Hengsbach', 'Johann Gottfried Herder', 'Otfried Höffe', 'Axel Honneth', 'Hans-Hermann Hoppe', 'Wilhelm von Humboldt', 'Hans Jonas', 'Immanuel Kant', 'Paul-Louis Landsberg', 'Theodor Ludwig Lau', 'Christoph Lütge', 'Reinhard Merkel', 'Rainer Mühlhoff', 'Friedrich Nietzsche', 'Rudolf Otto', 'Friedrich Paulsen', 'Thomas Pogge', 'Paul Rée', 'Max Scheler', 'Friedrich Schleiermacher', 'Arthur Schopenhauer', 'Georg Simmel', 'Andreas Urs Sommer', 'Andreas Suchanek', 'Peter Trawny', 'Aimee Van Wynsberghe', 'Tatjana Višak', 'Ferdinand Geminian Wanker', 'Joseph Weizenbaum', 'Christiane Woopen', 'Eduard Zeller']
+      Eduard Zeller in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt']
+      Ferdinand Geminian Wanker in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel']
+      Johann Wolfgang von Goethe in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel']
+Johann Wolfgang von Goethe is People
+      Hannah Arendt in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel']
+Hannah Arendt is People
+      Karl-Otto Apel in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel']
+Karl-Otto Apel is People
+      Georg Simmel in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher']
+Georg Simmel is People
+      Friedrich Schleiermacher in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas']
+Friedrich Schleiermacher is People
+      Hans Jonas in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius']
+Hans Jonas is People
+      Johann Albert Fabricius in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant']
+      Immanuel Kant in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler']
+Immanuel Kant is People
+      Max Scheler in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel']
+Max Scheler is People
+      Reinhard Merkel in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge']
+Reinhard Merkel is People
+      Thomas Pogge in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny']
+Thomas Pogge is People
+      Peter Trawny in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach']
+      Friedhelm Hengsbach in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke']
+      Friedrich Eduard Beneke in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch']
+Friedrich Eduard Beneke is People
+      Moritz Brasch in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch', 'Wilhelm von Humboldt']
+      Wilhelm von Humboldt in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch', 'Wilhelm von Humboldt', 'Rudolf Otto']
+Wilhelm von Humboldt is People
+      Rudolf Otto in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch', 'Wilhelm von Humboldt', 'Rudolf Otto', 'Arthur Schopenhauer']
+Rudolf Otto is People
+      Arthur Schopenhauer in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch', 'Wilhelm von Humboldt', 'Rudolf Otto', 'Arthur Schopenhauer', 'Sigfrid Gauch']
+Arthur Schopenhauer is People
+      Sigfrid Gauch in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch', 'Wilhelm von Humboldt', 'Rudolf Otto', 'Arthur Schopenhauer', 'Sigfrid Gauch']
+      Tatjana Višak in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch', 'Wilhelm von Humboldt', 'Rudolf Otto', 'Arthur Schopenhauer', 'Sigfrid Gauch', 'Tatjana Višak']
+Tatjana Višak is People
+      Joseph Weizenbaum in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch', 'Wilhelm von Humboldt', 'Rudolf Otto', 'Arthur Schopenhauer', 'Sigfrid Gauch', 'Tatjana Višak', 'Joseph Weizenbaum']
+Joseph Weizenbaum is People
+      Wilhelm Dilthey in ['Eduard Zeller', 'Ferdinand Geminian Wanker', 'Johann Wolfgang von Goethe', 'Hannah Arendt', 'Karl-Otto Apel', 'Georg Simmel', 'Friedrich Schleiermacher', 'Hans Jonas', 'Johann Albert Fabricius', 'Immanuel Kant', 'Max Scheler', 'Reinhard Merkel', 'Thomas Pogge', 'Peter Trawny', 'Friedhelm Hengsbach', 'Friedrich Eduard Beneke', 'Moritz Brasch', 'Wilhelm von Humboldt', 'Rudolf Otto', 'Arthur Schopenhauer', 'Sigfrid Gauch', 'Tatjana Višak', 'Joseph Weizenbaum', 'Wilhelm Dilthey']
+Wilhelm Dilthey is People
+['Johann Wolfgang von Goethe', 'Hannah Arendt', 'Arthur Schopenhauer', 'Wilhelm Dilthey']
+Ended after 2.5 hierarchy
+(2.5, ['Arthur Schopenhauer', 'Hannah Arendt', 'Wilhelm Dilthey', 'Johann Wolfgang von Goethe'])
+
+extract_info(Hannah Arendt) Start.
+utils/preprocess.py extract_info(): Checking good links on Hannah Arendt
+Adolf Eichmann is People
+1 / 30 )  Adolf Eichmann Adolf Eichmann adolf_eichmann
+East Prussia is Geography
+2 / 30 )  East Prussian East Prussia east_prussia
+Königsberg is Geography
+3 / 30 )  Königsberg Königsberg königsberg
+Martin Heidegger is People
+4 / 30 )  Martin Heidegger Martin Heidegger martin_heidegger
+Karl Jaspers is People
+5 / 30 )  Karl Jaspers Karl Jaspers karl_jaspers
+Nazi Germany is Geography
+6 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Adolf Hitler is People
+7 / 30 )  Adolf Hitler Adolf Hitler adolf_hitler
+Gestapo is Geography
+8 / 30 )  Gestapo Gestapo gestapo
+Max Arendt  is People
+9 / 30 )  Max Arendt Max Arendt  arendt
+de:Max Arendt is People
+10 / 30 )  de de:Max Arendt arendt
+Rosa Luxemburg is People
+11 / 30 )  Rosa Luxemburg Rosa Luxemburg luxemburgists
+Johann Wolfgang von Goethe is People
+12 / 30 )  Goethean Johann Wolfgang von Goethe johann_wolfgang_von_goethe
+Berlin is Geography
+13 / 30 )  Berlin Berlin berlin
+Søren Kierkegaard is People
+14 / 30 )  Kierkegaard Søren Kierkegaard kierkegaard
+Immanuel Kant is People
+15 / 30 )  Kant Immanuel Kant immanuel_kant
+Rudolf Bultmann is People
+16 / 30 )  Rudolf Bultmann Rudolf Bultmann rudolf_bultmann
+Nicolai Hartmann is People
+17 / 30 )  Nicolai Hartmann Nicolai Hartmann hartmannian
+Edmund Husserl is People
+18 / 30 )  Edmund Husserl Edmund Husserl edmund_husserl
+Aristotle is People
+19 / 30 )  Aristotle Aristotle aristotle
+Plato is People
+20 / 30 )  Plato Plato plato
+Augustine of Hippo is People
+21 / 30 )  Augustine Augustine of Hippo augustine_of_hippo
+de:Hugo Friedrich is People
+22 / 30 )  Hugo Friedrich de:Hugo Friedrich victor_marie_hugo
+Weimar Republic is Geography
+23 / 30 )  Weimar Republic Weimar Republic weimar_republic
+Potsdam is Geography
+24 / 30 )  Potsdam Potsdam potsdam
+Paul Tillich is People
+25 / 30 )  Paul Tillich Paul Tillich paul_tillich
+Rainer Maria Rilke is People
+26 / 30 )  Rilke Rainer Maria Rilke rainer_maria_rilke
+Bertolt Brecht is People
+27 / 30 )  Bertold Brecht Bertolt Brecht bertolt_brecht
+Karl Marx is People
+28 / 30 )  Marx Karl Marx karl_marx
+Leon Trotsky is People
+29 / 30 )  Trotsky Leon Trotsky leon_trotsky
+de:Bildungselite is People
+30 / 30 )  Bildungselite de:Bildungselite arendt
+extract_triplet(Hannah Arendt)
+Got GPT's response. String length : 2294
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['East Prussian', 'East Prussia', 'east_prussia'], ['Königsberg', 'Königsberg', 'königsberg']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Martin Heidegger', 'Martin Heidegger', 'martin_heidegger']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Karl Jaspers', 'Karl Jaspers', 'karl_jaspers']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Gestapo', 'Gestapo', 'gestapo']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [['Max Arendt', 'Max Arendt ', 'arendt']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Rudolf Bultmann', 'Rudolf Bultmann', 'rudolf_bultmann']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Edmund Husserl', 'Edmund Husserl', 'edmund_husserl']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Aristotle', 'Aristotle', 'aristotle'], ['Plato', 'Plato', 'plato']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Augustine', 'Augustine of Hippo', 'augustine_of_hippo']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Rilke', 'Rainer Maria Rilke', 'rainer_maria_rilke'], ['Bertold Brecht', 'Bertolt Brecht', 'bertolt_brecht']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Rosa Luxemburg', 'Rosa Luxemburg', 'luxemburgists']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  [['Kant', 'Immanuel Kant', 'immanuel_kant']]
+subject_words:  [(None, 'Hannah Arendt', 'hannah_arendt')]
+object_words:  []
+['(Note: Some of these triplets contain information directly from the text, while others infer relationships or professional connections Arendt had with various individuals and topics discussed in the text.)']
+extract_info(Arthur Schopenhauer) Start.
+utils/preprocess.py extract_info(): Checking good links on Arthur Schopenhauer
+Immanuel Kant is People
+1 / 30 )  Immanuel Kant Immanuel Kant immanuel_kant
+Gdańsk is Geography
+2 / 30 )  Danzig Gdańsk gdańsk
+Hamburg is Geography
+3 / 30 )  Hamburg Hamburg hamburg
+Le Havre is Geography
+4 / 30 )  Le Havre Le Havre le_havre
+Netherlands is Geography
+5 / 30 )  Holland Netherlands netherlands
+Switzerland is Geography
+6 / 30 )  Switzerland Switzerland switzerland
+Austria is Geography
+7 / 30 )  Austria Austria austria
+Weimar is Geography
+8 / 30 )  Weimar Weimar weimar
+Johann Wolfgang von Goethe is People
+9 / 30 )  Goethe Johann Wolfgang von Goethe johann_wolfgang_von_goethe
+Plato is People
+10 / 30 )  Plato Plato plato
+Johann Gottlieb Fichte is People
+11 / 30 )  Johann Gottlieb Fichte Johann Gottlieb Fichte fichte
+Francis Bacon is People
+12 / 30 )  Bacon Francis Bacon francis_bacon
+John Locke is People
+13 / 30 )  Locke John Locke john_locke
+Martin Heinrich Klaproth is People
+14 / 30 )  Martin Heinrich Klaproth Martin Heinrich Klaproth martin_heinrich_klaproth
+Johann Elert Bode is People
+15 / 30 )  Johann Elert Bode Johann Elert Bode johann_elert_bode
+Georg Friedrich Konrad Ludwig Müller von Gerstenbergk  is People
+16 / 30 )  Georg Friedrich Konrad Ludwig Müller von Gerstenbergk Georg Friedrich Konrad Ludwig Müller von Gerstenbergk  schopenhauer
+Thuringian Forest is Geography
+17 / 30 )  Thuringian Forest Thuringian Forest thüringer_wald
+Battle of Leipzig is Geography
+18 / 30 )  Battle of Leipzig Battle of Leipzig battle_of_leipzig
+Leipzig is Geography
+19 / 30 )  Leipzig Leipzig leipzig
+Johann Gottfried Herder is People
+20 / 30 )  Herder Johann Gottfried Herder johann_gottfried_von_herder
+The Buddha is People
+21 / 30 )  Buddha The Buddha buddha
+Dresden is Geography
+22 / 30 )  Dresden Dresden dresden
+Venice is Geography
+23 / 30 )  Venice Venice venice
+Bologna is Geography
+24 / 30 )  Bologna Bologna bologna
+Florence is Geography
+25 / 30 )  Florence Florence florence
+Naples is Geography
+26 / 30 )  Naples Naples naples
+Milan is Geography
+27 / 30 )  Milan Milan milan
+Rome is Geography
+28 / 30 )  Rome Rome rome
+Georg Wilhelm Friedrich Hegel is People
+29 / 30 )  G. W. F. Hegel Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Nuremberg is Geography
+30 / 30 )  Nuremberg Nuremberg nuremberg
+extract_triplet(Arthur Schopenhauer)
+Got GPT's response. String length : 1540
+subject_words:  []
+object_words:  [['Immanuel Kant', 'Immanuel Kant', 'immanuel_kant']]
+subject_words:  []
+object_words:  [['Danzig', 'Gdańsk', 'gdańsk']]
+subject_words:  []
+object_words:  [['Hamburg', 'Hamburg', 'hamburg']]
+subject_words:  []
+object_words:  [['Le Havre', 'Le Havre', 'le_havre']]
+subject_words:  []
+object_words:  [['Holland', 'Netherlands', 'netherlands']]
+subject_words:  []
+object_words:  [['Switzerland', 'Switzerland', 'switzerland']]
+subject_words:  []
+object_words:  [['Austria', 'Austria', 'austria']]
+subject_words:  []
+object_words:  [['Weimar', 'Weimar', 'weimar']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  []
+object_words:  [['Plato', 'Plato', 'plato']]
+subject_words:  []
+object_words:  [['Johann Gottlieb Fichte', 'Johann Gottlieb Fichte', 'fichte']]
+subject_words:  []
+object_words:  [['Bacon', 'Francis Bacon', 'francis_bacon']]
+subject_words:  []
+object_words:  [['Locke', 'John Locke', 'john_locke']]
+subject_words:  []
+object_words:  [['Martin Heinrich Klaproth', 'Martin Heinrich Klaproth', 'martin_heinrich_klaproth']]
+subject_words:  []
+object_words:  [['Johann Elert Bode', 'Johann Elert Bode', 'johann_elert_bode']]
+subject_words:  []
+object_words:  [['Georg Friedrich Konrad Ludwig Müller von Gerstenbergk', 'Georg Friedrich Konrad Ludwig Müller von Gerstenbergk ', 'schopenhauer']]
+subject_words:  []
+object_words:  [['Thuringian Forest', 'Thuringian Forest', 'thüringer_wald']]
+subject_words:  []
+object_words:  [['Battle of Leipzig', 'Battle of Leipzig', 'battle_of_leipzig'], ['Leipzig', 'Leipzig', 'leipzig']]
+subject_words:  []
+object_words:  [['Leipzig', 'Leipzig', 'leipzig']]
+subject_words:  []
+object_words:  [['Herder', 'Johann Gottfried Herder', 'johann_gottfried_von_herder']]
+subject_words:  []
+object_words:  [['Buddha', 'The Buddha', 'buddha']]
+subject_words:  []
+object_words:  [['Dresden', 'Dresden', 'dresden']]
+subject_words:  []
+object_words:  [['Venice', 'Venice', 'venice']]
+subject_words:  []
+object_words:  [['Bologna', 'Bologna', 'bologna']]
+subject_words:  []
+object_words:  [['Florence', 'Florence', 'florence']]
+subject_words:  []
+object_words:  [['Naples', 'Naples', 'naples']]
+subject_words:  []
+object_words:  [['Milan', 'Milan', 'milan']]
+subject_words:  []
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  []
+object_words:  [['G. W. F. Hegel', 'Georg Wilhelm Friedrich Hegel', 'georg_wilhelm_friedrich_hegel']]
+subject_words:  []
+object_words:  [['Nuremberg', 'Nuremberg', 'nuremberg']]
+extract_info(Johann Wolfgang von Goethe) Start.
+utils/preprocess.py extract_info(): Checking good links on Johann Wolfgang von Goethe
+Weimar is Geography
+1 / 30 )  Weimar Weimar weimar
+Friedrich Schiller is People
+2 / 30 )  Friedrich Schiller Friedrich Schiller friedrich_schiller
+Johann Gottlieb Fichte is People
+3 / 30 )  Johann Gottlieb Fichte Johann Gottlieb Fichte fichte
+Johann Gottfried Herder is People
+4 / 30 )  Johann Gottfried Herder Johann Gottfried Herder johann_gottfried_von_herder
+Alexander von Humboldt is People
+5 / 30 )  Alexander von Humboldt Alexander von Humboldt baron_friedrich_heinrich_alexander_von_humboldt
+Arthur Schopenhauer is People
+6 / 30 )  Arthur Schopenhauer Arthur Schopenhauer arthur_schopenhauer
+Ralph Waldo Emerson is People
+7 / 30 )  Ralph Waldo Emerson Ralph Waldo Emerson ralph_waldo_emerson
+Johann Wolfgang von Goethe is People
+8 / 30 )  Conversations with Goethe Johann Wolfgang von Goethe johann_wolfgang_von_goethe
+Wolfgang Amadeus Mozart is People
+9 / 30 )  Mozart Wolfgang Amadeus Mozart wolfgang_amadeus_mozart
+Ludwig van Beethoven is People
+10 / 30 )  Beethoven Ludwig van Beethoven ludwig_van_beethoven
+Franz Liszt is People
+11 / 30 )  Liszt Franz Liszt franz_liszt
+Richard Wagner is People
+12 / 30 )  Wagner Richard Wagner richard_wagner
+Frankfurt is Geography
+13 / 30 )  Frankfurt Frankfurt frankfurt
+Friedrich Gottlieb Klopstock is People
+14 / 30 )  Friedrich Gottlieb Klopstock Friedrich Gottlieb Klopstock friedrich_gottlieb_klopstock
+Homer is People
+15 / 30 )  Homer Homer homer
+Ovid is People
+16 / 30 )  Ovid Ovid ovid
+Gotthold Ephraim Lessing is People
+17 / 30 )  Gotthold Ephraim Lessing Gotthold Ephraim Lessing gotthold_ephraim_lessing
+Alsace is Geography
+18 / 30 )  Alsace Alsace alsace
+William Shakespeare is People
+19 / 30 )  William Shakespeare William Shakespeare william_shakespeare
+Darmstadt is Geography
+20 / 30 )  Darmstadt Darmstadt darmstadt
+Italian Peninsula is Geography
+21 / 30 )  Italian peninsula Italian Peninsula italian_peninsula
+Johann Joachim Winckelmann is People
+22 / 30 )  Johann Joachim Winckelmann Johann Joachim Winckelmann johann_joachim_winckelmann
+Emma, Lady Hamilton is People
+23 / 30 )  Lady Hamilton Emma, Lady Hamilton lady_emma_hamilton
+Alessandro Cagliostro is People
+24 / 30 )  Alessandro Cagliostro Alessandro Cagliostro giuseppe_balsamo
+Venice is Geography
+25 / 30 )  Venice Venice venice
+George Eliot is People
+26 / 30 )  George Eliot George Eliot george_eliot
+Battle of Valmy is Geography
+27 / 30 )  Battle of Valmy Battle of Valmy battle_of_valmy
+Napoleon is People
+28 / 30 )  Napoleon Napoleon napoleon
+Vienna is Geography
+29 / 30 )  Vienna Vienna vienna
+Karlovy Vary is Geography
+30 / 30 )  Carlsbad Karlovy Vary karlovy_vary
+extract_triplet(Johann Wolfgang von Goethe)
+Got GPT's response. String length : 2982
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Weimar', 'Weimar', 'weimar']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Friedrich Schiller', 'Friedrich Schiller', 'friedrich_schiller']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  []
+subject_words:  [['Weimar', 'Weimar', 'weimar']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe')]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Arthur Schopenhauer', 'Arthur Schopenhauer', 'arthur_schopenhauer'], ['Ralph Waldo Emerson', 'Ralph Waldo Emerson', 'ralph_waldo_emerson']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [['Mozart', 'Wolfgang Amadeus Mozart', 'wolfgang_amadeus_mozart']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [['Beethoven', 'Ludwig van Beethoven', 'ludwig_van_beethoven']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [['Liszt', 'Franz Liszt', 'franz_liszt']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [['Wagner', 'Richard Wagner', 'richard_wagner']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Frankfurt', 'Frankfurt', 'frankfurt']]
+subject_words:  [['Friedrich Gottlieb Klopstock', 'Friedrich Gottlieb Klopstock', 'friedrich_gottlieb_klopstock']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [['Homer', 'Homer', 'homer']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [['Ovid', 'Ovid', 'ovid']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Gotthold Ephraim Lessing', 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Alsace', 'Alsace', 'alsace']]
+subject_words:  [['William Shakespeare', 'William Shakespeare', 'william_shakespeare']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Johann Gottfried Herder', 'Johann Gottfried Herder', 'johann_gottfried_von_herder']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Frankfurt', 'Frankfurt', 'frankfurt']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Italian peninsula', 'Italian Peninsula', 'italian_peninsula']]
+subject_words:  [['Johann Joachim Winckelmann', 'Johann Joachim Winckelmann', 'johann_joachim_winckelmann']]
+object_words:  []
+subject_words:  [['Lady Hamilton', 'Emma, Lady Hamilton', 'lady_emma_hamilton']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [['Alessandro Cagliostro', 'Alessandro Cagliostro', 'giuseppe_balsamo']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [['George Eliot', 'George Eliot', 'george_eliot']]
+object_words:  []
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Battle of Valmy', 'Battle of Valmy', 'battle_of_valmy']]
+subject_words:  [['Napoleon', 'Napoleon', 'napoleon']]
+object_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Beethoven', 'Ludwig van Beethoven', 'ludwig_van_beethoven'], ['Vienna', 'Vienna', 'vienna']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  [['Carlsbad', 'Karlovy Vary', 'karlovy_vary']]
+subject_words:  [(None, 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe'), ['Conversations with Goethe', 'Johann Wolfgang von Goethe', 'johann_wolfgang_von_goethe']]
+object_words:  []
+extract_info(Wilhelm Dilthey) Start.
+utils/preprocess.py extract_info(): Checking good links on Wilhelm Dilthey
+Georg Wilhelm Friedrich Hegel is People
+1 / 30 )  G. W. F. Hegel Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Hesse is Geography
+2 / 30 )  Hesse Hesse hesse
+Leopold von Ranke is People
+3 / 30 )  Ranke Leopold von Ranke leopold_von_ranke
+Friedrich Nietzsche is People
+4 / 30 )  Friedrich Nietzsche Friedrich Nietzsche friedrich_nietzsche
+Henri Bergson is People
+5 / 30 )  Henri Bergson Henri Bergson henri_bergson
+Martin Buber is People
+6 / 30 )  Martin Buber Martin Buber martin_buber
+Martin Heidegger is People
+7 / 30 )  Martin Heidegger Martin Heidegger martin_heidegger
+Hans-Georg Gadamer is People
+8 / 30 )  Hans-Georg Gadamer Hans-Georg Gadamer gadamer
+Auguste Comte is People
+9 / 30 )  Auguste Comte Auguste Comte auguste_comte
+Herbert Spencer is People
+10 / 30 )  Herbert Spencer Herbert Spencer herbert_spencer
+Max Weber is People
+11 / 30 )  Max Weber Max Weber max_weber
+Karl Jaspers is People
+12 / 30 )  Karl Jaspers Karl Jaspers karl_jaspers
+Rudolf Steiner is People
+13 / 30 )  Rudolf Steiner Rudolf Steiner rudolf_steiner
+extract_triplet(Wilhelm Dilthey)
+Got GPT's response. String length : 1067
+subject_words:  [(None, 'Wilhelm Dilthey', 'diltheyan')]
+object_words:  []
+subject_words:  [(None, 'Wilhelm Dilthey', 'diltheyan')]
+object_words:  []
+subject_words:  [(None, 'Wilhelm Dilthey', 'diltheyan')]
+object_words:  []
+subject_words:  []
+object_words:  [['Ranke', 'Leopold von Ranke', 'leopold_von_ranke']]
+subject_words:  []
+object_words:  [['Friedrich Nietzsche', 'Friedrich Nietzsche', 'friedrich_nietzsche']]
+subject_words:  []
+object_words:  [['Henri Bergson', 'Henri Bergson', 'henri_bergson']]
+subject_words:  []
+object_words:  [['Martin Buber', 'Martin Buber', 'martin_buber']]
+subject_words:  []
+object_words:  [['Martin Heidegger', 'Martin Heidegger', 'martin_heidegger']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Auguste Comte', 'Auguste Comte', 'auguste_comte']]
+subject_words:  []
+object_words:  [['Herbert Spencer', 'Herbert Spencer', 'herbert_spencer']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Max Weber', 'Max Weber', 'max_weber']]
+subject_words:  []
+object_words:  [['Karl Jaspers', 'Karl Jaspers', 'karl_jaspers']]
+subject_words:  []
+object_words:  [['Rudolf Steiner', 'Rudolf Steiner', 'rudolf_steiner']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "former German city of", "Königsberg")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Schopenhauer", "influenced by", "Immanuel Kant")\n', '("Schopenhauer", "born in", "Danzig")\n', '("Schopenhauer", "lived in", "Hamburg")\n', '("Schopenhauer", "lived with", "Grégoire de Blésimaire in Le Havre")\n', '("Schopenhauer", "toured", "Holland")\n', '("Schopenhauer", "toured", "Switzerland")\n', '("Schopenhauer", "toured", "Austria")\n', '("Schopenhauer", "encouraged by", "his mother in Weimar")\n', '("Schopenhauer", "invested in", "government bonds")\n', '("Schopenhauer\'s ideas", "similar to", "Goethe")\n', '("Schopenhauer", "influenced by", "Plato")\n', '("Schopenhauer", "read works by", "Johann Gottlieb Fichte")\n', '("Schopenhauer", "read works by", "Bacon")\n', '("Schopenhauer", "read works by", "Locke")\n', '("Schopenhauer", "attended lectures by", "Martin Heinrich Klaproth")\n', '("Schopenhauer", "attended lectures by", "Johann Elert Bode")\n', '("Schopenhauer", "criticized by", "Georg Friedrich Konrad Ludwig Müller von Gerstenbergk")\n', '("Schopenhauer", "hiked in", "Thuringian Forest")\n', '("Schopenhauer", "completed dissertation during", "Battle of Leipzig")\n', '("Schopenhauer", "stayed in", "Leipzig")\n', '("Schopenhauer", "influenced by", "Herder")\n', '("Schopenhauer\'s philosophy", "shares tenets with", "Buddha")\n', '("Schopenhauer", "lived in", "Dresden")\n', '("Schopenhauer", "traveled to", "Venice")\n', '("Schopenhauer", "traveled to", "Bologna")\n', '("Schopenhauer", "traveled to", "Florence")\n', '("Schopenhauer", "traveled to", "Naples")\n', '("Schopenhauer", "traveled to", "Milan")\n', '("Schopenhauer", "traveled to", "Rome")\n', '("Schopenhauer", "critical of", "G. W. F. Hegel")\n', '("Schopenhauer", "lectured in", "Nuremberg")\n', '("Johann Wolfgang von Goethe", "is a", "German polymath and writer")\n', '("Johann Wolfgang von Goethe", "is regarded as", "the greatest and most influential writer in the German language")\n', '("Johann Wolfgang von Goethe", "held positions", "at the University of Jena")\n', '("Johann Wolfgang von Goethe", "took up residence in", "Weimar")\n', '("Johann Wolfgang von Goethe", "was ennobled by", "the Duke of Saxe-Weimar, Karl August")\n', '("Johann Wolfgang von Goethe", "started friendship with", "Friedrich Schiller")\n', '("Johann Wolfgang von Goethe", "published", "the Metamorphosis of Plants")\n', '("Weimar Classicism", "is a term including", "Johann Wolfgang von Goethe\'s shared undertakings with Schiller, Johann Gottlieb Fichte, Johann Gottfried Herder, Alexander von Humboldt, and others")\n', '("Johann Wolfgang von Goethe", "influenced", "Arthur Schopenhauer and Ralph Waldo Emerson")\n', '("Johann Wolfgang von Goethe", "was part of", "Conversations with Goethe by Johann Peter Eckermann")\n', '("Mozart", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Beethoven", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Liszt", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Wagner", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Johann Wolfgang von Goethe", "was born in", "Frankfurt")\n', '("Friedrich Gottlieb Klopstock", "was an early favorite of", "Johann Wolfgang von Goethe")\n', '("Homer", "was among early favorites of", "Johann Wolfgang von Goethe")\n', '("Ovid", "was one of the works from which Johann Wolfgang von Goethe", "learned by heart the beginnings of books")\n', '("Johann Wolfgang von Goethe", "had an interest in works by", "Gotthold Ephraim Lessing")\n', '("Johann Wolfgang von Goethe", "had his great passion in", "drawing")\n', '("Johann Wolfgang von Goethe", "spent time in", "Alsace")\n', '("William Shakespeare", "kindled interest of Johann Wolfgang von Goethe in", "dramatic literature")\n', '("Johann Wolfgang von Goethe", "acquainted with", "Johann Gottfried Herder")\n', '("Johann Wolfgang von Goethe", "established a legal practice in", "Frankfurt and Wetzlar")\n', '("Johann Wolfgang von Goethe", "wrote the novel", "The Sorrows of Young Werther")\n', '("Johann Wolfgang von Goethe", "journeyed to the", "Italian peninsula")\n', '("Johann Joachim Winckelmann", "influenced Johann Wolfgang von Goethe\'s interest in", "the classical art")\n', '("Lady Hamilton", "was encountered by", "Johann Wolfgang von Goethe during his Italian journey")\n', '("Alessandro Cagliostro", "was encountered by", "Johann Wolfgang von Goethe during his Italian journey")\n', '("George Eliot", "was inspired by Johann Wolfgang von Goethe\'s", "Italian Journey")\n', '("Johann Wolfgang von Goethe", "participated in", "Battle of Valmy")\n', '("Napoleon", "was met by", "Johann Wolfgang von Goethe")\n', '("Johann Wolfgang von Goethe", "traveled to", "Vienna and met Beethoven")\n', '("Johann Wolfgang von Goethe", "fell in love with", "Ulrike von Levetzow in Carlsbad")\n', '("Johann Wolfgang von Goethe", "is buried in", "the Ducal Vault at Weimar\'s Historical Cemetery")\n', '("Wilhelm Dilthey", "held the Chair in Philosophy at", "University of Berlin")\n', '("Wilhelm Dilthey", "edited letters of", "Schleiermacher")\n', '("Wilhelm Dilthey", "drew inspiration from", "Friedrich Schleiermacher")\n', '("Dilthey", "responds to philosophical legitimation questions raised by", "Droysen and Ranke")\n', '("Dilthey", "influenced by", "Friedrich Nietzsche")\n', '("Dilthey", "influenced by", "Henri Bergson")\n', '("Dilthey", "taught students including", "Martin Buber")\n', '("Dilthey", "informed the works of", "Martin Heidegger")\n', '("Dilthey", "critiqued by", "Hans-Georg Gadamer")\n', '("Dilthey", "opposed the sociology of", "Auguste Comte")\n', '("Dilthey", "opposed the sociology of", "Herbert Spencer")\n', '("Dilthey", "commended the sociology of", "Georg Simmel")\n', '("Dilthey", "associated with", "Max Weber")\n', '("Dilthey", "developed typology influenced by", "Karl Jaspers")\n', '("Dilthey", "wrote works influencing", "Rudolf Steiner")\n', '("Dilthey", "compared to", "Wilhelm Windelband")\n', '("Dilthey", "compared to", "Heinrich Rickert")\n', '("Dilthey", "edited the academy edition of writings of", "Kant")\n']
+range(1, 238) 3
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "former German city of", "Königsberg")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Schopenhauer", "influenced by", "Immanuel Kant")\n', '("Schopenhauer", "born in", "Danzig")\n', '("Schopenhauer", "lived in", "Hamburg")\n', '("Schopenhauer", "lived with", "Grégoire de Blésimaire in Le Havre")\n', '("Schopenhauer", "toured", "Holland")\n', '("Schopenhauer", "toured", "Switzerland")\n', '("Schopenhauer", "toured", "Austria")\n', '("Schopenhauer", "encouraged by", "his mother in Weimar")\n', '("Schopenhauer", "invested in", "government bonds")\n', '("Schopenhauer\'s ideas", "similar to", "Goethe")\n', '("Schopenhauer", "influenced by", "Plato")\n', '("Schopenhauer", "read works by", "Johann Gottlieb Fichte")\n', '("Schopenhauer", "read works by", "Bacon")\n', '("Schopenhauer", "read works by", "Locke")\n', '("Schopenhauer", "attended lectures by", "Martin Heinrich Klaproth")\n', '("Schopenhauer", "attended lectures by", "Johann Elert Bode")\n', '("Schopenhauer", "criticized by", "Georg Friedrich Konrad Ludwig Müller von Gerstenbergk")\n', '("Schopenhauer", "hiked in", "Thuringian Forest")\n', '("Schopenhauer", "completed dissertation during", "Battle of Leipzig")\n', '("Schopenhauer", "stayed in", "Leipzig")\n', '("Schopenhauer", "influenced by", "Herder")\n', '("Schopenhauer\'s philosophy", "shares tenets with", "Buddha")\n', '("Schopenhauer", "lived in", "Dresden")\n', '("Schopenhauer", "traveled to", "Venice")\n', '("Schopenhauer", "traveled to", "Bologna")\n', '("Schopenhauer", "traveled to", "Florence")\n', '("Schopenhauer", "traveled to", "Naples")\n', '("Schopenhauer", "traveled to", "Milan")\n', '("Schopenhauer", "traveled to", "Rome")\n', '("Schopenhauer", "critical of", "G. W. F. Hegel")\n', '("Schopenhauer", "lectured in", "Nuremberg")\n', '("Johann Wolfgang von Goethe", "is a", "German polymath and writer")\n', '("Johann Wolfgang von Goethe", "is regarded as", "the greatest and most influential writer in the German language")\n', '("Johann Wolfgang von Goethe", "held positions", "at the University of Jena")\n', '("Johann Wolfgang von Goethe", "took up residence in", "Weimar")\n', '("Johann Wolfgang von Goethe", "was ennobled by", "the Duke of Saxe-Weimar, Karl August")\n', '("Johann Wolfgang von Goethe", "started friendship with", "Friedrich Schiller")\n', '("Johann Wolfgang von Goethe", "published", "the Metamorphosis of Plants")\n', '("Weimar Classicism", "is a term including", "Johann Wolfgang von Goethe\'s shared undertakings with Schiller, Johann Gottlieb Fichte, Johann Gottfried Herder, Alexander von Humboldt, and others")\n', '("Johann Wolfgang von Goethe", "influenced", "Arthur Schopenhauer and Ralph Waldo Emerson")\n', '("Johann Wolfgang von Goethe", "was part of", "Conversations with Goethe by Johann Peter Eckermann")\n', '("Mozart", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Beethoven", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Liszt", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Wagner", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Johann Wolfgang von Goethe", "was born in", "Frankfurt")\n', '("Friedrich Gottlieb Klopstock", "was an early favorite of", "Johann Wolfgang von Goethe")\n', '("Homer", "was among early favorites of", "Johann Wolfgang von Goethe")\n', '("Ovid", "was one of the works from which Johann Wolfgang von Goethe", "learned by heart the beginnings of books")\n', '("Johann Wolfgang von Goethe", "had an interest in works by", "Gotthold Ephraim Lessing")\n', '("Johann Wolfgang von Goethe", "had his great passion in", "drawing")\n', '("Johann Wolfgang von Goethe", "spent time in", "Alsace")\n', '("William Shakespeare", "kindled interest of Johann Wolfgang von Goethe in", "dramatic literature")\n', '("Johann Wolfgang von Goethe", "acquainted with", "Johann Gottfried Herder")\n', '("Johann Wolfgang von Goethe", "established a legal practice in", "Frankfurt and Wetzlar")\n', '("Johann Wolfgang von Goethe", "wrote the novel", "The Sorrows of Young Werther")\n', '("Johann Wolfgang von Goethe", "journeyed to the", "Italian peninsula")\n', '("Johann Joachim Winckelmann", "influenced Johann Wolfgang von Goethe\'s interest in", "the classical art")\n', '("Lady Hamilton", "was encountered by", "Johann Wolfgang von Goethe during his Italian journey")\n', '("Alessandro Cagliostro", "was encountered by", "Johann Wolfgang von Goethe during his Italian journey")\n', '("George Eliot", "was inspired by Johann Wolfgang von Goethe\'s", "Italian Journey")\n', '("Johann Wolfgang von Goethe", "participated in", "Battle of Valmy")\n', '("Napoleon", "was met by", "Johann Wolfgang von Goethe")\n', '("Johann Wolfgang von Goethe", "traveled to", "Vienna and met Beethoven")\n', '("Johann Wolfgang von Goethe", "fell in love with", "Ulrike von Levetzow in Carlsbad")\n', '("Johann Wolfgang von Goethe", "is buried in", "the Ducal Vault at Weimar\'s Historical Cemetery")\n', '("Wilhelm Dilthey", "held the Chair in Philosophy at", "University of Berlin")\n', '("Wilhelm Dilthey", "edited letters of", "Schleiermacher")\n', '("Wilhelm Dilthey", "drew inspiration from", "Friedrich Schleiermacher")\n', '("Dilthey", "responds to philosophical legitimation questions raised by", "Droysen and Ranke")\n', '("Dilthey", "influenced by", "Friedrich Nietzsche")\n', '("Dilthey", "influenced by", "Henri Bergson")\n', '("Dilthey", "taught students including", "Martin Buber")\n', '("Dilthey", "informed the works of", "Martin Heidegger")\n', '("Dilthey", "critiqued by", "Hans-Georg Gadamer")\n', '("Dilthey", "opposed the sociology of", "Auguste Comte")\n', '("Dilthey", "opposed the sociology of", "Herbert Spencer")\n', '("Dilthey", "commended the sociology of", "Georg Simmel")\n', '("Dilthey", "associated with", "Max Weber")\n', '("Dilthey", "developed typology influenced by", "Karl Jaspers")\n', '("Dilthey", "wrote works influencing", "Rudolf Steiner")\n', '("Dilthey", "compared to", "Wilhelm Windelband")\n', '("Dilthey", "compared to", "Heinrich Rickert")\n', '("Dilthey", "edited the academy edition of writings of", "Kant")\n']
+range(1, 238) 3
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "former German city of", "Königsberg")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Schopenhauer", "influenced by", "Immanuel Kant")\n', '("Schopenhauer", "born in", "Danzig")\n', '("Schopenhauer", "lived in", "Hamburg")\n', '("Schopenhauer", "lived with", "Grégoire de Blésimaire in Le Havre")\n', '("Schopenhauer", "toured", "Holland")\n', '("Schopenhauer", "toured", "Switzerland")\n', '("Schopenhauer", "toured", "Austria")\n', '("Schopenhauer", "encouraged by", "his mother in Weimar")\n', '("Schopenhauer", "invested in", "government bonds")\n', '("Schopenhauer\'s ideas", "similar to", "Goethe")\n', '("Schopenhauer", "influenced by", "Plato")\n', '("Schopenhauer", "read works by", "Johann Gottlieb Fichte")\n', '("Schopenhauer", "read works by", "Bacon")\n', '("Schopenhauer", "read works by", "Locke")\n', '("Schopenhauer", "attended lectures by", "Martin Heinrich Klaproth")\n', '("Schopenhauer", "attended lectures by", "Johann Elert Bode")\n', '("Schopenhauer", "criticized by", "Georg Friedrich Konrad Ludwig Müller von Gerstenbergk")\n', '("Schopenhauer", "hiked in", "Thuringian Forest")\n', '("Schopenhauer", "completed dissertation during", "Battle of Leipzig")\n', '("Schopenhauer", "stayed in", "Leipzig")\n', '("Schopenhauer", "influenced by", "Herder")\n', '("Schopenhauer\'s philosophy", "shares tenets with", "Buddha")\n', '("Schopenhauer", "lived in", "Dresden")\n', '("Schopenhauer", "traveled to", "Venice")\n', '("Schopenhauer", "traveled to", "Bologna")\n', '("Schopenhauer", "traveled to", "Florence")\n', '("Schopenhauer", "traveled to", "Naples")\n', '("Schopenhauer", "traveled to", "Milan")\n', '("Schopenhauer", "traveled to", "Rome")\n', '("Schopenhauer", "critical of", "G. W. F. Hegel")\n', '("Schopenhauer", "lectured in", "Nuremberg")\n', '("Johann Wolfgang von Goethe", "is a", "German polymath and writer")\n', '("Johann Wolfgang von Goethe", "is regarded as", "the greatest and most influential writer in the German language")\n', '("Johann Wolfgang von Goethe", "held positions", "at the University of Jena")\n', '("Johann Wolfgang von Goethe", "took up residence in", "Weimar")\n', '("Johann Wolfgang von Goethe", "was ennobled by", "the Duke of Saxe-Weimar, Karl August")\n', '("Johann Wolfgang von Goethe", "started friendship with", "Friedrich Schiller")\n', '("Johann Wolfgang von Goethe", "published", "the Metamorphosis of Plants")\n', '("Weimar Classicism", "is a term including", "Johann Wolfgang von Goethe\'s shared undertakings with Schiller, Johann Gottlieb Fichte, Johann Gottfried Herder, Alexander von Humboldt, and others")\n', '("Johann Wolfgang von Goethe", "influenced", "Arthur Schopenhauer and Ralph Waldo Emerson")\n', '("Johann Wolfgang von Goethe", "was part of", "Conversations with Goethe by Johann Peter Eckermann")\n', '("Mozart", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Beethoven", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Liszt", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Wagner", "set to music", "poems of Johann Wolfgang von Goethe")\n', '("Johann Wolfgang von Goethe", "was born in", "Frankfurt")\n', '("Friedrich Gottlieb Klopstock", "was an early favorite of", "Johann Wolfgang von Goethe")\n', '("Homer", "was among early favorites of", "Johann Wolfgang von Goethe")\n', '("Ovid", "was one of the works from which Johann Wolfgang von Goethe", "learned by heart the beginnings of books")\n', '("Johann Wolfgang von Goethe", "had an interest in works by", "Gotthold Ephraim Lessing")\n', '("Johann Wolfgang von Goethe", "had his great passion in", "drawing")\n', '("Johann Wolfgang von Goethe", "spent time in", "Alsace")\n', '("William Shakespeare", "kindled interest of Johann Wolfgang von Goethe in", "dramatic literature")\n', '("Johann Wolfgang von Goethe", "acquainted with", "Johann Gottfried Herder")\n', '("Johann Wolfgang von Goethe", "established a legal practice in", "Frankfurt and Wetzlar")\n', '("Johann Wolfgang von Goethe", "wrote the novel", "The Sorrows of Young Werther")\n', '("Johann Wolfgang von Goethe", "journeyed to the", "Italian peninsula")\n', '("Johann Joachim Winckelmann", "influenced Johann Wolfgang von Goethe\'s interest in", "the classical art")\n', '("Lady Hamilton", "was encountered by", "Johann Wolfgang von Goethe during his Italian journey")\n', '("Alessandro Cagliostro", "was encountered by", "Johann Wolfgang von Goethe during his Italian journey")\n', '("George Eliot", "was inspired by Johann Wolfgang von Goethe\'s", "Italian Journey")\n', '("Johann Wolfgang von Goethe", "participated in", "Battle of Valmy")\n', '("Napoleon", "was met by", "Johann Wolfgang von Goethe")\n', '("Johann Wolfgang von Goethe", "traveled to", "Vienna and met Beethoven")\n', '("Johann Wolfgang von Goethe", "fell in love with", "Ulrike von Levetzow in Carlsbad")\n', '("Johann Wolfgang von Goethe", "is buried in", "the Ducal Vault at Weimar\'s Historical Cemetery")\n', '("Wilhelm Dilthey", "held the Chair in Philosophy at", "University of Berlin")\n', '("Wilhelm Dilthey", "edited letters of", "Schleiermacher")\n', '("Wilhelm Dilthey", "drew inspiration from", "Friedrich Schleiermacher")\n', '("Dilthey", "responds to philosophical legitimation questions raised by", "Droysen and Ranke")\n', '("Dilthey", "influenced by", "Friedrich Nietzsche")\n', '("Dilthey", "influenced by", "Henri Bergson")\n', '("Dilthey", "taught students including", "Martin Buber")\n', '("Dilthey", "informed the works of", "Martin Heidegger")\n', '("Dilthey", "critiqued by", "Hans-Georg Gadamer")\n', '("Dilthey", "opposed the sociology of", "Auguste Comte")\n', '("Dilthey", "opposed the sociology of", "Herbert Spencer")\n', '("Dilthey", "commended the sociology of", "Georg Simmel")\n', '("Dilthey", "associated with", "Max Weber")\n', '("Dilthey", "developed typology influenced by", "Karl Jaspers")\n', '("Dilthey", "wrote works influencing", "Rudolf Steiner")\n', '("Dilthey", "compared to", "Wilhelm Windelband")\n', '("Dilthey", "compared to", "Heinrich Rickert")\n', '("Dilthey", "edited the academy edition of writings of", "Kant")\n']
+range(1, 238) 3
+{'id': '3_3', 'Question': ' Which philosopher is interred in the city that was once known as Königsberg but is now a Russian city sharing its name with his burial place?\n', 'Answer': 'Immanuel Kant', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Hannah Arendt'}, {'label': 'B', 'text': 'Arthur Schopenhauer'}, {'label': 'C', 'text': 'Johann Wolfgang von Goethe'}, {'label': 'D', 'text': 'Wilhelm Dilthey'}, {'label': 'E', 'text': 'Immanuel Kant'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'hannah_arendt'}, {'label': 'B', 'text': 'arthur_schopenhauer'}, {'label': 'C', 'text': 'johann_wolfgang_von_goethe'}, {'label': 'D', 'text': 'diltheyan'}, {'label': 'E', 'text': 'immanuel_kant'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which philosopher was buried in Kaliningrad?\nA1: Immanuel Kant\n\n', '2: Which city is located in Russia and shares its name with the place where Immanuel Kant was buried?\nA2: Kaliningrad\n\n', '3: Which present-day city was known as the former German city of Königsberg?\nA3: Kaliningrad'], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Russia'), ('Kaliningrad', 'Königsberg')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'russia'), ('kaliningrad', 'königsberg')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "is located in", "Russia")', '("Kaliningrad", "former German city of", "Königsberg")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 4}, {'name': 'Königsberg', 'line': 25}], 'Question_triplet_answer': {100: [107, 137, 237], 50: [109, 129, 182], 25: [169, 176, 202]}}
+time passed:  3478.0100588798523
+Expected dollar:  0.005
+Immanuel Kant's is People
+Hannah Arendt is People
+Gestapo is Geography
+Immanuel Kant is People
+Johann Wolfgang von Goethe is People
+Weimar is Geography
+Friedrich Nietzsche is People
+Kant is People
+Hannah Arendt's is People
+Schopenhauer is People
+Leipzig is Geography
+Lithuania is Geography
+Poland is Geography
+Gotthold Ephraim Lessing is People
+Vistula Lagoon is Geography
+Königsberg is Geography
+Friedrich Schiller is People
+Anna Regina Reuter is People
+Alsace is Geography
+Martin Heidegger is People
+Youth Aliyah is Incident
+Rudolf Steiner is People
+Herbert Spencer is People
+Naples is Geography
+Germany is Geography
+Paris is Geography
+Baltic Sea is Geography
+Holland is Geography
+Austria is Geography
+Battle of Valmy is Geography
+Jürgen Habermas is People
+John Rawls is People
+Rilke and Bertold Brecht is People
+Rome is Geography
+Frankfurt is Geography
+William Shakespeare is People
+Heinrich Rickert is People
+Duchy of Prussia is Geography
+Emanuel Swedenborg's Dreams of a Spirit is People
+Johann Gottfried Herder is People
+Johann Elert Bode is People
+the University of Heidelberg is Geography
+Mikhail Kalinin is People
+Frederick William III is People
+Napoleon is People
+Napoleon Bonaparte is People
+Hans Georg Gadamer is People
+Max Weber is People
+Martin Heinrich Klaproth is People
+Nazi Germany is Geography
+Switzerland is Geography
+Edmund Husserl is People
+North German Confederation is Geography
+Jean Piaget is People
+Carl Gustav Jung is People
+Full Professor of Logic and Metaphysics at University of Königsberg is People
+Rosa Luxemburg is People
+Northwestern Federal District is Geography
+Aristotle is People
+Plato is People
+Danzig is Geography
+Kaliningrad is Geography
+Wilhelm Dilthey is People
+Friedrich Schleiermacher is People
+Russia is Geography
+Wetzlar is Geography
+Hamburg is Geography
+Johann Gottlieb Fichte is People
+Samuel Taylor is People
+the University of Jena is Geography
+Wilhelm Windelband is People
+Le Havre is Geography
+Lithuanian and is Geography
+Droysen and Ranke is People
+Riga is Geography
+University of Berlin is Geography
+the Ducal Vault is Geography
+Weimar's Historical Cemetery is Geography
+Friedrich Gottlieb is People
+Leonid Brezhnev's is People
+Bologna is Geography
+Liszt is People
+Max Arendt is People
+George Eliot is People
+Johann Wolfgang von Goethe's is People
+Buddha is People
+Mozart is People
+Rudolf Bultmann is People
+Ovid is People
+Milan is Geography
+East Prussian is Geography
+entities:  {'Rosa', 'Berlin', 'Heidegger', 'Germany', 'Napoleon', 'Rawls', 'Wilhelm', 'William', 'Ranke', 'Martin', 'Professor', 'Jena', 'Dilthey', 'Eliot', 'Spirit', 'Anna', 'Leonid', 'Duchy', 'Hamburg', 'Weber', 'Heidelberg', 'Saxe', 'Switzerland', 'Liszt', 'Havre', 'Windelband', 'Valmy', 'Regina', 'Gustav', 'Le', 'Emanuel', 'Lessing', 'Metaphysics', 'Schleiermacher', 'Hannah', 'Danzig', 'Lithuania', 'Edmund', "Swedenborg's", 'Heinrich', 'John', 'III', 'Samuel', 'Wolfgang', 'Immanuel', 'Ephraim', 'Carl', 'Schopenhauer', 'Georg', 'Kaliningrad', 'Reuter', 'Alsace', 'Lagoon', 'Gotthold', 'North', 'Logic', 'Herbert', 'District', "Goethe's", 'Piaget', 'Ducal', 'Brecht', 'Bonaparte', 'Kalinin', 'Plato', 'Leipzig', 'Ovid', 'Gottlieb', 'Cemetery', 'Rickert', 'Jung', 'Federal', 'Poland', 'Spencer', 'Holland', 'Jürgen', 'Frankfurt', 'Full', 'Königsberg', "Kant's", 'Hans', 'German', 'Milan', 'Herder', 'Arendt', 'George', 'Steiner', 'Prussian', 'Weimar', 'Battle', 'Riga', 'Naples', 'Gottfried', 'Lithuanian', 'Elert', 'Bertold', 'Northwestern', 'Gestapo', 'Mozart', 'Arthur', 'Sea', 'Shakespeare', 'Martha', 'Bultmann', 'Russia', 'University', 'Johann', 'Aliyah', "Brezhnev's", 'Husserl', 'von', 'Confederation', 'Schiller', 'Historical', 'Jean', 'Dreams', 'Paris', 'Youth', 'Luxemburg', 'Baltic', 'Taylor', 'Klaproth', 'Bode', 'Prussia', 'Linden', "Weimar's", 'Nietzsche', 'Vistula', 'Rudolf', 'Wetzlar', 'Petersburg', 'Swedenborg', 'Bologna', 'Vault', 'Mikhail', 'Droysen', "Arendt's", 'Fichte', 'Max', 'Kant', 'Austria', 'Rilke', 'Rome', 'Habermas', 'Friedrich', 'Goethe', 'Albertina', 'Frederick', 'Nazi', 'republican', 'Buddha', 'Gadamer', 'Aristotle', 'East'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Arthur Schopenhauer' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Schopenhauer 
+Kant 
+Immanuel Kant 
+Johann Wolfgang von Goethe 
+Napoleon
+Hannah Arendt 
+Kaliningrad 
+E. T. A. Hoffmann 
+Kaliningrad Oblast  
+Mikhail Kalinin 
+Kant's
+Pillau 
+Wilhelm Dilthey  
+Gdańsk
+Hoffmann
+Kaliningrad
+Königsberg 
+Napoleon Bonaparte 
+E. 
+A. Hoffmann
+Gdańsk
+Hoffmann 
+William Shakespeare
+Kaliningrad
+Gdańsk 
+Logansport High School 
+E. T. A. Hoffmann 
+Toruń 
+Hoffmann 
+Königsberg
+Immanuel Kant 
+Wilhelm Windelband
+Emmanuel Kant 
+Königsberg 
+Kaliningrad
+Kaliningrad 
+Michelstadt 
+Kaliningrad Oblast 
+Mikhail Kalinin 
+Königsberg
+Immanuel Kant's
+
+gpt_entity_particular(): entity list: 
+ ['A. Hoffmann', 'Mikhail Kalinin ', 'Hoffmann ', 'Hannah Arendt ', 'E. ', 'Michelstadt ', 'Logansport High School ', 'Hoffmann', 'Kaliningrad Oblast  ', 'Napoleon', "Kant's", 'Königsberg', 'Immanuel Kant ', 'Pillau ', 'Wilhelm Dilthey  ', 'Schopenhauer ', 'Wilhelm Windelband', 'E. T. A. Hoffmann ', "Immanuel Kant's", 'Königsberg ', 'Kaliningrad ', 'William Shakespeare', 'Napoleon Bonaparte ', 'Johann Wolfgang von Goethe ', 'Kaliningrad', 'Kant ', 'Gdańsk', 'Kaliningrad Oblast ', 'Toruń ', 'Gdańsk ', 'Emmanuel Kant ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Johann Wolfgang von Goethe' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Hannah Arendt
+Johann Wolfgang von Goethe
+Königsberg
+Dilthey
+Friedrich Nietzsche
+Kant,
+Gotthold Ephraim Lessing
+Homer
+Hannah Arendt's works
+Schopenhauer
+Red Army
+Pillau
+Königsberg Oblast
+Herbert Spencer
+Kaliningrad
+E. T. A. Hoffmann
+Martin Heidegger
+Günther Stern
+Henri Bergson
+Königsberg
+Jews
+Alsace
+Battle of Valmy. 
+Rudolf Steiner
+Rilke
+Rome
+Frankfurt
+Kant
+Locke
+Paris
+Königsberg
+Johann Friedrich Blumenbach
+Napoleon
+Critique of the Power of Judgment
+Lutheran
+Bologna
+Edmund Husserl
+Kant
+Königsberg
+Weimar
+Rosa Luxemburg
+Liszt
+Marxism
+Buddha
+Aristotle and Plato
+Lithuania
+Mozart
+Thoughts on the True Estimation of Living Forces
+Milky Way
+Maya
+Alessandro Volta
+Milan
+Kant's
+Goethe's Italian Journey
+Kant
+Locke
+Königsberg
+Kant
+Italy
+Buddha
+Kant
+Lady Hamilton
+Aristocratic
+Rudolf Bultmann
+Greek myths
+Alexander von Humboldt
+Kaliningrad
+Rousseau
+Goethe
+Giseke
+Heinz Kimmerle
+
+gpt_entity_particular(): entity list: 
+ ['Königsberg Oblast', 'Milky Way', 'Homer', 'Paris', 'Lutheran', 'Herbert Spencer', 'Greek myths', 'Martin Heidegger', 'Alexander von Humboldt', 'Henri Bergson', 'Frankfurt', 'Günther Stern', 'Aristotle and Plato', 'Königsberg', 'Napoleon', 'Critique of the Power of Judgment', "Kant's", 'Lithuania', 'Heinz Kimmerle', 'Jews', 'Pillau', "Hannah Arendt's works", 'Milan', 'Aristocratic', 'Maya', 'Bologna', 'Weimar', 'Thoughts on the True Estimation of Living Forces', 'Rousseau', 'Schopenhauer', 'Immanuel Kant', 'Johann Friedrich Blumenbach', 'Lady Hamilton', 'Dilthey', 'Alessandro Volta', 'Friedrich Nietzsche', 'Kaliningrad', 'Alsace', 'Rudolf Steiner', 'Gotthold Ephraim Lessing', 'Red Army', 'Rilke', 'Rome', 'Kant', 'Marxism', 'Mozart', "Goethe's Italian Journey", 'Edmund Husserl', 'Giseke', 'Kant,', 'Goethe', 'Italy', 'Hannah Arendt', 'Rudolf Bultmann', 'Buddha', 'Rosa Luxemburg', 'Locke', 'E. T. A. Hoffmann', 'Liszt', 'Battle of Valmy. ', 'Johann Wolfgang von Goethe']
+
+gpt_entity_particular(): filtered entity: 
+ ['Homer', 'Immanuel Kant', 'Rudolf Steiner', 'Gotthold Ephraim Lessing', 'Goethe']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hannah Arendt' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Königsberg
+Hannah Arendt
+Gestapo
+University of Heidelberg
+Martin Heidegger
+Rosa Luxemburg
+Youth Aliyah
+Jews
+Paris
+Nazi Germany
+Totalitarianism
+Edmund Husserl
+Königsberg Oblast
+Mikhail Kalinin
+Russian
+Rilke
+Bertold Brecht
+Napoleon
+Rome
+Art casual of Baltic Sea
+Red Army
+North German Confederation
+Universities
+German Confederation
+Prussian Eastern Railway
+Duchy of Prussia
+Latin and religious instruction
+Lithuania
+Poland
+Mathematical truths
+Synthetic a priori knowledge
+Italian Peninsula
+Dramatic literature
+Battle of Valmy
+Alsace
+Bologna
+Logic and metaphysics
+Critique of the Power of Judgment
+Neo-Kantianism
+Heidelberg
+Northwestern Federal District
+Locke
+Lutheran literature
+Sociology
+Marxism
+Max Weber
+Aristotle and Plato
+Hamburg
+Buddha
+Metaphysical truth
+Labor and population statistics
+Eastern Central Europe
+Baltic Sea Island
+Milky Way
+Republican ideals
+Democratic peace theory
+Jürgen Habermas
+John Rawls
+Wilhelm Dilthey
+Kant
+Aesthetic theory
+Philosophy of race
+Lessing
+Ovid
+Mozart
+Spencer
+Gadamer
+Nietzsche
+Rickert
+Ranke
+Bode
+Fichte
+Carl Gustav Jung
+Locke
+Lutheran literature
+Herbert Spencer
+Windelband
+Comte
+Auguste Comte
+Kant effects on politics
+German culture
+Napoleon’s victory
+
+gpt_entity_particular(): entity list: 
+ ['Herbert Spencer', 'Napoleon', 'Critique of the Power of Judgment', 'Dramatic literature', 'Youth Aliyah', 'Jews', 'Ranke', 'Lutheran literature', 'Eastern Central Europe', 'Battle of Valmy', 'Prussian Eastern Railway', 'Edmund Husserl', 'Sociology', 'Labor and population statistics', 'Rosa Luxemburg', 'Hamburg', 'Auguste Comte', 'Heidelberg', 'Milky Way', 'Windelband', 'Italian Peninsula', 'Lessing', 'Bertold Brecht', 'Lithuania', 'Russian', 'Wilhelm Dilthey', 'Carl Gustav Jung', 'Mathematical truths', 'Logic and metaphysics', 'Alsace', 'Synthetic a priori knowledge', 'North German Confederation', 'Duchy of Prussia', 'Baltic Sea Island', 'Ovid', 'Mikhail Kalinin', 'Königsberg Oblast', 'Max Weber', 'Rickert', 'Republican ideals', 'Poland', 'Spencer', 'Aristotle and Plato', 'Königsberg', 'Democratic peace theory', 'Nazi Germany', 'Northwestern Federal District', 'Immanuel Kant', 'Marxism', 'Gestapo', 'Mozart', 'Art casual of Baltic Sea', 'Hannah Arendt', 'Locke', 'German culture', 'Paris', 'Comte', 'Martin Heidegger', 'Napoleon’s victory', 'Aesthetic theory', 'Bode', 'Totalitarianism', 'Universities', 'Nietzsche', 'Philosophy of race', 'Latin and religious instruction', 'Bologna', 'John Rawls', 'Fichte', 'Kant', 'Rome', 'Rilke', 'Red Army', 'Jürgen Habermas', 'German Confederation', 'Neo-Kantianism', 'Metaphysical truth', 'University of Heidelberg', 'Buddha', 'Gadamer', 'Kant effects on politics']
+
+gpt_entity_particular(): filtered entity: 
+ ['Immanuel Kant', 'Martin Heidegger']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+mathematical truths
+mathematical truths
+E. T. A. Hoffmann
+Schopenhauer
+Immanuel Kant
+Rahel Varnhagen
+Kant
+sociology and anthropology
+Kant
+Baltic Sea
+Heidelberg
+German Confederation
+Kant
+Königsberg
+anthropology
+Father of modern ethics
+Kaliningrad
+Königsberg
+Marxism, positivism, phenomenology
+Königsberg
+Königsberg Oblast
+Democracy
+Jürgen Habermas
+Latvia
+Weimar 
+St. Petersburg 
+King Ottokar II 
+Riga 
+Paris
+Droysen and Ranke
+Wilhelm Windelband 
+Bologna 
+Liszt  
+Kant
+Marxism, positivism, phenomenology
+Wilhelm 
+Königsberg
+Bosen 
+Lutheran literature
+Russian 
+Vienna 
+Kant 
+Kaliningrad
+Physiological 
+Mozart
+Lady Hamilton 
+Kant
+Judy peace theory 
+Milky Way 
+Auguste Comte
+Rome 
+Kant 
+Leo Da Vinci
+
+gpt_entity_particular(): entity list: 
+ ['Weimar ', 'Königsberg Oblast', 'Paris', 'Rahel Varnhagen', 'Wilhelm Windelband ', 'anthropology', 'Droysen and Ranke', 'Marxism, positivism, phenomenology', 'Democracy', 'Father of modern ethics', 'Königsberg', 'Latvia', 'Lutheran literature', 'Vienna ', 'Bologna ', 'St. Petersburg ', 'Lady Hamilton ', 'Wilhelm ', 'Schopenhauer', 'Immanuel Kant', 'King Ottokar II ', 'Bosen ', 'Leo Da Vinci', 'Kant', 'Kaliningrad', 'Liszt  ', 'sociology and anthropology', 'Kant ', 'Mozart', 'Milky Way ', 'Jürgen Habermas', 'German Confederation', 'Physiological ', 'Baltic Sea', 'Judy peace theory ', 'Rome ', 'mathematical truths', 'Auguste Comte', 'E. T. A. Hoffmann', 'Riga ', 'Heidelberg', 'Russian ']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Wilhelm Dilthey' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Wilhelm Dilthey
+Kant
+Immanuel Kant
+Johann Wolfgang von Goethe
+Hannah Arendt
+Schopenhauer
+Anna Regina Reuter
+Kant's
+E. T. A. Hoffmann
+Friedrich Nietzsche
+Rudolf Steiner
+Herbert Spencer
+Immanuel Kant's
+Martin Heidegger
+Henri Bergson
+Rudolf Steiner
+Friedrich Schleiermacher
+Albertina University
+Wilhelm Windelband
+Mikhail Kalinin
+Hans-Georg Gadamer
+Max Weber
+Mikhail Kalinin
+Leonid Brezhnev
+Locke
+Marxism
+
+gpt_entity_particular(): entity list: 
+ ['Mikhail Kalinin', 'Anna Regina Reuter', 'Herbert Spencer', 'Martin Heidegger', 'Max Weber', 'Henri Bergson', "Kant's", 'Hans-Georg Gadamer', 'Wilhelm Dilthey', 'Wilhelm Windelband', "Immanuel Kant's", 'Leonid Brezhnev', 'Schopenhauer', 'Immanuel Kant', 'Kant', 'Friedrich Nietzsche', 'Rudolf Steiner', 'Marxism', 'Friedrich Schleiermacher', 'Hannah Arendt', 'Albertina University', 'Locke', 'E. T. A. Hoffmann', 'Johann Wolfgang von Goethe']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Russia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kaliningrad
+Kant
+Johann Wolfgang von Goethe
+Dilthey
+Hannah Arendt
+Schopenhauer
+Königsberg
+Immanuel Kant
+Lithuania
+Poland
+Gestapo
+Weimar
+Friedrich Nietzsche
+Gotthold Ephraim Lessing
+Homer
+Günther Stern
+Königsberg until 1946
+Vistula Lagoon
+Martin Heidegger
+Rahel Varnhagen
+Rome
+Paris
+Naples
+Kant's
+Mikhail Kalinin
+Red Army
+Baltic Sea
+University of Heidelberg
+Leipzig
+Kants
+Neo-Kantianism
+Johannah Wolfgang von Goethe
+Baltic Sea
+Battle of Valmy
+Leipzig
+Königsberg after Napoleon's victory
+Duchy of Prussia
+Polish People's Republic
+Prussian Eastern Railway
+Northwestern Federal District
+Aristotle and Plato
+Hamburg
+Potsdam Agreement
+Herbert Spencer
+Rudolf Steiner
+Jean Piaget and Carl Gustav Jung
+University of Berlin
+Marxism, positivism, phenomenology
+Königsberg
+Wilhelm Windelband
+Indian territory adjacent to Königsberg
+Kaliningrad Oblast
+Königsberg
+Germany
+Prussian Eastern Railway
+Buddha
+North German Confederation
+Spring and summer
+Kant's
+Adolf Hitler
+
+gpt_entity_particular(): entity list: 
+ ['Mikhail Kalinin', "Polish People's Republic", 'Homer', 'Paris', 'University of Berlin', 'Rahel Varnhagen', 'Herbert Spencer', 'Martin Heidegger', 'Potsdam Agreement', 'Poland', 'Marxism, positivism, phenomenology', 'Günther Stern', 'Johannah Wolfgang von Goethe', 'Königsberg', "Kant's", 'Aristotle and Plato', 'Germany', 'Lithuania', 'Jean Piaget and Carl Gustav Jung', 'Wilhelm Windelband', "Königsberg after Napoleon's victory", 'Weimar', 'Kants', 'Northwestern Federal District', 'Naples', 'Adolf Hitler', 'Schopenhauer', 'Immanuel Kant', 'Battle of Valmy', 'Dilthey', 'Kant', 'Kaliningrad', 'Friedrich Nietzsche', 'Rome', 'Gotthold Ephraim Lessing', 'Red Army', 'Prussian Eastern Railway', 'Rudolf Steiner', 'Gestapo', 'North German Confederation', 'Neo-Kantianism', 'University of Heidelberg', 'Hannah Arendt', 'Duchy of Prussia', 'Indian territory adjacent to Königsberg', 'Kaliningrad Oblast', 'Baltic Sea', 'Königsberg until 1946', 'Buddha', 'Vistula Lagoon', 'Hamburg', 'Spring and summer', 'Leipzig', 'Johann Wolfgang von Goethe']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kaliningrad']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Königsberg
+Kaliningrad
+Lithuania
+Poland
+Weimar
+Leipzig
+Vistula Lagoon
+Rome
+Naples
+Alsace
+Holland
+Austria
+Baltic Sea
+German Confederation
+Italian peninsula
+Nazi Germany
+Königsberg
+Germany
+University of Heidelberg
+North German Confederation
+Baltic Sea
+Königsberg
+Lithuania
+Switzerland
+University of Jena
+Duchy of Prussia
+North German Confederation
+Switzerland
+University of Berlin
+St. Petersburg
+Leicester
+Hamburg
+Russia
+Northwestern Federal District
+Paris
+Kant
+Königsberg
+Prussia
+Germany
+Gdańsk
+Prussia
+Moscow
+Kant
+Duchy of Prussia
+Germany
+North German Confederation
+Weimar
+Russia
+Lithuania
+Poland
+Russia
+Baltic Sea
+Kaliningrad Oblast
+Mikhail Kalinin
+Germany
+Kaliningrad
+Russia
+Kaliningrad
+Russiaca  Imperial Academy
+Königsberg
+King Ottokar II of Bohemia
+Duchy of Prussia
+Northern Federal District
+Russia
+E. T. A. Hoffmann
+Königsberg
+Frankfurt
+Wetzlar
+Kant
+Königsberg
+Baltic Sea
+Johann Wolfgang von Goethe
+Italy
+Alsace
+Brandenburg
+Königsberg
+Rome
+Kant
+Jürgen Habermas
+John Rawls
+Kant
+Jürgen Habermas
+John Rawls
+Kaliningrad
+Russia
+German Empire
+Königsberg
+Königsberg
+Italian Journey
+Königsberg
+Duchy of Prussia
+Hamburg
+Russia
+Kant
+Lithuanian
+Polish
+Königsberg
+Lithuanian
+Polish
+Germany
+Kant
+Marxism
+positivism
+phenomenology
+University of Heidelberg
+Marxism
+positivism
+phenomenology
+Kaliningrad
+Russia
+Lithuania
+Kalinin
+Germany
+Lithuania
+Kalinin
+Kant
+Königsberg
+King Ottokar II of Bohemia
+Duchy of Prussia
+Lithuanian
+Polish
+Königsberg
+Kaliningrad
+Germany
+Königsberg
+Kaliningrad
+Marxism
+positivism
+phenomenology
+Königsberg
+Polish
+Lithuania
+Germany
+Königsberg
+Red Army
+Deutsch
+Kant
+German Confederation
+Königsberg
+Königsberg
+Kant
+Rome
+Kant
+Milky Way
+Kant
+Kant
+republican ideals
+Kant
+Milan
+Königsberg
+German
+Kant
+Milky Way
+republican ideals and forms of governance
+Milan
+Rome
+Königsberg
+Kant
+Königsberg
+Milky Way
+Italian
+Karl August
+Königsberg
+
+gpt_entity_particular(): entity list: 
+ ['Mikhail Kalinin', 'Italian peninsula', 'Milky Way', 'University of Berlin', 'Paris', 'positivism', 'St. Petersburg', 'Polish', 'Prussia', 'Poland', 'Holland', 'Frankfurt', 'republican ideals and forms of governance', 'Germany', 'King Ottokar II of Bohemia', 'Königsberg', 'Lithuania', 'Russiaca  Imperial Academy', 'Leicester', 'Northern Federal District', 'German', 'Wetzlar', 'Milan', 'republican ideals', 'Weimar', 'phenomenology', 'Nazi Germany', 'Deutsch', 'Northwestern Federal District', 'Naples', 'John Rawls', 'Lithuanian', 'Kaliningrad', 'Kant', 'Rome', 'Alsace', 'Austria', 'Brandenburg', 'Red Army', 'Marxism', 'North German Confederation', 'Moscow', 'Jürgen Habermas', 'Gdańsk', 'German Confederation', 'Italian Journey', 'University of Heidelberg', 'Italy', 'Karl August', 'Duchy of Prussia', 'Kaliningrad Oblast', 'Baltic Sea', 'Russia', 'German Empire', 'Vistula Lagoon', 'Hamburg', 'University of Jena', 'E. T. A. Hoffmann', 'Kalinin', 'Italian', 'Switzerland', 'Leipzig', 'Johann Wolfgang von Goethe']
+
+gpt_entity_particular(): filtered entity: 
+ ['Königsberg', 'Russia']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Königsberg' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Königsberg
+Kaliningrad
+Immanuel Kant
+Hannah Arendt
+Johann Wolfgang von Goethe
+Dilthey
+Kant
+Lithuania
+Poland
+Vistula Lagoon
+Pillau
+Rilke
+Bertold Brecht
+William Shakespeare
+Youth Aliyah
+E. T. A. Hoffmann
+Italy
+Goethe
+Johann Gottfried Herder
+Napoleon
+Rosa Luxemburg
+Aleksandr Solzhenitsyn
+North German Confederation
+Gdańsk
+greatest and most influential writer
+Norman Lindop
+spintronics
+holographic
+precession magnetometry
+geology
+
+gpt_entity_particular(): entity list: 
+ ['Johann Wolfgang von Goethe', 'precession magnetometry', 'Norman Lindop', 'Poland', 'Bertold Brecht', 'Königsberg', 'Napoleon', 'Lithuania', 'Youth Aliyah', 'geology', 'Pillau', 'Aleksandr Solzhenitsyn', 'Johann Gottfried Herder', 'greatest and most influential writer', 'Immanuel Kant', 'Dilthey', 'William Shakespeare', 'spintronics', 'Kaliningrad', 'Kant', 'Rilke', 'North German Confederation', 'Gdańsk', 'Goethe', 'Hannah Arendt', 'holographic', 'Rosa Luxemburg', 'Vistula Lagoon', 'E. T. A. Hoffmann', 'Italy']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kaliningrad']
+After GPT, entity:  {'Homer', 'Rosa', 'Berlin', 'Heidegger', 'Germany', 'Napoleon', 'Rawls', 'Wilhelm', 'William', 'Ranke', 'Martin', 'Professor', 'Jena', 'Dilthey', 'Eliot', 'Spirit', 'Anna', 'Leonid', 'Duchy', 'Hamburg', 'Weber', 'Heidelberg', 'Saxe', 'Switzerland', 'Liszt', 'Havre', 'Windelband', 'Valmy', 'Regina', 'Gustav', 'Le', 'Emanuel', 'Lessing', 'Metaphysics', 'Schleiermacher', 'Hannah', 'Danzig', 'Lithuania', 'Edmund', "Swedenborg's", 'Heinrich', 'John', 'III', 'Samuel', 'Wolfgang', 'Immanuel', 'Ephraim', 'Carl', 'Schopenhauer', 'Georg', 'Kaliningrad', 'Reuter', 'Alsace', 'Gotthold Ephraim Lessing', 'Lagoon', 'Gotthold', 'North', 'Logic', 'Herbert', 'District', "Goethe's", 'Piaget', 'Ducal', 'Brecht', 'Bonaparte', 'Kalinin', 'Plato', 'Leipzig', 'Ovid', 'Gottlieb', 'Cemetery', 'Rickert', 'Jung', 'Federal', 'Poland', 'Spencer', 'Holland', 'Jürgen', 'Frankfurt', 'Full', 'Königsberg', "Kant's", 'Hans', 'German', 'Milan', 'Herder', 'Arendt', 'George', 'Steiner', 'Prussian', 'Weimar', 'Battle', 'Riga', 'Naples', 'Gottfried', 'Immanuel Kant', 'Lithuanian', 'Rudolf Steiner', 'Elert', 'Bertold', 'Northwestern', 'Gestapo', 'Mozart', 'Arthur', 'Sea', 'Shakespeare', 'Martha', 'Bultmann', 'Russia', 'University', 'Johann', 'Aliyah', "Brezhnev's", 'Husserl', 'von', 'Confederation', 'Schiller', 'Historical', 'Jean', 'Dreams', 'Paris', 'Youth', 'Luxemburg', 'Baltic', 'Taylor', 'Klaproth', 'Bode', 'Martin Heidegger', 'Prussia', 'Linden', "Weimar's", 'Nietzsche', 'Vistula', 'Rudolf', 'Wetzlar', 'Petersburg', 'Swedenborg', 'Bologna', 'Vault', 'Mikhail', 'Droysen', "Arendt's", 'Fichte', 'Max', 'Kant', 'Austria', 'Rilke', 'Rome', 'Habermas', 'Friedrich', 'Goethe', 'Albertina', 'Frederick', 'Nazi', 'republican', 'Buddha', 'Gadamer', 'Aristotle', 'East'}
+Total time:  358.8702816963196
+Entity conversion done on 3_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_3_3_entity_conversion_hash.json. Check the entity.
+ Which philosopher is interred in the city that was once known as 096 but is now a 027n city sharing its name with his burial place?
+
+
+
+Done. Check final_query/id_3_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_3_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_3_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_3_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_3_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_3_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

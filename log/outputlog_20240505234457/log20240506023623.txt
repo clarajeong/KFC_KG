@@ -1,0 +1,1474 @@
+Got argument: Immanuel Kant, 4, 4_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop:  {'triplet': '("Lithuania", "northern border of", "Kaliningrad Oblast")', 'start word': 'Kaliningrad', 'end word': 'Lithuania', 'source': {'name': 'Königsberg', 'line': 31}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'lithuania'}}
+
+utils/question.py extract_hops(Lithuania, [], ['Immanuel Kant', 'Kaliningrad']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Lithuania_info.json file
+third_hop:  {'triplet': '("Lithuania", "was part of", "the larger state of Poland-Lithuania")', 'start word': 'Lithuania', 'end word': 'Poland', 'source': {'name': 'Lithuania', 'line': 45}, 'cpnet': {'start word': 'lithuania', 'end word': 'poland'}}
+
+utils/question.py extract_hops(Poland, [], ['Immanuel Kant', 'Kaliningrad', 'Lithuania']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Poland_info.json file
+extract_info(Poland) Start.
+utils/preprocess.py extract_info(): Checking good links on Poland
+Baltic Sea is Geography
+1 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Sudetes is Geography
+2 / 30 )  Sudetes Sudetes sudetes
+Carpathian Mountains is Geography
+3 / 30 )  Carpathian Mountains Carpathian Mountains carpathian_mountains
+Vistula is Geography
+4 / 30 )  Vistula Vistula vistula
+Lithuania is Geography
+5 / 30 )  Lithuania Lithuania lithuania
+Russia is Geography
+6 / 30 )  Russia Russia russia
+Belarus is Geography
+7 / 30 )  Belarus Belarus belarus
+Ukraine is Geography
+8 / 30 )  Ukraine Ukraine ukraine
+Slovakia is Geography
+9 / 30 )  Slovakia Slovakia slovakia
+Czech Republic is Geography
+10 / 30 )  Czech Republic Czech Republic czech_republic
+Germany is Geography
+11 / 30 )  Germany Germany germany
+Warsaw is Geography
+12 / 30 )  Warsaw Warsaw warsaw
+Kraków is Geography
+13 / 30 )  Kraków Kraków kraków
+Wrocław is Geography
+14 / 30 )  Wrocław Wrocław wrocław
+Łódź is Geography
+15 / 30 )  Łódź Łódź łódź
+Poznań is Geography
+16 / 30 )  Poznań Poznań poznań
+Gdańsk is Geography
+17 / 30 )  Gdańsk Gdańsk gdańsk
+Nazi Germany is Geography
+18 / 30 )  Germany Nazi Germany nazi_germany
+Soviet Union is Geography
+19 / 30 )  Soviet Union Soviet Union soviet_union
+Polish People's Republic is Geography
+20 / 30 )  Polish People's Republic Polish People's Republic polish_people's_republic
+Sejm is Geography
+21 / 30 )  Sejm Sejm sejm
+World Trade Organization is Geography
+22 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+Warta is Geography
+23 / 30 )  Warta River Warta warta
+Homo erectus is Animal
+24 / 30 )  Homo erectus Homo erectus homo_erectus
+Human is Animal
+25 / 30 )  Homo sapiens Human human
+Kuyavia is Geography
+26 / 30 )  Kuyavia Kuyavia kujawy
+Kołobrzeg is Geography
+27 / 30 )  Kołobrzeg Kołobrzeg kolberg
+Lusatia is Geography
+28 / 30 )  Lusatia Lusatia lusatia
+Moravia is Geography
+29 / 30 )  Moravia Moravia moravia
+Kievan Rus' is Geography
+30 / 30 )  Kievan Rus' Kievan Rus' kievan_russia
+extract_triplet(Poland)
+Got GPT's response. String length : 2016
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea'], ['Sudetes', 'Sudetes', 'sudetes'], ['Carpathian Mountains', 'Carpathian Mountains', 'carpathian_mountains']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Vistula', 'Vistula', 'vistula']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Lithuania', 'Lithuania', 'lithuania'], ['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Belarus', 'Belarus', 'belarus'], ['Ukraine', 'Ukraine', 'ukraine']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Slovakia', 'Slovakia', 'slovakia'], ['Czech Republic', 'Czech Republic', 'czech_republic']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Germany', 'Germany', 'germany'], ['Germany', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Warsaw', 'Warsaw', 'warsaw']]
+subject_words:  [['Kraków', 'Kraków', 'kraków']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Wrocław', 'Wrocław', 'wrocław']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Łódź', 'Łódź', 'łódź']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Poznań', 'Poznań', 'poznań']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Gdańsk', 'Gdańsk', 'gdańsk']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Kuyavia', 'Kuyavia', 'kujawy']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Kołobrzeg', 'Kołobrzeg', 'kolberg']]
+object_words:  []
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  []
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Germany', 'Germany', 'germany'], ['Germany', 'Nazi Germany', 'nazi_germany'], ['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  []
+subject_words:  [["Polish People's Republic", "Polish People's Republic", "polish_people's_republic"]]
+object_words:  [['Warsaw', 'Warsaw', 'warsaw']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  []
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+subject_words:  [['Sejm', 'Sejm', 'sejm']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Homo erectus', 'Homo erectus', 'homo_erectus']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Homo sapiens', 'Human', 'human']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Lusatia', 'Lusatia', 'lusatia']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [["Kievan Rus'", "Kievan Rus'", 'kievan_russia']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Moravia', 'Moravia', 'moravia']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Vistula', 'Vistula', 'vistula']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [['Warta River', 'Warta', 'warta']]
+object_words:  [(None, 'Poland', 'poland')]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  []
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [(None, 'Poland', 'poland')]
+object_words:  []
+forth_hop:  {'triplet': '("Sejm", "is part of the bicameral legislature in", "Poland")', 'start word': 'Poland', 'end word': 'Sejm', 'source': {'name': 'Poland', 'line': 21}, 'cpnet': {'start word': 'poland', 'end word': 'sejm'}}
+generate_question(4_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Lithuania", "northern border of", "Kaliningrad Oblast")', '("Lithuania", "was part of", "the larger state of Poland-Lithuania")', '("Sejm", "is part of the bicameral legislature in", "Poland")'], ['Kaliningrad', 'Lithuania', 'Poland', 'Sejm'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Lithuania'), ('Lithuania', 'Poland'), ('Poland', 'Sejm')], Sejm, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Königsberg', 'line': 31}, {'name': 'Lithuania', 'line': 45}, {'name': 'Poland', 'line': 21}]) called
+GPT output is:  Q: What is one of the legislative assemblies in the country that was historically united with the nation whose northern boundary is shared with the city where philosopher Immanuel Kant is buried?
+A: Sejm
+final_choice(Sejm, options = 5) started
+[]
+entity_type(Sejm) called
+Sejm is Geography
+check_matchscore(Sejm, Sejm):  1.0
+check_matchscore(Sejm, National lower houses):  0.0
+choose_by_wiki_recur(National lower houses)
+   Pages in National lower houses: ['List of abolished lower houses', 'House of the People (Afghanistan)', "People's National Assembly", 'House of Representatives (Antigua and Barbuda)', 'Argentine Chamber of Deputies', 'Australian House of Representatives', 'National Council (Austria)', 'Council of Representatives (Bahrain)', 'House of Assembly of Barbados', 'House of Representatives (Belarus)', 'Chamber of Representatives (Belgium)', 'House of Representatives (Belize)', 'House of Assembly of Bermuda', 'National Assembly (Bhutan)', 'Chamber of Deputies (Brazil)', 'Pyithu Hluttaw', 'National Assembly (Burundi)', 'National Assembly (Cambodia)', 'National Assembly (Cameroon)', 'National Assembly (Central African Republic)', 'Central Legislative Assembly', 'Chamber of Deputies (Bolivia)', 'Chamber of Deputies of Chile', 'Chamber of Representatives of Colombia', 'National Assembly (Republic of the Congo)', 'House of Representatives (Egypt)', 'Chamber of Deputies (Equatorial Guinea)', 'House of Assembly of Eswatini', "House of Peoples' Representatives", 'National Assembly (France)', 'National Assembly of Gabon', 'House of Representatives (Grenada)', 'Chamber of Deputies (Haiti)', 'House of Commons of Canada', 'House of Representatives (Indonesia)', 'House of Representatives (Nepal)', 'Lok Sabha', 'Dáil Éireann', 'Chamber of Deputies (Italy)', 'National Assembly (Ivory Coast)', 'House of Representatives (Japan)', 'House of Representatives (Jordan)', 'National Assembly (Kenya)', 'Mäjilis', 'National Assembly (Lesotho)', 'House of Representatives of Liberia', 'National Assembly (Madagascar)', 'Dewan Rakyat', 'House of Keys', 'National Assembly (Mauritania)', 'Chamber of Deputies (Mexico)', 'House of Representatives (Morocco)', 'National Assembly (Namibia)', 'House of Representatives (Netherlands)', 'House of Representatives (Nigeria)', 'Consultative Assembly (Oman)', 'National Assembly of Pakistan', 'House of Delegates of Palau', 'Chamber of Deputies of Paraguay', 'House of Representatives of the Philippines', 'Sejm', 'Chamber of Deputies (Romania)', 'State Duma', 'Chamber of Deputies (Rwanda)', 'House of Assembly of Saint Lucia', 'National Assembly (Slovenia)', 'House of Representatives (Somaliland)', 'National Assembly of South Africa', 'House of Representatives (South Korea)', 'National Legislative Assembly (South Sudan)', 'Congress of Deputies', 'National Assembly of Sudan', 'National Council (Switzerland)', 'Assembly of Representatives (Tajikistan)', 'House of Representatives (Trinidad and Tobago)', 'Chamber of Deputies (Tunisia)', 'United States House of Representatives', 'Chamber of Representatives of Uruguay', 'Legislative Chamber of Uzbekistan', 'National Assembly of Zimbabwe']
+      House of Assembly of Bermuda in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini']
+      National Assembly (Cambodia) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)']
+      Chamber of Representatives (Belgium) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly']
+      House of Assembly of Eswatini in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)']
+      House of the People (Afghanistan) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)']
+      Central Legislative Assembly in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa']
+      Chamber of Deputies (Mexico) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)']
+      Chamber of Deputies (Rwanda) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)']
+      National Assembly of South Africa in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)']
+      Chamber of Deputies (Bolivia) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau']
+      National Assembly (Republic of the Congo) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)']
+      National Assembly (Central African Republic) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay']
+      House of Delegates of Palau in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)']
+      National Assembly (Mauritania) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)']
+      Chamber of Representatives of Uruguay in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)']
+      Assembly of Representatives (Tajikistan) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay']
+      Chamber of Deputies (Romania) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)']
+      National Assembly (Ivory Coast) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)']
+      Chamber of Deputies of Paraguay in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis']
+      National Assembly (France) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw']
+      National Council (Switzerland) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw']
+      Mäjilis in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile']
+      Pyithu Hluttaw in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon']
+      Chamber of Deputies of Chile in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)']
+      National Assembly of Gabon in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies']
+      National Assembly (Kenya) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)']
+      Congress of Deputies in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm']
+      House of Representatives (Nepal) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan']
+      Sejm in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)']
+      Legislative Chamber of Uzbekistan in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann']
+      House of Representatives (Egypt) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia']
+      Dáil Éireann in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)']
+      Chamber of Representatives of Colombia in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)']
+      National Assembly (Burundi) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)']
+      Council of Representatives (Bahrain) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)']
+      House of Representatives (Belize) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)']
+      House of Representatives (South Korea) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)']
+      Chamber of Deputies (Brazil) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)']
+      House of Representatives (Somaliland) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives']
+      United States House of Representatives in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)']
+      National Assembly (Bhutan) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)']
+      House of Representatives (Antigua and Barbuda) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)']
+      Lok Sabha in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha']
+      Dewan Rakyat in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat']
+      National Assembly (Madagascar) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)']
+      Australian House of Representatives in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives']
+      National Assembly of Zimbabwe in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe']
+      National Assembly (Cameroon) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe', 'National Assembly (Cameroon)']
+      House of Representatives (Trinidad and Tobago) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe', 'National Assembly (Cameroon)', 'House of Representatives (Trinidad and Tobago)']
+      National Council (Austria) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe', 'National Assembly (Cameroon)', 'House of Representatives (Trinidad and Tobago)', 'National Council (Austria)']
+      Chamber of Deputies (Tunisia) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe', 'National Assembly (Cameroon)', 'House of Representatives (Trinidad and Tobago)', 'National Council (Austria)', 'Chamber of Deputies (Tunisia)']
+      House of Representatives (Japan) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe', 'National Assembly (Cameroon)', 'House of Representatives (Trinidad and Tobago)', 'National Council (Austria)', 'Chamber of Deputies (Tunisia)', 'House of Representatives (Japan)']
+      National Assembly (Slovenia) in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe', 'National Assembly (Cameroon)', 'House of Representatives (Trinidad and Tobago)', 'National Council (Austria)', 'Chamber of Deputies (Tunisia)', 'House of Representatives (Japan)', 'National Assembly (Slovenia)']
+      National Assembly of Sudan in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe', 'National Assembly (Cameroon)', 'House of Representatives (Trinidad and Tobago)', 'National Council (Austria)', 'Chamber of Deputies (Tunisia)', 'House of Representatives (Japan)', 'National Assembly (Slovenia)', 'National Assembly of Sudan']
+      House of Keys in ['House of Assembly of Bermuda', 'National Assembly (Cambodia)', 'Chamber of Representatives (Belgium)', 'House of Assembly of Eswatini', 'House of the People (Afghanistan)', 'Central Legislative Assembly', 'Chamber of Deputies (Mexico)', 'Chamber of Deputies (Rwanda)', 'National Assembly of South Africa', 'Chamber of Deputies (Bolivia)', 'National Assembly (Republic of the Congo)', 'National Assembly (Central African Republic)', 'House of Delegates of Palau', 'National Assembly (Mauritania)', 'Chamber of Representatives of Uruguay', 'Assembly of Representatives (Tajikistan)', 'Chamber of Deputies (Romania)', 'National Assembly (Ivory Coast)', 'Chamber of Deputies of Paraguay', 'National Assembly (France)', 'National Council (Switzerland)', 'Mäjilis', 'Pyithu Hluttaw', 'Chamber of Deputies of Chile', 'National Assembly of Gabon', 'National Assembly (Kenya)', 'Congress of Deputies', 'House of Representatives (Nepal)', 'Sejm', 'Legislative Chamber of Uzbekistan', 'House of Representatives (Egypt)', 'Dáil Éireann', 'Chamber of Representatives of Colombia', 'National Assembly (Burundi)', 'Council of Representatives (Bahrain)', 'House of Representatives (Belize)', 'House of Representatives (South Korea)', 'Chamber of Deputies (Brazil)', 'House of Representatives (Somaliland)', 'United States House of Representatives', 'National Assembly (Bhutan)', 'House of Representatives (Antigua and Barbuda)', 'Lok Sabha', 'Dewan Rakyat', 'National Assembly (Madagascar)', 'Australian House of Representatives', 'National Assembly of Zimbabwe', 'National Assembly (Cameroon)', 'House of Representatives (Trinidad and Tobago)', 'National Council (Austria)', 'Chamber of Deputies (Tunisia)', 'House of Representatives (Japan)', 'National Assembly (Slovenia)', 'National Assembly of Sudan', 'House of Keys']
+['National Assembly (France)', 'Dáil Éireann', 'United States House of Representatives', 'House of Keys']
+Ended after 2.5 hierarchy
+(2.5, ['Dáil Éireann', 'United States House of Representatives', 'National Assembly (France)', 'House of Keys'])
+
+extract_info(Dáil Éireann) Start.
+utils/preprocess.py extract_info(): Checking good links on Dáil Éireann
+Seanad Éireann is Geography
+1 / 30 )  Seanad Éireann Seanad Éireann seanad_éireann
+Dublin is Geography
+2 / 30 )  Dublin Dublin dublin
+Republic of Ireland is Geography
+3 / 30 )  Ireland Republic of Ireland republic_of_ireland
+Bulgaria is Geography
+4 / 30 )  Bulgaria Bulgaria bulgaria
+Czech Republic is Geography
+5 / 30 )  Czech Republic Czech Republic czech_republic
+Denmark is Geography
+6 / 30 )  Denmark Denmark denmark
+Finland is Geography
+7 / 30 )  Finland Finland finland
+Hungary is Geography
+8 / 30 )  Hungary Hungary hungary
+Latvia is Geography
+9 / 30 )  Latvia Latvia latvia
+Lithuania is Geography
+10 / 30 )  Lithuania Lithuania lithuania
+Sweden is Geography
+11 / 30 )  Sweden Sweden sweden
+Irish Republic is Geography
+12 / 30 )  Irish Republic Irish Republic irish_republic
+Irish Free State is Geography
+13 / 30 )  Irish Free State Irish Free State irish_free_state
+House of Representatives is Geography
+14 / 30 )  House of Representatives House of Representatives house_of_representatives
+House of Commons of the United Kingdom is Geography
+15 / 30 )  House of Commons of the United Kingdom House of Commons of the United Kingdom british_house_of_commons
+Parliament of the United Kingdom is Geography
+16 / 30 )  United Kingdom parliament Parliament of the United Kingdom british_parliament
+extract_triplet(Dáil Éireann)
+Got GPT's response. String length : 2317
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  []
+object_words:  [['Seanad Éireann', 'Seanad Éireann', 'seanad_éireann']]
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  [['Dublin', 'Dublin', 'dublin']]
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  [['Ireland', 'Republic of Ireland', 'republic_of_ireland']]
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  [['Sweden', 'Sweden', 'sweden']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Irish Republic', 'Irish Republic', 'irish_republic']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Irish Free State', 'Irish Free State', 'irish_free_state']]
+object_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+subject_words:  [['Irish Free State', 'Irish Free State', 'irish_free_state']]
+object_words:  [['Ireland', 'Republic of Ireland', 'republic_of_ireland']]
+subject_words:  [['Ireland', 'Republic of Ireland', 'republic_of_ireland']]
+object_words:  []
+subject_words:  [['Ireland', 'Republic of Ireland', 'republic_of_ireland']]
+object_words:  [['Ireland', 'Republic of Ireland', 'republic_of_ireland']]
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  [['House of Commons of the United Kingdom', 'House of Commons of the United Kingdom', 'british_house_of_commons']]
+object_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+subject_words:  [['United Kingdom parliament', 'Parliament of the United Kingdom', 'british_parliament']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+subject_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Dáil Éireann', 'dáil_éireann')]
+['Please note that there\'s a Type 1 and Type 2 requirement for triplets which seemed identical in the task description. I proceeded with all triplets following a format where "<Subject>" contains the "Main Keyword" and "<Object>" contains one of the "Important Keywords".']
+extract_info(United States House of Representatives) Start.
+utils/preprocess.py extract_info(): Checking good links on United States House of Representatives
+United States Congress is Geography
+1 / 30 )  United States Congress United States Congress united_states_congress
+United States Senate is Geography
+2 / 30 )  Senate United States Senate united_states_senate
+United States is Geography
+3 / 30 )  United States United States united_states
+Alaska is Geography
+4 / 30 )  Alaska Alaska alaska
+Hawaii is Geography
+5 / 30 )  Hawaii Hawaii hawaii
+James Madison is People
+6 / 30 )  James Madison James Madison james_madison
+Alexander Hamilton is People
+7 / 30 )  Alexander Hamilton Alexander Hamilton alexander_hamilton
+Rhode Island is Geography
+8 / 30 )  Rhode Island Rhode Island rhode_island
+Virginia is Geography
+9 / 30 )  Virginia Virginia virginia
+Massachusetts is Geography
+10 / 30 )  Massachusetts Massachusetts massachusetts
+Pennsylvania is Geography
+11 / 30 )  Pennsylvania Pennsylvania pennsylvania
+Northeastern United States is Geography
+12 / 30 )  North Northeastern United States northeastern_united_states
+Andrew Johnson is People
+13 / 30 )  Andrew Johnson Andrew Johnson andrew_johnson
+Franklin D. Roosevelt is People
+14 / 30 )  Franklin D. Roosevelt Franklin D. Roosevelt franklin_d_roosevelt
+Bill Clinton is People
+15 / 30 )  Bill Clinton Bill Clinton bill_clinton
+Nancy Pelosi is People
+16 / 30 )  Nancy Pelosi Nancy Pelosi nancy_pelosi
+Washington, D.C. is Geography
+17 / 30 )  District of Columbia Washington, D.C. district_of_columbia
+Puerto Rico is Geography
+18 / 30 )  Puerto Rico Puerto Rico puerto_rico
+American Samoa is Geography
+19 / 30 )  American Samoa American Samoa american_samoa
+Guam is Geography
+20 / 30 )  Guam Guam guam
+Northern Mariana Islands is Geography
+21 / 30 )  Northern Mariana Islands Northern Mariana Islands northern_mariana_islands
+United States Virgin Islands is Geography
+22 / 30 )  U.S. Virgin Islands United States Virgin Islands united_states_virgin_islands
+Supreme Court of the United States is Geography
+23 / 30 )  Supreme Court Supreme Court of the United States united_states_supreme_court
+Louisiana is Geography
+24 / 30 )  Louisiana Louisiana louisiana
+California is Geography
+25 / 30 )  California California california
+San Francisco is Geography
+26 / 30 )  San Francisco San Francisco san_francisco
+Library of Congress is Geography
+27 / 30 )  Library of Congress Library of Congress library_of_congress
+Woodrow Wilson is People
+28 / 30 )  Woodrow Wilson Woodrow Wilson woodrow_wilson
+Parliament of the United Kingdom is Geography
+29 / 30 )  British Parliament Parliament of the United Kingdom british_parliament
+House of Commons of the United Kingdom is Geography
+30 / 30 )  House of Commons House of Commons of the United Kingdom british_house_of_commons
+extract_triplet(United States House of Representatives)
+Got GPT's response. String length : 3233
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  [['United States Congress', 'United States Congress', 'united_states_congress'], ['United States', 'United States', 'united_states']]
+['', 'United States House of Representatives', 'comprises with', 'Senate the bicameral legislature of', 'United States', '']
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  []
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  []
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  [['Alaska', 'Alaska', 'alaska'], ['Hawaii', 'Hawaii', 'hawaii']]
+subject_words:  [['District of Columbia', 'Washington, D.C.', 'district_of_columbia']]
+object_words:  []
+subject_words:  [['California', 'California', 'california']]
+object_words:  []
+subject_words:  [['North', 'Northeastern United States', 'northeastern_united_states']]
+object_words:  []
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [['James Madison', 'James Madison', 'james_madison']]
+object_words:  []
+subject_words:  [['Rhode Island', 'Rhode Island', 'rhode_island']]
+object_words:  []
+subject_words:  [['Virginia', 'Virginia', 'virginia']]
+object_words:  [['Pennsylvania', 'Pennsylvania', 'pennsylvania']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['North', 'Northeastern United States', 'northeastern_united_states']]
+object_words:  []
+subject_words:  [['Andrew Johnson', 'Andrew Johnson', 'andrew_johnson']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Bill Clinton', 'Bill Clinton', 'bill_clinton']]
+object_words:  []
+subject_words:  [['Nancy Pelosi', 'Nancy Pelosi', 'nancy_pelosi']]
+object_words:  []
+subject_words:  [['District of Columbia', 'Washington, D.C.', 'district_of_columbia']]
+object_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+subject_words:  []
+object_words:  []
+subject_words:  [['United States', 'United States', 'united_states'], ['Supreme Court', 'Supreme Court of the United States', 'united_states_supreme_court']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Louisiana', 'Louisiana', 'louisiana']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Senate', 'United States Senate', 'united_states_senate']]
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  []
+subject_words:  [(None, 'United States House of Representatives', 'united_states_house_of_representatives'), ['United States', 'United States', 'united_states']]
+object_words:  []
+extract_info(House of Keys) Start.
+utils/preprocess.py extract_info(): Checking good links on House of Keys
+Tynwald is Geography
+1 / 30 )  Tynwald Tynwald tynwald
+Isle of Man is Geography
+2 / 30 )  Isle of Man Isle of Man isle_of_man
+Old House of Keys is Geography
+3 / 30 )  Old House of Keys Old House of Keys house_of_keys
+Guernsey is Geography
+4 / 30 )  Guernsey Guernsey guernsey
+Alderney is Geography
+5 / 30 )  Alderney Alderney alderney
+Sark is Geography
+6 / 30 )  Sark Sark sark
+extract_triplet(House of Keys)
+Got GPT's response. String length : 502
+subject_words:  [(None, 'House of Keys', 'house_of_keys')]
+object_words:  [['Tynwald', 'Tynwald', 'tynwald']]
+subject_words:  [(None, 'House of Keys', 'house_of_keys')]
+object_words:  [['Isle of Man', 'Isle of Man', 'isle_of_man']]
+subject_words:  [(None, 'House of Keys', 'house_of_keys')]
+object_words:  [['Isle of Man', 'Isle of Man', 'isle_of_man']]
+subject_words:  [(None, 'House of Keys', 'house_of_keys'), ['Old House of Keys', 'Old House of Keys', 'house_of_keys']]
+object_words:  [(None, 'House of Keys', 'house_of_keys')]
+subject_words:  [(None, 'House of Keys', 'house_of_keys')]
+object_words:  [(None, 'House of Keys', 'house_of_keys'), ['Old House of Keys', 'Old House of Keys', 'house_of_keys']]
+subject_words:  [(None, 'House of Keys', 'house_of_keys')]
+object_words:  [['Sark', 'Sark', 'sark']]
+extract_info(National Assembly (France)) Start.
+utils/preprocess.py extract_info(): Checking good links on National Assembly (France)
+Palace of Versailles is Geography
+1 / 30 )  Palace of Versailles Palace of Versailles palace_of_versailles
+Seine is Geography
+2 / 30 )  Seine Seine seine
+Jacques Chirac is People
+3 / 30 )  Jacques Chirac Jacques Chirac jacques_chirac
+Charles de Gaulle is People
+4 / 30 )  Charles de Gaulle Charles de Gaulle charles_de_gaulle
+Saint Pierre and Miquelon is Geography
+5 / 30 )  Saint Pierre and Miquelon Saint Pierre and Miquelon saint_pierre_and_miquelon
+Metropolitan France is Geography
+6 / 30 )  metropolitan France Metropolitan France metropolitan_france
+extract_triplet(National Assembly (France))
+Got GPT's response. String length : 714
+subject_words:  []
+object_words:  []
+subject_words:  [['Palace of Versailles', 'Palace of Versailles', 'palace_of_versailles']]
+object_words:  []
+subject_words:  []
+object_words:  [['Seine', 'Seine', 'seine']]
+subject_words:  []
+object_words:  [['Jacques Chirac', 'Jacques Chirac', 'jacques_chirac']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Charles de Gaulle', 'Charles de Gaulle', 'charles_de_gaulle']]
+object_words:  []
+subject_words:  []
+object_words:  [['Saint Pierre and Miquelon', 'Saint Pierre and Miquelon', 'saint_pierre_and_miquelon']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['metropolitan France', 'Metropolitan France', 'metropolitan_france']]
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Lithuania", "was part of", "the larger state of Poland-Lithuania")\n', '("Sejm", "is part of the bicameral legislature in", "Poland")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Lithuania", "is located in", "the Baltic region of Europe")\n', '("Lithuania", "lies on", "the eastern shore of the Baltic Sea")\n', '("Lithuania", "borders", "Latvia to the north")\n', '("Lithuania", "borders", "Belarus to the east and south")\n', '("Lithuania", "borders", "Poland to the south")\n', '("Lithuania", "borders", "Russia to the southwest")\n', '("Lithuania", "has a maritime border with", "Sweden to the west")\n', '("Vilnius", "is the capital and largest city of", "Lithuania")\n', '("Kaunas", "is a major city in", "Lithuania")\n', '("Klaipėda", "is a major city in", "Lithuania")\n', '("Šiauliai", "is a major city in", "Lithuania")\n', '("Panevėžys", "is a major city in", "Lithuania")\n', '("Lithuanians", "speak", "Lithuanian")\n', '("Lithuanian language", "is part of", "the Baltic branch of the Indo-European language family")\n', '("Lithuania", "was united by", "Mindaugas in 1230s")\n', '("Kingdom of Lithuania", "was formed by", "Mindaugas on 6 July 1253")\n', '("Grand Duchy of Lithuania", "was the largest country in Europe by", "the 14th century")\n', '("Polish-Lithuanian Commonwealth", "was formed in", "1569")\n', '("Lithuanian independence", "was declared in", "1918")\n', '("Lithuanian Soviet Socialist Republic", "was proclaimed", "on 21 July 1940")\n', '("Lithuania", "reestablished its independence from", "the Soviet Union on 11 March 1990")\n', '("Lithuania", "is a member of", "the European Union")\n', '("Lithuania", "is a member of", "the Council of Europe")\n', '("Lithuania", "is a member of", "NATO")\n', '("Lithuania", "is a member of", "the eurozone")\n', '("Lithuania", "is a member of", "the Nordic Investment Bank")\n', '("Lithuania", "is a member of", "the Schengen Agreement")\n', '("Lithuania", "is a member of", "OECD")\n', '("Lithuania", "participates in", "the Nordic-Baltic Eight regional co-operation format")\n', '("Lietuva", "is recorded in", "the Quedlinburg Chronicle of 9 March 1009")\n', '("Daugava", "is associated with", "Lithuanian history and the early state")\n', '("Lithuania", "experienced", "raids by the Vikings in the 9th to 11th centuries")\n', '("Kievan Rus\'", "collected tribute from", "Lithuanian territories in the 10–11th centuries")\n', '("The Battle of Saulė", "took place near", "Šiauliai")\n', '("Kyiv", "was brought under the control of", "the expanding Grand Duchy of Lithuania after 1362")\n', '("Lithuania", "became a direct neighbor and rival of", "the Grand Duchy of Moscow")\n', '("Tsar Boris Godunov", "extended a truce with", "the Polish–Lithuanian Commonwealth in 1600")\n', '("German Empire", "was associated with", "Lithuania during World War I")\n', '("Courland", "was occupied by", "Germany during World War I")\n', '("Lithuanian Soviet Socialist Republic", "was established after", "World War II")\n', '("East Prussia", "is related to", "Germany and Lithuania\'s historical context")\n', '("Lithuania", "joined the", "European Union\'s single currency on 1 January 2015")\n', '("Lithuania", "joined", "OECD on 4 July 2018")\n', '("Denmark", "collected tribute at times from", "coastal Balts during the 9–11th centuries")\n', '("Lithuania", "was part of", "the Russian Empire after the partitions")\n', '("Italy", "has historical connections with", "Nobles from Lithuania")\n', '("Switzerland", "Lithuanian noblemen usually hired chefs from", "Switzerland during historical times")\n', '("Moscow", "is a significant historical reference regarding", "Lithuania")\n', '("Lithuanian language", "has influences from", "Italian artists")\n', '("Daugavpils", "is associated with", "Lithuanian territory during the Grand Duchy of Lithuania")\n', '("Poland", "extends from", "the Baltic Sea in the north to the Sudetes and Carpathian Mountains in the south")\n', '("Poland", "longest river is", "the Vistula")\n', '("Poland", "is bordered by", "Lithuania and Russia to the northeast")\n', '("Poland", "is bordered by", "Belarus and Ukraine to the east")\n', '("Poland", "is bordered by", "Slovakia and the Czech Republic to the south")\n', '("Poland", "is bordered by", "Germany to the west")\n', '("Poland", "capital and largest metropolis is", "Warsaw")\n', '("Kraków", "is a major city in", "Poland")\n', '("Wrocław", "is a major city in", "Poland")\n', '("Łódź", "is a major city in", "Poland")\n', '("Poznań", "is a major city in", "Poland")\n', '("Gdańsk", "is a major city in", "Poland")\n', '("Kuyavia", "early evidence of European cheesemaking discovered in", "Poland")\n', '("Kołobrzeg", "is one of the dioceses established by", "Bolesław the Brave")\n', '("Poland", "was part of", "the Polish–Lithuanian Commonwealth")\n', '("Poland", "faced the invasion of", "Germany and the Soviet Union marking the beginning of World War II")\n', '("Poland", "was forced into", "the Eastern Bloc")\n', '("Polish People\'s Republic", "was a signatory of", "the Warsaw Pact")\n', '("Poland", "re-established itself as", "a parliamentary republic in 1989")\n', '("Poland", "is a member of", "World Trade Organization")\n', '("Homo erectus", "settled in what was to become", "Poland")\n', '("Homo sapiens", "arrival in", "Poland coincided with the end of the Last Glacial Period")\n', '("Lusatia", "expansion of", "in Poland during Bronze Age and Early Iron Age")\n', '("Kievan Rus\'", "Bolesław expanded the realm by seizing parts in", "Poland")\n', '("Moravia", "parts seized by", "Bolesław as expansion of Poland")\n', '("Vistula", "lowest point in", "Poland is situated at Raczki Elbląskie") \n', '("Warta River", "tribe Polans who inhabited the basin of", "in present-day Poland")\n', '("Poland", "covers an area of", "312,722 km2")\n', '("Poland", "has coastline along", "the Baltic Sea")\n', '("Poland", "is the ninth-largest country in", "Europe")\n', '("Dáil Éireann", "is the lower house and principal chamber of", "Oireachtas")\n', '("Oireachtas", "includes", "Seanad Éireann")\n', '("Dáil Éireann", "has power to pass", "any law")\n', '("Dáil Éireann", "can nominate and remove", "Taoiseach")\n', '("Dáil Éireann", "meets in", "Leinster House in Dublin")\n', '("Dáil Éireann", "maintains continuity with", "the First Dáil established in 1919")\n', '("Dáil Éireann", "consists of", "160 members")\n', '("Dáil Éireann\'s members", "represent", "39 constituencies")\n', '("Dáil Éireann", "employs electoral system known as", "proportional representation by means of the single transferable vote")\n', '("Composition of Dáil Éireann", "is set within limits of", "the Constitution of Ireland")\n', '("Dáil Éireann", "has an average representation ratio similar to", "Bulgaria, Czech Republic, Denmark, Finland, Hungary, Latvia, Lithuania, and Sweden")\n', '("Electoral (Amendment) Act 2023", "will change the number of TDs to", "174")\n', '("First Dáil", "was established as the single-chamber parliament of", "Irish Republic")\n', '("Dáil became the lower house of", "the Irish Free State", "after 1921 Anglo-Irish Treaty")\n', '("Article of Constitution of the Irish Free State", "set the maximum term for", "Dáil Éireann")\n', '("Irish Free State", "was replaced by", "Ireland")\n', '("Constitution of Ireland", "states that Dáil Éireann shall not continue longer than", "seven years")\n', '("President of Ireland", "may refer a bill to", "Supreme Court of Ireland")\n', '("Dáil Éireann", "approves the nomination of", "Taoiseach")\n', '("Dáil Éireann", "has exclusive power to", "nominate Comptroller and Auditor General")\n', '("Dáil Éireann", "votes using", "electronic voting system")\n', '("House of Commons of the United Kingdom", "preceded", "Dáil Éireann")\n', '("United Kingdom parliament", "established the Parliament of Southern Ireland", "to grant limited home rule")\n', '("First Dáil", "is recognised in British legal theory as precursor to", "Dáil Éireann")\n', '("Dáil Éireann", "was first established in", "1919")\n', '("Modern Irish state", "retained the title Oireachtas and lower house", "Dáil Éireann")\n', '("United States House of Representatives", "is the lower chamber of", "United States Congress")\n', '("United States House of Representatives", "has exclusive powers including", "initiating revenue bills")\n', '("United States House of Representatives", "has the power to", "impeach federal officers")\n', '("United States House of Representatives", "has the power to", "elect the president if no majority in Electoral College")\n', '("House members", "serve a fixed term of", "two years")\n', '("House\'s composition", "was established by", "United States Constitution")\n', '("United States House of Representatives", "is composed of representatives from", "single-member congressional districts")\n', '("Each state", "is entitled to at least", "one representative")\n', '("United States House of Representatives", "number of representatives was temporarily increased to", "437 with the admissions of Alaska and Hawaii")\n', '("District of Columbia and territories such as", "Puerto Rico, American Samoa, Guam, Northern Mariana Islands, and U.S. Virgin Islands", "are represented by non-voting delegates")\n', '("California", "has the largest delegation with", "52 representatives")\n', '("Alaska, Delaware, North Dakota, South Dakota, Vermont, Wyoming", "each have", "one representative")\n', '("United States House of Representatives", "meets in", "the south wing of United States Capitol")\n', '("James Madison and", "Alexander Hamilton", "initiated the Constitutional Convention")\n', '("Rhode Island", "did not send delegates to", "Constitutional Convention")\n', '("Virginia Plan", "was supported by delegates from large states like", "Virginia, Massachusetts, and Pennsylvania")\n', '("Connecticut Compromise", "established the House would represent", "population")\n', '("House\'s conflict with", "Senate", "included issues like slavery")\n', '("North", "dominated the", "House of Representatives")\n', '("Andrew Johnson", "was the only southern senator not to resign", "during the Civil War")\n', '("Franklin D. Roosevelt\'s administration", "saw Democrats winning large majorities in", "House of Representatives")\n', '("Bill Clinton and Gingrich-led House", "agreed on", "first balanced federal budget in decades")\n', '("Nancy Pelosi", "was elected as the", "first female speaker")\n', '("District of Columbia and territories", "are not represented by voting members in", "United States House of Representatives")\n', '("Redistricting", "remains the power of state legislatures and", "is subject to rules of equality in population")\n', '("United States Supreme Court", "holds gerrymandering to be a", "political question")\n', '("Article I, Section 2 of the Constitution", "sets qualifications for", "representatives")\n', '("Elections for representatives", "are held every", "two years")\n', '("Louisiana", "holds an all-party primary followed by", "runoff if no majority")\n', '("House", "has exclusive powers such as", "raising revenue and impeachment")\n', '("House", "engages in checks and balances with", "Senate and President")\n', '("United States House of Representatives", "has had to choose a president twice under the Twelfth Amendment", "")\n', '("United States House of Representatives", "has impeached", "Andrew Johnson, Bill Clinton, Donald Trump")\n', '("House of Keys", "is the lower house of", "Tynwald")\n', '("House of Keys", "is part of the parliament of", "Isle of Man")\n', '("House of Keys", "members are elected from", "constituencies based on the Isle of Man")\n', '("Old House of Keys", "was the meeting place for", "House of Keys until 1874")\n', '("House of Keys", "met in", "Old House of Keys in Castletown on 14 March 2017")\n', '("House of Keys", "has legislative connection with", "Guernsey, Alderney, and Sark through the 1911 Encyclopædia Britannica reference")\n', '("National Assembly", "is the lower house of", "the bicameral French Parliament")\n', '("Palace of Versailles", "is the meeting place for", "the Congress of the French Parliament")\n', '("National Assembly", "seats are located at", "the Palais Bourbon on the Seine")\n', '("National Assembly", "was last dissolved by", "President Jacques Chirac")\n', '("National Assembly", "can overthrow the executive by", "a motion of no confidence")\n', '("Charles de Gaulle", "dissolved", "the National Assembly")\n', '("deputy of", "represents", "Saint Pierre and Miquelon")\n', '("National Assembly", "members are known as", "députés")\n', '("National Assembly", "term lasts", "five years")\n', '("National Assembly", "deputies are elected from", "metropolitan France")\n']
+range(1, 258) 4
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Lithuania", "was part of", "the larger state of Poland-Lithuania")\n', '("Sejm", "is part of the bicameral legislature in", "Poland")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Lithuania", "is located in", "the Baltic region of Europe")\n', '("Lithuania", "lies on", "the eastern shore of the Baltic Sea")\n', '("Lithuania", "borders", "Latvia to the north")\n', '("Lithuania", "borders", "Belarus to the east and south")\n', '("Lithuania", "borders", "Poland to the south")\n', '("Lithuania", "borders", "Russia to the southwest")\n', '("Lithuania", "has a maritime border with", "Sweden to the west")\n', '("Vilnius", "is the capital and largest city of", "Lithuania")\n', '("Kaunas", "is a major city in", "Lithuania")\n', '("Klaipėda", "is a major city in", "Lithuania")\n', '("Šiauliai", "is a major city in", "Lithuania")\n', '("Panevėžys", "is a major city in", "Lithuania")\n', '("Lithuanians", "speak", "Lithuanian")\n', '("Lithuanian language", "is part of", "the Baltic branch of the Indo-European language family")\n', '("Lithuania", "was united by", "Mindaugas in 1230s")\n', '("Kingdom of Lithuania", "was formed by", "Mindaugas on 6 July 1253")\n', '("Grand Duchy of Lithuania", "was the largest country in Europe by", "the 14th century")\n', '("Polish-Lithuanian Commonwealth", "was formed in", "1569")\n', '("Lithuanian independence", "was declared in", "1918")\n', '("Lithuanian Soviet Socialist Republic", "was proclaimed", "on 21 July 1940")\n', '("Lithuania", "reestablished its independence from", "the Soviet Union on 11 March 1990")\n', '("Lithuania", "is a member of", "the European Union")\n', '("Lithuania", "is a member of", "the Council of Europe")\n', '("Lithuania", "is a member of", "NATO")\n', '("Lithuania", "is a member of", "the eurozone")\n', '("Lithuania", "is a member of", "the Nordic Investment Bank")\n', '("Lithuania", "is a member of", "the Schengen Agreement")\n', '("Lithuania", "is a member of", "OECD")\n', '("Lithuania", "participates in", "the Nordic-Baltic Eight regional co-operation format")\n', '("Lietuva", "is recorded in", "the Quedlinburg Chronicle of 9 March 1009")\n', '("Daugava", "is associated with", "Lithuanian history and the early state")\n', '("Lithuania", "experienced", "raids by the Vikings in the 9th to 11th centuries")\n', '("Kievan Rus\'", "collected tribute from", "Lithuanian territories in the 10–11th centuries")\n', '("The Battle of Saulė", "took place near", "Šiauliai")\n', '("Kyiv", "was brought under the control of", "the expanding Grand Duchy of Lithuania after 1362")\n', '("Lithuania", "became a direct neighbor and rival of", "the Grand Duchy of Moscow")\n', '("Tsar Boris Godunov", "extended a truce with", "the Polish–Lithuanian Commonwealth in 1600")\n', '("German Empire", "was associated with", "Lithuania during World War I")\n', '("Courland", "was occupied by", "Germany during World War I")\n', '("Lithuanian Soviet Socialist Republic", "was established after", "World War II")\n', '("East Prussia", "is related to", "Germany and Lithuania\'s historical context")\n', '("Lithuania", "joined the", "European Union\'s single currency on 1 January 2015")\n', '("Lithuania", "joined", "OECD on 4 July 2018")\n', '("Denmark", "collected tribute at times from", "coastal Balts during the 9–11th centuries")\n', '("Lithuania", "was part of", "the Russian Empire after the partitions")\n', '("Italy", "has historical connections with", "Nobles from Lithuania")\n', '("Switzerland", "Lithuanian noblemen usually hired chefs from", "Switzerland during historical times")\n', '("Moscow", "is a significant historical reference regarding", "Lithuania")\n', '("Lithuanian language", "has influences from", "Italian artists")\n', '("Daugavpils", "is associated with", "Lithuanian territory during the Grand Duchy of Lithuania")\n', '("Poland", "extends from", "the Baltic Sea in the north to the Sudetes and Carpathian Mountains in the south")\n', '("Poland", "longest river is", "the Vistula")\n', '("Poland", "is bordered by", "Lithuania and Russia to the northeast")\n', '("Poland", "is bordered by", "Belarus and Ukraine to the east")\n', '("Poland", "is bordered by", "Slovakia and the Czech Republic to the south")\n', '("Poland", "is bordered by", "Germany to the west")\n', '("Poland", "capital and largest metropolis is", "Warsaw")\n', '("Kraków", "is a major city in", "Poland")\n', '("Wrocław", "is a major city in", "Poland")\n', '("Łódź", "is a major city in", "Poland")\n', '("Poznań", "is a major city in", "Poland")\n', '("Gdańsk", "is a major city in", "Poland")\n', '("Kuyavia", "early evidence of European cheesemaking discovered in", "Poland")\n', '("Kołobrzeg", "is one of the dioceses established by", "Bolesław the Brave")\n', '("Poland", "was part of", "the Polish–Lithuanian Commonwealth")\n', '("Poland", "faced the invasion of", "Germany and the Soviet Union marking the beginning of World War II")\n', '("Poland", "was forced into", "the Eastern Bloc")\n', '("Polish People\'s Republic", "was a signatory of", "the Warsaw Pact")\n', '("Poland", "re-established itself as", "a parliamentary republic in 1989")\n', '("Poland", "is a member of", "World Trade Organization")\n', '("Homo erectus", "settled in what was to become", "Poland")\n', '("Homo sapiens", "arrival in", "Poland coincided with the end of the Last Glacial Period")\n', '("Lusatia", "expansion of", "in Poland during Bronze Age and Early Iron Age")\n', '("Kievan Rus\'", "Bolesław expanded the realm by seizing parts in", "Poland")\n', '("Moravia", "parts seized by", "Bolesław as expansion of Poland")\n', '("Vistula", "lowest point in", "Poland is situated at Raczki Elbląskie") \n', '("Warta River", "tribe Polans who inhabited the basin of", "in present-day Poland")\n', '("Poland", "covers an area of", "312,722 km2")\n', '("Poland", "has coastline along", "the Baltic Sea")\n', '("Poland", "is the ninth-largest country in", "Europe")\n', '("Dáil Éireann", "is the lower house and principal chamber of", "Oireachtas")\n', '("Oireachtas", "includes", "Seanad Éireann")\n', '("Dáil Éireann", "has power to pass", "any law")\n', '("Dáil Éireann", "can nominate and remove", "Taoiseach")\n', '("Dáil Éireann", "meets in", "Leinster House in Dublin")\n', '("Dáil Éireann", "maintains continuity with", "the First Dáil established in 1919")\n', '("Dáil Éireann", "consists of", "160 members")\n', '("Dáil Éireann\'s members", "represent", "39 constituencies")\n', '("Dáil Éireann", "employs electoral system known as", "proportional representation by means of the single transferable vote")\n', '("Composition of Dáil Éireann", "is set within limits of", "the Constitution of Ireland")\n', '("Dáil Éireann", "has an average representation ratio similar to", "Bulgaria, Czech Republic, Denmark, Finland, Hungary, Latvia, Lithuania, and Sweden")\n', '("Electoral (Amendment) Act 2023", "will change the number of TDs to", "174")\n', '("First Dáil", "was established as the single-chamber parliament of", "Irish Republic")\n', '("Dáil became the lower house of", "the Irish Free State", "after 1921 Anglo-Irish Treaty")\n', '("Article of Constitution of the Irish Free State", "set the maximum term for", "Dáil Éireann")\n', '("Irish Free State", "was replaced by", "Ireland")\n', '("Constitution of Ireland", "states that Dáil Éireann shall not continue longer than", "seven years")\n', '("President of Ireland", "may refer a bill to", "Supreme Court of Ireland")\n', '("Dáil Éireann", "approves the nomination of", "Taoiseach")\n', '("Dáil Éireann", "has exclusive power to", "nominate Comptroller and Auditor General")\n', '("Dáil Éireann", "votes using", "electronic voting system")\n', '("House of Commons of the United Kingdom", "preceded", "Dáil Éireann")\n', '("United Kingdom parliament", "established the Parliament of Southern Ireland", "to grant limited home rule")\n', '("First Dáil", "is recognised in British legal theory as precursor to", "Dáil Éireann")\n', '("Dáil Éireann", "was first established in", "1919")\n', '("Modern Irish state", "retained the title Oireachtas and lower house", "Dáil Éireann")\n', '("United States House of Representatives", "is the lower chamber of", "United States Congress")\n', '("United States House of Representatives", "has exclusive powers including", "initiating revenue bills")\n', '("United States House of Representatives", "has the power to", "impeach federal officers")\n', '("United States House of Representatives", "has the power to", "elect the president if no majority in Electoral College")\n', '("House members", "serve a fixed term of", "two years")\n', '("House\'s composition", "was established by", "United States Constitution")\n', '("United States House of Representatives", "is composed of representatives from", "single-member congressional districts")\n', '("Each state", "is entitled to at least", "one representative")\n', '("United States House of Representatives", "number of representatives was temporarily increased to", "437 with the admissions of Alaska and Hawaii")\n', '("District of Columbia and territories such as", "Puerto Rico, American Samoa, Guam, Northern Mariana Islands, and U.S. Virgin Islands", "are represented by non-voting delegates")\n', '("California", "has the largest delegation with", "52 representatives")\n', '("Alaska, Delaware, North Dakota, South Dakota, Vermont, Wyoming", "each have", "one representative")\n', '("United States House of Representatives", "meets in", "the south wing of United States Capitol")\n', '("James Madison and", "Alexander Hamilton", "initiated the Constitutional Convention")\n', '("Rhode Island", "did not send delegates to", "Constitutional Convention")\n', '("Virginia Plan", "was supported by delegates from large states like", "Virginia, Massachusetts, and Pennsylvania")\n', '("Connecticut Compromise", "established the House would represent", "population")\n', '("House\'s conflict with", "Senate", "included issues like slavery")\n', '("North", "dominated the", "House of Representatives")\n', '("Andrew Johnson", "was the only southern senator not to resign", "during the Civil War")\n', '("Franklin D. Roosevelt\'s administration", "saw Democrats winning large majorities in", "House of Representatives")\n', '("Bill Clinton and Gingrich-led House", "agreed on", "first balanced federal budget in decades")\n', '("Nancy Pelosi", "was elected as the", "first female speaker")\n', '("District of Columbia and territories", "are not represented by voting members in", "United States House of Representatives")\n', '("Redistricting", "remains the power of state legislatures and", "is subject to rules of equality in population")\n', '("United States Supreme Court", "holds gerrymandering to be a", "political question")\n', '("Article I, Section 2 of the Constitution", "sets qualifications for", "representatives")\n', '("Elections for representatives", "are held every", "two years")\n', '("Louisiana", "holds an all-party primary followed by", "runoff if no majority")\n', '("House", "has exclusive powers such as", "raising revenue and impeachment")\n', '("House", "engages in checks and balances with", "Senate and President")\n', '("United States House of Representatives", "has had to choose a president twice under the Twelfth Amendment", "")\n', '("United States House of Representatives", "has impeached", "Andrew Johnson, Bill Clinton, Donald Trump")\n', '("House of Keys", "is the lower house of", "Tynwald")\n', '("House of Keys", "is part of the parliament of", "Isle of Man")\n', '("House of Keys", "members are elected from", "constituencies based on the Isle of Man")\n', '("Old House of Keys", "was the meeting place for", "House of Keys until 1874")\n', '("House of Keys", "met in", "Old House of Keys in Castletown on 14 March 2017")\n', '("House of Keys", "has legislative connection with", "Guernsey, Alderney, and Sark through the 1911 Encyclopædia Britannica reference")\n', '("National Assembly", "is the lower house of", "the bicameral French Parliament")\n', '("Palace of Versailles", "is the meeting place for", "the Congress of the French Parliament")\n', '("National Assembly", "seats are located at", "the Palais Bourbon on the Seine")\n', '("National Assembly", "was last dissolved by", "President Jacques Chirac")\n', '("National Assembly", "can overthrow the executive by", "a motion of no confidence")\n', '("Charles de Gaulle", "dissolved", "the National Assembly")\n', '("deputy of", "represents", "Saint Pierre and Miquelon")\n', '("National Assembly", "members are known as", "députés")\n', '("National Assembly", "term lasts", "five years")\n', '("National Assembly", "deputies are elected from", "metropolitan France")\n']
+range(1, 258) 4
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Lithuania", "was part of", "the larger state of Poland-Lithuania")\n', '("Sejm", "is part of the bicameral legislature in", "Poland")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Lithuania", "is located in", "the Baltic region of Europe")\n', '("Lithuania", "lies on", "the eastern shore of the Baltic Sea")\n', '("Lithuania", "borders", "Latvia to the north")\n', '("Lithuania", "borders", "Belarus to the east and south")\n', '("Lithuania", "borders", "Poland to the south")\n', '("Lithuania", "borders", "Russia to the southwest")\n', '("Lithuania", "has a maritime border with", "Sweden to the west")\n', '("Vilnius", "is the capital and largest city of", "Lithuania")\n', '("Kaunas", "is a major city in", "Lithuania")\n', '("Klaipėda", "is a major city in", "Lithuania")\n', '("Šiauliai", "is a major city in", "Lithuania")\n', '("Panevėžys", "is a major city in", "Lithuania")\n', '("Lithuanians", "speak", "Lithuanian")\n', '("Lithuanian language", "is part of", "the Baltic branch of the Indo-European language family")\n', '("Lithuania", "was united by", "Mindaugas in 1230s")\n', '("Kingdom of Lithuania", "was formed by", "Mindaugas on 6 July 1253")\n', '("Grand Duchy of Lithuania", "was the largest country in Europe by", "the 14th century")\n', '("Polish-Lithuanian Commonwealth", "was formed in", "1569")\n', '("Lithuanian independence", "was declared in", "1918")\n', '("Lithuanian Soviet Socialist Republic", "was proclaimed", "on 21 July 1940")\n', '("Lithuania", "reestablished its independence from", "the Soviet Union on 11 March 1990")\n', '("Lithuania", "is a member of", "the European Union")\n', '("Lithuania", "is a member of", "the Council of Europe")\n', '("Lithuania", "is a member of", "NATO")\n', '("Lithuania", "is a member of", "the eurozone")\n', '("Lithuania", "is a member of", "the Nordic Investment Bank")\n', '("Lithuania", "is a member of", "the Schengen Agreement")\n', '("Lithuania", "is a member of", "OECD")\n', '("Lithuania", "participates in", "the Nordic-Baltic Eight regional co-operation format")\n', '("Lietuva", "is recorded in", "the Quedlinburg Chronicle of 9 March 1009")\n', '("Daugava", "is associated with", "Lithuanian history and the early state")\n', '("Lithuania", "experienced", "raids by the Vikings in the 9th to 11th centuries")\n', '("Kievan Rus\'", "collected tribute from", "Lithuanian territories in the 10–11th centuries")\n', '("The Battle of Saulė", "took place near", "Šiauliai")\n', '("Kyiv", "was brought under the control of", "the expanding Grand Duchy of Lithuania after 1362")\n', '("Lithuania", "became a direct neighbor and rival of", "the Grand Duchy of Moscow")\n', '("Tsar Boris Godunov", "extended a truce with", "the Polish–Lithuanian Commonwealth in 1600")\n', '("German Empire", "was associated with", "Lithuania during World War I")\n', '("Courland", "was occupied by", "Germany during World War I")\n', '("Lithuanian Soviet Socialist Republic", "was established after", "World War II")\n', '("East Prussia", "is related to", "Germany and Lithuania\'s historical context")\n', '("Lithuania", "joined the", "European Union\'s single currency on 1 January 2015")\n', '("Lithuania", "joined", "OECD on 4 July 2018")\n', '("Denmark", "collected tribute at times from", "coastal Balts during the 9–11th centuries")\n', '("Lithuania", "was part of", "the Russian Empire after the partitions")\n', '("Italy", "has historical connections with", "Nobles from Lithuania")\n', '("Switzerland", "Lithuanian noblemen usually hired chefs from", "Switzerland during historical times")\n', '("Moscow", "is a significant historical reference regarding", "Lithuania")\n', '("Lithuanian language", "has influences from", "Italian artists")\n', '("Daugavpils", "is associated with", "Lithuanian territory during the Grand Duchy of Lithuania")\n', '("Poland", "extends from", "the Baltic Sea in the north to the Sudetes and Carpathian Mountains in the south")\n', '("Poland", "longest river is", "the Vistula")\n', '("Poland", "is bordered by", "Lithuania and Russia to the northeast")\n', '("Poland", "is bordered by", "Belarus and Ukraine to the east")\n', '("Poland", "is bordered by", "Slovakia and the Czech Republic to the south")\n', '("Poland", "is bordered by", "Germany to the west")\n', '("Poland", "capital and largest metropolis is", "Warsaw")\n', '("Kraków", "is a major city in", "Poland")\n', '("Wrocław", "is a major city in", "Poland")\n', '("Łódź", "is a major city in", "Poland")\n', '("Poznań", "is a major city in", "Poland")\n', '("Gdańsk", "is a major city in", "Poland")\n', '("Kuyavia", "early evidence of European cheesemaking discovered in", "Poland")\n', '("Kołobrzeg", "is one of the dioceses established by", "Bolesław the Brave")\n', '("Poland", "was part of", "the Polish–Lithuanian Commonwealth")\n', '("Poland", "faced the invasion of", "Germany and the Soviet Union marking the beginning of World War II")\n', '("Poland", "was forced into", "the Eastern Bloc")\n', '("Polish People\'s Republic", "was a signatory of", "the Warsaw Pact")\n', '("Poland", "re-established itself as", "a parliamentary republic in 1989")\n', '("Poland", "is a member of", "World Trade Organization")\n', '("Homo erectus", "settled in what was to become", "Poland")\n', '("Homo sapiens", "arrival in", "Poland coincided with the end of the Last Glacial Period")\n', '("Lusatia", "expansion of", "in Poland during Bronze Age and Early Iron Age")\n', '("Kievan Rus\'", "Bolesław expanded the realm by seizing parts in", "Poland")\n', '("Moravia", "parts seized by", "Bolesław as expansion of Poland")\n', '("Vistula", "lowest point in", "Poland is situated at Raczki Elbląskie") \n', '("Warta River", "tribe Polans who inhabited the basin of", "in present-day Poland")\n', '("Poland", "covers an area of", "312,722 km2")\n', '("Poland", "has coastline along", "the Baltic Sea")\n', '("Poland", "is the ninth-largest country in", "Europe")\n', '("Dáil Éireann", "is the lower house and principal chamber of", "Oireachtas")\n', '("Oireachtas", "includes", "Seanad Éireann")\n', '("Dáil Éireann", "has power to pass", "any law")\n', '("Dáil Éireann", "can nominate and remove", "Taoiseach")\n', '("Dáil Éireann", "meets in", "Leinster House in Dublin")\n', '("Dáil Éireann", "maintains continuity with", "the First Dáil established in 1919")\n', '("Dáil Éireann", "consists of", "160 members")\n', '("Dáil Éireann\'s members", "represent", "39 constituencies")\n', '("Dáil Éireann", "employs electoral system known as", "proportional representation by means of the single transferable vote")\n', '("Composition of Dáil Éireann", "is set within limits of", "the Constitution of Ireland")\n', '("Dáil Éireann", "has an average representation ratio similar to", "Bulgaria, Czech Republic, Denmark, Finland, Hungary, Latvia, Lithuania, and Sweden")\n', '("Electoral (Amendment) Act 2023", "will change the number of TDs to", "174")\n', '("First Dáil", "was established as the single-chamber parliament of", "Irish Republic")\n', '("Dáil became the lower house of", "the Irish Free State", "after 1921 Anglo-Irish Treaty")\n', '("Article of Constitution of the Irish Free State", "set the maximum term for", "Dáil Éireann")\n', '("Irish Free State", "was replaced by", "Ireland")\n', '("Constitution of Ireland", "states that Dáil Éireann shall not continue longer than", "seven years")\n', '("President of Ireland", "may refer a bill to", "Supreme Court of Ireland")\n', '("Dáil Éireann", "approves the nomination of", "Taoiseach")\n', '("Dáil Éireann", "has exclusive power to", "nominate Comptroller and Auditor General")\n', '("Dáil Éireann", "votes using", "electronic voting system")\n', '("House of Commons of the United Kingdom", "preceded", "Dáil Éireann")\n', '("United Kingdom parliament", "established the Parliament of Southern Ireland", "to grant limited home rule")\n', '("First Dáil", "is recognised in British legal theory as precursor to", "Dáil Éireann")\n', '("Dáil Éireann", "was first established in", "1919")\n', '("Modern Irish state", "retained the title Oireachtas and lower house", "Dáil Éireann")\n', '("United States House of Representatives", "is the lower chamber of", "United States Congress")\n', '("United States House of Representatives", "has exclusive powers including", "initiating revenue bills")\n', '("United States House of Representatives", "has the power to", "impeach federal officers")\n', '("United States House of Representatives", "has the power to", "elect the president if no majority in Electoral College")\n', '("House members", "serve a fixed term of", "two years")\n', '("House\'s composition", "was established by", "United States Constitution")\n', '("United States House of Representatives", "is composed of representatives from", "single-member congressional districts")\n', '("Each state", "is entitled to at least", "one representative")\n', '("United States House of Representatives", "number of representatives was temporarily increased to", "437 with the admissions of Alaska and Hawaii")\n', '("District of Columbia and territories such as", "Puerto Rico, American Samoa, Guam, Northern Mariana Islands, and U.S. Virgin Islands", "are represented by non-voting delegates")\n', '("California", "has the largest delegation with", "52 representatives")\n', '("Alaska, Delaware, North Dakota, South Dakota, Vermont, Wyoming", "each have", "one representative")\n', '("United States House of Representatives", "meets in", "the south wing of United States Capitol")\n', '("James Madison and", "Alexander Hamilton", "initiated the Constitutional Convention")\n', '("Rhode Island", "did not send delegates to", "Constitutional Convention")\n', '("Virginia Plan", "was supported by delegates from large states like", "Virginia, Massachusetts, and Pennsylvania")\n', '("Connecticut Compromise", "established the House would represent", "population")\n', '("House\'s conflict with", "Senate", "included issues like slavery")\n', '("North", "dominated the", "House of Representatives")\n', '("Andrew Johnson", "was the only southern senator not to resign", "during the Civil War")\n', '("Franklin D. Roosevelt\'s administration", "saw Democrats winning large majorities in", "House of Representatives")\n', '("Bill Clinton and Gingrich-led House", "agreed on", "first balanced federal budget in decades")\n', '("Nancy Pelosi", "was elected as the", "first female speaker")\n', '("District of Columbia and territories", "are not represented by voting members in", "United States House of Representatives")\n', '("Redistricting", "remains the power of state legislatures and", "is subject to rules of equality in population")\n', '("United States Supreme Court", "holds gerrymandering to be a", "political question")\n', '("Article I, Section 2 of the Constitution", "sets qualifications for", "representatives")\n', '("Elections for representatives", "are held every", "two years")\n', '("Louisiana", "holds an all-party primary followed by", "runoff if no majority")\n', '("House", "has exclusive powers such as", "raising revenue and impeachment")\n', '("House", "engages in checks and balances with", "Senate and President")\n', '("United States House of Representatives", "has had to choose a president twice under the Twelfth Amendment", "")\n', '("United States House of Representatives", "has impeached", "Andrew Johnson, Bill Clinton, Donald Trump")\n', '("House of Keys", "is the lower house of", "Tynwald")\n', '("House of Keys", "is part of the parliament of", "Isle of Man")\n', '("House of Keys", "members are elected from", "constituencies based on the Isle of Man")\n', '("Old House of Keys", "was the meeting place for", "House of Keys until 1874")\n', '("House of Keys", "met in", "Old House of Keys in Castletown on 14 March 2017")\n', '("House of Keys", "has legislative connection with", "Guernsey, Alderney, and Sark through the 1911 Encyclopædia Britannica reference")\n', '("National Assembly", "is the lower house of", "the bicameral French Parliament")\n', '("Palace of Versailles", "is the meeting place for", "the Congress of the French Parliament")\n', '("National Assembly", "seats are located at", "the Palais Bourbon on the Seine")\n', '("National Assembly", "was last dissolved by", "President Jacques Chirac")\n', '("National Assembly", "can overthrow the executive by", "a motion of no confidence")\n', '("Charles de Gaulle", "dissolved", "the National Assembly")\n', '("deputy of", "represents", "Saint Pierre and Miquelon")\n', '("National Assembly", "members are known as", "députés")\n', '("National Assembly", "term lasts", "five years")\n', '("National Assembly", "deputies are elected from", "metropolitan France")\n']
+range(1, 258) 4
+{'id': '4_3', 'Question': ' What is one of the legislative assemblies in the country that was historically united with the nation whose northern boundary is shared with the city where philosopher Immanuel Kant is buried?\n', 'Answer': 'Sejm', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Dáil Éireann'}, {'label': 'B', 'text': 'Sejm'}, {'label': 'C', 'text': 'United States House of Representatives'}, {'label': 'D', 'text': 'House of Keys'}, {'label': 'E', 'text': 'National Assembly (France)'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'dáil_éireann'}, {'label': 'B', 'text': 'sejm'}, {'label': 'C', 'text': 'united_states_house_of_representatives'}, {'label': 'D', 'text': 'house_of_keys'}, {'label': 'E', 'text': 'assemblée_nationale'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: In which city is the philosopher Immanuel Kant buried?\nA1: Kaliningrad\n\n', '2: Which country shares its northern boundary with Kaliningrad Oblast?\nA2: Lithuania\n\n', '3: During the historical union, which country was Lithuania united with?\nA3: Poland\n\n', '4: What is the term for one of the two assemblies that comprise the national legislative body in Poland?\nA4: Sejm'], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Lithuania'), ('Lithuania', 'Poland'), ('Poland', 'Sejm')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'lithuania'), ('lithuania', 'poland'), ('poland', 'sejm')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Lithuania", "northern border of", "Kaliningrad Oblast")', '("Lithuania", "was part of", "the larger state of Poland-Lithuania")', '("Sejm", "is part of the bicameral legislature in", "Poland")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Königsberg', 'line': 31}, {'name': 'Lithuania', 'line': 45}, {'name': 'Poland', 'line': 21}], 'Question_triplet_answer': {100: [112, 114, 177, 179], 50: [48, 167, 171, 189], 25: [46, 73, 139, 218]}}
+time passed:  6320.044244527817
+Expected dollar:  0.005
+Kant is People
+Immanuel Kant is People
+Immanuel Kant's is People
+University of Königsberg is Geography
+United States is Geography
+House of Representatives is Geography
+Andrew Johnson is People
+Bill Clinton is People
+Donald Trump is People
+Riga is Geography
+Königsberg is Geography
+Charles de Gaulle is People
+Lithuania is Geography
+Klaipėda is Geography
+Gingrich is People
+Seanad Éireann is Geography
+Moscow is Geography
+Alaska is Geography
+Delaware is Geography
+North Dakota is Geography
+South Dakota is Geography
+Vermont is Geography
+Wyoming is Geography
+Frederick William III is People
+Napoleon is People
+Kraków is Geography
+Poland is Geography
+Leinster House is Geography
+Dublin is Geography
+Nancy Pelosi is People
+the Baltic Sea is Geography
+Sudetes is Geography
+Raczki Elbląskie is Geography
+Russia is Geography
+Samuel Taylor is People
+Germany is Geography
+Isle of Man is Geography
+France is Geography
+Duchy of Prussia is Geography
+Kievan Rus' is Geography
+Saint Pierre is Geography
+Lusatia is Geography
+Palace of Versailles is Geography
+Slovakia is Geography
+the Czech Republic is Geography
+Lithuanian Soviet Socialist Republic is Geography
+the Palais Bourbon is Geography
+Seine is Geography
+Hawaii is Geography
+Berlin is Geography
+Vilnius is Geography
+Rhode Island is Geography
+District of Columbia is Geography
+Sweden is Geography
+Bolesław the Brave is People
+Éireann is Geography
+Switzerland is Geography
+Breslau is Geography
+Napoleon Bonaparte is People
+Johann Georg Kant is People
+Warta River is Geography
+Belarus is Geography
+Ukraine is Geography
+Panevėžys is Geography
+World Trade Organization is Geography
+Emanuel Swedenborg's Dreams of a Spirit is People
+Warsaw is Geography
+Kaunas is Geography
+United Kingdom is Geography
+the Parliament of Southern Ireland is Incident
+United States Supreme Court is Geography
+the Isle of Man is Geography
+Old House of Keys is Geography
+Denmark is Geography
+Latvia is Geography
+Daugava is Geography
+James Madison is People
+Alexander Hamilton is People
+the Constitutional Convention is Geography
+Alexander Wendt's is People
+Puerto Rico is Geography
+American Samoa is Geography
+Guam is Geography
+Northern Mariana Islands is Geography
+U.S. is Geography
+Jean Piaget is People
+Carl Gustav Jung is People
+Bulgaria is Geography
+Czech Republic is Geography
+Finland is Geography
+Hungary is Geography
+Virginia is Geography
+Massachusetts is Geography
+Pennsylvania is Geography
+Irish Free State is Geography
+Ireland is Geography
+Full Professor of Logic and Metaphysics at University of Königsberg is People
+entities:  {'Old', 'Dakota', 'Belarus', 'Versailles', 'American', 'Georg', 'Johann', 'Bourbon', 'Free', 'Czech', 'Berlin', 'Southern', 'Vilnius', 'German', 'Organization', 'James', 'Islands', 'Prussia', 'Dreams', 'Guam', 'Bight', 'Samuel', 'Madison', 'Alexander', 'Puerto', 'Slovakia', 'Irish', 'Leinster', 'Man', 'Republic', 'OECD', 'Island', 'Hamilton', 'Johnson', 'III', 'Hungary', "Rus'", 'Éireann', 'States', 'Russia', 'Warta', 'Convention', 'de', 'Trump', 'Frederick', 'Palace', 'North', 'Donald', 'Andrew', 'South', 'United', 'Samoa', 'Ogledd', "Swedenborg's", "Wendt's", 'Full', 'Pierre', 'Alamannia', 'Brave', 'Picts', 'Kingdom', 'Northern', 'Virginia', 'Riga', 'Supreme', 'Piaget', 'House', 'Court', 'Saint', 'republican', 'Daugava', 'Bonaparte', 'Swedenborg', 'Soviet', 'State', 'Lusatia', 'Bolesław', 'Union', 'Representatives', 'Virgin', 'Lithuania', "Kant's", 'France', 'District', 'Congress', 'Clinton', 'Gaulle', 'Latvia', 'Dublin', 'Taylor', 'Panevėžys', 'Palais', 'Spirit', 'Kaunas', 'Rico', 'Wyoming', 'Lithuanian', 'Königsberg', 'Delaware', 'Parliament', 'Bill', 'Metaphysics', 'Moscow', 'Gustav', 'Denmark', 'Pennsylvania', 'Logic', 'Albertina', 'Vermont', 'Ireland', 'Jean', 'Immanuel', 'Wendt', 'Columbia', 'Sweden', 'Alaska', 'Carl', 'Petersburg', 'Isle', 'River', 'Rhode', 'Mariana', 'Kievan', 'Gingrich', 'U.S.', 'Kraków', 'Nancy', 'Seine', 'Switzerland', 'World', 'Socialist', 'Khazars', 'Klaipėda', 'Sudetes', 'Bulgaria', 'Professor', 'Duchy', 'University', 'Europe', 'Emanuel', 'Germany', 'Charles', 'Hawaii', 'William', 'Hen', 'Senate', 'Napoleon', 'Jung', 'Finland', 'Poland', 'Pelosi', 'Trade', 'Raczki', 'Keys', 'Massachusetts', 'Warsaw', 'Sea', 'Seanad', 'Breslau', 'Baltic', 'Elbląskie', 'Constitutional', 'Kant', 'Kaliningrad', 'Ukraine'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Picts' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kant
+Immanuel Kant
+Königsberg
+University of Königsberg
+Republicans
+Lithuania
+Eurozone
+Nancy Pelosi
+Seanad Éireann
+Klaipėda
+Lithuanian
+Council of Europe
+Kaliningrad Oblast
+Russia
+Schengen Agreement
+Latvia
+Alaska
+Delaware
+North Dakota
+South Dakota
+Vermont
+Wyoming
+France
+Germany
+Poland
+Grand Duchy of Moscow
+Rhode Island
+Constitutional Convention
+Leinster
+Paris
+Switzerland
+Grand Duchy of Lithuania
+Bolesław the Brave
+Russian Empire
+Friedrich Wilhelm II
+Italy
+Sweden
+Seanad Éireann
+Polish–Lithuanian Commonwealth
+Czech Republic
+Klaipėda
+Polish Eastern Railway
+Polans
+Bolesław the Brave
+Null
+Constitution
+Vilnius
+Jean Piaget
+Carl Gustav Jung
+Bulgaria
+Czech Republic
+Denmark
+Finland
+Hungary
+Latvia
+Lithuania
+Sweden
+Puerto Rico
+American Samoa
+Guam
+Northern Mariana Islands
+U.S. Virgin Islands
+Immanuel Kant
+Delegates
+Virginia Plan
+Virginia
+Massachusetts
+Pennsylvania
+Electoral College
+Tynwald
+Ireland
+State of the Teutonic Order
+Mindaugas
+Dioceses
+Logic
+Metaphysics
+Kant's
+Alexander Wendt
+
+gpt_entity_particular(): entity list: 
+ ['Polans', 'North Dakota', 'Hungary', 'Vermont', 'Electoral College', 'Logic', 'Ireland', 'Grand Duchy of Lithuania', 'Russia', 'Italy', 'Sweden', 'Alaska', 'Bolesław the Brave', 'Kaliningrad Oblast', 'American Samoa', 'South Dakota', 'Vilnius', 'Jean Piaget', 'Tynwald', 'Lithuania', 'France', 'Switzerland', 'State of the Teutonic Order', 'Klaipėda', 'Grand Duchy of Moscow', 'Null', 'Nancy Pelosi', 'Constitutional Convention', 'Russian Empire', 'Latvia', 'Constitution', 'Bulgaria', 'Czech Republic', 'Polish Eastern Railway', 'Mindaugas', 'Germany', 'Carl Gustav Jung', 'Alexander Wendt', 'Puerto Rico', 'Guam', 'Delegates', 'Northern Mariana Islands', 'Schengen Agreement', 'Paris', 'Wyoming', 'Finland', 'Lithuanian', 'Seanad Éireann', 'Republicans', 'Poland', 'Königsberg', 'Leinster', 'University of Königsberg', 'Delaware', 'Massachusetts', 'Polish–Lithuanian Commonwealth', "Kant's", 'Metaphysics', 'Virginia', 'Friedrich Wilhelm II', 'Virginia Plan', 'Pennsylvania', 'U.S. Virgin Islands', 'Dioceses', 'Denmark', 'Immanuel Kant', 'Rhode Island', 'Kant', 'Council of Europe', 'Eurozone']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hen Ogledd' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hen Ogledd
+
+gpt_entity_particular(): entity list: 
+ ['Hen Ogledd']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Baltic Sea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Baltic Sea
+Baltic region of Europe
+coastline along the Baltic Sea
+maritime border with the Baltic Sea
+eastern shore of the Baltic Sea
+
+gpt_entity_particular(): entity list: 
+ ['coastline along the Baltic Sea', 'maritime border with the Baltic Sea', 'Baltic Sea', 'Baltic region of Europe', 'eastern shore of the Baltic Sea']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Alamannia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Alamannia
+Alamanni
+Alamans
+
+gpt_entity_particular(): entity list: 
+ ['Alamannia', 'Alamanni', 'Alamans']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Khazars' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kant
+Immanuel Kant
+University of Königsberg
+Charles de Gaulle
+Lithuania
+Klaipėda
+Bill Clinton
+National Assembly
+Lietuva
+Königsberg
+Oireachtas
+Moscow
+Alaska
+Frederick William III of Prussia
+Riga
+Lithuanian
+Seanad Éireann
+Lithuanian
+Vistula
+Poland
+Sejm
+Kołobrzeg
+Saint Pierre and Miquelon
+Kaliningrad Oblast
+House of Keys
+German Empire
+Kant's
+National Assembly
+Duchy of Prussia
+Kant
+Leinster House
+Spinozism
+Emanuel Swedenborg's Dreams of a Spirit-Seer
+Rhode Island
+Memel
+Bolesław the Brave
+Lusatia
+Tynwald
+Polans
+Emanuel Swedenborg's Dreams of a Spirit-Seer
+E. T. A. Hoffmann
+Spinozism
+Emanuel Swedenborg's Dreams of a Spirit-Seer
+Kaliningrad
+James Madison
+Gdańsk
+Alexander Hamilton
+European Union's
+Daugava
+University of Königsberg
+Mindaugas
+Taoiseach
+Baltic Sea
+World Trade Organization
+Lithuanian
+Baltic Sea
+Lithuania
+European Union's 
+Kaliningrad
+Gerrymandering
+Baltic Sea
+Russian
+France
+Königsberg
+Gdańsk
+Poland
+Lithuania
+Poland
+Lithuania
+Königsberg
+Germany
+Königsberg
+Prussia
+Lithuania
+Lithuania
+Königsberg
+Northern Mariana Islands
+Lithuania
+Poland
+Königsberg
+Lithuania
+Bethlehem
+Lithuania
+House of Guardians
+France
+Germanic
+Poland
+Kant
+
+gpt_entity_particular(): entity list: 
+ ["European Union's", 'Kant', 'Saint Pierre and Miquelon', 'Polans', 'Daugava', 'Frederick William III of Prussia', 'Oireachtas', 'Lietuva', 'Alaska', 'Bolesław the Brave', "European Union's ", 'Kaliningrad Oblast', 'Lusatia', 'Alexander Hamilton', 'Leinster House', 'Germanic', 'Gerrymandering', 'Russian', 'House of Guardians', 'Tynwald', 'Taoiseach', 'Lithuania', "Kant's", 'France', 'Klaipėda', 'Sejm', 'Prussia', 'Memel', 'Duchy of Prussia', 'Mindaugas', 'Germany', 'E. T. A. Hoffmann', 'World Trade Organization', 'Northern Mariana Islands', 'Baltic Sea', 'Gdańsk', 'Seanad Éireann', 'Lithuanian', 'Poland', 'Kołobrzeg', 'Königsberg', 'Spinozism', 'James Madison', 'University of Königsberg', 'German Empire', 'Vistula', 'Riga', 'House of Keys', 'Moscow', 'Charles de Gaulle', 'Bill Clinton', "Emanuel Swedenborg's Dreams of a Spirit-Seer", 'Immanuel Kant', 'Rhode Island', 'National Assembly', 'Kaliningrad', 'Bethlehem']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Denmark' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Denmark
+Denmark
+Denmark
+Denmark 
+Denmark 
+Königsberg 
+Denmark 
+Denmark 
+ Denmark 
+ Denmark 
+ Denmark 
+Königsberg 
+Königsberg 
+ Denmark 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Lithuania 
+Lithuanians 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Königsberg 
+Kant 
+Kant 
+Kant 
+Kant 
+Kant 
+Kant 
+Kaliningrad 
+Kant
+
+gpt_entity_particular(): entity list: 
+ ['Kaliningrad ', 'Denmark ', 'Lithuanians ', 'Kant ', ' Denmark ', 'Königsberg ', 'Denmark', 'Kant', 'Lithuania ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'German Bight' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kant
+Immanuel Kant
+University of Königsberg
+Riga
+Elections for representatives
+Charles de Gaulle
+Lithuania
+Klaipėda
+Oireachtas
+Moscow
+Alaska, Delaware, North Dakota, South Dakota, Vermont, Wyoming
+Frederick William III of Prussia
+Pillau
+Kraków
+Poland
+St. Petersburg
+Lietuva
+Oireachtas
+Dáil Éireann
+Thorn
+Kaliningrad Oblast
+Kaliningrad Oblast
+Poland
+Kyiv
+Palace of Versailles
+Vistula
+House of Keys
+Dáil Éireann
+Bernardino Sidney, a journalist for the Italian newspaper Il Foglio
+Switzerland
+Breslau
+National Assembly
+Connecticut Compromise
+Poland
+Kant
+House of Keys
+United States House of Representatives
+Rhode Island
+Lithuanian Soviet Socialist Republic
+Gdańsk
+Lithuania
+House's conflict with
+United States Supreme Court
+Warta River
+First Dáil
+Homo sapiens
+House of Keys
+Poland
+Sejm
+î"◊î"¢î"Ωiula
+Johann Georg Kant
+Daugavpils
+Lusatia
+Lithuania
+Poland
+Lithuania
+Dáil Éireann's members
+Panevėžys
+Lithuanian Soviet Socialist Republic
+Napoleon Bonaparte
+Lithuania
+Kant
+Tilsit
+Lithuania
+Lithuania
+Lusatia
+Dáil Éireann
+Wrocław
+United States House of Representatives
+Königsberg
+Denmark
+First Dáil
+Lithuania
+Wrocław
+Kant's
+Homo sapiens
+United Kingdom parliament
+Lithuania
+Kant
+Wrocław
+Dáil Éireann
+Kaunas
+Homo sapiens
+United Kingdom parliament
+Dáil Éireann
+Vilnius
+Šiauliai
+Rhode Island
+Tilsit
+Lithuania
+Lithuania
+Wrocław
+Lithuania
+House's composition
+Königsberg
+Vilnius
+Poland
+House of Keys
+Königsberg
+Gdańsk
+Lithuania
+Lithuanian language
+Breslau
+Kant's
+Lithuania
+Poland
+United States House of Representatives
+Nancy Pelosi
+Königsberg
+
+gpt_entity_particular(): entity list: 
+ ['Lithuanian Soviet Socialist Republic', 'Frederick William III of Prussia', 'Warta River', 'Šiauliai', "House's composition", 'St. Petersburg', 'Oireachtas', 'Lietuva', 'Elections for representatives', 'United States House of Representatives', 'Bernardino Sidney, a journalist for the Italian newspaper Il Foglio', 'Kaliningrad Oblast', 'Lusatia', 'Wrocław', 'Tilsit', 'First Dáil', 'Dáil Éireann', 'Vilnius', 'Homo sapiens', 'Napoleon Bonaparte', 'Kraków', 'Lithuania', 'Switzerland', "Kant's", 'Klaipėda', 'Sejm', 'Nancy Pelosi', 'National Assembly', 'Palace of Versailles', 'Panevėžys', 'United States Supreme Court', 'î"◊î"¢î"Ωiula', 'Thorn', "Dáil Éireann's members", 'Kaunas', 'Gdańsk', 'Poland', 'Königsberg', 'Kyiv', 'University of Königsberg', 'Johann Georg Kant', 'Pillau', 'United Kingdom parliament', 'Connecticut Compromise', 'Daugavpils', 'Vistula', 'Riga', 'Alaska, Delaware, North Dakota, South Dakota, Vermont, Wyoming', 'House of Keys', 'Moscow', "House's conflict with", 'Charles de Gaulle', 'Lithuanian language', 'Breslau', 'Denmark', 'Immanuel Kant', 'Rhode Island', 'Kant']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+University of Königsberg
+Immanuel Kant's
+Kant
+Riga
+Klaipėda
+Königsberg
+Bill Clinton
+Oireachtas
+QaRaczki Elbląskie
+Sophie
+Kaliningrad Oblast
+Lithuania
+Nancy Pelosi
+Paul Raczki Elbląski
+Seanad Éireann
+Andrew Johnson
+Polish–Lithuanian Commonwealth
+St. Petersburg
+Lithuanian
+Rhode Island
+House of Representatives
+E. T. A. Hoffmann
+Nordic Investment Bank
+Charles de Gaulle
+Spinozism
+House of Keys
+Kraków
+Leinster House
+Raczki Elbląskie
+Alaska
+Provinces of East Prussia and Prussia
+Grand Duchy of Lithuania
+Poland
+Vistula
+Europe
+The Quedlinburg Chronicle
+Polish–Lithuanian Commonwealth
+Sweden
+Kant
+Vladimir Putin
+Thoughts on the True Estimation of Living Forces
+The French
+Lithuanian
+Moscow
+Leinster House
+Mindaugas
+Spinozism
+Lusatia
+Slovakia
+Seanad Éireann
+Oireachtas
+Tynwald
+Emanuel Swedenborg's Dreams of a Spirit-Seer
+House
+Lithuanian Soviet Socialist Republic
+World Trade Organization
+Polish
+United States Supreme Court
+Thorn
+Belarus
+Serbia
+Polish Constitution
+House of Keys
+Bronze Age and Early Iron Age
+European Union
+Constitution of the Irish Free State
+Poland-Lithuania
+Uncredited
+Nancy Pelosi
+New York
+Thoughts on the True Estimation of Living Forces
+Saint Pierre and Miquelon
+Carl Gustav Jung
+Oireachtas
+Napoléon Bonaparte
+Prussian
+Kant
+Kant
+William Shakespeare
+Poland
+Saint Pierre and Miquelon
+Taoiseach
+Senad
+Genius
+Taoiseach
+Klaipėda
+Dáil Éireann
+The Congress
+E. T. A. Hoffmann
+Prussia
+
+gpt_entity_particular(): entity list: 
+ ['The French', 'Saint Pierre and Miquelon', 'Belarus', 'House of Representatives', 'Grand Duchy of Lithuania', 'Lithuanian Soviet Socialist Republic', 'Thoughts on the True Estimation of Living Forces', 'St. Petersburg', 'Oireachtas', 'Sweden', 'Alaska', 'Polish', 'Kaliningrad Oblast', 'Lusatia', 'Leinster House', 'Dáil Éireann', 'Kraków', 'Tynwald', 'Lithuania', 'Bronze Age and Early Iron Age', 'Taoiseach', 'Paul Raczki Elbląski', 'Klaipėda', 'William Shakespeare', 'Vladimir Putin', 'Nancy Pelosi', 'Europe', 'Senad', 'Prussia', 'Provinces of East Prussia and Prussia', 'Mindaugas', 'Carl Gustav Jung', 'United States Supreme Court', 'Prussian', 'Sophie', 'E. T. A. Hoffmann', 'Thorn', 'World Trade Organization', 'Polish Constitution', 'The Quedlinburg Chronicle', 'Poland-Lithuania', 'Slovakia', 'Seanad Éireann', 'Lithuanian', 'Poland', "Immanuel Kant's", 'Königsberg', 'Spinozism', 'Andrew Johnson', 'University of Königsberg', 'Serbia', 'European Union', 'Genius', 'Napoléon Bonaparte', 'Polish–Lithuanian Commonwealth', 'QaRaczki Elbląskie', 'The Congress', 'Constitution of the Irish Free State', 'Vistula', 'Uncredited', 'Riga', 'House of Keys', 'New York', 'Moscow', 'Charles de Gaulle', 'Raczki Elbląskie', 'Bill Clinton', 'Nordic Investment Bank', "Emanuel Swedenborg's Dreams of a Spirit-Seer", 'House', 'Immanuel Kant', 'Rhode Island', 'Kant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kant
+Immanuel Kant
+University of Königsberg
+United States House of Representatives
+Latvia
+Klaipėda
+Lithuania
+Riga
+Charles de Gaulle
+Lithuanian
+Lithuania
+Klaipėda
+Lithuania
+United States House of Representatives
+Klaipėda
+Lithuania
+Kaliningrad Oblast
+Kant
+Riga
+Kaliningrad
+Kant's
+German Empire
+Samuel Taylor Coleridge
+Königsberg
+Germany
+Immanuel Kant
+Lithuania
+Königsberg
+Kaliningrad Oblast
+Königsberg
+Lithuania
+Kaliningrad Oblast
+House of Keys
+Tynwald
+House of Keys
+Tynwald
+Kaliningrad
+Kaliningrad Oblast
+Lithuania
+House of Keys
+Tynwald
+Kievan Rus'
+Kievan Rus'
+Königsberg
+Kaliningrad
+Kaliningrad
+Kaliningrad
+Kaliningrad
+Königsberg
+Königsberg
+Kaliningrad
+Königsberg
+University of Königsberg
+Kaliningrad
+Königsberg
+Kaliningrad
+Königsberg
+Frederick William III of Prussia
+Lithuania
+Poland
+Königsberg
+Königsberg
+Königsberg
+Immanuel Kant
+Kaliningrad
+Königsberg
+Napoleon Bonaparte
+Kaliningrad
+Kaliningrad
+Kaliningrad
+Kaliningrad
+Kaliningrad
+Lusatia
+Kaliningrad
+Lusatia
+Lusatia
+Lusatia
+Kaliningrad
+Lusatia
+Lusatia
+Kant
+Kant
+Immanuel Kant
+Lusatia
+Lusatia
+Königsberg
+Lusatia
+Kaliningrad
+Königsberg
+Kaliningrad
+Königsberg
+Königsberg
+Poland
+Königsberg
+Königsberg
+Königsberg
+Kaliningrad
+Königsberg
+Immanuel Kant
+Kaliningrad
+Kaliningrad
+Königsberg
+Königsberg
+Lusatia
+Kaliningrad
+Königsberg
+Königsberg
+Kant
+Königsberg
+Kant
+Kaliningrad
+Kaliningrad
+Kaliningrad
+Königsberg
+Königsberg
+Immanuel Kant
+Kaliningrad
+Königsberg
+Dáil Éireann
+Oireachtas
+Kant
+Kaliningrad
+Kaliningrad
+Königsberg
+Dáil Éireann
+Kaliningrad
+Kaliningrad
+United States House of Representatives
+Dáil Éireann
+Dáil Éireann
+Dáil Éireann
+Jean Piaget
+Dáil Éireann
+Dáil Éireann
+Kant's
+Kant
+Immanuel Kant
+Kant's
+Vilnius
+Poland
+House of Keys
+United States Constitution
+Kant
+Poland
+Kant
+Kant
+Kant
+Kant
+Kant
+Kant
+Kant
+Kant
+Kant
+Kant
+Vilnius
+Mindaugas
+Napoleon Bonaparte
+Königsberg
+Kant
+Kant
+Kant
+Kievan Rus'
+House of Keys
+Tribal
+Kievan Rus'
+Poland
+Poland
+Königsberg
+Lithuania
+Peasant
+Königsberg
+Poland
+Lietuvos
+Poland
+Kaliningrad
+Poland
+Poland
+Königsberg
+Polish
+War
+Poles
+Königsberg
+Königsberg
+Kaliningrad
+Königsberg
+Königsberg
+Poland
+Poland
+Poland
+Poland
+Poland
+
+gpt_entity_particular(): entity list: 
+ ["Kievan Rus'", 'Frederick William III of Prussia', 'Oireachtas', 'United States House of Representatives', 'Polish', 'Kaliningrad Oblast', 'Lusatia', 'Tribal', 'Dáil Éireann', 'Vilnius', 'Jean Piaget', 'Napoleon Bonaparte', 'Tynwald', 'Poles', 'Lithuania', "Kant's", 'Klaipėda', 'United States Constitution', 'Latvia', 'Lietuvos', 'Mindaugas', 'Germany', 'Samuel Taylor Coleridge', 'Lithuanian', 'Poland', 'Königsberg', 'University of Königsberg', 'German Empire', 'Riga', 'House of Keys', 'War', 'Charles de Gaulle', 'Peasant', 'Immanuel Kant', 'Kant', 'Kaliningrad']
+
+gpt_entity_particular(): filtered entity: 
+ ['Königsberg']
+After GPT, entity:  {'Old', 'Dakota', 'Belarus', 'Versailles', 'American', 'Georg', 'Johann', 'Bourbon', 'Free', 'Czech', 'Berlin', 'Southern', 'Vilnius', 'German', 'Organization', 'James', 'Islands', 'Prussia', 'Dreams', 'Guam', 'Bight', 'Samuel', 'Madison', 'Alexander', 'Puerto', 'Slovakia', 'Irish', 'Leinster', 'Man', 'Republic', 'OECD', 'Island', 'Hamilton', 'Johnson', 'III', 'Hungary', "Rus'", 'Éireann', 'States', 'Russia', 'Warta', 'Convention', 'de', 'Trump', 'Frederick', 'Palace', 'North', 'Donald', 'Andrew', 'South', 'United', 'Samoa', 'Ogledd', "Swedenborg's", "Wendt's", 'Full', 'Pierre', 'Alamannia', 'Brave', 'Picts', 'Kingdom', 'Northern', 'Virginia', 'Riga', 'Supreme', 'Piaget', 'House', 'Court', 'Saint', 'republican', 'Daugava', 'Bonaparte', 'Swedenborg', 'Soviet', 'State', 'Lusatia', 'Bolesław', 'Union', 'Representatives', 'Virgin', 'Lithuania', "Kant's", 'France', 'District', 'Congress', 'Clinton', 'Gaulle', 'Latvia', 'Dublin', 'Taylor', 'Panevėžys', 'Palais', 'Spirit', 'Kaunas', 'Rico', 'Wyoming', 'Lithuanian', 'Königsberg', 'Delaware', 'Parliament', 'Bill', 'Metaphysics', 'Moscow', 'Gustav', 'Denmark', 'Pennsylvania', 'Logic', 'Albertina', 'Vermont', 'Ireland', 'Jean', 'Immanuel', 'Wendt', 'Columbia', 'Sweden', 'Alaska', 'Carl', 'Petersburg', 'Isle', 'River', 'Rhode', 'Mariana', 'Kievan', 'Gingrich', 'U.S.', 'Kraków', 'Nancy', 'Seine', 'Switzerland', 'World', 'Socialist', 'Khazars', 'Klaipėda', 'Sudetes', 'Bulgaria', 'Professor', 'Duchy', 'University', 'Europe', 'Emanuel', 'Germany', 'Charles', 'Hawaii', 'William', 'Hen', 'Senate', 'Napoleon', 'Jung', 'Finland', 'Poland', 'Pelosi', 'Trade', 'Raczki', 'Keys', 'Massachusetts', 'Warsaw', 'Sea', 'Seanad', 'Breslau', 'Baltic', 'Elbląskie', 'Constitutional', 'Kant', 'Kaliningrad', 'Ukraine'}
+Total time:  481.0777795314789
+Entity conversion done on 4_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_3_entity_conversion_hash.json. Check the entity.
+ Which country borders the area where the 075 accessed by the port in the city where 00E 025 is buried meets another 075 to the southwest?
+
+
+
+Done. Check final_query/id_4_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

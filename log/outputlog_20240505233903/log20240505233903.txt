@@ -1,0 +1,14 @@
+Got argument: Abraham Lincoln, 5, 5_1
+
+utils/question.py extract_hops(Abraham Lincoln, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Salmon P. Chase", "accompanied", "Abraham Lincoln to Fort Monroe")', 'start word': 'Abraham Lincoln', 'end word': 'Salmon P. Chase', 'source': {'name': 'Salmon P. Chase', 'line': 28}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'salmon_p_chase'}}
+
+utils/question.py extract_hops(Salmon P. Chase, [], ['Abraham Lincoln']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Salmon_P._Chase_info.json file
+second_hop:  {'triplet': '("Salmon P. Chase", "replaced", "Roger Taney as Chief Justice")', 'start word': 'Salmon P. Chase', 'end word': 'Roger B. Taney', 'source': {'name': 'Salmon P. Chase', 'line': 15}, 'cpnet': {'start word': 'salmon_p_chase', 'end word': 'roger_taney'}}
+
+utils/question.py extract_hops(Roger B. Taney, [], ['Abraham Lincoln', 'Salmon P. Chase']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Roger_B._Taney_info.json file
+extract_info(Roger B. Taney) Start.
+utils/preprocess.py extract_info(): Checking good links on Roger B. Taney

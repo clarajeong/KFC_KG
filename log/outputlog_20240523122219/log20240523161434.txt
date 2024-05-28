@@ -1,0 +1,847 @@
+Got argument: Seoul, 6, 6_5
+
+utils/question.py extract_hops(Seoul, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Seoul_info.json file
+first_hop:  {'triplet': '("Seoul", "has regular flights to", "Shanghai Hongqiao")', 'start word': 'Seoul', 'end word': 'Shanghai Hongqiao International Airport', 'source': {'name': 'Seoul', 'line': 19}, 'cpnet': {'start word': 'seoul', 'end word': 'hongqiao_airport'}}
+
+utils/question.py extract_hops(Shanghai Hongqiao International Airport, [], ['Seoul']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Shanghai_Hongqiao_International_Airport_info.json file
+extract_info(Shanghai Hongqiao International Airport) Start.
+utils/preprocess.py extract_info(): Checking good links on Shanghai Hongqiao International Airport
+Shanghai is Geography
+1 / 30 )  Shanghai Shanghai shanghai
+China is Geography
+2 / 30 )  China China china
+Changning, Shanghai is Geography
+3 / 30 )  Changning Changning, Shanghai changning_district
+Shanghai Pudong International Airport is Geography
+4 / 30 )  Shanghai–Pudong Shanghai Pudong International Airport pudong_airport
+Battle of Shanghai is Geography
+5 / 30 )  Battle of Shanghai Battle of Shanghai battle_of_shanghai
+Dhaka is Geography
+6 / 30 )  Dhaka Dhaka dhaka
+Guangzhou Baiyun International Airport  is Geography
+7 / 30 )  Guangzhou Guangzhou Baiyun International Airport  baiyun_airport
+Haneda Airport is Geography
+8 / 30 )  Haneda Haneda Airport haneda_airport
+Beijing Capital International Airport is Geography
+9 / 30 )  Beijing-Capital Beijing Capital International Airport beijing_capital_international_airport
+Beijing is Geography
+10 / 30 )  Beijing Beijing beijing
+Canada is Geography
+11 / 30 )  Canada Canada canada
+Japan is Geography
+12 / 30 )  Japan Japan japan
+United States is Geography
+13 / 30 )  United States United States united_states
+Airbus is Geography
+14 / 30 )  Airbus Airbus airbus
+Harbin is Geography
+15 / 30 )  Harbin Harbin harbin
+Seoul is Geography
+16 / 30 )  Seoul Seoul seoul
+Macau is Geography
+17 / 30 )  Macau Macau macau
+Macau International Airport is Geography
+18 / 30 )  Macau International Airport Macau International Airport macau_international_airport
+Beijing–Shanghai high-speed railway is Geography
+19 / 30 )  Beijing–Shanghai High-Speed Railway Beijing–Shanghai high-speed railway beijing_shanghai_high_speed_railway
+commons:Category:Shanghai Hongqiao International Airport is Geography
+20 / 30 )  Shanghai Hongqiao International Airport commons:Category:Shanghai Hongqiao International Airport hongqiao_airport
+extract_triplet(Shanghai Hongqiao International Airport)
+Got GPT's response. String length : 1633
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Shanghai', 'Shanghai', 'shanghai']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Changning', 'Changning, Shanghai', 'changning_district']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Shanghai–Pudong', 'Shanghai Pudong International Airport', 'pudong_airport']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Shanghai', 'Shanghai', 'shanghai'], ['Battle of Shanghai', 'Battle of Shanghai', 'battle_of_shanghai']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Seoul', 'Seoul', 'seoul']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Haneda', 'Haneda Airport', 'haneda_airport']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Beijing', 'Beijing', 'beijing']]
+subject_words:  [['Shanghai', 'Shanghai', 'shanghai']]
+object_words:  [['China', 'China', 'china']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Dhaka', 'Dhaka', 'dhaka']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Guangzhou', 'Guangzhou Baiyun International Airport ', 'baiyun_airport']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['China', 'China', 'china']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Japan', 'Japan', 'japan']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Airbus', 'Airbus', 'airbus']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Harbin', 'Harbin', 'harbin']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Macau', 'Macau', 'macau']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [['Macau', 'Macau', 'macau'], ['Macau International Airport', 'Macau International Airport', 'macau_international_airport']]
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  []
+subject_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+object_words:  [(None, 'Shanghai Hongqiao International Airport', 'hongqiao_airport'), ['Shanghai', 'Shanghai', 'shanghai'], ['Shanghai Hongqiao International Airport', 'commons:Category:Shanghai Hongqiao International Airport', 'hongqiao_airport']]
+second_hop1:  {'triplet': '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")', 'start word': 'Shanghai Hongqiao International Airport', 'end word': 'Japan', 'source': {'name': 'Shanghai Hongqiao International Airport', 'line': 12}, 'cpnet': {'start word': 'hongqiao_airport', 'end word': 'japan'}}
+
+utils/question.py extract_hops(Japan, [], ['Seoul', 'Shanghai Hongqiao International Airport']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Japan_info.json file
+extract_info(Japan) Start.
+utils/preprocess.py extract_info(): Checking good links on Japan
+Pacific Ocean is Geography
+1 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Sea of Japan is Geography
+2 / 30 )  Sea of Japan Sea of Japan sea_of_japan
+Sea of Okhotsk is Geography
+3 / 30 )  Sea of Okhotsk Sea of Okhotsk sea_of_okhotsk
+East China Sea is Geography
+4 / 30 )  East China Sea East China Sea east_china_sea
+Philippine Sea is Geography
+5 / 30 )  Philippine Sea Philippine Sea philippine_sea
+Taiwan is Geography
+6 / 30 )  Taiwan Taiwan taiwan
+Japanese archipelago is Geography
+7 / 30 )  an archipelago Japanese archipelago japanese_archipelago
+Hokkaido is Geography
+8 / 30 )  Hokkaido Hokkaido hokkaido
+Honshu is Geography
+9 / 30 )  Honshu Honshu honshu
+Shikoku is Geography
+10 / 30 )  Shikoku Shikoku shikoku
+Kyushu is Geography
+11 / 30 )  Kyushu Kyushu kyushu
+Tokyo is Geography
+12 / 30 )  Tokyo Tokyo tokyo
+Yokohama is Geography
+13 / 30 )  Yokohama Yokohama yokohama
+Osaka is Geography
+14 / 30 )  Osaka Osaka osaka
+Nagoya is Geography
+15 / 30 )  Nagoya Nagoya nagoya
+Sapporo is Geography
+16 / 30 )  Sapporo Sapporo sapporo
+Fukuoka is Geography
+17 / 30 )  Fukuoka Fukuoka fukuoka
+Kobe is Geography
+18 / 30 )  Kobe Kobe kobe
+Kyoto is Geography
+19 / 30 )  Kyoto Kyoto kyoto
+Empire of Japan is Geography
+20 / 30 )  Empire of Japan Empire of Japan empire_of_japan
+National Diet is Geography
+21 / 30 )  National Diet National Diet national_diet
+Geography of Japan is Geography
+22 / 30 )  the country's terrain Geography of Japan japanese_territory
+Greater Tokyo Area is Geography
+23 / 30 )  Greater Tokyo Area Greater Tokyo Area mobile_suica
+List of largest cities is Geography
+24 / 30 )  most populous metropolitan area List of largest cities big_cities
+Marco Polo is Geography
+25 / 30 )  Marco Polo Marco Polo marco_polo
+Prince Shōtoku is People
+26 / 30 )  Prince Shōtoku Prince Shōtoku shotoku_taishi
+China is Geography
+27 / 30 )  China China china
+Heijō Palace is Geography
+28 / 30 )  Heijō-kyō Heijō Palace heijo_palace
+Minamoto no Yoritomo is People
+29 / 30 )  Minamoto no Yoritomo Minamoto no Yoritomo minamoto_no_yoritomo
+Kamakura is Geography
+30 / 30 )  Kamakura Kamakura kamakura
+extract_triplet(Japan)
+Got GPT's response. String length : 6440
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [(None, 'Japan', 'japan'), ['Sea of Japan', 'Sea of Japan', 'sea_of_japan']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['Sea of Okhotsk', 'Sea of Okhotsk', 'sea_of_okhotsk'], ['East China Sea', 'East China Sea', 'east_china_sea'], ['Philippine Sea', 'Philippine Sea', 'philippine_sea'], ['China', 'China', 'china']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['Taiwan', 'Taiwan', 'taiwan']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['Kyushu', 'Kyushu', 'kyushu']]
+subject_words:  [['Tokyo', 'Tokyo', 'tokyo']]
+object_words:  [(None, 'Japan', 'japan')]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['Tokyo', 'Tokyo', 'tokyo'], ['Kyoto', 'Kyoto', 'kyoto']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['National Diet', 'National Diet', 'national_diet']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['Tokyo', 'Tokyo', 'tokyo'], ['Greater Tokyo Area', 'Greater Tokyo Area', 'mobile_suica'], ['most populous metropolitan area', 'List of largest cities', 'big_cities']]
+subject_words:  [['Marco Polo', 'Marco Polo', 'marco_polo']]
+object_words:  []
+subject_words:  [['Prince Shōtoku', 'Prince Shōtoku', 'shotoku_taishi']]
+object_words:  [(None, 'Japan', 'japan')]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['China', 'China', 'china']]
+subject_words:  [['Minamoto no Yoritomo', 'Minamoto no Yoritomo', 'minamoto_no_yoritomo']]
+object_words:  [['Kamakura', 'Kamakura', 'kamakura']]
+subject_words:  []
+object_words:  [['Kyushu', 'Kyushu', 'kyushu']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Japan', 'japan')]
+['', "Japan's legislative organ is the", 'National Diet', '']
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+['', 'The main body of Japanese statutory law is called the', 'Six Codes', '']
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [['Taiwan', 'Taiwan', 'taiwan']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Japan', 'japan')]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [['Tokyo', 'Tokyo', 'tokyo']]
+object_words:  [['Tokyo', 'Tokyo', 'tokyo'], ['Greater Tokyo Area', 'Greater Tokyo Area', 'mobile_suica']]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [(None, 'Japan', 'japan')]
+subject_words:  []
+object_words:  [(None, 'Japan', 'japan')]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [['Tokyo', 'Tokyo', 'tokyo']]
+object_words:  [(None, 'Japan', 'japan')]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+['', 'Japanese culture combines influences from', 'Asia, Europe, and North America', '']
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  [(None, 'Japan', 'japan')]
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+['', 'Japan', 'has a significant and influential media industry, particularly in manga and anime', '']
+subject_words:  [(None, 'Japan', 'japan')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Japan', 'japan')]
+['', 'Japan', 'has hosted the Summer Olympics in Tokyo and the Winter Olympics in Sapporo and Nagano', '']
+last_hop:  {'triplet': '("Empire of Japan", "joined", "Axis alliance with Nazi Germany and Fascist Italy")', 'start word': 'Japan', 'end word': 'Nazi Germany', 'source': {'name': 'Empire of Japan', 'line': 1}, 'cpnet': {'start word': 'japan', 'end word': 'nazi_germany'}}
+
+utils/question.py extract_hops(Shanghai Hongqiao International Airport, ['Japan'], ['Seoul']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Shanghai_Hongqiao_International_Airport_info.json file
+second_hop2:  {'triplet': '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")', 'start word': 'Shanghai Hongqiao International Airport', 'end word': 'Shanghai Pudong International Airport', 'source': {'name': 'Shanghai Hongqiao International Airport', 'line': 3}, 'cpnet': {'start word': 'hongqiao_airport', 'end word': 'pudong_airport'}}
+generate_question(6_5, ['("Seoul", "has regular flights to", "Shanghai Hongqiao")', '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")', '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")', '("Empire of Japan", "joined", "Axis alliance with Nazi Germany and Fascist Italy")'], ['Seoul', 'Shanghai Hongqiao International Airport', 'Shanghai Hongqiao International Airport', 'Japan'], [('Seoul', 'Shanghai Hongqiao International Airport'), ('Shanghai Hongqiao International Airport', 'Japan'), ('Shanghai Hongqiao International Airport', 'Shanghai Pudong International Airport'), ('Japan', 'Nazi Germany')], Seoul, [{'name': 'Seoul', 'line': 19}, {'name': 'Shanghai Hongqiao International Airport', 'line': 12}, {'name': 'Shanghai Hongqiao International Airport', 'line': 3}, {'name': 'Empire of Japan', 'line': 1}]) called
+GPT output is:  Q: Which city offers flights to the airport that serves as a connection for travelers from an empire that allied with Nazi Germany and Facist Italy during WWII and also provides flights to another international hub in the same city?
+A: Seoul
+final_choice(Seoul, options = 5) started
+[]
+entity_type(Seoul) called
+Seoul is Geography
+check_matchscore(Seoul, Special Cities and Metropolitan Cities of South Korea):  0.0
+choose_by_wiki_recur(Special Cities and Metropolitan Cities of South Korea)
+   Pages in Special Cities and Metropolitan Cities of South Korea: ['Busan', 'Daegu', 'Daejeon', 'Gwangju', 'Incheon', 'Seoul', 'Ulsan']
+      Ulsan in ['Ulsan', 'Gwangju', 'Incheon', 'Busan']
+      Gwangju in ['Ulsan', 'Gwangju', 'Incheon', 'Busan']
+      Incheon in ['Ulsan', 'Gwangju', 'Incheon', 'Busan']
+      Busan in ['Ulsan', 'Gwangju', 'Incheon', 'Busan']
+['Ulsan', 'Gwangju', 'Incheon', 'Busan']
+Ended after 2.5 hierarchy
+(2.5, ['Incheon', 'Gwangju', 'Ulsan', 'Busan'])
+
+['("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")\n', '("Empire of Japan", "joined", "Axis alliance with Nazi Germany and Fascist Italy")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Shanghai Hongqiao International Airport", "is one of two international airports of", "Shanghai")\n', '("Shanghai Hongqiao International Airport", "located in", "Changning")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")\n', '("Shanghai Hongqiao International Airport", "was involved in", "Battle of Shanghai")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Seoul")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Haneda")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Beijing-Capital")\n', '("Shanghai", "is the largest city by population in", "China")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Dhaka")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Guangzhou")\n', '("Shanghai Hongqiao International Airport", "has a hub for", "China Eastern Airlines")\n', '("Shanghai Hongqiao International Airport", "is a hub for flights from", "United States")\n', '("Shanghai Hongqiao International Airport", "operates", "Airbus")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Harbin")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Macau")\n', '("Shanghai Hongqiao International Airport", "has flights connected with", "Macau International Airport")\n', '("Shanghai Hongqiao International Airport", "is adjacent to", "Beijing–Shanghai High-Speed Railway")\n', '("Shanghai Hongqiao International Airport", "handles flights from", "Shanghai Hongqiao International Airport")\n', '("Shanghai Hongqiao International Airport", "is one of two international airports of", "Shanghai")\n', '("Shanghai Hongqiao International Airport", "located in", "Changning")\n', '("Shanghai Hongqiao International Airport", "was involved in", "Battle of Shanghai")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Seoul")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Haneda")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Beijing-Capital")\n', '("Shanghai", "is the largest city by population in", "China")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Dhaka")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Guangzhou")\n', '("Shanghai Hongqiao International Airport", "has a hub for", "China Eastern Airlines")\n', '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")\n', '("Shanghai Hongqiao International Airport", "is a hub for flights from", "United States")\n', '("Shanghai Hongqiao International Airport", "operates", "Airbus")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Harbin")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Macau")\n', '("Shanghai Hongqiao International Airport", "has flights connected with", "Macau International Airport")\n', '("Shanghai Hongqiao International Airport", "is adjacent to", "Beijing–Shanghai High-Speed Railway")\n', '("Shanghai Hongqiao International Airport", "handles flights from", "Shanghai Hongqiao International Airport")\n', '("Empire of Japan", "committed", "Nanjing Massacre")\n', '("Empire of Japan", "forced into defensive stance against", "United States")\n', '("Iwo Jima and Okinawa Island", "captured by", "American military")\n', '("Soviet Union", "invaded", "Japan\'s northern territories")\n', '("Douglas MacArthur", "administered", "occupied Japan")\n', '("Japan", "underwent period of industrialization and militarization during", "Meiji")\n', '("Shōwa", "era saw", "end of Japanese Empire")\n', '("Busan", "is South Korea\'s", "second most populous city after Seoul")\n', '("Busan", "is the economic, cultural and educational center of", "southeastern South Korea")\n', '("Busan\'s port", "is", "South Korea\'s busiest and the sixth-busiest in the world")\n', '("Busan", "has an area called", "Southeastern Maritime Industrial Region")\n', '("Southeastern Maritime Industrial Region", "includes", "Ulsan, South Gyeongsang, Daegu")\n', '("Busan", "is situated between", "the Nakdong and the Suyeong Rivers")\n', '("Busan", "is famously known for", "the Battle of the Pusan Perimeter")\n', '("Busan", "is a center for", "international conventions")\n', '("Busan", "is home to", "the world\'s largest department store, the Shinsegae Centum City")\n', '("Busan", "was formerly romanized as", "Pusan")\n', '("Busan\'s Sino-Korean name", "is", "\'Cauldron Mountain\'")\n', '("Busan", "is located on the southeastern tip of", "the Korean Peninsula")\n', '("Busan", "borders", "low mountains on the north and west, and the seas on the south and east")\n', '("Nakdong River", "is", "South Korea\'s longest river")\n', '("Busan", "has", "Haeundae Beach, the country\'s largest")\n', '("Busan", "is part of", "Yeongnam region")\n', '("Busan", "is the closest Korean area to", "Tsushima, Japan")\n', '("Busan and Fukuoka", "are", "sister cities")\n', '("Busan", "has a cooler version of a", "humid subtropical climate")\n', '("Busan", "is most prone to", "typhoons in South Korea")\n', '("Busan", "is a maritime logistics hub in", "Northeast Asia")\n', '("Maritime Silk Road", "runs from the Chinese coast to", "Singapore, towards the southern tip of India to Mombasa, through the Red Sea via the Suez Canal to the Mediterranean, to the Upper Adriatic region to Trieste with connections to Central Europe and the North Sea")\n', '("Busan", "is known for its global", "MICE industry")\n', '("Korea Exchange", "headquartered in", "Busan")\n', '("Busan", "is home to", "major financial institutions")\n', '("Seomyeon and Gwangbok-dong/Nampo-dong", "are Busan\'s", "largest central business districts")\n', '("Shinsegae Centum City", "is in", "Busan")\n', '("Westin Chosun Busan, Paradise Busan, and Park Hyatt Busan", "are major hotels in", "Busan")\n', '("Busan", "has educational institutions like", "Busan University of Foreign Studies and Pusan National University")\n', '("Busan", "is known as the summer capital of", "Korea")\n', '("Busan", "attracts tourists to its", "six beaches")\n', '("Busan", "is home to", "Busan International Film Festival and Busan Biennale")\n', '("Busan International Film Festival", "is one of the most popular", "international film festivals in Asia")\n', '("Busan", "has a variety of", "parks, beaches, and highlights")\n', '("Taejongdae", "is", "a natural park in Busan")\n', '("Busan", "has historical sites like", "Beomeosa Temple and Busanjinjiseong Fortress")\n', '("Busan", "is the backdrop for films like", "Black Panther and Train to Busan")\n', '("Busan IPark", "is a", "K League football club in Busan")\n', '("Busan", "has many hospitals and clinics, especially in", "Seomyeon medical street")\n', '("Busan", "is served by", "Gimhae International Airport")\n', '("Busan", "has sister city relationships with", "several coastal cities around the world")\n', '("Busan", "is home to celebrities like", "actor Ahn Bohyun and singer Kang Daniel")\n', '("Ulsan", "officially known as", "the Ulsan Metropolitan City")\n', '("Ulsan", "is the", "seventh-largest metropolitan city in South Korea")\n', '("Ulsan", "is the industrial powerhouse of", "South Korea")\n', '("Hyundai Motor Company", "operates the world\'s largest automobile assembly plant in", "Ulsan")\n', '("Hyundai Heavy Industries", "operates the world\'s largest shipyard in", "Ulsan")\n', '("SK Energy", "owns the world\'s third largest oil refinery in", "Ulsan")\n', '("Ulsan", "is divided into", "four gu and one gun")\n', '("Ulsan", "has history since", "the Paleolithic Era")\n', '("Ulsan", "has been a site of mining and production for", "iron during the Jinhan confederacy")\n', '("Ulsan", "served as an important port for", "Gyeongju during the Later Silla period")\n', '("Ulsan", "began to grow as an industrial center due to", "the two World Wars")\n', '("Hyundai Group and SK Group", "began setting up large businesses in", "Ulsan")\n', '("Hyundai Heavy Industries", "established the shipyard in", "Ulsan")\n', '("Hyundai Motor Company", "started in", "Ulsan")\n', '("SK Energy", "developed an oil refinery and petrochemical hub in", "Ulsan")\n', '("Korea Shipbuilding & Offshore Engineering", "plans to move corporate headquarters to", "Seoul")\n', '("Ulsan", "mirrors", "the United States\' Rust Belt")\n', '("Ford River Rouge Complex", "inspired the integrated design of Hyundai Motor\'s plant in", "Ulsan")\n', '("SB LiMotive", "opened an advanced lithium-ion battery production plant in", "Ulsan")\n', '("Samsung SDI", "owns the Ulsan production facility of", "SB LiMotive")\n', '("Ulsan", "is connected to Seoul by", "KTX")\n', '("Ulsan HD FC", "is a football club based in", "Ulsan")\n', '("Ulsan Hyundai Mobis Phoebus", "is a basketball team based in", "Ulsan")\n', '("Jinha and Ilsan", "are beautiful beaches in", "Ulsan")\n', '("Daewangam Park", "features a lush, hundred-year-old pine forest in", "Ulsan")\n', '("Ganjeolgot Cape", "is noted as the first place to see the sunrise in", "Ulsan")\n', '("Ulsan Industry Park", "has been leading the Pacific Rim industry", "")\n', '("Hyundai Motor Company", "operates the world\'s largest single-purpose plant in", "Ulsan")\n', '("Gwangju", "formerly romanized as", "Kwangju")\n', '("Gwangju", "sixth-largest metropolis in", "South Korea")\n', '("Gwangju", "independent from", "South Jeolla Province")\n', '("Gwangju", "promoted to", "metropolitan city")\n', '("Gwangju", "southern boundary of", "Goguryeo")\n', '("Gwangju", "administrative center of", "Baekje")\n', '("Gwangju", "known as during Imperial Japanese rule", "Kōshū")\n', '("Gwangju Student Independence Movement", "turned into major uprising against", "Imperial Japanese cruelty")\n', '("Gwangju", "connected by railway to", "Seoul")\n', '("Gwangju", "demonstrations against", "Chun Doo-hwan")\n', '("Gwangju", "site of", "Gwangju Uprising")\n', '("Gwangju University", "private university in", "Gwangju")\n', '("Gwangju World Cup Stadium", "where South Korea national football team beat", "Spain soccer team")\n', '("Gwangju Institute of Science and Technology", "one of the greatest research institutes in", "Korea")\n', '("Gwangju", "home of", "Kia Tigers")\n', '("Gwangju", "home of", "Gwangju FC")\n', '("Gwangju", "home of", "Gwangju AI Peppers")\n', '("Gwangju", "selected as the site for", "Green-Startup-Town")\n', '("Gwangju", "part of", "Mudeungsan National Park")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n']
+range(1, 166) 4
+['("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")\n', '("Empire of Japan", "joined", "Axis alliance with Nazi Germany and Fascist Italy")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Shanghai Hongqiao International Airport", "is one of two international airports of", "Shanghai")\n', '("Shanghai Hongqiao International Airport", "located in", "Changning")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")\n', '("Shanghai Hongqiao International Airport", "was involved in", "Battle of Shanghai")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Seoul")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Haneda")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Beijing-Capital")\n', '("Shanghai", "is the largest city by population in", "China")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Dhaka")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Guangzhou")\n', '("Shanghai Hongqiao International Airport", "has a hub for", "China Eastern Airlines")\n', '("Shanghai Hongqiao International Airport", "is a hub for flights from", "United States")\n', '("Shanghai Hongqiao International Airport", "operates", "Airbus")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Harbin")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Macau")\n', '("Shanghai Hongqiao International Airport", "has flights connected with", "Macau International Airport")\n', '("Shanghai Hongqiao International Airport", "is adjacent to", "Beijing–Shanghai High-Speed Railway")\n', '("Shanghai Hongqiao International Airport", "handles flights from", "Shanghai Hongqiao International Airport")\n', '("Shanghai Hongqiao International Airport", "is one of two international airports of", "Shanghai")\n', '("Shanghai Hongqiao International Airport", "located in", "Changning")\n', '("Shanghai Hongqiao International Airport", "was involved in", "Battle of Shanghai")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Seoul")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Haneda")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Beijing-Capital")\n', '("Shanghai", "is the largest city by population in", "China")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Dhaka")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Guangzhou")\n', '("Shanghai Hongqiao International Airport", "has a hub for", "China Eastern Airlines")\n', '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")\n', '("Shanghai Hongqiao International Airport", "is a hub for flights from", "United States")\n', '("Shanghai Hongqiao International Airport", "operates", "Airbus")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Harbin")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Macau")\n', '("Shanghai Hongqiao International Airport", "has flights connected with", "Macau International Airport")\n', '("Shanghai Hongqiao International Airport", "is adjacent to", "Beijing–Shanghai High-Speed Railway")\n', '("Shanghai Hongqiao International Airport", "handles flights from", "Shanghai Hongqiao International Airport")\n', '("Empire of Japan", "committed", "Nanjing Massacre")\n', '("Empire of Japan", "forced into defensive stance against", "United States")\n', '("Iwo Jima and Okinawa Island", "captured by", "American military")\n', '("Soviet Union", "invaded", "Japan\'s northern territories")\n', '("Douglas MacArthur", "administered", "occupied Japan")\n', '("Japan", "underwent period of industrialization and militarization during", "Meiji")\n', '("Shōwa", "era saw", "end of Japanese Empire")\n', '("Busan", "is South Korea\'s", "second most populous city after Seoul")\n', '("Busan", "is the economic, cultural and educational center of", "southeastern South Korea")\n', '("Busan\'s port", "is", "South Korea\'s busiest and the sixth-busiest in the world")\n', '("Busan", "has an area called", "Southeastern Maritime Industrial Region")\n', '("Southeastern Maritime Industrial Region", "includes", "Ulsan, South Gyeongsang, Daegu")\n', '("Busan", "is situated between", "the Nakdong and the Suyeong Rivers")\n', '("Busan", "is famously known for", "the Battle of the Pusan Perimeter")\n', '("Busan", "is a center for", "international conventions")\n', '("Busan", "is home to", "the world\'s largest department store, the Shinsegae Centum City")\n', '("Busan", "was formerly romanized as", "Pusan")\n', '("Busan\'s Sino-Korean name", "is", "\'Cauldron Mountain\'")\n', '("Busan", "is located on the southeastern tip of", "the Korean Peninsula")\n', '("Busan", "borders", "low mountains on the north and west, and the seas on the south and east")\n', '("Nakdong River", "is", "South Korea\'s longest river")\n', '("Busan", "has", "Haeundae Beach, the country\'s largest")\n', '("Busan", "is part of", "Yeongnam region")\n', '("Busan", "is the closest Korean area to", "Tsushima, Japan")\n', '("Busan and Fukuoka", "are", "sister cities")\n', '("Busan", "has a cooler version of a", "humid subtropical climate")\n', '("Busan", "is most prone to", "typhoons in South Korea")\n', '("Busan", "is a maritime logistics hub in", "Northeast Asia")\n', '("Maritime Silk Road", "runs from the Chinese coast to", "Singapore, towards the southern tip of India to Mombasa, through the Red Sea via the Suez Canal to the Mediterranean, to the Upper Adriatic region to Trieste with connections to Central Europe and the North Sea")\n', '("Busan", "is known for its global", "MICE industry")\n', '("Korea Exchange", "headquartered in", "Busan")\n', '("Busan", "is home to", "major financial institutions")\n', '("Seomyeon and Gwangbok-dong/Nampo-dong", "are Busan\'s", "largest central business districts")\n', '("Shinsegae Centum City", "is in", "Busan")\n', '("Westin Chosun Busan, Paradise Busan, and Park Hyatt Busan", "are major hotels in", "Busan")\n', '("Busan", "has educational institutions like", "Busan University of Foreign Studies and Pusan National University")\n', '("Busan", "is known as the summer capital of", "Korea")\n', '("Busan", "attracts tourists to its", "six beaches")\n', '("Busan", "is home to", "Busan International Film Festival and Busan Biennale")\n', '("Busan International Film Festival", "is one of the most popular", "international film festivals in Asia")\n', '("Busan", "has a variety of", "parks, beaches, and highlights")\n', '("Taejongdae", "is", "a natural park in Busan")\n', '("Busan", "has historical sites like", "Beomeosa Temple and Busanjinjiseong Fortress")\n', '("Busan", "is the backdrop for films like", "Black Panther and Train to Busan")\n', '("Busan IPark", "is a", "K League football club in Busan")\n', '("Busan", "has many hospitals and clinics, especially in", "Seomyeon medical street")\n', '("Busan", "is served by", "Gimhae International Airport")\n', '("Busan", "has sister city relationships with", "several coastal cities around the world")\n', '("Busan", "is home to celebrities like", "actor Ahn Bohyun and singer Kang Daniel")\n', '("Ulsan", "officially known as", "the Ulsan Metropolitan City")\n', '("Ulsan", "is the", "seventh-largest metropolitan city in South Korea")\n', '("Ulsan", "is the industrial powerhouse of", "South Korea")\n', '("Hyundai Motor Company", "operates the world\'s largest automobile assembly plant in", "Ulsan")\n', '("Hyundai Heavy Industries", "operates the world\'s largest shipyard in", "Ulsan")\n', '("SK Energy", "owns the world\'s third largest oil refinery in", "Ulsan")\n', '("Ulsan", "is divided into", "four gu and one gun")\n', '("Ulsan", "has history since", "the Paleolithic Era")\n', '("Ulsan", "has been a site of mining and production for", "iron during the Jinhan confederacy")\n', '("Ulsan", "served as an important port for", "Gyeongju during the Later Silla period")\n', '("Ulsan", "began to grow as an industrial center due to", "the two World Wars")\n', '("Hyundai Group and SK Group", "began setting up large businesses in", "Ulsan")\n', '("Hyundai Heavy Industries", "established the shipyard in", "Ulsan")\n', '("Hyundai Motor Company", "started in", "Ulsan")\n', '("SK Energy", "developed an oil refinery and petrochemical hub in", "Ulsan")\n', '("Korea Shipbuilding & Offshore Engineering", "plans to move corporate headquarters to", "Seoul")\n', '("Ulsan", "mirrors", "the United States\' Rust Belt")\n', '("Ford River Rouge Complex", "inspired the integrated design of Hyundai Motor\'s plant in", "Ulsan")\n', '("SB LiMotive", "opened an advanced lithium-ion battery production plant in", "Ulsan")\n', '("Samsung SDI", "owns the Ulsan production facility of", "SB LiMotive")\n', '("Ulsan", "is connected to Seoul by", "KTX")\n', '("Ulsan HD FC", "is a football club based in", "Ulsan")\n', '("Ulsan Hyundai Mobis Phoebus", "is a basketball team based in", "Ulsan")\n', '("Jinha and Ilsan", "are beautiful beaches in", "Ulsan")\n', '("Daewangam Park", "features a lush, hundred-year-old pine forest in", "Ulsan")\n', '("Ganjeolgot Cape", "is noted as the first place to see the sunrise in", "Ulsan")\n', '("Ulsan Industry Park", "has been leading the Pacific Rim industry", "")\n', '("Hyundai Motor Company", "operates the world\'s largest single-purpose plant in", "Ulsan")\n', '("Gwangju", "formerly romanized as", "Kwangju")\n', '("Gwangju", "sixth-largest metropolis in", "South Korea")\n', '("Gwangju", "independent from", "South Jeolla Province")\n', '("Gwangju", "promoted to", "metropolitan city")\n', '("Gwangju", "southern boundary of", "Goguryeo")\n', '("Gwangju", "administrative center of", "Baekje")\n', '("Gwangju", "known as during Imperial Japanese rule", "Kōshū")\n', '("Gwangju Student Independence Movement", "turned into major uprising against", "Imperial Japanese cruelty")\n', '("Gwangju", "connected by railway to", "Seoul")\n', '("Gwangju", "demonstrations against", "Chun Doo-hwan")\n', '("Gwangju", "site of", "Gwangju Uprising")\n', '("Gwangju University", "private university in", "Gwangju")\n', '("Gwangju World Cup Stadium", "where South Korea national football team beat", "Spain soccer team")\n', '("Gwangju Institute of Science and Technology", "one of the greatest research institutes in", "Korea")\n', '("Gwangju", "home of", "Kia Tigers")\n', '("Gwangju", "home of", "Gwangju FC")\n', '("Gwangju", "home of", "Gwangju AI Peppers")\n', '("Gwangju", "selected as the site for", "Green-Startup-Town")\n', '("Gwangju", "part of", "Mudeungsan National Park")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n']
+range(1, 166) 4
+['("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")\n', '("Empire of Japan", "joined", "Axis alliance with Nazi Germany and Fascist Italy")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Shanghai Hongqiao International Airport", "is one of two international airports of", "Shanghai")\n', '("Shanghai Hongqiao International Airport", "located in", "Changning")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")\n', '("Shanghai Hongqiao International Airport", "was involved in", "Battle of Shanghai")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Seoul")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Haneda")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Beijing-Capital")\n', '("Shanghai", "is the largest city by population in", "China")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Dhaka")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Guangzhou")\n', '("Shanghai Hongqiao International Airport", "has a hub for", "China Eastern Airlines")\n', '("Shanghai Hongqiao International Airport", "is a hub for flights from", "United States")\n', '("Shanghai Hongqiao International Airport", "operates", "Airbus")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Harbin")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Macau")\n', '("Shanghai Hongqiao International Airport", "has flights connected with", "Macau International Airport")\n', '("Shanghai Hongqiao International Airport", "is adjacent to", "Beijing–Shanghai High-Speed Railway")\n', '("Shanghai Hongqiao International Airport", "handles flights from", "Shanghai Hongqiao International Airport")\n', '("Shanghai Hongqiao International Airport", "is one of two international airports of", "Shanghai")\n', '("Shanghai Hongqiao International Airport", "located in", "Changning")\n', '("Shanghai Hongqiao International Airport", "was involved in", "Battle of Shanghai")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Seoul")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Haneda")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Beijing-Capital")\n', '("Shanghai", "is the largest city by population in", "China")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Dhaka")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Guangzhou")\n', '("Shanghai Hongqiao International Airport", "has a hub for", "China Eastern Airlines")\n', '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")\n', '("Shanghai Hongqiao International Airport", "is a hub for flights from", "United States")\n', '("Shanghai Hongqiao International Airport", "operates", "Airbus")\n', '("Shanghai Hongqiao International Airport", "serves flights to", "Harbin")\n', '("Shanghai Hongqiao International Airport", "serves select international flights to", "Macau")\n', '("Shanghai Hongqiao International Airport", "has flights connected with", "Macau International Airport")\n', '("Shanghai Hongqiao International Airport", "is adjacent to", "Beijing–Shanghai High-Speed Railway")\n', '("Shanghai Hongqiao International Airport", "handles flights from", "Shanghai Hongqiao International Airport")\n', '("Empire of Japan", "committed", "Nanjing Massacre")\n', '("Empire of Japan", "forced into defensive stance against", "United States")\n', '("Iwo Jima and Okinawa Island", "captured by", "American military")\n', '("Soviet Union", "invaded", "Japan\'s northern territories")\n', '("Douglas MacArthur", "administered", "occupied Japan")\n', '("Japan", "underwent period of industrialization and militarization during", "Meiji")\n', '("Shōwa", "era saw", "end of Japanese Empire")\n', '("Busan", "is South Korea\'s", "second most populous city after Seoul")\n', '("Busan", "is the economic, cultural and educational center of", "southeastern South Korea")\n', '("Busan\'s port", "is", "South Korea\'s busiest and the sixth-busiest in the world")\n', '("Busan", "has an area called", "Southeastern Maritime Industrial Region")\n', '("Southeastern Maritime Industrial Region", "includes", "Ulsan, South Gyeongsang, Daegu")\n', '("Busan", "is situated between", "the Nakdong and the Suyeong Rivers")\n', '("Busan", "is famously known for", "the Battle of the Pusan Perimeter")\n', '("Busan", "is a center for", "international conventions")\n', '("Busan", "is home to", "the world\'s largest department store, the Shinsegae Centum City")\n', '("Busan", "was formerly romanized as", "Pusan")\n', '("Busan\'s Sino-Korean name", "is", "\'Cauldron Mountain\'")\n', '("Busan", "is located on the southeastern tip of", "the Korean Peninsula")\n', '("Busan", "borders", "low mountains on the north and west, and the seas on the south and east")\n', '("Nakdong River", "is", "South Korea\'s longest river")\n', '("Busan", "has", "Haeundae Beach, the country\'s largest")\n', '("Busan", "is part of", "Yeongnam region")\n', '("Busan", "is the closest Korean area to", "Tsushima, Japan")\n', '("Busan and Fukuoka", "are", "sister cities")\n', '("Busan", "has a cooler version of a", "humid subtropical climate")\n', '("Busan", "is most prone to", "typhoons in South Korea")\n', '("Busan", "is a maritime logistics hub in", "Northeast Asia")\n', '("Maritime Silk Road", "runs from the Chinese coast to", "Singapore, towards the southern tip of India to Mombasa, through the Red Sea via the Suez Canal to the Mediterranean, to the Upper Adriatic region to Trieste with connections to Central Europe and the North Sea")\n', '("Busan", "is known for its global", "MICE industry")\n', '("Korea Exchange", "headquartered in", "Busan")\n', '("Busan", "is home to", "major financial institutions")\n', '("Seomyeon and Gwangbok-dong/Nampo-dong", "are Busan\'s", "largest central business districts")\n', '("Shinsegae Centum City", "is in", "Busan")\n', '("Westin Chosun Busan, Paradise Busan, and Park Hyatt Busan", "are major hotels in", "Busan")\n', '("Busan", "has educational institutions like", "Busan University of Foreign Studies and Pusan National University")\n', '("Busan", "is known as the summer capital of", "Korea")\n', '("Busan", "attracts tourists to its", "six beaches")\n', '("Busan", "is home to", "Busan International Film Festival and Busan Biennale")\n', '("Busan International Film Festival", "is one of the most popular", "international film festivals in Asia")\n', '("Busan", "has a variety of", "parks, beaches, and highlights")\n', '("Taejongdae", "is", "a natural park in Busan")\n', '("Busan", "has historical sites like", "Beomeosa Temple and Busanjinjiseong Fortress")\n', '("Busan", "is the backdrop for films like", "Black Panther and Train to Busan")\n', '("Busan IPark", "is a", "K League football club in Busan")\n', '("Busan", "has many hospitals and clinics, especially in", "Seomyeon medical street")\n', '("Busan", "is served by", "Gimhae International Airport")\n', '("Busan", "has sister city relationships with", "several coastal cities around the world")\n', '("Busan", "is home to celebrities like", "actor Ahn Bohyun and singer Kang Daniel")\n', '("Ulsan", "officially known as", "the Ulsan Metropolitan City")\n', '("Ulsan", "is the", "seventh-largest metropolitan city in South Korea")\n', '("Ulsan", "is the industrial powerhouse of", "South Korea")\n', '("Hyundai Motor Company", "operates the world\'s largest automobile assembly plant in", "Ulsan")\n', '("Hyundai Heavy Industries", "operates the world\'s largest shipyard in", "Ulsan")\n', '("SK Energy", "owns the world\'s third largest oil refinery in", "Ulsan")\n', '("Ulsan", "is divided into", "four gu and one gun")\n', '("Ulsan", "has history since", "the Paleolithic Era")\n', '("Ulsan", "has been a site of mining and production for", "iron during the Jinhan confederacy")\n', '("Ulsan", "served as an important port for", "Gyeongju during the Later Silla period")\n', '("Ulsan", "began to grow as an industrial center due to", "the two World Wars")\n', '("Hyundai Group and SK Group", "began setting up large businesses in", "Ulsan")\n', '("Hyundai Heavy Industries", "established the shipyard in", "Ulsan")\n', '("Hyundai Motor Company", "started in", "Ulsan")\n', '("SK Energy", "developed an oil refinery and petrochemical hub in", "Ulsan")\n', '("Korea Shipbuilding & Offshore Engineering", "plans to move corporate headquarters to", "Seoul")\n', '("Ulsan", "mirrors", "the United States\' Rust Belt")\n', '("Ford River Rouge Complex", "inspired the integrated design of Hyundai Motor\'s plant in", "Ulsan")\n', '("SB LiMotive", "opened an advanced lithium-ion battery production plant in", "Ulsan")\n', '("Samsung SDI", "owns the Ulsan production facility of", "SB LiMotive")\n', '("Ulsan", "is connected to Seoul by", "KTX")\n', '("Ulsan HD FC", "is a football club based in", "Ulsan")\n', '("Ulsan Hyundai Mobis Phoebus", "is a basketball team based in", "Ulsan")\n', '("Jinha and Ilsan", "are beautiful beaches in", "Ulsan")\n', '("Daewangam Park", "features a lush, hundred-year-old pine forest in", "Ulsan")\n', '("Ganjeolgot Cape", "is noted as the first place to see the sunrise in", "Ulsan")\n', '("Ulsan Industry Park", "has been leading the Pacific Rim industry", "")\n', '("Hyundai Motor Company", "operates the world\'s largest single-purpose plant in", "Ulsan")\n', '("Gwangju", "formerly romanized as", "Kwangju")\n', '("Gwangju", "sixth-largest metropolis in", "South Korea")\n', '("Gwangju", "independent from", "South Jeolla Province")\n', '("Gwangju", "promoted to", "metropolitan city")\n', '("Gwangju", "southern boundary of", "Goguryeo")\n', '("Gwangju", "administrative center of", "Baekje")\n', '("Gwangju", "known as during Imperial Japanese rule", "Kōshū")\n', '("Gwangju Student Independence Movement", "turned into major uprising against", "Imperial Japanese cruelty")\n', '("Gwangju", "connected by railway to", "Seoul")\n', '("Gwangju", "demonstrations against", "Chun Doo-hwan")\n', '("Gwangju", "site of", "Gwangju Uprising")\n', '("Gwangju University", "private university in", "Gwangju")\n', '("Gwangju World Cup Stadium", "where South Korea national football team beat", "Spain soccer team")\n', '("Gwangju Institute of Science and Technology", "one of the greatest research institutes in", "Korea")\n', '("Gwangju", "home of", "Kia Tigers")\n', '("Gwangju", "home of", "Gwangju FC")\n', '("Gwangju", "home of", "Gwangju AI Peppers")\n', '("Gwangju", "selected as the site for", "Green-Startup-Town")\n', '("Gwangju", "part of", "Mudeungsan National Park")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n']
+range(1, 166) 4
+{'id': '6_5', 'Question': ' Which city offers flights to the airport that serves as a connection for travelers from an empire that allied with Nazi Germany and Facist Italy during WWII and also provides flights to another international hub in the same city?\n', 'Answer': 'Seoul', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Busan'}, {'label': 'B', 'text': 'Ulsan'}, {'label': 'C', 'text': 'Gwangju'}, {'label': 'D', 'text': 'Incheon'}, {'label': 'E', 'text': 'Seoul'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'busan'}, {'label': 'B', 'text': 'ulsan'}, {'label': 'C', 'text': 'gwangju'}, {'label': 'D', 'text': 'incheon'}, {'label': 'E', 'text': 'seoul'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which city has regular flights to Shanghai Hongqiao?\nA1: Seoul\n\n', '2: Which airport serves flights from Japan?\nA2: Shanghai Hongqiao International Airport\n\n', "3: Which airport serves flights to its city's other international hub, Shanghai–Pudong?\nA3: Shanghai Hongqiao International Airport\n\n", '4: Which empire joined the Axis alliance with Nazi Germany and Fascist Italy?\nA4: Japan'], 'Hops_wiki': [('Seoul', 'Shanghai Hongqiao International Airport'), ('Shanghai Hongqiao International Airport', 'Japan'), ('Shanghai Hongqiao International Airport', 'Shanghai Pudong International Airport'), ('Japan', 'Nazi Germany')], 'Hops_cpnet': [('seoul', 'hongqiao_airport'), ('hongqiao_airport', 'japan'), ('hongqiao_airport', 'pudong_airport'), ('japan', 'nazi_germany')], 'Triplets': ['("Seoul", "has regular flights to", "Shanghai Hongqiao")', '("Shanghai Hongqiao International Airport", "serves flights from", "Japan")', '("Shanghai Hongqiao International Airport", "serves flights to", "Shanghai–Pudong")', '("Empire of Japan", "joined", "Axis alliance with Nazi Germany and Fascist Italy")'], 'Referred_files': [{'name': 'Seoul', 'line': 19}, {'name': 'Shanghai Hongqiao International Airport', 'line': 12}, {'name': 'Shanghai Hongqiao International Airport', 'line': 3}, {'name': 'Empire of Japan', 'line': 1}], 'Question_triplet_answer': {100: [47, 60, 70, 74], 50: [21, 44, 112, 165], 25: [96, 107, 112, 145]}}
+time passed:  2270.3085663318634
+Expected dollar:  0.005
+Ahn Bohyun is Geography
+Kang Daniel is People
+Shanghai Hongqiao International Airport is Geography
+Beijing Shanghai High Speed Railway is Geography
+Macau International Airport is Geography
+Gwangju is Geography
+Macau is Geography
+the Battle of the Pusan Perimeter is Geography
+Gwangbok dong/Nampo is Geography
+Busan is Geography
+Ulsan Industry Park is Geography
+Gangnam district is Geography
+Seoul is Geography
+Airbus is Geography
+South Korea is Geography
+Hyundai Motor Company is Geography
+Ulsan is Geography
+Namsan is Geography
+Nakdong River is Geography
+South Korea's is Geography
+Jinha and Ilsan is People
+Gwangju University is Geography
+the Joseon dynasty is Geography
+Kwangju is Geography
+Singapore is Geography
+San Francisco is Geography
+Beijing Capital is Geography
+India is Geography
+Mombasa is Geography
+the Red Sea is Geography
+the Suez Canal is Geography
+Mediterranean is Geography
+Trieste is Geography
+the North Sea is Geography
+Green Startup Town is Geography
+Westin Chosun Busan is Geography
+Park Hyatt Busan is Geography
+Japan is Geography
+Daewangam Park is Incident
+Guangzhou is Geography
+the Japanese Empire is Geography
+Harbin is Geography
+the Korean Empire is Geography
+Shanghai is Geography
+Battle of Shanghai is Geography
+Mudeungsan National Park is Geography
+Busan and Fukuoka is Geography
+Gwangju Institute of Science and Technology is Geography
+Korea is Geography
+Nazi Germany is Geography
+Pudong is Geography
+the Korean Peninsula is Geography
+Beomeosa Temple and Busanjinjiseong Fortress is Geography
+China is Geography
+Ganjeolgot Cape is Geography
+Nanjing Massacre is Geography
+Gimhae International Airport is Geography
+Nakdong is Geography
+the Suyeong Rivers is Geography
+Iwo Jima is Geography
+Okinawa Island is Geography
+Gyeonggi is Geography
+Seoul National University is Geography
+Haneda is Geography
+Douglas MacArthur is People
+Times Square is Geography
+entities:  {'Daewangam', 'Institute', 'Ulsan', 'Shanghai', 'Joseon', 'Busan', 'Suyeong', 'Shinsegae', 'Suez', 'Battle', 'Asia', 'Germany', 'Gyeonggi', 'Cape', 'Speed', 'dong/Nampo', 'Airport', 'MacArthur', 'Busanjinjiseong', 'Pudong', 'Sea', 'Seoul', 'Kang', 'Eastern', 'Jinha', 'district', 'Chosun', 'Tsushima', 'Centum', 'Gimhae', 'Gwangju', 'Park', 'Korea', 'Pacific', 'South', 'River', 'Bohyun', 'Gwangbok', 'Haneda', 'Motor', 'Technology', 'Mediterranean', 'Rivers', 'China', 'Science', 'Peninsula', 'Namsan', 'Kwangju', 'Ganjeolgot', 'Empire', 'Daniel', 'Hyatt', 'International', 'Francisco', 'Airbus', 'Temple', 'Perimeter', 'National', 'Times', 'Pusan', "Korea's", 'Douglas', 'Ilsan', 'Japanese', 'Mudeungsan', 'Nakdong', 'Square', 'Italy', 'United', 'Jima', 'Trieste', 'Town', 'Europe', 'dynasty', 'Industry', 'Railway', 'Westin', 'Fortress', 'Macau', 'Company', 'Green', 'Mombasa', 'High', 'India', 'Korean', 'North', 'Startup', 'San', 'Red', 'Hyundai', 'Singapore', 'Incheon', 'Kia', 'Guangzhou', 'Beijing', 'Iwo', 'Massacre', 'Okinawa', 'Nazi', 'Ahn', 'Capital', 'University', 'Hongqiao', 'Island', 'Gangnam', 'Nanjing', 'Fukuoka', 'Beomeosa', 'Japan', 'Canal', 'Harbin'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Seoul' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Busan
+celebrities
+actor
+singer
+Busan International Film Festival
+Busan Biennale
+maritime logistics hub
+international film festivals
+beaches
+major financial institutions
+Battle of the Pusan Perimeter
+central business districts
+Seomyeon and Gwangbok-dong/Nampo-dong
+southeastern South Korea
+closest Korean area
+Tsushima, Japan
+South Korea's busiest
+sixth-busiest
+world's largest department store
+Shinsegae Centum City
+historical sites
+Beomeosa Temple
+Busanjinjiseong Fortress
+Nakdong River
+Baekje
+K League football club
+singer Kang Daniel
+train stations
+empire
+Japanese Empire
+American military
+Japanese rule
+
+Seoul
+Namsan
+economic hub
+capital
+Joseon dynasty
+Gyeongseong
+Gyeonggi province
+Seoul National University
+Haneda
+Ulsan
+Ulsan Industry Park
+Ulsan HD FC
+world's largest single-purpose plant
+industry park
+District
+Towns
+production facility
+SB LiMotive
+Gangnam district
+
+Shanghai Hongqiao International Airport
+Flights
+China Eastern Airlines
+Beijing–Shanghai High-Speed Railway
+Macau International Airport
+Airbus
+Beijing-Capital
+Guangzhou
+Shanghai–Pudong
+United States
+Haneda
+
+Gwangju
+Kia Tigers
+South Korea's longest river
+largest metropolis
+Green-Startup-Town
+Gwangju Institute of Science and Technology
+Mudeungsan National Park
+Gwangju Uprising
+Gwangju AI Peppers
+Korea Shipbuilding & Offshore Engineering
+
+Incheon
+transportation hub
+Goryeo era
+Singapore
+San Francisco
+Seoul Capital Area
+northwestern South Korea
+
+Fukuoka
+sister cities
+
+Japan
+Meiji
+Shōwa
+end of Japanese Empire
+Imperial Japanese era
+Nanjing Massacre
+
+China
+Changning
+
+gpt_entity_particular(): entity list: 
+ ['Joseon dynasty', 'international film festivals', 'District', "South Korea's longest river", 'central business districts', 'Gwangju AI Peppers', 'Macau International Airport', 'Gyeongseong', 'Busanjinjiseong Fortress', 'Shanghai–Pudong', 'Seoul', 'historical sites', 'China Eastern Airlines', 'Seoul Capital Area', 'singer', 'Battle of the Pusan Perimeter', 'Gwangju', 'Flights', 'Meiji', 'Kia Tigers', 'end of Japanese Empire', 'Goryeo era', 'empire', 'Nanjing Massacre', 'Busan International Film Festival', 'Airbus', 'singer Kang Daniel', 'major financial institutions', 'Beomeosa Temple', 'K League football club', 'train stations', 'actor', 'capital', 'northwestern South Korea', 'Beijing–Shanghai High-Speed Railway', 'economic hub', 'Singapore', 'Gyeonggi province', 'Japanese rule', 'Incheon', 'Guangzhou', 'SB LiMotive', "world's largest single-purpose plant", 'Baekje', 'Shanghai Hongqiao International Airport', 'Tsushima, Japan', 'Beijing-Capital', 'Ulsan', 'sister cities', 'Busan', 'Japanese Empire', 'celebrities', "world's largest department store", 'Seomyeon and Gwangbok-dong/Nampo-dong', 'Gangnam district', 'Haneda', 'Ulsan HD FC', 'transportation hub', 'southeastern South Korea', 'China', 'beaches', 'Shōwa', 'Namsan', 'Korea Shipbuilding & Offshore Engineering', 'industry park', 'Gwangju Uprising', 'largest metropolis', 'Seoul National University', 'Nakdong River', 'Busan Biennale', 'closest Korean area', 'Changning', 'Green-Startup-Town', 'American military', 'United States', 'Shinsegae Centum City', 'maritime logistics hub', 'San Francisco', 'Towns', 'Mudeungsan National Park', 'Imperial Japanese era', 'Gwangju Institute of Science and Technology', "South Korea's busiest", 'sixth-busiest', 'production facility', 'Fukuoka', 'Ulsan Industry Park', 'Japan']
+
+gpt_entity_particular(): filtered entity: 
+ ['capital']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ulsan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ulsan
+Ulsan Industry Park
+Hyundai Motor Company
+SK Energy
+Daewangam Park
+Ganjeolgot Cape
+Samsung SDI
+Hyundai Heavy Industries
+
+gpt_entity_particular(): entity list: 
+ ['Daewangam Park', 'Samsung SDI', 'Ulsan', 'Ganjeolgot Cape', 'Hyundai Motor Company', 'Hyundai Heavy Industries', 'Ulsan Industry Park', 'SK Energy']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Incheon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Incheon
+Incheon 
+Incheon
+
+gpt_entity_particular(): entity list: 
+ ['Incheon', 'Incheon ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Shanghai Pudong International Airport' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Shanghai Pudong International Airport
+Beijing–Shanghai High-Speed Railway
+Macau International Airport
+China Eastern Airlines
+Airbus
+Beijing-Capital
+Seoul
+Guangzhou
+Shanghai–Pudong
+
+gpt_entity_particular(): entity list: 
+ ['Beijing-Capital', 'Shanghai–Pudong', 'Seoul', 'China Eastern Airlines', 'Shanghai Pudong International Airport', 'Guangzhou', 'Beijing–Shanghai High-Speed Railway', 'Airbus', 'Macau International Airport']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Busan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Busan
+celebrities 
+actor Ahn Bohyun 
+singer Kang Daniel
+Busan
+Busan International Film Festival
+Busan Biennale
+maritime logistics hub
+Northeast Asia
+Battle of the Pusan Perimeter
+largest central business districts
+six beaches
+the world's largest department store
+Shinsegae Centum City
+historical sites
+Beomeosa Temple
+Busanjinjiseong Fortress
+proximity to Tsushima
+Japan
+major financial institutions
+the closest Korean area to Tsushima
+Busan and Fukuoka 
+sister cities
+the backdrop for films
+Black Panther
+Train to Busan
+
+gpt_entity_particular(): entity list: 
+ ['singer Kang Daniel', 'sister cities', 'Busan', 'major financial institutions', 'celebrities ', 'largest central business districts', 'Train to Busan', 'Busan Biennale', 'actor Ahn Bohyun ', 'Busanjinjiseong Fortress', 'Beomeosa Temple', 'historical sites', 'Busan and Fukuoka ', 'Northeast Asia', 'Battle of the Pusan Perimeter', 'Shinsegae Centum City', 'maritime logistics hub', 'the backdrop for films', 'six beaches', 'Black Panther', 'proximity to Tsushima', 'Busan International Film Festival', 'the closest Korean area to Tsushima', 'Japan', "the world's largest department store"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Japan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+
+gpt_entity_particular(): entity list: 
+ ['Japan']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gwangju' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gwangju
+Kia Tigers
+Gwangju AI Peppers
+Gwangju University
+Green-Startup-Town
+Mudeungsan National Park
+
+gpt_entity_particular(): entity list: 
+ ['Green-Startup-Town', 'Kia Tigers', 'Mudeungsan National Park', 'Gwangju AI Peppers', 'Gwangju', 'Gwangju University']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Nazi Germany' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Axis alliance
+Nanjing Massacre
+Imperial Japanese rule
+Kōshū
+Battle of Shanghai
+Meiji
+Gwangju Uprising
+Korea Exchange
+
+gpt_entity_particular(): entity list: 
+ ['Nanjing Massacre', 'Axis alliance', 'Imperial Japanese rule', 'Battle of Shanghai', 'Meiji', 'Korea Exchange', 'Kōshū', 'Gwangju Uprising']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Shanghai Hongqiao International Airport' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Shanghai Hongqiao International Airport
+China Eastern Airlines
+Beijing–Shanghai High-Speed Railway
+Macau International Airport
+Airbus
+Macau
+Guangzhou
+Seoul
+Japan
+Beijing-Capital
+Harbin
+Kia Tigers
+Green-Startup-Town
+Shanghai–Pudong
+
+gpt_entity_particular(): entity list: 
+ ['Beijing-Capital', 'Shanghai–Pudong', 'Seoul', 'Green-Startup-Town', 'Macau', 'China Eastern Airlines', 'Kia Tigers', 'Japan', 'Guangzhou', 'Beijing–Shanghai High-Speed Railway', 'Airbus', 'Shanghai Hongqiao International Airport', 'Harbin', 'Macau International Airport']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Daewangam', 'Institute', 'Ulsan', 'Shanghai', 'Joseon', 'Busan', 'Suyeong', 'Shinsegae', 'Suez', 'Battle', 'Asia', 'Germany', 'Gyeonggi', 'Cape', 'Speed', 'dong/Nampo', 'Airport', 'MacArthur', 'Busanjinjiseong', 'Pudong', 'Sea', 'Seoul', 'Kang', 'Eastern', 'Jinha', 'district', 'Chosun', 'Tsushima', 'Centum', 'Gimhae', 'Gwangju', 'Park', 'Korea', 'Pacific', 'South', 'River', 'Bohyun', 'Gwangbok', 'Haneda', 'Motor', 'Technology', 'Mediterranean', 'Rivers', 'China', 'Science', 'Peninsula', 'Namsan', 'Kwangju', 'Ganjeolgot', 'Empire', 'Daniel', 'Hyatt', 'International', 'Francisco', 'Airbus', 'Temple', 'Perimeter', 'National', 'Times', 'Pusan', "Korea's", 'Douglas', 'Ilsan', 'Japanese', 'Mudeungsan', 'Nakdong', 'Square', 'Italy', 'United', 'Jima', 'Trieste', 'Town', 'Europe', 'dynasty', 'Industry', 'Railway', 'Westin', 'Fortress', 'Macau', 'Company', 'Green', 'Mombasa', 'High', 'capital', 'India', 'Korean', 'North', 'Startup', 'San', 'Red', 'Hyundai', 'Singapore', 'Incheon', 'Kia', 'Guangzhou', 'Beijing', 'Iwo', 'Massacre', 'Okinawa', 'Nazi', 'Ahn', 'Capital', 'University', 'Hongqiao', 'Island', 'Gangnam', 'Nanjing', 'Fukuoka', 'Beomeosa', 'Japan', 'Canal', 'Harbin'}
+Total time:  300.0589792728424
+Entity conversion done on 6_5 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_6_5_entity_conversion_hash.json. Check the entity.
+ Which city offers flights to the 03F that serves as a connection for travelers from an 01E that allied with 01B 00C and Facist 056 during WWII and also provides flights to another 04F hub in the same city?
+
+
+
+Done. Check final_query/id_6_5_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_6_5_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_6_5_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_6_5_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_6_5_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_6_5_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_5_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

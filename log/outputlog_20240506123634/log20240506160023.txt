@@ -1,0 +1,20 @@
+Got argument: Napoleon, 4, 4_4
+
+utils/question.py extract_hops(Napoleon, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Napoleon", "moved to the French mainland and enrolled at a religious school in", "Autun")', 'start word': 'Napoleon', 'end word': 'Autun', 'source': {'name': 'Napoleon', 'line': 24}, 'cpnet': {'start word': 'napoleon', 'end word': 'autun'}}
+
+utils/question.py extract_hops(Autun, [], ['Napoleon']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Autun_info.json file
+extract_info(Autun) Start.
+utils/preprocess.py extract_info(): Checking good links on Autun
+Saône-et-Loire is Geography
+1 / 30 )  Saône-et-Loire Saône-et-Loire saône_et_loire
+France is Geography
+2 / 30 )  France France france
+Augustus is People
+3 / 30 )  Augustus Augustus augustus
+Bibracte is Geography
+4 / 30 )  Bibracte Bibracte bibracte
+Julius Caesar is People
+5 / 30 )  Julius Caesar Julius Caesar julius_caesar

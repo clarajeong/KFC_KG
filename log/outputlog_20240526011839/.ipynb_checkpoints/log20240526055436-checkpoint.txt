@@ -1,0 +1,807 @@
+Got argument: Mexico, 0, 0_6, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")', 'start word': 'Mexico', 'end word': 'Alligator', 'source': {'name': 'Gar', 'line': 48}, 'cpnet': {'start word': 'mexico', 'end word': 'alligator'}}
+next_word: Alligator
+generate_question(0_6, ['("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")'], ['Alligator'], [('Mexico', 'Alligator')], Alligator, [{'name': 'Gar', 'line': 48}]) called
+GPT output is:  Q: Which species of gar has a range that encompasses Texas, Oklahoma, Louisiana, and the Mississippi River system, and also stretches to the southern parts of Mexico?
+A: Alligator
+final_choice(Alligator, options = 5) started
+[]
+entity_type(Alligator) called
+Alligator is Animal
+check_matchscore(Alligator, Alligatoridae):  1.0
+check_matchscore(Alligator, Alligator):  1.0
+check_matchscore(Alligator, Taxa named by Georges Cuvier):  0.0
+choose_by_wiki_recur(Taxa named by Georges Cuvier)
+   Pages in Taxa named by Georges Cuvier: ['next page', 'Ablabys taenianotus', 'Abramis', 'Abudefduf septemfasciatus', 'Acanthosaura lepidogaster', 'Acanthurus mata', 'Acestrorhynchus falcirostris', 'Acontias', 'Adapis', 'Aeolidia', 'African arowana', 'Alfonsino', 'Alligator', 'Ambassis', 'Amblyglyphidodon aureus', 'American crocodile', 'Amphiprion chrysogaster', 'Amphisbaena caeca', 'Amphiuma tridactylum', 'Anoplotherium', 'Antennarius biocellatus', 'Antennarius scaber', 'Antennatus tuberosus', 'Anthracotherium', 'Aphareus (fish)', 'Apistus', 'Aplysia punctata', 'Apolemichthys trimaculatus', 'Aquatic coral snake', 'Ara (fish)', 'Arc-eye hawkfish', 'Archerfish', 'Argentine seabass', 'Argyropelecus olfersii', 'Arripis truttacea', 'Asian black bear', 'Aspidontus', 'Atlantic spotted dolphin', 'Atule mate', 'Australian white ibis', 'Auxis', 'Barasingha', 'Barchin scorpionfish', 'Barred grunt', 'Barred queenfish', 'Belone', 'Belontia hasselti', 'Bembras', 'Bengal corvina', 'Beryx', 'Bigeye barracuda', 'Black marlin', 'Black-backed barbet', 'Blackfin snapper', 'Blackspotted hawkfish', 'Blepsias', 'Blepsias bilobus', 'Bludger (fish)', 'Blue mackerel', 'Blue-bellied roller', 'Bluecheek butterflyfish', 'Bluefin gurnard', 'Bluefin trevally', 'Bluelashed butterflyfish', 'Boops', 'Boridia', 'Borriqueta porgy', 'Boxlip mullet', 'Brachylophus', 'Brama dussumieri', 'Branchiostegus argentatus', 'Branchiostegus doliatus', 'Brick seamoth', 'Broom filefish', 'Brotula (genus)', 'Calotes', 'Canary damsel', 'Cape gurnard', 'Cape kurper', 'Catfish', 'Ceblepyris', 'Centrarchus', 'Centroberyx lineatus', 'Centropristis', 'Centropyge tibicen', 'Cephalopod', 'Ceratosoma pustulosum', 'Cerberus (snake)', 'Cetengraulis edentulus', 'Chaetodon larvatus', 'Chaetodon mertensii', 'Chaetodon plebeius', 'Chaetodon triangulum', 'Chaetodon ulietensis', 'Chaetopterus', 'Chalceus', 'Channa micropeltes', 'Chilomycterus antennatus', 'Chinese water dragon', 'Chirocentridae', 'Chirocentrus', 'Chironemus', 'Chromis', 'Chromis caerulea', 'Chromis cinerascens', 'Chromis insolata', 'Chromis viridis', 'Chromis analis', 'Cinnyris', 'Citharinus', 'Clearfin lionfish', 'Clepticus', 'Clinus', 'Clupeidae', 'Coachwhip trevally', 'Common kusimanse', 'Common octopus', 'Conodon', 'Cookeolus japonicus', 'Coradion chrysozonus', 'Coradion melanopus', 'Crab-eating raccoon', 'Crested jayshrike', 'Cristatella', 'Cristatella mucedo', 'Croaking gourami', 'Crocodile', 'Crocodile flathead', 'Cuban crocodile', 'Crocodylinae', 'Crossarchus', 'Cubera snapper', "Cuvier's beaked whale", "Cuvier's dwarf caiman", 'Cyclura cychlura cychlura', 'Cynoscion nebulosus', 'Dacnis', 'Dark-banded fusilier', 'Dascyllus', 'Dendrochirus brachypterus', 'Dendrochirus zebra', 'Dentex', 'Dicaeum', 'Dicotyles', 'Diodon nicthemerus', 'Diploprion', 'Diploprion bifasciatum', 'Dischistodus perspicillatus', 'Doriprismatica atromarginata', 'Drepane (fish)', 'Dules', 'Dules auriga', 'Dyeing poison dart frog', 'Eastern bearded dragon', 'Eastern triangle butterflyfish', 'Echiichthys vipera', 'Engraulis', 'Ephippus (fish)', 'Epibulus', 'Epimachus', 'Esocidae', 'Etelis', 'Etroplus', 'Eubleekeria splendens', 'Eugerres plumieri', 'Euselenops luniceps', 'Fibramia thermalis', 'Fiery-necked nightjar', 'Five-lined cardinalfish', 'Forest snakehead', 'Frigate Island caecilian', 'Furcifer verrucosus', 'Galaxias', 'Galeus', 'Galjoen', 'Gar', 'Gastropoda', 'Gecko', 'Geelbeck croaker', 'Genet (animal)', 'Genetta', 'Genidens genidens', 'Geosaurus', 'Gerres filamentosus', 'Gerres subfasciatus', 'Giant African threadfin', 'Giant butterfly lizard', 'Gobiidae', 'Gobiinae', 'Gobio', 'Goldband fusilier', 'Goldtail angelfish', 'Grampus griseus', 'Great stone-curlew', 'Greenfinch', 'Guachanche barracuda', 'Gymnarchus', 'Gymnarchus niloticus', 'Haemulon', 'Haemulon album', 'Half-mourning croaker']
+      Archerfish in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus']
+Archerfish is Animal
+      Amphiprion chrysogaster in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus']
+Amphiprion chrysogaster is Animal
+      Adapis in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)']
+Adapis is Animal
+      Clepticus in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae']
+Clepticus is Animal
+      Ara (fish) in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae', 'Catfish']
+Ara (fish) is Animal
+      Clupeidae in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae', 'Catfish', 'Blackfin snapper']
+Clupeidae is Animal
+      Catfish in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae', 'Catfish', 'Blackfin snapper']
+Catfish is Animal
+      Blackfin snapper in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae', 'Catfish', 'Blackfin snapper']
+Blackfin snapper is Animal
+      Diodon nicthemerus in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae', 'Catfish', 'Blackfin snapper', 'Diodon nicthemerus']
+Diodon nicthemerus is Animal
+      Dicaeum in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae', 'Catfish', 'Blackfin snapper', 'Diodon nicthemerus', 'Dicaeum']
+Dicaeum is Animal
+      Crested jayshrike in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae', 'Catfish', 'Blackfin snapper', 'Diodon nicthemerus', 'Dicaeum', 'Crested jayshrike']
+Crested jayshrike is Animal
+      Aplysia punctata in ['Archerfish', 'Amphiprion chrysogaster', 'Adapis', 'Clepticus', 'Ara (fish)', 'Clupeidae', 'Catfish', 'Blackfin snapper', 'Diodon nicthemerus', 'Dicaeum', 'Crested jayshrike', 'Aplysia punctata']
+Aplysia punctata is Animal
+['Archerfish', 'Clupeidae', 'Catfish', 'Aplysia punctata']
+Ended after 2.5 hierarchy
+(2.5, ['Catfish', 'Clupeidae', 'Aplysia punctata', 'Archerfish'])
+
+extract_info(Archerfish) Start.
+utils/preprocess.py extract_info(): Checking good links on Archerfish
+Perciformes is Animal
+1 / 30 )  perciform Perciformes perciformes
+Insect is Animal
+2 / 30 )  insects Insect insect
+India is Geography
+3 / 30 )  India India india
+Bangladesh is Geography
+4 / 30 )  Bangladesh Bangladesh bangladesh
+Sri Lanka is Geography
+5 / 30 )  Sri Lanka Sri Lanka sri_lanka
+Melanesia is Geography
+6 / 30 )  Melanesia Melanesia melanesia
+extract_triplet(Archerfish)
+Got GPT's response. String length : 1083
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  [['perciform', 'Perciformes', 'perciformes']]
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  [['insects', 'Insect', 'insect']]
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  [['India', 'India', 'india']]
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  [['Bangladesh', 'Bangladesh', 'bangladesh']]
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  [['Sri Lanka', 'Sri Lanka', 'sri_lanka']]
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  [['Melanesia', 'Melanesia', 'melanesia']]
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+subject_words:  [(None, 'Archerfish', 'archerfish')]
+object_words:  []
+extract_info(Aplysia punctata) Start.
+utils/preprocess.py extract_info(): Checking good links on Aplysia punctata
+Aplysiidae is Animal
+1 / 30 )  Aplysiidae Aplysiidae aplysiidae
+Greenland is Geography
+2 / 30 )  Greenland Greenland greenland
+Norway is Geography
+3 / 30 )  Norway Norway norway
+Mediterranean Sea is Geography
+4 / 30 )  Mediterranean Sea Mediterranean Sea mediterranean_sea
+Gastropoda is Animal
+5 / 30 )  gastropods Gastropoda gastropoda
+Bivalvia is Animal
+6 / 30 )  bivalves Bivalvia bivalvia
+Mollusca is Animal
+7 / 30 )  mollusks Mollusca mollusca
+extract_triplet(Aplysia punctata)
+Got GPT's response. String length : 1374
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  [['Aplysiidae', 'Aplysiidae', 'aplysiidae']]
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  [['Greenland', 'Greenland', 'greenland'], ['Norway', 'Norway', 'norway'], ['Mediterranean Sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  [['gastropods', 'Gastropoda', 'gastropoda']]
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+subject_words:  [(None, 'Aplysia punctata', 'aplysia_punctata')]
+object_words:  []
+extract_info(Clupeidae) Start.
+utils/preprocess.py extract_info(): Checking good links on Clupeidae
+Clupeiformes is Animal
+1 / 30 )  clupeiform Clupeiformes clupeiformes
+Actinopterygii is Animal
+2 / 30 )  ray-finned fishes Actinopterygii actinopterygii
+Sprattus is Animal
+3 / 30 )  sprats Sprattus sprats
+Bird is Animal
+4 / 30 )  birds Bird bird
+Shark is Animal
+5 / 30 )  sharks Shark shark
+Toothed whale is Animal
+6 / 30 )  toothed whales Toothed whale toothed_whale
+Atlantic herring is Animal
+7 / 30 )  Atlantic and Baltic herrings Atlantic herring atlantic_herring
+Pacific herring is Animal
+8 / 30 )  Pacific herring Pacific herring pacific_herring
+Copepod is Animal
+9 / 30 )  copepods Copepod copepod
+Salmonidae is Animal
+10 / 30 )  salmoniform Salmonidae salmonidae
+extract_triplet(Clupeidae)
+Got GPT's response. String length : 1133
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  [['clupeiform', 'Clupeiformes', 'clupeiformes']]
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  [['sprats', 'Sprattus', 'sprats']]
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  [['birds', 'Bird', 'bird']]
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  [['sharks', 'Shark', 'shark']]
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  [['toothed whales', 'Toothed whale', 'toothed_whale']]
+subject_words:  [['Atlantic and Baltic herrings', 'Atlantic herring', 'atlantic_herring']]
+object_words:  [(None, 'Clupeidae', 'clupeidae')]
+subject_words:  [['Pacific herring', 'Pacific herring', 'pacific_herring']]
+object_words:  [(None, 'Clupeidae', 'clupeidae')]
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  [['copepods', 'Copepod', 'copepod']]
+subject_words:  []
+object_words:  [(None, 'Clupeidae', 'clupeidae')]
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  []
+subject_words:  [(None, 'Clupeidae', 'clupeidae')]
+object_words:  [['salmoniform', 'Salmonidae', 'salmonidae']]
+extract_info(Catfish) Start.
+utils/preprocess.py extract_info(): Checking good links on Catfish
+Actinopterygii is Animal
+1 / 30 )  ray-finned fish Actinopterygii actinopterygii
+Cat is Animal
+2 / 30 )  cat Cat cat
+Mekong giant catfish is Animal
+3 / 30 )  Mekong giant catfish Mekong giant catfish mekong_giant_catfish
+Wels catfish is Animal
+4 / 30 )  wels catfish Wels catfish wels_catfish
+Eurasia is Geography
+5 / 30 )  Eurasia Eurasia eurasia
+Candiru  is Animal
+6 / 30 )  candiru Candiru  toothpick_fish
+Corydoras is Animal
+7 / 30 )  Corydoras Corydoras corydoras
+Ostariophysi is Animal
+8 / 30 )  Ostariophysi Ostariophysi ostariophysi
+Cypriniformes is Animal
+9 / 30 )  Cypriniformes Cypriniformes cypriniformes
+Characiformes is Animal
+10 / 30 )  Characiformes Characiformes characiformes
+Gonorynchiformes is Animal
+11 / 30 )  Gonorynchiformes Gonorynchiformes gonorynchiformes
+Gymnotiformes is Animal
+12 / 30 )  Gymnotiformes Gymnotiformes gymnotiformes
+Vertebrate is Animal
+13 / 30 )  vertebrate Vertebrate vertebrate
+Afrocascudo  is Animal
+14 / 30 )  Afrocascudo Afrocascudo  loricariid
+Loricariidae is Animal
+15 / 30 )  armored catfish Loricariidae loricariidae
+Cenomanian is Geography
+16 / 30 )  Cenomanian Cenomanian cenomanian
+Late Cretaceous is Geography
+17 / 30 )  Late Cretaceous Late Cretaceous upper_cretaceous
+Conorhynchos is Animal
+18 / 30 )  Conorhynchos Conorhynchos conorhynchos_conirostris
+Anchariidae is Animal
+19 / 30 )  Anchariidae Anchariidae anchariidae
+Coelacanth is Animal
+20 / 30 )  coelacanth Coelacanth coelacanth
+Megamouth shark is Animal
+21 / 30 )  megamouth shark Megamouth shark megamouth_shark
+Chiapas is Geography
+22 / 30 )  Chiapas Chiapas chiapas
+Diplomystidae is Animal
+23 / 30 )  Diplomystidae Diplomystidae diplomystidae
+Loricarioidea is Animal
+24 / 30 )  Loricarioidei Loricarioidea loricarioidea
+Claroteidae is Animal
+25 / 30 )  Claroteidae Claroteidae claroteidae
+Andinichthyidae is Animal
+26 / 30 )  Andinichthyidae Andinichthyidae andinichthyidae
+Nematogenys inermis is Animal
+27 / 30 )  Nematogenyidae Nematogenys inermis nematogenys_inermis
+Trichomycteridae is Animal
+28 / 30 )  Trichomycteridae Trichomycteridae trichomycteridae
+Callichthyidae is Animal
+29 / 30 )  Callichthyidae Callichthyidae callichthyidae
+Astroblepus is Animal
+30 / 30 )  Astroblepidae Astroblepus astroblepidae
+extract_triplet(Catfish)
+Got GPT's response. String length : 1452
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  []
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  []
+subject_words:  [(None, 'Catfish', 'catfish'), ['Mekong giant catfish', 'Mekong giant catfish', 'mekong_giant_catfish']]
+object_words:  []
+subject_words:  [(None, 'Catfish', 'catfish'), ['wels catfish', 'Wels catfish', 'wels_catfish']]
+object_words:  [['Eurasia', 'Eurasia', 'eurasia']]
+subject_words:  [['candiru', 'Candiru ', 'toothpick_fish']]
+object_words:  []
+subject_words:  [['Corydoras', 'Corydoras', 'corydoras']]
+object_words:  []
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['Ostariophysi', 'Ostariophysi', 'ostariophysi']]
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['Cypriniformes', 'Cypriniformes', 'cypriniformes']]
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['Characiformes', 'Characiformes', 'characiformes']]
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['Gonorynchiformes', 'Gonorynchiformes', 'gonorynchiformes']]
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['Gymnotiformes', 'Gymnotiformes', 'gymnotiformes']]
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['vertebrate', 'Vertebrate', 'vertebrate']]
+subject_words:  [['Afrocascudo', 'Afrocascudo ', 'loricariid']]
+object_words:  [(None, 'Catfish', 'catfish'), ['armored catfish', 'Loricariidae', 'loricariidae']]
+subject_words:  [['Afrocascudo', 'Afrocascudo ', 'loricariid']]
+object_words:  [['Cenomanian', 'Cenomanian', 'cenomanian']]
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['Late Cretaceous', 'Late Cretaceous', 'upper_cretaceous']]
+subject_words:  [['Conorhynchos', 'Conorhynchos', 'conorhynchos_conirostris']]
+object_words:  [(None, 'Catfish', 'catfish')]
+subject_words:  [['Anchariidae', 'Anchariidae', 'anchariidae']]
+object_words:  [(None, 'Catfish', 'catfish')]
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['coelacanth', 'Coelacanth', 'coelacanth']]
+subject_words:  [(None, 'Catfish', 'catfish')]
+object_words:  [['megamouth shark', 'Megamouth shark', 'megamouth_shark']]
+subject_words:  []
+object_words:  [['Chiapas', 'Chiapas', 'chiapas']]
+subject_words:  [['Diplomystidae', 'Diplomystidae', 'diplomystidae']]
+object_words:  []
+subject_words:  [['Loricarioidei', 'Loricarioidea', 'loricarioidea']]
+object_words:  []
+subject_words:  [['Claroteidae', 'Claroteidae', 'claroteidae']]
+object_words:  []
+subject_words:  [['Andinichthyidae', 'Andinichthyidae', 'andinichthyidae']]
+object_words:  [(None, 'Catfish', 'catfish')]
+subject_words:  [['Nematogenyidae', 'Nematogenys inermis', 'nematogenys_inermis']]
+object_words:  [(None, 'Catfish', 'catfish')]
+subject_words:  [['Trichomycteridae', 'Trichomycteridae', 'trichomycteridae']]
+object_words:  [(None, 'Catfish', 'catfish')]
+subject_words:  [['Callichthyidae', 'Callichthyidae', 'callichthyidae']]
+object_words:  []
+subject_words:  [['Astroblepidae', 'Astroblepus', 'astroblepidae']]
+object_words:  [(None, 'Catfish', 'catfish')]
+['("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")\n']
+
+['("Gars", "are an ancient group of", "ray-finned fish")\n', '("Gars", "are in the family", "Lepisosteidae")\n', '("Gars", "inhabit", "North America, Central America and Cuba")\n', '("Gars", "are the only surviving members of", "Ginglymodi")\n', '("Ginglymodi", "appeared during the", "Triassic")\n', '("Gars", "are one of the surviving groups of", "holosteian fish")\n', '("Holosteian fish", "include", "gars and bowfins")\n', '("Bowfins", "have a distribution similar to", "gars")\n', '("Gars", "are armored with", "ganoid scales")\n', '("Gars", "are elongated bodies with jaws and teeth", "long and sharp")\n', '("Gars", "are sometimes referred to as", "garpike")\n', '("Garpike", "are not related to", "pike")\n', '("Pike", "are in the family", "Esocidae")\n', '("Alligator gar", "is the largest species of", "gars")\n', '("Alligator gar", "can grow over", "2 m (6.5 ft) and 45 kg (100 lb)")\n', '("Alligator gar", "specimens reported up to", "3 m (9.8 ft)")\n', '("Gars", "surface periodically to take a gulp of", "air")\n', '("Gar flesh", "is", "edible")\n', '("Gar eggs", "are", "highly toxic")\n', '("Gar name", "was originally used for", "needlefish")\n', '("Needlefish", "found in", "North Atlantic")\n', '("Gar name", "likely originated from Old English word for", "spear")\n', '("Garfish", "is also used for other species of", "Belonidae family")\n', '("Lepisosteidae", "derived from Greek words", "lepis and osteon")\n', '("Atractosteus", "derived from Greek word", "atraktos")\n', '("Gars", "are the only surviving members of the", "Ginglymodi")\n', '("Ginglymodi", "flourished in the", "Mesozoic")\n', '("Ginglymodians", "appeared over", "240 million years ago")\n', '("Gars", "have the slowest known rate of", "molecular evolution")\n', '("Bowfin", "closest living relatives of", "gars")\n', '("Holostei", "clade formed by", "gars and bowfin")\n', '("Obaichthyidae", "are extinct relatives of", "gars")\n', '("Nhanulepisosteus", "oldest anatomically modern gar from", "Upper Jurassic Mexico")\n', '("Atractosteus and Lepisosteus", "diverged by end of", "Early Cretaceous")\n', '("Gars", "dispersed to regions like Africa, India, South America, and Europe", "by end of Cretaceous")\n', '("Atractosteus grandei", "oldest known animal of the", "Cenozoic")\n', '("Masillosteus and Cuneatus", "gar genera from the", "Eocene")\n', '("Lepisosteus", "underwent diversification in", "Eastern North America")\n', '("Gars", "formerly had a wider distribution", "worldwide")\n', '("Living gars", "are confined to", "North America")\n', '("Gars in North America", "live in shallow, brackish waters off of", "Texas, Louisiana, and eastern coast of Mexico")\n', '("Gar bodies", "are elongated and armored with", "ganoid scales")\n', '("Gar swim bladders", "function as", "lungs")\n', '("Gar", "can tolerate conditions that most other fish", "cannot survive")\n', '("Gar anatomy", "includes paired pectoral fins and pelvic fins", "as well as anal, caudal, and dorsal fins")\n', '("Alligator gar", "largest member of the", "gar family")\n', '("Alligator gar", "can measure up to", "10 feet long and weigh over 300 pounds")\n', '("Florida gar", "found in", "Ocklockonee river, Florida, and Georgia")\n', '("Spotted gar", "prefers to live in", "clear shallow water")\n', '("Shortnose gar", "found in", "Mississippi River Basin, Indiana, Wisconsin, Montana, Alabama, and Louisiana")\n', '("Longnose gar", "lives in habitat ranging from", "Florida to Quebec, all Great Lakes except Lake Superior, Missouri, Mississippi, Texas, and northern Mexico")\n', '("Gar roe", "contains", "ichthyotoxin toxic to humans")\n', '("Gars", "significance to humans includes", "aquarium trade and use in jewelry")\n', '("Archerfish", "also known as", "spinner fish")\n', '("Archerfish", "also known as", "archer fish")\n', '("Archerfish", "is a family of", "perciform tropical fish")\n', '("Archerfish", "use", "jets of water")\n', '("Archerfish", "shoot down", "land-based insects")\n', '("The archerfish family", "consists of", "ten species")\n', '("Archerfish", "live in", "freshwater streams")\n', '("Archerfish", "live in", "ponds")\n', '("Archerfish", "live in", "wetlands")\n', '("Some species of archerfish", "inhabit both", "fresh and brackish water")\n', '("Archerfish", "can be found in", "India")\n', '("Archerfish", "can be found in", "Bangladesh")\n', '("Archerfish", "can be found in", "Sri Lanka")\n', '("Archerfish", "can be found in", "Melanesia")\n', '("Archerfish", "have", "deep and laterally compressed bodies")\n', '("The mouth of archerfish", "is", "protractile")\n', '("Archerfish", "is difficult to maintain in", "aquaria")\n', '("Archerfish", "prefer", "live prey")\n', '("Archerfish", "are accurate in", "shooting")\n', '("Archerfish species", "include", "T. blythii")\n', '("Archerfish species", "include", "T. chatareus")\n', '("Archerfish species", "include", "T. jaculatrix")\n', '("Aplysia punctata", "is a species of", "sea slug")\n', '("Aplysia punctata", "is in the family of", "Aplysiidae")\n', '("Aplysia punctata", "ranges from", "Greenland and Norway to the Mediterranean Sea")\n', '("Aplysia punctata", "spawn from", "May to October")\n', '("Aplysia punctata", "live for", "approximately one year")\n', '("Aplysia punctata", "engages in mating behavior with", "multiple individuals")\n', '("Aplysia punctata", "are", "benthic gastropods")\n', '("Aplysia punctata", "colonize", "littoral and sublittoral habitats")\n', '("Aplysia punctata", "feed on", "algal seaweed beds")\n', '("Aplysia punctata", "consume", "red algae of the genus Laurencia")\n', '("Aplysia punctata", "use radula to", "tear up seaweeds")\n', '("Aplysia punctata", "reside and feed on", "algal beds")\n', '("Aplysia punctata", "have rhinophores on", "their head and posterior tentacle")\n', '("Aplysia punctata", "detect", "pheromones with rhinophores")\n', '("Aplysia punctata", "is a model species for study of", "cellular basis of learning and memory")\n', '("Aplysia punctata", "have large neurons which are", "polyploid somatic cells")\n', '("Aplysia punctata\'s", "shell is", "internally located")\n', '("Aplysia punctata", "perform marine calcification to maintain", "their shell")\n', '("Aplysia punctata", "has shell resilience in", "acidified ocean environments")\n', '("Aplysia punctata", "can maintain shell calcification under", "extreme ocean acidification")\n', '("Clupeidae", "is a family of", "clupeiform ray-finned fishes")\n', '("Clupeidae", "comprises", "herrings and sprats")\n', '("Clupeidae", "has a body protected with", "shiny cycloid scales")\n', '("Clupeidae", "has a", "single dorsal fin")\n', '("Clupeidae", "has a", "fusiform body for quick swimming")\n', '("Clupeidae", "pursues prey composed of", "small planktonic animals")\n', '("Clupeidae", "bioaccumulates very low levels of", "methylmercury")\n', '("Clupeidae", "are", "marine forage fish")\n', '("Clupeidae", "feed on", "plankton")\n', '("Clupeidae", "are preyed upon by", "birds")\n', '("Clupeidae", "are preyed upon by", "sharks")\n', '("Clupeidae", "are preyed upon by", "toothed whales")\n', '("Atlantic and Baltic herrings", "are species of", "Clupeidae")\n', '("Pacific herring", "are species of", "Clupeidae")\n', '("Clupeidae", "feed on", "copepods")\n', '("Sundasalangidae", "is nested in", "Clupeidae")\n', '("Clupeidae", "was previously broader but now subdivided into distinct families including", "Alosidae")\n', '("Clupeidae", "has general structures for", "feeding physiology such as reduced or absent teeth and long gill rakers")\n', '("Clupeidae", "changes diet towards larvae of", "salmoniform")\n', '("Catfish", "are a diverse group of", "ray-finned fish")\n', '("Catfish", "resemble a cat\'s whiskers", "barbels")\n', '("Mekong giant catfish", "species from", "Southeast Asia")\n', '("Wels catfish", "species of", "Eurasia")\n', '("Candiru", "is a", "parasitic species")\n', '("Corydoras", "is important in", "the aquarium hobby")\n', '("Catfish", "belong to", "Ostariophysi")\n', '("Catfish", "include", "Cypriniformes")\n', '("Catfish", "include", "Characiformes")\n', '("Catfish", "include", "Gonorynchiformes")\n', '("Catfish", "include", "Gymnotiformes")\n', '("Catfish", "are", "vertebrate")\n', '("Afrocascudo", "is an", "armored catfish")\n', '("Afrocascudo", "lived during", "Cenomanian")\n', '("Catfish", "originated during", "Late Cretaceous")\n', '("Conorhynchos", "not classified under any current", "catfish families")\n', '("Anchariidae", "is a recently revised", "catfish family")\n', '("Catfish", "compared to", "coelacanth")\n', '("Catfish", "compared to", "megamouth shark")\n', '("Lacantunia enigmatica", "was found in", "Chiapas")\n', '("Diplomystidae", "is a family of", "Siluriformes")\n', '("Loricarioidei", "is a suborder of", "Siluriformes")\n', '("Claroteidae", "is related to", "Lacantuniidae")\n', '("Andinichthyidae", "status is uncertain within", "catfish taxonomy")\n', '("Nematogenyidae", "status is uncertain within", "catfish taxonomy")\n', '("Trichomycteridae", "status is uncertain within", "catfish taxonomy")\n', '("Callichthyidae", "includes catfish that are important in", "the aquarium hobby")\n', '("Astroblepidae", "is a family of", "catfish")\n']
+range(1, 144) 1
+['("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")\n']
+
+['("Gars", "are an ancient group of", "ray-finned fish")\n', '("Gars", "are in the family", "Lepisosteidae")\n', '("Gars", "inhabit", "North America, Central America and Cuba")\n', '("Gars", "are the only surviving members of", "Ginglymodi")\n', '("Ginglymodi", "appeared during the", "Triassic")\n', '("Gars", "are one of the surviving groups of", "holosteian fish")\n', '("Holosteian fish", "include", "gars and bowfins")\n', '("Bowfins", "have a distribution similar to", "gars")\n', '("Gars", "are armored with", "ganoid scales")\n', '("Gars", "are elongated bodies with jaws and teeth", "long and sharp")\n', '("Gars", "are sometimes referred to as", "garpike")\n', '("Garpike", "are not related to", "pike")\n', '("Pike", "are in the family", "Esocidae")\n', '("Alligator gar", "is the largest species of", "gars")\n', '("Alligator gar", "can grow over", "2 m (6.5 ft) and 45 kg (100 lb)")\n', '("Alligator gar", "specimens reported up to", "3 m (9.8 ft)")\n', '("Gars", "surface periodically to take a gulp of", "air")\n', '("Gar flesh", "is", "edible")\n', '("Gar eggs", "are", "highly toxic")\n', '("Gar name", "was originally used for", "needlefish")\n', '("Needlefish", "found in", "North Atlantic")\n', '("Gar name", "likely originated from Old English word for", "spear")\n', '("Garfish", "is also used for other species of", "Belonidae family")\n', '("Lepisosteidae", "derived from Greek words", "lepis and osteon")\n', '("Atractosteus", "derived from Greek word", "atraktos")\n', '("Gars", "are the only surviving members of the", "Ginglymodi")\n', '("Ginglymodi", "flourished in the", "Mesozoic")\n', '("Ginglymodians", "appeared over", "240 million years ago")\n', '("Gars", "have the slowest known rate of", "molecular evolution")\n', '("Bowfin", "closest living relatives of", "gars")\n', '("Holostei", "clade formed by", "gars and bowfin")\n', '("Obaichthyidae", "are extinct relatives of", "gars")\n', '("Nhanulepisosteus", "oldest anatomically modern gar from", "Upper Jurassic Mexico")\n', '("Atractosteus and Lepisosteus", "diverged by end of", "Early Cretaceous")\n', '("Gars", "dispersed to regions like Africa, India, South America, and Europe", "by end of Cretaceous")\n', '("Atractosteus grandei", "oldest known animal of the", "Cenozoic")\n', '("Masillosteus and Cuneatus", "gar genera from the", "Eocene")\n', '("Lepisosteus", "underwent diversification in", "Eastern North America")\n', '("Gars", "formerly had a wider distribution", "worldwide")\n', '("Living gars", "are confined to", "North America")\n', '("Gars in North America", "live in shallow, brackish waters off of", "Texas, Louisiana, and eastern coast of Mexico")\n', '("Gar bodies", "are elongated and armored with", "ganoid scales")\n', '("Gar swim bladders", "function as", "lungs")\n', '("Gar", "can tolerate conditions that most other fish", "cannot survive")\n', '("Gar anatomy", "includes paired pectoral fins and pelvic fins", "as well as anal, caudal, and dorsal fins")\n', '("Alligator gar", "largest member of the", "gar family")\n', '("Alligator gar", "can measure up to", "10 feet long and weigh over 300 pounds")\n', '("Florida gar", "found in", "Ocklockonee river, Florida, and Georgia")\n', '("Spotted gar", "prefers to live in", "clear shallow water")\n', '("Shortnose gar", "found in", "Mississippi River Basin, Indiana, Wisconsin, Montana, Alabama, and Louisiana")\n', '("Longnose gar", "lives in habitat ranging from", "Florida to Quebec, all Great Lakes except Lake Superior, Missouri, Mississippi, Texas, and northern Mexico")\n', '("Gar roe", "contains", "ichthyotoxin toxic to humans")\n', '("Gars", "significance to humans includes", "aquarium trade and use in jewelry")\n', '("Archerfish", "also known as", "spinner fish")\n', '("Archerfish", "also known as", "archer fish")\n', '("Archerfish", "is a family of", "perciform tropical fish")\n', '("Archerfish", "use", "jets of water")\n', '("Archerfish", "shoot down", "land-based insects")\n', '("The archerfish family", "consists of", "ten species")\n', '("Archerfish", "live in", "freshwater streams")\n', '("Archerfish", "live in", "ponds")\n', '("Archerfish", "live in", "wetlands")\n', '("Some species of archerfish", "inhabit both", "fresh and brackish water")\n', '("Archerfish", "can be found in", "India")\n', '("Archerfish", "can be found in", "Bangladesh")\n', '("Archerfish", "can be found in", "Sri Lanka")\n', '("Archerfish", "can be found in", "Melanesia")\n', '("Archerfish", "have", "deep and laterally compressed bodies")\n', '("The mouth of archerfish", "is", "protractile")\n', '("Archerfish", "is difficult to maintain in", "aquaria")\n', '("Archerfish", "prefer", "live prey")\n', '("Archerfish", "are accurate in", "shooting")\n', '("Archerfish species", "include", "T. blythii")\n', '("Archerfish species", "include", "T. chatareus")\n', '("Archerfish species", "include", "T. jaculatrix")\n', '("Aplysia punctata", "is a species of", "sea slug")\n', '("Aplysia punctata", "is in the family of", "Aplysiidae")\n', '("Aplysia punctata", "ranges from", "Greenland and Norway to the Mediterranean Sea")\n', '("Aplysia punctata", "spawn from", "May to October")\n', '("Aplysia punctata", "live for", "approximately one year")\n', '("Aplysia punctata", "engages in mating behavior with", "multiple individuals")\n', '("Aplysia punctata", "are", "benthic gastropods")\n', '("Aplysia punctata", "colonize", "littoral and sublittoral habitats")\n', '("Aplysia punctata", "feed on", "algal seaweed beds")\n', '("Aplysia punctata", "consume", "red algae of the genus Laurencia")\n', '("Aplysia punctata", "use radula to", "tear up seaweeds")\n', '("Aplysia punctata", "reside and feed on", "algal beds")\n', '("Aplysia punctata", "have rhinophores on", "their head and posterior tentacle")\n', '("Aplysia punctata", "detect", "pheromones with rhinophores")\n', '("Aplysia punctata", "is a model species for study of", "cellular basis of learning and memory")\n', '("Aplysia punctata", "have large neurons which are", "polyploid somatic cells")\n', '("Aplysia punctata\'s", "shell is", "internally located")\n', '("Aplysia punctata", "perform marine calcification to maintain", "their shell")\n', '("Aplysia punctata", "has shell resilience in", "acidified ocean environments")\n', '("Aplysia punctata", "can maintain shell calcification under", "extreme ocean acidification")\n', '("Clupeidae", "is a family of", "clupeiform ray-finned fishes")\n', '("Clupeidae", "comprises", "herrings and sprats")\n', '("Clupeidae", "has a body protected with", "shiny cycloid scales")\n', '("Clupeidae", "has a", "single dorsal fin")\n', '("Clupeidae", "has a", "fusiform body for quick swimming")\n', '("Clupeidae", "pursues prey composed of", "small planktonic animals")\n', '("Clupeidae", "bioaccumulates very low levels of", "methylmercury")\n', '("Clupeidae", "are", "marine forage fish")\n', '("Clupeidae", "feed on", "plankton")\n', '("Clupeidae", "are preyed upon by", "birds")\n', '("Clupeidae", "are preyed upon by", "sharks")\n', '("Clupeidae", "are preyed upon by", "toothed whales")\n', '("Atlantic and Baltic herrings", "are species of", "Clupeidae")\n', '("Pacific herring", "are species of", "Clupeidae")\n', '("Clupeidae", "feed on", "copepods")\n', '("Sundasalangidae", "is nested in", "Clupeidae")\n', '("Clupeidae", "was previously broader but now subdivided into distinct families including", "Alosidae")\n', '("Clupeidae", "has general structures for", "feeding physiology such as reduced or absent teeth and long gill rakers")\n', '("Clupeidae", "changes diet towards larvae of", "salmoniform")\n', '("Catfish", "are a diverse group of", "ray-finned fish")\n', '("Catfish", "resemble a cat\'s whiskers", "barbels")\n', '("Mekong giant catfish", "species from", "Southeast Asia")\n', '("Wels catfish", "species of", "Eurasia")\n', '("Candiru", "is a", "parasitic species")\n', '("Corydoras", "is important in", "the aquarium hobby")\n', '("Catfish", "belong to", "Ostariophysi")\n', '("Catfish", "include", "Cypriniformes")\n', '("Catfish", "include", "Characiformes")\n', '("Catfish", "include", "Gonorynchiformes")\n', '("Catfish", "include", "Gymnotiformes")\n', '("Catfish", "are", "vertebrate")\n', '("Afrocascudo", "is an", "armored catfish")\n', '("Afrocascudo", "lived during", "Cenomanian")\n', '("Catfish", "originated during", "Late Cretaceous")\n', '("Conorhynchos", "not classified under any current", "catfish families")\n', '("Anchariidae", "is a recently revised", "catfish family")\n', '("Catfish", "compared to", "coelacanth")\n', '("Catfish", "compared to", "megamouth shark")\n', '("Lacantunia enigmatica", "was found in", "Chiapas")\n', '("Diplomystidae", "is a family of", "Siluriformes")\n', '("Loricarioidei", "is a suborder of", "Siluriformes")\n', '("Claroteidae", "is related to", "Lacantuniidae")\n', '("Andinichthyidae", "status is uncertain within", "catfish taxonomy")\n', '("Nematogenyidae", "status is uncertain within", "catfish taxonomy")\n', '("Trichomycteridae", "status is uncertain within", "catfish taxonomy")\n', '("Callichthyidae", "includes catfish that are important in", "the aquarium hobby")\n', '("Astroblepidae", "is a family of", "catfish")\n']
+range(1, 144) 1
+['("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")\n']
+
+['("Gars", "are an ancient group of", "ray-finned fish")\n', '("Gars", "are in the family", "Lepisosteidae")\n', '("Gars", "inhabit", "North America, Central America and Cuba")\n', '("Gars", "are the only surviving members of", "Ginglymodi")\n', '("Ginglymodi", "appeared during the", "Triassic")\n', '("Gars", "are one of the surviving groups of", "holosteian fish")\n', '("Holosteian fish", "include", "gars and bowfins")\n', '("Bowfins", "have a distribution similar to", "gars")\n', '("Gars", "are armored with", "ganoid scales")\n', '("Gars", "are elongated bodies with jaws and teeth", "long and sharp")\n', '("Gars", "are sometimes referred to as", "garpike")\n', '("Garpike", "are not related to", "pike")\n', '("Pike", "are in the family", "Esocidae")\n', '("Alligator gar", "is the largest species of", "gars")\n', '("Alligator gar", "can grow over", "2 m (6.5 ft) and 45 kg (100 lb)")\n', '("Alligator gar", "specimens reported up to", "3 m (9.8 ft)")\n', '("Gars", "surface periodically to take a gulp of", "air")\n', '("Gar flesh", "is", "edible")\n', '("Gar eggs", "are", "highly toxic")\n', '("Gar name", "was originally used for", "needlefish")\n', '("Needlefish", "found in", "North Atlantic")\n', '("Gar name", "likely originated from Old English word for", "spear")\n', '("Garfish", "is also used for other species of", "Belonidae family")\n', '("Lepisosteidae", "derived from Greek words", "lepis and osteon")\n', '("Atractosteus", "derived from Greek word", "atraktos")\n', '("Gars", "are the only surviving members of the", "Ginglymodi")\n', '("Ginglymodi", "flourished in the", "Mesozoic")\n', '("Ginglymodians", "appeared over", "240 million years ago")\n', '("Gars", "have the slowest known rate of", "molecular evolution")\n', '("Bowfin", "closest living relatives of", "gars")\n', '("Holostei", "clade formed by", "gars and bowfin")\n', '("Obaichthyidae", "are extinct relatives of", "gars")\n', '("Nhanulepisosteus", "oldest anatomically modern gar from", "Upper Jurassic Mexico")\n', '("Atractosteus and Lepisosteus", "diverged by end of", "Early Cretaceous")\n', '("Gars", "dispersed to regions like Africa, India, South America, and Europe", "by end of Cretaceous")\n', '("Atractosteus grandei", "oldest known animal of the", "Cenozoic")\n', '("Masillosteus and Cuneatus", "gar genera from the", "Eocene")\n', '("Lepisosteus", "underwent diversification in", "Eastern North America")\n', '("Gars", "formerly had a wider distribution", "worldwide")\n', '("Living gars", "are confined to", "North America")\n', '("Gars in North America", "live in shallow, brackish waters off of", "Texas, Louisiana, and eastern coast of Mexico")\n', '("Gar bodies", "are elongated and armored with", "ganoid scales")\n', '("Gar swim bladders", "function as", "lungs")\n', '("Gar", "can tolerate conditions that most other fish", "cannot survive")\n', '("Gar anatomy", "includes paired pectoral fins and pelvic fins", "as well as anal, caudal, and dorsal fins")\n', '("Alligator gar", "largest member of the", "gar family")\n', '("Alligator gar", "can measure up to", "10 feet long and weigh over 300 pounds")\n', '("Florida gar", "found in", "Ocklockonee river, Florida, and Georgia")\n', '("Spotted gar", "prefers to live in", "clear shallow water")\n', '("Shortnose gar", "found in", "Mississippi River Basin, Indiana, Wisconsin, Montana, Alabama, and Louisiana")\n', '("Longnose gar", "lives in habitat ranging from", "Florida to Quebec, all Great Lakes except Lake Superior, Missouri, Mississippi, Texas, and northern Mexico")\n', '("Gar roe", "contains", "ichthyotoxin toxic to humans")\n', '("Gars", "significance to humans includes", "aquarium trade and use in jewelry")\n', '("Archerfish", "also known as", "spinner fish")\n', '("Archerfish", "also known as", "archer fish")\n', '("Archerfish", "is a family of", "perciform tropical fish")\n', '("Archerfish", "use", "jets of water")\n', '("Archerfish", "shoot down", "land-based insects")\n', '("The archerfish family", "consists of", "ten species")\n', '("Archerfish", "live in", "freshwater streams")\n', '("Archerfish", "live in", "ponds")\n', '("Archerfish", "live in", "wetlands")\n', '("Some species of archerfish", "inhabit both", "fresh and brackish water")\n', '("Archerfish", "can be found in", "India")\n', '("Archerfish", "can be found in", "Bangladesh")\n', '("Archerfish", "can be found in", "Sri Lanka")\n', '("Archerfish", "can be found in", "Melanesia")\n', '("Archerfish", "have", "deep and laterally compressed bodies")\n', '("The mouth of archerfish", "is", "protractile")\n', '("Archerfish", "is difficult to maintain in", "aquaria")\n', '("Archerfish", "prefer", "live prey")\n', '("Archerfish", "are accurate in", "shooting")\n', '("Archerfish species", "include", "T. blythii")\n', '("Archerfish species", "include", "T. chatareus")\n', '("Archerfish species", "include", "T. jaculatrix")\n', '("Aplysia punctata", "is a species of", "sea slug")\n', '("Aplysia punctata", "is in the family of", "Aplysiidae")\n', '("Aplysia punctata", "ranges from", "Greenland and Norway to the Mediterranean Sea")\n', '("Aplysia punctata", "spawn from", "May to October")\n', '("Aplysia punctata", "live for", "approximately one year")\n', '("Aplysia punctata", "engages in mating behavior with", "multiple individuals")\n', '("Aplysia punctata", "are", "benthic gastropods")\n', '("Aplysia punctata", "colonize", "littoral and sublittoral habitats")\n', '("Aplysia punctata", "feed on", "algal seaweed beds")\n', '("Aplysia punctata", "consume", "red algae of the genus Laurencia")\n', '("Aplysia punctata", "use radula to", "tear up seaweeds")\n', '("Aplysia punctata", "reside and feed on", "algal beds")\n', '("Aplysia punctata", "have rhinophores on", "their head and posterior tentacle")\n', '("Aplysia punctata", "detect", "pheromones with rhinophores")\n', '("Aplysia punctata", "is a model species for study of", "cellular basis of learning and memory")\n', '("Aplysia punctata", "have large neurons which are", "polyploid somatic cells")\n', '("Aplysia punctata\'s", "shell is", "internally located")\n', '("Aplysia punctata", "perform marine calcification to maintain", "their shell")\n', '("Aplysia punctata", "has shell resilience in", "acidified ocean environments")\n', '("Aplysia punctata", "can maintain shell calcification under", "extreme ocean acidification")\n', '("Clupeidae", "is a family of", "clupeiform ray-finned fishes")\n', '("Clupeidae", "comprises", "herrings and sprats")\n', '("Clupeidae", "has a body protected with", "shiny cycloid scales")\n', '("Clupeidae", "has a", "single dorsal fin")\n', '("Clupeidae", "has a", "fusiform body for quick swimming")\n', '("Clupeidae", "pursues prey composed of", "small planktonic animals")\n', '("Clupeidae", "bioaccumulates very low levels of", "methylmercury")\n', '("Clupeidae", "are", "marine forage fish")\n', '("Clupeidae", "feed on", "plankton")\n', '("Clupeidae", "are preyed upon by", "birds")\n', '("Clupeidae", "are preyed upon by", "sharks")\n', '("Clupeidae", "are preyed upon by", "toothed whales")\n', '("Atlantic and Baltic herrings", "are species of", "Clupeidae")\n', '("Pacific herring", "are species of", "Clupeidae")\n', '("Clupeidae", "feed on", "copepods")\n', '("Sundasalangidae", "is nested in", "Clupeidae")\n', '("Clupeidae", "was previously broader but now subdivided into distinct families including", "Alosidae")\n', '("Clupeidae", "has general structures for", "feeding physiology such as reduced or absent teeth and long gill rakers")\n', '("Clupeidae", "changes diet towards larvae of", "salmoniform")\n', '("Catfish", "are a diverse group of", "ray-finned fish")\n', '("Catfish", "resemble a cat\'s whiskers", "barbels")\n', '("Mekong giant catfish", "species from", "Southeast Asia")\n', '("Wels catfish", "species of", "Eurasia")\n', '("Candiru", "is a", "parasitic species")\n', '("Corydoras", "is important in", "the aquarium hobby")\n', '("Catfish", "belong to", "Ostariophysi")\n', '("Catfish", "include", "Cypriniformes")\n', '("Catfish", "include", "Characiformes")\n', '("Catfish", "include", "Gonorynchiformes")\n', '("Catfish", "include", "Gymnotiformes")\n', '("Catfish", "are", "vertebrate")\n', '("Afrocascudo", "is an", "armored catfish")\n', '("Afrocascudo", "lived during", "Cenomanian")\n', '("Catfish", "originated during", "Late Cretaceous")\n', '("Conorhynchos", "not classified under any current", "catfish families")\n', '("Anchariidae", "is a recently revised", "catfish family")\n', '("Catfish", "compared to", "coelacanth")\n', '("Catfish", "compared to", "megamouth shark")\n', '("Lacantunia enigmatica", "was found in", "Chiapas")\n', '("Diplomystidae", "is a family of", "Siluriformes")\n', '("Loricarioidei", "is a suborder of", "Siluriformes")\n', '("Claroteidae", "is related to", "Lacantuniidae")\n', '("Andinichthyidae", "status is uncertain within", "catfish taxonomy")\n', '("Nematogenyidae", "status is uncertain within", "catfish taxonomy")\n', '("Trichomycteridae", "status is uncertain within", "catfish taxonomy")\n', '("Callichthyidae", "includes catfish that are important in", "the aquarium hobby")\n', '("Astroblepidae", "is a family of", "catfish")\n']
+range(1, 144) 1
+{'id': '0_6', 'Question': ' Which species of gar has a range that encompasses Texas, Oklahoma, Louisiana, and the Mississippi River system, and also stretches to the southern parts of Mexico?\n', 'Answer': 'Alligator', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Archerfish'}, {'label': 'B', 'text': 'Aplysia punctata'}, {'label': 'C', 'text': 'Alligator'}, {'label': 'D', 'text': 'Clupeidae'}, {'label': 'E', 'text': 'Catfish'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'archerfish'}, {'label': 'B', 'text': 'aplysia_punctata'}, {'label': 'C', 'text': 'alligator'}, {'label': 'D', 'text': 'clupeidae'}, {'label': 'E', 'text': 'catfish'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Question_decompositions': ["1: What type of gar's natural living areas extend through several states such as Texas, Oklahoma, Louisiana, and regions around the Mississippi River, reaching even into southern Mexican waterways?\nA1: Alligator"], 'Hops_wiki': [('Mexico', 'Alligator')], 'Hops_cpnet': [('mexico', 'alligator')], 'Triplets': ['("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")'], 'Referred_files': [{'name': 'Gar', 'line': 48}], 'Question_triplet_answer': {100: [118], 50: [79], 25: [68]}}
+time passed:  1135.2109892368317
+Expected dollar:  0.0
+Gars is Animal
+Clupeidae is Animal
+Ginglymodi is Animal
+Aplysia is Animal
+Mississippi River Basin is Geography
+Indiana is Geography
+Wisconsin is Geography
+Montana is Geography
+Alabama is Geography
+Louisiana is Geography
+Alligator is Animal
+Masillosteus and Cuneatus is Animal
+gar genera is Animal
+Eocene is Geography
+India is Geography
+Afrocascudo is Animal
+Callichthyidae is Animal
+Mekong is Geography
+Lepisosteus is Animal
+Belonidae is Animal
+Eurasia is Geography
+Garpike is Animal
+Astroblepidae is Animal
+Characiformes is Animal
+North America is Geography
+Cypriniformes is Animal
+Aplysia punctata's is Animal
+Ginglymodians is Animal
+Nematogenyidae is Animal
+Melanesia is Geography
+Greenland is Geography
+Norway is Geography
+the Mediterranean Sea is Geography
+Corydoras is Animal
+Texas is Geography
+Oklahoma is Geography
+the Mississippi River is Geography
+Mexico is Geography
+Gonorynchiformes is Animal
+Florida is Geography
+Quebec is Geography
+Great Lakes is Geography
+Lake Superior is Geography
+Missouri is Geography
+Mississippi is Geography
+Holosteian is Animal
+Triassic is Geography
+entities:  {'Great', 'River', 'Astroblepidae', 'Lakes', 'Triassic', 'Clupeidae', 'Mexico', 'Norway', 'Missouri', 'Louisiana', 'Oklahoma', 'Mekong', 'Europe', 'Callichthyidae', 'Gars', 'America', 'Characiformes', 'Montana', "punctata's", 'Alligator', 'Sea', 'Ginglymodians', 'Holosteian', 'genera', 'North', 'Corydoras', 'Basin', 'Quebec', 'Aplysia', 'Eurasia', 'Cypriniformes', 'Alabama', 'Masillosteus', 'Garpike', 'Mississippi', 'India', 'Greenland', 'Florida', 'Eocene', 'Texas', 'Catfish', 'Lake', 'Mediterranean', 'Melanesia', 'Lepisosteus', 'Asia', 'Gonorynchiformes', 'Superior', 'Wisconsin', 'Belonidae', 'Indiana', 'Archerfish', 'Afrocascudo', 'gar', 'Nematogenyidae', 'punctata', 'Cuneatus', 'Ginglymodi', 'Africa'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Alligator' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+Alligator gar
+
+gpt_entity_particular(): entity list: 
+ ['Alligator gar']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Aplysia punctata' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata's
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata's
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Aplysia punctata
+Mekong giant catfish
+Mekong giant catfish
+Mekong giant catfish
+
+gpt_entity_particular(): entity list: 
+ ["Aplysia punctata's", 'Aplysia punctata', 'Mekong giant catfish']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Clupeidae' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gars
+Pacific herring
+gar name
+Alligator gar
+Catfish
+Aplysia punctata
+gar swim bladders
+Afrocascudo
+Wels catfish
+Pike
+Clupeidae
+Masillosteus and Cuneatus
+astrobloepidae
+Mekong giant catfish
+Aplysia punctata's
+Lepisosteidae
+Nematogenyidae
+Ginglymodians
+Corydoras
+Longnose gar
+holosteian fish
+Garpike
+
+gpt_entity_particular(): entity list: 
+ ['Aplysia punctata', 'Clupeidae', 'Pike', 'Gars', 'Pacific herring', 'Longnose gar', 'Alligator gar', 'Masillosteus and Cuneatus', 'Ginglymodians', 'Corydoras', 'gar swim bladders', 'Garpike', "Aplysia punctata's", 'Catfish', 'Mekong giant catfish', 'Lepisosteidae', 'astrobloepidae', 'Afrocascudo', 'Nematogenyidae', 'holosteian fish', 'Wels catfish', 'gar name']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mexico
+Mississippi River Basin
+Indiana
+Wisconsin
+Montana
+Alabama
+Louisiana
+Texas
+Oklahoma
+Great Lakes
+Florida
+Quebec
+Missouri
+
+gpt_entity_particular(): entity list: 
+ ['Montana', 'Mississippi River Basin', 'Alabama', 'Wisconsin', 'Great Lakes', 'Florida', 'Indiana', 'Missouri', 'Mexico', 'Texas', 'Louisiana', 'Oklahoma', 'Quebec']
+
+gpt_entity_particular(): filtered entity: 
+ ['Missouri']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Archerfish' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Archerfish
+T. jaculatrix
+Jets
+Water
+Ginglymodians
+Clupeidae
+Marine
+Forage
+Fish
+Herrings
+Sprats
+Gars
+Surviving
+Members
+Bowfins
+Species 
+Aquarium
+Hobby
+Living
+Streams
+Wetlands
+Perciform
+Family 
+Species
+Freshwater
+Tropical
+Catfish 
+Taxonomy
+Aplysiidae
+Benthic
+Gastropods
+Copepods
+Algae
+Rhinophores
+Sea
+Slug
+Mediterranean 
+Dive
+Laurencia
+Mating
+Behavior
+Eggs
+Toxic
+Shell
+Red 
+Calcification
+Larvae
+Gills
+Small
+Planktonic
+Animals
+
+gpt_entity_particular(): entity list: 
+ ['Tropical', 'Surviving', 'Gills', 'T. jaculatrix', 'Perciform', 'Water', 'Clupeidae', 'Shell', 'Eggs', 'Living', 'Aplysiidae', 'Gars', 'Dive', 'Jets', 'Larvae', 'Taxonomy', 'Algae', 'Sprats', 'Species', 'Sea', 'Calcification', 'Bowfins', 'Forage', 'Slug', 'Ginglymodians', 'Members', 'Red ', 'Small', 'Wetlands', 'Mediterranean ', 'Animals', 'Marine', 'Benthic', 'Species ', 'Aquarium', 'Herrings', 'Rhinophores', 'Streams', 'Family ', 'Hobby', 'Catfish ', 'Laurencia', 'Archerfish', 'Mating', 'Toxic', 'Fish', 'Behavior', 'Gastropods', 'Freshwater', 'Planktonic', 'Copepods']
+
+gpt_entity_particular(): filtered entity: 
+ ['Water', 'Fish']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Catfish' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gar
+Archerfish family
+Andinichthyidae
+Pacific herring
+Air
+Gars
+Ginglymodi
+Aplysia punctata
+Shortnose gar
+Alligator gar
+Needlefish
+Ray-finned fish
+Atractosteus
+Shell calcification
+Algae
+Eocene
+Mississippi River Basin
+Wels catfish
+Bowfin
+Rhinefish
+Callichthyidae
+Gars
+Birds
+Seaweed
+Mekong giant catfish
+T. jaculatrix
+Red algae
+Aplysia punctata
+Garfish
+Wels catfish
+Eastern North America
+Gars
+Salmoniform
+Gars
+Gars
+Gar flesh
+Fish
+Black lake
+Holostei
+Characiformes
+Clupeidae
+Archerfish
+Mekong giant catfish
+T. chatareus
+Toxic
+Aplysia punctata
+Archerfish
+Catfish
+Eurasia
+Aplysia
+Coelacanth
+Benthic gastropods
+Jets of water
+Gars
+Mating behavior
+Corydoras
+Small planktonic animals
+Callichthyidae
+Aplysia punctata
+Copepods
+Alligator gar
+Archerfish
+Clupeidae
+Toothed whales
+Aplysia punctata
+Esocidae
+Gars
+Aplysia punctata
+Archerfish
+Clupeidae
+Alligator gar
+Pike
+Gars
+Salmoniform
+Corydoras
+Aplysia punctata
+Archerfish
+Aplysia punctata
+Archerfish
+Habitat
+Needlefish
+Gonorynchiformes
+Clupeidae
+Longnose gar
+Holosteian fish
+Clupeidae
+Gars
+Ginglymodi
+Catfish
+Ray-finned fish
+Alligator gar
+Ginglymodi
+
+gpt_entity_particular(): entity list: 
+ ['Coelacanth', 'Small planktonic animals', 'Mating behavior', 'Archerfish family', 'T. jaculatrix', 'Gar flesh', 'Aplysia punctata', 'Clupeidae', 'Andinichthyidae', 'Pike', 'Callichthyidae', 'Holostei', 'Gars', 'Holosteian fish', 'Characiformes', 'Black lake', 'Pacific herring', 'Algae', 'Mississippi River Basin', 'Bowfin', 'Longnose gar', 'Red algae', 'Alligator gar', 'Birds', 'Habitat', 'Atractosteus', 'Rhinefish', 'Needlefish', 'Corydoras', 'Seaweed', 'Eurasia', 'Aplysia', 'Air', 'Shell calcification', 'Benthic gastropods', 'Jets of water', 'Gar', 'Toothed whales', 'Eocene', 'Catfish', 'Mekong giant catfish', 'Shortnose gar', 'Esocidae', 'Ray-finned fish', 'Salmoniform', 'Gonorynchiformes', 'Archerfish', 'T. chatareus', 'Toxic', 'Fish', 'Wels catfish', 'Eastern North America', 'Ginglymodi', 'Copepods', 'Garfish']
+
+gpt_entity_particular(): filtered entity: 
+ ['Andinichthyidae', 'Corydoras', 'Fish', 'Wels catfish']
+After GPT, entity:  {'Great', 'River', 'Astroblepidae', 'Lakes', 'Triassic', 'Water', 'Clupeidae', 'Mexico', 'Norway', 'Missouri', 'Louisiana', 'Oklahoma', 'Andinichthyidae', 'Mekong', 'Europe', 'Callichthyidae', 'Gars', 'America', 'Characiformes', 'Montana', "punctata's", 'Alligator', 'Sea', 'Ginglymodians', 'Holosteian', 'genera', 'North', 'Corydoras', 'Basin', 'Quebec', 'Aplysia', 'Eurasia', 'Cypriniformes', 'Alabama', 'Masillosteus', 'Garpike', 'Mississippi', 'India', 'Greenland', 'Florida', 'Eocene', 'Texas', 'Catfish', 'Lake', 'Mediterranean', 'Melanesia', 'Wels catfish', 'Lepisosteus', 'Asia', 'Gonorynchiformes', 'Superior', 'Wisconsin', 'Belonidae', 'Indiana', 'Archerfish', 'Afrocascudo', 'gar', 'Nematogenyidae', 'Fish', 'punctata', 'Cuneatus', 'Ginglymodi', 'Africa'}
+Total time:  173.8525869846344
+Entity conversion done on 0_6 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_0_6_entity_conversion_hash.json. Check the entity.
+ Which species of 039 has a range that encompasses Texas, Oklahoma, Louisiana, and the 034 023 system, and also stretches to the Eastern parts of Mexico?
+
+
+
+Done. Check final_query/id_0_6_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_0_6_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_0_6_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_0_6_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_0_6_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_0_6_final_result_ratio25_unmasked.txt

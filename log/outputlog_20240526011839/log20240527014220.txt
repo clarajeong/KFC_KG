@@ -1,0 +1,1403 @@
+Got argument: Mount Everest, 4, 4_11, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Mount Everest, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mount_Everest_info.json file
+first_hop:  {'triplet': '("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")', 'start word': 'Mount Everest', 'end word': 'Denali', 'source': {'name': 'Mount Everest', 'line': 10}, 'cpnet': {'start word': 'mount_everest', 'end word': 'denali'}}
+
+utils/question.py extract_hops(Denali, [], ['Mount Everest']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Denali_info.json file
+extract_info(Denali) Start.
+utils/preprocess.py extract_info(): Checking good links on Denali
+North America is Geography
+1 / 30 )  North America North America north_america
+List of highest mountains on Earth is Geography
+2 / 30 )  tallest mountain in the world from base-to-peak List of highest mountains on Earth highest_mountain
+Topographic prominence is Geography
+3 / 30 )  topographic prominence Topographic prominence prominence
+Mount Everest is Geography
+4 / 30 )  Mount Everest Mount Everest mount_everest
+Aconcagua is Geography
+5 / 30 )  Aconcagua Aconcagua aconcagua
+Alaska Range is Geography
+6 / 30 )  Alaska Range Alaska Range alaska_range
+Alaska is Geography
+7 / 30 )  Alaska Alaska alaska
+Denali National Park and Preserve is Geography
+8 / 30 )  Denali National Park and Preserve Denali National Park and Preserve denali_national_park
+William McKinley is People
+9 / 30 )  William McKinley William McKinley william_mckinley
+United States Geological Survey is Geography
+10 / 30 )  U.S. Geological Survey United States Geological Survey united_states_geological_survey
+Aleutian Islands is Geography
+11 / 30 )  Aleutian Islands Aleutian Islands aleutian_islands
+Denali Fault is Geography
+12 / 30 )  Denali Fault Denali Fault denali_fault
+Tibetan Plateau is Geography
+13 / 30 )  Tibetan Plateau Tibetan Plateau tibetan_plateau
+Mauna Kea is Geography
+14 / 30 )  Mauna Kea Mauna Kea mauna_kea
+Russian colonization of North America is Geography
+15 / 30 )  Russian ownership of Alaska Russian colonization of North America russian_america
+Woodrow Wilson is People
+16 / 30 )  President Wilson Woodrow Wilson woodrow_wilson
+Lyndon B. Johnson is People
+17 / 30 )  Lyndon B. Johnson Lyndon B. Johnson lyndon_baines_johnson
+Winston Churchill is People
+18 / 30 )  Winston Churchill Winston Churchill winston_churchill
+United States Senate is Geography
+19 / 30 )  U.S. Senator United States Senate united_states_senate
+United States House of Representatives is Geography
+20 / 30 )  Representative United States House of Representatives united_states_house_of_representatives
+United States Congress is Geography
+21 / 30 )  Congress United States Congress united_states_congress
+Yukon River is Geography
+22 / 30 )  Yukon Yukon River yukon_river
+George Vancouver is People
+23 / 30 )  George Vancouver George Vancouver george_vancouver
+New Hampshire is Geography
+24 / 30 )  New Hampshire New Hampshire new_hampshire
+Seattle is Geography
+25 / 30 )  Seattle Seattle seattle
+Mount Logan is Geography
+26 / 30 )  Mount Logan Mount Logan mount_logan
+Yukon is Geography
+27 / 30 )  Yukon Territory Yukon yukon
+United States Mint is Geography
+28 / 30 )  United States Mint United States Mint united_states_mint
+Dall sheep is Animal
+29 / 30 )  Dall sheep Dall sheep dall_sheep
+Robert Peary is People
+30 / 30 )  Robert Peary Robert Peary robert_peary
+extract_triplet(Denali)
+Got GPT's response. String length : 2409
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  []
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['Mount Everest', 'Mount Everest', 'mount_everest'], ['Aconcagua', 'Aconcagua', 'aconcagua']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['Alaska Range', 'Alaska Range', 'alaska_range'], ['Alaska', 'Alaska', 'alaska']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [(None, 'Denali', 'denali'), ['Denali National Park and Preserve', 'Denali National Park and Preserve', 'denali_national_park']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['William McKinley', 'William McKinley', 'william_mckinley']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [(None, 'Denali', 'denali')]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  []
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  []
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  []
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['U.S. Geological Survey', 'United States Geological Survey', 'united_states_geological_survey']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  []
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['Aleutian Islands', 'Aleutian Islands', 'aleutian_islands']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  []
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [(None, 'Denali', 'denali'), ['Denali Fault', 'Denali Fault', 'denali_fault']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['Mauna Kea', 'Mauna Kea', 'mauna_kea']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  []
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['George Vancouver', 'George Vancouver', 'george_vancouver']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['United States Mint', 'United States Mint', 'united_states_mint']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['Dall sheep', 'Dall sheep', 'dall_sheep']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['Robert Peary', 'Robert Peary', 'robert_peary']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  []
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [['President Wilson', 'Woodrow Wilson', 'woodrow_wilson'], ['Lyndon B. Johnson', 'Lyndon B. Johnson', 'lyndon_baines_johnson']]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [(None, 'Denali', 'denali')]
+subject_words:  [(None, 'Denali', 'denali')]
+object_words:  [(None, 'Denali', 'denali')]
+second_hop:  {'triplet': '("Denali", "is the highest mountain peak in", "North America")', 'start word': 'Denali', 'end word': 'North America', 'source': {'name': 'Denali', 'line': 1}, 'cpnet': {'start word': 'denali', 'end word': 'north_america'}}
+
+utils/question.py extract_hops(North America, [], ['Mount Everest', 'Denali']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/North_America_info.json file
+extract_info(North America) Start.
+utils/preprocess.py extract_info(): Checking good links on North America
+Northern Hemisphere is Geography
+1 / 30 )  Northern Northern Hemisphere northern_hemisphere
+Western Hemisphere is Geography
+2 / 30 )  Western Hemispheres Western Hemisphere western_hemisphere
+Arctic Ocean is Geography
+3 / 30 )  Arctic Ocean Arctic Ocean arctic_ocean
+Atlantic Ocean is Geography
+4 / 30 )  Atlantic Ocean Atlantic Ocean atlantic_ocean
+Caribbean Sea is Geography
+5 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Pacific Ocean is Geography
+6 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+The Bahamas is Geography
+7 / 30 )  the Bahamas The Bahamas bahamas
+Bermuda is Geography
+8 / 30 )  Bermuda Bermuda bermuda
+Canada is Geography
+9 / 30 )  Canada Canada canada
+Caribbean is Geography
+10 / 30 )  Caribbean Caribbean caribbean
+Clipperton Island is Geography
+11 / 30 )  Clipperton Island Clipperton Island clipperton_island
+Greenland is Geography
+12 / 30 )  Greenland Greenland greenland
+Mexico is Geography
+13 / 30 )  Mexico Mexico mexico
+Saint Pierre and Miquelon is Geography
+14 / 30 )  Saint Pierre and Miquelon Saint Pierre and Miquelon saint_pierre_and_miquelon
+Turks and Caicos Islands is Geography
+15 / 30 )  Turks and Caicos Islands Turks and Caicos Islands turks_and_caicos_islands
+United States is Geography
+16 / 30 )  United States United States united_states
+Americas  is Geography
+17 / 30 )  human geography Americas  american_continent
+Americas is Geography
+18 / 30 )  Americas Americas americas
+Christopher Columbus is People
+19 / 30 )  Christopher Columbus Christopher Columbus christopher_columbus
+Amerigo Vespucci is People
+20 / 30 )  Amerigo Vespucci Amerigo Vespucci amerigo_vespucci
+Gerardus Mercator is People
+21 / 30 )  Gerardus Mercator Gerardus Mercator gerardus_mercator
+France is Geography
+22 / 30 )  France France france
+Italy is Geography
+23 / 30 )  Italy Italy italy
+Portugal is Geography
+24 / 30 )  Portugal Portugal portugal
+Spain is Geography
+25 / 30 )  Spain Spain spain
+Romania is Geography
+26 / 30 )  Romania Romania romania
+Greece is Geography
+27 / 30 )  Greece Greece greece
+Dominican Republic is Geography
+28 / 30 )  Dominican Republic Dominican Republic dominican_republic
+Belize is Geography
+29 / 30 )  Belize Belize belize
+Louisiana is Geography
+30 / 30 )  Louisiana Louisiana louisiana
+extract_triplet(North America)
+Got GPT's response. String length : 2028
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Northern', 'Northern Hemisphere', 'northern_hemisphere'], ['Western Hemispheres', 'Western Hemisphere', 'western_hemisphere']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Arctic Ocean', 'Arctic Ocean', 'arctic_ocean']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Atlantic Ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Caribbean Sea', 'Caribbean Sea', 'caribbean_sea'], ['Caribbean', 'Caribbean', 'caribbean']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['the Bahamas', 'The Bahamas', 'bahamas']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Bermuda', 'Bermuda', 'bermuda']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Canada', 'Canada', 'canada']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Clipperton Island', 'Clipperton Island', 'clipperton_island']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Greenland', 'Greenland', 'greenland']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Mexico', 'Mexico', 'mexico']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Saint Pierre and Miquelon', 'Saint Pierre and Miquelon', 'saint_pierre_and_miquelon']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['Turks and Caicos Islands', 'Turks and Caicos Islands', 'turks_and_caicos_islands']]
+subject_words:  [(None, 'North America', 'north_america')]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [['human geography', 'Americas ', 'american_continent']]
+object_words:  [['Greenland', 'Greenland', 'greenland']]
+subject_words:  [['Christopher Columbus', 'Christopher Columbus', 'christopher_columbus']]
+object_words:  []
+subject_words:  [['Amerigo Vespucci', 'Amerigo Vespucci', 'amerigo_vespucci']]
+object_words:  [['Americas', 'Americas', 'americas']]
+subject_words:  [['Gerardus Mercator', 'Gerardus Mercator', 'gerardus_mercator']]
+object_words:  [['Western Hemispheres', 'Western Hemisphere', 'western_hemisphere']]
+subject_words:  [['France', 'France', 'france']]
+object_words:  [(None, 'North America', 'north_america')]
+subject_words:  [['Italy', 'Italy', 'italy']]
+object_words:  [(None, 'North America', 'north_america')]
+subject_words:  [['Portugal', 'Portugal', 'portugal']]
+object_words:  [(None, 'North America', 'north_america')]
+subject_words:  [['Spain', 'Spain', 'spain']]
+object_words:  [(None, 'North America', 'north_america')]
+subject_words:  [['Romania', 'Romania', 'romania']]
+object_words:  [(None, 'North America', 'north_america')]
+subject_words:  [['Greece', 'Greece', 'greece']]
+object_words:  [(None, 'North America', 'north_america')]
+subject_words:  [['Dominican Republic', 'Dominican Republic', 'dominican_republic']]
+object_words:  [(None, 'North America', 'north_america')]
+subject_words:  [['Belize', 'Belize', 'belize']]
+object_words:  [(None, 'North America', 'north_america')]
+subject_words:  [['Louisiana', 'Louisiana', 'louisiana']]
+object_words:  [(None, 'North America', 'north_america')]
+third_hop:  {'triplet': '("Yucatán Peninsula", "is considered part of", "North America")', 'start word': 'North America', 'end word': 'Yucatán Peninsula', 'source': {'name': 'Yucatán Peninsula', 'line': 6}, 'cpnet': {'start word': 'north_america', 'end word': 'yucatan_peninsula'}}
+
+utils/question.py extract_hops(Yucatán Peninsula, [], ['Mount Everest', 'Denali', 'North America']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Yucatán_Peninsula_info.json file
+forth_hop:  {'triplet': '("Yucatán Peninsula", "has", "mangroves and barrier reef")', 'start word': 'Yucatán Peninsula', 'end word': 'Great Barrier Reef', 'source': {'name': 'Yucatán Peninsula', 'line': 22}, 'cpnet': {'start word': 'yucatan_peninsula', 'end word': 'great_barrier_reef'}}
+generate_question(4_11, ['("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")', '("Denali", "is the highest mountain peak in", "North America")', '("Yucatán Peninsula", "is considered part of", "North America")', '("Yucatán Peninsula", "has", "mangroves and barrier reef")'], ['Denali', 'North America', 'Yucatán Peninsula', 'Great Barrier Reef'], [('Mount Everest', 'Denali'), ('Denali', 'North America'), ('North America', 'Yucatán Peninsula'), ('Yucatán Peninsula', 'Great Barrier Reef')], Great Barrier Reef, [{'name': 'Mount Everest', 'line': 10}, {'name': 'Denali', 'line': 1}, {'name': 'Yucatán Peninsula', 'line': 6}, {'name': 'Yucatán Peninsula', 'line': 22}]) called
+GPT output is:  Q: What is a notable feature of marine biodiversity in Australia, analogous to the reef systems found off the coast of the geographic region that shares with North America a continent, which also includes the peak that rivals Mount Everest in base-to-peak height?
+A: Great Barrier Reef
+final_choice(Great Barrier Reef, options = 5) started
+[]
+entity_type(Great Barrier Reef) called
+Great Barrier Reef is Geography
+check_matchscore(Great Barrier Reef, Reefs of Australia):  0.1111111111111111
+choose_by_wiki_recur(Reefs of Australia)
+   Pages in Reefs of Australia: ['Cato Reef', 'Daintree Reef', 'Endeavour Reef', 'Flinders Reef', 'Flinders Reef (Coral Sea)', 'Frederick Reefs', 'Great Barrier Reef', 'Great Southern Reef', 'Hebe Reef', 'John Brewer Reef', 'Kenn Reef', 'Margaret Brock Reef', 'Muirfield Reef', 'Pandora Reef', 'Rowley Shoals', 'Saumarez Reefs', 'Scott and Seringapatam Reefs', "St. Crispin's Reef", 'Tiparra Reef', 'Wolf Rock, Lord Howe Island', 'Wreck Reefs']
+      Cato Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef']
+      St. Crispin's Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals']
+      Flinders Reef (Coral Sea) in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef']
+      Endeavour Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef']
+      Rowley Shoals in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island']
+      Kenn Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef']
+      Hebe Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs']
+      Wolf Rock, Lord Howe Island in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs']
+      Tiparra Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs']
+      Scott and Seringapatam Reefs in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef']
+      Frederick Reefs in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef']
+      Wreck Reefs in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs']
+      Great Barrier Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef']
+      Daintree Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef', 'Great Southern Reef']
+      Saumarez Reefs in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef', 'Great Southern Reef', 'Margaret Brock Reef']
+      John Brewer Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef', 'Great Southern Reef', 'Margaret Brock Reef', 'Pandora Reef']
+      Great Southern Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef', 'Great Southern Reef', 'Margaret Brock Reef', 'Pandora Reef', 'Flinders Reef']
+      Margaret Brock Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef', 'Great Southern Reef', 'Margaret Brock Reef', 'Pandora Reef', 'Flinders Reef', 'Muirfield Reef']
+      Pandora Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef', 'Great Southern Reef', 'Margaret Brock Reef', 'Pandora Reef', 'Flinders Reef', 'Muirfield Reef']
+      Flinders Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef', 'Great Southern Reef', 'Margaret Brock Reef', 'Pandora Reef', 'Flinders Reef', 'Muirfield Reef']
+      Muirfield Reef in ['Cato Reef', "St. Crispin's Reef", 'Flinders Reef (Coral Sea)', 'Endeavour Reef', 'Rowley Shoals', 'Kenn Reef', 'Hebe Reef', 'Wolf Rock, Lord Howe Island', 'Tiparra Reef', 'Scott and Seringapatam Reefs', 'Frederick Reefs', 'Wreck Reefs', 'Great Barrier Reef', 'Daintree Reef', 'Saumarez Reefs', 'John Brewer Reef', 'Great Southern Reef', 'Margaret Brock Reef', 'Pandora Reef', 'Flinders Reef', 'Muirfield Reef']
+   Upper category of Reefs of Australia: ['Landforms of Australia', 'Reefs by country', 'Reefs of Oceania']
+choose_by_wiki_recur(Landforms of Australia)
+check_matchscore(Great Barrier Reef, World Heritage Sites in Australia):  0.0
+choose_by_wiki_recur(World Heritage Sites in Australia)
+   Pages in World Heritage Sites in Australia: ["Ball's Pyramid", 'Coal Mines Historic Site', 'Great Barrier Reef', 'Heard Island and McDonald Islands', 'Isle of the Dead (Tasmania)', 'Kakadu National Park', "Kingston and Arthur's Vale Historic Area", 'Lord Howe Island Marine Park', 'Macquarie Island', 'Bishop and Clerk Islets', 'Judge and Clerk Islets', 'Naracoorte Caves National Park', 'Tasmanian Wilderness World Heritage Area', 'Uluṟu-Kata Tjuṯa National Park']
+      Macquarie Island in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets']
+      Lord Howe Island Marine Park in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets']
+      Heard Island and McDonald Islands in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)']
+      Bishop and Clerk Islets in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)']
+      Isle of the Dead (Tasmania) in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid"]
+      Ball's Pyramid in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park']
+      Uluṟu-Kata Tjuṯa National Park in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park']
+      Kingston and Arthur's Vale Historic Area in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park', "Kingston and Arthur's Vale Historic Area"]
+      Naracoorte Caves National Park in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park', "Kingston and Arthur's Vale Historic Area", 'Naracoorte Caves National Park']
+      Judge and Clerk Islets in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park', "Kingston and Arthur's Vale Historic Area", 'Naracoorte Caves National Park', 'Judge and Clerk Islets']
+      Coal Mines Historic Site in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park', "Kingston and Arthur's Vale Historic Area", 'Naracoorte Caves National Park', 'Judge and Clerk Islets', 'Coal Mines Historic Site']
+      Tasmanian Wilderness World Heritage Area in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park', "Kingston and Arthur's Vale Historic Area", 'Naracoorte Caves National Park', 'Judge and Clerk Islets', 'Coal Mines Historic Site', 'Tasmanian Wilderness World Heritage Area']
+      Kakadu National Park in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park', "Kingston and Arthur's Vale Historic Area", 'Naracoorte Caves National Park', 'Judge and Clerk Islets', 'Coal Mines Historic Site', 'Tasmanian Wilderness World Heritage Area', 'Kakadu National Park']
+      Great Barrier Reef in ['Macquarie Island', 'Lord Howe Island Marine Park', 'Heard Island and McDonald Islands', 'Bishop and Clerk Islets', 'Isle of the Dead (Tasmania)', "Ball's Pyramid", 'Uluṟu-Kata Tjuṯa National Park', "Kingston and Arthur's Vale Historic Area", 'Naracoorte Caves National Park', 'Judge and Clerk Islets', 'Coal Mines Historic Site', 'Tasmanian Wilderness World Heritage Area', 'Kakadu National Park', 'Great Barrier Reef']
+   Upper category of World Heritage Sites in Australia: ['World Heritage Sites in Oceania by country', 'World Heritage Sites by country', 'Historic sites in Australia', 'Protected areas of Australia', 'Historic preservation in Australia', 'Cultural heritage of Australia']
+choose_by_wiki_recur(World Heritage Sites in Oceania by country)
+check_matchscore(Great Barrier Reef, Great Barrier Reef):  0.3333333333333333
+choose_by_wiki_recur(Great Barrier Reef)
+   Pages in Great Barrier Reef: ['Great Barrier Reef', 'Gulgibarra', '1928 Great Barrier Reef expedition', '2010 Great Barrier Reef oil spill', 'Arlington Reef', 'Belgian Scientific Expedition', 'Capricorn silvereye', 'Cato Reef', 'Cod Hole', 'Death of Steve Irwin', 'Robert Endean', 'Endeavour Reef', 'Environmental issues with coral reefs', 'Fitzroy Island (Queensland)', 'Fitzroy Island National Park', 'Frederick Reefs', 'SS Gothenburg', 'Great Barrier Reef (2012 TV series)', 'Great Barrier Reef (2015 TV series)', 'Great Barrier Reef Arena', 'Great Barrier Reef Foundation', 'Green Island (Queensland)', 'Green Island National Park', 'Mary Hagedorn', 'Hamilton Island Airport', 'Heron Island Research Station', 'Thomas Harvey Johnston', 'Kenn Reef', 'Lady Musgrave Island', 'Disappearance of Tom and Eileen Lonergan', 'Masthead Island', 'Northeast Shelf Province', 'Northeast Shelf Transition', 'One Tree Island (Queensland)', 'Pandora Reef', 'Pseudoceratina', 'Saumarez Reefs', 'Shoalwater Bay', "St. Crispin's Reef", 'Tourism on the Great Barrier Reef', 'Tryon Island', 'Wonky hole', 'Wreck Island', 'Wreck Reefs', 'Maurice Yonge']
+      Cato Reef in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition']
+      One Tree Island (Queensland) in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef']
+      Great Barrier Reef (2015 TV series) in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef']
+      1928 Great Barrier Reef expedition in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island']
+      Arlington Reef in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef']
+      Tourism on the Great Barrier Reef in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition']
+      Wreck Island in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island']
+      Endeavour Reef in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation']
+      Belgian Scientific Expedition in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye']
+      Lady Musgrave Island in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge']
+      Great Barrier Reef Foundation in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay']
+      Capricorn silvereye in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina']
+      Maurice Yonge in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs']
+      Shoalwater Bay in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin']
+      Pseudoceratina in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg']
+      Environmental issues with coral reefs in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs']
+      Death of Steve Irwin in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park']
+      SS Gothenburg in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole']
+      Frederick Reefs in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island']
+      Green Island National Park in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)']
+      Wonky hole in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)']
+      Masthead Island in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)']
+      Great Barrier Reef (2012 TV series) in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station']
+      Fitzroy Island (Queensland) in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs']
+      Heron Island Research Station in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park']
+      Wreck Reefs in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)']
+      Fitzroy Island National Park in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena']
+      Green Island (Queensland) in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs']
+      Great Barrier Reef Arena in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean']
+      Saumarez Reefs in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill']
+      Robert Endean in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport']
+      2010 Great Barrier Reef oil spill in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole']
+      Hamilton Island Airport in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn']
+      Cod Hole in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef']
+      Mary Hagedorn in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island']
+      Kenn Reef in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan']
+      Tryon Island in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan', 'Northeast Shelf Transition']
+      Disappearance of Tom and Eileen Lonergan in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan', 'Northeast Shelf Transition', 'Thomas Harvey Johnston']
+      Northeast Shelf Transition in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan', 'Northeast Shelf Transition', 'Thomas Harvey Johnston', 'Northeast Shelf Province']
+      Thomas Harvey Johnston in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan', 'Northeast Shelf Transition', 'Thomas Harvey Johnston', 'Northeast Shelf Province', "St. Crispin's Reef"]
+      Northeast Shelf Province in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan', 'Northeast Shelf Transition', 'Thomas Harvey Johnston', 'Northeast Shelf Province', "St. Crispin's Reef", 'Gulgibarra']
+      St. Crispin's Reef in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan', 'Northeast Shelf Transition', 'Thomas Harvey Johnston', 'Northeast Shelf Province', "St. Crispin's Reef", 'Gulgibarra', 'Pandora Reef']
+      Gulgibarra in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan', 'Northeast Shelf Transition', 'Thomas Harvey Johnston', 'Northeast Shelf Province', "St. Crispin's Reef", 'Gulgibarra', 'Pandora Reef']
+      Pandora Reef in ['Cato Reef', 'One Tree Island (Queensland)', 'Great Barrier Reef (2015 TV series)', '1928 Great Barrier Reef expedition', 'Arlington Reef', 'Tourism on the Great Barrier Reef', 'Wreck Island', 'Endeavour Reef', 'Belgian Scientific Expedition', 'Lady Musgrave Island', 'Great Barrier Reef Foundation', 'Capricorn silvereye', 'Maurice Yonge', 'Shoalwater Bay', 'Pseudoceratina', 'Environmental issues with coral reefs', 'Death of Steve Irwin', 'SS Gothenburg', 'Frederick Reefs', 'Green Island National Park', 'Wonky hole', 'Masthead Island', 'Great Barrier Reef (2012 TV series)', 'Fitzroy Island (Queensland)', 'Heron Island Research Station', 'Wreck Reefs', 'Fitzroy Island National Park', 'Green Island (Queensland)', 'Great Barrier Reef Arena', 'Saumarez Reefs', 'Robert Endean', '2010 Great Barrier Reef oil spill', 'Hamilton Island Airport', 'Cod Hole', 'Mary Hagedorn', 'Kenn Reef', 'Tryon Island', 'Disappearance of Tom and Eileen Lonergan', 'Northeast Shelf Transition', 'Thomas Harvey Johnston', 'Northeast Shelf Province', "St. Crispin's Reef", 'Gulgibarra', 'Pandora Reef']
+   Upper category of Great Barrier Reef: ['Coral reefs of Australia', 'Landforms of the Coral Sea', 'Reefs of the Pacific Ocean', 'Reefs of Australia', 'World Heritage Sites in Australia', 'Tourist attractions in Queensland', 'Regions of Queensland', 'Central Indo-Pacific']
+choose_by_wiki_recur(Coral reefs of Australia)
+['Macquarie Island', 'Heard Island and McDonald Islands', "Ball's Pyramid", 'Wonky hole']
+Ended after 2.5 hierarchy
+(2.5, ['Macquarie Island', 'Heard Island and McDonald Islands', 'Wonky hole', "Ball's Pyramid"])
+
+extract_info(Heard Island and McDonald Islands) Start.
+utils/preprocess.py extract_info(): Checking good links on Heard Island and McDonald Islands
+Antarctic is Geography
+1 / 30 )  Antarctic Antarctic antarctic
+Madagascar is Geography
+2 / 30 )  Madagascar Madagascar madagascar
+Antarctica is Geography
+3 / 30 )  Antarctica Antarctica antarctica
+Indian Ocean is Geography
+4 / 30 )  Indian Ocean Indian Ocean indian_ocean
+Australian Antarctic Territory is Geography
+5 / 30 )  Australian Antarctic Territory Australian Antarctic Territory australian_antarctic_territory
+Extremes on Earth is Geography
+6 / 30 )  most remote places on Earth Extremes on Earth lowest_point
+Perth is Geography
+7 / 30 )  Perth Perth perth
+South Africa is Geography
+8 / 30 )  South Africa South Africa south_africa
+Boston is Geography
+9 / 30 )  Boston Boston boston
+Melbourne is Geography
+10 / 30 )  Melbourne Melbourne melbourne
+Elephant seal is Animal
+11 / 30 )  elephant seal Elephant seal elephant_seal
+Big Ben  is Geography
+12 / 30 )  Big Ben Big Ben  big_ben
+Heard Island and McDonald Islands is Geography
+13 / 30 )  McDonald Islands Heard Island and McDonald Islands heard_island_and_mcdonald_islands
+Southern elephant seal is Animal
+14 / 30 )  southern elephant seal Southern elephant seal southern_elephant_seal
+Macaroni penguin is Animal
+15 / 30 )  macaroni Macaroni penguin macaroni_penguin
+Gentoo penguin is Animal
+16 / 30 )  gentoo Gentoo penguin gentoo_penguin
+King penguin is Animal
+17 / 30 )  king King penguin king_penguin
+Subantarctic is Geography
+18 / 30 )  subantarctic Subantarctic subantarctic
+Moss is Animal
+19 / 30 )  mosses Moss moss
+Pringlea is Animal
+20 / 30 )  Pringlea antiscorbutica Pringlea kerguelen_cabbage
+Durvillaea antarctica is Animal
+21 / 30 )  Durvillaea antarctica Durvillaea antarctica durvillaea_antarctica
+Poa annua is Animal
+22 / 30 )  Poa annua Poa annua annual_meadow_grass
+Skua is Animal
+23 / 30 )  skuas Skua skua
+Pinniped is Animal
+24 / 30 )  seals Pinniped pinniped
+Penguin is Animal
+25 / 30 )  penguins Penguin penguin
+Leopard seal is Animal
+26 / 30 )  Leopard seals Leopard seal leopard_seal
+Crabeater seal is Animal
+27 / 30 )  Crabeater Crabeater seal crabeater_seal
+Ross seal is Animal
+28 / 30 )  Ross Ross seal ross_seal
+Weddell seal is Animal
+29 / 30 )  Weddell seals Weddell seal weddell_seal
+Southern giant petrel is Animal
+30 / 30 )  southern giant petrels Southern giant petrel southern_giant_petrel
+extract_triplet(Heard Island and McDonald Islands)
+Got GPT's response. String length : 2256
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  [['Madagascar', 'Madagascar', 'madagascar'], ['Antarctica', 'Antarctica', 'antarctica']]
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  []
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  []
+subject_words:  []
+object_words:  [['Antarctic', 'Antarctic', 'antarctic'], ['Australian Antarctic Territory', 'Australian Antarctic Territory', 'australian_antarctic_territory']]
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  [['most remote places on Earth', 'Extremes on Earth', 'lowest_point']]
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  [['Perth', 'Perth', 'perth']]
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  [['South Africa', 'South Africa', 'south_africa']]
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  [['Madagascar', 'Madagascar', 'madagascar']]
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  [['Antarctica', 'Antarctica', 'antarctica']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Boston', 'Boston', 'boston'], ['Melbourne', 'Melbourne', 'melbourne']]
+subject_words:  [['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  []
+subject_words:  [['Big Ben', 'Big Ben ', 'big_ben']]
+object_words:  []
+subject_words:  [['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  []
+subject_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  []
+subject_words:  [['elephant seal', 'Elephant seal', 'elephant_seal'], ['southern elephant seal', 'Southern elephant seal', 'southern_elephant_seal']]
+object_words:  []
+subject_words:  []
+object_words:  [['Big Ben', 'Big Ben ', 'big_ben']]
+subject_words:  []
+object_words:  [['mosses', 'Moss', 'moss']]
+subject_words:  [['Pringlea antiscorbutica', 'Pringlea', 'kerguelen_cabbage']]
+object_words:  []
+subject_words:  [['Antarctica', 'Antarctica', 'antarctica'], ['Durvillaea antarctica', 'Durvillaea antarctica', 'durvillaea_antarctica']]
+object_words:  []
+subject_words:  [['Poa annua', 'Poa annua', 'annual_meadow_grass']]
+object_words:  []
+subject_words:  [['skuas', 'Skua', 'skua']]
+object_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+subject_words:  [['seals', 'Pinniped', 'pinniped']]
+object_words:  [(None, 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands'), ['McDonald Islands', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+subject_words:  [['penguins', 'Penguin', 'penguin']]
+object_words:  []
+subject_words:  [['seals', 'Pinniped', 'pinniped'], ['Leopard seals', 'Leopard seal', 'leopard_seal']]
+object_words:  []
+subject_words:  [['Crabeater', 'Crabeater seal', 'crabeater_seal']]
+object_words:  []
+subject_words:  [['seals', 'Pinniped', 'pinniped'], ['Weddell seals', 'Weddell seal', 'weddell_seal']]
+object_words:  []
+subject_words:  [['southern giant petrels', 'Southern giant petrel', 'southern_giant_petrel']]
+object_words:  []
+extract_info(Wonky hole) Start.
+utils/preprocess.py extract_info(): Checking good links on Wonky hole
+Australia is Geography
+1 / 30 )  Australian Australia australia
+Great Barrier Reef is Geography
+2 / 30 )  Great Barrier Reef Great Barrier Reef great_barrier_reef
+Gulf of Carpentaria is Geography
+3 / 30 )  Gulf of Carpentaria Gulf of Carpentaria gulf_of_carpentaria
+Queensland is Geography
+4 / 30 )  Queensland Queensland queensland
+extract_triplet(Wonky hole)
+Got GPT's response. String length : 703
+subject_words:  [(None, 'Wonky hole', 'wonky_hole')]
+object_words:  [['Australian', 'Australia', 'australia']]
+subject_words:  [(None, 'Wonky hole', 'wonky_hole')]
+object_words:  [['Great Barrier Reef', 'Great Barrier Reef', 'great_barrier_reef']]
+subject_words:  [(None, 'Wonky hole', 'wonky_hole')]
+object_words:  [['Gulf of Carpentaria', 'Gulf of Carpentaria', 'gulf_of_carpentaria']]
+subject_words:  [(None, 'Wonky hole', 'wonky_hole')]
+object_words:  []
+subject_words:  [(None, 'Wonky hole', 'wonky_hole')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Wonky hole', 'wonky_hole')]
+subject_words:  []
+object_words:  [['Great Barrier Reef', 'Great Barrier Reef', 'great_barrier_reef']]
+subject_words:  []
+object_words:  [(None, 'Wonky hole', 'wonky_hole')]
+subject_words:  [(None, 'Wonky hole', 'wonky_hole')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Wonky hole', 'wonky_hole')]
+extract_info(Macquarie Island) Start.
+utils/preprocess.py extract_info(): Checking good links on Macquarie Island
+Pacific Ocean is Geography
+1 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+New Zealand is Geography
+2 / 30 )  New Zealand New Zealand new_zealand
+Antarctica is Geography
+3 / 30 )  Antarctica Antarctica antarctica
+Oceania is Geography
+4 / 30 )  Oceania Oceania oceania
+Tasmania is Geography
+5 / 30 )  Tasmania Tasmania tasmania
+Australia is Geography
+6 / 30 )  Australia Australia australia
+Royal penguin is Animal
+7 / 30 )  royal penguin Royal penguin royal_penguin
+Macquarie Island Station is Geography
+8 / 30 )  Macquarie Island Station Macquarie Island Station macquarie_island
+United Kingdom is Geography
+9 / 30 )  Britain United Kingdom united_kingdom
+New South Wales is Geography
+10 / 30 )  New South Wales New South Wales new_south_wales
+Douglas Mawson is Geography
+11 / 30 )  Douglas Mawson Douglas Mawson mawson
+Adélie Land is Geography
+12 / 30 )  Adélie Land Adélie Land adélie_land
+Phantom island is Geography
+13 / 30 )  phantom island Phantom island phantom_island
+Zealandia is Geography
+14 / 30 )  Zealandia Zealandia zealandia
+Heard Island and McDonald Islands is Geography
+15 / 30 )  Heard Island Heard Island and McDonald Islands heard_island_and_mcdonald_islands
+Vascular plant is Animal
+16 / 30 )  vascular plant Vascular plant vascular_plant
+Marchantiophyta is Animal
+17 / 30 )  liverworts Marchantiophyta marchantiophyta
+Southern elephant seal is Animal
+18 / 30 )  southern elephant seals Southern elephant seal southern_elephant_seal
+Cetacea is Animal
+19 / 30 )  cetaceans Cetacea cetacea
+Southern right whale is Animal
+20 / 30 )  southern right whales Southern right whale southern_right_whale
+Orca is Animal
+21 / 30 )  orcas Orca orca
+Sperm whale is Animal
+22 / 30 )  sperm Sperm whale sperm_whale
+Beaked whale is Animal
+23 / 30 )  beaked whales Beaked whale beaked_whale
+Macquarie shag is Animal
+24 / 30 )  Macquarie shags Macquarie shag phalacrocorax_purpurascens
+King penguin is Animal
+25 / 30 )  king penguins King penguin king_penguin
+Southern rockhopper penguin is Animal
+26 / 30 )  southern rockhopper penguins Southern rockhopper penguin southern_rockhopper_penguin
+Gentoo penguin is Animal
+27 / 30 )  gentoo penguins Gentoo penguin gentoo_penguin
+Fur seal is Animal
+28 / 30 )  fur seals Fur seal fur_seal
+Elephant seal is Animal
+29 / 30 )  elephant seals Elephant seal elephant_seal
+Penguin is Animal
+30 / 30 )  penguins Penguin penguin
+extract_triplet(Macquarie Island)
+Got GPT's response. String length : 1960
+subject_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+object_words:  [['New Zealand', 'New Zealand', 'new_zealand'], ['Antarctica', 'Antarctica', 'antarctica']]
+subject_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+object_words:  [['Oceania', 'Oceania', 'oceania']]
+subject_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+object_words:  [['Australia', 'Australia', 'australia']]
+subject_words:  [['royal penguin', 'Royal penguin', 'royal_penguin'], ['penguins', 'Penguin', 'penguin']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+subject_words:  [(None, 'Macquarie Island', 'macquarie_island'), ['Macquarie Island Station', 'Macquarie Island Station', 'macquarie_island']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+subject_words:  []
+object_words:  [['Britain', 'United Kingdom', 'united_kingdom']]
+subject_words:  [['Douglas Mawson', 'Douglas Mawson', 'mawson']]
+object_words:  []
+subject_words:  []
+object_words:  [['Adélie Land', 'Adélie Land', 'adélie_land']]
+subject_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+object_words:  [['Zealandia', 'Zealandia', 'zealandia']]
+subject_words:  [['Heard Island', 'Heard Island and McDonald Islands', 'heard_island_and_mcdonald_islands']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+subject_words:  [['liverworts', 'Marchantiophyta', 'marchantiophyta']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+subject_words:  [['cetaceans', 'Cetacea', 'cetacea'], ['southern right whales', 'Southern right whale', 'southern_right_whale'], ['sperm', 'Sperm whale', 'sperm_whale'], ['beaked whales', 'Beaked whale', 'beaked_whale']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+subject_words:  [['Macquarie shags', 'Macquarie shag', 'phalacrocorax_purpurascens']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+subject_words:  [['king penguins', 'King penguin', 'king_penguin'], ['southern rockhopper penguins', 'Southern rockhopper penguin', 'southern_rockhopper_penguin'], ['gentoo penguins', 'Gentoo penguin', 'gentoo_penguin'], ['penguins', 'Penguin', 'penguin']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+subject_words:  [['fur seals', 'Fur seal', 'fur_seal'], ['elephant seals', 'Elephant seal', 'elephant_seal']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+subject_words:  [['penguins', 'Penguin', 'penguin']]
+object_words:  [(None, 'Macquarie Island', 'macquarie_island')]
+extract_info(Ball's Pyramid) Start.
+utils/preprocess.py extract_info(): Checking good links on Ball's Pyramid
+Pacific Ocean is Geography
+1 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Lord Howe Island is Geography
+2 / 30 )  Lord Howe Island Lord Howe Island lord_howe_island
+Zealandia is Geography
+3 / 30 )  Zealandia Zealandia zealandia
+Cyperaceae is Animal
+4 / 30 )  sedge Cyperaceae cyperaceae
+extract_triplet(Ball's Pyramid)
+Got GPT's response. String length : 313
+subject_words:  [(None, "Ball's Pyramid", "ball's_pyramid")]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, "Ball's Pyramid", "ball's_pyramid")]
+object_words:  [['Lord Howe Island', 'Lord Howe Island', 'lord_howe_island']]
+subject_words:  [(None, "Ball's Pyramid", "ball's_pyramid")]
+object_words:  [['Zealandia', 'Zealandia', 'zealandia']]
+subject_words:  [(None, "Ball's Pyramid", "ball's_pyramid")]
+object_words:  [['sedge', 'Cyperaceae', 'cyperaceae']]
+subject_words:  [['sedge', 'Cyperaceae', 'cyperaceae']]
+object_words:  [(None, "Ball's Pyramid", "ball's_pyramid"), ['Lord Howe Island', 'Lord Howe Island', 'lord_howe_island']]
+['("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Denali", "is the highest mountain peak in", "North America")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Denali", "is the tallest mountain in the world from base-to-peak on land", "")\n', '("Denali", "is the third most prominent peak on Earth, after", "Mount Everest and Aconcagua")\n', '("Denali", "is located in", "the Alaska Range in Alaska")\n', '("Denali", "is the centerpiece of", "Denali National Park and Preserve")\n', '("Denali", "was officially named Mount McKinley in support of", "William McKinley")\n', '("Denali", "was renamed from Mount McKinley to", "Denali by the United States Department of the Interior")\n', '("Denali", "had its first recorded ascent attempt by", "James Wickersham")\n', '("Denali", "had its first verifiable ascent by", "Hudson Stuck, Harry Karstens, Walter Harper, and Robert Tatum")\n', '("Denali", "has the West Buttress route pioneered by", "Bradford Washburn")\n', '("Denali", "was remeasured by the", "U.S. Geological Survey")\n', '("Denali", "is a granitic pluton lifted by", "tectonic pressure from the subduction of the Pacific Plate beneath the North American Plate")\n', '("Denali", "has deep earthquakes caused by", "the Aleutian Islands")\n', '("Denali", "has a tectonic region known as the", "McKinley cluster")\n', '("Denali", "has structural geology affected by the", "Denali Fault")\n', '("Denali", "has base-to-peak elevation less than", "Mauna Kea")\n', '("Denali", "has significant summits including", "the South Summit")\n', '("Denali", "was sighted by", "George Vancouver")\n', '("Denali", "is depicted on a twenty-five cent piece by the", "United States Mint")\n', '("Denali", "is home to the", "Dall sheep")\n', '("Denali", "was explored by", "Frederick Cook and Robert Peary")\n', '("Denali\'s", "first ascent was falsely claimed by", "Frederick Cook")\n', '("Denali", "was the focus of a naming dispute involving", "President Wilson and Lyndon B. Johnson")\n', '("Denali", "is honored taxonomically in names such as", "Magnoavipes denaliensis and Ceratozetella denaliensis")\n', '("Denali", "is featured in the animated series", "Molly of Denali")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n', '("Heard Island and McDonald Islands", "are located", "two-thirds of the way from Madagascar to Antarctica")\n', '("Heard Island and McDonald Islands", "are in the Indian Ocean", "")\n', '("Heard Island and McDonald Islands", "have", "Australia\'s only two active volcanoes")\n', '("Mawson Peak", "is higher than", "any mountain in all other Australian states or territories except in the Australian Antarctic Territory")\n', '("Heard Island and McDonald Islands", "are among", "the most remote places on Earth")\n', '("Heard Island and McDonald Islands", "are located southwest of", "Perth")\n', '("Heard Island and McDonald Islands", "are located southeast of", "South Africa")\n', '("Heard Island and McDonald Islands", "are located southeast of", "Madagascar")\n', '("Heard Island and McDonald Islands", "are located north of", "Antarctica")\n', '("John Heard", "sighted", "Heard Island")\n', '("John Heard", "was on the ship", "Oriental en route from Boston to Melbourne")\n', '("McDonald Islands", "were discovered by", "William McDonald aboard the Samarang")\n', '("Big Ben massif", "is located on", "Heard Island")\n', '("McDonald Islands", "consist of", "McDonald Island, Flat Island, and Meyer Rock")\n', '("Heard Island and McDonald Islands", "have no", "ports or harbours")\n', '("Southern elephant seal", "breeds on", "Heard Island")\n', '("Mawson Peak", "is atop", "Big Ben")\n', '("Heard Island", "supports vegetation such as", "mosses")\n', '("Pringlea antiscorbutica", "is a vascular plant found on", "Heard Island")\n', '("Durvillaea antarctica", "is the giant Antarctic kelp that occurs in", "Heard Island")\n', '("Poa annua", "is a grass species possibly introduced to", "Heard Island")\n', '("Skuas", "are seabird species found in", "Heard Island and McDonald Islands")\n', '("Seals", "are indigenous animals to", "Heard Island and McDonald Islands")\n', '("Penguins", "are bird species that breed on", "Heard Island")\n', '("Leopard seals", "visit", "Heard Island")\n', '("Crabeater", "visits", "Heard Island")\n', '("Weddell seals", "are occasional visitors to", "Heard Island")\n', '("Southern giant petrels", "are bird species that breed on", "Heard Island")\n', '("Wonky hole", "is", "Australian term for submarine groundwater discharge")\n', '("Wonky hole", "found in", "Great Barrier Reef")\n', '("Wonky hole", "found in", "Gulf of Carpentaria")\n', '("Wonky hole", "located along", "riverbeds from the last glacial period")\n', '("Wonky hole", "channels fresh water to", "thin spots in the coral")\n', '("Fresh water", "attracts", "fish and fishermen to wonky holes")\n', '("Water", "flowing from wonky hole", "can cause eutrophication in Great Barrier Reef lagoon")\n', '("Coral", "does not grow well in", "fresh water from wonky holes")\n', '("Wonky holes", "are known along the coast between", "Townsville and Cape York")\n', '("Fishing nets", "tend to get captured by", "rough bottoms around wonky hole")\n', '("Macquarie Island", "is located in", "the southwestern Pacific Ocean")\n', '("Macquarie Island", "is halfway between", "New Zealand and Antarctica")\n', '("Macquarie Island", "is part of", "Oceania")\n', '("Macquarie Island", "is politically a part of", "Tasmania, Australia")\n', '("The entire royal penguin population", "nests during their annual nesting season on", "Macquarie Island")\n', '("Macquarie Island Station", "is located at", "the northern end of Macquarie Island")\n', '("Frederick Hasselborough", "claimed Macquarie Island for", "Britain")\n', '("Douglas Mawson", "used Macquarie Island as a base for", "the Australasian Antarctic Expedition")\n', '("The French Antarctic Expedition", "visited Macquarie Island from", "Adélie Land")\n', '("Macquarie Island", "is not part of the submerged continent", "Zealandia")\n', '("Heard Island", "is located farther north than", "Macquarie Island")\n', '("Many liverworts", "are part of the flora on", "Macquarie Island")\n', '("Cetaceans such as southern right whales, orcas, and sperm and beaked whales", "visit the waters around", "Macquarie Island")\n', '("Macquarie shags", "are endemic breeders to", "Macquarie Island")\n', '("King penguins, southern rockhopper penguins, and gentoo penguins", "also breed on", "Macquarie Island")\n', '("Fur seals and elephant seals", "are present on", "Macquarie Island")\n', '("Penguins", "breed in large numbers on", "Macquarie Island")\n', '("Ball\'s Pyramid", "is located in", "the Pacific Ocean")\n', '("Ball\'s Pyramid", "is southeast of", "Lord Howe Island")\n', '("Ball\'s Pyramid", "is part of the submerged continent of", "Zealandia")\n', '("Ball\'s Pyramid", "has", "sedge plants")\n', '("Sedge plants", "are food for", "Lord Howe Island stick insect on Ball\'s Pyramid")\n']
+range(1, 150) 4
+['("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Denali", "is the highest mountain peak in", "North America")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Denali", "is the tallest mountain in the world from base-to-peak on land", "")\n', '("Denali", "is the third most prominent peak on Earth, after", "Mount Everest and Aconcagua")\n', '("Denali", "is located in", "the Alaska Range in Alaska")\n', '("Denali", "is the centerpiece of", "Denali National Park and Preserve")\n', '("Denali", "was officially named Mount McKinley in support of", "William McKinley")\n', '("Denali", "was renamed from Mount McKinley to", "Denali by the United States Department of the Interior")\n', '("Denali", "had its first recorded ascent attempt by", "James Wickersham")\n', '("Denali", "had its first verifiable ascent by", "Hudson Stuck, Harry Karstens, Walter Harper, and Robert Tatum")\n', '("Denali", "has the West Buttress route pioneered by", "Bradford Washburn")\n', '("Denali", "was remeasured by the", "U.S. Geological Survey")\n', '("Denali", "is a granitic pluton lifted by", "tectonic pressure from the subduction of the Pacific Plate beneath the North American Plate")\n', '("Denali", "has deep earthquakes caused by", "the Aleutian Islands")\n', '("Denali", "has a tectonic region known as the", "McKinley cluster")\n', '("Denali", "has structural geology affected by the", "Denali Fault")\n', '("Denali", "has base-to-peak elevation less than", "Mauna Kea")\n', '("Denali", "has significant summits including", "the South Summit")\n', '("Denali", "was sighted by", "George Vancouver")\n', '("Denali", "is depicted on a twenty-five cent piece by the", "United States Mint")\n', '("Denali", "is home to the", "Dall sheep")\n', '("Denali", "was explored by", "Frederick Cook and Robert Peary")\n', '("Denali\'s", "first ascent was falsely claimed by", "Frederick Cook")\n', '("Denali", "was the focus of a naming dispute involving", "President Wilson and Lyndon B. Johnson")\n', '("Denali", "is honored taxonomically in names such as", "Magnoavipes denaliensis and Ceratozetella denaliensis")\n', '("Denali", "is featured in the animated series", "Molly of Denali")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n', '("Heard Island and McDonald Islands", "are located", "two-thirds of the way from Madagascar to Antarctica")\n', '("Heard Island and McDonald Islands", "are in the Indian Ocean", "")\n', '("Heard Island and McDonald Islands", "have", "Australia\'s only two active volcanoes")\n', '("Mawson Peak", "is higher than", "any mountain in all other Australian states or territories except in the Australian Antarctic Territory")\n', '("Heard Island and McDonald Islands", "are among", "the most remote places on Earth")\n', '("Heard Island and McDonald Islands", "are located southwest of", "Perth")\n', '("Heard Island and McDonald Islands", "are located southeast of", "South Africa")\n', '("Heard Island and McDonald Islands", "are located southeast of", "Madagascar")\n', '("Heard Island and McDonald Islands", "are located north of", "Antarctica")\n', '("John Heard", "sighted", "Heard Island")\n', '("John Heard", "was on the ship", "Oriental en route from Boston to Melbourne")\n', '("McDonald Islands", "were discovered by", "William McDonald aboard the Samarang")\n', '("Big Ben massif", "is located on", "Heard Island")\n', '("McDonald Islands", "consist of", "McDonald Island, Flat Island, and Meyer Rock")\n', '("Heard Island and McDonald Islands", "have no", "ports or harbours")\n', '("Southern elephant seal", "breeds on", "Heard Island")\n', '("Mawson Peak", "is atop", "Big Ben")\n', '("Heard Island", "supports vegetation such as", "mosses")\n', '("Pringlea antiscorbutica", "is a vascular plant found on", "Heard Island")\n', '("Durvillaea antarctica", "is the giant Antarctic kelp that occurs in", "Heard Island")\n', '("Poa annua", "is a grass species possibly introduced to", "Heard Island")\n', '("Skuas", "are seabird species found in", "Heard Island and McDonald Islands")\n', '("Seals", "are indigenous animals to", "Heard Island and McDonald Islands")\n', '("Penguins", "are bird species that breed on", "Heard Island")\n', '("Leopard seals", "visit", "Heard Island")\n', '("Crabeater", "visits", "Heard Island")\n', '("Weddell seals", "are occasional visitors to", "Heard Island")\n', '("Southern giant petrels", "are bird species that breed on", "Heard Island")\n', '("Wonky hole", "is", "Australian term for submarine groundwater discharge")\n', '("Wonky hole", "found in", "Great Barrier Reef")\n', '("Wonky hole", "found in", "Gulf of Carpentaria")\n', '("Wonky hole", "located along", "riverbeds from the last glacial period")\n', '("Wonky hole", "channels fresh water to", "thin spots in the coral")\n', '("Fresh water", "attracts", "fish and fishermen to wonky holes")\n', '("Water", "flowing from wonky hole", "can cause eutrophication in Great Barrier Reef lagoon")\n', '("Coral", "does not grow well in", "fresh water from wonky holes")\n', '("Wonky holes", "are known along the coast between", "Townsville and Cape York")\n', '("Fishing nets", "tend to get captured by", "rough bottoms around wonky hole")\n', '("Macquarie Island", "is located in", "the southwestern Pacific Ocean")\n', '("Macquarie Island", "is halfway between", "New Zealand and Antarctica")\n', '("Macquarie Island", "is part of", "Oceania")\n', '("Macquarie Island", "is politically a part of", "Tasmania, Australia")\n', '("The entire royal penguin population", "nests during their annual nesting season on", "Macquarie Island")\n', '("Macquarie Island Station", "is located at", "the northern end of Macquarie Island")\n', '("Frederick Hasselborough", "claimed Macquarie Island for", "Britain")\n', '("Douglas Mawson", "used Macquarie Island as a base for", "the Australasian Antarctic Expedition")\n', '("The French Antarctic Expedition", "visited Macquarie Island from", "Adélie Land")\n', '("Macquarie Island", "is not part of the submerged continent", "Zealandia")\n', '("Heard Island", "is located farther north than", "Macquarie Island")\n', '("Many liverworts", "are part of the flora on", "Macquarie Island")\n', '("Cetaceans such as southern right whales, orcas, and sperm and beaked whales", "visit the waters around", "Macquarie Island")\n', '("Macquarie shags", "are endemic breeders to", "Macquarie Island")\n', '("King penguins, southern rockhopper penguins, and gentoo penguins", "also breed on", "Macquarie Island")\n', '("Fur seals and elephant seals", "are present on", "Macquarie Island")\n', '("Penguins", "breed in large numbers on", "Macquarie Island")\n', '("Ball\'s Pyramid", "is located in", "the Pacific Ocean")\n', '("Ball\'s Pyramid", "is southeast of", "Lord Howe Island")\n', '("Ball\'s Pyramid", "is part of the submerged continent of", "Zealandia")\n', '("Ball\'s Pyramid", "has", "sedge plants")\n', '("Sedge plants", "are food for", "Lord Howe Island stick insect on Ball\'s Pyramid")\n']
+range(1, 150) 4
+['("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")\n', '("Denali", "is the highest mountain peak in", "North America")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n']
+
+['("Mount Everest", "is known as", "Earth\'s highest mountain above sea level")\n', '("Mount Everest", "is located in", "the Mahalangur Himal sub-range of the Himalayas")\n', '("Mount Everest", "has the international border between", "China and Nepal across its summit")\n', '("Mount Everest", "attracts", "many climbers")\n', '("Mount Everest", "presents", "dangers such as altitude sickness, weather, and wind")\n', '("Mount Everest", "has hazards from", "avalanches and the Khumbu Icefall")\n', '("British mountaineers", "made the first recorded efforts to reach", "Everest\'s summit")\n', '("Mount Everest", "was named after", "British surveyor Sir George Everest")\n', '("Kangchenjunga", "was considered the highest peak before", "Everest\'s recognition")\n', '("Mount Everest", "is", "on the convergent boundary between the Eurasian Plate and Indian Plate")\n', '("Ordovician limestone", "composes", "the summit of Mount Everest")\n', '("Cyanobacteria", "helped to form", "sediments at the summit pyramid of Everest")\n', '("Climate change", "affects", "Khumbu Glacier and Everest\'s climbing conditions")\n', '("Mount Everest", "has", "two main climbing routes")\n', '("The southeast route", "starts from", "Nepal")\n', '("The north route", "approaches from", "Tibet")\n', '("Climbers", "use", "GPS technology for navigation and measurement")\n', '("Denali", "is the tallest mountain in the world from base-to-peak on land", "")\n', '("Denali", "is the third most prominent peak on Earth, after", "Mount Everest and Aconcagua")\n', '("Denali", "is located in", "the Alaska Range in Alaska")\n', '("Denali", "is the centerpiece of", "Denali National Park and Preserve")\n', '("Denali", "was officially named Mount McKinley in support of", "William McKinley")\n', '("Denali", "was renamed from Mount McKinley to", "Denali by the United States Department of the Interior")\n', '("Denali", "had its first recorded ascent attempt by", "James Wickersham")\n', '("Denali", "had its first verifiable ascent by", "Hudson Stuck, Harry Karstens, Walter Harper, and Robert Tatum")\n', '("Denali", "has the West Buttress route pioneered by", "Bradford Washburn")\n', '("Denali", "was remeasured by the", "U.S. Geological Survey")\n', '("Denali", "is a granitic pluton lifted by", "tectonic pressure from the subduction of the Pacific Plate beneath the North American Plate")\n', '("Denali", "has deep earthquakes caused by", "the Aleutian Islands")\n', '("Denali", "has a tectonic region known as the", "McKinley cluster")\n', '("Denali", "has structural geology affected by the", "Denali Fault")\n', '("Denali", "has base-to-peak elevation less than", "Mauna Kea")\n', '("Denali", "has significant summits including", "the South Summit")\n', '("Denali", "was sighted by", "George Vancouver")\n', '("Denali", "is depicted on a twenty-five cent piece by the", "United States Mint")\n', '("Denali", "is home to the", "Dall sheep")\n', '("Denali", "was explored by", "Frederick Cook and Robert Peary")\n', '("Denali\'s", "first ascent was falsely claimed by", "Frederick Cook")\n', '("Denali", "was the focus of a naming dispute involving", "President Wilson and Lyndon B. Johnson")\n', '("Denali", "is honored taxonomically in names such as", "Magnoavipes denaliensis and Ceratozetella denaliensis")\n', '("Denali", "is featured in the animated series", "Molly of Denali")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n', '("Heard Island and McDonald Islands", "are located", "two-thirds of the way from Madagascar to Antarctica")\n', '("Heard Island and McDonald Islands", "are in the Indian Ocean", "")\n', '("Heard Island and McDonald Islands", "have", "Australia\'s only two active volcanoes")\n', '("Mawson Peak", "is higher than", "any mountain in all other Australian states or territories except in the Australian Antarctic Territory")\n', '("Heard Island and McDonald Islands", "are among", "the most remote places on Earth")\n', '("Heard Island and McDonald Islands", "are located southwest of", "Perth")\n', '("Heard Island and McDonald Islands", "are located southeast of", "South Africa")\n', '("Heard Island and McDonald Islands", "are located southeast of", "Madagascar")\n', '("Heard Island and McDonald Islands", "are located north of", "Antarctica")\n', '("John Heard", "sighted", "Heard Island")\n', '("John Heard", "was on the ship", "Oriental en route from Boston to Melbourne")\n', '("McDonald Islands", "were discovered by", "William McDonald aboard the Samarang")\n', '("Big Ben massif", "is located on", "Heard Island")\n', '("McDonald Islands", "consist of", "McDonald Island, Flat Island, and Meyer Rock")\n', '("Heard Island and McDonald Islands", "have no", "ports or harbours")\n', '("Southern elephant seal", "breeds on", "Heard Island")\n', '("Mawson Peak", "is atop", "Big Ben")\n', '("Heard Island", "supports vegetation such as", "mosses")\n', '("Pringlea antiscorbutica", "is a vascular plant found on", "Heard Island")\n', '("Durvillaea antarctica", "is the giant Antarctic kelp that occurs in", "Heard Island")\n', '("Poa annua", "is a grass species possibly introduced to", "Heard Island")\n', '("Skuas", "are seabird species found in", "Heard Island and McDonald Islands")\n', '("Seals", "are indigenous animals to", "Heard Island and McDonald Islands")\n', '("Penguins", "are bird species that breed on", "Heard Island")\n', '("Leopard seals", "visit", "Heard Island")\n', '("Crabeater", "visits", "Heard Island")\n', '("Weddell seals", "are occasional visitors to", "Heard Island")\n', '("Southern giant petrels", "are bird species that breed on", "Heard Island")\n', '("Wonky hole", "is", "Australian term for submarine groundwater discharge")\n', '("Wonky hole", "found in", "Great Barrier Reef")\n', '("Wonky hole", "found in", "Gulf of Carpentaria")\n', '("Wonky hole", "located along", "riverbeds from the last glacial period")\n', '("Wonky hole", "channels fresh water to", "thin spots in the coral")\n', '("Fresh water", "attracts", "fish and fishermen to wonky holes")\n', '("Water", "flowing from wonky hole", "can cause eutrophication in Great Barrier Reef lagoon")\n', '("Coral", "does not grow well in", "fresh water from wonky holes")\n', '("Wonky holes", "are known along the coast between", "Townsville and Cape York")\n', '("Fishing nets", "tend to get captured by", "rough bottoms around wonky hole")\n', '("Macquarie Island", "is located in", "the southwestern Pacific Ocean")\n', '("Macquarie Island", "is halfway between", "New Zealand and Antarctica")\n', '("Macquarie Island", "is part of", "Oceania")\n', '("Macquarie Island", "is politically a part of", "Tasmania, Australia")\n', '("The entire royal penguin population", "nests during their annual nesting season on", "Macquarie Island")\n', '("Macquarie Island Station", "is located at", "the northern end of Macquarie Island")\n', '("Frederick Hasselborough", "claimed Macquarie Island for", "Britain")\n', '("Douglas Mawson", "used Macquarie Island as a base for", "the Australasian Antarctic Expedition")\n', '("The French Antarctic Expedition", "visited Macquarie Island from", "Adélie Land")\n', '("Macquarie Island", "is not part of the submerged continent", "Zealandia")\n', '("Heard Island", "is located farther north than", "Macquarie Island")\n', '("Many liverworts", "are part of the flora on", "Macquarie Island")\n', '("Cetaceans such as southern right whales, orcas, and sperm and beaked whales", "visit the waters around", "Macquarie Island")\n', '("Macquarie shags", "are endemic breeders to", "Macquarie Island")\n', '("King penguins, southern rockhopper penguins, and gentoo penguins", "also breed on", "Macquarie Island")\n', '("Fur seals and elephant seals", "are present on", "Macquarie Island")\n', '("Penguins", "breed in large numbers on", "Macquarie Island")\n', '("Ball\'s Pyramid", "is located in", "the Pacific Ocean")\n', '("Ball\'s Pyramid", "is southeast of", "Lord Howe Island")\n', '("Ball\'s Pyramid", "is part of the submerged continent of", "Zealandia")\n', '("Ball\'s Pyramid", "has", "sedge plants")\n', '("Sedge plants", "are food for", "Lord Howe Island stick insect on Ball\'s Pyramid")\n']
+range(1, 150) 4
+{'id': '4_11', 'Question': ' What is a notable feature of marine biodiversity in Australia, analogous to the reef systems found off the coast of the geographic region that shares with North America a continent, which also includes the peak that rivals Mount Everest in base-to-peak height?\n', 'Answer': 'Great Barrier Reef', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Heard Island and McDonald Islands'}, {'label': 'B', 'text': 'Wonky hole'}, {'label': 'C', 'text': 'Great Barrier Reef'}, {'label': 'D', 'text': 'Macquarie Island'}, {'label': 'E', 'text': "Ball's Pyramid"}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'heard_island_and_mcdonald_islands'}, {'label': 'B', 'text': 'wonky_hole'}, {'label': 'C', 'text': 'great_barrier_reef'}, {'label': 'D', 'text': 'macquarie_island'}, {'label': 'E', 'text': "ball's_pyramid"}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Question_decompositions': ['1: When Mount Everest is compared for the title of the tallest mountain from base, which peak, alongside Mauna Kea, is mentioned for its significant elevation?\nA1: Denali\n\n', '2: Which continent boasts Denali as its highest mountain peak?\nA2: North America\n\n', '3: What geographic region, known for its rich Mayan heritage and proximity to the Caribbean, is considered part of a larger continental landmass?\nA3: Yucatán Peninsula\n\n', '4: While discussing coastal ecosystems, which remarkable Australian feature is mentioned along with mangroves as a significant example of marine biodiversity?\nA4: Great Barrier Reef'], 'Hops_wiki': [('Mount Everest', 'Denali'), ('Denali', 'North America'), ('North America', 'Yucatán Peninsula'), ('Yucatán Peninsula', 'Great Barrier Reef')], 'Hops_cpnet': [('mount_everest', 'denali'), ('denali', 'north_america'), ('north_america', 'yucatan_peninsula'), ('yucatan_peninsula', 'great_barrier_reef')], 'Triplets': ['("Mount Everest", "compared with", "Mauna Kea and Denali for tallest mountain from base")', '("Denali", "is the highest mountain peak in", "North America")', '("Yucatán Peninsula", "is considered part of", "North America")', '("Yucatán Peninsula", "has", "mangroves and barrier reef")'], 'Referred_files': [{'name': 'Mount Everest', 'line': 10}, {'name': 'Denali', 'line': 1}, {'name': 'Yucatán Peninsula', 'line': 6}, {'name': 'Yucatán Peninsula', 'line': 22}], 'Question_triplet_answer': {100: [18, 70, 75, 108], 50: [30, 32, 70, 131], 25: [2, 27, 63, 83]}}
+time passed:  3763.8182904720306
+Expected dollar:  0.005
+Mount McKinley is Geography
+William McKinley is People
+Ball's is Geography
+Mount Everest is Geography
+Aconcagua is Geography
+Yucatán Peninsula is Geography
+Lord Howe Island is Geography
+Mexico is Geography
+Guatemala is Geography
+Honduras is Geography
+Gulf of Mexico is Geography
+the Caribbean Sea is Geography
+Heard Island is Geography
+Isthmus of Tehuantepec is Geography
+Quintana Roo is Geography
+the Yucatán Peninsula is Geography
+Ceratozetella is Geography
+Yucatán, Campeche is Geography
+North America is Geography
+Denali National Park is Geography
+Belize is Geography
+McDonald Islands is Geography
+Madagascar is Geography
+George Vancouver is People
+Antarctica is Geography
+Himalayas is Geography
+Macquarie Island is Geography
+Everest is Geography
+Australia is Geography
+New Zealand is Geography
+the Khumbu Icefall is Geography
+Alaska is Geography
+James Wickersham is People
+South Africa is Geography
+McKinley is People
+Cancún is Geography
+North American is Geography
+Riviera Maya is Geography
+Yucatán Peninsula's is Geography
+Yucatán Channel is Geography
+Skuas is Animal
+the Aleutian Islands is Geography
+"Khumbu Glacier and is Geography
+the Indian Ocean is Geography
+Pacific Ocean is Geography
+Frederick Hasselborough is People
+Sedge is Animal
+Howe Island is Geography
+Tasmania is Geography
+Oceania is Geography
+Great Barrier Reef is Geography
+Hernán Cortés" is People
+Yucatán is Geography
+Kangchenjunga is Geography
+Mauna Kea is Geography
+Denali is Geography
+China is Geography
+Nepal is Geography
+the Pacific Ocean is Geography
+the United States Department is Geography
+Douglas Mawson is Geography
+Mawson Peak is Geography
+Cyanobacteria is Animal
+Boston is Geography
+Melbourne is Geography
+Gulf of Carpentaria is Geography
+Tibet is Geography
+entities:  {'Mount', 'Interior', 'Yucatán,', 'Ocean', 'Australia', 'Khumbu', 'Cyanobacteria', 'Carpentaria', 'South', 'Kea', 'New', 'Department', 'Ceratozetella', 'Alaska', 'Peninsula', 'Africa', 'Honduras', 'Mawson', 'Great', 'Tibet', 'Icefall', "Peninsula's", 'Aconcagua', 'Madagascar', 'Wonky', 'Cortés"', 'Caribbean', 'Howe', 'Peak', 'McKinley', 'United', 'Wilma', 'Antarctica', 'Douglas', 'McDonald', 'Pyramid', 'Campeche', 'Oceania', 'Barrier', 'Kangchenjunga', "Ball's", 'Park', 'east', 'Frederick', 'Maya', 'Denali', 'Reef', 'Himalayas', 'Tasmania', 'Riviera', 'Boston', 'Mexico', 'Melbourne', 'Vancouver', 'George', 'Yucatán', 'Island', 'National', 'coast', 'Roo', 'American', 'Ben', 'Guatemala', 'Zealand', 'America', 'Mauna', 'Cancún', 'China', 'William', 'Everest', 'Indian', 'James', 'Lord', 'Wickersham', 'Aleutian', 'Gulf', 'North', 'Sea', 'Islands', 'Nepal', 'Heard', 'States', 'Pacific', 'Sedge', 'Isthmus', 'Tehuantepec', 'Macquarie', 'Britain', 'Belize', 'Channel', 'Hernán', 'hole', 'Glacier', 'Quintana', 'Hasselborough', 'Townsville', '"Khumbu', 'Skuas'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Macquarie Island' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Denali
+Ball's Pyramid
+sedge plants
+Wonky hole
+Denali
+Yucatán Peninsula
+Denali
+Ball's Pyramid
+Yucatán Peninsula
+Maya culture
+Yucatán Peninsula
+John Heard
+Fishing nets
+Yucatán Peninsula
+Quintana Roo
+Penguins
+Denali
+Yucatán Peninsula
+Heard Island
+Macquarie Island
+Mount Everest
+Mount Everest
+Heard Island
+Royal penguins
+Heard Island
+Crabeater
+British mountaineers
+Southern elephant seal
+Heard Island and McDonald Islands
+Seals
+King penguins
+southern rockhopper penguins
+gentoo penguins
+Macquarie Island
+Mount Everest
+Mount Everest
+Heard Island
+Denali
+Fishing nets
+Fresh water
+Maya culture
+Heard Island and McDonald Islands
+Denali
+Cancún
+Chichen Itza
+Chicxulub crater
+Chichen Itza
+Weddell seals
+Wonky holes
+Maya culture
+Maya culture
+Heard Island and McDonald Islands
+Denali
+Yucatán Peninsula
+Many liverworts
+Yucatán Peninsula
+Poa annua
+Skuas
+Yucatán Peninsula
+Maya culture
+Heard Island and McDonald Islands
+Denali
+Climate change
+Yucatán Peninsula
+Heard Island and McDonald Islands
+Macquarie Island
+Frederick Hasselborough
+Oil
+Riviera Maya
+Heard Island
+Macquarie Island
+Sedge plants
+Heard Island and McDonald Islands
+Macquarie Island
+Mount Everest
+Cancún
+Denali
+Big Ben massif
+Macquarie Island
+Many liverworts
+Oil
+Wonky hole
+Hernán Cortés
+Kangchenjunga
+Cancún
+Yucatán Peninsula
+Mount Everest
+Mount Everest
+Wonky hole
+Quintana Roo
+Denali
+Macquarie Island
+Yucatán Peninsula
+Royal penguins
+Yucatán Peninsula
+Ball's Pyramid
+Hernán Cortés
+Mérida
+Mount Everest
+Denali
+Crabeater
+Yucatán Peninsula
+Denali
+Douglas Mawson
+Pringlea antiscorbutica
+Mawson Peak
+Pringlea antiscorbutica
+Chichen Itza
+Heard Island and McDonald Islands
+Mount Everest
+Cyanobacteria
+John Heard
+Big Ben massif
+Wonky hole
+Oil
+Heard Island and McDonald Islands
+Yucatán Peninsula
+Mesoamerican Barrier Reef System
+Quintana Roo
+Heard Island and McDonald Islands
+Denali
+Wonky hole
+Yucatán Channel
+Denali
+Macquarie Island
+Hernán Cortés
+The north route
+Heard Island and McDonald Islands
+
+gpt_entity_particular(): entity list: 
+ ['sedge plants', 'Chichen Itza', 'Oil', 'Skuas', 'Penguins', 'Sedge plants', 'Cyanobacteria', 'The north route', 'Weddell seals', 'Cancún', 'John Heard', 'Macquarie Island', 'Frederick Hasselborough', 'Heard Island and McDonald Islands', 'Wonky holes', 'Fresh water', 'Poa annua', 'Chicxulub crater', 'Pringlea antiscorbutica', 'Yucatán Channel', 'Heard Island', 'Yucatán Peninsula', 'Mesoamerican Barrier Reef System', 'Douglas Mawson', 'Wonky hole', 'Many liverworts', 'Climate change', 'Kangchenjunga', 'Crabeater', 'King penguins', 'Mawson Peak', 'British mountaineers', 'Mount Everest', 'Quintana Roo', 'gentoo penguins', 'Mérida', 'Maya culture', 'Big Ben massif', 'Denali', 'Royal penguins', 'Southern elephant seal', 'Hernán Cortés', 'Riviera Maya', "Ball's Pyramid", 'southern rockhopper penguins', 'Fishing nets', 'Seals']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Great Barrier Reef' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Great Barrier Reef
+Gulf of Carpentaria
+Mesoamerican Barrier Reef System
+
+gpt_entity_particular(): entity list: 
+ ['Great Barrier Reef', 'Mesoamerican Barrier Reef System', 'Gulf of Carpentaria']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Yucatán Peninsula' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Yucatán Peninsula
+William McKinley
+sedge plants
+Cretaceous Period
+Isthmus of Tehuantepec
+Gulf of Mexico
+southeast Mexico
+Belize and Guatemala
+Quintana Roo
+Gulf of Mexico
+Caribbean Sea
+North America
+tourism
+Chiapas
+Macquarie Island
+Lord Howe Island
+townsville and cape york
+Great Barrier Reef
+Heard Island
+Guatemela
+Belize
+Chiapas
+Cancún
+Khumbu Glacier
+Madagascar
+Britain
+Fairbanks
+Denali National Park and Preserve
+Yucatán Channel
+Oceania
+The Makalu
+Chicxulub crater
+Mauna Kea
+Australia's only two active volcanoes
+Tasmania
+China and Nepal across its summit
+Australian
+Mérida
+government
+Isthmus of Tehuantepec
+Coral Reef
+The Makalu
+Isthmus of Tehuantepec
+eastern coast of the Yucatán Peninsula
+Denali National Park and Preserve
+Mesoamerican Barrier Reef System
+altidudinal sequencing
+Coral Barrier Reef
+Gulf of Mexico
+Gulf of Carpentaria
+eastern coast of the Yucatán Peninsula
+Macquarie Island
+southwestern Pacific Ocean
+oceanic
+Tasmania, Australia
+southwestern Pacific Ocean
+south of macquarie island
+Riviera Maya
+Yucatán Peninsula's coastline
+
+gpt_entity_particular(): entity list: 
+ ['southeast Mexico', 'sedge plants', 'south of macquarie island', 'North America', 'tourism', 'Khumbu Glacier', 'William McKinley', 'Mauna Kea', "Yucatán Peninsula's coastline", 'Caribbean Sea', 'Cancún', 'Gulf of Carpentaria', 'Macquarie Island', 'China and Nepal across its summit', 'Great Barrier Reef', 'government', 'Madagascar', 'Belize and Guatemala', 'Chicxulub crater', 'Cretaceous Period', 'Chiapas', 'southwestern Pacific Ocean', 'altidudinal sequencing', 'Lord Howe Island', 'Yucatán Channel', 'Heard Island', 'Yucatán Peninsula', 'Mesoamerican Barrier Reef System', 'Isthmus of Tehuantepec', 'Gulf of Mexico', 'eastern coast of the Yucatán Peninsula', 'Oceania', 'Britain', 'Australian', 'Belize', 'Denali National Park and Preserve', 'Tasmania, Australia', 'Quintana Roo', 'The Makalu', 'Mérida', 'Coral Reef', 'Coral Barrier Reef', 'Fairbanks', 'Tasmania', 'Riviera Maya', 'oceanic', 'townsville and cape york', 'Guatemela', "Australia's only two active volcanoes"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Heard Island and McDonald Islands' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Denali
+Mount McKinley
+William McKinley
+Ball's Pyramid
+sedge plants
+Wonky hole
+Denali
+Mount Everest
+Aconcagua
+Yucatán Peninsula
+Cretaceous Period
+Guatemala
+Honduras
+Chiapas
+Gulf of Mexico
+Caribbean Sea
+John Heard
+Heard Island
+Fishing nets
+Isthmus of Tehuantepec
+Quintana Roo
+Penguins
+Magnoavipes denaliensis
+Ceratozetella denaliensis
+Denali National Park and Preserve
+Belize
+Macquarie Island
+Heard Island and McDonald Islands
+Madagascar
+South Africa
+Antarctica
+Mount Everest
+the Mahalangur Himal sub-range of the Himalayas
+Macquarie Island
+New Zealand
+George Vancouver
+Two main climbing routes
+Avalanches
+Khumbu Icefall
+The entire royal penguin population
+Mosses
+Alaska Range in Alaska
+James Wickersham
+Fresh water
+Thin spots in the coral
+Wonky holes
+Townsville
+Cape York
+Port or harbours
+Tectonic pressure
+McKinley cluster
+Cancún
+Chichen Itza
+Chicxulub crater
+Weddell seals
+Seals
+Southern elephant seal
+Hurricanes
+Khumbu Glacier
+Yucatán Channel
+Many liverworts
+Macquarie Island
+Poa annua
+Skuas
+Heard Island and McDonald Islands
+Great Barrier Reef
+Oceania
+Frederick Hasselborough
+Britain
+Sedge plants
+Lord Howe Island stick insect on Ball's Pyramid
+Wonky hole
+Hernán Cortés
+Kangchenjunga
+Big Ben massif
+Tourism
+Lord Howe Island
+Tasmania
+Britain
+Macquarie Island
+Fishing nets
+Wonky hole
+Yucatán Peninsula
+Oil
+Hernán Cortés
+Mérida
+Crabeater
+Yucatán Peninsula
+Douglas Mawson
+Australasian Antarctic Expedition
+Pringlea antiscorbutica
+Mawson Peak
+Chichen Itza
+Cyanobacteria
+summit pyramid of Everest
+John Heard
+Oriental en route from Boston to Melbourne
+Mesoamerican Barrier Reef System
+eastern coast of the Yucatán Peninsula
+The north route
+Tibet
+
+gpt_entity_particular(): entity list: 
+ ['Australasian Antarctic Expedition', 'Cyanobacteria', 'Khumbu Glacier', 'Tibet', 'Aconcagua', 'Madagascar', 'Magnoavipes denaliensis', 'Thin spots in the coral', 'Mosses', 'Poa annua', 'Chiapas', 'McKinley cluster', "Lord Howe Island stick insect on Ball's Pyramid", 'Yucatán Peninsula', 'Mesoamerican Barrier Reef System', 'Gulf of Mexico', 'Isthmus of Tehuantepec', 'Antarctica', 'Douglas Mawson', 'Quintana Roo', 'Avalanches', 'Port or harbours', 'Tasmania', 'Chichen Itza', 'Two main climbing routes', 'Cape York', 'Mount McKinley', 'Tourism', 'Penguins', 'William McKinley', 'Guatemala', 'Alaska Range in Alaska', 'Caribbean Sea', 'John Heard', 'Wonky holes', 'Cretaceous Period', 'Pringlea antiscorbutica', 'summit pyramid of Everest', 'New Zealand', 'Many liverworts', 'Khumbu Icefall', 'Belize', 'Big Ben massif', 'Southern elephant seal', 'Fishing nets', 'Seals', 'George Vancouver', 'sedge plants', 'Sedge plants', 'Honduras', 'Weddell seals', 'the Mahalangur Himal sub-range of the Himalayas', 'Great Barrier Reef', 'Frederick Hasselborough', 'Fresh water', 'Chicxulub crater', 'Heard Island', 'eastern coast of the Yucatán Peninsula', 'Oceania', 'Wonky hole', 'James Wickersham', 'Kangchenjunga', 'The entire royal penguin population', 'Mount Everest', 'Oriental en route from Boston to Melbourne', 'Denali', 'Hernán Cortés', "Ball's Pyramid", 'Oil', 'The north route', 'Cancún', 'Macquarie Island', 'Heard Island and McDonald Islands', 'South Africa', 'Lord Howe Island', 'Yucatán Channel', 'Crabeater', 'Hurricanes', 'Britain', 'Mawson Peak', 'Denali National Park and Preserve', 'Mérida', 'Ceratozetella denaliensis', 'Tectonic pressure', 'Townsville', 'Skuas']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'North America' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Denali
+Mount McKinley
+Ball's Pyramid
+Sedge plants
+Wonky hole
+Denali
+Mount Everest
+Aconcagua
+Yucatán Peninsula
+Cretaceous Period
+Denali
+Mount Everest
+Aconcagua
+Yucatán Peninsula
+Gulf of Mexico
+Caribbean Sea
+Heard Island
+Yucatán Peninsula
+Denali
+North America
+Yucatán Peninsula
+Riviera Maya
+Yucatán Peninsula
+Heard Island
+Macquarie Island
+Riverbeds
+Maya culture
+Yucatán Peninsula
+Macquarie Island
+New Zealand
+Antarctica
+Macquarie Island
+New Zealand
+Antarctica
+Macquarie Island
+Tasmania
+Denali
+Alaska Range
+Alaska
+Wonky hole
+Denali
+First recorded ascent attempt
+Rough bottoms
+Wonky holes
+Great Barrier Reef
+Yucatán
+Cretaceous Period
+Macquarie Island
+Heard Island
+Yucatán Peninsula
+Hurricanes
+Macquarie Island
+Mount Everest
+Khumbu Icefall
+Royal penguin population
+Global warming
+
+gpt_entity_particular(): entity list: 
+ ['Mount McKinley', 'Yucatán', 'North America', 'Sedge plants', 'First recorded ascent attempt', 'Alaska', 'Caribbean Sea', 'Macquarie Island', 'Great Barrier Reef', 'Aconcagua', 'Wonky holes', 'Rough bottoms', 'Cretaceous Period', 'Alaska Range', 'Heard Island', 'Yucatán Peninsula', 'Gulf of Mexico', 'Antarctica', 'Wonky hole', 'Khumbu Icefall', 'Hurricanes', 'Mount Everest', 'Royal penguin population', 'Maya culture', 'Denali', 'Global warming', 'Tasmania', 'Riviera Maya', "Ball's Pyramid", 'Riverbeds', 'New Zealand']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Denali' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Denali
+Ball's Pyramid
+Peak
+Earth
+Mount Everest
+Aconcagua
+Yucatán Peninsula
+Peninsula
+Gulf of Mexico
+Caribbean Sea
+Maya culture
+Riverbeds
+Last glacial period
+Mountains
+North America
+Mexico
+States
+Guatemala
+Honduras
+Chiapas
+John Heard
+Heard Island
+Fishing nets
+Rough bottoms
+Fresh water
+Fish
+Fishermen
+Macquarie Island
+Physical features
+Economics
+Kangchenjunga
+Mountain
+Himalayas
+Mounting routes
+Riviera Maya
+Oceania
+Tasmania
+Penguins
+Seals
+Kangchenjunga
+China
+Nepal
+Riviera Maya
+Antarctic Expedition
+Sediments
+Atlantic
+Antarctica
+Coral Barrier Reef
+System
+Reef
+Tibet
+
+gpt_entity_particular(): entity list: 
+ ['Mexico', 'North America', 'Penguins', 'Guatemala', 'Honduras', 'Peninsula', 'Caribbean Sea', 'John Heard', 'China', 'Macquarie Island', 'Tibet', 'Fishermen', 'Aconcagua', 'Antarctic Expedition', 'System', 'Fresh water', 'Rough bottoms', 'Chiapas', 'Peak', 'Heard Island', 'Yucatán Peninsula', 'Physical features', 'Nepal', 'Gulf of Mexico', 'States', 'Fish', 'Antarctica', 'Oceania', 'Mountain', 'Kangchenjunga', 'Mount Everest', 'Earth', 'Economics', 'Maya culture', 'Denali', 'Last glacial period', 'Mountains', 'Sediments', 'Mounting routes', 'Atlantic', 'Coral Barrier Reef', 'Himalayas', 'Tasmania', 'Riviera Maya', "Ball's Pyramid", 'Reef', 'Riverbeds', 'Fishing nets', 'Seals']
+
+gpt_entity_particular(): filtered entity: 
+ ['Aconcagua', 'Mountain']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Wonky hole' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Wonky hole
+Riverbeds 
+Fishing nets 
+Fresh water 
+Fishermen 
+Rough bottoms 
+Thin spots 
+Submarine groundwater discharge 
+Gulf of Carpentaria
+
+gpt_entity_particular(): entity list: 
+ ['Thin spots ', 'Fresh water ', 'Submarine groundwater discharge ', 'Wonky hole', 'Fishermen ', 'Rough bottoms ', 'Fishing nets ', 'Riverbeds ', 'Gulf of Carpentaria']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ball's Pyramid' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ball's Pyramid
+Nearest
+Sedge plants
+
+gpt_entity_particular(): entity list: 
+ ["Ball's Pyramid", 'Nearest', 'Sedge plants']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mount Everest' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Denali
+Mount McKinley
+William McKinley
+Alaska Range
+Denali National Park and Preserve
+Denali National Park
+McKinley cluster
+Pacific Plate
+North American Plate
+James Wickersham
+George Vancouver
+Macquarie Island
+Antarctica
+Heard Island
+Heard Island and McDonald Islands
+Great Barrier Reef
+Ball's Pyramid
+Lord Howe Island
+Gulf of Carpentaria
+John Heard
+Oriental en route from Boston to Melbourne
+Big Ben massif
+Douglas Mawson
+Australasian Antarctic Expedition
+Macquarie Island
+Mawson Peak
+Pringlea antiscorbutica
+Chichen Itza
+Yucatán Peninsula
+Cretaceous Period
+Mesoamerican Barrier Reef System
+Quintana Roo
+Gulf of Mexico
+Caribbean Sea
+Kangchenjunga
+Mauna Kea
+Tibet
+China
+Nepal
+Khumbu Glacier
+Hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean
+Riviera Maya
+Oceania
+Tasmania
+Australia
+Cancún
+Fishing nets
+Rough bottoms around wonky hole
+Guatemala
+Honduras
+Chiapas
+Yucatán Channel
+Ports or harbours
+Belize
+
+gpt_entity_particular(): entity list: 
+ ['Mount McKinley', 'Pacific Plate', 'George Vancouver', 'Australia', 'Australasian Antarctic Expedition', 'Khumbu Glacier', 'William McKinley', 'Mauna Kea', 'Guatemala', 'Honduras', 'Caribbean Sea', 'Cancún', 'John Heard', 'Gulf of Carpentaria', 'Macquarie Island', 'China', 'Rough bottoms around wonky hole', 'Tibet', 'Great Barrier Reef', 'Fishing nets', 'Ports or harbours', 'Heard Island and McDonald Islands', 'Cretaceous Period', 'McKinley cluster', 'Alaska Range', 'Pringlea antiscorbutica', 'Lord Howe Island', 'Chiapas', 'Yucatán Channel', 'Heard Island', 'Yucatán Peninsula', 'Mesoamerican Barrier Reef System', 'Nepal', 'Antarctica', 'Gulf of Mexico', 'Douglas Mawson', 'Oceania', 'Denali National Park', 'James Wickersham', 'Kangchenjunga', 'Mawson Peak', 'Belize', 'Denali National Park and Preserve', 'Quintana Roo', 'Hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean', 'Oriental en route from Boston to Melbourne', 'Big Ben massif', 'Denali', 'Tasmania', 'Riviera Maya', "Ball's Pyramid", 'Chichen Itza', 'North American Plate']
+
+gpt_entity_particular(): filtered entity: 
+ ['China', 'Tibet', 'Nepal']
+After GPT, entity:  {'Mount', 'Interior', 'Yucatán,', 'Ocean', 'Australia', 'Khumbu', 'Cyanobacteria', 'Carpentaria', 'South', 'Kea', 'New', 'Department', 'Ceratozetella', 'Alaska', 'Peninsula', 'Africa', 'Honduras', 'Mawson', 'Great', 'Tibet', 'Icefall', "Peninsula's", 'Aconcagua', 'Madagascar', 'Wonky', 'Cortés"', 'Caribbean', 'Howe', 'Peak', 'McKinley', 'United', 'Wilma', 'Antarctica', 'Douglas', 'McDonald', 'Pyramid', 'Campeche', 'Oceania', 'Barrier', 'Kangchenjunga', "Ball's", 'Park', 'east', 'Frederick', 'Maya', 'Denali', 'Reef', 'Himalayas', 'Tasmania', 'Riviera', 'Boston', 'Mexico', 'Melbourne', 'Vancouver', 'George', 'Yucatán', 'Island', 'National', 'coast', 'Roo', 'American', 'Ben', 'Guatemala', 'Zealand', 'America', 'Mauna', 'Cancún', 'China', 'William', 'Everest', 'Indian', 'James', 'Lord', 'Wickersham', 'Aleutian', 'Gulf', 'North', 'Sea', 'Islands', 'Nepal', 'Heard', 'States', 'Pacific', 'Sedge', 'Mountain', 'Isthmus', 'Tehuantepec', 'Macquarie', 'Britain', 'Belize', 'Channel', 'Hernán', 'hole', 'Glacier', 'Quintana', 'Hasselborough', 'Townsville', '"Khumbu', 'Skuas'}
+Total time:  262.18200635910034
+Entity conversion done on 4_11 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_11_entity_conversion_hash.json. Check the entity.
+ What is a notable feature of marine biodiversity in Australia, analogous to the 044 systems found off the 01B of the geographic region that shares with east 05D a continent, which also includes the 006 that rivals 03E 00E in base-to-peak height?
+
+
+
+Done. Check final_query/id_4_11_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_11_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_11_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_11_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_11_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_11_final_result_ratio25_unmasked.txt

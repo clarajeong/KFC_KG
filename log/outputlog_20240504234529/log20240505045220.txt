@@ -1,0 +1,1064 @@
+Got argument: Turtle, 5, 5_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', 'start word': 'Turtle', 'end word': 'Gulf of Mexico', 'source': {'name': 'Turtle', 'line': 39}, 'cpnet': {'start word': 'turtle', 'end word': 'gulf_of_mexico'}}
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+second_hop:  {'triplet': '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")', 'start word': 'Gulf of Mexico', 'end word': 'Mexico', 'source': {'name': 'Gulf of Mexico', 'line': 2}, 'cpnet': {'start word': 'gulf_of_mexico', 'end word': 'mexico'}}
+
+utils/question.py extract_hops(Mexico, [], ['Turtle', 'Gulf of Mexico']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+extract_info(Mexico) Start.
+utils/preprocess.py extract_info(): Checking good links on Mexico
+North America is Geography
+1 / 30 )  North America North America north_america
+Mexico City is Geography
+2 / 30 )  Mexico City Mexico City mexico_city
+Pacific Ocean is Geography
+3 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Caribbean Sea is Geography
+4 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Gulf of Mexico is Geography
+5 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico
+Teotihuacan is Geography
+6 / 30 )  Teotihuacan Teotihuacan teotihuacan
+Tenochtitlan is Geography
+7 / 30 )  Tenochtitlan Tenochtitlan tenochtitlan
+Benito Juárez is People
+8 / 30 )  Benito Juárez Benito Juárez juaristas
+Chiapas is Geography
+9 / 30 )  Chiapas Chiapas chiapas
+World Trade Organization is Geography
+10 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+Organization of American States is Geography
+11 / 30 )  Organization of American States Organization of American States organization_of_american_states
+Valley of Mexico is Geography
+12 / 30 )  Valley of Mexico Valley of Mexico valley_of_mexico
+State of Mexico is Geography
+13 / 30 )  State of Mexico State of Mexico state_of_mexico
+Human is Animal
+14 / 30 )  human Human human
+Phaseolus is Animal
+15 / 30 )  beans Phaseolus phaseolus
+Xochicalco is Geography
+16 / 30 )  Xochicalco Xochicalco xochicalco
+Oaxaca is Geography
+17 / 30 )  Oaxaca Oaxaca oaxaca
+Caribbean is Geography
+18 / 30 )  Caribbean Caribbean caribbean
+Hernán Cortés is People
+19 / 30 )  Hernán Cortés Hernán Cortés hernando_cortes
+Havana is Geography
+20 / 30 )  Havana Havana havana
+Manila is Geography
+21 / 30 )  Manila Manila manila
+Napoleon is People
+22 / 30 )  Napoleon Bonaparte Napoleon napoleon
+Antonio López de Santa Anna is People
+23 / 30 )  Antonio López de Santa Anna Antonio López de Santa Anna antonio_lopez_de_santa_anna
+Napoleon III is People
+24 / 30 )  Napoleon III Napoleon III napoleon_iii
+Battle of Puebla is Geography
+25 / 30 )  Cinco de Mayo Battle of Puebla battle_of_puebla
+Emiliano Zapata is People
+26 / 30 )  Emiliano Zapata Emiliano Zapata emiliano_zapata
+Pancho Villa is People
+27 / 30 )  Pancho Villa Pancho Villa pancho_villa
+William Howard Taft is People
+28 / 30 )  Taft William Howard Taft william_howard_taft
+Woodrow Wilson is People
+29 / 30 )  Woodrow Wilson Woodrow Wilson woodrow_wilson
+John J. Pershing is People
+30 / 30 )  John J. Pershing John J. Pershing john_joseph_pershing
+extract_triplet(Mexico)
+Got GPT's response. String length : 2171
+subject_words:  [(None, 'Mexico', 'mexico')]
+object_words:  []
+subject_words:  [(None, 'Mexico', 'mexico')]
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [(None, 'Mexico', 'mexico'), ['Mexico City', 'Mexico City', 'mexico_city']]
+object_words:  [(None, 'Mexico', 'mexico')]
+subject_words:  [(None, 'Mexico', 'mexico')]
+object_words:  []
+subject_words:  [(None, 'Mexico', 'mexico')]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Mexico', 'mexico')]
+object_words:  [['Caribbean Sea', 'Caribbean Sea', 'caribbean_sea'], ['Caribbean', 'Caribbean', 'caribbean']]
+subject_words:  [(None, 'Mexico', 'mexico')]
+object_words:  [(None, 'Mexico', 'mexico'), ['Gulf of Mexico', 'Gulf of Mexico', 'gulf_of_mexico']]
+subject_words:  [['human', 'Human', 'human']]
+object_words:  [(None, 'Mexico', 'mexico')]
+subject_words:  [['Teotihuacan', 'Teotihuacan', 'teotihuacan']]
+object_words:  []
+subject_words:  [['Tenochtitlan', 'Tenochtitlan', 'tenochtitlan']]
+object_words:  []
+subject_words:  [['Benito Juárez', 'Benito Juárez', 'juaristas']]
+object_words:  [(None, 'Mexico', 'mexico')]
+subject_words:  [['Chiapas', 'Chiapas', 'chiapas']]
+object_words:  []
+subject_words:  [(None, 'Mexico', 'mexico')]
+object_words:  [['World Trade Organization', 'World Trade Organization', 'world_trade_organization']]
+subject_words:  [(None, 'Mexico', 'mexico')]
+object_words:  [['Organization of American States', 'Organization of American States', 'organization_of_american_states']]
+subject_words:  [(None, 'Mexico', 'mexico'), ['Valley of Mexico', 'Valley of Mexico', 'valley_of_mexico']]
+object_words:  []
+subject_words:  [(None, 'Mexico', 'mexico'), ['State of Mexico', 'State of Mexico', 'state_of_mexico']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Mexico', 'mexico'), ['beans', 'Phaseolus', 'phaseolus']]
+subject_words:  [['Xochicalco', 'Xochicalco', 'xochicalco']]
+object_words:  []
+subject_words:  [['Oaxaca', 'Oaxaca', 'oaxaca']]
+object_words:  []
+subject_words:  [['Caribbean', 'Caribbean', 'caribbean']]
+object_words:  [(None, 'Mexico', 'mexico')]
+subject_words:  [['Hernán Cortés', 'Hernán Cortés', 'hernando_cortes']]
+object_words:  []
+subject_words:  [['Havana', 'Havana', 'havana']]
+object_words:  []
+subject_words:  [['Manila', 'Manila', 'manila']]
+object_words:  []
+subject_words:  [['Napoleon Bonaparte', 'Napoleon', 'napoleon']]
+object_words:  [(None, 'Mexico', 'mexico')]
+subject_words:  [['Antonio López de Santa Anna', 'Antonio López de Santa Anna', 'antonio_lopez_de_santa_anna']]
+object_words:  []
+subject_words:  [['Napoleon Bonaparte', 'Napoleon', 'napoleon'], ['Napoleon III', 'Napoleon III', 'napoleon_iii']]
+object_words:  [(None, 'Mexico', 'mexico')]
+subject_words:  [['Cinco de Mayo', 'Battle of Puebla', 'battle_of_puebla']]
+object_words:  [(None, 'Mexico', 'mexico')]
+subject_words:  [['Emiliano Zapata', 'Emiliano Zapata', 'emiliano_zapata']]
+object_words:  []
+subject_words:  [['Pancho Villa', 'Pancho Villa', 'pancho_villa']]
+object_words:  []
+subject_words:  [['Woodrow Wilson', 'Woodrow Wilson', 'woodrow_wilson']]
+object_words:  [(None, 'Mexico', 'mexico')]
+subject_words:  [['John J. Pershing', 'John J. Pershing', 'john_joseph_pershing']]
+object_words:  [['Pancho Villa', 'Pancho Villa', 'pancho_villa']]
+third_hop1:  {'triplet': '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")', 'start word': 'Mexico', 'end word': 'DSV Alvin', 'source': {'name': 'Gulf of Mexico', 'line': 26}, 'cpnet': {'start word': 'mexico', 'end word': 'alvin'}}
+
+utils/question.py extract_hops(Mexico, ['DSV Alvin'], ['Turtle', 'Gulf of Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+third_hop2:  {'triplet': '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")', 'start word': 'Mexico', 'end word': 'Cuba', 'source': {'name': 'Gulf of Mexico', 'line': 38}, 'cpnet': {'start word': 'mexico', 'end word': 'cuba'}}
+extraction_done:  True
+generate_question(5_2, ['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")'], ['Turtle', 'Gulf of Mexico', 'Mexico', 'Mexico'], [('Turtle', 'Gulf of Mexico'), ('Gulf of Mexico', 'Mexico'), ('Mexico', 'DSV Alvin'), ('Mexico', 'Cuba')], Turtle, [{'name': 'Turtle', 'line': 39}, {'name': 'Gulf of Mexico', 'line': 2}, {'name': 'Gulf of Mexico', 'line': 26}, {'name': 'Gulf of Mexico', 'line': 38}]) called
+GPT output is:  Q: What is the species with the greatest variety of non-marine chelonians known to inhabit the region that benefits from the fisheries, where the United States, Cuba, and a country with a specific hypersaline underwater feature explored by the Alvin submersible, that is also encompassed by six states from this southern country?
+
+A: Turtle
+final_choice(Turtle, options = 5) started
+[]
+entity_type(Turtle) called
+Turtle is Animal
+check_matchscore(Turtle, Extant Late Jurassic first appearances):  0.0
+choose_by_wiki_recur(Extant Late Jurassic first appearances)
+   Pages in Extant Late Jurassic first appearances: ['Achelata', 'Acipenseriformes', 'Alytidae', 'Ampullariidae', 'Angelshark', 'Avialae', 'Bonefishes', 'Brown algae', 'Catshark', 'Cheilostomatida', 'Cow shark', 'Craniscus', 'Cryptobranchoidea', 'Dromioidea', 'European spadefoot toad', 'Eutheria', 'Gar', 'Ginglymostomatidae', 'Guitarfish', 'Gymnotiformes', 'Hemiscylliidae', 'Tabanidae', 'Hydrolagus matallanasi', 'Maniraptora', 'Maniraptoriformes', 'Munididae', 'Neoceratodus', 'Osteoglossiformes', 'Osteoglossomorpha', 'Otinidae', 'Paraves', 'Pennaraptora', 'Porcelain crab', 'Protacanthopterygii', 'Pylochelidae', 'Rhinobatidae', 'Salamander', 'Salamandroidea', 'Sawshark', 'Squaliformes', 'Turritella', 'Turtle', 'Wobbegong']
+      Rhinobatidae in ['Rhinobatidae', 'European spadefoot toad', 'Craniscus', 'Dromioidea']
+Rhinobatidae is Animal
+      European spadefoot toad in ['Rhinobatidae', 'European spadefoot toad', 'Craniscus', 'Dromioidea']
+European spadefoot toad is Animal
+      Craniscus in ['Rhinobatidae', 'European spadefoot toad', 'Craniscus', 'Dromioidea']
+Craniscus is Animal
+      Dromioidea in ['Rhinobatidae', 'European spadefoot toad', 'Craniscus', 'Dromioidea', 'Munididae']
+Dromioidea is Animal
+      Munididae in ['Rhinobatidae', 'European spadefoot toad', 'Craniscus', 'Dromioidea', 'Munididae', 'Hydrolagus matallanasi']
+Munididae is Animal
+      Hydrolagus matallanasi in ['Rhinobatidae', 'European spadefoot toad', 'Craniscus', 'Dromioidea', 'Munididae', 'Hydrolagus matallanasi']
+Hydrolagus matallanasi is Animal
+      Angelshark in ['Rhinobatidae', 'European spadefoot toad', 'Craniscus', 'Dromioidea', 'Munididae', 'Hydrolagus matallanasi', 'Angelshark']
+Angelshark is Animal
+['Rhinobatidae', 'European spadefoot toad', 'Munididae', 'Angelshark']
+Ended after 2.5 hierarchy
+(2.5, ['Angelshark', 'Munididae', 'European spadefoot toad', 'Rhinobatidae'])
+
+extract_info(Guitarfish) Start.
+utils/preprocess.py extract_info(): Checking good links on Guitarfish
+Batoidea is Animal
+1 / 30 )  rays Batoidea batoidea
+Chondrichthyes is Animal
+2 / 30 )  cartilaginous fishes Chondrichthyes chondrichthyes
+Ordovician is Geography
+3 / 30 )  Ordovician Ordovician ordovician
+Devonian is Geography
+4 / 30 )  Devonian Devonian devonian
+Elasmobranchii is Animal
+5 / 30 )  Neoselachii Elasmobranchii elasmobranchii
+Triassic is Geography
+6 / 30 )  Triassic Triassic triassic
+Jurassic is Geography
+7 / 30 )  Jurassic Jurassic jurassic
+Shark is Animal
+8 / 30 )  sharks Shark shark
+Sawfish is Animal
+9 / 30 )  sawfish Sawfish sawfish
+Thornback guitarfish is Animal
+10 / 30 )  Platyrhinoidis Thornback guitarfish thornback_guitarfish
+Rhina ancylostoma is Animal
+11 / 30 )  Rhina Rhina ancylostoma shark_ray
+Wedgefish is Animal
+12 / 30 )  Rhinidae Wedgefish wedgefish
+extract_triplet(Guitarfish)
+Got GPT's response. String length : 1761
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  [['rays', 'Batoidea', 'batoidea']]
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  []
+object_words:  [['sharks', 'Shark', 'shark']]
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  [['sharks', 'Shark', 'shark']]
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  [['rays', 'Batoidea', 'batoidea']]
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  []
+subject_words:  [(None, 'Guitarfish', 'guitarfish')]
+object_words:  [['cartilaginous fishes', 'Chondrichthyes', 'chondrichthyes']]
+subject_words:  [['cartilaginous fishes', 'Chondrichthyes', 'chondrichthyes']]
+object_words:  [['Ordovician', 'Ordovician', 'ordovician']]
+subject_words:  [['Neoselachii', 'Elasmobranchii', 'elasmobranchii']]
+object_words:  [['Triassic', 'Triassic', 'triassic']]
+subject_words:  [['Neoselachii', 'Elasmobranchii', 'elasmobranchii']]
+object_words:  [['Jurassic', 'Jurassic', 'jurassic']]
+subject_words:  [['Neoselachii', 'Elasmobranchii', 'elasmobranchii']]
+object_words:  [['sharks', 'Shark', 'shark']]
+subject_words:  [['Neoselachii', 'Elasmobranchii', 'elasmobranchii']]
+object_words:  [['sawfish', 'Sawfish', 'sawfish']]
+subject_words:  [['Neoselachii', 'Elasmobranchii', 'elasmobranchii']]
+object_words:  [['rays', 'Batoidea', 'batoidea']]
+subject_words:  [['Neoselachii', 'Elasmobranchii', 'elasmobranchii']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Platyrhinoidis', 'Thornback guitarfish', 'thornback_guitarfish']]
+object_words:  []
+subject_words:  [['Rhina', 'Rhina ancylostoma', 'shark_ray']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Rhinidae', 'Wedgefish', 'wedgefish']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+extract_info(Munididae) Start.
+utils/preprocess.py extract_info(): Checking good links on Munididae
+Squat lobster is Animal
+1 / 30 )  squat lobsters Squat lobster squat_lobster
+Galatheidae is Animal
+2 / 30 )  Galatheidae Galatheidae galatheidae
+extract_triplet(Munididae)
+Got GPT's response. String length : 544
+subject_words:  [(None, 'Munididae', 'munididae')]
+object_words:  [['squat lobsters', 'Squat lobster', 'squat_lobster']]
+subject_words:  [(None, 'Munididae', 'munididae')]
+object_words:  [['Galatheidae', 'Galatheidae', 'galatheidae']]
+subject_words:  [(None, 'Munididae', 'munididae'), ['squat lobsters', 'Squat lobster', 'squat_lobster']]
+object_words:  []
+subject_words:  [(None, 'Munididae', 'munididae'), ['squat lobsters', 'Squat lobster', 'squat_lobster']]
+object_words:  []
+subject_words:  [(None, 'Munididae', 'munididae'), ['squat lobsters', 'Squat lobster', 'squat_lobster']]
+object_words:  []
+subject_words:  [(None, 'Munididae', 'munididae'), ['squat lobsters', 'Squat lobster', 'squat_lobster']]
+object_words:  []
+subject_words:  [['squat lobsters', 'Squat lobster', 'squat_lobster'], ['Galatheidae', 'Galatheidae', 'galatheidae']]
+object_words:  []
+subject_words:  [(None, 'Munididae', 'munididae')]
+object_words:  [['Galatheidae', 'Galatheidae', 'galatheidae']]
+extract_info(European spadefoot toad) Start.
+utils/preprocess.py extract_info(): Checking good links on European spadefoot toad
+American spadefoot toad is Animal
+1 / 30 )  Scaphiopodidae American spadefoot toad scaphiopodidae
+Elkobatrachus  is Animal
+2 / 30 )  Elkobatrachus Elkobatrachus  pelobatidae
+Alytidae is Animal
+3 / 30 )  discoglossid Alytidae discoglossid
+extract_triplet(European spadefoot toad)
+Got GPT's response. String length : 1054
+subject_words:  [(None, 'European spadefoot toad', 'pelobatidae')]
+object_words:  []
+subject_words:  [(None, 'European spadefoot toad', 'pelobatidae')]
+object_words:  []
+subject_words:  [(None, 'European spadefoot toad', 'pelobatidae')]
+object_words:  []
+subject_words:  [(None, 'European spadefoot toad', 'pelobatidae')]
+object_words:  []
+subject_words:  [(None, 'European spadefoot toad', 'pelobatidae')]
+object_words:  []
+subject_words:  [(None, 'European spadefoot toad', 'pelobatidae')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'European spadefoot toad', 'pelobatidae')]
+object_words:  []
+subject_words:  [(None, 'European spadefoot toad', 'pelobatidae')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Elkobatrachus', 'Elkobatrachus ', 'pelobatidae']]
+subject_words:  [['Elkobatrachus', 'Elkobatrachus ', 'pelobatidae']]
+object_words:  []
+subject_words:  [['Elkobatrachus', 'Elkobatrachus ', 'pelobatidae']]
+object_words:  [['Elkobatrachus', 'Elkobatrachus ', 'pelobatidae']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['discoglossid', 'Alytidae', 'discoglossid']]
+extract_info(Angelshark) Start.
+utils/preprocess.py extract_info(): Checking good links on Angelshark
+Squatiniformes is Animal
+1 / 30 )  Squatiniformes Squatiniformes squatinidae
+Batoidea is Animal
+2 / 30 )  rays Batoidea batoidea
+Lophius is Animal
+3 / 30 )  Lophius Lophius lophius
+Squatina squatina is Animal
+4 / 30 )  Squatina squatina Squatina squatina squatina_squatina
+Japanese angelshark is Animal
+5 / 30 )  Japanese angel shark Japanese angelshark japanese_angel_shark
+Fish is Animal
+6 / 30 )  fish Fish fish
+Crustacean is Animal
+7 / 30 )  crustaceans Crustacean crustacean
+Mollusca is Animal
+8 / 30 )  mollusks Mollusca mollusca
+Mediterranean Sea is Geography
+9 / 30 )  Mediterranean Sea Mediterranean Sea mediterranean_sea
+Sawback angelshark is Animal
+10 / 30 )  S. aculeata Sawback angelshark sawback_angelshark
+Smoothback angelshark is Animal
+11 / 30 )  S. oculata Smoothback angelshark smoothback_angelshark
+Greece is Geography
+12 / 30 )  Greece Greece greece
+Turkey is Geography
+13 / 30 )  Turkey Turkey turkey
+extract_triplet(Angelshark)
+Got GPT's response. String length : 1816
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  []
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  []
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  [['Squatiniformes', 'Squatiniformes', 'squatinidae']]
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  [['rays', 'Batoidea', 'batoidea']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  []
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  []
+subject_words:  []
+object_words:  [['Lophius', 'Lophius', 'lophius']]
+subject_words:  [['Squatina squatina', 'Squatina squatina', 'squatina_squatina']]
+object_words:  []
+subject_words:  [['Squatina squatina', 'Squatina squatina', 'squatina_squatina']]
+object_words:  []
+subject_words:  [['Squatina squatina', 'Squatina squatina', 'squatina_squatina']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Japanese angel shark', 'Japanese angelshark', 'japanese_angel_shark']]
+object_words:  []
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  [['crustaceans', 'Crustacean', 'crustacean'], ['mollusks', 'Mollusca', 'mollusca']]
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Mediterranean Sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  []
+subject_words:  []
+object_words:  [['Greece', 'Greece', 'greece'], ['Turkey', 'Turkey', 'turkey']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Angelshark', 'angelshark')]
+object_words:  []
+subject_words:  []
+object_words:  [['Mediterranean Sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Squatina squatina', 'Squatina squatina', 'squatina_squatina']]
+object_words:  []
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Guitarfish", "also referred to as", "shovelnose rays")\n', '("Guitarfish", "family is", "Rhinobatidae")\n', '("Guitarfish", "have", "an elongated body")\n', '("Guitarfish", "have", "a flattened head")\n', '("Guitarfish", "have", "small ray-like wings")\n', '("Guitarfish", "range in", "tropical waters")\n', '("Guitarfish", "range in", "subtropical waters")\n', '("Guitarfish", "range in", "warm temperate waters")\n', '("In Australia and New Zealand", "commonly referred to as", "shovelnose sharks")\n', '("Guitarfish", "have a body form between those of", "sharks")\n', '("Guitarfish", "have a body form between those of", "rays")\n', '("Guitarfish", "are", "ovoviviparous")\n', '("Guitarfish", "are", "bottom feeders")\n', '("Guitarfish", "eat", "worms, crabs, and clams")\n', '("Guitarfish", "can tolerate", "salt, fresh, and brackish water")\n', '("Guitarfish", "belong to", "cartilaginous fishes")\n', '("Cartilaginous fishes", "fossils date back as far as", "Ordovician")\n', '("Neoselachii", "emerged by", "Triassic")\n', '("Neoselachii", "fossils date from", "Jurassic")\n', '("Neoselachii", "represented today by", "sharks")\n', '("Neoselachii", "represented today by", "sawfish")\n', '("Neoselachii", "represented today by", "rays")\n', '("Neoselachii", "represented today by", "skates")\n', '("Nelson\'s 2006 Fishes of the World", "recognized", "Rhinobatos")\n', '("Platyrhinoidis", "moved to own family from", "Rhinobatidae")\n', '("Rhina", "moved to own family from", "Rhinobatidae")\n', '("Acroteriobatus", "recognized as distinct from", "Rhinobatos")\n', '("Rhinobatos", "split in", "Acroteriobatus")\n', '("Rhinobatos", "split in", "Pseudobatos")\n', '("Glaucostegidae", "moved from", "Rhinobatidae")\n', '("Rhinidae", "moved from", "Rhinobatidae")\n', '("Trygonorrhinidae", "moved from", "Rhinobatidae")\n', '("Pseudorhinobatos", "assigned to", "new genus")\n', '("Eorhinobatos", "assigned to", "new genus")\n', '("Munididae", "is a family of", "squat lobsters")\n', '("Munididae", "separated from", "Galatheidae")\n', '("The squat lobsters of Munididae", "have", "a trispinose frontal edge to the carapace")\n', '("The squat lobsters of Munididae", "have", "a central rostrum")\n', '("The squat lobsters of Munididae", "have", "two spines extend forward from above the eyes")\n', '("The squat lobsters of Munididae", "are mostly", "deep-water taxa")\n', '("The squat lobsters of Galatheidae", "are mostly", "shallow-water")\n', '("Genera of Munididae", "had been included in", "Galatheidae")\n', '("European spadefoot toad", "is a family of frogs known as", "Pelobatidae")\n', '("European spadefoot toad", "has an extant genus called", "Pelobates")\n', '("European spadefoot toad", "native to regions including", "Europe")\n', '("European spadefoot toad", "grows up to", "10 cm in length")\n', '("European spadefoot toad", "has eyes with", "vertical pupils")\n', '("European spadefoot toad", "is", "fossorial")\n', '("Pelobatidae", "dig into", "sandy soils")\n', '("European spadefoot toad", "emerge from ground during", "rain")\n', '("European spadefoot toads", "breed in", "pools")\n', '("Pelobatidae frogs", "have", "free-living aquatic tadpoles")\n', '("American spadefoot toads", "were included in the family", "Pelobatidae")\n', '("American spadefoot toads", "regarded as separate family called", "Scaphiopodidae")\n', '("The genus", "named", "Elkobatrachus")\n', '("Elkobatrachus", "is a fossil genus of", "Pelobatidae")\n', '("Elkobatrachus brocki", "is a species of", "Elkobatrachus")\n', '("Pelobatids in Morrison Formation", "are larger than", "Enneabatrachus")\n', '("Enneabatrachus", "is a species of", "discoglossid")\n', '("Angelsharks", "belong to", "genus Squatina")\n', '("Angelsharks", "are only living members of", "family Squatinidae")\n', '("Angelsharks", "are only living members of", "order Squatiniformes")\n', '("Angelsharks", "resemble", "rays")\n', '("Squatina", "differs from", "other sharks")\n', '("Angelsharks", "inhabit", "sandy seabeds")\n', '("Angelsharks", "are also called", "monkfish")\n', '("Monkfish", "is a name also applied to", "genus Lophius")\n', '("Squatina squatina", "ambush predators with", "stationary bottom-dwelling habit")\n', '("Squatina squatina", "exhibited", "large-scale coastal migratory patterns")\n', '("Squatina squatina", "is classified as", "critically endangered")\n', '("Angel shark", "has unique features differentiating it from", "other sharks")\n', '("Japanese angel shark", "can reach", "2 meters in length")\n', '("Angelsharks", "prey on", "fish, crustaceans and various types of mollusks")\n', '("Angelsharks", "are", "ovoviviparous")\n', '("S. aculeata", "is at high risk of", "extinction")\n', '("S. oculata", "is at high risk of", "extinction")\n', '("Angel sharks in Mediterranean Sea", "include", "S. aculeata, S. oculata, and S. squatina")\n', '("Conservation strategies", "are established by authorities from", "Greece and Turkey")\n', '("Squatina guggenheim", "is protected under", "Brazilian law")\n', '("Squatina occulta", "is protected under", "Brazilian law")\n', '("Pacific angel shark", "population declined and is now", "regulated")\n', '("Pacific angel shark", "was a byproduct of", "commercial gillnetting")\n', '("Pacific angel shark", "was used only for", "crab bait")\n', '("Angelshark", "status reaffirmed as \'Critically Endangered\' by", "IUCN in 2019")\n', '("Angel shark", "found in", "Mediterranean Sea")\n', '("Squatina", "earliest members known from the", "Late Jurassic")\n', '("Squatina squatina", "earliest record that can be assigned to modern genus known from the", "Early Cretaceous")\n']
+range(1, 256) 4
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Guitarfish", "also referred to as", "shovelnose rays")\n', '("Guitarfish", "family is", "Rhinobatidae")\n', '("Guitarfish", "have", "an elongated body")\n', '("Guitarfish", "have", "a flattened head")\n', '("Guitarfish", "have", "small ray-like wings")\n', '("Guitarfish", "range in", "tropical waters")\n', '("Guitarfish", "range in", "subtropical waters")\n', '("Guitarfish", "range in", "warm temperate waters")\n', '("In Australia and New Zealand", "commonly referred to as", "shovelnose sharks")\n', '("Guitarfish", "have a body form between those of", "sharks")\n', '("Guitarfish", "have a body form between those of", "rays")\n', '("Guitarfish", "are", "ovoviviparous")\n', '("Guitarfish", "are", "bottom feeders")\n', '("Guitarfish", "eat", "worms, crabs, and clams")\n', '("Guitarfish", "can tolerate", "salt, fresh, and brackish water")\n', '("Guitarfish", "belong to", "cartilaginous fishes")\n', '("Cartilaginous fishes", "fossils date back as far as", "Ordovician")\n', '("Neoselachii", "emerged by", "Triassic")\n', '("Neoselachii", "fossils date from", "Jurassic")\n', '("Neoselachii", "represented today by", "sharks")\n', '("Neoselachii", "represented today by", "sawfish")\n', '("Neoselachii", "represented today by", "rays")\n', '("Neoselachii", "represented today by", "skates")\n', '("Nelson\'s 2006 Fishes of the World", "recognized", "Rhinobatos")\n', '("Platyrhinoidis", "moved to own family from", "Rhinobatidae")\n', '("Rhina", "moved to own family from", "Rhinobatidae")\n', '("Acroteriobatus", "recognized as distinct from", "Rhinobatos")\n', '("Rhinobatos", "split in", "Acroteriobatus")\n', '("Rhinobatos", "split in", "Pseudobatos")\n', '("Glaucostegidae", "moved from", "Rhinobatidae")\n', '("Rhinidae", "moved from", "Rhinobatidae")\n', '("Trygonorrhinidae", "moved from", "Rhinobatidae")\n', '("Pseudorhinobatos", "assigned to", "new genus")\n', '("Eorhinobatos", "assigned to", "new genus")\n', '("Munididae", "is a family of", "squat lobsters")\n', '("Munididae", "separated from", "Galatheidae")\n', '("The squat lobsters of Munididae", "have", "a trispinose frontal edge to the carapace")\n', '("The squat lobsters of Munididae", "have", "a central rostrum")\n', '("The squat lobsters of Munididae", "have", "two spines extend forward from above the eyes")\n', '("The squat lobsters of Munididae", "are mostly", "deep-water taxa")\n', '("The squat lobsters of Galatheidae", "are mostly", "shallow-water")\n', '("Genera of Munididae", "had been included in", "Galatheidae")\n', '("European spadefoot toad", "is a family of frogs known as", "Pelobatidae")\n', '("European spadefoot toad", "has an extant genus called", "Pelobates")\n', '("European spadefoot toad", "native to regions including", "Europe")\n', '("European spadefoot toad", "grows up to", "10 cm in length")\n', '("European spadefoot toad", "has eyes with", "vertical pupils")\n', '("European spadefoot toad", "is", "fossorial")\n', '("Pelobatidae", "dig into", "sandy soils")\n', '("European spadefoot toad", "emerge from ground during", "rain")\n', '("European spadefoot toads", "breed in", "pools")\n', '("Pelobatidae frogs", "have", "free-living aquatic tadpoles")\n', '("American spadefoot toads", "were included in the family", "Pelobatidae")\n', '("American spadefoot toads", "regarded as separate family called", "Scaphiopodidae")\n', '("The genus", "named", "Elkobatrachus")\n', '("Elkobatrachus", "is a fossil genus of", "Pelobatidae")\n', '("Elkobatrachus brocki", "is a species of", "Elkobatrachus")\n', '("Pelobatids in Morrison Formation", "are larger than", "Enneabatrachus")\n', '("Enneabatrachus", "is a species of", "discoglossid")\n', '("Angelsharks", "belong to", "genus Squatina")\n', '("Angelsharks", "are only living members of", "family Squatinidae")\n', '("Angelsharks", "are only living members of", "order Squatiniformes")\n', '("Angelsharks", "resemble", "rays")\n', '("Squatina", "differs from", "other sharks")\n', '("Angelsharks", "inhabit", "sandy seabeds")\n', '("Angelsharks", "are also called", "monkfish")\n', '("Monkfish", "is a name also applied to", "genus Lophius")\n', '("Squatina squatina", "ambush predators with", "stationary bottom-dwelling habit")\n', '("Squatina squatina", "exhibited", "large-scale coastal migratory patterns")\n', '("Squatina squatina", "is classified as", "critically endangered")\n', '("Angel shark", "has unique features differentiating it from", "other sharks")\n', '("Japanese angel shark", "can reach", "2 meters in length")\n', '("Angelsharks", "prey on", "fish, crustaceans and various types of mollusks")\n', '("Angelsharks", "are", "ovoviviparous")\n', '("S. aculeata", "is at high risk of", "extinction")\n', '("S. oculata", "is at high risk of", "extinction")\n', '("Angel sharks in Mediterranean Sea", "include", "S. aculeata, S. oculata, and S. squatina")\n', '("Conservation strategies", "are established by authorities from", "Greece and Turkey")\n', '("Squatina guggenheim", "is protected under", "Brazilian law")\n', '("Squatina occulta", "is protected under", "Brazilian law")\n', '("Pacific angel shark", "population declined and is now", "regulated")\n', '("Pacific angel shark", "was a byproduct of", "commercial gillnetting")\n', '("Pacific angel shark", "was used only for", "crab bait")\n', '("Angelshark", "status reaffirmed as \'Critically Endangered\' by", "IUCN in 2019")\n', '("Angel shark", "found in", "Mediterranean Sea")\n', '("Squatina", "earliest members known from the", "Late Jurassic")\n', '("Squatina squatina", "earliest record that can be assigned to modern genus known from the", "Early Cretaceous")\n']
+range(1, 256) 4
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Guitarfish", "also referred to as", "shovelnose rays")\n', '("Guitarfish", "family is", "Rhinobatidae")\n', '("Guitarfish", "have", "an elongated body")\n', '("Guitarfish", "have", "a flattened head")\n', '("Guitarfish", "have", "small ray-like wings")\n', '("Guitarfish", "range in", "tropical waters")\n', '("Guitarfish", "range in", "subtropical waters")\n', '("Guitarfish", "range in", "warm temperate waters")\n', '("In Australia and New Zealand", "commonly referred to as", "shovelnose sharks")\n', '("Guitarfish", "have a body form between those of", "sharks")\n', '("Guitarfish", "have a body form between those of", "rays")\n', '("Guitarfish", "are", "ovoviviparous")\n', '("Guitarfish", "are", "bottom feeders")\n', '("Guitarfish", "eat", "worms, crabs, and clams")\n', '("Guitarfish", "can tolerate", "salt, fresh, and brackish water")\n', '("Guitarfish", "belong to", "cartilaginous fishes")\n', '("Cartilaginous fishes", "fossils date back as far as", "Ordovician")\n', '("Neoselachii", "emerged by", "Triassic")\n', '("Neoselachii", "fossils date from", "Jurassic")\n', '("Neoselachii", "represented today by", "sharks")\n', '("Neoselachii", "represented today by", "sawfish")\n', '("Neoselachii", "represented today by", "rays")\n', '("Neoselachii", "represented today by", "skates")\n', '("Nelson\'s 2006 Fishes of the World", "recognized", "Rhinobatos")\n', '("Platyrhinoidis", "moved to own family from", "Rhinobatidae")\n', '("Rhina", "moved to own family from", "Rhinobatidae")\n', '("Acroteriobatus", "recognized as distinct from", "Rhinobatos")\n', '("Rhinobatos", "split in", "Acroteriobatus")\n', '("Rhinobatos", "split in", "Pseudobatos")\n', '("Glaucostegidae", "moved from", "Rhinobatidae")\n', '("Rhinidae", "moved from", "Rhinobatidae")\n', '("Trygonorrhinidae", "moved from", "Rhinobatidae")\n', '("Pseudorhinobatos", "assigned to", "new genus")\n', '("Eorhinobatos", "assigned to", "new genus")\n', '("Munididae", "is a family of", "squat lobsters")\n', '("Munididae", "separated from", "Galatheidae")\n', '("The squat lobsters of Munididae", "have", "a trispinose frontal edge to the carapace")\n', '("The squat lobsters of Munididae", "have", "a central rostrum")\n', '("The squat lobsters of Munididae", "have", "two spines extend forward from above the eyes")\n', '("The squat lobsters of Munididae", "are mostly", "deep-water taxa")\n', '("The squat lobsters of Galatheidae", "are mostly", "shallow-water")\n', '("Genera of Munididae", "had been included in", "Galatheidae")\n', '("European spadefoot toad", "is a family of frogs known as", "Pelobatidae")\n', '("European spadefoot toad", "has an extant genus called", "Pelobates")\n', '("European spadefoot toad", "native to regions including", "Europe")\n', '("European spadefoot toad", "grows up to", "10 cm in length")\n', '("European spadefoot toad", "has eyes with", "vertical pupils")\n', '("European spadefoot toad", "is", "fossorial")\n', '("Pelobatidae", "dig into", "sandy soils")\n', '("European spadefoot toad", "emerge from ground during", "rain")\n', '("European spadefoot toads", "breed in", "pools")\n', '("Pelobatidae frogs", "have", "free-living aquatic tadpoles")\n', '("American spadefoot toads", "were included in the family", "Pelobatidae")\n', '("American spadefoot toads", "regarded as separate family called", "Scaphiopodidae")\n', '("The genus", "named", "Elkobatrachus")\n', '("Elkobatrachus", "is a fossil genus of", "Pelobatidae")\n', '("Elkobatrachus brocki", "is a species of", "Elkobatrachus")\n', '("Pelobatids in Morrison Formation", "are larger than", "Enneabatrachus")\n', '("Enneabatrachus", "is a species of", "discoglossid")\n', '("Angelsharks", "belong to", "genus Squatina")\n', '("Angelsharks", "are only living members of", "family Squatinidae")\n', '("Angelsharks", "are only living members of", "order Squatiniformes")\n', '("Angelsharks", "resemble", "rays")\n', '("Squatina", "differs from", "other sharks")\n', '("Angelsharks", "inhabit", "sandy seabeds")\n', '("Angelsharks", "are also called", "monkfish")\n', '("Monkfish", "is a name also applied to", "genus Lophius")\n', '("Squatina squatina", "ambush predators with", "stationary bottom-dwelling habit")\n', '("Squatina squatina", "exhibited", "large-scale coastal migratory patterns")\n', '("Squatina squatina", "is classified as", "critically endangered")\n', '("Angel shark", "has unique features differentiating it from", "other sharks")\n', '("Japanese angel shark", "can reach", "2 meters in length")\n', '("Angelsharks", "prey on", "fish, crustaceans and various types of mollusks")\n', '("Angelsharks", "are", "ovoviviparous")\n', '("S. aculeata", "is at high risk of", "extinction")\n', '("S. oculata", "is at high risk of", "extinction")\n', '("Angel sharks in Mediterranean Sea", "include", "S. aculeata, S. oculata, and S. squatina")\n', '("Conservation strategies", "are established by authorities from", "Greece and Turkey")\n', '("Squatina guggenheim", "is protected under", "Brazilian law")\n', '("Squatina occulta", "is protected under", "Brazilian law")\n', '("Pacific angel shark", "population declined and is now", "regulated")\n', '("Pacific angel shark", "was a byproduct of", "commercial gillnetting")\n', '("Pacific angel shark", "was used only for", "crab bait")\n', '("Angelshark", "status reaffirmed as \'Critically Endangered\' by", "IUCN in 2019")\n', '("Angel shark", "found in", "Mediterranean Sea")\n', '("Squatina", "earliest members known from the", "Late Jurassic")\n', '("Squatina squatina", "earliest record that can be assigned to modern genus known from the", "Early Cretaceous")\n']
+range(1, 256) 4
+{'id': '5_2', 'Question': ' What is the species with the greatest variety of non-marine chelonians known to inhabit the region that benefits from the fisheries, where the United States, Cuba, and a country with a specific hypersaline underwater feature explored by the Alvin submersible, that is also encompassed by six states from this southern country?\n\n', 'Answer': 'Turtle', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Guitarfish'}, {'label': 'B', 'text': 'Munididae'}, {'label': 'C', 'text': 'Turtle'}, {'label': 'D', 'text': 'European spadefoot toad'}, {'label': 'E', 'text': 'Angelshark'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'rhinobatidae'}, {'label': 'B', 'text': 'munididae'}, {'label': 'C', 'text': 'turtle'}, {'label': 'D', 'text': 'pelobatidae'}, {'label': 'E', 'text': 'angelshark'}], 'answerKey': 'C', 'choicelevel': 2.5}, 'Question_decompositions': ['1: In which region can you find the species with the greatest variety of non-marine chelonians?\nA1: Turtle\n\n', '2: This body of water is surrounded by six states from a southern country; can you name this body of water?\nA2: Gulf of Mexico\n\n', '3: The manned submersible named Alvin has been used for scientific exploration in this specific hypersaline underwater feature. What country is associated with this location?\nA3: Mexico\n\n', '4: Three countries benefit from the fishery industries supported by this body of water. The United States and Cuba are two; which is the third country?\nA4: Mexico'], 'Hops_wiki': [('Turtle', 'Gulf of Mexico'), ('Gulf of Mexico', 'Mexico'), ('Mexico', 'DSV Alvin'), ('Mexico', 'Cuba')], 'Hops_cpnet': [('turtle', 'gulf_of_mexico'), ('gulf_of_mexico', 'mexico'), ('mexico', 'alvin'), ('mexico', 'cuba')], 'Triplets': ['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")'], 'Referred_files': [{'name': 'Turtle', 'line': 39}, {'name': 'Gulf of Mexico', 'line': 2}, {'name': 'Gulf of Mexico', 'line': 26}, {'name': 'Gulf of Mexico', 'line': 38}], 'Question_triplet_answer': {100: [106, 173, 180, 190], 50: [74, 84, 190, 242], 25: [23, 164, 188, 196]}}
+time passed:  2489.2588119506836
+Expected dollar:  0.005
+the Gulf of Mexico is Geography
+Leatherback is Animal
+Atlantic is Geography
+Pacific is Geography
+Gulf of Mexico is Geography
+Tamaulipas is Geography
+Veracruz is Geography
+Tabasco is Geography
+Campeche is Geography
+Yucatán is Geography
+Quintana Roo is Geography
+Late Cretaceous sea is Geography
+Lophius is Animal
+the Atlantic Ocean is Geography
+Pacific angel is Animal
+Munididae is Animal
+Galatheidae is Animal
+Hernán Cortés is People
+Mexico is Geography
+27,000 is Geography
+International Hydrographic Organization is Incident
+Jurassic is Geography
+Acroteriobatus is Animal
+Squatina is Animal
+United States is Geography
+Cuba is Geography
+Turtle is Animal
+Neoselachii is Animal
+Sierra Madre Oriental is Geography
+Pseudobatos is Animal
+Cryptodira is Animal
+Florida is Geography
+Christopher Columbus is People
+Mississippi Embayment is Geography
+the United States is Geography
+Texas is Geography
+Louisiana is Geography
+Mississippi is Geography
+Alabama is Geography
+Enneabatrachus is Animal
+the United States' is Geography
+Genera of Munididae is Animal
+Oklahoma is Geography
+Ordovician is Geography
+Triassic is Geography
+Deepwater Horizon is Geography
+Yucatán Peninsula is Geography
+Turtles is Animal
+Australia is Geography
+New Zealand is Geography
+entities:  {'Hydrographic', 'Christopher', 'Zealand', 'Genera', 'Roo', 'States', 'Shell', 'Cuba', 'Veracruz', 'sea', 'Ordovician', 'Jurassic', 'Cryptodira', 'Neoselachii', "States'", 'Campeche', 'Pseudobatos', 'Pacific', 'Florida', 'Yucatán', 'Angelshark', 'Squatina', 'DSV', 'Acroteriobatus', 'Madre', 'toad', '27,000', 'Turtle', 'Late', 'International', 'Hernán', 'spadefoot', 'Embayment', 'Munididae', 'Lophius', 'Columbus', 'Horizon', 'Sierra', 'Louisiana', 'Amazon', 'Mississippi', 'Nelson', 'United', 'Oklahoma', 'Atlantic', 'Galatheidae', 'Oriental', 'Gulf', 'Alabama', 'Asia', 'Organization', 'New', 'Leatherback', 'Guitarfish', 'European', 'Ocean', 'Mexico', 'Southeast', 'Alvin', 'Pangaea', 'Quintana', 'Cortés', 'Turtles', 'Triassic', 'Peninsula', 'Enneabatrachus', 'Australia', 'Deepwater', 'Texas', 'Tabasco', 'angel', 'Tamaulipas', 'Cretaceous', 'Louann'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'European spadefoot toad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf Stream
+Leatherback turtle
+Guitarfish
+Gulf of Mexico
+Sea turtles
+Angelsharks
+Archelon ischyros
+Shell's Brutus oil rig
+Eorhinobatos
+Pelobatidae frogs
+Monkfish
+Gulf Stream
+Louann Salt and associated anhydrite evaporites
+Angelsharks
+Pacific angel shark
+International Hydrographic Organization
+European spadefoot toad
+Cryptodira
+Yucatán and Florida platforms
+Munididae
+European spadefoot toads
+Neoselachii
+Trygonorrhinidae
+Sierra Madre Oriental
+Yucatán Peninsula
+Platyrhinoidis
+Rhinobatos
+Mississippi Embayment
+Hernán Cortés
+Cryptodira
+mountain range
+Shell
+Squatina
+Enneabatrachus
+S. oculata
+turtles
+Alvin
+Nelson's 2006 Fishes of the World
+S. aculeata
+bycatch in fishing nets
+plants
+Pangaea
+Lophius
+terrestrial and freshwater
+Mardi Gras shipwreck
+Pseudobatos
+Yucatán Peninsula
+fishery industries
+Elkobatrachus
+Neoselachii
+cryptic species
+Gulf Stream
+Hernán Cortés
+sea turtle skull
+Nelson's 2006 Fishes of the World
+extinction
+turtles
+
+gpt_entity_particular(): entity list: 
+ ['plants', 'extinction', 'Monkfish', 'S. aculeata', 'Trygonorrhinidae', 'Elkobatrachus', 'Eorhinobatos', 'European spadefoot toads', 'S. oculata', 'Shell', "Shell's Brutus oil rig", 'sea turtle skull', 'terrestrial and freshwater', 'Louann Salt and associated anhydrite evaporites', 'Guitarfish', 'Platyrhinoidis', "Nelson's 2006 Fishes of the World", 'Hernán Cortés', 'Mississippi Embayment', 'Alvin', 'International Hydrographic Organization', 'Cryptodira', 'Pangaea', 'Pacific angel shark', 'Neoselachii', 'Sierra Madre Oriental', 'Lophius', 'Angelsharks', 'Pseudobatos', 'turtles', 'Sea turtles', 'Yucatán and Florida platforms', 'Squatina', 'Enneabatrachus', 'Mardi Gras shipwreck', 'Gulf Stream', 'Rhinobatos', 'Pelobatidae frogs', 'bycatch in fishing nets', 'Archelon ischyros', 'fishery industries', 'Gulf of Mexico', 'Yucatán Peninsula', 'Leatherback turtle', 'mountain range', 'cryptic species', 'Munididae', 'European spadefoot toad']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Guitarfish' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Guitarfish
+Rhinobatidae
+Guitarfish
+Rhinobatidae
+Guitarfish
+Rhinobatidae
+Guitarfish
+shovelnose rays
+
+gpt_entity_particular(): entity list: 
+ ['shovelnose rays', 'Guitarfish', 'Rhinobatidae']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Turtle' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Leatherback turtle
+Gulf of Mexico
+Guitarfish
+Sea turtles
+Angelsharks
+Archelon ischyros
+Shell's Brutus oil rig
+Eorhinobatos
+European spadefoot toad
+Monkfish
+Gulf Stream
+Pelobatidae frogs
+Gulf of Mexico basin
+Pacific angel shark
+Word turtle
+Eorhinobatos
+Turtles
+Neoselachii
+
+gpt_entity_particular(): entity list: 
+ ['Neoselachii', 'Word turtle', 'Guitarfish', 'Archelon ischyros', 'Pacific angel shark', 'Angelsharks', 'Monkfish', 'Turtles', 'Gulf of Mexico', 'Sea turtles', 'Eorhinobatos', 'Leatherback turtle', 'Gulf of Mexico basin', 'Gulf Stream', "Shell's Brutus oil rig", 'European spadefoot toad', 'Pelobatidae frogs']
+
+gpt_entity_particular(): filtered entity: 
+ ['Turtles', 'Leatherback turtle']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf Stream
+Leatherback turtle
+Guitarfish
+Gulf of Mexico
+Sea turtles
+Angelsharks
+Archelon ischyros
+Shell's Brutus oil rig
+Eorhinobatos
+European spadefoot toad
+Monkfish
+Munididae
+Hernán Cortés
+European spadefoot toads
+Cryptodira
+Sierra Madre Oriental
+area
+Mississippi Embayment
+Yucatán Peninsula
+Elkobatrachus
+Amazon basin
+S. oculata
+Alvin
+Laramide Orogeny
+Third Coast of the United States
+Scaphiopodidae
+Enneabatrachus
+Shell's Brutus oil rig
+Gulf of Mexico basin
+International Hydrographic Organization
+Pelobatidae
+Florida Platform
+Turtle
+Japanese angel shark
+Australian
+New Zealand
+Tidal_ranges
+Triassic
+Living amniotes
+Rhinobatos
+Living amniotes
+Platyrhinoidis
+Nelson's 2006 Fishes of the World
+Nelson's 2006 Fishes of the World
+Pangaea
+Squamate reptiles
+Pangaea
+Squamate reptiles
+primates
+Laramide Orogeny
+Mid-Cretaceous
+Munididae
+Sharks
+Munididae
+Sharks
+Pseudobatos
+Pseudobatos
+Salientia
+Salientia
+Alvin
+Alvin
+
+gpt_entity_particular(): entity list: 
+ ['Monkfish', 'Laramide Orogeny', 'Elkobatrachus', 'Squamate reptiles', 'Eorhinobatos', 'Scaphiopodidae', 'European spadefoot toads', 'S. oculata', "Shell's Brutus oil rig", 'Guitarfish', 'Platyrhinoidis', "Nelson's 2006 Fishes of the World", 'Hernán Cortés', 'Mississippi Embayment', 'Alvin', 'Pelobatidae', 'International Hydrographic Organization', 'Cryptodira', 'Pangaea', 'Tidal_ranges', 'Living amniotes', 'Sierra Madre Oriental', 'Angelsharks', 'Pseudobatos', 'area', 'Sharks', 'primates', 'Triassic', 'Salientia', 'Sea turtles', 'Enneabatrachus', 'Gulf Stream', 'Australian', 'Japanese angel shark', 'Rhinobatos', 'Archelon ischyros', 'Florida Platform', 'Turtle', 'Third Coast of the United States', 'Amazon basin', 'Gulf of Mexico', 'Yucatán Peninsula', 'New Zealand', 'Leatherback turtle', 'Gulf of Mexico basin', 'Munididae', 'Mid-Cretaceous', 'European spadefoot toad']
+
+gpt_entity_particular(): filtered entity: 
+ ['Sierra Madre Oriental']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Angelshark' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Angelsharks
+Angelsharks
+Pacific angel shark
+
+gpt_entity_particular(): entity list: 
+ ['Angelsharks', 'Pacific angel shark']
+
+gpt_entity_particular(): filtered entity: 
+ ['Angelsharks']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'DSV Alvin' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf Stream
+Leatherback turtle
+Guitarfish
+Gulf of Mexico
+Sea turtles
+Angelsharks
+Archelon ischyros
+Shell's Brutus oil rig
+Eorhinobatos
+European spadefoot toad
+Monkfish
+Pelobatidae frogs
+Pacific angel shark
+Louann Salt and associated anhydrite evaporites
+Rhinobatos
+Sierra Madre Oriental
+Mississippi Embayment
+Cryptodira
+Yucatán Peninsula
+Third Coast of the United States
+Alvin
+Cartilaginous fishes
+Munididae
+Laramide Orogeny
+
+gpt_entity_particular(): entity list: 
+ ['Monkfish', 'Laramide Orogeny', 'Eorhinobatos', "Shell's Brutus oil rig", 'Louann Salt and associated anhydrite evaporites', 'Guitarfish', 'Mississippi Embayment', 'Alvin', 'Cryptodira', 'Pacific angel shark', 'Cartilaginous fishes', 'Sierra Madre Oriental', 'Angelsharks', 'Sea turtles', 'Gulf Stream', 'Rhinobatos', 'Pelobatidae frogs', 'Archelon ischyros', 'Third Coast of the United States', 'Gulf of Mexico', 'Yucatán Peninsula', 'Leatherback turtle', 'Munididae', 'European spadefoot toad']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gulf of Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+Gulf Stream
+Leatherback turtle
+Guitarfish
+Mexican states
+Sea turtles
+Angelsharks
+Archelon ischyros
+Shell's Brutus oil rig
+Eorhinobatos
+Abyssal plain
+Sigsbee Deep
+Louann Salt
+Pelobatidae
+Monkfish
+Rhinobatidae
+Atlantic Ocean
+Galatheidae
+Hernán Cortés
+Laramide Orogeny
+Hernán Cortés
+Turtle shells
+Florida Platform
+Christopher Columbus
+Gulfof Mexico basin
+Yucatán Peninsula
+Enneabatrachus
+Munididae
+Mississippi Embayment
+Nelson's 2006 Fishes
+Neoselachii
+American spadefoot toads
+Crptodira
+Gulf Coast
+Largest turtle
+Sierra Madre Oriental
+Amazon basin
+Munididae
+Third Coast
+Florida Platform
+Deepwater Horizon oil platform
+Mid-Cretaceous
+Mardi Gras shipwreck
+Neoselachii
+Gulf of Mexico drainages
+Acroteriobatus
+S. aculeata
+
+gpt_entity_particular(): entity list: 
+ ['Sigsbee Deep', 'Gulfof Mexico basin', 'Monkfish', 'Laramide Orogeny', 'Galatheidae', 'Largest turtle', 'S. aculeata', 'Eorhinobatos', "Shell's Brutus oil rig", 'Guitarfish', 'Hernán Cortés', 'Mississippi Embayment', "Nelson's 2006 Fishes", 'Rhinobatidae', 'Pelobatidae', 'Third Coast', 'Atlantic Ocean', 'Mexican states', 'American spadefoot toads', 'Gulf of Mexico drainages', 'Deepwater Horizon oil platform', 'Neoselachii', 'Sierra Madre Oriental', 'Louann Salt', 'Angelsharks', 'Abyssal plain', 'Sea turtles', 'Enneabatrachus', 'Mardi Gras shipwreck', 'Acroteriobatus', 'Gulf Stream', 'Christopher Columbus', 'Archelon ischyros', 'Florida Platform', 'Turtle shells', 'Gulf Coast', 'Amazon basin', 'Gulf of Mexico', 'Yucatán Peninsula', 'Crptodira', 'Leatherback turtle', 'Munididae', 'Mid-Cretaceous']
+
+gpt_entity_particular(): filtered entity: 
+ ['Gulf Stream', 'Gulf Coast']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Munididae' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Munididae
+Gulf of Mexico
+Sea turtles
+Guitarfish
+Angelsharks
+Turtles
+Shell's Brutus oil rig
+Eorhinobatos
+European spadefoot toad
+
+gpt_entity_particular(): entity list: 
+ ['Guitarfish', 'Angelsharks', 'Turtles', 'Gulf of Mexico', 'Sea turtles', 'Eorhinobatos', "Shell's Brutus oil rig", 'Munididae', 'European spadefoot toad']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Cuba' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Mexico
+Leatherback turtle
+Guitarfish
+Gulf of Mexico
+Tamaulipas
+Veracruz
+Tabasco
+Campeche
+Yucatán
+Quintana Roo
+Angelsharks
+Archelon ischyros
+Sea turtles
+Shell's Brutus oil rig
+Eorhinobatos
+Abyssal plain
+Sigsbee Deep
+European spadefoot toad
+Monkfish
+Rhinobatidae
+Atlantic Ocean
+Sea floor spreading
+Pangaea
+Cortés
+Pseudobatos
+Yucatán Peninsula
+Amazon basin
+Neoselachii
+Squatina
+Mississippi Embayment
+Rays
+Munididae
+Christopher Columbus
+United States
+Laurentian Upland
+Mississippian and Pennsylvanian
+Yucatán Peninsula
+Pangaea
+Olfactory and vomeronasal receptors
+Crustaceans
+Pelobatid
+Maya civilization
+Ordovician
+Morrison Formation
+Hernán Cortés
+Oldest marine European spadefoot toad
+Gulf Coast of the United States
+Squatina
+Cryptodira
+Giant stocky guitarfish
+North America
+Gulfs
+World
+French in Mexico
+Southern California
+Largest Pentacerotid
+Galápagos
+One
+Mexico
+Gulf of Mexico
+Gulf of Mexico
+Louisiana
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Florida
+Pangaea
+Today
+European spadefoot toad
+Gulfs
+Gulf of Mexico
+Gulf of Mexico
+Yucatán Peninsula
+Gulfs
+Texas Gulf
+Jalisco West
+Gulf of Mexico
+Gulf of Mexico
+Shark
+Gulf of Mexico
+Monkfish
+Florida Platform
+Family of frogs
+Neoclassical guitar composition
+
+gpt_entity_particular(): entity list: 
+ ['Louisiana', 'Sigsbee Deep', 'Monkfish', 'Gulfs', 'Galápagos', 'Eorhinobatos', 'Gulf Coast of the United States', "Shell's Brutus oil rig", 'Guitarfish', 'World', 'Mexico', 'Olfactory and vomeronasal receptors', 'Hernán Cortés', 'Sea floor spreading', 'Mississippi Embayment', 'Veracruz', 'Mississippian and Pennsylvanian', 'Rhinobatidae', 'Laurentian Upland', 'Pangaea', 'Atlantic Ocean', 'Maya civilization', 'Quintana Roo', 'Cryptodira', 'Largest Pentacerotid', 'Today', 'Texas Gulf', 'French in Mexico', 'Morrison Formation', 'Neoselachii', 'Munididae', 'Campeche', 'Angelsharks', 'Pseudobatos', 'Shark', 'Cortés', 'Florida', 'Yucatán', 'Abyssal plain', 'Sea turtles', 'Squatina', 'One', 'Pelobatid', 'Southern California', 'North America', 'Jalisco West', 'Oldest marine European spadefoot toad', 'Giant stocky guitarfish', 'Tabasco', 'Christopher Columbus', 'Archelon ischyros', 'Florida Platform', 'Neoclassical guitar composition', 'United States', 'Amazon basin', 'Gulf of Mexico', 'Crustaceans', 'Tamaulipas', 'Yucatán Peninsula', 'Leatherback turtle', 'Family of frogs', 'Ordovician', 'Rays', 'European spadefoot toad']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Hydrographic', 'Christopher', 'Zealand', 'Genera', 'Roo', 'States', 'Shell', 'Cuba', 'Veracruz', 'sea', 'Ordovician', 'Jurassic', 'Cryptodira', 'Neoselachii', "States'", 'Sierra Madre Oriental', 'Campeche', 'Angelsharks', 'Pseudobatos', 'Pacific', 'Florida', 'Yucatán', 'Angelshark', 'Squatina', 'DSV', 'Acroteriobatus', 'Madre', 'Gulf Stream', 'toad', '27,000', 'Turtle', 'Late', 'International', 'Hernán', 'spadefoot', 'Embayment', 'Munididae', 'Lophius', 'Columbus', 'Horizon', 'Sierra', 'Louisiana', 'Amazon', 'Mississippi', 'Nelson', 'United', 'Oklahoma', 'Atlantic', 'Galatheidae', 'Oriental', 'Gulf', 'Alabama', 'Asia', 'Organization', 'New', 'Leatherback', 'Guitarfish', 'European', 'Ocean', 'Mexico', 'Southeast', 'Alvin', 'Pangaea', 'Quintana', 'Cortés', 'Turtles', 'Triassic', 'Peninsula', 'Enneabatrachus', 'Australia', 'Deepwater', 'Texas', 'Tabasco', 'angel', 'Gulf Coast', 'Tamaulipas', 'Cretaceous', 'Leatherback turtle', 'Louann'}
+Total time:  233.26328444480896
+Entity conversion done on 5_2 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_5_2_entity_conversion_hash.json. Check the entity.
+ What is the species with the greatest variety of non-marine chelonians known to inhabit the region that benefits from the fisheries, where the 00A States, Cuba, and a country with a specific hypersaline underwater feature explored by the 02B submersible, that is also encompassed by six 00D from this Eastern country?
+
+
+
+
+Done. Check final_query/id_5_2_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_5_2_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_2_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

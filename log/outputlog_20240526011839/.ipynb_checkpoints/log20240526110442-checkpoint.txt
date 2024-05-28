@@ -1,0 +1,49 @@
+Got argument: Tom Cruise, 1, 1_8, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Tom Cruise, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Tom_Cruise_info.json file
+first_hop:  {'triplet': '("Tom Cruise", "worked with", "Oliver Stone")', 'start word': 'Tom Cruise', 'end word': 'Oliver Stone', 'source': {'name': 'Tom Cruise', 'line': 13}, 'cpnet': {'start word': 'tom_cruise', 'end word': 'oliver_stone'}}
+next_word: Oliver Stone
+
+utils/question.py extract_hops(Oliver Stone, [], ['Tom Cruise']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Oliver_Stone_info.json file
+extract_info(Oliver Stone) Start.
+utils/preprocess.py extract_info(): Checking good links on Oliver Stone
+New York City is Geography
+1 / 30 )  New York City New York City new_york_city
+Yale University is Geography
+2 / 30 )  Yale University Yale University yale_university
+JFK  is People
+3 / 30 )  JFK JFK  john_fitzgerald_kennedy
+Nixon  is People
+4 / 30 )  Nixon Nixon  richard_milhous_nixon
+Snowden  is People
+5 / 30 )  Snowden Snowden  edward_snowden
+Vladimir Putin is People
+6 / 30 )  Vladimir Putin Vladimir Putin vladimir_putin
+Manhattan is Geography
+7 / 30 )  Manhattan Manhattan manhattan
+South Vietnam is Geography
+8 / 30 )  South Vietnam South Vietnam south_vietnam
+New York University is Geography
+9 / 30 )  New York University New York University new_york_university
+Martin Scorsese is People
+10 / 30 )  Martin Scorsese Martin Scorsese martin_scorsese
+Library of Congress is Geography
+11 / 30 )  Library of Congress Library of Congress library_of_congress
+Jim Morrison is People
+12 / 30 )  Jim Morrison Jim Morrison jim_morrison
+United States Congress is Geography
+13 / 30 )  Congress United States Congress united_states_congress
+Capitol Hill is Geography
+14 / 30 )  Capitol Hill Capitol Hill capitol_hill
+Quentin Tarantino is People
+15 / 30 )  Quentin Tarantino Quentin Tarantino quentin_tarantino
+Richard Nixon is People
+16 / 30 )  Richard Nixon Richard Nixon richard_nixon
+Anthony Hopkins is People
+17 / 30 )  Anthony Hopkins Anthony Hopkins anthony_hopkins
+World Trade Center  is Geography
+18 / 30 )  World Trade Center World Trade Center  twin_towers
+George W. Bush is People
+19 / 30 )  George W. Bush George W. Bush george_w_bush

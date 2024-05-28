@@ -1,0 +1,570 @@
+Got argument: Immanuel Kant, 1, 1_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+next_word: Kaliningrad
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+generate_question(1_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "belongs to", "Northwestern Federal District")'], ['Kaliningrad', 'Northwestern Federal District'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Northwestern Federal District')], Northwestern Federal District, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 6}]) called
+GPT output is:  Q: What federal district would you be in if you were visiting the burial place of philosopher Immanuel Kant?
+A: Northwestern Federal District
+final_choice(Northwestern Federal District, options = 5) started
+[]
+entity_type(Northwestern Federal District) called
+Northwestern Federal District is Geography
+check_matchscore(Northwestern Federal District, Federal districts of Russia):  0.16666666666666666
+choose_by_wiki_recur(Federal districts of Russia)
+   Pages in Federal districts of Russia: ['Federal districts of Russia', 'Central Federal District', 'Crimean Federal District', 'Far Eastern Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Siberian Federal District', 'Southern Federal District', 'Ural Federal District', 'Volga Federal District']
+      Ural Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia']
+      North Caucasian Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District']
+      Northwestern Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District', 'Siberian Federal District']
+      Federal districts of Russia in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District', 'Siberian Federal District', 'Far Eastern Federal District']
+      Crimean Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District', 'Siberian Federal District', 'Far Eastern Federal District', 'Volga Federal District']
+      Siberian Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District', 'Siberian Federal District', 'Far Eastern Federal District', 'Volga Federal District', 'Central Federal District']
+      Far Eastern Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District', 'Siberian Federal District', 'Far Eastern Federal District', 'Volga Federal District', 'Central Federal District', 'Southern Federal District']
+      Volga Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District', 'Siberian Federal District', 'Far Eastern Federal District', 'Volga Federal District', 'Central Federal District', 'Southern Federal District']
+      Central Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District', 'Siberian Federal District', 'Far Eastern Federal District', 'Volga Federal District', 'Central Federal District', 'Southern Federal District']
+      Southern Federal District in ['Ural Federal District', 'North Caucasian Federal District', 'Northwestern Federal District', 'Federal districts of Russia', 'Crimean Federal District', 'Siberian Federal District', 'Far Eastern Federal District', 'Volga Federal District', 'Central Federal District', 'Southern Federal District']
+   Upper category of Federal districts of Russia: ['Districts of Russia', 'Federalism in Russia']
+choose_by_wiki_recur(Districts of Russia)
+check_matchscore(Northwestern Federal District, 2000 establishments in Russia):  0.0
+choose_by_wiki_recur(2000 establishments in Russia)
+   Pages in 2000 establishments in Russia: ['Agentura.Ru', 'Angara Airlines', 'Aviastar-TU', 'Central Federal District', 'FC CFKiS Lobnya', 'Conceptual Party "Unity"', 'Crew Against Torture (Russia)', 'Cross of Sorrow', 'Erzi Nature Reserve', 'Far Eastern Federal District', 'Ice Palace (Saint Petersburg)', 'FC Krasnodar-2000', 'FC Krylia Sovetov-2 Samara', 'Liberal Russia', 'Metallurg Bratsk', "Mikhail Kasyanov's Cabinet", 'FC Mostransgaz Gazoprovod', 'Murman Murmansk', 'FC Nemkom Krasnodar', 'BC Nizhny Novgorod', 'Northwestern Federal District', 'Ohr Avner Chabad Day School (Volgograd)', 'Order of St. George', "Party of Russia's Rebirth", "People's Party of the Russian Federation", 'Pushkinsky Pedestrian Bridge', 'Renaissance Credit', 'Russian Basketball Cup', 'Russian Maoist Party', 'Russian National Unity (2000)', 'Russian Social Democratic Union of Youth', 'Russian United Social Democratic Party', 'Saint Petersburg Lions', 'Seven TV', 'Siberian Federal District', 'Skol Airlines', 'Southern Federal District', 'FC Spartak Nizhny Novgorod', 'The Squeaky Wheel', 'State Council (Russia)', 'Stepnoi Nature Sanctuary', 'Tatneft', 'Ural Federal District', 'Volga Federal District', 'VC Zenit-Kazan']
+      Russian Social Democratic Union of Youth in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup']
+      BC Nizhny Novgorod in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV']
+      VC Zenit-Kazan in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft']
+      Russian Basketball Cup in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions']
+      Seven TV in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel']
+      Tatneft in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow']
+      Saint Petersburg Lions in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines']
+      The Squeaky Wheel in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge']
+      Cross of Sorrow in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge']
+      Angara Airlines in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk']
+      Pushkinsky Pedestrian Bridge in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George']
+      Murman Murmansk in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines']
+      Order of St. George in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District']
+      Skol Airlines in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth"]
+      Southern Federal District in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod']
+      Party of Russia's Rebirth in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod']
+      FC Spartak Nizhny Novgorod in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)']
+      Crew Against Torture (Russia) in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)', 'Agentura.Ru']
+      Agentura.Ru in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)', 'Agentura.Ru', 'Volga Federal District']
+      Volga Federal District in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)', 'Agentura.Ru', 'Volga Federal District', 'FC CFKiS Lobnya']
+      FC CFKiS Lobnya in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)', 'Agentura.Ru', 'Volga Federal District', 'FC CFKiS Lobnya', "Mikhail Kasyanov's Cabinet"]
+      Mikhail Kasyanov's Cabinet in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)', 'Agentura.Ru', 'Volga Federal District', 'FC CFKiS Lobnya', "Mikhail Kasyanov's Cabinet", 'Ice Palace (Saint Petersburg)']
+      Ice Palace (Saint Petersburg) in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)', 'Agentura.Ru', 'Volga Federal District', 'FC CFKiS Lobnya', "Mikhail Kasyanov's Cabinet", 'Ice Palace (Saint Petersburg)', 'Central Federal District']
+      Central Federal District in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)', 'Agentura.Ru', 'Volga Federal District', 'FC CFKiS Lobnya', "Mikhail Kasyanov's Cabinet", 'Ice Palace (Saint Petersburg)', 'Central Federal District', 'Far Eastern Federal District']
+      Far Eastern Federal District in ['Russian Social Democratic Union of Youth', 'BC Nizhny Novgorod', 'VC Zenit-Kazan', 'Russian Basketball Cup', 'Seven TV', 'Tatneft', 'Saint Petersburg Lions', 'The Squeaky Wheel', 'Cross of Sorrow', 'Angara Airlines', 'Pushkinsky Pedestrian Bridge', 'Murman Murmansk', 'Order of St. George', 'Skol Airlines', 'Southern Federal District', "Party of Russia's Rebirth", 'FC Spartak Nizhny Novgorod', 'Crew Against Torture (Russia)', 'Agentura.Ru', 'Volga Federal District', 'FC CFKiS Lobnya', "Mikhail Kasyanov's Cabinet", 'Ice Palace (Saint Petersburg)', 'Central Federal District', 'Far Eastern Federal District']
+['Far Eastern Federal District', 'Central Federal District', 'Southern Federal District', 'The Squeaky Wheel', 'Southern Federal District', 'Central Federal District', 'Far Eastern Federal District']
+Ended after 2.5 hierarchy
+(2.5, ['Central Federal District', 'Far Eastern Federal District', 'The Squeaky Wheel', 'Southern Federal District'])
+
+extract_info(Central Federal District) Start.
+utils/preprocess.py extract_info(): Checking good links on Central Federal District
+Russia is Geography
+1 / 30 )  Russia Russia russia
+European Russia is Geography
+2 / 30 )  European Russia European Russia european_russia
+extract_triplet(Central Federal District)
+Got GPT's response. String length : 886
+subject_words:  [(None, 'Central Federal District', 'central_federal_district')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Central Federal District', 'central_federal_district')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Central Federal District', 'central_federal_district')]
+object_words:  [['Russia', 'Russia', 'russia'], ['European Russia', 'European Russia', 'european_russia']]
+subject_words:  [(None, 'Central Federal District', 'central_federal_district')]
+object_words:  []
+subject_words:  [(None, 'Central Federal District', 'central_federal_district')]
+object_words:  [['Russia', 'Russia', 'russia']]
+extract_info(Southern Federal District) Start.
+utils/preprocess.py extract_info(): Checking good links on Southern Federal District
+Russia is Geography
+1 / 30 )  Russia Russia russia
+Southern Russia is Geography
+2 / 30 )  Southern Russia Southern Russia southern_russia
+Ukraine is Geography
+3 / 30 )  Ukraine Ukraine ukraine
+Sea of Azov is Geography
+4 / 30 )  Azov Sea Sea of Azov sea_of_azov
+Black Sea is Geography
+5 / 30 )  Black Sea Black Sea black_sea
+Kazakhstan is Geography
+6 / 30 )  Kazakhstan Kazakhstan kazakhstan
+Caspian Sea is Geography
+7 / 30 )  Caspian Sea Caspian Sea caspian_sea
+Sevastopol is Geography
+8 / 30 )  Sevastopol Sevastopol sevastopol
+extract_triplet(Southern Federal District)
+Got GPT's response. String length : 902
+subject_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+object_words:  [['Russia', 'Russia', 'russia'], ['Southern Russia', 'Southern Russia', 'southern_russia']]
+subject_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+object_words:  [['Ukraine', 'Ukraine', 'ukraine']]
+subject_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+object_words:  [['Azov Sea', 'Sea of Azov', 'sea_of_azov']]
+subject_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+object_words:  [['Black Sea', 'Black Sea', 'black_sea']]
+subject_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+object_words:  [['Kazakhstan', 'Kazakhstan', 'kazakhstan']]
+subject_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+object_words:  [['Caspian Sea', 'Caspian Sea', 'caspian_sea']]
+subject_words:  []
+object_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+subject_words:  []
+object_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+subject_words:  [['Sevastopol', 'Sevastopol', 'sevastopol']]
+object_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+subject_words:  [(None, 'Southern Federal District', 'southern_federal_district')]
+object_words:  [['Sevastopol', 'Sevastopol', 'sevastopol']]
+extract_info(Far Eastern Federal District) Start.
+utils/preprocess.py extract_info(): Checking good links on Far Eastern Federal District
+Russia is Geography
+1 / 30 )  Russia Russia russia
+Vladimir Putin is People
+2 / 30 )  Vladimir Putin Vladimir Putin vladimir_putin
+Buryatia is Geography
+3 / 30 )  Buryatia Buryatia buryatia
+Zabaykalsky Krai is Geography
+4 / 30 )  Zabaykalsky Krai Zabaykalsky Krai zabaykalsky_krai
+Khabarovsk is Geography
+5 / 30 )  Khabarovsk Khabarovsk khabarovsk
+Vladivostok is Geography
+6 / 30 )  Vladivostok Vladivostok vladivostok
+Primorsky Krai is Geography
+7 / 30 )  Primorsky Krai Primorsky Krai primorsky_krai
+Chukotka Autonomous Okrug is Geography
+8 / 30 )  Chukotka Autonomous Okrug Chukotka Autonomous Okrug chukotka_autonomous_okrug
+Magas is Geography
+9 / 30 )  Magas Magas magas
+Ingushetia is Geography
+10 / 30 )  Ingushetia Ingushetia ingushetia
+Russian Orthodox Church is Geography
+11 / 30 )  Russian Orthodox Church Russian Orthodox Church russian_orthodox_church
+extract_triplet(Far Eastern Federal District)
+Got GPT's response. String length : 1427
+subject_words:  [(None, 'Far Eastern Federal District', 'far_eastern_federal_district')]
+object_words:  [['Chukotka Autonomous Okrug', 'Chukotka Autonomous Okrug', 'chukotka_autonomous_okrug'], ['Magas', 'Magas', 'magas']]
+subject_words:  [(None, 'Far Eastern Federal District', 'far_eastern_federal_district')]
+object_words:  [['Primorsky Krai', 'Primorsky Krai', 'primorsky_krai']]
+subject_words:  [['Russian Orthodox Church', 'Russian Orthodox Church', 'russian_orthodox_church']]
+object_words:  [(None, 'Far Eastern Federal District', 'far_eastern_federal_district')]
+subject_words:  [['Vladimir Putin', 'Vladimir Putin', 'vladimir_putin']]
+object_words:  [(None, 'Far Eastern Federal District', 'far_eastern_federal_district')]
+subject_words:  []
+object_words:  [(None, 'Far Eastern Federal District', 'far_eastern_federal_district')]
+subject_words:  [['Khabarovsk', 'Khabarovsk', 'khabarovsk']]
+object_words:  [(None, 'Far Eastern Federal District', 'far_eastern_federal_district')]
+subject_words:  [(None, 'Far Eastern Federal District', 'far_eastern_federal_district')]
+object_words:  [['Vladivostok', 'Vladivostok', 'vladivostok']]
+subject_words:  [(None, 'Far Eastern Federal District', 'far_eastern_federal_district')]
+object_words:  []
+extract_info(The Squeaky Wheel) Start.
+utils/preprocess.py extract_info(): Checking good links on The Squeaky Wheel
+Rostov-on-Don is Geography
+1 / 30 )  Rostov-on-Don Rostov-on-Don rostov_on_don
+Russia is Geography
+2 / 30 )  Russia Russia russia
+extract_triplet(The Squeaky Wheel)
+Got GPT's response. String length : 673
+subject_words:  [(None, 'The Squeaky Wheel', 'squeaky_wheel')]
+object_words:  []
+subject_words:  [(None, 'The Squeaky Wheel', 'squeaky_wheel')]
+object_words:  []
+subject_words:  [(None, 'The Squeaky Wheel', 'squeaky_wheel')]
+object_words:  []
+subject_words:  [(None, 'The Squeaky Wheel', 'squeaky_wheel')]
+object_words:  []
+subject_words:  [(None, 'The Squeaky Wheel', 'squeaky_wheel')]
+object_words:  []
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Central Federal District", "is one of", "federal districts of Russia")\n', '("Central Federal District", "is situated in", "the extreme west of present-day Russia")\n', '("Central Federal District", "can be considered as the central region of", "European Russia")\n', '("Central Federal District", "has a Presidential Envoy named", "Igor Shchyogolev")\n', '("Central Federal District", "is in", "Russia")\n', '("Southern Federal District", "is one of the federal districts of", "Russia")\n', '("Southern Federal District", "lies mostly on the", "Pontic–Caspian steppe of Southern Russia")\n', '("Southern Federal District", "shares borders with", "Ukraine")\n', '("Southern Federal District", "has a coastline on", "the Azov Sea")\n', '("Southern Federal District", "is bordered by", "the Black Sea in the west")\n', '("Southern Federal District", "shares borders with", "Kazakhstan")\n', '("Southern Federal District", "is bordered by", "the Caspian Sea in the east")\n', '("Crimean Federal District", "was merged into", "Southern Federal District")\n', '("Republic of Crimea and the federal city of", "are included in", "Southern Federal District")\n', '("Sevastopol", "is a part of", "Southern Federal District")\n', '("Southern Federal District", "is recognized as part of Ukraine by most of the international community", "Republic of Crimea and Sevastopol")\n', '("Far Eastern Federal District", "has a smaller centre than", "Magas in Anadyr, Chukotka Autonomous Okrug")\n', '("Far Eastern Federal District", "includes the federal subject", "Primorsky Krai with cities like Artyom")\n', '("Russian Orthodox Church", "has adherents in", "Far Eastern Federal District")\n', '("Vladimir Putin", "is the President who established", "Far Eastern Federal District")\n', '("Yury Trutnev", "is the presidential envoy for", "Far Eastern Federal District")\n', '("Khabarovsk", "is connected to Vladivostok by", "the first high-speed highway in Far Eastern Federal District")\n', '("Far Eastern Federal District", "contains the city of", "Vladivostok")\n', '("Far Eastern Federal District", "is part of the Asian region known as", "Russian Far East")\n', '("The Squeaky Wheel", "broadcasts", "a distinctive sound")\n', '("The Squeaky Wheel", "had attention tone", "a high-pitched two tone signal")\n', '("The Squeaky Wheel", "transmits voice messages in", "Russian military format")\n', '("The Squeaky Wheel", "is thought to be near", "Rostov-on-Don")\n', '("The Squeaky Wheel", "signal is evaluated as", "weak in Central Europe")\n']
+range(1, 110) 2
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Central Federal District", "is one of", "federal districts of Russia")\n', '("Central Federal District", "is situated in", "the extreme west of present-day Russia")\n', '("Central Federal District", "can be considered as the central region of", "European Russia")\n', '("Central Federal District", "has a Presidential Envoy named", "Igor Shchyogolev")\n', '("Central Federal District", "is in", "Russia")\n', '("Southern Federal District", "is one of the federal districts of", "Russia")\n', '("Southern Federal District", "lies mostly on the", "Pontic–Caspian steppe of Southern Russia")\n', '("Southern Federal District", "shares borders with", "Ukraine")\n', '("Southern Federal District", "has a coastline on", "the Azov Sea")\n', '("Southern Federal District", "is bordered by", "the Black Sea in the west")\n', '("Southern Federal District", "shares borders with", "Kazakhstan")\n', '("Southern Federal District", "is bordered by", "the Caspian Sea in the east")\n', '("Crimean Federal District", "was merged into", "Southern Federal District")\n', '("Republic of Crimea and the federal city of", "are included in", "Southern Federal District")\n', '("Sevastopol", "is a part of", "Southern Federal District")\n', '("Southern Federal District", "is recognized as part of Ukraine by most of the international community", "Republic of Crimea and Sevastopol")\n', '("Far Eastern Federal District", "has a smaller centre than", "Magas in Anadyr, Chukotka Autonomous Okrug")\n', '("Far Eastern Federal District", "includes the federal subject", "Primorsky Krai with cities like Artyom")\n', '("Russian Orthodox Church", "has adherents in", "Far Eastern Federal District")\n', '("Vladimir Putin", "is the President who established", "Far Eastern Federal District")\n', '("Yury Trutnev", "is the presidential envoy for", "Far Eastern Federal District")\n', '("Khabarovsk", "is connected to Vladivostok by", "the first high-speed highway in Far Eastern Federal District")\n', '("Far Eastern Federal District", "contains the city of", "Vladivostok")\n', '("Far Eastern Federal District", "is part of the Asian region known as", "Russian Far East")\n', '("The Squeaky Wheel", "broadcasts", "a distinctive sound")\n', '("The Squeaky Wheel", "had attention tone", "a high-pitched two tone signal")\n', '("The Squeaky Wheel", "transmits voice messages in", "Russian military format")\n', '("The Squeaky Wheel", "is thought to be near", "Rostov-on-Don")\n', '("The Squeaky Wheel", "signal is evaluated as", "weak in Central Europe")\n']
+range(1, 110) 2
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Central Federal District", "is one of", "federal districts of Russia")\n', '("Central Federal District", "is situated in", "the extreme west of present-day Russia")\n', '("Central Federal District", "can be considered as the central region of", "European Russia")\n', '("Central Federal District", "has a Presidential Envoy named", "Igor Shchyogolev")\n', '("Central Federal District", "is in", "Russia")\n', '("Southern Federal District", "is one of the federal districts of", "Russia")\n', '("Southern Federal District", "lies mostly on the", "Pontic–Caspian steppe of Southern Russia")\n', '("Southern Federal District", "shares borders with", "Ukraine")\n', '("Southern Federal District", "has a coastline on", "the Azov Sea")\n', '("Southern Federal District", "is bordered by", "the Black Sea in the west")\n', '("Southern Federal District", "shares borders with", "Kazakhstan")\n', '("Southern Federal District", "is bordered by", "the Caspian Sea in the east")\n', '("Crimean Federal District", "was merged into", "Southern Federal District")\n', '("Republic of Crimea and the federal city of", "are included in", "Southern Federal District")\n', '("Sevastopol", "is a part of", "Southern Federal District")\n', '("Southern Federal District", "is recognized as part of Ukraine by most of the international community", "Republic of Crimea and Sevastopol")\n', '("Far Eastern Federal District", "has a smaller centre than", "Magas in Anadyr, Chukotka Autonomous Okrug")\n', '("Far Eastern Federal District", "includes the federal subject", "Primorsky Krai with cities like Artyom")\n', '("Russian Orthodox Church", "has adherents in", "Far Eastern Federal District")\n', '("Vladimir Putin", "is the President who established", "Far Eastern Federal District")\n', '("Yury Trutnev", "is the presidential envoy for", "Far Eastern Federal District")\n', '("Khabarovsk", "is connected to Vladivostok by", "the first high-speed highway in Far Eastern Federal District")\n', '("Far Eastern Federal District", "contains the city of", "Vladivostok")\n', '("Far Eastern Federal District", "is part of the Asian region known as", "Russian Far East")\n', '("The Squeaky Wheel", "broadcasts", "a distinctive sound")\n', '("The Squeaky Wheel", "had attention tone", "a high-pitched two tone signal")\n', '("The Squeaky Wheel", "transmits voice messages in", "Russian military format")\n', '("The Squeaky Wheel", "is thought to be near", "Rostov-on-Don")\n', '("The Squeaky Wheel", "signal is evaluated as", "weak in Central Europe")\n']
+range(1, 110) 2
+{'id': '1_3', 'Question': ' What federal district would you be in if you were visiting the burial place of philosopher Immanuel Kant?\n', 'Answer': 'Northwestern Federal District', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Northwestern Federal District'}, {'label': 'B', 'text': 'Central Federal District'}, {'label': 'C', 'text': 'Southern Federal District'}, {'label': 'D', 'text': 'Far Eastern Federal District'}, {'label': 'E', 'text': 'The Squeaky Wheel'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'northwestern_federal_district'}, {'label': 'B', 'text': 'central_federal_district'}, {'label': 'C', 'text': 'southern_federal_district'}, {'label': 'D', 'text': 'far_eastern_federal_district'}, {'label': 'E', 'text': 'squeaky_wheel'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: In which city is the philosopher Immanuel Kant buried?\nA1: Kaliningrad\n\n', '2: To which federal district does the city of Kaliningrad belong?\nA2: Northwestern Federal District'], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Northwestern Federal District')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'northwestern_federal_district')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "belongs to", "Northwestern Federal District")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 6}], 'Question_triplet_answer': {100: [73, 96], 50: [37, 45], 25: [66, 88]}}
+time passed:  1071.8002314567566
+Expected dollar:  0.005
+Kant is People
+Reinhold, is People
+Fichte is People
+Hegel is People
+Novalis is People
+the Soviet Union is Geography
+Central Federal District is Geography
+Russia is Geography
+University of Königsberg is Geography
+Johann Georg Kant is People
+Lithuania is Geography
+Poland is Geography
+Southern Federal District is Geography
+Vladimir Putin is People
+Far Eastern Federal District is Geography
+The Squeaky Wheel is Geography
+Rostov on Don is Geography
+the Azov Sea is Geography
+Samuel Taylor is People
+Immanuel Kant is People
+Alexander Wendt's is People
+Full Professor of Logic and Metaphysics at University of Königsberg is People
+Leonid Brezhnev's is People
+Ukraine is Geography
+Southern Russia is Geography
+Vladivostok is Geography
+Königsberg is Geography
+Kaliningrad is Geography
+Jürgen Habermas is People
+John Rawls is People
+Khabarovsk is Geography
+Mikhail Kalinin is People
+Sweden is Geography
+Magas in Anadyr, Chukotka Autonomous Okrug is Geography
+Germany is Geography
+Baltic Sea is Geography
+North German Confederation is Geography
+the Black Sea is Geography
+Kant Society is People
+the Caspian Sea is Geography
+Jean Piaget is People
+Carl Gustav Jung is People
+Immanuel Kant's is People
+Northwestern Federal District is Geography
+Anna Regina Reuter is People
+entities:  {'Russia', 'Azov', 'Sweden', 'Far', 'Professor', 'Johann', 'Logic', 'Vladivostok', 'Northwestern', 'Wendt', 'Lithuania', 'Königsberg', 'Central', 'Sea', 'Anna', 'Magas', 'North', 'Wheel', 'Hegel', 'Union', 'Society', 'Carl', 'Immanuel', 'Metaphysics', 'Kalinin', 'Putin', 'republican', 'Soviet', 'Jean', 'Federal', 'Kant', 'Squeaky', 'Reinhold,', 'University', 'Mikhail', 'Alexander', 'Habermas', 'Germany', "Brezhnev's", "Kant's", 'Vladimir', 'Piaget', 'Gustav', 'Southern', 'Full', 'Novalis', 'Rawls', 'Khabarovsk', 'Confederation', 'Black', 'Georg', 'Autonomous', 'Rostov', 'German', 'Baltic', 'Leonid', 'Regina', 'Samuel', 'Eastern', 'Jung', 'Anadyr,', 'Poland', 'Chukotka', 'Kaliningrad', 'Jürgen', 'Reuter', "Wendt's", 'Crimea', 'District', 'Caspian', 'Fichte', 'Okrug', 'Ukraine', 'Taylor', 'John'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Lectures
+Work
+Influence
+Lectures
+Work
+Influence
+Lectures
+Work
+Anatomy
+Lectures
+Influence
+Influence
+Doctrine
+Doctrine
+Anatomy
+Work
+Influence
+Influence
+Doctrine
+Anatomy
+Influence
+Doctrine
+Kant Society
+Latin
+Religious instruction
+
+gpt_entity_particular(): entity list: 
+ ['Lectures', 'Kant Society', 'Latin', 'Immanuel Kant', 'Anatomy', 'Doctrine', 'Influence', 'Religious instruction', 'Work']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Far Eastern Federal District' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Far Eastern Federal District
+Far Eastern Federal District
+Kaliningrad
+Vladimir Putin
+
+gpt_entity_particular(): entity list: 
+ ['Kaliningrad', 'Far Eastern Federal District', 'Vladimir Putin']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'The Squeaky Wheel' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kant
+Lectures
+Anthropology
+Influence
+Thoughts
+Rostov-on-Don
+Sevastopol
+State
+University
+Project
+Doctrine
+Peace
+Theory
+Professor
+Highway
+Republic
+Life
+District
+Coastline
+Philosophy
+Heavens
+Influence
+Mathematical truths
+True Estimation of Living Forces
+President
+
+gpt_entity_particular(): entity list: 
+ ['University', 'Professor', 'Influence', 'Theory', 'Rostov-on-Don', 'Philosophy', 'Coastline', 'Lectures', 'State', 'President', 'Doctrine', 'True Estimation of Living Forces', 'Anthropology', 'Highway', 'Life', 'Sevastopol', 'Mathematical truths', 'Thoughts', 'District', 'Peace', 'Republic', 'Project', 'Kant', 'Heavens']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Northwestern Federal District' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kaliningrad
+Central Federal District
+University of Königsberg
+Kaliningrad
+Kaliningrad
+Far Eastern Federal District
+Southern Federal District
+Vladimir Putin
+Southern Federal District
+Kaliningrad
+Kaliningrad
+Far Eastern Federal District
+Kant Society
+Crimean Federal District
+Southern Federal District
+Southern Federal District
+Königsberg
+Kaliningrad
+Kaliningrad
+Northwestern Federal District
+
+gpt_entity_particular(): entity list: 
+ ['University of Königsberg', 'Kant Society', 'Crimean Federal District', 'Far Eastern Federal District', 'Northwestern Federal District', 'Central Federal District', 'Southern Federal District', 'Vladimir Putin', 'Kaliningrad', 'Königsberg']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Central Federal District' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Central Federal District
+University of Königsberg
+Kant's professional place
+Vladimir Putin
+Marxism, positivism, phenomenology
+Kantianism theory
+Immanuel Kant
+Republic of Crimea and Sevastopol
+
+gpt_entity_particular(): entity list: 
+ ['University of Königsberg', 'Marxism, positivism, phenomenology', 'Immanuel Kant', 'Kantianism theory', 'Central Federal District', "Kant's professional place", 'Republic of Crimea and Sevastopol', 'Vladimir Putin']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Southern Federal District' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Southern Federal District
+Sevastopol
+Republic of Crimea
+Ukraine
+Pontic–Caspian steppe of Southern Russia
+Azov Sea
+Crimean Federal District
+Caspian Sea
+Black Sea
+
+gpt_entity_particular(): entity list: 
+ ['Caspian Sea', 'Crimean Federal District', 'Republic of Crimea', 'Southern Federal District', 'Black Sea', 'Sevastopol', 'Ukraine', 'Azov Sea', 'Pontic–Caspian steppe of Southern Russia']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kaliningrad
+University of Königsberg
+Soviet Union
+Kaliningrad
+Lithuania
+Poland
+Kaliningrad
+Kaliningrad
+Leonid Brezhnev's
+Allied bombing
+German Confederation
+Seven Years' War
+Russian
+Azov Sea
+Kaliningrad
+Leonid Brezhnev's
+Mikhail Kalinin
+Germany
+Baltic Sea
+Kaliningrad
+Kant Society
+Russian military format
+North German Confederation
+Northwestern Federal District
+Leonid Brezhnev's
+Königsberg
+
+gpt_entity_particular(): entity list: 
+ ['Kant Society', 'Russian', 'North German Confederation', 'Germany', 'Russian military format', 'Lithuania', 'Königsberg', 'Allied bombing', 'German Confederation', 'Poland', 'Baltic Sea', 'Kaliningrad', 'Soviet Union', 'Azov Sea', 'University of Königsberg', "Seven Years' War", "Leonid Brezhnev's", 'Mikhail Kalinin', 'Northwestern Federal District']
+
+gpt_entity_particular(): filtered entity: 
+ ['Königsberg']
+After GPT, entity:  {'Russia', 'Azov', 'Sweden', 'Far', 'Professor', 'Johann', 'Logic', 'Vladivostok', 'Northwestern', 'Wendt', 'Lithuania', 'Königsberg', 'Central', 'Sea', 'Anna', 'Magas', 'North', 'Wheel', 'Hegel', 'Union', 'Society', 'Carl', 'Immanuel', 'Metaphysics', 'Kalinin', 'Putin', 'republican', 'Soviet', 'Jean', 'Federal', 'Kant', 'Squeaky', 'Reinhold,', 'University', 'Mikhail', 'Alexander', 'Habermas', 'Germany', "Brezhnev's", "Kant's", 'Vladimir', 'Piaget', 'Gustav', 'Southern', 'Full', 'Novalis', 'Rawls', 'Khabarovsk', 'Confederation', 'Black', 'Georg', 'Autonomous', 'Rostov', 'German', 'Baltic', 'Leonid', 'Regina', 'Samuel', 'Eastern', 'Jung', 'Anadyr,', 'Poland', 'Chukotka', 'Kaliningrad', 'Jürgen', 'Reuter', "Wendt's", 'Crimea', 'District', 'Caspian', 'Fichte', 'Okrug', 'Ukraine', 'Taylor', 'John'}
+Total time:  181.12506556510925
+Entity conversion done on 1_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_3_entity_conversion_hash.json. Check the entity.
+ What 02E 00F would you be in if you were visiting the burial place of philosopher 01F Kant?
+
+
+
+Done. Check final_query/id_1_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/1_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

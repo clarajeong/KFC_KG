@@ -1,0 +1,70 @@
+Got argument: Immanuel Kant, 4, 4_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop:  {'triplet': '("Lithuania", "northern border of", "Kaliningrad Oblast")', 'start word': 'Kaliningrad', 'end word': 'Lithuania', 'source': {'name': 'Königsberg', 'line': 31}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'lithuania'}}
+
+utils/question.py extract_hops(Lithuania, [], ['Immanuel Kant', 'Kaliningrad']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Lithuania_info.json file
+third_hop:  {'triplet': '("Lithuania", "was part of", "the larger state of Poland-Lithuania")', 'start word': 'Lithuania', 'end word': 'Poland', 'source': {'name': 'Lithuania', 'line': 45}, 'cpnet': {'start word': 'lithuania', 'end word': 'poland'}}
+
+utils/question.py extract_hops(Poland, [], ['Immanuel Kant', 'Kaliningrad', 'Lithuania']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Poland_info.json file
+extract_info(Poland) Start.
+utils/preprocess.py extract_info(): Checking good links on Poland
+Baltic Sea is Geography
+1 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Sudetes is Geography
+2 / 30 )  Sudetes Sudetes sudetes
+Carpathian Mountains is Geography
+3 / 30 )  Carpathian Mountains Carpathian Mountains carpathian_mountains
+Vistula is Geography
+4 / 30 )  Vistula Vistula vistula
+Lithuania is Geography
+5 / 30 )  Lithuania Lithuania lithuania
+Russia is Geography
+6 / 30 )  Russia Russia russia
+Belarus is Geography
+7 / 30 )  Belarus Belarus belarus
+Ukraine is Geography
+8 / 30 )  Ukraine Ukraine ukraine
+Slovakia is Geography
+9 / 30 )  Slovakia Slovakia slovakia
+Czech Republic is Geography
+10 / 30 )  Czech Republic Czech Republic czech_republic
+Germany is Geography
+11 / 30 )  Germany Germany germany
+Warsaw is Geography
+12 / 30 )  Warsaw Warsaw warsaw
+Kraków is Geography
+13 / 30 )  Kraków Kraków kraków
+Wrocław is Geography
+14 / 30 )  Wrocław Wrocław wrocław
+Łódź is Geography
+15 / 30 )  Łódź Łódź łódź
+Poznań is Geography
+16 / 30 )  Poznań Poznań poznań
+Gdańsk is Geography
+17 / 30 )  Gdańsk Gdańsk gdańsk
+Nazi Germany is Geography
+18 / 30 )  Germany Nazi Germany nazi_germany
+Soviet Union is Geography
+19 / 30 )  Soviet Union Soviet Union soviet_union
+Polish People's Republic is Geography
+20 / 30 )  Polish People's Republic Polish People's Republic polish_people's_republic
+Sejm is Geography
+21 / 30 )  Sejm Sejm sejm
+World Trade Organization is Geography
+22 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+Warta is Geography
+23 / 30 )  Warta River Warta warta
+Homo erectus is Animal
+24 / 30 )  Homo erectus Homo erectus homo_erectus
+Human is Animal
+25 / 30 )  Homo sapiens Human human
+Kuyavia is Geography
+26 / 30 )  Kuyavia Kuyavia kujawy

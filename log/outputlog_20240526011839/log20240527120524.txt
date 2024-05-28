@@ -1,0 +1,2514 @@
+Got argument: Julius Caesar, 2, 2_13, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Julius Caesar, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Julius_Caesar_info.json file
+first_hop:  {'triplet': '("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")', 'start word': 'Julius Caesar', 'end word': 'Augustus', 'source': {'name': 'Augustus', 'line': 36}, 'cpnet': {'start word': 'julius_caesar', 'end word': 'augustus'}}
+
+utils/question.py extract_hops(Augustus, [], ['Julius Caesar']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Augustus_info.json file
+second_hop:  {'triplet': '("Augustus", "made peace with", "Parthian Empire")', 'start word': 'Augustus', 'end word': 'Parthian Empire', 'source': {'name': 'Augustus', 'line': 12}, 'cpnet': {'start word': 'augustus', 'end word': 'parthian_empire'}}
+
+utils/question.py extract_hops(Parthian Empire, [], ['Julius Caesar', 'Augustus']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Parthian_Empire_info.json file
+extract_info(Parthian Empire) Start.
+utils/preprocess.py extract_info(): Checking good links on Parthian Empire
+Iranian peoples is Geography
+1 / 30 )  Iranian Iranian peoples iranic
+Iran is Geography
+2 / 30 )  Iran Iran iran
+Euphrates is Geography
+3 / 30 )  Euphrates Euphrates euphrates
+Afghanistan is Geography
+4 / 30 )  Afghanistan Afghanistan afghanistan
+Nisa, Turkmenistan is Geography
+5 / 30 )  Nisa Nisa, Turkmenistan mithradatkirt
+Ctesiphon is Geography
+6 / 30 )  Ctesiphon Ctesiphon ctesiphon
+Tigris is Geography
+7 / 30 )  Tigris Tigris tigris
+Marcus Licinius Crassus is People
+8 / 30 )  Marcus Licinius Crassus Marcus Licinius Crassus crassus
+Tyre, Lebanon is Geography
+9 / 30 )  Tyre Tyre, Lebanon tyros
+Mark Antony is People
+10 / 30 )  Mark Antony Mark Antony mark_antony
+Seleucia is Geography
+11 / 30 )  Seleucia Seleucia seleucia
+Istakhr is Geography
+12 / 30 )  Istakhr Istakhr istakhr
+Artaxerxes II is People
+13 / 30 )  Artaxerxes II of Persia Artaxerxes II artaxerxes_ii
+Cyrus the Great is People
+14 / 30 )  Cyrus the Great Cyrus the Great cyrus_ii
+Ecbatana is Geography
+15 / 30 )  Ecbatana Ecbatana ecbatana
+Susa is Geography
+16 / 30 )  Susa Susa susa
+Indus River is Geography
+17 / 30 )  Indus River Indus River indus_river
+Qumis, Iran is Geography
+18 / 30 )  Hecatompylos Qumis, Iran hecatompylus
+Antioch is Geography
+19 / 30 )  Antioch Antioch antioch
+Gansu is Geography
+20 / 30 )  Gansu Gansu gansu
+Northwestern China is Geography
+21 / 30 )  Northwest China Northwestern China northwest_china
+Saka is Geography
+22 / 30 )  Saka Saka saka
+Sistan is Geography
+23 / 30 )  Sakastan Sistan sistan
+Charax Spasinu is Geography
+24 / 30 )  Charax Spasinu Charax Spasinu charax_spasinu
+Dura-Europos is Geography
+25 / 30 )  Dura-Europos Dura-Europos dura_europos
+Taxila is Geography
+26 / 30 )  Taxila Taxila taxila
+Zhang Qian is People
+27 / 30 )  Zhang Qian Zhang Qian zhang_qian
+Sogdia is Geography
+28 / 30 )  Sogdia Sogdia sogdians
+Sulla is People
+29 / 30 )  Lucius Cornelius Sulla Sulla sulla
+Cilicia is Geography
+30 / 30 )  Cilicia Cilicia cilicia
+extract_triplet(Parthian Empire)
+Got GPT's response. String length : 6515
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  [['Iran', 'Iran', 'iran']]
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  [['Euphrates', 'Euphrates', 'euphrates'], ['Afghanistan', 'Afghanistan', 'afghanistan']]
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  []
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  [['Nisa', 'Nisa, Turkmenistan', 'mithradatkirt'], ['Ctesiphon', 'Ctesiphon', 'ctesiphon'], ['Tigris', 'Tigris', 'tigris']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Marcus Licinius Crassus', 'Marcus Licinius Crassus', 'crassus']]
+subject_words:  []
+object_words:  [['Tyre', 'Tyre, Lebanon', 'tyros']]
+subject_words:  [['Mark Antony', 'Mark Antony', 'mark_antony']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Artaxerxes II of Persia', 'Artaxerxes II', 'artaxerxes_ii']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Cyrus the Great', 'Cyrus the Great', 'cyrus_ii']]
+subject_words:  [['Saka', 'Saka', 'saka']]
+object_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Saka', 'Saka', 'saka'], ['Sakastan', 'Sistan', 'sistan']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+subject_words:  [['Zhang Qian', 'Zhang Qian', 'zhang_qian']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Lucius Cornelius Sulla', 'Sulla', 'sulla']]
+object_words:  [['Euphrates', 'Euphrates', 'euphrates']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Marcus Licinius Crassus', 'Marcus Licinius Crassus', 'crassus']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Antioch', 'Antioch', 'antioch']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Ctesiphon', 'Ctesiphon', 'ctesiphon'], ['Seleucia', 'Seleucia', 'seleucia']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+subject_words:  [(None, 'Parthian Empire', 'parthian_empire')]
+object_words:  [['Iranian', 'Iranian peoples', 'iranic']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+third_hop:  {'triplet': '("Parthian Empire", "shifted seat of central government from", "Nisa to Ctesiphon along the Tigris")', 'start word': 'Parthian Empire', 'end word': 'Tigris', 'source': {'name': 'Parthian Empire', 'line': 13}, 'cpnet': {'start word': 'parthian_empire', 'end word': 'tigris'}}
+generate_question(2_13, ['("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")', '("Augustus", "made peace with", "Parthian Empire")', '("Parthian Empire", "shifted seat of central government from", "Nisa to Ctesiphon along the Tigris")'], ['Augustus', 'Parthian Empire', 'Tigris'], [('Julius Caesar', 'Augustus'), ('Augustus', 'Parthian Empire'), ('Parthian Empire', 'Tigris')], Tigris, [{'name': 'Augustus', 'line': 36}, {'name': 'Augustus', 'line': 12}, {'name': 'Parthian Empire', 'line': 13}]) called
+GPT output is:  Q: Along which river did the empire, with which the person in military training in Apollonia during Julius Caesar's assassination made peace, move its central government seat from Nisa?
+A: Tigris
+final_choice(Tigris, options = 5) started
+[]
+entity_type(Tigris) called
+Tigris is Geography
+check_matchscore(Tigris, Landforms of Siirt Province):  0.0
+choose_by_wiki_recur(Landforms of Siirt Province)
+   Pages in Landforms of Siirt Province: ['Botan River', 'Tigris']
+   Upper category of Landforms of Siirt Province: ['Geography of Siirt Province', 'Landforms of Turkey by province']
+choose_by_wiki_recur(Geography of Siirt Province)
+check_matchscore(Tigris, Rivers in Mandaeism):  0.0
+choose_by_wiki_recur(Rivers in Mandaeism)
+   Pages in Rivers in Mandaeism: ['Yardna', 'Euphrates', 'Georges River', 'Guadalupe River (Texas)', 'Jarahi River', 'Jordan River', 'Karkheh River', 'Karun', 'Lake Quinsigamond', 'Nepean River', 'Piriawis', 'Quinsigamond River', 'Shatt al-Arab', 'Tigris']
+      Lake Quinsigamond in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates']
+      Yardna in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)']
+      Piriawis in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River']
+      Euphrates in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun']
+      Guadalupe River (Texas) in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun']
+      Nepean River in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun', 'Tigris']
+      Karun in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun', 'Tigris', 'Jordan River']
+      Tigris in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun', 'Tigris', 'Jordan River', 'Karkheh River']
+      Jordan River in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun', 'Tigris', 'Jordan River', 'Karkheh River', 'Jarahi River']
+      Karkheh River in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun', 'Tigris', 'Jordan River', 'Karkheh River', 'Jarahi River']
+      Jarahi River in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun', 'Tigris', 'Jordan River', 'Karkheh River', 'Jarahi River', 'Georges River']
+      Georges River in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun', 'Tigris', 'Jordan River', 'Karkheh River', 'Jarahi River', 'Georges River', 'Shatt al-Arab']
+      Shatt al-Arab in ['Lake Quinsigamond', 'Yardna', 'Piriawis', 'Euphrates', 'Guadalupe River (Texas)', 'Nepean River', 'Karun', 'Tigris', 'Jordan River', 'Karkheh River', 'Jarahi River', 'Georges River', 'Shatt al-Arab']
+   Upper category of Rivers in Mandaeism: ['Sacred rivers', 'Mandaeism']
+choose_by_wiki_recur(Sacred rivers)
+check_matchscore(Tigris, Geography of Iraqi Kurdistan):  0.0
+choose_by_wiki_recur(Geography of Iraqi Kurdistan)
+   Pages in Geography of Iraqi Kurdistan: ['Akre District', 'Amedi District', 'Badush Dam', 'Bahdinan', 'Barazger valley', 'Bekhme Dam', 'Byara District', 'Chamchamal District', 'Darbandikhan Dam', 'Darbandikhan District', 'Dokan District', 'Duhok Dam', 'Duhok Governorate', 'Erbil Governorate', 'Euphrates', 'Geli Ali Beg Waterfall', 'Great Zab', 'Halabja Governorate', 'Halgurd Sakran National Park', 'Ibrahim Khalil border crossing', 'Kalar District', 'Khabur (Tigris)', 'Khazir River', 'Khurmal District', 'Kifri District, Diyala Governorate', 'List of cities in Kurdistan Region', 'Little Zab', 'Mawat District', 'Musri', 'Nahla valley', 'Pshdar District', 'Qaladiza', 'Qandil Mountains', 'Qaradagh District', 'Ranya District', 'Sapna valley', 'Shahrizor', 'Sirwan River', 'Sulaymaniyah District', 'Sulaymaniyah Governorate', 'Takya, Kurdistan Region', 'Tigris', 'Zagros Mountains']
+      Shahrizor in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)']
+      Sirwan River in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District']
+      Darbandikhan District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region']
+      Khabur (Tigris) in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam']
+      Khurmal District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District']
+      List of cities in Kurdistan Region in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris']
+      Bekhme Dam in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District']
+      Ranya District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District']
+      Tigris in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam']
+      Chamchamal District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River']
+      Pshdar District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains']
+      Badush Dam in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District']
+      Khazir River in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region']
+      Zagros Mountains in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District']
+      Byara District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District']
+      Takya, Kurdistan Region in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates']
+      Sulaymaniyah District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District']
+      Euphrates in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab']
+      Kalar District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab']
+      Great Zab in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate']
+      Duhok Governorate in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District']
+      Qaradagh District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District']
+      Dokan District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate']
+      Sulaymaniyah Governorate in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab']
+      Little Zab in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate']
+      Kifri District, Diyala Governorate in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley']
+      Nahla valley in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District']
+      Amedi District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains']
+      Qandil Mountains in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley']
+      Barazger valley in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley']
+      Sapna valley in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate']
+      Erbil Governorate in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam']
+      Duhok Dam in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing']
+      Ibrahim Khalil border crossing in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate']
+      Halabja Governorate in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District']
+      Mawat District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District', 'Musri']
+      Musri in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District', 'Musri', 'Qaladiza']
+      Qaladiza in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District', 'Musri', 'Qaladiza', 'Halgurd Sakran National Park']
+      Halgurd Sakran National Park in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District', 'Musri', 'Qaladiza', 'Halgurd Sakran National Park', 'Darbandikhan Dam']
+      Darbandikhan Dam in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District', 'Musri', 'Qaladiza', 'Halgurd Sakran National Park', 'Darbandikhan Dam', 'Geli Ali Beg Waterfall']
+      Geli Ali Beg Waterfall in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District', 'Musri', 'Qaladiza', 'Halgurd Sakran National Park', 'Darbandikhan Dam', 'Geli Ali Beg Waterfall', 'Akre District']
+      Akre District in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District', 'Musri', 'Qaladiza', 'Halgurd Sakran National Park', 'Darbandikhan Dam', 'Geli Ali Beg Waterfall', 'Akre District', 'Bahdinan']
+      Bahdinan in ['Shahrizor', 'Sirwan River', 'Darbandikhan District', 'Khabur (Tigris)', 'Khurmal District', 'List of cities in Kurdistan Region', 'Bekhme Dam', 'Ranya District', 'Tigris', 'Chamchamal District', 'Pshdar District', 'Badush Dam', 'Khazir River', 'Zagros Mountains', 'Byara District', 'Takya, Kurdistan Region', 'Sulaymaniyah District', 'Euphrates', 'Kalar District', 'Great Zab', 'Duhok Governorate', 'Qaradagh District', 'Dokan District', 'Sulaymaniyah Governorate', 'Little Zab', 'Kifri District, Diyala Governorate', 'Nahla valley', 'Amedi District', 'Qandil Mountains', 'Barazger valley', 'Sapna valley', 'Erbil Governorate', 'Duhok Dam', 'Ibrahim Khalil border crossing', 'Halabja Governorate', 'Mawat District', 'Musri', 'Qaladiza', 'Halgurd Sakran National Park', 'Darbandikhan Dam', 'Geli Ali Beg Waterfall', 'Akre District', 'Bahdinan']
+   Upper category of Geography of Iraqi Kurdistan: ['Iraqi Kurdistan', 'Geography of Kurdistan']
+choose_by_wiki_recur(Iraqi Kurdistan)
+['Euphrates', 'Jordan River', 'Shatt al-Arab', 'Zagros Mountains', 'Euphrates']
+Ended after 2.5 hierarchy
+(2.5, ['Jordan River', 'Euphrates', 'Shatt al-Arab', 'Zagros Mountains'])
+
+extract_info(Shatt al-Arab) Start.
+utils/preprocess.py extract_info(): Checking good links on Shatt al-Arab
+Persian Gulf is Geography
+1 / 30 )  Persian Gulf Persian Gulf persian_gulf
+Basra is Geography
+2 / 30 )  Basra Basra basra
+Tigris is Geography
+3 / 30 )  Tigris Tigris tigris
+Euphrates is Geography
+4 / 30 )  Euphrates Euphrates euphrates
+Kuwait is Geography
+5 / 30 )  Kuwait Kuwait kuwait
+Date palm is Animal
+6 / 30 )  date palm Date palm date_palm
+United Kingdom is Geography
+7 / 30 )  British United Kingdom united_kingdom
+Turkey is Geography
+8 / 30 )  Turkey Turkey turkey
+Iran is Geography
+9 / 30 )  Persia Iran iran
+Istanbul is Geography
+10 / 30 )  Istanbul Istanbul istanbul
+Abadan, Iran is Geography
+11 / 30 )  Abadan Abadan, Iran abadan
+Khorramshahr is Geography
+12 / 30 )  Khorramshahr Khorramshahr khorramshahr
+Reza Shah is People
+13 / 30 )  Reza Shah Reza Shah mohammed_reza_pahlevi
+Mustafa Kemal Atatürk is People
+14 / 30 )  Mustafa Kemal Atatürk Mustafa Kemal Atatürk mustafa_kemal
+Mohammad Reza Pahlavi is People
+15 / 30 )  Mohammad Reza Pahlavi Mohammad Reza Pahlavi mohammed_reza_pahlevi
+Ba'athist Iraq is Geography
+16 / 30 )  Baathist Iraq Ba'athist Iraq saddamists
+Aqaba is Geography
+17 / 30 )  Aqaba Aqaba aqaba
+Jordan is Geography
+18 / 30 )  Jordan Jordan jordan
+extract_triplet(Shatt al-Arab)
+Got GPT's response. String length : 1514
+subject_words:  []
+object_words:  [['Tigris', 'Tigris', 'tigris'], ['Euphrates', 'Euphrates', 'euphrates']]
+subject_words:  []
+object_words:  [['Persian Gulf', 'Persian Gulf', 'persian_gulf']]
+subject_words:  []
+object_words:  [['Basra', 'Basra', 'basra']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['date palm', 'Date palm', 'date_palm']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Persia', 'Iran', 'iran']]
+object_words:  [['Mohammad Reza Pahlavi', 'Mohammad Reza Pahlavi', 'mohammed_reza_pahlevi']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Abadan', 'Abadan, Iran', 'abadan'], ['Khorramshahr', 'Khorramshahr', 'khorramshahr']]
+subject_words:  []
+object_words:  [['Basra', 'Basra', 'basra']]
+subject_words:  []
+object_words:  []
+subject_words:  [['British', 'United Kingdom', 'united_kingdom']]
+object_words:  []
+subject_words:  []
+object_words:  [['British', 'United Kingdom', 'united_kingdom']]
+subject_words:  []
+object_words:  []
+extract_info(Euphrates) Start.
+utils/preprocess.py extract_info(): Checking good links on Euphrates
+Tigris is Geography
+1 / 30 )  Tigris Tigris tigris
+Turkey is Geography
+2 / 30 )  Turkey Turkey turkey
+Syria is Geography
+3 / 30 )  Syria Syria syria
+Iraq is Geography
+4 / 30 )  Iraq Iraq iraq
+Shatt al-Arab is Geography
+5 / 30 )  Shatt al-Arab Shatt al-Arab shatt_al_arab
+Persian Gulf is Geography
+6 / 30 )  Persian Gulf Persian Gulf persian_gulf
+Nippur is Geography
+7 / 30 )  Nippur Nippur nippur
+Sippar is Geography
+8 / 30 )  Sippar Sippar sippar
+Murat River is Geography
+9 / 30 )  Murat Su Murat River aratsani
+Lake Van is Geography
+10 / 30 )  Lake Van Lake Van lake_van
+Birecik is Geography
+11 / 30 )  Birecik Birecik birecik
+Taurus Mountains is Geography
+12 / 30 )  Taurus Mountains Taurus Mountains taurus_mountains
+Gaziantep is Geography
+13 / 30 )  Gaziantep Gaziantep gaziantep
+Manbij is Geography
+14 / 30 )  Manbij Manbij manbij
+Raqqa is Geography
+15 / 30 )  Raqqa Raqqa raqqa
+Saudi Arabia is Geography
+16 / 30 )  Saudi Arabia Saudi Arabia saudi_arabia
+Kuwait is Geography
+17 / 30 )  Kuwait Kuwait kuwait
+Jordan is Geography
+18 / 30 )  Jordan Jordan jordan
+Oak is Animal
+19 / 30 )  oaks Oak oak
+Pistacia is Animal
+20 / 30 )  pistachio trees Pistacia pistacia
+Rosaceae is Animal
+21 / 30 )  Rosaceae Rosaceae rosaceae
+Einkorn wheat is Animal
+22 / 30 )  einkorn wheat Einkorn wheat einkorn_wheat
+Emmer is Animal
+23 / 30 )  emmer Emmer emmer
+Oat is Animal
+24 / 30 )  oat Oat oat
+Rye is Animal
+25 / 30 )  rye Rye rye
+Amaranthaceae is Animal
+26 / 30 )  Amaranthaceae Amaranthaceae amaranthaceae
+Sheep is Animal
+27 / 30 )  sheep Sheep sheep
+Goat is Animal
+28 / 30 )  goat Goat goat
+Poa is Animal
+29 / 30 )  Poa sinaica Poa poa
+Platanus orientalis is Animal
+30 / 30 )  Oriental plane Platanus orientalis platanus_orientalis
+extract_triplet(Euphrates)
+Got GPT's response. String length : 1461
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Turkey', 'Turkey', 'turkey']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Syria', 'Syria', 'syria']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Iraq', 'Iraq', 'iraq']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Tigris', 'Tigris', 'tigris']]
+subject_words:  [(None, 'Euphrates', 'euphrates'), ['Tigris', 'Tigris', 'tigris']]
+object_words:  []
+subject_words:  []
+object_words:  [['Persian Gulf', 'Persian Gulf', 'persian_gulf']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Turkey', 'Turkey', 'turkey']]
+subject_words:  [['Murat Su', 'Murat River', 'aratsani']]
+object_words:  [(None, 'Euphrates', 'euphrates')]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Murat Su', 'Murat River', 'aratsani']]
+subject_words:  [['Murat Su', 'Murat River', 'aratsani']]
+object_words:  [['Lake Van', 'Lake Van', 'lake_van']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Birecik', 'Birecik', 'birecik']]
+subject_words:  [['Murat Su', 'Murat River', 'aratsani']]
+object_words:  [['Taurus Mountains', 'Taurus Mountains', 'taurus_mountains']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Gaziantep', 'Gaziantep', 'gaziantep']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Manbij', 'Manbij', 'manbij']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Raqqa', 'Raqqa', 'raqqa']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Saudi Arabia', 'Saudi Arabia', 'saudi_arabia']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Kuwait', 'Kuwait', 'kuwait']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Jordan', 'Jordan', 'jordan']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['oaks', 'Oak', 'oak']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['pistachio trees', 'Pistacia', 'pistacia']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Rosaceae', 'Rosaceae', 'rosaceae']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['einkorn wheat', 'Einkorn wheat', 'einkorn_wheat']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['emmer', 'Emmer', 'emmer']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['oat', 'Oat', 'oat']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['rye', 'Rye', 'rye']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Amaranthaceae', 'Amaranthaceae', 'amaranthaceae']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['sheep', 'Sheep', 'sheep']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['goat', 'Goat', 'goat']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Poa sinaica', 'Poa', 'poa']]
+subject_words:  [(None, 'Euphrates', 'euphrates')]
+object_words:  [['Oriental plane', 'Platanus orientalis', 'platanus_orientalis']]
+extract_info(Zagros Mountains) Start.
+utils/preprocess.py extract_info(): Checking good links on Zagros Mountains
+Iran is Geography
+1 / 30 )  Iran Iran iran
+Iraq is Geography
+2 / 30 )  Iraq Iraq iraq
+Turkey is Geography
+3 / 30 )  Turkey Turkey turkey
+Persian Gulf is Geography
+4 / 30 )  Persian Gulf Persian Gulf persian_gulf
+Armenian highlands is Geography
+5 / 30 )  Armenian highlands Armenian highlands armenian_plateau
+Iranian Plateau is Geography
+6 / 30 )  Iranian plateau Iranian Plateau iranian_plateau
+Strait of Hormuz is Geography
+7 / 30 )  Strait of Hormuz Strait of Hormuz strait_of_hormuz
+Dena is Geography
+8 / 30 )  Dena Dena dena
+Miocene is Geography
+9 / 30 )  Miocene Miocene miocene
+Paleozoic is Geography
+10 / 30 )  Paleozoic Paleozoic paleozoic
+Cenozoic is Geography
+11 / 30 )  Cenozoic Cenozoic cenozoic
+Cretaceous is Geography
+12 / 30 )  Cretaceous Cretaceous cretaceous
+Eocene is Geography
+13 / 30 )  Eocene Eocene eocene
+Global Positioning System is Geography
+14 / 30 )  GPS Global Positioning System global_positioning_system
+Alborz is Geography
+15 / 30 )  Alborz Alborz alborz
+Kazerun is Geography
+16 / 30 )  Kazerun Kazerun kazerun
+Mesozoic is Geography
+17 / 30 )  Mesozoic Mesozoic mesozoic
+Triassic is Geography
+18 / 30 )  Triassic Triassic triassic
+Jurassic is Geography
+19 / 30 )  Jurassic Jurassic jurassic
+Paleogene is Geography
+20 / 30 )  Paleogene Paleogene paleogene
+Neogene is Geography
+21 / 30 )  Neogene Neogene neogene
+Alps is Geography
+22 / 30 )  Alps Alps alps
+Fars province is Geography
+23 / 30 )  Fars Province Fars province farsistan
+Topographic prominence is Geography
+24 / 30 )  topographic prominence Topographic prominence prominence
+Neanderthal is Animal
+25 / 30 )  Neanderthals Neanderthal neanderthal
+Susa is Geography
+26 / 30 )  Susa Susa susa
+Kalash people is Geography
+27 / 30 )  Kalash Kalash people kalashas
+Elam is Geography
+28 / 30 )  Elamites Elam elam
+Sumer is Geography
+29 / 30 )  Sumerian Sumer sumer
+Akkadian Empire is Geography
+30 / 30 )  Akkadian Akkadian Empire akkadian_empire
+extract_triplet(Zagros Mountains)
+Got GPT's response. String length : 2647
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  [['Turkey', 'Turkey', 'turkey']]
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  [['Iran', 'Iran', 'iran']]
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  [['Armenian highlands', 'Armenian highlands', 'armenian_plateau']]
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  [['Iranian plateau', 'Iranian Plateau', 'iranian_plateau']]
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  [['Strait of Hormuz', 'Strait of Hormuz', 'strait_of_hormuz']]
+subject_words:  [['Dena', 'Dena', 'dena']]
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Miocene', 'Miocene', 'miocene']]
+subject_words:  []
+object_words:  [['Paleozoic', 'Paleozoic', 'paleozoic'], ['Cenozoic', 'Cenozoic', 'cenozoic']]
+subject_words:  []
+object_words:  [['Cretaceous', 'Cretaceous', 'cretaceous']]
+subject_words:  []
+object_words:  [['Eocene', 'Eocene', 'eocene']]
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  []
+subject_words:  [['GPS', 'Global Positioning System', 'global_positioning_system']]
+object_words:  []
+subject_words:  [['Alborz', 'Alborz', 'alborz']]
+object_words:  [['GPS', 'Global Positioning System', 'global_positioning_system']]
+subject_words:  [['Kazerun', 'Kazerun', 'kazerun']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Mesozoic', 'Mesozoic', 'mesozoic']]
+object_words:  [['Cretaceous', 'Cretaceous', 'cretaceous']]
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  [['Alps', 'Alps', 'alps']]
+subject_words:  [['Fars Province', 'Fars province', 'farsistan']]
+object_words:  []
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  [['Neanderthals', 'Neanderthal', 'neanderthal']]
+subject_words:  []
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  [['Susa', 'Susa', 'susa']]
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  [['Kalash', 'Kalash people', 'kalashas']]
+object_words:  []
+subject_words:  [['Elamites', 'Elam', 'elam']]
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  [['Sumerian', 'Sumer', 'sumer'], ['Akkadian', 'Akkadian Empire', 'akkadian_empire']]
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  []
+subject_words:  [(None, 'Zagros Mountains', 'zagros')]
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  [['Dena', 'Dena', 'dena']]
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+subject_words:  []
+object_words:  [(None, 'Zagros Mountains', 'zagros')]
+extract_info(Jordan River) Start.
+utils/preprocess.py extract_info(): Checking good links on Jordan River
+Sea of Galilee is Geography
+1 / 30 )  Sea of Galilee Sea of Galilee sea_of_galilee
+Dead Sea is Geography
+2 / 30 )  Dead Sea Dead Sea dead_sea
+Jordan is Geography
+3 / 30 )  Jordan Jordan jordan
+Golan Heights is Geography
+4 / 30 )  Golan Heights Golan Heights golan_heights
+Israel is Geography
+5 / 30 )  Israel Israel israel
+West Bank is Geography
+6 / 30 )  West Bank West Bank west_bank
+Jesus is People
+7 / 30 )  Jesus of Nazareth Jesus jesus
+Mount Hermon is Geography
+8 / 30 )  Mount Hermon Mount Hermon hermon
+Banias is Geography
+9 / 30 )  Banias Banias banias
+s:Narrative Of The United States Expedition To The River Jordan And The Dead Sea is Geography
+10 / 30 )  Narrative of the United States' Expedition to the River Jordan and the Dead Sea s:Narrative Of The United States Expedition To The River Jordan And The Dead Sea jordan_river
+Syria is Geography
+11 / 30 )  Syria Syria syria
+Fish is Animal
+12 / 30 )  ichthyofauna Fish fish
+Cyprinidae is Animal
+13 / 30 )  cyprinids Cyprinidae cyprinidae
+Red garra is Animal
+14 / 30 )  red garra Red garra doctorfish
+Hillstream loach is Animal
+15 / 30 )  hillstream loaches Hillstream loach hillstream_loach
+Catfish is Animal
+16 / 30 )  catfish Catfish catfish
+Clarias gariepinus is Animal
+17 / 30 )  African sharptooth catfish Clarias gariepinus african_sharptooth_catfish
+Cichlid is Animal
+18 / 30 )  cichlids Cichlid cichlid
+Redbelly tilapia is Animal
+19 / 30 )  redbelly tilapia Redbelly tilapia redbelly_tilapia
+Mango tilapia is Animal
+20 / 30 )  mango tilapia Mango tilapia mango_tilapia
+Blenniiformes is Animal
+21 / 30 )  blennies Blenniiformes blennioid
+Freshwater blenny is Animal
+22 / 30 )  freshwater blenny Freshwater blenny freshwater_blenny
+Neanderthal is Animal
+23 / 30 )  Neanderthal Neanderthal neanderthal
+Eurasian carp is Animal
+24 / 30 )  common carp Eurasian carp european_carp
+Grass carp is Animal
+25 / 30 )  grass carp Grass carp grass_carp
+Black carp is Animal
+26 / 30 )  black carp Black carp black_carp
+Rainbow trout is Animal
+27 / 30 )  rainbow trout Rainbow trout rainbow_trout
+Nile tilapia is Animal
+28 / 30 )  Nile tilapia Nile tilapia nile_tilapia
+Flathead grey mullet is Animal
+29 / 30 )  sea mullet Flathead grey mullet flathead_grey_mullet
+Jericho is Geography
+30 / 30 )  Jericho Jericho jericho
+extract_triplet(Jordan River)
+Got GPT's response. String length : 1476
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Sea of Galilee', 'Sea of Galilee', 'sea_of_galilee']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Dead Sea', 'Dead Sea', 'dead_sea']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Jordan', 'Jordan', 'jordan']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Golan Heights', 'Golan Heights', 'golan_heights']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Israel', 'Israel', 'israel']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['West Bank', 'West Bank', 'west_bank']]
+subject_words:  [['Jesus of Nazareth', 'Jesus', 'jesus']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Mount Hermon', 'Mount Hermon', 'hermon']]
+subject_words:  []
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['Banias', 'Banias', 'banias']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Dead Sea', 'Dead Sea', 'dead_sea'], ['Jordan', 'Jordan', 'jordan'], ["Narrative of the United States' Expedition to the River Jordan and the Dead Sea", 's:Narrative Of The United States Expedition To The River Jordan And The Dead Sea', 'jordan_river']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Syria', 'Syria', 'syria']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['ichthyofauna', 'Fish', 'fish']]
+subject_words:  [['cyprinids', 'Cyprinidae', 'cyprinidae']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['red garra', 'Red garra', 'doctorfish']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['hillstream loaches', 'Hillstream loach', 'hillstream_loach']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['catfish', 'Catfish', 'catfish']]
+object_words:  [['catfish', 'Catfish', 'catfish'], ['African sharptooth catfish', 'Clarias gariepinus', 'african_sharptooth_catfish']]
+subject_words:  [['cichlids', 'Cichlid', 'cichlid']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['redbelly tilapia', 'Redbelly tilapia', 'redbelly_tilapia']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['mango tilapia', 'Mango tilapia', 'mango_tilapia']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['blennies', 'Blenniiformes', 'blennioid']]
+object_words:  [['freshwater blenny', 'Freshwater blenny', 'freshwater_blenny']]
+subject_words:  [['Neanderthal', 'Neanderthal', 'neanderthal']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['common carp', 'Eurasian carp', 'european_carp']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['grass carp', 'Grass carp', 'grass_carp']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['black carp', 'Black carp', 'black_carp']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['rainbow trout', 'Rainbow trout', 'rainbow_trout']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['Nile tilapia', 'Nile tilapia', 'nile_tilapia']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [['sea mullet', 'Flathead grey mullet', 'flathead_grey_mullet']]
+object_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+subject_words:  [(None, 'Jordan River', 'jordan_river'), ['Jordan', 'Jordan', 'jordan']]
+object_words:  [['Jericho', 'Jericho', 'jericho']]
+['("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")\n', '("Augustus", "made peace with", "Parthian Empire")\n', '("Parthian Empire", "shifted seat of central government from", "Nisa to Ctesiphon along the Tigris")\n']
+
+['("Augustus", "founded", "Roman Empire")\n', '("Augustus", "reigned as", "first Roman emperor")\n', '("Augustus", "established", "imperial cult")\n', '("Augustus", "initiated", "Pax Romana")\n', '("Augustus", "established", "Principate government system")\n', '("Augustus", "named in will as heir of", "Julius Caesar")\n', '("Augustus, Mark Antony, Marcus Lepidus", "formed", "Second Triumvirate")\n', '("Augustus, Mark Antony, Marcus Lepidus", "defeated", "assassins of Julius Caesar at Battle of Philippi")\n', '("Augustus", "enlarged", "Roman Empire")\n', '("Augustus", "annexed", "Egypt, Pannonia, Raetia, and others")\n', '("Augustus", "suffered", "a major setback in Germania")\n', '("Augustus", "made peace with", "Parthian Empire")\n', '("Augustus", "reformed", "Roman taxation system")\n', '("Augustus", "established", "police and fire-fighting services for Rome")\n', '("Augustus", "rebuilt much of", "Rome")\n', '("Augustus", "died of", "natural causes")\n', '("Livia", "rumored to have poisoned", "Augustus")\n', '("Tiberius", "succeeded as emperor", "Augustus")\n', '("Augustus", "born in", "Rome")\n', '("Augustus", "family originated from", "Velletri")\n', '("Augustus\'s residence during birth", "was", "Palatine Hill near Roman Forum")\n', '("Augustus", "received cognomen Thurinus at", "age of toddler")\n', '("Augustus", "was adopted by", "Julius Caesar in his will")\n', '("Augustus", "took name", "Gaius Julius Caesar after adoption")\n', '("Augustus", "had coins and inscriptions refer to as", "Imperator Caesar")\n', '("Augustus", "granted title Augustus by", "Roman Senate")\n', '("Augustus", "also known as", "Octavian")\n', '("Augustus", "had a series of names throughout life including", "Gaius Octavius, Thurinus, Caesar, and Augustus")\n', '("Augustus", "family was of equestrian rank", "paternal side")\n', '("Augustus", "family was plebeian gens Octavia", "maternal side")\n', '("Augustus\'s father", "was governor of", "Macedonia")\n', '("Augustus\'s mother", "was niece of", "Julius Caesar")\n', '("Augustus", "raised by", "his grandmother Julia after father\'s death")\n', '("Augustus", "became member of", "College of Pontiffs")\n', '("Augustus", "participated in Greek games for", "Temple of Venus Genetrix")\n', '("Augustus", "learned of Caesar\'s assassination at", "Apollonia")\n', '("Augustus", "sailed to", "Italy after caesar\'s assassination")\n', '("Augustus", "came ashore at", "Lupiae near Brundisium")\n', '("Mark Antony", "attempted to pass laws for province of", "Cisalpine Gaul")\n', '("Mark Antony", "besieged", "Decimus Junius Brutus in Mutina")\n', '("Octavian", "defeated", "Mark Antony at battles Forum Gallorum and Mutina")\n', '("Octavian", "shared his first acclamation as imperator after", "battle victories against Antony")\n', '("Marcus Tullius Cicero", "attacked", "Mark Antony in speeches")\n', '("Marcus Tullius Cicero", "defended", "Octavian against Antony")\n', '("Marcus Junius Brutus, Gaius Cassius Longinus", "defeated by", "Second Triumvirate army at Philippi")\n', '("Antony, Octavian", "divided territories of Roman Republic after", "Battle of Philippi")\n', '("Marcus Vipsanius Agrippa", "credited with", "victories at battles where Gaius and Lucius led")\n', '("Gaius Julius Caesar Augustus", "reigned as", "emperor of Rome")\n', '("Augustus", "restored the facade of the free republic", "after demise of the Second Triumvirate")\n', '("Augustus", "built", "Ara Pacis")\n', '("Augustus", "was granted", "tribunician power")\n', '("Augustus", "held position of", "pontifex maximus after Lepidus\'s death")\n', '("Augustus", "assumed title of", "pater patriae")\n', '("Augustus", "founded", "Roman Empire")\n', '("Augustus", "reigned as", "first Roman emperor")\n', '("Augustus", "established", "imperial cult")\n', '("Augustus", "initiated", "Pax Romana")\n', '("Augustus", "established", "Principate government system")\n', '("Augustus", "named in will as heir of", "Julius Caesar")\n', '("Augustus, Mark Antony, Marcus Lepidus", "formed", "Second Triumvirate")\n', '("Augustus, Mark Antony, Marcus Lepidus", "defeated", "assassins of Julius Caesar at Battle of Philippi")\n', '("Augustus", "enlarged", "Roman Empire")\n', '("Augustus", "annexed", "Egypt, Pannonia, Raetia, and others")\n', '("Augustus", "suffered", "a major setback in Germania")\n', '("Augustus", "reformed", "Roman taxation system")\n', '("Augustus", "established", "police and fire-fighting services for Rome")\n', '("Augustus", "rebuilt much of", "Rome")\n', '("Augustus", "died of", "natural causes")\n', '("Livia", "rumored to have poisoned", "Augustus")\n', '("Tiberius", "succeeded as emperor", "Augustus")\n', '("Augustus", "born in", "Rome")\n', '("Augustus", "family originated from", "Velletri")\n', '("Augustus\'s residence during birth", "was", "Palatine Hill near Roman Forum")\n', '("Augustus", "received cognomen Thurinus at", "age of toddler")\n', '("Augustus", "was adopted by", "Julius Caesar in his will")\n', '("Augustus", "took name", "Gaius Julius Caesar after adoption")\n', '("Augustus", "had coins and inscriptions refer to as", "Imperator Caesar")\n', '("Augustus", "granted title Augustus by", "Roman Senate")\n', '("Augustus", "also known as", "Octavian")\n', '("Augustus", "had a series of names throughout life including", "Gaius Octavius, Thurinus, Caesar, and Augustus")\n', '("Augustus", "family was of equestrian rank", "paternal side")\n', '("Augustus", "family was plebeian gens Octavia", "maternal side")\n', '("Augustus\'s father", "was governor of", "Macedonia")\n', '("Augustus\'s mother", "was niece of", "Julius Caesar")\n', '("Augustus", "raised by", "his grandmother Julia after father\'s death")\n', '("Augustus", "became member of", "College of Pontiffs")\n', '("Augustus", "participated in Greek games for", "Temple of Venus Genetrix")\n', '("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")\n', '("Augustus", "learned of Caesar\'s assassination at", "Apollonia")\n', '("Augustus", "sailed to", "Italy after caesar\'s assassination")\n', '("Augustus", "came ashore at", "Lupiae near Brundisium")\n', '("Mark Antony", "attempted to pass laws for province of", "Cisalpine Gaul")\n', '("Mark Antony", "besieged", "Decimus Junius Brutus in Mutina")\n', '("Octavian", "defeated", "Mark Antony at battles Forum Gallorum and Mutina")\n', '("Octavian", "shared his first acclamation as imperator after", "battle victories against Antony")\n', '("Marcus Tullius Cicero", "attacked", "Mark Antony in speeches")\n', '("Marcus Tullius Cicero", "defended", "Octavian against Antony")\n', '("Marcus Junius Brutus, Gaius Cassius Longinus", "defeated by", "Second Triumvirate army at Philippi")\n', '("Antony, Octavian", "divided territories of Roman Republic after", "Battle of Philippi")\n', '("Marcus Vipsanius Agrippa", "credited with", "victories at battles where Gaius and Lucius led")\n', '("Gaius Julius Caesar Augustus", "reigned as", "emperor of Rome")\n', '("Augustus", "restored the facade of the free republic", "after demise of the Second Triumvirate")\n', '("Augustus", "built", "Ara Pacis")\n', '("Augustus", "was granted", "tribunician power")\n', '("Augustus", "held position of", "pontifex maximus after Lepidus\'s death")\n', '("Augustus", "assumed title of", "pater patriae")\n', '("Parthian Empire", "centered in", "ancient Iran")\n', '("Parthian Empire", "also known as", "Arsacid Empire")\n', '("Arsaces I", "led", "Parni tribe")\n', '("Arsaces I", "conquered", "Parthia in Iran\'s northeast")\n', '("Mithridates I", "expanded the empire by seizing", "Media and Mesopotamia")\n', '("Parthian Empire", "stretched from", "Euphrates to present-day Afghanistan and western Pakistan")\n', '("Parthian Empire", "located on", "Silk Road trade route")\n', '("Parthian Empire", "became center of trade and commerce between", "Roman Empire and Han dynasty of China")\n', '("Parthians", "adopted the art, architecture, religious beliefs, and royal insignia of", "their culturally heterogeneous empire")\n', '("Arsacid rulers", "styled themselves as the", "King of Kings")\n', '("Arsacid rulers", "accepted many local kings as", "vassals")\n', '("Arsacids", "appointed", "satraps")\n', '("Parthians", "fought early enemies", "Seleucids in the west and Scythians in the north")\n', '("Parthians", "competed with", "Rome to establish the kings of Armenia as their subordinate clients")\n', '("Parthians", "destroyed army of", "Marcus Licinius Crassus at the Battle of Carrhae")\n', '("Parthian forces", "captured Levant except", "Tyre from the Romans")\n', '("Mark Antony", "led", "Roman counterattack")\n', '("Roman emperors", "invaded", "Mesopotamia in the Roman–Parthian Wars")\n', '("Parthian power", "evaporated when", "Ardashir I established the Sasanian Empire")\n', '("Arsacid dynasty", "lived on through branches in", "Armenia, Iberia, and Albania in the Caucasus")\n', '("Parthian history", "known through", "Greek and Roman histories, Chinese histories")\n', '("Parthian artwork", "considered as a source for", "understanding aspects of society and culture")\n', '("Arsaces I", "founded", "the Arsacid dynasty")\n', '("Parni tribe", "part of", "Dahae confederation")\n', '("Arsaces I", "succeeded by", "Tiridates I of Parthia")\n', '("Arsaces II of Parthia", "immediate successor of", "Arsaces I")\n', '("Parthians", "fictitiously claimed descent from", "Artaxerxes II of Persia")\n', '("Arsaces I", "consolidated position by taking advantage of", "invasion of Seleucid territory by Ptolemy III")\n', '("Arsaces I", "temporarily driven from Parthia by", "Seleucus II Callinicus")\n', '("Arsaces I", "recaptured", "Parthia")\n', '("Antiochus III", "launched campaign to retake", "Parthia and Bactria")\n', '("Arsaces II", "granted title of king in return for", "submission to Antiochus III")\n', '("Phraates I", "ruled Parthia without", "further Seleucid interference")\n', '("Mithridates I", "compared to", "Cyrus the Great")\n', '("Saka tribes", "forced westward, invaded", "Parthian Empire\'s northeastern borders")\n', '("Parthian territories", "included", "Apamea Ragiana")\n', '("Mithridates II", "recovered lands from", "Saka in Sakastan")\n', '("Hyspaosines", "invaded", "Babylonia")\n', '("Mithridates II", "forced Hyspaosines out of", "Babylonia")\n', '("Parthian governor of Babylonia", "ordered", "conquer Characene")\n', '("Parthians", "defeated and deposed", "Artavasdes I of Armenia")\n', '("Indo-Parthian Kingdom", "formed alliance with", "Parthian Empire")\n', '("Zhang Qian", "diplomatic venture into", "Central Asia")\n', '("Han Empire", "established official trade relations with", "Parthia")\n', '("Parthian Empire", "enriched by taxing", "Eurasian caravan trade in silk")\n', '("Sogdians", "served as middlemen in silk trade between", "Parthia and Han China")\n', '("Lucius Cornelius Sulla", "agreed with Parthian diplomat that", "Euphrates would serve as border between Parthia and Rome")\n', '("Parthians", "aided inhabitants of Beroea against", "Demetrius III Eucaerus")\n', '("Phraates III", "reaffirmed Euphrates as boundary with", "Lucullus")\n', '("Phraates III", "invaded", "Corduene")\n', '("Parthian civil war", "between", "Orodes II of Parthia and Mithridates IV of Parthia")\n', '("Marcus Licinius Crassus", "invaded", "Parthia")\n', '("Surena", "defeated", "Crassus\' forces")\n', '("Pacorus I", "raided Syria up to", "Antioch")\n', '("Parthians", "sided with", "Pompey against Julius Caesar")\n', '("Labienus", "invaded Syria alongside", "Pacorus I")\n', '("Pacorus I", "occupied", "Roman Levant")\n', '("Ventidius", "defeated Parthian force in Syria led by", "general Pharnapates")\n', '("Phraates IV", "eliminated rivals by killing", "his own brothers")\n', '("Monaeses", "fled to", "Antony and persuaded him to invade Parthia")\n', '("Antony", "invaded Media Atropatene", "intended to seize Praaspa")\n', '("Antony", "abandoned alliance with", "Artavasdes I of Media Atropatene")\n', '("Octavian", "consolidated power, became", "Augustus")\n', '("Anilai and Asinai", "led revolt against Parthian governor of", "Babylonia")\n', '("Tiberius", "involved in plot to place", "Mithridates on throne of Armenia")\n', '("Artabanus II", "forced to flee to", "Scythia")\n', '("Meherdates", "betrayed by governor of Edessa and", "Izates bar Monobaz of Adiabene")\n', '("Gan Ying", "sent by Ban Chao", "on diplomatic mission to Roman Empire")\n', '("Osroes I", "deposed", "Armenian king Sanatruk")\n', '("Vologases IV", "ushered in", "period of peace and stability")\n', '("Vologases V", "retook Edessa from", "Romans")\n', '("Avidius Cassius", "captured and burnt", "Seleucia and Ctesiphon")\n', '("Septimius Severus", "invaded", "Mesopotamia")\n', '("Vologases VI", "took throne, brother Artabanus IV", "rebelled against him")\n', '("Caracalla", "made war on", "Parthia after marriage disallowed")\n', '("Caracalla", "assassinated on road to", "Carrhae")\n', '("Macrinus", "made settlement with", "Parthians")\n', '("Ardashir I", "fought Artabanus IV at", "Battle of Hormozdgān")\n', '("Parthian Empire", "replaced by", "Sasanian Empire")\n', '("Parthian history", "constructed from local and foreign", "written accounts and artifacts")\n', '("Parthian currency", "standard was", "Greek drachma")\n', '("Parthian nobleman", "depicted in typical riding outfit", "in Shami statue")\n', '("Parthian architecture", "noted feature was", "iwan")\n', '("Parthian kings", "wore", "trouser-suit")\n', '("Parthian women", "depicted wearing", "long-sleeved dresses with jewelry and veiled headdresses")\n', '("Musa of Parthia", "reigned as", "queen regnant of the Parthian Empire")\n', '("Parthian Empire", "featured variety of religious systems including", "Greek and Iranian cults")\n', '("Parthian art combined", "elements of Greek and Iranian art", "in distinct styles")\n', '("Parthian language not written down until", "Sassanian period", "but was used orally with music")\n', '("Parthian women had position", "similar to predecessors in Achaemenid Empire", "and successors in Sasanian Empire")\n', '("Shatt al-Arab", "is formed at the confluence of", "the Euphrates and Tigris rivers")\n', '("Shatt al-Arab", "discharges into", "the Persian Gulf")\n', '("The width of Shatt al-Arab", "varies from about at", "Basra")\n', '("Kuwait\'s", "Bubiyan Island is part of", "Shatt al-Arab delta")\n', '("The Karun", "deposits silt into", "Shatt al-Arab")\n', '("The Shatt al-Arab region", "used to hold the largest", "date palm forest in the world")\n', '("Dispute over", "Shatt al-Arab occurred during", "Ottoman-Safavid era")\n', '("Shatt al-Arab", "was regained by", "Safavids under king Abbas I")\n', '("Shatt al-Arab", "was ceded to the Ottomans with", "the Treaty of Zuhab")\n', '("Iranian control over", "Shatt al-Arab was restored by", "Nader Shah")\n', '("Iran", "stopped paying tolls to", "Iraq under Shah Mohammad Reza Pahlavi")\n', '("Iraq\'s shipping lanes", "were affected by", "Iranian attacks")\n', '("Iranian cities", "such as", "Abadan and Khorramshahr are situated along Shatt al-Arab")\n', '("Iraqi cities", "such as", "Basra and Al-Faw are situated along Shatt al-Arab")\n', '("The UK", "was tasked to patrol", "Shatt al-Arab after the end of the Iraq War")\n', '("British Royal Marines", "captured key oil installations and shipping docks at", "Umm Qasr on the al-Faw peninsula")\n', '("Iraqi naval units", "were trained by", "British forces")\n', '("Shatt al-Arab", "is known in Iran as", "Arvand Rud")\n', '("Euphrates", "flows through", "Turkey")\n', '("Euphrates", "flows through", "Syria")\n', '("Euphrates", "flows through", "Iraq")\n', '("Euphrates", "joins", "Tigris")\n', '("Euphrates and Tigris", "join in", "Shatt al-Arab")\n', '("Shatt al-Arab", "empties into", "Persian Gulf")\n', '("Euphrates", "originates in", "Turkey")\n', '("Murat Su", "forms", "Euphrates")\n', '("Euphrates", "emerges from", "Murat Su and Kara Su")\n', '("Kara Su and Murat Su", "rise from", "Lake Van")\n', '("Euphrates", "passes", "Birecik")\n', '("Kara Su and Murat Su", "rise in", "Taurus Mountains")\n', '("Euphrates", "flows by", "Gaziantep")\n', '("Euphrates", "flows by", "Manbij")\n', '("Euphrates", "flows by", "Raqqa")\n', '("Euphrates", "drainage area covers", "Saudi Arabia")\n', '("Euphrates", "drainage area covers", "Kuwait")\n', '("Euphrates", "drainage area covers", "Jordan")\n', '("Euphrates basin", "supports", "oaks")\n', '("Euphrates basin", "supports", "pistachio trees")\n', '("Euphrates basin", "supports", "Rosaceae")\n', '("Euphrates basin", "original vegetation includes", "einkorn wheat")\n', '("Euphrates basin", "original vegetation includes", "emmer")\n', '("Euphrates basin", "original vegetation includes", "oat")\n', '("Euphrates basin", "original vegetation includes", "rye")\n', '("Steppe around Euphrates", "characterised by", "Amaranthaceae")\n', '("Euphrates region", "practiced pastoralism with", "sheep")\n', '("Euphrates region", "practiced pastoralism with", "goat")\n', '("Euphrates region", "contains", "Poa sinaica")\n', '("Euphrates riverine forest", "includes", "Oriental plane")\n', '("Zagros Mountains", "span across", "Iran, northern Iraq, and southeastern Turkey")\n', '("Zagros Mountains", "begin in", "northwestern Iran")\n', '("Zagros Mountains", "include", "the Armenian highlands")\n', '("Zagros Mountains", "cover", "the Iranian plateau")\n', '("Zagros Mountains", "end at", "the Strait of Hormuz")\n', '("Mount Dena", "is the highest point of", "Zagros Mountains")\n', '("Zagros fold and thrust belt", "formed by the collision of", "the Eurasian Plate and the Arabian Plate")\n', '("Collision", "happened during", "Miocene")\n', '("Rocks", "deposited from", "Paleozoic to Cenozoic")\n', '("Neotethys oceanic crust", "obducted during", "Cretaceous")\n', '("Continental arc collision", "happened in", "Eocene")\n', '("Zagros Mountains", "are getting higher due to", "the collision of Arabian and Eurasian Plates")\n', '("GPS", "used to measure deformation within", "Zagros")\n', '("Alborz and Zagros", "show high rate of deformation according to", "GPS")\n', '("Kazerun fault", "divides", "Zagros into two distinct zones of deformation")\n', '("Sedimentary rocks", "formed the linear ridges of", "Zagros Mountains")\n', '("Zagros region", "is an important area for", "oil production")\n', '("Topography on either side of the", "Kazerun fault", "differs")\n', '("Mesozoic rocks", "surrounded by", "Cretaceous rocks")\n', '("Zagros Mountains", "have orogenically same age as", "Alps")\n', '("Fars Province", "contains limestone rocks with marine fossils", "in the southern Zagros ranges")\n', '("Zagros Mountains", "inhabited by", "Neanderthals")\n', '("Shanidar Cave, Bisitun Cave, and Wezmeh Cave", "are locations where Neanderthal fossils were found in", "Zagros Mountains")\n', '("Susa", "is an ancient city located in the", "Zagros Mountains")\n', '("Kalash", "are genetically similar to a Neolithic Iranian from", "Wezmeh Cave")\n', '("Elamites and Mitanni", "inhabited", "Zagros Mountains")\n', '("Sumerian and/or Akkadian cities", "were invaded by peoples from", "Zagros Mountains")\n', '("Zagros mountains", "defend", "Kurds through its geography")\n', '("Shiraz", "is a major city on the foothills of", "Zagros mountains")\n', '("Lurs", "inhabit Central, Western, and Southern", "Zagros")\n', '("Bakhtiari Lurs", "practice nomadic pastoralism in", "Zagros")\n', '("Climate in Zagros Mountains", "has a continental variation of", "Mediterranean climate pattern")\n', '("Zagros Mountains forest steppe", "is an ecoregion in", "the Zagros Mountains")\n', '("Dena", "still has glaciers in", "Zagros Mountains")\n', '("Persian fallow deer", "rediscovered in", "southern Zagros")\n', '("Asiatic lion", "was once found in", "southwestern Zagros Mountains")\n', '("Luristan newt", "endemic to", "central Zagros Mountains")\n', '("Jordan River", "flows north to south through", "Sea of Galilee")\n', '("Jordan River", "flows into", "Dead Sea")\n', '("Jordan River", "passes by", "Jordan")\n', '("Jordan River", "borders", "Golan Heights")\n', '("Jordan River", "borders", "Israel")\n', '("Jordan River", "borders", "West Bank")\n', '("Jesus of Nazareth", "was baptized in", "Jordan River")\n', '("Jordan River", "originates from", "Mount Hermon")\n', '("Dan River", "merges into", "Jordan River")\n', '("Banias", "flows into", "Jordan River")\n', '("Jordan River", "was subject of", "Narrative of the United States\' Expedition to the River Jordan and the Dead Sea")\n', '("Jordan River", "passes by", "Syria")\n', '("Jordan River basin", "is habitat for", "ichthyofauna")\n', '("cyprinids", "found in", "Jordan River")\n', '("red garra", "native to", "Jordan River")\n', '("hillstream loaches", "native to", "Jordan River")\n', '("catfish", "such as", "African sharptooth catfish")\n', '("cichlids", "found in", "Jordan River")\n', '("redbelly tilapia", "species in", "Jordan River")\n', '("mango tilapia", "species in", "Jordan River")\n', '("blennies", "such as", "freshwater blenny")\n', '("Neanderthal", "possibly fed on", "Jordan River species")\n', '("common carp", "introduced species in", "Jordan River")\n', '("grass carp", "introduced species in", "Jordan River")\n', '("black carp", "introduced species in", "Jordan River")\n', '("rainbow trout", "introduced to", "Jordan River")\n', '("Nile tilapia", "introduced to", "Jordan River")\n', '("sea mullet", "introduced to", "Jordan River")\n', '("Jordan River", "flows near", "Jericho")\n']
+range(1, 314) 3
+['("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")\n', '("Augustus", "made peace with", "Parthian Empire")\n', '("Parthian Empire", "shifted seat of central government from", "Nisa to Ctesiphon along the Tigris")\n']
+
+['("Augustus", "founded", "Roman Empire")\n', '("Augustus", "reigned as", "first Roman emperor")\n', '("Augustus", "established", "imperial cult")\n', '("Augustus", "initiated", "Pax Romana")\n', '("Augustus", "established", "Principate government system")\n', '("Augustus", "named in will as heir of", "Julius Caesar")\n', '("Augustus, Mark Antony, Marcus Lepidus", "formed", "Second Triumvirate")\n', '("Augustus, Mark Antony, Marcus Lepidus", "defeated", "assassins of Julius Caesar at Battle of Philippi")\n', '("Augustus", "enlarged", "Roman Empire")\n', '("Augustus", "annexed", "Egypt, Pannonia, Raetia, and others")\n', '("Augustus", "suffered", "a major setback in Germania")\n', '("Augustus", "made peace with", "Parthian Empire")\n', '("Augustus", "reformed", "Roman taxation system")\n', '("Augustus", "established", "police and fire-fighting services for Rome")\n', '("Augustus", "rebuilt much of", "Rome")\n', '("Augustus", "died of", "natural causes")\n', '("Livia", "rumored to have poisoned", "Augustus")\n', '("Tiberius", "succeeded as emperor", "Augustus")\n', '("Augustus", "born in", "Rome")\n', '("Augustus", "family originated from", "Velletri")\n', '("Augustus\'s residence during birth", "was", "Palatine Hill near Roman Forum")\n', '("Augustus", "received cognomen Thurinus at", "age of toddler")\n', '("Augustus", "was adopted by", "Julius Caesar in his will")\n', '("Augustus", "took name", "Gaius Julius Caesar after adoption")\n', '("Augustus", "had coins and inscriptions refer to as", "Imperator Caesar")\n', '("Augustus", "granted title Augustus by", "Roman Senate")\n', '("Augustus", "also known as", "Octavian")\n', '("Augustus", "had a series of names throughout life including", "Gaius Octavius, Thurinus, Caesar, and Augustus")\n', '("Augustus", "family was of equestrian rank", "paternal side")\n', '("Augustus", "family was plebeian gens Octavia", "maternal side")\n', '("Augustus\'s father", "was governor of", "Macedonia")\n', '("Augustus\'s mother", "was niece of", "Julius Caesar")\n', '("Augustus", "raised by", "his grandmother Julia after father\'s death")\n', '("Augustus", "became member of", "College of Pontiffs")\n', '("Augustus", "participated in Greek games for", "Temple of Venus Genetrix")\n', '("Augustus", "learned of Caesar\'s assassination at", "Apollonia")\n', '("Augustus", "sailed to", "Italy after caesar\'s assassination")\n', '("Augustus", "came ashore at", "Lupiae near Brundisium")\n', '("Mark Antony", "attempted to pass laws for province of", "Cisalpine Gaul")\n', '("Mark Antony", "besieged", "Decimus Junius Brutus in Mutina")\n', '("Octavian", "defeated", "Mark Antony at battles Forum Gallorum and Mutina")\n', '("Octavian", "shared his first acclamation as imperator after", "battle victories against Antony")\n', '("Marcus Tullius Cicero", "attacked", "Mark Antony in speeches")\n', '("Marcus Tullius Cicero", "defended", "Octavian against Antony")\n', '("Marcus Junius Brutus, Gaius Cassius Longinus", "defeated by", "Second Triumvirate army at Philippi")\n', '("Antony, Octavian", "divided territories of Roman Republic after", "Battle of Philippi")\n', '("Marcus Vipsanius Agrippa", "credited with", "victories at battles where Gaius and Lucius led")\n', '("Gaius Julius Caesar Augustus", "reigned as", "emperor of Rome")\n', '("Augustus", "restored the facade of the free republic", "after demise of the Second Triumvirate")\n', '("Augustus", "built", "Ara Pacis")\n', '("Augustus", "was granted", "tribunician power")\n', '("Augustus", "held position of", "pontifex maximus after Lepidus\'s death")\n', '("Augustus", "assumed title of", "pater patriae")\n', '("Augustus", "founded", "Roman Empire")\n', '("Augustus", "reigned as", "first Roman emperor")\n', '("Augustus", "established", "imperial cult")\n', '("Augustus", "initiated", "Pax Romana")\n', '("Augustus", "established", "Principate government system")\n', '("Augustus", "named in will as heir of", "Julius Caesar")\n', '("Augustus, Mark Antony, Marcus Lepidus", "formed", "Second Triumvirate")\n', '("Augustus, Mark Antony, Marcus Lepidus", "defeated", "assassins of Julius Caesar at Battle of Philippi")\n', '("Augustus", "enlarged", "Roman Empire")\n', '("Augustus", "annexed", "Egypt, Pannonia, Raetia, and others")\n', '("Augustus", "suffered", "a major setback in Germania")\n', '("Augustus", "reformed", "Roman taxation system")\n', '("Augustus", "established", "police and fire-fighting services for Rome")\n', '("Augustus", "rebuilt much of", "Rome")\n', '("Augustus", "died of", "natural causes")\n', '("Livia", "rumored to have poisoned", "Augustus")\n', '("Tiberius", "succeeded as emperor", "Augustus")\n', '("Augustus", "born in", "Rome")\n', '("Augustus", "family originated from", "Velletri")\n', '("Augustus\'s residence during birth", "was", "Palatine Hill near Roman Forum")\n', '("Augustus", "received cognomen Thurinus at", "age of toddler")\n', '("Augustus", "was adopted by", "Julius Caesar in his will")\n', '("Augustus", "took name", "Gaius Julius Caesar after adoption")\n', '("Augustus", "had coins and inscriptions refer to as", "Imperator Caesar")\n', '("Augustus", "granted title Augustus by", "Roman Senate")\n', '("Augustus", "also known as", "Octavian")\n', '("Augustus", "had a series of names throughout life including", "Gaius Octavius, Thurinus, Caesar, and Augustus")\n', '("Augustus", "family was of equestrian rank", "paternal side")\n', '("Augustus", "family was plebeian gens Octavia", "maternal side")\n', '("Augustus\'s father", "was governor of", "Macedonia")\n', '("Augustus\'s mother", "was niece of", "Julius Caesar")\n', '("Augustus", "raised by", "his grandmother Julia after father\'s death")\n', '("Augustus", "became member of", "College of Pontiffs")\n', '("Augustus", "participated in Greek games for", "Temple of Venus Genetrix")\n', '("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")\n', '("Augustus", "learned of Caesar\'s assassination at", "Apollonia")\n', '("Augustus", "sailed to", "Italy after caesar\'s assassination")\n', '("Augustus", "came ashore at", "Lupiae near Brundisium")\n', '("Mark Antony", "attempted to pass laws for province of", "Cisalpine Gaul")\n', '("Mark Antony", "besieged", "Decimus Junius Brutus in Mutina")\n', '("Octavian", "defeated", "Mark Antony at battles Forum Gallorum and Mutina")\n', '("Octavian", "shared his first acclamation as imperator after", "battle victories against Antony")\n', '("Marcus Tullius Cicero", "attacked", "Mark Antony in speeches")\n', '("Marcus Tullius Cicero", "defended", "Octavian against Antony")\n', '("Marcus Junius Brutus, Gaius Cassius Longinus", "defeated by", "Second Triumvirate army at Philippi")\n', '("Antony, Octavian", "divided territories of Roman Republic after", "Battle of Philippi")\n', '("Marcus Vipsanius Agrippa", "credited with", "victories at battles where Gaius and Lucius led")\n', '("Gaius Julius Caesar Augustus", "reigned as", "emperor of Rome")\n', '("Augustus", "restored the facade of the free republic", "after demise of the Second Triumvirate")\n', '("Augustus", "built", "Ara Pacis")\n', '("Augustus", "was granted", "tribunician power")\n', '("Augustus", "held position of", "pontifex maximus after Lepidus\'s death")\n', '("Augustus", "assumed title of", "pater patriae")\n', '("Parthian Empire", "centered in", "ancient Iran")\n', '("Parthian Empire", "also known as", "Arsacid Empire")\n', '("Arsaces I", "led", "Parni tribe")\n', '("Arsaces I", "conquered", "Parthia in Iran\'s northeast")\n', '("Mithridates I", "expanded the empire by seizing", "Media and Mesopotamia")\n', '("Parthian Empire", "stretched from", "Euphrates to present-day Afghanistan and western Pakistan")\n', '("Parthian Empire", "located on", "Silk Road trade route")\n', '("Parthian Empire", "became center of trade and commerce between", "Roman Empire and Han dynasty of China")\n', '("Parthians", "adopted the art, architecture, religious beliefs, and royal insignia of", "their culturally heterogeneous empire")\n', '("Arsacid rulers", "styled themselves as the", "King of Kings")\n', '("Arsacid rulers", "accepted many local kings as", "vassals")\n', '("Arsacids", "appointed", "satraps")\n', '("Parthians", "fought early enemies", "Seleucids in the west and Scythians in the north")\n', '("Parthians", "competed with", "Rome to establish the kings of Armenia as their subordinate clients")\n', '("Parthians", "destroyed army of", "Marcus Licinius Crassus at the Battle of Carrhae")\n', '("Parthian forces", "captured Levant except", "Tyre from the Romans")\n', '("Mark Antony", "led", "Roman counterattack")\n', '("Roman emperors", "invaded", "Mesopotamia in the Roman–Parthian Wars")\n', '("Parthian power", "evaporated when", "Ardashir I established the Sasanian Empire")\n', '("Arsacid dynasty", "lived on through branches in", "Armenia, Iberia, and Albania in the Caucasus")\n', '("Parthian history", "known through", "Greek and Roman histories, Chinese histories")\n', '("Parthian artwork", "considered as a source for", "understanding aspects of society and culture")\n', '("Arsaces I", "founded", "the Arsacid dynasty")\n', '("Parni tribe", "part of", "Dahae confederation")\n', '("Arsaces I", "succeeded by", "Tiridates I of Parthia")\n', '("Arsaces II of Parthia", "immediate successor of", "Arsaces I")\n', '("Parthians", "fictitiously claimed descent from", "Artaxerxes II of Persia")\n', '("Arsaces I", "consolidated position by taking advantage of", "invasion of Seleucid territory by Ptolemy III")\n', '("Arsaces I", "temporarily driven from Parthia by", "Seleucus II Callinicus")\n', '("Arsaces I", "recaptured", "Parthia")\n', '("Antiochus III", "launched campaign to retake", "Parthia and Bactria")\n', '("Arsaces II", "granted title of king in return for", "submission to Antiochus III")\n', '("Phraates I", "ruled Parthia without", "further Seleucid interference")\n', '("Mithridates I", "compared to", "Cyrus the Great")\n', '("Saka tribes", "forced westward, invaded", "Parthian Empire\'s northeastern borders")\n', '("Parthian territories", "included", "Apamea Ragiana")\n', '("Mithridates II", "recovered lands from", "Saka in Sakastan")\n', '("Hyspaosines", "invaded", "Babylonia")\n', '("Mithridates II", "forced Hyspaosines out of", "Babylonia")\n', '("Parthian governor of Babylonia", "ordered", "conquer Characene")\n', '("Parthians", "defeated and deposed", "Artavasdes I of Armenia")\n', '("Indo-Parthian Kingdom", "formed alliance with", "Parthian Empire")\n', '("Zhang Qian", "diplomatic venture into", "Central Asia")\n', '("Han Empire", "established official trade relations with", "Parthia")\n', '("Parthian Empire", "enriched by taxing", "Eurasian caravan trade in silk")\n', '("Sogdians", "served as middlemen in silk trade between", "Parthia and Han China")\n', '("Lucius Cornelius Sulla", "agreed with Parthian diplomat that", "Euphrates would serve as border between Parthia and Rome")\n', '("Parthians", "aided inhabitants of Beroea against", "Demetrius III Eucaerus")\n', '("Phraates III", "reaffirmed Euphrates as boundary with", "Lucullus")\n', '("Phraates III", "invaded", "Corduene")\n', '("Parthian civil war", "between", "Orodes II of Parthia and Mithridates IV of Parthia")\n', '("Marcus Licinius Crassus", "invaded", "Parthia")\n', '("Surena", "defeated", "Crassus\' forces")\n', '("Pacorus I", "raided Syria up to", "Antioch")\n', '("Parthians", "sided with", "Pompey against Julius Caesar")\n', '("Labienus", "invaded Syria alongside", "Pacorus I")\n', '("Pacorus I", "occupied", "Roman Levant")\n', '("Ventidius", "defeated Parthian force in Syria led by", "general Pharnapates")\n', '("Phraates IV", "eliminated rivals by killing", "his own brothers")\n', '("Monaeses", "fled to", "Antony and persuaded him to invade Parthia")\n', '("Antony", "invaded Media Atropatene", "intended to seize Praaspa")\n', '("Antony", "abandoned alliance with", "Artavasdes I of Media Atropatene")\n', '("Octavian", "consolidated power, became", "Augustus")\n', '("Anilai and Asinai", "led revolt against Parthian governor of", "Babylonia")\n', '("Tiberius", "involved in plot to place", "Mithridates on throne of Armenia")\n', '("Artabanus II", "forced to flee to", "Scythia")\n', '("Meherdates", "betrayed by governor of Edessa and", "Izates bar Monobaz of Adiabene")\n', '("Gan Ying", "sent by Ban Chao", "on diplomatic mission to Roman Empire")\n', '("Osroes I", "deposed", "Armenian king Sanatruk")\n', '("Vologases IV", "ushered in", "period of peace and stability")\n', '("Vologases V", "retook Edessa from", "Romans")\n', '("Avidius Cassius", "captured and burnt", "Seleucia and Ctesiphon")\n', '("Septimius Severus", "invaded", "Mesopotamia")\n', '("Vologases VI", "took throne, brother Artabanus IV", "rebelled against him")\n', '("Caracalla", "made war on", "Parthia after marriage disallowed")\n', '("Caracalla", "assassinated on road to", "Carrhae")\n', '("Macrinus", "made settlement with", "Parthians")\n', '("Ardashir I", "fought Artabanus IV at", "Battle of Hormozdgān")\n', '("Parthian Empire", "replaced by", "Sasanian Empire")\n', '("Parthian history", "constructed from local and foreign", "written accounts and artifacts")\n', '("Parthian currency", "standard was", "Greek drachma")\n', '("Parthian nobleman", "depicted in typical riding outfit", "in Shami statue")\n', '("Parthian architecture", "noted feature was", "iwan")\n', '("Parthian kings", "wore", "trouser-suit")\n', '("Parthian women", "depicted wearing", "long-sleeved dresses with jewelry and veiled headdresses")\n', '("Musa of Parthia", "reigned as", "queen regnant of the Parthian Empire")\n', '("Parthian Empire", "featured variety of religious systems including", "Greek and Iranian cults")\n', '("Parthian art combined", "elements of Greek and Iranian art", "in distinct styles")\n', '("Parthian language not written down until", "Sassanian period", "but was used orally with music")\n', '("Parthian women had position", "similar to predecessors in Achaemenid Empire", "and successors in Sasanian Empire")\n', '("Shatt al-Arab", "is formed at the confluence of", "the Euphrates and Tigris rivers")\n', '("Shatt al-Arab", "discharges into", "the Persian Gulf")\n', '("The width of Shatt al-Arab", "varies from about at", "Basra")\n', '("Kuwait\'s", "Bubiyan Island is part of", "Shatt al-Arab delta")\n', '("The Karun", "deposits silt into", "Shatt al-Arab")\n', '("The Shatt al-Arab region", "used to hold the largest", "date palm forest in the world")\n', '("Dispute over", "Shatt al-Arab occurred during", "Ottoman-Safavid era")\n', '("Shatt al-Arab", "was regained by", "Safavids under king Abbas I")\n', '("Shatt al-Arab", "was ceded to the Ottomans with", "the Treaty of Zuhab")\n', '("Iranian control over", "Shatt al-Arab was restored by", "Nader Shah")\n', '("Iran", "stopped paying tolls to", "Iraq under Shah Mohammad Reza Pahlavi")\n', '("Iraq\'s shipping lanes", "were affected by", "Iranian attacks")\n', '("Iranian cities", "such as", "Abadan and Khorramshahr are situated along Shatt al-Arab")\n', '("Iraqi cities", "such as", "Basra and Al-Faw are situated along Shatt al-Arab")\n', '("The UK", "was tasked to patrol", "Shatt al-Arab after the end of the Iraq War")\n', '("British Royal Marines", "captured key oil installations and shipping docks at", "Umm Qasr on the al-Faw peninsula")\n', '("Iraqi naval units", "were trained by", "British forces")\n', '("Shatt al-Arab", "is known in Iran as", "Arvand Rud")\n', '("Euphrates", "flows through", "Turkey")\n', '("Euphrates", "flows through", "Syria")\n', '("Euphrates", "flows through", "Iraq")\n', '("Euphrates", "joins", "Tigris")\n', '("Euphrates and Tigris", "join in", "Shatt al-Arab")\n', '("Shatt al-Arab", "empties into", "Persian Gulf")\n', '("Euphrates", "originates in", "Turkey")\n', '("Murat Su", "forms", "Euphrates")\n', '("Euphrates", "emerges from", "Murat Su and Kara Su")\n', '("Kara Su and Murat Su", "rise from", "Lake Van")\n', '("Euphrates", "passes", "Birecik")\n', '("Kara Su and Murat Su", "rise in", "Taurus Mountains")\n', '("Euphrates", "flows by", "Gaziantep")\n', '("Euphrates", "flows by", "Manbij")\n', '("Euphrates", "flows by", "Raqqa")\n', '("Euphrates", "drainage area covers", "Saudi Arabia")\n', '("Euphrates", "drainage area covers", "Kuwait")\n', '("Euphrates", "drainage area covers", "Jordan")\n', '("Euphrates basin", "supports", "oaks")\n', '("Euphrates basin", "supports", "pistachio trees")\n', '("Euphrates basin", "supports", "Rosaceae")\n', '("Euphrates basin", "original vegetation includes", "einkorn wheat")\n', '("Euphrates basin", "original vegetation includes", "emmer")\n', '("Euphrates basin", "original vegetation includes", "oat")\n', '("Euphrates basin", "original vegetation includes", "rye")\n', '("Steppe around Euphrates", "characterised by", "Amaranthaceae")\n', '("Euphrates region", "practiced pastoralism with", "sheep")\n', '("Euphrates region", "practiced pastoralism with", "goat")\n', '("Euphrates region", "contains", "Poa sinaica")\n', '("Euphrates riverine forest", "includes", "Oriental plane")\n', '("Zagros Mountains", "span across", "Iran, northern Iraq, and southeastern Turkey")\n', '("Zagros Mountains", "begin in", "northwestern Iran")\n', '("Zagros Mountains", "include", "the Armenian highlands")\n', '("Zagros Mountains", "cover", "the Iranian plateau")\n', '("Zagros Mountains", "end at", "the Strait of Hormuz")\n', '("Mount Dena", "is the highest point of", "Zagros Mountains")\n', '("Zagros fold and thrust belt", "formed by the collision of", "the Eurasian Plate and the Arabian Plate")\n', '("Collision", "happened during", "Miocene")\n', '("Rocks", "deposited from", "Paleozoic to Cenozoic")\n', '("Neotethys oceanic crust", "obducted during", "Cretaceous")\n', '("Continental arc collision", "happened in", "Eocene")\n', '("Zagros Mountains", "are getting higher due to", "the collision of Arabian and Eurasian Plates")\n', '("GPS", "used to measure deformation within", "Zagros")\n', '("Alborz and Zagros", "show high rate of deformation according to", "GPS")\n', '("Kazerun fault", "divides", "Zagros into two distinct zones of deformation")\n', '("Sedimentary rocks", "formed the linear ridges of", "Zagros Mountains")\n', '("Zagros region", "is an important area for", "oil production")\n', '("Topography on either side of the", "Kazerun fault", "differs")\n', '("Mesozoic rocks", "surrounded by", "Cretaceous rocks")\n', '("Zagros Mountains", "have orogenically same age as", "Alps")\n', '("Fars Province", "contains limestone rocks with marine fossils", "in the southern Zagros ranges")\n', '("Zagros Mountains", "inhabited by", "Neanderthals")\n', '("Shanidar Cave, Bisitun Cave, and Wezmeh Cave", "are locations where Neanderthal fossils were found in", "Zagros Mountains")\n', '("Susa", "is an ancient city located in the", "Zagros Mountains")\n', '("Kalash", "are genetically similar to a Neolithic Iranian from", "Wezmeh Cave")\n', '("Elamites and Mitanni", "inhabited", "Zagros Mountains")\n', '("Sumerian and/or Akkadian cities", "were invaded by peoples from", "Zagros Mountains")\n', '("Zagros mountains", "defend", "Kurds through its geography")\n', '("Shiraz", "is a major city on the foothills of", "Zagros mountains")\n', '("Lurs", "inhabit Central, Western, and Southern", "Zagros")\n', '("Bakhtiari Lurs", "practice nomadic pastoralism in", "Zagros")\n', '("Climate in Zagros Mountains", "has a continental variation of", "Mediterranean climate pattern")\n', '("Zagros Mountains forest steppe", "is an ecoregion in", "the Zagros Mountains")\n', '("Dena", "still has glaciers in", "Zagros Mountains")\n', '("Persian fallow deer", "rediscovered in", "southern Zagros")\n', '("Asiatic lion", "was once found in", "southwestern Zagros Mountains")\n', '("Luristan newt", "endemic to", "central Zagros Mountains")\n', '("Jordan River", "flows north to south through", "Sea of Galilee")\n', '("Jordan River", "flows into", "Dead Sea")\n', '("Jordan River", "passes by", "Jordan")\n', '("Jordan River", "borders", "Golan Heights")\n', '("Jordan River", "borders", "Israel")\n', '("Jordan River", "borders", "West Bank")\n', '("Jesus of Nazareth", "was baptized in", "Jordan River")\n', '("Jordan River", "originates from", "Mount Hermon")\n', '("Dan River", "merges into", "Jordan River")\n', '("Banias", "flows into", "Jordan River")\n', '("Jordan River", "was subject of", "Narrative of the United States\' Expedition to the River Jordan and the Dead Sea")\n', '("Jordan River", "passes by", "Syria")\n', '("Jordan River basin", "is habitat for", "ichthyofauna")\n', '("cyprinids", "found in", "Jordan River")\n', '("red garra", "native to", "Jordan River")\n', '("hillstream loaches", "native to", "Jordan River")\n', '("catfish", "such as", "African sharptooth catfish")\n', '("cichlids", "found in", "Jordan River")\n', '("redbelly tilapia", "species in", "Jordan River")\n', '("mango tilapia", "species in", "Jordan River")\n', '("blennies", "such as", "freshwater blenny")\n', '("Neanderthal", "possibly fed on", "Jordan River species")\n', '("common carp", "introduced species in", "Jordan River")\n', '("grass carp", "introduced species in", "Jordan River")\n', '("black carp", "introduced species in", "Jordan River")\n', '("rainbow trout", "introduced to", "Jordan River")\n', '("Nile tilapia", "introduced to", "Jordan River")\n', '("sea mullet", "introduced to", "Jordan River")\n', '("Jordan River", "flows near", "Jericho")\n']
+range(1, 314) 3
+['("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")\n', '("Augustus", "made peace with", "Parthian Empire")\n', '("Parthian Empire", "shifted seat of central government from", "Nisa to Ctesiphon along the Tigris")\n']
+
+['("Augustus", "founded", "Roman Empire")\n', '("Augustus", "reigned as", "first Roman emperor")\n', '("Augustus", "established", "imperial cult")\n', '("Augustus", "initiated", "Pax Romana")\n', '("Augustus", "established", "Principate government system")\n', '("Augustus", "named in will as heir of", "Julius Caesar")\n', '("Augustus, Mark Antony, Marcus Lepidus", "formed", "Second Triumvirate")\n', '("Augustus, Mark Antony, Marcus Lepidus", "defeated", "assassins of Julius Caesar at Battle of Philippi")\n', '("Augustus", "enlarged", "Roman Empire")\n', '("Augustus", "annexed", "Egypt, Pannonia, Raetia, and others")\n', '("Augustus", "suffered", "a major setback in Germania")\n', '("Augustus", "made peace with", "Parthian Empire")\n', '("Augustus", "reformed", "Roman taxation system")\n', '("Augustus", "established", "police and fire-fighting services for Rome")\n', '("Augustus", "rebuilt much of", "Rome")\n', '("Augustus", "died of", "natural causes")\n', '("Livia", "rumored to have poisoned", "Augustus")\n', '("Tiberius", "succeeded as emperor", "Augustus")\n', '("Augustus", "born in", "Rome")\n', '("Augustus", "family originated from", "Velletri")\n', '("Augustus\'s residence during birth", "was", "Palatine Hill near Roman Forum")\n', '("Augustus", "received cognomen Thurinus at", "age of toddler")\n', '("Augustus", "was adopted by", "Julius Caesar in his will")\n', '("Augustus", "took name", "Gaius Julius Caesar after adoption")\n', '("Augustus", "had coins and inscriptions refer to as", "Imperator Caesar")\n', '("Augustus", "granted title Augustus by", "Roman Senate")\n', '("Augustus", "also known as", "Octavian")\n', '("Augustus", "had a series of names throughout life including", "Gaius Octavius, Thurinus, Caesar, and Augustus")\n', '("Augustus", "family was of equestrian rank", "paternal side")\n', '("Augustus", "family was plebeian gens Octavia", "maternal side")\n', '("Augustus\'s father", "was governor of", "Macedonia")\n', '("Augustus\'s mother", "was niece of", "Julius Caesar")\n', '("Augustus", "raised by", "his grandmother Julia after father\'s death")\n', '("Augustus", "became member of", "College of Pontiffs")\n', '("Augustus", "participated in Greek games for", "Temple of Venus Genetrix")\n', '("Augustus", "learned of Caesar\'s assassination at", "Apollonia")\n', '("Augustus", "sailed to", "Italy after caesar\'s assassination")\n', '("Augustus", "came ashore at", "Lupiae near Brundisium")\n', '("Mark Antony", "attempted to pass laws for province of", "Cisalpine Gaul")\n', '("Mark Antony", "besieged", "Decimus Junius Brutus in Mutina")\n', '("Octavian", "defeated", "Mark Antony at battles Forum Gallorum and Mutina")\n', '("Octavian", "shared his first acclamation as imperator after", "battle victories against Antony")\n', '("Marcus Tullius Cicero", "attacked", "Mark Antony in speeches")\n', '("Marcus Tullius Cicero", "defended", "Octavian against Antony")\n', '("Marcus Junius Brutus, Gaius Cassius Longinus", "defeated by", "Second Triumvirate army at Philippi")\n', '("Antony, Octavian", "divided territories of Roman Republic after", "Battle of Philippi")\n', '("Marcus Vipsanius Agrippa", "credited with", "victories at battles where Gaius and Lucius led")\n', '("Gaius Julius Caesar Augustus", "reigned as", "emperor of Rome")\n', '("Augustus", "restored the facade of the free republic", "after demise of the Second Triumvirate")\n', '("Augustus", "built", "Ara Pacis")\n', '("Augustus", "was granted", "tribunician power")\n', '("Augustus", "held position of", "pontifex maximus after Lepidus\'s death")\n', '("Augustus", "assumed title of", "pater patriae")\n', '("Augustus", "founded", "Roman Empire")\n', '("Augustus", "reigned as", "first Roman emperor")\n', '("Augustus", "established", "imperial cult")\n', '("Augustus", "initiated", "Pax Romana")\n', '("Augustus", "established", "Principate government system")\n', '("Augustus", "named in will as heir of", "Julius Caesar")\n', '("Augustus, Mark Antony, Marcus Lepidus", "formed", "Second Triumvirate")\n', '("Augustus, Mark Antony, Marcus Lepidus", "defeated", "assassins of Julius Caesar at Battle of Philippi")\n', '("Augustus", "enlarged", "Roman Empire")\n', '("Augustus", "annexed", "Egypt, Pannonia, Raetia, and others")\n', '("Augustus", "suffered", "a major setback in Germania")\n', '("Augustus", "reformed", "Roman taxation system")\n', '("Augustus", "established", "police and fire-fighting services for Rome")\n', '("Augustus", "rebuilt much of", "Rome")\n', '("Augustus", "died of", "natural causes")\n', '("Livia", "rumored to have poisoned", "Augustus")\n', '("Tiberius", "succeeded as emperor", "Augustus")\n', '("Augustus", "born in", "Rome")\n', '("Augustus", "family originated from", "Velletri")\n', '("Augustus\'s residence during birth", "was", "Palatine Hill near Roman Forum")\n', '("Augustus", "received cognomen Thurinus at", "age of toddler")\n', '("Augustus", "was adopted by", "Julius Caesar in his will")\n', '("Augustus", "took name", "Gaius Julius Caesar after adoption")\n', '("Augustus", "had coins and inscriptions refer to as", "Imperator Caesar")\n', '("Augustus", "granted title Augustus by", "Roman Senate")\n', '("Augustus", "also known as", "Octavian")\n', '("Augustus", "had a series of names throughout life including", "Gaius Octavius, Thurinus, Caesar, and Augustus")\n', '("Augustus", "family was of equestrian rank", "paternal side")\n', '("Augustus", "family was plebeian gens Octavia", "maternal side")\n', '("Augustus\'s father", "was governor of", "Macedonia")\n', '("Augustus\'s mother", "was niece of", "Julius Caesar")\n', '("Augustus", "raised by", "his grandmother Julia after father\'s death")\n', '("Augustus", "became member of", "College of Pontiffs")\n', '("Augustus", "participated in Greek games for", "Temple of Venus Genetrix")\n', '("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")\n', '("Augustus", "learned of Caesar\'s assassination at", "Apollonia")\n', '("Augustus", "sailed to", "Italy after caesar\'s assassination")\n', '("Augustus", "came ashore at", "Lupiae near Brundisium")\n', '("Mark Antony", "attempted to pass laws for province of", "Cisalpine Gaul")\n', '("Mark Antony", "besieged", "Decimus Junius Brutus in Mutina")\n', '("Octavian", "defeated", "Mark Antony at battles Forum Gallorum and Mutina")\n', '("Octavian", "shared his first acclamation as imperator after", "battle victories against Antony")\n', '("Marcus Tullius Cicero", "attacked", "Mark Antony in speeches")\n', '("Marcus Tullius Cicero", "defended", "Octavian against Antony")\n', '("Marcus Junius Brutus, Gaius Cassius Longinus", "defeated by", "Second Triumvirate army at Philippi")\n', '("Antony, Octavian", "divided territories of Roman Republic after", "Battle of Philippi")\n', '("Marcus Vipsanius Agrippa", "credited with", "victories at battles where Gaius and Lucius led")\n', '("Gaius Julius Caesar Augustus", "reigned as", "emperor of Rome")\n', '("Augustus", "restored the facade of the free republic", "after demise of the Second Triumvirate")\n', '("Augustus", "built", "Ara Pacis")\n', '("Augustus", "was granted", "tribunician power")\n', '("Augustus", "held position of", "pontifex maximus after Lepidus\'s death")\n', '("Augustus", "assumed title of", "pater patriae")\n', '("Parthian Empire", "centered in", "ancient Iran")\n', '("Parthian Empire", "also known as", "Arsacid Empire")\n', '("Arsaces I", "led", "Parni tribe")\n', '("Arsaces I", "conquered", "Parthia in Iran\'s northeast")\n', '("Mithridates I", "expanded the empire by seizing", "Media and Mesopotamia")\n', '("Parthian Empire", "stretched from", "Euphrates to present-day Afghanistan and western Pakistan")\n', '("Parthian Empire", "located on", "Silk Road trade route")\n', '("Parthian Empire", "became center of trade and commerce between", "Roman Empire and Han dynasty of China")\n', '("Parthians", "adopted the art, architecture, religious beliefs, and royal insignia of", "their culturally heterogeneous empire")\n', '("Arsacid rulers", "styled themselves as the", "King of Kings")\n', '("Arsacid rulers", "accepted many local kings as", "vassals")\n', '("Arsacids", "appointed", "satraps")\n', '("Parthians", "fought early enemies", "Seleucids in the west and Scythians in the north")\n', '("Parthians", "competed with", "Rome to establish the kings of Armenia as their subordinate clients")\n', '("Parthians", "destroyed army of", "Marcus Licinius Crassus at the Battle of Carrhae")\n', '("Parthian forces", "captured Levant except", "Tyre from the Romans")\n', '("Mark Antony", "led", "Roman counterattack")\n', '("Roman emperors", "invaded", "Mesopotamia in the Roman–Parthian Wars")\n', '("Parthian power", "evaporated when", "Ardashir I established the Sasanian Empire")\n', '("Arsacid dynasty", "lived on through branches in", "Armenia, Iberia, and Albania in the Caucasus")\n', '("Parthian history", "known through", "Greek and Roman histories, Chinese histories")\n', '("Parthian artwork", "considered as a source for", "understanding aspects of society and culture")\n', '("Arsaces I", "founded", "the Arsacid dynasty")\n', '("Parni tribe", "part of", "Dahae confederation")\n', '("Arsaces I", "succeeded by", "Tiridates I of Parthia")\n', '("Arsaces II of Parthia", "immediate successor of", "Arsaces I")\n', '("Parthians", "fictitiously claimed descent from", "Artaxerxes II of Persia")\n', '("Arsaces I", "consolidated position by taking advantage of", "invasion of Seleucid territory by Ptolemy III")\n', '("Arsaces I", "temporarily driven from Parthia by", "Seleucus II Callinicus")\n', '("Arsaces I", "recaptured", "Parthia")\n', '("Antiochus III", "launched campaign to retake", "Parthia and Bactria")\n', '("Arsaces II", "granted title of king in return for", "submission to Antiochus III")\n', '("Phraates I", "ruled Parthia without", "further Seleucid interference")\n', '("Mithridates I", "compared to", "Cyrus the Great")\n', '("Saka tribes", "forced westward, invaded", "Parthian Empire\'s northeastern borders")\n', '("Parthian territories", "included", "Apamea Ragiana")\n', '("Mithridates II", "recovered lands from", "Saka in Sakastan")\n', '("Hyspaosines", "invaded", "Babylonia")\n', '("Mithridates II", "forced Hyspaosines out of", "Babylonia")\n', '("Parthian governor of Babylonia", "ordered", "conquer Characene")\n', '("Parthians", "defeated and deposed", "Artavasdes I of Armenia")\n', '("Indo-Parthian Kingdom", "formed alliance with", "Parthian Empire")\n', '("Zhang Qian", "diplomatic venture into", "Central Asia")\n', '("Han Empire", "established official trade relations with", "Parthia")\n', '("Parthian Empire", "enriched by taxing", "Eurasian caravan trade in silk")\n', '("Sogdians", "served as middlemen in silk trade between", "Parthia and Han China")\n', '("Lucius Cornelius Sulla", "agreed with Parthian diplomat that", "Euphrates would serve as border between Parthia and Rome")\n', '("Parthians", "aided inhabitants of Beroea against", "Demetrius III Eucaerus")\n', '("Phraates III", "reaffirmed Euphrates as boundary with", "Lucullus")\n', '("Phraates III", "invaded", "Corduene")\n', '("Parthian civil war", "between", "Orodes II of Parthia and Mithridates IV of Parthia")\n', '("Marcus Licinius Crassus", "invaded", "Parthia")\n', '("Surena", "defeated", "Crassus\' forces")\n', '("Pacorus I", "raided Syria up to", "Antioch")\n', '("Parthians", "sided with", "Pompey against Julius Caesar")\n', '("Labienus", "invaded Syria alongside", "Pacorus I")\n', '("Pacorus I", "occupied", "Roman Levant")\n', '("Ventidius", "defeated Parthian force in Syria led by", "general Pharnapates")\n', '("Phraates IV", "eliminated rivals by killing", "his own brothers")\n', '("Monaeses", "fled to", "Antony and persuaded him to invade Parthia")\n', '("Antony", "invaded Media Atropatene", "intended to seize Praaspa")\n', '("Antony", "abandoned alliance with", "Artavasdes I of Media Atropatene")\n', '("Octavian", "consolidated power, became", "Augustus")\n', '("Anilai and Asinai", "led revolt against Parthian governor of", "Babylonia")\n', '("Tiberius", "involved in plot to place", "Mithridates on throne of Armenia")\n', '("Artabanus II", "forced to flee to", "Scythia")\n', '("Meherdates", "betrayed by governor of Edessa and", "Izates bar Monobaz of Adiabene")\n', '("Gan Ying", "sent by Ban Chao", "on diplomatic mission to Roman Empire")\n', '("Osroes I", "deposed", "Armenian king Sanatruk")\n', '("Vologases IV", "ushered in", "period of peace and stability")\n', '("Vologases V", "retook Edessa from", "Romans")\n', '("Avidius Cassius", "captured and burnt", "Seleucia and Ctesiphon")\n', '("Septimius Severus", "invaded", "Mesopotamia")\n', '("Vologases VI", "took throne, brother Artabanus IV", "rebelled against him")\n', '("Caracalla", "made war on", "Parthia after marriage disallowed")\n', '("Caracalla", "assassinated on road to", "Carrhae")\n', '("Macrinus", "made settlement with", "Parthians")\n', '("Ardashir I", "fought Artabanus IV at", "Battle of Hormozdgān")\n', '("Parthian Empire", "replaced by", "Sasanian Empire")\n', '("Parthian history", "constructed from local and foreign", "written accounts and artifacts")\n', '("Parthian currency", "standard was", "Greek drachma")\n', '("Parthian nobleman", "depicted in typical riding outfit", "in Shami statue")\n', '("Parthian architecture", "noted feature was", "iwan")\n', '("Parthian kings", "wore", "trouser-suit")\n', '("Parthian women", "depicted wearing", "long-sleeved dresses with jewelry and veiled headdresses")\n', '("Musa of Parthia", "reigned as", "queen regnant of the Parthian Empire")\n', '("Parthian Empire", "featured variety of religious systems including", "Greek and Iranian cults")\n', '("Parthian art combined", "elements of Greek and Iranian art", "in distinct styles")\n', '("Parthian language not written down until", "Sassanian period", "but was used orally with music")\n', '("Parthian women had position", "similar to predecessors in Achaemenid Empire", "and successors in Sasanian Empire")\n', '("Shatt al-Arab", "is formed at the confluence of", "the Euphrates and Tigris rivers")\n', '("Shatt al-Arab", "discharges into", "the Persian Gulf")\n', '("The width of Shatt al-Arab", "varies from about at", "Basra")\n', '("Kuwait\'s", "Bubiyan Island is part of", "Shatt al-Arab delta")\n', '("The Karun", "deposits silt into", "Shatt al-Arab")\n', '("The Shatt al-Arab region", "used to hold the largest", "date palm forest in the world")\n', '("Dispute over", "Shatt al-Arab occurred during", "Ottoman-Safavid era")\n', '("Shatt al-Arab", "was regained by", "Safavids under king Abbas I")\n', '("Shatt al-Arab", "was ceded to the Ottomans with", "the Treaty of Zuhab")\n', '("Iranian control over", "Shatt al-Arab was restored by", "Nader Shah")\n', '("Iran", "stopped paying tolls to", "Iraq under Shah Mohammad Reza Pahlavi")\n', '("Iraq\'s shipping lanes", "were affected by", "Iranian attacks")\n', '("Iranian cities", "such as", "Abadan and Khorramshahr are situated along Shatt al-Arab")\n', '("Iraqi cities", "such as", "Basra and Al-Faw are situated along Shatt al-Arab")\n', '("The UK", "was tasked to patrol", "Shatt al-Arab after the end of the Iraq War")\n', '("British Royal Marines", "captured key oil installations and shipping docks at", "Umm Qasr on the al-Faw peninsula")\n', '("Iraqi naval units", "were trained by", "British forces")\n', '("Shatt al-Arab", "is known in Iran as", "Arvand Rud")\n', '("Euphrates", "flows through", "Turkey")\n', '("Euphrates", "flows through", "Syria")\n', '("Euphrates", "flows through", "Iraq")\n', '("Euphrates", "joins", "Tigris")\n', '("Euphrates and Tigris", "join in", "Shatt al-Arab")\n', '("Shatt al-Arab", "empties into", "Persian Gulf")\n', '("Euphrates", "originates in", "Turkey")\n', '("Murat Su", "forms", "Euphrates")\n', '("Euphrates", "emerges from", "Murat Su and Kara Su")\n', '("Kara Su and Murat Su", "rise from", "Lake Van")\n', '("Euphrates", "passes", "Birecik")\n', '("Kara Su and Murat Su", "rise in", "Taurus Mountains")\n', '("Euphrates", "flows by", "Gaziantep")\n', '("Euphrates", "flows by", "Manbij")\n', '("Euphrates", "flows by", "Raqqa")\n', '("Euphrates", "drainage area covers", "Saudi Arabia")\n', '("Euphrates", "drainage area covers", "Kuwait")\n', '("Euphrates", "drainage area covers", "Jordan")\n', '("Euphrates basin", "supports", "oaks")\n', '("Euphrates basin", "supports", "pistachio trees")\n', '("Euphrates basin", "supports", "Rosaceae")\n', '("Euphrates basin", "original vegetation includes", "einkorn wheat")\n', '("Euphrates basin", "original vegetation includes", "emmer")\n', '("Euphrates basin", "original vegetation includes", "oat")\n', '("Euphrates basin", "original vegetation includes", "rye")\n', '("Steppe around Euphrates", "characterised by", "Amaranthaceae")\n', '("Euphrates region", "practiced pastoralism with", "sheep")\n', '("Euphrates region", "practiced pastoralism with", "goat")\n', '("Euphrates region", "contains", "Poa sinaica")\n', '("Euphrates riverine forest", "includes", "Oriental plane")\n', '("Zagros Mountains", "span across", "Iran, northern Iraq, and southeastern Turkey")\n', '("Zagros Mountains", "begin in", "northwestern Iran")\n', '("Zagros Mountains", "include", "the Armenian highlands")\n', '("Zagros Mountains", "cover", "the Iranian plateau")\n', '("Zagros Mountains", "end at", "the Strait of Hormuz")\n', '("Mount Dena", "is the highest point of", "Zagros Mountains")\n', '("Zagros fold and thrust belt", "formed by the collision of", "the Eurasian Plate and the Arabian Plate")\n', '("Collision", "happened during", "Miocene")\n', '("Rocks", "deposited from", "Paleozoic to Cenozoic")\n', '("Neotethys oceanic crust", "obducted during", "Cretaceous")\n', '("Continental arc collision", "happened in", "Eocene")\n', '("Zagros Mountains", "are getting higher due to", "the collision of Arabian and Eurasian Plates")\n', '("GPS", "used to measure deformation within", "Zagros")\n', '("Alborz and Zagros", "show high rate of deformation according to", "GPS")\n', '("Kazerun fault", "divides", "Zagros into two distinct zones of deformation")\n', '("Sedimentary rocks", "formed the linear ridges of", "Zagros Mountains")\n', '("Zagros region", "is an important area for", "oil production")\n', '("Topography on either side of the", "Kazerun fault", "differs")\n', '("Mesozoic rocks", "surrounded by", "Cretaceous rocks")\n', '("Zagros Mountains", "have orogenically same age as", "Alps")\n', '("Fars Province", "contains limestone rocks with marine fossils", "in the southern Zagros ranges")\n', '("Zagros Mountains", "inhabited by", "Neanderthals")\n', '("Shanidar Cave, Bisitun Cave, and Wezmeh Cave", "are locations where Neanderthal fossils were found in", "Zagros Mountains")\n', '("Susa", "is an ancient city located in the", "Zagros Mountains")\n', '("Kalash", "are genetically similar to a Neolithic Iranian from", "Wezmeh Cave")\n', '("Elamites and Mitanni", "inhabited", "Zagros Mountains")\n', '("Sumerian and/or Akkadian cities", "were invaded by peoples from", "Zagros Mountains")\n', '("Zagros mountains", "defend", "Kurds through its geography")\n', '("Shiraz", "is a major city on the foothills of", "Zagros mountains")\n', '("Lurs", "inhabit Central, Western, and Southern", "Zagros")\n', '("Bakhtiari Lurs", "practice nomadic pastoralism in", "Zagros")\n', '("Climate in Zagros Mountains", "has a continental variation of", "Mediterranean climate pattern")\n', '("Zagros Mountains forest steppe", "is an ecoregion in", "the Zagros Mountains")\n', '("Dena", "still has glaciers in", "Zagros Mountains")\n', '("Persian fallow deer", "rediscovered in", "southern Zagros")\n', '("Asiatic lion", "was once found in", "southwestern Zagros Mountains")\n', '("Luristan newt", "endemic to", "central Zagros Mountains")\n', '("Jordan River", "flows north to south through", "Sea of Galilee")\n', '("Jordan River", "flows into", "Dead Sea")\n', '("Jordan River", "passes by", "Jordan")\n', '("Jordan River", "borders", "Golan Heights")\n', '("Jordan River", "borders", "Israel")\n', '("Jordan River", "borders", "West Bank")\n', '("Jesus of Nazareth", "was baptized in", "Jordan River")\n', '("Jordan River", "originates from", "Mount Hermon")\n', '("Dan River", "merges into", "Jordan River")\n', '("Banias", "flows into", "Jordan River")\n', '("Jordan River", "was subject of", "Narrative of the United States\' Expedition to the River Jordan and the Dead Sea")\n', '("Jordan River", "passes by", "Syria")\n', '("Jordan River basin", "is habitat for", "ichthyofauna")\n', '("cyprinids", "found in", "Jordan River")\n', '("red garra", "native to", "Jordan River")\n', '("hillstream loaches", "native to", "Jordan River")\n', '("catfish", "such as", "African sharptooth catfish")\n', '("cichlids", "found in", "Jordan River")\n', '("redbelly tilapia", "species in", "Jordan River")\n', '("mango tilapia", "species in", "Jordan River")\n', '("blennies", "such as", "freshwater blenny")\n', '("Neanderthal", "possibly fed on", "Jordan River species")\n', '("common carp", "introduced species in", "Jordan River")\n', '("grass carp", "introduced species in", "Jordan River")\n', '("black carp", "introduced species in", "Jordan River")\n', '("rainbow trout", "introduced to", "Jordan River")\n', '("Nile tilapia", "introduced to", "Jordan River")\n', '("sea mullet", "introduced to", "Jordan River")\n', '("Jordan River", "flows near", "Jericho")\n']
+range(1, 314) 3
+{'id': '2_13', 'Question': " Along which river did the empire, with which the person in military training in Apollonia during Julius Caesar's assassination made peace, move its central government seat from Nisa?\n", 'Answer': 'Tigris', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Shatt al-Arab'}, {'label': 'B', 'text': 'Tigris'}, {'label': 'C', 'text': 'Euphrates'}, {'label': 'D', 'text': 'Zagros Mountains'}, {'label': 'E', 'text': 'Jordan River'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'shatt_al_arab'}, {'label': 'B', 'text': 'tigris'}, {'label': 'C', 'text': 'euphrates'}, {'label': 'D', 'text': 'zagros'}, {'label': 'E', 'text': 'jordan_river'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who was in military training and studying in Apollonia when Julius Caesar was assassinated?\nA1: Augustus\n\n', '2: With which empire did Augustus make peace?\nA2: Parthian Empire\n\n', '3: When the Parthian Empire shifted the seat of its central government, it moved from Nisa to which city along a famous river?\nA3: Tigris'], 'Hops_wiki': [('Julius Caesar', 'Augustus'), ('Augustus', 'Parthian Empire'), ('Parthian Empire', 'Tigris')], 'Hops_cpnet': [('julius_caesar', 'augustus'), ('augustus', 'parthian_empire'), ('parthian_empire', 'tigris')], 'Triplets': ['("Augustus", "in military training and studying in", "Apollonia when Julius Caesar assassinated")', '("Augustus", "made peace with", "Parthian Empire")', '("Parthian Empire", "shifted seat of central government from", "Nisa to Ctesiphon along the Tigris")'], 'Referred_files': [{'name': 'Augustus', 'line': 36}, {'name': 'Augustus', 'line': 12}, {'name': 'Parthian Empire', 'line': 13}], 'Question_triplet_answer': {100: [98, 131, 164], 50: [12, 43, 265], 25: [69, 230, 242]}}
+time passed:  4442.660721063614
+Expected dollar:  0.005
+Augustus is People
+Jordan River is Geography
+Lucius Cornelius Sulla is People
+Rome is Geography
+UK is Geography
+Shatt al Arab is Geography
+Iraq is Geography
+Tigris is Geography
+Saka is Geography
+Parthian Empire's is Geography
+Parthian Empire is Geography
+Octavian is People
+Battle of Philippi is Geography
+Euphrates is Geography
+Lucullus is People
+Mark Antony is People
+Zagros Mountains is Geography
+Iran is Geography
+Turkey is Geography
+Caesar is People
+Abadan is Geography
+Khorramshahr is Geography
+Shatt al is Geography
+Shatt al Arab" is Geography
+the Persian Gulf is Geography
+Kuwait is Geography
+the Strait of Hormuz is Geography
+Lupiae is Geography
+Brundisium is Geography
+Parthians is Geography
+Armenia is Geography
+Syria is Geography
+Jericho is Geography
+Neanderthal is Animal
+Julius Caesar is People
+Jordan River basin is Geography
+Sogdians is Geography
+China is Geography
+Tiberius is People
+Avidius Cassius is People
+Seleucia is Geography
+Ctesiphon is Geography
+Eurasian is Geography
+The Shatt al Arab region is Geography
+Shiraz is Geography
+Cretaceous is Geography
+the Dead Sea is Geography
+Zagros is Geography
+Ardashir is People
+Kalash is Geography
+Wezmeh Cave is Geography
+Marcus Tullius Cicero is People
+Amaranthaceae is Animal
+Dan River is Geography
+Gaius Julius Caesar is People
+Saudi Arabia is Geography
+Antioch is Geography
+Ara Pacis is Geography
+Temple of Venus Genetrix is Geography
+Miocene is Geography
+Dena is Geography
+Arabian is Geography
+Hyspaosines is People
+Birecik is Geography
+Marcus Junius Brutus is People
+Gaius Cassius Longinus is People
+Philippi is Geography
+Corduene is Geography
+Italy is Geography
+Atropatene is Geography
+Marcus Lepidus is People
+Artaxerxes II is People
+Persia is Geography
+"Poa sinaica is Animal
+Gaius Octavius is People
+Arvand Rud is Geography
+Egypt is Geography
+Pannonia is Geography
+"Sea of Galilee is Geography
+Labienus is People
+Livia is People
+Gaius Julius Caesar Augustus is People
+Edessa is Geography
+Jordan is Geography
+Jesus of Nazareth is People
+Decimus Junius Brutus is People
+Mutina is Geography
+Iberia is Geography
+Albania is Geography
+Crassus is People
+Bubiyan Island is Geography
+Marcus Vipsanius Agrippa is People
+Sakastan is Geography
+Fars Province is Geography
+entities:  {'Vipsanius', 'Saka', 'Ctesiphon', 'Parthia', 'Julius', 'Venus', 'Egypt', 'Miocene', 'Persian', 'Amaranthaceae', 'Philippi', 'Parthians', 'Lepidus', 'Jesus', 'Saudi', 'Fars', '"Poa', 'Babylonia', 'Mountains', 'Armenia', 'Lucius', 'Arab', 'Iberia', 'Labienus', 'Lucullus', 'Livia', 'Longinus', 'Pacis', 'Chao', 'al', 'Hormuz', 'Arabian', 'Battle', 'United', 'Kuwait', 'Khorramshahr', 'Birecik', 'region', 'Albania', 'Dan', 'Gaius', 'Cave', 'Nazareth', 'Avidius', 'Brutus', 'Shiraz', 'Neanderthal', 'Arabia', 'Syria', 'Tiberius', 'Arab"', 'Crassus', 'Cassius', 'Junius', 'Ardashir', 'Abadan', 'Han', 'Cornelius', 'Hyspaosines', 'Mutina', 'Island', 'Antioch', 'Faw', 'Lupiae', 'Genetrix', 'Sakastan', 'UK', 'Zagros', 'Rud', 'Sulla', 'Octavius', 'Sogdians', 'Dead', 'fed', 'Cretaceous', 'Brundisium', 'Province', 'Caesar', "Empire's", 'Gulf', 'Cicero', 'Senate', 'China', 'River', 'Rome', 'Wezmeh', 'Antony', 'Tigris', 'Corduene', 'Eurasian', 'Atropatene', 'Edessa', 'Artaxerxes', 'Turkey', 'Macedonia', 'Strait', 'Parthian', 'Kalash', 'Empire', 'Iraq', 'Monobaz', 'Jordan', 'Sea', 'Ara', 'Tullius', 'Mark', '"Sea', 'Agrippa', 'Marcus', 'Decimus', 'sinaica', 'Italy', 'Seleucia', 'Augustus', 'Arvand', 'basin', 'Euphrates', 'Dena', 'Jericho', 'II', 'Pannonia', 'Persia', 'Galilee', 'Temple', 'Iran', 'Octavian', 'al-Arab', 'Shatt', 'Bubiyan'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Euphrates' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Euphrates
+Tigris
+Jordan River
+Shatt al-Arab
+Kazerun fault
+Syria
+Iraq
+Kuwait
+Turkey
+Umm Qasr
+Abadan
+Khorramshahr
+Iran
+Persian Gulf
+Roman
+Rome
+Germany
+Parthia
+College of Pontiffs
+College of Pontiffs
+Sasanian Empire
+Artavasdes I
+Rome
+College of Pontiffs
+College of Pontiffs
+Armenia
+Lupiae
+Rome
+College of Pontiffs
+College of Pontiffs
+Germany
+Armenia
+Germany
+Armenia
+Lupiae
+College of Pontiffs
+College of Pontiffs
+Phraates III
+Kuwait
+College of Pontiffs
+College of Pontiffs
+Lupiae
+College of Pontiffs
+College of Pontiffs
+Iran
+College of Pontiffs
+College of Pontiffs
+Cretaceous
+Iran
+Cretaceous
+Cretaceous
+Armenia
+Iran
+Armenia
+College of Pontiffs
+College of Pontiffs
+Rome
+Rome
+Armenia
+Iran
+Iran
+Armenia
+Iran
+Iran
+Rogozen
+Jordan
+Syria
+Iraq
+Rome
+Rome
+Armenia
+Roman
+Germany
+College of Pontiffs
+College of Pontiffs
+Iran
+Phraates III
+Iran
+Rome
+Iran
+Rome
+Armenia
+Parthia
+Rome
+Italy
+Syria
+Rome
+Rome
+Rome
+Syria
+Rome
+Rome
+Parthia
+Rome
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+Latium
+Iran
+Syria
+Rome
+Armenia
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+Jordan
+Iran
+Syria
+Iran
+Macedonia
+College of Pontiffs
+College of Pontiffs
+Iran
+College of Pontiffs
+Parthia
+Rome
+Lupiae
+Rome
+Jordan
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+Jordan
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+Parthia
+Persia
+Tigris
+Armenia
+Rome
+Parthia
+Parthia
+Roman
+Israel
+Parthia
+Augustus
+Jericho
+Parthia
+Rome
+Armenia
+Rome
+Parthia
+Armenia
+Parthia
+Iran
+Parthia
+Parthia
+Parthia
+Iraq
+Armenia
+Victoriaicosprivilege
+Parthia
+Roman
+Parthia
+Rome
+Rome
+Parthia
+Iran
+Kuwait
+Rome
+Parthia
+Rome
+Iraq
+Rome
+Iran
+Parthia
+Iran
+Rome
+Rome
+Rome
+Parthia
+Rome
+Iraq
+Rome
+Rome
+Parthia
+Rome
+Parthia
+Rome
+Rome
+Rome
+Parthia
+Iran
+Iraq
+Rome
+Rome
+Rome
+Parthia
+Rome
+Rome
+Parthia
+Parthia
+Rome
+Armenia
+Parthia
+Rome
+Rome
+Jordan
+Iran
+Rome
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+College of Pontiffs
+Armenia
+Iraq
+Rome
+Rome
+England
+Rome
+Rome
+Rome
+Rome
+Jordan
+Rome
+Syria
+Jordan
+Rome
+Rome
+Germany
+Muhammad
+College of Pontiffs
+College of Pontiffs
+Rome
+Rome
+Kuwait
+Rushid
+Rome
+Rome
+Rome
+Khorramshahr
+Jordan
+Rome
+Euphrates
+Armenia
+Parthia
+Rome
+Rome
+Rome
+Rome
+Jordan
+Parthia
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Iran
+Jordan
+Jordan
+Rome
+Second Triumvirate
+Syria
+Rome
+Parthia
+Roman
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Armenia
+Rome
+Rome
+Armenia
+Armenia
+Parthia
+Parthia
+Parthia
+Rajadhammasoka
+Parthia
+Parthia
+Armenia
+Parthia
+Armenia
+Parthia
+Paenula
+Society of Jesus
+Livia
+Parthia
+Roman
+Syria
+Jordan
+Livia
+Armenia
+Parthia
+Rome
+Armenia
+Antonia the Younger
+Rome
+Rome
+Rome
+Parthia
+Parthia
+Rome
+Jordan
+Rome
+Milan
+Rome
+Antoninus Pius
+Mark Antony
+Rome
+Parthia
+Parthia
+Rome
+Parthia
+Rome
+Rome
+Rome
+Rome
+Parthia
+Parthia
+The Higher Institute of Nursing in Anbar Province
+Parthia
+Praaspa
+Parthia
+Parthia
+Rome
+Baghdad
+Rome
+Dascylium
+Parthia
+Rome
+Parthia
+Rome
+Parthia
+Rome
+Parthia
+Raqqa
+Rome
+Jordan
+Carthago Nova
+Parthia
+Parthia
+Rome
+Augustus
+Rome
+Euphrates
+Heraclius
+Parthia
+Rome
+Euphrates
+Rome
+Parthia
+Heraclius
+Valens
+Parthia
+Parthia
+Rome
+Iraq
+Arsaces I
+College of Pontiffs
+College of Pontiffs
+Parthia
+Rome
+Roman
+Iucundus
+Parthia
+Higher Institute of Telecommunications and Information Security (Iraq) 
+Armenia
+Spahbed
+Zoroaster
+Parthia
+Parthia
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Kachapak
+Rome
+Rome
+Rome
+Lemponimagem
+Rome
+Londinium
+Rome
+Rome
+Avaricum
+Rome
+Cirta
+Rome
+Rome
+Hypata
+Rome
+Ocriculum
+Rome
+Logudoro
+Rome
+Gaelic Revival
+Rome
+Hadrumetum
+Rome
+Rome
+Area sacra di Sant'Omobono
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Dura Europos
+Rome
+Rome
+Rome
+Rome
+Germeny
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+Rome
+
+gpt_entity_particular(): entity list: 
+ ['Spahbed', 'Mark Antony', 'Germeny', 'Londinium', 'Higher Institute of Telecommunications and Information Security (Iraq) ', 'Kuwait', 'Parthia', 'Israel', 'Ocriculum', 'Khorramshahr', 'Shatt al-Arab', 'Kachapak', 'Avaricum', 'Logudoro', 'Dascylium', 'Cirta', 'Iraq', 'Artavasdes I', 'Second Triumvirate', 'Arsaces I', 'Victoriaicosprivilege', 'Jordan', 'Muhammad', 'Persian Gulf', 'Cretaceous', 'Antonia the Younger', 'The Higher Institute of Nursing in Anbar Province', 'England', 'Rajadhammasoka', 'Heraclius', 'Zoroaster', 'Germany', 'Rushid', 'Dura Europos', 'Antoninus Pius', 'Lemponimagem', 'Umm Qasr', 'Society of Jesus', 'Syria', 'Armenia', 'Hadrumetum', 'Kazerun fault', 'Italy', 'Paenula', 'Roman', 'Gaelic Revival', 'Jordan River', 'Rome', 'Augustus', 'Carthago Nova', 'Abadan', 'Sasanian Empire', 'Tigris', 'Praaspa', 'Baghdad', "Area sacra di Sant'Omobono", 'Raqqa', 'Euphrates', 'Jericho', 'Valens', 'Turkey', 'Macedonia', 'Persia', 'Hypata', 'Lupiae', 'Rogozen', 'Livia', 'College of Pontiffs', 'Iran', 'Milan', 'Phraates III', 'Iucundus', 'Latium']
+
+gpt_entity_particular(): filtered entity: 
+ ['Iraq', 'Persian Gulf', 'Dura Europos', 'Syria', 'Tigris', 'Turkey']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Julius Caesar' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Augustus
+sea mullet
+Augustus
+Lucius Cornelius Sulla
+Augustus
+The UK
+Iraq's shipping lanes
+Parthian art
+Euphrates
+Kazerun fault
+Parthian civil war
+Augustus
+Parthian architecture
+Saka tribes
+Augustus
+Parthian Empire
+Sasanian Empire
+Antony, Octavian
+Augustus
+Phraates III
+British Royal Marines
+Mark Antony
+Zagros Mountains
+Augustus
+Iranian cities
+Parthian language
+Pacorus I
+Shatt al-Arab
+Euphrates basin
+Arsaces II
+Augustus
+Euphrates
+Parthian kings
+Zagros Mountains
+Augustus
+Parthians
+Euphrates
+Jordan River
+Neanderthal
+Augustus
+Iranian cities
+Parthian Empire
+Euphrates
+Parthian kings
+Zagros Mountains
+Augustus
+common carp
+Euphrates
+Zagros Mountains
+Iraq's shipping lanes
+Pacorus I
+Augustus
+Susa
+Parthian Empire
+Euphrates
+Parthian kings
+Neotethys oceanic crust
+Jordan River
+Iran
+Augustus
+Lurs
+Parthian power
+Parthian Empire
+Euphrates
+Augustus
+Arsaces I
+Kalash
+Shatt al-Arab
+Tiberius
+Avidius Cassius
+Augustus
+Jordan River basin
+Octavian
+Iraq's shipping lanes
+Sogdians
+Tiberius
+Avidius Cassius
+Augustus
+Parthian Empire
+The Shatt al-Arab region
+Shiraz
+Euphrates riverine forest
+Arsaces I
+Neotethys oceanic crust
+Jordan River
+Iran
+Augustus
+Parthian forces
+Mark Antony
+Augustus's father
+Augustus
+Augustus
+Jordan River basin
+Vologases IV
+Marcus Junius Brutus
+Augustus's father
+Augustus
+Iranian cities
+Parthians
+Euphrates
+Parthian artwork
+Octavian
+The Karun
+Pacorus I
+Shatt al-Arab
+Marcus Tullius Cicero
+Augustus
+Arsaces I
+Augustus
+Iranian cities
+Gan Ying
+Octavian
+Jordan River
+Augustus
+Indo-Parthian Kingdom
+Euphrates
+Vologases IV
+Parthian kings
+Neanderthal
+Saka tribes
+Neanderthal
+Augustus
+Augustus
+Gaius Julius Caesar Augustus
+sea mullet
+Jesus of Nazareth
+Parthian women
+Augustus
+Parthian Empire
+Augustus
+Mount Dena
+Augustus, Mark Antony, Marcus Lepidus
+Euphrates
+Mark Antony
+grass carp
+grass carp
+Augustus
+Arsaces II
+Arsacid dynasty
+Augustus
+Caracalla
+rainbow trout
+Augustus, Mark Antony, Marcus Lepidus
+Octavian
+Augustus
+Jordan River
+Augustus
+Augustus
+Mark Antony
+Parthian history
+Jordan River
+Parthians
+Zagros fold and thrust belt
+Phraates III
+Augustus's father
+Euphrates
+Marcus Vipsanius Agrippa
+Augustus
+Mithridates II
+The Karun
+Augustus
+Arsaces I
+common carp
+Fars Province
+Dena
+Augustus
+Jordan River
+parsacid rulers
+Augustus
+Augustus
+red garra
+Iraq's shipping lanes
+Mithridates II
+Dispute over
+
+gpt_entity_particular(): entity list: 
+ ['Iranian cities', 'Mark Antony', 'Zagros fold and thrust belt', 'Mount Dena', 'Parthian civil war', 'Kalash', 'parsacid rulers', 'Parthian language', 'Dispute over', 'Saka tribes', 'Marcus Junius Brutus', 'Parthian architecture', 'Shatt al-Arab', 'Parthian artwork', 'Parthian women', 'Arsacid dynasty', 'Susa', 'The UK', 'Jordan River basin', 'Sogdians', 'Mithridates II', 'Lucius Cornelius Sulla', 'Arsaces I', 'Avidius Cassius', 'Euphrates riverine forest', 'Vologases IV', 'Gan Ying', 'Euphrates basin', 'Arsaces II', 'Parthians', 'British Royal Marines', 'Lurs', 'red garra', 'Parthian art', 'Zagros Mountains', 'rainbow trout', "Augustus's father", 'Shiraz', 'Neanderthal', 'Tiberius', 'Gaius Julius Caesar Augustus', 'Kazerun fault', 'sea mullet', 'Caracalla', 'Marcus Vipsanius Agrippa', "Iraq's shipping lanes", 'Jordan River', 'The Shatt al-Arab region', 'Augustus', 'Parthian power', 'Marcus Tullius Cicero', 'Indo-Parthian Kingdom', 'Sasanian Empire', 'Jesus of Nazareth', 'grass carp', 'Augustus, Mark Antony, Marcus Lepidus', 'The Karun', 'Neotethys oceanic crust', 'Euphrates', 'Parthian history', 'Parthian kings', 'Dena', 'Parthian forces', 'Antony, Octavian', 'Parthian Empire', 'common carp', 'Fars Province', 'Pacorus I', 'Iran', 'Octavian', 'Phraates III']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Parthian Empire' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Parthian Empire
+Roman taxation system
+Jordan River
+Germania
+Lucius Cornelius Sulla
+Parthian diplomat
+Euphrates
+Tigris
+Kazerun fault
+Parthian civil war
+Orodes II of Parthia
+Mithridates IV of Parthia
+Arsaces II
+College of Pontiffs
+Sasanian Empire
+Battle of Philippi
+College of Pontiffs
+Euphrates
+Shatt al-Arab
+Pax Romana
+Zagros Mountains
+Saka tribes
+Roman Levant
+Mithridates on throne of Armenia
+Seleucia and Ctesiphon
+Pax Romana
+Susa
+College of Pontiffs
+Pacorus I
+Artaxerxes II of Persia
+Dead Sea
+Parthian Empire
+Arvand Rud
+Seleucia and Ctesiphon
+Forum Gallorum
+Ara Pacis
+Temple of Venus Genetrix
+Armenian highlands
+Second Triumvirate
+Arabian Plate 
+Silk Road trade route
+Julius Caesar
+Seleucid territory
+Parthian Empire
+Mark Antony
+African sharptooth catfish
+Parthia
+Brazil
+Tiberius
+Julia
+Greek
+Egypt, Pannonia, Raetia
+Rome
+Silk Road
+Principate government 
+Ausgustus' family
+Armenia
+Roman counterattack
+Rom
+Odontobutis
+Apollonia
+Euphrates
+Gaius Julius Caesar
+Birecik
+Aveiro
+Nader Shah
+Raqq
+Raqqa
+Tigris
+Arbacia
+Euphrates
+Tabriz
+Euphrates
+Raqqa
+Euphrates
+Shatt al-Arab
+Arvand Rud
+Gir
+Odontobutis
+Ibanez
+Shatt al-Arab
+Shatt al-Arab
+Shatt al-Arab
+Zagros
+Iran.unique
+Div
+Han Empire
+Parthia
+Barcelona
+Tiberius
+Dyr
+Herakleia Lynkestis
+Rome
+Praespa
+Rome
+Actium
+Principate
+Sasanian Empire
+Arsacid Empire
+...
+
+gpt_entity_particular(): entity list: 
+ ['Mark Antony', 'Pacorus I', 'Julia', 'Arsacid Empire', 'Zagros', 'Orodes II of Parthia', 'Parthian civil war', 'Parthia', 'Herakleia Lynkestis', '...', 'Saka tribes', 'Principate government ', 'Shatt al-Arab', 'Brazil', 'Gaius Julius Caesar', 'Susa', 'Odontobutis', 'Battle of Philippi', 'Second Triumvirate', 'Lucius Cornelius Sulla', 'African sharptooth catfish', 'Birecik', 'Raqq', 'Div', 'Roman Levant', 'Arsaces II', 'Mithridates on throne of Armenia', 'Arabian Plate ', 'Julius Caesar', 'Praespa', 'Roman taxation system', 'Artaxerxes II of Persia', 'Aveiro', 'Han Empire', 'Zagros Mountains', 'Rom', 'Actium', 'Germania', 'Roman counterattack', 'Nader Shah', 'Iran.unique', 'Mithridates IV of Parthia', 'Armenian highlands', 'Tiberius', 'Armenia', 'Temple of Venus Genetrix', 'Kazerun fault', 'Dead Sea', 'Arbacia', 'Jordan River', 'Silk Road trade route', 'Rome', 'Ibanez', 'Sasanian Empire', 'Seleucid territory', 'Tigris', 'Seleucia and Ctesiphon', "Ausgustus' family", 'Raqqa', 'Forum Gallorum', 'Apollonia', 'Euphrates', 'Parthian diplomat', 'Pax Romana', 'Gir', 'Egypt, Pannonia, Raetia', 'Principate', 'Silk Road', 'Parthian Empire', 'Arvand Rud', 'Tabriz', 'Barcelona', 'Dyr', 'College of Pontiffs', 'Ara Pacis', 'Greek']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Jordan River' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Jordan River 
+sea mullet 
+Neanderthal 
+Apollonia 
+Eurasian caravan trade 
+Cisalpine Gaul 
+Shatt al-Arab 
+Syria 
+Jericho 
+ichthyofauna 
+Susa 
+riverine forest 
+Euphrates 
+Jordan River 
+Artavasdes I of Armenia 
+Neanderthal 
+Jordan River 
+Jordan River 
+Arsacid dynasty 
+narrative 
+College of Pontiffs
+
+gpt_entity_particular(): entity list: 
+ ['Jordan River ', 'Euphrates ', 'Arsacid dynasty ', 'Syria ', 'narrative ', 'Apollonia ', 'Susa ', 'Jericho ', 'College of Pontiffs', 'Neanderthal ', 'sea mullet ', 'Eurasian caravan trade ', 'Shatt al-Arab ', 'Artavasdes I of Armenia ', 'ichthyofauna ', 'Cisalpine Gaul ', 'riverine forest ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Shatt al-Arab' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Shatt al-Arab
+Jordan River
+Euphrates
+Iraq's shipping lanes
+Parthian art
+Tigris
+Kazerun fault
+Euphrates basin
+Zagros Mountains
+British Royal Marines
+Saffavids
+Abadan
+Khorramshahr
+Iranian cities
+Neanderthal
+Arsaces
+Basin
+Arsacid Empire
+Umm Qasr
+Zagros fold
+Sakastan
+Macdeonia
+Armenia
+Geography
+Wars
+Roman Senate
+Oriental plane
+
+gpt_entity_particular(): entity list: 
+ ['Iranian cities', 'Arsacid Empire', 'Zagros fold', 'Macdeonia', 'Khorramshahr', 'Roman Senate', 'Shatt al-Arab', 'Wars', 'Euphrates basin', 'British Royal Marines', 'Parthian art', 'Saffavids', 'Zagros Mountains', 'Oriental plane', 'Umm Qasr', 'Neanderthal', 'Armenia', 'Kazerun fault', "Iraq's shipping lanes", 'Jordan River', 'Abadan', 'Tigris', 'Euphrates', 'Sakastan', 'Geography', 'Arsaces', 'Basin']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Augustus' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Augustus
+sea mulet
+Lucius Cornelius Sulla
+Euphrates
+Tigris
+Topography
+Kazerun fault
+Zagros
+Euphrates basin
+Augustus's father
+College of Pontiffs
+British Royal Marines
+Abadan
+Khorramshahr
+Pacorus I
+Susa
+Apollonia
+Pacorus I
+Neanderthal
+Germany
+Ara Pacis
+Sasanian Empire
+college of Pontiffs
+Cisalpine Gaul
+Safavid
+Abadan
+Khorramshahr
+Cretaceous
+Neanderthal
+Shatt al-Arab
+College of Pontiffs
+Sasa Art Arvand Rud
+Fars Province
+Zagros Mountains
+Gan Ying
+Marcus Licinius Crassus
+Edessa
+Izates bar Monobaz of Adiabene
+Armenian king Sanatruk
+Poa sinaica
+Euphrates basin
+Euphrates region
+Euphrates
+Tiberius
+Persia
+Maedonia
+Armenia
+Armeni
+Silk Road
+Livia
+Euphrates basin
+Arabia
+Shatt al-Arab
+Tiberius
+Julius
+Gaius Julius Caesar 
+Izates bar Monobaz of Adiabene
+Iran
+Euphrates
+Kurds
+Praaspa 
+Tyre 
+Armenia 
+Armenia 
+Dena 
+Patvia 
+Marakesh
+Marakesh 
+Kurds
+Armenia
+Persia
+Seleucids
+Abadan
+Khorramshahr
+Nisa 
+Arsacid Empire
+Julius
+Armenia
+Media Atropatene
+Antiochus III
+Tiberius
+Zagros Mountains
+Abadan
+Khorramshahr
+Thurinus
+Apollonia
+Army
+Roman Empire
+Shatt al-Arab
+Decimus Junius Brutus
+Shatt al-Arab
+Alliance 
+Seleucid Empire
+Darab 
+Rach Kram
+Julius Caesar
+Augustus
+Sasa Crassus
+Zagros Mountains
+Sasanian Empire
+Darab 
+Rach Kram
+Shatt al-Arab
+Ctesiphon
+Parthian Empire
+Shatt al-Arab 
+Jordan River
+Steppe 
+African Sharptooth
+Abadan
+Khorramshahr
+Euphrates
+Kuwait 
+Bubiyan Island
+Gan Ying 
+Roman Empire 
+Jordan River 
+Zagros Mountains 
+Parthian Empire
+Corduene 
+Iran 
+Arado
+Jordan River
+Tiridates 
+Parthia
+Parni tribe
+Zagros Mountains 
+Saka 
+Parthian Empire
+Kazerun fault 
+Shatt al-Arab 
+Livia 
+Arsaces I 
+Parthia
+Shatt al-Arab 
+Zagros 
+Sumerian and/or Akkadian
+Arsaces I 
+Zagros Mountains 
+Jurassic
+Parthian Empire 
+Macedonia
+Shatt al-Arab
+Auroram
+Iran
+Raqqa
+Birecik
+Edessa 
+Izates 
+Parthian Empire
+Parni tribe
+Principate
+Ganzak
+Parni tribe
+Parthia
+Parthian Empire 
+Peacock 
+Solace
+Parthian Empire 
+Tabriz
+Shatt al-Arab 
+Shatt al-Arab 
+Barbara
+Saudi Arabia
+Discard
+Rhipicephalus
+Tabriz
+Shatt al-Arab 
+Shatt al-Arab 
+Barbara
+Saudi Arabia
+Jordan River
+Saka tribes 
+Iran 
+Shatt al-Arab
+Arsaces I 
+Apollonia
+Arado
+Euphrates
+Egypt
+Pannonia
+Raetia
+Golden Tigress 
+monobaz 
+Apollonia 
+Discard
+Iran 
+Persepolis
+Yoyos 
+Sophia 
+Arsaces I 
+Parthia
+Parthia 
+Iran
+Fars
+Suicide
+Zagros Mountains 
+Hera
+Shatt al-Arab
+Collision 
+Micene
+Syria
+Differ
+Parthia
+Pose
+Zagros Mountains 
+Urbana 
+Abdul-Karim
+Apollonia 
+Pannonius
+Thurinus
+Egypt
+Piacenza 
+Gazi An 
+Parthian Empire 
+Boot Haire 
+Shiraz
+Shri Mys 
+Pasallam
+Celtic 
+Shatt al-Ara
+Amaranthaceae
+Amaranthaceae 
+Parthia 
+Marija
+Apollonia 
+Actium 
+Euphrates
+Venus
+Privacy
+David
+Celtic
+Armenia
+Shatt al-Arab 
+Abadan
+Khorramshahr 
+Mount Dena 
+Zagros Mountains 
+Gan Ying 
+Celtic
+Homer 
+Zambezi
+Jordan 
+Pannonius 
+Hera 
+Vanns
+Quick
+Dena 
+Euphrates
+Mechanism
+Dena 
+rocks
+Son
+Arado
+Shatt al-Arab 
+Izates 
+Arsaces II 
+Iraq 
+Julius Caesar
+ Anton
+Vologases IV 
+Zagros Mountains 
+Alexander 
+Israel
+Raqqa
+Birecik 
+March 
+Dena 
+Gaius Caesar
+Seleucia
+Parthia
+Mara
+Barbara 
+Umm Qasr 
+Periplus
+Piruzi 
+Drainage 
+Discard
+Germania 
+Jericho
+Mark Antony 
+Vietnam
+Geri 
+Armenia 
+Annex
+Cist 
+Shatt al-Arab 
+Raqqa
+Birecik 
+Euphrates basin
+Apollonia 
+Rome
+Breath 
+Macloth 
+Egypt
+Carthage
+Bureau
+Nero
+Britain
+Oxford
+Gala
+Mithridates 
+Abu Dhabi 
+Buchan
+Augu 
+Libya
+Basin
+Reserve
+Palace
+Valles  
+Mamba
+African
+
+gpt_entity_particular(): entity list: 
+ ['Britain', 'Corduene ', 'Ctesiphon', 'Parthia', 'Quick', 'Macloth ', 'Kuwait ', 'Jordan ', 'Julius', 'Venus', 'Kazerun fault ', 'Egypt', 'Lucius Cornelius Sulla', 'Jordan River ', 'Amaranthaceae', 'Armenia ', 'British Royal Marines', 'Mara', 'Piruzi ', 'Pasallam', 'Livia ', 'Fars', 'Shri Mys ', 'Periplus', 'Decimus Junius Brutus', 'African', 'Armenia', 'Golden Tigress ', 'Seleucid Empire', 'Poa sinaica', 'Vietnam', 'Media Atropatene', 'Sasanian Empire', 'Euphrates region', 'Gazi An ', 'Apollonia', 'Umm Qasr ', 'Alexander ', 'Son', 'Darab ', 'Augu ', 'Sophia ', 'Silk Road', 'Patvia ', 'Valles  ', 'Mark Antony ', 'Tabriz', 'Fars Province', 'Livia', 'Tiridates ', 'African Sharptooth', 'Yoyos ', 'Celtic ', 'Shatt al-Ara', 'Seleucids', 'Nisa ', 'Khorramshahr', 'Army', 'Gala', 'Mithridates ', 'March ', 'Steppe ', 'Topography', 'Sumerian and/or Akkadian', 'Amaranthaceae ', 'Barbara ', 'Birecik', 'Iran ', 'Euphrates basin', 'Edessa ', 'Pose', 'Auroram', 'Arsaces II ', 'Arado', 'Bureau', 'Discard', 'Germany', 'Alliance ', 'Khorramshahr ', "Augustus's father", 'monobaz ', 'Shiraz', 'Neanderthal', 'Arabia', 'Praaspa ', 'Syria', 'Tiberius', 'Oxford', 'Saudi Arabia', 'Thurinus', 'Zagros ', 'Abadan', 'Parni tribe', 'Marakesh ', 'Gan Ying ', 'Parthian Empire ', 'Armeni', 'Hera ', 'Saka tribes ', 'Zambezi', 'Annex', 'Privacy', 'Shatt al-Arab ', 'Kurds', 'Ara Pacis', 'college of Pontiffs', 'Persepolis', 'Basin', 'Actium ', 'Carthage', 'Zagros', 'Rhipicephalus', 'Mamba', 'Shatt al-Arab', 'Birecik ', 'Abu Dhabi ', 'Rach Kram', 'Saka ', 'Cisalpine Gaul', 'Izates bar Monobaz of Adiabene', 'Gan Ying', 'Gaius Julius Caesar ', 'Parthia ', 'Buchan', 'Cretaceous', 'Apollonia ', 'Differ', 'Zagros Mountains', 'Pannonius ', 'Roman Empire ', ' Anton', 'Solace', 'Nero', 'Jurassic', 'Gaius Caesar', 'Vologases IV ', 'Sasa Crassus', 'Suicide', 'Germania ', 'Jordan River', 'Rome', 'Reserve', 'Tigris', 'Maedonia', 'Bubiyan Island', 'Raqqa', 'Mount Dena ', 'Edessa', 'Dena ', 'Macedonia', 'Boot Haire ', 'Homer ', 'Principate', 'Cist ', 'Geri ', 'Palace', 'Abdul-Karim', 'Hera', 'Micene', 'College of Pontiffs', 'Marcus Licinius Crassus', 'Arsacid Empire', 'Safavid', 'Marija', 'Israel', 'Celtic', 'David', 'Susa', 'Vanns', 'Zagros Mountains ', 'Antiochus III', 'Libya', 'sea mulet', 'Armenian king Sanatruk', 'Julius Caesar', 'Raetia', 'Pannonius', 'Barbara', 'Roman Empire', 'Drainage ', 'Arsaces I ', 'Urbana ', 'Tyre ', 'Kazerun fault', 'Izates ', 'Mechanism', 'Seleucia', 'Augustus', 'Ganzak', 'Collision ', 'Breath ', 'Sasa Art Arvand Rud', 'Euphrates', 'Jericho', 'Pannonia', 'Iraq ', 'Persia', 'Peacock ', 'rocks', 'Parthian Empire', 'Pacorus I', 'Iran', 'Marakesh', 'Piacenza ']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Zagros Mountains' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Zagros Mountains
+Jordan River
+Euphrates
+Topography
+Armenian highlands
+Kazerun fault
+Saka tribes
+Kuwait's
+Birecik
+Cisalpine Gaul
+Iraq's shipping lanes
+Neotethys oceanic crust
+Resumption
+Shatt al-Arab
+Strait of Hormuz
+Umm Qasr
+Abadan
+Khorramshahr
+Lupiae
+Cretaceous
+Lurs
+Sasanian Empire
+Abadan
+Dena
+Iran
+Shiraz
+Neanderthals
+Zagros fold and thrust belt
+Kurds
+Jordan River species
+Narrative of the United States' Expedition to the River Jordan and the Dead Sea
+Umm Qasr
+Apollonia
+Lurs
+Apollonia
+Zagros mountains
+Shatt al-Arab
+Crassus
+Seleucia
+Avidius Cassius
+Tiridates
+Euphrates
+Zagros
+June
+Kazerun fault
+Amaranthaceae
+Roman taxation system
+Augustus
+Aquileia
+Shatt al-Arab
+Euphrates
+Apollonia
+Pax Romana
+Praaspa
+Euphrates
+Arcadius I
+Zagros Mountains
+Euphrates
+Zagros Mountains
+Euphrates
+Tiridates
+Seleucid
+Greek games
+College of Pontiffs
+Shatt al-Arab
+Pasargadae
+College of Pontiffs
+Apollonia
+Euphrates
+Poland
+Abadan
+Kuwait's
+Second Triumvirate
+Sebasteion
+Arsaces I
+Cretaceous
+Zagros
+Neanderthals
+Akkadian
+Apollonia
+Hormuzgan
+Iraq
+Zagros
+Parthia
+Parni
+Jordan River
+Decimus
+Jordan River
+Augustus
+Gaius Octavius
+Armenian king Sanatruk
+Neanderthal
+Parni
+Augustus
+Iran
+Roman Empire
+Jericho
+Abadan
+Abadan
+Roman invasion
+Euphrates
+Sinjar Mountains
+Persepolis
+Ara Pacis
+Lurs
+Mediterranean
+Aybakari
+Drainage area
+Arabian Plate
+Jerusalem
+Dena
+Euphrates
+Iraq
+John Hyrcanus
+Rhagae
+Euphrates
+Manbij
+Euphrates
+Pesaro
+Jordan River
+Lycus
+Artavasdes
+Persia
+Euphrates
+Roman Republic
+Poland
+Euphrates
+Seleucia
+Birecik
+Jordan River
+Jordan River
+Parni
+Poa sinaica
+Bailey’s evolutionary stasis
+Firuzabad
+Jordan River
+Jordan River
+Zagros
+Apollonia
+Praaspa
+Arvand Rud
+Singapore
+Bay of Tunis
+Jordan River
+Cappadocia
+Oriental plane
+Seleucia
+Seleucia
+Sumerian
+Euphrates
+[[Source]](https://en.wikipedia.org/wiki/Zagros_Mountains)
+
+gpt_entity_particular(): entity list: 
+ ['Zagros fold and thrust belt', 'Mediterranean', 'Parthia', 'John Hyrcanus', 'Arsaces I', 'Amaranthaceae', 'Pasargadae', 'Resumption', 'Aquileia', 'Poa sinaica', 'Sasanian Empire', 'Apollonia', 'Poland', 'Khorramshahr', 'Arabian Plate', 'Topography', 'Avidius Cassius', 'Birecik', 'Roman taxation system', 'Oriental plane', 'Sinjar Mountains', 'Manbij', "Narrative of the United States' Expedition to the River Jordan and the Dead Sea", 'Shiraz', 'Neanderthal', 'Crassus', "Kuwait's", 'Abadan', 'Praaspa', '[[Source]](https://en.wikipedia.org/wiki/Zagros_Mountains)', 'Neotethys oceanic crust', 'June', 'Roman Republic', 'Jerusalem', 'Lupiae', 'Arvand Rud', 'Kurds', 'Ara Pacis', 'Lycus', 'Persepolis', 'Zagros', 'Sumerian', 'Saka tribes', 'Shatt al-Arab', 'Second Triumvirate', 'Cisalpine Gaul', 'Greek games', 'Cretaceous', 'Lurs', 'Zagros Mountains', 'Armenian highlands', 'Jordan River species', 'Pesaro', 'Cappadocia', "Iraq's shipping lanes", 'Jordan River', 'Seleucid', 'Rhagae', 'Pax Romana', 'Roman invasion', 'College of Pontiffs', 'Hormuzgan', 'Bay of Tunis', 'Iraq', 'Tiridates', 'Drainage area', 'Armenian king Sanatruk', 'Strait of Hormuz', 'Artavasdes', 'Umm Qasr', 'Roman Empire', 'Zagros mountains', 'Decimus', 'Akkadian', 'Kazerun fault', 'Seleucia', 'Augustus', 'Aybakari', 'Singapore', 'Euphrates', 'Dena', 'Jericho', 'Sebasteion', 'Parni', 'Persia', 'Firuzabad', 'Arcadius I', 'Gaius Octavius', 'Neanderthals', 'Iran', 'Bailey’s evolutionary stasis']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Tigris' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Euphrates
+Tigris
+Shatt al-Arab
+Parthian language
+Zagros Mountains
+Saka tribes
+Parthian art
+Kazerun fault 
+Parthian Empire
+College of Pontiffs
+Eurasian caravan trade
+Pollution and fire-fighting services
+Pax Romana
+Seleucia
+Ctesiphon
+Seleucid
+Ara Pacis
+Temple of Venus Genetrix
+Pater patriae
+Miocene
+Zagros mountains
+Cisalpine Gaul
+Strait of Hormuz
+Syria
+Iran
+Iraq
+Artavasdes I of Armenia
+Corduene
+Iranian Shah Mohammad Reza Pahlavi
+Arvand Rud
+Sasanian period
+Roman Levant
+College of Pontiffs
+Pax Romana
+Sasanian Empire
+Abadan
+Khorramshahr 
+Persian Gulf
+Arvand Rud
+Neotethys oceanic crust
+Roman Empire 
+Mithridates 
+Parni tribe
+Parni tribe
+Parni tribe
+Euphrates region
+Euphrates region
+Roman Senate
+Seleucid territory 
+Armenian highlands
+Amphibia 
+Wezmeh Cave
+Battle of Philippi
+Zeugma
+Crassus
+Imperium Romanum 
+Seleucid
+Temple of Jupiter 
+Labienus
+Crassus
+Pacorus I
+Shatt al-Arab
+Birecik
+Tiridates I of Parthia
+Phraates III
+Seleucia 
+Ctesiphon 
+Narrative of the United States' Expedition to the River Jordan and the Dead Sea
+Seleucia
+Ctesiphon 
+Jordan River industries
+Lions
+Velvet mounts 
+Alexander the Great 
+Alexander the Great 
+Arrian 
+Phraates 
+Xerxes
+The Greek geographer and historian 
+The Greek geographer and historian 
+Kuwait's
+Shatt al-Arab delta 
+Poa Sinaica 
+Darius 
+Grain-merchant states
+Parthian dependence on grain from Roman Anatolia
+Livia
+Armenian king Sanatruk
+Floods
+Agriculture
+The Parthian king
+The Parthian king
+Salvatore
+Parthian history
+Narrative of the United States' Expedition to the River Jordan and the Dead Sea
+Parthian Empire 
+Egypt
+Pannonia
+Raetia 
+Zagros region
+oil production
+Parthia 
+Armenians 
+Armenia 
+Sassanid 
+Kurdistan 
+Crassus
+Ctesiphon 
+Surena 
+Crassus' forces
+Arsacid dynasty 
+Poraries
+Arsaces 
+Seleucus 
+Seleucus 
+Sepahbod Kartir
+Seleucid 
+Parthian 
+Arsaces
+Arsaces 
+Seleucia
+Ctesiphon
+Abdullah of the Zutt
+Parthia 
+Seleucia 
+Ctesiphon 
+Heliocaesarea
+Ptolemy 
+Seleucid
+Phraates 
+Crassus
+Pacorus
+Parthian civil wars
+China
+Seleucid
+Historians
+Iranian literature 
+Ctesiphon
+Sassanid
+Octavian 
+Iran 
+Zagros 
+Iran
+Sesa
+Tarana 
+Philippi 
+Seleucia 
+Ctesiphon 
+Iran 
+Roman territories
+
+gpt_entity_particular(): entity list: 
+ ['Imperium Romanum ', 'Grain-merchant states', 'Shatt al-Arab delta ', 'Seleucid territory ', 'Zagros region', 'Alexander the Great ', 'Ctesiphon', 'Sassanid', 'Kazerun fault ', 'Egypt', 'Miocene', "Crassus' forces", 'Roman Levant', 'Armenia ', 'oil production', 'Roman territories', 'The Parthian king', 'Raetia ', 'Sepahbod Kartir', 'Pollution and fire-fighting services', 'Pacorus', 'Sasanian Empire', 'Euphrates region', 'Tarana ', 'Zeugma', 'Labienus', 'Arsaces', 'Livia', 'Lions', 'Velvet mounts ', 'Pater patriae', 'Octavian ', 'Parthian dependence on grain from Roman Anatolia', 'Abdullah of the Zutt', 'Mithridates ', 'Kurdistan ', 'Battle of Philippi', 'Birecik', 'Iran ', 'Arsaces ', 'Ptolemy ', 'Khorramshahr ', "Narrative of the United States' Expedition to the River Jordan and the Dead Sea", 'Syria', 'Crassus', 'Artavasdes I of Armenia', "Kuwait's", 'Tiridates I of Parthia', 'Zagros ', 'Abadan', 'Salvatore', 'Parni tribe', 'Arsacid dynasty ', 'Neotethys oceanic crust', 'Parthian Empire ', 'Jordan River industries', 'Arvand Rud', 'Ara Pacis', 'Phraates III', 'Parthian language', 'Saka tribes', 'Roman Senate', 'Shatt al-Arab', 'Cisalpine Gaul', 'Arrian ', 'Temple of Jupiter ', 'Parthia ', 'Sesa', 'Armenians ', 'Sassanid ', 'Zagros Mountains', 'Roman Empire ', 'Seleucus ', 'Armenian highlands', 'Philippi ', 'Wezmeh Cave', 'Seleucid', 'China', 'Heliocaesarea', 'Poa Sinaica ', 'Tigris', 'Corduene', 'Seleucia ', 'Iranian literature ', 'Pax Romana', 'College of Pontiffs', 'Floods', 'Poraries', 'Ctesiphon ', 'Agriculture', 'Iraq', 'Historians', 'Armenian king Sanatruk', 'Persian Gulf', 'Phraates ', 'Parthian art', 'Amphibia ', 'Eurasian caravan trade', 'Surena ', 'Strait of Hormuz', 'Iranian Shah Mohammad Reza Pahlavi', 'Zagros mountains', 'Temple of Venus Genetrix', 'The Greek geographer and historian ', 'Seleucia', 'Darius ', 'Seleucid ', 'Parthian civil wars', 'Euphrates', 'Parthian history', 'Pannonia', 'Parthian ', 'Parthian Empire', 'Sasanian period', 'Xerxes', 'Pacorus I', 'Iran']
+
+gpt_entity_particular(): filtered entity: 
+ ['Ctesiphon', 'Syria', 'Iraq', 'Persian Gulf', 'Euphrates']
+After GPT, entity:  {'Vipsanius', 'Saka', 'Ctesiphon', 'Parthia', 'Julius', 'Venus', 'Egypt', 'Miocene', 'Persian', 'Amaranthaceae', 'Philippi', 'Parthians', 'Lepidus', 'Jesus', 'Saudi', 'Fars', '"Poa', 'Babylonia', 'Mountains', 'Armenia', 'Lucius', 'Arab', 'Iberia', 'Labienus', 'Lucullus', 'Livia', 'Longinus', 'Pacis', 'Chao', 'al', 'Hormuz', 'Arabian', 'Battle', 'United', 'Kuwait', 'Khorramshahr', 'Birecik', 'region', 'Albania', 'Dan', 'Gaius', 'Cave', 'Nazareth', 'Avidius', 'Brutus', 'Shiraz', 'Neanderthal', 'Arabia', 'Syria', 'Tiberius', 'Arab"', 'Crassus', 'Cassius', 'Junius', 'Ardashir', 'Abadan', 'Han', 'Cornelius', 'Hyspaosines', 'Mutina', 'Island', 'Antioch', 'Faw', 'Lupiae', 'Genetrix', 'Sakastan', 'UK', 'Zagros', 'Rud', 'Sulla', 'Octavius', 'Sogdians', 'Dead', 'fed', 'Cretaceous', 'Brundisium', 'Province', 'Caesar', "Empire's", 'Dura Europos', 'Gulf', 'Cicero', 'Senate', 'China', 'River', 'Rome', 'Wezmeh', 'Antony', 'Tigris', 'Corduene', 'Eurasian', 'Atropatene', 'Edessa', 'Artaxerxes', 'Turkey', 'Macedonia', 'Strait', 'Parthian', 'Kalash', 'Empire', 'Iraq', 'Monobaz', 'Jordan', 'Persian Gulf', 'Sea', 'Ara', 'Tullius', 'Mark', '"Sea', 'Agrippa', 'Marcus', 'Decimus', 'sinaica', 'Italy', 'Seleucia', 'Augustus', 'Arvand', 'basin', 'Euphrates', 'Dena', 'Jericho', 'II', 'Pannonia', 'Persia', 'Galilee', 'Temple', 'Iran', 'Octavian', 'al-Arab', 'Shatt', 'Bubiyan'}
+Total time:  516.5192110538483
+Entity conversion done on 2_13 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_2_13_entity_conversion_hash.json. Check the entity.
+ Along which 00D did the empire, with which the person in military training in Apollonia during 06B Caesar's assassination made peace, move its central government seat from Nisa?
+
+
+
+Done. Check final_query/id_2_13_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_2_13_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_2_13_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_2_13_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_2_13_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_2_13_final_result_ratio25_unmasked.txt

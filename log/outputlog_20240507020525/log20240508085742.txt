@@ -1,0 +1,209 @@
+Got argument: Seoul, 4, 4_5
+
+utils/question.py extract_hops(Seoul, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Seoul_info.json file
+first_hop:  {'triplet': '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")', 'start word': 'Seoul', 'end word': 'Incheon', 'source': {'name': 'Incheon', 'line': 3}, 'cpnet': {'start word': 'seoul', 'end word': 'incheon'}}
+
+utils/question.py extract_hops(Incheon, [], ['Seoul']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Incheon_info.json file
+second_hop:  {'triplet': '("Incheon", "has established relationships with", "Singapore and San Francisco")', 'start word': 'Incheon', 'end word': 'San Francisco', 'source': {'name': 'Incheon', 'line': 8}, 'cpnet': {'start word': 'incheon', 'end word': 'san_francisco'}}
+
+utils/question.py extract_hops(San Francisco, [], ['Seoul', 'Incheon']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/San_Francisco_info.json file
+extract_info(San Francisco) Start.
+utils/preprocess.py extract_info(): Checking good links on San Francisco
+Northern California is Geography
+1 / 30 )  Northern California Northern California northern_california
+California is Geography
+2 / 30 )  California California california
+Golden Gate is Geography
+3 / 30 )  Golden Gate Golden Gate golden_gate
+Francis of Assisi is People
+4 / 30 )  Francis of Assisi Francis of Assisi francis_of_assisi
+San Francisco Bay Area is Geography
+5 / 30 )  San Francisco Bay Area San Francisco Bay Area san_francisco_bay_area
+Singapore is Geography
+6 / 30 )  Singapore Singapore singapore
+Levi Strauss & Co. is Geography
+7 / 30 )  Levi's Levi Strauss & Co. levi_strauss
+Miami is Geography
+8 / 30 )  Miami Miami miami
+Orlando, Florida is Geography
+9 / 30 )  Orlando Orlando, Florida orlando_florida
+Golden Gate Bridge is Geography
+10 / 30 )  Golden Gate Bridge Golden Gate Bridge golden_gate_bridge
+San Francisco State University is Geography
+11 / 30 )  San Francisco State University San Francisco State University san_francisco_state_university
+San Francisco International Airport is Geography
+12 / 30 )  main international airport San Francisco International Airport sfo
+San Francisco Bay is Geography
+13 / 30 )  San Francisco Bay San Francisco Bay san_francisco_bay
+Monterey, California is Geography
+14 / 30 )  Monterey Monterey, California monterey
+Alcatraz Island is Geography
+15 / 30 )  Alcatraz Island Alcatraz Island alcatraz
+Nevada is Geography
+16 / 30 )  Nevada Nevada nevada
+Levi Strauss is People
+17 / 30 )  Levi Strauss Levi Strauss levi_strauss
+Golden Gate Park is Geography
+18 / 30 )  Golden Gate Park Golden Gate Park golden_gate_park
+Nob Hill, San Francisco is Geography
+19 / 30 )  Nob Hill Nob Hill, San Francisco nob_hill
+Jack London is People
+20 / 30 )  Jack London Jack London jack_london
+Al Capone is People
+21 / 30 )  Al Capone Al Capone al_capone
+Haight-Ashbury is Geography
+22 / 30 )  Haight-Ashbury Haight-Ashbury haight_ashbury
+Castro District, San Francisco is Geography
+23 / 30 )  The Castro Castro District, San Francisco castro
+North Carolina is Geography
+24 / 30 )  North Carolina North Carolina north_carolina
+Transamerica Pyramid is Geography
+25 / 30 )  Transamerica Pyramid Transamerica Pyramid transamerica_pyramid
+South of Market, San Francisco is Geography
+26 / 30 )  South of Market South of Market, San Francisco south_of_market
+Silicon Valley is Geography
+27 / 30 )  Silicon Valley Silicon Valley silicon_valley
+Armour & Co. Building is Geography
+28 / 30 )  Armour & Co. Building Armour & Co. Building armor
+San Andreas Fault is Geography
+29 / 30 )  San Andreas San Andreas Fault san_andreas_fault
+Union Square is Geography
+30 / 30 )  Union Square Union Square union_square
+extract_triplet(San Francisco)
+Got GPT's response. String length : 2152
+subject_words:  [(None, 'San Francisco', 'san_francisco')]
+object_words:  [['Northern California', 'Northern California', 'northern_california'], ['California', 'California', 'california']]
+subject_words:  [(None, 'San Francisco', 'san_francisco')]
+object_words:  [['California', 'California', 'california']]
+subject_words:  [(None, 'San Francisco', 'san_francisco')]
+object_words:  [['Francis of Assisi', 'Francis of Assisi', 'francis_of_assisi']]
+subject_words:  [['Golden Gate', 'Golden Gate', 'golden_gate']]
+object_words:  []
+subject_words:  [['Golden Gate', 'Golden Gate', 'golden_gate'], ['Golden Gate Bridge', 'Golden Gate Bridge', 'golden_gate_bridge']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [(None, 'San Francisco', 'san_francisco'), ['San Francisco State University', 'San Francisco State University', 'san_francisco_state_university']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [(None, 'San Francisco', 'san_francisco'), ['San Francisco Bay', 'San Francisco Bay', 'san_francisco_bay']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [['Alcatraz Island', 'Alcatraz Island', 'alcatraz']]
+object_words:  [(None, 'San Francisco', 'san_francisco'), ['San Francisco Bay', 'San Francisco Bay', 'san_francisco_bay']]
+subject_words:  [["Levi's", 'Levi Strauss & Co.', 'levi_strauss']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [(None, 'San Francisco', 'san_francisco')]
+object_words:  [['California', 'California', 'california']]
+subject_words:  [['Monterey', 'Monterey, California', 'monterey']]
+object_words:  [(None, 'San Francisco', 'san_francisco'), ['San Francisco Bay', 'San Francisco Bay', 'san_francisco_bay']]
+subject_words:  [['Nevada', 'Nevada', 'nevada']]
+object_words:  []
+subject_words:  [['Golden Gate', 'Golden Gate', 'golden_gate'], ['Golden Gate Park', 'Golden Gate Park', 'golden_gate_park']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [['Nob Hill', 'Nob Hill, San Francisco', 'nob_hill']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [['Al Capone', 'Al Capone', 'al_capone']]
+object_words:  [['Alcatraz Island', 'Alcatraz Island', 'alcatraz']]
+subject_words:  [['The Castro', 'Castro District, San Francisco', 'castro']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+['', 'North Carolina', 'is where the Bank of America, founded in San Francisco, is now based', '']
+subject_words:  [['Transamerica Pyramid', 'Transamerica Pyramid', 'transamerica_pyramid']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [['South of Market', 'South of Market, San Francisco', 'south_of_market']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [['Silicon Valley', 'Silicon Valley', 'silicon_valley']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [['Armour & Co. Building', 'Armour & Co. Building', 'armor']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [['San Andreas', 'San Andreas Fault', 'san_andreas_fault']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+subject_words:  [['Union Square', 'Union Square', 'union_square']]
+object_words:  [(None, 'San Francisco', 'san_francisco')]
+third_hop:  {'triplet': '("Alcatraz Island", "is located in", "San Francisco Bay")', 'start word': 'San Francisco', 'end word': 'Alcatraz Island', 'source': {'name': 'San Francisco', 'line': 8}, 'cpnet': {'start word': 'san_francisco', 'end word': 'alcatraz'}}
+
+utils/question.py extract_hops(Alcatraz Island, [], ['Seoul', 'Incheon', 'San Francisco']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Alcatraz_Island_info.json file
+extract_info(Alcatraz Island) Start.
+utils/preprocess.py extract_info(): Checking good links on Alcatraz Island
+San Francisco is Geography
+1 / 30 )  San Francisco, California San Francisco san_francisco
+National Park Service is Geography
+2 / 30 )  National Park Service National Park Service national_park_service
+Gannet is Animal
+3 / 30 )  Gannets Gannet gannet
+Pelican is Animal
+4 / 30 )  Pelicans Pelican pelican
+Brown pelican is Animal
+5 / 30 )  California brown pelican Brown pelican brown_pelican
+Mexico is Geography
+6 / 30 )  Mexican Mexico mexico
+John C. Frémont is People
+7 / 30 )  John C. Frémont John C. Frémont john_c_fremont
+Millard Fillmore is People
+8 / 30 )  Millard Fillmore Millard Fillmore millard_fillmore
+United States Department of Justice is Geography
+9 / 30 )  United States Department of Justice United States Department of Justice usdoj
+Federal Bureau of Investigation is Geography
+10 / 30 )  FBI agents Federal Bureau of Investigation federal_bureau_of_investigation
+Al Capone is People
+11 / 30 )  Al Capone Al Capone al_capone
+Minneapolis is Geography
+12 / 30 )  Minneapolis Minneapolis minneapolis
+Richard Nixon is People
+13 / 30 )  Richard Nixon Richard Nixon richard_nixon
+United States Congress is Geography
+14 / 30 )  Congress United States Congress united_states_congress
+Ai Weiwei is People
+15 / 30 )  Ai Weiwei Ai Weiwei ai_weiwei
+Geranium is Animal
+16 / 30 )  geraniums Geranium geranium
+Alcatraz  is Geography
+17 / 30 )  Alcatraz Alcatraz  alcatraz
+Scorpions  is Animal
+18 / 30 )  Scorpions Scorpions  scorpiones
+extract_triplet(Alcatraz Island)
+Got GPT's response. String length : 1764
+subject_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+object_words:  []
+subject_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+object_words:  []
+subject_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+object_words:  []
+subject_words:  [['Alcatraz', 'Alcatraz ', 'alcatraz']]
+object_words:  []
+subject_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+object_words:  [['National Park Service', 'National Park Service', 'national_park_service']]
+subject_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+object_words:  []
+subject_words:  [['National Park Service', 'National Park Service', 'national_park_service']]
+object_words:  []
+subject_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+object_words:  []
+subject_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+object_words:  []
+subject_words:  [['Pelicans', 'Pelican', 'pelican']]
+object_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+subject_words:  [['Millard Fillmore', 'Millard Fillmore', 'millard_fillmore']]
+object_words:  []
+subject_words:  [['FBI agents', 'Federal Bureau of Investigation', 'federal_bureau_of_investigation']]
+object_words:  [['Alcatraz', 'Alcatraz ', 'alcatraz']]
+subject_words:  [['Al Capone', 'Al Capone', 'al_capone']]
+object_words:  [['Alcatraz', 'Alcatraz ', 'alcatraz']]
+subject_words:  [['Richard Nixon', 'Richard Nixon', 'richard_nixon']]
+object_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+subject_words:  [['Congress', 'United States Congress', 'united_states_congress']]
+object_words:  [['National Park Service', 'National Park Service', 'national_park_service']]
+subject_words:  [['Ai Weiwei', 'Ai Weiwei', 'ai_weiwei']]
+object_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+subject_words:  [['geraniums', 'Geranium', 'geranium']]
+object_words:  [(None, 'Alcatraz Island', 'alcatraz'), ['Alcatraz', 'Alcatraz ', 'alcatraz']]
+subject_words:  [['Scorpions', 'Scorpions ', 'scorpiones']]
+object_words:  [['Alcatraz', 'Alcatraz ', 'alcatraz']]
+forth_hop:  {'triplet': '("Richard Nixon", "ended", "the Indian termination policy during the Native American occupation of Alcatraz Island")', 'start word': 'Alcatraz Island', 'end word': 'Richard Nixon', 'source': {'name': 'Alcatraz Island', 'line': 14}, 'cpnet': {'start word': 'alcatraz', 'end word': 'richard_nixon'}}
+generate_question(4_5, ['("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")', '("Incheon", "has established relationships with", "Singapore and San Francisco")', '("Alcatraz Island", "is located in", "San Francisco Bay")', '("Richard Nixon", "ended", "the Indian termination policy during the Native American occupation of Alcatraz Island")'], ['Incheon', 'San Francisco', 'Alcatraz Island', 'Richard Nixon'], [('Seoul', 'Incheon'), ('Incheon', 'San Francisco'), ('San Francisco', 'Alcatraz Island'), ('Alcatraz Island', 'Richard Nixon')], Richard Nixon, [{'name': 'Incheon', 'line': 3}, {'name': 'Incheon', 'line': 8}, {'name': 'San Francisco', 'line': 8}, {'name': 'Alcatraz Island', 'line': 14}]) called
+GPT output is:  Q: Which president terminated the Indian termination policy during the time Native Americans occupied an island that shares ties with South Korea's third-most-populous city and San Francisco, both of which have established relationships with Singapore?
+A: Richard Nixon
+final_choice(Richard Nixon, options = 5) started
+[]
+entity_type(Richard Nixon) called
+Richard Nixon is People

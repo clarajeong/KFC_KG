@@ -1,0 +1,1132 @@
+Got argument: Immanuel Kant, 5, 5_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Hannah Arendt", "was influenced by", "the philosophy of Kant")', 'start word': 'Immanuel Kant', 'end word': 'Hannah Arendt', 'source': {'name': 'Hannah Arendt', 'line': 26}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'hannah_arendt'}}
+
+utils/question.py extract_hops(Hannah Arendt, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Hannah_Arendt_info.json file
+second_hop:  {'triplet': '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")', 'start word': 'Hannah Arendt', 'end word': 'Königsberg', 'source': {'name': 'Hannah Arendt', 'line': 5}, 'cpnet': {'start word': 'hannah_arendt', 'end word': 'königsberg'}}
+
+utils/question.py extract_hops(Königsberg, [], ['Immanuel Kant', 'Hannah Arendt']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Königsberg_info.json file
+third_hop1:  {'triplet': '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")', 'start word': 'Königsberg', 'end word': 'Frederick William, Elector of Brandenburg', 'source': {'name': 'Königsberg', 'line': 37}, 'cpnet': {'start word': 'königsberg', 'end word': 'great_elector'}}
+
+utils/question.py extract_hops(Königsberg, ['Frederick William, Elector of Brandenburg'], ['Immanuel Kant', 'Hannah Arendt']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Königsberg_info.json file
+third_hop2:  {'triplet': '("Königsberg", "was the easternmost large city in", "Germany before WW II")', 'start word': 'Königsberg', 'end word': 'Germany', 'source': {'name': 'Kaliningrad', 'line': 10}, 'cpnet': {'start word': 'königsberg', 'end word': 'germany'}}
+extraction_done:  True
+generate_question(5_3, ['("Hannah Arendt", "was influenced by", "the philosophy of Kant")', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")', '("Königsberg", "was the easternmost large city in", "Germany before WW II")'], ['Immanuel Kant', 'Hannah Arendt', 'Königsberg', 'Königsberg'], [('Immanuel Kant', 'Hannah Arendt'), ('Hannah Arendt', 'Königsberg'), ('Königsberg', 'Frederick William, Elector of Brandenburg'), ('Königsberg', 'Germany')], Immanuel Kant, [{'name': 'Hannah Arendt', 'line': 26}, {'name': 'Hannah Arendt', 'line': 5}, {'name': 'Königsberg', 'line': 37}, {'name': 'Kaliningrad', 'line': 10}]) called
+GPT output is:  Q: Which philosopher's ideas significantly influenced the thinker who moved to the city that was the easternmost large German city before World War II and also the capital during the rule of the Electors of Brandenburg in the Duchy of Prussia?
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called
+Immanuel Kant is People
+check_matchscore(Immanuel Kant, Idealists):  0.0
+choose_by_wiki_recur(Idealists)
+   Pages in Idealists: ['Abhinavagupta', 'Samuel Alexander', 'Devlet Bahçeli', 'George Berkeley', 'Brand Blanshard', 'George Blewett', 'Benjamin Paul Blood', 'John Elof Boodin', 'Walter Borg', 'Bernard Bosanquet (philosopher)', 'F. H. Bradley', 'Paul Brunton', 'Edward Caird', 'Ernst Cassirer', 'Frank Harold Cleobury', 'Arthur Collier', 'R. G. Collingwood', 'Benedetto Croce', 'Thomas Davidson (philosopher)', 'Dharmakirti', 'Dignāga', 'Julius Evola', 'Al-Farabi', 'Edward Douglas Fawcett', 'Eugen Fink', 'John Foster (philosopher)', 'Alexander Campbell Fraser', 'Gaudapada', 'Giovanni Gentile', 'Ionel Gherea', 'W. R. Boyce Gibson', 'Govindapada', 'T. H. Green', 'John Grote', 'Alastair Hannay', 'William Ernest Hocking', 'George Holmes Howison', 'James Jeans', 'Harold H. Joachim', 'Henry Jones (philosopher)', 'Immanuel Kant', 'Ladislav Klíma', 'David Kolb', 'James Lindsay (theologian)', 'A. A. Luce', 'John Stuart Mackenzie', 'Stewart Andrew McDowall', 'J. M. E. McTaggart', 'Franklin Merrell-Wolff', 'Ellen Mitchell (philosopher)', 'J. H. Muirhead', 'G. R. G. Mure', 'R. L. Nettleship', 'Michael Oakeshott', 'Rudolf Otto', 'Charles Sanders Peirce', 'Branislav Petronijević', 'Plato', 'Prajñakaragupta', 'Hastings Rashdall', 'Ratnakīrti', 'Eugen Relgis', 'Charles Renouvier', 'David George Ritchie', 'Howard Robinson', 'Josiah Royce', 'Śāntarakṣita', 'Alexander Schnell', 'Vasily Seseman', 'Andrew Seth Pringle-Pattison', 'Adi Shankara', 'May Sinclair', 'John Alexander Smith', 'William Ritchie Sorley', 'Bertrando Spaventa', 'Silvio Spaventa', 'Ugo Spirito', 'Timothy Sprigge', 'Günther Storck', 'Alfred Edward Taylor', 'Ralph Waldo Trine', 'Alparslan Türkeş', 'Tuğrul Türkeş', 'John Evan Turner', 'Utpaladeva', 'Vasubandhu', 'Sadhguru', 'William Wallace (philosopher)', 'Wang Ji (philosopher)', 'Wang Yangming', 'John Watson (philosopher)', 'Pamfil Yurkevich']
+      Henry Jones (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce']
+Henry Jones (philosopher) is People
+      John Evan Turner in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor']
+John Evan Turner is People
+      Giovanni Gentile in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie']
+Giovanni Gentile is People
+      A. A. Luce in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito']
+      Alfred Edward Taylor in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman']
+Alfred Edward Taylor is People
+      John Stuart Mackenzie in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett']
+      Ugo Spirito in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)']
+      Vasily Seseman in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair']
+      Edward Douglas Fawcett in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa']
+Edward Douglas Fawcett is People
+      James Lindsay (theologian) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb']
+James Lindsay (theologian) is People
+      May Sinclair in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada']
+May Sinclair is People
+      Silvio Spaventa in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis']
+Silvio Spaventa is People
+      David Kolb in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea']
+David Kolb is People
+      Gaudapada in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck']
+      Eugen Relgis in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson']
+Eugen Relgis is People
+      Ionel Gherea in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma']
+Ionel Gherea is People
+      Günther Storck in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury']
+Günther Storck is People
+      Howard Robinson in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli']
+      Ladislav Klíma in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)']
+      Frank Harold Cleobury in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)']
+      Devlet Bahçeli in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)']
+Devlet Bahçeli is People
+      Bernard Bosanquet (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)']
+Bernard Bosanquet (philosopher) is People
+      William Wallace (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş']
+      Ellen Mitchell (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita']
+      Wang Ji (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)']
+      Alparslan Türkeş in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada']
+Alparslan Türkeş is People
+      Śāntarakṣita in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith']
+Śāntarakṣita is People
+      Thomas Davidson (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall']
+Thomas Davidson (philosopher) is People
+      Govindapada in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall']
+      John Alexander Smith in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink']
+John Alexander Smith is People
+      Stewart Andrew McDowall in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş']
+Stewart Andrew McDowall is People
+      Eugen Fink in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević']
+Eugen Fink is People
+      Tuğrul Türkeş in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison']
+Tuğrul Türkeş is People
+      Branislav Petronijević in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru']
+Branislav Petronijević is People
+      Andrew Seth Pringle-Pattison in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)']
+      Sadhguru in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta']
+Sadhguru is People
+      John Watson (philosopher) in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie']
+John Watson (philosopher) is People
+      Abhinavagupta in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa']
+Abhinavagupta is People
+      David George Ritchie in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart']
+David George Ritchie is People
+      Bertrando Spaventa in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine']
+Bertrando Spaventa is People
+      J. M. E. McTaggart in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato']
+J. M. E. McTaggart is People
+      Ralph Waldo Trine in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure']
+Ralph Waldo Trine is People
+      Plato in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce']
+Plato is People
+      G. R. G. Mure in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce']
+G. R. G. Mure is People
+      Josiah Royce in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce', 'J. H. Muirhead']
+Josiah Royce is People
+      J. H. Muirhead in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce', 'J. H. Muirhead', 'Julius Evola']
+J. H. Muirhead is People
+      Julius Evola in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce', 'J. H. Muirhead', 'Julius Evola', 'F. H. Bradley']
+Julius Evola is People
+      F. H. Bradley in ['Henry Jones (philosopher)', 'John Evan Turner', 'Giovanni Gentile', 'A. A. Luce', 'Alfred Edward Taylor', 'John Stuart Mackenzie', 'Ugo Spirito', 'Vasily Seseman', 'Edward Douglas Fawcett', 'James Lindsay (theologian)', 'May Sinclair', 'Silvio Spaventa', 'David Kolb', 'Gaudapada', 'Eugen Relgis', 'Ionel Gherea', 'Günther Storck', 'Howard Robinson', 'Ladislav Klíma', 'Frank Harold Cleobury', 'Devlet Bahçeli', 'Bernard Bosanquet (philosopher)', 'William Wallace (philosopher)', 'Ellen Mitchell (philosopher)', 'Wang Ji (philosopher)', 'Alparslan Türkeş', 'Śāntarakṣita', 'Thomas Davidson (philosopher)', 'Govindapada', 'John Alexander Smith', 'Stewart Andrew McDowall', 'Eugen Fink', 'Tuğrul Türkeş', 'Branislav Petronijević', 'Andrew Seth Pringle-Pattison', 'Sadhguru', 'John Watson (philosopher)', 'Abhinavagupta', 'David George Ritchie', 'Bertrando Spaventa', 'J. M. E. McTaggart', 'Ralph Waldo Trine', 'Plato', 'G. R. G. Mure', 'Josiah Royce', 'J. H. Muirhead', 'Julius Evola', 'F. H. Bradley']
+F. H. Bradley is People
+['Thomas Davidson (philosopher)', 'Plato', 'Julius Evola', 'F. H. Bradley']
+Ended after 2.5 hierarchy
+(2.5, ['Thomas Davidson (philosopher)', 'F. H. Bradley', 'Julius Evola', 'Plato'])
+
+extract_info(Plato) Start.
+utils/preprocess.py extract_info(): Checking good links on Plato
+Platonic Academy is Geography
+1 / 30 )  Platonic Academy Platonic Academy plato's_academy
+Pythagoras is People
+2 / 30 )  Pythagoras Pythagoras pythagoras
+Heraclitus is People
+3 / 30 )  Heraclitus Heraclitus heraclitus
+Parmenides is People
+4 / 30 )  Parmenides Parmenides parmenides
+Socrates is People
+5 / 30 )  Socrates Socrates socrates
+Aristotle is People
+6 / 30 )  Aristotle Aristotle aristotle
+Alfred North Whitehead is People
+7 / 30 )  Alfred North Whitehead Alfred North Whitehead alfred_north_whitehead
+Seneca the Younger is People
+8 / 30 )  Seneca Seneca the Younger lucius_annaeus_seneca
+Aegina is Geography
+9 / 30 )  Aegina Aegina aegina
+Solon is People
+10 / 30 )  Solon Solon solon
+Sicily is Geography
+11 / 30 )  Sicily Sicily sicily
+Sulla is People
+12 / 30 )  Sulla Sulla sulla
+Syracuse, Sicily is Geography
+13 / 30 )  Syracuse Syracuse, Sicily syracusan
+Tertullian is People
+14 / 30 )  Tertullian Tertullian tertullian
+Leo Strauss is People
+15 / 30 )  Leo Strauss Leo Strauss straussian
+Xenophon is People
+16 / 30 )  Xenophon Xenophon xenophon
+Aristophanes is People
+17 / 30 )  Aristophanes Aristophanes aristophanes
+Cicero is People
+18 / 30 )  Cicero Cicero cicero
+Xenophanes is People
+19 / 30 )  Xenophanes Xenophanes xenophanes
+Zeno of Elea is People
+20 / 30 )  Zeno Zeno of Elea zeno_of_elea
+Anaxagoras is People
+21 / 30 )  Anaxagoras Anaxagoras anaxagoras
+Karl Popper is People
+22 / 30 )  Karl Popper Karl Popper karl_popper
+Geneva is Geography
+23 / 30 )  Geneva Geneva geneva
+Plotinus is People
+24 / 30 )  Plotinus Plotinus plotinus
+Constantinople is Geography
+25 / 30 )  Constantinople Constantinople constantinople
+Maimonides is People
+26 / 30 )  Maimonides Maimonides maimonides
+Avicenna is People
+27 / 30 )  Avicenna Avicenna avicenna
+Lorenzo de' Medici is People
+28 / 30 )  Lorenzo Lorenzo de' Medici lorenzo_de'medici
+Gottlob Frege is People
+29 / 30 )  Gottlob Frege Gottlob Frege fregean
+Albert Einstein is People
+30 / 30 )  Albert Einstein Albert Einstein albert_einstein
+extract_triplet(Plato)
+Got GPT's response. String length : 2100
+['Based on the given text, here are triplets that satisfy the requirements:']
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [(None, 'Plato', 'plato'), ['Platonic Academy', 'Platonic Academy', "plato's_academy"]]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Pythagoras', 'Pythagoras', 'pythagoras']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Heraclitus', 'Heraclitus', 'heraclitus']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Parmenides', 'Parmenides', 'parmenides']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Socrates', 'Socrates', 'socrates']]
+subject_words:  [['Aristotle', 'Aristotle', 'aristotle']]
+object_words:  [(None, 'Plato', 'plato')]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Alfred North Whitehead', 'Alfred North Whitehead', 'alfred_north_whitehead']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Seneca', 'Seneca the Younger', 'lucius_annaeus_seneca']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Aegina', 'Aegina', 'aegina']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Solon', 'Solon', 'solon']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Sulla', 'Sulla', 'sulla']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Syracuse', 'Syracuse, Sicily', 'syracusan']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Tertullian', 'Tertullian', 'tertullian']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Socrates', 'Socrates', 'socrates'], ['Leo Strauss', 'Leo Strauss', 'straussian']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Xenophon', 'Xenophon', 'xenophon']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Aristophanes', 'Aristophanes', 'aristophanes']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Cicero', 'Cicero', 'cicero']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Xenophanes', 'Xenophanes', 'xenophanes']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Zeno', 'Zeno of Elea', 'zeno_of_elea']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Anaxagoras', 'Anaxagoras', 'anaxagoras']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Karl Popper', 'Karl Popper', 'karl_popper']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Geneva', 'Geneva', 'geneva']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Plotinus', 'Plotinus', 'plotinus']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Constantinople', 'Constantinople', 'constantinople']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Maimonides', 'Maimonides', 'maimonides']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Avicenna', 'Avicenna', 'avicenna']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Lorenzo', "Lorenzo de' Medici", "lorenzo_de'medici"]]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Gottlob Frege', 'Gottlob Frege', 'fregean']]
+subject_words:  [(None, 'Plato', 'plato')]
+object_words:  [['Albert Einstein', 'Albert Einstein', 'albert_einstein']]
+extract_info(Julius Evola) Start.
+utils/preprocess.py extract_info(): Checking good links on Julius Evola
+Nazi Germany is Geography
+1 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Rome is Geography
+2 / 30 )  Rome Rome rome
+Vienna is Geography
+3 / 30 )  Vienna Vienna vienna
+Sicily is Geography
+4 / 30 )  Sicily Sicily sicily
+Oscar Wilde is People
+5 / 30 )  Oscar Wilde Oscar Wilde oscar_wilde
+Friedrich Nietzsche is People
+6 / 30 )  Friedrich Nietzsche Friedrich Nietzsche friedrich_nietzsche
+Georg Wilhelm Friedrich Hegel is People
+7 / 30 )  post-Hegelian Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Max Stirner is People
+8 / 30 )  Max Stirner Max Stirner stirnerism
+Asiago is Geography
+9 / 30 )  Asiago Asiago asiago
+Carl Jung is People
+10 / 30 )  Carl Jung Carl Jung carl_jung
+Plato is People
+11 / 30 )  Plato Plato plato
+Thomas Aquinas is People
+12 / 30 )  Thomas Aquinas Thomas Aquinas thomas_aquinas
+Martin Heidegger is People
+13 / 30 )  Martin Heidegger Martin Heidegger martin_heidegger
+Benito Mussolini is People
+14 / 30 )  Benito Mussolini Benito Mussolini benito_mussolini
+Adolf Hitler is People
+15 / 30 )  Adolf Hitler Adolf Hitler adolf_hitler
+Sorrento is Geography
+16 / 30 )  Sorrento Sorrento sorrento
+Hermann Hesse is People
+17 / 30 )  Hermann Hesse Hermann Hesse hermann_hesse
+Cremona is Geography
+18 / 30 )  Cremona Cremona cremona
+Oswald Spengler is People
+19 / 30 )  Oswald Spengler Oswald Spengler oswald_spengler
+José Ortega y Gasset is People
+20 / 30 )  Ortega y Gasset José Ortega y Gasset jose_ortega_y_gasset
+Schutzstaffel is Geography
+21 / 30 )  Nazi SS Schutzstaffel schutzstaffel
+Berlin is Geography
+22 / 30 )  Berlin Berlin berlin
+Victor Emmanuel III is People
+23 / 30 )  King Victor Emmanuel III Victor Emmanuel III victor_emanuel_iii
+Heinrich Himmler is People
+24 / 30 )  Heinrich Himmler Heinrich Himmler heinrich_himmler
+Soviet Union is Geography
+25 / 30 )  Soviet Union Soviet Union soviet_union
+Knut Hamsun is People
+26 / 30 )  Knut Hamsun Knut Hamsun knut_hamsun
+Vidkun Quisling is People
+27 / 30 )  Vidkun Quisling Vidkun Quisling universism
+Charles Maurras is People
+28 / 30 )  Charles Maurras Charles Maurras maurras
+Dante Alighieri is People
+29 / 30 )  Dante Dante Alighieri dante_alighieri
+Otto von Bismarck is Geography
+30 / 30 )  Otto von Bismarck Otto von Bismarck otto_von_bismarck
+extract_triplet(Julius Evola)
+Got GPT's response. String length : 2685
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  [['Vienna', 'Vienna', 'vienna']]
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  [['Friedrich Nietzsche', 'Friedrich Nietzsche', 'friedrich_nietzsche']]
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  [['Asiago', 'Asiago', 'asiago']]
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+['', 'Julius Evola', 'advocated for", Fascist Italy\'s racial laws', '']
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+subject_words:  [(None, 'Julius Evola', 'evola')]
+object_words:  []
+extract_info(F. H. Bradley) Start.
+utils/preprocess.py extract_info(): Checking good links on F. H. Bradley
+Clapham is Geography
+1 / 30 )  Clapham Clapham clapham
+Surrey is Geography
+2 / 30 )  Surrey Surrey surrey
+England is Geography
+3 / 30 )  England England england
+Immanuel Kant is People
+4 / 30 )  Immanuel Kant Immanuel Kant immanuel_kant
+University College, Oxford is Geography
+5 / 30 )  University College, Oxford University College, Oxford univ
+Georg Wilhelm Friedrich Hegel is People
+6 / 30 )  Hegelian Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+John Locke is People
+7 / 30 )  John Locke John Locke john_locke
+David Hume is People
+8 / 30 )  David Hume David Hume david_hume
+John Stuart Mill is People
+9 / 30 )  John Stuart Mill John Stuart Mill john_stuart_mill
+Johann Gottlieb Fichte is People
+10 / 30 )  Johann Gottlieb Fichte Johann Gottlieb Fichte fichte
+George Herbert Mead is People
+11 / 30 )  George Herbert Mead George Herbert Mead george_herbert_mead
+Richard Rorty is People
+12 / 30 )  Richard Rorty Richard Rorty rortyan
+G. E. Moore is People
+13 / 30 )  G. E. Moore G. E. Moore g_e_moore
+Bertrand Russell is People
+14 / 30 )  Bertrand Russell Bertrand Russell bertrand_russell
+T. S. Eliot is People
+15 / 30 )  T. S. Eliot T. S. Eliot t_s_eliot
+Harvard University is Geography
+16 / 30 )  Harvard University Harvard University harvard_university
+extract_triplet(F. H. Bradley)
+Got GPT's response. String length : 1137
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['Clapham', 'Clapham', 'clapham']]
+subject_words:  [['Clapham', 'Clapham', 'clapham']]
+object_words:  [['England', 'England', 'england']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  []
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['Immanuel Kant', 'Immanuel Kant', 'immanuel_kant']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['University College, Oxford', 'University College, Oxford', 'univ']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  []
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['Hegelian', 'Georg Wilhelm Friedrich Hegel', 'georg_wilhelm_friedrich_hegel']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['John Locke', 'John Locke', 'john_locke']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['David Hume', 'David Hume', 'david_hume']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['John Stuart Mill', 'John Stuart Mill', 'john_stuart_mill']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['Johann Gottlieb Fichte', 'Johann Gottlieb Fichte', 'fichte']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['George Herbert Mead', 'George Herbert Mead', 'george_herbert_mead']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['Richard Rorty', 'Richard Rorty', 'rortyan']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['G. E. Moore', 'G. E. Moore', 'g_e_moore']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+subject_words:  [['T. S. Eliot', 'T. S. Eliot', 't_s_eliot']]
+object_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['T. S. Eliot', 'T. S. Eliot', 't_s_eliot']]
+subject_words:  [(None, 'F. H. Bradley', 'bradleyan')]
+object_words:  [['Harvard University', 'Harvard University', 'harvard_university']]
+extract_info(Thomas Davidson (philosopher)) Start.
+utils/preprocess.py extract_info(): Checking good links on Thomas Davidson (philosopher)
+Aberdeen is Geography
+1 / 30 )  Aberdeen Aberdeen aberdeen
+Boston is Geography
+2 / 30 )  Boston Boston boston
+St. Louis is Geography
+3 / 30 )  St. Louis St. Louis st_louis
+Parmenides is People
+4 / 30 )  Parmenides Parmenides parmenides
+Dante Alighieri is People
+5 / 30 )  Dante Dante Alighieri dante_alighieri
+Antonio Rosmini is People
+6 / 30 )  Rosmini Antonio Rosmini rosminianism
+Tivoli, Lazio is Geography
+7 / 30 )  Tivoli Tivoli, Lazio tibur
+Thomas Aquinas is People
+8 / 30 )  Thomas Aquinas Thomas Aquinas thomas_aquinas
+Montreal is Geography
+9 / 30 )  Montreal Montreal montreal
+Giordano Bruno is People
+10 / 30 )  Giordano Bruno Giordano Bruno giordano_bruno
+extract_triplet(Thomas Davidson (philosopher))
+Got GPT's response. String length : 1581
+subject_words:  []
+object_words:  [['Aberdeen', 'Aberdeen', 'aberdeen']]
+subject_words:  []
+object_words:  [['Aberdeen', 'Aberdeen', 'aberdeen']]
+subject_words:  []
+object_words:  [['Aberdeen', 'Aberdeen', 'aberdeen']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Boston', 'Boston', 'boston']]
+subject_words:  []
+object_words:  [['St. Louis', 'St. Louis', 'st_louis']]
+subject_words:  []
+object_words:  [['St. Louis', 'St. Louis', 'st_louis']]
+subject_words:  []
+object_words:  [['St. Louis', 'St. Louis', 'st_louis']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Parmenides', 'Parmenides', 'parmenides']]
+subject_words:  []
+object_words:  [['Dante', 'Dante Alighieri', 'dante_alighieri']]
+subject_words:  []
+object_words:  [['Rosmini', 'Antonio Rosmini', 'rosminianism']]
+subject_words:  []
+object_words:  [['Tivoli', 'Tivoli, Lazio', 'tibur']]
+subject_words:  []
+object_words:  [['Thomas Aquinas', 'Thomas Aquinas', 'thomas_aquinas']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Rosmini', 'Antonio Rosmini', 'rosminianism']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Boston', 'Boston', 'boston']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Giordano Bruno', 'Giordano Bruno', 'giordano_bruno']]
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Plato", "founder of", "Platonic Academy")\n', '("Plato", "influenced by", "Pythagoras")\n', '("Plato", "influenced by", "Heraclitus")\n', '("Plato", "influenced by", "Parmenides")\n', '("Plato", "student of", "Socrates")\n', '("Aristotle", "student of", "Plato")\n', '("Plato", "influenced", "Alfred North Whitehead")\n', '("Plato", "mentioned by", "Seneca about his broad chest")\n', '("Plato", "was born in", "Aegina")\n', '("Plato", "descendant of", "Solon")\n', '("Plato", "had school closed by", "Sulla")\n', '("Plato", "involved in politics of", "Syracuse")\n', '("Plato", "discussed by", "Tertullian regarding his death")\n', '("Plato", "\'s dialogs feature", "Socrates as narrated by Leo Strauss")\n', '("Plato", "dialogues translated by", "Xenophon")\n', '("Plato", "parodied in works of", "Aristophanes")\n', '("Plato", "\'s philosophy compared with", "Cicero")\n', '("Plato", "succeeding philosophy included", "Xenophanes")\n', '("Plato", "discussed alongside", "Zeno")\n', '("Plato", "contemporary of", "Anaxagoras")\n', '("Plato", "criticized by", "Karl Popper")\n', '("Plato", "\'s works published in", "Geneva")\n', '("Plato", "influenced", "Plotinus")\n', '("Plato", "\'s dialogues reintroduced from", "Constantinople")\n', '("Plato", "referenced by", "Maimonides")\n', '("Plato", "\'s thought compared with", "Avicenna")\n', '("Plato", "texts influenced", "Lorenzo")\n', '("Plato", "philosophy basis for work of", "Gottlob Frege")\n', '("Plato", "impact on scientific progress including", "Albert Einstein")\n', '("Julius Evola", "had ties to", "Nazi Germany")\n', '("Julius Evola", "was born in", "Rome")\n', '("Julius Evola", "served as", "an artillery officer in the First World War")\n', '("Julius Evola", "considered suicide while reading a", "Buddhist text")\n', '("Julius Evola", "developed doctrine of", "magical idealism")\n', '("Julius Evola", "believed mankind is living in", "the Kali Yuga")\n', '("Julius Evola", "presented a world of", "Tradition")\n', '("Julius Evola", "worked for", "Sicherheitsdienst or SD")\n', '("Julius Evola", "returned to", "Rome under puppet Salò government")\n', '("Julius Evola", "was paralysed in", "Vienna")\n', '("Julius Evola", "denied being a", "fascist")\n', '("Julius Evola", "referred to himself as", "superfascista")\n', '("Julius Evola", "called the chief ideologue of", "Italy\'s radical right after World War II")\n', '("Julius Evola", "influenced", "contemporary traditionalist and neo-fascist movements")\n', '("Julius Evola", "rebelled against his", "Catholic upbringing")\n', '("Julius Evola", "studied engineering at", "Istituto Tecnico Leonardo da Vinci in Rome")\n', '("Julius Evola", "immersed himself in", "painting and literature")\n', '("Julius Evola", "was introduced to philosophers such as", "Friedrich Nietzsche")\n', '("Julius Evola", "associated with", "Filippo Tommaso Marinetti\'s Futurist movement")\n', '("Julius Evola", "served on the", "Asiago plateau")\n', '("Julius Evola", "became a prominent representative of", "Dadaism in Italy")\n', '("Julius Evola", "wrote prodigiously on", "mysticism, Tantra, and Hermeticism")\n', '("Julius Evola", "viewed himself as part of an", "aristocratic caste")\n', '("Julius Evola", "considered", "relationships between sexes involved women acknowledging their inequality with men")\n', '("Julius Evola", "translated Weininger\'s", "Sex and Character into Italian")\n', '("Julius Evola", "developed", "the law of the regression of castes")\n', '("Julius Evola", "provided an overview of ideas concerning race and eugenics in", "Synthesis of the Doctrine of Race")\n', '("Julius Evola", "criticized", "Christianity and the Catholic Church")\n', '("Julius Evola", "advocated transforming fascism into a system consistent with", "ancient Roman values and Western esotericism")\n', '("Julius Evola", "had ashes deposited in", "a glacier on Monte Rosa")\n', '("Julius Evola", "influenced", "European far-right political, racist and neo-fascist movements")\n', '("Julius Evola", "was translated by Russian radical-right Eurasianist", "Aleksandr Dugin")\n', '("Julius Evola", "references found in", "alt-right movement")\n', '("F. H. Bradley", "was born in", "Clapham")\n', '("Clapham", "is located in", "Surrey, England")\n', '("F. H. Bradley", "is buried in", "Holywell Cemetery in Oxford")\n', '("F. H. Bradley", "read works by", "Immanuel Kant")\n', '("F. H. Bradley", "entered", "University College, Oxford")\n', '("F. H. Bradley", "was elected to a fellowship at", "Merton College")\n', '("F. H. Bradley", "influenced by", "Hegelian philosophy")\n', '("F. H. Bradley", "rejected philosophies of", "John Locke")\n', '("F. H. Bradley", "rejected philosophies of", "David Hume")\n', '("F. H. Bradley", "rejected philosophies of", "John Stuart Mill")\n', '("F. H. Bradley", "was influenced by", "Johann Gottlieb Fichte")\n', '("F. H. Bradley", "is connected to", "George Herbert Mead through moral philosophy")\n', '("F. H. Bradley", "is connected to", "Richard Rorty through anti-individualism")\n', '("F. H. Bradley", "philosophy declined due to", "G. E. Moore")\n', '("F. H. Bradley", "philosophy declined due to", "Bertrand Russell")\n', '("T. S. Eliot", "wrote his dissertation on", "F. H. Bradley")\n', '("F. H. Bradley", "influenced poetry of", "T. S. Eliot")\n', '("F. H. Bradley", "philosophical work evaluated by", "Harvard University")\n', '("Thomas Davidson", "was born in", "Old Deer near Aberdeen")\n', '("Thomas Davidson", "graduated from", "Aberdeen University")\n', '("Thomas Davidson", "held the position of rector at", "grammar school of Old Aberdeen")\n', '("Thomas Davidson", "was master in", "English schools")\n', '("Thomas Davidson", "moved to", "Canada")\n', '("Thomas Davidson", "occupied a place in", "London Collegiate Institute")\n', '("Thomas Davidson", "spent some months in", "Boston")\n', '("Thomas Davidson", "moved to", "St. Louis")\n', '("Thomas Davidson", "was classical master in", "St. Louis high school")\n', '("Thomas Davidson", "became principal of", "branch high schools in St. Louis")\n', '("Thomas Davidson", "moved to", "Cambridge, Massachusetts")\n', '("Thomas Davidson", "wrote", "Fragments of Parmenides")\n', '("Thomas Davidson", "studied", "Dante")\n', '("Thomas Davidson", "studied", "Rosmini")\n', '("Thomas Davidson", "offered an apartment at", "Villa d\'Este at Tivoli")\n', '("Thomas Davidson", "interest in", "Thomas Aquinas")\n', '("Thomas Davidson", "lived at", "Domodossola in Piedmont")\n', '("Thomas Davidson", "translated", "The Philosophical System of Antonio Rosmini-Serbati")\n', '("Thomas Davidson", "translated", "Rosmini\'s Psychology")\n', '("Thomas Davidson", "translated", "Rosmini\'s Anthropology")\n', '("Thomas Davidson", "delivered lectures in", "Boston")\n', '("Thomas Davidson", "founded", "The Fellowship of the New Life")\n', '("Thomas Davidson", "worked at", "Educational Alliance in New York")\n', '("Thomas Davidson", "aimed to found", "Breadwinners\' College")\n', '("Thomas Davidson", "died in", "Montreal, Quebec")\n', '("Thomas Davidson", "studied work of", "Giordano Bruno")\n']
+range(1, 233) 4
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Plato", "founder of", "Platonic Academy")\n', '("Plato", "influenced by", "Pythagoras")\n', '("Plato", "influenced by", "Heraclitus")\n', '("Plato", "influenced by", "Parmenides")\n', '("Plato", "student of", "Socrates")\n', '("Aristotle", "student of", "Plato")\n', '("Plato", "influenced", "Alfred North Whitehead")\n', '("Plato", "mentioned by", "Seneca about his broad chest")\n', '("Plato", "was born in", "Aegina")\n', '("Plato", "descendant of", "Solon")\n', '("Plato", "had school closed by", "Sulla")\n', '("Plato", "involved in politics of", "Syracuse")\n', '("Plato", "discussed by", "Tertullian regarding his death")\n', '("Plato", "\'s dialogs feature", "Socrates as narrated by Leo Strauss")\n', '("Plato", "dialogues translated by", "Xenophon")\n', '("Plato", "parodied in works of", "Aristophanes")\n', '("Plato", "\'s philosophy compared with", "Cicero")\n', '("Plato", "succeeding philosophy included", "Xenophanes")\n', '("Plato", "discussed alongside", "Zeno")\n', '("Plato", "contemporary of", "Anaxagoras")\n', '("Plato", "criticized by", "Karl Popper")\n', '("Plato", "\'s works published in", "Geneva")\n', '("Plato", "influenced", "Plotinus")\n', '("Plato", "\'s dialogues reintroduced from", "Constantinople")\n', '("Plato", "referenced by", "Maimonides")\n', '("Plato", "\'s thought compared with", "Avicenna")\n', '("Plato", "texts influenced", "Lorenzo")\n', '("Plato", "philosophy basis for work of", "Gottlob Frege")\n', '("Plato", "impact on scientific progress including", "Albert Einstein")\n', '("Julius Evola", "had ties to", "Nazi Germany")\n', '("Julius Evola", "was born in", "Rome")\n', '("Julius Evola", "served as", "an artillery officer in the First World War")\n', '("Julius Evola", "considered suicide while reading a", "Buddhist text")\n', '("Julius Evola", "developed doctrine of", "magical idealism")\n', '("Julius Evola", "believed mankind is living in", "the Kali Yuga")\n', '("Julius Evola", "presented a world of", "Tradition")\n', '("Julius Evola", "worked for", "Sicherheitsdienst or SD")\n', '("Julius Evola", "returned to", "Rome under puppet Salò government")\n', '("Julius Evola", "was paralysed in", "Vienna")\n', '("Julius Evola", "denied being a", "fascist")\n', '("Julius Evola", "referred to himself as", "superfascista")\n', '("Julius Evola", "called the chief ideologue of", "Italy\'s radical right after World War II")\n', '("Julius Evola", "influenced", "contemporary traditionalist and neo-fascist movements")\n', '("Julius Evola", "rebelled against his", "Catholic upbringing")\n', '("Julius Evola", "studied engineering at", "Istituto Tecnico Leonardo da Vinci in Rome")\n', '("Julius Evola", "immersed himself in", "painting and literature")\n', '("Julius Evola", "was introduced to philosophers such as", "Friedrich Nietzsche")\n', '("Julius Evola", "associated with", "Filippo Tommaso Marinetti\'s Futurist movement")\n', '("Julius Evola", "served on the", "Asiago plateau")\n', '("Julius Evola", "became a prominent representative of", "Dadaism in Italy")\n', '("Julius Evola", "wrote prodigiously on", "mysticism, Tantra, and Hermeticism")\n', '("Julius Evola", "viewed himself as part of an", "aristocratic caste")\n', '("Julius Evola", "considered", "relationships between sexes involved women acknowledging their inequality with men")\n', '("Julius Evola", "translated Weininger\'s", "Sex and Character into Italian")\n', '("Julius Evola", "developed", "the law of the regression of castes")\n', '("Julius Evola", "provided an overview of ideas concerning race and eugenics in", "Synthesis of the Doctrine of Race")\n', '("Julius Evola", "criticized", "Christianity and the Catholic Church")\n', '("Julius Evola", "advocated transforming fascism into a system consistent with", "ancient Roman values and Western esotericism")\n', '("Julius Evola", "had ashes deposited in", "a glacier on Monte Rosa")\n', '("Julius Evola", "influenced", "European far-right political, racist and neo-fascist movements")\n', '("Julius Evola", "was translated by Russian radical-right Eurasianist", "Aleksandr Dugin")\n', '("Julius Evola", "references found in", "alt-right movement")\n', '("F. H. Bradley", "was born in", "Clapham")\n', '("Clapham", "is located in", "Surrey, England")\n', '("F. H. Bradley", "is buried in", "Holywell Cemetery in Oxford")\n', '("F. H. Bradley", "read works by", "Immanuel Kant")\n', '("F. H. Bradley", "entered", "University College, Oxford")\n', '("F. H. Bradley", "was elected to a fellowship at", "Merton College")\n', '("F. H. Bradley", "influenced by", "Hegelian philosophy")\n', '("F. H. Bradley", "rejected philosophies of", "John Locke")\n', '("F. H. Bradley", "rejected philosophies of", "David Hume")\n', '("F. H. Bradley", "rejected philosophies of", "John Stuart Mill")\n', '("F. H. Bradley", "was influenced by", "Johann Gottlieb Fichte")\n', '("F. H. Bradley", "is connected to", "George Herbert Mead through moral philosophy")\n', '("F. H. Bradley", "is connected to", "Richard Rorty through anti-individualism")\n', '("F. H. Bradley", "philosophy declined due to", "G. E. Moore")\n', '("F. H. Bradley", "philosophy declined due to", "Bertrand Russell")\n', '("T. S. Eliot", "wrote his dissertation on", "F. H. Bradley")\n', '("F. H. Bradley", "influenced poetry of", "T. S. Eliot")\n', '("F. H. Bradley", "philosophical work evaluated by", "Harvard University")\n', '("Thomas Davidson", "was born in", "Old Deer near Aberdeen")\n', '("Thomas Davidson", "graduated from", "Aberdeen University")\n', '("Thomas Davidson", "held the position of rector at", "grammar school of Old Aberdeen")\n', '("Thomas Davidson", "was master in", "English schools")\n', '("Thomas Davidson", "moved to", "Canada")\n', '("Thomas Davidson", "occupied a place in", "London Collegiate Institute")\n', '("Thomas Davidson", "spent some months in", "Boston")\n', '("Thomas Davidson", "moved to", "St. Louis")\n', '("Thomas Davidson", "was classical master in", "St. Louis high school")\n', '("Thomas Davidson", "became principal of", "branch high schools in St. Louis")\n', '("Thomas Davidson", "moved to", "Cambridge, Massachusetts")\n', '("Thomas Davidson", "wrote", "Fragments of Parmenides")\n', '("Thomas Davidson", "studied", "Dante")\n', '("Thomas Davidson", "studied", "Rosmini")\n', '("Thomas Davidson", "offered an apartment at", "Villa d\'Este at Tivoli")\n', '("Thomas Davidson", "interest in", "Thomas Aquinas")\n', '("Thomas Davidson", "lived at", "Domodossola in Piedmont")\n', '("Thomas Davidson", "translated", "The Philosophical System of Antonio Rosmini-Serbati")\n', '("Thomas Davidson", "translated", "Rosmini\'s Psychology")\n', '("Thomas Davidson", "translated", "Rosmini\'s Anthropology")\n', '("Thomas Davidson", "delivered lectures in", "Boston")\n', '("Thomas Davidson", "founded", "The Fellowship of the New Life")\n', '("Thomas Davidson", "worked at", "Educational Alliance in New York")\n', '("Thomas Davidson", "aimed to found", "Breadwinners\' College")\n', '("Thomas Davidson", "died in", "Montreal, Quebec")\n', '("Thomas Davidson", "studied work of", "Giordano Bruno")\n']
+range(1, 233) 4
+['("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n']
+
+['("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Hannah Arendt", "is commemorated by", "institutions and journals")\n', '("Hannah Arendt", "is known for", "the phrase \'the banality of evil\'")\n', '("Hannah Arendt\'s works", "deal with", "topics such as the nature of power and evil, politics, direct democracy, authority, and totalitarianism")\n', '("Hannah Arendt", "was born in", "a Jewish family in Linden")\n', '("Hannah Arendt", "was raised by", "a politically progressive, secular family")\n', '("Hannah Arendt", "studied under", "Martin Heidegger")\n', '("Hannah Arendt", "obtained her doctorate in philosophy at", "the University of Heidelberg")\n', '("Hannah Arendt", "was the doctoral student of", "Karl Jaspers")\n', '("Hannah Arendt", "married", "Günther Stern")\n', '("Hannah Arendt", "was arrested and briefly imprisoned by", "the Gestapo")\n', '("Hannah Arendt", "fled Germany and settled in", "Paris")\n', '("Hannah Arendt", "worked for", "Youth Aliyah")\n', '("Hannah Arendt", "published", "The Origins of Totalitarianism")\n', '("Hannah Arendt", "taught at", "many American universities")\n', '("Max Arendt", "was a member of", "the Central Organization for German Citizens of Jewish Faith")\n', '("Paul Arendt", "was educated at", "the Albertina (University of Königsberg)")\n', '("Martha Cohn", "studied in", "Paris")\n', '("Hannah Arendt", "attended the Luise-Schule for her secondary education", "")\n', '("Hannah Arendt", "studied with", "Rudolf Bultmann")\n', '("Hannah Arendt", "was influenced by", "Edmund Husserl")\n', '("Hannah Arendt", "studied the works of", "Aristotle and Plato")\n', '("Hannah Arendt", "was interested in", "the thought of Augustine")\n', '("Hannah Arendt", "found literary interest in works of", "Rilke and Bertold Brecht")\n', '("Hannah Arendt", "participated in", "discussion groups led by Rosa Luxemburg")\n', '("Hannah Arendt", "was influenced by", "the philosophy of Kant")\n', '("Hannah Arendt", "published an article on", "Rahel Varnhagen")\n', '("Königsberg", "historic name of", "Kaliningrad")\n', '("Königsberg", "founded by", "Teutonic Knights")\n', '("Königsberg", "honored", "King Ottokar II of Bohemia")\n', '("Königsberg", "became capital of", "State of the Teutonic Order")\n', '("Königsberg", "became capital of", "Duchy of Prussia")\n', '("Königsberg", "became capital of", "Provinces of East Prussia and Prussia")\n', '("Königsberg", "remained coronation city of", "Prussian monarchy")\n', '("Königsberg", "inhabitants spoke predominantly", "German")\n', '("Königsberg", "influenced cultures of", "Lithuanian and Polish")\n', '("Königsberg", "publishing center for", "Lutheran literature")\n', '("Königsberg", "location of", "Albertina University")\n', '("Königsberg", "intellectual and cultural center for", "German")\n', '("Königsberg", "residence of", "E. T. A. Hoffmann")\n', '("Königsberg", "easternmost large city in", "Germany until WWII")\n', '("Königsberg", "located in the exclave of", "East Prussia")\n', '("Königsberg", "damaged by", "Allied bombing in 1944")\n', '("Königsberg", "captured by", "Red Army")\n', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")\n', '("Königsberg", "renamed", "Kaliningrad in 1946")\n', '("Königsberg", "renamed after", "Mikhail Kalinin")\n', '("Königsberg", "now capital of", "Kaliningrad Oblast")\n', '("Königsberg", "bordered in the north by", "Lithuania")\n', '("Königsberg", "bordered in the south by", "Poland")\n', '("German language", "historically spoken in", "Königsberg")\n', '("Kaliningrad", "former German city of", "Königsberg")\n', '("Russia", "gained territory of", "Königsberg renamed to Kaliningrad")\n', '("E. T. A. Hoffmann", "resided in", "Königsberg")\n', '("Soviet Union", "annexed", "Königsberg")\n', '("Mikhail Kalinin", "honored by renaming Königsberg to", "Kaliningrad")\n', '("Kaliningrad Oblast", "includes former city of", "Königsberg")\n', '("Lithuania", "northern border of", "Kaliningrad Oblast")\n', '("Poland", "southern border of", "Kaliningrad Oblast")\n', '("Vistula Lagoon", "nearby", "Königsberg")\n', '("wheat", "exported from", "Königsberg")\n', '("Gdańsk", "traded with", "Königsberg")\n', '("Riga", "traded with", "Königsberg")\n', '("Napoleon Bonaparte", "defeated by Prussians who fled to", "Königsberg")\n', '("Frederick William III of Prussia", "fled to", "Königsberg after Napoleon\'s victory")\n', '("French", "language of enemies of Prussia who occupied", "Berlin while court fled to Königsberg")\n', '("German Empire", "included city of", "Königsberg")\n', '("Breslau", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Thorn", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Tilsit", "connected to Königsberg via", "Prussian Eastern Railway")\n', '("Pillau", "connected to Königsberg via", "canal")\n', '("St. Petersburg", "connected to Königsberg via", "railway")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Plato", "founder of", "Platonic Academy")\n', '("Plato", "influenced by", "Pythagoras")\n', '("Plato", "influenced by", "Heraclitus")\n', '("Plato", "influenced by", "Parmenides")\n', '("Plato", "student of", "Socrates")\n', '("Aristotle", "student of", "Plato")\n', '("Plato", "influenced", "Alfred North Whitehead")\n', '("Plato", "mentioned by", "Seneca about his broad chest")\n', '("Plato", "was born in", "Aegina")\n', '("Plato", "descendant of", "Solon")\n', '("Plato", "had school closed by", "Sulla")\n', '("Plato", "involved in politics of", "Syracuse")\n', '("Plato", "discussed by", "Tertullian regarding his death")\n', '("Plato", "\'s dialogs feature", "Socrates as narrated by Leo Strauss")\n', '("Plato", "dialogues translated by", "Xenophon")\n', '("Plato", "parodied in works of", "Aristophanes")\n', '("Plato", "\'s philosophy compared with", "Cicero")\n', '("Plato", "succeeding philosophy included", "Xenophanes")\n', '("Plato", "discussed alongside", "Zeno")\n', '("Plato", "contemporary of", "Anaxagoras")\n', '("Plato", "criticized by", "Karl Popper")\n', '("Plato", "\'s works published in", "Geneva")\n', '("Plato", "influenced", "Plotinus")\n', '("Plato", "\'s dialogues reintroduced from", "Constantinople")\n', '("Plato", "referenced by", "Maimonides")\n', '("Plato", "\'s thought compared with", "Avicenna")\n', '("Plato", "texts influenced", "Lorenzo")\n', '("Plato", "philosophy basis for work of", "Gottlob Frege")\n', '("Plato", "impact on scientific progress including", "Albert Einstein")\n', '("Julius Evola", "had ties to", "Nazi Germany")\n', '("Julius Evola", "was born in", "Rome")\n', '("Julius Evola", "served as", "an artillery officer in the First World War")\n', '("Julius Evola", "considered suicide while reading a", "Buddhist text")\n', '("Julius Evola", "developed doctrine of", "magical idealism")\n', '("Julius Evola", "believed mankind is living in", "the Kali Yuga")\n', '("Julius Evola", "presented a world of", "Tradition")\n', '("Julius Evola", "worked for", "Sicherheitsdienst or SD")\n', '("Julius Evola", "returned to", "Rome under puppet Salò government")\n', '("Julius Evola", "was paralysed in", "Vienna")\n', '("Julius Evola", "denied being a", "fascist")\n', '("Julius Evola", "referred to himself as", "superfascista")\n', '("Julius Evola", "called the chief ideologue of", "Italy\'s radical right after World War II")\n', '("Julius Evola", "influenced", "contemporary traditionalist and neo-fascist movements")\n', '("Julius Evola", "rebelled against his", "Catholic upbringing")\n', '("Julius Evola", "studied engineering at", "Istituto Tecnico Leonardo da Vinci in Rome")\n', '("Julius Evola", "immersed himself in", "painting and literature")\n', '("Julius Evola", "was introduced to philosophers such as", "Friedrich Nietzsche")\n', '("Julius Evola", "associated with", "Filippo Tommaso Marinetti\'s Futurist movement")\n', '("Julius Evola", "served on the", "Asiago plateau")\n', '("Julius Evola", "became a prominent representative of", "Dadaism in Italy")\n', '("Julius Evola", "wrote prodigiously on", "mysticism, Tantra, and Hermeticism")\n', '("Julius Evola", "viewed himself as part of an", "aristocratic caste")\n', '("Julius Evola", "considered", "relationships between sexes involved women acknowledging their inequality with men")\n', '("Julius Evola", "translated Weininger\'s", "Sex and Character into Italian")\n', '("Julius Evola", "developed", "the law of the regression of castes")\n', '("Julius Evola", "provided an overview of ideas concerning race and eugenics in", "Synthesis of the Doctrine of Race")\n', '("Julius Evola", "criticized", "Christianity and the Catholic Church")\n', '("Julius Evola", "advocated transforming fascism into a system consistent with", "ancient Roman values and Western esotericism")\n', '("Julius Evola", "had ashes deposited in", "a glacier on Monte Rosa")\n', '("Julius Evola", "influenced", "European far-right political, racist and neo-fascist movements")\n', '("Julius Evola", "was translated by Russian radical-right Eurasianist", "Aleksandr Dugin")\n', '("Julius Evola", "references found in", "alt-right movement")\n', '("F. H. Bradley", "was born in", "Clapham")\n', '("Clapham", "is located in", "Surrey, England")\n', '("F. H. Bradley", "is buried in", "Holywell Cemetery in Oxford")\n', '("F. H. Bradley", "read works by", "Immanuel Kant")\n', '("F. H. Bradley", "entered", "University College, Oxford")\n', '("F. H. Bradley", "was elected to a fellowship at", "Merton College")\n', '("F. H. Bradley", "influenced by", "Hegelian philosophy")\n', '("F. H. Bradley", "rejected philosophies of", "John Locke")\n', '("F. H. Bradley", "rejected philosophies of", "David Hume")\n', '("F. H. Bradley", "rejected philosophies of", "John Stuart Mill")\n', '("F. H. Bradley", "was influenced by", "Johann Gottlieb Fichte")\n', '("F. H. Bradley", "is connected to", "George Herbert Mead through moral philosophy")\n', '("F. H. Bradley", "is connected to", "Richard Rorty through anti-individualism")\n', '("F. H. Bradley", "philosophy declined due to", "G. E. Moore")\n', '("F. H. Bradley", "philosophy declined due to", "Bertrand Russell")\n', '("T. S. Eliot", "wrote his dissertation on", "F. H. Bradley")\n', '("F. H. Bradley", "influenced poetry of", "T. S. Eliot")\n', '("F. H. Bradley", "philosophical work evaluated by", "Harvard University")\n', '("Thomas Davidson", "was born in", "Old Deer near Aberdeen")\n', '("Thomas Davidson", "graduated from", "Aberdeen University")\n', '("Thomas Davidson", "held the position of rector at", "grammar school of Old Aberdeen")\n', '("Thomas Davidson", "was master in", "English schools")\n', '("Thomas Davidson", "moved to", "Canada")\n', '("Thomas Davidson", "occupied a place in", "London Collegiate Institute")\n', '("Thomas Davidson", "spent some months in", "Boston")\n', '("Thomas Davidson", "moved to", "St. Louis")\n', '("Thomas Davidson", "was classical master in", "St. Louis high school")\n', '("Thomas Davidson", "became principal of", "branch high schools in St. Louis")\n', '("Thomas Davidson", "moved to", "Cambridge, Massachusetts")\n', '("Thomas Davidson", "wrote", "Fragments of Parmenides")\n', '("Thomas Davidson", "studied", "Dante")\n', '("Thomas Davidson", "studied", "Rosmini")\n', '("Thomas Davidson", "offered an apartment at", "Villa d\'Este at Tivoli")\n', '("Thomas Davidson", "interest in", "Thomas Aquinas")\n', '("Thomas Davidson", "lived at", "Domodossola in Piedmont")\n', '("Thomas Davidson", "translated", "The Philosophical System of Antonio Rosmini-Serbati")\n', '("Thomas Davidson", "translated", "Rosmini\'s Psychology")\n', '("Thomas Davidson", "translated", "Rosmini\'s Anthropology")\n', '("Thomas Davidson", "delivered lectures in", "Boston")\n', '("Thomas Davidson", "founded", "The Fellowship of the New Life")\n', '("Thomas Davidson", "worked at", "Educational Alliance in New York")\n', '("Thomas Davidson", "aimed to found", "Breadwinners\' College")\n', '("Thomas Davidson", "died in", "Montreal, Quebec")\n', '("Thomas Davidson", "studied work of", "Giordano Bruno")\n']
+range(1, 233) 4
+{'id': '5_3', 'Question': " Which philosopher's ideas significantly influenced the thinker who moved to the city that was the easternmost large German city before World War II and also the capital during the rule of the Electors of Brandenburg in the Duchy of Prussia?\n", 'Answer': 'Immanuel Kant', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Immanuel Kant'}, {'label': 'B', 'text': 'Plato'}, {'label': 'C', 'text': 'Julius Evola'}, {'label': 'D', 'text': 'F. H. Bradley'}, {'label': 'E', 'text': 'Thomas Davidson (philosopher)'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'immanuel_kant'}, {'label': 'B', 'text': 'plato'}, {'label': 'C', 'text': 'evola'}, {'label': 'D', 'text': 'bradleyan'}, {'label': 'E', 'text': 'apeirotheism'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ["1: Which philosopher's ideas had a significant impact on Hannah Arendt?\nA1: Immanuel Kant\n\n", '2: Who relocated to the East Prussian capital of Königsberg?\nA2: Hannah Arendt\n\n', '3: Which city served as the capital when the Electors of Brandenburg ruled the Duchy of Prussia?\nA3: Königsberg\n\n', '4: Before the Second World War, what was the name of the easternmost large city in Germany?\nA4: Königsberg'], 'Hops_wiki': [('Immanuel Kant', 'Hannah Arendt'), ('Hannah Arendt', 'Königsberg'), ('Königsberg', 'Frederick William, Elector of Brandenburg'), ('Königsberg', 'Germany')], 'Hops_cpnet': [('immanuel_kant', 'hannah_arendt'), ('hannah_arendt', 'königsberg'), ('königsberg', 'great_elector'), ('königsberg', 'germany')], 'Triplets': ['("Hannah Arendt", "was influenced by", "the philosophy of Kant")', '("Hannah Arendt", "moved to", "East Prussian capital of Königsberg")', '("Electors of Brandenburg", "ruled Duchy of Prussia with capital at", "Königsberg")', '("Königsberg", "was the easternmost large city in", "Germany before WW II")'], 'Referred_files': [{'name': 'Hannah Arendt', 'line': 26}, {'name': 'Hannah Arendt', 'line': 5}, {'name': 'Königsberg', 'line': 37}, {'name': 'Kaliningrad', 'line': 10}], 'Question_triplet_answer': {100: [11, 60, 62, 178], 50: [3, 38, 96, 149], 25: [44, 50, 62, 175]}}
+time passed:  3921.022361755371
+Expected dollar:  0.005
+Canada is Geography
+Breslau is Geography
+Königsberg is Geography
+Evola is People
+Plato is People
+Gottlob Frege is People
+Hannah Arendt is People
+East Prussian is Geography
+Thomas Aquinas is People
+Poland is Geography
+Alfred North Whitehead is People
+Plotinus is People
+Italy is Geography
+Gestapo is Geography
+Vistula Lagoon is Geography
+Paul Arendt is People
+the Albertina (University of Königsberg is Geography
+Rudolf Bultmann is People
+Edmund Husserl is People
+Boston is Geography
+Weimar Germany is Geography
+Lithuania is Geography
+Weininger is People
+Sex and Character is People
+Richard Rorty is People
+Kaliningrad is Geography
+Immanuel Kant is People
+Russia is Geography
+Fragments of Parmenides is People
+Clapham is Geography
+Surrey is Geography
+England is Geography
+Kant is People
+Rosa Luxemburg is People
+Duchy of Prussia is Geography
+Berlin is Geography
+Rosmini's Psychology is People
+the University of Heidelberg is Geography
+Sweden is Geography
+Aberdeen University is Geography
+Napoleon Bonaparte is People
+Baltic Sea is Geography
+Leo Strauss is People
+Dante is People
+Monte Rosa is Geography
+Nazi Germany is Geography
+Lithuanian and is Geography
+David Hume is People
+Piedmont is Geography
+Rosmini's Anthropology is People
+Youth Aliyah is Incident
+Max Arendt is People
+Hegelian is People
+Dugin is People
+Paris is Geography
+Mikhail Kalinin is People
+Augustine is People
+German Empire is Geography
+Aristotle is People
+Northwestern Federal District is Geography
+Germany is Geography
+Friedrich Nietzsche is People
+Oxford is Geography
+Rilke and Bertold Brecht is People
+G. E. Moore is People
+Leonardo da Vinci is People
+Rome is Geography
+Harvard University is Geography
+Martin Heidegger is People
+Karl Jaspers is People
+entities:  {'Boston', 'Psychology', 'H.', 'Evola', 'Gottlob', 'Anthropology', '(philosopher)', 'Strauss', 'Lithuanian', 'Northwestern', 'Arendt', 'Hannah', 'Dante', 'District', 'Dugin', 'Martha', 'Aberdeen', 'Duchy', 'Harvard', 'Albertina', 'Aquinas', 'Poland', 'Hume', 'Thomas', 'Alfred', "Rosmini's", 'Kaliningrad', 'William,', 'Plotinus', 'Monte', 'Domodossola', 'Rosa', 'Elector', 'Nietzsche', 'Rilke', 'Heidelberg', 'University', 'Mikhail', 'Max', 'Bradley', 'Leo', 'Hegelian', 'Königsberg', 'Vinci', 'da', 'Leonardo', 'Tecnico', 'Rome', 'Paul', 'Italy', 'Rorty', 'Augustine', 'Paris', 'Youth', 'Friedrich', 'Sweden', 'Frederick', 'Prussia', 'Fragments', 'Berlin', 'Vistula', 'England', '(University', 'G.', 'Davidson', 'Rudolf', 'Clapham', 'Character', 'Husserl', 'Canada', 'Weininger', 'Breslau', 'Brandenburg', 'Julius', 'Brecht', 'E.', 'Kalinin', 'F.', 'Aristotle', 'David', 'Kant', 'Bertold', 'Aliyah', 'Moore', 'Martin', 'Lagoon', 'Empire', 'German', 'Prussian', 'Edmund', 'Luxemburg', 'Linden', 'Germany', 'East', 'Bultmann', 'Heidegger', 'Bonaparte', 'Baltic', 'Istituto', 'Surrey', 'Weimar', 'Petersburg', 'Piedmont', 'Gestapo', 'Sea', 'Parmenides', 'Lithuania', 'Plato', 'Napoleon', 'Karl', 'Frege', 'Russia', 'Federal', 'Jaspers', 'Immanuel', 'Whitehead', 'Sex', 'Oxford', 'Nazi', 'North', 'Richard'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Königsberg' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Königsberg
+Prussian Eastern Railway
+Allied bombing in 1944
+German language
+Kaliningrad Oblast
+Allied bombing in 1944
+Lithuania
+Poland
+Vistula Lagoon
+Albertina (University of Königsberg)
+
+gpt_entity_particular(): entity list: 
+ ['Königsberg', 'Poland', 'Kaliningrad Oblast', 'Allied bombing in 1944', 'Lithuania', 'Albertina (University of Königsberg)', 'Vistula Lagoon', 'German language', 'Prussian Eastern Railway']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Germany' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Germany
+Educational Alliance in New York
+Prussian Eastern Railway
+Asiago plateau
+Rahel Varnhagen
+Boston
+Königsberg
+Allied bombing
+Kaliningrad
+Lithuania
+Poland
+Kaliningrad Oblast
+Rome
+Surrey
+East Prussia
+Duchy of Prussia
+Albertina University
+Provinces of East Prussia and Prussia
+Silesia
+Piedmont
+Berlin
+Paris
+University of Heidelberg
+King of Sweden 
+Seven Years' War
+Aberdeen University
+Domodossola 
+Baltic Sea
+Weimar Germany
+Nazi Germany
+the Gestapo
+Russia
+Baltic Sea
+University College, Oxford
+University of Heidelberg
+the Central Organization for German Citizens of Jewish Faith
+State of the Teutonic Order
+Syracuse
+Northwestern Federal District
+French Empire
+Gdańsk
+St. Petersburg
+Harvard University
+University of Paris
+Karl Jaspers
+Solon
+Pillau
+
+gpt_entity_particular(): entity list: 
+ ['Duchy of Prussia', 'Boston', 'Kaliningrad', 'Germany', 'Baltic Sea', 'Asiago plateau', 'University College, Oxford', 'Surrey', "Seven Years' War", 'Berlin', 'Piedmont', 'Karl Jaspers', 'Domodossola ', 'University of Paris', 'St. Petersburg', 'Lithuania', 'Weimar Germany', 'Provinces of East Prussia and Prussia', 'the Central Organization for German Citizens of Jewish Faith', 'Russia', 'Northwestern Federal District', 'Königsberg', 'East Prussia', 'King of Sweden ', 'Syracuse', 'Kaliningrad Oblast', 'State of the Teutonic Order', 'Educational Alliance in New York', 'Nazi Germany', 'Rome', 'Poland', 'French Empire', 'Prussian Eastern Railway', 'Rahel Varnhagen', 'Silesia', 'Allied bombing', 'Solon', 'Pillau', 'University of Heidelberg', 'the Gestapo', 'Gdańsk', 'Harvard University', 'Albertina University', 'Paris', 'Aberdeen University']
+
+gpt_entity_particular(): filtered entity: 
+ ['Berlin', 'East Prussia', 'Nazi Germany', 'Silesia']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Thomas Davidson (philosopher)' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Thomas Davidson
+Educational Alliance in New York
+Canada
+Educational Alliance in New York
+Breslau
+Plato
+ Xeonophon
+Hannah Arendt
+Rahel Varnhagen
+Thomas Aquinas
+Constantinople
+Plato
+German language
+Vistula Lagoon
+East Prussia
+Königsberg
+Allied bombing in 1944
+Allied bombing in 1944
+Thomas Aquinas
+Poland
+Buddhist text
+Poland
+Allied bombing in 1944
+Rahel Varnhagen
+Königsberg
+Poland
+Königsberg
+Kaliningrad
+Lithuania
+Königsberg
+Fragments of Parmenides
+Kaliningrad
+Plato
+Gottlob Frege
+Hannah Arendt
+University of Heidelberg
+Thomas Aquinas
+Poland
+Gottlob Frege
+Hannah Arendt
+Günther Stern
+Thomas Aquinas
+Lithuania
+Gottlob Frege
+Hannah Arendt
+University of Heidelberg
+Kaliningrad
+Polish People's Republic
+Lithuanian and Polish
+European far-right political, racist and neo-fascist movements
+Christianity and the Catholic Church
+Kaliningrad
+Baltic Sea
+Kaliningrad
+Baltic Sea
+Immanuel Kant
+Immanuel Kant
+Immanuel Kant
+Rilke and Bertold Brecht
+Immanuel Kant
+Mysticism, Tantra, and Hermeticism
+Mysticism, Tantra, and Hermeticism
+Mysticism, Tantra, and Hermeticism
+Mysticism, Tantra, and Hermeticism
+Rosmini's Psychology
+Rosmini's Psychology
+German Confederation
+Tradition
+Breadwinners' College
+Breadwinners' College
+Mikhail Kalinin
+E. T. A. Hoffmann
+Aristotle and Plato
+Rilke and Bertold Brecht
+Plato
+Plato
+E. T. A. Hoffmann
+E. T. A. Hoffmann
+Plato
+E. T. A. Hoffmann
+Ferdinand Maria von Bader
+Aristotle
+German
+Italian
+E. T. A. Hoffmann
+
+gpt_entity_particular(): entity list: 
+ ['Aristotle and Plato', 'Kaliningrad', 'German Confederation', 'Gottlob Frege', 'Baltic Sea', 'Constantinople', 'Tradition', 'Buddhist text', 'Immanuel Kant', 'European far-right political, racist and neo-fascist movements', 'E. T. A. Hoffmann', 'Fragments of Parmenides', ' Xeonophon', 'Lithuania', 'Plato', 'Lithuanian and Polish', 'Ferdinand Maria von Bader', 'Canada', 'Hannah Arendt', 'Breslau', 'Vistula Lagoon', 'East Prussia', 'Königsberg', 'Thomas Aquinas', "Polish People's Republic", 'Mikhail Kalinin', 'Educational Alliance in New York', 'Aristotle', 'Italian', 'Thomas Davidson', 'Mysticism, Tantra, and Hermeticism', 'Poland', 'German language', 'Rahel Varnhagen', 'University of Heidelberg', "Rosmini's Psychology", "Breadwinners' College", 'Allied bombing in 1944', 'Günther Stern', 'Christianity and the Catholic Church', 'German', 'Rilke and Bertold Brecht']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'F. H. Bradley' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Thomas Davidson
+Breslau
+Julius Evola
+Plato
+Hannah Arendt
+Königsberg
+Germany
+Poland
+Immanuel Kant
+Gottlob Frege
+Richard Rorty
+
+gpt_entity_particular(): entity list: 
+ ['Immanuel Kant', 'Königsberg', 'Germany', 'Gottlob Frege', 'Plato', 'Richard Rorty', 'Julius Evola', 'Hannah Arendt', 'Thomas Davidson', 'Breslau', 'Poland']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Plato' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Plato
+Xenophon
+Gottlob Frege
+Alfred North Whitehead
+Plotinus
+Lorenzo
+Anaxagoras
+Rahel Varnhagen
+Leo Strauss
+Socrates
+Heraclitus
+Solon
+
+gpt_entity_particular(): entity list: 
+ ['Rahel Varnhagen', 'Socrates', 'Heraclitus', 'Gottlob Frege', 'Alfred North Whitehead', 'Leo Strauss', 'Plato', 'Plotinus', 'Anaxagoras', 'Xenophon', 'Lorenzo', 'Solon']
+
+gpt_entity_particular(): filtered entity: 
+ ['Socrates', 'Heraclitus', 'Alfred North Whitehead', 'Plotinus']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Julius Evola' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Julius Evola
+Plato
+Rahel Varnhagen
+Asiago plateau
+Gottlob Frege
+Italy's radical right after World War II
+World War II
+Synthesis of the Doctrine of Race
+Nazi Germany
+the law of the regression of castes
+Roman values and Western esotericism
+Monte Rosa
+sex and character
+Dadaism in Italy
+Buddhist text
+
+gpt_entity_particular(): entity list: 
+ ['Rahel Varnhagen', 'Roman values and Western esotericism', 'Gottlob Frege', 'Plato', 'Asiago plateau', 'Synthesis of the Doctrine of Race', 'World War II', "Italy's radical right after World War II", 'Julius Evola', 'Monte Rosa', 'sex and character', 'the law of the regression of castes', 'Buddhist text', 'Nazi Germany', 'Dadaism in Italy']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Frederick William, Elector of Brandenburg' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Thorn
+Albertina University
+Plato
+Prussian Eastern Railway
+Königsberg
+Alfred North Whitehead
+Breslau
+Anaxagoras
+Paul Arendt
+Gottlob Frege
+Provinces of East Prussia and Prussia
+E. T. A. Hoffmann
+Plotinus
+Rome
+Roman
+The Albertina (University of Königsberg)
+Buddhist
+Eurasianist
+Dante
+Gottlob Frege
+Leo Strauss
+E. T. A. Hoffmann
+Socrates
+Rosa Luxemburg
+Dante
+Lithuanian
+German
+Lorensen
+Mysticism, Tantra, and Hermeticism
+Rudolf Bultmann
+Duchy of Prussia
+Northwestern Federal District
+Aberdeen University
+Teutonic Order
+Tradition
+Paris
+Russian
+Friedrich Nietzsche
+Rosminian
+Nazi Germany
+German Confederation
+Martha Cohn
+Rihke
+Trinidad
+C. H. Moore
+Arband
+F. H. Moore
+Harvard University
+Solon
+Pillow
+Solon
+Solon
+ござAleksandr Dugin
+Lithuanian
+Aberdeen University
+Pleines of East Prussia
+
+gpt_entity_particular(): entity list: 
+ ['Socrates', 'Duchy of Prussia', 'Russian', 'German Confederation', 'Gottlob Frege', 'ござAleksandr Dugin', 'Pleines of East Prussia', 'Tradition', 'Friedrich Nietzsche', 'Plotinus', 'Lithuanian', 'Lorensen', 'Thorn', 'E. T. A. Hoffmann', 'Roman', 'Aberdeen University', 'Dante', 'Plato', 'Provinces of East Prussia and Prussia', 'Arband', 'Rosminian', 'Trinidad', 'Breslau', 'Northwestern Federal District', 'Teutonic Order', 'Königsberg', 'Rudolf Bultmann', 'Eurasianist', 'Buddhist', 'Nazi Germany', 'Pillow', 'Rome', 'Mysticism, Tantra, and Hermeticism', 'Solon', 'Prussian Eastern Railway', 'Rihke', 'F. H. Moore', 'C. H. Moore', 'Paul Arendt', 'Alfred North Whitehead', 'German', 'Martha Cohn', 'Harvard University', 'Anaxagoras', 'Albertina University', 'Paris', 'The Albertina (University of Königsberg)', 'Leo Strauss', 'Rosa Luxemburg']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hannah Arendt' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ East Prussian capital of Königsberg
+Acquaintance of Hannah
+East Prussia
+East Prussia
+East Prussia
+German language
+German language
+the Gestapo
+Rudolf Bultmann
+Edmund Husserl
+Edmund Husserl
+Edmund Husserl
+Russia
+Russia
+Aberdeen University
+Aberdeen University
+University of Heidelberg
+King of Sweden during Seven Years' War
+Boston
+Baltic Sea
+Gender and Judaism
+Gender and Judaism 
+the University of Heidelberg
+the University of Heidelberg
+Kaliningrad
+Kaliningrad 
+Königsberg
+F. H. Bradley
+F. H. Bradley
+F. H. Bradley
+Albertina University 
+Albertina University 
+the philosophy of Kant
+Plato
+Plato
+German Confederation
+Martha Cohn
+
+gpt_entity_particular(): entity list: 
+ ['Boston', 'Acquaintance of Hannah', 'Kaliningrad', 'German Confederation', 'Baltic Sea', 'the philosophy of Kant', 'Kaliningrad ', 'Gender and Judaism', 'Albertina University ', 'Plato', "King of Sweden during Seven Years' War", 'Gender and Judaism ', 'Russia', 'East Prussia', 'Königsberg', 'F. H. Bradley', 'Rudolf Bultmann', 'Edmund Husserl', 'East Prussian capital of Königsberg', 'the University of Heidelberg', 'German language', 'the Gestapo', 'University of Heidelberg', 'Martha Cohn', 'Aberdeen University']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Kant
+
+gpt_entity_particular(): entity list: 
+ ['Kant', 'Immanuel Kant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant']
+After GPT, entity:  {'Boston', 'Psychology', 'H.', 'Evola', 'Gottlob', 'Anthropology', '(philosopher)', 'Strauss', 'Lithuanian', 'Northwestern', 'Heraclitus', 'Arendt', 'Hannah', 'Dante', 'District', 'Dugin', 'Martha', 'Aberdeen', 'Duchy', 'Harvard', 'Albertina', 'East Prussia', 'Aquinas', 'Nazi Germany', 'Poland', 'Hume', 'Alfred North Whitehead', 'Thomas', 'Alfred', "Rosmini's", 'Socrates', 'Kaliningrad', 'William,', 'Plotinus', 'Monte', 'Domodossola', 'Rosa', 'Elector', 'Nietzsche', 'Rilke', 'Heidelberg', 'University', 'Mikhail', 'Max', 'Bradley', 'Leo', 'Hegelian', 'Königsberg', 'Vinci', 'da', 'Leonardo', 'Tecnico', 'Rome', 'Paul', 'Italy', 'Rorty', 'Augustine', 'Paris', 'Youth', 'Friedrich', 'Sweden', 'Frederick', 'Prussia', 'Fragments', 'Berlin', 'Vistula', 'England', '(University', 'G.', 'Davidson', 'Rudolf', 'Clapham', 'Character', 'Husserl', 'Canada', 'Weininger', 'Breslau', 'Brandenburg', 'Julius', 'Brecht', 'E.', 'Kalinin', 'F.', 'Aristotle', 'David', 'Kant', 'Bertold', 'Aliyah', 'Moore', 'Martin', 'Lagoon', 'Empire', 'German', 'Prussian', 'Edmund', 'Luxemburg', 'Linden', 'Germany', 'East', 'Bultmann', 'Heidegger', 'Bonaparte', 'Baltic', 'Istituto', 'Surrey', 'Weimar', 'Petersburg', 'Piedmont', 'Gestapo', 'Sea', 'Parmenides', 'Lithuania', 'Plato', 'Napoleon', 'Karl', 'Frege', 'Russia', 'Federal', 'Jaspers', 'Silesia', 'Immanuel', 'Whitehead', 'Sex', 'Oxford', 'Nazi', 'North', 'Richard'}
+Total time:  311.63091921806335
+Entity conversion done on 5_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_5_3_entity_conversion_hash.json. Check the entity.
+ Which philosopher's ideas significantly influenced the thinker who moved to the city that was the easternmost large 009 city before World War II   and also the capital during the rule of the 03Bs of 061 in the 001 of Prussia?
+
+
+
+Done. Check final_query/id_5_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_5_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

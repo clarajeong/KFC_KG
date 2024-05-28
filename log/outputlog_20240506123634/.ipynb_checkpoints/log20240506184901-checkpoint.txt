@@ -1,0 +1,69 @@
+Got argument: Mexico, 6, 6_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")', 'start word': 'Mexico', 'end word': 'Gulf of Mexico', 'source': {'name': 'Gulf of Mexico', 'line': 2}, 'cpnet': {'start word': 'mexico', 'end word': 'gulf_of_mexico'}}
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+second_hop1:  {'triplet': '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', 'start word': 'Gulf of Mexico', 'end word': 'Turtle', 'source': {'name': 'Turtle', 'line': 39}, 'cpnet': {'start word': 'gulf_of_mexico', 'end word': 'turtle'}}
+
+utils/question.py extract_hops(Turtle, [], ['Mexico', 'Gulf of Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+last_hop:  {'triplet': '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', 'start word': 'Turtle', 'end word': 'Cretaceous', 'source': {'name': 'Turtle', 'line': 41}, 'cpnet': {'start word': 'turtle', 'end word': 'cretaceous'}}
+
+utils/question.py extract_hops(Gulf of Mexico, ['Turtle'], ['Mexico']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+second_hop2:  {'triplet': '("Yucatán", "has coastline on", "Gulf of Mexico")', 'start word': 'Gulf of Mexico', 'end word': 'Yucatán', 'source': {'name': 'Yucatán', 'line': 7}, 'cpnet': {'start word': 'gulf_of_mexico', 'end word': 'yucatán'}}
+generate_question(6_6, ['("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', '("Yucatán", "has coastline on", "Gulf of Mexico")', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")'], ['Mexico', 'Gulf of Mexico', 'Gulf of Mexico', 'Turtle'], [('Mexico', 'Gulf of Mexico'), ('Gulf of Mexico', 'Turtle'), ('Gulf of Mexico', 'Yucatán'), ('Turtle', 'Cretaceous')], Mexico, [{'name': 'Gulf of Mexico', 'line': 2}, {'name': 'Turtle', 'line': 39}, {'name': 'Yucatán', 'line': 7}, {'name': 'Turtle', 'line': 41}]) called
+GPT output is:  Q: Which country contains the states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo, that have coastlines along a region named after a gulf connected to the Atlantic Ocean, where a peninsula faces the same-named gulf, and is known for a type of reptile facing a rate of extinction surpassing a historical mass extinction event?
+
+A: Mexico
+final_choice(Mexico, options = 5) started
+[]
+entity_type(Mexico) called
+Mexico is Geography
+check_matchscore(Mexico, 1810 establishments in New Spain):  0.0
+choose_by_wiki_recur(1810 establishments in New Spain)
+   Pages in 1810 establishments in New Spain: ['Mexico']
+   Upper category of 1810 establishments in New Spain: ['1810 establishments by country', '1810s establishments in New Spain', 'Establishments in New Spain by year', '1810 in New Spain', '1810 establishments in the Spanish Empire']
+choose_by_wiki_recur(1810 establishments by country)
+check_matchscore(Mexico, Member states of the United Nations):  0.0
+choose_by_wiki_recur(Member states of the United Nations)
+   Pages in Member states of the United Nations: ['Member states of the United Nations', 'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'The Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Cape Verde', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Democratic Republic of the Congo', 'Republic of the Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Gabon', 'The Gambia', 'Georgia (country)', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Republic of Ireland', 'Israel', 'Italy', 'Ivory Coast', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Federated States of Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'São Tomé and Príncipe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe']
+      Luxembourg in ['Luxembourg', 'United Arab Emirates', 'Iraq', 'Portugal']
+      United Arab Emirates in ['Luxembourg', 'United Arab Emirates', 'Iraq', 'Portugal']
+      Iraq in ['Luxembourg', 'United Arab Emirates', 'Iraq', 'Portugal']
+      Portugal in ['Luxembourg', 'United Arab Emirates', 'Iraq', 'Portugal']
+['Luxembourg', 'United Arab Emirates', 'Iraq', 'Portugal']
+Ended after 2.5 hierarchy
+(2.5, ['Iraq', 'Luxembourg', 'United Arab Emirates', 'Portugal'])
+
+extract_info(United Arab Emirates) Start.
+utils/preprocess.py extract_info(): Checking good links on United Arab Emirates
+Arabian Peninsula is Geography
+1 / 30 )  Arabian Peninsula Arabian Peninsula arabian_peninsula
+Middle East is Geography
+2 / 30 )  Middle East Middle East middle_east
+Oman is Geography
+3 / 30 )  Oman Oman oman
+Saudi Arabia is Geography
+4 / 30 )  Saudi Arabia Saudi Arabia saudi_arabia
+Persian Gulf is Geography
+5 / 30 )  Persian Gulf Persian Gulf persian_gulf
+Qatar is Geography
+6 / 30 )  Qatar Qatar qatar
+Iran is Geography
+7 / 30 )  Iran Iran iran
+Abu Dhabi is Geography
+8 / 30 )  Abu Dhabi Abu Dhabi abu_dhabi
+Dubai is Geography
+9 / 30 )  Dubai Dubai dubai
+World Trade Organization is Geography
+10 / 30 )  World Trade Organization World Trade Organization world_trade_organization
+Muhammad is Geography
+11 / 30 )  Muhammad Muhammad muhammad
+Medina is Geography
+12 / 30 )  Medina Medina medina
+Abu Bakr is People
+13 / 30 )  Abu Bakr Abu Bakr abu_bakr

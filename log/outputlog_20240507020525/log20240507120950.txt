@@ -1,0 +1,1342 @@
+Got argument: Napoleon, 2, 2_4
+
+utils/question.py extract_hops(Napoleon, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Napoleon_info.json file
+first_hop:  {'triplet': '("Guernsey", "built defensive structures against", "Napoleon")', 'start word': 'Napoleon', 'end word': 'Guernsey', 'source': {'name': 'Guernsey', 'line': 17}, 'cpnet': {'start word': 'napoleon', 'end word': 'guernsey'}}
+
+utils/question.py extract_hops(Guernsey, [], ['Napoleon']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Guernsey_info.json file
+second_hop:  {'triplet': '("Guernsey\'s", "culture is influenced by", "Britain")', 'start word': 'Guernsey', 'end word': 'Great Britain', 'source': {'name': 'Guernsey', 'line': 8}, 'cpnet': {'start word': 'guernsey', 'end word': 'great_britain'}}
+
+utils/question.py extract_hops(Great Britain, [], ['Napoleon', 'Guernsey']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Great_Britain_info.json file
+extract_info(Great Britain) Start.
+utils/preprocess.py extract_info(): Checking good links on Great Britain
+Atlantic Ocean is Geography
+1 / 30 )  Atlantic Ocean Atlantic Ocean atlantic_ocean
+England is Geography
+2 / 30 )  England England england
+Scotland is Geography
+3 / 30 )  Scotland Scotland scotland
+Wales is Geography
+4 / 30 )  Wales Wales wales
+British Isles is Geography
+5 / 30 )  British Isles British Isles british_isles
+Ireland is Geography
+6 / 30 )  Ireland Ireland ireland
+Doggerland is Geography
+7 / 30 )  Doggerland Doggerland doggerland
+Java is Geography
+8 / 30 )  Java Java java
+Honshu is Geography
+9 / 30 )  Honshu Honshu honshu
+Japan is Geography
+10 / 30 )  Japan Japan japan
+Northern Ireland is Geography
+11 / 30 )  Northern Ireland Northern Ireland northern_ireland
+United Kingdom is Geography
+12 / 30 )  United Kingdom United Kingdom united_kingdom
+Kingdom of Great Britain is Geography
+13 / 30 )  Kingdom of Great Britain Kingdom of Great Britain kingdom_of_great_britain
+Kingdom of Scotland is Geography
+14 / 30 )  Scotland Kingdom of Scotland kingdom_of_scotland
+Aristotle is People
+15 / 30 )  Aristotle Aristotle aristotle
+Pliny the Elder is People
+16 / 30 )  Pliny the Elder Pliny the Elder gaius_plinius_secundus
+Thule is Geography
+17 / 30 )  Thule Thule thule
+Strabo is People
+18 / 30 )  Strabo Strabo strabo
+Marseille is Geography
+19 / 30 )  Massalia Marseille marseille
+Isatis tinctoria is Animal
+20 / 30 )  body decorations Isatis tinctoria isatis_tinctoria
+Ptolemy is People
+21 / 30 )  Ptolemy Ptolemy ptolemy
+Geoffrey of Monmouth is People
+22 / 30 )  Geoffrey of Monmouth Geoffrey of Monmouth geoffrey_of_monmouth
+Brittany is Geography
+23 / 30 )  Brittany Brittany brittany
+Edward IV is People
+24 / 30 )  Edward IV of England Edward IV edward_iv
+James IV of Scotland is People
+25 / 30 )  James James IV of Scotland james_iv
+John Major  is People
+26 / 30 )  John Major John Major  john_roy_major
+Universal Postal Union is Geography
+27 / 30 )  Universal Postal Union Universal Postal Union universal_postal_union
+Isle of Wight is Geography
+28 / 30 )  Isle of Wight Isle of Wight isle_of_wight
+Anglesey is Geography
+29 / 30 )  Anglesey Anglesey anglesey
+Isles of Scilly is Geography
+30 / 30 )  Isles of Scilly Isles of Scilly isles_of_scilly
+extract_triplet(Great Britain)
+Got GPT's response. String length : 1365
+subject_words:  [(None, 'Great Britain', 'great_britain')]
+object_words:  [['Atlantic Ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Great Britain', 'great_britain')]
+object_words:  [['Wales', 'Wales', 'wales']]
+subject_words:  [(None, 'Great Britain', 'great_britain')]
+object_words:  [['British Isles', 'British Isles', 'british_isles']]
+subject_words:  [['Ireland', 'Ireland', 'ireland']]
+object_words:  [(None, 'Great Britain', 'great_britain')]
+subject_words:  [(None, 'Great Britain', 'great_britain'), ['Ireland', 'Ireland', 'ireland']]
+object_words:  [['British Isles', 'British Isles', 'british_isles']]
+subject_words:  [(None, 'Great Britain', 'great_britain')]
+object_words:  [['Doggerland', 'Doggerland', 'doggerland']]
+subject_words:  [(None, 'Great Britain', 'great_britain')]
+object_words:  [['Wales', 'Wales', 'wales']]
+subject_words:  [(None, 'Great Britain', 'great_britain')]
+object_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom']]
+subject_words:  []
+object_words:  [['British Isles', 'British Isles', 'british_isles']]
+subject_words:  [['Aristotle', 'Aristotle', 'aristotle']]
+object_words:  [(None, 'Great Britain', 'great_britain')]
+subject_words:  []
+object_words:  []
+subject_words:  [['John Major', 'John Major ', 'john_roy_major']]
+object_words:  [(None, 'Great Britain', 'great_britain')]
+subject_words:  [(None, 'Great Britain', 'great_britain')]
+object_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom']]
+subject_words:  [(None, 'Great Britain', 'great_britain')]
+object_words:  [(None, 'Great Britain', 'great_britain')]
+subject_words:  []
+object_words:  [['Universal Postal Union', 'Universal Postal Union', 'universal_postal_union']]
+subject_words:  [['Isle of Wight', 'Isle of Wight', 'isle_of_wight']]
+object_words:  [['England', 'England', 'england']]
+subject_words:  [['Anglesey', 'Anglesey', 'anglesey']]
+object_words:  [['Wales', 'Wales', 'wales']]
+subject_words:  [['Isles of Scilly', 'Isles of Scilly', 'isles_of_scilly']]
+object_words:  [['England', 'England', 'england']]
+third_hop:  {'triplet': '("Great Britain", "is the largest of", "the British Isles")', 'start word': 'Great Britain', 'end word': 'British Isles', 'source': {'name': 'Great Britain', 'line': 3}, 'cpnet': {'start word': 'great_britain', 'end word': 'british_isles'}}
+generate_question(2_4, ['("Guernsey", "built defensive structures against", "Napoleon")', '("Guernsey\'s", "culture is influenced by", "Britain")', '("Great Britain", "is the largest of", "the British Isles")'], ['Guernsey', 'Great Britain', 'British Isles'], [('Napoleon', 'Guernsey'), ('Guernsey', 'Great Britain'), ('Great Britain', 'British Isles')], British Isles, [{'name': 'Guernsey', 'line': 17}, {'name': 'Guernsey', 'line': 8}, {'name': 'Great Britain', 'line': 3}]) called
+GPT output is:  Q: What is the collective name for the group of islands whose cultural influences are seen in the location where defensive structures were built to guard against Napoleon's forces?
+A: British Isles
+final_choice(British Isles, options = 5) started
+[]
+entity_type(British Isles) called
+British Isles is Geography
+check_matchscore(British Isles, Archipelagoes of Europe):  0.0
+choose_by_wiki_recur(Archipelagoes of Europe)
+   Pages in Archipelagoes of Europe: ['British Isles', 'Frioul archipelago', 'Glénan Islands', 'Valaam']
+      Frioul archipelago in ['Frioul archipelago', 'British Isles', 'Valaam', 'Glénan Islands']
+      British Isles in ['Frioul archipelago', 'British Isles', 'Valaam', 'Glénan Islands']
+      Valaam in ['Frioul archipelago', 'British Isles', 'Valaam', 'Glénan Islands']
+      Glénan Islands in ['Frioul archipelago', 'British Isles', 'Valaam', 'Glénan Islands']
+   Upper category of Archipelagoes of Europe: ['Landforms of Europe', 'Islands of Europe', 'Archipelagoes by continent']
+choose_by_wiki_recur(Landforms of Europe)
+check_matchscore(British Isles, Regions of Europe):  0.0
+choose_by_wiki_recur(Regions of Europe)
+   Pages in Regions of Europe: ['Regions of Europe', 'Region (Europe)', 'Alcohol preferences in Europe', 'Alpine Foreland', 'Alpine states', 'Arc Manche', 'Assembly of European Regions', 'Association of the Alpine States', 'Balkans', 'Baltic region', 'Baltic states', 'Baltoscandia', 'Barents Region', 'Belchen System', 'Benelux', 'Boeotia', 'Northwest Metropolitan Region', 'British Isles', 'Bukovinian Subcarpathians', 'Caucasus', 'Central and Eastern Europe', 'Central Europe', 'Continental Europe', 'Danubia', 'Divisions of the Carpathians', 'East Prussia', 'East-Central Europe', 'Eastern Europe', 'Elbe–Weser triangle', 'Empty diagonal', 'Erblande', 'Euro-Mediterranean region', 'Far West (Taixi)', 'Galicia (Eastern Europe)', 'Germanic Basin', 'Iberian Peninsula', 'Intermarium (region)', 'Italian Peninsula', 'Italy (geographical region)', 'Latin Arch', 'Lower Danube (Euroregion)', 'Mediterranean Basin', 'Middle Holstein', 'Mitteleuropa', 'Moldavian Subcarpathians', 'Nordic countries', 'Northwestern Europe', 'REGLEG', 'Röstigraben', 'Scandinavia', 'South Caucasus', 'Southeast Europe', 'Southern Europe', 'Sudetenland', 'Suwałki Region', 'Vogtland', 'Wasgau', 'Western Europe']
+      Erblande in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians']
+      Continental Europe in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions']
+      Bukovinian Subcarpathians in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions']
+      Divisions of the Carpathians in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions', 'East Prussia']
+      Assembly of European Regions in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions', 'East Prussia', 'Empty diagonal']
+      East Prussia in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions', 'East Prussia', 'Empty diagonal', 'Middle Holstein']
+      Empty diagonal in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions', 'East Prussia', 'Empty diagonal', 'Middle Holstein']
+      Middle Holstein in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions', 'East Prussia', 'Empty diagonal', 'Middle Holstein', 'Baltic region']
+      Baltic region in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions', 'East Prussia', 'Empty diagonal', 'Middle Holstein', 'Baltic region', 'Boeotia']
+      Boeotia in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions', 'East Prussia', 'Empty diagonal', 'Middle Holstein', 'Baltic region', 'Boeotia', 'Baltic states']
+      Baltic states in ['Erblande', 'Continental Europe', 'Bukovinian Subcarpathians', 'Divisions of the Carpathians', 'Assembly of European Regions', 'East Prussia', 'Empty diagonal', 'Middle Holstein', 'Baltic region', 'Boeotia', 'Baltic states']
+['Continental Europe', 'East Prussia', 'Boeotia', 'Baltic states']
+Ended after 2.5 hierarchy
+(2.5, ['Continental Europe', 'Boeotia', 'East Prussia', 'Baltic states'])
+
+extract_info(Boeotia) Start.
+utils/preprocess.py extract_info(): Checking good links on Boeotia
+Livadeia is Geography
+1 / 30 )  Livadeia Livadeia levadeia
+Thebes, Greece is Geography
+2 / 30 )  Thebes Thebes, Greece thebans
+Gulf of Corinth is Geography
+3 / 30 )  Gulf of Corinth Gulf of Corinth gulf_of_corinth
+Euboea is Geography
+4 / 30 )  Euboea Euboea euboea
+Phocis is Geography
+5 / 30 )  Phocis Phocis phocis
+Mount Parnassus is Geography
+6 / 30 )  Mount Parnassus Mount Parnassus mount_parnassus
+Cithaeron is Geography
+7 / 30 )  Cithaeron Cithaeron cithaeron
+Ionia is Geography
+8 / 30 )  Ionian Ionia ionia
+Teos is Geography
+9 / 30 )  Teos Teos teos
+Lemnos is Geography
+10 / 30 )  Lemnos Lemnos lemnos
+Santorini is Geography
+11 / 30 )  Thera Santorini santorini
+Thessaly is Geography
+12 / 30 )  Thessalians Thessaly thessaly
+Aegean Sea is Geography
+13 / 30 )  Aegean Aegean Sea aegean_sea
+Lesbos is Geography
+14 / 30 )  Lesbos Lesbos lesbos
+Aeolis is Geography
+15 / 30 )  Aeolis Aeolis aeolis
+Anatolia is Geography
+16 / 30 )  Asia Minor Anatolia anatolia
+Pindar is People
+17 / 30 )  Pindar Pindar pindar
+Hesiod is People
+18 / 30 )  Hesiod Hesiod hesiod
+Epaminondas is People
+19 / 30 )  Epaminondas Epaminondas epaminondas
+Plutarch is People
+20 / 30 )  Plutarch Plutarch plutarch
+Argos, Peloponnese is Geography
+21 / 30 )  Argos Argos, Peloponnese argives
+Phoenicia is Geography
+22 / 30 )  Phoenicia Phoenicia phoenicia
+Aeschylus is People
+23 / 30 )  Aeschylus Aeschylus aeschylus
+Sophocles is People
+24 / 30 )  Sophocles Sophocles sophocles
+Euripides is People
+25 / 30 )  Euripides Euripides euripides
+Plataea is Geography
+26 / 30 )  Plataea Plataea plataea
+Athens is Geography
+27 / 30 )  Athens Athens athens
+Thucydides is People
+28 / 30 )  Thucydides Thucydides thucydides
+Chaeronea is Geography
+29 / 30 )  Chaeronea Chaeronea chaeronea
+Thermopylae is Geography
+30 / 30 )  Thermopylae Thermopylae thermopylae
+extract_triplet(Boeotia)
+Got GPT's response. String length : 1754
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  []
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  [['Livadeia', 'Livadeia', 'levadeia']]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  [['Thebes', 'Thebes, Greece', 'thebans']]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  [['Gulf of Corinth', 'Gulf of Corinth', 'gulf_of_corinth']]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  [['Euboea', 'Euboea', 'euboea']]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  [['Phocis', 'Phocis', 'phocis']]
+subject_words:  [['Mount Parnassus', 'Mount Parnassus', 'mount_parnassus']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Cithaeron', 'Cithaeron', 'cithaeron']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  []
+subject_words:  [['Teos', 'Teos', 'teos']]
+object_words:  []
+subject_words:  [['Lemnos', 'Lemnos', 'lemnos']]
+object_words:  []
+subject_words:  [['Thera', 'Santorini', 'santorini']]
+object_words:  []
+subject_words:  [['Thessalians', 'Thessaly', 'thessaly']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  [['Lesbos', 'Lesbos', 'lesbos'], ['Aeolis', 'Aeolis', 'aeolis'], ['Asia Minor', 'Anatolia', 'anatolia']]
+subject_words:  [['Pindar', 'Pindar', 'pindar']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Hesiod', 'Hesiod', 'hesiod']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Epaminondas', 'Epaminondas', 'epaminondas']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Plutarch', 'Plutarch', 'plutarch']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Argos', 'Argos, Peloponnese', 'argives']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Phoenicia', 'Phoenicia', 'phoenicia']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Aeschylus', 'Aeschylus', 'aeschylus']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Sophocles', 'Sophocles', 'sophocles']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Euripides', 'Euripides', 'euripides']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  [['Athens', 'Athens', 'athens']]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  []
+subject_words:  [['Livadeia', 'Livadeia', 'levadeia']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [['Thebes', 'Thebes, Greece', 'thebans']]
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  [(None, 'Boeotia', 'boeotia')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Boeotia', 'boeotia')]
+subject_words:  []
+object_words:  [(None, 'Boeotia', 'boeotia')]
+extract_info(East Prussia) Start.
+utils/preprocess.py extract_info(): Checking good links on East Prussia
+Weimar Republic is Geography
+1 / 30 )  Weimar Republic Weimar Republic weimar_republic
+Königsberg is Geography
+2 / 30 )  Königsberg Königsberg königsberg
+Baltic Sea is Geography
+3 / 30 )  Baltic Coast Baltic Sea baltic_sea
+State of the Teutonic Order is Geography
+4 / 30 )  monastic state of the Teutonic Knights State of the Teutonic Order ordensstaat
+German Empire is Geography
+5 / 30 )  German Empire German Empire german_empire
+Lithuania is Geography
+6 / 30 )  Lithuania Lithuania lithuania
+Nazi Germany is Geography
+7 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Joseph Stalin is People
+8 / 30 )  Joseph Stalin Joseph Stalin joseph_stalin
+Soviet Union is Geography
+9 / 30 )  Soviet Union Soviet Union soviet_union
+Polish People's Republic is Geography
+10 / 30 )  People's Republic of Poland Polish People's Republic polish_people's_republic
+Kaliningrad is Geography
+11 / 30 )  Kaliningrad Kaliningrad kaliningrad
+Pomerelia is Geography
+12 / 30 )  Pomerelia Pomerelia pomerelia
+Warmia is Geography
+13 / 30 )  Warmia Warmia warmia
+Frederick William, Elector of Brandenburg is People
+14 / 30 )  Frederick William Frederick William, Elector of Brandenburg great_elector
+Pomeranian Voivodeship  is Geography
+15 / 30 )  Pomerania Pomeranian Voivodeship  pomorskie
+Vistula is Geography
+16 / 30 )  Vistula Vistula vistula
+Chełmno Land is Geography
+17 / 30 )  Chełmno Land Chełmno Land culmerland
+Kwidzyn is Geography
+18 / 30 )  Marienwerder Kwidzyn kwidzyn
+Berlin is Geography
+19 / 30 )  Berlin Berlin berlin
+East Prussia is Geography
+20 / 30 )  Province of East Prussia East Prussia east_prussia
+Battle of Jena–Auerstedt is Geography
+21 / 30 )  Battle of Jena-Auerstedt Battle of Jena–Auerstedt battle_of_jena
+Napoleon is People
+22 / 30 )  Napoleon Napoleon napoleon
+Frederick William III of Prussia is People
+23 / 30 )  Frederick William III Frederick William III of Prussia frederick_william_iii
+Curonian Spit is Geography
+24 / 30 )  Curonian Spit Curonian Spit curonian_spit
+Klaipėda is Geography
+25 / 30 )  Memel Klaipėda klaipėda
+Gdańsk is Geography
+26 / 30 )  Danzig Gdańsk gdańsk
+Brandenburg is Geography
+27 / 30 )  Brandenburg Brandenburg brandenburg
+Westphalia is Geography
+28 / 30 )  Westphalia Westphalia westphalia
+Ruhr is Geography
+29 / 30 )  Ruhr Area Ruhr ruhr
+Battle of Tannenberg is Geography
+30 / 30 )  Battle of Tannenberg Battle of Tannenberg battle_of_tannenberg
+extract_triplet(East Prussia)
+Got GPT's response. String length : 3000
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [['Weimar Republic', 'Weimar Republic', 'weimar_republic']]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [['Königsberg', 'Königsberg', 'königsberg']]
+subject_words:  [['Königsberg', 'Königsberg', 'königsberg']]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad']]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [['Baltic Coast', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  []
+object_words:  [['Warmia', 'Warmia', 'warmia']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  [(None, 'East Prussia', 'east_prussia')]
+object_words:  []
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [['Königsberg', 'Königsberg', 'königsberg']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  [['Battle of Tannenberg', 'Battle of Tannenberg', 'battle_of_tannenberg']]
+object_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  []
+object_words:  [['Battle of Tannenberg', 'Battle of Tannenberg', 'battle_of_tannenberg']]
+subject_words:  [(None, 'East Prussia', 'east_prussia')]
+object_words:  [(None, 'East Prussia', 'east_prussia')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  [(None, 'East Prussia', 'east_prussia')]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  [['Königsberg', 'Königsberg', 'königsberg']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'East Prussia', 'east_prussia'), ['Province of East Prussia', 'East Prussia', 'east_prussia']]
+extract_info(Baltic states) Start.
+utils/preprocess.py extract_info(): Checking good links on Baltic states
+Estonia is Geography
+1 / 30 )  Estonia Estonia estonia
+Latvia is Geography
+2 / 30 )  Latvia Latvia latvia
+Lithuania is Geography
+3 / 30 )  Lithuania Lithuania lithuania
+Baltic Sea is Geography
+4 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Finland is Geography
+5 / 30 )  Finland Finland finland
+Nordic countries is Geography
+6 / 30 )  Nordic countries Nordic countries nordic_countries
+Kievan Rus' is Geography
+7 / 30 )  Kievan Rus Kievan Rus' kievan_russia
+Denmark is Geography
+8 / 30 )  Denmark Denmark denmark
+German Empire is Geography
+9 / 30 )  German Empire German Empire german_empire
+Georges Clemenceau is People
+10 / 30 )  Georges Clemenceau Georges Clemenceau georges_clemenceau
+Estonian Soviet Socialist Republic is Geography
+11 / 30 )  Estonian SSR Estonian Soviet Socialist Republic estonian_soviet_socialist_republic
+Latvian Soviet Socialist Republic is Geography
+12 / 30 )  Latvian SSR Latvian Soviet Socialist Republic latvian_soviet_socialist_republic
+Lithuanian Soviet Socialist Republic is Geography
+13 / 30 )  Lithuanian SSR Lithuanian Soviet Socialist Republic lithuanian_soviet_socialist_republic
+Soviet Union is Geography
+14 / 30 )  Soviet Union Soviet Union soviet_union
+Nazi Germany is Geography
+15 / 30 )  Nazi German Nazi Germany nazi_germany
+United States is Geography
+16 / 30 )  United States United States united_states
+United Kingdom is Geography
+17 / 30 )  Britain United Kingdom united_kingdom
+Tallinn is Geography
+18 / 30 )  Tallinn Tallinn tallinn
+Vilnius is Geography
+19 / 30 )  Vilnius Vilnius vilnius
+Mikhail Gorbachev is People
+20 / 30 )  Gorbachev's Mikhail Gorbachev mikhail_gorbachev
+Parliament of Australia is Geography
+21 / 30 )  Australian Parliament Parliament of Australia federal_parliament
+Sweden is Geography
+22 / 30 )  Sweden Sweden sweden
+Poland is Geography
+23 / 30 )  Poland Poland poland
+Russian Orthodox Church is Geography
+24 / 30 )  Orthodox Christianity Russian Orthodox Church russian_orthodox_church
+Germany is Geography
+25 / 30 )  Germany Germany germany
+Norway is Geography
+26 / 30 )  Norway Norway norway
+extract_triplet(Baltic states)
+Got GPT's response. String length : 2005
+subject_words:  [(None, 'Baltic states', 'baltic_states')]
+object_words:  [['Estonia', 'Estonia', 'estonia']]
+subject_words:  [(None, 'Baltic states', 'baltic_states')]
+object_words:  [['Latvia', 'Latvia', 'latvia']]
+subject_words:  [(None, 'Baltic states', 'baltic_states')]
+object_words:  [['Lithuania', 'Lithuania', 'lithuania']]
+subject_words:  [['Estonia', 'Estonia', 'estonia']]
+object_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [['Latvia', 'Latvia', 'latvia']]
+object_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [['Lithuania', 'Lithuania', 'lithuania']]
+object_words:  [['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+subject_words:  [(None, 'Baltic states', 'baltic_states')]
+object_words:  [['Finland', 'Finland', 'finland']]
+subject_words:  [['Finland', 'Finland', 'finland']]
+object_words:  [['Nordic countries', 'Nordic countries', 'nordic_countries']]
+subject_words:  [['Poland', 'Poland', 'poland']]
+object_words:  []
+subject_words:  [['Kievan Rus', "Kievan Rus'", 'kievan_russia']]
+object_words:  []
+subject_words:  [['Denmark', 'Denmark', 'denmark']]
+object_words:  [(None, 'Baltic states', 'baltic_states')]
+subject_words:  [['German Empire', 'German Empire', 'german_empire']]
+object_words:  [['Estonia', 'Estonia', 'estonia']]
+subject_words:  [['Georges Clemenceau', 'Georges Clemenceau', 'georges_clemenceau']]
+object_words:  []
+subject_words:  [['Estonian SSR', 'Estonian Soviet Socialist Republic', 'estonian_soviet_socialist_republic']]
+object_words:  []
+subject_words:  [['Latvian SSR', 'Latvian Soviet Socialist Republic', 'latvian_soviet_socialist_republic']]
+object_words:  []
+subject_words:  [['Lithuanian SSR', 'Lithuanian Soviet Socialist Republic', 'lithuanian_soviet_socialist_republic']]
+object_words:  []
+subject_words:  [['Nazi German', 'Nazi Germany', 'nazi_germany'], ['Germany', 'Germany', 'germany']]
+object_words:  [(None, 'Baltic states', 'baltic_states')]
+subject_words:  [['United States', 'United States', 'united_states']]
+object_words:  []
+subject_words:  [['Britain', 'United Kingdom', 'united_kingdom']]
+object_words:  []
+subject_words:  [['Tallinn', 'Tallinn', 'tallinn']]
+object_words:  [['Vilnius', 'Vilnius', 'vilnius']]
+subject_words:  [['Vilnius', 'Vilnius', 'vilnius']]
+object_words:  [['Tallinn', 'Tallinn', 'tallinn']]
+subject_words:  [["Gorbachev's", 'Mikhail Gorbachev', 'mikhail_gorbachev']]
+object_words:  []
+subject_words:  [['Sweden', 'Sweden', 'sweden']]
+object_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+subject_words:  [['Poland', 'Poland', 'poland']]
+object_words:  [['Lithuania', 'Lithuania', 'lithuania']]
+subject_words:  [['Orthodox Christianity', 'Russian Orthodox Church', 'russian_orthodox_church']]
+object_words:  [['Kievan Rus', "Kievan Rus'", 'kievan_russia']]
+subject_words:  [['Germany', 'Germany', 'germany']]
+object_words:  []
+subject_words:  [['Norway', 'Norway', 'norway']]
+object_words:  [(None, 'Baltic states', 'baltic_states')]
+extract_info(Continental Europe) Start.
+utils/preprocess.py extract_info(): Checking good links on Continental Europe
+Eurasia is Geography
+1 / 30 )  Eurasia Eurasia eurasia
+List of islands of Greece is Geography
+2 / 30 )  Greek islands List of islands of Greece greek_island
+Cyprus is Geography
+3 / 30 )  Cyprus Cyprus cyprus
+Malta is Geography
+4 / 30 )  Malta Malta malta
+Sicily is Geography
+5 / 30 )  Sicily Sicily sicily
+Sardinia is Geography
+6 / 30 )  Sardinia Sardinia sardinia
+Corsica is Geography
+7 / 30 )  Corsica Corsica corsica
+Balearic Islands is Geography
+8 / 30 )  Balearic Islands Balearic Islands balearic_islands
+Great Britain is Geography
+9 / 30 )  Great Britain Great Britain great_britain
+Ireland is Geography
+10 / 30 )  Ireland Ireland ireland
+Novaya Zemlya is Geography
+11 / 30 )  Novaya Zemlya Novaya Zemlya novaya_zemlya
+Canary Islands is Geography
+12 / 30 )  Canary Islands Canary Islands canary_islands
+Azores is Geography
+13 / 30 )  Azores Azores azores
+Iceland is Geography
+14 / 30 )  Iceland Iceland iceland
+Faroe Islands is Geography
+15 / 30 )  Faroe Islands Faroe Islands faroe_islands
+Svalbard is Geography
+16 / 30 )  Svalbard Svalbard svalbard
+Scandinavian Peninsula is Geography
+17 / 30 )  Scandinavian Peninsula Scandinavian Peninsula scandinavian_peninsula
+Baltic Sea is Geography
+18 / 30 )  Baltic Sea Baltic Sea baltic_sea
+North Sea is Geography
+19 / 30 )  North Sea North Sea north_sea
+Øresund Bridge is Geography
+20 / 30 )  Øresund Bridge Øresund Bridge øresund_bridge
+English Channel is Geography
+21 / 30 )  Channel English Channel english_channel
+Channel Tunnel is Geography
+22 / 30 )  Channel Tunnel Channel Tunnel channel_tunnel
+England is Geography
+23 / 30 )  England England england
+Sweden is Geography
+24 / 30 )  Sweden Sweden sweden
+Norway is Geography
+25 / 30 )  Norway Norway norway
+Finland is Geography
+26 / 30 )  Finland Finland finland
+Metropolitan France is Geography
+27 / 30 )  continental part Metropolitan France metropolitan_france
+Italian Peninsula is Geography
+28 / 30 )  continental part Italian Peninsula italian_peninsula
+extract_triplet(Continental Europe)
+Got GPT's response. String length : 2386
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  []
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Greek islands', 'List of islands of Greece', 'greek_island']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Cyprus', 'Cyprus', 'cyprus']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Malta', 'Malta', 'malta']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Sicily', 'Sicily', 'sicily']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Sardinia', 'Sardinia', 'sardinia']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Corsica', 'Corsica', 'corsica']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Balearic Islands', 'Balearic Islands', 'balearic_islands']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Great Britain', 'Great Britain', 'great_britain']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Ireland', 'Ireland', 'ireland']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Novaya Zemlya', 'Novaya Zemlya', 'novaya_zemlya']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Canary Islands', 'Canary Islands', 'canary_islands']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Azores', 'Azores', 'azores']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Iceland', 'Iceland', 'iceland']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Faroe Islands', 'Faroe Islands', 'faroe_islands']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Svalbard', 'Svalbard', 'svalbard']]
+subject_words:  [['Scandinavian Peninsula', 'Scandinavian Peninsula', 'scandinavian_peninsula']]
+object_words:  [(None, 'Continental Europe', 'continental_europe')]
+subject_words:  [['Scandinavian Peninsula', 'Scandinavian Peninsula', 'scandinavian_peninsula']]
+object_words:  [(None, 'Continental Europe', 'continental_europe'), ['Øresund Bridge', 'Øresund Bridge', 'øresund_bridge']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Scandinavian Peninsula', 'Scandinavian Peninsula', 'scandinavian_peninsula'], ['Baltic Sea', 'Baltic Sea', 'baltic_sea'], ['North Sea', 'North Sea', 'north_sea']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Eurasia', 'Eurasia', 'eurasia']]
+subject_words:  [['Great Britain', 'Great Britain', 'great_britain'], ['Ireland', 'Ireland', 'ireland']]
+object_words:  [(None, 'Continental Europe', 'continental_europe')]
+subject_words:  [['Great Britain', 'Great Britain', 'great_britain'], ['Ireland', 'Ireland', 'ireland']]
+object_words:  [(None, 'Continental Europe', 'continental_europe')]
+subject_words:  []
+object_words:  [['Ireland', 'Ireland', 'ireland']]
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Channel', 'English Channel', 'english_channel'], ['Channel Tunnel', 'Channel Tunnel', 'channel_tunnel'], ['England', 'England', 'england']]
+subject_words:  [['England', 'England', 'england']]
+object_words:  [(None, 'Continental Europe', 'continental_europe'), ['Channel', 'English Channel', 'english_channel'], ['Channel Tunnel', 'Channel Tunnel', 'channel_tunnel']]
+subject_words:  [['Channel', 'English Channel', 'english_channel'], ['Channel Tunnel', 'Channel Tunnel', 'channel_tunnel']]
+object_words:  []
+subject_words:  [(None, 'Continental Europe', 'continental_europe')]
+object_words:  [['Iceland', 'Iceland', 'iceland']]
+subject_words:  [['continental part', 'Metropolitan France', 'metropolitan_france'], ['continental part', 'Italian Peninsula', 'italian_peninsula']]
+object_words:  [['Corsica', 'Corsica', 'corsica']]
+subject_words:  [['continental part', 'Metropolitan France', 'metropolitan_france'], ['continental part', 'Italian Peninsula', 'italian_peninsula']]
+object_words:  []
+subject_words:  [['continental part', 'Metropolitan France', 'metropolitan_france'], ['continental part', 'Italian Peninsula', 'italian_peninsula']]
+object_words:  [['Sicily', 'Sicily', 'sicily']]
+subject_words:  [['continental part', 'Metropolitan France', 'metropolitan_france'], ['continental part', 'Italian Peninsula', 'italian_peninsula']]
+object_words:  [['Azores', 'Azores', 'azores']]
+subject_words:  [['continental part', 'Metropolitan France', 'metropolitan_france'], ['continental part', 'Italian Peninsula', 'italian_peninsula']]
+object_words:  [['Balearic Islands', 'Balearic Islands', 'balearic_islands'], ['Canary Islands', 'Canary Islands', 'canary_islands']]
+subject_words:  []
+object_words:  [(None, 'Continental Europe', 'continental_europe')]
+subject_words:  []
+object_words:  [(None, 'Continental Europe', 'continental_europe')]
+subject_words:  []
+object_words:  [(None, 'Continental Europe', 'continental_europe')]
+['("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Great Britain", "is the largest of", "the British Isles")\n']
+
+['("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Great Britain", "is an island in", "the North Atlantic Ocean")\n', '("Great Britain", "consists of", "England, Scotland, and Wales")\n', '("The island of Ireland", "is to the west of", "Great Britain")\n', '("Great Britain and Ireland", "form", "the British Isles archipelago")\n', '("Great Britain", "was connected to Europe by", "Doggerland")\n', '("Great Britain\'s", "political territory includes", "England, Scotland, and Wales")\n', '("The political territory of Great Britain and", "constitute", "the United Kingdom")\n', '("The term", "refers to", "British Isles")\n', '("Aristotle", "mentioned", "Great Britain as Albion")\n', '("The name Britain", "descends from", "the Latin name Britannia")\n', '("John Major", "published", "‘History of Great Britain’")\n', '("Great Britain", "is not technically correct to refer to", "the whole of the United Kingdom")\n', '("Great Britain", "refers geographically to", "the island of Great Britain")\n', '("The term", "is used by", "the Universal Postal Union")\n', '("The Isle of Wight", "is part of", "England")\n', '("Anglesey", "is part of", "Wales")\n', '("The Isles of Scilly", "are part of", "England")\n', '("Boeotia", "is part of the region of", "Central Greece")\n', '("Boeotia", "has its capital in", "Livadeia")\n', '("Boeotia", "has its largest city which is", "Thebes")\n', '("Boeotia", "lies north of", "Gulf of Corinth")\n', '("Boeotia", "has a short coastline on", "Gulf of Euboea")\n', '("Boeotia", "is bordered by", "Phocis in the west")\n', '("Mount Parnassus", "is one main mountain range in", "Boeotia")\n', '("Cithaeron", "is a mountain range in", "Boeotia")\n', '("Boeotians", "may have origin in", "mountain Boeon in Epirus")\n', '("Teos", "is an Ionian city established by", "Minyans")\n', '("Lemnos", "was occupied by", "Minyans")\n', '("Thera", "was occupied by", "Minyans")\n', '("Thessalians", "are related to", "Boeotians")\n', '("Boeotians", "settled on", "Lesbos and in Aeolis in Asia Minor")\n', '("Pindar", "is a great man from", "Boeotia")\n', '("Hesiod", "is a great man from", "Boeotia")\n', '("Epaminondas", "is a great man from", "Boeotia")\n', '("Plutarch", "is a great man from", "Boeotia")\n', '("Argos", "is connected with myths of", "Boeotia")\n', '("Phoenicia", "has connections indicated by myths with", "Boeotia")\n', '("Aeschylus", "used legends set in", "Boeotia")\n', '("Sophocles", "used legends set in", "Boeotia")\n', '("Euripides", "used legends set in", "Boeotia")  \n', '("Boeotia", "fought zealously against", "Athens in Peloponnesian War")\n', '("Boeotian League", "comprised eleven groups of", "sovereign cities")\n', '("Livadeia", "is a province of", "Boeotia")\n', '("Thebes", "is a province of", "Boeotia")\n', '("Boeotia", "has a pasta factory owned by", "MISKO")\n', '("Nestlé", "has a factory in", "Oinofyta, Boeotia")\n', '("Viohalco", "has a factory in", "Oinofyta, Boeotia")\n', '("East Prussia", "was a province of", "the Kingdom of Prussia")\n', '("East Prussia", "formed part of", "Weimar Republic")\n', '("Capital of East Prussia", "was", "Königsberg")\n', '("Königsberg", "present-day", "Kaliningrad")\n', '("East Prussia", "main part of region along", "southeastern Baltic Coast")\n', '("East Prussia", "enclosed lands of", "Baltic Old Prussians")\n', '("Kingdom of Poland", "direct control of", "Warmia")\n', '("Prussian Homage", "made East Prussia a Duchy", "as vassal of Polish crown")\n', '("East Prussia", "became exclave of", "Weimar Germany after Treaty of Versailles")\n', '("East Prussian population", "evacuated or expelled", "after World War II")\n', '("Provincial Diet of East Prussia", "created as", "Provinziallandtag")\n', '("Province of East Prussia", "formed by joining", "Regierungsbezirke of Gumbinnen and Königsberg")\n', '("Province of Prussia", "merged from", "East and West Prussia")\n', '("East Prussia", "became theatre of war", "when Russian Empire invaded during World War I")\n', '("Battle of Tannenberg", "occurred in", "East Prussia")\n', '("World War I", "Russian invasion led to", "Battle of Tannenberg")\n', '("East Prussia\'s population", "voted to remain with Germany", "in East Prussian plebiscite")\n', '("World War II", "East Prussian borders revised during", "invasion of Poland")\n', '("Wolf\'s Lair", "located in", "East Prussia during World War II")\n', '("East Prussia", "devastated during", "East Prussian Offensive")\n', '("East Prussia", "expulsion of Germans after", "World War II")\n', '("Königsberg", "became Kaliningrad", "after World War II")\n', '("Polish administration", "took over", "southern part of East Prussia")\n', '("East Prussia", "northern part became", "province of the Russian SFSR")\n', '("Oberpräsident", "appointed for", "East Prussia by Prussian central government")\n', '("Baltic states", "encompass", "Estonia")\n', '("Baltic states", "encompass", "Latvia")\n', '("Baltic states", "encompass", "Lithuania")\n', '("Estonia", "is on the eastern coast of", "Baltic Sea")\n', '("Latvia", "is on the eastern coast of", "Baltic Sea")\n', '("Lithuania", "is on the eastern coast of", "Baltic Sea")\n', '("Baltic states", "sometimes included", "Finland")\n', '("Finland", "became grouped among", "Nordic countries")\n', '("Poland", "formed Christian states neighboring", "Baltic countries")\n', '("Kievan Rus", "sought to conquer", "Baltic countries")\n', '("Denmark", "fought with", "Poland–Lithuanian Commonwealth for Baltic states\' land")\n', '("German Empire", "occupied", "Estonia during World War I")\n', '("Georges Clemenceau", "considered Baltic states as part of strategic", "cordon sanitaire")\n', '("Estonian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Latvian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Lithuanian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Nazi Germany", "invaded", "Baltic states during World War II")\n', '("United States", "considered Baltics under", "Soviet occupation")\n', '("Britain", "considered Baltics under", "Soviet occupation")\n', '("Tallinn", "was part of human chain from", "Vilnius")\n', '("Vilnius", "was part of human chain to", "Tallinn")\n', '("Gorbachev\'s", "government concluded departure of Baltic republics was", "inevitable")\n', '("Sweden", "recognized incorporation of Baltic states into", "Soviet Union")\n', '("Poland", "shares electricity interconnection with", "Lithuania")\n', '("Orthodox Christianity", "began to spread in", "Baltic countries with Kievan Rus influence")\n', '("Germany", "established the Duchy of Prussia in", "Baltic territories")\n', '("Norway", "like other Nordic countries", "did not experience authoritarian regimes like Baltic states in interwar period")\n', '("Continental Europe", "is also known as", "mainland Europe")\n', '("Continental Europe", "is excluded from", "Greek islands")\n', '("Continental Europe", "is excluded from", "Cyprus")\n', '("Continental Europe", "is excluded from", "Malta")\n', '("Continental Europe", "is excluded from", "Sicily")\n', '("Continental Europe", "is excluded from", "Sardinia")\n', '("Continental Europe", "is excluded from", "Corsica")\n', '("Continental Europe", "is excluded from", "Balearic Islands")\n', '("Continental Europe", "is excluded from", "Great Britain")\n', '("Continental Europe", "is excluded from", "Ireland")\n', '("Continental Europe", "is excluded from", "Novaya Zemlya")\n', '("Continental Europe", "is excluded from", "Canary Islands")\n', '("Continental Europe", "is excluded from", "Azores")\n', '("Continental Europe", "is excluded from", "Iceland")\n', '("Continental Europe", "is excluded from", "Faroe Islands")\n', '("Continental Europe", "is excluded from", "Svalbard")\n', '("Scandinavian Peninsula", "is sometimes excluded from", "Continental Europe")\n', '("Scandinavian Peninsula", "connects to", "Continental Europe via Øresund Bridge")\n', '("Continental Europe", "has de facto connections to", "Scandinavian Peninsula across Baltic Sea or North Sea")\n', '("Continental Europe", "can mean the subcontinent in", "Eurasia")\n', '("Great Britain and Ireland", "use the term Continent to refer to", "Continental Europe")\n', '("Great Britain and Ireland", "are not part of", "Continental Europe")\n', '("Europe", "can mean excluding islands of", "Great Britain, Iceland, and Ireland")\n', '("Continental Europe", "is physically connected to", "England through Channel Tunnel")\n', '("England", "is part of", "Continental Europe through Channel Tunnel")\n', '("Channel Tunnel", "accommodates", "Eurotunnel Shuttle and Eurostar")\n', '("Continental Europe", "excludes", "Scandinavian Peninsula, Britain, Ireland, and Iceland in Germanic studies")\n', '("Continental part of France", "excludes", "Corsica")\n', '("Continental part of Greece", "excludes", "Aegean Islands, Crete, and Ionian Islands")\n', '("Continental part of Italy", "excludes", "Sardinia, Sicily")\n', '("Continental part of Portugal", "excludes", "Azores and Madeira")\n', '("Continental part of Spain", "excludes", "Balearic Islands, the Canary Islands")\n', '("France", "is referred as", "l\'Hexagone in Continental Europe")\n', '("Italy", "is referred as", "lo Stivale in Continental Europe")\n', '("Spain", "is referred to as", "peninsular Spain in Continental Europe")\n']
+range(1, 192) 3
+['("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Great Britain", "is the largest of", "the British Isles")\n']
+
+['("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Great Britain", "is an island in", "the North Atlantic Ocean")\n', '("Great Britain", "consists of", "England, Scotland, and Wales")\n', '("The island of Ireland", "is to the west of", "Great Britain")\n', '("Great Britain and Ireland", "form", "the British Isles archipelago")\n', '("Great Britain", "was connected to Europe by", "Doggerland")\n', '("Great Britain\'s", "political territory includes", "England, Scotland, and Wales")\n', '("The political territory of Great Britain and", "constitute", "the United Kingdom")\n', '("The term", "refers to", "British Isles")\n', '("Aristotle", "mentioned", "Great Britain as Albion")\n', '("The name Britain", "descends from", "the Latin name Britannia")\n', '("John Major", "published", "‘History of Great Britain’")\n', '("Great Britain", "is not technically correct to refer to", "the whole of the United Kingdom")\n', '("Great Britain", "refers geographically to", "the island of Great Britain")\n', '("The term", "is used by", "the Universal Postal Union")\n', '("The Isle of Wight", "is part of", "England")\n', '("Anglesey", "is part of", "Wales")\n', '("The Isles of Scilly", "are part of", "England")\n', '("Boeotia", "is part of the region of", "Central Greece")\n', '("Boeotia", "has its capital in", "Livadeia")\n', '("Boeotia", "has its largest city which is", "Thebes")\n', '("Boeotia", "lies north of", "Gulf of Corinth")\n', '("Boeotia", "has a short coastline on", "Gulf of Euboea")\n', '("Boeotia", "is bordered by", "Phocis in the west")\n', '("Mount Parnassus", "is one main mountain range in", "Boeotia")\n', '("Cithaeron", "is a mountain range in", "Boeotia")\n', '("Boeotians", "may have origin in", "mountain Boeon in Epirus")\n', '("Teos", "is an Ionian city established by", "Minyans")\n', '("Lemnos", "was occupied by", "Minyans")\n', '("Thera", "was occupied by", "Minyans")\n', '("Thessalians", "are related to", "Boeotians")\n', '("Boeotians", "settled on", "Lesbos and in Aeolis in Asia Minor")\n', '("Pindar", "is a great man from", "Boeotia")\n', '("Hesiod", "is a great man from", "Boeotia")\n', '("Epaminondas", "is a great man from", "Boeotia")\n', '("Plutarch", "is a great man from", "Boeotia")\n', '("Argos", "is connected with myths of", "Boeotia")\n', '("Phoenicia", "has connections indicated by myths with", "Boeotia")\n', '("Aeschylus", "used legends set in", "Boeotia")\n', '("Sophocles", "used legends set in", "Boeotia")\n', '("Euripides", "used legends set in", "Boeotia")  \n', '("Boeotia", "fought zealously against", "Athens in Peloponnesian War")\n', '("Boeotian League", "comprised eleven groups of", "sovereign cities")\n', '("Livadeia", "is a province of", "Boeotia")\n', '("Thebes", "is a province of", "Boeotia")\n', '("Boeotia", "has a pasta factory owned by", "MISKO")\n', '("Nestlé", "has a factory in", "Oinofyta, Boeotia")\n', '("Viohalco", "has a factory in", "Oinofyta, Boeotia")\n', '("East Prussia", "was a province of", "the Kingdom of Prussia")\n', '("East Prussia", "formed part of", "Weimar Republic")\n', '("Capital of East Prussia", "was", "Königsberg")\n', '("Königsberg", "present-day", "Kaliningrad")\n', '("East Prussia", "main part of region along", "southeastern Baltic Coast")\n', '("East Prussia", "enclosed lands of", "Baltic Old Prussians")\n', '("Kingdom of Poland", "direct control of", "Warmia")\n', '("Prussian Homage", "made East Prussia a Duchy", "as vassal of Polish crown")\n', '("East Prussia", "became exclave of", "Weimar Germany after Treaty of Versailles")\n', '("East Prussian population", "evacuated or expelled", "after World War II")\n', '("Provincial Diet of East Prussia", "created as", "Provinziallandtag")\n', '("Province of East Prussia", "formed by joining", "Regierungsbezirke of Gumbinnen and Königsberg")\n', '("Province of Prussia", "merged from", "East and West Prussia")\n', '("East Prussia", "became theatre of war", "when Russian Empire invaded during World War I")\n', '("Battle of Tannenberg", "occurred in", "East Prussia")\n', '("World War I", "Russian invasion led to", "Battle of Tannenberg")\n', '("East Prussia\'s population", "voted to remain with Germany", "in East Prussian plebiscite")\n', '("World War II", "East Prussian borders revised during", "invasion of Poland")\n', '("Wolf\'s Lair", "located in", "East Prussia during World War II")\n', '("East Prussia", "devastated during", "East Prussian Offensive")\n', '("East Prussia", "expulsion of Germans after", "World War II")\n', '("Königsberg", "became Kaliningrad", "after World War II")\n', '("Polish administration", "took over", "southern part of East Prussia")\n', '("East Prussia", "northern part became", "province of the Russian SFSR")\n', '("Oberpräsident", "appointed for", "East Prussia by Prussian central government")\n', '("Baltic states", "encompass", "Estonia")\n', '("Baltic states", "encompass", "Latvia")\n', '("Baltic states", "encompass", "Lithuania")\n', '("Estonia", "is on the eastern coast of", "Baltic Sea")\n', '("Latvia", "is on the eastern coast of", "Baltic Sea")\n', '("Lithuania", "is on the eastern coast of", "Baltic Sea")\n', '("Baltic states", "sometimes included", "Finland")\n', '("Finland", "became grouped among", "Nordic countries")\n', '("Poland", "formed Christian states neighboring", "Baltic countries")\n', '("Kievan Rus", "sought to conquer", "Baltic countries")\n', '("Denmark", "fought with", "Poland–Lithuanian Commonwealth for Baltic states\' land")\n', '("German Empire", "occupied", "Estonia during World War I")\n', '("Georges Clemenceau", "considered Baltic states as part of strategic", "cordon sanitaire")\n', '("Estonian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Latvian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Lithuanian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Nazi Germany", "invaded", "Baltic states during World War II")\n', '("United States", "considered Baltics under", "Soviet occupation")\n', '("Britain", "considered Baltics under", "Soviet occupation")\n', '("Tallinn", "was part of human chain from", "Vilnius")\n', '("Vilnius", "was part of human chain to", "Tallinn")\n', '("Gorbachev\'s", "government concluded departure of Baltic republics was", "inevitable")\n', '("Sweden", "recognized incorporation of Baltic states into", "Soviet Union")\n', '("Poland", "shares electricity interconnection with", "Lithuania")\n', '("Orthodox Christianity", "began to spread in", "Baltic countries with Kievan Rus influence")\n', '("Germany", "established the Duchy of Prussia in", "Baltic territories")\n', '("Norway", "like other Nordic countries", "did not experience authoritarian regimes like Baltic states in interwar period")\n', '("Continental Europe", "is also known as", "mainland Europe")\n', '("Continental Europe", "is excluded from", "Greek islands")\n', '("Continental Europe", "is excluded from", "Cyprus")\n', '("Continental Europe", "is excluded from", "Malta")\n', '("Continental Europe", "is excluded from", "Sicily")\n', '("Continental Europe", "is excluded from", "Sardinia")\n', '("Continental Europe", "is excluded from", "Corsica")\n', '("Continental Europe", "is excluded from", "Balearic Islands")\n', '("Continental Europe", "is excluded from", "Great Britain")\n', '("Continental Europe", "is excluded from", "Ireland")\n', '("Continental Europe", "is excluded from", "Novaya Zemlya")\n', '("Continental Europe", "is excluded from", "Canary Islands")\n', '("Continental Europe", "is excluded from", "Azores")\n', '("Continental Europe", "is excluded from", "Iceland")\n', '("Continental Europe", "is excluded from", "Faroe Islands")\n', '("Continental Europe", "is excluded from", "Svalbard")\n', '("Scandinavian Peninsula", "is sometimes excluded from", "Continental Europe")\n', '("Scandinavian Peninsula", "connects to", "Continental Europe via Øresund Bridge")\n', '("Continental Europe", "has de facto connections to", "Scandinavian Peninsula across Baltic Sea or North Sea")\n', '("Continental Europe", "can mean the subcontinent in", "Eurasia")\n', '("Great Britain and Ireland", "use the term Continent to refer to", "Continental Europe")\n', '("Great Britain and Ireland", "are not part of", "Continental Europe")\n', '("Europe", "can mean excluding islands of", "Great Britain, Iceland, and Ireland")\n', '("Continental Europe", "is physically connected to", "England through Channel Tunnel")\n', '("England", "is part of", "Continental Europe through Channel Tunnel")\n', '("Channel Tunnel", "accommodates", "Eurotunnel Shuttle and Eurostar")\n', '("Continental Europe", "excludes", "Scandinavian Peninsula, Britain, Ireland, and Iceland in Germanic studies")\n', '("Continental part of France", "excludes", "Corsica")\n', '("Continental part of Greece", "excludes", "Aegean Islands, Crete, and Ionian Islands")\n', '("Continental part of Italy", "excludes", "Sardinia, Sicily")\n', '("Continental part of Portugal", "excludes", "Azores and Madeira")\n', '("Continental part of Spain", "excludes", "Balearic Islands, the Canary Islands")\n', '("France", "is referred as", "l\'Hexagone in Continental Europe")\n', '("Italy", "is referred as", "lo Stivale in Continental Europe")\n', '("Spain", "is referred to as", "peninsular Spain in Continental Europe")\n']
+range(1, 192) 3
+['("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Great Britain", "is the largest of", "the British Isles")\n']
+
+['("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey\'s", "culture is influenced by", "Britain")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Guernsey", "is the second largest island in", "the Channel Islands")\n', '("Guernsey", "is located west of", "the Cotentin Peninsula, Normandy")\n', '("Guernsey", "was part of", "the Duchy of Normandy")\n', '("Guernsey", "remained loyal to", "the English crown")\n', '("Guernsey", "was invaded and occupied by", "Nazi Germany")\n', '("Guernsey", "is a self-governing dependency of", "the British Crown")\n', '("Guernsey", "has a town called", "Saint Peter Port")\n', '("Guernsey", "is separated from", "mainland Normandy")\n', '("Guernsey", "was the home of", "Victor Hugo")\n', '("English Channel", "isolated", "Guernsey from the Cotentin Peninsula")\n', '("Guernsey", "had ancient trade with", "Herculaneum")\n', '("Guernsey", "was part of the claim of", "Alfred and Edward against Canute")\n', '("Guernsey", "was invaded by", "Aragonese mercenaries")\n', '("Guernsey", "received the \'Privilege of Neutrality\' by", "Pope Sixtus IV")\n', '("Guernsey County", "in Ohio was founded by residents from", "Guernsey")\n', '("Guernsey", "built defensive structures against", "Napoleon")\n', '("Guernsey", "is part of the geological province", "Armorican Massif")\n', '("Guernsey\'s", "relationship with", "the United Kingdom")\n', '("Guernsey", "is a part of", "the Bailiwick of Guernsey")\n', '("Guernsey", "is near", "Alderney and Sark")\n', '("Guernsey\'s", "parishes fall under", "the See of Canterbury")\n', '("Guernsey", "is known for its", "freesias")\n', '("Guernsey", "is located near the", "North Sea")\n', '("Guernsey", "has a similarity with", "Isle of Man")\n', '("Guernsey", "is famous for its", "ormer")\n', '("Victor Hugo", "spent time in exile in", "Guernsey")\n', '("Guernsey", "has historical ties to", "Paris")\n', '("Great Britain", "is an island in", "the North Atlantic Ocean")\n', '("Great Britain", "consists of", "England, Scotland, and Wales")\n', '("The island of Ireland", "is to the west of", "Great Britain")\n', '("Great Britain and Ireland", "form", "the British Isles archipelago")\n', '("Great Britain", "was connected to Europe by", "Doggerland")\n', '("Great Britain\'s", "political territory includes", "England, Scotland, and Wales")\n', '("The political territory of Great Britain and", "constitute", "the United Kingdom")\n', '("The term", "refers to", "British Isles")\n', '("Aristotle", "mentioned", "Great Britain as Albion")\n', '("The name Britain", "descends from", "the Latin name Britannia")\n', '("John Major", "published", "‘History of Great Britain’")\n', '("Great Britain", "is not technically correct to refer to", "the whole of the United Kingdom")\n', '("Great Britain", "refers geographically to", "the island of Great Britain")\n', '("The term", "is used by", "the Universal Postal Union")\n', '("The Isle of Wight", "is part of", "England")\n', '("Anglesey", "is part of", "Wales")\n', '("The Isles of Scilly", "are part of", "England")\n', '("Boeotia", "is part of the region of", "Central Greece")\n', '("Boeotia", "has its capital in", "Livadeia")\n', '("Boeotia", "has its largest city which is", "Thebes")\n', '("Boeotia", "lies north of", "Gulf of Corinth")\n', '("Boeotia", "has a short coastline on", "Gulf of Euboea")\n', '("Boeotia", "is bordered by", "Phocis in the west")\n', '("Mount Parnassus", "is one main mountain range in", "Boeotia")\n', '("Cithaeron", "is a mountain range in", "Boeotia")\n', '("Boeotians", "may have origin in", "mountain Boeon in Epirus")\n', '("Teos", "is an Ionian city established by", "Minyans")\n', '("Lemnos", "was occupied by", "Minyans")\n', '("Thera", "was occupied by", "Minyans")\n', '("Thessalians", "are related to", "Boeotians")\n', '("Boeotians", "settled on", "Lesbos and in Aeolis in Asia Minor")\n', '("Pindar", "is a great man from", "Boeotia")\n', '("Hesiod", "is a great man from", "Boeotia")\n', '("Epaminondas", "is a great man from", "Boeotia")\n', '("Plutarch", "is a great man from", "Boeotia")\n', '("Argos", "is connected with myths of", "Boeotia")\n', '("Phoenicia", "has connections indicated by myths with", "Boeotia")\n', '("Aeschylus", "used legends set in", "Boeotia")\n', '("Sophocles", "used legends set in", "Boeotia")\n', '("Euripides", "used legends set in", "Boeotia")  \n', '("Boeotia", "fought zealously against", "Athens in Peloponnesian War")\n', '("Boeotian League", "comprised eleven groups of", "sovereign cities")\n', '("Livadeia", "is a province of", "Boeotia")\n', '("Thebes", "is a province of", "Boeotia")\n', '("Boeotia", "has a pasta factory owned by", "MISKO")\n', '("Nestlé", "has a factory in", "Oinofyta, Boeotia")\n', '("Viohalco", "has a factory in", "Oinofyta, Boeotia")\n', '("East Prussia", "was a province of", "the Kingdom of Prussia")\n', '("East Prussia", "formed part of", "Weimar Republic")\n', '("Capital of East Prussia", "was", "Königsberg")\n', '("Königsberg", "present-day", "Kaliningrad")\n', '("East Prussia", "main part of region along", "southeastern Baltic Coast")\n', '("East Prussia", "enclosed lands of", "Baltic Old Prussians")\n', '("Kingdom of Poland", "direct control of", "Warmia")\n', '("Prussian Homage", "made East Prussia a Duchy", "as vassal of Polish crown")\n', '("East Prussia", "became exclave of", "Weimar Germany after Treaty of Versailles")\n', '("East Prussian population", "evacuated or expelled", "after World War II")\n', '("Provincial Diet of East Prussia", "created as", "Provinziallandtag")\n', '("Province of East Prussia", "formed by joining", "Regierungsbezirke of Gumbinnen and Königsberg")\n', '("Province of Prussia", "merged from", "East and West Prussia")\n', '("East Prussia", "became theatre of war", "when Russian Empire invaded during World War I")\n', '("Battle of Tannenberg", "occurred in", "East Prussia")\n', '("World War I", "Russian invasion led to", "Battle of Tannenberg")\n', '("East Prussia\'s population", "voted to remain with Germany", "in East Prussian plebiscite")\n', '("World War II", "East Prussian borders revised during", "invasion of Poland")\n', '("Wolf\'s Lair", "located in", "East Prussia during World War II")\n', '("East Prussia", "devastated during", "East Prussian Offensive")\n', '("East Prussia", "expulsion of Germans after", "World War II")\n', '("Königsberg", "became Kaliningrad", "after World War II")\n', '("Polish administration", "took over", "southern part of East Prussia")\n', '("East Prussia", "northern part became", "province of the Russian SFSR")\n', '("Oberpräsident", "appointed for", "East Prussia by Prussian central government")\n', '("Baltic states", "encompass", "Estonia")\n', '("Baltic states", "encompass", "Latvia")\n', '("Baltic states", "encompass", "Lithuania")\n', '("Estonia", "is on the eastern coast of", "Baltic Sea")\n', '("Latvia", "is on the eastern coast of", "Baltic Sea")\n', '("Lithuania", "is on the eastern coast of", "Baltic Sea")\n', '("Baltic states", "sometimes included", "Finland")\n', '("Finland", "became grouped among", "Nordic countries")\n', '("Poland", "formed Christian states neighboring", "Baltic countries")\n', '("Kievan Rus", "sought to conquer", "Baltic countries")\n', '("Denmark", "fought with", "Poland–Lithuanian Commonwealth for Baltic states\' land")\n', '("German Empire", "occupied", "Estonia during World War I")\n', '("Georges Clemenceau", "considered Baltic states as part of strategic", "cordon sanitaire")\n', '("Estonian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Latvian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Lithuanian SSR", "was one of", "Soviet Union\'s republics after occupation")\n', '("Nazi Germany", "invaded", "Baltic states during World War II")\n', '("United States", "considered Baltics under", "Soviet occupation")\n', '("Britain", "considered Baltics under", "Soviet occupation")\n', '("Tallinn", "was part of human chain from", "Vilnius")\n', '("Vilnius", "was part of human chain to", "Tallinn")\n', '("Gorbachev\'s", "government concluded departure of Baltic republics was", "inevitable")\n', '("Sweden", "recognized incorporation of Baltic states into", "Soviet Union")\n', '("Poland", "shares electricity interconnection with", "Lithuania")\n', '("Orthodox Christianity", "began to spread in", "Baltic countries with Kievan Rus influence")\n', '("Germany", "established the Duchy of Prussia in", "Baltic territories")\n', '("Norway", "like other Nordic countries", "did not experience authoritarian regimes like Baltic states in interwar period")\n', '("Continental Europe", "is also known as", "mainland Europe")\n', '("Continental Europe", "is excluded from", "Greek islands")\n', '("Continental Europe", "is excluded from", "Cyprus")\n', '("Continental Europe", "is excluded from", "Malta")\n', '("Continental Europe", "is excluded from", "Sicily")\n', '("Continental Europe", "is excluded from", "Sardinia")\n', '("Continental Europe", "is excluded from", "Corsica")\n', '("Continental Europe", "is excluded from", "Balearic Islands")\n', '("Continental Europe", "is excluded from", "Great Britain")\n', '("Continental Europe", "is excluded from", "Ireland")\n', '("Continental Europe", "is excluded from", "Novaya Zemlya")\n', '("Continental Europe", "is excluded from", "Canary Islands")\n', '("Continental Europe", "is excluded from", "Azores")\n', '("Continental Europe", "is excluded from", "Iceland")\n', '("Continental Europe", "is excluded from", "Faroe Islands")\n', '("Continental Europe", "is excluded from", "Svalbard")\n', '("Scandinavian Peninsula", "is sometimes excluded from", "Continental Europe")\n', '("Scandinavian Peninsula", "connects to", "Continental Europe via Øresund Bridge")\n', '("Continental Europe", "has de facto connections to", "Scandinavian Peninsula across Baltic Sea or North Sea")\n', '("Continental Europe", "can mean the subcontinent in", "Eurasia")\n', '("Great Britain and Ireland", "use the term Continent to refer to", "Continental Europe")\n', '("Great Britain and Ireland", "are not part of", "Continental Europe")\n', '("Europe", "can mean excluding islands of", "Great Britain, Iceland, and Ireland")\n', '("Continental Europe", "is physically connected to", "England through Channel Tunnel")\n', '("England", "is part of", "Continental Europe through Channel Tunnel")\n', '("Channel Tunnel", "accommodates", "Eurotunnel Shuttle and Eurostar")\n', '("Continental Europe", "excludes", "Scandinavian Peninsula, Britain, Ireland, and Iceland in Germanic studies")\n', '("Continental part of France", "excludes", "Corsica")\n', '("Continental part of Greece", "excludes", "Aegean Islands, Crete, and Ionian Islands")\n', '("Continental part of Italy", "excludes", "Sardinia, Sicily")\n', '("Continental part of Portugal", "excludes", "Azores and Madeira")\n', '("Continental part of Spain", "excludes", "Balearic Islands, the Canary Islands")\n', '("France", "is referred as", "l\'Hexagone in Continental Europe")\n', '("Italy", "is referred as", "lo Stivale in Continental Europe")\n', '("Spain", "is referred to as", "peninsular Spain in Continental Europe")\n']
+range(1, 192) 3
+{'id': '2_4', 'Question': " What is the collective name for the group of islands whose cultural influences are seen in the location where defensive structures were built to guard against Napoleon's forces?\n", 'Answer': 'British Isles', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Boeotia'}, {'label': 'B', 'text': 'British Isles'}, {'label': 'C', 'text': 'East Prussia'}, {'label': 'D', 'text': 'Baltic states'}, {'label': 'E', 'text': 'Continental Europe'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'boeotia'}, {'label': 'B', 'text': 'british_isles'}, {'label': 'C', 'text': 'east_prussia'}, {'label': 'D', 'text': 'baltic_states'}, {'label': 'E', 'text': 'continental_europe'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ["1: Which island built defensive structures as a precaution against Napoleon's forces?\nA1: Guernsey\n\n", '2: Whose cultural influences are evident in the traditions and customs of Guernsey?\nA2: Great Britain\n\n', '3: What is the collective name for the archipelago that includes England, Scotland, and Wales as its largest member?\nA3: British Isles'], 'Hops_wiki': [('Napoleon', 'Guernsey'), ('Guernsey', 'Great Britain'), ('Great Britain', 'British Isles')], 'Hops_cpnet': [('napoleon', 'guernsey'), ('guernsey', 'great_britain'), ('great_britain', 'british_isles')], 'Triplets': ['("Guernsey", "built defensive structures against", "Napoleon")', '("Guernsey\'s", "culture is influenced by", "Britain")', '("Great Britain", "is the largest of", "the British Isles")'], 'Referred_files': [{'name': 'Guernsey', 'line': 17}, {'name': 'Guernsey', 'line': 8}, {'name': 'Great Britain', 'line': 3}], 'Question_triplet_answer': {100: [75, 86, 157], 50: [117, 127, 143], 25: [62, 103, 183]}}
+time passed:  5080.032133579254
+Expected dollar:  0.005
+Victor Hugo is People
+Guernsey is Geography
+Lithuania is Geography
+Novaya Zemlya is Geography
+Wolf's Lair is Geography
+East Prussia is Geography
+Soviet Union's is Geography
+Anglesey is Geography
+France is Geography
+Corsica is Geography
+Great Britain is Geography
+Ireland is Geography
+English Channel is Geography
+the Cotentin Peninsula is Geography
+Oinofyta, Boeotia is Geography
+the North Atlantic Ocean is Geography
+Königsberg is Geography
+Lesbos is Geography
+Aeolis is Geography
+Asia Minor is Geography
+Norway is Geography
+Estonia is Geography
+Malta is Geography
+Normandy is Geography
+Paris is Geography
+the United Kingdom is Geography
+the Duchy of Normandy is Geography
+Alfred and is People
+Edward against is People
+Canute is People
+Balearic Islands is Geography
+North Sea is Geography
+Kievan Rus is Geography
+Aristotle is People
+Pindar is People
+Athens is Geography
+Thessalians is Geography
+Scandinavian Peninsula is Geography
+Baltic Sea is Geography
+Iceland is Geography
+Poland is Geography
+Armorican Massif is Geography
+Isle of Man is Geography
+The Isle of Wight is Geography
+England is Geography
+East Prussian is Geography
+Guernsey County is Geography
+Ohio is Geography
+Spain is Geography
+the Canary Islands is Geography
+Italy is Geography
+Stivale is Geography
+Greece is Geography
+Crete is Geography
+Alderney is Geography
+Sark is Geography
+the Channel Islands is Geography
+England through Channel Tunnel is Geography
+Vilnius is Geography
+Continental Europe through Channel Tunnel is Geography
+Lithuanian SSR is Geography
+Finland is Geography
+Weimar Germany is Geography
+Soviet is Geography
+Teos is Geography
+Sardinia is Geography
+Estonian SSR is Geography
+Saint Peter Port is Geography
+Baltic Coast is Geography
+Nazi Germany is Geography
+entities:  {'Alfred', 'England', 'United', 'Massif', 'Ireland', "Union's", 'Coast', 'North', 'Estonia', 'Finland', 'Continental', 'Ohio', 'Islands', 'Great', 'Lithuania', 'Port', 'Novaya', 'Paris', 'Poland', 'Stivale', 'Oinofyta,', 'Pindar', 'France', 'Cotentin', 'Italy', "Wolf's", 'Tunnel', 'Teos', 'Norway', 'Kingdom', 'Canute', 'Alderney', 'Iceland', 'Prussia', 'Peter', 'Anglesey', 'Malta', 'Sea', 'Europe', 'Scandinavian', 'Greece', 'Minor', 'Corsica', 'Germany', 'Faroe', 'Atlantic', 'Wight', 'Sardinia', 'Athens', 'Crete', 'Baltic', 'Canary', 'Saint', 'Soviet', 'East', 'British', 'Guernsey', 'Man', 'Asia', 'Lesbos', 'Zemlya', 'Kievan', 'Vilnius', 'Napoleon', 'Ocean', 'Gumbinnen', 'Lithuanian', 'Aristotle', 'Thessalians', 'Weimar', 'SSR', 'Hugo', 'Sark', 'Boeotia', 'Aeolis', 'Königsberg', 'Rus', 'Britain', 'Isles', 'Ionian', 'Edward', 'English', 'County', 'Nazi', 'Spain', 'Normandy', 'Peninsula', 'Lair', 'Duchy', 'Isle', 'Channel', 'Armorican', 'Prussian', 'Wolf', 'Victor', 'states', 'Balearic', 'Estonian'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Great Britain' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Victor Hugo
+Baltic states
+East Prussia
+Continental Europe
+Thebes
+Channel Tunnel
+Wolf's Lair
+Guernsey
+Latvian SSR
+Anglesey
+Boeotia
+Corsica
+Boeotians
+Great Britain and Ireland
+English Channel
+Nestlé
+Phocis
+Svalbard
+Malta
+Jersey
+Paris
+Continental Europe
+Great Britain
+Province of East Prussia
+Boeotians
+Normandy
+Continental Europe
+England
+Great Britain and Ireland
+Provence of East Prussia
+Boeotians
+Mount Parnassus
+freesias
+Guernsey's
+Man
+Armorican Massif
+Thessalians
+Channel Tunnel
+Great Britain and Ireland
+Pindar
+Britain
+Elba
+Boeotia
+Europe
+France
+Vilnius
+Privilege of Neutrality
+North Sea
+The Isle of Wight
+Great Britain
+Mount Parnassus
+freesias
+Lithuanian SSR
+Boeotia
+Baltic states
+Privilege of Neutrality
+Svalbard
+Boeotians
+Hesiod
+Guernsey
+Baltic countries
+Armorican Massif
+poland
+Boeotia
+voice of britain
+England
+Central Greece
+Britain
+Königsberg
+France
+Sophocles
+Tallinn
+Lemnos
+Continental Europe
+Guernsey's
+Argos
+Estonian SSR
+Saint Peter Port
+Boeotia
+Italy
+East Prussia
+Guernsey county
+Boeotia
+United States
+Guernsey
+Boeotian League
+Sophocles
+Province of Prussia
+Guernsey
+Latvian SSR
+Guernsey
+Great Britain and Ireland
+Guernsey
+Boeotia
+English Channel
+Latvian SSR
+Guernsey
+Europe
+Europe
+Continental Europe
+
+gpt_entity_particular(): entity list: 
+ ['England', 'Privilege of Neutrality', 'Estonian SSR', 'Nestlé', 'Province of East Prussia', 'Guernsey', 'Man', 'English Channel', 'Vilnius', 'Latvian SSR', 'Sophocles', 'Argos', 'Saint Peter Port', 'Mount Parnassus', 'freesias', 'Phocis', 'Baltic countries', 'Lemnos', 'Great Britain', 'poland', 'voice of britain', 'Victor Hugo', "Guernsey's", 'Paris', 'Thessalians', 'Thebes', 'North Sea', 'Pindar', 'Central Greece', 'East Prussia', 'France', 'Provence of East Prussia', "Wolf's Lair", 'Boeotia', 'Lithuanian SSR', 'Italy', 'Province of Prussia', 'Baltic states', 'Hesiod', 'Elba', 'Königsberg', 'Boeotian League', 'Britain', 'Continental Europe', 'United States', 'Anglesey', 'Malta', 'Jersey', 'Normandy', 'Svalbard', 'Europe', 'Channel Tunnel', 'Guernsey county', 'Tallinn', 'Great Britain and Ireland', 'Corsica', 'Armorican Massif', 'Boeotians', 'The Isle of Wight']
+
+gpt_entity_particular(): filtered entity: 
+ ['England', 'Britain', 'Europe']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Guernsey' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Guernsey
+Victor Hugo
+Baltic states
+Lithuania
+East Prussia
+Continental Europe
+Novaya Zemlya
+Thebes
+Boeotia
+Channel Tunnel
+Eurotunnel Shuttle and Eurostar
+Wolf's Lair
+Latvian SSR
+Soviet Union's republics after occupation
+Anglesey
+Wales
+Livadeia
+Corsica
+Boeotians
+mountain Boeon in Epirus
+Herculaneum
+freesias
+Duchy of Normandy
+Alfred and Edward against Canute
+famous for its ormer
+Armorican Massif
+Prussian Homage
+Pope Sixtus IV
+Armorican Massif
+Latin name Britannia
+Nordic countries
+Weimar Germany after Treaty of Versailles
+English crown
+See of Canterbury
+Aegean Islands, Crete, and Ionian Islands
+Baltic Sea
+Isle of Man
+England
+Warmia
+Pindar
+Kingdom of Poland
+Königsberg
+Kaliningrad
+Svalbard
+Alderney
+Sark
+Phocis in the west
+the Baltic Sea
+Christian states neighboring
+Nestlé
+Oinofyta, Boeotia
+Norwegian-like other Nordic countries
+Regierungsbezirke of Gumbinnen and Königsberg
+Phocis in the west
+Lesbos and in Aeolis in Asia Minor
+Ionian Islands
+Crete
+Poland
+Continental Europe
+Phocis
+Great Britain
+Louis Gabriel Suchet at Genoa
+Baltic countries
+District
+Sark
+Andros
+Svalbard
+mythological attributes
+Iceland
+Scandinavian Peninsula across Baltic Sea or North Sea
+Baltic Old Prussians
+Milton
+London
+Ireland
+Minyans
+Athens in Peloponnesian War
+Epidauria
+adding Scania
+Aegean Islands
+Sardine
+Ptolemaic Kingdom
+Hera
+Baltic Old Prussians
+providing for
+Cnut
+Duke of Normandy
+Jersey
+Geography
+Francisco Pizarro
+Hellenistic period
+Stalingrad
+flee from
+Alabanda
+Okeanis
+European continent
+Balearic Islands
+
+gpt_entity_particular(): entity list: 
+ ['England', 'District', 'Great Britain', 'Victor Hugo', 'Poland', 'Thebes', 'adding Scania', 'Baltic states', 'Alderney', 'Christian states neighboring', 'Sardine', 'Warmia', 'Hera', 'Louis Gabriel Suchet at Genoa', 'Livadeia', 'Corsica', 'mountain Boeon in Epirus', 'See of Canterbury', 'Nestlé', 'Novaya Zemlya', 'Guernsey', 'Prussian Homage', 'providing for', 'Latvian SSR', 'Kaliningrad', 'Cnut', 'Scandinavian Peninsula across Baltic Sea or North Sea', 'Minyans', 'Aegean Islands', 'Boeotia', 'Aegean Islands, Crete, and Ionian Islands', 'Latin name Britannia', 'Königsberg', 'Continental Europe', 'Oinofyta, Boeotia', 'Kingdom of Poland', 'Athens in Peloponnesian War', 'Svalbard', 'Stalingrad', 'Geography', 'Armorican Massif', 'Boeotians', 'Alfred and Edward against Canute', 'Duke of Normandy', 'famous for its ormer', 'mythological attributes', 'Ireland', 'flee from', 'English crown', 'freesias', 'Phocis', 'Baltic countries', 'Andros', 'Norwegian-like other Nordic countries', 'Lithuania', 'Okeanis', 'Balearic Islands', 'Isle of Man', 'Baltic Old Prussians', 'East Prussia', 'Pindar', 'Milton', 'Alabanda', 'Iceland', 'Anglesey', 'Jersey', 'Phocis in the west', 'Regierungsbezirke of Gumbinnen and Königsberg', 'Duchy of Normandy', 'Crete', 'Weimar Germany after Treaty of Versailles', 'the Baltic Sea', 'Lesbos and in Aeolis in Asia Minor', 'Epidauria', 'Nordic countries', 'Wales', 'Ionian Islands', 'European continent', 'Pope Sixtus IV', 'London', "Wolf's Lair", 'Sark', 'Herculaneum', 'Ptolemaic Kingdom', 'Channel Tunnel', 'Hellenistic period', 'Baltic Sea', 'Eurotunnel Shuttle and Eurostar', 'Francisco Pizarro', "Soviet Union's republics after occupation"]
+
+gpt_entity_particular(): filtered entity: 
+ ['Jersey']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Continental Europe' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Victor Hugo
+Baltic states
+East Prussia
+Continental Europe
+Thebes
+Channel Tunnel
+Wolf's Lair
+Guernsey
+Latvian SSR
+Anglesey
+Boeotia
+Corsica
+Boeotians
+Thebes
+Great Britain
+English Channel
+Nestlé
+Phocis
+Great Britain
+Province of East Prussia
+Boeotians
+Great Britain and Ireland
+Pindar
+German Empire
+Thessalians
+Mount Parnassus
+Guernsey
+Norway
+Poland
+Armorican Massif
+Prussian Homage
+Hesiod
+Albion
+Prussian Homage
+Armorican Massif
+Kingdom of Poland
+Armorican Massif
+Britain
+Lithuanian SSR
+Hesiod
+Thebes
+The political territory of Great Britain
+France
+Vilnius
+Guernsey
+England
+Hesiod
+Ireland
+Italy
+Kaliningrad
+Pindar
+England
+Kaliningrad
+Britain
+Estonian SSR
+France
+Sophocles
+Sardinia
+Thebes
+Ireland
+Teos
+Argos
+Estonian SSR
+Saint Peter Port
+Ireland
+Italy
+Central Greece
+United States
+Paris
+Boeotian League
+Prussia
+Latvian SSR
+Boeotia
+Great Britain
+English Channel
+Latvian SSR
+Europe
+
+gpt_entity_particular(): entity list: 
+ ['England', 'Estonian SSR', 'Nestlé', 'Province of East Prussia', 'Guernsey', 'The political territory of Great Britain', 'Ireland', 'Prussian Homage', 'English Channel', 'Vilnius', 'Latvian SSR', 'Sophocles', 'Argos', 'Saint Peter Port', 'Mount Parnassus', 'Phocis', 'Great Britain', 'German Empire', 'Victor Hugo', 'Kaliningrad', 'Poland', 'Thessalians', 'Thebes', 'Central Greece', 'Pindar', 'Paris', 'East Prussia', 'France', "Wolf's Lair", 'Boeotia', 'Lithuanian SSR', 'Italy', 'Baltic states', 'Hesiod', 'Norway', 'Teos', 'Boeotian League', 'Britain', 'Continental Europe', 'United States', 'Anglesey', 'Prussia', 'Kingdom of Poland', 'Europe', 'Channel Tunnel', 'Great Britain and Ireland', 'Corsica', 'Armorican Massif', 'Sardinia', 'Albion', 'Boeotians']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'East Prussia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ East Prussia
+Wolf's Lair
+Province of East Prussia
+Prussian Homage
+Baltic Old Prussians
+
+gpt_entity_particular(): entity list: 
+ ['Province of East Prussia', 'Prussian Homage', 'Baltic Old Prussians', 'East Prussia', "Wolf's Lair"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'British Isles' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Victor Hugo
+Baltic states
+East Prussia
+Continental Europe
+Thebes
+Channel Tunnel
+Wolf's Lair
+Guernsey
+Latvian SSR
+Anglesey
+Boeotia
+Boeotians
+Great Britain and Ireland
+English Channel
+Nestlé
+Phocis
+Thebes
+Svalbard
+Ireland
+Estonia
+Scandinavian Peninsula
+Herculaneum
+Norway
+Corsica
+Svalbard
+Malta
+Great Britain
+Poland
+The Isle of Wight
+Svalbard
+Malta
+Boeotia
+Scandinavian Peninsula
+Kievan Rus
+Boeotia
+Svalbard
+Continental Europe
+Crete
+Guernsey's
+Guernsey
+Balearic Islands
+Picandie
+Soviet Union
+Guernsey
+Kingdom of Poland
+Boeotians
+Crete
+Kievan Rus
+Scandinavian Peninsula
+Boeotia
+Boeon
+Aeolis
+Guernsey
+Aegean Islands
+Lithuanian SSR
+Phocis
+Livadeia
+Guernsey
+Boeotia
+Armorican Massif
+East Prussia
+Iceland
+Guernsey
+Isle of Man
+Britain
+England
+See of Canterbury
+Thebes
+England
+Boeotia
+Boeotia
+Ionian Islands
+Kaliningrad
+Corsica
+Lesbos
+Aeolis
+Thebes
+Boeotia
+Guernsey
+Armorican Massif
+Warmia
+Boeotia
+Albion
+Britain
+Boeotia
+Boeotia
+Britain
+Continental Europe
+Guernsey
+l'Hexagone
+Vilnius
+Guernsey
+East Prussia
+Boeotia
+Aegean Islands
+Pindar
+England
+Warmia
+Continental Europe
+Aristotle
+Boeotia
+
+gpt_entity_particular(): entity list: 
+ ['England', 'See of Canterbury', 'Nestlé', 'Guernsey', 'Ireland', 'Scandinavian Peninsula', 'Lesbos', 'English Channel', 'Vilnius', 'Estonia', 'Latvian SSR', 'Phocis', 'Great Britain', 'Victor Hugo', "Guernsey's", 'Poland', 'Balearic Islands', 'Thebes', 'Ionian Islands', 'Isle of Man', 'Kaliningrad', 'East Prussia', 'Pindar', 'Aristotle', 'Kievan Rus', "Wolf's Lair", 'Soviet Union', 'Boeotia', 'Herculaneum', 'Aegean Islands', 'Lithuanian SSR', "l'Hexagone", 'Baltic states', 'Norway', 'Aeolis', 'Britain', 'Continental Europe', 'Iceland', 'Anglesey', 'Picandie', 'Kingdom of Poland', 'Malta', 'Svalbard', 'Warmia', 'Channel Tunnel', 'Great Britain and Ireland', 'Corsica', 'Livadeia', 'Armorican Massif', 'Crete', 'Boeotians', 'Albion', 'The Isle of Wight', 'Boeon']
+
+gpt_entity_particular(): filtered entity: 
+ ['Ireland', 'English Channel', 'Great Britain', 'Isle of Man', 'Britain', 'Albion', 'The Isle of Wight']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Boeotia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Boeotia
+Thebes
+Livadeia
+Wolf's Lair
+Nestlé
+Phocis
+Pindar
+Hesiod
+Mount Parnassus
+Sophocles
+Boeotian League
+MISKO
+
+gpt_entity_particular(): entity list: 
+ ['Phocis', 'Boeotian League', 'Nestlé', 'Sophocles', 'Livadeia', 'Thebes', 'Pindar', "Wolf's Lair", 'MISKO', 'Boeotia', 'Mount Parnassus', 'Hesiod']
+
+gpt_entity_particular(): filtered entity: 
+ ['Thebes']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Napoleon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Napoleon
+Nazi Germany
+
+gpt_entity_particular(): entity list: 
+ ['Nazi Germany', 'Napoleon']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Baltic states' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Baltic states
+Lithuania
+Latvian SSR
+Latvian SSR
+Estonia
+Estonian SSR
+Estonian SSR
+
+gpt_entity_particular(): entity list: 
+ ['Estonian SSR', 'Lithuania', 'Estonia', 'Latvian SSR', 'Baltic states']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Alfred', 'England', 'United', 'Massif', 'Ireland', "Union's", 'English Channel', 'Coast', 'North', 'Estonia', 'Finland', 'Continental', 'Ohio', 'Great Britain', 'Islands', 'Great', 'Lithuania', 'Port', 'Novaya', 'Paris', 'Poland', 'Stivale', 'Oinofyta,', 'Pindar', 'France', 'Isle of Man', 'Cotentin', 'Thebes', 'Italy', "Wolf's", 'Tunnel', 'Teos', 'Norway', 'Kingdom', 'Canute', 'Alderney', 'Iceland', 'Prussia', 'Peter', 'Anglesey', 'Malta', 'Sea', 'Jersey', 'Europe', 'Scandinavian', 'Greece', 'Minor', 'Corsica', 'Germany', 'Faroe', 'Atlantic', 'Wight', 'Sardinia', 'Athens', 'Crete', 'The Isle of Wight', 'Baltic', 'Canary', 'Saint', 'Soviet', 'East', 'British', 'Guernsey', 'Man', 'Asia', 'Lesbos', 'Zemlya', 'Kievan', 'Vilnius', 'Napoleon', 'Ocean', 'Gumbinnen', 'Lithuanian', 'Aristotle', 'Thessalians', 'Weimar', 'SSR', 'Hugo', 'Sark', 'Boeotia', 'Aeolis', 'Königsberg', 'Rus', 'Britain', 'Isles', 'Ionian', 'Edward', 'English', 'County', 'Nazi', 'Spain', 'Normandy', 'Peninsula', 'Lair', 'Duchy', 'Isle', 'Channel', 'Armorican', 'Prussian', 'Wolf', 'Albion', 'Victor', 'states', 'Balearic', 'Estonian'}
+Total time:  320.1658618450165
+Entity conversion done on 2_4 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_2_4_entity_conversion_hash.json. Check the entity.
+ What is the collective name for the group of 04C whose cultural influences are seen in the location where defensive structures were built to guard against Napoleon's forces?
+
+
+
+Done. Check final_query/id_2_4_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_2_4_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_2_4_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_2_4_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_2_4_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_2_4_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_4_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

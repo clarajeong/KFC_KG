@@ -1,0 +1,187 @@
+Got argument: Immanuel Kant, 5, 5_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop:  {'triplet': '("Kaliningrad", "was known as", "Königsberg until 1946")', 'start word': 'Kaliningrad', 'end word': 'Königsberg', 'source': {'name': 'Kaliningrad', 'line': 1}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'königsberg'}}
+
+utils/question.py extract_hops(Königsberg, [], ['Immanuel Kant', 'Kaliningrad']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Königsberg_info.json file
+extract_info(Königsberg) Start.
+utils/preprocess.py extract_info(): Checking good links on Königsberg
+Germany is Geography
+1 / 30 )  German Germany germany
+Kaliningrad is Geography
+2 / 30 )  Kaliningrad Kaliningrad kaliningrad
+Russia is Geography
+3 / 30 )  Russia Russia russia
+Baltic Sea is Geography
+4 / 30 )  Baltic Baltic Sea baltic_sea
+State of the Teutonic Order is Geography
+5 / 30 )  State of the Teutonic Order State of the Teutonic Order ordensstaat
+East Prussia is Geography
+6 / 30 )  East Prussia East Prussia east_prussia
+Berlin is Geography
+7 / 30 )  Berlin Berlin berlin
+E. T. A. Hoffmann is People
+8 / 30 )  E. T. A. Hoffmann E. T. A. Hoffmann ernst_theodor_amadeus_hoffmann
+Enclave and exclave is Geography
+9 / 30 )  exclave Enclave and exclave enclave
+Soviet Union is Geography
+10 / 30 )  Soviet Union Soviet Union soviet_union
+Mikhail Kalinin is People
+11 / 30 )  Mikhail Kalinin Mikhail Kalinin mikhail_kalinin
+Kaliningrad Oblast is Geography
+12 / 30 )  Kaliningrad Oblast Kaliningrad Oblast kaliningrad_oblast
+Lithuania is Geography
+13 / 30 )  Lithuania Lithuania lithuania
+Poland is Geography
+14 / 30 )  Poland Poland poland
+Vistula Lagoon is Geography
+15 / 30 )  Vistula Lagoon Vistula Lagoon vistula_lagoon
+Sambia Peninsula is Geography
+16 / 30 )  Samland Sambia Peninsula sambia
+Wheat is Animal
+17 / 30 )  wheat Wheat wheat
+Gdańsk is Geography
+18 / 30 )  Gdańsk Gdańsk gdańsk
+Riga is Geography
+19 / 30 )  Riga Riga riga
+Frederick William, Elector of Brandenburg is People
+20 / 30 )  Electors of Brandenburg Frederick William, Elector of Brandenburg great_elector
+Potsdam is Geography
+21 / 30 )  Potsdam Potsdam potsdam
+Napoleon is People
+22 / 30 )  Napoleon Bonaparte Napoleon napoleon
+Frederick William III of Prussia is People
+23 / 30 )  Frederick William III of Prussia Frederick William III of Prussia frederick_william_iii
+First French Empire is Geography
+24 / 30 )  French First French Empire first_french_empire
+German Empire is Geography
+25 / 30 )  German Empire German Empire german_empire
+Wrocław is Geography
+26 / 30 )  Breslau Wrocław wrocław
+Toruń is Geography
+27 / 30 )  Thorn Toruń toruń
+Sovetsk, Kaliningrad Oblast is Geography
+28 / 30 )  Tilsit Sovetsk, Kaliningrad Oblast tilsit
+Baltiysk is Geography
+29 / 30 )  Pillau Baltiysk pillau
+Saint Petersburg is Geography
+30 / 30 )  St. Petersburg Saint Petersburg saint_petersburg
+extract_triplet(Königsberg)
+Got GPT's response. String length : 3177
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['State of the Teutonic Order', 'State of the Teutonic Order', 'ordensstaat']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['German', 'Germany', 'germany']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['German', 'Germany', 'germany']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['E. T. A. Hoffmann', 'E. T. A. Hoffmann', 'ernst_theodor_amadeus_hoffmann']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['German', 'Germany', 'germany']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['East Prussia', 'East Prussia', 'east_prussia']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  []
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['Potsdam', 'Potsdam', 'potsdam']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['Mikhail Kalinin', 'Mikhail Kalinin', 'mikhail_kalinin']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad'], ['Kaliningrad Oblast', 'Kaliningrad Oblast', 'kaliningrad_oblast']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['Lithuania', 'Lithuania', 'lithuania']]
+subject_words:  [(None, 'Königsberg', 'königsberg')]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [['German', 'Germany', 'germany']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Russia', 'Russia', 'russia']]
+object_words:  [(None, 'Königsberg', 'königsberg'), ['Kaliningrad', 'Kaliningrad', 'kaliningrad']]
+['', 'Baltic', 'sea where Königsberg was a port city', '']
+['', 'State of the Teutonic Order', 'Königsberg was capital of', '']
+['', 'East Prussia', 'Königsberg was capital of', '']
+['', 'Berlin', 'capital of Prussia though Königsberg was coronation city', '']
+subject_words:  [['E. T. A. Hoffmann', 'E. T. A. Hoffmann', 'ernst_theodor_amadeus_hoffmann']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+['', 'exclave', 'status of East Prussia, where Königsberg was located', '']
+subject_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Mikhail Kalinin', 'Mikhail Kalinin', 'mikhail_kalinin']]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad']]
+subject_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad'], ['Kaliningrad Oblast', 'Kaliningrad Oblast', 'kaliningrad_oblast']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Lithuania', 'Lithuania', 'lithuania']]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad'], ['Kaliningrad Oblast', 'Kaliningrad Oblast', 'kaliningrad_oblast']]
+subject_words:  [['Poland', 'Poland', 'poland']]
+object_words:  [['Kaliningrad', 'Kaliningrad', 'kaliningrad'], ['Kaliningrad Oblast', 'Kaliningrad Oblast', 'kaliningrad_oblast']]
+subject_words:  [['Vistula Lagoon', 'Vistula Lagoon', 'vistula_lagoon']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+['', 'Samland', 'region where Königsberg was located', '']
+subject_words:  [['wheat', 'Wheat', 'wheat']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Gdańsk', 'Gdańsk', 'gdańsk']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Riga', 'Riga', 'riga']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Electors of Brandenburg', 'Frederick William, Elector of Brandenburg', 'great_elector']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+['', 'Potsdam', 'location where Königsberg was discussed at agreement', '']
+subject_words:  [['Napoleon Bonaparte', 'Napoleon', 'napoleon']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Frederick William III of Prussia', 'Frederick William III of Prussia', 'frederick_william_iii']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['French', 'First French Empire', 'first_french_empire']]
+object_words:  [(None, 'Königsberg', 'königsberg'), ['Berlin', 'Berlin', 'berlin']]
+subject_words:  [['German', 'Germany', 'germany'], ['German Empire', 'German Empire', 'german_empire']]
+object_words:  [(None, 'Königsberg', 'königsberg')]
+subject_words:  [['Breslau', 'Wrocław', 'wrocław']]
+object_words:  []
+subject_words:  [['Thorn', 'Toruń', 'toruń']]
+object_words:  []
+subject_words:  [['Tilsit', 'Sovetsk, Kaliningrad Oblast', 'tilsit']]
+object_words:  []
+subject_words:  [['Pillau', 'Baltiysk', 'pillau']]
+object_words:  []
+subject_words:  [['St. Petersburg', 'Saint Petersburg', 'saint_petersburg']]
+object_words:  []
+third_hop1:  {'triplet': '("Königsberg", "bordered in the south by", "Poland")', 'start word': 'Königsberg', 'end word': 'Poland', 'source': {'name': 'Königsberg', 'line': 23}, 'cpnet': {'start word': 'königsberg', 'end word': 'poland'}}
+
+utils/question.py extract_hops(Königsberg, ['Poland'], ['Immanuel Kant', 'Kaliningrad']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Königsberg_info.json file
+third_hop2:  {'triplet': '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")', 'start word': 'Königsberg', 'end word': 'Potsdam', 'source': {'name': 'Königsberg', 'line': 18}, 'cpnet': {'start word': 'königsberg', 'end word': 'potsdam'}}
+extraction_done:  True
+generate_question(5_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "was known as", "Königsberg until 1946")', '("Königsberg", "bordered in the south by", "Poland")', '("Königsberg", "under provisional Soviet administration due to", "Potsdam Agreement")'], ['Immanuel Kant', 'Kaliningrad', 'Königsberg', 'Königsberg'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Königsberg'), ('Königsberg', 'Poland'), ('Königsberg', 'Potsdam')], Immanuel Kant, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 1}, {'name': 'Königsberg', 'line': 23}, {'name': 'Königsberg', 'line': 18}]) called
+GPT output is:  Q: What is the name of the philosopher who was buried in the city that came under provisional Soviet administration due to the Potsdam Agreement and is bordered in the south by Poland?
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called

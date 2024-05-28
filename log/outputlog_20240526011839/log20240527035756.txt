@@ -1,0 +1,1080 @@
+Got argument: Archimedes, 1, 1_12, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Archimedes, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Archimedes_info.json file
+first_hop:  {'triplet': '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")', 'start word': 'Archimedes', 'end word': 'Gotthold Ephraim Lessing', 'source': {'name': 'Gotthold Ephraim Lessing', 'line': 6}, 'cpnet': {'start word': 'archimedes', 'end word': 'gotthold_ephraim_lessing'}}
+next_word: Gotthold Ephraim Lessing
+
+utils/question.py extract_hops(Gotthold Ephraim Lessing, [], ['Archimedes']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gotthold_Ephraim_Lessing_info.json file
+generate_question(1_12, ['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")'], ['Gotthold Ephraim Lessing', 'William Shakespeare'], [('Archimedes', 'Gotthold Ephraim Lessing'), ('Gotthold Ephraim Lessing', 'William Shakespeare')], William Shakespeare, [{'name': 'Gotthold Ephraim Lessing', 'line': 6}, {'name': 'Gotthold Ephraim Lessing', 'line': 10}]) called
+GPT output is:  Q: Which playwright's works were greatly respected by the person who discovered the cattle problem attributed to a famous Greek mathematician?
+A: William Shakespeare
+final_choice(William Shakespeare, options = 5) started
+[]
+entity_type(William Shakespeare) called
+William Shakespeare is People
+check_matchscore(William Shakespeare, 17th-century English poets):  0.0
+choose_by_wiki_recur(17th-century English poets)
+   Pages in 17th-century English poets: ['A. W. (poet)', 'John Abbot (poet)', 'Richard Adams (poet)', 'William Alabaster', 'Alexander Radcliffe (writer)', 'Charles Aleyn', 'Robert Allott', 'Thomas Andrewe', 'John Andrews (poet)', 'Anne Howard, Countess of Arundel', 'Katherine Austen', 'Samuel Austin the younger', 'John Aylmer (classicist)', 'Philip Ayres (poet)', 'Thomas Bancroft (poet)', 'Jane Barker', 'William Barksted', 'Richard Barnfield', 'Robert Baron (poet)', 'William Basse', 'Theodore Bathurst', 'Edward Baynard (physician)', 'Sir John Beaumont, 1st Baronet', 'Aphra Behn', 'Charles Best (poet)', 'Richard Blackmore', 'Edmund Bolton', 'William Bosworth', 'John Bracegirdle', 'Nicholas Brady (poet)', 'Richard Brathwait', 'Nicholas Breton', 'Alexander Brome', 'Christopher Brooke (poet)', 'Fulke Greville, 1st Baron Brooke', 'William Browne (poet)', 'Samuel Butler (poet)', 'Robert Chamberlain (poet)', 'Thomas Carew', 'Robert Carliell', 'Nathanael Carpenter', 'Patrick Cary', 'Susanna Centlivre', 'George Chapman', 'Robert Chester (poet)', 'Mary Chudleigh', 'Thomas Churchyard', 'John Clapham (historian and poet)', 'John Clavell', 'John Cleveland', 'Samuel Cobb (poet)', 'An Collins', 'Henry Constable', 'Abraham Cowley', 'Richard Crashaw', 'Samuel Daniel', 'William Davenant', 'John Davies (poet, born 1569)', 'Eleanor Davies (poet)', 'John Denham (poet)', 'John Dennys', 'Leonard Digges (writer)', 'John Donne', 'Michael Drayton', 'John Dryden', 'Edward Dyer', 'Giles Earle (musician)', 'Thomas Evans (17th-century poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Payne Fisher', 'Charles Fitzgeoffrey', 'Richard Flecknoe', 'Abraham Fleming', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Phineas Fletcher', 'Thomas Ford (composer)', 'George Fortescue', 'Elizabeth Freke', 'Alexander Gil the younger', 'Sidney Godolphin (poet)', 'Henry Goodere (died 1627)', 'Arthur Gorges', 'Stephen Gosson', 'Edmond Graile', 'Edward Grant (headmaster)', 'James Gresham (poet)', 'William Habington', 'John Hagthorpe', 'John Hall (poet)', 'Anthony Hammond', 'Christopher Harvey (poet)', 'George Herbert', 'Robert Herrick (poet)', 'Abraham Holland', 'Nicholas Hookes', 'John Hoskins (poet)', 'Lucy Hastings, Countess of Huntingdon', 'James Day (poet)', 'Rachel Jevon', 'Ben Jonson', 'Katherine Doyley Dyer', 'Daniel Kenrick', 'William King (poet)', 'Ralph Knevet', 'Mary Knight (singer)', 'John Lane (poet)', 'Richard Leigh (poet)', 'Anne Ley', 'Henry Lok', 'Richard Lovelace (poet)', 'James Mabbe', 'Gervase Markham', 'John Marston (playwright)', 'Andrew Marvell', 'Christopher Middleton (d. 1628)', 'John Milton', 'John Milton (composer)', 'Martha Moulsworth', 'Anthony Munday', 'David Murray (poet)', 'Thomas Newton (poet)', 'Richard Niccols', 'John Oldham (poet)', 'Thomas Overbury', 'Mary Oxlie', 'Julia Palmer', 'Clement Paman', 'Henry Parrot', 'Thomas Peyton (poet)', 'Thomas Philipot', 'John Potenger', 'Matthew Prior', 'Henry Reynolds (poet)', 'John Reynolds (writer)', 'Elizabeth Wilmot, Countess of Rochester', 'John Wilmot, 2nd Earl of Rochester', 'Christabella Rogers', 'Wentworth Dillon, 4th Earl of Roscommon', 'Elizabeth Singer Rowe', 'Samuel Rowlands', 'Mathew Roydon', 'Benjamin Rudyerd', 'Wye Saltonstall', 'William Sampson (playwright)', 'John Sandford (poet)', 'George Sandys', 'Carr Scrope', 'Sir Charles Sedley, 5th Baronet', 'Thomas Shadwell', 'William Shakespeare', 'Samuel Sheppard (writer)', 'Edward Sherburne', 'Thomas Shipman', 'Mary Sidney', 'Peter Smalle', 'John Smith (English poet)', 'Thomas Storer', 'John Suckling (poet)', 'Alice Sutcliffe', 'Josuah Sylvester', 'Nahum Tate', 'John Taylor (poet)', 'Robert Tofte', 'Aurelian Townshend', 'Thomas Traherne', 'Anne Vavasour', 'Edmund Waller', 'Octavia Walsh', 'William Warner (poet)', 'John Webster', 'Georg Rudolf Weckherlin', 'John Weever', 'Samuel Wesley (poet, died 1735)', 'Mildmay Fane, 2nd Earl of Westmorland', 'Elizabeth Jane Weston', 'Anne Wharton', 'Robert Whitehall', 'Anne Finch, Countess of Winchilsea', 'George Wither', 'Samuel Woodford', 'Peter Woodhouse', 'Sir Francis Wortley, 1st Baronet', 'Henry Wotton', 'Lady Mary Wroth']
+      Thomas Ford (composer) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne']
+      Richard Niccols in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)']
+      Aurelian Townshend in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)']
+      Edward Sherburne in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)']
+Edward Sherburne is People
+      John Hoskins (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer']
+      John Oldham (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie']
+John Oldham (poet) is People
+      Richard Adams (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet']
+      Julia Palmer in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior']
+Julia Palmer is People
+      Mary Oxlie in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer']
+      Sir Charles Sedley, 5th Baronet in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)']
+      Matthew Prior in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges']
+      Thomas Storer in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon']
+      John Suckling (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)']
+John Suckling (poet) is People
+      Arthur Gorges in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre']
+      Lucy Hastings, Countess of Huntingdon in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton']
+      Thomas Evans (17th-century poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn']
+      Susanna Centlivre in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)']
+Susanna Centlivre is People
+      Nicholas Breton in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton']
+Nicholas Breton is People
+      Charles Aleyn in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster']
+      Philip Ayres (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)']
+      Henry Wotton in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet']
+Henry Wotton is People
+      William Alabaster in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd']
+      Richard Lovelace (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh']
+Richard Lovelace (poet) is People
+      Sir Richard Fanshawe, 1st Baronet in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)']
+      Benjamin Rudyerd in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)']
+      Mary Chudleigh in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon']
+      John Sandford (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher']
+      Thomas Newton (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder']
+      Rachel Jevon in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore']
+      Giles Fletcher in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert']
+      Giles Fletcher, the Elder in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford']
+      Richard Blackmore in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)']
+Richard Blackmore is People
+      George Herbert in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman']
+George Herbert is People
+      Samuel Woodford in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman']
+Samuel Woodford is People
+      John Hall (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok']
+John Hall (poet) is People
+      George Chapman in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)']
+George Chapman is People
+      Henry Lok in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)']
+      Charles Best (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)']
+      Thomas Bancroft (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)']
+Thomas Bancroft (poet) is People
+      Edward Grant (headmaster) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)']
+      Christopher Harvey (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)']
+      Nicholas Brady (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher']
+      David Murray (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile']
+      Payne Fisher in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot']
+      Edmond Graile in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet']
+      Thomas Philipot in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth']
+      Sir Francis Wortley, 1st Baronet in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)']
+      Martha Moulsworth in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)']
+Martha Moulsworth is People
+      James Gresham (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate']
+      William Browne (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)']
+William Browne (poet) is People
+      Nahum Tate in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell']
+Nahum Tate is People
+      John Abbot (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable']
+      John Clavell in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea']
+John Clavell is People
+      Henry Constable in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott']
+Henry Constable is People
+      Anne Finch, Countess of Winchilsea in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)']
+Anne Finch, Countess of Winchilsea is People
+      Robert Allott in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall']
+      John Aylmer (classicist) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)']
+      Robert Whitehall in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe']
+      John Smith (English poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston']
+      Thomas Andrewe in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle']
+      Elizabeth Jane Weston in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson']
+      John Bracegirdle in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger']
+      Ben Jonson in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever']
+Ben Jonson is People
+      Alexander Gil the younger in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever']
+Alexander Gil the younger is People
+      John Weever in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker']
+      Jane Barker in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton']
+      Michael Drayton in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes']
+Michael Drayton is People
+      Nicholas Hookes in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes']
+      Gervase Markham in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham']
+      Theodore Bathurst in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst']
+Theodore Bathurst is People
+      Leonard Digges (writer) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)']
+      Wye Saltonstall in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall']
+      Samuel Wesley (poet, died 1735) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)']
+Samuel Wesley (poet, died 1735) is People
+      John Reynolds (writer) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)']
+      Thomas Peyton (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)']
+      John Lane (poet) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)']
+      William Sampson (playwright) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)']
+      Giles Earle (musician) in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)']
+      Charles Fitzgeoffrey in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey']
+      Mathew Roydon in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey', 'Mathew Roydon']
+      Katherine Doyley Dyer in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey', 'Mathew Roydon', 'Katherine Doyley Dyer']
+      William Davenant in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey', 'Mathew Roydon', 'Katherine Doyley Dyer', 'William Davenant']
+William Davenant is People
+      Clement Paman in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey', 'Mathew Roydon', 'Katherine Doyley Dyer', 'William Davenant', 'Clement Paman']
+      Mildmay Fane, 2nd Earl of Westmorland in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey', 'Mathew Roydon', 'Katherine Doyley Dyer', 'William Davenant', 'Clement Paman', 'Mildmay Fane, 2nd Earl of Westmorland']
+Mildmay Fane, 2nd Earl of Westmorland is People
+      William Shakespeare in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey', 'Mathew Roydon', 'Katherine Doyley Dyer', 'William Davenant', 'Clement Paman', 'Mildmay Fane, 2nd Earl of Westmorland', 'William Shakespeare']
+William Shakespeare is People
+      Georg Rudolf Weckherlin in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey', 'Mathew Roydon', 'Katherine Doyley Dyer', 'William Davenant', 'Clement Paman', 'Mildmay Fane, 2nd Earl of Westmorland', 'William Shakespeare', 'Georg Rudolf Weckherlin']
+      John Dryden in ['Thomas Ford (composer)', 'Richard Niccols', 'Aurelian Townshend', 'Edward Sherburne', 'John Hoskins (poet)', 'John Oldham (poet)', 'Richard Adams (poet)', 'Julia Palmer', 'Mary Oxlie', 'Sir Charles Sedley, 5th Baronet', 'Matthew Prior', 'Thomas Storer', 'John Suckling (poet)', 'Arthur Gorges', 'Lucy Hastings, Countess of Huntingdon', 'Thomas Evans (17th-century poet)', 'Susanna Centlivre', 'Nicholas Breton', 'Charles Aleyn', 'Philip Ayres (poet)', 'Henry Wotton', 'William Alabaster', 'Richard Lovelace (poet)', 'Sir Richard Fanshawe, 1st Baronet', 'Benjamin Rudyerd', 'Mary Chudleigh', 'John Sandford (poet)', 'Thomas Newton (poet)', 'Rachel Jevon', 'Giles Fletcher', 'Giles Fletcher, the Elder', 'Richard Blackmore', 'George Herbert', 'Samuel Woodford', 'John Hall (poet)', 'George Chapman', 'Henry Lok', 'Charles Best (poet)', 'Thomas Bancroft (poet)', 'Edward Grant (headmaster)', 'Christopher Harvey (poet)', 'Nicholas Brady (poet)', 'David Murray (poet)', 'Payne Fisher', 'Edmond Graile', 'Thomas Philipot', 'Sir Francis Wortley, 1st Baronet', 'Martha Moulsworth', 'James Gresham (poet)', 'William Browne (poet)', 'Nahum Tate', 'John Abbot (poet)', 'John Clavell', 'Henry Constable', 'Anne Finch, Countess of Winchilsea', 'Robert Allott', 'John Aylmer (classicist)', 'Robert Whitehall', 'John Smith (English poet)', 'Thomas Andrewe', 'Elizabeth Jane Weston', 'John Bracegirdle', 'Ben Jonson', 'Alexander Gil the younger', 'John Weever', 'Jane Barker', 'Michael Drayton', 'Nicholas Hookes', 'Gervase Markham', 'Theodore Bathurst', 'Leonard Digges (writer)', 'Wye Saltonstall', 'Samuel Wesley (poet, died 1735)', 'John Reynolds (writer)', 'Thomas Peyton (poet)', 'John Lane (poet)', 'William Sampson (playwright)', 'Giles Earle (musician)', 'Charles Fitzgeoffrey', 'Mathew Roydon', 'Katherine Doyley Dyer', 'William Davenant', 'Clement Paman', 'Mildmay Fane, 2nd Earl of Westmorland', 'William Shakespeare', 'Georg Rudolf Weckherlin', 'John Dryden']
+John Dryden is People
+['George Herbert', 'Ben Jonson', 'Michael Drayton', 'John Dryden']
+Ended after 2.5 hierarchy
+(2.5, ['John Dryden', 'George Herbert', 'Ben Jonson', 'Michael Drayton'])
+
+extract_info(Michael Drayton) Start.
+utils/preprocess.py extract_info(): Checking good links on Michael Drayton
+Horace is People
+1 / 30 )  Horace Horace horace
+Hartshill is Geography
+2 / 30 )  Hartshill Hartshill hartshill
+Nuneaton is Geography
+3 / 30 )  Nuneaton Nuneaton nuneaton
+England is Geography
+4 / 30 )  England England england
+University of Oxford is Geography
+5 / 30 )  University of Oxford University of Oxford university_of_oxford
+Polesworth is Geography
+6 / 30 )  Polesworth Polesworth polesworth
+Edmund Spenser is People
+7 / 30 )  Edmund Spenser Edmund Spenser edmund_spenser
+Archbishop of Canterbury is Incident
+8 / 30 )  Archbishop of Canterbury Archbishop of Canterbury archbishop_of_canterbury
+John Dryden is People
+9 / 30 )  Dryden John Dryden john_dryden
+Ovid is People
+10 / 30 )  Ovid Ovid ovid
+Elizabeth I is People
+11 / 30 )  Elizabeth Elizabeth I elizabeth_i
+Moses is People
+12 / 30 )  Moses Moses moses
+Great Britain is Geography
+13 / 30 )  Great Britain Great Britain great_britain
+John Selden is People
+14 / 30 )  John Selden John Selden seldenian
+Kingdom of Scotland is Geography
+15 / 30 )  Scotland Kingdom of Scotland kingdom_of_scotland
+Orkney is Geography
+16 / 30 )  Orcades Orkney orkney
+Westminster Abbey is Geography
+17 / 30 )  Westminster Abbey Westminster Abbey westminster_abbey
+Ben Jonson is People
+18 / 30 )  Ben Jonson Ben Jonson ben_jonson
+Stratford-upon-Avon is Geography
+19 / 30 )  Stratford-on-Avon Stratford-upon-Avon stratford_upon_avon
+Geoffrey Chaucer is People
+20 / 30 )  Chaucer Geoffrey Chaucer geoffrey_chaucer
+Library of Congress is Geography
+21 / 30 )  Library of Congress Library of Congress library_of_congress
+extract_triplet(Michael Drayton)
+Got GPT's response. String length : 2647
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Elizabeth', 'Elizabeth I', 'elizabeth_i']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Horace', 'Horace', 'horace']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Nuneaton', 'Nuneaton', 'nuneaton']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['University of Oxford', 'University of Oxford', 'university_of_oxford']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Polesworth', 'Polesworth', 'polesworth']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Edmund Spenser', 'Edmund Spenser', 'edmund_spenser']]
+subject_words:  []
+object_words:  [['Dryden', 'John Dryden', 'john_dryden']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['England', 'England', 'england']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Great Britain', 'Great Britain', 'great_britain']]
+subject_words:  []
+object_words:  [(None, 'Michael Drayton', 'draytonian')]
+subject_words:  [['John Selden', 'John Selden', 'seldenian']]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Scotland', 'Kingdom of Scotland', 'kingdom_of_scotland']]
+subject_words:  []
+object_words:  [(None, 'Michael Drayton', 'draytonian')]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Westminster Abbey', 'Westminster Abbey', 'westminster_abbey']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Ben Jonson', 'Ben Jonson', 'ben_jonson']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Ben Jonson', 'Ben Jonson', 'ben_jonson']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  [['Chaucer', 'Geoffrey Chaucer', 'geoffrey_chaucer']]
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+subject_words:  [(None, 'Michael Drayton', 'draytonian')]
+object_words:  []
+extract_info(John Dryden) Start.
+utils/preprocess.py extract_info(): Checking good links on John Dryden
+Walter Scott is People
+1 / 30 )  Sir Walter Scott Walter Scott walter_scott
+Aldwincle is Geography
+2 / 30 )  Aldwincle Aldwincle aldwincle
+Thrapston is Geography
+3 / 30 )  Thrapston Thrapston thrapston
+Jonathan Swift is People
+4 / 30 )  Jonathan Swift Jonathan Swift jonathan_swift
+Elizabeth I is People
+5 / 30 )  Elizabeth I Elizabeth I elizabeth_i
+Oliver Cromwell is People
+6 / 30 )  Oliver Cromwell Oliver Cromwell oliver_cromwell
+John Milton is People
+7 / 30 )  John Milton John Milton john_milton
+Andrew Marvell is People
+8 / 30 )  Andrew Marvell Andrew Marvell andrew_marvell
+Royal Society is Geography
+9 / 30 )  Royal Society Royal Society royal_society
+Covent Garden is Geography
+10 / 30 )  Covent Garden Covent Garden covent_garden
+James II of England is People
+11 / 30 )  King James II of England james_ii
+Mary II is People
+12 / 30 )  Mary Mary II mary_ii
+Horace is People
+13 / 30 )  Horace Horace horace
+Ovid is People
+14 / 30 )  Ovid Ovid ovid
+Lucretius is People
+15 / 30 )  Lucretius Lucretius lucretius
+Theocritus is People
+16 / 30 )  Theocritus Theocritus theocritean
+Virgil is People
+17 / 30 )  Virgil Virgil virgil
+William Congreve is People
+18 / 30 )  William Congreve William Congreve william_congreve
+Homer is People
+19 / 30 )  Homer Homer homer
+Giovanni Boccaccio is People
+20 / 30 )  Boccaccio Giovanni Boccaccio giovanni_boccaccio
+Geoffrey Chaucer is People
+21 / 30 )  Geoffrey Chaucer Geoffrey Chaucer geoffrey_chaucer
+Westminster Abbey is Geography
+22 / 30 )  Westminster Abbey Westminster Abbey westminster_abbey
+Royal Society of Arts is Geography
+23 / 30 )  Royal Society of Arts Royal Society of Arts frsa
+W. H. Auden is People
+24 / 30 )  Auden W. H. Auden w_h_auden
+Alexander Pope is People
+25 / 30 )  Alexander Pope Alexander Pope alexander_pope
+Samuel Johnson is People
+26 / 30 )  Samuel Johnson Samuel Johnson samuel_johnson
+Henry Fielding is People
+27 / 30 )  Henry Fielding Henry Fielding henry_fielding
+William Wordsworth is People
+28 / 30 )  William Wordsworth William Wordsworth william_wordsworth
+Lord Byron is People
+29 / 30 )  Lord Byron Lord Byron lord_byron
+John Keats is People
+30 / 30 )  John Keats John Keats john_keats
+extract_triplet(John Dryden)
+Got GPT's response. String length : 2074
+['Based on the text provided, here are triplets that include each of the important keywords. Note that Sir Walter Scott, Aldwincle, and several other keywords below are subjects in certain contexts but are objects in others when relating to the main keyword John Dryden.']
+subject_words:  [(None, 'John Dryden', 'john_dryden')]
+object_words:  [['Sir Walter Scott', 'Walter Scott', 'walter_scott']]
+subject_words:  [(None, 'John Dryden', 'john_dryden')]
+object_words:  [['Aldwincle', 'Aldwincle', 'aldwincle']]
+subject_words:  [(None, 'John Dryden', 'john_dryden')]
+object_words:  [['Thrapston', 'Thrapston', 'thrapston']]
+subject_words:  []
+object_words:  [['Jonathan Swift', 'Jonathan Swift', 'jonathan_swift']]
+subject_words:  []
+object_words:  [['Elizabeth I', 'Elizabeth I', 'elizabeth_i']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['John Milton', 'John Milton', 'john_milton'], ['Andrew Marvell', 'Andrew Marvell', 'andrew_marvell']]
+subject_words:  []
+object_words:  [['Royal Society', 'Royal Society', 'royal_society']]
+subject_words:  []
+object_words:  [['Covent Garden', 'Covent Garden', 'covent_garden']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Virgil', 'Virgil', 'virgil']]
+subject_words:  []
+object_words:  [['Virgil', 'Virgil', 'virgil'], ['William Congreve', 'William Congreve', 'william_congreve']]
+subject_words:  []
+object_words:  [['Geoffrey Chaucer', 'Geoffrey Chaucer', 'geoffrey_chaucer']]
+subject_words:  []
+object_words:  [['Westminster Abbey', 'Westminster Abbey', 'westminster_abbey']]
+subject_words:  [['Royal Society', 'Royal Society', 'royal_society'], ['Royal Society of Arts', 'Royal Society of Arts', 'frsa']]
+object_words:  [(None, 'John Dryden', 'john_dryden')]
+subject_words:  [['Auden', 'W. H. Auden', 'w_h_auden']]
+object_words:  []
+subject_words:  [['Alexander Pope', 'Alexander Pope', 'alexander_pope']]
+object_words:  []
+subject_words:  [['Samuel Johnson', 'Samuel Johnson', 'samuel_johnson']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Lord Byron', 'Lord Byron', 'lord_byron']]
+object_words:  []
+subject_words:  [['John Keats', 'John Keats', 'john_keats']]
+object_words:  []
+['Please note that not all provided keywords could be directly connected to John Dryden in a meaningful way within the given text, and some connections are based on the broader context rather than direct statements from the text. Additionally, some keywords needed to be combined within a single triplet due to the nature of their association with John Dryden.']
+extract_info(Ben Jonson) Start.
+utils/preprocess.py extract_info(): Checking good links on Ben Jonson
+William Shakespeare is People
+1 / 30 )  William Shakespeare William Shakespeare william_shakespeare
+Dumfries and Galloway is Geography
+2 / 30 )  Dumfries and Galloway Dumfries and Galloway dumfries_and_galloway
+Mary I of England is People
+3 / 30 )  Queen Mary Mary I of England mary_i
+Netherlands is Geography
+4 / 30 )  Netherlands Netherlands netherlands
+Flanders is Geography
+5 / 30 )  Flanders Flanders flanders
+Chester is Geography
+6 / 30 )  Chester Chester chester
+Thomas Nashe is People
+7 / 30 )  Thomas Nashe Thomas Nashe nashe
+The Isle of Dogs  is Geography
+8 / 30 )  The Isle of Dogs The Isle of Dogs  isle_of_dogs
+Elizabeth I is People
+9 / 30 )  Elizabeth I Elizabeth I elizabeth_i
+Marshalsea is Geography
+10 / 30 )  Marshalsea Prison Marshalsea marshalsea
+Great Yarmouth is Geography
+11 / 30 )  Great Yarmouth Great Yarmouth great_yarmouth
+Jesuits is Geography
+12 / 30 )  Jesuit Jesuits jesuits
+Aristophanes is People
+13 / 30 )  Aristophanes Aristophanes aristophanes
+Algernon Charles Swinburne is People
+14 / 30 )  Algernon Charles Swinburne Algernon Charles Swinburne algernon_charles_swinburne
+Inigo Jones is People
+15 / 30 )  Inigo Jones Inigo Jones inigo_jones
+Whitehall is Geography
+16 / 30 )  Whitehall Whitehall whitehall
+Westminster Abbey is Geography
+17 / 30 )  Westminster Abbey Westminster Abbey westminster_abbey
+Henry IV of France is People
+18 / 30 )  Henry IV of France Henry IV of France henry_of_navarre
+Thomas Carew is People
+19 / 30 )  Thomas Carew Thomas Carew thomas_carew
+Great Milton is Geography
+20 / 30 )  Great Milton Great Milton great_milton
+Oxfordshire is Geography
+21 / 30 )  Oxfordshire Oxfordshire oxfordshire
+Leigh Hunt is People
+22 / 30 )  Leigh Hunt Leigh Hunt leigh_hunt
+Augustus is People
+23 / 30 )  Augustus Caesar Augustus augustus
+Gaius Maecenas is People
+24 / 30 )  Maecenas Gaius Maecenas maecenas
+Virgil is People
+25 / 30 )  Virgil Virgil virgil
+Horace is People
+26 / 30 )  Horace Horace horace
+Ovid is People
+27 / 30 )  Ovid Ovid ovid
+Plautus is People
+28 / 30 )  Plautus Plautus plautus
+Terence is People
+29 / 30 )  Terence Terence terence
+A Celebration of Charis  is People
+30 / 30 )  A Celebration of Charis A Celebration of Charis  benjamin_jonson
+extract_triplet(Ben Jonson)
+Got GPT's response. String length : 262
+['Unfortunately the text provided is too extensive to handle in one go. Could you please provide specific paragraphs or sections from the text above for which you would like me to create triplets? This would help in providing a more accurate and relevant response.']
+extract_info(George Herbert) Start.
+utils/preprocess.py extract_info(): Checking good links on George Herbert
+Salisbury is Geography
+1 / 30 )  Salisbury Salisbury salisbury
+Montgomeryshire is Geography
+2 / 30 )  Montgomeryshire Montgomeryshire montgomeryshire
+John Donne is People
+3 / 30 )  John Donne John Donne john_donne
+Westminster Abbey is Geography
+4 / 30 )  Westminster Abbey Westminster Abbey westminster_abbey
+Little Gidding is Geography
+5 / 30 )  Little Gidding Little Gidding little_gidding
+Izaak Walton is People
+6 / 30 )  Izaak Walton Izaak Walton izaak_walton
+Richard Baxter is People
+7 / 30 )  Richard Baxter Richard Baxter baxterian
+John Dryden is People
+8 / 30 )  John Dryden John Dryden john_dryden
+Henry Purcell is People
+9 / 30 )  Henry Purcell Henry Purcell henry_purcell
+extract_triplet(George Herbert)
+Got GPT's response. String length : 3870
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  []
+object_words:  [['Salisbury', 'Salisbury', 'salisbury']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  [['John Donne', 'John Donne', 'john_donne']]
+subject_words:  []
+object_words:  [(None, 'George Herbert', 'wreath')]
+subject_words:  []
+object_words:  [(None, 'George Herbert', 'wreath')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'George Herbert', 'wreath')]
+subject_words:  []
+object_words:  [['Westminster Abbey', 'Westminster Abbey', 'westminster_abbey']]
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  []
+object_words:  [['Salisbury', 'Salisbury', 'salisbury']]
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  [['Salisbury', 'Salisbury', 'salisbury']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Izaak Walton', 'Izaak Walton', 'izaak_walton']]
+object_words:  [(None, 'George Herbert', 'wreath')]
+subject_words:  [['John Dryden', 'John Dryden', 'john_dryden']]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [['Henry Purcell', 'Henry Purcell', 'henry_purcell']]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [['Henry Purcell', 'Henry Purcell', 'henry_purcell']]
+object_words:  [(None, 'George Herbert', 'wreath')]
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  [['Westminster Abbey', 'Westminster Abbey', 'westminster_abbey']]
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+subject_words:  [(None, 'George Herbert', 'wreath')]
+object_words:  []
+['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n']
+
+['("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Michael Drayton", "was", "an English poet")\n', '("Michael Drayton", "came to prominence in the era of", "Elizabeth")\n', '("Michael Drayton", "continued to write through the reign of", "James I")\n', '("Michael Drayton", "continued to write into the reign of", "Charles I")\n', '("Michael Drayton", "wrote odes in the style of", "Horace")\n', '("Michael Drayton", "was born at", "Hartshill, near Nuneaton")\n', '("Michael Drayton", "might have studied at", "University of Oxford")\n', '("Michael Drayton", "was intimate with the Goodere family of", "Polesworth")\n', '("Michael Drayton", "was educated by", "Sir Henry Goodere")\n', '("Michael Drayton", "failed to win his", "\'Idea\'")\n', '("Michael Drayton", "published works with the help of", "Edmund Spenser")\n', '("Drayton\'s sonnets", "foreshadow the style of", "Dryden")\n', '("Michael Drayton", "first brought popularity to the term", "ode in England")\n', '("Michael Drayton", "was engaging for years in", "celebrating points of interest in Great Britain")\n', '("Poly-Olbion", "was published by", "Michael Drayton")\n', '("John Selden", "supplied notes to", "Poly-Olbion")\n', '("Michael Drayton", "never crossed the", "Tweed")\n', '("Michael Drayton", "hoped to crown", "Scotland with flowers")\n', '("The Muses\' Elizium", "was published by", "Michael Drayton")\n', '("Michael Drayton", "is buried in", "Poets\' Corner in Westminster Abbey")\n', '("Michael Drayton", "had a monument placed over him by the Countess of Dorset with lines attributed to", "Ben Jonson")\n', '("Michael Drayton", "had a friendship with", "Ben Jonson")\n', '("Michael Drayton", "was a friend of", "William Browne")\n', '("Michael Drayton", "was a friend of", "George Wither")\n', '("Michael Drayton", "had a merry meeting with", "Shakespeare")\n', '("Shakespeare", "died of a fever contracted after a meeting with", "Drayton")\n', '("Michael Drayton", "left criticisms on English poets including", "Chaucer")\n', '("Michael Drayton", "left criticisms on English poets including", "Shakespeare")\n', '("Drayton\'s work", "was published by Oxford in a five-volume edition edited by", "J. William Hebel, K. Tillotson and B. H. Newdigate")\n', '("Drayton\'s poems", "two-volume edition was published at Harvard edited by", "John Buxton")\n', '("Michael Drayton\'s works", "project initiated by", "Richard Hooper was never completed")\n', '("Michael Drayton", "has a selection edited by", "A. H. Bullen")\n', '("Works by Michael Drayton", "available at", "Project Gutenberg")\n', '("Works by Michael Drayton", "available at", "Internet Archive")\n', '("Works by Michael Drayton", "available at", "LibriVox")\n', '("John Dryden", "is called", "Glorious John by Sir Walter Scott")\n', '("John Dryden", "was born in", "Aldwincle")\n', '("John Dryden", "lived near", "Thrapston")\n', '("Dryden", "was a second cousin once removed of", "Jonathan Swift")\n', '("Dryden", "attended school founded by", "Elizabeth I")\n', '("Dryden", "obtained work with", "Oliver Cromwell\'s Secretary of State, John Thurloe")\n', '("Dryden", "processed with", "John Milton and Andrew Marvell at Cromwell\'s funeral")\n', '("Dryden", "was proposed for membership in", "Royal Society")\n', '("Dryden", "lived in", "Covent Garden")\n', '("Dryden", "served Charles II as", "Poet Laureate and historiographer")\n', '("Dryden", "was married to", "Lady Elizabeth")\n', '("Dryden", "translated works by", "Horace, Ovid, Lucretius, Theocritus, and Virgil")\n', '("Dryden", "was checked by", "William Congreve for his translation of Virgil")\n', '("Dryden", "translated and adapted works by", "Homer, Boccaccio, and Geoffrey Chaucer")\n', '("Dryden", "was reburied in", "Westminster Abbey")\n', '("Royal Society of Arts", "commemorates", "John Dryden with a blue plaque")\n', '("Auden", "referred to Dryden as", "the master of the middle style")\n', '("Alexander Pope", "was heavily influenced by", "Dryden")\n', '("Samuel Johnson", "summed up the general attitude towards", "Dryden")\n', '("Henry Fielding\'s Tom Jones", "quotes", "Dryden")\n', '("Wordsworth", "admired many poems of", "Dryden")\n', '("Lord Byron", "was an admirer of", "Dryden")\n', '("John Keats", "imitated the Fables of", "Dryden")\n', '("George Herbert", "was an English poet", "poet")\n', '("George Herbert", "was an orator", "orator")\n', '("George Herbert", "was a priest of", "the Church of England")\n', '("George Herbert", "is associated with", "the metaphysical poets")\n', '("George Herbert", "is recognised as", "one of the foremost British devotional lyricists")\n', '("George Herbert", "was born in", "Montgomery")\n', '("George Herbert", "was raised in", "England")\n', '("George Herbert", "was born into", "an artistic and wealthy family")\n', '("George Herbert", "received his education at", "Trinity College, Cambridge")\n', '("George Herbert", "became the University\'s", "Public Orator")\n', '("George Herbert", "attracted the attention of", "King James I")\n', '("George Herbert", "sat in the Parliament of", "England")\n', '("George Herbert", "had interest in ordination renewed after the death of", "King James")\n', '("George Herbert", "took holy orders in", "the Church of England")\n', '("George Herbert", "spent the rest of his life as the rector of", "Fugglestone St Peter")\n', '("Fugglestone St Peter", "is just outside", "Salisbury")\n', '("Henry Vaughan", "called George Herbert", "a most glorious saint and seer")\n', '("George Herbert", "died of", "consumption")\n', '("George Herbert", "was the son of", "Richard Herbert")\n', '("Richard Herbert", "was the son-in-law of", "Sir Richard Newport")\n', '("George Herbert\'s mother", "was a friend and patron of", "John Donne")\n', '("Donne", "was the godfather of", "George Herbert")\n', '("Edward Herbert", "was the brother of", "George Herbert")\n', '("Edward Herbert", "became", "Baron Herbert of Cherbury")\n', '("Henry Herbert", "was George Herbert\'s", "younger brother")\n', '("Henry Herbert", "was Master of the Revels to", "Kings Charles I and II")\n', '("George Herbert", "entered", "Westminster School")\n', '("George Herbert", "was admitted to", "Trinity College, Cambridge")\n', '("George Herbert", "represented", "Montgomery")\n', '("George Herbert", "was presented with the prebend of", "Leighton Bromswold")\n', '("Nicholas Ferrar", "was a close friend of", "George Herbert")\n', '("Nicholas Ferrar", "was ordained Deacon in", "Westminster Abbey")\n', '("George Herbert", "raised money for", "the church building at Leighton")\n', '("Jane", "was the daughter of", "Charles Danvers")\n', '("George Herbert", "married", "Jane")\n', '("George Herbert", "was appointed rector of", "Fugglestone St Peter with Bemerton")\n', '("Fugglestone St Peter with Bemerton", "is near", "Salisbury")\n', '("George Herbert", "revised and added to his collection of poems entitled", "The Temple")\n', '("George Herbert", "wrote", "A Priest to the Temple")\n', '("George Herbert", "gave a home to", "three orphaned nieces")\n', '("George Herbert", "made the journey into", "Salisbury")\n', '("Nicholas Ferrar", "published George Herbert\'s poems in", "The Temple")\n', '("Izaak Walton", "wrote a biography of", "George Herbert")\n', '("John Dryden", "dismissed", "Baroque wit")\n', '("George Herbert", "wrote prose work", "A Priest to the Temple")\n', '("Barnabas Oley", "edited", "Herbert\'s Remains")\n', '("George Herbert", "was a collector of proverbs", "collector of proverbs")\n', '("Henry Purcell", "set", "Longing")\n', '("George Herbert", "came from", "a musical family")\n', '("William Byrd and John Bull", "were friends of", "Magdalen Herbert")\n', '("George Herbert", "played the lute and viol", "lute and viol")\n', '("Henry Purcell", "had settings of", "George Herbert\'s poems")\n', '("George Herbert", "is commemorated in", "Westminster Abbey")\n', '("George Herbert", "projected in", "The Remains of that Sweet Singer of The Temple")\n', '("George Herbert", "has a collection of foreign proverbs in", "Outlandish Proverbs")\n']
+range(1, 138) 2
+['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n']
+
+['("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Michael Drayton", "was", "an English poet")\n', '("Michael Drayton", "came to prominence in the era of", "Elizabeth")\n', '("Michael Drayton", "continued to write through the reign of", "James I")\n', '("Michael Drayton", "continued to write into the reign of", "Charles I")\n', '("Michael Drayton", "wrote odes in the style of", "Horace")\n', '("Michael Drayton", "was born at", "Hartshill, near Nuneaton")\n', '("Michael Drayton", "might have studied at", "University of Oxford")\n', '("Michael Drayton", "was intimate with the Goodere family of", "Polesworth")\n', '("Michael Drayton", "was educated by", "Sir Henry Goodere")\n', '("Michael Drayton", "failed to win his", "\'Idea\'")\n', '("Michael Drayton", "published works with the help of", "Edmund Spenser")\n', '("Drayton\'s sonnets", "foreshadow the style of", "Dryden")\n', '("Michael Drayton", "first brought popularity to the term", "ode in England")\n', '("Michael Drayton", "was engaging for years in", "celebrating points of interest in Great Britain")\n', '("Poly-Olbion", "was published by", "Michael Drayton")\n', '("John Selden", "supplied notes to", "Poly-Olbion")\n', '("Michael Drayton", "never crossed the", "Tweed")\n', '("Michael Drayton", "hoped to crown", "Scotland with flowers")\n', '("The Muses\' Elizium", "was published by", "Michael Drayton")\n', '("Michael Drayton", "is buried in", "Poets\' Corner in Westminster Abbey")\n', '("Michael Drayton", "had a monument placed over him by the Countess of Dorset with lines attributed to", "Ben Jonson")\n', '("Michael Drayton", "had a friendship with", "Ben Jonson")\n', '("Michael Drayton", "was a friend of", "William Browne")\n', '("Michael Drayton", "was a friend of", "George Wither")\n', '("Michael Drayton", "had a merry meeting with", "Shakespeare")\n', '("Shakespeare", "died of a fever contracted after a meeting with", "Drayton")\n', '("Michael Drayton", "left criticisms on English poets including", "Chaucer")\n', '("Michael Drayton", "left criticisms on English poets including", "Shakespeare")\n', '("Drayton\'s work", "was published by Oxford in a five-volume edition edited by", "J. William Hebel, K. Tillotson and B. H. Newdigate")\n', '("Drayton\'s poems", "two-volume edition was published at Harvard edited by", "John Buxton")\n', '("Michael Drayton\'s works", "project initiated by", "Richard Hooper was never completed")\n', '("Michael Drayton", "has a selection edited by", "A. H. Bullen")\n', '("Works by Michael Drayton", "available at", "Project Gutenberg")\n', '("Works by Michael Drayton", "available at", "Internet Archive")\n', '("Works by Michael Drayton", "available at", "LibriVox")\n', '("John Dryden", "is called", "Glorious John by Sir Walter Scott")\n', '("John Dryden", "was born in", "Aldwincle")\n', '("John Dryden", "lived near", "Thrapston")\n', '("Dryden", "was a second cousin once removed of", "Jonathan Swift")\n', '("Dryden", "attended school founded by", "Elizabeth I")\n', '("Dryden", "obtained work with", "Oliver Cromwell\'s Secretary of State, John Thurloe")\n', '("Dryden", "processed with", "John Milton and Andrew Marvell at Cromwell\'s funeral")\n', '("Dryden", "was proposed for membership in", "Royal Society")\n', '("Dryden", "lived in", "Covent Garden")\n', '("Dryden", "served Charles II as", "Poet Laureate and historiographer")\n', '("Dryden", "was married to", "Lady Elizabeth")\n', '("Dryden", "translated works by", "Horace, Ovid, Lucretius, Theocritus, and Virgil")\n', '("Dryden", "was checked by", "William Congreve for his translation of Virgil")\n', '("Dryden", "translated and adapted works by", "Homer, Boccaccio, and Geoffrey Chaucer")\n', '("Dryden", "was reburied in", "Westminster Abbey")\n', '("Royal Society of Arts", "commemorates", "John Dryden with a blue plaque")\n', '("Auden", "referred to Dryden as", "the master of the middle style")\n', '("Alexander Pope", "was heavily influenced by", "Dryden")\n', '("Samuel Johnson", "summed up the general attitude towards", "Dryden")\n', '("Henry Fielding\'s Tom Jones", "quotes", "Dryden")\n', '("Wordsworth", "admired many poems of", "Dryden")\n', '("Lord Byron", "was an admirer of", "Dryden")\n', '("John Keats", "imitated the Fables of", "Dryden")\n', '("George Herbert", "was an English poet", "poet")\n', '("George Herbert", "was an orator", "orator")\n', '("George Herbert", "was a priest of", "the Church of England")\n', '("George Herbert", "is associated with", "the metaphysical poets")\n', '("George Herbert", "is recognised as", "one of the foremost British devotional lyricists")\n', '("George Herbert", "was born in", "Montgomery")\n', '("George Herbert", "was raised in", "England")\n', '("George Herbert", "was born into", "an artistic and wealthy family")\n', '("George Herbert", "received his education at", "Trinity College, Cambridge")\n', '("George Herbert", "became the University\'s", "Public Orator")\n', '("George Herbert", "attracted the attention of", "King James I")\n', '("George Herbert", "sat in the Parliament of", "England")\n', '("George Herbert", "had interest in ordination renewed after the death of", "King James")\n', '("George Herbert", "took holy orders in", "the Church of England")\n', '("George Herbert", "spent the rest of his life as the rector of", "Fugglestone St Peter")\n', '("Fugglestone St Peter", "is just outside", "Salisbury")\n', '("Henry Vaughan", "called George Herbert", "a most glorious saint and seer")\n', '("George Herbert", "died of", "consumption")\n', '("George Herbert", "was the son of", "Richard Herbert")\n', '("Richard Herbert", "was the son-in-law of", "Sir Richard Newport")\n', '("George Herbert\'s mother", "was a friend and patron of", "John Donne")\n', '("Donne", "was the godfather of", "George Herbert")\n', '("Edward Herbert", "was the brother of", "George Herbert")\n', '("Edward Herbert", "became", "Baron Herbert of Cherbury")\n', '("Henry Herbert", "was George Herbert\'s", "younger brother")\n', '("Henry Herbert", "was Master of the Revels to", "Kings Charles I and II")\n', '("George Herbert", "entered", "Westminster School")\n', '("George Herbert", "was admitted to", "Trinity College, Cambridge")\n', '("George Herbert", "represented", "Montgomery")\n', '("George Herbert", "was presented with the prebend of", "Leighton Bromswold")\n', '("Nicholas Ferrar", "was a close friend of", "George Herbert")\n', '("Nicholas Ferrar", "was ordained Deacon in", "Westminster Abbey")\n', '("George Herbert", "raised money for", "the church building at Leighton")\n', '("Jane", "was the daughter of", "Charles Danvers")\n', '("George Herbert", "married", "Jane")\n', '("George Herbert", "was appointed rector of", "Fugglestone St Peter with Bemerton")\n', '("Fugglestone St Peter with Bemerton", "is near", "Salisbury")\n', '("George Herbert", "revised and added to his collection of poems entitled", "The Temple")\n', '("George Herbert", "wrote", "A Priest to the Temple")\n', '("George Herbert", "gave a home to", "three orphaned nieces")\n', '("George Herbert", "made the journey into", "Salisbury")\n', '("Nicholas Ferrar", "published George Herbert\'s poems in", "The Temple")\n', '("Izaak Walton", "wrote a biography of", "George Herbert")\n', '("John Dryden", "dismissed", "Baroque wit")\n', '("George Herbert", "wrote prose work", "A Priest to the Temple")\n', '("Barnabas Oley", "edited", "Herbert\'s Remains")\n', '("George Herbert", "was a collector of proverbs", "collector of proverbs")\n', '("Henry Purcell", "set", "Longing")\n', '("George Herbert", "came from", "a musical family")\n', '("William Byrd and John Bull", "were friends of", "Magdalen Herbert")\n', '("George Herbert", "played the lute and viol", "lute and viol")\n', '("Henry Purcell", "had settings of", "George Herbert\'s poems")\n', '("George Herbert", "is commemorated in", "Westminster Abbey")\n', '("George Herbert", "projected in", "The Remains of that Sweet Singer of The Temple")\n', '("George Herbert", "has a collection of foreign proverbs in", "Outlandish Proverbs")\n']
+range(1, 138) 2
+['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n']
+
+['("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Michael Drayton", "was", "an English poet")\n', '("Michael Drayton", "came to prominence in the era of", "Elizabeth")\n', '("Michael Drayton", "continued to write through the reign of", "James I")\n', '("Michael Drayton", "continued to write into the reign of", "Charles I")\n', '("Michael Drayton", "wrote odes in the style of", "Horace")\n', '("Michael Drayton", "was born at", "Hartshill, near Nuneaton")\n', '("Michael Drayton", "might have studied at", "University of Oxford")\n', '("Michael Drayton", "was intimate with the Goodere family of", "Polesworth")\n', '("Michael Drayton", "was educated by", "Sir Henry Goodere")\n', '("Michael Drayton", "failed to win his", "\'Idea\'")\n', '("Michael Drayton", "published works with the help of", "Edmund Spenser")\n', '("Drayton\'s sonnets", "foreshadow the style of", "Dryden")\n', '("Michael Drayton", "first brought popularity to the term", "ode in England")\n', '("Michael Drayton", "was engaging for years in", "celebrating points of interest in Great Britain")\n', '("Poly-Olbion", "was published by", "Michael Drayton")\n', '("John Selden", "supplied notes to", "Poly-Olbion")\n', '("Michael Drayton", "never crossed the", "Tweed")\n', '("Michael Drayton", "hoped to crown", "Scotland with flowers")\n', '("The Muses\' Elizium", "was published by", "Michael Drayton")\n', '("Michael Drayton", "is buried in", "Poets\' Corner in Westminster Abbey")\n', '("Michael Drayton", "had a monument placed over him by the Countess of Dorset with lines attributed to", "Ben Jonson")\n', '("Michael Drayton", "had a friendship with", "Ben Jonson")\n', '("Michael Drayton", "was a friend of", "William Browne")\n', '("Michael Drayton", "was a friend of", "George Wither")\n', '("Michael Drayton", "had a merry meeting with", "Shakespeare")\n', '("Shakespeare", "died of a fever contracted after a meeting with", "Drayton")\n', '("Michael Drayton", "left criticisms on English poets including", "Chaucer")\n', '("Michael Drayton", "left criticisms on English poets including", "Shakespeare")\n', '("Drayton\'s work", "was published by Oxford in a five-volume edition edited by", "J. William Hebel, K. Tillotson and B. H. Newdigate")\n', '("Drayton\'s poems", "two-volume edition was published at Harvard edited by", "John Buxton")\n', '("Michael Drayton\'s works", "project initiated by", "Richard Hooper was never completed")\n', '("Michael Drayton", "has a selection edited by", "A. H. Bullen")\n', '("Works by Michael Drayton", "available at", "Project Gutenberg")\n', '("Works by Michael Drayton", "available at", "Internet Archive")\n', '("Works by Michael Drayton", "available at", "LibriVox")\n', '("John Dryden", "is called", "Glorious John by Sir Walter Scott")\n', '("John Dryden", "was born in", "Aldwincle")\n', '("John Dryden", "lived near", "Thrapston")\n', '("Dryden", "was a second cousin once removed of", "Jonathan Swift")\n', '("Dryden", "attended school founded by", "Elizabeth I")\n', '("Dryden", "obtained work with", "Oliver Cromwell\'s Secretary of State, John Thurloe")\n', '("Dryden", "processed with", "John Milton and Andrew Marvell at Cromwell\'s funeral")\n', '("Dryden", "was proposed for membership in", "Royal Society")\n', '("Dryden", "lived in", "Covent Garden")\n', '("Dryden", "served Charles II as", "Poet Laureate and historiographer")\n', '("Dryden", "was married to", "Lady Elizabeth")\n', '("Dryden", "translated works by", "Horace, Ovid, Lucretius, Theocritus, and Virgil")\n', '("Dryden", "was checked by", "William Congreve for his translation of Virgil")\n', '("Dryden", "translated and adapted works by", "Homer, Boccaccio, and Geoffrey Chaucer")\n', '("Dryden", "was reburied in", "Westminster Abbey")\n', '("Royal Society of Arts", "commemorates", "John Dryden with a blue plaque")\n', '("Auden", "referred to Dryden as", "the master of the middle style")\n', '("Alexander Pope", "was heavily influenced by", "Dryden")\n', '("Samuel Johnson", "summed up the general attitude towards", "Dryden")\n', '("Henry Fielding\'s Tom Jones", "quotes", "Dryden")\n', '("Wordsworth", "admired many poems of", "Dryden")\n', '("Lord Byron", "was an admirer of", "Dryden")\n', '("John Keats", "imitated the Fables of", "Dryden")\n', '("George Herbert", "was an English poet", "poet")\n', '("George Herbert", "was an orator", "orator")\n', '("George Herbert", "was a priest of", "the Church of England")\n', '("George Herbert", "is associated with", "the metaphysical poets")\n', '("George Herbert", "is recognised as", "one of the foremost British devotional lyricists")\n', '("George Herbert", "was born in", "Montgomery")\n', '("George Herbert", "was raised in", "England")\n', '("George Herbert", "was born into", "an artistic and wealthy family")\n', '("George Herbert", "received his education at", "Trinity College, Cambridge")\n', '("George Herbert", "became the University\'s", "Public Orator")\n', '("George Herbert", "attracted the attention of", "King James I")\n', '("George Herbert", "sat in the Parliament of", "England")\n', '("George Herbert", "had interest in ordination renewed after the death of", "King James")\n', '("George Herbert", "took holy orders in", "the Church of England")\n', '("George Herbert", "spent the rest of his life as the rector of", "Fugglestone St Peter")\n', '("Fugglestone St Peter", "is just outside", "Salisbury")\n', '("Henry Vaughan", "called George Herbert", "a most glorious saint and seer")\n', '("George Herbert", "died of", "consumption")\n', '("George Herbert", "was the son of", "Richard Herbert")\n', '("Richard Herbert", "was the son-in-law of", "Sir Richard Newport")\n', '("George Herbert\'s mother", "was a friend and patron of", "John Donne")\n', '("Donne", "was the godfather of", "George Herbert")\n', '("Edward Herbert", "was the brother of", "George Herbert")\n', '("Edward Herbert", "became", "Baron Herbert of Cherbury")\n', '("Henry Herbert", "was George Herbert\'s", "younger brother")\n', '("Henry Herbert", "was Master of the Revels to", "Kings Charles I and II")\n', '("George Herbert", "entered", "Westminster School")\n', '("George Herbert", "was admitted to", "Trinity College, Cambridge")\n', '("George Herbert", "represented", "Montgomery")\n', '("George Herbert", "was presented with the prebend of", "Leighton Bromswold")\n', '("Nicholas Ferrar", "was a close friend of", "George Herbert")\n', '("Nicholas Ferrar", "was ordained Deacon in", "Westminster Abbey")\n', '("George Herbert", "raised money for", "the church building at Leighton")\n', '("Jane", "was the daughter of", "Charles Danvers")\n', '("George Herbert", "married", "Jane")\n', '("George Herbert", "was appointed rector of", "Fugglestone St Peter with Bemerton")\n', '("Fugglestone St Peter with Bemerton", "is near", "Salisbury")\n', '("George Herbert", "revised and added to his collection of poems entitled", "The Temple")\n', '("George Herbert", "wrote", "A Priest to the Temple")\n', '("George Herbert", "gave a home to", "three orphaned nieces")\n', '("George Herbert", "made the journey into", "Salisbury")\n', '("Nicholas Ferrar", "published George Herbert\'s poems in", "The Temple")\n', '("Izaak Walton", "wrote a biography of", "George Herbert")\n', '("John Dryden", "dismissed", "Baroque wit")\n', '("George Herbert", "wrote prose work", "A Priest to the Temple")\n', '("Barnabas Oley", "edited", "Herbert\'s Remains")\n', '("George Herbert", "was a collector of proverbs", "collector of proverbs")\n', '("Henry Purcell", "set", "Longing")\n', '("George Herbert", "came from", "a musical family")\n', '("William Byrd and John Bull", "were friends of", "Magdalen Herbert")\n', '("George Herbert", "played the lute and viol", "lute and viol")\n', '("Henry Purcell", "had settings of", "George Herbert\'s poems")\n', '("George Herbert", "is commemorated in", "Westminster Abbey")\n', '("George Herbert", "projected in", "The Remains of that Sweet Singer of The Temple")\n', '("George Herbert", "has a collection of foreign proverbs in", "Outlandish Proverbs")\n']
+range(1, 138) 2
+{'id': '1_12', 'Question': " Which playwright's works were greatly respected by the person who discovered the cattle problem attributed to a famous Greek mathematician?\n", 'Answer': 'William Shakespeare', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Michael Drayton'}, {'label': 'B', 'text': 'John Dryden'}, {'label': 'C', 'text': 'Ben Jonson'}, {'label': 'D', 'text': 'William Shakespeare'}, {'label': 'E', 'text': 'George Herbert'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'draytonian'}, {'label': 'B', 'text': 'john_dryden'}, {'label': 'C', 'text': 'ben_jonson'}, {'label': 'D', 'text': 'william_shakespeare'}, {'label': 'E', 'text': 'wreath'}], 'answerKey': 'D', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who discovered the cattle problem attributed to a famous Greek mathematician? \nA1: Gotthold Ephraim Lessing\n\n', "2: Which famed playwright's works were greatly respected by Gotthold Ephraim Lessing? \nA2: William Shakespeare"], 'Hops_wiki': [('Archimedes', 'Gotthold Ephraim Lessing'), ('Gotthold Ephraim Lessing', 'William Shakespeare')], 'Hops_cpnet': [('archimedes', 'gotthold_ephraim_lessing'), ('gotthold_ephraim_lessing', 'william_shakespeare')], 'Triplets': ['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")'], 'Referred_files': [{'name': 'Gotthold Ephraim Lessing', 'line': 6}, {'name': 'Gotthold Ephraim Lessing', 'line': 10}], 'Question_triplet_answer': {100: [82, 121], 50: [46, 83], 25: [35, 83]}}
+time passed:  4024.273706674576
+Expected dollar:  0.005
+George Herbert" is People
+Auden is People
+Dryden is People
+Gotthold Ephraim Lessing is People
+Breslau is Geography
+England is Geography
+Kings Charles I and II is People
+Edmund Spenser is People
+University of Oxford is Geography
+Nuneaton is Geography
+Salisbury is Geography
+Michael Drayton is People
+Internet Archive is Geography
+Poets' Corner in Westminster Abbey is Geography
+French Academy is Geography
+Harvard is Geography
+Shakespeare is People
+Scotland is Geography
+Henry Fielding's is People
+Tom Jones is People
+John Milton is People
+Andrew Marvell is People
+Cromwell is People
+Horace is People
+Jonathan Swift is People
+Horace, Ovid, is People
+Lucretius is People
+Theocritus is People
+Virgil is People
+Leipzig is Geography
+Berlin is Geography
+Henry Purcell is People
+George Herbert's is People
+John Donne is People
+Ben Jonson is People
+Great Britain is Geography
+Westminster School is Geography
+John Dryden is People
+Glorious John is People
+Walter Scott is People
+The Muses' Elizium is People
+Royal Society is Geography
+Fürstenschule St. Afra is People
+George Herbert is People
+Mendelssohn is People
+Bemerton is Geography
+Aldwincle is Geography
+Alexander Pope" is People
+Royal Society of Arts is Geography
+Nicholas Ferrar is People
+Trinity College is Geography
+Cambridge is Geography
+Lady Elizabeth is People
+Henry Vaughan is People
+entities:  {'Jonson', 'Shakespeare', 'Afra', 'Leipzig', 'Ferrar', 'Archimedes', 'George', 'Lucretius', 'Jones', 'Cromwell', 'Mendelssohn', 'Ovid,', 'John', 'Horace', 'Swift', 'Nuneaton', 'Westminster', "Muses'", 'Ovid', 'Aldwincle', 'Bullen', 'Royal', 'Auden', 'William', 'Theocritus', 'Charles', 'Purcell', 'Milton', 'Great', 'Breslau', 'James', 'Elizium', 'Herbert', "Herbert's", 'Salisbury', 'England', 'Ephraim', 'School', 'Academy', 'Jonathan', 'Pope"', 'II', 'Pope', 'Bemerton', 'Andrew', 'Arts', 'Gotthold', 'Spenser', 'Henry', 'Glorious', 'Walter', 'Drayton', 'Edmund', 'Oxford', 'Abbey', 'Harvard', 'Nicholas', 'Ben', 'Alexander', 'Leighton', 'French', 'Trinity', 'University', 'College', 'Dryden', 'Scott', 'Buxton', 'Society', 'Donne', 'Fürstenschule', 'Herbert"', 'St.', 'Michael', 'Lady', 'Scotland', 'Cambridge', 'Kings', "Poets'", 'Lessing', 'Vaughan', 'Archive', 'Marvell', 'Corner', 'Edward', 'Tom', 'Internet', 'Horace,', 'Virgil', 'Britain', 'Richard', 'Elizabeth', 'Montgomery', "Fielding's", 'Berlin'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'George Herbert' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ George Herbert
+Auden
+Gotthold Ephraim Lessing
+Henry Herbert
+Michael Drayton
+Henry Purcell
+Wordsworth
+Dryden
+Drayton
+Shakespeare
+Elizabeth I
+John Buxton
+Jonathan Swift
+Felix
+Spinoza
+John Milton
+Andrew Marvell
+Mendelssohn
+Barnabas Oley
+Spinoza
+Poly-Olbion
+Bemerton
+Mendelssohn
+John Dryden
+Philip Sidney
+Nicholas Ferrar
+Lady Elizabeth
+Henry Vaughan
+
+gpt_entity_particular(): entity list: 
+ ['George Herbert', 'Shakespeare', 'Drayton', 'Elizabeth I', 'Gotthold Ephraim Lessing', 'Henry Herbert', 'Barnabas Oley', 'Spinoza', 'Michael Drayton', 'Mendelssohn', 'Poly-Olbion', 'John Dryden', 'Dryden', 'Andrew Marvell', 'Auden', 'Henry Vaughan', 'Jonathan Swift', 'Henry Purcell', 'Felix', 'Nicholas Ferrar', 'Lady Elizabeth', 'Wordsworth', 'John Milton', 'Philip Sidney', 'Bemerton', 'John Buxton']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'John Dryden' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Michael Drayton
+Henry Herbert
+George Herbert
+Edmund Spenser
+Barnabas Oley
+Michael Drayton
+Jonathan Swift
+Horace
+John Donne
+Ben Jonson
+Archimedes
+Felix
+Sir Henry Goodere
+Spinoza
+Shakespeare
+three orphaned nieces
+Royal Society of Arts
+King James
+Trinity College, Cambridge
+Lady Elizabeth
+
+gpt_entity_particular(): entity list: 
+ ['George Herbert', 'Edmund Spenser', 'Shakespeare', 'Ben Jonson', 'Archimedes', 'Barnabas Oley', 'King James', 'Henry Herbert', 'Sir Henry Goodere', 'Spinoza', 'Michael Drayton', 'Horace', 'Jonathan Swift', 'Felix', 'Lady Elizabeth', 'John Donne', 'Royal Society of Arts', 'Trinity College, Cambridge', 'three orphaned nieces']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ben Jonson' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ George Herbert
+John Dryden
+Gotthold Ephraim Lessing
+Michael Drayton
+Henry Herbert
+Edmund Spenser
+Henry Fielding
+Jonathan Swift
+William Shakespeare
+Samuel Taylor Coleridge
+James I
+Felix Mendelssohn
+Elizabeth I
+Archimedes
+Horace
+Thomas Breton
+Andreas Gryphius
+Barnabas Oley
+Henry Goodere
+Alexander Pope
+Nicholas Ferrar
+King James
+Lady Elizabeth
+Richard Herbert
+Jane
+Montgomery
+Lection
+Salisbury
+College
+University of Oxford
+Westminster School
+Trinity College, Cambridge
+Royal Society
+Breslau
+Hartshill
+Westminster Abbey
+Tenbury
+Leighton
+Fugglestone St Peter
+Meissen
+Berlin
+Leipzig
+Brunswick
+Fürstenschule St. Afra
+The Muses' Elizium
+A Priest to the Temple
+Outlandish Proverbs
+
+gpt_entity_particular(): entity list: 
+ ['George Herbert', 'Edmund Spenser', 'Richard Herbert', 'Fürstenschule St. Afra', 'Elizabeth I', 'Leipzig', 'Henry Fielding', 'Gotthold Ephraim Lessing', 'Archimedes', 'Westminster School', 'Henry Herbert', 'Barnabas Oley', 'King James', 'Hartshill', 'Meissen', 'Michael Drayton', 'Leighton', 'Outlandish Proverbs', 'Felix Mendelssohn', 'Horace', 'John Dryden', 'College', 'Samuel Taylor Coleridge', 'Henry Goodere', 'Fugglestone St Peter', 'Tenbury', 'Jonathan Swift', 'Nicholas Ferrar', 'Westminster Abbey', 'A Priest to the Temple', 'Lady Elizabeth', 'Alexander Pope', 'Breslau', "The Muses' Elizium", 'Lection', 'Montgomery', 'Andreas Gryphius', 'Royal Society', 'Salisbury', 'Thomas Breton', 'University of Oxford', 'Jane', 'Trinity College, Cambridge', 'William Shakespeare', 'Brunswick', 'James I', 'Berlin']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'William Shakespeare' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ George Herbert
+William Shakespeare
+Shakespeare
+Drayton
+Kings Charles I
+Edmund Spenser
+University of Oxford
+Church of England
+Hartshill
+Project Gutenberg
+Westminster Abbey
+Salisbury
+Montgomery
+John Buxton
+King James I
+Richard Herbert
+Chaucer
+Scotland
+King Charles I
+Fugglestone St Peter
+Charles I
+Ideas
+Ben Jonson
+Westminster Abbey
+Jane
+Montgomery
+Montgomery
+Westminster School
+John Dryden
+Royal Society
+Elizabeth I
+Richard Herbert
+John Dryden
+George Herbert's
+Lady Elizabeth
+
+gpt_entity_particular(): entity list: 
+ ['George Herbert', "George Herbert's", 'Shakespeare', 'Drayton', 'Edmund Spenser', 'Richard Herbert', 'Ben Jonson', 'Elizabeth I', 'Westminster School', 'Church of England', 'Hartshill', 'John Dryden', 'King James I', 'Fugglestone St Peter', 'Westminster Abbey', 'Lady Elizabeth', 'Charles I', 'Scotland', 'Chaucer', 'King Charles I', 'Royal Society', 'Salisbury', 'University of Oxford', 'Jane', 'Kings Charles I', 'William Shakespeare', 'John Buxton', 'Project Gutenberg', 'Montgomery', 'Ideas']
+
+gpt_entity_particular(): filtered entity: 
+ ['Shakespeare']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gotthold Ephraim Lessing' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+
+gpt_entity_particular(): entity list: 
+ ['Gotthold Ephraim Lessing']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Archimedes' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ George Herbert
+George Herbert
+Henry Herbert
+George Herbert
+George Herbert
+Michael Drayton
+Michael Drayton
+George Herbert
+Michael Drayton
+George Herbert
+George Herbert
+Gotthold Ephraim Lessing
+Michael Drayton
+George Herbert
+Michael Drayton
+George Herbert
+Dryden
+Gotthold Ephraim Lessing
+Michael Drayton
+George Herbert
+Michael Drayton
+Gotthold Ephraim Lessing
+Michael Drayton
+Gotthold Ephraim Lessing
+George Herbert
+George Herbert
+George Herbert
+Michael Drayton
+Drayton's poems
+George Herbert's mother
+George Herbert
+Michael Drayton
+Dryden
+Gotthold Ephraim Lessing
+George Herbert
+George Herbert
+George Herbert
+Michael Drayton
+George Herbert
+George Herbert
+Michael Drayton
+George Herbert
+Michael Drayton
+Gotthold Ephraim Lessing
+George Herbert
+Drayton's sonnets
+George Herbert
+Michael Drayton
+Drayton's poems
+George Herbert
+George Herbert
+George Herbert
+Gotthold Ephraim Lessing
+Michael Drayton
+George Herbert
+George Herbert
+George Herbert
+Michael Drayton
+George Herbert
+Dryden
+Gotthold Ephraim Lessing
+Wordsworth
+Michael Drayton
+Michael Drayton
+Gotthold Ephraim Lessing
+Dryden
+Gotthold Ephraim Lessing
+Edward Herbert
+Mendelssohn's grandson
+Michael Drayton
+Michael Drayton
+George Herbert
+George Herbert
+Michael Drayton
+Works by Michael Drayton
+Gotthold Ephraim Lessing
+Poly-Olbion
+George Herbert
+Barnabas Oley
+George Herbert
+Dryden
+George Herbert
+Drayton's sonnets
+George Herbert
+Henry Purcell
+George Herbert
+George Herbert
+George Herbert
+Henry Purcell
+George Herbert
+John Dryden
+Gotthold Ephraim Lessing
+Gotthold Ephraim Lessing
+George Herbert
+Michael Drayton
+Michael Drayton
+Dryden
+Alexander Pope
+Michael Drayton
+Royal Society of Arts
+Henry Purcell
+George Herbert
+Michael Drayton
+Nicholas Ferrar
+George Herbert
+Dryden
+Henry Vaughan
+George Herbert
+George Herbert
+
+gpt_entity_particular(): entity list: 
+ ['Edward Herbert', 'George Herbert', 'Gotthold Ephraim Lessing', 'Henry Herbert', 'Barnabas Oley', 'Michael Drayton', 'Poly-Olbion', 'John Dryden', 'Dryden', "Drayton's poems", 'Henry Vaughan', 'Nicholas Ferrar', 'Henry Purcell', 'Alexander Pope', "George Herbert's mother", 'Wordsworth', 'Royal Society of Arts', "Drayton's sonnets", 'Works by Michael Drayton', "Mendelssohn's grandson"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Michael Drayton' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Michael Drayton
+Michael Drayton
+Michael Drayton
+Michael Drayton
+Michael Drayton
+Michael Drayton
+Michael Drayton
+Michael Drayton
+Works by Michael Drayton
+Works by Michael Drayton
+Works by Michael Drayton
+Works by Michael Drayton
+Drayton's poems
+Drayton's sonnets
+
+gpt_entity_particular(): entity list: 
+ ["Drayton's sonnets", 'Works by Michael Drayton', 'Michael Drayton', "Drayton's poems"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Jonson', 'Shakespeare', 'Afra', 'Leipzig', 'Ferrar', 'Archimedes', 'George', 'Lucretius', 'Jones', 'Cromwell', 'Mendelssohn', 'Ovid,', 'John', 'Horace', 'Swift', 'Nuneaton', 'Westminster', "Muses'", 'Ovid', 'Aldwincle', 'Bullen', 'Royal', 'Auden', 'William', 'Theocritus', 'Charles', 'Purcell', 'Milton', 'Great', 'Breslau', 'James', 'Elizium', 'Herbert', "Herbert's", 'Salisbury', 'England', 'Ephraim', 'School', 'Academy', 'Jonathan', 'Pope"', 'II', 'Pope', 'Bemerton', 'Andrew', 'Arts', 'Gotthold', 'Spenser', 'Henry', 'Glorious', 'Walter', 'Drayton', 'Edmund', 'Oxford', 'Abbey', 'Harvard', 'Nicholas', 'Ben', 'Alexander', 'Leighton', 'French', 'Trinity', 'University', 'College', 'Dryden', 'Scott', 'Buxton', 'Society', 'Donne', 'Fürstenschule', 'Herbert"', 'St.', 'Michael', 'Lady', 'Scotland', 'Cambridge', 'Kings', "Poets'", 'Lessing', 'Vaughan', 'Archive', 'Marvell', 'Corner', 'Edward', 'Tom', 'Internet', 'Horace,', 'Virgil', 'Britain', 'Richard', 'Elizabeth', 'Montgomery', "Fielding's", 'Berlin'}
+Total time:  227.9112355709076
+Entity conversion done on 1_12 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_1_12_entity_conversion_hash.json. Check the entity.
+ Which playwright's works were greatly respected by the person who discovered the cattle problem attributed to a famous Greek mathematician?
+
+
+
+Done. Check final_query/id_1_12_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_1_12_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_1_12_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_1_12_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_1_12_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_1_12_final_result_ratio25_unmasked.txt

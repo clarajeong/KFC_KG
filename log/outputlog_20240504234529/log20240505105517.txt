@@ -1,0 +1,19 @@
+Got argument: Immanuel Kant, 3, 3_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second1_hop:  {'triplet': '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")', 'start word': 'Kaliningrad', 'end word': 'Königsberg', 'source': {'name': 'Kaliningrad', 'line': 21}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'königsberg'}}
+
+utils/question.py extract_hops(Kaliningrad, ['Königsberg'], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second2_hop:  {'triplet': '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")', 'start word': 'Kaliningrad', 'end word': 'Lithuanian Soviet Socialist Republic', 'source': {'name': 'Kaliningrad', 'line': 24}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'lithuanian_soviet_socialist_republic'}}
+generate_question(3_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")'], ['Immanuel Kant', 'Kaliningrad', 'Kaliningrad'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Königsberg'), ('Kaliningrad', 'Lithuanian Soviet Socialist Republic')], Immanuel Kant, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 21}, {'name': 'Kaliningrad', 'line': 24}]) called
+GPT output is:  Q: Which philosopher is interred in the city that was once known as Königsberg during the Weimar Germany period and was allegedly offered to the Lithuanian SSR?
+A: Immanuel Kant
+final_choice(Immanuel Kant, options = 5) started
+[]
+entity_type(Immanuel Kant) called

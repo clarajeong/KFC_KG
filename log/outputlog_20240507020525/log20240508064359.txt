@@ -1,0 +1,1542 @@
+Got argument: Seoul, 3, 3_5
+
+utils/question.py extract_hops(Seoul, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Seoul_info.json file
+first_hop:  {'triplet': '("Seoul", "was occupied by", "the Japanese Empire")', 'start word': 'Seoul', 'end word': 'Empire of Japan', 'source': {'name': 'Seoul', 'line': 8}, 'cpnet': {'start word': 'seoul', 'end word': 'empire_of_japan'}}
+
+utils/question.py extract_hops(Empire of Japan, [], ['Seoul']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Empire_of_Japan_info.json file
+extract_info(Empire of Japan) Start.
+utils/preprocess.py extract_info(): Checking good links on Empire of Japan
+Japanese archipelago is Geography
+1 / 30 )  Japanese archipelago Japanese archipelago japanese_archipelago
+Nazi Germany is Geography
+2 / 30 )  Nazi Germany Nazi Germany nazi_germany
+Nanjing Massacre is Geography
+3 / 30 )  Nanjing Massacre Nanjing Massacre rape_of_nanking
+Battle of Midway is Geography
+4 / 30 )  Midway Atoll Battle of Midway battle_of_midway
+Guadalcanal campaign is Geography
+5 / 30 )  Guadalcanal Guadalcanal campaign battle_of_guadalcanal
+United States is Geography
+6 / 30 )  United States United States united_states
+Iwo Jima is Geography
+7 / 30 )  Iwo Jima Iwo Jima iwo_jima
+Okinawa Island is Geography
+8 / 30 )  Okinawa Island Okinawa Island okinawa_island
+Soviet Union is Geography
+9 / 30 )  Soviet Union Soviet Union soviet_union
+Douglas MacArthur is People
+10 / 30 )  Douglas MacArthur Douglas MacArthur douglas_macarthur
+Japan is Geography
+11 / 30 )  Japan Japan japan
+Emperor Meiji is People
+12 / 30 )  Meiji Emperor Meiji emperor_meiji
+Hirohito is People
+13 / 30 )  Shōwa Hirohito hirohito
+Matthew C. Perry is People
+14 / 30 )  Matthew C. Perry Matthew C. Perry matthew_calbraith_perry
+Namamugi Incident is Geography
+15 / 30 )  Namamugi Incident Namamugi Incident namamugi_incident
+Kagoshima is Geography
+16 / 30 )  Kagoshima Kagoshima kagoshima
+Shimonoseki is Geography
+17 / 30 )  Shimonoseki Shimonoseki shimonoseki
+Kinmon incident is Geography
+18 / 30 )  Kinmon incident Kinmon incident hamaguri_rebellion
+Kyoto is Geography
+19 / 30 )  Kyoto Kyoto kyoto
+Edo Castle is Geography
+20 / 30 )  Edo Castle Edo Castle edo_castle
+Battle of Hakodate is Geography
+21 / 30 )  siege of Hakodate Battle of Hakodate battle_of_hakodate
+Kuril Islands is Geography
+22 / 30 )  Kuril islands Kuril Islands kuril_islands
+Sakhalin is Geography
+23 / 30 )  Sakhalin island Sakhalin sakhalin
+Fukuzawa Yukichi is Geography
+24 / 30 )  Fukuzawa Yukichi Fukuzawa Yukichi fukuzawa_yukichi
+Russian Orthodox Church is Geography
+25 / 30 )  Russian Orthodox Church Russian Orthodox Church russian_orthodox_church
+Hakodate is Geography
+26 / 30 )  Hakodate Hakodate hakodate
+Ningbo is Geography
+27 / 30 )  Ningbo Ningbo ningbo
+Hōryū-ji is Geography
+28 / 30 )  Horyuji temple Hōryū-ji hōryūji
+National Diet is Geography
+29 / 30 )  Imperial Diet National Diet national_diet
+Joseon is Geography
+30 / 30 )  Joseon dynasty Joseon joseon
+extract_triplet(Empire of Japan)
+Got GPT's response. String length : 747
+subject_words:  [(None, 'Empire of Japan', 'empire_of_japan'), ['Japan', 'Japan', 'japan']]
+object_words:  [['Nazi Germany', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Empire of Japan', 'empire_of_japan'), ['Japan', 'Japan', 'japan']]
+object_words:  [['Nanjing Massacre', 'Nanjing Massacre', 'rape_of_nanking']]
+subject_words:  [(None, 'Empire of Japan', 'empire_of_japan'), ['Japan', 'Japan', 'japan']]
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  [['Iwo Jima', 'Iwo Jima', 'iwo_jima'], ['Okinawa Island', 'Okinawa Island', 'okinawa_island']]
+object_words:  []
+subject_words:  [['Soviet Union', 'Soviet Union', 'soviet_union']]
+object_words:  []
+subject_words:  [['Douglas MacArthur', 'Douglas MacArthur', 'douglas_macarthur']]
+object_words:  [['Japan', 'Japan', 'japan']]
+subject_words:  [['Japan', 'Japan', 'japan']]
+object_words:  [['Meiji', 'Emperor Meiji', 'emperor_meiji']]
+subject_words:  [['Shōwa', 'Hirohito', 'hirohito']]
+object_words:  []
+second1_hop:  {'triplet': '("Northern Mariana Islands", "were under control of", "Japanese")', 'start word': 'Empire of Japan', 'end word': 'Northern Mariana Islands', 'source': {'name': 'Northern Mariana Islands', 'line': 6}, 'cpnet': {'start word': 'empire_of_japan', 'end word': 'northern_mariana_islands'}}
+
+utils/question.py extract_hops(Empire of Japan, ['Northern Mariana Islands'], ['Seoul']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Empire_of_Japan_info.json file
+second2_hop:  {'triplet': '("Northern Mariana Islands", "were under control of", "Japanese")', 'start word': 'Empire of Japan', 'end word': 'Mariana Islands', 'source': {'name': 'Northern Mariana Islands', 'line': 6}, 'cpnet': {'start word': 'empire_of_japan', 'end word': 'mariana_islands'}}
+generate_question(3_5, ['("Seoul", "was occupied by", "the Japanese Empire")', '("Northern Mariana Islands", "were under control of", "Japanese")', '("Northern Mariana Islands", "were under control of", "Japanese")'], ['Seoul', 'Empire of Japan', 'Empire of Japan'], [('Seoul', 'Empire of Japan'), ('Empire of Japan', 'Northern Mariana Islands'), ('Empire of Japan', 'Mariana Islands')], Seoul, [{'name': 'Seoul', 'line': 8}, {'name': 'Northern Mariana Islands', 'line': 6}, {'name': 'Northern Mariana Islands', 'line': 6}]) called
+GPT output is:  Q: Which city was occupied by the same empire that held sovereignty over the Northern Mariana Islands before both were under the control they had prior to World War II?
+A: Seoul
+final_choice(Seoul, options = 5) started
+[]
+entity_type(Seoul) called
+Seoul is Geography
+check_matchscore(Seoul, Special Cities and Metropolitan Cities of South Korea):  0.0
+choose_by_wiki_recur(Special Cities and Metropolitan Cities of South Korea)
+   Pages in Special Cities and Metropolitan Cities of South Korea: ['Busan', 'Daegu', 'Daejeon', 'Gwangju', 'Incheon', 'Seoul', 'Ulsan']
+      Busan in ['Busan', 'Incheon', 'Daegu', 'Daejeon']
+      Incheon in ['Busan', 'Incheon', 'Daegu', 'Daejeon']
+      Daegu in ['Busan', 'Incheon', 'Daegu', 'Daejeon']
+      Daejeon in ['Busan', 'Incheon', 'Daegu', 'Daejeon']
+['Busan', 'Incheon', 'Daegu', 'Daejeon']
+Ended after 2.5 hierarchy
+(2.5, ['Daegu', 'Incheon', 'Daejeon', 'Busan'])
+
+extract_info(Incheon) Start.
+utils/preprocess.py extract_info(): Checking good links on Incheon
+South Korea is Geography
+1 / 30 )  South Korea South Korea south_korea
+Seoul is Geography
+2 / 30 )  Seoul Seoul seoul
+Gyeonggi Province is Geography
+3 / 30 )  Gyeonggi Gyeonggi Province gyeonggi_province
+Busan is Geography
+4 / 30 )  Busan Busan busan
+List of largest cities is Geography
+5 / 30 )  metropolitan area by population List of largest cities big_cities
+Incheon Global Fair & Festival  is Geography
+6 / 30 )  Incheon Global Fair & Festival Incheon Global Fair & Festival  inchon
+Goguryeo is Geography
+7 / 30 )  Goguryeo Goguryeo goguryeo
+Goryeo is Geography
+8 / 30 )  Goryeo Goryeo goryeo
+North Korea is Geography
+9 / 30 )  North Korean North Korea north_korea
+Singapore is Geography
+10 / 30 )  Singapore Singapore singapore
+San Francisco is Geography
+11 / 30 )  San Francisco San Francisco san_francisco
+China is Geography
+12 / 30 )  China China china
+Dalian is Geography
+13 / 30 )  Dalian Dalian dalian
+Qingdao is Geography
+14 / 30 )  Qingdao Qingdao qingdao
+Tianjin is Geography
+15 / 30 )  Tianjin Tianjin tianjin
+Dandong is Geography
+16 / 30 )  Dandong Dandong dandong
+Weihai is Geography
+17 / 30 )  Weihai Weihai weihai
+Incheon is Geography
+18 / 30 )  Incheon station Incheon incheon
+New Delhi is Geography
+19 / 30 )  New Delhi New Delhi new_delhi
+extract_triplet(Incheon)
+Got GPT's response. String length : 1430
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  [['South Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  [['Seoul', 'Seoul', 'seoul'], ['Gyeonggi', 'Gyeonggi Province', 'gyeonggi_province']]
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  [['Seoul', 'Seoul', 'seoul'], ['Busan', 'Busan', 'busan']]
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  [['Seoul', 'Seoul', 'seoul']]
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  [['metropolitan area by population', 'List of largest cities', 'big_cities']]
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  [['Goryeo', 'Goryeo', 'goryeo']]
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  []
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  [['Singapore', 'Singapore', 'singapore'], ['San Francisco', 'San Francisco', 'san_francisco']]
+['', "Incheon's sea port offers ferries to", 'China', '']
+['', "Incheon's sea port offers ferries to cities such as", 'Dalian, Qingdao, Tianjin, Dandong, and Weihai', '']
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  []
+subject_words:  [(None, 'Incheon', 'incheon'), ['Incheon station', 'Incheon', 'incheon']]
+object_words:  [['Singapore', 'Singapore', 'singapore']]
+extract_info(Daejeon) Start.
+utils/preprocess.py extract_info(): Checking good links on Daejeon
+South Korea is Geography
+1 / 30 )  South Korea South Korea south_korea
+Seoul is Geography
+2 / 30 )  Seoul Seoul seoul
+KAIST is Geography
+3 / 30 )  Korea Advanced Institute of Science and Technology KAIST kaist
+Chungnam National University is Geography
+4 / 30 )  Chungnam National University Chungnam National University chungnam_national_university
+Joseon is Geography
+5 / 30 )  Joseon Kingdom Joseon joseon
+Busan is Geography
+6 / 30 )  Busan Busan busan
+Gwangju is Geography
+7 / 30 )  Gwangju Gwangju gwangju
+Yellow Sea is Geography
+8 / 30 )  Yellow Sea Yellow Sea yellow_sea
+Daejeon is Geography
+9 / 30 )  Daejeon Artist House Daejeon daejeon
+Daecheonghosu  is Geography
+10 / 30 )  Daecheonghosu Daecheonghosu  daejeon_metropolitan_city
+South Chungcheong Province is Geography
+11 / 30 )  South Chungcheong South Chungcheong Province south_chungcheong_province
+extract_triplet(Daejeon)
+Got GPT's response. String length : 2766
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [['South Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [['Korea Advanced Institute of Science and Technology', 'KAIST', 'kaist']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [['Chungnam National University', 'Chungnam National University', 'chungnam_national_university']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [['South Chungcheong', 'South Chungcheong Province', 'south_chungcheong_province']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [['Yellow Sea', 'Yellow Sea', 'yellow_sea']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [['Chungnam National University', 'Chungnam National University', 'chungnam_national_university']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  [['South Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Daejeon', 'daejeon'), ['Daejeon Artist House', 'Daejeon', 'daejeon']]
+object_words:  []
+extract_info(Busan) Start.
+utils/preprocess.py extract_info(): Checking good links on Busan
+South Korea is Geography
+1 / 30 )  South Korea South Korea south_korea
+Seoul is Geography
+2 / 30 )  Seoul Seoul seoul
+Goryeo is Geography
+3 / 30 )  Goryeo Goryeo goryeo
+Joseon is Geography
+4 / 30 )  Joseon Joseon joseon
+Korea is Geography
+5 / 30 )   Korea korea
+Korean Empire is Geography
+6 / 30 )  Korean Empire Korean Empire korean_empire
+Ulsan is Geography
+7 / 30 )  Ulsan Ulsan ulsan
+Daegu is Geography
+8 / 30 )  Daegu Daegu daegu
+South Gyeongsang Province is Geography
+9 / 30 )  Gyeongsangnam-do South Gyeongsang Province south_gyeongsang_province
+Changwon is Geography
+10 / 30 )  Changwon Changwon changwon
+Korea Strait is Geography
+11 / 30 )  Korea Strait Korea Strait korea_strait
+Tsushima Island is Geography
+12 / 30 )  Tsushima Tsushima Island tsushima_island
+Japan is Geography
+13 / 30 )  Japan Japan japan
+Fukuoka is Geography
+14 / 30 )  Fukuoka Fukuoka fukuoka
+Jeju Island is Geography
+15 / 30 )  Jeju-do Jeju Island jejudo
+Singapore is Geography
+16 / 30 )  Singapore Singapore singapore
+India is Geography
+17 / 30 )  India India india
+Mombasa is Geography
+18 / 30 )  Mombasa Mombasa mombasa
+Red Sea is Geography
+19 / 30 )  Red Sea Red Sea red_sea
+Suez Canal is Geography
+20 / 30 )  Suez Canal Suez Canal suez_canal
+Mediterranean Sea is Geography
+21 / 30 )  Mediterranean Mediterranean Sea mediterranean_sea
+Adriatic Sea is Geography
+22 / 30 )  Upper Adriatic Adriatic Sea adriatic_sea
+Trieste is Geography
+23 / 30 )  Trieste Trieste trieste
+North Sea is Geography
+24 / 30 )  North Sea North Sea north_sea
+Cannes is Geography
+25 / 30 )  Cannes Cannes cannes
+France is Geography
+26 / 30 )  France France france
+Wong Kar-wai is People
+27 / 30 )  Wong Kar-wai Wong Kar-wai wong_kar_wai
+Pyeongchang County is Geography
+28 / 30 )  Pyeongchang Pyeongchang County pyeongchang
+Tokyo is Geography
+29 / 30 )  Tokyo Tokyo tokyo
+East Timor is Geography
+30 / 30 )  East Timor East Timor east_timor
+extract_triplet(Busan)
+Got GPT's response. String length : 4458
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [['Seoul', 'Seoul', 'seoul']]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [['South Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  []
+object_words:  [['Daegu', 'Daegu', 'daegu']]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [['Japan', 'Japan', 'japan']]
+subject_words:  [(None, 'Busan', 'busan'), ['Fukuoka', 'Fukuoka', 'fukuoka']]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [['South Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  []
+object_words:  [['India', 'India', 'india'], ['Red Sea', 'Red Sea', 'red_sea'], ['Suez Canal', 'Suez Canal', 'suez_canal'], ['Upper Adriatic', 'Adriatic Sea', 'adriatic_sea'], ['Trieste', 'Trieste', 'trieste'], ['North Sea', 'North Sea', 'north_sea']]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [['', 'Korea', 'korea']]
+object_words:  [(None, 'Busan', 'busan')]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Busan', 'busan')]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [(None, 'Busan', 'busan')]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [(None, 'Busan', 'busan')]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [(None, 'Busan', 'busan')]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+['', 'Busan', 'hosts a variety of antique and souvenir shops, restaurants, attractions, and accommodations', '']
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Busan', 'busan')]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [(None, 'Busan', 'busan')]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [(None, 'Busan', 'busan')]
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  [(None, 'Busan', 'busan')]
+['', 'Busan', 'has multiple festivals throughout the year', '']
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+subject_words:  [(None, 'Busan', 'busan')]
+object_words:  []
+extract_info(Daegu) Start.
+utils/preprocess.py extract_info(): Checking good links on Daegu
+South Korea is Geography
+1 / 30 )  South Korea South Korea south_korea
+Seoul is Geography
+2 / 30 )  Seoul Seoul seoul
+Busan is Geography
+3 / 30 )  Busan Busan busan
+North Gyeongsang Province is Geography
+4 / 30 )  North Gyeongsang Province North Gyeongsang Province north_gyeongsang_province
+Korea is Geography
+5 / 30 )  Korean Peninsula Korea korea
+Joseon is Geography
+6 / 30 )  Joseon dynasty Joseon joseon
+Goguryeo is Geography
+7 / 30 )  Goguryeo Goguryeo goguryeo
+Goryeo is Geography
+8 / 30 )  Goryeo Goryeo goryeo
+Tripitaka Koreana is Geography
+9 / 30 )  Tripitaka Koreana Tripitaka Koreana tripitaka_koreana
+Jinju is Geography
+10 / 30 )  Jinju Jinju jinju
+Ulsan is Geography
+11 / 30 )  Ulsan Ulsan ulsan
+South Gyeongsang Province is Geography
+12 / 30 )  Gyeongsangnam-do South Gyeongsang Province south_gyeongsang_province
+Bukseongno  is Geography
+13 / 30 )  Bukseongno Bukseongno  taegu
+Dongseongno  is Geography
+14 / 30 )  Dongseongno Dongseongno  taegu
+Korean Empire is Geography
+15 / 30 )  Korean Empire Korean Empire korean_empire
+Park Chung Hee is People
+16 / 30 )  Park Chung Hee Park Chung Hee park_chung_hee
+Chun Doo-hwan is People
+17 / 30 )  Chun Doo-hwan Chun Doo-hwan chun_doo_hwan
+Error: Expecting value: line 1 column 1 (char 0)
+Park Geun-hye is People
+18 / 30 )  Park Geun-hye Park Geun-hye park_geun_hye
+Hwasung corp.  is Geography
+19 / 30 )  Hwasung corp. Hwasung corp.  taegu
+Pohang is Geography
+20 / 30 )  Pohang Pohang pohang
+Pyongyang is Geography
+21 / 30 )  Pyongyang Pyongyang pyongyang
+Buinsa  is Geography
+22 / 30 )  Buinsa Buinsa  taegu
+Gyeongsang-gamyeong  is Geography
+23 / 30 )  Gyeongsang-gamyeong Gyeongsang-gamyeong  taegu
+Yeongnam-jeilmun  is Geography
+24 / 30 )  Yeongnam-jeilmun Yeongnam-jeilmun  taegu
+Mangudang Park  is Geography
+25 / 30 )  Mangudang Park Mangudang Park  taegu
+Gyesan Cathedral  is Geography
+26 / 30 )  Gyesan Cathedral Gyesan Cathedral  taegu
+Daegu Tower  is Geography
+27 / 30 )  Daegu Tower Daegu Tower  taegu
+Daegu-eupseong  is Geography
+28 / 30 )  Daegu-eupseong Daegu-eupseong  taegu
+Daegu International Bodypainting Festival  is Geography
+29 / 30 )  Daegu International Bodypainting Festival Daegu International Bodypainting Festival  taegu
+Moscow is Geography
+30 / 30 )  Moscow Moscow moscow
+extract_triplet(Daegu)
+Got GPT's response. String length : 15113
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['South Korea', 'South Korea', 'south_korea'], ['Korean Peninsula', 'Korea', 'korea']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['South Korea', 'South Korea', 'south_korea'], ['Seoul', 'Seoul', 'seoul'], ['Busan', 'Busan', 'busan'], ['Korean Peninsula', 'Korea', 'korea']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [(None, 'Daegu', 'daegu'), ['North Gyeongsang Province', 'North Gyeongsang Province', 'north_gyeongsang_province']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [['Korean Peninsula', 'Korea', 'korea']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Joseon dynasty', 'Joseon', 'joseon']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+['', "Daegu's Dongcheon-dong", 'contains remains of prehistoric pit-houses and agricultural fields', '']
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [['Goguryeo', 'Goguryeo', 'goguryeo']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Tripitaka Koreana', 'Tripitaka Koreana', 'tripitaka_koreana'], ['Buinsa', 'Buinsa ', 'taegu']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Joseon dynasty', 'Joseon', 'joseon']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+['', "Daegu's streets where the old fortress wall stood are named", 'Bukseongno, Namseongno, Dongseongno and Seoseongno', '']
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Park Chung Hee', 'Park Chung Hee', 'park_chung_hee']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Hwasung corp.', 'Hwasung corp. ', 'taegu']]
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Korean Peninsula', 'Korea', 'korea']]
+subject_words:  [['Pohang', 'Pohang', 'pohang']]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Buinsa', 'Buinsa ', 'taegu']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [['Mangudang Park', 'Mangudang Park ', 'taegu']]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Gyesan Cathedral', 'Gyesan Cathedral ', 'taegu']]
+subject_words:  [['Gyesan Cathedral', 'Gyesan Cathedral ', 'taegu']]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu'), ['Daegu Tower', 'Daegu Tower ', 'taegu']]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [['Dongseongno', 'Dongseongno ', 'taegu']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu'), ['Daegu International Bodypainting Festival', 'Daegu International Bodypainting Festival ', 'taegu']]
+object_words:  [['Korean Peninsula', 'Korea', 'korea']]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [['Korean Peninsula', 'Korea', 'korea']]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Daegu', 'daegu')]
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  []
+subject_words:  [(None, 'Daegu', 'daegu')]
+object_words:  [['Korean Peninsula', 'Korea', 'korea']]
+subject_words:  []
+object_words:  []
+['', 'Daegu', 'has primary, secondary, and international schools like Daegu']
+['("Seoul", "was occupied by", "the Japanese Empire")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n', '("Daejeon", "located in", "central lowland valley")\n', '("Daejeon", "known for", "technology and research institutions")\n', '("Daejeon", "has a hub of", "transportation")\n', '("Daejeon", "is administration hub of", "South Korea")\n', '("Daejeon", "is home to", "Korea Advanced Institute of Science and Technology")\n', '("Daejeon", "is home to", "Chungnam National University")\n', '("Daejeon", "was historically a collection of", "small riverside villages")\n', '("Daejeon", "developed as a rail hub during", "Japanese occupation")\n', '("Daejeon", "made part of", "South Chungcheong")\n', '("Daejeon", "historically known as", "Hanbat")\n', '("Daejeon", "had", "Japanese cultural influence")\n', '("Daejeon", "is situated in a lowland valley", "three major rivers")\n', '("Daejeon", "rivers flow into", "Yellow Sea")\n', '("Daejeon", "experiences", "monsoon-influenced climate")\n', '("Daejeon", "divided into five political districts", "Seogu, Donggu, Yuseonggu, Daedeokgu, and Junggu")\n', '("Daejeon", "is the fifth most populous city in", "Korea")\n', '("Daejeon", "has registered foreign residents from", "Vietnam and China")\n', '("Daejeon", "specializes in biotechnology at", "Chungnam National University")\n', '("Daejeon", "has KAIST", "internationally accredited in business education")\n', '("Daejeon", "known as the research and development hub of", "Korea")\n', '("Daejeon", "home to government research institutions", "")\n', '("Daejeon", "selected as the core of", "International Science and Business Belt")\n', '("Daejeon", "home to Hankook Tire\'s", "main R&D centre")\n', '("Daejeon", "hosts", "technology-oriented modern and contemporary exhibitions")\n', '("Daejeon", "home to", "Daejeon Philharmonic Orchestra")\n', '("Daejeon", "features", "Institute for Basic Science")\n', '("Daejeon", "citizens are recognized for fondness of", "nature")\n', '("Daejeon", "has", "Daecheonhosu")\n', '("Daejeon", "has parks like", "Bomunsan Mountain park")\n', '("Daejeon", "provides", "television, newspaper and publishing industries")\n', '("Daejeon", "home to", "Daejeon Science Festival")\n', '("Daejeon", "has sports facilities like", "Daejeon World Cup Stadium")\n', '("Daejeon", "home of Hanwha Eagles", "KBO League baseball team")\n', '("Daejeon", "center of transportation in", "South Korea")\n', '("Daejeon", "public bicycle service is called", "타슈(Tashu)")\n', '("Busan", "is South Korea\'s", "second most populous city after Seoul")\n', '("Busan", "is the economic, cultural and educational center of", "southeastern South Korea")\n', '("Busan\'s port", "is", "South Korea\'s busiest and the sixth-busiest in the world")\n', '("Busan", "has an area called", "Southeastern Maritime Industrial Region")\n', '("Southeastern Maritime Industrial Region", "includes", "Ulsan, South Gyeongsang, Daegu")\n', '("Busan", "is situated between", "the Nakdong and the Suyeong Rivers")\n', '("Busan", "is famously known for", "the Battle of the Pusan Perimeter")\n', '("Busan", "is a center for", "international conventions")\n', '("Busan", "is home to", "the world\'s largest department store, the Shinsegae Centum City")\n', '("Busan", "was formerly romanized as", "Pusan")\n', '("Busan\'s Sino-Korean name", "is", "\'Cauldron Mountain\'")\n', '("Busan", "is located on the southeastern tip of", "the Korean Peninsula")\n', '("Busan", "borders", "low mountains on the north and west, and the seas on the south and east")\n', '("Nakdong River", "is", "South Korea\'s longest river")\n', '("Busan", "has", "Haeundae Beach, the country\'s largest")\n', '("Busan", "is part of", "Yeongnam region")\n', '("Busan", "is the closest Korean area to", "Tsushima, Japan")\n', '("Busan and Fukuoka", "are", "sister cities")\n', '("Busan", "has a cooler version of a", "humid subtropical climate")\n', '("Busan", "is most prone to", "typhoons in South Korea")\n', '("Busan", "is a maritime logistics hub in", "Northeast Asia")\n', '("Maritime Silk Road", "runs from the Chinese coast to", "Singapore, towards the southern tip of India to Mombasa, through the Red Sea via the Suez Canal to the Mediterranean, to the Upper Adriatic region to Trieste with connections to Central Europe and the North Sea")\n', '("Busan", "is known for its global", "MICE industry")\n', '("Korea Exchange", "headquartered in", "Busan")\n', '("Busan", "is home to", "major financial institutions")\n', '("Seomyeon and Gwangbok-dong/Nampo-dong", "are Busan\'s", "largest central business districts")\n', '("Shinsegae Centum City", "is in", "Busan")\n', '("Westin Chosun Busan, Paradise Busan, and Park Hyatt Busan", "are major hotels in", "Busan")\n', '("Busan", "has educational institutions like", "Busan University of Foreign Studies and Pusan National University")\n', '("Busan", "is known as the summer capital of", "Korea")\n', '("Busan", "attracts tourists to its", "six beaches")\n', '("Busan", "is home to", "Busan International Film Festival and Busan Biennale")\n', '("Busan International Film Festival", "is one of the most popular", "international film festivals in Asia")\n', '("Busan", "has a variety of", "parks, beaches, and highlights")\n', '("Taejongdae", "is", "a natural park in Busan")\n', '("Busan", "has historical sites like", "Beomeosa Temple and Busanjinjiseong Fortress")\n', '("Busan", "is the backdrop for films like", "Black Panther and Train to Busan")\n', '("Busan IPark", "is a", "K League football club in Busan")\n', '("Busan", "has many hospitals and clinics, especially in", "Seomyeon medical street")\n', '("Busan", "is served by", "Gimhae International Airport")\n', '("Busan", "has sister city relationships with", "several coastal cities around the world")\n', '("Busan", "is home to celebrities like", "actor Ahn Bohyun and singer Kang Daniel")\n', '("Daegu", "formerly spelled as", "Taegu")\n', '("Daegu Metropolitan City", "is located in", "southeastern South Korea")\n', '("Daegu", "is the third-largest urban agglomeration in", "South Korea after Seoul and Busan")\n', '("Daegu", "is often referred to with", "North Gyeongsang Province as Daegu-Gyeongbuk")\n', '("Daegu", "forms the central plain of the", "Yeongnam region")\n', '("Daegu", "was part of the proto-kingdom", "Jinhan")\n', '("Daegu", "came under control of the", "Silla Kingdom")\n', '("Silla Kingdom", "unified the", "Korean Peninsula")\n', '("Daegu", "was the capital of Gyeongsang-do during the", "Joseon dynasty")\n', '("Daegu", "is nicknamed", "Apple City")\n', '("Daegu", "is also known as", "Textile City")\n', '("Daegu", "focuses on fostering fashion and high-tech industries in the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "was part of the", "Mumun pottery period")\n', '("Daegu", "was known as", "Dalgubeol during the Proto–Three Kingdoms period")\n', '("Silla", "considered moving the capital to", "Daegu")\n', '("Daegu", "contains the historical site", "Dongcheon-dong")\n', '("Daegu", "has megalithic burials known as", "dolmens")\n', '("Daegu", "was the site of the chiefdom or walled-town polity known as", "Dalgubeol")\n', '("Daegu", "was absorbed into the kingdom of", "Silla")\n', '("Daegu", "contains relics at", "Dalseong Park")\n', '("Silla", "unified the Korean peninsula by defeating kingdoms like", "Baekje and Goguryeo")\n', '("Daegu", "has the remains of a large-scale fortified Silla site in", "Dongcheon-dong, Buk-gu")\n', '("Daegu", "has the Silla village dating to the sixth to seventh centuries at", "Siji-dong")\n', '("Daegu", "was initially aligned with Later Baekje during the", "Later Three Kingdoms period")\n', '("Daegu", "was the site of the Battle of Gong Mountain during the", "Later Three Kingdoms period")\n', '("Daegu", "had the first edition of the", "Tripitaka Koreana stored at the temple of Buinsa")\n', '("Daegu", "was a transportation center during the", "Joseon dynasty")\n', '("Daegu", "was the administrative capital of the", "Gyeongsang-do")\n', '("Daegu", "has a herbal medicine market called", "Yangnyeongsi")\n', '("Daegu", "was influenced by", "Japanese imperialism")\n', '("Daegu", "became the site of one of the first modern post offices during the", "\'Gab-o\' reforms")\n', '("Daegu", "was a modern transportation center of the newly constructed", "Gyeongbu Line main railroad")\n', '("Daegu", "organized the National Debt Repayment Movement led by", "Seo Sang-don")\n', '("Daegu", "remained in South Korean hands during the", "Korean War")\n', '("Daegu", "was known as the Battle of Taegu along the", "Nakdong River")\n', '("Daegu", "was politically favored during the rule of", "Park Chung Hee")\n', '("Daegu", "is a political base for the", "Saenuri Party")\n', '("Daegu", "produced four Presidents of South Korea", "Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye")\n', '("Daegu", "has strong political influence in elections as a capital of Korean conservatives", "")\n', '("Daegu", "separated from Gyeongsangbuk-do and became an independently administered city", "")\n', '("Daegu", "is the third-largest metropolitan area in Korea in terms of", "population and commerce")\n', '("Daegu Metropolitan Government", "is located in", "Jung District")\n', '("Gyeongbuk Provincial Government", "was to be relocated to", "Andong")\n', '("Daegu", "is a stronghold of the People Power Party", "")\n', '("Daegu", "has two local governments within the city", "")\n', '("Daegu", "sits in a basin surrounded by low mountains like", "Palgongsan, Biseulsan, Waryongsan")\n', '("Geumho River", "flows along the northern and eastern edges of", "Daegu")\n', '("Daegu", "lies in a humid subtropical climate zone according to", "Köppen climate classification")\n', '("Daegu", "has a warm temperate moist forest climate in", "Holdridge climate classification")\n', '("Daegu", "traps hot and humid air in summers because of the mountains that comprise the basin", "")\n', '("Daegu", "has little precipitation except during the rainy season and is sunny throughout much of the year", "")\n', '("Daegu", "has an emergence of the term", "Daefrica due to high temperatures")\n', '("Gunwi County", "has a colder winter than other areas of", "Daegu")\n', '("Daegu", "is a", "manufacturing industry city")\n', '("Daegu", "houses companies like Daegu Bank and", "Hwasung corp.")\n', '("Samsung and Kolon", "were founded in", "Daegu")\n', '("Daegu-Gyeongbuk region", "is one of the", "major industrial areas in Korea")\n', '("Gumi and Pohang", "provide great services to the surplus with their", "electronics and steel industries")\n', '("Daegu", "and its neighbouring cities were designated for the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "is the commercial center of the southern part of the Korean Peninsula with Seoul in the center and Pyongyang in the north", "")\n', '("Daegu", "has a decline in the textile industry, which is the heart of its economy", "")\n', '("Daegu", "has a warm climate that provides the region with", "high quality apples and oriental melons")\n', '("Daegu", "has been focusing on revitalizing its economy and improving the city\'s fashion industry", "")\n', '("Daegu", "has been actively promoting its fashion industry based on its textile and clothing manufacturing industries", "")\n', '("Daegu", "hosts exhibitions like Daegu Fashion Fair and Preview in Daegu related to fashion and textile", "")\n', '("Esiapolis", "is a large new town specializing in the textile-fashion industries under construction in", "Bongmu-dong, northeastern Daegu")\n', '("Daegu", "is known as a conservative city", "")\n', '("Daegu", "has many temples due to the strong presence of", "Buddhism")\n', '("Daegu", "has an academy based on", "Confucianism")\n', '("Christian churches in Daegu", "have neon cross-topped spires", "")\n', '("Gatbawi", "is the most well-known sight of the city and is located at the top of", "Gwanbong, Palgongsan")\n', '("People from all over the country", "visit Gatbawi because they believe that the Buddha", "will grant one\'s single desire")\n', '("Daegu", "is located near traditional temples like", "Donghwasa, Pagyesa, and Buinsa")\n', '("Daegu", "contains lecture halls as well as", "Dodong-seowon and Nokdong-seowon")\n', '("Daegu", "preserves old villages such as the", "Otgol village and the Inheung village")\n', '("Daegu", "has Joseon dynasty\'s administrative buildings like", "Gyeongsang-gamyeong and Daegu-hyanggyo")\n', '("Mangudang Park", "restored the main gateway of Daegu during the Joseon period called", "Yeongnam-jeilmun")\n', '("Daegu", "has western style modern architecture like", "Gyesan Cathedral and the old building of Jeil Church")\n', '("Gyesan Cathedral", "is the third oldest gothic church building in Korea and the cathedral of the", "Roman Catholic Archdiocese of Daegu")\n', '("Daegu", "is near Haeinsa—a Buddhist temple that houses the Tripitaka Koreana", "")\n', '("Mt. Palgong, Mt. Biseul, and Mt. Ap", "are representative mountains in", "Daegu")\n', '("Apsan", "has trails, Buddhist temples, a Korean War museum, and a gondola ride to the peak and is located in", "the southern part of Daegu")\n', '("Daegu", "has neighborhood parks such as", "Waryongsan, Hamjisan, and Yongjibong")\n', '("Duryu Park", "has Daegu Tower, Woobang Land, Kolon Bandstand, Duryu Stadium, and sports facilities", "")\n', '("Duryu Park", "is a large forest in the middle of the urban area of", "Daegu")\n', '("Daegu Tower", "is the tallest contemporary structure and a symbol of", "Daegu")\n', '("Woobang Land", "is the largest amusement park outside the capital area", "")\n', '("National Debt Repayment Movement Memorial Park", "includes Dalgubeol-daejong, which is the Dalgubeol grand bell", "")\n', '("Daegu", "has a botanical garden with a variety of plants and flowers", "")\n', '("Dongseongno", "is the downtown of Daegu and stretches from Daegu Station to the central police station near Banwoldang subway station", "")\n', '("Kyungpook National University in Buk-gu", "is surrounded by amusement spots", "")\n', '("Deuran-gil in Suseong-gu", "is known for many restaurants", "")\n', '("Daegu", "hosts department stores including chains and the local Daegu Department Store", "")\n', '("Seomun Market and Chilseong Market", "are traditional markets in Daegu selling all sorts of goods", "")\n', '("Daegu", "hosts many traditional ceremonies and festivals like the Seokjeondaeje", "")\n', '("Daegu-hyanggyo", "hosts a Confucian ritual ceremony called Seokjeondaeje every spring and autumn", "")\n', '("Yangnyeongsi herb medical festival and Otgol village festival", "are contemporary festivals about traditional culture in", "Daegu")\n', '("Daegu", "has growing enthusiasm for performing arts and events like Daegu International Opera Festival (DIOF) and Daegu International Musical Festival (DIMF)", "")\n', '("Daegu International Bodypainting Festival (DIBF)", "is one of the most famous festivals of its kind in", "Korea")\n', '("Daegu", "hosts festivals throughout the year, like the Colorful Daegu Festival, Dongseongno festival, and Palgongsan maple festival", "")\n', '("Daegu International Jazz Festival", "is held every year in", "Daegu")\n', '("Colorful Daegu Festival", "offers performances and art programs including the", "Colorful Parade")\n', '("Daegu Chimac Festival", "takes place at Duryu Park in Dalseo-gu", "")\n', '("Daegu", "has the term \'chimac\' as a portmanteau of chicken and maekju (meaning \'beer\')", "")\n', '("Daegu cuisine", "is similar to that consumed in the", "Yeongnam region")\n', '("Daegu", "is known for unique dishes such as Ttaro-gukbap and Mungtigi", "")\n', '("Daegu Art Museum", "is located in", "Daegu")\n', '("Daegu National Museum", "is a national museum collecting relics excavated in and around", "Daegu")\n', '("Daegu", "has museums like Daegu Bangjja Yugi (Korean Bronzeware) Museum and", "Hengso Museum of Keimyung University")\n', '("Daegu Opera House", "is known for performing opera as the first theater in Korea", "")\n', '("Daegu", "has cultural and arts centers like Suseong Artpia and Keimyung Art Center", "")\n', '("Daegu", "competed with cities like Moscow, Russia, and Brisbane, Australia", "")\n', '("Daegu", "has hosted worldwide sports events and is home to the Colorful Daegu Pre-Championships Meeting annually", "")\n', '("Daegu Stadium", "is the second largest sports complex in South Korea", "")\n', '("Daegu Marathon", "is held every year in April starting and ending at the", "Daegu Stadium")\n', '("Samsung Lions", "are a professional baseball team based in Daegu", "")\n', '("Daegu", "is served by broadcasting stations like KBS Daegu Broadcast Station, Daegu MBC, and TBC", "")\n', '("Daegu", "is largely a homogeneous community that includes few non-Koreans", "")\n', '("Daegu", "has immigrants from South and Southeast Asia working in automotive-parts factories", "")\n', '("Daegu", "has English-speaking Westerners working in English schools and university programs", "")\n', '("Daegu", "hosts three American military bases including Camp Henry, Camp George, and Camp Walker", "")\n', '("Daegu", "has challenges with the construction of a mosque in", "Daehyeon-dong")\n', '("Daegu", "experienced opposition and controversy over the mosque construction from nearby residents", "")\n', '("The National Human Rights Commission of Korea", "judged the suspension of mosque construction as based on discrimination and prejudice against Muslims", "")\n', '("Daegu\'s", "Mosque Controversy involved insulting and offensive actions near the construction site", "")\n', '("Daegu", "has educational institutions like Daegu Science High School and", "Taegu Foreign Language High School")\n', '("Daegu", "has schools with high educational grades such as Keisung Academy and Gyeongsin High School", "")\n', '("Daegu", "houses universities and colleges in the Gyeongsan city which serves as a college town for the region", "")\n', '("Kyungpook National University (KNU)", "is a highly ranked national university in", "Daegu")\n', '("DGIST (Daegu Gyeongbuk Institute of Science and Technology)", "is recognized as one of Korea\'s top universities in the field of science and technology", "")\n', '("Daegu", "has prestigious private universities like Yeungnam University (YU) and Keimyung University", "")\n', '("Daegu National University of Education", "offers elementary education training", "")\n', '("Daegu", "has tertiary hospitals making the city the medical hub of", "south-eastern Korea")\n', '("Dongsan Hospital", "is one of the oldest western-style medical clinics in Korea", "")\n']
+range(1, 290) 3
+['("Seoul", "was occupied by", "the Japanese Empire")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n', '("Daejeon", "located in", "central lowland valley")\n', '("Daejeon", "known for", "technology and research institutions")\n', '("Daejeon", "has a hub of", "transportation")\n', '("Daejeon", "is administration hub of", "South Korea")\n', '("Daejeon", "is home to", "Korea Advanced Institute of Science and Technology")\n', '("Daejeon", "is home to", "Chungnam National University")\n', '("Daejeon", "was historically a collection of", "small riverside villages")\n', '("Daejeon", "developed as a rail hub during", "Japanese occupation")\n', '("Daejeon", "made part of", "South Chungcheong")\n', '("Daejeon", "historically known as", "Hanbat")\n', '("Daejeon", "had", "Japanese cultural influence")\n', '("Daejeon", "is situated in a lowland valley", "three major rivers")\n', '("Daejeon", "rivers flow into", "Yellow Sea")\n', '("Daejeon", "experiences", "monsoon-influenced climate")\n', '("Daejeon", "divided into five political districts", "Seogu, Donggu, Yuseonggu, Daedeokgu, and Junggu")\n', '("Daejeon", "is the fifth most populous city in", "Korea")\n', '("Daejeon", "has registered foreign residents from", "Vietnam and China")\n', '("Daejeon", "specializes in biotechnology at", "Chungnam National University")\n', '("Daejeon", "has KAIST", "internationally accredited in business education")\n', '("Daejeon", "known as the research and development hub of", "Korea")\n', '("Daejeon", "home to government research institutions", "")\n', '("Daejeon", "selected as the core of", "International Science and Business Belt")\n', '("Daejeon", "home to Hankook Tire\'s", "main R&D centre")\n', '("Daejeon", "hosts", "technology-oriented modern and contemporary exhibitions")\n', '("Daejeon", "home to", "Daejeon Philharmonic Orchestra")\n', '("Daejeon", "features", "Institute for Basic Science")\n', '("Daejeon", "citizens are recognized for fondness of", "nature")\n', '("Daejeon", "has", "Daecheonhosu")\n', '("Daejeon", "has parks like", "Bomunsan Mountain park")\n', '("Daejeon", "provides", "television, newspaper and publishing industries")\n', '("Daejeon", "home to", "Daejeon Science Festival")\n', '("Daejeon", "has sports facilities like", "Daejeon World Cup Stadium")\n', '("Daejeon", "home of Hanwha Eagles", "KBO League baseball team")\n', '("Daejeon", "center of transportation in", "South Korea")\n', '("Daejeon", "public bicycle service is called", "타슈(Tashu)")\n', '("Busan", "is South Korea\'s", "second most populous city after Seoul")\n', '("Busan", "is the economic, cultural and educational center of", "southeastern South Korea")\n', '("Busan\'s port", "is", "South Korea\'s busiest and the sixth-busiest in the world")\n', '("Busan", "has an area called", "Southeastern Maritime Industrial Region")\n', '("Southeastern Maritime Industrial Region", "includes", "Ulsan, South Gyeongsang, Daegu")\n', '("Busan", "is situated between", "the Nakdong and the Suyeong Rivers")\n', '("Busan", "is famously known for", "the Battle of the Pusan Perimeter")\n', '("Busan", "is a center for", "international conventions")\n', '("Busan", "is home to", "the world\'s largest department store, the Shinsegae Centum City")\n', '("Busan", "was formerly romanized as", "Pusan")\n', '("Busan\'s Sino-Korean name", "is", "\'Cauldron Mountain\'")\n', '("Busan", "is located on the southeastern tip of", "the Korean Peninsula")\n', '("Busan", "borders", "low mountains on the north and west, and the seas on the south and east")\n', '("Nakdong River", "is", "South Korea\'s longest river")\n', '("Busan", "has", "Haeundae Beach, the country\'s largest")\n', '("Busan", "is part of", "Yeongnam region")\n', '("Busan", "is the closest Korean area to", "Tsushima, Japan")\n', '("Busan and Fukuoka", "are", "sister cities")\n', '("Busan", "has a cooler version of a", "humid subtropical climate")\n', '("Busan", "is most prone to", "typhoons in South Korea")\n', '("Busan", "is a maritime logistics hub in", "Northeast Asia")\n', '("Maritime Silk Road", "runs from the Chinese coast to", "Singapore, towards the southern tip of India to Mombasa, through the Red Sea via the Suez Canal to the Mediterranean, to the Upper Adriatic region to Trieste with connections to Central Europe and the North Sea")\n', '("Busan", "is known for its global", "MICE industry")\n', '("Korea Exchange", "headquartered in", "Busan")\n', '("Busan", "is home to", "major financial institutions")\n', '("Seomyeon and Gwangbok-dong/Nampo-dong", "are Busan\'s", "largest central business districts")\n', '("Shinsegae Centum City", "is in", "Busan")\n', '("Westin Chosun Busan, Paradise Busan, and Park Hyatt Busan", "are major hotels in", "Busan")\n', '("Busan", "has educational institutions like", "Busan University of Foreign Studies and Pusan National University")\n', '("Busan", "is known as the summer capital of", "Korea")\n', '("Busan", "attracts tourists to its", "six beaches")\n', '("Busan", "is home to", "Busan International Film Festival and Busan Biennale")\n', '("Busan International Film Festival", "is one of the most popular", "international film festivals in Asia")\n', '("Busan", "has a variety of", "parks, beaches, and highlights")\n', '("Taejongdae", "is", "a natural park in Busan")\n', '("Busan", "has historical sites like", "Beomeosa Temple and Busanjinjiseong Fortress")\n', '("Busan", "is the backdrop for films like", "Black Panther and Train to Busan")\n', '("Busan IPark", "is a", "K League football club in Busan")\n', '("Busan", "has many hospitals and clinics, especially in", "Seomyeon medical street")\n', '("Busan", "is served by", "Gimhae International Airport")\n', '("Busan", "has sister city relationships with", "several coastal cities around the world")\n', '("Busan", "is home to celebrities like", "actor Ahn Bohyun and singer Kang Daniel")\n', '("Daegu", "formerly spelled as", "Taegu")\n', '("Daegu Metropolitan City", "is located in", "southeastern South Korea")\n', '("Daegu", "is the third-largest urban agglomeration in", "South Korea after Seoul and Busan")\n', '("Daegu", "is often referred to with", "North Gyeongsang Province as Daegu-Gyeongbuk")\n', '("Daegu", "forms the central plain of the", "Yeongnam region")\n', '("Daegu", "was part of the proto-kingdom", "Jinhan")\n', '("Daegu", "came under control of the", "Silla Kingdom")\n', '("Silla Kingdom", "unified the", "Korean Peninsula")\n', '("Daegu", "was the capital of Gyeongsang-do during the", "Joseon dynasty")\n', '("Daegu", "is nicknamed", "Apple City")\n', '("Daegu", "is also known as", "Textile City")\n', '("Daegu", "focuses on fostering fashion and high-tech industries in the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "was part of the", "Mumun pottery period")\n', '("Daegu", "was known as", "Dalgubeol during the Proto–Three Kingdoms period")\n', '("Silla", "considered moving the capital to", "Daegu")\n', '("Daegu", "contains the historical site", "Dongcheon-dong")\n', '("Daegu", "has megalithic burials known as", "dolmens")\n', '("Daegu", "was the site of the chiefdom or walled-town polity known as", "Dalgubeol")\n', '("Daegu", "was absorbed into the kingdom of", "Silla")\n', '("Daegu", "contains relics at", "Dalseong Park")\n', '("Silla", "unified the Korean peninsula by defeating kingdoms like", "Baekje and Goguryeo")\n', '("Daegu", "has the remains of a large-scale fortified Silla site in", "Dongcheon-dong, Buk-gu")\n', '("Daegu", "has the Silla village dating to the sixth to seventh centuries at", "Siji-dong")\n', '("Daegu", "was initially aligned with Later Baekje during the", "Later Three Kingdoms period")\n', '("Daegu", "was the site of the Battle of Gong Mountain during the", "Later Three Kingdoms period")\n', '("Daegu", "had the first edition of the", "Tripitaka Koreana stored at the temple of Buinsa")\n', '("Daegu", "was a transportation center during the", "Joseon dynasty")\n', '("Daegu", "was the administrative capital of the", "Gyeongsang-do")\n', '("Daegu", "has a herbal medicine market called", "Yangnyeongsi")\n', '("Daegu", "was influenced by", "Japanese imperialism")\n', '("Daegu", "became the site of one of the first modern post offices during the", "\'Gab-o\' reforms")\n', '("Daegu", "was a modern transportation center of the newly constructed", "Gyeongbu Line main railroad")\n', '("Daegu", "organized the National Debt Repayment Movement led by", "Seo Sang-don")\n', '("Daegu", "remained in South Korean hands during the", "Korean War")\n', '("Daegu", "was known as the Battle of Taegu along the", "Nakdong River")\n', '("Daegu", "was politically favored during the rule of", "Park Chung Hee")\n', '("Daegu", "is a political base for the", "Saenuri Party")\n', '("Daegu", "produced four Presidents of South Korea", "Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye")\n', '("Daegu", "has strong political influence in elections as a capital of Korean conservatives", "")\n', '("Daegu", "separated from Gyeongsangbuk-do and became an independently administered city", "")\n', '("Daegu", "is the third-largest metropolitan area in Korea in terms of", "population and commerce")\n', '("Daegu Metropolitan Government", "is located in", "Jung District")\n', '("Gyeongbuk Provincial Government", "was to be relocated to", "Andong")\n', '("Daegu", "is a stronghold of the People Power Party", "")\n', '("Daegu", "has two local governments within the city", "")\n', '("Daegu", "sits in a basin surrounded by low mountains like", "Palgongsan, Biseulsan, Waryongsan")\n', '("Geumho River", "flows along the northern and eastern edges of", "Daegu")\n', '("Daegu", "lies in a humid subtropical climate zone according to", "Köppen climate classification")\n', '("Daegu", "has a warm temperate moist forest climate in", "Holdridge climate classification")\n', '("Daegu", "traps hot and humid air in summers because of the mountains that comprise the basin", "")\n', '("Daegu", "has little precipitation except during the rainy season and is sunny throughout much of the year", "")\n', '("Daegu", "has an emergence of the term", "Daefrica due to high temperatures")\n', '("Gunwi County", "has a colder winter than other areas of", "Daegu")\n', '("Daegu", "is a", "manufacturing industry city")\n', '("Daegu", "houses companies like Daegu Bank and", "Hwasung corp.")\n', '("Samsung and Kolon", "were founded in", "Daegu")\n', '("Daegu-Gyeongbuk region", "is one of the", "major industrial areas in Korea")\n', '("Gumi and Pohang", "provide great services to the surplus with their", "electronics and steel industries")\n', '("Daegu", "and its neighbouring cities were designated for the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "is the commercial center of the southern part of the Korean Peninsula with Seoul in the center and Pyongyang in the north", "")\n', '("Daegu", "has a decline in the textile industry, which is the heart of its economy", "")\n', '("Daegu", "has a warm climate that provides the region with", "high quality apples and oriental melons")\n', '("Daegu", "has been focusing on revitalizing its economy and improving the city\'s fashion industry", "")\n', '("Daegu", "has been actively promoting its fashion industry based on its textile and clothing manufacturing industries", "")\n', '("Daegu", "hosts exhibitions like Daegu Fashion Fair and Preview in Daegu related to fashion and textile", "")\n', '("Esiapolis", "is a large new town specializing in the textile-fashion industries under construction in", "Bongmu-dong, northeastern Daegu")\n', '("Daegu", "is known as a conservative city", "")\n', '("Daegu", "has many temples due to the strong presence of", "Buddhism")\n', '("Daegu", "has an academy based on", "Confucianism")\n', '("Christian churches in Daegu", "have neon cross-topped spires", "")\n', '("Gatbawi", "is the most well-known sight of the city and is located at the top of", "Gwanbong, Palgongsan")\n', '("People from all over the country", "visit Gatbawi because they believe that the Buddha", "will grant one\'s single desire")\n', '("Daegu", "is located near traditional temples like", "Donghwasa, Pagyesa, and Buinsa")\n', '("Daegu", "contains lecture halls as well as", "Dodong-seowon and Nokdong-seowon")\n', '("Daegu", "preserves old villages such as the", "Otgol village and the Inheung village")\n', '("Daegu", "has Joseon dynasty\'s administrative buildings like", "Gyeongsang-gamyeong and Daegu-hyanggyo")\n', '("Mangudang Park", "restored the main gateway of Daegu during the Joseon period called", "Yeongnam-jeilmun")\n', '("Daegu", "has western style modern architecture like", "Gyesan Cathedral and the old building of Jeil Church")\n', '("Gyesan Cathedral", "is the third oldest gothic church building in Korea and the cathedral of the", "Roman Catholic Archdiocese of Daegu")\n', '("Daegu", "is near Haeinsa—a Buddhist temple that houses the Tripitaka Koreana", "")\n', '("Mt. Palgong, Mt. Biseul, and Mt. Ap", "are representative mountains in", "Daegu")\n', '("Apsan", "has trails, Buddhist temples, a Korean War museum, and a gondola ride to the peak and is located in", "the southern part of Daegu")\n', '("Daegu", "has neighborhood parks such as", "Waryongsan, Hamjisan, and Yongjibong")\n', '("Duryu Park", "has Daegu Tower, Woobang Land, Kolon Bandstand, Duryu Stadium, and sports facilities", "")\n', '("Duryu Park", "is a large forest in the middle of the urban area of", "Daegu")\n', '("Daegu Tower", "is the tallest contemporary structure and a symbol of", "Daegu")\n', '("Woobang Land", "is the largest amusement park outside the capital area", "")\n', '("National Debt Repayment Movement Memorial Park", "includes Dalgubeol-daejong, which is the Dalgubeol grand bell", "")\n', '("Daegu", "has a botanical garden with a variety of plants and flowers", "")\n', '("Dongseongno", "is the downtown of Daegu and stretches from Daegu Station to the central police station near Banwoldang subway station", "")\n', '("Kyungpook National University in Buk-gu", "is surrounded by amusement spots", "")\n', '("Deuran-gil in Suseong-gu", "is known for many restaurants", "")\n', '("Daegu", "hosts department stores including chains and the local Daegu Department Store", "")\n', '("Seomun Market and Chilseong Market", "are traditional markets in Daegu selling all sorts of goods", "")\n', '("Daegu", "hosts many traditional ceremonies and festivals like the Seokjeondaeje", "")\n', '("Daegu-hyanggyo", "hosts a Confucian ritual ceremony called Seokjeondaeje every spring and autumn", "")\n', '("Yangnyeongsi herb medical festival and Otgol village festival", "are contemporary festivals about traditional culture in", "Daegu")\n', '("Daegu", "has growing enthusiasm for performing arts and events like Daegu International Opera Festival (DIOF) and Daegu International Musical Festival (DIMF)", "")\n', '("Daegu International Bodypainting Festival (DIBF)", "is one of the most famous festivals of its kind in", "Korea")\n', '("Daegu", "hosts festivals throughout the year, like the Colorful Daegu Festival, Dongseongno festival, and Palgongsan maple festival", "")\n', '("Daegu International Jazz Festival", "is held every year in", "Daegu")\n', '("Colorful Daegu Festival", "offers performances and art programs including the", "Colorful Parade")\n', '("Daegu Chimac Festival", "takes place at Duryu Park in Dalseo-gu", "")\n', '("Daegu", "has the term \'chimac\' as a portmanteau of chicken and maekju (meaning \'beer\')", "")\n', '("Daegu cuisine", "is similar to that consumed in the", "Yeongnam region")\n', '("Daegu", "is known for unique dishes such as Ttaro-gukbap and Mungtigi", "")\n', '("Daegu Art Museum", "is located in", "Daegu")\n', '("Daegu National Museum", "is a national museum collecting relics excavated in and around", "Daegu")\n', '("Daegu", "has museums like Daegu Bangjja Yugi (Korean Bronzeware) Museum and", "Hengso Museum of Keimyung University")\n', '("Daegu Opera House", "is known for performing opera as the first theater in Korea", "")\n', '("Daegu", "has cultural and arts centers like Suseong Artpia and Keimyung Art Center", "")\n', '("Daegu", "competed with cities like Moscow, Russia, and Brisbane, Australia", "")\n', '("Daegu", "has hosted worldwide sports events and is home to the Colorful Daegu Pre-Championships Meeting annually", "")\n', '("Daegu Stadium", "is the second largest sports complex in South Korea", "")\n', '("Daegu Marathon", "is held every year in April starting and ending at the", "Daegu Stadium")\n', '("Samsung Lions", "are a professional baseball team based in Daegu", "")\n', '("Daegu", "is served by broadcasting stations like KBS Daegu Broadcast Station, Daegu MBC, and TBC", "")\n', '("Daegu", "is largely a homogeneous community that includes few non-Koreans", "")\n', '("Daegu", "has immigrants from South and Southeast Asia working in automotive-parts factories", "")\n', '("Daegu", "has English-speaking Westerners working in English schools and university programs", "")\n', '("Daegu", "hosts three American military bases including Camp Henry, Camp George, and Camp Walker", "")\n', '("Daegu", "has challenges with the construction of a mosque in", "Daehyeon-dong")\n', '("Daegu", "experienced opposition and controversy over the mosque construction from nearby residents", "")\n', '("The National Human Rights Commission of Korea", "judged the suspension of mosque construction as based on discrimination and prejudice against Muslims", "")\n', '("Daegu\'s", "Mosque Controversy involved insulting and offensive actions near the construction site", "")\n', '("Daegu", "has educational institutions like Daegu Science High School and", "Taegu Foreign Language High School")\n', '("Daegu", "has schools with high educational grades such as Keisung Academy and Gyeongsin High School", "")\n', '("Daegu", "houses universities and colleges in the Gyeongsan city which serves as a college town for the region", "")\n', '("Kyungpook National University (KNU)", "is a highly ranked national university in", "Daegu")\n', '("DGIST (Daegu Gyeongbuk Institute of Science and Technology)", "is recognized as one of Korea\'s top universities in the field of science and technology", "")\n', '("Daegu", "has prestigious private universities like Yeungnam University (YU) and Keimyung University", "")\n', '("Daegu National University of Education", "offers elementary education training", "")\n', '("Daegu", "has tertiary hospitals making the city the medical hub of", "south-eastern Korea")\n', '("Dongsan Hospital", "is one of the oldest western-style medical clinics in Korea", "")\n']
+range(1, 290) 3
+['("Seoul", "was occupied by", "the Japanese Empire")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n', '("Northern Mariana Islands", "were under control of", "Japanese")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n', '("Northern Mariana Islands", "is an unincorporated territory and commonwealth of", "the United States")\n', '("Northern Mariana Islands", "includes", "14 northernmost islands in the Mariana Archipelago")\n', '("Guam", "is the southernmost island of", "the Mariana Archipelago")\n', '("Northern Mariana Islands", "were under control of", "the Spanish")\n', '("Northern Mariana Islands", "were under control of", "German")\n', '("The United States Congress", "formally included", "Northern Mariana Islands as a territory in 1986")\n', '("United States citizens", "reside in", "Northern Mariana Islands")\n', '("Population of", "Northern Mariana Islands", "47,329 according to the 2020 United States Census")\n', '("Saipan", "has the administrative center", "Capitol Hill")\n', '("Northern Mariana Islands", "settled by people from", "the Philippines")\n', '("Northern Mariana Islands", "settled by people from", "the Caroline Islands")\n', '("Spain", "sold", "Northern Mariana Islands to Germany")\n', '("Japan", "administered", "Northern Mariana Islands under the League of Nations mandate")\n', '("United States", "liberated", "Northern Mariana Islands from Japanese in the Battle of Saipan in 1944")\n', '("Enola Gay", "took off from", "Tinian to drop atomic bomb on Hiroshima")\n', '("Northern Mariana Islands", "became commonwealth of", "the United States")\n', '("Northern Mariana Islands", "has a delegate in", "U.S. House of Representatives")\n', '("Economy relies on", "tourism and previously garment manufacturing", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "produces agricultural products such as", "tapioca, cattle, coconuts, and breadfruit")\n', '("Tinian", "known for agricultural production", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "member of", "World Trade Organization")\n', '("Superior Court of the Commonwealth of the Northern Mariana Islands", "is a judicial body in", "Northern Mariana Islands")\n', '("Northern Mariana Islands", "attended", "2016 Republican National Convention")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n', '("Daejeon", "located in", "central lowland valley")\n', '("Daejeon", "known for", "technology and research institutions")\n', '("Daejeon", "has a hub of", "transportation")\n', '("Daejeon", "is administration hub of", "South Korea")\n', '("Daejeon", "is home to", "Korea Advanced Institute of Science and Technology")\n', '("Daejeon", "is home to", "Chungnam National University")\n', '("Daejeon", "was historically a collection of", "small riverside villages")\n', '("Daejeon", "developed as a rail hub during", "Japanese occupation")\n', '("Daejeon", "made part of", "South Chungcheong")\n', '("Daejeon", "historically known as", "Hanbat")\n', '("Daejeon", "had", "Japanese cultural influence")\n', '("Daejeon", "is situated in a lowland valley", "three major rivers")\n', '("Daejeon", "rivers flow into", "Yellow Sea")\n', '("Daejeon", "experiences", "monsoon-influenced climate")\n', '("Daejeon", "divided into five political districts", "Seogu, Donggu, Yuseonggu, Daedeokgu, and Junggu")\n', '("Daejeon", "is the fifth most populous city in", "Korea")\n', '("Daejeon", "has registered foreign residents from", "Vietnam and China")\n', '("Daejeon", "specializes in biotechnology at", "Chungnam National University")\n', '("Daejeon", "has KAIST", "internationally accredited in business education")\n', '("Daejeon", "known as the research and development hub of", "Korea")\n', '("Daejeon", "home to government research institutions", "")\n', '("Daejeon", "selected as the core of", "International Science and Business Belt")\n', '("Daejeon", "home to Hankook Tire\'s", "main R&D centre")\n', '("Daejeon", "hosts", "technology-oriented modern and contemporary exhibitions")\n', '("Daejeon", "home to", "Daejeon Philharmonic Orchestra")\n', '("Daejeon", "features", "Institute for Basic Science")\n', '("Daejeon", "citizens are recognized for fondness of", "nature")\n', '("Daejeon", "has", "Daecheonhosu")\n', '("Daejeon", "has parks like", "Bomunsan Mountain park")\n', '("Daejeon", "provides", "television, newspaper and publishing industries")\n', '("Daejeon", "home to", "Daejeon Science Festival")\n', '("Daejeon", "has sports facilities like", "Daejeon World Cup Stadium")\n', '("Daejeon", "home of Hanwha Eagles", "KBO League baseball team")\n', '("Daejeon", "center of transportation in", "South Korea")\n', '("Daejeon", "public bicycle service is called", "타슈(Tashu)")\n', '("Busan", "is South Korea\'s", "second most populous city after Seoul")\n', '("Busan", "is the economic, cultural and educational center of", "southeastern South Korea")\n', '("Busan\'s port", "is", "South Korea\'s busiest and the sixth-busiest in the world")\n', '("Busan", "has an area called", "Southeastern Maritime Industrial Region")\n', '("Southeastern Maritime Industrial Region", "includes", "Ulsan, South Gyeongsang, Daegu")\n', '("Busan", "is situated between", "the Nakdong and the Suyeong Rivers")\n', '("Busan", "is famously known for", "the Battle of the Pusan Perimeter")\n', '("Busan", "is a center for", "international conventions")\n', '("Busan", "is home to", "the world\'s largest department store, the Shinsegae Centum City")\n', '("Busan", "was formerly romanized as", "Pusan")\n', '("Busan\'s Sino-Korean name", "is", "\'Cauldron Mountain\'")\n', '("Busan", "is located on the southeastern tip of", "the Korean Peninsula")\n', '("Busan", "borders", "low mountains on the north and west, and the seas on the south and east")\n', '("Nakdong River", "is", "South Korea\'s longest river")\n', '("Busan", "has", "Haeundae Beach, the country\'s largest")\n', '("Busan", "is part of", "Yeongnam region")\n', '("Busan", "is the closest Korean area to", "Tsushima, Japan")\n', '("Busan and Fukuoka", "are", "sister cities")\n', '("Busan", "has a cooler version of a", "humid subtropical climate")\n', '("Busan", "is most prone to", "typhoons in South Korea")\n', '("Busan", "is a maritime logistics hub in", "Northeast Asia")\n', '("Maritime Silk Road", "runs from the Chinese coast to", "Singapore, towards the southern tip of India to Mombasa, through the Red Sea via the Suez Canal to the Mediterranean, to the Upper Adriatic region to Trieste with connections to Central Europe and the North Sea")\n', '("Busan", "is known for its global", "MICE industry")\n', '("Korea Exchange", "headquartered in", "Busan")\n', '("Busan", "is home to", "major financial institutions")\n', '("Seomyeon and Gwangbok-dong/Nampo-dong", "are Busan\'s", "largest central business districts")\n', '("Shinsegae Centum City", "is in", "Busan")\n', '("Westin Chosun Busan, Paradise Busan, and Park Hyatt Busan", "are major hotels in", "Busan")\n', '("Busan", "has educational institutions like", "Busan University of Foreign Studies and Pusan National University")\n', '("Busan", "is known as the summer capital of", "Korea")\n', '("Busan", "attracts tourists to its", "six beaches")\n', '("Busan", "is home to", "Busan International Film Festival and Busan Biennale")\n', '("Busan International Film Festival", "is one of the most popular", "international film festivals in Asia")\n', '("Busan", "has a variety of", "parks, beaches, and highlights")\n', '("Taejongdae", "is", "a natural park in Busan")\n', '("Busan", "has historical sites like", "Beomeosa Temple and Busanjinjiseong Fortress")\n', '("Busan", "is the backdrop for films like", "Black Panther and Train to Busan")\n', '("Busan IPark", "is a", "K League football club in Busan")\n', '("Busan", "has many hospitals and clinics, especially in", "Seomyeon medical street")\n', '("Busan", "is served by", "Gimhae International Airport")\n', '("Busan", "has sister city relationships with", "several coastal cities around the world")\n', '("Busan", "is home to celebrities like", "actor Ahn Bohyun and singer Kang Daniel")\n', '("Daegu", "formerly spelled as", "Taegu")\n', '("Daegu Metropolitan City", "is located in", "southeastern South Korea")\n', '("Daegu", "is the third-largest urban agglomeration in", "South Korea after Seoul and Busan")\n', '("Daegu", "is often referred to with", "North Gyeongsang Province as Daegu-Gyeongbuk")\n', '("Daegu", "forms the central plain of the", "Yeongnam region")\n', '("Daegu", "was part of the proto-kingdom", "Jinhan")\n', '("Daegu", "came under control of the", "Silla Kingdom")\n', '("Silla Kingdom", "unified the", "Korean Peninsula")\n', '("Daegu", "was the capital of Gyeongsang-do during the", "Joseon dynasty")\n', '("Daegu", "is nicknamed", "Apple City")\n', '("Daegu", "is also known as", "Textile City")\n', '("Daegu", "focuses on fostering fashion and high-tech industries in the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "was part of the", "Mumun pottery period")\n', '("Daegu", "was known as", "Dalgubeol during the Proto–Three Kingdoms period")\n', '("Silla", "considered moving the capital to", "Daegu")\n', '("Daegu", "contains the historical site", "Dongcheon-dong")\n', '("Daegu", "has megalithic burials known as", "dolmens")\n', '("Daegu", "was the site of the chiefdom or walled-town polity known as", "Dalgubeol")\n', '("Daegu", "was absorbed into the kingdom of", "Silla")\n', '("Daegu", "contains relics at", "Dalseong Park")\n', '("Silla", "unified the Korean peninsula by defeating kingdoms like", "Baekje and Goguryeo")\n', '("Daegu", "has the remains of a large-scale fortified Silla site in", "Dongcheon-dong, Buk-gu")\n', '("Daegu", "has the Silla village dating to the sixth to seventh centuries at", "Siji-dong")\n', '("Daegu", "was initially aligned with Later Baekje during the", "Later Three Kingdoms period")\n', '("Daegu", "was the site of the Battle of Gong Mountain during the", "Later Three Kingdoms period")\n', '("Daegu", "had the first edition of the", "Tripitaka Koreana stored at the temple of Buinsa")\n', '("Daegu", "was a transportation center during the", "Joseon dynasty")\n', '("Daegu", "was the administrative capital of the", "Gyeongsang-do")\n', '("Daegu", "has a herbal medicine market called", "Yangnyeongsi")\n', '("Daegu", "was influenced by", "Japanese imperialism")\n', '("Daegu", "became the site of one of the first modern post offices during the", "\'Gab-o\' reforms")\n', '("Daegu", "was a modern transportation center of the newly constructed", "Gyeongbu Line main railroad")\n', '("Daegu", "organized the National Debt Repayment Movement led by", "Seo Sang-don")\n', '("Daegu", "remained in South Korean hands during the", "Korean War")\n', '("Daegu", "was known as the Battle of Taegu along the", "Nakdong River")\n', '("Daegu", "was politically favored during the rule of", "Park Chung Hee")\n', '("Daegu", "is a political base for the", "Saenuri Party")\n', '("Daegu", "produced four Presidents of South Korea", "Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye")\n', '("Daegu", "has strong political influence in elections as a capital of Korean conservatives", "")\n', '("Daegu", "separated from Gyeongsangbuk-do and became an independently administered city", "")\n', '("Daegu", "is the third-largest metropolitan area in Korea in terms of", "population and commerce")\n', '("Daegu Metropolitan Government", "is located in", "Jung District")\n', '("Gyeongbuk Provincial Government", "was to be relocated to", "Andong")\n', '("Daegu", "is a stronghold of the People Power Party", "")\n', '("Daegu", "has two local governments within the city", "")\n', '("Daegu", "sits in a basin surrounded by low mountains like", "Palgongsan, Biseulsan, Waryongsan")\n', '("Geumho River", "flows along the northern and eastern edges of", "Daegu")\n', '("Daegu", "lies in a humid subtropical climate zone according to", "Köppen climate classification")\n', '("Daegu", "has a warm temperate moist forest climate in", "Holdridge climate classification")\n', '("Daegu", "traps hot and humid air in summers because of the mountains that comprise the basin", "")\n', '("Daegu", "has little precipitation except during the rainy season and is sunny throughout much of the year", "")\n', '("Daegu", "has an emergence of the term", "Daefrica due to high temperatures")\n', '("Gunwi County", "has a colder winter than other areas of", "Daegu")\n', '("Daegu", "is a", "manufacturing industry city")\n', '("Daegu", "houses companies like Daegu Bank and", "Hwasung corp.")\n', '("Samsung and Kolon", "were founded in", "Daegu")\n', '("Daegu-Gyeongbuk region", "is one of the", "major industrial areas in Korea")\n', '("Gumi and Pohang", "provide great services to the surplus with their", "electronics and steel industries")\n', '("Daegu", "and its neighbouring cities were designated for the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "is the commercial center of the southern part of the Korean Peninsula with Seoul in the center and Pyongyang in the north", "")\n', '("Daegu", "has a decline in the textile industry, which is the heart of its economy", "")\n', '("Daegu", "has a warm climate that provides the region with", "high quality apples and oriental melons")\n', '("Daegu", "has been focusing on revitalizing its economy and improving the city\'s fashion industry", "")\n', '("Daegu", "has been actively promoting its fashion industry based on its textile and clothing manufacturing industries", "")\n', '("Daegu", "hosts exhibitions like Daegu Fashion Fair and Preview in Daegu related to fashion and textile", "")\n', '("Esiapolis", "is a large new town specializing in the textile-fashion industries under construction in", "Bongmu-dong, northeastern Daegu")\n', '("Daegu", "is known as a conservative city", "")\n', '("Daegu", "has many temples due to the strong presence of", "Buddhism")\n', '("Daegu", "has an academy based on", "Confucianism")\n', '("Christian churches in Daegu", "have neon cross-topped spires", "")\n', '("Gatbawi", "is the most well-known sight of the city and is located at the top of", "Gwanbong, Palgongsan")\n', '("People from all over the country", "visit Gatbawi because they believe that the Buddha", "will grant one\'s single desire")\n', '("Daegu", "is located near traditional temples like", "Donghwasa, Pagyesa, and Buinsa")\n', '("Daegu", "contains lecture halls as well as", "Dodong-seowon and Nokdong-seowon")\n', '("Daegu", "preserves old villages such as the", "Otgol village and the Inheung village")\n', '("Daegu", "has Joseon dynasty\'s administrative buildings like", "Gyeongsang-gamyeong and Daegu-hyanggyo")\n', '("Mangudang Park", "restored the main gateway of Daegu during the Joseon period called", "Yeongnam-jeilmun")\n', '("Daegu", "has western style modern architecture like", "Gyesan Cathedral and the old building of Jeil Church")\n', '("Gyesan Cathedral", "is the third oldest gothic church building in Korea and the cathedral of the", "Roman Catholic Archdiocese of Daegu")\n', '("Daegu", "is near Haeinsa—a Buddhist temple that houses the Tripitaka Koreana", "")\n', '("Mt. Palgong, Mt. Biseul, and Mt. Ap", "are representative mountains in", "Daegu")\n', '("Apsan", "has trails, Buddhist temples, a Korean War museum, and a gondola ride to the peak and is located in", "the southern part of Daegu")\n', '("Daegu", "has neighborhood parks such as", "Waryongsan, Hamjisan, and Yongjibong")\n', '("Duryu Park", "has Daegu Tower, Woobang Land, Kolon Bandstand, Duryu Stadium, and sports facilities", "")\n', '("Duryu Park", "is a large forest in the middle of the urban area of", "Daegu")\n', '("Daegu Tower", "is the tallest contemporary structure and a symbol of", "Daegu")\n', '("Woobang Land", "is the largest amusement park outside the capital area", "")\n', '("National Debt Repayment Movement Memorial Park", "includes Dalgubeol-daejong, which is the Dalgubeol grand bell", "")\n', '("Daegu", "has a botanical garden with a variety of plants and flowers", "")\n', '("Dongseongno", "is the downtown of Daegu and stretches from Daegu Station to the central police station near Banwoldang subway station", "")\n', '("Kyungpook National University in Buk-gu", "is surrounded by amusement spots", "")\n', '("Deuran-gil in Suseong-gu", "is known for many restaurants", "")\n', '("Daegu", "hosts department stores including chains and the local Daegu Department Store", "")\n', '("Seomun Market and Chilseong Market", "are traditional markets in Daegu selling all sorts of goods", "")\n', '("Daegu", "hosts many traditional ceremonies and festivals like the Seokjeondaeje", "")\n', '("Daegu-hyanggyo", "hosts a Confucian ritual ceremony called Seokjeondaeje every spring and autumn", "")\n', '("Yangnyeongsi herb medical festival and Otgol village festival", "are contemporary festivals about traditional culture in", "Daegu")\n', '("Daegu", "has growing enthusiasm for performing arts and events like Daegu International Opera Festival (DIOF) and Daegu International Musical Festival (DIMF)", "")\n', '("Daegu International Bodypainting Festival (DIBF)", "is one of the most famous festivals of its kind in", "Korea")\n', '("Daegu", "hosts festivals throughout the year, like the Colorful Daegu Festival, Dongseongno festival, and Palgongsan maple festival", "")\n', '("Daegu International Jazz Festival", "is held every year in", "Daegu")\n', '("Colorful Daegu Festival", "offers performances and art programs including the", "Colorful Parade")\n', '("Daegu Chimac Festival", "takes place at Duryu Park in Dalseo-gu", "")\n', '("Daegu", "has the term \'chimac\' as a portmanteau of chicken and maekju (meaning \'beer\')", "")\n', '("Daegu cuisine", "is similar to that consumed in the", "Yeongnam region")\n', '("Daegu", "is known for unique dishes such as Ttaro-gukbap and Mungtigi", "")\n', '("Daegu Art Museum", "is located in", "Daegu")\n', '("Daegu National Museum", "is a national museum collecting relics excavated in and around", "Daegu")\n', '("Daegu", "has museums like Daegu Bangjja Yugi (Korean Bronzeware) Museum and", "Hengso Museum of Keimyung University")\n', '("Daegu Opera House", "is known for performing opera as the first theater in Korea", "")\n', '("Daegu", "has cultural and arts centers like Suseong Artpia and Keimyung Art Center", "")\n', '("Daegu", "competed with cities like Moscow, Russia, and Brisbane, Australia", "")\n', '("Daegu", "has hosted worldwide sports events and is home to the Colorful Daegu Pre-Championships Meeting annually", "")\n', '("Daegu Stadium", "is the second largest sports complex in South Korea", "")\n', '("Daegu Marathon", "is held every year in April starting and ending at the", "Daegu Stadium")\n', '("Samsung Lions", "are a professional baseball team based in Daegu", "")\n', '("Daegu", "is served by broadcasting stations like KBS Daegu Broadcast Station, Daegu MBC, and TBC", "")\n', '("Daegu", "is largely a homogeneous community that includes few non-Koreans", "")\n', '("Daegu", "has immigrants from South and Southeast Asia working in automotive-parts factories", "")\n', '("Daegu", "has English-speaking Westerners working in English schools and university programs", "")\n', '("Daegu", "hosts three American military bases including Camp Henry, Camp George, and Camp Walker", "")\n', '("Daegu", "has challenges with the construction of a mosque in", "Daehyeon-dong")\n', '("Daegu", "experienced opposition and controversy over the mosque construction from nearby residents", "")\n', '("The National Human Rights Commission of Korea", "judged the suspension of mosque construction as based on discrimination and prejudice against Muslims", "")\n', '("Daegu\'s", "Mosque Controversy involved insulting and offensive actions near the construction site", "")\n', '("Daegu", "has educational institutions like Daegu Science High School and", "Taegu Foreign Language High School")\n', '("Daegu", "has schools with high educational grades such as Keisung Academy and Gyeongsin High School", "")\n', '("Daegu", "houses universities and colleges in the Gyeongsan city which serves as a college town for the region", "")\n', '("Kyungpook National University (KNU)", "is a highly ranked national university in", "Daegu")\n', '("DGIST (Daegu Gyeongbuk Institute of Science and Technology)", "is recognized as one of Korea\'s top universities in the field of science and technology", "")\n', '("Daegu", "has prestigious private universities like Yeungnam University (YU) and Keimyung University", "")\n', '("Daegu National University of Education", "offers elementary education training", "")\n', '("Daegu", "has tertiary hospitals making the city the medical hub of", "south-eastern Korea")\n', '("Dongsan Hospital", "is one of the oldest western-style medical clinics in Korea", "")\n']
+range(1, 290) 3
+{'id': '3_5', 'Question': ' Which city was occupied by the same empire that held sovereignty over the Northern Mariana Islands before both were under the control they had prior to World War II?\n', 'Answer': 'Seoul', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Incheon'}, {'label': 'B', 'text': 'Daejeon'}, {'label': 'C', 'text': 'Busan'}, {'label': 'D', 'text': 'Daegu'}, {'label': 'E', 'text': 'Seoul'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'incheon'}, {'label': 'B', 'text': 'daejeon'}, {'label': 'C', 'text': 'busan'}, {'label': 'D', 'text': 'daegu'}, {'label': 'E', 'text': 'seoul'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which city was occupied by the Japanese Empire?\nA1: Seoul\n\n', '2: Who had sovereignty over Northern Mariana Islands before they became a U.S. Commonwealth?\nA2: Empire of Japan\n\n', '3: Under whose rule were the Northern Mariana Islands prior to World War II?\nA3: Empire of Japan'], 'Hops_wiki': [('Seoul', 'Empire of Japan'), ('Empire of Japan', 'Northern Mariana Islands'), ('Empire of Japan', 'Mariana Islands')], 'Hops_cpnet': [('seoul', 'empire_of_japan'), ('empire_of_japan', 'northern_mariana_islands'), ('empire_of_japan', 'mariana_islands')], 'Triplets': ['("Seoul", "was occupied by", "the Japanese Empire")', '("Northern Mariana Islands", "were under control of", "Japanese")', '("Northern Mariana Islands", "were under control of", "Japanese")'], 'Referred_files': [{'name': 'Seoul', 'line': 8}, {'name': 'Northern Mariana Islands', 'line': 6}, {'name': 'Northern Mariana Islands', 'line': 6}], 'Question_triplet_answer': {100: [34, 70, 209], 50: [65, 91, 166], 25: [4, 84, 120]}}
+time passed:  7078.816936969757
+Expected dollar:  0.005
+Daegu Fashion Fair and Preview is Geography
+Daejeon World Cup Stadium is Geography
+South Korea is Geography
+Holdridge is People
+Seoul Museum of Art is Geography
+Seoul is Geography
+Westin Chosun Busan is Geography
+Park Hyatt Busan is Geography
+Northern Mariana is Geography
+the United States is Geography
+Gumi and Pohang" is Geography
+Spain is Geography
+Northern Mariana Islands is Geography
+Germany is Geography
+Gyeonggi is Geography
+Chungnam National University is Geography
+the Battle of the Pusan Perimeter is Geography
+Moscow is Geography
+Russia is Geography
+Brisbane is Geography
+Australia is Geography
+Korea is Geography
+U.S. House of Representatives is Geography
+Nakdong is Geography
+the Suyeong Rivers is Geography
+Kyungpook National University is Geography
+Ulsan is Geography
+South Gyeongsang is Geography
+Daegu is Geography
+Saipan is Geography
+the Republic of Korea is Geography
+the Battle of Taegu is Geography
+Nakdong River is Geography
+the Northern Mariana is Geography
+Dongsan Hospital is Geography
+Waryongsan is Geography
+Hamjisan is Geography
+Yongjibong is Geography
+Mosque Controversy is Geography
+International Science and Business Belt is Geography
+the Battle of Gong Mountain is Geography
+Daegu Stadium is Incident
+the Japanese Empire is Geography
+South Korean is Geography
+Hwasung corp is Geography
+Korean Bronzeware) Museum is Geography
+Hengso Museum of Keimyung University is Geography
+Incheon is Geography
+Guro, Seoul, Cheongnyangni, Uijeongbu is Geography
+Soyosan is Geography
+Daegu Art Museum is Geography
+Busan is Geography
+South Korea's is Geography
+United States is Geography
+the Caroline Islands is Geography
+Daegu Metropolitan Government is Geography
+the Battle of Saipan is Geography
+Busan and Fukuoka is Geography
+Gangnam district is Geography
+Daegu Metropolitan City is Geography
+Gimhae International Airport is Geography
+the Mariana Archipelago is Geography
+Joseon dynasty's is Geography
+Haeundae Beach is Geography
+Gyeongsan is Geography
+Daegu International Musical Festival is Geography
+Mungtigi is Geography
+Deuran gil in is Geography
+Suseong is Geography
+Mangudang Park is Geography
+Beomeosa Temple and Busanjinjiseong Fortress is Geography
+Guam is Geography
+Namsan is Geography
+Biseulsan is Geography
+Singapore is Geography
+San Francisco is Geography
+Seogu, Donggu, is Geography
+Yuseonggu is Geography
+Daedeokgu is Geography
+Korean Peninsula is Geography
+Joseon dynasty is Geography
+Enola Gay" is Geography
+Tinian is Geography
+Hiroshima is Geography
+Daegu Science High School is Geography
+Taegu Foreign Language High School is Geography
+Daegu International Bodypainting Festival is Geography
+Geumho River is Geography
+Daegu Gyeongbuk Institute of Science and Technology is Geography
+Institute for Basic Science is Geography
+Japan is Geography
+Gyeongbuk Provincial Government is Geography
+the Korean Peninsula is Geography
+World Trade Organization is Geography
+Daejeon Philharmonic Orchestra is Geography
+Dalseong Park is Geography
+Philippines is Geography
+Yellow Sea is Geography
+Dalgubeol daejong is Geography
+Daegu Opera House is Geography
+India is Geography
+Mombasa is Geography
+the Red Sea is Geography
+the Suez Canal is Geography
+Mediterranean is Geography
+Trieste is Geography
+the North Sea is Geography
+Gunwi County is Geography
+Daefrica is Geography
+Colorful Daegu Festival is Geography
+Chun Doo is People
+Roh Tae is People
+Park Geun is People
+Bomunsan Mountain is Geography
+entities:  {'district', 'Museum', 'Canal', 'Rivers', 'Archipelago', 'Bomunsan', 'City', 'gil', 'Government', 'Namsan', 'Language', 'Seogu,', 'Korea', 'Festival', 'Chung', 'Suyeong', "Korea's", 'Busanjinjiseong', 'Europe', 'Donggu', 'Tae', 'Gong', 'States', 'Fortress', 'Hamjisan', 'Trade', 'Republic', 'Hwasung', 'Daegu', 'Stadium', 'Gangnam', 'Pusan', 'Mangudang', 'Gyeongsan', 'House', 'Geun', 'Waryongsan', 'Gimhae', 'Asia', 'Guam', 'Beach', 'Mountain', 'TBC', 'Busan', 'Incheon', 'San', 'Science', 'Preview', 'Colorful', 'Gyeongbuk', 'Red', 'Yellow', 'Holdridge', 'Representatives', 'Controversy', 'Deuran', 'Mariana', 'Airport', 'Kyungpook', 'Nakdong', 'Perimeter', 'Dalseong', 'Empire', 'North', 'Samsung', 'Japan', 'Provincial', 'South', 'Battle', 'Philharmonic', 'Orchestra', 'Mediterranean', 'Roh', 'Germany', 'Tsushima', 'Australia', 'Uijeongbu', 'International', 'Singapore', 'United', 'Ulsan', 'High', 'Moscow', 'Chun', 'School', 'Sea', 'Soyosan', 'Caroline', 'Dalgubeol', 'Metropolitan', 'daejong', 'Broadcast', 'corp', 'Mungtigi', 'Keimyung', 'MBC', 'Geumho', 'Seoul,', 'Daedeokgu', 'Trieste', 'Suez', 'Seoul', 'Islands', 'Kolon', 'Beomeosa', 'University', 'Commission', 'Temple', 'Gyeongsang', 'Mosque', 'Doo', 'Saenuri', 'Foreign', 'Gay"', 'Cup', 'Gumi', 'dynasty', 'Westin', 'World', 'Chungnam', 'KBS', 'Park', 'Francisco', 'U.S.', 'Yuseonggu', 'Fukuoka', 'Art', 'Korean', 'Organization', 'Japanese', 'Peninsula', 'Business', 'Hiroshima', 'Opera', 'Bodypainting', 'Spain', 'Belt', 'National', 'Dongsan', 'Suseong', 'Donggu,', 'Saipan', 'Bronzeware)', 'Gyeonggi', 'Haeundae', 'Technology', 'Pohang"', 'KNU', 'Fair', 'Hyatt', 'River', 'Philippines', 'India', 'Musical', 'Daefrica', 'Fashion', 'Guro,', 'Taegu', 'Daejeon', "dynasty's", 'Enola', 'Basic', 'Joseon', 'Yongjibong', 'Silla', 'Gunwi', 'Tinian', 'Institute', 'Chosun', 'County', 'Northern', 'Cheongnyangni,', 'Russia', 'Hospital', 'Brisbane', 'Biseulsan', 'dong', 'Hengso', 'Mombasa'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Mariana Islands' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Northern Mariana Islands
+U.S. House of Representatives
+German
+Japanese
+U.S. House of Representatives
+German
+Japanese
+the United States Census
+U.S. House of Representatives 
+Japan
+Japanese Empire
+
+gpt_entity_particular(): entity list: 
+ ['U.S. House of Representatives', 'German', 'Japan', 'Northern Mariana Islands', 'U.S. House of Representatives ', 'Japanese Empire', 'Japanese', 'the United States Census']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Empire of Japan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Empire
+Japanese imperialism
+
+gpt_entity_particular(): entity list: 
+ ['Empire', 'Japanese imperialism']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Daegu' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Daegu
+Busan
+Preview
+Daegu Fashion Fair
+Daegu Fashion Fair and Preview in Daegu
+Holdridge climate classification
+'Gab-o' reforms
+Yangnyeongsi herb medical festival
+Otgol village festival
+Westin Chosun Busan
+Paradise Busan
+Park Hyatt Busan
+Silla Kingdom
+Korean War
+Daegu-Gyeongbuk Free Economic Zone
+Silla Kingdom
+Daegu-Gyeongbuk Free Economic Zone
+Seoul
+Daejeon World Cup Stadium
+Daegu Economy
+Silla Kingdom
+Battle of the Pusan Perimeter
+Seoul
+Japanese rule
+Superior Court of the Commonwealth of the Northern Mariana Islands
+Kyungpook National University (KNU)
+Seoul
+Buddhism
+Daegu Metropolitan Government
+Dongsan Hospital
+Silla Kingdom
+Northern Mariana Islands
+Tinian
+Seoul
+Korea Exchange
+KBS Daegu Broadcast Station
+Daegu MBC
+TBC
+Dongsan Hospital
+Hwasung Corp.
+Daegu Bank
+Hengso Museum of Keimyung University
+Korean War Museum
+Southern part of Daegu
+Daegu International Opera Festival (DIOF)
+Daegu International Musical Festival (DIMF)
+Municipal Politics
+Battle of Gong Mountain during the
+Later Three Kingdoms period
+Seoul
+Northern Mariana Islands
+Daegu
+Daegu-Gyeongbuk Free Economic Zone
+Daegu International Opera Festival (DIOF)
+Daegu International Musical Festival (DIMF)
+Hamjisan
+Yongjibong
+Daegu's Mosque Controversy
+Tashu
+International Science and Business Belt
+Apple City
+Gangnam District
+Seoul Museum of Art
+Daegu
+Apple City
+Planetarium
+Daejeon
+Woobang Land
+Daegu Metropolitan City
+Seoul
+Daejeon
+Ttaro-gukbap
+Mungtigi
+Two major parties
+Daejeon
+Baekje
+Daejeon
+K League football club
+Mangudang Park
+Cauldron Mountain
+Tinian
+Meizhou Bay
+Yellow Sea
+Guam
+Nakdong River
+DGIST
+International Science and Business Belt
+Meizhou Bay
+Daejeon
+Gyeongsang-gamyeong
+Daegu-hyanggyo
+Kalmaikon Park and British Northern Mungicheon
+Palgongsan
+Bomunsan Mountain park
+Colorful Daegu Festival 
+Bomunsan
+Dongcheon-dong
+Dongcheon-dong
+Jung District
+Gunwi County
+Park Chung Hee
+Daegu
+Dongcheonxi
+Park Tae-hwan
+
+gpt_entity_particular(): entity list: 
+ ['Westin Chosun Busan', 'Holdridge climate classification', 'Bomunsan', 'Otgol village festival', 'Kyungpook National University (KNU)', 'Daegu Economy', 'Hamjisan', 'Daegu', 'Mangudang Park', 'Cauldron Mountain', 'Park Chung Hee', 'Korean War Museum', 'Guam', 'K League football club', 'TBC', 'Busan', 'Dongsan Hospital', "'Gab-o' reforms", 'Preview', 'Planetarium', 'Daegu Metropolitan Government', 'Daegu MBC', 'International Science and Business Belt', 'Daegu-hyanggyo', 'Municipal Politics', 'Southern part of Daegu', 'Meizhou Bay', 'Superior Court of the Commonwealth of the Northern Mariana Islands', 'Korean War', 'Seoul Museum of Art', 'Park Hyatt Busan', 'Kalmaikon Park and British Northern Mungicheon', 'Baekje', 'Yellow Sea', 'Gyeongsang-gamyeong', 'Paradise Busan', 'Daegu-Gyeongbuk Free Economic Zone', 'Woobang Land', 'Mungtigi', 'Seoul', 'Jung District', 'Daegu Fashion Fair', 'Daegu Bank', 'Bomunsan Mountain park', 'Battle of the Pusan Perimeter', 'Northern Mariana Islands', 'Ttaro-gukbap', 'Two major parties', 'Yangnyeongsi herb medical festival', 'Park Tae-hwan', 'Gangnam District', 'DGIST', 'Hengso Museum of Keimyung University', 'Daegu International Musical Festival (DIMF)', 'Nakdong River', 'Apple City', 'Tashu', 'KBS Daegu Broadcast Station', 'Korea Exchange', 'Battle of Gong Mountain during the', "Daegu's Mosque Controversy", 'Hwasung Corp.', 'Silla Kingdom', 'Dongcheon-dong', 'Daejeon', 'Daegu International Opera Festival (DIOF)', 'Daegu Metropolitan City', 'Japanese rule', 'Buddhism', 'Gunwi County', 'Colorful Daegu Festival ', 'Dongcheonxi', 'Yongjibong', 'Daegu Fashion Fair and Preview in Daegu', 'Daejeon World Cup Stadium', 'Later Three Kingdoms period', 'Tinian', 'Palgongsan']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Seoul' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Seoul
+Seoul Museum of Art
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul Museum of Art
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+
+gpt_entity_particular(): entity list: 
+ ['Seoul', 'Seoul Museum of Art']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Busan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Daegu
+Daegu Fashion Fair and Preview
+Daegu World Cup Stadium
+Daegu has a warm temperate moist forest climate in
+Daegu has a warm climate that provides the region with
+Daegu's Mosque Controversy involved insulting and offensive actions near the construction site
+Seoul Museum of Art
+Daegu
+Daegu Bank
+Hwasung corp
+Daejeon
+Daejeon World Cup Stadium
+Daejeon
+Daegu Bank
+Hengso Museum of Keimyung University
+Daegu's Mosque Controversy involved insulting and offensive actions near the construction site
+Daegu International Opera Festival
+Daegu International Musical Festival
+Daegu
+Daegu Science High School
+Dongcheon-dong, Buk-gu
+DGIST (Daegu Gyeongbuk Institute of Science and Technology)
+Daegu International Bodypainting Festival (DIBF)
+Dalseong Park
+Gyeongsang-gamyeong and Daegu-hyanggyo
+Daegu Art Museum
+Daegu
+Esiapolis
+Yangnyeongsi
+Palgongsan, Biseulsan, Waryongsan
+Esiapolis
+Dalseong Park
+Youngnam-jeilmun
+Daegu Opera House
+Dalgubeol-daejong
+DGIST (Daegu Gyeongbuk Institute of Science and Technology)
+Jung District
+Daegu
+Daegu Metropolitan Government
+Dongcheon-dong, Buk-gu
+Daegu International Opera Festival
+Daegu International Musical Festival
+Colorful Daegu Festival
+Bomunsan Mountain park
+Dongcheon-dong
+Daegu International Bodypainting Festival (DIBF)
+Dalseong Park
+Gunwi County
+Daegu
+Daegu
+Dongcheon-dong
+Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye
+Daegu
+Daegu has a warm temperate moist forest climate in
+Daegu has a warm climate that provides the region with
+Daegu
+Daefrica due to high temperatures
+Colorful Daegu Festival
+Colorful Parade
+Daegu
+Daegu
+Daegu has a warm temperate moist forest climate in
+Daegu
+Daefrica due to high temperatures
+Colorful Daegu Festival
+Colorful Parade
+North Gyeongsang, Daegu
+Daegu
+Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye
+Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye
+Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye
+Daegu Fashion Fair and Preview
+Daegu World Cup Stadium
+Daegu-Dongcheon in Buk-gu
+Dongcheon-dong
+Daegu
+Dongcheon-dong
+Daegu
+Dongcheon-dong
+Waryongsan, Hamjisan, and Yongjibong
+Daegu
+Daegu
+Daegu
+Northeast Asia
+Daegu has a warm temperate moist forest climate in
+Daegu
+Daegu
+Daegu's Mosque Controversy involved insulting and offensive actions near the construction site
+Daegu International Opera Festival
+Daegu International Musical Festival
+Daegu
+Daegu
+Daegu
+Dalseong Park
+Jung District
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Gyeongbuk Provincial Government
+Daegu
+Chungnam National University
+Daegu
+Daegu
+Woobang Land
+Daegu
+Daegu Art Museum
+Daegu Stadium
+Daegu
+Daegu Art Museum
+Daegu Stadium
+Daegu
+Daegu
+Daegu Art Museum
+Daegu Stadium
+Daegu
+Daegu
+Daegu's Mosque Controversy involved insulting and offensive actions near the construction site
+Daegu's Mosque Controversy involved insulting and offensive actions near the construction site
+Daegu
+Daegu
+Daegu cuisine
+Yeongnam region
+Daegu cuisine
+Yeongnam region
+Dongcheon-dong, Buk-gu
+Daegu
+Daegu cuisine
+Daegu
+Apple City
+Daegu cuisine
+Yeongnam region
+Daegu
+Apple City
+Daegu cuisine
+Yeongnam region
+Daegu
+Apple City
+Daegu cuisine
+Yeongnam region
+Daegu
+Apple City
+Daegu
+Apple City
+Daegu
+Apple City
+Daegu
+Daegu
+Haean-myeon
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Dalseong Park
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+
+gpt_entity_particular(): entity list: 
+ ['Daefrica due to high temperatures', 'Gyeongbuk Provincial Government', 'Daegu cuisine', 'Daegu has a warm climate that provides the region with', 'Dalgubeol-daejong', 'Daegu Science High School', 'Daegu International Bodypainting Festival (DIBF)', 'Northeast Asia', 'Hwasung corp', 'Jung District', 'Youngnam-jeilmun', 'Waryongsan, Hamjisan, and Yongjibong', 'Daegu Bank', 'Dalseong Park', 'Daegu-Dongcheon in Buk-gu', 'Daegu World Cup Stadium', 'Colorful Daegu Festival', 'Bomunsan Mountain park', 'Gyeongsang-gamyeong and Daegu-hyanggyo', 'Dongcheon-dong', 'Seoul Museum of Art', 'Chungnam National University', 'Daejeon', 'Haean-myeon', 'Daegu has a warm temperate moist forest climate in', 'North Gyeongsang, Daegu', 'Colorful Parade', 'Daegu', 'DGIST (Daegu Gyeongbuk Institute of Science and Technology)', 'Daegu International Musical Festival', 'Gunwi County', 'Daegu Opera House', 'Yangnyeongsi', 'Daegu Fashion Fair and Preview', "Daegu's Mosque Controversy involved insulting and offensive actions near the construction site", 'Daejeon World Cup Stadium', 'Yeongnam region', 'Daegu International Opera Festival', 'Woobang Land', 'Daegu Stadium', 'Palgongsan, Biseulsan, Waryongsan', 'Dongcheon-dong, Buk-gu', 'Hengso Museum of Keimyung University', 'Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye', 'Daegu Metropolitan Government', 'Esiapolis', 'Apple City', 'Daegu Art Museum']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Northern Mariana Islands' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Northern Mariana Islands
+the United States
+the Commonwealth of the Northern Mariana Islands
+Germany
+Japanese
+Spain
+U.S. House of Representatives
+the 2020 United States Census
+World Trade Organization
+the Spanish
+the Philippines
+
+gpt_entity_particular(): entity list: 
+ ['World Trade Organization', 'Spain', 'U.S. House of Representatives', 'Germany', 'the Philippines', 'Northern Mariana Islands', 'the 2020 United States Census', 'the Commonwealth of the Northern Mariana Islands', 'Japanese', 'the United States', 'the Spanish']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Incheon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Incheon
+Seoul
+Busan
+Daegu
+Mangudang Park
+Gyeonggi province
+Daegu's
+The National Human Rights Commission of Korea
+Daegu-Gyeongbuk Free Economic Zone
+Tinian
+Paleolithic
+Jinhan
+Gyeongsang-do
+South Gyeongsang
+Kaist
+Daebudo
+Ayajin Beach
+Oegosan Onggi Village
+Gijisi Juldarigi
+Cheongnamdae
+Ulsan
+Dalseong Park
+Palgongsan
+Gyeongsang-gamyeong
+
+gpt_entity_particular(): entity list: 
+ ['Gyeongsang-do', 'Seoul', 'Cheongnamdae', 'South Gyeongsang', 'Daebudo', 'Paleolithic', 'Gyeonggi province', 'Dalseong Park', 'Oegosan Onggi Village', 'Jinhan', "Daegu's", 'Daegu', 'Mangudang Park', 'Ayajin Beach', 'Ulsan', 'Gyeongsang-gamyeong', 'Gijisi Juldarigi', 'Daegu-Gyeongbuk Free Economic Zone', 'Kaist', 'The National Human Rights Commission of Korea', 'Tinian', 'Palgongsan', 'Busan', 'Incheon']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Daejeon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Daegu
+Daegu Fashion Fair
+Preview in Daegu
+fashion
+textile
+Daejeon
+sports facilities
+Daejeon World Cup Stadium
+biotechnology
+Chungnam National University
+International Science and Business Belt
+KAIST
+internationally accredited in business education
+Daejeon Philharmonic Orchestra
+
+gpt_entity_particular(): entity list: 
+ ['sports facilities', 'Daegu', 'Daejeon', 'textile', 'Daejeon Philharmonic Orchestra', 'internationally accredited in business education', 'International Science and Business Belt', 'fashion', 'KAIST', 'Chungnam National University', 'Daegu Fashion Fair', 'biotechnology', 'Preview in Daegu', 'Daejeon World Cup Stadium']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'district', 'Museum', 'Canal', 'Rivers', 'Archipelago', 'Bomunsan', 'City', 'gil', 'Government', 'Namsan', 'Language', 'Seogu,', 'Korea', 'Festival', 'Chung', 'Suyeong', "Korea's", 'Busanjinjiseong', 'Europe', 'Donggu', 'Tae', 'Gong', 'States', 'Fortress', 'Hamjisan', 'Trade', 'Republic', 'Hwasung', 'Daegu', 'Stadium', 'Gangnam', 'Pusan', 'Mangudang', 'Gyeongsan', 'House', 'Geun', 'Waryongsan', 'Gimhae', 'Asia', 'Guam', 'Beach', 'Mountain', 'TBC', 'Busan', 'Incheon', 'San', 'Science', 'Preview', 'Colorful', 'Gyeongbuk', 'Red', 'Yellow', 'Holdridge', 'Representatives', 'Controversy', 'Deuran', 'Mariana', 'Airport', 'Kyungpook', 'Nakdong', 'Perimeter', 'Dalseong', 'Empire', 'North', 'Samsung', 'Japan', 'Provincial', 'South', 'Battle', 'Philharmonic', 'Orchestra', 'Mediterranean', 'Roh', 'Germany', 'Tsushima', 'Australia', 'Uijeongbu', 'International', 'Singapore', 'United', 'Ulsan', 'High', 'Moscow', 'Chun', 'School', 'Sea', 'Soyosan', 'Caroline', 'Dalgubeol', 'Metropolitan', 'daejong', 'Broadcast', 'corp', 'Mungtigi', 'Keimyung', 'MBC', 'Geumho', 'Seoul,', 'Daedeokgu', 'Trieste', 'Suez', 'Seoul', 'Islands', 'Kolon', 'Beomeosa', 'University', 'Commission', 'Temple', 'Gyeongsang', 'Mosque', 'Doo', 'Saenuri', 'Foreign', 'Gay"', 'Cup', 'Gumi', 'dynasty', 'Westin', 'World', 'Chungnam', 'KBS', 'Park', 'Francisco', 'U.S.', 'Yuseonggu', 'Fukuoka', 'Art', 'Korean', 'Organization', 'Japanese', 'Peninsula', 'Business', 'Hiroshima', 'Opera', 'Bodypainting', 'Spain', 'Belt', 'National', 'Dongsan', 'Suseong', 'Donggu,', 'Saipan', 'Bronzeware)', 'Gyeonggi', 'Haeundae', 'Technology', 'Pohang"', 'KNU', 'Fair', 'Hyatt', 'River', 'Philippines', 'India', 'Musical', 'Daefrica', 'Fashion', 'Guro,', 'Taegu', 'Daejeon', "dynasty's", 'Enola', 'Basic', 'Joseon', 'Yongjibong', 'Silla', 'Gunwi', 'Tinian', 'Institute', 'Chosun', 'County', 'Northern', 'Cheongnyangni,', 'Russia', 'Hospital', 'Brisbane', 'Biseulsan', 'dong', 'Hengso', 'Mombasa'}
+Total time:  511.1109941005707
+Entity conversion done on 3_5 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_3_5_entity_conversion_hash.json. Check the entity.
+ Which 04D was occupied by the same 067 that held sovereignty over the eastern 015 084 before both were under the control they had prior to 070 War II?
+
+
+
+Done. Check final_query/id_3_5_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_3_5_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_3_5_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_3_5_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_3_5_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_3_5_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/3_5_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

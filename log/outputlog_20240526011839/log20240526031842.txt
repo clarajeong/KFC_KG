@@ -1,0 +1,813 @@
+Got argument: Immanuel Kant, 0, 0_3, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("F. H. Bradley", "read works by", "Immanuel Kant")', 'start word': 'Immanuel Kant', 'end word': 'F. H. Bradley', 'source': {'name': 'F. H. Bradley', 'line': 4}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'bradleyan'}}
+next_word: F. H. Bradley
+generate_question(0_3, ['("F. H. Bradley", "read works by", "Immanuel Kant")'], ['F. H. Bradley'], [('Immanuel Kant', 'F. H. Bradley')], F. H. Bradley, [{'name': 'F. H. Bradley', 'line': 4}]) called
+GPT output is:  Q: Which philosopher, influenced by the writings of Immanuel Kant, played a significant role in the development of British idealism?
+A: F. H. Bradley
+final_choice(F. H. Bradley, options = 5) started
+[]
+entity_type(F. H. Bradley) called
+F. H. Bradley is People
+check_matchscore(F. H. Bradley, Ontologists):  0.0
+choose_by_wiki_recur(Ontologists)
+   Pages in Ontologists: ['next page', 'Richard Aaron', 'Robert Merrihew Adams', 'Hans Albert', 'Samuel Alexander', 'John Anderson (philosopher)', 'Anselm of Canterbury', 'Kwame Anthony Appiah', 'Aristotle', 'Michael Ashburner', 'Robert Audi', 'J. L. Austin', 'Armen Avanessian', 'Averroes', 'Avicenna', 'A. J. Ayer', 'Michael R. Ayers', 'Francis Bacon', 'Julius Bahnsen', 'A. J. Baker', 'Karen Barad', 'Renaud Barbaras', 'Roland Barthes', 'Herman Bavinck', 'Jeremy Bentham', 'Gustav Bergmann', 'Maine de Biran', 'Ioan Biris', 'Leopold Blaustein', 'Jakob Böhme', 'Paul Boghossian', 'Bernard Bolzano', 'Bernard Bosanquet (philosopher)', 'Oets Kolk Bouwsma', 'Richard Boyd', 'F. H. Bradley', 'Moritz Brasch', 'Franz Brentano', 'Bill Brewer', 'C. D. Broad', 'Giordano Bruno', 'Levi Bryant', 'Ludwig Büchner', 'Mario Bunge', 'Tyler Burge', 'Georges Canguilhem', 'Milič Čapek', 'Rudolf Carnap', 'John Castagnini', 'Héctor-Neri Castañeda', 'David Chalmers', 'Lorenzo Chiesa', 'Noam Chomsky', 'Emil Cioran', 'Martin Cohen (philosopher)', 'Étienne Bonnot de Condillac', 'Wolfgang Cramer', 'Alfonso Cumberbatch', 'S. Debono', 'Gilles Deleuze', 'Jacques Derrida', 'René Descartes', 'William Desmond (philosopher)', 'John Dewey', 'Philip K. Dick', 'Denis Diderot', 'Wilhelm Dilthey', 'Dōgen', 'Hubert Dreyfus', 'Jonathan Edwards (theologian)', 'Antonio Escohotado', 'Gareth Evans (philosopher)', 'E.R. Fairweather', 'Al-Farabi', 'Mário Ferreira dos Santos', 'Ludwig Feuerbach', 'Marsilio Ficino', 'Carrie Figdor', 'Eugen Fink', 'Luciano Floridi', 'Harry Frankfurt', 'Edward Fredkin', 'Gottlob Frege', 'Hans-Georg Gadamer', 'Tristan Garcia', 'Fuad Gasimzade', 'Gaudapada', 'Moritz Geiger', 'Ionel Gherea', 'Allan Gibbard', 'Étienne Gilson', 'Eugénie Ginsberg', 'Gnanananda Giri', 'Haridhos Giri', 'Kurt Gödel', 'Nelson Goodman', 'John Gray (philosopher)', 'T. H. Green', 'Susan Haack', 'Pierre Hadot', 'Peter Hewitt Hare', 'Graham Harman', 'Nicolai Hartmann', 'Charles Hartshorne', 'John Hawthorne', 'Martin Heidegger', 'Heraclitus', 'Johann Friedrich Herbart', 'Eli Hirsch', 'Thomas Hobbes', 'Richard Hönigswald', "Baron d'Holbach", 'Martin Hollis (philosopher)', 'Ted Honderich', 'Max Horkheimer', 'David Hume', 'Edmund Husserl', 'Francis Hutcheson (philosopher)', 'Nijaz Ibrulj', 'Roman Ingarden', 'William James', 'James Jeans', 'Galen Johnson', 'Joseph Kaipayil', 'Immanuel Kant', 'David Kaplan (philosopher)', 'Søren Kierkegaard', 'Al-Kindi', 'Iain King', 'Patricia Kitcher', 'Philip Kitcher', 'Ursula Klein', 'Karl Christian Friedrich Krause', 'Mikky Lafey', 'Louis Lavelle', 'Claude Lévi-Strauss', 'Emmanuel Levinas', 'C. I. Lewis', 'Øystein Linnebo', 'Gilles Lipovetsky', 'Oliver Lis', 'György Lukács', 'Alasdair MacIntyre', 'J. L. Mackie', 'Norman Malcolm', 'Nicolas Malebranche', 'Ernst Mally', 'Gabriel Marcel', 'David Mark (scientist)', 'Anton Marty', 'Karl Marx', 'Thomas A. McCarthy', 'Ron McClamrock', 'John McDowell', 'Colin McGinn', 'Brian Herbert Medlin', 'Quentin Meillassoux', 'Alexius Meinong', 'Mencius', 'Maurice Merleau-Ponty', 'Carlo Michelstaedter', 'Ellen Mitchell (philosopher)', 'Shaj Mohan', 'Annemarie Mol', 'G. E. Moore', 'Sidney Morgenbesser', 'Thomas Mormann', 'Mozi', 'Kevin Mulligan', 'Nachiketa', 'Nagarjuna', 'Ernest Nagel', 'Thomas Nail', 'Stephen Neale', 'John Henry Newman', 'Friedrich Nietzsche', 'Keiji Nishitani', 'Constantin Noica', 'Charles Kay Ogden', 'Graham Oppy', 'José Ortega y Gasset', 'Rudolf Otto', 'Jesús Padilla Gálvez', 'Luigi Pareyson', 'Parmenides', 'L. A. Paul', 'Friedrich Paulsen', 'Charles Sanders Peirce', 'John Perry (philosopher)', 'Ralph Barton Perry', 'Jerzy Perzanowski', 'Hans Pichler', 'Plato', 'Karl Popper', 'Arthur Prior', 'Proclus', 'Lorenz Bruno Puntel', 'Hilary Putnam', 'Willard Van Orman Quine', 'Anthony Quinton', 'Peter Railton']
+      L. A. Paul in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong']
+L. A. Paul is People
+      Aristotle in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch']
+Aristotle is People
+      Iain King in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch']
+      Alexius Meinong in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch', 'next page']
+Alexius Meinong is People
+      Moritz Brasch in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch', 'next page']
+      next page in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch', 'next page', 'Nachiketa']
+      Nachiketa in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch', 'next page', 'Nachiketa', 'Mario Bunge']
+      Mario Bunge in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch', 'next page', 'Nachiketa', 'Mario Bunge', 'Emil Cioran']
+Mario Bunge is People
+      Emil Cioran in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch', 'next page', 'Nachiketa', 'Mario Bunge', 'Emil Cioran', 'G. E. Moore']
+Emil Cioran is People
+      G. E. Moore in ['L. A. Paul', 'Aristotle', 'Iain King', 'Alexius Meinong', 'Moritz Brasch', 'next page', 'Nachiketa', 'Mario Bunge', 'Emil Cioran', 'G. E. Moore']
+G. E. Moore is People
+['Aristotle', 'Alexius Meinong', 'Emil Cioran', 'G. E. Moore']
+Ended after 2.5 hierarchy
+(2.5, ['Aristotle', 'Emil Cioran', 'G. E. Moore', 'Alexius Meinong'])
+
+extract_info(Emil Cioran) Start.
+utils/preprocess.py extract_info(): Checking good links on Emil Cioran
+Latin Quarter, Paris is Geography
+1 / 30 )  Latin Quarter of Paris Latin Quarter, Paris latin_quarter
+Kingdom of Hungary is Geography
+2 / 30 )  Kingdom of Hungary Kingdom of Hungary kingdom_of_hungary
+Sibiu is Geography
+3 / 30 )  Sibiu Sibiu sibiu
+Eugène Ionesco is People
+4 / 30 )  Eugène Ionesco Eugène Ionesco eugene_ionesco
+Friedrich Nietzsche is People
+5 / 30 )  Friedrich Nietzsche Friedrich Nietzsche friedrich_nietzsche
+Honoré de Balzac is People
+6 / 30 )  Honoré de Balzac Honoré de Balzac honoré_de_balzac
+Arthur Schopenhauer is People
+7 / 30 )  Arthur Schopenhauer Arthur Schopenhauer arthur_schopenhauer
+Fyodor Dostoevsky is People
+8 / 30 )  Fyodor Dostoevsky Fyodor Dostoevsky fyodor_dostoevsky
+Martin Heidegger is People
+9 / 30 )  Martin Heidegger Martin Heidegger martin_heidegger
+Henri Bergson is People
+10 / 30 )  Henri Bergson Henri Bergson henri_bergson
+Johann Gottlieb Fichte is People
+11 / 30 )  Johann Gottlieb Fichte Johann Gottlieb Fichte fichte
+Georg Wilhelm Friedrich Hegel is People
+12 / 30 )  Hegel Georg Wilhelm Friedrich Hegel georg_wilhelm_friedrich_hegel
+Edmund Husserl is People
+13 / 30 )  Edmund Husserl Edmund Husserl edmund_husserl
+Immanuel Kant is People
+14 / 30 )  Immanuel Kant Immanuel Kant immanuel_kant
+Nicolai Hartmann is People
+15 / 30 )  Nicolai Hartmann Nicolai Hartmann hartmannian
+Berlin is Geography
+16 / 30 )  Berlin Berlin berlin
+Nazi Germany is Geography
+17 / 30 )  Nazi regime Nazi Germany nazi_germany
+Italy is Geography
+18 / 30 )  Italy Italy italy
+Brașov is Geography
+19 / 30 )  Brașov Brașov brașov
+Paris is Geography
+20 / 30 )  Paris Paris paris
+Bucharest is Geography
+21 / 30 )  Bucharest Bucharest bucharest
+Samuel Beckett is People
+22 / 30 )  Samuel Beckett Samuel Beckett samuel_beckett
+Jean-Paul Sartre is People
+23 / 30 )  Jean-Paul Sartre Jean-Paul Sartre jean_paul_sartre
+Albert Camus is People
+24 / 30 )  Albert Camus Albert Camus albert_camus
+Oswald Spengler is People
+25 / 30 )  Oswald Spengler Oswald Spengler oswald_spengler
+Johann Sebastian Bach is People
+26 / 30 )  Bach Johann Sebastian Bach johann_sebastian_bach
+William Shakespeare is People
+27 / 30 )  Shakespeare William Shakespeare william_shakespeare
+Ludwig van Beethoven is People
+28 / 30 )  Beethoven Ludwig van Beethoven ludwig_van_beethoven
+Susan Sontag is People
+29 / 30 )  Susan Sontag Susan Sontag susan_sontag
+Luxembourg is Geography
+30 / 30 )  Luxembourgian Luxembourg luxembourg
+extract_triplet(Emil Cioran)
+Got GPT's response. String length : 1568
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Latin Quarter of Paris', 'Latin Quarter, Paris', 'latin_quarter'], ['Paris', 'Paris', 'paris']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Kingdom of Hungary', 'Kingdom of Hungary', 'kingdom_of_hungary']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Sibiu', 'Sibiu', 'sibiu']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Eugène Ionesco', 'Eugène Ionesco', 'eugene_ionesco']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Friedrich Nietzsche', 'Friedrich Nietzsche', 'friedrich_nietzsche']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Honoré de Balzac', 'Honoré de Balzac', 'honoré_de_balzac']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Arthur Schopenhauer', 'Arthur Schopenhauer', 'arthur_schopenhauer']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Fyodor Dostoevsky', 'Fyodor Dostoevsky', 'fyodor_dostoevsky']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Martin Heidegger', 'Martin Heidegger', 'martin_heidegger']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Henri Bergson', 'Henri Bergson', 'henri_bergson']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Johann Gottlieb Fichte', 'Johann Gottlieb Fichte', 'fichte']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Hegel', 'Georg Wilhelm Friedrich Hegel', 'georg_wilhelm_friedrich_hegel']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Edmund Husserl', 'Edmund Husserl', 'edmund_husserl']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Immanuel Kant', 'Immanuel Kant', 'immanuel_kant']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Nicolai Hartmann', 'Nicolai Hartmann', 'hartmannian']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Berlin', 'Berlin', 'berlin']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Nazi regime', 'Nazi Germany', 'nazi_germany']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Italy', 'Italy', 'italy']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Brașov', 'Brașov', 'brașov']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Paris', 'Paris', 'paris']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Bucharest', 'Bucharest', 'bucharest']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Samuel Beckett', 'Samuel Beckett', 'samuel_beckett']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  []
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Albert Camus', 'Albert Camus', 'albert_camus']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Oswald Spengler', 'Oswald Spengler', 'oswald_spengler']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Bach', 'Johann Sebastian Bach', 'johann_sebastian_bach']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Shakespeare', 'William Shakespeare', 'william_shakespeare']]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Beethoven', 'Ludwig van Beethoven', 'ludwig_van_beethoven']]
+subject_words:  [['Susan Sontag', 'Susan Sontag', 'susan_sontag']]
+object_words:  [(None, 'Emil Cioran', 'cioran')]
+subject_words:  [(None, 'Emil Cioran', 'cioran')]
+object_words:  [['Luxembourgian', 'Luxembourg', 'luxembourg']]
+extract_info(Alexius Meinong) Start.
+utils/preprocess.py extract_info(): Checking good links on Alexius Meinong
+Vienna is Geography
+1 / 30 )  Vienna Vienna vienna
+Carl Menger is People
+2 / 30 )  Carl Menger Carl Menger mengerian
+Arnold of Brescia is People
+3 / 30 )  Arnold of Brescia Arnold of Brescia arnold_of_brescia
+Edmund Husserl is People
+4 / 30 )  Edmund Husserl Edmund Husserl edmund_husserl
+David Hume is People
+5 / 30 )  David Hume David Hume david_hume
+Bertrand Russell is People
+6 / 30 )  Bertrand Russell Bertrand Russell bertrand_russell
+extract_triplet(Alexius Meinong)
+Got GPT's response. String length : 1162
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  [['Vienna', 'Vienna', 'vienna']]
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  [['Vienna', 'Vienna', 'vienna']]
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  [['Carl Menger', 'Carl Menger', 'mengerian']]
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  [['Arnold of Brescia', 'Arnold of Brescia', 'arnold_of_brescia']]
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  [['Edmund Husserl', 'Edmund Husserl', 'edmund_husserl']]
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  [['David Hume', 'David Hume', 'david_hume']]
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+subject_words:  [(None, 'Alexius Meinong', 'meinong')]
+object_words:  []
+extract_info(Aristotle) Start.
+utils/preprocess.py extract_info(): Checking good links on Aristotle
+Athens is Geography
+1 / 30 )  Athens Athens athens
+Plato is People
+2 / 30 )  Plato Plato plato
+Platonic Academy is Geography
+3 / 30 )  Academy Platonic Academy plato's_academy
+Philip II of Macedon is People
+4 / 30 )  Philip II of Macedon Philip II of Macedon philip_ii_of_macedon
+Thomas Aquinas is People
+5 / 30 )  Thomas Aquinas Thomas Aquinas thomas_aquinas
+Dante Alighieri is People
+6 / 30 )  Dante Dante Alighieri dante_alighieri
+Peter Abelard is People
+7 / 30 )  Peter Abelard Peter Abelard peter_abelard
+Thessaloniki is Geography
+8 / 30 )  Thessaloniki Thessaloniki thessaloniki
+Xenocrates is People
+9 / 30 )  Xenocrates Xenocrates xenocrates
+Anatolia is Geography
+10 / 30 )  Asia Minor Anatolia anatolia
+Theophrastus is People
+11 / 30 )  Theophrastus Theophrastus theophrastus
+Lesbos is Geography
+12 / 30 )  Lesbos Lesbos lesbos
+Cassander is People
+13 / 30 )  Cassander Cassander cassander
+Chalcis is Geography
+14 / 30 )  Chalcis, on Euboea Chalcis chalcis
+Antipater is People
+15 / 30 )  Antipater Antipater antipater
+Immanuel Kant is People
+16 / 30 )  Kant Immanuel Kant immanuel_kant
+Empedocles is People
+17 / 30 )  Empedocles Empedocles empedocles
+Archimedes is Geography
+18 / 30 )  Archimedes Archimedes archimedes
+Galileo Galilei is People
+19 / 30 )  Galileo Galileo Galilei galileo_galilei
+Democritus is People
+20 / 30 )  Democritus Democritus democritus
+Charles Lyell is People
+21 / 30 )  Charles Lyell Charles Lyell sir_charles_lyell
+Nile Delta is Geography
+22 / 30 )  Nile delta Nile Delta pelusiac
+Homer is People
+23 / 30 )  Homer Homer homer
+Aeolian Islands is Geography
+24 / 30 )  Aeolian islands Aeolian Islands aeolian_islands
+Anaxagoras is People
+25 / 30 )  Anaxagoras Anaxagoras anaxagoras
+Catfish is Animal
+26 / 30 )  catfish Catfish catfish
+Electric ray is Animal
+27 / 30 )  electric ray Electric ray electric_ray
+Frogfish is Animal
+28 / 30 )  frogfish Frogfish frogfish
+Cephalopod is Animal
+29 / 30 )  cephalopods Cephalopod cephalopod
+Octopus is Animal
+30 / 30 )  octopus Octopus octopus
+extract_triplet(Aristotle)
+Got GPT's response. String length : 3494
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  [['Academy', 'Platonic Academy', "plato's_academy"]]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  [['Thomas Aquinas', 'Thomas Aquinas', 'thomas_aquinas']]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  [['Dante', 'Dante Alighieri', 'dante_alighieri']]
+subject_words:  [['Peter Abelard', 'Peter Abelard', 'peter_abelard']]
+object_words:  [(None, 'Aristotle', 'aristotle')]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [['Kant', 'Immanuel Kant', 'immanuel_kant']]
+object_words:  [(None, 'Aristotle', 'aristotle')]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Aristotle', 'aristotle')]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  [['Athens', 'Athens', 'athens']]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  [['Chalcis, on Euboea', 'Chalcis', 'chalcis']]
+subject_words:  [['Antipater', 'Antipater', 'antipater']]
+object_words:  [(None, 'Aristotle', 'aristotle')]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [['Charles Lyell', 'Charles Lyell', 'sir_charles_lyell']]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  [['Lesbos', 'Lesbos', 'lesbos']]
+subject_words:  [['Theophrastus', 'Theophrastus', 'theophrastus']]
+object_words:  [(None, 'Aristotle', 'aristotle')]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Aristotle', 'aristotle')]
+subject_words:  []
+object_words:  [(None, 'Aristotle', 'aristotle')]
+subject_words:  [(None, 'Aristotle', 'aristotle')]
+object_words:  [(None, 'Aristotle', 'aristotle')]
+subject_words:  []
+object_words:  []
+extract_info(G. E. Moore) Start.
+utils/preprocess.py extract_info(): Checking good links on G. E. Moore
+Bertrand Russell is People
+1 / 30 )  Bertrand Russell Bertrand Russell bertrand_russell
+Ludwig Wittgenstein is People
+2 / 30 )  Ludwig Wittgenstein Ludwig Wittgenstein ludwig_wittgenstein
+Gottlob Frege is People
+3 / 30 )  Gottlob Frege Gottlob Frege fregean
+University of Cambridge is Geography
+4 / 30 )  University of Cambridge University of Cambridge university_of_cambridge
+Baruch Spinoza is People
+5 / 30 )  Spinoza Baruch Spinoza spinoza
+extract_triplet(G. E. Moore)
+Got GPT's response. String length : 752
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  []
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  [['Ludwig Wittgenstein', 'Ludwig Wittgenstein', 'ludwig_wittgenstein']]
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  [['Gottlob Frege', 'Gottlob Frege', 'fregean']]
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  [['University of Cambridge', 'University of Cambridge', 'university_of_cambridge']]
+subject_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+object_words:  []
+subject_words:  [['Bertrand Russell', 'Bertrand Russell', 'bertrand_russell']]
+object_words:  []
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  []
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  []
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  []
+subject_words:  [(None, 'G. E. Moore', 'g_e_moore')]
+object_words:  []
+['("F. H. Bradley", "read works by", "Immanuel Kant")\n']
+
+['("F. H. Bradley", "was born in", "Clapham")\n', '("Clapham", "is located in", "Surrey, England")\n', '("F. H. Bradley", "is buried in", "Holywell Cemetery in Oxford")\n', '("F. H. Bradley", "entered", "University College, Oxford")\n', '("F. H. Bradley", "was elected to a fellowship at", "Merton College")\n', '("F. H. Bradley", "influenced by", "Hegelian philosophy")\n', '("F. H. Bradley", "rejected philosophies of", "John Locke")\n', '("F. H. Bradley", "rejected philosophies of", "David Hume")\n', '("F. H. Bradley", "rejected philosophies of", "John Stuart Mill")\n', '("F. H. Bradley", "was influenced by", "Johann Gottlieb Fichte")\n', '("F. H. Bradley", "is connected to", "George Herbert Mead through moral philosophy")\n', '("F. H. Bradley", "is connected to", "Richard Rorty through anti-individualism")\n', '("F. H. Bradley", "philosophy declined due to", "G. E. Moore")\n', '("F. H. Bradley", "philosophy declined due to", "Bertrand Russell")\n', '("T. S. Eliot", "wrote his dissertation on", "F. H. Bradley")\n', '("F. H. Bradley", "influenced poetry of", "T. S. Eliot")\n', '("F. H. Bradley", "philosophical work evaluated by", "Harvard University")\n', '("Emil Cioran", "moved to", "Latin Quarter of Paris")\n', '("Emil Cioran", "was born in", "Kingdom of Hungary")\n', '("Emil Cioran", "spent childhood in", "Sibiu")\n', '("Emil Cioran", "met", "Eugène Ionesco")\n', '("Emil Cioran", "studied works of", "Friedrich Nietzsche")\n', '("Emil Cioran", "studied works of", "Honoré de Balzac")\n', '("Emil Cioran", "studied works of", "Arthur Schopenhauer")\n', '("Emil Cioran", "studied works of", "Fyodor Dostoevsky")\n', '("Emil Cioran", "studied works of", "Martin Heidegger")\n', '("Emil Cioran", "wrote thesis on", "Henri Bergson")\n', '("Emil Cioran", "studied works of", "Johann Gottlieb Fichte")\n', '("Emil Cioran", "studied works of", "Hegel")\n', '("Emil Cioran", "studied works of", "Edmund Husserl")\n', '("Emil Cioran", "studied works of", "Immanuel Kant")\n', '("Emil Cioran", "came into contact with", "Nicolai Hartmann")\n', '("Emil Cioran", "received scholarship to", "University of Berlin")\n', '("Emil Cioran", "showed interest in policies of", "Nazi regime")\n', '("Emil Cioran", "expressed admiration for", "Italy")\n', '("Emil Cioran", "taught philosophy in", "Brașov")\n', '("Emil Cioran", "lived in", "Paris")\n', '("Emil Cioran", "attended school in", "Bucharest")\n', '("Emil Cioran", "met", "Samuel Beckett")\n', '("Emil Cioran", "met", "Jean-Paul Sartre")\n', '("Emil Cioran", "met", "Albert Camus")\n', '("Emil Cioran", "influenced by", "Oswald Spengler")\n', '("Emil Cioran", "commented on God with reference to", "Bach")\n', '("Emil Cioran", "considered importance of", "Shakespeare")\n', '("Emil Cioran", "considered importance of", "Beethoven")\n', '("Susan Sontag", "admired", "Emil Cioran")\n', '("Emil Cioran", "was", "Luxembourgian")\n', '("Alexius Meinong", "was a", "philosopher")\n', '("Alexius Meinong", "known for", "unique ontology and theory of objects")\n', '("Alexius Meinong", "made contributions to", "philosophy of mind and theory of value")\n', '("Alexius Meinong", "studied at", "Akademisches Gymnasium, Vienna")\n', '("Alexius Meinong", "entered", "University of Vienna law school")\n', '("Alexius Meinong", "drawn to lectures by", "Carl Menger")\n', '("Alexius Meinong", "earned doctorate in history on", "Arnold of Brescia")\n', '("Alexius Meinong", "became pupil of", "Franz Brentano")\n', '("Alexius Meinong", "studied with", "Edmund Husserl")\n', '("Alexius Meinong", "became a professor at", "University of Graz")\n', '("Alexius Meinong", "founded", "Graz Psychological Institute")\n', '("Alexius Meinong", "wrote essays on", "David Hume")\n', '("Alexius Meinong\'s object theory", "termed as", "Meinongian object theory")\n', '("Alexius Meinong\'s theory of objects", "allegedly refuted by", "Bertrand Russell in \'On Denoting\'")\n', '("Alexius Meinong\'s work", "thought highly by", "Bertrand Russell")\n', '("Alexius Meinong", "divides objects into categories based on", "ontological status")\n', '("Alexius Meinong", "distinguishes four classes of", "objects")\n', '("Aristotle", "founder of", "Peripatetic school of philosophy")\n', '("Aristotle", "set groundwork for", "development of modern science")\n', '("Aristotle", "was born in", "Stagira")\n', '("Aristotle", "joined", "Plato\'s Academy")\n', '("Aristotle", "tutored", "Alexander the Great")\n', '("Aristotle", "established", "library in the Lyceum")\n', '("Aristotle", "provided", "complex synthesis of philosophies")\n', '("Aristotle", "had significant impact on", "world")\n', '("Aristotle", "shaped", "medieval scholarship")\n', '("Aristotle", "influenced", "Judeo-Islamic philosophies")\n', '("Aristotle", "influenced", "Christian theology")\n', '("Aristotle", "revered as \'The First Teacher\' by", "medieval Muslim scholars")\n', '("Aristotle", "called simply \'The Philosopher\' by", "Thomas Aquinas")\n', '("Aristotle", "called \'master of those who know\' by", "Dante")\n', '("Peter Abelard", "studied", "Aristotle\'s works")\n', '("Aristotle", "credited with the earliest study of formal logic in", "Prior Analytics")\n', '("Kant", "stated", "Aristotle completed logic")\n', '("Aristotle", "formulated theory of", "hylomorphism")\n', '("Aristotle", "ontology places", "universal in particulars")\n', '("Aristotle", "views towards Persia were", "ethnocentric")\n', '("Alexander the Great", "received encouragement for eastern conquest from", "Aristotle")\n', '("Aristotle", "returned to", "Athens")\n', '("Aristotle", "conducted courses at", "Lyceum")\n', '("Aristotle", "works include", "Physics, Metaphysics, Nicomachean Ethics, Politics, On the Soul and Poetics")\n', '("Aristotle", "made contributions to", "logic, metaphysics, mathematics, physics, biology, botany, ethics, politics, agriculture, medicine, dance, and theatre")\n', '("Aristotle", "estranged from", "Alexander over relationship with Persians")\n', '("Aristotle", "fled to", "Chalcis, on Euboea")\n', '("Antipater", "named as chief executor by", "Aristotle")\n', '("Aristotle", "examines concepts of substance and essence in", "Metaphysics")\n', '("Aristotle", "places universal in", "kath\' hekaston (particulars)")\n', '("Aristotle", "distinguishes between potentiality and actuality", "in Physics and On Generation and Corruption")\n', '("Aristotle", "described two kinds of motion", "in Physics")\n', '("Aristotle", "suggested four causes", "in his natural philosophy")\n', '("Aristotle", "describes experiments in optics using", "camera obscura")\n', '("Aristotle", "stated that", "spontaneity and chance are causes of some things")\n', '("Aristotle", "refuted", "Democritus\'s claim about the Milky Way")\n', '("Charles Lyell", "noted that Aristotle described", "geological change")\n', '("Aristotle", "first to study", "biology systematically")\n', '("Aristotle", "researched", "zoology of Lesbos")\n', '("Theophrastus", "pupil of", "Aristotle")\n', '("Aristotle\'s", "psychology posits three kinds of soul in", "On the Soul")\n', '("Aristotle\'s", "ethics aim at", "becoming good and doing good")\n', '("Aristotle", "addressed the city in", "Politics")\n', '("Aristotle", "considered the city to be", "natural community")\n', '("Aristotle", "made contributions to", "economic thought")\n', '("Aristotle\'s Rhetoric", "proposes three basic kinds of appeals", "ethos, pathos, and logos")\n', '("Aristotle\'s Poetics", "examines", "epic poetry, tragedy, comedy, dithyrambic poetry, painting, sculpture, music, and dance")\n', '("Corpus Aristotelicum", "collection of", "Aristotle\'s surviving works")\n', '("Andronicus of Rhodes", "organized", "texts into first complete edition of Aristotle\'s works")\n', '("Aristotle Mountains", "named after", "Aristotle")\n', '("Aristoteles", "name of a crater on", "the Moon")\n', '("G. E. Moore", "was among the initiators of", "analytic philosophy")\n', '("G. E. Moore", "collaborated with", "Bertrand Russell")\n', '("G. E. Moore", "was a contemporary of", "Ludwig Wittgenstein")\n', '("G. E. Moore", "followed in the footsteps of", "Gottlob Frege")\n', '("G. E. Moore", "was Professor of Philosophy at", "the University of Cambridge")\n', '("Bertrand Russell", "regarded Moore as", "the most revered philosopher of his era")\n', '("Bertrand Russell", "compared Moore\'s look of inspiration to", "Spinoza\'s")\n', '("G. E. Moore", "has a paradox named after him known as", "Moore\'s paradox")\n', '("G. E. Moore", "influenced", "members of the Bloomsbury Group")\n', '("G. E. Moore", "was critical of", "modern philosophy")\n', '("G. E. Moore", "argued against", "ethical naturalism")\n']
+range(1, 128) 1
+['("F. H. Bradley", "read works by", "Immanuel Kant")\n']
+
+['("F. H. Bradley", "was born in", "Clapham")\n', '("Clapham", "is located in", "Surrey, England")\n', '("F. H. Bradley", "is buried in", "Holywell Cemetery in Oxford")\n', '("F. H. Bradley", "entered", "University College, Oxford")\n', '("F. H. Bradley", "was elected to a fellowship at", "Merton College")\n', '("F. H. Bradley", "influenced by", "Hegelian philosophy")\n', '("F. H. Bradley", "rejected philosophies of", "John Locke")\n', '("F. H. Bradley", "rejected philosophies of", "David Hume")\n', '("F. H. Bradley", "rejected philosophies of", "John Stuart Mill")\n', '("F. H. Bradley", "was influenced by", "Johann Gottlieb Fichte")\n', '("F. H. Bradley", "is connected to", "George Herbert Mead through moral philosophy")\n', '("F. H. Bradley", "is connected to", "Richard Rorty through anti-individualism")\n', '("F. H. Bradley", "philosophy declined due to", "G. E. Moore")\n', '("F. H. Bradley", "philosophy declined due to", "Bertrand Russell")\n', '("T. S. Eliot", "wrote his dissertation on", "F. H. Bradley")\n', '("F. H. Bradley", "influenced poetry of", "T. S. Eliot")\n', '("F. H. Bradley", "philosophical work evaluated by", "Harvard University")\n', '("Emil Cioran", "moved to", "Latin Quarter of Paris")\n', '("Emil Cioran", "was born in", "Kingdom of Hungary")\n', '("Emil Cioran", "spent childhood in", "Sibiu")\n', '("Emil Cioran", "met", "Eugène Ionesco")\n', '("Emil Cioran", "studied works of", "Friedrich Nietzsche")\n', '("Emil Cioran", "studied works of", "Honoré de Balzac")\n', '("Emil Cioran", "studied works of", "Arthur Schopenhauer")\n', '("Emil Cioran", "studied works of", "Fyodor Dostoevsky")\n', '("Emil Cioran", "studied works of", "Martin Heidegger")\n', '("Emil Cioran", "wrote thesis on", "Henri Bergson")\n', '("Emil Cioran", "studied works of", "Johann Gottlieb Fichte")\n', '("Emil Cioran", "studied works of", "Hegel")\n', '("Emil Cioran", "studied works of", "Edmund Husserl")\n', '("Emil Cioran", "studied works of", "Immanuel Kant")\n', '("Emil Cioran", "came into contact with", "Nicolai Hartmann")\n', '("Emil Cioran", "received scholarship to", "University of Berlin")\n', '("Emil Cioran", "showed interest in policies of", "Nazi regime")\n', '("Emil Cioran", "expressed admiration for", "Italy")\n', '("Emil Cioran", "taught philosophy in", "Brașov")\n', '("Emil Cioran", "lived in", "Paris")\n', '("Emil Cioran", "attended school in", "Bucharest")\n', '("Emil Cioran", "met", "Samuel Beckett")\n', '("Emil Cioran", "met", "Jean-Paul Sartre")\n', '("Emil Cioran", "met", "Albert Camus")\n', '("Emil Cioran", "influenced by", "Oswald Spengler")\n', '("Emil Cioran", "commented on God with reference to", "Bach")\n', '("Emil Cioran", "considered importance of", "Shakespeare")\n', '("Emil Cioran", "considered importance of", "Beethoven")\n', '("Susan Sontag", "admired", "Emil Cioran")\n', '("Emil Cioran", "was", "Luxembourgian")\n', '("Alexius Meinong", "was a", "philosopher")\n', '("Alexius Meinong", "known for", "unique ontology and theory of objects")\n', '("Alexius Meinong", "made contributions to", "philosophy of mind and theory of value")\n', '("Alexius Meinong", "studied at", "Akademisches Gymnasium, Vienna")\n', '("Alexius Meinong", "entered", "University of Vienna law school")\n', '("Alexius Meinong", "drawn to lectures by", "Carl Menger")\n', '("Alexius Meinong", "earned doctorate in history on", "Arnold of Brescia")\n', '("Alexius Meinong", "became pupil of", "Franz Brentano")\n', '("Alexius Meinong", "studied with", "Edmund Husserl")\n', '("Alexius Meinong", "became a professor at", "University of Graz")\n', '("Alexius Meinong", "founded", "Graz Psychological Institute")\n', '("Alexius Meinong", "wrote essays on", "David Hume")\n', '("Alexius Meinong\'s object theory", "termed as", "Meinongian object theory")\n', '("Alexius Meinong\'s theory of objects", "allegedly refuted by", "Bertrand Russell in \'On Denoting\'")\n', '("Alexius Meinong\'s work", "thought highly by", "Bertrand Russell")\n', '("Alexius Meinong", "divides objects into categories based on", "ontological status")\n', '("Alexius Meinong", "distinguishes four classes of", "objects")\n', '("Aristotle", "founder of", "Peripatetic school of philosophy")\n', '("Aristotle", "set groundwork for", "development of modern science")\n', '("Aristotle", "was born in", "Stagira")\n', '("Aristotle", "joined", "Plato\'s Academy")\n', '("Aristotle", "tutored", "Alexander the Great")\n', '("Aristotle", "established", "library in the Lyceum")\n', '("Aristotle", "provided", "complex synthesis of philosophies")\n', '("Aristotle", "had significant impact on", "world")\n', '("Aristotle", "shaped", "medieval scholarship")\n', '("Aristotle", "influenced", "Judeo-Islamic philosophies")\n', '("Aristotle", "influenced", "Christian theology")\n', '("Aristotle", "revered as \'The First Teacher\' by", "medieval Muslim scholars")\n', '("Aristotle", "called simply \'The Philosopher\' by", "Thomas Aquinas")\n', '("Aristotle", "called \'master of those who know\' by", "Dante")\n', '("Peter Abelard", "studied", "Aristotle\'s works")\n', '("Aristotle", "credited with the earliest study of formal logic in", "Prior Analytics")\n', '("Kant", "stated", "Aristotle completed logic")\n', '("Aristotle", "formulated theory of", "hylomorphism")\n', '("Aristotle", "ontology places", "universal in particulars")\n', '("Aristotle", "views towards Persia were", "ethnocentric")\n', '("Alexander the Great", "received encouragement for eastern conquest from", "Aristotle")\n', '("Aristotle", "returned to", "Athens")\n', '("Aristotle", "conducted courses at", "Lyceum")\n', '("Aristotle", "works include", "Physics, Metaphysics, Nicomachean Ethics, Politics, On the Soul and Poetics")\n', '("Aristotle", "made contributions to", "logic, metaphysics, mathematics, physics, biology, botany, ethics, politics, agriculture, medicine, dance, and theatre")\n', '("Aristotle", "estranged from", "Alexander over relationship with Persians")\n', '("Aristotle", "fled to", "Chalcis, on Euboea")\n', '("Antipater", "named as chief executor by", "Aristotle")\n', '("Aristotle", "examines concepts of substance and essence in", "Metaphysics")\n', '("Aristotle", "places universal in", "kath\' hekaston (particulars)")\n', '("Aristotle", "distinguishes between potentiality and actuality", "in Physics and On Generation and Corruption")\n', '("Aristotle", "described two kinds of motion", "in Physics")\n', '("Aristotle", "suggested four causes", "in his natural philosophy")\n', '("Aristotle", "describes experiments in optics using", "camera obscura")\n', '("Aristotle", "stated that", "spontaneity and chance are causes of some things")\n', '("Aristotle", "refuted", "Democritus\'s claim about the Milky Way")\n', '("Charles Lyell", "noted that Aristotle described", "geological change")\n', '("Aristotle", "first to study", "biology systematically")\n', '("Aristotle", "researched", "zoology of Lesbos")\n', '("Theophrastus", "pupil of", "Aristotle")\n', '("Aristotle\'s", "psychology posits three kinds of soul in", "On the Soul")\n', '("Aristotle\'s", "ethics aim at", "becoming good and doing good")\n', '("Aristotle", "addressed the city in", "Politics")\n', '("Aristotle", "considered the city to be", "natural community")\n', '("Aristotle", "made contributions to", "economic thought")\n', '("Aristotle\'s Rhetoric", "proposes three basic kinds of appeals", "ethos, pathos, and logos")\n', '("Aristotle\'s Poetics", "examines", "epic poetry, tragedy, comedy, dithyrambic poetry, painting, sculpture, music, and dance")\n', '("Corpus Aristotelicum", "collection of", "Aristotle\'s surviving works")\n', '("Andronicus of Rhodes", "organized", "texts into first complete edition of Aristotle\'s works")\n', '("Aristotle Mountains", "named after", "Aristotle")\n', '("Aristoteles", "name of a crater on", "the Moon")\n', '("G. E. Moore", "was among the initiators of", "analytic philosophy")\n', '("G. E. Moore", "collaborated with", "Bertrand Russell")\n', '("G. E. Moore", "was a contemporary of", "Ludwig Wittgenstein")\n', '("G. E. Moore", "followed in the footsteps of", "Gottlob Frege")\n', '("G. E. Moore", "was Professor of Philosophy at", "the University of Cambridge")\n', '("Bertrand Russell", "regarded Moore as", "the most revered philosopher of his era")\n', '("Bertrand Russell", "compared Moore\'s look of inspiration to", "Spinoza\'s")\n', '("G. E. Moore", "has a paradox named after him known as", "Moore\'s paradox")\n', '("G. E. Moore", "influenced", "members of the Bloomsbury Group")\n', '("G. E. Moore", "was critical of", "modern philosophy")\n', '("G. E. Moore", "argued against", "ethical naturalism")\n']
+range(1, 128) 1
+['("F. H. Bradley", "read works by", "Immanuel Kant")\n']
+
+['("F. H. Bradley", "was born in", "Clapham")\n', '("Clapham", "is located in", "Surrey, England")\n', '("F. H. Bradley", "is buried in", "Holywell Cemetery in Oxford")\n', '("F. H. Bradley", "entered", "University College, Oxford")\n', '("F. H. Bradley", "was elected to a fellowship at", "Merton College")\n', '("F. H. Bradley", "influenced by", "Hegelian philosophy")\n', '("F. H. Bradley", "rejected philosophies of", "John Locke")\n', '("F. H. Bradley", "rejected philosophies of", "David Hume")\n', '("F. H. Bradley", "rejected philosophies of", "John Stuart Mill")\n', '("F. H. Bradley", "was influenced by", "Johann Gottlieb Fichte")\n', '("F. H. Bradley", "is connected to", "George Herbert Mead through moral philosophy")\n', '("F. H. Bradley", "is connected to", "Richard Rorty through anti-individualism")\n', '("F. H. Bradley", "philosophy declined due to", "G. E. Moore")\n', '("F. H. Bradley", "philosophy declined due to", "Bertrand Russell")\n', '("T. S. Eliot", "wrote his dissertation on", "F. H. Bradley")\n', '("F. H. Bradley", "influenced poetry of", "T. S. Eliot")\n', '("F. H. Bradley", "philosophical work evaluated by", "Harvard University")\n', '("Emil Cioran", "moved to", "Latin Quarter of Paris")\n', '("Emil Cioran", "was born in", "Kingdom of Hungary")\n', '("Emil Cioran", "spent childhood in", "Sibiu")\n', '("Emil Cioran", "met", "Eugène Ionesco")\n', '("Emil Cioran", "studied works of", "Friedrich Nietzsche")\n', '("Emil Cioran", "studied works of", "Honoré de Balzac")\n', '("Emil Cioran", "studied works of", "Arthur Schopenhauer")\n', '("Emil Cioran", "studied works of", "Fyodor Dostoevsky")\n', '("Emil Cioran", "studied works of", "Martin Heidegger")\n', '("Emil Cioran", "wrote thesis on", "Henri Bergson")\n', '("Emil Cioran", "studied works of", "Johann Gottlieb Fichte")\n', '("Emil Cioran", "studied works of", "Hegel")\n', '("Emil Cioran", "studied works of", "Edmund Husserl")\n', '("Emil Cioran", "studied works of", "Immanuel Kant")\n', '("Emil Cioran", "came into contact with", "Nicolai Hartmann")\n', '("Emil Cioran", "received scholarship to", "University of Berlin")\n', '("Emil Cioran", "showed interest in policies of", "Nazi regime")\n', '("Emil Cioran", "expressed admiration for", "Italy")\n', '("Emil Cioran", "taught philosophy in", "Brașov")\n', '("Emil Cioran", "lived in", "Paris")\n', '("Emil Cioran", "attended school in", "Bucharest")\n', '("Emil Cioran", "met", "Samuel Beckett")\n', '("Emil Cioran", "met", "Jean-Paul Sartre")\n', '("Emil Cioran", "met", "Albert Camus")\n', '("Emil Cioran", "influenced by", "Oswald Spengler")\n', '("Emil Cioran", "commented on God with reference to", "Bach")\n', '("Emil Cioran", "considered importance of", "Shakespeare")\n', '("Emil Cioran", "considered importance of", "Beethoven")\n', '("Susan Sontag", "admired", "Emil Cioran")\n', '("Emil Cioran", "was", "Luxembourgian")\n', '("Alexius Meinong", "was a", "philosopher")\n', '("Alexius Meinong", "known for", "unique ontology and theory of objects")\n', '("Alexius Meinong", "made contributions to", "philosophy of mind and theory of value")\n', '("Alexius Meinong", "studied at", "Akademisches Gymnasium, Vienna")\n', '("Alexius Meinong", "entered", "University of Vienna law school")\n', '("Alexius Meinong", "drawn to lectures by", "Carl Menger")\n', '("Alexius Meinong", "earned doctorate in history on", "Arnold of Brescia")\n', '("Alexius Meinong", "became pupil of", "Franz Brentano")\n', '("Alexius Meinong", "studied with", "Edmund Husserl")\n', '("Alexius Meinong", "became a professor at", "University of Graz")\n', '("Alexius Meinong", "founded", "Graz Psychological Institute")\n', '("Alexius Meinong", "wrote essays on", "David Hume")\n', '("Alexius Meinong\'s object theory", "termed as", "Meinongian object theory")\n', '("Alexius Meinong\'s theory of objects", "allegedly refuted by", "Bertrand Russell in \'On Denoting\'")\n', '("Alexius Meinong\'s work", "thought highly by", "Bertrand Russell")\n', '("Alexius Meinong", "divides objects into categories based on", "ontological status")\n', '("Alexius Meinong", "distinguishes four classes of", "objects")\n', '("Aristotle", "founder of", "Peripatetic school of philosophy")\n', '("Aristotle", "set groundwork for", "development of modern science")\n', '("Aristotle", "was born in", "Stagira")\n', '("Aristotle", "joined", "Plato\'s Academy")\n', '("Aristotle", "tutored", "Alexander the Great")\n', '("Aristotle", "established", "library in the Lyceum")\n', '("Aristotle", "provided", "complex synthesis of philosophies")\n', '("Aristotle", "had significant impact on", "world")\n', '("Aristotle", "shaped", "medieval scholarship")\n', '("Aristotle", "influenced", "Judeo-Islamic philosophies")\n', '("Aristotle", "influenced", "Christian theology")\n', '("Aristotle", "revered as \'The First Teacher\' by", "medieval Muslim scholars")\n', '("Aristotle", "called simply \'The Philosopher\' by", "Thomas Aquinas")\n', '("Aristotle", "called \'master of those who know\' by", "Dante")\n', '("Peter Abelard", "studied", "Aristotle\'s works")\n', '("Aristotle", "credited with the earliest study of formal logic in", "Prior Analytics")\n', '("Kant", "stated", "Aristotle completed logic")\n', '("Aristotle", "formulated theory of", "hylomorphism")\n', '("Aristotle", "ontology places", "universal in particulars")\n', '("Aristotle", "views towards Persia were", "ethnocentric")\n', '("Alexander the Great", "received encouragement for eastern conquest from", "Aristotle")\n', '("Aristotle", "returned to", "Athens")\n', '("Aristotle", "conducted courses at", "Lyceum")\n', '("Aristotle", "works include", "Physics, Metaphysics, Nicomachean Ethics, Politics, On the Soul and Poetics")\n', '("Aristotle", "made contributions to", "logic, metaphysics, mathematics, physics, biology, botany, ethics, politics, agriculture, medicine, dance, and theatre")\n', '("Aristotle", "estranged from", "Alexander over relationship with Persians")\n', '("Aristotle", "fled to", "Chalcis, on Euboea")\n', '("Antipater", "named as chief executor by", "Aristotle")\n', '("Aristotle", "examines concepts of substance and essence in", "Metaphysics")\n', '("Aristotle", "places universal in", "kath\' hekaston (particulars)")\n', '("Aristotle", "distinguishes between potentiality and actuality", "in Physics and On Generation and Corruption")\n', '("Aristotle", "described two kinds of motion", "in Physics")\n', '("Aristotle", "suggested four causes", "in his natural philosophy")\n', '("Aristotle", "describes experiments in optics using", "camera obscura")\n', '("Aristotle", "stated that", "spontaneity and chance are causes of some things")\n', '("Aristotle", "refuted", "Democritus\'s claim about the Milky Way")\n', '("Charles Lyell", "noted that Aristotle described", "geological change")\n', '("Aristotle", "first to study", "biology systematically")\n', '("Aristotle", "researched", "zoology of Lesbos")\n', '("Theophrastus", "pupil of", "Aristotle")\n', '("Aristotle\'s", "psychology posits three kinds of soul in", "On the Soul")\n', '("Aristotle\'s", "ethics aim at", "becoming good and doing good")\n', '("Aristotle", "addressed the city in", "Politics")\n', '("Aristotle", "considered the city to be", "natural community")\n', '("Aristotle", "made contributions to", "economic thought")\n', '("Aristotle\'s Rhetoric", "proposes three basic kinds of appeals", "ethos, pathos, and logos")\n', '("Aristotle\'s Poetics", "examines", "epic poetry, tragedy, comedy, dithyrambic poetry, painting, sculpture, music, and dance")\n', '("Corpus Aristotelicum", "collection of", "Aristotle\'s surviving works")\n', '("Andronicus of Rhodes", "organized", "texts into first complete edition of Aristotle\'s works")\n', '("Aristotle Mountains", "named after", "Aristotle")\n', '("Aristoteles", "name of a crater on", "the Moon")\n', '("G. E. Moore", "was among the initiators of", "analytic philosophy")\n', '("G. E. Moore", "collaborated with", "Bertrand Russell")\n', '("G. E. Moore", "was a contemporary of", "Ludwig Wittgenstein")\n', '("G. E. Moore", "followed in the footsteps of", "Gottlob Frege")\n', '("G. E. Moore", "was Professor of Philosophy at", "the University of Cambridge")\n', '("Bertrand Russell", "regarded Moore as", "the most revered philosopher of his era")\n', '("Bertrand Russell", "compared Moore\'s look of inspiration to", "Spinoza\'s")\n', '("G. E. Moore", "has a paradox named after him known as", "Moore\'s paradox")\n', '("G. E. Moore", "influenced", "members of the Bloomsbury Group")\n', '("G. E. Moore", "was critical of", "modern philosophy")\n', '("G. E. Moore", "argued against", "ethical naturalism")\n']
+range(1, 128) 1
+{'id': '0_3', 'Question': ' Which philosopher, influenced by the writings of Immanuel Kant, played a significant role in the development of British idealism?\n', 'Answer': 'F. H. Bradley', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Emil Cioran'}, {'label': 'B', 'text': 'Alexius Meinong'}, {'label': 'C', 'text': 'Aristotle'}, {'label': 'D', 'text': 'G. E. Moore'}, {'label': 'E', 'text': 'F. H. Bradley'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'cioran'}, {'label': 'B', 'text': 'meinong'}, {'label': 'C', 'text': 'aristotle'}, {'label': 'D', 'text': 'g_e_moore'}, {'label': 'E', 'text': 'bradleyan'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who read works by Immanuel Kant and contributed to British idealism?\nA1: F. H. Bradley'], 'Hops_wiki': [('Immanuel Kant', 'F. H. Bradley')], 'Hops_cpnet': [('immanuel_kant', 'bradleyan')], 'Triplets': ['("F. H. Bradley", "read works by", "Immanuel Kant")'], 'Referred_files': [{'name': 'F. H. Bradley', 'line': 4}], 'Question_triplet_answer': {100: [28], 50: [65], 25: [73]}}
+time passed:  2742.7492549419403
+Expected dollar:  0.0
+G. E. Moore is People
+the University of Cambridge is Geography
+Bach is People
+Aristotle is People
+Bertrand Russell is People
+David Hume is People
+Edmund Husserl is People
+Nicolai Hartmann is People
+Franz Brentano is People
+University of Berlin is Geography
+Shakespeare is People
+Johann Gottlieb Fichte is People
+Oswald Spengler is People
+Immanuel Kant is People
+Clapham is Geography
+Surrey is Geography
+England is Geography
+Lesbos is Geography
+Alexius Meinong's is People
+Richard Rorty is People
+Samuel Beckett is People
+Holywell Cemetery is Geography
+Oxford is Geography
+Democritus is People
+Athens is Geography
+University of Graz is Geography
+Hegelian is People
+Italy is Geography
+Alexander the Great is People
+Martin Heidegger is People
+Plato is People
+Albert Camus is People
+Friedrich Nietzsche is People
+Arnold of Brescia is People
+Peter Abelard is People
+Gottlob Frege is People
+Kant is People
+Merton College is Geography
+John Stuart Mill is People
+Sibiu is Geography
+F. H. Bradley is People
+University of Vienna is Geography
+Harvard University is Geography
+entities:  {'H.', 'Franz', 'Bach', 'Albert', 'Alexander', 'Camus', 'Husserl', 'Surrey', 'Holywell', 'Gottlob', 'Fichte', 'Nietzsche', 'Hegel', 'Lesbos', 'Brentano', 'Peter', 'Kant', 'Martin', 'Heidegger', 'Russell', 'Bradley', 'Aristotle', "Meinong's", 'England', 'Cioran', 'College', 'Cambridge', 'Mill', 'Eugène', 'Hegelian', 'Group', 'Beckett', 'E.', 'Alexius', 'Shakespeare', 'Eliot', 'Hume', 'Institute', 'Moore', 'John', 'Berlin', 'Italy', 'Rorty', 'Athens', 'Johann', 'Clapham', 'Meinong', 'Immanuel', 'Plato', 'University', 'Stuart', 'Great', 'Oxford', 'Emil', 'Frege', 'Sibiu', 'Abelard', 'Brescia', 'Ionesco', 'Graz', 'David', 'Harvard', 'Hartmann', 'F.', 'Samuel', 'Nicolai', 'Bertrand', 'Arnold', 'Richard', 'G.', 'Gottlieb', 'Democritus', 'Oswald', 'Cemetery', 'Edmund', 'Friedrich', 'Vienna', 'Spengler', 'Merton', 'Bloomsbury'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'G. E. Moore' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ G. E. Moore
+Bertrand Russell
+Aristotle
+F. H. Bradley
+Antipater
+Alexius Meinong
+Emil Cioran
+Aristotle's Poetics
+Aristotle's Rhetoric
+Aristoteles
+Clapham
+Theophrastus
+Peter Abelard
+Kant
+Bertrand Russell
+
+gpt_entity_particular(): entity list: 
+ ['Antipater', 'G. E. Moore', 'Alexius Meinong', 'Emil Cioran', "Aristotle's Poetics", 'Peter Abelard', 'Aristoteles', 'Theophrastus', "Aristotle's Rhetoric", 'Clapham', 'Kant', 'F. H. Bradley', 'Bertrand Russell', 'Aristotle']
+
+gpt_entity_particular(): filtered entity: 
+ ['Bertrand Russell']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Emil Cioran' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+Emil Cioran
+
+gpt_entity_particular(): entity list: 
+ ['Emil Cioran']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Alexius Meinong' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Aristotle
+Aristotle
+Bach
+Aristotle
+Emil Cioran
+Franz Brentano
+David Hume
+Emil Cioran
+Hegel
+Emil Cioran
+Luxembourgian
+Aristotle
+Graz University
+Nicolai Hartmann
+Franz Brentano
+Bertrand Russell
+University of Berlin
+Shakespeare
+Mechanism
+Edmund Husserl
+Luxembourgian
+Hegelian philosophy
+Immanuel Kant
+Bertrand Russell
+Franz Brentano
+Aristotle
+Emil Cioran
+Samuel Beckett
+Graz Psychological Institute
+Hegel
+Philosophy of mind
+University of Graz
+Aristotle
+Shifting notions
+Emil Cioran
+Aristotle
+Plato's Academy
+Shifting notions
+Aristotle's Poetics
+World
+Madness
+Alexius Meinong
+Meinongian object theory
+Aristotle
+Plato's Academy
+Friedrich Nietzsche
+Biology
+T. S. Eliot
+David Hume
+Arnold of Brescia
+Edmund Husserl
+Aristotle's works
+Bertrand Russell
+Gottlob Frege
+Bach
+Aristotle
+Politics
+Crater on the Moon
+Potentiality
+Merton College
+Judeo-Islamic philosophies
+Alexander
+Sibiu
+Merton College
+Albert Camus
+F. H. Bradley
+Aristotle
+Merton College
+Stagira
+Peripatetic school of philosophy
+Bucharest
+T. S. Eliot
+Metaphysics
+University of Vienna
+Andronicus of Rhodes
+G. E. Moore
+Stagira
+Crater on the Moon
+Harvard University
+
+gpt_entity_particular(): entity list: 
+ ['Mechanism', 'Bach', 'Samuel Beckett', 'Alexius Meinong', 'University of Vienna', "Aristotle's works", 'Alexander', 'Stagira', 'Edmund Husserl', 'F. H. Bradley', 'Luxembourgian', 'Immanuel Kant', 'Shifting notions', 'Andronicus of Rhodes', 'Sibiu', 'Graz Psychological Institute', 'Hegel', 'T. S. Eliot', 'Friedrich Nietzsche', 'Politics', 'Philosophy of mind', 'Peripatetic school of philosophy', 'Merton College', "Plato's Academy", 'Franz Brentano', 'Biology', 'Madness', 'World', 'Bertrand Russell', 'Aristotle', 'Crater on the Moon', 'Albert Camus', 'G. E. Moore', "Aristotle's Poetics", 'Arnold of Brescia', 'Gottlob Frege', 'Potentiality', 'University of Graz', 'Bucharest', 'Nicolai Hartmann', 'Emil Cioran', 'Metaphysics', 'Shakespeare', 'Graz University', 'Judeo-Islamic philosophies', 'Harvard University', 'University of Berlin', 'David Hume', 'Hegelian philosophy', 'Meinongian object theory']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'F. H. Bradley' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ G. E. Moore
+Emil Cioran
+Aristotle
+Bertrand Russell
+David Hume
+Antipater
+Alexius Meinong
+Immanuel Kant
+Hegel
+Johann Gottlieb Fichte
+Franz Brentano
+Richard Rorty
+Samuel Beckett
+Eugène Ionesco
+Martin Heidegger
+Theophrastus
+T. S. Eliot
+Peter Abelard
+Gottlob Frege
+Kant
+John Stuart Mill
+Andronicus of Rhodes
+
+gpt_entity_particular(): entity list: 
+ ['Alexius Meinong', 'Samuel Beckett', 'Richard Rorty', 'Immanuel Kant', 'Andronicus of Rhodes', 'Hegel', 'T. S. Eliot', 'Theophrastus', 'Kant', 'John Stuart Mill', 'Franz Brentano', 'Bertrand Russell', 'Peter Abelard', 'Aristotle', 'Antipater', 'G. E. Moore', 'Eugène Ionesco', 'Johann Gottlieb Fichte', 'Gottlob Frege', 'Martin Heidegger', 'Emil Cioran', 'David Hume']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Aristotle
+Hylomorphism
+Peripatetic school of philosophy
+Epics
+Tragedies
+Comedies
+Dithyrambic poetry
+Painting
+Sculpture
+Music
+Dance
+Ethics
+Biology
+Democritus's claim
+Alexander the Great
+Aristotelian logic
+Politics
+Physics
+On Generation and Corruption
+Judeo-Islamic philosophies
+Aristoteles
+Stagira
+Aristotelian library
+The First Teacher
+The Peripatetic school of philosophy
+
+gpt_entity_particular(): entity list: 
+ ['Aristotelian logic', 'On Generation and Corruption', 'The First Teacher', 'Dithyrambic poetry', 'Aristoteles', 'Stagira', 'Music', 'Politics', 'Peripatetic school of philosophy', "Democritus's claim", 'Biology', 'Comedies', 'Aristotle', 'Aristotelian library', 'Ethics', 'Alexander the Great', 'Physics', 'Judeo-Islamic philosophies', 'Tragedies', 'The Peripatetic school of philosophy', 'Painting', 'Epics', 'Hylomorphism', 'Dance', 'Sculpture']
+
+gpt_entity_particular(): filtered entity: 
+ ['Aristotle']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Aristotle' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Aristotle
+hylomorphism
+Peripatetic school of philosophy
+epic poetry, tragedy, comedy, dithyrambic poetry, painting, sculpture, music, and dance
+ethos, pathos, and logos
+Peripatetic school of philosophy
+zoology of Lesbos
+complex synthesis of philosophies
+zoology of Lesbos
+Lyceum
+city
+natural community
+Alexander the Great
+Plato's Academy
+library in the Lyceum
+Politics
+Physics and On Generation and Corruption
+medieval Muslim scholars
+The First Teacher
+Stagira
+Peripatetic school of philosophy
+library in the Lyceum
+texts into first complete edition of Aristotle's works
+
+gpt_entity_particular(): entity list: 
+ ['The First Teacher', 'ethos, pathos, and logos', 'Stagira', 'Physics and On Generation and Corruption', "texts into first complete edition of Aristotle's works", 'Politics', 'Peripatetic school of philosophy', "Plato's Academy", 'zoology of Lesbos', 'complex synthesis of philosophies', 'Lyceum', 'Aristotle', 'city', 'natural community', 'hylomorphism', 'library in the Lyceum', 'Alexander the Great', 'epic poetry, tragedy, comedy, dithyrambic poetry, painting, sculpture, music, and dance', 'medieval Muslim scholars']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'H.', 'Franz', 'Bach', 'Albert', 'Alexander', 'Camus', 'Husserl', 'Surrey', 'Holywell', 'Gottlob', 'Fichte', 'Nietzsche', 'Hegel', 'Lesbos', 'Brentano', 'Peter', 'Kant', 'Martin', 'Heidegger', 'Russell', 'Bradley', 'Aristotle', "Meinong's", 'Bertrand Russell', 'England', 'Cioran', 'College', 'Cambridge', 'Mill', 'Eugène', 'Hegelian', 'Group', 'Beckett', 'E.', 'Alexius', 'Shakespeare', 'Eliot', 'Hume', 'Institute', 'Moore', 'John', 'Berlin', 'Italy', 'Rorty', 'Athens', 'Johann', 'Clapham', 'Meinong', 'Immanuel', 'Plato', 'University', 'Stuart', 'Great', 'Oxford', 'Emil', 'Frege', 'Sibiu', 'Abelard', 'Brescia', 'Ionesco', 'Graz', 'David', 'Harvard', 'Hartmann', 'F.', 'Samuel', 'Nicolai', 'Bertrand', 'Arnold', 'Richard', 'G.', 'Gottlieb', 'Democritus', 'Oswald', 'Cemetery', 'Edmund', 'Friedrich', 'Vienna', 'Spengler', 'Merton', 'Bloomsbury'}
+Total time:  191.73999881744385
+Entity conversion done on 0_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_0_3_entity_conversion_hash.json. Check the entity.
+ Which philosopher, influenced by the writings of 003 Kant, played a significant role in the development of British idealism?
+
+
+
+Done. Check final_query/id_0_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_0_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_0_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_0_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_0_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_0_3_final_result_ratio25_unmasked.txt

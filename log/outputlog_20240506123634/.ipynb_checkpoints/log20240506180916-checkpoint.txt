@@ -1,0 +1,186 @@
+Got argument: Mexico, 5, 5_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Christopher Columbus", "did not reach", "Gulf of Mexico")', 'start word': 'Mexico', 'end word': 'Christopher Columbus', 'source': {'name': 'Gulf of Mexico', 'line': 29}, 'cpnet': {'start word': 'mexico', 'end word': 'christopher_columbus'}}
+
+utils/question.py extract_hops(Christopher Columbus, [], ['Mexico']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Christopher_Columbus_info.json file
+extract_info(Christopher Columbus) Start.
+utils/preprocess.py extract_info(): Checking good links on Christopher Columbus
+Liguria is Geography
+1 / 30 )  Liguria Liguria liguria
+British Isles is Geography
+2 / 30 )  British Isles British Isles british_isles
+Ghana is Geography
+3 / 30 )  Ghana Ghana ghana
+East Indies is Geography
+4 / 30 )  East Indies East Indies east_indies
+Isabella I of Castile is People
+5 / 30 )  Queen Isabella I Isabella I of Castile isabella_i
+The Bahamas is Geography
+6 / 30 )  the Bahamas The Bahamas bahamas
+Hispaniola is Geography
+7 / 30 )  Hispaniola Hispaniola hispaniola
+Haiti is Geography
+8 / 30 )  Haiti Haiti haiti
+Lesser Antilles is Geography
+9 / 30 )  Lesser Antilles Lesser Antilles lesser_antilles
+Trinidad is Geography
+10 / 30 )  Trinidad Trinidad trinidad
+Colombia is Geography
+11 / 30 )  Colombia Colombia colombia
+British Columbia is Geography
+12 / 30 )  British Columbia British Columbia british_columbia
+Washington, D.C. is Geography
+13 / 30 )  District of Columbia Washington, D.C. district_of_columbia
+Savona is Geography
+14 / 30 )  Savona Savona savona
+Lisbon is Geography
+15 / 30 )  Lisbon Lisbon lisbon
+Aragon is Geography
+16 / 30 )  Aragon Aragon aragon
+Chios is Geography
+17 / 30 )  Chios Chios chios
+Aegean Sea is Geography
+18 / 30 )  Aegean Sea Aegean Sea aegean_sea
+Bristol is Geography
+19 / 30 )  Bristol Bristol bristol
+Galway is Geography
+20 / 30 )  Galway Galway galway
+Iceland is Geography
+21 / 30 )  Iceland Iceland iceland
+Lombardy is Geography
+22 / 30 )  Lombard Lombardy lombardy
+West Africa is Geography
+23 / 30 )  West Africa West Africa west_africa
+Ptolemy is People
+24 / 30 )  Ptolemy Ptolemy ptolemy
+Marco Polo is Geography
+25 / 30 )  Marco Polo Marco Polo marco_polo
+Pliny the Elder is People
+26 / 30 )  Pliny Pliny the Elder gaius_plinius_secundus
+Pope Pius II is People
+27 / 30 )  Pope Pius II Pope Pius II enea_silvio_piccolomini
+India is Geography
+28 / 30 )  India India india
+China is Geography
+29 / 30 )  China China china
+Maluku Islands is Geography
+30 / 30 )  Maluku Maluku Islands maluku_islands
+extract_triplet(Christopher Columbus)
+Got GPT's response. String length : 2873
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['British Isles', 'British Isles', 'british_isles']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Ghana', 'Ghana', 'ghana']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['East Indies', 'East Indies', 'east_indies']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Queen Isabella I', 'Isabella I of Castile', 'isabella_i']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['the Bahamas', 'The Bahamas', 'bahamas']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Haiti', 'Haiti', 'haiti']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Lesser Antilles', 'Lesser Antilles', 'lesser_antilles']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Trinidad', 'Trinidad', 'trinidad']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['East Indies', 'East Indies', 'east_indies']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Hispaniola', 'Hispaniola', 'hispaniola']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Colombia', 'Colombia', 'colombia']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['British Columbia', 'British Columbia', 'british_columbia']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['District of Columbia', 'Washington, D.C.', 'district_of_columbia']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Chios', 'Chios', 'chios'], ['Aegean Sea', 'Aegean Sea', 'aegean_sea']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Bristol', 'Bristol', 'bristol']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Galway', 'Galway', 'galway']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Lisbon', 'Lisbon', 'lisbon'], ['Galway', 'Galway', 'galway']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Savona', 'Savona', 'savona']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Ptolemy', 'Ptolemy', 'ptolemy']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Marco Polo', 'Marco Polo', 'marco_polo']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Pliny', 'Pliny the Elder', 'gaius_plinius_secundus']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Pope Pius II', 'Pope Pius II', 'enea_silvio_piccolomini']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['Maluku', 'Maluku Islands', 'maluku_islands']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['China', 'China', 'china']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  [['India', 'India', 'india']]
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+subject_words:  [(None, 'Christopher Columbus', 'christopher_columbus')]
+object_words:  []
+second_hop:  {'triplet': '("Christopher Columbus", "sailed from", "Galway to Lisbon")', 'start word': 'Christopher Columbus', 'end word': 'Galway', 'source': {'name': 'Christopher Columbus', 'line': 26}, 'cpnet': {'start word': 'christopher_columbus', 'end word': 'galway'}}
+
+utils/question.py extract_hops(Galway, [], ['Mexico', 'Christopher Columbus']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Galway_info.json file
+extract_info(Galway) Start.
+utils/preprocess.py extract_info(): Checking good links on Galway
+Connacht is Geography
+1 / 30 )  Connacht Connacht connacht
+Galway Bay is Geography
+2 / 30 )  Galway Bay Galway Bay galway_bay
+Rijeka is Geography
+3 / 30 )  Rijeka Rijeka rijeka
+Croatia is Geography
+4 / 30 )  Croatia Croatia croatia
+Kowloon Walled City is Geography
+5 / 30 )  walled city Kowloon Walled City kowloon_walled_city
+Christopher Columbus is People
+6 / 30 )  Christopher Columbus Christopher Columbus christopher_columbus
+Iceland is Geography
+7 / 30 )  Iceland Iceland iceland
+Faroe Islands is Geography
+8 / 30 )  Faroe Islands Faroe Islands faroe_islands
+Jacobitism is Incident
+9 / 30 )  Jacobites Jacobitism jacobitism
+Great Famine  is Incident
+10 / 30 )  Great Famine of 1845–1852 Great Famine  great_hunger
+Ireland is Geography
+11 / 30 )  Ireland Ireland ireland
+Gulf Stream is Geography
+12 / 30 )  Gulf Stream Gulf Stream gulf_stream
+James Joyce is People
+13 / 30 )  James Joyce James Joyce james_joyce

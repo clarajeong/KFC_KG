@@ -1,0 +1,2019 @@
+Got argument: Turtle, 4, 4_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', 'start word': 'Turtle', 'end word': 'Gulf of Mexico', 'source': {'name': 'Turtle', 'line': 39}, 'cpnet': {'start word': 'turtle', 'end word': 'gulf_of_mexico'}}
+
+utils/question.py extract_hops(Gulf of Mexico, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gulf_of_Mexico_info.json file
+second_hop:  {'triplet': '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', 'start word': 'Gulf of Mexico', 'end word': 'Abyssal plain', 'source': {'name': 'Gulf of Mexico', 'line': 27}, 'cpnet': {'start word': 'gulf_of_mexico', 'end word': 'abyssal_plain'}}
+
+utils/question.py extract_hops(Abyssal plain, [], ['Turtle', 'Gulf of Mexico']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abyssal_plain_info.json file
+extract_info(Abyssal plain) Start.
+utils/preprocess.py extract_info(): Checking good links on Abyssal plain
+Plant is Animal
+1 / 30 )  plants Plant plant
+Archaea is Animal
+2 / 30 )  archaea Archaea archaea
+Hydrothermal vent is Geography
+3 / 30 )  hydrothermal vents Hydrothermal vent hydrothermal_vent
+Hawaiian Islands is Geography
+4 / 30 )  Hawaiian islands Hawaiian Islands hawaiian_islands
+Oceanic plateau is Geography
+5 / 30 )  oceanic plateaus Oceanic plateau underwater_bank
+Mediterranean Sea is Geography
+6 / 30 )  Mediterranean Sea Mediterranean Sea mediterranean_sea
+Mid-Atlantic Ridge is Geography
+7 / 30 )  Mid-Atlantic Ridge Mid-Atlantic Ridge mid_atlantic_ridge
+Chukchi Sea is Geography
+8 / 30 )  Chukchi Sea Chukchi Sea chukchi_sea
+Wrangel Island is Geography
+9 / 30 )  Wrangel Island Wrangel Island wrangel_island
+Fridtjof Nansen is Geography
+10 / 30 )  Fridtjof Nansen Fridtjof Nansen fridtjof_nansen
+Arctic Ocean is Geography
+11 / 30 )  Arctic Ocean Arctic Ocean arctic_ocean
+Eurasia is Geography
+12 / 30 )  Eurasian Eurasia eurasia
+Newfoundland and Labrador is Geography
+13 / 30 )  Newfoundland Newfoundland and Labrador newfoundland_and_labrador
+Challenger Deep is Geography
+14 / 30 )  Challenger Deep Challenger Deep challenger_deep
+Mariana Trench is Geography
+15 / 30 )  Mariana Trench Mariana Trench mariana_trench
+Mariana Islands is Geography
+16 / 30 )  Mariana Islands Mariana Islands mariana_islands
+Fathom is Geography
+17 / 30 )  fathoms Fathom fathom
+Ascension Island is Geography
+18 / 30 )  Ascension Island Ascension Island ascension_island
+Gulf of Mexico is Geography
+19 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico
+Ocean is Geography
+20 / 30 )  World Ocean Ocean ocean
+Monterey Bay is Geography
+21 / 30 )  Monterey Bay Monterey Bay monterey_bay
+Sea of Japan is Geography
+22 / 30 )  Sea of Japan Sea of Japan sea_of_japan
+Costa Rica is Geography
+23 / 30 )  Costa Rica Costa Rica costa_rica
+Antarctica is Geography
+24 / 30 )  Antarctica Antarctica antarctica
+Invertebrate is Animal
+25 / 30 )  invertebrates Invertebrate invertebrate
+Cusk-eel is Animal
+26 / 30 )  Ophidiidae Cusk-eel cusk_eel
+Snailfish is Animal
+27 / 30 )  hadal snailfish Snailfish snailfish
+Ipnopidae is Animal
+28 / 30 )  Ipnopidae Ipnopidae ipnopid
+Foraminifera is Animal
+29 / 30 )  foraminiferans Foraminifera foraminifera
+Polychaete is Animal
+30 / 30 )  polychaete Polychaete polychaete
+extract_triplet(Abyssal plain)
+Got GPT's response. String length : 2709
+["Based on the provided text and format, here are the triplets extracted from the 'Text' section:"]
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  [['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  [['World Ocean', 'Ocean', 'ocean']]
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [['hydrothermal vents', 'Hydrothermal vent', 'hydrothermal_vent']]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+subject_words:  [['World Ocean', 'Ocean', 'ocean']]
+object_words:  []
+subject_words:  []
+object_words:  [['plants', 'Plant', 'plant']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['hydrothermal vents', 'Hydrothermal vent', 'hydrothermal_vent']]
+object_words:  []
+subject_words:  [['hydrothermal vents', 'Hydrothermal vent', 'hydrothermal_vent']]
+object_words:  [['Ascension Island', 'Ascension Island', 'ascension_island']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  [['invertebrates', 'Invertebrate', 'invertebrate']]
+subject_words:  []
+object_words:  []
+subject_words:  [['hadal snailfish', 'Snailfish', 'snailfish']]
+object_words:  []
+subject_words:  [['foraminiferans', 'Foraminifera', 'foraminifera']]
+object_words:  []
+subject_words:  [['polychaete', 'Polychaete', 'polychaete']]
+object_words:  []
+subject_words:  [['Challenger Deep', 'Challenger Deep', 'challenger_deep']]
+object_words:  []
+subject_words:  [['Challenger Deep', 'Challenger Deep', 'challenger_deep']]
+object_words:  [['Mariana Trench', 'Mariana Trench', 'mariana_trench']]
+subject_words:  [(None, 'Abyssal plain', 'abyssal_plain')]
+object_words:  []
+["Please note that not all important keywords have a direct relation mentioned with the main keyword 'Abyssal plain' within the provided text. The triplets have been created for those that do have a specified relation, as described in the provided content."]
+third_hop:  {'triplet': '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")', 'start word': 'Abyssal plain', 'end word': 'Ocean', 'source': {'name': 'Abyssal plain', 'line': 1}, 'cpnet': {'start word': 'abyssal_plain', 'end word': 'ocean'}}
+
+utils/question.py extract_hops(Ocean, [], ['Turtle', 'Gulf of Mexico', 'Abyssal plain']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Ocean_info.json file
+extract_info(Ocean) Start.
+utils/preprocess.py extract_info(): Checking good links on Ocean
+Pacific Ocean is Geography
+1 / 30 )  Pacific Pacific Ocean pacific_ocean
+Atlantic Ocean is Geography
+2 / 30 )  Atlantic Atlantic Ocean atlantic_ocean
+Indian Ocean is Geography
+3 / 30 )  Indian Indian Ocean indian_ocean
+Southern Ocean is Geography
+4 / 30 )  Antarctic/Southern Southern Ocean southern_ocean
+Arctic Ocean is Geography
+5 / 30 )  Arctic Arctic Ocean arctic_ocean
+Life is Animal
+6 / 30 )  life Life life
+Algae is Animal
+7 / 30 )  algae Algae algae
+Gulf Stream is Geography
+8 / 30 )  Gulf Stream Gulf Stream gulf_stream
+North Sea is Geography
+9 / 30 )  North Sea North Sea north_sea
+Red Sea is Geography
+10 / 30 )  Red Sea Red Sea red_sea
+Nuvvuagittuq Greenstone Belt is Geography
+11 / 30 )  Nuvvuagittuq Greenstone Belt Nuvvuagittuq Greenstone Belt nuvvuagittuq
+Hadean is Geography
+12 / 30 )  Hadean Hadean hadean
+Land and water hemispheres is Geography
+13 / 30 )  water and land hemisphere Land and water hemispheres land_hemisphere
+Pole of inaccessibility is Geography
+14 / 30 )  pole of inaccessibility Pole of inaccessibility arctic_pole
+Andes is Geography
+15 / 30 )  Andes Andes andes
+New Orleans is Geography
+16 / 30 )  New Orleans New Orleans new_orleans
+Rogue wave is Geography
+17 / 30 )  rogue waves Rogue wave rogue_wave
+Bay of Fundy is Geography
+18 / 30 )  Bay of Fundy Bay of Fundy bay_of_fundy
+Bristol Channel is Geography
+19 / 30 )  Bristol Channel Bristol Channel bristol_channel
+Caspian Sea is Geography
+20 / 30 )  Caspian Sea Caspian Sea caspian_sea
+Mariana Trench is Geography
+21 / 30 )  Mariana Trench Mariana Trench mariana_trench
+Northern Mariana Islands is Geography
+22 / 30 )  Northern Mariana Islands Northern Mariana Islands northern_mariana_islands
+Challenger Deep is Geography
+23 / 30 )  Challenger Deep Challenger Deep challenger_deep
+Lake is Geography
+24 / 30 )  lakes Lake lake
+Antarctica is Geography
+25 / 30 )  Antarctica Antarctica antarctica
+Mediterranean Sea is Geography
+26 / 30 )  Mediterranean Sea Mediterranean Sea mediterranean_sea
+Hydrothermal vent is Geography
+27 / 30 )  hydrothermal vents Hydrothermal vent hydrothermal_vent
+Fish is Animal
+28 / 30 )  fish Fish fish
+Crab is Animal
+29 / 30 )  crabs Crab crab
+Lobster is Animal
+30 / 30 )  lobster Lobster lobster
+extract_triplet(Ocean)
+Got GPT's response. String length : 3323
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [['life', 'Life', 'life']]
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [(None, 'Ocean', 'ocean')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [(None, 'Ocean', 'ocean')]
+subject_words:  [['Gulf Stream', 'Gulf Stream', 'gulf_stream']]
+object_words:  [(None, 'Ocean', 'ocean')]
+subject_words:  [['Gulf Stream', 'Gulf Stream', 'gulf_stream']]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [(None, 'Ocean', 'ocean'), ['Antarctic/Southern', 'Southern Ocean', 'southern_ocean'], ['Arctic', 'Arctic Ocean', 'arctic_ocean']]
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [(None, 'Ocean', 'ocean')]
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [['Nuvvuagittuq Greenstone Belt', 'Nuvvuagittuq Greenstone Belt', 'nuvvuagittuq']]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [['Hadean', 'Hadean', 'hadean']]
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [(None, 'Ocean', 'ocean')]
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean'), ['pole of inaccessibility', 'Pole of inaccessibility', 'arctic_pole']]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [(None, 'Ocean', 'ocean')]
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [['Mariana Trench', 'Mariana Trench', 'mariana_trench']]
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  [['life', 'Life', 'life'], ['lobster', 'Lobster', 'lobster']]
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+subject_words:  [(None, 'Ocean', 'ocean')]
+object_words:  []
+forth_hop:  {'triplet': '("Ocean", "includes", "Atlantic, Pacific, Indian, Antarctic/Southern and Arctic Oceans")', 'start word': 'Ocean', 'end word': 'Southern Ocean', 'source': {'name': 'Ocean', 'line': 16}, 'cpnet': {'start word': 'ocean', 'end word': 'southern_ocean'}}
+generate_question(4_2, ['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")', '("Ocean", "includes", "Atlantic, Pacific, Indian, Antarctic/Southern and Arctic Oceans")'], ['Gulf of Mexico', 'Abyssal plain', 'Ocean', 'Southern Ocean'], [('Turtle', 'Gulf of Mexico'), ('Gulf of Mexico', 'Abyssal plain'), ('Abyssal plain', 'Ocean'), ('Ocean', 'Southern Ocean')], Southern Ocean, [{'name': 'Turtle', 'line': 39}, {'name': 'Gulf of Mexico', 'line': 27}, {'name': 'Abyssal plain', 'line': 1}, {'name': 'Ocean', 'line': 16}]) called
+GPT output is:  Q: What is the name of one of the five principal divisions of the Earth's interconnected water bodies that include regions known for a diversity of non-marine turtle species and contain key geological features like the Sigsbee Deep and abyssal plains?
+A: Southern Ocean
+final_choice(Southern Ocean, options = 5) started
+[]
+entity_type(Southern Ocean) called
+Southern Ocean is Geography
+check_matchscore(Southern Ocean, Oceans):  0.5
+choose_by_wiki_recur(Oceans)
+   Pages in Oceans: ['Ocean', 'Ocean temperature', 'Portal:Oceans', 'Sea', 'List of ancient oceans', 'Arctic Ocean', 'Atlantic Ocean', 'Beach nourishment', 'Borders of the oceans', 'Central Indo-Pacific', 'Chicxulub crater', 'Coastal hydrogeology', 'Ocean colonization', 'Wind generated current', 'Deep sea mining', 'Deep-sea mining regulations in Nauru', 'Deepsea mining in Namibia', 'Effects of climate change on oceans', 'European Atlas of the Seas', 'ICES Statistical Rectangles', 'Indian Ocean', 'Indo-Pacific', 'Land and water hemispheres', 'Lisbon Principles', 'Marine Day', 'Vector measuring current meter', 'Neutral density', 'Ocean development', 'Ocean Explorers Grand Slam', 'Ocean fisheries', 'Ocean governance', 'Ocean world', 'Oceanic dispersal', 'Oceans (film)', 'Open ocean convection', 'Pacific Ocean', 'Past sea level', 'Retroflect', 'Sea surface skin temperature', 'Seven Seas', 'Shallow water marine environment', 'Southern Ocean', 'Topographic Rossby waves', 'Western Indo-Pacific', 'World Oceans Day']
+      Wind generated current in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment']
+      Indo-Pacific in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining']
+      Vector measuring current meter in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining']
+      Shallow water marine environment in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles']
+      Deep sea mining in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles']
+      ICES Statistical Rectangles in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves']
+      Topographic Rossby waves in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea']
+      Sea in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea', 'Effects of climate change on oceans']
+      Effects of climate change on oceans in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea', 'Effects of climate change on oceans']
+      Western Indo-Pacific in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea', 'Effects of climate change on oceans', 'Western Indo-Pacific']
+      Ocean Explorers Grand Slam in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea', 'Effects of climate change on oceans', 'Western Indo-Pacific', 'Ocean Explorers Grand Slam']
+      Past sea level in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea', 'Effects of climate change on oceans', 'Western Indo-Pacific', 'Ocean Explorers Grand Slam', 'Past sea level']
+      Central Indo-Pacific in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea', 'Effects of climate change on oceans', 'Western Indo-Pacific', 'Ocean Explorers Grand Slam', 'Past sea level', 'Central Indo-Pacific']
+      List of ancient oceans in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea', 'Effects of climate change on oceans', 'Western Indo-Pacific', 'Ocean Explorers Grand Slam', 'Past sea level', 'Central Indo-Pacific', 'List of ancient oceans']
+      Seven Seas in ['Wind generated current', 'Indo-Pacific', 'Vector measuring current meter', 'Shallow water marine environment', 'Deep sea mining', 'ICES Statistical Rectangles', 'Topographic Rossby waves', 'Sea', 'Effects of climate change on oceans', 'Western Indo-Pacific', 'Ocean Explorers Grand Slam', 'Past sea level', 'Central Indo-Pacific', 'List of ancient oceans', 'Seven Seas']
+['Indo-Pacific', 'Shallow water marine environment', 'Sea', 'Seven Seas']
+Ended after 2.5 hierarchy
+(2.5, ['Sea', 'Shallow water marine environment', 'Indo-Pacific', 'Seven Seas'])
+
+extract_info(Shallow water marine environment) Start.
+utils/preprocess.py extract_info(): Checking good links on Shallow water marine environment
+Dune is Geography
+1 / 30 )  dunes Dune dune
+Starfish is Animal
+2 / 30 )  starfish Starfish starfish
+Sea anemone is Animal
+3 / 30 )  sea anemones Sea anemone sea_anemone
+Sponge is Animal
+4 / 30 )  sponges Sponge sponge
+Mussel is Animal
+5 / 30 )  mussels Mussel mussel
+Crustacean is Animal
+6 / 30 )  crustaceans Crustacean crustacean
+Barnacle is Animal
+7 / 30 )  barnacles Barnacle barnacle
+Fish is Animal
+8 / 30 )  fish Fish fish
+Hydrozoa is Animal
+9 / 30 )  Hydrozoa Hydrozoa hydrozoa
+Algae is Animal
+10 / 30 )  algae Algae algae
+Isopoda is Animal
+11 / 30 )  isopods Isopoda isopoda
+Amphipoda is Animal
+12 / 30 )  amphipods Amphipoda amphipoda
+Brittle star is Animal
+13 / 30 )  Brittle stars Brittle star brittle_star
+Coral reef is Geography
+14 / 30 )  coral reefs Coral reef coral_reef
+Great Barrier Reef is Geography
+15 / 30 )  barrier reefs Great Barrier Reef great_barrier_reef
+Atoll is Geography
+16 / 30 )  atoll reefs Atoll atoll
+Red algae is Animal
+17 / 30 )  red algae Red algae red_algae
+Green algae is Animal
+18 / 30 )  green algae Green algae green_algae
+Bivalvia is Animal
+19 / 30 )  bivalves Bivalvia bivalvia
+Echinoderm is Animal
+20 / 30 )  echinoderms Echinoderm echinoderm
+Dinoflagellate is Animal
+21 / 30 )  dinoflagellates Dinoflagellate dinoflagellate
+Coral is Animal
+22 / 30 )  corals Coral coral
+extract_triplet(Shallow water marine environment)
+Got GPT's response. String length : 2097
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  []
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['dunes', 'Dune', 'dune']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['starfish', 'Starfish', 'starfish']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['sea anemones', 'Sea anemone', 'sea_anemone']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['sponges', 'Sponge', 'sponge']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['mussels', 'Mussel', 'mussel']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['crustaceans', 'Crustacean', 'crustacean']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['barnacles', 'Barnacle', 'barnacle']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['fish', 'Fish', 'fish']]
+subject_words:  [['Hydrozoa', 'Hydrozoa', 'hydrozoa']]
+object_words:  []
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['algae', 'Algae', 'algae']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['isopods', 'Isopoda', 'isopoda']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['amphipods', 'Amphipoda', 'amphipoda']]
+subject_words:  [['Brittle stars', 'Brittle star', 'brittle_star']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['coral reefs', 'Coral reef', 'coral_reef'], ['corals', 'Coral', 'coral']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['barrier reefs', 'Great Barrier Reef', 'great_barrier_reef']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['atoll reefs', 'Atoll', 'atoll']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['algae', 'Algae', 'algae'], ['red algae', 'Red algae', 'red_algae']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['algae', 'Algae', 'algae'], ['green algae', 'Green algae', 'green_algae']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['bivalves', 'Bivalvia', 'bivalvia']]
+subject_words:  [['echinoderms', 'Echinoderm', 'echinoderm']]
+object_words:  []
+subject_words:  [['dinoflagellates', 'Dinoflagellate', 'dinoflagellate']]
+object_words:  [['corals', 'Coral', 'coral']]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  []
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  []
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+subject_words:  [(None, 'Shallow water marine environment', 'shallow_sea')]
+object_words:  [['corals', 'Coral', 'coral']]
+extract_info(Indo-Pacific) Start.
+utils/preprocess.py extract_info(): Checking good links on Indo-Pacific
+Indian Ocean is Geography
+1 / 30 )  Indian Ocean Indian Ocean indian_ocean
+Pacific Ocean is Geography
+2 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Americas is Geography
+3 / 30 )  Americas Americas americas
+Madagascar is Geography
+4 / 30 )  Madagascar Madagascar madagascar
+Japan is Geography
+5 / 30 )  Japan Japan japan
+Atlantic Ocean is Geography
+6 / 30 )  Atlantic Ocean Atlantic Ocean atlantic_ocean
+Coral reef is Geography
+7 / 30 )  reef building Coral reef coral_reef
+Weimar Republic is Geography
+8 / 30 )  Weimar Germany Weimar Republic weimar_republic
+Australia is Geography
+9 / 30 )  Australia Australia australia
+India is Geography
+10 / 30 )  India India india
+United States is Geography
+11 / 30 )  United States United States united_states
+South Africa is Geography
+12 / 30 )  South Africa South Africa south_africa
+Seychelles is Geography
+13 / 30 )  Seychelles Seychelles seychelles
+Russia is Geography
+14 / 30 )  Russia Russia russia
+Canada is Geography
+15 / 30 )  Canada Canada canada
+Mexico is Geography
+16 / 30 )  Mexico Mexico mexico
+ASEAN is Geography
+17 / 30 )  ASEAN ASEAN asean
+South China Sea is Geography
+18 / 30 )  South China Sea South China Sea south_china_sea
+Philippine Sea is Geography
+19 / 30 )  Philippine Sea Philippine Sea philippine_sea
+New Guinea is Geography
+20 / 30 )  New Guinea New Guinea new_guinea
+New Caledonia is Geography
+21 / 30 )  New Caledonia New Caledonia new_caledonia
+Solomon Islands is Geography
+22 / 30 )  Solomon Islands Solomon Islands solomon_islands
+Vanuatu is Geography
+23 / 30 )  Vanuatu Vanuatu vanuatu
+Fiji is Geography
+24 / 30 )  Fiji Fiji fiji
+Tonga is Geography
+25 / 30 )  Tonga Tonga tonga
+Marshall Islands is Geography
+26 / 30 )  Marshall Islands Marshall Islands marshall_islands
+Hawaii is Geography
+27 / 30 )  Hawaii Hawaii hawaii
+Chile is Geography
+28 / 30 )  Chile Chile chile
+Easter Island is Geography
+29 / 30 )  Easter Island Easter Island easter_island
+Juan Fernández Islands is Geography
+30 / 30 )  Juan Fernández Islands Juan Fernández Islands juan_fernández_islands
+extract_triplet(Indo-Pacific)
+Got GPT's response. String length : 2966
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  []
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Americas', 'Americas', 'americas']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Madagascar', 'Madagascar', 'madagascar'], ['Japan', 'Japan', 'japan']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['reef building', 'Coral reef', 'coral_reef']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Weimar Germany', 'Weimar Republic', 'weimar_republic']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Australia', 'Australia', 'australia']]
+subject_words:  []
+object_words:  [['Japan', 'Japan', 'japan']]
+subject_words:  []
+object_words:  [['India', 'India', 'india']]
+subject_words:  []
+object_words:  [['United States', 'United States', 'united_states']]
+subject_words:  []
+object_words:  [['Indian Ocean', 'Indian Ocean', 'indian_ocean']]
+subject_words:  []
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  []
+object_words:  [['India', 'India', 'india'], ['South Africa', 'South Africa', 'south_africa']]
+subject_words:  []
+object_words:  [['Seychelles', 'Seychelles', 'seychelles']]
+subject_words:  []
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [['ASEAN', 'ASEAN', 'asean']]
+object_words:  []
+subject_words:  [['South China Sea', 'South China Sea', 'south_china_sea']]
+object_words:  []
+subject_words:  [['Philippine Sea', 'Philippine Sea', 'philippine_sea']]
+object_words:  []
+subject_words:  [['New Guinea', 'New Guinea', 'new_guinea']]
+object_words:  []
+subject_words:  [['New Caledonia', 'New Caledonia', 'new_caledonia']]
+object_words:  []
+subject_words:  [['Solomon Islands', 'Solomon Islands', 'solomon_islands']]
+object_words:  []
+subject_words:  [['Vanuatu', 'Vanuatu', 'vanuatu']]
+object_words:  []
+subject_words:  [['Fiji', 'Fiji', 'fiji']]
+object_words:  []
+subject_words:  [['Tonga', 'Tonga', 'tonga']]
+object_words:  []
+subject_words:  [['Marshall Islands', 'Marshall Islands', 'marshall_islands']]
+object_words:  []
+subject_words:  [['Hawaii', 'Hawaii', 'hawaii']]
+object_words:  []
+subject_words:  [['Chile', 'Chile', 'chile']]
+object_words:  []
+subject_words:  [['Easter Island', 'Easter Island', 'easter_island']]
+object_words:  []
+subject_words:  [['Juan Fernández Islands', 'Juan Fernández Islands', 'juan_fernández_islands']]
+object_words:  []
+subject_words:  [['Madagascar', 'Madagascar', 'madagascar']]
+object_words:  []
+subject_words:  [['Seychelles', 'Seychelles', 'seychelles']]
+object_words:  []
+subject_words:  []
+object_words:  [['Weimar Germany', 'Weimar Republic', 'weimar_republic']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Australia', 'Australia', 'australia']]
+subject_words:  []
+object_words:  [['India', 'India', 'india']]
+subject_words:  []
+object_words:  [['Japan', 'Japan', 'japan']]
+subject_words:  []
+object_words:  []
+subject_words:  [['ASEAN', 'ASEAN', 'asean']]
+object_words:  []
+extract_info(Seven Seas) Start.
+utils/preprocess.py extract_info(): Checking good links on Seven Seas
+Mediterranean Sea is Geography
+1 / 30 )  Mediterranean Sea Mediterranean Sea mediterranean_sea
+India is Geography
+2 / 30 )  India India india
+Caribbean Sea is Geography
+3 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Americas is Geography
+4 / 30 )  the Americas Americas americas
+Ocean is Geography
+5 / 30 )  oceans Ocean ocean
+Muhammad is Geography
+6 / 30 )  Muhammad Muhammad muhammad
+China is Geography
+7 / 30 )  China China china
+Persian Gulf is Geography
+8 / 30 )  Sea of Fars Persian Gulf persian_gulf
+Arabian Sea is Geography
+9 / 30 )  Larwi Arabian Sea arabian_sea
+Bay of Bengal is Geography
+10 / 30 )  Harkand Bay of Bengal bay_of_bengal
+Sri Lanka is Geography
+11 / 30 )  Island of Sarandib Sri Lanka sri_lanka
+Bamboo is Animal
+12 / 30 )  bamboo Bamboo bamboo
+Strait of Malacca is Geography
+13 / 30 )  Kalah Strait of Malacca strait_of_malacca
+Camphora officinarum is Animal
+14 / 30 )  camphor tree Camphora officinarum camphor_laurel
+Gulf of Thailand is Geography
+15 / 30 )  Kardanj Gulf of Thailand gulf_of_thailand
+South China Sea is Geography
+16 / 30 )  sea of Sanji South China Sea south_china_sea
+Guangzhou is Geography
+17 / 30 )  Khanfu Guangzhou guangzhou
+Black Sea is Geography
+18 / 30 )  Black Sea Black Sea black_sea
+Caspian Sea is Geography
+19 / 30 )  Caspian Sea Caspian Sea caspian_sea
+Red Sea is Geography
+20 / 30 )  Red Sea Red Sea red_sea
+Adriatic Sea is Geography
+21 / 30 )  Adriatic Sea Adriatic Sea adriatic_sea
+Dutch East Indies is Geography
+22 / 30 )  Dutch East Indies Dutch East Indies dutch_east_indies
+Celebes Sea is Geography
+23 / 30 )  Celebes Sea Celebes Sea celebes_sea
+Java Sea is Geography
+24 / 30 )  Java Sea Java Sea java_sea
+Sulu Sea is Geography
+25 / 30 )  Sulu Sea Sulu Sea sulu_sea
+Timor Sea is Geography
+26 / 30 )  Timor Sea Timor Sea timor_sea
+Po (river) is Geography
+27 / 30 )  Po river Po (river) po_river
+Venice is Geography
+28 / 30 )  Venice Venice venice
+Amu Darya is Geography
+29 / 30 )  Oxus River Amu Darya amu_darya
+Salt lake is Geography
+30 / 30 )  saltwater lakes Salt lake salt_lake
+extract_triplet(Seven Seas)
+Got GPT's response. String length : 1941
+subject_words:  [(None, 'Seven Seas', 'seven_seas')]
+object_words:  []
+subject_words:  [(None, 'Seven Seas', 'seven_seas')]
+object_words:  [['Mediterranean Sea', 'Mediterranean Sea', 'mediterranean_sea']]
+subject_words:  [(None, 'Seven Seas', 'seven_seas')]
+object_words:  [['India', 'India', 'india']]
+subject_words:  [(None, 'Seven Seas', 'seven_seas')]
+object_words:  [['Caribbean Sea', 'Caribbean Sea', 'caribbean_sea']]
+subject_words:  [(None, 'Seven Seas', 'seven_seas')]
+object_words:  [['the Americas', 'Americas', 'americas']]
+subject_words:  [(None, 'Seven Seas', 'seven_seas')]
+object_words:  [['oceans', 'Ocean', 'ocean']]
+subject_words:  []
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  []
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Muhammad', 'Muhammad', 'muhammad']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Sea of Fars', 'Persian Gulf', 'persian_gulf']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Larwi', 'Arabian Sea', 'arabian_sea']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Harkand', 'Bay of Bengal', 'bay_of_bengal']]
+object_words:  [['Island of Sarandib', 'Sri Lanka', 'sri_lanka']]
+subject_words:  [['Island of Sarandib', 'Sri Lanka', 'sri_lanka']]
+object_words:  []
+subject_words:  [['Kalah', 'Strait of Malacca', 'strait_of_malacca']]
+object_words:  []
+subject_words:  [['camphor tree', 'Camphora officinarum', 'camphor_laurel']]
+object_words:  [['Kalah', 'Strait of Malacca', 'strait_of_malacca']]
+subject_words:  [['Kardanj', 'Gulf of Thailand', 'gulf_of_thailand']]
+object_words:  []
+subject_words:  [['sea of Sanji', 'South China Sea', 'south_china_sea']]
+object_words:  []
+subject_words:  [['Khanfu', 'Guangzhou', 'guangzhou']]
+object_words:  [['sea of Sanji', 'South China Sea', 'south_china_sea']]
+subject_words:  [['Black Sea', 'Black Sea', 'black_sea']]
+object_words:  []
+subject_words:  [['Caspian Sea', 'Caspian Sea', 'caspian_sea']]
+object_words:  []
+subject_words:  [['Red Sea', 'Red Sea', 'red_sea']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Mediterranean Sea', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Adriatic Sea', 'Adriatic Sea', 'adriatic_sea']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Dutch East Indies', 'Dutch East Indies', 'dutch_east_indies']]
+object_words:  []
+subject_words:  [['Celebes Sea', 'Celebes Sea', 'celebes_sea']]
+object_words:  [['Dutch East Indies', 'Dutch East Indies', 'dutch_east_indies']]
+subject_words:  [['Java Sea', 'Java Sea', 'java_sea']]
+object_words:  [['Dutch East Indies', 'Dutch East Indies', 'dutch_east_indies']]
+subject_words:  [['Sulu Sea', 'Sulu Sea', 'sulu_sea']]
+object_words:  [['China', 'China', 'china']]
+subject_words:  [['Timor Sea', 'Timor Sea', 'timor_sea']]
+object_words:  []
+subject_words:  [['Po river', 'Po (river)', 'po_river']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Venice', 'Venice', 'venice']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['Oxus River', 'Amu Darya', 'amu_darya']]
+object_words:  [(None, 'Seven Seas', 'seven_seas')]
+subject_words:  [['saltwater lakes', 'Salt lake', 'salt_lake']]
+object_words:  []
+extract_info(Sea) Start.
+utils/preprocess.py extract_info(): Checking good links on Sea
+Ocean is Geography
+1 / 30 )  ocean Ocean ocean
+Bacteria is Animal
+2 / 30 )  bacteria Bacteria bacteria
+Protist is Animal
+3 / 30 )  protists Protist protist
+Algae is Animal
+4 / 30 )  algae Algae algae
+Fungus is Animal
+5 / 30 )  fungi Fungus fungus
+Coral reef is Geography
+6 / 30 )  coral reefs Coral reef coral_reef
+Fish is Animal
+7 / 30 )  fish Fish fish
+Seaweed is Animal
+8 / 30 )  seaweed Seaweed seaweed
+Atlantic Ocean is Geography
+9 / 30 )  Atlantic Atlantic Ocean atlantic_ocean
+Pacific Ocean is Geography
+10 / 30 )  Pacific Pacific Ocean pacific_ocean
+Indian Ocean is Geography
+11 / 30 )  Indian Indian Ocean indian_ocean
+Southern Ocean is Geography
+12 / 30 )  Southern Southern Ocean southern_ocean
+Arctic Ocean is Geography
+13 / 30 )  Arctic Oceans Arctic Ocean arctic_ocean
+North Sea is Geography
+14 / 30 )  North Sea North Sea north_sea
+Red Sea is Geography
+15 / 30 )  Red Sea Red Sea red_sea
+Sargasso Sea is Geography
+16 / 30 )  Sargasso Sea Sargasso Sea sargasso_sea
+Sea of Galilee is Geography
+17 / 30 )  Sea of Galilee Sea of Galilee sea_of_galilee
+Lake is Geography
+18 / 30 )  freshwater lake Lake lake
+Caspian Sea is Geography
+19 / 30 )  Caspian Sea Caspian Sea caspian_sea
+Antarctica is Geography
+20 / 30 )  Antarctica Antarctica antarctica
+Dead Sea is Geography
+21 / 30 )  Dead Sea Dead Sea dead_sea
+Baltic Sea is Geography
+22 / 30 )  Baltic Sea Baltic Sea baltic_sea
+Vascular plant is Animal
+23 / 30 )  vascular plants Vascular plant vascular_plant
+Seagrass is Animal
+24 / 30 )  seagrasses Seagrass seagrass
+Rogue wave is Geography
+25 / 30 )  rogue waves Rogue wave rogue_wave
+Mariana Trench is Geography
+26 / 30 )  Mariana Trench Mariana Trench mariana_trench
+Mariana Islands is Geography
+27 / 30 )  Mariana Islands Mariana Islands mariana_islands
+New Orleans is Geography
+28 / 30 )  New Orleans New Orleans new_orleans
+Atacama Desert is Geography
+29 / 30 )  Atacama Desert Atacama Desert atacama_desert
+Volga is Geography
+30 / 30 )  River Volga Volga volga
+extract_triplet(Sea)
+Got GPT's response. String length : 1260
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['ocean', 'Ocean', 'ocean']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['bacteria', 'Bacteria', 'bacteria']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['protists', 'Protist', 'protist']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['algae', 'Algae', 'algae']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['fungi', 'Fungus', 'fungus']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['coral reefs', 'Coral reef', 'coral_reef']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['fish', 'Fish', 'fish']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [(None, 'Sea', 'sea'), ['seaweed', 'Seaweed', 'seaweed']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['ocean', 'Ocean', 'ocean'], ['Atlantic', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['ocean', 'Ocean', 'ocean'], ['Pacific', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['ocean', 'Ocean', 'ocean'], ['Indian', 'Indian Ocean', 'indian_ocean']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['ocean', 'Ocean', 'ocean'], ['Southern', 'Southern Ocean', 'southern_ocean']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['ocean', 'Ocean', 'ocean'], ['Arctic Oceans', 'Arctic Ocean', 'arctic_ocean']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [(None, 'Sea', 'sea'), ['North Sea', 'North Sea', 'north_sea']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [(None, 'Sea', 'sea'), ['Red Sea', 'Red Sea', 'red_sea']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [(None, 'Sea', 'sea'), ['Sargasso Sea', 'Sargasso Sea', 'sargasso_sea']]
+subject_words:  [(None, 'Sea', 'sea'), ['Sea of Galilee', 'Sea of Galilee', 'sea_of_galilee']]
+object_words:  [['freshwater lake', 'Lake', 'lake']]
+subject_words:  [(None, 'Sea', 'sea'), ['Caspian Sea', 'Caspian Sea', 'caspian_sea']]
+object_words:  [(None, 'Sea', 'sea')]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['Antarctica', 'Antarctica', 'antarctica']]
+subject_words:  [(None, 'Sea', 'sea'), ['Dead Sea', 'Dead Sea', 'dead_sea']]
+object_words:  [(None, 'Sea', 'sea')]
+subject_words:  [(None, 'Sea', 'sea'), ['Baltic Sea', 'Baltic Sea', 'baltic_sea']]
+object_words:  [(None, 'Sea', 'sea')]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['vascular plants', 'Vascular plant', 'vascular_plant']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [(None, 'Sea', 'sea'), ['seagrasses', 'Seagrass', 'seagrass']]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['rogue waves', 'Rogue wave', 'rogue_wave']]
+subject_words:  [['Mariana Trench', 'Mariana Trench', 'mariana_trench']]
+object_words:  [(None, 'Sea', 'sea')]
+subject_words:  [['Mariana Islands', 'Mariana Islands', 'mariana_islands']]
+object_words:  [(None, 'Sea', 'sea')]
+subject_words:  [['New Orleans', 'New Orleans', 'new_orleans']]
+object_words:  []
+subject_words:  [['Atacama Desert', 'Atacama Desert', 'atacama_desert']]
+object_words:  [(None, 'Sea', 'sea')]
+subject_words:  [(None, 'Sea', 'sea')]
+object_words:  [['River Volga', 'Volga', 'volga']]
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Ocean", "includes", "Atlantic, Pacific, Indian, Antarctic/Southern and Arctic Oceans")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Ocean", "covers", "approximately 70.8% of the Earth\'s surface")\n', '("Ocean", "contains", "97% of Earth\'s water")\n', '("Ocean", "is essential to", "life on Earth")\n', '("Ocean", "influences", "climate and weather patterns")\n', '("Ocean", "acts as", "a huge heat reservoir")\n', '("Oceanographers", "split", "the ocean into vertical and horizontal zones")\n', '("Photic zone", "is where", "photosynthesis can occur")\n', '("Photosynthesis", "produces", "half of the oxygen in the Earth\'s atmosphere")\n', '("Ocean temperatures", "depend on", "the amount of solar radiation reaching the ocean surface")\n', '("Gulf Stream", "is a", "major ocean current")\n', '("Gulf Stream", "transports", "massive amounts of water and heat around the world")\n', '("Ocean water", "contains", "high concentration of dissolved gases")\n', '("Ocean", "provides", "crucial environmental services to humankind")\n', '("Ocean", "is known to be the habitat of", "over 230,000 species")\n', '("Continental shelf and coastal waters", "are", "most affected by human activity")\n', '("World Ocean", "refers to", "the continuous ocean that covers and encircles most of the Earth")\n', '("Oceanus", "is the divine personification of", "an enormous river encircling the world")\n', '("Nuvvuagittuq Greenstone Belt", "shows evidence of", "the presence of water at 3.8 to 4.28 billion years old")\n', '("Ocean", "formed in the", "Hadean eon")\n', '("Ocean", "has taken many shapes with", "many past ocean divisions")\n', '("Ocean", "covers", "361,000,000 km2")\n', '("Ocean\'s furthest pole of inaccessibility", "is located at", "Point Nemo")\n', '("Ocean basins", "fill", "Earth\'s oceanic basins")\n', '("Ocean", "has a mid-ocean ridge that forms", "the longest mountain range in the world")\n', '("Erosion", "can occur", "when waves meet the coast")\n', '("Tides", "are driven by", "the Moon\'s gravitational tidal forces upon the Earth")\n', '("Tidal ranges", "increase", "in coastal areas")\n', '("Ocean", "has an average depth of", "about 4 km")\n', '("Ocean", "contains", "world\'s deepest point at Mariana Trench")\n', '("Ocean water", "has a temperature between", "−2 °C to 5 °C in deep parts")\n', '("Ocean", "contains a halocline and thermocline creating a pycnocline", "")\n', '("Ocean\'s volume", "is", "approximately 1.335 billion cubic kilometers")\n', '("Ocean", "has", "energy which can be harnessed to generate electricity")\n', '("Ocean\'s surface", "experiences", "waves and swell")\n', '("Ocean", "is the source of", "most rainfall")\n', '("Ocean", "has", "tidal cycles over a course of 12.5 hours")\n', '("Ocean", "moderates", "the climate of land")\n', '("Ocean", "undergoes", "atmospheric carbon dioxide absorption")\n', '("Ocean salinity", "is influenced by", "precipitation and evaporation")\n', '("Ocean", "contains", "dissolved gases like oxygen, carbon dioxide, and nitrogen")\n', '("Ocean\'s", "photosynthesis releases", "oxygen and consumes carbon dioxide")\n', '("Ocean", "has", "pH in the range of 8.05 to 8.08")\n', '("Ocean\'s", "alkalinity is regulated by", "carbonate, bicarbonate, and borate ions")\n', '("Ocean", "holds", "marine life such as fish, crabs, lobster")\n', '("Ocean", "is linked to human activity such as", "navigation, naval warfare, fishing")\n', '("Ocean", "faces threats from", "marine pollution, overfishing, climate change")\n', '("Ocean protection", "includes", "creation of marine protected areas and international agreements like UNCLOS")\n', '("Shallow water marine environment", "is characterized by", "oceanic, geological and biological conditions")\n', '("Shallow water marine environment", "has", "sedimentary structures like dunes")\n', '("Shallow water marine environment", "supports", "starfish")\n', '("Shallow water marine environment", "supports", "sea anemones")\n', '("Shallow water marine environment", "supports", "sponges")\n', '("Shallow water marine environment", "supports", "mussels")\n', '("Shallow water marine environment", "is inhabited by", "crustaceans")\n', '("Shallow water marine environment", "is home to", "barnacles")\n', '("Shallow water marine environment", "is populated by", "small fish")\n', '("Hydrozoa", "live in", "shallow marine ecosystems")\n', '("Shallow water marine environment", "hosts", "algae")\n', '("Shallow water marine environment", "is a habitat for", "isopods")\n', '("Shallow water marine environment", "is a habitat for", "amphipods")\n', '("Brittle stars", "are buried in", "sediment in shallow marine areas")\n', '("Carbonate reefs", "exist in", "shallow water marine environment")\n', '("Shallow water marine environment", "includes", "coral reefs")\n', '("Shallow water marine environment", "includes", "barrier reefs")\n', '("Shallow water marine environment", "includes", "atoll reefs")\n', '("Shallow water marine environment", "contains", "red algae")\n', '("Shallow water marine environment", "contains", "green algae")\n', '("Shallow water marine environment", "supports", "bivalves")\n', '("Echinoderms", "reside in", "shallow marine environment")\n', '("Dinoflagellates", "live in", "corals")\n', '("Shallow water marine environment", "has", "sediments composed of limestone")\n', '("Shallow water marine environment", "is associated with", "carbonate factory zones")\n', '("Shallow water marine environment", "can have", "calcite rich limestone or aragonite rich limestone")\n', '("Sediments", "in shallow water marine environment", "are made up of larger grain sizes")\n', '("Sedimentary rocks", "with", "cross stratification are found in shallow marine environments")\n', '("Fossils", "are found/formed in", "shallow water marine environment")\n', '("Shallow water marine environment", "supports life of", "corals")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Sea", "commonly refers to", "ocean")\n', '("Sea", "contains", "bacteria")\n', '("Sea", "contains", "protists")\n', '("Sea", "contains", "algae")\n', '("Sea", "contains", "fungi")\n', '("Sea", "provides habitat for", "coral reefs")\n', '("Seas", "have", "fish")\n', '("Sea", "contains", "seaweed")\n', '("Sea", "interconnected system includes", "Atlantic Ocean")\n', '("Sea", "interconnected system includes", "Pacific Ocean")\n', '("Sea", "interconnected system includes", "Indian Ocean")\n', '("Sea", "interconnected system includes", "Southern Ocean")\n', '("Sea", "interconnected system includes", "Arctic Ocean")\n', '("Marginal seas", "include", "North Sea")\n', '("Marginal seas", "include", "Red Sea")\n', '("Marginal seas", "include", "Sargasso Sea")\n', '("Sea of Galilee", "is a", "freshwater lake")\n', '("Caspian Sea", "debated status of", "sea or saline body of water")\n', '("Seas", "encircle", "Antarctica")\n', '("Dead Sea", "example of", "highly saline sea")\n', '("Baltic Sea", "example of", "low saline sea")\n', '("Sea", "contains", "vascular plants")\n', '("Sea", "contains", "seagrasses")\n', '("Sea", "affected by", "rogue waves")\n', '("Mariana Trench", "located in", "sea")\n', '("Mariana Islands", "surrounded by", "sea")\n', '("New Orleans", "protected from sea by", "levees")\n', '("Atacama Desert", "receives moisture from", "sea")\n', '("Sea", "fed by", "River Volga")\n']
+range(1, 301) 4
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Ocean", "includes", "Atlantic, Pacific, Indian, Antarctic/Southern and Arctic Oceans")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Ocean", "covers", "approximately 70.8% of the Earth\'s surface")\n', '("Ocean", "contains", "97% of Earth\'s water")\n', '("Ocean", "is essential to", "life on Earth")\n', '("Ocean", "influences", "climate and weather patterns")\n', '("Ocean", "acts as", "a huge heat reservoir")\n', '("Oceanographers", "split", "the ocean into vertical and horizontal zones")\n', '("Photic zone", "is where", "photosynthesis can occur")\n', '("Photosynthesis", "produces", "half of the oxygen in the Earth\'s atmosphere")\n', '("Ocean temperatures", "depend on", "the amount of solar radiation reaching the ocean surface")\n', '("Gulf Stream", "is a", "major ocean current")\n', '("Gulf Stream", "transports", "massive amounts of water and heat around the world")\n', '("Ocean water", "contains", "high concentration of dissolved gases")\n', '("Ocean", "provides", "crucial environmental services to humankind")\n', '("Ocean", "is known to be the habitat of", "over 230,000 species")\n', '("Continental shelf and coastal waters", "are", "most affected by human activity")\n', '("World Ocean", "refers to", "the continuous ocean that covers and encircles most of the Earth")\n', '("Oceanus", "is the divine personification of", "an enormous river encircling the world")\n', '("Nuvvuagittuq Greenstone Belt", "shows evidence of", "the presence of water at 3.8 to 4.28 billion years old")\n', '("Ocean", "formed in the", "Hadean eon")\n', '("Ocean", "has taken many shapes with", "many past ocean divisions")\n', '("Ocean", "covers", "361,000,000 km2")\n', '("Ocean\'s furthest pole of inaccessibility", "is located at", "Point Nemo")\n', '("Ocean basins", "fill", "Earth\'s oceanic basins")\n', '("Ocean", "has a mid-ocean ridge that forms", "the longest mountain range in the world")\n', '("Erosion", "can occur", "when waves meet the coast")\n', '("Tides", "are driven by", "the Moon\'s gravitational tidal forces upon the Earth")\n', '("Tidal ranges", "increase", "in coastal areas")\n', '("Ocean", "has an average depth of", "about 4 km")\n', '("Ocean", "contains", "world\'s deepest point at Mariana Trench")\n', '("Ocean water", "has a temperature between", "−2 °C to 5 °C in deep parts")\n', '("Ocean", "contains a halocline and thermocline creating a pycnocline", "")\n', '("Ocean\'s volume", "is", "approximately 1.335 billion cubic kilometers")\n', '("Ocean", "has", "energy which can be harnessed to generate electricity")\n', '("Ocean\'s surface", "experiences", "waves and swell")\n', '("Ocean", "is the source of", "most rainfall")\n', '("Ocean", "has", "tidal cycles over a course of 12.5 hours")\n', '("Ocean", "moderates", "the climate of land")\n', '("Ocean", "undergoes", "atmospheric carbon dioxide absorption")\n', '("Ocean salinity", "is influenced by", "precipitation and evaporation")\n', '("Ocean", "contains", "dissolved gases like oxygen, carbon dioxide, and nitrogen")\n', '("Ocean\'s", "photosynthesis releases", "oxygen and consumes carbon dioxide")\n', '("Ocean", "has", "pH in the range of 8.05 to 8.08")\n', '("Ocean\'s", "alkalinity is regulated by", "carbonate, bicarbonate, and borate ions")\n', '("Ocean", "holds", "marine life such as fish, crabs, lobster")\n', '("Ocean", "is linked to human activity such as", "navigation, naval warfare, fishing")\n', '("Ocean", "faces threats from", "marine pollution, overfishing, climate change")\n', '("Ocean protection", "includes", "creation of marine protected areas and international agreements like UNCLOS")\n', '("Shallow water marine environment", "is characterized by", "oceanic, geological and biological conditions")\n', '("Shallow water marine environment", "has", "sedimentary structures like dunes")\n', '("Shallow water marine environment", "supports", "starfish")\n', '("Shallow water marine environment", "supports", "sea anemones")\n', '("Shallow water marine environment", "supports", "sponges")\n', '("Shallow water marine environment", "supports", "mussels")\n', '("Shallow water marine environment", "is inhabited by", "crustaceans")\n', '("Shallow water marine environment", "is home to", "barnacles")\n', '("Shallow water marine environment", "is populated by", "small fish")\n', '("Hydrozoa", "live in", "shallow marine ecosystems")\n', '("Shallow water marine environment", "hosts", "algae")\n', '("Shallow water marine environment", "is a habitat for", "isopods")\n', '("Shallow water marine environment", "is a habitat for", "amphipods")\n', '("Brittle stars", "are buried in", "sediment in shallow marine areas")\n', '("Carbonate reefs", "exist in", "shallow water marine environment")\n', '("Shallow water marine environment", "includes", "coral reefs")\n', '("Shallow water marine environment", "includes", "barrier reefs")\n', '("Shallow water marine environment", "includes", "atoll reefs")\n', '("Shallow water marine environment", "contains", "red algae")\n', '("Shallow water marine environment", "contains", "green algae")\n', '("Shallow water marine environment", "supports", "bivalves")\n', '("Echinoderms", "reside in", "shallow marine environment")\n', '("Dinoflagellates", "live in", "corals")\n', '("Shallow water marine environment", "has", "sediments composed of limestone")\n', '("Shallow water marine environment", "is associated with", "carbonate factory zones")\n', '("Shallow water marine environment", "can have", "calcite rich limestone or aragonite rich limestone")\n', '("Sediments", "in shallow water marine environment", "are made up of larger grain sizes")\n', '("Sedimentary rocks", "with", "cross stratification are found in shallow marine environments")\n', '("Fossils", "are found/formed in", "shallow water marine environment")\n', '("Shallow water marine environment", "supports life of", "corals")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Sea", "commonly refers to", "ocean")\n', '("Sea", "contains", "bacteria")\n', '("Sea", "contains", "protists")\n', '("Sea", "contains", "algae")\n', '("Sea", "contains", "fungi")\n', '("Sea", "provides habitat for", "coral reefs")\n', '("Seas", "have", "fish")\n', '("Sea", "contains", "seaweed")\n', '("Sea", "interconnected system includes", "Atlantic Ocean")\n', '("Sea", "interconnected system includes", "Pacific Ocean")\n', '("Sea", "interconnected system includes", "Indian Ocean")\n', '("Sea", "interconnected system includes", "Southern Ocean")\n', '("Sea", "interconnected system includes", "Arctic Ocean")\n', '("Marginal seas", "include", "North Sea")\n', '("Marginal seas", "include", "Red Sea")\n', '("Marginal seas", "include", "Sargasso Sea")\n', '("Sea of Galilee", "is a", "freshwater lake")\n', '("Caspian Sea", "debated status of", "sea or saline body of water")\n', '("Seas", "encircle", "Antarctica")\n', '("Dead Sea", "example of", "highly saline sea")\n', '("Baltic Sea", "example of", "low saline sea")\n', '("Sea", "contains", "vascular plants")\n', '("Sea", "contains", "seagrasses")\n', '("Sea", "affected by", "rogue waves")\n', '("Mariana Trench", "located in", "sea")\n', '("Mariana Islands", "surrounded by", "sea")\n', '("New Orleans", "protected from sea by", "levees")\n', '("Atacama Desert", "receives moisture from", "sea")\n', '("Sea", "fed by", "River Volga")\n']
+range(1, 301) 4
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")\n', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")\n', '("Ocean", "includes", "Atlantic, Pacific, Indian, Antarctic/Southern and Arctic Oceans")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Gulf of Mexico", "is bounded by", "the Gulf Coast of the United States")\n', '("Gulf of Mexico", "is bounded by", "Mexican states of Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bounded by", "Cuba")\n', '("Third Coast of the United States", "refers to", "Texas, Louisiana, Mississippi, Alabama, and Florida")\n', '("Gulf of Mexico", "took shape", "300 million years ago")\n', '("Gulf of Mexico basin", "is roughly", "oval in shape")\n', '("Gulf of Mexico", "is connected to", "the Atlantic Ocean")\n', '("Gulf of Mexico", "is connected to", "the Caribbean Sea")\n', '("Gulf of Mexico", "experiences", "small tidal ranges")\n', '("Gulf of Mexico basin", "consists of", "sedimentary rocks and recent sediments")\n', '("Gulf of Mexico", "is an important region for", "offshore petroleum production")\n', '("Gulf of Mexico", "makes up", "one-sixth of the United States\' total production")\n', '("Gulf of Mexico", "defined by", "International Hydrographic Organization")\n', '("International Hydrographic Organization", "defines southeastern limit of", "Gulf of Mexico")\n', '("Gulf of Mexico", "did not exist before", "late Triassic")\n', '("Gulf of Mexico area", "consisted of", "dry land during the middle of the supercontinent Pangaea")\n', '("area underlies", "Yucatán", "within Pangaea")\n', '("mountain range extended from", "Mexico through Texas and Oklahoma", "to Alabama")\n', '("Mississippi Embayment", "formed by", "the breach in the late Cretaceous")\n', '("Gulf of Mexico", "was associated with zones of weakness within", "Pangaea")\n', '("Louann Salt and associated anhydrite evaporites", "deposited in", "late Jurassic")\n', '("sea floor spreading in Gulf of Mexico", "stopped at", "end of the Jurassic")\n', '("Yucatán and Florida platforms", "submerged in", "mid-Cretaceous")\n', '("Florida Platform", "not covered by sea until", "late Jurassic or early Cretaceous")\n', '("Sierra Madre Oriental", "created by", "Laramide Orogeny")\n', '("Alvin", "used in exploration of", "a brine pool in Gulf of Mexico")\n', '("Yucatán Peninsula", "used as a trade route by", "Maya civilization")\n', '("Christopher Columbus", "did not reach", "Gulf of Mexico")\n', '("Hernán Cortés", "expedition led to", "Spanish exploration and invasion of Mexico")\n', '("Gulf of Mexico", "borders the US states of", "Florida, Alabama, Mississippi, Louisiana, and Texas")\n', '("Gulf of Mexico", "borders Mexican states of", "Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo")\n', '("Gulf of Mexico", "is bordered by", "Cuba")\n', '("Gulf Stream", "originates in", "the Gulf of Mexico")\n', '("Gulf of Mexico", "is", "aseismic")\n', '("Gulf of Mexico", "affected by", "the Mardi Gras shipwreck")\n', '("Gulf of Mexico", "affected by", "the sinking of the Robert E. Lee")\n', '("Gulf of Mexico", "supports fishery industries of", "United States, Mexico, and Cuba")\n', '("Gulf of Mexico", "faced", "pollution from agricultural runoff and oil drilling")\n', '("Gulf of Mexico", "contained", "27,000 abandoned oil and gas wells")\n', '("Deepwater Horizon oil platform", "sank in", "Gulf of Mexico")\n', '("Shell\'s Brutus oil rig", "released oil in", "Gulf of Mexico")\n', '("Abyssal plain", "found at depths between", "3,000 and 6,000 metres")\n', '("Abyssal plains", "cover more than", "50% of the Earth\'s surface")\n', '("Abyssal plains", "are key geologic elements of", "oceanic basins")\n', '("Creation of the abyssal plain", "is the result of", "the spreading of the seafloor")\n', '("Abyssal plains", "result from", "blanketing of the oceanic crust by fine-grained sediments")\n', '("Abyssal plains", "are major reservoirs of", "biodiversity")\n', '("Abyssal plains", "exert significant influence upon", "ocean carbon cycling")\n', '("Abyssal plains", "have ecosystems influenced by", "the rate of flux of food to the seafloor")\n', '("Hydrothermal vents", "are found in", "the abyssal zone")\n', '("Abyssal plains", "were not recognized until", "the late 1940s")\n', '("Abyssal plains", "are poorly preserved in", "the sedimentary record")\n', '("Abyssal plains", "have a water pressure that can reach", "about 750 times atmospheric pressure")\n', '("Ocean", "divided into zones depending on", "depth and presence or absence of sunlight")\n', '("Photic zone", "supports photosynthesis by", "phytoplankton and other marine plants")\n', '("Euphotic zone", "uppermost portion of the photic zone", "supports photosynthesis")\n', '("Dysphotic zone", "light intensity is insufficient for", "photosynthesis")\n', '("Aphotic zone", "extends from the bottom", "of the photic zone down to the seabed")\n', '("Hydrothermal vents", "emerge from these vents at temperatures up to", "464 °C")\n', '("Hydrothermal vents", "black smoker category", "near Ascension Island")\n', '("Cold seeps", "seepage of", "hydrogen sulfide, methane and other hydrocarbon-rich fluid")\n', '("Biodiversity in abyssal plains", "includes", "bacteria, protozoans, and invertebrates")\n', '("Cusk eel", "in the family", "Ophidiidae, is among the deepest-living species")\n', '("Hadal snailfish", "was observed at a depth of", "7700 meters in the Japan Trench")\n', '("Foraminiferans", "species are distributed from", "the Arctic to the Antarctic")\n', '("Polychaete worms", "appear to be endemic to", "certain specific plains and basins")\n', '("Challenger Deep", "is the deepest surveyed point", "of all of Earth\'s oceans")\n', '("Challenger Deep", "located", "at the south end of the Mariana Trench")\n', '("Exploitation of abyssal plains", "may include", "mineral resources extraction, deep-sea fishing, waste disposal")\n', '("Ocean", "covers", "approximately 70.8% of the Earth\'s surface")\n', '("Ocean", "contains", "97% of Earth\'s water")\n', '("Ocean", "is essential to", "life on Earth")\n', '("Ocean", "influences", "climate and weather patterns")\n', '("Ocean", "acts as", "a huge heat reservoir")\n', '("Oceanographers", "split", "the ocean into vertical and horizontal zones")\n', '("Photic zone", "is where", "photosynthesis can occur")\n', '("Photosynthesis", "produces", "half of the oxygen in the Earth\'s atmosphere")\n', '("Ocean temperatures", "depend on", "the amount of solar radiation reaching the ocean surface")\n', '("Gulf Stream", "is a", "major ocean current")\n', '("Gulf Stream", "transports", "massive amounts of water and heat around the world")\n', '("Ocean water", "contains", "high concentration of dissolved gases")\n', '("Ocean", "provides", "crucial environmental services to humankind")\n', '("Ocean", "is known to be the habitat of", "over 230,000 species")\n', '("Continental shelf and coastal waters", "are", "most affected by human activity")\n', '("World Ocean", "refers to", "the continuous ocean that covers and encircles most of the Earth")\n', '("Oceanus", "is the divine personification of", "an enormous river encircling the world")\n', '("Nuvvuagittuq Greenstone Belt", "shows evidence of", "the presence of water at 3.8 to 4.28 billion years old")\n', '("Ocean", "formed in the", "Hadean eon")\n', '("Ocean", "has taken many shapes with", "many past ocean divisions")\n', '("Ocean", "covers", "361,000,000 km2")\n', '("Ocean\'s furthest pole of inaccessibility", "is located at", "Point Nemo")\n', '("Ocean basins", "fill", "Earth\'s oceanic basins")\n', '("Ocean", "has a mid-ocean ridge that forms", "the longest mountain range in the world")\n', '("Erosion", "can occur", "when waves meet the coast")\n', '("Tides", "are driven by", "the Moon\'s gravitational tidal forces upon the Earth")\n', '("Tidal ranges", "increase", "in coastal areas")\n', '("Ocean", "has an average depth of", "about 4 km")\n', '("Ocean", "contains", "world\'s deepest point at Mariana Trench")\n', '("Ocean water", "has a temperature between", "−2 °C to 5 °C in deep parts")\n', '("Ocean", "contains a halocline and thermocline creating a pycnocline", "")\n', '("Ocean\'s volume", "is", "approximately 1.335 billion cubic kilometers")\n', '("Ocean", "has", "energy which can be harnessed to generate electricity")\n', '("Ocean\'s surface", "experiences", "waves and swell")\n', '("Ocean", "is the source of", "most rainfall")\n', '("Ocean", "has", "tidal cycles over a course of 12.5 hours")\n', '("Ocean", "moderates", "the climate of land")\n', '("Ocean", "undergoes", "atmospheric carbon dioxide absorption")\n', '("Ocean salinity", "is influenced by", "precipitation and evaporation")\n', '("Ocean", "contains", "dissolved gases like oxygen, carbon dioxide, and nitrogen")\n', '("Ocean\'s", "photosynthesis releases", "oxygen and consumes carbon dioxide")\n', '("Ocean", "has", "pH in the range of 8.05 to 8.08")\n', '("Ocean\'s", "alkalinity is regulated by", "carbonate, bicarbonate, and borate ions")\n', '("Ocean", "holds", "marine life such as fish, crabs, lobster")\n', '("Ocean", "is linked to human activity such as", "navigation, naval warfare, fishing")\n', '("Ocean", "faces threats from", "marine pollution, overfishing, climate change")\n', '("Ocean protection", "includes", "creation of marine protected areas and international agreements like UNCLOS")\n', '("Shallow water marine environment", "is characterized by", "oceanic, geological and biological conditions")\n', '("Shallow water marine environment", "has", "sedimentary structures like dunes")\n', '("Shallow water marine environment", "supports", "starfish")\n', '("Shallow water marine environment", "supports", "sea anemones")\n', '("Shallow water marine environment", "supports", "sponges")\n', '("Shallow water marine environment", "supports", "mussels")\n', '("Shallow water marine environment", "is inhabited by", "crustaceans")\n', '("Shallow water marine environment", "is home to", "barnacles")\n', '("Shallow water marine environment", "is populated by", "small fish")\n', '("Hydrozoa", "live in", "shallow marine ecosystems")\n', '("Shallow water marine environment", "hosts", "algae")\n', '("Shallow water marine environment", "is a habitat for", "isopods")\n', '("Shallow water marine environment", "is a habitat for", "amphipods")\n', '("Brittle stars", "are buried in", "sediment in shallow marine areas")\n', '("Carbonate reefs", "exist in", "shallow water marine environment")\n', '("Shallow water marine environment", "includes", "coral reefs")\n', '("Shallow water marine environment", "includes", "barrier reefs")\n', '("Shallow water marine environment", "includes", "atoll reefs")\n', '("Shallow water marine environment", "contains", "red algae")\n', '("Shallow water marine environment", "contains", "green algae")\n', '("Shallow water marine environment", "supports", "bivalves")\n', '("Echinoderms", "reside in", "shallow marine environment")\n', '("Dinoflagellates", "live in", "corals")\n', '("Shallow water marine environment", "has", "sediments composed of limestone")\n', '("Shallow water marine environment", "is associated with", "carbonate factory zones")\n', '("Shallow water marine environment", "can have", "calcite rich limestone or aragonite rich limestone")\n', '("Sediments", "in shallow water marine environment", "are made up of larger grain sizes")\n', '("Sedimentary rocks", "with", "cross stratification are found in shallow marine environments")\n', '("Fossils", "are found/formed in", "shallow water marine environment")\n', '("Shallow water marine environment", "supports life of", "corals")\n', '("Indo-Pacific", "is known as", "Indo-West Pacific or Indo-Pacific Asia")\n', '("Indo-Pacific", "comprises", "tropical waters of the Indian Ocean")\n', '("Indo-Pacific", "comprises", "western and central Pacific Ocean")\n', '("Indo-Pacific", "is connected by", "seas between Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "temperate and polar regions of the Indian and Pacific oceans")\n', '("Indo-Pacific", "does not include", "Tropical Eastern Pacific along Pacific coast of Americas")\n', '("Indo-Pacific", "is useful in", "marine biology")\n', '("Indo-Pacific", "is useful in", "ichthyology")\n', '("Indo-Pacific", "has marine habitats connected from", "Madagascar to Japan and Oceania")\n', '("Indo-Pacific", "has species richness in", "Coral Triangle")\n', '("Indo-Pacific", "has over", "3,000 species of fish")\n', '("Indo-Pacific", "has around", "500 species of reef building corals")\n', '("Indo-Pacific", "was first used in", "oceanography and geopolitics")\n', '("Indo-Pacific", "concept circulated in", "Weimar Germany")\n', '("Indo-Pacific", "has a symbiotic link with", "Quadrilateral Security Dialogue")\n', '("Quadrilateral Security Dialogue", "includes", "Australia")\n', '("Quadrilateral Security Dialogue", "includes", "Japan")\n', '("Quadrilateral Security Dialogue", "includes", "India")\n', '("Quadrilateral Security Dialogue", "includes", "United States")\n', '("Indo-Pacific", "covers nations surrounding", "Indian Ocean")\n', '("Indo-Pacific", "covers nations surrounding", "Pacific Ocean")\n', '("Indo-Pacific", "encompasses nations such as", "India and South Africa")\n', '("Indo-Pacific", "encompasses territories such as", "Seychelles")\n', '("Indo-Pacific", "includes", "Russia")\n', '("ASEAN countries", "are at the centre of", "Indo-Pacific")\n', '("South China Sea", "is part of", "Central Indo-Pacific")\n', '("Philippine Sea", "is part of", "Central Indo-Pacific")\n', '("New Guinea", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("New Caledonia", "is surrounded by seas part of", "Central Indo-Pacific")\n', '("Solomon Islands", "are part of", "Central Indo-Pacific")\n', '("Vanuatu", "is part of", "Central Indo-Pacific")\n', '("Fiji", "is part of", "Central Indo-Pacific")\n', '("Tonga", "is part of", "Central Indo-Pacific")\n', '("Marshall Islands", "are part of", "Eastern Indo-Pacific")\n', '("Hawaii", "is part of", "Eastern Indo-Pacific")\n', '("Chile", "is part of", "Eastern Indo-Pacific")\n', '("Easter Island", "is part of", "Eastern Indo-Pacific")\n', '("Juan Fernández Islands", "are part of", "Eastern Indo-Pacific")\n', '("Madagascar", "is part of", "Western Indo-Pacific")\n', '("Seychelles", "is part of", "Western Indo-Pacific")\n', '("Indo-Pacific", "originated in", "Weimar Germany")\n', '("Indo-Pacific Economic Corridor", "was discussed in", "U.S.–India Strategic Dialogue of 2013")\n', '("Joe Biden", "launched", "Indo-Pacific Economic Framework for Prosperity")\n', '("IPEF", "includes", "Australia")\n', '("IPEF", "includes", "India")\n', '("IPEF", "includes", "Japan")\n', '("Shinzō Abe", "referred to the confluence of", "Indian and Pacific Oceans")\n', '("ASEAN", "uses the term", "Indo-Pacific")\n', '("Seven Seas", "figurative term for", "all the seas of the known world")\n', '("Seven Seas", "associated with", "Mediterranean Sea")\n', '("Seven Seas", "related to journeys to", "India")\n', '("Seven Seas", "sometimes applied to", "Caribbean Sea")\n', '("Seven Seas", "related to adventures around", "the Americas")\n', '("Seven Seas", "reference in arts and popular culture to", "oceans")\n', '("Arabs", "voyaged across", "Seven Seas")\n', '("Islam", "spread to", "regions associated with Seven Seas")\n', '("Muhammad", "related to", "trading routes associated with Seven Seas")\n', '("Sea of Fars", "first sea in", "Arabic literature\'s Seven Seas")\n', '("Larwi", "second sea called in", "Arabic literature\'s Seven Seas")\n', '("Sea of Harkand", "third sea with", "Island of Sarandib")\n', '("Island of Sarandib", "known for", "precious stones and rubies")\n', '("Sea of Kalah", "fourth sea known for", "huge serpents")\n', '("camphor tree", "grows on islands in", "Sea of Kalah")\n', '("Kardanj", "sixth sea described as", "very rainy")\n', '("Sea of Sanji", "also known as", "Kanjli")\n', '("Khanfu", "located along", "Sea of Sanji")\n', '("Black Sea", "considered by Arab seafarers as", "important sea")\n', '("Caspian Sea", "navigated by", "Arab seafarers")\n', '("Red Sea", "one of seas considered as", "Seven Seas by Arabs")\n', '("Mediterranean Sea", "major sea in the context of", "Seven Seas")\n', '("Adriatic Sea", "included in", "Greeks\' seven seas")\n', '("Dutch East Indies", "associated with", "Clipper Ship Tea Route")\n', '("Celebes Sea", "one of the seas near", "Dutch East Indies")\n', '("Java Sea", "part of Seven Seas near", "Dutch East Indies")\n', '("Sulu Sea", "included in seven seas on trade route from", "China to England")\n', '("Timor Sea", "sailed by ships on", "Tea Route")\n', '("Po river", "discharges into", "Seven Seas in Roman times")\n', '("Venice", "nautical skill associated with", "sailing the seven seas")\n', '("Oxus River", "forms streams called", "Seven Seas by Persians")\n', '("saltwater lakes", "like those called Seven Seas by", "Ancient Romans")\n', '("Sea", "commonly refers to", "ocean")\n', '("Sea", "contains", "bacteria")\n', '("Sea", "contains", "protists")\n', '("Sea", "contains", "algae")\n', '("Sea", "contains", "fungi")\n', '("Sea", "provides habitat for", "coral reefs")\n', '("Seas", "have", "fish")\n', '("Sea", "contains", "seaweed")\n', '("Sea", "interconnected system includes", "Atlantic Ocean")\n', '("Sea", "interconnected system includes", "Pacific Ocean")\n', '("Sea", "interconnected system includes", "Indian Ocean")\n', '("Sea", "interconnected system includes", "Southern Ocean")\n', '("Sea", "interconnected system includes", "Arctic Ocean")\n', '("Marginal seas", "include", "North Sea")\n', '("Marginal seas", "include", "Red Sea")\n', '("Marginal seas", "include", "Sargasso Sea")\n', '("Sea of Galilee", "is a", "freshwater lake")\n', '("Caspian Sea", "debated status of", "sea or saline body of water")\n', '("Seas", "encircle", "Antarctica")\n', '("Dead Sea", "example of", "highly saline sea")\n', '("Baltic Sea", "example of", "low saline sea")\n', '("Sea", "contains", "vascular plants")\n', '("Sea", "contains", "seagrasses")\n', '("Sea", "affected by", "rogue waves")\n', '("Mariana Trench", "located in", "sea")\n', '("Mariana Islands", "surrounded by", "sea")\n', '("New Orleans", "protected from sea by", "levees")\n', '("Atacama Desert", "receives moisture from", "sea")\n', '("Sea", "fed by", "River Volga")\n']
+range(1, 301) 4
+{'id': '4_2', 'Question': " What is the name of one of the five principal divisions of the Earth's interconnected water bodies that include regions known for a diversity of non-marine turtle species and contain key geological features like the Sigsbee Deep and abyssal plains?\n", 'Answer': 'Southern Ocean', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Shallow water marine environment'}, {'label': 'B', 'text': 'Southern Ocean'}, {'label': 'C', 'text': 'Indo-Pacific'}, {'label': 'D', 'text': 'Seven Seas'}, {'label': 'E', 'text': 'Sea'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'shallow_sea'}, {'label': 'B', 'text': 'southern_ocean'}, {'label': 'C', 'text': 'indopacific'}, {'label': 'D', 'text': 'seven_seas'}, {'label': 'E', 'text': 'sea'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which region is known for having a rich diversity of non-marine turtle species along with the Amazon basin and in areas of South and Southeast Asia?\nA1: Gulf of Mexico\n\n', '2: What is one of the key geological features besides Sigsbee Deep found in the mentioned body of water?\nA2: Abyssal plain\n\n', '3: The type of plain referred to as "abyssal" is typically located where on the planet\'s topography?\nA3: Ocean\n\n', "4: The encompassing term for the Earth's interconnected water bodies includes how many principal divisions, such as Atlantic, Pacific, Indian, and the one at the northernmost part of Earth?\nA4: Southern Ocean"], 'Hops_wiki': [('Turtle', 'Gulf of Mexico'), ('Gulf of Mexico', 'Abyssal plain'), ('Abyssal plain', 'Ocean'), ('Ocean', 'Southern Ocean')], 'Hops_cpnet': [('turtle', 'gulf_of_mexico'), ('gulf_of_mexico', 'abyssal_plain'), ('abyssal_plain', 'ocean'), ('ocean', 'southern_ocean')], 'Triplets': ['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', '("Gulf of Mexico", "contains", "abyssal plain and Sigsbee Deep")', '("Abyssal plain", "is an underwater plain on", "the deep ocean floor")', '("Ocean", "includes", "Atlantic, Pacific, Indian, Antarctic/Southern and Arctic Oceans")'], 'Referred_files': [{'name': 'Turtle', 'line': 39}, {'name': 'Gulf of Mexico', 'line': 27}, {'name': 'Abyssal plain', 'line': 1}, {'name': 'Ocean', 'line': 16}], 'Question_triplet_answer': {100: [151, 184, 264, 299], 50: [26, 41, 98, 211], 25: [53, 143, 183, 280]}}
+time passed:  5491.110566616058
+Expected dollar:  0.005
+Antarctic is Geography
+Mariana Trench is Geography
+Easter Island is Geography
+Muhammad is Geography
+Weimar Germany is Geography
+Mexico is Geography
+Texas is Geography
+Oklahoma is Geography
+Alabama is Geography
+Leatherback is Animal
+Atlantic is Geography
+Pacific is Geography
+Mediterranean Sea is Geography
+Arctic Ocean is Geography
+Caspian Sea is Geography
+Turtle is Animal
+Chile is Geography
+Baltic Sea is Geography
+Challenger Deep is Geography
+the Mariana Trench is Geography
+Gulf of Mexico is Geography
+International Hydrographic Organization is Incident
+Australia is Geography
+the Atlantic Ocean is Geography
+Tamaulipas is Geography
+Veracruz is Geography
+Tabasco is Geography
+Campeche is Geography
+Yucatán is Geography
+Quintana Roo is Geography
+Juan Fernández Islands is Geography
+Sulu Sea is Geography
+China is Geography
+England is Geography
+Oxus River is Geography
+Jurassic is Geography
+India is Geography
+the United States' is Geography
+Sargasso Sea is Geography
+U.S. is Geography
+Pacific Ocean is Geography
+Cuba is Geography
+Florida is Geography
+Mississippi is Geography
+Louisiana is Geography
+Cryptodira is Animal
+Caribbean Sea is Geography
+Adriatic Sea is Geography
+Turtles is Animal
+Mississippi Embayment is Geography
+Venice is Geography
+Indian Ocean is Geography
+Ocean is Geography
+River Volga is Geography
+Hydrothermal is Geography
+Testudines is Animal
+Japan is Geography
+Oceania is Geography
+the Caribbean Sea is Geography
+New Guinea is Geography
+Red Sea is Geography
+Russia is Geography
+Yucatán Peninsula is Geography
+Joe Biden is People
+Solomon Islands is Geography
+Creation of the abyssal plain is Geography
+Deepwater Horizon is Geography
+South China Sea is Geography
+the United States is Geography
+Sea of Galilee is Geography
+Late Cretaceous sea is Geography
+Ascension Island is Geography
+Hawaii is Geography
+Sierra Madre Oriental is Geography
+Hadean is Geography
+World Ocean is Geography
+Po river is Geography
+Arctic Oceans is Geography
+Dead Sea is Geography
+the Robert E. Lee is People
+361,000,000 is Geography
+entities:  {'River', 'Quintana', 'Turtle', 'marine', 'Ascension', 'Germany', 'Solomon', 'Deepwater', 'Jurassic', 'International', 'sea', 'Tabasco', 'water', 'Weimar', 'Cuba', 'Pacific', 'Mediterranean', 'Louisiana', 'Robert', 'Biden', 'Hydrographic', 'Atlantic', 'Asia', 'Mariana', 'Southern', '361,000,000', 'Horizon', 'Caspian', 'Island', 'India', 'river', 'Deep', 'abyssal', 'Easter', 'Veracruz', 'Juan', 'Amazon', 'Tamaulipas', 'Indo-Pacific', 'Joe', 'Oriental', 'Arctic', 'Oceans', 'Late', 'Pangaea', 'Australia', 'World', 'Peninsula', 'China', 'Mexico', 'Antarctic', 'Alvin', 'Trench', 'Oklahoma', 'Indian', 'Cryptodira', 'E.', 'Ocean', 'Yucatán', 'Southeast', 'South', 'States', 'Guinea', 'Seas', 'Sargasso', 'Dead', 'Mississippi', 'Organization', 'Oxus', 'Volga', 'Testudines', 'Hydrothermal', 'Leatherback', 'Sulu', 'Red', 'Sierra', 'Challenger', 'Fernández', 'Gulf', 'environment', 'Venice', 'Japan', 'Abyssal', 'Adriatic', 'Islands', 'Oceania', 'Embayment', 'United', 'plain', 'Muhammad', 'Madre', 'Cretaceous', 'Lee', 'Alabama', 'Hawaii', 'Sea', 'Po', 'Baltic', 'Creation', 'England', 'Hadean', 'New', 'Campeche', 'Shallow', 'Caribbean', "States'", 'Roo', 'Texas', 'Chile', 'Turtles', 'U.S.', 'Galilee', 'Russia', 'Florida', 'Seven'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gulf of Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gulf of Mexico
+Mariana Trench
+ocean
+Eastern Indo-Pacific
+Seven Seas
+Gulf Stream
+Mediterranean Sea
+Gulf of Mexico
+Caribbean Sea
+Sargasso Sea
+Barrier reefs
+Arctic Ocean
+Mediterranean Sea
+Seven Seas
+Indian Ocean
+Pacific Ocean
+Arctic Ocean
+Seven Seas
+Seven Seas
+barrier reefs
+turtles
+Abyssal plains
+Arctic to the Antarctic
+Seven Seas
+Mariana Trench
+Gulf of Mexico
+ocean
+Seven Seas
+Seven Seas
+Florida, Alabama, Mississippi, Louisiana, and Texas
+Gulf of Mexico
+Central Indo-Pacific
+Challenger Deep
+Gulf of Mexico
+Caribbean Sea
+Central Indo-Pacific
+Central Indo-Pacific
+Sargasso Sea
+Challenger Deep
+Gulf of Mexico
+Indian Ocean
+Seven Seas
+Gulf of Mexico
+Seven Seas
+Seven Seas
+Gulf of Mexico
+Gulf of Mexico
+Caribbean Sea
+Indian Ocean
+Indian Ocean
+Seven Seas
+Caribbean Sea
+Gulf of Mexico
+turtles
+Arctic to the Antarctic
+Gulf of Mexico
+Seven Seas
+Seven Seas
+Seven Seas
+Seven Seas
+Gulf of Mexico
+Abyssal plain and Sigsbee Deep
+Gulf of Mexico
+Baltic Sea
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Southern and Arctic Oceans
+Gulf of Mexico
+Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo
+Amazon basin, Gulf of Mexico drainages, South and Southeast Asia
+Gulf of Mexico
+Caribbean Sea
+bacteria
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+turtles
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+turtles
+Gulf of Mexico
+Seven Seas in Roman times
+Shell
+Gulf of Mexico
+Gulf of Mexico
+Gulf of Mexico
+Seven Seas
+Siearra Madre Oriental
+Gulf of Mexico
+Gulf of Mexico
+Maya civilization
+Seven Seas
+Gulf of Mexico
+Biodiversity in abyssal plains
+Polychaete worms
+turtles
+Sea turtles
+turtles
+Gulf of Mexico
+Gulf of Mexico 
+retreating of the turtle habitats
+
+gpt_entity_particular(): entity list: 
+ ['Arctic Ocean', 'Central Indo-Pacific', 'Florida, Alabama, Mississippi, Louisiana, and Texas', 'Seven Seas', 'Shell', 'Sargasso Sea', 'Sea turtles', 'Mariana Trench', 'Mediterranean Sea', 'Abyssal plains', 'Maya civilization', 'Gulf of Mexico', 'retreating of the turtle habitats', 'Abyssal plain and Sigsbee Deep', 'Indian Ocean', 'Southern and Arctic Oceans', 'Tamaulipas, Veracruz, Tabasco, Campeche, Yucatán, and Quintana Roo', 'Gulf of Mexico ', 'ocean', 'Siearra Madre Oriental', 'Challenger Deep', 'Gulf Stream', 'Biodiversity in abyssal plains', 'Barrier reefs', 'Baltic Sea', 'Amazon basin, Gulf of Mexico drainages, South and Southeast Asia', 'turtles', 'Arctic to the Antarctic', 'Pacific Ocean', 'Polychaete worms', 'Eastern Indo-Pacific', 'barrier reefs', 'bacteria', 'Seven Seas in Roman times', 'Caribbean Sea']
+
+gpt_entity_particular(): filtered entity: 
+ ['Gulf Stream', 'Caribbean Sea']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Turtle' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Turtles
+Largest known turtle
+Leatherback turtle
+Turtles
+Turtle habitats
+Leatherback turtle
+Turtles
+Turtle
+Shallow water marine environment
+Turtles
+Turtle habitats
+Turtles
+Turtles
+Turtle shells
+Turtle shells
+Turtles
+Turtles
+Turtle
+Turtles
+Turtle shells
+Turtles
+Turtles
+Turtle shells
+Turtles
+Turtle habitats
+Turtle shells
+Turtles
+Turtles
+Turtle
+Turtles
+Turtle shells
+Turtles
+Turtles
+Turtle habitats
+Turtle shells
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+
+gpt_entity_particular(): entity list: 
+ ['Turtle', 'Shallow water marine environment', 'Turtles', 'Leatherback turtle', 'Turtle habitats', 'Turtle shells', 'Largest known turtle']
+
+gpt_entity_particular(): filtered entity: 
+ ['Turtles', 'Leatherback turtle']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Abyssal plain' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Abyssal plain
+Abyssal plains
+Creation of the abyssal plain
+Area underlies Yucatán within Pangaea
+Abyssal plain is an underwater plain on the deep ocean floor
+
+gpt_entity_particular(): entity list: 
+ ['Abyssal plains', 'Abyssal plain', 'Creation of the abyssal plain', 'Abyssal plain is an underwater plain on the deep ocean floor', 'Area underlies Yucatán within Pangaea']
+
+gpt_entity_particular(): filtered entity: 
+ ['Abyssal plains']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Indo-Pacific' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ocean
+Species
+Point
+Sea
+Island
+Turtle
+Ocean salinity
+Precipitation
+Evaporation
+Environmental services
+Trading routes
+Seas
+Sea surface temperature
+Marine
+Ichthyology
+Temperate and polar regions
+Crust
+Barrier
+Mountains
+Abyssal plains
+Vascular plants
+Leatherback turtle
+Marine biology
+Mediterranean Sea
+Baltic Sea
+Challenger Deep
+Bacteria
+Tropical and subtropical regions
+Oxygen
+Carbon dioxide
+Nitrogen
+Seagrasses
+Reefs
+Carbonate reefs
+Ship
+Geometry
+Crust
+Burying
+Cretaceous sea turtle
+Pangaea
+Atlantic Ocean
+Pacific Ocean
+Men idea
+Olfactory and vomeronasal receptors
+Glaciation
+Marriage
+Abyzou
+Movement
+Mechanisms
+Temperature
+Gas
+Research
+Oxygen
+Biomes
+Gulf Stream
+World Ocean
+Pleistocene epoch
+Persian Gulf
+Lord of the Rings
+Cureau of Naval Personnel
+
+gpt_entity_particular(): entity list: 
+ ['Olfactory and vomeronasal receptors', 'Lord of the Rings', 'Mechanisms', 'World Ocean', 'Turtle', 'Crust', 'Gas', 'Nitrogen', 'Ocean', 'Movement', 'Marine', 'Pleistocene epoch', 'Seas', 'Biomes', 'Mediterranean Sea', 'Environmental services', 'Abyssal plains', 'Ichthyology', 'Mountains', 'Species', 'Persian Gulf', 'Reefs', 'Leatherback turtle', 'Abyzou', 'Geometry', 'Research', 'Precipitation', 'Carbonate reefs', 'Sea surface temperature', 'Island', 'Temperate and polar regions', 'Marine biology', 'Challenger Deep', 'Cretaceous sea turtle', 'Oxygen', 'Men idea', 'Trading routes', 'Marriage', 'Gulf Stream', 'Bacteria', 'Glaciation', 'Baltic Sea', 'Seagrasses', 'Sea', 'Vascular plants', 'Burying', 'Temperature', 'Pacific Ocean', 'Cureau of Naval Personnel', 'Carbon dioxide', 'Point', 'Pangaea', 'Atlantic Ocean', 'Ocean salinity', 'Barrier', 'Evaporation', 'Ship', 'Tropical and subtropical regions']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Shallow water marine environment' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Shallow water marine environment
+Barrier reefs
+Crustaceans
+Small fish
+Bivalves
+Red algae
+Isopods
+Barbed reeds
+
+gpt_entity_particular(): entity list: 
+ ['Bivalves', 'Crustaceans', 'Red algae', 'Isopods', 'Barrier reefs', 'Shallow water marine environment', 'Barbed reeds', 'Small fish']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ocean' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Foraminiferans
+Ocean
+Sea
+Easter Island
+Muhammad
+Indo-Pacific
+Turtle
+Ocean salinity
+Word turtle
+mountain range
+Abyssal plains
+Leatherback turtle
+mountain range
+Indo-Pacific
+Ocean
+Abyssal plains
+Sea
+Seven Seas
+Sea
+Sea of Harkand
+Sea of Kalah
+Sea
+Caspian Sea
+Larwi
+Chile
+Sea
+Baltic Sea
+Challenger Deep
+Sea
+Turtles
+Ocean basins
+Vanuatu
+Sea turtles
+Gulf of Mexico
+Turtle shells
+Brittle stars
+Quadrilateral Security Dialogue
+Gulf of Mexico
+Gulf Stream
+Gulf of Mexico
+Ocean
+J.F. Islands
+Ocean
+Photosynthesis
+Indo-Pacific
+Indo-Pacific
+Ocean
+Dutch East Indies
+Sulu Sea
+Oxus River
+Gulf of Mexico
+Indo-Pacific Economic Corridor
+Sea
+Sea floor spreading
+Tidal ranges
+Leatherback turtle
+Indo-Pacific
+Gulf of Mexico
+Ocean
+Turtles
+Carbonate reefs
+Alvin
+Ocean
+Yucatán and Florida platforms
+Ocean
+Gulf Stream
+Mediterranean Sea
+Ocean
+Larwi
+Tropical storms
+Indo-Pacific Economic Corridor
+Hydrothermal vents
+Sea
+Tides
+Sea turtles
+Gulf of Mexico
+Baltic Sea
+Sierra Madre Oriental
+Ocean
+New Guinea
+Ocean's Volume
+Hydrothermal vents
+Sea
+Syria
+Sea
+forams
+Abyssal plains
+Turtles
+Ocean
+Sea Floor Spreading
+Seven Seas
+Shallow water environment
+Gulf Stream
+Ontong Java Plateau
+Ocean's Volume
+Turtles
+Ocean temperatures
+Ocean
+Ocean
+Hydrothermal vents
+Tidal ranges
+Oceanus
+Arabs
+Ocean
+Ocean
+Fossilized shell reptile 
+Gulf of Mexico
+Seven Seas
+Polychaetes
+Seven Seas
+Sierra Madre Oriental
+the ocean
+Adriatic Sea
+Gulf of Mexico
+Ocean water properties
+Gulf of Mexico
+Turtling
+Marginal seas
+Ocean
+Islam
+Sea turtles
+Hawaii
+Foraminiferans
+Tides
+Island of Sarandib
+Red Sea
+Earth's ocean
+Modern turtles
+Gulf of Mexico
+Ocean's
+Turtle
+Quadrilateral Security Dialogue
+Baltic Sea
+Red Sea
+Tidal Ranges
+Foraminiferans
+Turtle
+Gulf of Mexico
+Ocean's volume
+Sea turtles
+Photic zone
+Ocean
+Turtle
+Sea
+Ocean's
+Turtle extinction
+Arab voyages
+Turtle extinction
+Ocean
+Cold seeps
+Solomon Islands
+Sea
+Shallow marine environment
+Rare turtle species
+Turtles
+Red Sea
+Arabs
+Polychaetes
+Deep sea octopus
+Dead Sea
+Turtle
+Turtle hunting
+Marginal seas
+Ocean
+Biodiversity
+Photic zone
+Barnacles
+Seven Seas
+Ocean
+Sea
+Ocean
+Ocean
+Ocean
+Shallow water marine environment
+Abyssal plain
+Turtle
+Marginal seas
+Turtle
+Hawaii
+Foraminiferans
+Turtle
+Gulf of Mexico
+Biodiversity in abyssal plains
+Sea
+Ocean
+Quadrilateral Security Dialogue
+New Guinea
+Sulu Sea
+Dead Sea
+Turtling
+Gulf of Mexico
+Biodiversity in abyssal plains
+Sea
+Ocean
+Abyssal plain
+Ocean
+Ocean
+Modern turtles
+Quadrilateral Security Dialogue
+Ocean protection
+Yucatán
+Abyssal plain
+Ocean
+Ocean protection
+Pangaea
+Ocean
+Turtle
+Marginal seas
+Seven Seas
+
+gpt_entity_particular(): entity list: 
+ ['Islam', 'Tides', 'Ocean basins', 'Polychaetes', 'Arab voyages', 'Sea turtles', 'Island of Sarandib', 'Gulf of Mexico', 'the ocean', 'Ocean protection', 'Photic zone', 'Leatherback turtle', 'Rare turtle species', 'Ocean water properties', 'Turtle extinction', 'Shallow marine environment', 'Vanuatu', 'Deep sea octopus', 'Larwi', 'Indo-Pacific', 'Ocean temperatures', 'Quadrilateral Security Dialogue', 'Ontong Java Plateau', 'Shallow water environment', 'Yucatán', 'J.F. Islands', 'Abyssal plains', 'Yucatán and Florida platforms', "Ocean's Volume", 'Indo-Pacific Economic Corridor', 'Challenger Deep', 'Syria', 'Baltic Sea', 'Sea of Harkand', 'Tropical storms', 'Sulu Sea', 'Turtles', 'Ocean salinity', 'Arabs', 'Turtle', 'New Guinea', 'Dead Sea', 'Solomon Islands', 'Adriatic Sea', 'Turtling', 'Turtle shells', 'Oxus River', 'Oceanus', 'Carbonate reefs', 'Marginal seas', 'Cold seeps', 'forams', 'Word turtle', 'Sea floor spreading', 'Pangaea', "Earth's ocean", 'Modern turtles', 'Barnacles', 'Sea of Kalah', 'mountain range', 'Brittle stars', 'Photosynthesis', 'Alvin', 'Sea Floor Spreading', 'Fossilized shell reptile ', 'Ocean', 'Seven Seas', 'Hydrothermal vents', 'Easter Island', 'Mediterranean Sea', 'Tidal ranges', "Ocean's", 'Turtle hunting', 'Shallow water marine environment', 'Red Sea', 'Gulf Stream', 'Dutch East Indies', 'Biodiversity in abyssal plains', 'Muhammad', 'Tidal Ranges', 'Hawaii', 'Sea', 'Biodiversity', 'Sierra Madre Oriental', 'Abyssal plain', 'Foraminiferans', "Ocean's volume", 'Chile', 'Caspian Sea']
+
+gpt_entity_particular(): filtered entity: 
+ ['Photic zone', 'Seven Seas', 'Mediterranean Sea', 'Sea', 'Abyssal plain']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Southern Ocean' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Foraminiferans
+Ocean
+Sea
+Easter Island
+Ocean
+Muhammad
+Species
+Ocean salinity
+Ocean
+Turtle
+Range
+Plains
+Sea
+Turtle
+Indo-Pacific
+Indo-Pacific
+Ocean
+Plains
+Sea
+Seven Seas
+Sea
+Sea
+Sea of Harkand
+Sea of Kalah
+Sea
+Turtles
+Caspian Sea
+Ocean
+Larwi
+Oxus River
+Indo-Pacific
+Ocean
+Shallow water marine environment
+Sea
+Shallow water marine environment
+Ocean
+Ocean
+Sea
+Turtle
+Gulf of Mexico
+Turtle
+Shallow water marine environment
+Turtle habitats
+Chile
+Shallow water marine environment
+Gulf of Mexico
+Seven Seas
+Challenger Deep
+Sea
+Mariana Islands
+Sea
+Marginal seas
+Ocean
+Largest turtle
+Sea
+Shallow water marine environment
+Abyssal plains
+Foraminiferans
+Gulf Stream
+Gulf of Mexico
+Ocean
+Juan Fernández Islands
+Photosynthesis
+Indo-Pacific
+Indo-Pacific
+Ocean
+Dutch East Indies
+Sulu Sea 
+Oxus River 
+Gulf of Mexico
+Indo-Pacific Economic Corridor 
+Sea
+sea floor
+Tidal ranges
+Leatherback turtle
+Indo-Pacific
+Gulf of Mexico
+Shallow water marine environment
+Abyssal plains
+Mediterranean Sea
+Oxygen
+Turtles
+Ocean
+Seven Seas
+Quadrilateral Security Dialogue
+Shallow water marine
+Indo-Pacific
+Gulf of Mexico 
+Carbonate reefs
+Alvin
+Sea
+Yucatán and Florida platforms
+Ocean
+Gulf of Mexico
+Seven Seas
+Arid-living tortoises
+Hydrothermal vents
+Gulf of Mexico
+Sea
+Indo-Pacific
+Sea
+New Guinea
+Turtle shells
+Sea
+Shallow water marine environment
+Quadrilateral Security Dialogue
+Arid-living tortoises
+Gulf of Mexico
+Ocean basins
+Oxus River
+Sea
+Turtles
+Sea turtles
+Photic zone
+Shallow water marine environment
+Creation
+Indo-Pacific
+Ocean
+Modern turtles
+Hydrothermal vents
+Science Valleywood
+Indo-Pacific
+Largest point
+Sea
+Shallow water marine environment
+Antarctic/Southern
+Sea
+Seven Seas
+Sea
+Shallow water marine environment
+Sea
+Science
+shell
+Sea
+Turtles
+Turtles
+Turtle 
+Turtles
+Ocean
+Turtle
+Seven Seas
+Sea turtles
+Hawaii
+Foraminiferans
+Turtle habitats
+Gulf of Mexico basin
+Indo-Pacific
+Ocean temperatures
+Ocean
+Indian Ocean
+World Ocean
+Po river
+Turtles
+Marginal seas
+Ocean
+Islam
+Sea turtles
+Hawaii
+Foraminiferans
+Turtle habitats
+Ocean
+Gulf of Mexico basin
+Indo-Pacific
+Ocean temperatures
+Island of Sarandib
+Red Sea
+Tidal ranges
+Oceanus
+Polychaete worms
+Indo-Pacific
+Ocean
+Ocean
+Modern turtles
+International Hydrographic Organization
+Gulf of Mexico basin
+Turtles
+Ocean
+Turtle
+Turtles
+Ocean
+Sierra Madre Oriental
+Turtles
+Ocean
+Turtle
+Shallow water
+Ocean
+Mediterranean Sea
+Hydrothermal vents
+Oceanus
+Biodiversity
+Seven Seas
+Quadrilateral Security Dialogue
+New Guinea
+Sulu Sea
+Dead Sea
+Turtles
+Gulf of Mexico
+Biodiversity
+Sea
+Ocean
+Abyssal plains
+Turtle
+Marginal seas
+Foraminiferans
+Ocean
+Ocean basins
+Ocean
+Ocean
+Quadrilateral Security Dialogue
+Ocean protection
+Yucatán 
+Abyssal plain
+Ocean
+Area
+
+gpt_entity_particular(): entity list: 
+ ['Islam', 'Juan Fernández Islands', 'Ocean basins', 'Turtle habitats', 'Sea turtles', 'Island of Sarandib', 'Arid-living tortoises', 'Gulf of Mexico', 'Ocean protection', 'Photic zone', 'Leatherback turtle', 'Sulu Sea ', 'Oxus River ', 'Largest turtle', 'Science Valleywood', 'Larwi', 'Indo-Pacific', 'Ocean temperatures', 'Quadrilateral Security Dialogue', 'Abyssal plains', 'Species', 'Yucatán and Florida platforms', 'Range', 'Area', 'Challenger Deep', 'Oxygen', 'Po river', 'Sea of Harkand', 'Creation', 'Sulu Sea', 'Turtles', 'Ocean salinity', 'World Ocean', 'Turtle', 'New Guinea', 'Dead Sea', 'Plains', 'sea floor', 'Science', 'Turtle shells', 'Oxus River', 'Oceanus', 'Gulf of Mexico ', 'Indian Ocean', 'Yucatán ', 'Carbonate reefs', 'Largest point', 'Shallow water', 'Marginal seas', 'Modern turtles', 'Sea of Kalah', 'Alvin', 'Photosynthesis', 'Antarctic/Southern', 'Ocean', 'Seven Seas', 'Hydrothermal vents', 'shell', 'Easter Island', 'Mediterranean Sea', 'Tidal ranges', 'Turtle ', 'International Hydrographic Organization', 'Shallow water marine environment', 'Red Sea', 'Gulf of Mexico basin', 'Gulf Stream', 'Dutch East Indies', 'Muhammad', 'Shallow water marine', 'Hawaii', 'Sea', 'Biodiversity', 'Sierra Madre Oriental', 'Abyssal plain', 'Mariana Islands', 'Polychaete worms', 'Foraminiferans', 'Chile', 'Caspian Sea', 'Indo-Pacific Economic Corridor ']
+
+gpt_entity_particular(): filtered entity: 
+ ['World Ocean']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Seven Seas' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Seven Seas
+Mariana Trench
+Ocean
+Ocean
+Indo-Pacific
+Muhammad
+Archelon ischyros
+Ocean salinity
+Ocean
+Mediterranean Sea
+Seven Seas
+Caribbean Sea
+Sea of Harkand
+Island of Sarandib
+Sea of Kalah
+Gulf of Mexico
+Oxygen
+Ocean salinity
+Ocean basins
+Ocean
+Gulf Stream
+Turtle shells
+Turtles
+Sea of Harkand
+Island of Sarandib
+Adriatic Sea
+Sea turtles
+Ocean basins
+Abyssal plains
+Indo-Pacific
+Baltic Sea
+Challenger Deep
+Sea of Kalah
+Oxus River
+Gulf of Mexico
+Larwi
+Turtles
+Sea
+Turtle shells
+Mariana Islands
+Pangaea
+Abyssal plains
+Ocean
+Baltic Sea
+Challenger Deep
+Sea
+Turtles
+Marine pollution
+Ocean
+Gulf of Mexico
+Seven Seas
+Ocean
+Seven Seas
+Ocean's volume
+Asia
+Sea
+Turtles
+Challenger Deep
+Sea of Harkand
+Sea of Kalah
+Turtles
+Shell
+Ocean
+Crustaceans
+
+gpt_entity_particular(): entity list: 
+ ['Ocean basins', 'Ocean', 'Seven Seas', 'Adriatic Sea', 'Shell', 'Turtle shells', 'Sea turtles', 'Island of Sarandib', 'Mariana Trench', 'Mediterranean Sea', 'Abyssal plains', 'Gulf of Mexico', 'Oxus River', 'Asia', 'Crustaceans', 'Challenger Deep', 'Gulf Stream', 'Oxygen', 'Muhammad', 'Baltic Sea', 'Sea', 'Sea of Harkand', 'Larwi', 'Archelon ischyros', 'Mariana Islands', 'Marine pollution', 'Indo-Pacific', 'Pangaea', "Ocean's volume", 'Turtles', 'Ocean salinity', 'Sea of Kalah', 'Caribbean Sea']
+
+gpt_entity_particular(): filtered entity: 
+ ['Ocean', 'Sea']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Sea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Marine pollution
+Arctic
+Mariana Trench
+Ocean
+Seas
+Easter Island
+Eastern Indo-Pacific
+Muhammad
+Trading routes
+Seven Seas
+Indo-Pacific
+Weimer Germany
+Largest known turtle
+Archelon ischyros
+Ocean salinity
+Precipitation
+Evaporation
+Ocean
+Environmental services
+Turtle
+Vascular plants
+Leatherback turtle
+Atlantic
+Pacific
+Mediterranean Sea
+Arctic Ocean
+Sea of Harkand
+Island of Sarandib
+Sea of Kalah
+Crustacean
+Caspian Sea
+Ocean water
+Seagrasses
+Gulf of Mexico
+Marine pollution
+Oceanographers
+Mariana Trench
+Seabed
+Sea of Galilee
+Freshwater lake
+Gulf Stream
+Ocean current
+Gulf of Mexico
+Oceans
+Carbonate reefs
+Brine pool
+Gulf of Mexico basin
+Abyssal plain
+Sargasso Sea
+Collapse
+Quadrilateral Security Dialogue
+Securing trade
+Shallow water marine environment
+Algae
+Ocean terrain
+Hadean eon
+Sinking
+Barnacles
+Ocean volume
+Testudines
+Abyssal plains
+Seabed contours
+Biodiversity
+Vessel technology
+Black smoker vents
+Oceanus
+Greek mythology
+Plankton
+Marine biology
+Hydrothermal vents
+Maya civilization
+Ancient trade route
+Gulf of Mexico
+Seven Seas
+Reptile
+Eye structure
+Ocean
+Alkalinity
+Absorption
+Seabird
+Atmospheric pressure
+Geomorphology
+Calcite
+Laramide Orogeny
+Sea level rise
+Limestone
+Holocene period
+River Volga
+Evaporation
+Oceanography
+Deposition
+Polymetallic nodules
+Volcanic eruptions
+Environmental regulation
+Red Sea
+Gulf of Aden
+Sargasso Sea
+Sea of Galilee
+Dead Sea
+Salt flats
+Creation theories
+Red algae
+Crustaceans
+Oxygen
+Pangea
+Atlantis
+Satellite imagery
+Isotopic signatures
+Glacier melt
+Solar radiation
+Ocean floor
+Ocean basin
+
+gpt_entity_particular(): entity list: 
+ ['Sea level rise', 'Island of Sarandib', 'Mariana Trench', 'Environmental services', 'Greek mythology', 'Gulf of Mexico', 'Ocean water', 'Solar radiation', 'Leatherback turtle', 'Reptile', 'Ocean volume', 'Oceanographers', 'Seabed contours', 'Freshwater lake', 'Plankton', 'Gulf of Aden', 'Marine pollution', 'Indo-Pacific', 'Ocean basin', 'Eastern Indo-Pacific', 'Absorption', 'Atmospheric pressure', 'Evaporation', 'Quadrilateral Security Dialogue', 'Pangea', 'Deposition', 'Creation theories', 'Sargasso Sea', 'Seas', 'Abyssal plains', 'Satellite imagery', 'Testudines', 'Brine pool', 'Glacier melt', 'Collapse', 'Crustaceans', 'Oxygen', 'Limestone', 'Trading routes', 'Seagrasses', 'Sea of Harkand', 'Archelon ischyros', 'Ocean salinity', 'Alkalinity', 'Crustacean', 'River Volga', 'Arctic Ocean', 'Turtle', 'Red algae', 'Dead Sea', 'Isotopic signatures', 'Vessel technology', 'Securing trade', 'Ocean current', 'Oceanus', 'Pacific', 'Ocean terrain', 'Atlantic', 'Precipitation', 'Carbonate reefs', 'Ancient trade route', 'Environmental regulation', 'Laramide Orogeny', 'Weimer Germany', 'Oceanography', 'Geomorphology', 'Arctic', 'Oceans', 'Barnacles', 'Sea of Kalah', 'Polymetallic nodules', 'Volcanic eruptions', 'Holocene period', 'Hadean eon', 'Ocean', 'Seven Seas', 'Hydrothermal vents', 'Salt flats', 'Easter Island', 'Largest known turtle', 'Mediterranean Sea', 'Maya civilization', 'Seabird', 'Sinking', 'Shallow water marine environment', 'Red Sea', 'Atlantis', 'Gulf of Mexico basin', 'Eye structure', 'Ocean floor', 'Marine biology', 'Gulf Stream', 'Algae', 'Muhammad', 'Vascular plants', 'Calcite', 'Biodiversity', 'Black smoker vents', 'Abyssal plain', 'Seabed', 'Sea of Galilee', 'Caspian Sea']
+
+gpt_entity_particular(): filtered entity: 
+ ['Seas', 'Ocean', 'Seven Seas', 'Seabird', 'Seabed']
+After GPT, entity:  {'River', 'Quintana', 'Turtle', 'marine', 'Ascension', 'World Ocean', 'Germany', 'Solomon', 'Deepwater', 'Jurassic', 'International', 'sea', 'Tabasco', 'water', 'Weimar', 'Cuba', 'Photic zone', 'Pacific', 'Mediterranean', 'Louisiana', 'Robert', 'Biden', 'Leatherback turtle', 'Hydrographic', 'Atlantic', 'Asia', 'Mariana', 'Southern', '361,000,000', 'Horizon', 'Caspian', 'Island', 'India', 'river', 'Deep', 'abyssal', 'Easter', 'Veracruz', 'Juan', 'Amazon', 'Tamaulipas', 'Indo-Pacific', 'Joe', 'Oriental', 'Arctic', 'Oceans', 'Late', 'Pangaea', 'Australia', 'World', 'Peninsula', 'China', 'Caribbean Sea', 'Mexico', 'Antarctic', 'Alvin', 'Trench', 'Oklahoma', 'Indian', 'Cryptodira', 'E.', 'Ocean', 'Yucatán', 'Southeast', 'South', 'States', 'Seven Seas', 'Guinea', 'Seas', 'Sargasso', 'Dead', 'Mississippi', 'Mediterranean Sea', 'Organization', 'Abyssal plains', 'Oxus', 'Volga', 'Seabird', 'Testudines', 'Hydrothermal', 'Leatherback', 'Sulu', 'Red', 'Sierra', 'Challenger', 'Fernández', 'Gulf', 'environment', 'Venice', 'Japan', 'Abyssal', 'Adriatic', 'Gulf Stream', 'Islands', 'Oceania', 'Embayment', 'United', 'plain', 'Muhammad', 'Madre', 'Cretaceous', 'Lee', 'Alabama', 'Hawaii', 'Sea', 'Po', 'Baltic', 'Creation', 'England', 'Hadean', 'New', 'Campeche', 'Shallow', 'Caribbean', "States'", 'Roo', 'Abyssal plain', 'Texas', 'Seabed', 'Chile', 'Turtles', 'U.S.', 'Galilee', 'Russia', 'Florida', 'Seven'}
+Total time:  443.3357059955597
+Entity conversion done on 4_2 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_2_entity_conversion_hash.json. Check the entity.
+ What is the name of one of the five principal divisions of the Earth's interconnected 015 bodies that include regions known for a diversity of non-marine 056 species and contain key geological features like the Sigsbee 020 and 041 plains?
+
+
+
+Done. Check final_query/id_4_2_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_2_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_2_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_2_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_2_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_2_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_2_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

@@ -1,0 +1,211 @@
+Got argument: Abraham Lincoln, 0, 0_1, normal_test: False, blanked: True
+
+utils/question.py extract_hops(Abraham Lincoln, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Abraham_Lincoln_info.json file
+first_hop:  {'triplet': '("Abraham Lincoln", "appointed", "Salmon P. Chase as Chief Justice")', 'start word': 'Abraham Lincoln', 'end word': 'Salmon P. Chase', 'source': {'name': 'Abraham Lincoln', 'line': 27}, 'cpnet': {'start word': 'abraham_lincoln', 'end word': 'salmon_p_chase'}}
+next_word: Salmon P. Chase
+generate_question(0_1, ['("Abraham Lincoln", "appointed", "Salmon P. Chase as Chief Justice")'], ['Salmon P. Chase'], [('Abraham Lincoln', 'Salmon P. Chase')], Salmon P. Chase, [{'name': 'Abraham Lincoln', 'line': 27}]) called
+GPT output is:  Q: Who was appointed by Abraham Lincoln to the position of Chief Justice?
+A: Salmon P. Chase
+final_choice(Salmon P. Chase, options = 5) started
+[]
+entity_type(Salmon P. Chase) called
+Salmon P. Chase is People
+check_matchscore(Salmon P. Chase, Candidates in the 1860 United States presidential election):  0.0
+choose_by_wiki_recur(Candidates in the 1860 United States presidential election)
+   Pages in Candidates in the 1860 United States presidential election: ['Edward Bates', 'John Bell (Tennessee politician)', 'John C. Breckinridge', 'Simon Cameron', 'Salmon P. Chase', 'Daniel S. Dickinson', 'Stephen A. Douglas', 'James Guthrie (Kentucky politician)', 'Sam Houston', 'Robert M. T. Hunter', 'Andrew Johnson', 'Abraham Lincoln', 'William H. Seward']
+      Abraham Lincoln in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas']
+Abraham Lincoln is People
+      Edward Bates in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas']
+Edward Bates is People
+      Andrew Johnson in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas', 'James Guthrie (Kentucky politician)']
+Andrew Johnson is People
+      Stephen A. Douglas in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas', 'James Guthrie (Kentucky politician)']
+Stephen A. Douglas is People
+      James Guthrie (Kentucky politician) in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas', 'James Guthrie (Kentucky politician)']
+James Guthrie (Kentucky politician) is People
+      Simon Cameron in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas', 'James Guthrie (Kentucky politician)', 'Simon Cameron']
+Simon Cameron is People
+      Salmon P. Chase in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas', 'James Guthrie (Kentucky politician)', 'Simon Cameron', 'Salmon P. Chase']
+Salmon P. Chase is People
+      Robert M. T. Hunter in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas', 'James Guthrie (Kentucky politician)', 'Simon Cameron', 'Salmon P. Chase', 'Robert M. T. Hunter']
+Robert M. T. Hunter is People
+      William H. Seward in ['Abraham Lincoln', 'Edward Bates', 'Andrew Johnson', 'Stephen A. Douglas', 'James Guthrie (Kentucky politician)', 'Simon Cameron', 'Salmon P. Chase', 'Robert M. T. Hunter', 'William H. Seward']
+William H. Seward is People
+['Abraham Lincoln', 'Andrew Johnson', 'Stephen A. Douglas', 'William H. Seward']
+Ended after 2.5 hierarchy
+(2.5, ['Abraham Lincoln', 'Stephen A. Douglas', 'Andrew Johnson', 'William H. Seward'])
+
+extract_info(William H. Seward) Start.
+utils/preprocess.py extract_info(): Checking good links on William H. Seward
+United States Senate is Geography
+1 / 30 )  United States senator United States Senate united_states_senate
+Central New York is Geography
+2 / 30 )  Central New York Central New York central_new_york
+Abraham Lincoln is People
+3 / 30 )  Abraham Lincoln Abraham Lincoln abraham_lincoln
+Hudson River is Geography
+4 / 30 )  Hudson River Hudson River hudson_river
+Schenectady, New York is Geography
+5 / 30 )  Schenectady, New York Schenectady, New York schenectady
+Eatonton, Georgia is Geography
+6 / 30 )  Eatonton Eatonton, Georgia eatonton
+Cayuga County, New York is Geography
+7 / 30 )  Cayuga County Cayuga County, New York cayuga_county
+Emma Willard is People
+8 / 30 )  Emma Willard Emma Willard emma_hart_willard
+Martin Van Buren is People
+9 / 30 )  Martin Van Buren Martin Van Buren martin_van_buren
+John Quincy Adams is People
+10 / 30 )  John Quincy Adams John Quincy Adams john_quincy_adams
+Andrew Jackson is People
+11 / 30 )  Andrew Jackson Andrew Jackson andrew_jackson
+DeWitt Clinton is People
+12 / 30 )  DeWitt Clinton DeWitt Clinton dewitt_clinton
+Aaron Burr is People
+13 / 30 )  Aaron Burr Aaron Burr aaron_burr
+Alexander Hamilton is People
+14 / 30 )  Alexander Hamilton Alexander Hamilton alexander_hamilton
+Henry Clay is People
+15 / 30 )  Henry Clay Henry Clay henry_clay
+Saratoga Springs, New York is Geography
+16 / 30 )  Saratoga Springs Saratoga Springs, New York saratoga_springs
+Harrisburg, Pennsylvania is Geography
+17 / 30 )  Harrisburg, Pennsylvania Harrisburg, Pennsylvania harrisburg
+Winfield Scott is People
+18 / 30 )  Winfield Scott Winfield Scott winfield_scott
+William Henry Harrison is People
+19 / 30 )  William Henry Harrison William Henry Harrison william_henry_harrison
+Niagara River is Geography
+20 / 30 )  Niagara River Niagara River niagara_river
+Daniel Webster is People
+21 / 30 )  Daniel Webster Daniel Webster daniel_webster
+John Tyler is People
+22 / 30 )  John Tyler John Tyler john_tyler
+James K. Polk is People
+23 / 30 )  James K. Polk James K. Polk james_k_polk
+Salmon P. Chase is People
+24 / 30 )  Salmon P. Chase Salmon P. Chase salmon_p_chase
+Zachary Taylor is People
+25 / 30 )  Zachary Taylor Zachary Taylor zachary_taylor
+Millard Fillmore is People
+26 / 30 )  Millard Fillmore Millard Fillmore millard_fillmore
+Cabinet of the United States is Incident
+27 / 30 )  Cabinet Cabinet of the United States united_states_cabinet
+Franklin Pierce is People
+28 / 30 )  Franklin Pierce Franklin Pierce franklin_pierce
+Stephen A. Douglas is People
+29 / 30 )  Stephen A. Douglas Stephen A. Douglas stephen_douglas
+James Buchanan is People
+30 / 30 )  James Buchanan James Buchanan james_buchanan
+extract_triplet(William H. Seward)
+Got GPT's response. String length : 5043
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['United States senator', 'United States Senate', 'united_states_senate']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['Central New York', 'Central New York', 'central_new_york']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['Abraham Lincoln', 'Abraham Lincoln', 'abraham_lincoln']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['Schenectady, New York', 'Schenectady, New York', 'schenectady']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['Martin Van Buren', 'Martin Van Buren', 'martin_van_buren']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['Aaron Burr', 'Aaron Burr', 'aaron_burr']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['Henry Clay', 'Henry Clay', 'henry_clay'], ['Saratoga Springs', 'Saratoga Springs, New York', 'saratoga_springs']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['Winfield Scott', 'Winfield Scott', 'winfield_scott'], ['Zachary Taylor', 'Zachary Taylor', 'zachary_taylor']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  [['Millard Fillmore', 'Millard Fillmore', 'millard_fillmore']]
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+subject_words:  [(None, 'William H. Seward', 'william_henry_seward')]
+object_words:  []
+['I have not included all the relationships between William H. Seward and other individuals or entities mentioned in the text you provided, as some of the relationships were not clearly defined or assertive enough to be formulated into triplets. However, the triplets included cover the significant points of contact between Seward and other subjects from the text.']
+extract_info(Andrew Johnson) Start.
+utils/preprocess.py extract_info(): Checking good links on Andrew Johnson
+Abraham Lincoln is People
+1 / 30 )  Abraham Lincoln Abraham Lincoln abraham_lincoln
+Greeneville, Tennessee is Geography
+2 / 30 )  Greeneville, Tennessee Greeneville, Tennessee greeneville

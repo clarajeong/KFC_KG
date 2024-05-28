@@ -1,0 +1,1916 @@
+Got argument: Seoul, 5, 5_5
+
+utils/question.py extract_hops(Seoul, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Seoul_info.json file
+first_hop:  {'triplet': '("Seoul", "has regular flights to", "Tokyo Haneda")', 'start word': 'Seoul', 'end word': 'Tokyo', 'source': {'name': 'Seoul', 'line': 18}, 'cpnet': {'start word': 'seoul', 'end word': 'tokyo'}}
+
+utils/question.py extract_hops(Tokyo, [], ['Seoul']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Tokyo_info.json file
+extract_info(Tokyo) Start.
+utils/preprocess.py extract_info(): Checking good links on Tokyo
+List of largest cities is Geography
+1 / 30 )  one of the most populous cities in the world List of largest cities big_cities
+Greater Tokyo Area is Geography
+2 / 30 )  Greater Tokyo Area Greater Tokyo Area mobile_suica
+Tokyo Bay is Geography
+3 / 30 )  Tokyo Bay Tokyo Bay tokyo_bay
+Honshu is Geography
+4 / 30 )  Honshu Honshu honshu
+National Diet Building is Geography
+5 / 30 )  National Diet Building National Diet Building diet_building
+Tokyo Imperial Palace is Geography
+6 / 30 )  Tokyo Imperial Palace Tokyo Imperial Palace kokyo
+Shinjuku is Geography
+7 / 30 )  Shinjuku Shinjuku shinjuku
+Shibuya is Geography
+8 / 30 )  Shibuya Shibuya shibuya
+Edo is Geography
+9 / 30 )  Edo Edo edo
+Kyoto is Geography
+10 / 30 )  Kyoto Kyoto kyoto
+1923 Great Kantō earthquake is Geography
+11 / 30 )  Great Kantō earthquake 1923 Great Kantō earthquake great_kanto_earthquake
+University of Tokyo is Geography
+12 / 30 )  University of Tokyo University of Tokyo tokyo_university
+Tokyo Skytree is Geography
+13 / 30 )  Tokyo Skytree Tokyo Skytree tokyo_sky_tree
+Tokyo Stock Exchange is Geography
+14 / 30 )  Tokyo Stock Exchange Tokyo Stock Exchange tokyo_stock_exchange
+New York Stock Exchange is Geography
+15 / 30 )  NYSE New York Stock Exchange new_york_stock_exchange
+Beijing is Geography
+16 / 30 )  Beijing Beijing beijing
+Nanjing is Geography
+17 / 30 )  Nanjing Nanjing nanjing
+Edo Castle is Geography
+18 / 30 )  Edo Castle Edo Castle edo_castle
+Toyotomi Hideyoshi is People
+19 / 30 )  Toyotomi Hideyoshi Toyotomi Hideyoshi toyotomi_hideyoshi
+Matthew C. Perry is People
+20 / 30 )  Matthew C. Perry Matthew C. Perry matthew_calbraith_perry
+Hakodate is Geography
+21 / 30 )  Hakodate Hakodate hakodate
+Battle of Ueno is Geography
+22 / 30 )  Battle of Ueno Battle of Ueno battle_of_ueno
+Emperor Meiji is People
+23 / 30 )  Emperor Meiji Emperor Meiji emperor_meiji
+Yokohama is Geography
+24 / 30 )  Yokohama Yokohama yokohama
+National Diet is Geography
+25 / 30 )  Imperial Diet National Diet national_diet
+Attack on Pearl Harbor is Geography
+26 / 30 )  Japan attacked the American bases at Pearl Harbor in Hawaii Attack on Pearl Harbor attack_on_pearl_harbor
+Bombing of Tokyo (10 March 1945) is Geography
+27 / 30 )  Operation Meetinghouse Bombing of Tokyo (10 March 1945) great_tokyo_air_raid
+Douglas MacArthur is People
+28 / 30 )  Douglas MacArthur Douglas MacArthur douglas_macarthur
+Shinagawa is Geography
+29 / 30 )  Shinagawa Shinagawa shinagawa
+International Olympic Committee is Geography
+30 / 30 )  IOC International Olympic Committee international_olympic_committee
+extract_triplet(Tokyo)
+Got GPT's response. String length : 2576
+subject_words:  [(None, 'Tokyo', 'tokyo')]
+object_words:  []
+subject_words:  [(None, 'Tokyo', 'tokyo'), ['Greater Tokyo Area', 'Greater Tokyo Area', 'mobile_suica']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [(None, 'Tokyo', 'tokyo')]
+object_words:  [(None, 'Tokyo', 'tokyo'), ['Tokyo Bay', 'Tokyo Bay', 'tokyo_bay']]
+subject_words:  [(None, 'Tokyo', 'tokyo')]
+object_words:  [['Honshu', 'Honshu', 'honshu']]
+subject_words:  [['Honshu', 'Honshu', 'honshu']]
+object_words:  []
+subject_words:  [(None, 'Tokyo', 'tokyo')]
+object_words:  []
+subject_words:  [['National Diet Building', 'National Diet Building', 'diet_building'], ['Imperial Diet', 'National Diet', 'national_diet']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [(None, 'Tokyo', 'tokyo'), ['Tokyo Imperial Palace', 'Tokyo Imperial Palace', 'kokyo']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [['Shinjuku', 'Shinjuku', 'shinjuku']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [['Shibuya', 'Shibuya', 'shibuya']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [['Edo', 'Edo', 'edo']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [(None, 'Tokyo', 'tokyo'), ['University of Tokyo', 'University of Tokyo', 'tokyo_university']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [(None, 'Tokyo', 'tokyo'), ['Tokyo Skytree', 'Tokyo Skytree', 'tokyo_sky_tree']]
+object_words:  []
+subject_words:  [(None, 'Tokyo', 'tokyo'), ['Tokyo Stock Exchange', 'Tokyo Stock Exchange', 'tokyo_stock_exchange']]
+object_words:  []
+subject_words:  [['Beijing', 'Beijing', 'beijing']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [['Nanjing', 'Nanjing', 'nanjing']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [['Edo', 'Edo', 'edo'], ['Edo Castle', 'Edo Castle', 'edo_castle']]
+object_words:  [['Edo', 'Edo', 'edo']]
+subject_words:  [['Hakodate', 'Hakodate', 'hakodate']]
+object_words:  []
+subject_words:  [['Yokohama', 'Yokohama', 'yokohama']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [['Operation Meetinghouse', 'Bombing of Tokyo (10 March 1945)', 'great_tokyo_air_raid']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [['Douglas MacArthur', 'Douglas MacArthur', 'douglas_macarthur']]
+object_words:  [(None, 'Tokyo', 'tokyo')]
+subject_words:  [['Shinagawa', 'Shinagawa', 'shinagawa']]
+object_words:  []
+second_hop:  {'triplet': '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")', 'start word': 'Tokyo', 'end word': 'Haneda Airport', 'source': {'name': 'Haneda Airport', 'line': 41}, 'cpnet': {'start word': 'tokyo', 'end word': 'haneda_airport'}}
+
+utils/question.py extract_hops(Haneda Airport, [], ['Seoul', 'Tokyo']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Haneda_Airport_info.json file
+third_hop1:  {'triplet': '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")', 'start word': 'Haneda Airport', 'end word': 'Greater Tokyo Area', 'source': {'name': 'Haneda Airport', 'line': 1}, 'cpnet': {'start word': 'haneda_airport', 'end word': 'mobile_suica'}}
+
+utils/question.py extract_hops(Haneda Airport, ['Greater Tokyo Area'], ['Seoul', 'Tokyo']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Haneda_Airport_info.json file
+third_hop2:  {'triplet': '("Republic of China", "used", "Haneda Airport")', 'start word': 'Haneda Airport', 'end word': 'China', 'source': {'name': 'Haneda Airport', 'line': 25}, 'cpnet': {'start word': 'haneda_airport', 'end word': 'china'}}
+extraction_done:  True
+generate_question(5_5, ['("Seoul", "has regular flights to", "Tokyo Haneda")', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")', '("Republic of China", "used", "Haneda Airport")'], ['Seoul', 'Tokyo', 'Haneda Airport', 'Haneda Airport'], [('Seoul', 'Tokyo'), ('Tokyo', 'Haneda Airport'), ('Haneda Airport', 'Greater Tokyo Area'), ('Haneda Airport', 'China')], Seoul, [{'name': 'Seoul', 'line': 18}, {'name': 'Haneda Airport', 'line': 41}, {'name': 'Haneda Airport', 'line': 1}, {'name': 'Haneda Airport', 'line': 25}]) called
+GPT output is:  Q: Which city's airport that provided civil aviation services for the Republic of China before the 1970s offers flights to another city's airport, accessible via Keikyu Airport Line and the Monorail, and one of the two main international airports serving its greater metropolitan area?
+A: Seoul
+final_choice(Seoul, options = 5) started
+[]
+entity_type(Seoul) called
+Seoul is Geography
+check_matchscore(Seoul, Special Cities and Metropolitan Cities of South Korea):  0.0
+choose_by_wiki_recur(Special Cities and Metropolitan Cities of South Korea)
+   Pages in Special Cities and Metropolitan Cities of South Korea: ['Busan', 'Daegu', 'Daejeon', 'Gwangju', 'Incheon', 'Seoul', 'Ulsan']
+      Seoul in ['Seoul', 'Ulsan', 'Incheon', 'Gwangju']
+      Ulsan in ['Seoul', 'Ulsan', 'Incheon', 'Gwangju', 'Daegu']
+      Incheon in ['Seoul', 'Ulsan', 'Incheon', 'Gwangju', 'Daegu']
+      Gwangju in ['Seoul', 'Ulsan', 'Incheon', 'Gwangju', 'Daegu']
+      Daegu in ['Seoul', 'Ulsan', 'Incheon', 'Gwangju', 'Daegu']
+['Ulsan', 'Incheon', 'Gwangju', 'Daegu']
+Ended after 2.5 hierarchy
+(2.5, ['Daegu', 'Incheon', 'Ulsan', 'Gwangju'])
+
+extract_info(Ulsan) Start.
+utils/preprocess.py extract_info(): Checking good links on Ulsan
+South Korea is Geography
+1 / 30 )  South Korea South Korea south_korea
+Busan is Geography
+2 / 30 )  Busan Busan busan
+Joseon is Geography
+3 / 30 )  Joseon Dynasty Joseon joseon
+Seoul is Geography
+4 / 30 )  Seoul Seoul seoul
+United States is Geography
+5 / 30 )  United States' United States united_states
+Ford River Rouge complex is Geography
+6 / 30 )  Ford River Rouge Complex Ford River Rouge complex rouge
+extract_triplet(Ulsan)
+Got GPT's response. String length : 2267
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  [['South Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  [['South Korea', 'South Korea', 'south_korea']]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  []
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  []
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  []
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  []
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [['Seoul', 'Seoul', 'seoul']]
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  [["United States'", 'United States', 'united_states']]
+subject_words:  [['Ford River Rouge Complex', 'Ford River Rouge complex', 'rouge']]
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  []
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+subject_words:  [(None, 'Ulsan', 'ulsan')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Ulsan', 'ulsan')]
+extract_info(Gwangju) Start.
+utils/preprocess.py extract_info(): Checking good links on Gwangju
+South Korea is Geography
+1 / 30 )  South Korea South Korea south_korea
+South Jeolla Province is Geography
+2 / 30 )  South Jeolla South Jeolla Province south_jeolla_province
+Muan County is Geography
+3 / 30 )  Muan County Muan County muan
+Goguryeo is Geography
+4 / 30 )  Goguryeo Goguryeo goguryeo
+Seoul is Geography
+5 / 30 )  Seoul Seoul seoul
+Chun Doo-hwan is People
+6 / 30 )  Chun Doo-hwan Chun Doo-hwan chun_doo_hwan
+Gwangju University is Geography
+7 / 30 )  Gwangju University Gwangju University kwangju
+extract_triplet(Gwangju)
+Got GPT's response. String length : 1330
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  [['South Korea', 'South Korea', 'south_korea']]
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  [['South Jeolla', 'South Jeolla Province', 'south_jeolla_province']]
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  [['Goguryeo', 'Goguryeo', 'goguryeo']]
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  [['Seoul', 'Seoul', 'seoul']]
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  [(None, 'Gwangju', 'gwangju')]
+subject_words:  [(None, 'Gwangju', 'gwangju'), ['Gwangju University', 'Gwangju University', 'kwangju']]
+object_words:  [(None, 'Gwangju', 'gwangju')]
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  [(None, 'Gwangju', 'gwangju')]
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  [(None, 'Gwangju', 'gwangju')]
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+subject_words:  [(None, 'Gwangju', 'gwangju')]
+object_words:  []
+['("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Republic of China", "used", "Haneda Airport")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "used", "Haneda Airport")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "used", "Haneda Airport")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Ulsan", "officially known as", "the Ulsan Metropolitan City")\n', '("Ulsan", "is the", "seventh-largest metropolitan city in South Korea")\n', '("Ulsan", "is the industrial powerhouse of", "South Korea")\n', '("Hyundai Motor Company", "operates the world\'s largest automobile assembly plant in", "Ulsan")\n', '("Hyundai Heavy Industries", "operates the world\'s largest shipyard in", "Ulsan")\n', '("SK Energy", "owns the world\'s third largest oil refinery in", "Ulsan")\n', '("Ulsan", "is divided into", "four gu and one gun")\n', '("Ulsan", "has history since", "the Paleolithic Era")\n', '("Ulsan", "has been a site of mining and production for", "iron during the Jinhan confederacy")\n', '("Ulsan", "served as an important port for", "Gyeongju during the Later Silla period")\n', '("Ulsan", "began to grow as an industrial center due to", "the two World Wars")\n', '("Hyundai Group and SK Group", "began setting up large businesses in", "Ulsan")\n', '("Hyundai Heavy Industries", "established the shipyard in", "Ulsan")\n', '("Hyundai Motor Company", "started in", "Ulsan")\n', '("SK Energy", "developed an oil refinery and petrochemical hub in", "Ulsan")\n', '("Korea Shipbuilding & Offshore Engineering", "plans to move corporate headquarters to", "Seoul")\n', '("Ulsan", "mirrors", "the United States\' Rust Belt")\n', '("Ford River Rouge Complex", "inspired the integrated design of Hyundai Motor\'s plant in", "Ulsan")\n', '("SB LiMotive", "opened an advanced lithium-ion battery production plant in", "Ulsan")\n', '("Samsung SDI", "owns the Ulsan production facility of", "SB LiMotive")\n', '("Ulsan", "is connected to Seoul by", "KTX")\n', '("Ulsan HD FC", "is a football club based in", "Ulsan")\n', '("Ulsan Hyundai Mobis Phoebus", "is a basketball team based in", "Ulsan")\n', '("Jinha and Ilsan", "are beautiful beaches in", "Ulsan")\n', '("Daewangam Park", "features a lush, hundred-year-old pine forest in", "Ulsan")\n', '("Ganjeolgot Cape", "is noted as the first place to see the sunrise in", "Ulsan")\n', '("Ulsan Industry Park", "has been leading the Pacific Rim industry", "")\n', '("Hyundai Motor Company", "operates the world\'s largest single-purpose plant in", "Ulsan")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n', '("Gwangju", "formerly romanized as", "Kwangju")\n', '("Gwangju", "sixth-largest metropolis in", "South Korea")\n', '("Gwangju", "independent from", "South Jeolla Province")\n', '("Gwangju", "promoted to", "metropolitan city")\n', '("Gwangju", "southern boundary of", "Goguryeo")\n', '("Gwangju", "administrative center of", "Baekje")\n', '("Gwangju", "known as during Imperial Japanese rule", "Kōshū")\n', '("Gwangju Student Independence Movement", "turned into major uprising against", "Imperial Japanese cruelty")\n', '("Gwangju", "connected by railway to", "Seoul")\n', '("Gwangju", "demonstrations against", "Chun Doo-hwan")\n', '("Gwangju", "site of", "Gwangju Uprising")\n', '("Gwangju University", "private university in", "Gwangju")\n', '("Gwangju World Cup Stadium", "where South Korea national football team beat", "Spain soccer team")\n', '("Gwangju Institute of Science and Technology", "one of the greatest research institutes in", "Korea")\n', '("Gwangju", "home of", "Kia Tigers")\n', '("Gwangju", "home of", "Gwangju FC")\n', '("Gwangju", "home of", "Gwangju AI Peppers")\n', '("Gwangju", "selected as the site for", "Green-Startup-Town")\n', '("Gwangju", "part of", "Mudeungsan National Park")\n', '("Daegu", "formerly spelled as", "Taegu")\n', '("Daegu Metropolitan City", "is located in", "southeastern South Korea")\n', '("Daegu", "is the third-largest urban agglomeration in", "South Korea after Seoul and Busan")\n', '("Daegu", "is often referred to with", "North Gyeongsang Province as Daegu-Gyeongbuk")\n', '("Daegu", "forms the central plain of the", "Yeongnam region")\n', '("Daegu", "was part of the proto-kingdom", "Jinhan")\n', '("Daegu", "came under control of the", "Silla Kingdom")\n', '("Silla Kingdom", "unified the", "Korean Peninsula")\n', '("Daegu", "was the capital of Gyeongsang-do during the", "Joseon dynasty")\n', '("Daegu", "is nicknamed", "Apple City")\n', '("Daegu", "is also known as", "Textile City")\n', '("Daegu", "focuses on fostering fashion and high-tech industries in the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "was part of the", "Mumun pottery period")\n', '("Daegu", "was known as", "Dalgubeol during the Proto–Three Kingdoms period")\n', '("Silla", "considered moving the capital to", "Daegu")\n', '("Daegu", "contains the historical site", "Dongcheon-dong")\n', '("Daegu", "has megalithic burials known as", "dolmens")\n', '("Daegu", "was the site of the chiefdom or walled-town polity known as", "Dalgubeol")\n', '("Daegu", "was absorbed into the kingdom of", "Silla")\n', '("Daegu", "contains relics at", "Dalseong Park")\n', '("Silla", "unified the Korean peninsula by defeating kingdoms like", "Baekje and Goguryeo")\n', '("Daegu", "has the remains of a large-scale fortified Silla site in", "Dongcheon-dong, Buk-gu")\n', '("Daegu", "has the Silla village dating to the sixth to seventh centuries at", "Siji-dong")\n', '("Daegu", "was initially aligned with Later Baekje during the", "Later Three Kingdoms period")\n', '("Daegu", "was the site of the Battle of Gong Mountain during the", "Later Three Kingdoms period")\n', '("Daegu", "had the first edition of the", "Tripitaka Koreana stored at the temple of Buinsa")\n', '("Daegu", "was a transportation center during the", "Joseon dynasty")\n', '("Daegu", "was the administrative capital of the", "Gyeongsang-do")\n', '("Daegu", "has a herbal medicine market called", "Yangnyeongsi")\n', '("Daegu", "was influenced by", "Japanese imperialism")\n', '("Daegu", "became the site of one of the first modern post offices during the", "\'Gab-o\' reforms")\n', '("Daegu", "was a modern transportation center of the newly constructed", "Gyeongbu Line main railroad")\n', '("Daegu", "organized the National Debt Repayment Movement led by", "Seo Sang-don")\n', '("Daegu", "remained in South Korean hands during the", "Korean War")\n', '("Daegu", "was known as the Battle of Taegu along the", "Nakdong River")\n', '("Daegu", "was politically favored during the rule of", "Park Chung Hee")\n', '("Daegu", "is a political base for the", "Saenuri Party")\n', '("Daegu", "produced four Presidents of South Korea", "Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye")\n', '("Daegu", "has strong political influence in elections as a capital of Korean conservatives", "")\n', '("Daegu", "separated from Gyeongsangbuk-do and became an independently administered city", "")\n', '("Daegu", "is the third-largest metropolitan area in Korea in terms of", "population and commerce")\n', '("Daegu Metropolitan Government", "is located in", "Jung District")\n', '("Gyeongbuk Provincial Government", "was to be relocated to", "Andong")\n', '("Daegu", "is a stronghold of the People Power Party", "")\n', '("Daegu", "has two local governments within the city", "")\n', '("Daegu", "sits in a basin surrounded by low mountains like", "Palgongsan, Biseulsan, Waryongsan")\n', '("Geumho River", "flows along the northern and eastern edges of", "Daegu")\n', '("Daegu", "lies in a humid subtropical climate zone according to", "Köppen climate classification")\n', '("Daegu", "has a warm temperate moist forest climate in", "Holdridge climate classification")\n', '("Daegu", "traps hot and humid air in summers because of the mountains that comprise the basin", "")\n', '("Daegu", "has little precipitation except during the rainy season and is sunny throughout much of the year", "")\n', '("Daegu", "has an emergence of the term", "Daefrica due to high temperatures")\n', '("Gunwi County", "has a colder winter than other areas of", "Daegu")\n', '("Daegu", "is a", "manufacturing industry city")\n', '("Daegu", "houses companies like Daegu Bank and", "Hwasung corp.")\n', '("Samsung and Kolon", "were founded in", "Daegu")\n', '("Daegu-Gyeongbuk region", "is one of the", "major industrial areas in Korea")\n', '("Gumi and Pohang", "provide great services to the surplus with their", "electronics and steel industries")\n', '("Daegu", "and its neighbouring cities were designated for the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "is the commercial center of the southern part of the Korean Peninsula with Seoul in the center and Pyongyang in the north", "")\n', '("Daegu", "has a decline in the textile industry, which is the heart of its economy", "")\n', '("Daegu", "has a warm climate that provides the region with", "high quality apples and oriental melons")\n', '("Daegu", "has been focusing on revitalizing its economy and improving the city\'s fashion industry", "")\n', '("Daegu", "has been actively promoting its fashion industry based on its textile and clothing manufacturing industries", "")\n', '("Daegu", "hosts exhibitions like Daegu Fashion Fair and Preview in Daegu related to fashion and textile", "")\n', '("Esiapolis", "is a large new town specializing in the textile-fashion industries under construction in", "Bongmu-dong, northeastern Daegu")\n', '("Daegu", "is known as a conservative city", "")\n', '("Daegu", "has many temples due to the strong presence of", "Buddhism")\n', '("Daegu", "has an academy based on", "Confucianism")\n', '("Christian churches in Daegu", "have neon cross-topped spires", "")\n', '("Gatbawi", "is the most well-known sight of the city and is located at the top of", "Gwanbong, Palgongsan")\n', '("People from all over the country", "visit Gatbawi because they believe that the Buddha", "will grant one\'s single desire")\n', '("Daegu", "is located near traditional temples like", "Donghwasa, Pagyesa, and Buinsa")\n', '("Daegu", "contains lecture halls as well as", "Dodong-seowon and Nokdong-seowon")\n', '("Daegu", "preserves old villages such as the", "Otgol village and the Inheung village")\n', '("Daegu", "has Joseon dynasty\'s administrative buildings like", "Gyeongsang-gamyeong and Daegu-hyanggyo")\n', '("Mangudang Park", "restored the main gateway of Daegu during the Joseon period called", "Yeongnam-jeilmun")\n', '("Daegu", "has western style modern architecture like", "Gyesan Cathedral and the old building of Jeil Church")\n', '("Gyesan Cathedral", "is the third oldest gothic church building in Korea and the cathedral of the", "Roman Catholic Archdiocese of Daegu")\n', '("Daegu", "is near Haeinsa—a Buddhist temple that houses the Tripitaka Koreana", "")\n', '("Mt. Palgong, Mt. Biseul, and Mt. Ap", "are representative mountains in", "Daegu")\n', '("Apsan", "has trails, Buddhist temples, a Korean War museum, and a gondola ride to the peak and is located in", "the southern part of Daegu")\n', '("Daegu", "has neighborhood parks such as", "Waryongsan, Hamjisan, and Yongjibong")\n', '("Duryu Park", "has Daegu Tower, Woobang Land, Kolon Bandstand, Duryu Stadium, and sports facilities", "")\n', '("Duryu Park", "is a large forest in the middle of the urban area of", "Daegu")\n', '("Daegu Tower", "is the tallest contemporary structure and a symbol of", "Daegu")\n', '("Woobang Land", "is the largest amusement park outside the capital area", "")\n', '("National Debt Repayment Movement Memorial Park", "includes Dalgubeol-daejong, which is the Dalgubeol grand bell", "")\n', '("Daegu", "has a botanical garden with a variety of plants and flowers", "")\n', '("Dongseongno", "is the downtown of Daegu and stretches from Daegu Station to the central police station near Banwoldang subway station", "")\n', '("Kyungpook National University in Buk-gu", "is surrounded by amusement spots", "")\n', '("Deuran-gil in Suseong-gu", "is known for many restaurants", "")\n', '("Daegu", "hosts department stores including chains and the local Daegu Department Store", "")\n', '("Seomun Market and Chilseong Market", "are traditional markets in Daegu selling all sorts of goods", "")\n', '("Daegu", "hosts many traditional ceremonies and festivals like the Seokjeondaeje", "")\n', '("Daegu-hyanggyo", "hosts a Confucian ritual ceremony called Seokjeondaeje every spring and autumn", "")\n', '("Yangnyeongsi herb medical festival and Otgol village festival", "are contemporary festivals about traditional culture in", "Daegu")\n', '("Daegu", "has growing enthusiasm for performing arts and events like Daegu International Opera Festival (DIOF) and Daegu International Musical Festival (DIMF)", "")\n', '("Daegu International Bodypainting Festival (DIBF)", "is one of the most famous festivals of its kind in", "Korea")\n', '("Daegu", "hosts festivals throughout the year, like the Colorful Daegu Festival, Dongseongno festival, and Palgongsan maple festival", "")\n', '("Daegu International Jazz Festival", "is held every year in", "Daegu")\n', '("Colorful Daegu Festival", "offers performances and art programs including the", "Colorful Parade")\n', '("Daegu Chimac Festival", "takes place at Duryu Park in Dalseo-gu", "")\n', '("Daegu", "has the term \'chimac\' as a portmanteau of chicken and maekju (meaning \'beer\')", "")\n', '("Daegu cuisine", "is similar to that consumed in the", "Yeongnam region")\n', '("Daegu", "is known for unique dishes such as Ttaro-gukbap and Mungtigi", "")\n', '("Daegu Art Museum", "is located in", "Daegu")\n', '("Daegu National Museum", "is a national museum collecting relics excavated in and around", "Daegu")\n', '("Daegu", "has museums like Daegu Bangjja Yugi (Korean Bronzeware) Museum and", "Hengso Museum of Keimyung University")\n', '("Daegu Opera House", "is known for performing opera as the first theater in Korea", "")\n', '("Daegu", "has cultural and arts centers like Suseong Artpia and Keimyung Art Center", "")\n', '("Daegu", "competed with cities like Moscow, Russia, and Brisbane, Australia", "")\n', '("Daegu", "has hosted worldwide sports events and is home to the Colorful Daegu Pre-Championships Meeting annually", "")\n', '("Daegu Stadium", "is the second largest sports complex in South Korea", "")\n', '("Daegu Marathon", "is held every year in April starting and ending at the", "Daegu Stadium")\n', '("Samsung Lions", "are a professional baseball team based in Daegu", "")\n', '("Daegu", "is served by broadcasting stations like KBS Daegu Broadcast Station, Daegu MBC, and TBC", "")\n', '("Daegu", "is largely a homogeneous community that includes few non-Koreans", "")\n', '("Daegu", "has immigrants from South and Southeast Asia working in automotive-parts factories", "")\n', '("Daegu", "has English-speaking Westerners working in English schools and university programs", "")\n', '("Daegu", "hosts three American military bases including Camp Henry, Camp George, and Camp Walker", "")\n', '("Daegu", "has challenges with the construction of a mosque in", "Daehyeon-dong")\n', '("Daegu", "experienced opposition and controversy over the mosque construction from nearby residents", "")\n', '("The National Human Rights Commission of Korea", "judged the suspension of mosque construction as based on discrimination and prejudice against Muslims", "")\n', '("Daegu\'s", "Mosque Controversy involved insulting and offensive actions near the construction site", "")\n', '("Daegu", "has educational institutions like Daegu Science High School and", "Taegu Foreign Language High School")\n', '("Daegu", "has schools with high educational grades such as Keisung Academy and Gyeongsin High School", "")\n', '("Daegu", "houses universities and colleges in the Gyeongsan city which serves as a college town for the region", "")\n', '("Kyungpook National University (KNU)", "is a highly ranked national university in", "Daegu")\n', '("DGIST (Daegu Gyeongbuk Institute of Science and Technology)", "is recognized as one of Korea\'s top universities in the field of science and technology", "")\n', '("Daegu", "has prestigious private universities like Yeungnam University (YU) and Keimyung University", "")\n', '("Daegu National University of Education", "offers elementary education training", "")\n', '("Daegu", "has tertiary hospitals making the city the medical hub of", "south-eastern Korea")\n', '("Dongsan Hospital", "is one of the oldest western-style medical clinics in Korea", "")\n']
+range(1, 341) 4
+['("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Republic of China", "used", "Haneda Airport")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "used", "Haneda Airport")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "used", "Haneda Airport")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Ulsan", "officially known as", "the Ulsan Metropolitan City")\n', '("Ulsan", "is the", "seventh-largest metropolitan city in South Korea")\n', '("Ulsan", "is the industrial powerhouse of", "South Korea")\n', '("Hyundai Motor Company", "operates the world\'s largest automobile assembly plant in", "Ulsan")\n', '("Hyundai Heavy Industries", "operates the world\'s largest shipyard in", "Ulsan")\n', '("SK Energy", "owns the world\'s third largest oil refinery in", "Ulsan")\n', '("Ulsan", "is divided into", "four gu and one gun")\n', '("Ulsan", "has history since", "the Paleolithic Era")\n', '("Ulsan", "has been a site of mining and production for", "iron during the Jinhan confederacy")\n', '("Ulsan", "served as an important port for", "Gyeongju during the Later Silla period")\n', '("Ulsan", "began to grow as an industrial center due to", "the two World Wars")\n', '("Hyundai Group and SK Group", "began setting up large businesses in", "Ulsan")\n', '("Hyundai Heavy Industries", "established the shipyard in", "Ulsan")\n', '("Hyundai Motor Company", "started in", "Ulsan")\n', '("SK Energy", "developed an oil refinery and petrochemical hub in", "Ulsan")\n', '("Korea Shipbuilding & Offshore Engineering", "plans to move corporate headquarters to", "Seoul")\n', '("Ulsan", "mirrors", "the United States\' Rust Belt")\n', '("Ford River Rouge Complex", "inspired the integrated design of Hyundai Motor\'s plant in", "Ulsan")\n', '("SB LiMotive", "opened an advanced lithium-ion battery production plant in", "Ulsan")\n', '("Samsung SDI", "owns the Ulsan production facility of", "SB LiMotive")\n', '("Ulsan", "is connected to Seoul by", "KTX")\n', '("Ulsan HD FC", "is a football club based in", "Ulsan")\n', '("Ulsan Hyundai Mobis Phoebus", "is a basketball team based in", "Ulsan")\n', '("Jinha and Ilsan", "are beautiful beaches in", "Ulsan")\n', '("Daewangam Park", "features a lush, hundred-year-old pine forest in", "Ulsan")\n', '("Ganjeolgot Cape", "is noted as the first place to see the sunrise in", "Ulsan")\n', '("Ulsan Industry Park", "has been leading the Pacific Rim industry", "")\n', '("Hyundai Motor Company", "operates the world\'s largest single-purpose plant in", "Ulsan")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n', '("Gwangju", "formerly romanized as", "Kwangju")\n', '("Gwangju", "sixth-largest metropolis in", "South Korea")\n', '("Gwangju", "independent from", "South Jeolla Province")\n', '("Gwangju", "promoted to", "metropolitan city")\n', '("Gwangju", "southern boundary of", "Goguryeo")\n', '("Gwangju", "administrative center of", "Baekje")\n', '("Gwangju", "known as during Imperial Japanese rule", "Kōshū")\n', '("Gwangju Student Independence Movement", "turned into major uprising against", "Imperial Japanese cruelty")\n', '("Gwangju", "connected by railway to", "Seoul")\n', '("Gwangju", "demonstrations against", "Chun Doo-hwan")\n', '("Gwangju", "site of", "Gwangju Uprising")\n', '("Gwangju University", "private university in", "Gwangju")\n', '("Gwangju World Cup Stadium", "where South Korea national football team beat", "Spain soccer team")\n', '("Gwangju Institute of Science and Technology", "one of the greatest research institutes in", "Korea")\n', '("Gwangju", "home of", "Kia Tigers")\n', '("Gwangju", "home of", "Gwangju FC")\n', '("Gwangju", "home of", "Gwangju AI Peppers")\n', '("Gwangju", "selected as the site for", "Green-Startup-Town")\n', '("Gwangju", "part of", "Mudeungsan National Park")\n', '("Daegu", "formerly spelled as", "Taegu")\n', '("Daegu Metropolitan City", "is located in", "southeastern South Korea")\n', '("Daegu", "is the third-largest urban agglomeration in", "South Korea after Seoul and Busan")\n', '("Daegu", "is often referred to with", "North Gyeongsang Province as Daegu-Gyeongbuk")\n', '("Daegu", "forms the central plain of the", "Yeongnam region")\n', '("Daegu", "was part of the proto-kingdom", "Jinhan")\n', '("Daegu", "came under control of the", "Silla Kingdom")\n', '("Silla Kingdom", "unified the", "Korean Peninsula")\n', '("Daegu", "was the capital of Gyeongsang-do during the", "Joseon dynasty")\n', '("Daegu", "is nicknamed", "Apple City")\n', '("Daegu", "is also known as", "Textile City")\n', '("Daegu", "focuses on fostering fashion and high-tech industries in the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "was part of the", "Mumun pottery period")\n', '("Daegu", "was known as", "Dalgubeol during the Proto–Three Kingdoms period")\n', '("Silla", "considered moving the capital to", "Daegu")\n', '("Daegu", "contains the historical site", "Dongcheon-dong")\n', '("Daegu", "has megalithic burials known as", "dolmens")\n', '("Daegu", "was the site of the chiefdom or walled-town polity known as", "Dalgubeol")\n', '("Daegu", "was absorbed into the kingdom of", "Silla")\n', '("Daegu", "contains relics at", "Dalseong Park")\n', '("Silla", "unified the Korean peninsula by defeating kingdoms like", "Baekje and Goguryeo")\n', '("Daegu", "has the remains of a large-scale fortified Silla site in", "Dongcheon-dong, Buk-gu")\n', '("Daegu", "has the Silla village dating to the sixth to seventh centuries at", "Siji-dong")\n', '("Daegu", "was initially aligned with Later Baekje during the", "Later Three Kingdoms period")\n', '("Daegu", "was the site of the Battle of Gong Mountain during the", "Later Three Kingdoms period")\n', '("Daegu", "had the first edition of the", "Tripitaka Koreana stored at the temple of Buinsa")\n', '("Daegu", "was a transportation center during the", "Joseon dynasty")\n', '("Daegu", "was the administrative capital of the", "Gyeongsang-do")\n', '("Daegu", "has a herbal medicine market called", "Yangnyeongsi")\n', '("Daegu", "was influenced by", "Japanese imperialism")\n', '("Daegu", "became the site of one of the first modern post offices during the", "\'Gab-o\' reforms")\n', '("Daegu", "was a modern transportation center of the newly constructed", "Gyeongbu Line main railroad")\n', '("Daegu", "organized the National Debt Repayment Movement led by", "Seo Sang-don")\n', '("Daegu", "remained in South Korean hands during the", "Korean War")\n', '("Daegu", "was known as the Battle of Taegu along the", "Nakdong River")\n', '("Daegu", "was politically favored during the rule of", "Park Chung Hee")\n', '("Daegu", "is a political base for the", "Saenuri Party")\n', '("Daegu", "produced four Presidents of South Korea", "Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye")\n', '("Daegu", "has strong political influence in elections as a capital of Korean conservatives", "")\n', '("Daegu", "separated from Gyeongsangbuk-do and became an independently administered city", "")\n', '("Daegu", "is the third-largest metropolitan area in Korea in terms of", "population and commerce")\n', '("Daegu Metropolitan Government", "is located in", "Jung District")\n', '("Gyeongbuk Provincial Government", "was to be relocated to", "Andong")\n', '("Daegu", "is a stronghold of the People Power Party", "")\n', '("Daegu", "has two local governments within the city", "")\n', '("Daegu", "sits in a basin surrounded by low mountains like", "Palgongsan, Biseulsan, Waryongsan")\n', '("Geumho River", "flows along the northern and eastern edges of", "Daegu")\n', '("Daegu", "lies in a humid subtropical climate zone according to", "Köppen climate classification")\n', '("Daegu", "has a warm temperate moist forest climate in", "Holdridge climate classification")\n', '("Daegu", "traps hot and humid air in summers because of the mountains that comprise the basin", "")\n', '("Daegu", "has little precipitation except during the rainy season and is sunny throughout much of the year", "")\n', '("Daegu", "has an emergence of the term", "Daefrica due to high temperatures")\n', '("Gunwi County", "has a colder winter than other areas of", "Daegu")\n', '("Daegu", "is a", "manufacturing industry city")\n', '("Daegu", "houses companies like Daegu Bank and", "Hwasung corp.")\n', '("Samsung and Kolon", "were founded in", "Daegu")\n', '("Daegu-Gyeongbuk region", "is one of the", "major industrial areas in Korea")\n', '("Gumi and Pohang", "provide great services to the surplus with their", "electronics and steel industries")\n', '("Daegu", "and its neighbouring cities were designated for the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "is the commercial center of the southern part of the Korean Peninsula with Seoul in the center and Pyongyang in the north", "")\n', '("Daegu", "has a decline in the textile industry, which is the heart of its economy", "")\n', '("Daegu", "has a warm climate that provides the region with", "high quality apples and oriental melons")\n', '("Daegu", "has been focusing on revitalizing its economy and improving the city\'s fashion industry", "")\n', '("Daegu", "has been actively promoting its fashion industry based on its textile and clothing manufacturing industries", "")\n', '("Daegu", "hosts exhibitions like Daegu Fashion Fair and Preview in Daegu related to fashion and textile", "")\n', '("Esiapolis", "is a large new town specializing in the textile-fashion industries under construction in", "Bongmu-dong, northeastern Daegu")\n', '("Daegu", "is known as a conservative city", "")\n', '("Daegu", "has many temples due to the strong presence of", "Buddhism")\n', '("Daegu", "has an academy based on", "Confucianism")\n', '("Christian churches in Daegu", "have neon cross-topped spires", "")\n', '("Gatbawi", "is the most well-known sight of the city and is located at the top of", "Gwanbong, Palgongsan")\n', '("People from all over the country", "visit Gatbawi because they believe that the Buddha", "will grant one\'s single desire")\n', '("Daegu", "is located near traditional temples like", "Donghwasa, Pagyesa, and Buinsa")\n', '("Daegu", "contains lecture halls as well as", "Dodong-seowon and Nokdong-seowon")\n', '("Daegu", "preserves old villages such as the", "Otgol village and the Inheung village")\n', '("Daegu", "has Joseon dynasty\'s administrative buildings like", "Gyeongsang-gamyeong and Daegu-hyanggyo")\n', '("Mangudang Park", "restored the main gateway of Daegu during the Joseon period called", "Yeongnam-jeilmun")\n', '("Daegu", "has western style modern architecture like", "Gyesan Cathedral and the old building of Jeil Church")\n', '("Gyesan Cathedral", "is the third oldest gothic church building in Korea and the cathedral of the", "Roman Catholic Archdiocese of Daegu")\n', '("Daegu", "is near Haeinsa—a Buddhist temple that houses the Tripitaka Koreana", "")\n', '("Mt. Palgong, Mt. Biseul, and Mt. Ap", "are representative mountains in", "Daegu")\n', '("Apsan", "has trails, Buddhist temples, a Korean War museum, and a gondola ride to the peak and is located in", "the southern part of Daegu")\n', '("Daegu", "has neighborhood parks such as", "Waryongsan, Hamjisan, and Yongjibong")\n', '("Duryu Park", "has Daegu Tower, Woobang Land, Kolon Bandstand, Duryu Stadium, and sports facilities", "")\n', '("Duryu Park", "is a large forest in the middle of the urban area of", "Daegu")\n', '("Daegu Tower", "is the tallest contemporary structure and a symbol of", "Daegu")\n', '("Woobang Land", "is the largest amusement park outside the capital area", "")\n', '("National Debt Repayment Movement Memorial Park", "includes Dalgubeol-daejong, which is the Dalgubeol grand bell", "")\n', '("Daegu", "has a botanical garden with a variety of plants and flowers", "")\n', '("Dongseongno", "is the downtown of Daegu and stretches from Daegu Station to the central police station near Banwoldang subway station", "")\n', '("Kyungpook National University in Buk-gu", "is surrounded by amusement spots", "")\n', '("Deuran-gil in Suseong-gu", "is known for many restaurants", "")\n', '("Daegu", "hosts department stores including chains and the local Daegu Department Store", "")\n', '("Seomun Market and Chilseong Market", "are traditional markets in Daegu selling all sorts of goods", "")\n', '("Daegu", "hosts many traditional ceremonies and festivals like the Seokjeondaeje", "")\n', '("Daegu-hyanggyo", "hosts a Confucian ritual ceremony called Seokjeondaeje every spring and autumn", "")\n', '("Yangnyeongsi herb medical festival and Otgol village festival", "are contemporary festivals about traditional culture in", "Daegu")\n', '("Daegu", "has growing enthusiasm for performing arts and events like Daegu International Opera Festival (DIOF) and Daegu International Musical Festival (DIMF)", "")\n', '("Daegu International Bodypainting Festival (DIBF)", "is one of the most famous festivals of its kind in", "Korea")\n', '("Daegu", "hosts festivals throughout the year, like the Colorful Daegu Festival, Dongseongno festival, and Palgongsan maple festival", "")\n', '("Daegu International Jazz Festival", "is held every year in", "Daegu")\n', '("Colorful Daegu Festival", "offers performances and art programs including the", "Colorful Parade")\n', '("Daegu Chimac Festival", "takes place at Duryu Park in Dalseo-gu", "")\n', '("Daegu", "has the term \'chimac\' as a portmanteau of chicken and maekju (meaning \'beer\')", "")\n', '("Daegu cuisine", "is similar to that consumed in the", "Yeongnam region")\n', '("Daegu", "is known for unique dishes such as Ttaro-gukbap and Mungtigi", "")\n', '("Daegu Art Museum", "is located in", "Daegu")\n', '("Daegu National Museum", "is a national museum collecting relics excavated in and around", "Daegu")\n', '("Daegu", "has museums like Daegu Bangjja Yugi (Korean Bronzeware) Museum and", "Hengso Museum of Keimyung University")\n', '("Daegu Opera House", "is known for performing opera as the first theater in Korea", "")\n', '("Daegu", "has cultural and arts centers like Suseong Artpia and Keimyung Art Center", "")\n', '("Daegu", "competed with cities like Moscow, Russia, and Brisbane, Australia", "")\n', '("Daegu", "has hosted worldwide sports events and is home to the Colorful Daegu Pre-Championships Meeting annually", "")\n', '("Daegu Stadium", "is the second largest sports complex in South Korea", "")\n', '("Daegu Marathon", "is held every year in April starting and ending at the", "Daegu Stadium")\n', '("Samsung Lions", "are a professional baseball team based in Daegu", "")\n', '("Daegu", "is served by broadcasting stations like KBS Daegu Broadcast Station, Daegu MBC, and TBC", "")\n', '("Daegu", "is largely a homogeneous community that includes few non-Koreans", "")\n', '("Daegu", "has immigrants from South and Southeast Asia working in automotive-parts factories", "")\n', '("Daegu", "has English-speaking Westerners working in English schools and university programs", "")\n', '("Daegu", "hosts three American military bases including Camp Henry, Camp George, and Camp Walker", "")\n', '("Daegu", "has challenges with the construction of a mosque in", "Daehyeon-dong")\n', '("Daegu", "experienced opposition and controversy over the mosque construction from nearby residents", "")\n', '("The National Human Rights Commission of Korea", "judged the suspension of mosque construction as based on discrimination and prejudice against Muslims", "")\n', '("Daegu\'s", "Mosque Controversy involved insulting and offensive actions near the construction site", "")\n', '("Daegu", "has educational institutions like Daegu Science High School and", "Taegu Foreign Language High School")\n', '("Daegu", "has schools with high educational grades such as Keisung Academy and Gyeongsin High School", "")\n', '("Daegu", "houses universities and colleges in the Gyeongsan city which serves as a college town for the region", "")\n', '("Kyungpook National University (KNU)", "is a highly ranked national university in", "Daegu")\n', '("DGIST (Daegu Gyeongbuk Institute of Science and Technology)", "is recognized as one of Korea\'s top universities in the field of science and technology", "")\n', '("Daegu", "has prestigious private universities like Yeungnam University (YU) and Keimyung University", "")\n', '("Daegu National University of Education", "offers elementary education training", "")\n', '("Daegu", "has tertiary hospitals making the city the medical hub of", "south-eastern Korea")\n', '("Dongsan Hospital", "is one of the oldest western-style medical clinics in Korea", "")\n']
+range(1, 341) 4
+['("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Republic of China", "used", "Haneda Airport")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul", "is compared to", "Times Square")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "used", "Haneda Airport")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "used", "Haneda Airport")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")\n', '("Haneda Airport", "other one being", "Narita International Airport")\n', '("Haneda Airport", "is the primary base of", "Japan\'s two largest airlines")\n', '("Haneda", "is located in", "Ōta, Tokyo")\n', '("Haneda", "is situated", "south of Tokyo Station")\n', '("Haneda", "handled domestic flights to and from", "Tokyo")\n', '("Japanese government", "encourages use of Haneda for", "premium business routes")\n', '("Japanese government", "encourages use of Narita for", "leisure routes")\n', '("Japanese government", "views Narita as the", "Hub of Asia")\n', '("Haneda and Narita", "make Tokyo the third-busiest city airport system in the world after", "London and New York")\n', '("Haneda", "was named the second-best airport after", "Singapore\'s Changi Airport")\n', '("Haneda", "was rated by Skytrax as the second Best Airport in-between", "Qatar\'s Hamad International Airport and Singapore\'s Changi Airport")\n', '("Before Haneda Airport construction", "area was", "a prosperous resort")\n', '("Haneda", "has flights to destinations in", "Taiwan, Korea, Manchuria")\n', '("Japanese government", "planned a new Tokyo Municipal Airport in", "Koto Ward")\n', '("General Douglas MacArthur", "ordered that Haneda be handed over to", "the occupation forces")\n', '("Haneda", "served as a port of entry to", "Japan")\n', '("Japan Airlines", "began its first domestic operations from", "Haneda")\n', '("SAS", "began flights to Copenhagen from Haneda via", "Anchorage")\n', '("Japan Air Transport", "operated from", "Tachikawa Airfield")\n', '("Hokkaido", "received flights from", "Haneda")\n', '("Japan Airlines", "began serving", "Moscow from Haneda")\n', '("China Airlines", "served", "Taipei and Honolulu from Haneda")\n', '("Haneda Air Force Base", "received its first international passenger flights by", "Northwest Orient Airlines")\n', '("Republic of China", "due to political conflict with", "People\'s Republic of China")\n', '("Shinzo Abe", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Wen Jiabao", "informal agreement for service between Haneda and", "Shanghai Hongqiao International Airport")\n', '("Japanese Ministry of Transport", "announced international flights allowed between Haneda and any", "overseas destination")\n', '("Haneda Airport", "allocated slots for", "international flights")\n', '("British Airways", "service to London from Haneda was", "temporarily suspended then restored")\n', '("Air Canada", "service to Vancouver from Haneda was", "announced but never commenced")\n', '("Delta Air Lines", "service to Detroit from Haneda was", "replaced with service to Seattle")\n', '("American Airlines", "cancelled its service between Haneda and", "New York JFK")\n', '("Haneda Airport", "received complaints for lack of amenities during", "night hours")\n', '("All Nippon Airways", "received more international slots at Haneda than", "Japan Airlines")\n', '("Haneda", "subject to domestic slot restrictions reallocated every", "five years")\n', '("Japan Airlines", "operates a Safety Promotion Center at", "Haneda Airport")\n', '("Haneda", "has", "three passenger terminals")\n', '("Haneda", "has", "airline lounges operated by various airline alliances")\n', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")\n', '("Haneda Airport", "proposed a new access line by", "East Japan Railway Company")\n', '("Keisei", "runs direct trains between Haneda and", "Narita")\n', '("Ulsan", "officially known as", "the Ulsan Metropolitan City")\n', '("Ulsan", "is the", "seventh-largest metropolitan city in South Korea")\n', '("Ulsan", "is the industrial powerhouse of", "South Korea")\n', '("Hyundai Motor Company", "operates the world\'s largest automobile assembly plant in", "Ulsan")\n', '("Hyundai Heavy Industries", "operates the world\'s largest shipyard in", "Ulsan")\n', '("SK Energy", "owns the world\'s third largest oil refinery in", "Ulsan")\n', '("Ulsan", "is divided into", "four gu and one gun")\n', '("Ulsan", "has history since", "the Paleolithic Era")\n', '("Ulsan", "has been a site of mining and production for", "iron during the Jinhan confederacy")\n', '("Ulsan", "served as an important port for", "Gyeongju during the Later Silla period")\n', '("Ulsan", "began to grow as an industrial center due to", "the two World Wars")\n', '("Hyundai Group and SK Group", "began setting up large businesses in", "Ulsan")\n', '("Hyundai Heavy Industries", "established the shipyard in", "Ulsan")\n', '("Hyundai Motor Company", "started in", "Ulsan")\n', '("SK Energy", "developed an oil refinery and petrochemical hub in", "Ulsan")\n', '("Korea Shipbuilding & Offshore Engineering", "plans to move corporate headquarters to", "Seoul")\n', '("Ulsan", "mirrors", "the United States\' Rust Belt")\n', '("Ford River Rouge Complex", "inspired the integrated design of Hyundai Motor\'s plant in", "Ulsan")\n', '("SB LiMotive", "opened an advanced lithium-ion battery production plant in", "Ulsan")\n', '("Samsung SDI", "owns the Ulsan production facility of", "SB LiMotive")\n', '("Ulsan", "is connected to Seoul by", "KTX")\n', '("Ulsan HD FC", "is a football club based in", "Ulsan")\n', '("Ulsan Hyundai Mobis Phoebus", "is a basketball team based in", "Ulsan")\n', '("Jinha and Ilsan", "are beautiful beaches in", "Ulsan")\n', '("Daewangam Park", "features a lush, hundred-year-old pine forest in", "Ulsan")\n', '("Ganjeolgot Cape", "is noted as the first place to see the sunrise in", "Ulsan")\n', '("Ulsan Industry Park", "has been leading the Pacific Rim industry", "")\n', '("Hyundai Motor Company", "operates the world\'s largest single-purpose plant in", "Ulsan")\n', '("Incheon", "is located in", "northwestern South Korea")\n', '("Incheon", "borders", "Seoul and Gyeonggi")\n', '("Incheon", "is South Korea\'s third-most-populous city after", "Seoul and Busan")\n', '("Incheon", "is part of the", "Seoul Capital Area")\n', '("Incheon", "forms the world\'s fourth-largest", "metropolitan area by population")\n', '("Incheon", "was called Gyeongwon or Inju during the", "Goryeo era")\n', '("Incheon", "is a major transportation hub in", "northeast Asia")\n', '("Incheon", "has established relationships with", "Singapore and San Francisco")\n', '("Incheon station", "offers local service to", "Guro, Seoul, Cheongnyangni, Uijeongbu, and Soyosan")\n', '("Incheon", "declared itself as an \'English City\' similar to", "Singapore")\n', '("Gwangju", "formerly romanized as", "Kwangju")\n', '("Gwangju", "sixth-largest metropolis in", "South Korea")\n', '("Gwangju", "independent from", "South Jeolla Province")\n', '("Gwangju", "promoted to", "metropolitan city")\n', '("Gwangju", "southern boundary of", "Goguryeo")\n', '("Gwangju", "administrative center of", "Baekje")\n', '("Gwangju", "known as during Imperial Japanese rule", "Kōshū")\n', '("Gwangju Student Independence Movement", "turned into major uprising against", "Imperial Japanese cruelty")\n', '("Gwangju", "connected by railway to", "Seoul")\n', '("Gwangju", "demonstrations against", "Chun Doo-hwan")\n', '("Gwangju", "site of", "Gwangju Uprising")\n', '("Gwangju University", "private university in", "Gwangju")\n', '("Gwangju World Cup Stadium", "where South Korea national football team beat", "Spain soccer team")\n', '("Gwangju Institute of Science and Technology", "one of the greatest research institutes in", "Korea")\n', '("Gwangju", "home of", "Kia Tigers")\n', '("Gwangju", "home of", "Gwangju FC")\n', '("Gwangju", "home of", "Gwangju AI Peppers")\n', '("Gwangju", "selected as the site for", "Green-Startup-Town")\n', '("Gwangju", "part of", "Mudeungsan National Park")\n', '("Daegu", "formerly spelled as", "Taegu")\n', '("Daegu Metropolitan City", "is located in", "southeastern South Korea")\n', '("Daegu", "is the third-largest urban agglomeration in", "South Korea after Seoul and Busan")\n', '("Daegu", "is often referred to with", "North Gyeongsang Province as Daegu-Gyeongbuk")\n', '("Daegu", "forms the central plain of the", "Yeongnam region")\n', '("Daegu", "was part of the proto-kingdom", "Jinhan")\n', '("Daegu", "came under control of the", "Silla Kingdom")\n', '("Silla Kingdom", "unified the", "Korean Peninsula")\n', '("Daegu", "was the capital of Gyeongsang-do during the", "Joseon dynasty")\n', '("Daegu", "is nicknamed", "Apple City")\n', '("Daegu", "is also known as", "Textile City")\n', '("Daegu", "focuses on fostering fashion and high-tech industries in the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "was part of the", "Mumun pottery period")\n', '("Daegu", "was known as", "Dalgubeol during the Proto–Three Kingdoms period")\n', '("Silla", "considered moving the capital to", "Daegu")\n', '("Daegu", "contains the historical site", "Dongcheon-dong")\n', '("Daegu", "has megalithic burials known as", "dolmens")\n', '("Daegu", "was the site of the chiefdom or walled-town polity known as", "Dalgubeol")\n', '("Daegu", "was absorbed into the kingdom of", "Silla")\n', '("Daegu", "contains relics at", "Dalseong Park")\n', '("Silla", "unified the Korean peninsula by defeating kingdoms like", "Baekje and Goguryeo")\n', '("Daegu", "has the remains of a large-scale fortified Silla site in", "Dongcheon-dong, Buk-gu")\n', '("Daegu", "has the Silla village dating to the sixth to seventh centuries at", "Siji-dong")\n', '("Daegu", "was initially aligned with Later Baekje during the", "Later Three Kingdoms period")\n', '("Daegu", "was the site of the Battle of Gong Mountain during the", "Later Three Kingdoms period")\n', '("Daegu", "had the first edition of the", "Tripitaka Koreana stored at the temple of Buinsa")\n', '("Daegu", "was a transportation center during the", "Joseon dynasty")\n', '("Daegu", "was the administrative capital of the", "Gyeongsang-do")\n', '("Daegu", "has a herbal medicine market called", "Yangnyeongsi")\n', '("Daegu", "was influenced by", "Japanese imperialism")\n', '("Daegu", "became the site of one of the first modern post offices during the", "\'Gab-o\' reforms")\n', '("Daegu", "was a modern transportation center of the newly constructed", "Gyeongbu Line main railroad")\n', '("Daegu", "organized the National Debt Repayment Movement led by", "Seo Sang-don")\n', '("Daegu", "remained in South Korean hands during the", "Korean War")\n', '("Daegu", "was known as the Battle of Taegu along the", "Nakdong River")\n', '("Daegu", "was politically favored during the rule of", "Park Chung Hee")\n', '("Daegu", "is a political base for the", "Saenuri Party")\n', '("Daegu", "produced four Presidents of South Korea", "Park Chung Hee, Chun Doo-hwan, Roh Tae-woo and Park Geun-hye")\n', '("Daegu", "has strong political influence in elections as a capital of Korean conservatives", "")\n', '("Daegu", "separated from Gyeongsangbuk-do and became an independently administered city", "")\n', '("Daegu", "is the third-largest metropolitan area in Korea in terms of", "population and commerce")\n', '("Daegu Metropolitan Government", "is located in", "Jung District")\n', '("Gyeongbuk Provincial Government", "was to be relocated to", "Andong")\n', '("Daegu", "is a stronghold of the People Power Party", "")\n', '("Daegu", "has two local governments within the city", "")\n', '("Daegu", "sits in a basin surrounded by low mountains like", "Palgongsan, Biseulsan, Waryongsan")\n', '("Geumho River", "flows along the northern and eastern edges of", "Daegu")\n', '("Daegu", "lies in a humid subtropical climate zone according to", "Köppen climate classification")\n', '("Daegu", "has a warm temperate moist forest climate in", "Holdridge climate classification")\n', '("Daegu", "traps hot and humid air in summers because of the mountains that comprise the basin", "")\n', '("Daegu", "has little precipitation except during the rainy season and is sunny throughout much of the year", "")\n', '("Daegu", "has an emergence of the term", "Daefrica due to high temperatures")\n', '("Gunwi County", "has a colder winter than other areas of", "Daegu")\n', '("Daegu", "is a", "manufacturing industry city")\n', '("Daegu", "houses companies like Daegu Bank and", "Hwasung corp.")\n', '("Samsung and Kolon", "were founded in", "Daegu")\n', '("Daegu-Gyeongbuk region", "is one of the", "major industrial areas in Korea")\n', '("Gumi and Pohang", "provide great services to the surplus with their", "electronics and steel industries")\n', '("Daegu", "and its neighbouring cities were designated for the", "Daegu-Gyeongbuk Free Economic Zone")\n', '("Daegu", "is the commercial center of the southern part of the Korean Peninsula with Seoul in the center and Pyongyang in the north", "")\n', '("Daegu", "has a decline in the textile industry, which is the heart of its economy", "")\n', '("Daegu", "has a warm climate that provides the region with", "high quality apples and oriental melons")\n', '("Daegu", "has been focusing on revitalizing its economy and improving the city\'s fashion industry", "")\n', '("Daegu", "has been actively promoting its fashion industry based on its textile and clothing manufacturing industries", "")\n', '("Daegu", "hosts exhibitions like Daegu Fashion Fair and Preview in Daegu related to fashion and textile", "")\n', '("Esiapolis", "is a large new town specializing in the textile-fashion industries under construction in", "Bongmu-dong, northeastern Daegu")\n', '("Daegu", "is known as a conservative city", "")\n', '("Daegu", "has many temples due to the strong presence of", "Buddhism")\n', '("Daegu", "has an academy based on", "Confucianism")\n', '("Christian churches in Daegu", "have neon cross-topped spires", "")\n', '("Gatbawi", "is the most well-known sight of the city and is located at the top of", "Gwanbong, Palgongsan")\n', '("People from all over the country", "visit Gatbawi because they believe that the Buddha", "will grant one\'s single desire")\n', '("Daegu", "is located near traditional temples like", "Donghwasa, Pagyesa, and Buinsa")\n', '("Daegu", "contains lecture halls as well as", "Dodong-seowon and Nokdong-seowon")\n', '("Daegu", "preserves old villages such as the", "Otgol village and the Inheung village")\n', '("Daegu", "has Joseon dynasty\'s administrative buildings like", "Gyeongsang-gamyeong and Daegu-hyanggyo")\n', '("Mangudang Park", "restored the main gateway of Daegu during the Joseon period called", "Yeongnam-jeilmun")\n', '("Daegu", "has western style modern architecture like", "Gyesan Cathedral and the old building of Jeil Church")\n', '("Gyesan Cathedral", "is the third oldest gothic church building in Korea and the cathedral of the", "Roman Catholic Archdiocese of Daegu")\n', '("Daegu", "is near Haeinsa—a Buddhist temple that houses the Tripitaka Koreana", "")\n', '("Mt. Palgong, Mt. Biseul, and Mt. Ap", "are representative mountains in", "Daegu")\n', '("Apsan", "has trails, Buddhist temples, a Korean War museum, and a gondola ride to the peak and is located in", "the southern part of Daegu")\n', '("Daegu", "has neighborhood parks such as", "Waryongsan, Hamjisan, and Yongjibong")\n', '("Duryu Park", "has Daegu Tower, Woobang Land, Kolon Bandstand, Duryu Stadium, and sports facilities", "")\n', '("Duryu Park", "is a large forest in the middle of the urban area of", "Daegu")\n', '("Daegu Tower", "is the tallest contemporary structure and a symbol of", "Daegu")\n', '("Woobang Land", "is the largest amusement park outside the capital area", "")\n', '("National Debt Repayment Movement Memorial Park", "includes Dalgubeol-daejong, which is the Dalgubeol grand bell", "")\n', '("Daegu", "has a botanical garden with a variety of plants and flowers", "")\n', '("Dongseongno", "is the downtown of Daegu and stretches from Daegu Station to the central police station near Banwoldang subway station", "")\n', '("Kyungpook National University in Buk-gu", "is surrounded by amusement spots", "")\n', '("Deuran-gil in Suseong-gu", "is known for many restaurants", "")\n', '("Daegu", "hosts department stores including chains and the local Daegu Department Store", "")\n', '("Seomun Market and Chilseong Market", "are traditional markets in Daegu selling all sorts of goods", "")\n', '("Daegu", "hosts many traditional ceremonies and festivals like the Seokjeondaeje", "")\n', '("Daegu-hyanggyo", "hosts a Confucian ritual ceremony called Seokjeondaeje every spring and autumn", "")\n', '("Yangnyeongsi herb medical festival and Otgol village festival", "are contemporary festivals about traditional culture in", "Daegu")\n', '("Daegu", "has growing enthusiasm for performing arts and events like Daegu International Opera Festival (DIOF) and Daegu International Musical Festival (DIMF)", "")\n', '("Daegu International Bodypainting Festival (DIBF)", "is one of the most famous festivals of its kind in", "Korea")\n', '("Daegu", "hosts festivals throughout the year, like the Colorful Daegu Festival, Dongseongno festival, and Palgongsan maple festival", "")\n', '("Daegu International Jazz Festival", "is held every year in", "Daegu")\n', '("Colorful Daegu Festival", "offers performances and art programs including the", "Colorful Parade")\n', '("Daegu Chimac Festival", "takes place at Duryu Park in Dalseo-gu", "")\n', '("Daegu", "has the term \'chimac\' as a portmanteau of chicken and maekju (meaning \'beer\')", "")\n', '("Daegu cuisine", "is similar to that consumed in the", "Yeongnam region")\n', '("Daegu", "is known for unique dishes such as Ttaro-gukbap and Mungtigi", "")\n', '("Daegu Art Museum", "is located in", "Daegu")\n', '("Daegu National Museum", "is a national museum collecting relics excavated in and around", "Daegu")\n', '("Daegu", "has museums like Daegu Bangjja Yugi (Korean Bronzeware) Museum and", "Hengso Museum of Keimyung University")\n', '("Daegu Opera House", "is known for performing opera as the first theater in Korea", "")\n', '("Daegu", "has cultural and arts centers like Suseong Artpia and Keimyung Art Center", "")\n', '("Daegu", "competed with cities like Moscow, Russia, and Brisbane, Australia", "")\n', '("Daegu", "has hosted worldwide sports events and is home to the Colorful Daegu Pre-Championships Meeting annually", "")\n', '("Daegu Stadium", "is the second largest sports complex in South Korea", "")\n', '("Daegu Marathon", "is held every year in April starting and ending at the", "Daegu Stadium")\n', '("Samsung Lions", "are a professional baseball team based in Daegu", "")\n', '("Daegu", "is served by broadcasting stations like KBS Daegu Broadcast Station, Daegu MBC, and TBC", "")\n', '("Daegu", "is largely a homogeneous community that includes few non-Koreans", "")\n', '("Daegu", "has immigrants from South and Southeast Asia working in automotive-parts factories", "")\n', '("Daegu", "has English-speaking Westerners working in English schools and university programs", "")\n', '("Daegu", "hosts three American military bases including Camp Henry, Camp George, and Camp Walker", "")\n', '("Daegu", "has challenges with the construction of a mosque in", "Daehyeon-dong")\n', '("Daegu", "experienced opposition and controversy over the mosque construction from nearby residents", "")\n', '("The National Human Rights Commission of Korea", "judged the suspension of mosque construction as based on discrimination and prejudice against Muslims", "")\n', '("Daegu\'s", "Mosque Controversy involved insulting and offensive actions near the construction site", "")\n', '("Daegu", "has educational institutions like Daegu Science High School and", "Taegu Foreign Language High School")\n', '("Daegu", "has schools with high educational grades such as Keisung Academy and Gyeongsin High School", "")\n', '("Daegu", "houses universities and colleges in the Gyeongsan city which serves as a college town for the region", "")\n', '("Kyungpook National University (KNU)", "is a highly ranked national university in", "Daegu")\n', '("DGIST (Daegu Gyeongbuk Institute of Science and Technology)", "is recognized as one of Korea\'s top universities in the field of science and technology", "")\n', '("Daegu", "has prestigious private universities like Yeungnam University (YU) and Keimyung University", "")\n', '("Daegu National University of Education", "offers elementary education training", "")\n', '("Daegu", "has tertiary hospitals making the city the medical hub of", "south-eastern Korea")\n', '("Dongsan Hospital", "is one of the oldest western-style medical clinics in Korea", "")\n']
+range(1, 341) 4
+{'id': '5_5', 'Question': " Which city's airport that provided civil aviation services for the Republic of China before the 1970s offers flights to another city's airport, accessible via Keikyu Airport Line and the Monorail, and one of the two main international airports serving its greater metropolitan area?\n", 'Answer': 'Seoul', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Seoul'}, {'label': 'B', 'text': 'Ulsan'}, {'label': 'C', 'text': 'Incheon'}, {'label': 'D', 'text': 'Gwangju'}, {'label': 'E', 'text': 'Daegu'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'seoul'}, {'label': 'B', 'text': 'ulsan'}, {'label': 'C', 'text': 'incheon'}, {'label': 'D', 'text': 'gwangju'}, {'label': 'E', 'text': 'daegu'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ["1: Which city's airport offers regular flights to Tokyo Haneda?\nA1: Seoul\n\n", "2: Haneda Airport is accessible via which city's public transportation systems, specifically the Keikyu Airport Line and the Monorail?\nA2: Tokyo\n\n", '3: What is the name of one of the two international airports that serve the Greater Tokyo Area?\nA3: Haneda Airport\n\n', '4: The Republic of China availed the services of which facility for civil aviation before the 1970s?\nA4: Haneda Airport'], 'Hops_wiki': [('Seoul', 'Tokyo'), ('Tokyo', 'Haneda Airport'), ('Haneda Airport', 'Greater Tokyo Area'), ('Haneda Airport', 'China')], 'Hops_cpnet': [('seoul', 'tokyo'), ('tokyo', 'haneda_airport'), ('haneda_airport', 'mobile_suica'), ('haneda_airport', 'china')], 'Triplets': ['("Seoul", "has regular flights to", "Tokyo Haneda")', '("Haneda Airport", "served by", "Keikyu Airport Line and Tokyo Monorail")', '("Haneda Airport", "has", "two international airports serving the Greater Tokyo Area")', '("Republic of China", "used", "Haneda Airport")'], 'Referred_files': [{'name': 'Seoul', 'line': 18}, {'name': 'Haneda Airport', 'line': 41}, {'name': 'Haneda Airport', 'line': 1}, {'name': 'Haneda Airport', 'line': 25}], 'Question_triplet_answer': {100: [104, 288, 296, 301], 50: [43, 104, 128, 159], 25: [111, 163, 225, 226]}}
+time passed:  2600.2323949337006
+Expected dollar:  0.005
+Ulsan is Geography
+Haneda Airport is Geography
+Incheon is Geography
+Soyosan is Geography
+Haneda and Narita is Geography
+Tokyo is Geography
+London is Geography
+Seoul is Geography
+Namsan is Geography
+Haneda is Geography
+Japan is Geography
+Narita International Airport is Geography
+Gwangju is Geography
+the Republic of Korea is Geography
+Tachikawa Airfield is Geography
+Colorful Daegu Festival is Geography
+Taipei is Geography
+Honolulu is Geography
+Haneda Air Force Base is Geography
+Seo Sang is People
+Joseon dynasty's is Geography
+Daegu is Geography
+Best Airport is Geography
+Qatar is Geography
+Hamad International Airport is Geography
+Singapore is Geography
+Changi Airport is Geography
+Before Haneda Airport is Geography
+Mosque Controversy is Geography
+Daewangam Park is Incident
+Detroit is Geography
+Seattle is Geography
+Gyeongsan is Geography
+North Gyeongsang Province is Geography
+Moscow is Geography
+Gwangju Institute of Science and Technology is Geography
+Korea is Geography
+Daegu Art Museum is Geography
+Shanghai is Geography
+the Colorful Daegu Festival is Geography
+Dongseongno is Geography
+Palgongsan is Geography
+South Korean is Geography
+Gyesan Cathedral is Geography
+South Korea is Geography
+Kyungpook National University is Geography
+Hwasung corp is Geography
+the Korean Peninsula is Geography
+Pyongyang is Geography
+Daegu Station is Geography
+Banwoldang is Geography
+Narita is Geography
+Daegu Fashion Fair and Preview is Geography
+Nokdong is Geography
+Roman Catholic Archdiocese is Geography
+Daegu Tower is Geography
+Kolon Bandstand is Geography
+Duryu Stadium is Geography
+Hyundai Motor Company is Geography
+Daegu Metropolitan City is Geography
+Mt. Palgong is Geography
+Mt. Biseul is Animal
+Mt. Ap is Geography
+Shinzo Abe is People
+Shanghai Hongqiao International Airport is Geography
+Copenhagen is Geography
+Tokyo Haneda is Geography
+Tokyo Municipal Airport is Geography
+Koto Ward is Geography
+Gwangju World Cup Stadium is Geography
+Spain is Geography
+Deuran gil in is Geography
+Suseong is Geography
+Ganjeolgot Cape is Geography
+Mudeungsan National Park is Geography
+Donghwasa is Geography
+Pagyesa is Geography
+Buinsa is Geography
+Joseon dynasty is Geography
+Holdridge is People
+Gyeongju is Geography
+the Greater Tokyo Area is Geography
+Kwangju is Geography
+Daegu Gyeongbuk Institute of Science and Technology is Geography
+Vancouver is Geography
+Dalseong Park is Geography
+Waryongsan is Geography
+Hamjisan is Geography
+Yongjibong is Geography
+Mungtigi is Geography
+Goguryeo is Geography
+Daegu Stadium is Incident
+Seoul Museum of Art is Geography
+Gwangju University is Geography
+Seomun Market is Geography
+Chilseong Market is Geography
+Ford River Rouge Complex is Geography
+Hyundai Motor's is Geography
+the Korean Empire is Geography
+Gangnam district is Geography
+New York City is Geography
+Los Angeles is Geography
+Green Startup Town is Geography
+Korean Peninsula is Geography
+Busan is Geography
+Safety Promotion Center is Geography
+Buddha is People
+Tripitaka Koreana is Geography
+Russia is Geography
+Brisbane is Geography
+Australia is Geography
+Gyeongbuk Provincial Government is Geography
+Daegu Opera House is Geography
+Jinha and Ilsan is People
+Wen Jiabao" is People
+Dalgubeol daejong is Geography
+Haeinsa is Geography
+Douglas MacArthur is People
+South Korea's is Geography
+Daegu National University of Education is Geography
+Gyeonggi is Geography
+Chun Doo is People
+Roh Tae is People
+Park Geun is People
+entities:  {'Douglas', 'Metropolitan', 'Mt.', 'Tower', 'Changi', 'Gangnam', 'Singapore', 'JFK', 'Startup', 'Archdiocese', 'Pagyesa', 'Haneda', 'Mungtigi', 'Mudeungsan', 'China', 'Government', 'International', 'Mosque', 'Cape', 'Jinhan', 'Kyungpook', 'Soyosan', 'Taipei', 'Shanghai', 'Area', 'KNU', 'dynasty', 'York', 'Gyesan', 'Green', 'Jiabao"', 'Russia', 'Chilseong', 'Force', 'Dalgubeol', 'Airport', 'Best', 'Namsan', 'Southeast', 'Festival', "Korea's", 'Qatar', 'Biseul', 'Koreana', 'Incheon', 'Hyundai', 'Canada', 'Suseong', 'Promotion', 'Stadium', 'Duryu', 'Copenhagen', 'Jeil', 'Roh', 'Tokyo', 'Gwangju', 'Korea', 'Dongseongno', 'Education', 'Station', 'Busan', 'Gyeongsan', 'World', 'South', 'Seomun', 'Moscow', 'Goguryeo', 'Complex', 'Opera', 'Daegu', "Motor's", 'Ilsan', 'North', 'Vancouver', 'Wen', 'Abe', 'Hwasung', 'Fashion', 'Donghwasa', 'Municipal', 'dong', 'district', 'Safety', 'Motor', 'Museum', 'Gyeongju', 'Nippon', 'corp', 'Samsung', 'Geun', 'Brisbane', 'Provincial', 'Ulsan', 'City', 'Sang', 'University', 'Gyeongbuk', 'Tripitaka', 'National', 'New', 'Science', 'Deuran', 'Ford', 'Republic', 'Waryongsan', 'Center', "dynasty's", 'Buddha', 'Saenuri', 'Ganjeolgot', 'Palgong', 'Joseon', 'Silla', 'Controversy', 'Nokdong', 'Daewangam', 'Dalseong', 'Technology', 'Delta', 'Japan', 'Cheongnyangni', 'Empire', 'metropolitan', 'Chun', 'Greater', 'Air', 'Cup', 'Market', 'Kolon', 'Gatbawi', 'Angeles', 'Fair', 'Ward', 'London', 'Hamad', 'Roman', 'Honolulu', 'River', 'Colorful', 'Narita', 'Company', 'Holdridge', 'Palgongsan', 'Institute', 'Hongqiao', 'Peninsula', 'Koto', 'MacArthur', 'Ap', 'Kwangju', 'Gyeonggi', 'Doo', 'Preview', 'Art', 'Yongjibong', 'Shinzo', 'Tachikawa', 'House', 'Buinsa', 'Airfield', 'Province', 'Korean', 'Los', 'Jinha', 'daejong', 'Group', 'Detroit', 'Northwest', 'Cathedral', 'Banwoldang', 'Seoul', 'Seattle', 'Catholic', 'Haeinsa', 'Asia', 'Town', 'Hamjisan', 'Bandstand', 'gothic', 'Rouge', 'Gyeongsang', 'Commission', 'Spain', 'Base', 'Park', 'Australia', 'Pyongyang', 'Chung', 'gil', 'Tae', 'Seo'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Greater Tokyo Area' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Haneda Airport
+Ulsan
+World Wars
+SB LiMotive
+lithium-ion battery production plant
+East Japan Railway Company
+Haneda Airport
+access line
+Daegu
+Dalgubeol
+Incheon station
+Guro
+Seoul
+Cheongnyangni
+Uijeongbu
+Soyosan
+Haneda
+Narita
+Tokyo
+China Airlines
+Northwest Orient Airlines
+Gwangju
+Japanese Ministry of Transport
+international flights
+Haneda and Narita
+Japanese Capital
+London
+New York
+Haneda Air Force Base
+held the national debt repayment movement
+Japanese government
+Gwangju Institute of Science and Technology
+The National Human Rights Commission of Korea
+Haneda
+Skytrax
+Qatar's Hamad International Airport
+Singapore's Changi Airport
+Haneda Airport construction
+Daegu's Mosque Controversy
+Daegu cuisine
+Moscow
+Haneda Airport
+Daegu
+Jinhan
+Narita
+Haneda
+Narita International Airport
+Japanese government
+Haneda
+British Airways
+Qatar's Hamad International Airport
+Singapore's Changi Airport
+Haneda Airport construction
+Daegu
+Daewangam Park
+Ulsan
+Seoul
+KTX
+Haneda
+Japanese government
+Haneda
+Bank and Hwasung corp.
+Seoul
+Daegu
+Ulsan
+KTX
+All Nippon Airways
+Japan Airlines
+Haneda
+Japan's
+Daegu
+Korea
+Daegu
+Daegu-Gyeongbuk
+Daegu
+Mumun pottery period
+Daegu
+Joseon dynasty
+Gwangju
+Gwangju World Cup Stadium
+Spain soccer team
+Daegu
+Gyeongsangdo
+Haneda
+two passenger terminals
+Ulsan
+Gyeongju
+Daegu
+Daejung
+Japan Airlines
+Haneda Airport
+Haneda
+SAS
+Copenhagen
+Anchorage
+Seoul
+Daegu
+Colorful Daegu Festival
+Daegu Marathon
+Daegu Stadium
+Haneda
+Tokyo
+Haneda
+Domestic Flights
+Haneda Airport
+Haneda
+Daegu
+Ttaro-gukbap
+Mungtigi
+Daegu
+Seoul
+Seoul
+Daegu
+Seoul
+Daegu
+Daegu Tower
+Daegu
+Ulsan
+SB LiMotive
+Seoul
+Daegu
+Goryeo
+Seoul
+Daegu
+Daegu
+Haeinsa
+Daegu
+Hosan-sa
+Haneda
+China
+Daegu
+Political base
+Daegu
+Daegu Metropolitan City
+Daegu
+Daegu
+Daegu
+Gwangju University
+Daegu
+Buk-gu
+Seoul
+Haneda
+Ulsan
+Haneda
+Ulsan
+Seoul
+Shanghai Hongqiao
+Haneda
+Seoul
+Seoul
+Haneda Airport
+Gyeonggi
+Daegu
+Daegu
+Haneda Airport
+Haneda
+Daegu
+Daegu-Gyeongbuk
+Incheon
+Seoul
+Daegu
+Kyungpook National University
+Daegu
+Samsung SDI
+Gatbawi
+Ulsan
+Korea
+Gyeongsangdo
+Jinha
+Ilsan
+Ulsan
+Haneda Airport
+Daegu
+Haeinsa
+Daegu
+Haneda
+Haneda
+Haneda
+Haneda
+Korean Peninsula
+Christian churches in Daegu
+Haneda
+Daegu
+Silla
+Daegu
+green startup town
+Ulsan
+Daegu
+Daegu National University of Education
+Seoul
+Daegu
+Ulsan
+Daegu
+Daegu
+Gyeongbuk Provincial Government
+Daegu
+Daegu
+Incheon
+Daegu
+Daegu Marathon
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu National University of Education
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+DGIST
+Daegu Gyeongbuk Institute of Science and Technology
+Daegu
+Boeun-daegongwon-gil
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Gwangju
+Daehan Hospital
+Seoul
+Daegu
+SB LiMotive
+Haneda
+Tokyo
+Japanese Capital
+Haneda
+Japanese government
+Daegu
+Daegu
+Gwangju
+Daegu
+Seoul
+Incheon
+Daegu
+Korean Peninsula
+Daegu
+Roh Moo-hyun
+Busan
+Ulsan
+Japan
+Daegu
+Gangwon
+Seodaemun
+Daegu
+Haeinsa
+Haneda
+Tokyo
+Korean Peninsula
+Daegu
+Korean Peninsula
+Seoul
+Gwangju
+Daegu
+Daegu
+Ulsan
+Jinha
+Ilsan
+Haneda
+Seoul
+Seoul
+Haneda
+Haneda
+Repubic of China
+Daegu
+Incheon
+Daegu
+Kwangju
+Daegu
+daegu
+Haneda
+SAS
+Haneda
+Daegu
+Daewangam Sanctuary
+Haneda
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+
+gpt_entity_particular(): entity list: 
+ ['Japan Airlines', 'Buk-gu', 'Daehan Hospital', 'Daewangam Sanctuary', 'SB LiMotive', 'SAS', 'Goryeo', 'Haneda Airport', 'Daegu Metropolitan City', 'Haneda', 'Mungtigi', 'Gwangju World Cup Stadium', 'China', 'Mumun pottery period', 'Jinhan', 'Japanese government', 'Roh Moo-hyun', 'Joseon dynasty', 'World Wars', 'Soyosan', 'East Japan Railway Company', 'Colorful Daegu Festival', 'Ttaro-gukbap', 'two passenger terminals', 'Japanese Capital', 'Gwangju Institute of Science and Technology', 'Dalgubeol', "Qatar's Hamad International Airport", 'Anchorage', 'Shanghai Hongqiao', 'access line', 'British Airways', 'Incheon', 'Daegu National University of Education', 'Repubic of China', 'Daegu Gyeongbuk Institute of Science and Technology', 'Domestic Flights', 'Gwangju University', 'Copenhagen', 'Hosan-sa', 'Northwest Orient Airlines', "Japan's", 'Tokyo', 'Gwangju', 'Korea', 'Gyeongsangdo', 'Busan', 'Moscow', 'Korean Peninsula', 'Daegu', 'Ilsan', 'held the national debt repayment movement', 'Skytrax', 'international flights', 'China Airlines', "Singapore's Changi Airport", 'Bank and Hwasung corp.', 'Gyeongju', 'All Nippon Airways', 'Ulsan', 'New York', 'Gyeongbuk Provincial Government', 'Japanese Ministry of Transport', 'daegu', 'Silla', 'Political base', 'Incheon station', 'Boeun-daegongwon-gil', 'Japan', 'Cheongnyangni', 'Narita International Airport', 'Haneda Air Force Base', 'Gatbawi', 'Haneda Airport construction', 'Uijeongbu', 'London', 'Daejung', 'Daegu Stadium', 'Christian churches in Daegu', 'Narita', 'Daegu Tower', 'Haneda and Narita', 'Daegu-Gyeongbuk', 'Gyeonggi', 'Kwangju', 'Daewangam Park', 'DGIST', 'Jinha', 'Spain soccer team', 'Daegu Marathon', 'KTX', 'Seoul', 'Haeinsa', 'Guro', 'Seodaemun', 'lithium-ion battery production plant', 'Kyungpook National University', 'green startup town', 'Daegu cuisine', 'Samsung SDI', 'Gangwon', 'The National Human Rights Commission of Korea', "Daegu's Mosque Controversy"]
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ulsan' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ulsan
+Gwangju
+SB LiMotive
+Haneda Airport
+Daegu
+Daebang Plaza
+Haneda
+Incheon Station
+Haneda Air Force Base
+Gwangju
+Seoul
+Gwangju
+Japanese Ministry of Transport
+Seoul
+Haneda Airport
+Gwangju Institute of Science and Technology
+All Nippon Airways
+SK Energy
+Haneda Airport
+Delta Air Lines
+Woobang Land
+Kyungpook National University in Buk-gu
+Haneda Airport
+Seoul
+KX
+Colorful Daegu Festival
+People's Republic of China
+Esiapolis
+Daegu
+Delta Air Lines
+Haneda Airport
+Gangnam district
+Haneda
+Haneda Airport
+Gwangju World Cup Stadium
+Daegu
+Haneda Airport
+Haneda
+Won Jiabao
+Haneda Airport
+Incheon
+Ulsan
+Haneda
+Haneda Airport
+Haneda Airport
+Seomun Market and Chilseong Market
+Haneda
+Haneda Airport
+National Debt Repayment Movement Memorial Park
+Haneda Airport
+Japanese government
+Silla
+Haneda
+Haneda
+Seoul
+Kyungpook National University (KNU)
+Ford River Rouge Complex
+
+gpt_entity_particular(): entity list: 
+ ['Ulsan', 'Daebang Plaza', 'Won Jiabao', 'Kyungpook National University (KNU)', "People's Republic of China", 'SB LiMotive', 'Incheon', 'Haneda Airport', 'National Debt Repayment Movement Memorial Park', 'Japanese Ministry of Transport', 'Haneda', 'Gwangju World Cup Stadium', 'Silla', 'Seomun Market and Chilseong Market', 'Delta Air Lines', 'KX', 'Gangnam district', 'Japanese government', 'Gwangju', 'Ford River Rouge Complex', 'Incheon Station', 'Seoul', 'Woobang Land', 'Kyungpook National University in Buk-gu', 'SK Energy', 'Daegu', 'Colorful Daegu Festival', 'Haneda Air Force Base', 'Esiapolis', 'Gwangju Institute of Science and Technology', 'All Nippon Airways']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Seoul' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+Seoul
+
+gpt_entity_particular(): entity list: 
+ ['Seoul']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'China' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ China Airlines
+Republic of China
+People's Republic of China
+China
+Shanghai Hongqiao
+
+gpt_entity_particular(): entity list: 
+ ['Shanghai Hongqiao', 'China Airlines', 'Republic of China', 'China', "People's Republic of China"]
+
+gpt_entity_particular(): filtered entity: 
+ ['Republic of China', "People's Republic of China"]
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Daegu' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Daegu
+Gyeongsang-gamyeong
+Daegu cuisine
+Daegu's
+Daegu-Gyeongbuk
+Mosque Controversy
+North Gyeongsang Province
+Daegu cuisine
+Daegu Metropolitan City
+Daegu Art Museum
+Daegu Tower
+Dongseongno
+Colorful Daegu Festival
+Daegu-Gyeongbuk Free Economic Zone
+Daegu Bank
+Hwasung corp.
+Daegu's English-speaking Westerners
+Daegu Stadium
+Daegu Marathon
+NTU
+Daegu's medical hub
+Daegu-Gyeongbuk Institute of Science and Technology
+Daegu Tower
+Jiin
+Daegu Opera House
+Jinha and Ilsan
+Daegu's Yi
+Daegu's
+Daegu's Yeongsan
+Daegu's
+Daegu National University of Education
+Daegu National University of Education
+Gyeongsan City
+Buinsa and                  Pagyesa
+Dalseong Park
+Dongcheon-dong
+Daseong-dong
+Daegu station
+Daegu National Museum's
+Daegu Nambu Athletics
+Daegu Roman Catholic
+Daegu Catholic
+Daegu Science High School
+Daegu's
+Gyeongsangbuk-do
+Ulsan Metropolitan City
+Ulsan production facility
+Ulsan campus
+Ulsan Democratic Labour
+Sister City with Houston
+Asan Institute for Policy
+Ganseok-gil, Gwonseon-gu, Suwon-si,
+Jupyeong-gil, Cheoin-gu, Yongin-si, Juseong-gil in Dalseong-gun, Ulsan
+Ulsan campus
+Chonnam National University
+HonoluluHZI
+Ulsan, South Korea
+Old House of Ulsan
+Ulsan, South Korea
+PyeongChang, South Korea
+Ulsan Grand Park
+Ulsan Bastionhalli
+Ulsan Central Stadium
+Ulsangsan
+Ulsan
+Gyeongbuk Province
+Ulsan Metropolitan City
+Ulsan metropolitan city
+Ulsan Nambu Athletics
+Ulsan UniversityChangwon University
+Korea Department of Marine
+Ulsan City
+Ulsan City Community
+Ulsan metropolitan city
+Ulsan Public Library
+Ulsan's
+Ulsan Democracy St
+Ulsan Hyundai Mipo Dock
+Ulsan City
+Ulsan Citizen's Park
+Ulsan
+Ulsan Grand Park
+Ulsan Central Stadium
+Ulsan Gangnam Elementary School
+Ulsan
+Ulsan Grand Park
+Busan Metropolitan City
+Busan National Science Park
+Busan National University
+Busan Toseongduk Fireworks
+Busan International Methodist Church
+https://www.youtube.com/t/CityShorBusan
+Busan J-bug Inc
+Busan Foreign School
+Busan international
+Busan Foundation for International Activities
+Busan National University
+GWANGJU BLOK POLIS
+Gwangju Memorial
+Gwangju Citizens' Hosp
+Gwangju Colonial
+Gwangju APALCHI
+Gwangju
+Gwangju Metropolitan City
+Gwangju
+Gwangju District His
+Gwangju
+Gwangju Exciting F
+Gwangju Exciting G
+Gwangju
+Gwangju X
+Gwangju
+Gwangju X
+Gwangju Exciting H
+Gwangju Street Food
+Gwangju X
+Gwangju Art Museum
+Gwangju Municipal Art Museum
+Gwangju Museum of Art
+Gwangju Museum of Art
+Gwangju X
+Gwangju Art Park
+Gwangju X
+Gwangju Museum of Art
+Gwangju X
+Gwangju X
+Gwangju Bus Terminal
+Sasang, Gwangun Gu
+Nakdong River Water Quarantine Center
+Guno-dong, Gwangju-si
+Meorine Cambachuchu
+Cockfighting fights Gongsan chicken Farming
+Sasang, Gwangun Gu
+Nakdong River Water Quarantine Center
+Gwangju X
+Gwangju Art Park
+Gwangjunileschool
+Gwangju TechMark
+Gwangjunileschool
+Gwangju Metropolitan City
+Gwangju X
+Gwangju Gongsan Mural Town
+Times magazine weekly
+Gwangju-Byeon Building
+Gwangju-Byeon Building
+Gungnam Uptown Park Casino
+Two-pyeon Korean barbecue
+Gwangju Medicinal Herb
+Gwangju medicinal herb
+Gwangju Orchid Traditional Trading Market
+Gwangriveter
+Gwang Do
+Democratic Party of Gwangju
+Gwangju Water
+Gwangju University
+Gwangju Young
+Term  Daeyong-dong
+Term Gwangju International
+Nogu-dong, Nam-gu, Busan
+Tonwang-dong, Danwon-gu, Ansan-si
+Daegu Seomun-gu
+Lee Joo Sam Bakery
+Lee Joo Sam Bakery
+Lee Joo Sam Bakery
+Korean cuisine Seok-dong
+Busan Yeongdo-gu Gamcheon
+Busan Yeongdo-gu Gamcheon
+Busan Bridge
+Gu Busan Seomyeon
+Gu Busan Seomyeon
+Incheon Art Festival in Incheon
+Incheon Art Festival in Incheon
+Gyeonggi, Gyeongsangnam, Gyeongsangbuk, JEONLABuk, and Jeonlanamogui
+P...
+JeongDongjin quiet, North Gyeongsang Province
+Seoul Plaza CEO
+Nh Yangji St., Yeonin gu. Incheon
+Arondeep de Dong, grapheo, Incheon
+S. Lebenopolitan Police Case Office, Busan
+Kogyeong, Jeongeup Si, North Jeolla
+Sunmin Boo, Jeungnaydaebwansa W.6, Ucheon, weonchon gu Incheon
+Kuw
+Seoul Square Seoul Square Plaza
+Mini police station, Changwon Pio
+"""YU"
+Culturhaebugo, Suncheon-si, Jeollanam-do
+Incheon International Cooperation XXv Xxjio 400
+Nakaharu Chu,GO, 13-16, Baeg
+Mervaryeongtajangjiduri,Klanmoon Yangsu Gunmoong 205
+Nigemdistrict IkimIndoki cataycity taicolti, Malaysia
+Nin
+Loremfugiat consectetur irure
+Tabeay
+Rewardsbenefit, ipsum exercitationpars
+Npeuatolit iruremimuhpndo 401-17 Inlpit-uCienchowi, Incheon
+Seqboyulsan Morrrmovo Ulsan Kukyoyagen Calinity, Incheon
+Iggyoa Ophisumkan Sondadunyomakk Shadlunta Umsundeon, 516-8, Daebu Cunitwonsaecn, Ulsan. Iphheoni Sava 60-01sunt6, 520Tocheon, Incheon
+Cargo Shincheon, Incheon
+Yvniil Suncheon
+Kiooa Seungwang-uDuckjeomnyeonsonsuo, Ulsan
+Aerkonvil Suncheon
+Uvuegaksiinim liquid, FujukRul Incheon
+Incheon 6cap Krakalu Gapoo coming Chon- 
+Seoul, Gyeonggi, Gangw-ldod Used District
+Where Soonwon
+Kaebuosil Outpt Schi Shincheonbaddo
+Chuncheonpornuloon Sansondong, Ulsan as Cebunemly Gomo
+Muionul Meonsu Ulsan Meongpaloi, Ulsan
+Kwaknmul Gono Hecta Ulsan
+Wandisipi Kuccan Yutpalwoo Ulsan
+Drinultno Bay Hecta Ulsan
+Finninulk Woo Monchon Aci Ulsan
+Rbim Nullcooili Kewoota Unda Meongmeon. Grosa Ulsan
+Drinsnokbay Hecta Ulsan
+Mdurul Hecta Ulsan
+Jiutcafmoow Kmail Ulsan
+Gengpaleg Kukkook Slipodov Ulsan
+Qucatisi Jawoo Pitchlat Waybeloalsfil Mekang, Ulsan
+Dimzooselan Dimzooselan Ulsan
+Cercolcopi Warpal Ulsan
+Hubeonosoondais Ulsan
+Dukeenosoondais Ulsan
+Kaewco...',
+                'Issue': 'Books',
+                'Type': 'High'}
+
+gpt_entity_particular(): entity list: 
+ ['Mervaryeongtajangjiduri,Klanmoon Yangsu Gunmoong 205', 'Gyeongsan City', 'Gwangju Exciting H', 'Daegu Roman Catholic', 'Gwangju Gongsan Mural Town', 'Jiin', 'Ulsan production facility', 'Daegu Metropolitan City', 'Gyeongsangbuk-do', 'Daegu Art Museum', 'Gwangju Orchid Traditional Trading Market', 'Loremfugiat consectetur irure', 'Ulsan Central Stadium', 'Mosque Controversy', 'Busan Bridge', 'Uvuegaksiinim liquid, FujukRul Incheon', 'Dimzooselan Dimzooselan Ulsan', 'Gwangju Exciting G', 'Kogyeong, Jeongeup Si, North Jeolla', 'Tabeay', 'Daegu station', "                'Issue': 'Books',", 'Gwangju APALCHI', 'https://www.youtube.com/t/CityShorBusan', 'Colorful Daegu Festival', 'Gengpaleg Kukkook Slipodov Ulsan', 'Gwangju Metropolitan City', 'Where Soonwon', 'Nakaharu Chu,GO, 13-16, Baeg', 'Guno-dong, Gwangju-si', 'Iggyoa Ophisumkan Sondadunyomakk Shadlunta Umsundeon, 516-8, Daebu Cunitwonsaecn, Ulsan. Iphheoni Sava 60-01sunt6, 520Tocheon, Incheon', 'Busan Toseongduk Fireworks', 'Sasang, Gwangun Gu', 'Kiooa Seungwang-uDuckjeomnyeonsonsuo, Ulsan', 'Busan international', 'Jiutcafmoow Kmail Ulsan', 'Incheon Art Festival in Incheon', 'Mini police station, Changwon Pio', 'Gwang Do', 'Dukeenosoondais Ulsan', "Ulsan's", 'Ulsan, South Korea', 'NTU', 'Daegu National University of Education', 'Term Gwangju International', 'Ulsan City', 'Kuw', 'Gwangju University', 'Ulsan UniversityChangwon University', 'Daegu Catholic', 'Nogu-dong, Nam-gu, Busan', 'Drinultno Bay Hecta Ulsan', 'Muionul Meonsu Ulsan Meongpaloi, Ulsan', 'Wandisipi Kuccan Yutpalwoo Ulsan', "Kaewco...',", 'Dongseongno', 'Gwangju', 'GWANGJU BLOK POLIS', 'Gwangju Water', 'Daegu Seomun-gu', 'Busan Foundation for International Activities', 'Ganseok-gil, Gwonseon-gu, Suwon-si,', 'Sunmin Boo, Jeungnaydaebwansa W.6, Ucheon, weonchon gu Incheon', 'Old House of Ulsan', 'Daegu Nambu Athletics', 'Two-pyeon Korean barbecue', 'Gungnam Uptown Park Casino', 'Daegu', 'Cercolcopi Warpal Ulsan', 'Ulsan City Community', 'Daegu Science High School', 'PyeongChang, South Korea', 'Incheon 6cap Krakalu Gapoo coming Chon- ', 'Gwangju Art Park', "Daegu's", 'Gwangju medicinal herb', 'Cockfighting fights Gongsan chicken Farming', 'Chuncheonpornuloon Sansondong, Ulsan as Cebunemly Gomo', 'Kwaknmul Gono Hecta Ulsan', 'Culturhaebugo, Suncheon-si, Jeollanam-do', 'Chonnam National University', 'North Gyeongsang Province', 'Rbim Nullcooili Kewoota Unda Meongmeon. Grosa Ulsan', 'Ulsan', 'Busan Foreign School', 'Ulsan Democratic Labour', 'Ulsan Democracy St', 'Gwangju District His', 'Drinsnokbay Hecta Ulsan', 'Mdurul Hecta Ulsan', "Daegu's Yi", 'Daegu Opera House', 'Ulsan campus', 'Gwangju-Byeon Building', 'Arondeep de Dong, grapheo, Incheon', 'Gwangju Memorial', "Gwangju Citizens' Hosp", 'HonoluluHZI', 'Dalseong Park', 'Daegu Bank', 'Busan National University', 'P...', 'Rewardsbenefit, ipsum exercitationpars', 'Seoul, Gyeonggi, Gangw-ldod Used District', 'Gwangju Colonial', 'Sister City with Houston', 'Daegu-Gyeongbuk Institute of Science and Technology', 'Qucatisi Jawoo Pitchlat Waybeloalsfil Mekang, Ulsan', 'Ulsan metropolitan city', 'Gwangju Municipal Art Museum', 'Tonwang-dong, Danwon-gu, Ansan-si', 'Nh Yangji St., Yeonin gu. Incheon', "Daegu's English-speaking Westerners", 'Gyeongbuk Province', 'Dongcheon-dong', 'Gwangriveter', 'Democratic Party of Gwangju', 'Gwangju Museum of Art', 'JeongDongjin quiet, North Gyeongsang Province', 'Nigemdistrict IkimIndoki cataycity taicolti, Malaysia', "Ulsan Citizen's Park", 'Busan National Science Park', 'Term  Daeyong-dong', 'Yvniil Suncheon', 'Korea Department of Marine', 'Ulsan Gangnam Elementary School', 'Meorine Cambachuchu', 'Ulsan Public Library', 'Gyeonggi, Gyeongsangnam, Gyeongsangbuk, JEONLABuk, and Jeonlanamogui', 'Daegu Stadium', 'Gwangju Art Museum', 'Kaebuosil Outpt Schi Shincheonbaddo', 'Daegu Tower', 'Npeuatolit iruremimuhpndo 401-17 Inlpit-uCienchowi, Incheon', 'Korean cuisine Seok-dong', 'Cargo Shincheon, Incheon', 'Daegu-Gyeongbuk', 'Ulsan Bastionhalli', "                'Type': 'High'}", 'Nin', 'Ulsan Nambu Athletics', 'Busan International Methodist Church', 'Gyeongsang-gamyeong', 'Jupyeong-gil, Cheoin-gu, Yongin-si, Juseong-gil in Dalseong-gun, Ulsan', 'Aerkonvil Suncheon', 'S. Lebenopolitan Police Case Office, Busan', 'Lee Joo Sam Bakery', "Daegu's medical hub", 'Seqboyulsan Morrrmovo Ulsan Kukyoyagen Calinity, Incheon', 'Daegu-Gyeongbuk Free Economic Zone', 'Gwangju Street Food', 'Gwangju Exciting F', 'Gwangju Bus Terminal', 'Gwangju Young', 'Seoul Plaza CEO', 'Daegu Marathon', 'Asan Institute for Policy', 'Ulsan Metropolitan City', 'Seoul Square Seoul Square Plaza', 'Hubeonosoondais Ulsan', 'Gwangju X', 'Nakdong River Water Quarantine Center', 'Daseong-dong', 'Incheon International Cooperation XXv Xxjio 400', 'Jinha and Ilsan', 'Ulsan Grand Park', 'Gwangju TechMark', 'Ulsan Hyundai Mipo Dock', 'Gwangju Medicinal Herb', 'Times magazine weekly', 'Busan Yeongdo-gu Gamcheon', '"""YU"', "Daegu's Yeongsan", 'Busan J-bug Inc', "Daegu National Museum's", 'Buinsa and                  Pagyesa', 'Ulsangsan', 'Gu Busan Seomyeon', 'Daegu cuisine', 'Finninulk Woo Monchon Aci Ulsan', 'Hwasung corp.', 'Busan Metropolitan City', 'Gwangjunileschool', 'Ulsan City\r']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Incheon' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Haneda Airport
+Seoul
+Daegu
+Silla Kingdom
+Korean Peninsula
+Republic of China
+Ulsan
+South Korea
+Haneda Air Force Base
+Gwangju
+Seomun Market
+Japanese Ministry of Transport
+Chilseong Market
+Gwangju Institute of Science and Technology
+Incheon
+SK Energy
+Gwangju World Cup Stadium
+Gwangju University
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Daegu National University of Education
+Haneda Airport
+Kyungpook National University
+Daewangam Park
+Daegu Opera House
+Kyungpook National University
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Gwangju Student Independence Movement
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Ulsan
+Haneda Airport
+Gwanbong
+Haneda Airport
+Haneda Airport
+Daegu
+Haneda Airport
+Haneda Airport
+Yangnyeongsi
+Daegu
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Shinzo Abe
+Haneda Airport
+Ulsan
+Silla
+Daegu
+Haneda Airport
+Kyungpook National University
+General Douglas MacArthur
+Seoul
+DGIST (Daegu Gyeongbuk Institute of Science and Technology)
+Seoul
+Haneda Airport
+Seoul Musem
+Gyeongbuk
+Silla Kingdom
+Gyeongbuk Provincial Government
+Daegu Tower 
+Haneda Airport 
+Haneda Airport 
+Haneda Airport 
+Haneda Airport
+Haneda Airport
+Ulsan
+Seoul
+Daewangam Park
+Daegu Opera House 
+Haneda Airport
+Daegu 
+Japanese government
+Jinha and Ilsan
+Haneda Airport
+Daegu National University of Education
+Daegu
+Hyundai Group and SK Group
+Republic of China
+Haneda
+Daegu
+Seoul
+Daegu
+Wen Jiabao
+Haneda
+Daegu 
+Daegu 
+Korea
+Haneda Airport 
+Haneda 
+Kyungpook National University
+Wen Jiabao
+Seoul
+Republic of China
+South Korea
+Incheon
+Haneda 
+Haneda 
+Jinha and Ilsan
+Haneda
+Haneda Airport
+Haneda
+Daegu
+Haneda
+Seoul
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Daegu
+Korean Peninsula
+Gwangju
+Haneda
+Haneda
+Haneda 
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Daegu
+Haneda
+Haneda Airport
+Haneda
+Haneda
+Daegu
+Haneda
+Haneda 
+Haneda 
+Haneda Airport
+Haneda 
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda
+Daegu
+Haneda
+Haneda 
+Haneda 
+Daegu
+Gwangju
+Haneda
+Haneda Airport
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Daegu
+Haneda
+Haneda
+Haneda
+Seoul
+Haneda
+Haneda Airport
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Seoul
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Ganjeolgot Cape
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda Airport
+Haneda 
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Daegu
+Daegu
+Republican of China
+Incheon
+Daegu
+Won Jiabao
+Air Canada
+Daegu
+Jinhan and Ilsan
+Haneda
+Haneda
+Haneda
+Graphic fontLError :ButtonDn_large: 400 maxLengthut what I Can Do for you is :- ButtonDn_large: 400 maxLength 1 : 
+- Send me requests like "Please summarize this article about 'Incheon'". 
+- You can ask for any bullet points in your article to be explained.
+- You can ask for a specific question from your article to be answered. 
+- You can request an outline for an essay or article on a specific topic.
+
+Please reformat the constraints for the requirements.
+
+gpt_entity_particular(): entity list: 
+ ['- You can ask for any bullet points in your article to be explained.', 'Ulsan', '- You can ask for a specific question from your article to be answered. ', 'Republic of China', 'Daegu Opera House ', 'Won Jiabao', 'Gyeongbuk', 'Ganjeolgot Cape', 'Incheon', 'Haneda Airport', 'Daegu Opera House', 'Gyeongbuk Provincial Government', 'Japanese Ministry of Transport', 'South Korea', 'Daegu National University of Education', 'Chilseong Market', 'Daewangam Park', 'Gwangju University', 'Daegu Tower ', 'Haneda', 'Gwangju World Cup Stadium', 'Silla', 'Haneda Airport ', 'Gwangju Student Independence Movement', 'Seoul Musem', 'Japanese government', 'Graphic fontLError :ButtonDn_large: 400 maxLengthut what I Can Do for you is :- ButtonDn_large: 400 maxLength 1 : ', 'Gwangju', 'Daegu ', 'Korea', 'Republican of China', 'DGIST (Daegu Gyeongbuk Institute of Science and Technology)', 'Seoul', 'Please reformat the constraints for the requirements.', 'Seomun Market', 'Shinzo Abe', 'Hyundai Group and SK Group', 'Silla Kingdom', 'Korean Peninsula', 'SK Energy', 'Daegu', 'Jinhan and Ilsan', '- Send me requests like "Please summarize this article about \'Incheon\'". ', 'Wen Jiabao', 'Jinha and Ilsan', '- You can request an outline for an essay or article on a specific topic.', 'Haneda Air Force Base', 'Kyungpook National University', 'Yangnyeongsi', 'General Douglas MacArthur', 'Gwangju Institute of Science and Technology', 'Air Canada', 'Haneda ', 'Gwanbong']
+
+gpt_entity_particular(): filtered entity: 
+ ['South Korea']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Haneda Airport' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Haneda Airport
+Haneda Air Force Base
+East Japan Railway Company
+Narita International Airport
+Japan
+Northwest Orient Airlines
+Silla Kingdom
+Republic of Korea
+Colorful Parade
+Japanese Ministry of Transport
+Chinese
+Russia
+Daegu-Gyeongbuk
+Daegu-Buk
+Gyeongnam region
+Japan Air Transport
+Tachikawa Airfield
+Haneda International Airport
+Chinese
+Daegu cuisine
+Northwest Orient Airlines
+Daegu cuisine
+Seoul
+Hwasung corp.
+Mosque Controversy
+Archdiocese of Daegu
+Holdridge Let's classification
+Korea
+Japanese Ministry of Transport
+Goryeo
+Chang-Giving classification
+Mosque Controversy
+Hyundai
+Daegu
+Daegu National Air Force Base
+Haneda Airport
+Daegu's
+Tot
+Gyeongsang region
+Goryeo era
+Haneda
+Narita
+Haneda Airport
+Daegu-Gyeongbuk
+Airlines
+Daegu Bank
+Gwangju FC
+Daegu Tower
+southeastern Korea
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda International Airport
+Haneda International Airport
+Japanese government
+Haneda
+Haneda Airport
+Haneda Air Force Base
+Haneda and Narita
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda
+Haneda
+Haneda Airport
+r
+roof of
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+reapproptest
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Air Force Base
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Air Force Base
+Haneda Airport
+Haneda and Narita
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport  
+Haneda Airport
+Haneda Airport
+Haneda Air Force Base
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport  
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport 
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Air Force Base
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda International Airport
+Haneda International Airport
+Haneda Airport
+Haneda Airport 
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda International Airport
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu  
+Air Canada
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu  
+Seoul
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu  
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu  
+Daegu
+Daegu
+Daegu
+Daegu
+East Japan Railway Company
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu  
+Haneda
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu  
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+
+gpt_entity_particular(): entity list: 
+ ['Colorful Parade', 'r', 'Gyeongnam region', 'Goryeo', 'Haneda Airport', 'Hyundai', 'Japanese Ministry of Transport', 'Haneda Airport  ', 'Airlines', 'Daegu-Buk', 'Gwangju FC', 'Archdiocese of Daegu', 'Goryeo era', 'Mosque Controversy', 'Haneda', 'Daegu Bank', 'Daegu National Air Force Base', 'Northwest Orient Airlines', 'Haneda Airport ', 'roof of', "Holdridge Let's classification", 'Chang-Giving classification', 'Japanese government', 'Tachikawa Airfield', 'reapproptest', 'southeastern Korea', 'Korea', 'Japan', 'Haneda International Airport', 'Seoul', 'East Japan Railway Company', 'Silla Kingdom', 'Republic of Korea', 'Daegu  ', 'Daegu', 'Narita International Airport', 'Chinese', 'Haneda Air Force Base', 'Russia', 'Tot', "Daegu's", 'Daegu cuisine', 'Japan Air Transport', 'Narita', 'Daegu Tower', 'Gyeongsang region', 'Haneda and Narita', 'Hwasung corp.', 'Air Canada', 'Daegu-Gyeongbuk']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Tokyo' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Haneda Airport
+Haneda
+Ulsan
+Haneda Airport
+Haneda Airport
+Haneda Airport
+Haneda and Narita
+Haneda
+Haneda Airport
+Haneda
+Haneda Airport
+Haneda
+Haneda
+Haneda Airport
+Haneda Airport
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda
+Haneda Airport
+Haneda Airport
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu cuisine
+Daegu
+Daegu
+Daegu
+Daegu cuisine
+Daegu
+Daegu
+Daegu cuisine
+Daegu
+Daegu
+Daegu cuisine
+Daegu
+Haneda Airport
+Daegu
+Daegu
+Daegu
+Daegu's
+Daegu
+Daegu
+Daegu Tower
+Daegu
+Daegu
+Daegu
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Ulsan
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu's
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Daegu
+Da
+
+gpt_entity_particular(): entity list: 
+ ['Ulsan', "Daegu's", 'Haneda', 'Daegu', 'Haneda Airport', 'Daegu cuisine', 'Daegu Tower', 'Haneda and Narita', 'Da']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gwangju' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Gwangju
+Gwangju
+Gwangju Uprising
+Gwangju
+Gwangju
+Gwangju FC
+Gwangju
+Gwangju
+Gwangju World Cup Stadium
+Gwangju Institue of Science and Technology
+
+gpt_entity_particular(): entity list: 
+ ['Gwangju FC', 'Gwangju Institue of Science and Technology', 'Gwangju World Cup Stadium', 'Gwangju Uprising', 'Gwangju']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Douglas', 'Metropolitan', 'Mt.', 'Republic of China', 'Tower', 'Changi', 'Gangnam', 'Singapore', 'JFK', 'Startup', 'Archdiocese', 'Pagyesa', 'Haneda', 'Mungtigi', 'Mudeungsan', 'China', 'Government', 'International', 'Mosque', 'Cape', 'Jinhan', 'Kyungpook', 'Soyosan', 'Taipei', 'Shanghai', 'Area', 'KNU', 'dynasty', 'York', 'Gyesan', 'Green', 'Jiabao"', 'Russia', 'Chilseong', 'Force', 'Dalgubeol', 'Airport', 'Best', 'Namsan', 'Southeast', 'Festival', "Korea's", 'Qatar', 'Biseul', 'Koreana', 'Incheon', 'Hyundai', 'Canada', 'South Korea', 'Suseong', 'Promotion', 'Stadium', 'Duryu', 'Copenhagen', 'Jeil', 'Roh', 'Tokyo', 'Gwangju', 'Korea', 'Dongseongno', 'Education', 'Station', 'Busan', 'Gyeongsan', 'World', 'South', 'Seomun', 'Moscow', 'Goguryeo', 'Complex', 'Opera', 'Daegu', "Motor's", 'Ilsan', 'North', 'Vancouver', 'Wen', 'Abe', 'Hwasung', 'Fashion', 'Donghwasa', 'Municipal', 'dong', 'district', 'Safety', 'Motor', 'Museum', 'Gyeongju', 'Nippon', 'corp', 'Samsung', 'Geun', 'Brisbane', 'Provincial', 'Ulsan', 'City', 'Sang', 'University', 'Gyeongbuk', 'Tripitaka', 'National', 'New', "People's Republic of China", 'Science', 'Deuran', 'Ford', 'Republic', 'Waryongsan', 'Center', "dynasty's", 'Buddha', 'Saenuri', 'Ganjeolgot', 'Palgong', 'Joseon', 'Silla', 'Controversy', 'Nokdong', 'Daewangam', 'Dalseong', 'Technology', 'Delta', 'Japan', 'Cheongnyangni', 'Empire', 'metropolitan', 'Chun', 'Greater', 'Air', 'Cup', 'Market', 'Kolon', 'Gatbawi', 'Angeles', 'Fair', 'Ward', 'London', 'Hamad', 'Roman', 'Honolulu', 'River', 'Colorful', 'Narita', 'Company', 'Holdridge', 'Palgongsan', 'Institute', 'Hongqiao', 'Peninsula', 'Koto', 'MacArthur', 'Ap', 'Kwangju', 'Gyeonggi', 'Doo', 'Preview', 'Art', 'Yongjibong', 'Shinzo', 'Tachikawa', 'House', 'Buinsa', 'Airfield', 'Province', 'Korean', 'Los', 'Jinha', 'daejong', 'Group', 'Detroit', 'Northwest', 'Cathedral', 'Banwoldang', 'Seoul', 'Seattle', 'Catholic', 'Haeinsa', 'Asia', 'Town', 'Hamjisan', 'Bandstand', 'gothic', 'Rouge', 'Gyeongsang', 'Commission', 'Spain', 'Base', 'Park', 'Australia', 'Pyongyang', 'Chung', 'gil', 'Tae', 'Seo'}
+Total time:  645.5287249088287
+Entity conversion done on 5_5 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_5_5_entity_conversion_hash.json. Check the entity.
+ Which city's 0A1 that provided civil aviation services for the 088 before the 1970s offers flights to another city's airport, accessible via Keikyu 0A1 Line and the Monorail, and one of the two main 001 0A1s serving its 083 06B area?
+
+
+
+Done. Check final_query/id_5_5_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_5_5_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_5_5_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_5_5_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_5_5_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_5_5_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/5_5_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

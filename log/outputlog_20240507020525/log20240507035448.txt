@@ -1,0 +1,855 @@
+Got argument: Immanuel Kant, 2, 2_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop:  {'triplet': '("Kaliningrad", "has a port on", "Baltic Sea")', 'start word': 'Kaliningrad', 'end word': 'Baltic Sea', 'source': {'name': 'Kaliningrad', 'line': 5}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'baltic_sea'}}
+
+utils/question.py extract_hops(Baltic Sea, [], ['Immanuel Kant', 'Kaliningrad']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Baltic_Sea_info.json file
+third_hop:  {'triplet': '("Baltic Sea", "is connected via", "Kiel Canal")', 'start word': 'Baltic Sea', 'end word': 'Canal', 'source': {'name': 'Baltic Sea', 'line': 18}, 'cpnet': {'start word': 'baltic_sea', 'end word': 'canal'}}
+generate_question(2_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "has a port on", "Baltic Sea")', '("Baltic Sea", "is connected via", "Kiel Canal")'], ['Kaliningrad', 'Baltic Sea', 'Canal'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Baltic Sea'), ('Baltic Sea', 'Canal')], Canal, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 5}, {'name': 'Baltic Sea', 'line': 18}]) called
+GPT output is:  Q: What type of waterway is connected to the Baltic Sea by the Kiel passage near the city where philosopher Immanuel Kant is buried?
+A: Canal
+final_choice(Canal, options = 5) started
+[]
+entity_type(Canal) called
+Canal is Geography
+check_matchscore(Canal, Coastal construction):  0.0
+choose_by_wiki_recur(Coastal construction)
+   Pages in Coastal construction: ['AEConnect', 'Artificial island', 'Artificial reefs in Japan', 'Beach house', 'Beach hut', 'Belgium Pier', 'Boatshed', 'Braye du Valle, Guernsey', 'Breachway', 'Breakwater (structure)', 'Cabana (structure)', 'Cable protection system', 'Campshire', 'Canal', 'Cavana', 'Central Harbourfront', 'Centre Port', 'Channel Tunnel', 'Operation Chastity', 'Coastal engineering', 'Coastal erosion', 'Coastal management', 'HMS Conundrum', 'Copenhagen Harbour Baths', 'Crib pier', 'Day beacon', 'Dock', 'Dockominium', 'Dolos', 'Dredging', 'Dry dock', 'Dynamic revetment', 'Ferry slip', 'Floating dock (jetty)', 'Frederiksted Pier', 'Groyne', 'Half tide dock', 'Harbor', 'Hard (nautical)', 'Havfrue', 'Hurricane shutter', 'Hurricane-proof building', 'Ichthyander Project', 'IJkdijk', 'Indian rivers interlinking project', 'Japan–Korea Undersea Tunnel', 'Jeju Undersea Tunnel', 'Jetty', 'Kelong', 'Khazan system', 'Lake Shore Drive', 'Land reclamation', 'Land reclamation in China', 'List of domestic submarine communications cables', 'List of international submarine communications cables', 'Markerwaard', 'Mersey Barrage', 'Mulberry harbour', 'Navy lighterage pontoon', 'Neft Daşları', 'Offshore construction', 'Offshore embedded anchors', 'Orbital O2', 'Palafito', 'Pang uk', 'Patent slip', 'Pier', 'Pilot Polder Andijk', 'Polder', 'Rainbowing', 'Rance Tidal Power Station', 'Reclamation of Wellington Harbour', 'Revetment', 'Rhino ferry', 'Riprap', 'Saipem 7000', 'Samphire Hoe', 'Sea mark', 'Seikan Tunnel', 'Severn Barrage', 'Ship canal', 'Shipyard', 'Shiv Smarak', 'Shore facility', 'Siuslaw jetties', 'Slipway', 'Stilt house', 'Submarine communications cable', 'Terp', 'Thames Barrier', 'Tidal power', 'Trabucco', 'Training (civil)', 'Trident Works Programme', 'Underwater habitat', 'Underwater tunnel', 'Wave Organ', 'Westfriese Omringdijk', 'Wharf', 'Wieringerrandmeer', 'Williams Field']
+      Ichthyander Project in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering']
+      Underwater habitat in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering', 'Rainbowing']
+      Mersey Barrage in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering', 'Rainbowing', 'Harbor']
+      Coastal engineering in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering', 'Rainbowing', 'Harbor', 'Trident Works Programme']
+      Rainbowing in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering', 'Rainbowing', 'Harbor', 'Trident Works Programme', 'Slipway']
+      Harbor in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering', 'Rainbowing', 'Harbor', 'Trident Works Programme', 'Slipway']
+      Trident Works Programme in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering', 'Rainbowing', 'Harbor', 'Trident Works Programme', 'Slipway']
+      Slipway in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering', 'Rainbowing', 'Harbor', 'Trident Works Programme', 'Slipway', 'Coastal erosion']
+      Coastal erosion in ['Ichthyander Project', 'Underwater habitat', 'Mersey Barrage', 'Coastal engineering', 'Rainbowing', 'Harbor', 'Trident Works Programme', 'Slipway', 'Coastal erosion']
+['Rainbowing', 'Harbor', 'Slipway', 'Coastal erosion']
+Ended after 2.5 hierarchy
+(2.5, ['Slipway', 'Rainbowing', 'Coastal erosion', 'Harbor'])
+
+extract_info(Slipway) Start.
+utils/preprocess.py extract_info(): Checking good links on Slipway
+Isambard Kingdom Brunel is Geography
+1 / 30 )  Brunel Isambard Kingdom Brunel brunel
+extract_triplet(Slipway)
+Got GPT's response. String length : 1339
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Slipway', 'slipway')]
+subject_words:  []
+object_words:  [(None, 'Slipway', 'slipway')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Brunel', 'Isambard Kingdom Brunel', 'brunel']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Slipway', 'slipway')]
+object_words:  []
+extract_info(Rainbowing) Start.
+utils/preprocess.py extract_info(): Checking good links on Rainbowing
+extract_triplet(Rainbowing)
+Got GPT's response. String length : 1035
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+subject_words:  [(None, 'Rainbowing', 'rainbowing')]
+object_words:  []
+extract_info(Coastal erosion) Start.
+utils/preprocess.py extract_info(): Checking good links on Coastal erosion
+Coral is Animal
+1 / 30 )  coral Coral coral
+Dunwich is Geography
+2 / 30 )  Dunwich Dunwich dunwich
+England is Geography
+3 / 30 )  English England england
+Devon is Geography
+4 / 30 )  Devon Devon devon
+Malibu, California is Geography
+5 / 30 )  Malibu Malibu, California bu
+Humber is Geography
+6 / 30 )  Humber Estuary Humber humber
+Malta is Geography
+7 / 30 )  Malta Malta malta
+extract_triplet(Coastal erosion)
+Got GPT's response. String length : 648
+subject_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+object_words:  []
+subject_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+object_words:  []
+subject_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+object_words:  []
+subject_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+object_words:  []
+subject_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+subject_words:  []
+object_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+subject_words:  []
+object_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+subject_words:  [['Dunwich', 'Dunwich', 'dunwich']]
+object_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+subject_words:  [['Humber Estuary', 'Humber', 'humber']]
+object_words:  []
+subject_words:  [['Malibu', 'Malibu, California', 'bu']]
+object_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+subject_words:  []
+object_words:  [(None, 'Coastal erosion', 'coastal_erosion')]
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("Harbor", "synonym of", "port")\n', '("Harbor", "includes", "ports")\n', '("Long Beach Harbor", "located in", "California")\n', '("Sydney Harbour", "located in", "New South Wales, Australia")\n', '("Halifax Harbour", "located in", "Halifax, Nova Scotia, Canada")\n', '("Harbor", "can be", "natural or artificial")\n', '("Artificial harbor", "example of", "Long Beach Harbor, California")\n', '("Natural harbor", "example of", "Sydney Harbour, New South Wales")\n', '("Jebel Ali", "is the largest artificially created", "harbor in Dubai")\n', '("Harbors", "often have", "rias")\n', '("Harbor in Antarctica", "is located at", "Winter Quarters Bay")\n', '("Slipway", "also known as", "boat ramp or launch or boat deployer")\n', '("Slipway", "used for", "building and repairing ships and boats")\n', '("Slipway", "used for", "launching and retrieving small boats on trailers")\n', '("Ships", "moved over the ramp by way of", "crane or fork lift")\n', '("Vessel\'s hull", "coated with", "grease")\n', '("Grease", "allows ship or boat to", "slip off of the ramp into the water")\n', '("Slipway", "used to launch", "large ships")\n', '("Marine railways", "are", "dry-docking installations that use a ramp")\n', '("Simple slipway", "typically made of", "concrete, steel, stone or wood")\n', '("Slipway", "limited by", "height of the tide")\n', '("Wheeled carriage", "used on", "slipway for moving vessels")\n', '("Whaling ships", "equipped with", "slipway at the back")\n', '("Lifeboat", "slides down", "steep steel slip")\n', '("Slipway", "used in construction of", "large ships")\n', '("Vessel", "slides down the slipway on", "the ways")\n', '("Launching", "is", "transferring the vessel to the water")\n', '("Slipways", "take form of", "reinforced concrete mat")\n', '("Barricades", "support", "two launch ways")\n', '("Launch cradle", "placed on", "sliding ways")\n', '("Great Eastern", "built by", "Brunel")\n', '("Great Eastern", "launched", "sideways")\n', '("Chains", "attached to ship to", "slow the vessel once afloat")\n', '("Building on a slipway", "dying out due to", "increasing size of vessels")\n', '("Rainbowing", "is a process of", "propelling sand")\n', '("Rainbowing", "used for", "preventing erosion")\n', '("Rainbowing", "used for", "constructing new islands")\n', '("Rainbowing", "resembles", "brown-colored rainbow")\n', '("Rainbowing technique", "was used in construction of", "the Palm Islands")\n', '("Rainbowing technique", "was used in construction of", "The World, Dubai")\n', '("Rainbowing process", "begins with", "excavation of sediment")\n', '("Dredgers", "excavate sediment by", "mechanical or hydraulic methods")\n', '("Dredgers", "create", "slurry")\n', '("Slurry", "used on-site or transported for", "deposition")\n', '("Rainbowing nozzles", "affect", "output and trajectory of slurry")\n', '("Rainbowing", "useful for reclaiming areas", "too shallow for direct placement")\n', '("Rainbowing", "allows", "disposing excavated sediment on-site")\n', '("Rainbowing", "allows for continuous", "trenching operation")\n', '("Rainbowing", "has effects on", "environment")\n', '("Coastal erosion", "results in", "rock formations")\n', '("Coastal erosion", "may be caused by", "hydraulic action")\n', '("Coastal erosion", "may be caused by", "abrasion")\n', '("Coastal erosion", "may be caused by", "impact")\n', '("Coastal erosion", "may be caused by", "corrosion")\n', '("Waves", "cause", "coastal erosion")\n', '("Storms", "impact", "coastal erosion")\n', '("IPCC", "states sea level rise will increase", "coastal erosion")\n', '("Dunwich", "disappeared due to", "coastal erosion")\n', '("Humber Estuary", "near fastest eroding", "coastline in Europe")\n', '("Malibu", "regularly affected by", "coastal erosion")\n', '("Malta\'s Fort Ricasoli", "threatened by", "coastal erosion")\n']
+range(1, 172) 3
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("Harbor", "synonym of", "port")\n', '("Harbor", "includes", "ports")\n', '("Long Beach Harbor", "located in", "California")\n', '("Sydney Harbour", "located in", "New South Wales, Australia")\n', '("Halifax Harbour", "located in", "Halifax, Nova Scotia, Canada")\n', '("Harbor", "can be", "natural or artificial")\n', '("Artificial harbor", "example of", "Long Beach Harbor, California")\n', '("Natural harbor", "example of", "Sydney Harbour, New South Wales")\n', '("Jebel Ali", "is the largest artificially created", "harbor in Dubai")\n', '("Harbors", "often have", "rias")\n', '("Harbor in Antarctica", "is located at", "Winter Quarters Bay")\n', '("Slipway", "also known as", "boat ramp or launch or boat deployer")\n', '("Slipway", "used for", "building and repairing ships and boats")\n', '("Slipway", "used for", "launching and retrieving small boats on trailers")\n', '("Ships", "moved over the ramp by way of", "crane or fork lift")\n', '("Vessel\'s hull", "coated with", "grease")\n', '("Grease", "allows ship or boat to", "slip off of the ramp into the water")\n', '("Slipway", "used to launch", "large ships")\n', '("Marine railways", "are", "dry-docking installations that use a ramp")\n', '("Simple slipway", "typically made of", "concrete, steel, stone or wood")\n', '("Slipway", "limited by", "height of the tide")\n', '("Wheeled carriage", "used on", "slipway for moving vessels")\n', '("Whaling ships", "equipped with", "slipway at the back")\n', '("Lifeboat", "slides down", "steep steel slip")\n', '("Slipway", "used in construction of", "large ships")\n', '("Vessel", "slides down the slipway on", "the ways")\n', '("Launching", "is", "transferring the vessel to the water")\n', '("Slipways", "take form of", "reinforced concrete mat")\n', '("Barricades", "support", "two launch ways")\n', '("Launch cradle", "placed on", "sliding ways")\n', '("Great Eastern", "built by", "Brunel")\n', '("Great Eastern", "launched", "sideways")\n', '("Chains", "attached to ship to", "slow the vessel once afloat")\n', '("Building on a slipway", "dying out due to", "increasing size of vessels")\n', '("Rainbowing", "is a process of", "propelling sand")\n', '("Rainbowing", "used for", "preventing erosion")\n', '("Rainbowing", "used for", "constructing new islands")\n', '("Rainbowing", "resembles", "brown-colored rainbow")\n', '("Rainbowing technique", "was used in construction of", "the Palm Islands")\n', '("Rainbowing technique", "was used in construction of", "The World, Dubai")\n', '("Rainbowing process", "begins with", "excavation of sediment")\n', '("Dredgers", "excavate sediment by", "mechanical or hydraulic methods")\n', '("Dredgers", "create", "slurry")\n', '("Slurry", "used on-site or transported for", "deposition")\n', '("Rainbowing nozzles", "affect", "output and trajectory of slurry")\n', '("Rainbowing", "useful for reclaiming areas", "too shallow for direct placement")\n', '("Rainbowing", "allows", "disposing excavated sediment on-site")\n', '("Rainbowing", "allows for continuous", "trenching operation")\n', '("Rainbowing", "has effects on", "environment")\n', '("Coastal erosion", "results in", "rock formations")\n', '("Coastal erosion", "may be caused by", "hydraulic action")\n', '("Coastal erosion", "may be caused by", "abrasion")\n', '("Coastal erosion", "may be caused by", "impact")\n', '("Coastal erosion", "may be caused by", "corrosion")\n', '("Waves", "cause", "coastal erosion")\n', '("Storms", "impact", "coastal erosion")\n', '("IPCC", "states sea level rise will increase", "coastal erosion")\n', '("Dunwich", "disappeared due to", "coastal erosion")\n', '("Humber Estuary", "near fastest eroding", "coastline in Europe")\n', '("Malibu", "regularly affected by", "coastal erosion")\n', '("Malta\'s Fort Ricasoli", "threatened by", "coastal erosion")\n']
+range(1, 172) 3
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("Harbor", "synonym of", "port")\n', '("Harbor", "includes", "ports")\n', '("Long Beach Harbor", "located in", "California")\n', '("Sydney Harbour", "located in", "New South Wales, Australia")\n', '("Halifax Harbour", "located in", "Halifax, Nova Scotia, Canada")\n', '("Harbor", "can be", "natural or artificial")\n', '("Artificial harbor", "example of", "Long Beach Harbor, California")\n', '("Natural harbor", "example of", "Sydney Harbour, New South Wales")\n', '("Jebel Ali", "is the largest artificially created", "harbor in Dubai")\n', '("Harbors", "often have", "rias")\n', '("Harbor in Antarctica", "is located at", "Winter Quarters Bay")\n', '("Slipway", "also known as", "boat ramp or launch or boat deployer")\n', '("Slipway", "used for", "building and repairing ships and boats")\n', '("Slipway", "used for", "launching and retrieving small boats on trailers")\n', '("Ships", "moved over the ramp by way of", "crane or fork lift")\n', '("Vessel\'s hull", "coated with", "grease")\n', '("Grease", "allows ship or boat to", "slip off of the ramp into the water")\n', '("Slipway", "used to launch", "large ships")\n', '("Marine railways", "are", "dry-docking installations that use a ramp")\n', '("Simple slipway", "typically made of", "concrete, steel, stone or wood")\n', '("Slipway", "limited by", "height of the tide")\n', '("Wheeled carriage", "used on", "slipway for moving vessels")\n', '("Whaling ships", "equipped with", "slipway at the back")\n', '("Lifeboat", "slides down", "steep steel slip")\n', '("Slipway", "used in construction of", "large ships")\n', '("Vessel", "slides down the slipway on", "the ways")\n', '("Launching", "is", "transferring the vessel to the water")\n', '("Slipways", "take form of", "reinforced concrete mat")\n', '("Barricades", "support", "two launch ways")\n', '("Launch cradle", "placed on", "sliding ways")\n', '("Great Eastern", "built by", "Brunel")\n', '("Great Eastern", "launched", "sideways")\n', '("Chains", "attached to ship to", "slow the vessel once afloat")\n', '("Building on a slipway", "dying out due to", "increasing size of vessels")\n', '("Rainbowing", "is a process of", "propelling sand")\n', '("Rainbowing", "used for", "preventing erosion")\n', '("Rainbowing", "used for", "constructing new islands")\n', '("Rainbowing", "resembles", "brown-colored rainbow")\n', '("Rainbowing technique", "was used in construction of", "the Palm Islands")\n', '("Rainbowing technique", "was used in construction of", "The World, Dubai")\n', '("Rainbowing process", "begins with", "excavation of sediment")\n', '("Dredgers", "excavate sediment by", "mechanical or hydraulic methods")\n', '("Dredgers", "create", "slurry")\n', '("Slurry", "used on-site or transported for", "deposition")\n', '("Rainbowing nozzles", "affect", "output and trajectory of slurry")\n', '("Rainbowing", "useful for reclaiming areas", "too shallow for direct placement")\n', '("Rainbowing", "allows", "disposing excavated sediment on-site")\n', '("Rainbowing", "allows for continuous", "trenching operation")\n', '("Rainbowing", "has effects on", "environment")\n', '("Coastal erosion", "results in", "rock formations")\n', '("Coastal erosion", "may be caused by", "hydraulic action")\n', '("Coastal erosion", "may be caused by", "abrasion")\n', '("Coastal erosion", "may be caused by", "impact")\n', '("Coastal erosion", "may be caused by", "corrosion")\n', '("Waves", "cause", "coastal erosion")\n', '("Storms", "impact", "coastal erosion")\n', '("IPCC", "states sea level rise will increase", "coastal erosion")\n', '("Dunwich", "disappeared due to", "coastal erosion")\n', '("Humber Estuary", "near fastest eroding", "coastline in Europe")\n', '("Malibu", "regularly affected by", "coastal erosion")\n', '("Malta\'s Fort Ricasoli", "threatened by", "coastal erosion")\n']
+range(1, 172) 3
+{'id': '2_3', 'Question': ' What type of waterway is connected to the Baltic Sea by the Kiel passage near the city where philosopher Immanuel Kant is buried?\n', 'Answer': 'Canal', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Harbor'}, {'label': 'B', 'text': 'Slipway'}, {'label': 'C', 'text': 'Rainbowing'}, {'label': 'D', 'text': 'Coastal erosion'}, {'label': 'E', 'text': 'Canal'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'harbor'}, {'label': 'B', 'text': 'slipway'}, {'label': 'C', 'text': 'rainbowing'}, {'label': 'D', 'text': 'coastal_erosion'}, {'label': 'E', 'text': 'canal'}], 'answerKey': 'E', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which city is the final resting place of the philosopher Immanuel Kant?\nA1: Kaliningrad\n\n', '2: On the shores of which body of water is the port of Kaliningrad situated?\nA2: Baltic Sea\n\n', '3: The Kiel passage links the Baltic Sea to which type of waterway?\nA3: Canal'], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Baltic Sea'), ('Baltic Sea', 'Canal')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'baltic_sea'), ('baltic_sea', 'canal')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "has a port on", "Baltic Sea")', '("Baltic Sea", "is connected via", "Kiel Canal")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 5}, {'name': 'Baltic Sea', 'line': 18}], 'Question_triplet_answer': {100: [64, 147, 150], 50: [61, 105, 165], 25: [46, 66, 107]}}
+time passed:  786.6502237319946
+Expected dollar:  0.005
+Kant is People
+Lithuania is Geography
+Poland is Geography
+Baltic Sea is Geography
+Latvia is Geography
+White Sea Baltic Canal is Geography
+the White Sea is Geography
+Finland is Geography
+Königsberg is Geography
+Mikhail Kalinin is People
+Gotland is Geography
+Atlantic Ocean is Geography
+the North Sea is Geography
+Immanuel Kant is People
+Emanuel Swedenborg's Dreams of a Spirit is People
+Full Professor of Logic and Metaphysics at University of Königsberg is People
+University of Königsberg is Geography
+Winter Quarters Bay is Geography
+Russia is Geography
+Denmark is Geography
+Sound Dues is Geography
+Nyborg is Geography
+Germany is Geography
+Humber Estuary is Geography
+Samuel Taylor is People
+the Palm Islands is Geography
+Jürgen Habermas is People
+John Rawls is People
+Johann Georg Kant is People
+Sydney Harbour is Geography
+Australia is Geography
+Estonia is Geography
+Helsingør is Geography
+Kaliningrad is Geography
+Alexander Wendt's is People
+White Sea is Geography
+Fredericia is Geography
+Øresund Bridge is Geography
+Copenhagen and Malmö is Geography
+Bay of Mecklenburg is Geography
+Sweden is Geography
+Fichte is People
+Hegel is People
+Novalis is People
+Northwestern Federal District is Geography
+Kant Society is People
+entities:  {'Kalinin', 'Full', 'Bridge', 'Mecklenburg', 'erosion', 'Humber', 'Fredericia', 'Bay', 'Sound', 'Northwestern', 'Society', 'Kiel', 'Samuel', "Wendt's", 'Harbour', 'Germany', 'Finland', 'Øresund', 'Baltic', 'Antarctica', 'Professor', 'Sea', 'White', 'Estonia', 'Dues', 'Rainbowing', 'Wendt', 'Sydney', 'Taylor', 'Latvia', 'Helsingør', 'Copenhagen', 'Georg', 'Ocean', 'Islands', 'Jürgen', 'Fichte', 'Mikhail', 'Dreams', 'Logic', 'Coastal', 'Novalis', 'North', 'Rawls', 'Poland', 'Federal', 'Kaliningrad', 'John', 'Königsberg', 'Alexander', 'Sweden', 'Immanuel', 'Denmark', 'Harbor', 'Canal', 'Palm', 'Malmö', 'Slipway', 'Swedenborg', 'Quarters', "Swedenborg's", 'Johann', 'Nyborg', 'Europe', 'Habermas', 'Australia', 'Gotland', 'University', 'Estuary', 'Atlantic', 'Spirit', 'Metaphysics', 'Lithuania', 'Emanuel', 'Kant', 'Winter', 'Russia', 'District', 'Hegel'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Rainbowing' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Rainbowing
+Trenching operation
+Environment
+Rainbowing nozzles
+Slurry
+Preventing erosion
+Propelling sand
+
+gpt_entity_particular(): entity list: 
+ ['Rainbowing nozzles', 'Slurry', 'Trenching operation', 'Rainbowing', 'Propelling sand', 'Environment', 'Preventing erosion']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Coastal erosion' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+Coastal erosion
+
+gpt_entity_particular(): entity list: 
+ ['Coastal erosion']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Canal' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Slipway
+Kant
+Neo-Kantianism
+Philosophy
+Baltic Sea
+Ship
+Ramp
+Crane
+Fork lift
+Kaliningrad
+Lithuania
+Poland
+Latvia
+Kant's
+Political thought
+Reinforced concrete mat
+Artificial waterways
+White Sea–Baltic Canal
+Finland
+Königsberg
+Rainbowing
+Trenching operation
+Kaliningrad Oblast
+Königsberg
+Coastal erosion
+Baltic Sea
+Atlantic Ocean
+Dredgers
+Mechanical or hydraulic methods
+Kiel Canal
+North Sea
+Immanuel Kant
+Democratic peace theory
+Ships
+Harbor
+Artificial waterways
+
+gpt_entity_particular(): entity list: 
+ ["Kant's", 'Ship', 'Trenching operation', 'Mechanical or hydraulic methods', 'Philosophy', 'Artificial waterways', 'Kiel Canal', 'Democratic peace theory', 'Neo-Kantianism', 'Immanuel Kant', 'Poland', 'Kaliningrad', 'Königsberg', 'Dredgers', 'Finland', 'Harbor', 'Reinforced concrete mat', 'Rainbowing', 'Coastal erosion', 'White Sea–Baltic Canal', 'Kaliningrad Oblast', 'Ramp', 'Baltic Sea', 'Slipway', 'Political thought', 'Fork lift', 'Latvia', 'North Sea', 'Atlantic Ocean', 'Ships', 'Crane', 'Lithuania', 'Kant']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Baltic Sea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+
+gpt_entity_particular(): entity list: 
+ ['Baltic Sea']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Slipway' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Slipway
+Boat ramp
+Launch
+Boat deployer
+Ship
+Ramp
+Slipways
+Ships
+Baltic Sea
+Crane
+Fork lift
+Artificial waterways
+White Sea–Baltic Canal
+Kiel Canal
+Launch cradle
+Chains
+Grease
+University of Königsberg
+Rainbowing
+Kant Society
+Lifeboat
+Steep steel slip
+
+gpt_entity_particular(): entity list: 
+ ['Ship', 'University of Königsberg', 'Lifeboat', 'Kiel Canal', 'Artificial waterways', 'Boat ramp', 'Launch cradle', 'Steep steel slip', 'Chains', 'Rainbowing', 'White Sea–Baltic Canal', 'Ramp', 'Baltic Sea', 'Slipway', 'Kant Society', 'Slipways', 'Boat deployer', 'Fork lift', 'Grease', 'Ships', 'Crane', 'Launch']
+
+gpt_entity_particular(): filtered entity: 
+ ['Ship', 'Ramp', 'Slipways', 'Launch']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Harbor' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Harbor
+Artificial waterways
+Port
+Winter Quarters Bay
+Bay of Mecklenburg
+Baltic Sea
+Gulf of Finland
+Coastal erosion
+Finland
+Germany
+Estonia
+Race
+Nyborg
+Denmark
+Sweden
+Lithuania
+Kiel Canal
+White Sea
+Port of Kaliningrad
+Nebraska
+Malibu
+Arctic glacier
+Polish People's Republic
+Kaliningrad Oblast
+Norway
+Arkadelphia
+Slipway
+Bricklayers
+Boat ramp
+Emanuel Swedenborg's Dreams of a Spirit-Seer
+King Ottokar II of Bohemia
+Baltic Sea-Anadyr-Litas sale
+Automatic Identification System
+Gulf of Alaska
+Kant Society
+Reinforced concrete
+Kant
+Slipways
+Königsberg
+Lithuania
+Neo-Kantianism
+
+gpt_entity_particular(): entity list: 
+ ['King Ottokar II of Bohemia', 'Kiel Canal', 'Artificial waterways', 'Bay of Mecklenburg', 'Nebraska', 'Bricklayers', 'Gulf of Finland', 'Neo-Kantianism', 'Race', 'Malibu', 'Boat ramp', 'Arkadelphia', 'Königsberg', 'Sweden', 'Germany', 'Finland', 'Denmark', 'Harbor', "Emanuel Swedenborg's Dreams of a Spirit-Seer", 'Automatic Identification System', 'White Sea', 'Estonia', 'Coastal erosion', "Polish People's Republic", 'Gulf of Alaska', 'Kaliningrad Oblast', 'Winter Quarters Bay', 'Baltic Sea', 'Slipway', 'Kant Society', 'Norway', 'Slipways', 'Port of Kaliningrad', 'Nyborg', 'Baltic Sea-Anadyr-Litas sale', 'Arctic glacier', 'Reinforced concrete', 'Lithuania', 'Kant', 'Port']
+
+gpt_entity_particular(): filtered entity: 
+ ['Port']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Kant
+Kant
+Kant
+Kant's
+Kant's
+Kant's
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant's
+Kant's
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant's
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant's
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant's
+Kant's
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant's
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant's
+Kant's
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+Immanuel Kant
+Kant
+
+gpt_entity_particular(): entity list: 
+ ['Kant', "Kant's", 'Immanuel Kant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Kant']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Kaliningrad
+Kant
+Boat ramp
+Launch
+Baltic Sea
+Crane
+Fork lift
+Conclusion
+Latvia
+Ships
+Revival
+Artificial waterways
+White Sea–Baltic Canal
+Finland
+Königsberg
+Rainbowing
+Excavation
+Technical Analysis
+Imperial Anthem
+
+gpt_entity_particular(): entity list: 
+ ['Artificial waterways', 'Boat ramp', 'Kaliningrad', 'Königsberg', 'Finland', 'Revival', 'Rainbowing', 'Technical Analysis', 'White Sea–Baltic Canal', 'Conclusion', 'Baltic Sea', 'Fork lift', 'Imperial Anthem', 'Latvia', 'Excavation', 'Ships', 'Crane', 'Launch', 'Kant']
+
+gpt_entity_particular(): filtered entity: 
+ ['Königsberg']
+After GPT, entity:  {'Kalinin', 'Full', 'Ship', 'Bridge', 'Mecklenburg', 'erosion', 'Humber', 'Fredericia', 'Bay', 'Sound', 'Northwestern', 'Society', 'Kiel', 'Samuel', "Wendt's", 'Harbour', 'Germany', 'Finland', 'Øresund', 'Baltic', 'Antarctica', 'Professor', 'Sea', 'White', 'Estonia', 'Dues', 'Rainbowing', 'Wendt', 'Sydney', 'Ramp', 'Taylor', 'Latvia', 'Helsingør', 'Copenhagen', 'Georg', 'Launch', 'Ocean', 'Islands', 'Jürgen', 'Fichte', 'Mikhail', 'Dreams', 'Logic', 'Coastal', 'Novalis', 'North', 'Rawls', 'Poland', 'Federal', 'Kaliningrad', 'John', 'Königsberg', 'Alexander', 'Sweden', 'Immanuel', 'Denmark', 'Harbor', 'Canal', 'Palm', 'Malmö', 'Slipway', 'Slipways', 'Swedenborg', 'Quarters', 'Port', "Swedenborg's", 'Johann', 'Nyborg', 'Europe', 'Habermas', 'Australia', 'Gotland', 'University', 'Estuary', 'Atlantic', 'Spirit', 'Metaphysics', 'Lithuania', 'Emanuel', 'Kant', 'Winter', 'Russia', 'District', 'Hegel'}
+Total time:  204.85953664779663
+Entity conversion done on 2_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_2_3_entity_conversion_hash.json. Check the entity.
+ What type of waterway is connected to the 012 04D by the 049 passage near the city where philosopher 039 001 is buried?
+
+
+
+Done. Check final_query/id_2_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_2_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_3_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

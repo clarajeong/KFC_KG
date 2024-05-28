@@ -1,0 +1,1816 @@
+Got argument: Archimedes, 2, 2_12, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Archimedes, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Archimedes_info.json file
+first_hop:  {'triplet': '("Galileo Galilei", "was inspired by", "Archimedes\' work on hydrostatics")', 'start word': 'Archimedes', 'end word': 'Galileo Galilei', 'source': {'name': 'Archimedes', 'line': 21}, 'cpnet': {'start word': 'archimedes', 'end word': 'galileo_galilei'}}
+
+utils/question.py extract_hops(Galileo Galilei, [], ['Archimedes']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Galileo_Galilei_info.json file
+extract_info(Galileo Galilei) Start.
+utils/preprocess.py extract_info(): Checking good links on Galileo Galilei
+Pisa is Geography
+1 / 30 )  Pisa Pisa pisa
+Pope Urban VIII is People
+2 / 30 )  Pope Urban VIII Pope Urban VIII urban_viii
+Jesuits is Geography
+3 / 30 )  Jesuits Jesuits jesuits
+Florence is Geography
+4 / 30 )  Florence Florence florence
+Galilee is Geography
+5 / 30 )  Galilee Galilee galilee
+Israel is Geography
+6 / 30 )  Israel Israel israel
+Jesus is People
+7 / 30 )  Christ Jesus jesus
+Christiaan Huygens is People
+8 / 30 )  Christiaan Huygens Christiaan Huygens christiaan_huygens
+Tycho Brahe is People
+9 / 30 )  Tycho Brahe Tycho Brahe tycho_brahe
+Venice is Geography
+10 / 30 )  Venetian Venice venice
+Dante Alighieri is People
+11 / 30 )  Dante Dante Alighieri dante_alighieri
+Johannes Kepler is People
+12 / 30 )  Johannes Kepler Johannes Kepler johannes_kepler
+Prime meridian is Geography
+13 / 30 )  prime meridian Prime meridian prime_meridian
+Nicolaus Copernicus is People
+14 / 30 )  Nicolaus Copernicus Nicolaus Copernicus nicolaus_copernicus
+Robert Bellarmine is People
+15 / 30 )  Cardinal Bellarmine Robert Bellarmine roberto_francesco_romolo_bellarmine
+Adriatic Sea is Geography
+16 / 30 )  Adriatic Sea Adriatic Sea adriatic_sea
+Albert Einstein is People
+17 / 30 )  Albert Einstein Albert Einstein albert_einstein
+Aristotle is People
+18 / 30 )  Aristotelian Aristotle aristotle
+Bartolomé Esteban Murillo is People
+19 / 30 )  Bartolomé Esteban Murillo Bartolomé Esteban Murillo bartolome_esteban_murillo
+Pythagoras is People
+20 / 30 )  Pythagorean Pythagoras pythagoras
+René Descartes is People
+21 / 30 )  René Descartes René Descartes rené_descartes
+Isaac Newton is People
+22 / 30 )  Sir Isaac Newton Isaac Newton isaac_newton
+Lucretius is People
+23 / 30 )  Lucretius Lucretius lucretius
+Simon Stevin is People
+24 / 30 )  Simon Stevin Simon Stevin simon_stevin
+Delft is Geography
+25 / 30 )  Delft Delft delft
+Leaning Tower of Pisa is Geography
+26 / 30 )  Leaning Tower of Pisa Leaning Tower of Pisa leaning_tower_of_pisa
+Fibonacci is People
+27 / 30 )  Fibonacci Fibonacci fibonacci
+Archimedes is Geography
+28 / 30 )  Archimedes Archimedes archimedes
+Pope Benedict XIV is People
+29 / 30 )  Pope Benedict XIV Pope Benedict XIV benedict_xiv
+Pope Pius XII is People
+30 / 30 )  Pope Pius XII Pope Pius XII eugenio_pacelli
+extract_triplet(Galileo Galilei)
+Got GPT's response. String length : 5945
+subject_words:  [(None, 'Galileo Galilei', 'galileo_galilei')]
+object_words:  []
+subject_words:  []
+object_words:  [['Pisa', 'Pisa', 'pisa']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Pope Urban VIII', 'Pope Urban VIII', 'urban_viii']]
+subject_words:  []
+object_words:  [['Jesuits', 'Jesuits', 'jesuits']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Florence', 'Florence', 'florence']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Galilee', 'Galilee', 'galilee']]
+subject_words:  []
+object_words:  [['Christ', 'Jesus', 'jesus']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Pisa', 'Pisa', 'pisa']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Aristotelian', 'Aristotle', 'aristotle']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Nicolaus Copernicus', 'Nicolaus Copernicus', 'nicolaus_copernicus']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Cardinal Bellarmine', 'Robert Bellarmine', 'roberto_francesco_romolo_bellarmine']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Johannes Kepler', 'Johannes Kepler', 'johannes_kepler']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Pope Urban VIII', 'Pope Urban VIII', 'urban_viii']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Sir Isaac Newton', 'Isaac Newton', 'isaac_newton']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Galileo Galilei', 'galileo_galilei')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Pope Benedict XIV', 'Pope Benedict XIV', 'benedict_xiv']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+second_hop:  None
+
+utils/question.py extract_hops(Archimedes, ['Galileo Galilei'], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Archimedes_info.json file
+first_hop:  {'triplet': '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")', 'start word': 'Archimedes', 'end word': 'Gotthold Ephraim Lessing', 'source': {'name': 'Gotthold Ephraim Lessing', 'line': 6}, 'cpnet': {'start word': 'archimedes', 'end word': 'gotthold_ephraim_lessing'}}
+
+utils/question.py extract_hops(Gotthold Ephraim Lessing, [], ['Archimedes']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Gotthold_Ephraim_Lessing_info.json file
+second_hop:  {'triplet': '("Gotthold Ephraim Lessing", "died in", "Brunswick")', 'start word': 'Gotthold Ephraim Lessing', 'end word': 'Braunschweig', 'source': {'name': 'Gotthold Ephraim Lessing', 'line': 7}, 'cpnet': {'start word': 'gotthold_ephraim_lessing', 'end word': 'braunschweig'}}
+
+utils/question.py extract_hops(Braunschweig, [], ['Archimedes', 'Gotthold Ephraim Lessing']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Braunschweig_info.json file
+extract_info(Braunschweig) Start.
+utils/preprocess.py extract_info(): Checking good links on Braunschweig
+Lower Saxony is Geography
+1 / 30 )  Lower Saxony Lower Saxony lower_saxony
+Harz is Geography
+2 / 30 )  Harz Harz harz
+Oker is Geography
+3 / 30 )  Oker Oker oker
+North Sea is Geography
+4 / 30 )  North Sea North Sea north_sea
+Weser is Geography
+5 / 30 )  Weser Weser weser
+Frederick Barbarossa is People
+6 / 30 )  Frederick I Barbarossa Frederick Barbarossa frederick_barbarossa
+Richard I of England is People
+7 / 30 )  Richard the Lionheart Richard I of England richard_i
+Gotthold Ephraim Lessing is People
+8 / 30 )  Lessing Gotthold Ephraim Lessing gotthold_ephraim_lessing
+Johann Wolfgang von Goethe is People
+9 / 30 )  Goethe Johann Wolfgang von Goethe johann_wolfgang_von_goethe
+France is Geography
+10 / 30 )  French France france
+Napoleon is People
+11 / 30 )  Napoleonic Napoleon napoleon
+German Empire is Geography
+12 / 30 )  German Empire German Empire german_empire
+Weimar Republic is Geography
+13 / 30 )  Weimar Republic Weimar Republic weimar_republic
+Nazi Germany is Geography
+14 / 30 )  Nazis Nazi Germany nazi_germany
+Sturmabteilung is Geography
+15 / 30 )  SA Sturmabteilung sturmabteilung
+Adolf Hitler is People
+16 / 30 )  Adolf Hitler Adolf Hitler adolf_hitler
+Hitler Youth is Incident
+17 / 30 )  Hitler Youth Hitler Youth hitler_youth
+Wolfsburg is Geography
+18 / 30 )  Stadt des KdF-Wagens Wolfsburg wolfsburg
+Iron Curtain is Geography
+19 / 30 )  Iron Curtain Iron Curtain iron_curtain
+East Germany is Geography
+20 / 30 )  East Germany East Germany east_germany
+Braunschweig is Geography
+21 / 30 )  Botanischer Garten der Technischen Universität Braunschweig Braunschweig braunschweig
+Frankfurt is Geography
+22 / 30 )  Frankfurt Frankfurt frankfurt
+New Brunswick is Geography
+23 / 30 )  New Brunswick New Brunswick new_brunswick
+Lüneburg is Geography
+24 / 30 )  Lüneburg Lüneburg lüneburg
+Carl Friedrich Gauss is People
+25 / 30 )  Carl Friedrich Gauss Carl Friedrich Gauss carl_friedrich_gauss
+Richard Dedekind is People
+26 / 30 )  Richard Dedekind Richard Dedekind dedekindian
+Asparagus is Animal
+27 / 30 )  white asparagus Asparagus asparagus
+Albrecht Dürer is People
+28 / 30 )  Dürer Albrecht Dürer albrecht_durer
+Anthony van Dyck is People
+29 / 30 )  Van Dyck Anthony van Dyck van_dyck
+Johannes Vermeer is People
+30 / 30 )  Vermeer Johannes Vermeer jan_vermeer
+extract_triplet(Braunschweig)
+Got GPT's response. String length : 2453
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['Lower Saxony', 'Lower Saxony', 'lower_saxony']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['Harz', 'Harz', 'harz']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['Oker', 'Oker', 'oker']]
+subject_words:  [['Oker', 'Oker', 'oker']]
+object_words:  [['North Sea', 'North Sea', 'north_sea'], ['Weser', 'Weser', 'weser']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  []
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  []
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  []
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['Lower Saxony', 'Lower Saxony', 'lower_saxony']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Frederick I Barbarossa', 'Frederick Barbarossa', 'frederick_barbarossa']]
+object_words:  []
+subject_words:  [['Richard the Lionheart', 'Richard I of England', 'richard_i']]
+object_words:  []
+subject_words:  [['Lessing', 'Gotthold Ephraim Lessing', 'gotthold_ephraim_lessing']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  []
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['French', 'France', 'france'], ['Napoleonic', 'Napoleon', 'napoleon']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['Napoleonic', 'Napoleon', 'napoleon']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  []
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['German Empire', 'German Empire', 'german_empire']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  []
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['Weimar Republic', 'Weimar Republic', 'weimar_republic']]
+subject_words:  [['Nazis', 'Nazi Germany', 'nazi_germany']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [['SA', 'Sturmabteilung', 'sturmabteilung']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [['Adolf Hitler', 'Adolf Hitler', 'adolf_hitler']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  []
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['Iron Curtain', 'Iron Curtain', 'iron_curtain']]
+subject_words:  [['East Germany', 'East Germany', 'east_germany']]
+object_words:  [['East Germany', 'East Germany', 'east_germany']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+object_words:  [['Frankfurt', 'Frankfurt', 'frankfurt']]
+subject_words:  [['New Brunswick', 'New Brunswick', 'new_brunswick']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [['Lüneburg', 'Lüneburg', 'lüneburg']]
+object_words:  []
+subject_words:  [['Carl Friedrich Gauss', 'Carl Friedrich Gauss', 'carl_friedrich_gauss']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [['Richard Dedekind', 'Richard Dedekind', 'dedekindian']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [['white asparagus', 'Asparagus', 'asparagus']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [['Dürer', 'Albrecht Dürer', 'albrecht_durer']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [['Van Dyck', 'Anthony van Dyck', 'van_dyck']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+subject_words:  [['Vermeer', 'Johannes Vermeer', 'jan_vermeer']]
+object_words:  [(None, 'Braunschweig', 'braunschweig'), ['Botanischer Garten der Technischen Universität Braunschweig', 'Braunschweig', 'braunschweig']]
+third_hop:  {'triplet': '("Braunschweig", "on the main rail line between", "Frankfurt and Berlin")', 'start word': 'Braunschweig', 'end word': 'Frankfurt', 'source': {'name': 'Braunschweig', 'line': 27}, 'cpnet': {'start word': 'braunschweig', 'end word': 'frankfurt'}}
+generate_question(2_12, ['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")', '("Gotthold Ephraim Lessing", "died in", "Brunswick")', '("Braunschweig", "on the main rail line between", "Frankfurt and Berlin")'], ['Gotthold Ephraim Lessing', 'Braunschweig', 'Frankfurt'], [('Archimedes', 'Gotthold Ephraim Lessing'), ('Gotthold Ephraim Lessing', 'Braunschweig'), ('Braunschweig', 'Frankfurt')], Frankfurt, [{'name': 'Gotthold Ephraim Lessing', 'line': 6}, {'name': 'Gotthold Ephraim Lessing', 'line': 7}, {'name': 'Braunschweig', 'line': 27}]) called
+GPT output is:  Q: Which city lies on the main rail line to the capital of Germany and shares its name with the place where the individual who discovered the cattle problem attributed to Archimedes died?
+A: Frankfurt
+final_choice(Frankfurt, options = 5) started
+[]
+entity_type(Frankfurt) called
+Frankfurt is Geography
+check_matchscore(Frankfurt, Populated places established in the 1st century):  0.0
+choose_by_wiki_recur(Populated places established in the 1st century)
+   Pages in Populated places established in the 1st century: ['Aachen', 'Aequum', 'Aquae Helveticae', 'Aventicum', 'Bassianae', 'Caerwent', 'Cahuachi', 'Cardiff', 'Carnuntum', 'Chaves, Portugal', 'Chester', 'Chesterfield, Derbyshire', 'Corbridge', 'Cuicul', 'Da Nang', 'Deva Victrix', 'Durobrivae (Water Newton)', 'Durolevum', 'Durovernum Cantiacorum', 'Frankfurt', 'Glevum', 'Gloucester', 'Haifa', 'Halikan', 'Handbridge', 'Illerkirchberg', 'Ladenburg', 'Leicester', 'Lindum Colonia', 'Londinium', 'London', 'Madauros', 'Madingo Kayes', 'Manchester', 'Manduessedum', 'Roman camp, Marktbreit', 'Mesarfelta', 'Nan Madol', 'Nijmegen', 'Noviodunum (Switzerland)', 'Oran', 'Rapidum', 'Rehovot-in-the-Negev', 'Richborough Castle', 'Solothurn', 'Szombathely', 'Tiberias', 'Tripontium', 'Utrecht', 'Viminacium', 'Whitchurch, Shropshire', 'York']
+      Ladenburg in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester']
+      Durovernum Cantiacorum in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester']
+      Cahuachi in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes']
+      Chester in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes', 'Chaves, Portugal']
+      Madingo Kayes in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes', 'Chaves, Portugal']
+      Chaves, Portugal in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes', 'Chaves, Portugal', 'Roman camp, Marktbreit']
+      Roman camp, Marktbreit in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes', 'Chaves, Portugal', 'Roman camp, Marktbreit', 'Aachen']
+      Aachen in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes', 'Chaves, Portugal', 'Roman camp, Marktbreit', 'Aachen', 'Frankfurt']
+      Frankfurt in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes', 'Chaves, Portugal', 'Roman camp, Marktbreit', 'Aachen', 'Frankfurt']
+      Halikan in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes', 'Chaves, Portugal', 'Roman camp, Marktbreit', 'Aachen', 'Frankfurt', 'Halikan']
+      Haifa in ['Ladenburg', 'Durovernum Cantiacorum', 'Cahuachi', 'Chester', 'Madingo Kayes', 'Chaves, Portugal', 'Roman camp, Marktbreit', 'Aachen', 'Frankfurt', 'Halikan', 'Haifa']
+['Ladenburg', 'Chester', 'Aachen', 'Haifa']
+Ended after 2.5 hierarchy
+(2.5, ['Chester', 'Ladenburg', 'Haifa', 'Aachen'])
+
+extract_info(Haifa) Start.
+utils/preprocess.py extract_info(): Checking good links on Haifa
+Israel is Geography
+1 / 30 )  Israel Israel israel
+Jerusalem is Geography
+2 / 30 )  Jerusalem Jerusalem jerusalem
+Tel Aviv is Geography
+3 / 30 )  Tel Aviv Tel Aviv tel_aviv
+Mount Carmel is Geography
+4 / 30 )  Mount Carmel Mount Carmel mount_carmel
+Canaan is Geography
+5 / 30 )  Canaanites Canaan canaan
+Phoenicia is Geography
+6 / 30 )  Phoenicians Phoenicia phoenicia
+Jordan is Geography
+7 / 30 )  Jordan Jordan jordan
+Saint Peter is People
+8 / 30 )  Saint Peter Saint Peter saint_peter
+Ficus sycomorus is Animal
+9 / 30 )  Ficus sycomorus Ficus sycomorus ficus_sycomorus
+Sumac is Animal
+10 / 30 )  sumak Sumac sumac
+Eusebius is People
+11 / 30 )  Eusebius of Caesarea Eusebius eusebius
+Jesus is People
+12 / 30 )  Jesus Jesus jesus
+Elijah is People
+13 / 30 )  Elijah Elijah elijah
+Murex is Animal
+14 / 30 )  Murex Murex murex
+Acre, Israel is Geography
+15 / 30 )  'Akka Acre, Israel accho
+Egypt is Geography
+16 / 30 )  Egyptian Egypt egypt
+Saladin is People
+17 / 30 )  Saladin Saladin saladin
+Richard I of England is People
+18 / 30 )  Richard the Lionheart Richard I of England richard_i
+Baybars is People
+19 / 30 )  Baibars Baybars baybars
+Tiberias is Geography
+20 / 30 )  Tiberias Tiberias tiberias
+Morocco is Geography
+21 / 30 )  Morocco Morocco morocco
+Algeria is Geography
+22 / 30 )  Algeria Algeria algeria
+Galilee is Geography
+23 / 30 )  Galilee Galilee galilee
+Napoleon is People
+24 / 30 )  Napoleon Bonaparte Napoleon napoleon
+Syria is Geography
+25 / 30 )  Syria Syria syria
+Gaza City is Geography
+26 / 30 )  Gaza Gaza City gaza_city
+Jaffa is Geography
+27 / 30 )  Jaffa Jaffa jaffa
+Muhammad Ali of Egypt is People
+28 / 30 )  Muhammad Ali Muhammad Ali of Egypt mehemet_ali
+Nazareth is Geography
+29 / 30 )  Nazareth Nazareth nazareth
+Turkey is Geography
+30 / 30 )  Turkey Turkey turkey
+extract_triplet(Haifa)
+Got GPT's response. String length : 3287
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [['Israel', 'Israel', 'israel']]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [['Mount Carmel', 'Mount Carmel', 'mount_carmel']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [['Canaanites', 'Canaan', 'canaan']]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [['Phoenicians', 'Phoenicia', 'phoenicia']]
+subject_words:  [['Phoenicians', 'Phoenicia', 'phoenicia']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [['Jordan', 'Jordan', 'jordan']]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [['Saint Peter', 'Saint Peter', 'saint_peter']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [['Mount Carmel', 'Mount Carmel', 'mount_carmel']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  []
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  []
+object_words:  [['Ficus sycomorus', 'Ficus sycomorus', 'ficus_sycomorus'], ['sumak', 'Sumac', 'sumac']]
+subject_words:  [['Eusebius of Caesarea', 'Eusebius', 'eusebius']]
+object_words:  []
+subject_words:  [['Jesus', 'Jesus', 'jesus']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [['Israel', 'Israel', 'israel']]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [['Israel', 'Israel', 'israel'], ['Tel Aviv', 'Tel Aviv', 'tel_aviv']]
+subject_words:  [['Mount Carmel', 'Mount Carmel', 'mount_carmel']]
+object_words:  []
+subject_words:  [['Elijah', 'Elijah', 'elijah']]
+object_words:  [['Mount Carmel', 'Mount Carmel', 'mount_carmel']]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [['Tiberias', 'Tiberias', 'tiberias']]
+object_words:  []
+subject_words:  [['Morocco', 'Morocco', 'morocco'], ['Algeria', 'Algeria', 'algeria']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [['Napoleon Bonaparte', 'Napoleon', 'napoleon']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [['Napoleon Bonaparte', 'Napoleon', 'napoleon']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [['Muhammad Ali', 'Muhammad Ali of Egypt', 'mehemet_ali']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [['Jaffa', 'Jaffa', 'jaffa']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [['Nazareth', 'Nazareth', 'nazareth']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [['Turkey', 'Turkey', 'turkey']]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [['Israel', 'Israel', 'israel']]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  [(None, 'Haifa', 'haifa')]
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+subject_words:  [(None, 'Haifa', 'haifa')]
+object_words:  []
+extract_info(Ladenburg) Start.
+utils/preprocess.py extract_info(): Checking good links on Ladenburg
+Baden-Württemberg is Geography
+1 / 30 )  Baden-Württemberg Baden-Württemberg baden_württemberg
+Germany is Geography
+2 / 30 )  Germany Germany germany
+Neckar is Geography
+3 / 30 )  Neckar Neckar neckar
+Heidelberg is Geography
+4 / 30 )  Heidelberg Heidelberg heidelberg
+Mannheim is Geography
+5 / 30 )  Mannheim Mannheim mannheim
+Ladenburg is Geography
+6 / 30 )  Lopodunum Ladenburg ladenburg
+Trajan is People
+7 / 30 )  Trajan Trajan trajan
+Carl Benz is People
+8 / 30 )  Carl Benz Carl Benz karl_benz
+Rhine is Geography
+9 / 30 )  Rhine Rhine rhine
+Electoral Palatinate is Geography
+10 / 30 )  Electoral Palatinate Electoral Palatinate electoral_palatinate
+Napoleon is People
+11 / 30 )  Napoléon Bonaparte Napoleon napoleon
+Weimar Republic is Geography
+12 / 30 )  Weimar Republic Weimar Republic weimar_republic
+C. Benz Söhne  is People
+13 / 30 )  C. Benz Söhne C. Benz Söhne  karl_benz
+extract_triplet(Ladenburg)
+Got GPT's response. String length : 978
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  [['Germany', 'Germany', 'germany']]
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  [['Neckar', 'Neckar', 'neckar']]
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  [['Heidelberg', 'Heidelberg', 'heidelberg']]
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  [['Mannheim', 'Mannheim', 'mannheim']]
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  [['Lopodunum', 'Ladenburg', 'ladenburg']]
+subject_words:  [['Carl Benz', 'Carl Benz', 'karl_benz']]
+object_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  []
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  [['Rhine', 'Rhine', 'rhine']]
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  []
+subject_words:  [['Napoléon Bonaparte', 'Napoleon', 'napoleon']]
+object_words:  []
+subject_words:  [(None, 'Ladenburg', 'ladenburg'), ['Lopodunum', 'Ladenburg', 'ladenburg']]
+object_words:  [['Weimar Republic', 'Weimar Republic', 'weimar_republic']]
+subject_words:  [['Carl Benz', 'Carl Benz', 'karl_benz']]
+object_words:  [['C. Benz Söhne', 'C. Benz Söhne ', 'karl_benz']]
+extract_info(Chester) Start.
+utils/preprocess.py extract_info(): Checking good links on Chester
+Cheshire is Geography
+1 / 30 )  Cheshire Cheshire cheshire
+Cheshire West and Chester is Geography
+2 / 30 )  Cheshire West and Chester Cheshire West and Chester cheshire_west_and_chester
+Warrington is Geography
+3 / 30 )  Warrington Warrington warrington
+Vespasian is People
+4 / 30 )  Emperor Vespasian Vespasian vespasian
+Ptolemy is People
+5 / 30 )  Ptolemy Ptolemy ptolemy
+York is Geography
+6 / 30 )  York York york
+Caerleon is Geography
+7 / 30 )  Caerleon Caerleon caerleon
+Irish Sea is Geography
+8 / 30 )  Irish Sea Irish Sea irish_sea
+Northumbria is Geography
+9 / 30 )  Northumbrian Northumbria northumbria
+Chester Castle is Geography
+10 / 30 )  Chester Castle Chester Castle chester_castle
+North West England is Geography
+11 / 30 )  North West England North West England north_west_england
+Canal is Geography
+12 / 30 )  canal Canal canal
+Mayfair is Geography
+13 / 30 )  Mayfair Mayfair mayfair
+Great Boughton is Geography
+14 / 30 )  Great Boughton Great Boughton great_boughton
+Upton-by-Chester is Geography
+15 / 30 )  Upton-by-Chester Upton-by-Chester upton_by_chester
+Chester  is Geography
+16 / 30 )  Chester district Chester  cestrian
+Triassic is Geography
+17 / 30 )  Triassic Triassic triassic
+Dee Estuary is Geography
+18 / 30 )  Dee Estuary Dee Estuary dee_estuary
+British Isles is Geography
+19 / 30 )  British Isles British Isles british_isles
+Pennines is Geography
+20 / 30 )  Pennines Pennines pennines
+Saltney is Geography
+21 / 30 )  Saltney Saltney saltney
+North Wales is Geography
+22 / 30 )  North Wales North Wales north_wales
+Christleton is Geography
+23 / 30 )  Christleton Christleton christleton
+Guilden Sutton is Geography
+24 / 30 )  Guilden Sutton Guilden Sutton guilden_sutton
+Mickle Trafford is Geography
+25 / 30 )  Mickle Trafford Mickle Trafford mickle_trafford
+Saughall is Geography
+26 / 30 )  Saughall Saughall saughall
+Big Ben is Geography
+27 / 30 )  Big Ben Big Ben big_ben
+Winsford is Geography
+28 / 30 )  Winsford Winsford winsford
+Henry VIII is People
+29 / 30 )  King Henry VIII Henry VIII henry_viii
+Lache FM  is Geography
+30 / 30 )  Lache FM Lache FM  cestrian
+extract_triplet(Chester)
+Got GPT's response. String length : 2605
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [['Cheshire', 'Cheshire', 'cheshire']]
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [(None, 'Chester', 'chester'), ['Cheshire', 'Cheshire', 'cheshire'], ['Cheshire West and Chester', 'Cheshire West and Chester', 'cheshire_west_and_chester']]
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [['Cheshire', 'Cheshire', 'cheshire'], ['Warrington', 'Warrington', 'warrington']]
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [['Emperor Vespasian', 'Vespasian', 'vespasian']]
+subject_words:  [['Ptolemy', 'Ptolemy', 'ptolemy']]
+object_words:  []
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  []
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Dee Estuary', 'Dee Estuary', 'dee_estuary']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [['Triassic', 'Triassic', 'triassic']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Irish Sea', 'Irish Sea', 'irish_sea']]
+object_words:  []
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [['Pennines', 'Pennines', 'pennines']]
+subject_words:  [['Northumbrian', 'Northumbria', 'northumbria']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [(None, 'Chester', 'chester'), ['Chester Castle', 'Chester Castle', 'chester_castle']]
+object_words:  []
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [['North West England', 'North West England', 'north_west_england']]
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  []
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  []
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [['Saltney', 'Saltney', 'saltney'], ['North Wales', 'North Wales', 'north_wales']]
+subject_words:  [['Christleton', 'Christleton', 'christleton']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [['Guilden Sutton', 'Guilden Sutton', 'guilden_sutton']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [['Mickle Trafford', 'Mickle Trafford', 'mickle_trafford']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [['Saughall', 'Saughall', 'saughall']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [['Winsford', 'Winsford', 'winsford']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [['King Henry VIII', 'Henry VIII', 'henry_viii']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [['Lache FM', 'Lache FM ', 'cestrian']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [['Big Ben', 'Big Ben', 'big_ben']]
+object_words:  [['Big Ben', 'Big Ben', 'big_ben']]
+subject_words:  [(None, 'Chester', 'chester')]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [['Great Boughton', 'Great Boughton', 'great_boughton']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  [(None, 'Chester', 'chester'), ['Chester Castle', 'Chester Castle', 'chester_castle']]
+object_words:  [(None, 'Chester', 'chester')]
+subject_words:  []
+object_words:  [(None, 'Chester', 'chester')]
+extract_info(Aachen) Start.
+utils/preprocess.py extract_info(): Checking good links on Aachen
+North Rhine-Westphalia is Geography
+1 / 30 )  North Rhine-Westphalia North Rhine-Westphalia north_rhine_westphalia
+High Fens is Geography
+2 / 30 )  High Fens High Fens high_fens
+Eifel is Geography
+3 / 30 )  Eifel Eifel eifel
+Wurm is Geography
+4 / 30 )  Wurm River Wurm wurm
+Mönchengladbach is Geography
+5 / 30 )  Mönchengladbach Mönchengladbach mönchengladbach
+Meuse is Geography
+6 / 30 )  Meuse Meuse meuse
+Cologne is Geography
+7 / 30 )  Cologne Cologne cologne
+Bonn is Geography
+8 / 30 )  Bonn Bonn bonn
+Belgium is Geography
+9 / 30 )  Belgium Belgium belgium
+Netherlands is Geography
+10 / 30 )  Netherlands Netherlands netherlands
+Aachen  is Geography
+11 / 30 )  district of Aachen Aachen  aix_la_chapelle
+Francia is Geography
+12 / 30 )  Frankish Empire Francia francia
+Charlemagne is People
+13 / 30 )  Charlemagne Charlemagne charlemagne
+Frederick Barbarossa is People
+14 / 30 )  Frederick Barbarossa Frederick Barbarossa frederick_barbarossa
+Frankfurt is Geography
+15 / 30 )  Frankfurt am Main Frankfurt frankfurt
+RWTH Aachen University is Geography
+16 / 30 )  RWTH Aachen University RWTH Aachen University rwth_aachen_university
+Hadrian is People
+17 / 30 )  Hadrian Hadrian hadrian
+Pepin the Short is People
+18 / 30 )  Pepin the Short Pepin the Short pepin_iii
+Flanders is Geography
+19 / 30 )  Flanders Flanders flanders
+Council of 837  is Geography
+20 / 30 )  Council of 837 Council of 837  aix_la_chapelle
+Council of 1166  is Geography
+21 / 30 )  Council of 1166 Council of 1166  aix_la_chapelle
+Bamberg Pliny Group  is Geography
+22 / 30 )  Bamberg Pliny Group Bamberg Pliny Group  aix_la_chapelle
+Napoleon is People
+23 / 30 )  Napoleonic Napoleon napoleon
+First French Empire is Geography
+24 / 30 )  First French Empire First French Empire first_french_empire
+German Confederation is Geography
+25 / 30 )  German Confederation German Confederation german_confederation
+Duisburg is Geography
+26 / 30 )  Duisburg Duisburg duisburg
+Krefeld is Geography
+27 / 30 )  Krefeld Krefeld krefeld
+Paul the Apostle is People
+28 / 30 )  St. Paul Paul the Apostle apostle_paul
+Saint Nicholas is People
+29 / 30 )  St. Nicholas Saint Nicholas saint_nicholas
+Frederick William III of Prussia is People
+30 / 30 )  Friedrich Wilhelm III Frederick William III of Prussia frederick_william_iii
+extract_triplet(Aachen)
+Got GPT's response. String length : 4095
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['High Fens', 'High Fens', 'high_fens']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Wurm River', 'Wurm', 'wurm']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Meuse', 'Meuse', 'meuse']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Belgium', 'Belgium', 'belgium']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Netherlands', 'Netherlands', 'netherlands']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [(None, 'Aachen', 'aachen'), ['district of Aachen', 'Aachen ', 'aix_la_chapelle']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Frankish Empire', 'Francia', 'francia']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Charlemagne', 'Charlemagne', 'charlemagne']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Frankish Empire', 'Francia', 'francia']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Frederick Barbarossa', 'Frederick Barbarossa', 'frederick_barbarossa']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Frankfurt am Main', 'Frankfurt', 'frankfurt']]
+subject_words:  [(None, 'Aachen', 'aachen'), ['RWTH Aachen University', 'RWTH Aachen University', 'rwth_aachen_university']]
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Hadrian', 'Hadrian', 'hadrian']]
+subject_words:  []
+object_words:  [['Charlemagne', 'Charlemagne', 'charlemagne']]
+subject_words:  [['Pepin the Short', 'Pepin the Short', 'pepin_iii']]
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  [['Charlemagne', 'Charlemagne', 'charlemagne']]
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Charlemagne', 'Charlemagne', 'charlemagne']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [['Bamberg Pliny Group', 'Bamberg Pliny Group ', 'aix_la_chapelle']]
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Netherlands', 'Netherlands', 'netherlands']]
+subject_words:  []
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['German Confederation', 'German Confederation', 'german_confederation']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  []
+object_words:  [['Friedrich Wilhelm III', 'Frederick William III of Prussia', 'frederick_william_iii']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Wurm River', 'Wurm', 'wurm']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [['Mönchengladbach', 'Mönchengladbach', 'mönchengladbach']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [(None, 'Aachen', 'aachen'), ['RWTH Aachen University', 'RWTH Aachen University', 'rwth_aachen_university']]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  [(None, 'Aachen', 'aachen')]
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+subject_words:  [(None, 'Aachen', 'aachen')]
+object_words:  []
+['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Braunschweig", "on the main rail line between", "Frankfurt and Berlin")\n']
+
+['("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Braunschweig", "is a city in", "Lower Saxony")\n', '("Braunschweig", "north of", "the Harz Mountains")\n', '("Braunschweig", "located at the farthest navigable point of", "the river Oker")\n', '("Oker", "connects Braunschweig to", "the North Sea via the rivers Aller and Weser")\n', '("Braunschweig", "was the capital city of", "the Principality of Brunswick-Wolfenbüttel")\n', '("Braunschweig", "was the capital city of", "the Duchy of Brunswick")\n', '("Braunschweig", "was the capital city of", "the Free State of Brunswick")\n', '("Braunschweig", "is the second-largest city in", "Lower Saxony")\n', '("Henry the Lion", "made Braunschweig the capital of", "his state")\n', '("Frederick I Barbarossa", "banished", "Henry the Lion")\n', '("Richard the Lionheart", "was sibling of", "Henry the Lion\'s wife Matilda")\n', '("Lessing", "poet at the court of", "Braunschweig")\n', '("Goethe\'s Faust", "was performed for the first time in", "Braunschweig")\n', '("Braunschweig", "was captured by the", "French during the Napoleonic Wars")\n', '("Braunschweig", "became part of", "the short-lived Napoleonic Kingdom of Westphalia")\n', '("Braunschweig", "was capital of the re-established", "Duchy of Brunswick")\n', '("Braunschweig", "was a constituent state of the", "German Empire")\n', '("Braunschweig", "proclaimed as", "the Socialist Republic of Brunswick")\n', '("Braunschweig", "state within the", "Weimar Republic")\n', '("Nazis", "participated in government in", "Braunschweig")\n', '("SA", "rally organized in", "Braunschweig")\n', '("Adolf Hitler", "granted German citizenship by the state of", "Braunschweig")\n', '("Stadt des KdF-Wagens", "located near", "Braunschweig")\n', '("Braunschweig", "suffered economically due to proximity to the", "Iron Curtain")\n', '("East Germany", "Braunschweig\'s ties lost to what was then", "East Germany during Cold War")\n', '("Botanischer Garten der Technischen Universität Braunschweig", "located in", "Braunschweig")\n', '("New Brunswick", "named after", "Braunschweig")\n', '("Lüneburg", "eventually ended up with", "the Hanover line")\n', '("Carl Friedrich Gauss", "pupil of the school in", "Braunschweig")\n', '("Richard Dedekind", "pupil of the school in", "Braunschweig")\n', '("white asparagus", "traditional dish of", "Braunschweig")\n', '("Dürer", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Van Dyck", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Vermeer", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Haifa", "is the third-largest city in", "Israel")\n', '("Haifa", "is part of the", "Haifa metropolitan area")\n', '("Haifa", "is home to", "Baháʼí World Centre")\n', '("Mount Carmel", "is the location of", "Haifa")\n', '("Settlement in Haifa vicinity", "established by", "Canaanites")\n', '("Haifa", "was conquered and ruled by", "Phoenicians")\n', '("Phoenicians", "conquered and ruled", "Haifa")\n', '("Haifa", "location on", "Israel\'s Mediterranean coastline")\n', '("University of Haifa and Technion", "are located in", "Haifa")\n', '("Haifa", "is home to Matam", "one of the oldest and largest high-tech parks")\n', '("Carmelit", "underground rapid transit system in", "Haifa")\n', '("Haifa Bay", "center of", "heavy industry, petroleum refining and chemical processing")\n', '("Haifa", "formerly terminus of", "oil pipeline from Iraq via Jordan")\n', '("Etymology of Haifa", "remains", "unclear")\n', '("Saint Peter", "name associated with", "Haifa by some Christians")\n', '("Mount Carmel", "covers", "Haifa")\n', '("Sycaminum", "ancient city within", "Haifa")\n', '("Tel Shikmona", "also known as", "mound of the Ficus sycomorus or sumak")\n', '("Eusebius of Caesarea", "referred to Hefa as", "Caiaphas civitas")\n', '("Jesus", "time of high priest", "Caiaphas linked to name Haifa")\n', '("Haifa", "became part of", "newly-established state of Israel")\n', '("Haifa", "features", "major seaport")\n', '("Haifa", "has", "oldest and largest high-tech parks")\n', '("Haifa", "only city with", "underground rapid system in Israel before Tel Aviv Light Rail")\n', '("Mount Carmel", "mentioned in", "Hebrew Bible")\n', '("Elijah", "traditionally linked to", "Cave on Mount Carmel")\n', '("Haifa", "site established on", "Tel Shikmona")\n', '("Tiberias", "Haifa served as port for", "during Mamluk rule")\n', '("Morocco and Algeria", "original community of Jewish immigrants in", "Haifa")\n', '("Napoleon Bonaparte", "conquered", "Haifa")\n', '("Napoleon Bonaparte", "razed", "fortifications of Haifa")\n', '("Muhammad Ali", "governed", "Haifa")\n', '("Syria, Gaza, Jaffa", "involved in", "history of Haifa")\n', '("Nazareth", "connected to", "Haifa through historical events")\n', '("Turkey", "influence on", "Haifa from historical context")\n', '("Haifa", "evolved from", "small village to major city")\n', '("Haifa", "developed significant", "tourism potential")\n', '("Haifa", "cultural hub of", "northern Israel")\n', '("Haifa", "brings", "arts and culture to region")\n', '("Haifa", "has medical facilities like", "Rambam Hospital")\n', '("Haifa", "home to", "University of Haifa and Technion")\n', '("Haifa", "provides", "public transportation with bus and Carmelit")\n', '("Haifa", "offers", "air and sea transport services")\n', '("Haifa", "hosts", "sports teams and events")\n', '("Haifa", "birthplace or home to", "notable people")\n', '("Ladenburg", "is located in", "Baden-Württemberg, Germany")\n', '("Ladenburg", "lies on the right bank of", "the Neckar river")\n', '("Ladenburg", "is northwest of", "Heidelberg")\n', '("Ladenburg", "is east of", "Mannheim")\n', '("Ladenburg", "was called", "Lopodunum in the Celtic and Roman Ages")\n', '("Carl Benz", "was a resident of", "Ladenburg")\n', '("Ladenburg", "is the setting for the Bertha Benz Memorial Route", "named after Carl\'s wife Bertha")\n', '("Ladenburg", "lies in the Rhine-Neckar Metropolitan Region", "in the Upper Rhine Plain")\n', '("Ladenburg", "belongs to the Electoral Palatinate after territory exchange", "agreed by Johann Wilhelm and Franz Ludwig von Pfalz-Neuburg")\n', '("Napoléon Bonaparte", "rearranged the political map leading Ladenburg to fall to", "Baden")\n', '("Ladenburg", "was politically significant during", "Weimar Republic")\n', '("Automobile Museum Dr. Carl Benz", "is housed in", "the factory buildings of C. Benz Söhne")\n', '("Chester", "is a cathedral city and county town of", "Cheshire")\n', '("Chester", "is the most populous settlement of", "Cheshire West and Chester")\n', '("Chester", "is the second-largest settlement in", "Cheshire after Warrington")\n', '("Chester", "was founded as a \'castrum\' or Roman fort during the reign of", "Emperor Vespasian")\n', '("Ptolemy", "identified the land of the Celtic Cornovii as the location for", "Roman fort Deva Victrix")\n', '("Chester", "has city walls that are some of the best-preserved in", "Britain")\n', '("Chester", "has a number of medieval buildings but many black-and-white buildings within the city centre are Victorian restorations from", "Black-and-white Revival movement")\n', '("The Industrial Revolution", "brought", "railways, canals, and new roads to")\n', '("Dee Estuary", "lies to the", "western side towards Chester")\n', '("Chester", "is located at the southern end of a", "Triassic sandstone ridge")\n', '("The River Dee", "is close to the Chester at the", "England-Wales border")\n', '("Irish Sea", "is connected with Chester through the", "River Dee")\n', '("Chester", "is partly bounded by the", "Pennines")\n', '("Northumbrian", "army defeated a Welsh army at the Battle of", "Chester")\n', '("Chester Castle", "was ordered to be constructed by", "William the Conqueror")\n', '("Chester", "is located in", "North West England")\n', '("Chester\'s Grosvenor Museum", "includes a collection of", "Roman tombstones")\n', '("Chester Racecourse", "is by the", "River Dee")\n', '("Chester", "urban area includes the town of", "Saltney in Flintshire, North Wales")\n', '("Christleton", "is just outside the", "Chester")\n', '("Guilden Sutton", "is just outside the", "Chester")\n', '("Mickle Trafford", "is just outside the", "Chester")\n', '("Saughall", "is just outside the", "Chester")\n', '("Winsford", "is near the", "Chester")\n', '("King Henry VIII", "established The King\'s School in", "Chester")\n', '("Lache FM", "is a radio station in", "Chester")\n', '("Big Ben", "is featured with Eastgate Clock, said to be the most photographed clock face in England after those that share the tower with", "Big Ben")\n', '("Upton-by-Chester", "is part of the civil parishes surrounding the", "Chester urban area")\n', '("Great Boughton", "is part of the civil parishes surrounding the", "Chester urban area")\n', '("Chester Castle", "is situated in the city center of", "Chester")\n', '("The River Dee", "features", "Chester Racecourse")\n', '("Aachen", "is located at the northern foothills of", "the High Fens")\n', '("Aachen", "sits on", "the Wurm River")\n', '("Aachen", "is the only larger German city in the drainage basin of", "the Meuse")\n', '("Aachen", "borders", "Belgium")\n', '("Aachen", "borders", "the Netherlands")\n', '("Aachen", "is the seat of", "the district of Aachen")\n', '("Aachen", "was Germanized by", "the Franks")\n', '("Aachen", "was the main royal residence of", "the Frankish Empire")\n', '("Aachen", "was ruled by", "Charlemagne")\n', '("Aachen", "was part of", "East Francia")\n', '("Aachen", "was granted city rights by", "Frederick Barbarossa")\n', '("Aachen", "coronation site was shifted to", "Frankfurt am Main")\n', '("RWTH Aachen University", "is located in", "Aachen")\n', '("The city", "was equipped with several thermae by", "Roman pioneers")\n', '("Aachen", "thermae were settled at", "the Aachen thermal springs")\n', '("The Roman spa resort town of", "Aquae Granni", "refers to the Celtic god of healing")\n', '("Aachen", "city\'s Roman name is", "Aquae granni")\n', '("Aachen", "was founded by Grenus under", "Hadrian")\n', '("Aquae Granni", "was referred to as", "åxhe in Walloon and Aix in French after Charlemagne")\n', '("Pepin the Short", "had a castle residence in", "Aachen")\n', '("Charlemagne", "spent most winters in", "Aachen")\n', '("Charlemagne\'s remains", "are preserved in", "the Karlsschrein")\n', '("The Jewish community in", "Aachen", "called the city Aish or Ash")\n', '("Isaac, a Jewish merchant", "accompanied ambassadors of", "Charlemagne to Harun al-Rashid")\n', '("Aachen", "was a city within", "the Holy Roman Empire")\n', '("The Bamberg Pliny Group", "produced", "manuscripts in Aachen")\n', '("Aachen", "was invaded by Spanish troops from", "the Netherlands")\n', '("Rudolf", "deposed all Protestant office holders in", "Aachen")\n', '("Aachen", "was destroyed and rebuilt mostly in", "the Baroque style")\n', '("The French", "occupied", "Aachen under General Charles Dumouriez")\n', '("Aachen", "lost its status as a free imperial city during", "the constitutional crisis")\n', '("Aachen", "became part of", "the German Confederation")\n', '("Aachen", "railway from Cologne to Belgium passed through", "Aachen")\n', '("Aachen", "was the first German city captured by", "the Western Allies")\n', '("Aachen", "was damaged by", "Allied air raids")\n', '("The Jewish community", "offered an homage to", "Friedrich Wilhelm III")\n', '("Aachen", "has developed into a technology hub", "")\n', '("Aachen", "is part of", "the Meuse–Rhine Euroregion")\n', '("Aachen", "is located in", "the middle of the Euroregion")\n', '("Aachen", "is near the head of the valley of", "the Wurm")\n', '("Aachen", "climate is", "temperate")\n', '("The oldest rocks in Aachen", "are from the", "Devonian period")\n', '("Aachen", "is traversed by numerous active faults that belong to", "the Rurgraben fault system")\n', '("Aachen", "has inhabitants who are", "foreign-born residents")\n', '("Aachen", "dialect is called", "Öcher Platt")\n', '("Aachen", "is divided into", "seven administrative districts")\n', '("Aachen", "conducts businesses which include science, engineering, and information technology", "")\n', '("Aachen", "railway station is connected to main lines to", "Cologne, Mönchengladbach and Liège")\n', '("Aachen West", "is important for", "RWTH Aachen University")\n', '("Aachen", "intends to eliminate traffic jams at", "the Aachen road interchange")\n', '("Maastricht Aachen Airport", "is the main airport for", "Aachen and Maastricht")\n', '("Aachen", "awards the Charlemagne Prize to personalities of outstanding service to", "the unification of Europe")\n', '("Aachen", "is the destination in Robert Browning\'s poem", "How They Brought the Good News from Ghent to Aix")\n', '("Aachen", "is twinned with cities including", "Halifax, Reims, Toledo, and Naumburg")\n', '("Aachen", "twinning with", "Kostroma was suspended")\n']
+range(1, 203) 3
+['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Braunschweig", "on the main rail line between", "Frankfurt and Berlin")\n']
+
+['("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Braunschweig", "is a city in", "Lower Saxony")\n', '("Braunschweig", "north of", "the Harz Mountains")\n', '("Braunschweig", "located at the farthest navigable point of", "the river Oker")\n', '("Oker", "connects Braunschweig to", "the North Sea via the rivers Aller and Weser")\n', '("Braunschweig", "was the capital city of", "the Principality of Brunswick-Wolfenbüttel")\n', '("Braunschweig", "was the capital city of", "the Duchy of Brunswick")\n', '("Braunschweig", "was the capital city of", "the Free State of Brunswick")\n', '("Braunschweig", "is the second-largest city in", "Lower Saxony")\n', '("Henry the Lion", "made Braunschweig the capital of", "his state")\n', '("Frederick I Barbarossa", "banished", "Henry the Lion")\n', '("Richard the Lionheart", "was sibling of", "Henry the Lion\'s wife Matilda")\n', '("Lessing", "poet at the court of", "Braunschweig")\n', '("Goethe\'s Faust", "was performed for the first time in", "Braunschweig")\n', '("Braunschweig", "was captured by the", "French during the Napoleonic Wars")\n', '("Braunschweig", "became part of", "the short-lived Napoleonic Kingdom of Westphalia")\n', '("Braunschweig", "was capital of the re-established", "Duchy of Brunswick")\n', '("Braunschweig", "was a constituent state of the", "German Empire")\n', '("Braunschweig", "proclaimed as", "the Socialist Republic of Brunswick")\n', '("Braunschweig", "state within the", "Weimar Republic")\n', '("Nazis", "participated in government in", "Braunschweig")\n', '("SA", "rally organized in", "Braunschweig")\n', '("Adolf Hitler", "granted German citizenship by the state of", "Braunschweig")\n', '("Stadt des KdF-Wagens", "located near", "Braunschweig")\n', '("Braunschweig", "suffered economically due to proximity to the", "Iron Curtain")\n', '("East Germany", "Braunschweig\'s ties lost to what was then", "East Germany during Cold War")\n', '("Botanischer Garten der Technischen Universität Braunschweig", "located in", "Braunschweig")\n', '("New Brunswick", "named after", "Braunschweig")\n', '("Lüneburg", "eventually ended up with", "the Hanover line")\n', '("Carl Friedrich Gauss", "pupil of the school in", "Braunschweig")\n', '("Richard Dedekind", "pupil of the school in", "Braunschweig")\n', '("white asparagus", "traditional dish of", "Braunschweig")\n', '("Dürer", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Van Dyck", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Vermeer", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Haifa", "is the third-largest city in", "Israel")\n', '("Haifa", "is part of the", "Haifa metropolitan area")\n', '("Haifa", "is home to", "Baháʼí World Centre")\n', '("Mount Carmel", "is the location of", "Haifa")\n', '("Settlement in Haifa vicinity", "established by", "Canaanites")\n', '("Haifa", "was conquered and ruled by", "Phoenicians")\n', '("Phoenicians", "conquered and ruled", "Haifa")\n', '("Haifa", "location on", "Israel\'s Mediterranean coastline")\n', '("University of Haifa and Technion", "are located in", "Haifa")\n', '("Haifa", "is home to Matam", "one of the oldest and largest high-tech parks")\n', '("Carmelit", "underground rapid transit system in", "Haifa")\n', '("Haifa Bay", "center of", "heavy industry, petroleum refining and chemical processing")\n', '("Haifa", "formerly terminus of", "oil pipeline from Iraq via Jordan")\n', '("Etymology of Haifa", "remains", "unclear")\n', '("Saint Peter", "name associated with", "Haifa by some Christians")\n', '("Mount Carmel", "covers", "Haifa")\n', '("Sycaminum", "ancient city within", "Haifa")\n', '("Tel Shikmona", "also known as", "mound of the Ficus sycomorus or sumak")\n', '("Eusebius of Caesarea", "referred to Hefa as", "Caiaphas civitas")\n', '("Jesus", "time of high priest", "Caiaphas linked to name Haifa")\n', '("Haifa", "became part of", "newly-established state of Israel")\n', '("Haifa", "features", "major seaport")\n', '("Haifa", "has", "oldest and largest high-tech parks")\n', '("Haifa", "only city with", "underground rapid system in Israel before Tel Aviv Light Rail")\n', '("Mount Carmel", "mentioned in", "Hebrew Bible")\n', '("Elijah", "traditionally linked to", "Cave on Mount Carmel")\n', '("Haifa", "site established on", "Tel Shikmona")\n', '("Tiberias", "Haifa served as port for", "during Mamluk rule")\n', '("Morocco and Algeria", "original community of Jewish immigrants in", "Haifa")\n', '("Napoleon Bonaparte", "conquered", "Haifa")\n', '("Napoleon Bonaparte", "razed", "fortifications of Haifa")\n', '("Muhammad Ali", "governed", "Haifa")\n', '("Syria, Gaza, Jaffa", "involved in", "history of Haifa")\n', '("Nazareth", "connected to", "Haifa through historical events")\n', '("Turkey", "influence on", "Haifa from historical context")\n', '("Haifa", "evolved from", "small village to major city")\n', '("Haifa", "developed significant", "tourism potential")\n', '("Haifa", "cultural hub of", "northern Israel")\n', '("Haifa", "brings", "arts and culture to region")\n', '("Haifa", "has medical facilities like", "Rambam Hospital")\n', '("Haifa", "home to", "University of Haifa and Technion")\n', '("Haifa", "provides", "public transportation with bus and Carmelit")\n', '("Haifa", "offers", "air and sea transport services")\n', '("Haifa", "hosts", "sports teams and events")\n', '("Haifa", "birthplace or home to", "notable people")\n', '("Ladenburg", "is located in", "Baden-Württemberg, Germany")\n', '("Ladenburg", "lies on the right bank of", "the Neckar river")\n', '("Ladenburg", "is northwest of", "Heidelberg")\n', '("Ladenburg", "is east of", "Mannheim")\n', '("Ladenburg", "was called", "Lopodunum in the Celtic and Roman Ages")\n', '("Carl Benz", "was a resident of", "Ladenburg")\n', '("Ladenburg", "is the setting for the Bertha Benz Memorial Route", "named after Carl\'s wife Bertha")\n', '("Ladenburg", "lies in the Rhine-Neckar Metropolitan Region", "in the Upper Rhine Plain")\n', '("Ladenburg", "belongs to the Electoral Palatinate after territory exchange", "agreed by Johann Wilhelm and Franz Ludwig von Pfalz-Neuburg")\n', '("Napoléon Bonaparte", "rearranged the political map leading Ladenburg to fall to", "Baden")\n', '("Ladenburg", "was politically significant during", "Weimar Republic")\n', '("Automobile Museum Dr. Carl Benz", "is housed in", "the factory buildings of C. Benz Söhne")\n', '("Chester", "is a cathedral city and county town of", "Cheshire")\n', '("Chester", "is the most populous settlement of", "Cheshire West and Chester")\n', '("Chester", "is the second-largest settlement in", "Cheshire after Warrington")\n', '("Chester", "was founded as a \'castrum\' or Roman fort during the reign of", "Emperor Vespasian")\n', '("Ptolemy", "identified the land of the Celtic Cornovii as the location for", "Roman fort Deva Victrix")\n', '("Chester", "has city walls that are some of the best-preserved in", "Britain")\n', '("Chester", "has a number of medieval buildings but many black-and-white buildings within the city centre are Victorian restorations from", "Black-and-white Revival movement")\n', '("The Industrial Revolution", "brought", "railways, canals, and new roads to")\n', '("Dee Estuary", "lies to the", "western side towards Chester")\n', '("Chester", "is located at the southern end of a", "Triassic sandstone ridge")\n', '("The River Dee", "is close to the Chester at the", "England-Wales border")\n', '("Irish Sea", "is connected with Chester through the", "River Dee")\n', '("Chester", "is partly bounded by the", "Pennines")\n', '("Northumbrian", "army defeated a Welsh army at the Battle of", "Chester")\n', '("Chester Castle", "was ordered to be constructed by", "William the Conqueror")\n', '("Chester", "is located in", "North West England")\n', '("Chester\'s Grosvenor Museum", "includes a collection of", "Roman tombstones")\n', '("Chester Racecourse", "is by the", "River Dee")\n', '("Chester", "urban area includes the town of", "Saltney in Flintshire, North Wales")\n', '("Christleton", "is just outside the", "Chester")\n', '("Guilden Sutton", "is just outside the", "Chester")\n', '("Mickle Trafford", "is just outside the", "Chester")\n', '("Saughall", "is just outside the", "Chester")\n', '("Winsford", "is near the", "Chester")\n', '("King Henry VIII", "established The King\'s School in", "Chester")\n', '("Lache FM", "is a radio station in", "Chester")\n', '("Big Ben", "is featured with Eastgate Clock, said to be the most photographed clock face in England after those that share the tower with", "Big Ben")\n', '("Upton-by-Chester", "is part of the civil parishes surrounding the", "Chester urban area")\n', '("Great Boughton", "is part of the civil parishes surrounding the", "Chester urban area")\n', '("Chester Castle", "is situated in the city center of", "Chester")\n', '("The River Dee", "features", "Chester Racecourse")\n', '("Aachen", "is located at the northern foothills of", "the High Fens")\n', '("Aachen", "sits on", "the Wurm River")\n', '("Aachen", "is the only larger German city in the drainage basin of", "the Meuse")\n', '("Aachen", "borders", "Belgium")\n', '("Aachen", "borders", "the Netherlands")\n', '("Aachen", "is the seat of", "the district of Aachen")\n', '("Aachen", "was Germanized by", "the Franks")\n', '("Aachen", "was the main royal residence of", "the Frankish Empire")\n', '("Aachen", "was ruled by", "Charlemagne")\n', '("Aachen", "was part of", "East Francia")\n', '("Aachen", "was granted city rights by", "Frederick Barbarossa")\n', '("Aachen", "coronation site was shifted to", "Frankfurt am Main")\n', '("RWTH Aachen University", "is located in", "Aachen")\n', '("The city", "was equipped with several thermae by", "Roman pioneers")\n', '("Aachen", "thermae were settled at", "the Aachen thermal springs")\n', '("The Roman spa resort town of", "Aquae Granni", "refers to the Celtic god of healing")\n', '("Aachen", "city\'s Roman name is", "Aquae granni")\n', '("Aachen", "was founded by Grenus under", "Hadrian")\n', '("Aquae Granni", "was referred to as", "åxhe in Walloon and Aix in French after Charlemagne")\n', '("Pepin the Short", "had a castle residence in", "Aachen")\n', '("Charlemagne", "spent most winters in", "Aachen")\n', '("Charlemagne\'s remains", "are preserved in", "the Karlsschrein")\n', '("The Jewish community in", "Aachen", "called the city Aish or Ash")\n', '("Isaac, a Jewish merchant", "accompanied ambassadors of", "Charlemagne to Harun al-Rashid")\n', '("Aachen", "was a city within", "the Holy Roman Empire")\n', '("The Bamberg Pliny Group", "produced", "manuscripts in Aachen")\n', '("Aachen", "was invaded by Spanish troops from", "the Netherlands")\n', '("Rudolf", "deposed all Protestant office holders in", "Aachen")\n', '("Aachen", "was destroyed and rebuilt mostly in", "the Baroque style")\n', '("The French", "occupied", "Aachen under General Charles Dumouriez")\n', '("Aachen", "lost its status as a free imperial city during", "the constitutional crisis")\n', '("Aachen", "became part of", "the German Confederation")\n', '("Aachen", "railway from Cologne to Belgium passed through", "Aachen")\n', '("Aachen", "was the first German city captured by", "the Western Allies")\n', '("Aachen", "was damaged by", "Allied air raids")\n', '("The Jewish community", "offered an homage to", "Friedrich Wilhelm III")\n', '("Aachen", "has developed into a technology hub", "")\n', '("Aachen", "is part of", "the Meuse–Rhine Euroregion")\n', '("Aachen", "is located in", "the middle of the Euroregion")\n', '("Aachen", "is near the head of the valley of", "the Wurm")\n', '("Aachen", "climate is", "temperate")\n', '("The oldest rocks in Aachen", "are from the", "Devonian period")\n', '("Aachen", "is traversed by numerous active faults that belong to", "the Rurgraben fault system")\n', '("Aachen", "has inhabitants who are", "foreign-born residents")\n', '("Aachen", "dialect is called", "Öcher Platt")\n', '("Aachen", "is divided into", "seven administrative districts")\n', '("Aachen", "conducts businesses which include science, engineering, and information technology", "")\n', '("Aachen", "railway station is connected to main lines to", "Cologne, Mönchengladbach and Liège")\n', '("Aachen West", "is important for", "RWTH Aachen University")\n', '("Aachen", "intends to eliminate traffic jams at", "the Aachen road interchange")\n', '("Maastricht Aachen Airport", "is the main airport for", "Aachen and Maastricht")\n', '("Aachen", "awards the Charlemagne Prize to personalities of outstanding service to", "the unification of Europe")\n', '("Aachen", "is the destination in Robert Browning\'s poem", "How They Brought the Good News from Ghent to Aix")\n', '("Aachen", "is twinned with cities including", "Halifax, Reims, Toledo, and Naumburg")\n', '("Aachen", "twinning with", "Kostroma was suspended")\n']
+range(1, 203) 3
+['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Braunschweig", "on the main rail line between", "Frankfurt and Berlin")\n']
+
+['("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "died in", "Brunswick")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Gotthold Ephraim Lessing", "attended Fürstenschule St. Afra in", "Meissen")\n', '("Gotthold Ephraim Lessing", "lived in", "Leipzig and Berlin")\n', '("Gotthold Ephraim Lessing", "worked in", "Breslau")\n', '("Gotthold Ephraim Lessing", "had association with", "Johann Friedrich Löwen")\n', '("Gotthold Ephraim Lessing", "was influenced by", "Spinoza")\n', '("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")\n', '("Mendelssohn\'s grandson", "described as", "Felix")\n', '("Gotthold Ephraim Lessing", "criticized rules of", "French Academy")\n', '("Gotthold Ephraim Lessing", "admired works of", "Shakespeare")\n', '("Gotthold Ephraim Lessing", "related to", "Horace")\n', '("Johann Daniel Müller", "attacked", "Gotthold Ephraim Lessing")\n', '("Braunschweig", "is a city in", "Lower Saxony")\n', '("Braunschweig", "north of", "the Harz Mountains")\n', '("Braunschweig", "located at the farthest navigable point of", "the river Oker")\n', '("Oker", "connects Braunschweig to", "the North Sea via the rivers Aller and Weser")\n', '("Braunschweig", "was the capital city of", "the Principality of Brunswick-Wolfenbüttel")\n', '("Braunschweig", "was the capital city of", "the Duchy of Brunswick")\n', '("Braunschweig", "was the capital city of", "the Free State of Brunswick")\n', '("Braunschweig", "is the second-largest city in", "Lower Saxony")\n', '("Henry the Lion", "made Braunschweig the capital of", "his state")\n', '("Frederick I Barbarossa", "banished", "Henry the Lion")\n', '("Richard the Lionheart", "was sibling of", "Henry the Lion\'s wife Matilda")\n', '("Lessing", "poet at the court of", "Braunschweig")\n', '("Goethe\'s Faust", "was performed for the first time in", "Braunschweig")\n', '("Braunschweig", "was captured by the", "French during the Napoleonic Wars")\n', '("Braunschweig", "became part of", "the short-lived Napoleonic Kingdom of Westphalia")\n', '("Braunschweig", "was capital of the re-established", "Duchy of Brunswick")\n', '("Braunschweig", "was a constituent state of the", "German Empire")\n', '("Braunschweig", "proclaimed as", "the Socialist Republic of Brunswick")\n', '("Braunschweig", "state within the", "Weimar Republic")\n', '("Nazis", "participated in government in", "Braunschweig")\n', '("SA", "rally organized in", "Braunschweig")\n', '("Adolf Hitler", "granted German citizenship by the state of", "Braunschweig")\n', '("Stadt des KdF-Wagens", "located near", "Braunschweig")\n', '("Braunschweig", "suffered economically due to proximity to the", "Iron Curtain")\n', '("East Germany", "Braunschweig\'s ties lost to what was then", "East Germany during Cold War")\n', '("Botanischer Garten der Technischen Universität Braunschweig", "located in", "Braunschweig")\n', '("New Brunswick", "named after", "Braunschweig")\n', '("Lüneburg", "eventually ended up with", "the Hanover line")\n', '("Carl Friedrich Gauss", "pupil of the school in", "Braunschweig")\n', '("Richard Dedekind", "pupil of the school in", "Braunschweig")\n', '("white asparagus", "traditional dish of", "Braunschweig")\n', '("Dürer", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Van Dyck", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Vermeer", "work housed at the Herzog Anton Ulrich Museum in", "Braunschweig")\n', '("Haifa", "is the third-largest city in", "Israel")\n', '("Haifa", "is part of the", "Haifa metropolitan area")\n', '("Haifa", "is home to", "Baháʼí World Centre")\n', '("Mount Carmel", "is the location of", "Haifa")\n', '("Settlement in Haifa vicinity", "established by", "Canaanites")\n', '("Haifa", "was conquered and ruled by", "Phoenicians")\n', '("Phoenicians", "conquered and ruled", "Haifa")\n', '("Haifa", "location on", "Israel\'s Mediterranean coastline")\n', '("University of Haifa and Technion", "are located in", "Haifa")\n', '("Haifa", "is home to Matam", "one of the oldest and largest high-tech parks")\n', '("Carmelit", "underground rapid transit system in", "Haifa")\n', '("Haifa Bay", "center of", "heavy industry, petroleum refining and chemical processing")\n', '("Haifa", "formerly terminus of", "oil pipeline from Iraq via Jordan")\n', '("Etymology of Haifa", "remains", "unclear")\n', '("Saint Peter", "name associated with", "Haifa by some Christians")\n', '("Mount Carmel", "covers", "Haifa")\n', '("Sycaminum", "ancient city within", "Haifa")\n', '("Tel Shikmona", "also known as", "mound of the Ficus sycomorus or sumak")\n', '("Eusebius of Caesarea", "referred to Hefa as", "Caiaphas civitas")\n', '("Jesus", "time of high priest", "Caiaphas linked to name Haifa")\n', '("Haifa", "became part of", "newly-established state of Israel")\n', '("Haifa", "features", "major seaport")\n', '("Haifa", "has", "oldest and largest high-tech parks")\n', '("Haifa", "only city with", "underground rapid system in Israel before Tel Aviv Light Rail")\n', '("Mount Carmel", "mentioned in", "Hebrew Bible")\n', '("Elijah", "traditionally linked to", "Cave on Mount Carmel")\n', '("Haifa", "site established on", "Tel Shikmona")\n', '("Tiberias", "Haifa served as port for", "during Mamluk rule")\n', '("Morocco and Algeria", "original community of Jewish immigrants in", "Haifa")\n', '("Napoleon Bonaparte", "conquered", "Haifa")\n', '("Napoleon Bonaparte", "razed", "fortifications of Haifa")\n', '("Muhammad Ali", "governed", "Haifa")\n', '("Syria, Gaza, Jaffa", "involved in", "history of Haifa")\n', '("Nazareth", "connected to", "Haifa through historical events")\n', '("Turkey", "influence on", "Haifa from historical context")\n', '("Haifa", "evolved from", "small village to major city")\n', '("Haifa", "developed significant", "tourism potential")\n', '("Haifa", "cultural hub of", "northern Israel")\n', '("Haifa", "brings", "arts and culture to region")\n', '("Haifa", "has medical facilities like", "Rambam Hospital")\n', '("Haifa", "home to", "University of Haifa and Technion")\n', '("Haifa", "provides", "public transportation with bus and Carmelit")\n', '("Haifa", "offers", "air and sea transport services")\n', '("Haifa", "hosts", "sports teams and events")\n', '("Haifa", "birthplace or home to", "notable people")\n', '("Ladenburg", "is located in", "Baden-Württemberg, Germany")\n', '("Ladenburg", "lies on the right bank of", "the Neckar river")\n', '("Ladenburg", "is northwest of", "Heidelberg")\n', '("Ladenburg", "is east of", "Mannheim")\n', '("Ladenburg", "was called", "Lopodunum in the Celtic and Roman Ages")\n', '("Carl Benz", "was a resident of", "Ladenburg")\n', '("Ladenburg", "is the setting for the Bertha Benz Memorial Route", "named after Carl\'s wife Bertha")\n', '("Ladenburg", "lies in the Rhine-Neckar Metropolitan Region", "in the Upper Rhine Plain")\n', '("Ladenburg", "belongs to the Electoral Palatinate after territory exchange", "agreed by Johann Wilhelm and Franz Ludwig von Pfalz-Neuburg")\n', '("Napoléon Bonaparte", "rearranged the political map leading Ladenburg to fall to", "Baden")\n', '("Ladenburg", "was politically significant during", "Weimar Republic")\n', '("Automobile Museum Dr. Carl Benz", "is housed in", "the factory buildings of C. Benz Söhne")\n', '("Chester", "is a cathedral city and county town of", "Cheshire")\n', '("Chester", "is the most populous settlement of", "Cheshire West and Chester")\n', '("Chester", "is the second-largest settlement in", "Cheshire after Warrington")\n', '("Chester", "was founded as a \'castrum\' or Roman fort during the reign of", "Emperor Vespasian")\n', '("Ptolemy", "identified the land of the Celtic Cornovii as the location for", "Roman fort Deva Victrix")\n', '("Chester", "has city walls that are some of the best-preserved in", "Britain")\n', '("Chester", "has a number of medieval buildings but many black-and-white buildings within the city centre are Victorian restorations from", "Black-and-white Revival movement")\n', '("The Industrial Revolution", "brought", "railways, canals, and new roads to")\n', '("Dee Estuary", "lies to the", "western side towards Chester")\n', '("Chester", "is located at the southern end of a", "Triassic sandstone ridge")\n', '("The River Dee", "is close to the Chester at the", "England-Wales border")\n', '("Irish Sea", "is connected with Chester through the", "River Dee")\n', '("Chester", "is partly bounded by the", "Pennines")\n', '("Northumbrian", "army defeated a Welsh army at the Battle of", "Chester")\n', '("Chester Castle", "was ordered to be constructed by", "William the Conqueror")\n', '("Chester", "is located in", "North West England")\n', '("Chester\'s Grosvenor Museum", "includes a collection of", "Roman tombstones")\n', '("Chester Racecourse", "is by the", "River Dee")\n', '("Chester", "urban area includes the town of", "Saltney in Flintshire, North Wales")\n', '("Christleton", "is just outside the", "Chester")\n', '("Guilden Sutton", "is just outside the", "Chester")\n', '("Mickle Trafford", "is just outside the", "Chester")\n', '("Saughall", "is just outside the", "Chester")\n', '("Winsford", "is near the", "Chester")\n', '("King Henry VIII", "established The King\'s School in", "Chester")\n', '("Lache FM", "is a radio station in", "Chester")\n', '("Big Ben", "is featured with Eastgate Clock, said to be the most photographed clock face in England after those that share the tower with", "Big Ben")\n', '("Upton-by-Chester", "is part of the civil parishes surrounding the", "Chester urban area")\n', '("Great Boughton", "is part of the civil parishes surrounding the", "Chester urban area")\n', '("Chester Castle", "is situated in the city center of", "Chester")\n', '("The River Dee", "features", "Chester Racecourse")\n', '("Aachen", "is located at the northern foothills of", "the High Fens")\n', '("Aachen", "sits on", "the Wurm River")\n', '("Aachen", "is the only larger German city in the drainage basin of", "the Meuse")\n', '("Aachen", "borders", "Belgium")\n', '("Aachen", "borders", "the Netherlands")\n', '("Aachen", "is the seat of", "the district of Aachen")\n', '("Aachen", "was Germanized by", "the Franks")\n', '("Aachen", "was the main royal residence of", "the Frankish Empire")\n', '("Aachen", "was ruled by", "Charlemagne")\n', '("Aachen", "was part of", "East Francia")\n', '("Aachen", "was granted city rights by", "Frederick Barbarossa")\n', '("Aachen", "coronation site was shifted to", "Frankfurt am Main")\n', '("RWTH Aachen University", "is located in", "Aachen")\n', '("The city", "was equipped with several thermae by", "Roman pioneers")\n', '("Aachen", "thermae were settled at", "the Aachen thermal springs")\n', '("The Roman spa resort town of", "Aquae Granni", "refers to the Celtic god of healing")\n', '("Aachen", "city\'s Roman name is", "Aquae granni")\n', '("Aachen", "was founded by Grenus under", "Hadrian")\n', '("Aquae Granni", "was referred to as", "åxhe in Walloon and Aix in French after Charlemagne")\n', '("Pepin the Short", "had a castle residence in", "Aachen")\n', '("Charlemagne", "spent most winters in", "Aachen")\n', '("Charlemagne\'s remains", "are preserved in", "the Karlsschrein")\n', '("The Jewish community in", "Aachen", "called the city Aish or Ash")\n', '("Isaac, a Jewish merchant", "accompanied ambassadors of", "Charlemagne to Harun al-Rashid")\n', '("Aachen", "was a city within", "the Holy Roman Empire")\n', '("The Bamberg Pliny Group", "produced", "manuscripts in Aachen")\n', '("Aachen", "was invaded by Spanish troops from", "the Netherlands")\n', '("Rudolf", "deposed all Protestant office holders in", "Aachen")\n', '("Aachen", "was destroyed and rebuilt mostly in", "the Baroque style")\n', '("The French", "occupied", "Aachen under General Charles Dumouriez")\n', '("Aachen", "lost its status as a free imperial city during", "the constitutional crisis")\n', '("Aachen", "became part of", "the German Confederation")\n', '("Aachen", "railway from Cologne to Belgium passed through", "Aachen")\n', '("Aachen", "was the first German city captured by", "the Western Allies")\n', '("Aachen", "was damaged by", "Allied air raids")\n', '("The Jewish community", "offered an homage to", "Friedrich Wilhelm III")\n', '("Aachen", "has developed into a technology hub", "")\n', '("Aachen", "is part of", "the Meuse–Rhine Euroregion")\n', '("Aachen", "is located in", "the middle of the Euroregion")\n', '("Aachen", "is near the head of the valley of", "the Wurm")\n', '("Aachen", "climate is", "temperate")\n', '("The oldest rocks in Aachen", "are from the", "Devonian period")\n', '("Aachen", "is traversed by numerous active faults that belong to", "the Rurgraben fault system")\n', '("Aachen", "has inhabitants who are", "foreign-born residents")\n', '("Aachen", "dialect is called", "Öcher Platt")\n', '("Aachen", "is divided into", "seven administrative districts")\n', '("Aachen", "conducts businesses which include science, engineering, and information technology", "")\n', '("Aachen", "railway station is connected to main lines to", "Cologne, Mönchengladbach and Liège")\n', '("Aachen West", "is important for", "RWTH Aachen University")\n', '("Aachen", "intends to eliminate traffic jams at", "the Aachen road interchange")\n', '("Maastricht Aachen Airport", "is the main airport for", "Aachen and Maastricht")\n', '("Aachen", "awards the Charlemagne Prize to personalities of outstanding service to", "the unification of Europe")\n', '("Aachen", "is the destination in Robert Browning\'s poem", "How They Brought the Good News from Ghent to Aix")\n', '("Aachen", "is twinned with cities including", "Halifax, Reims, Toledo, and Naumburg")\n', '("Aachen", "twinning with", "Kostroma was suspended")\n']
+range(1, 203) 3
+{'id': '2_12', 'Question': ' Which city lies on the main rail line to the capital of Germany and shares its name with the place where the individual who discovered the cattle problem attributed to Archimedes died?\n', 'Answer': 'Frankfurt', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Frankfurt'}, {'label': 'B', 'text': 'Haifa'}, {'label': 'C', 'text': 'Ladenburg'}, {'label': 'D', 'text': 'Chester'}, {'label': 'E', 'text': 'Aachen'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'frankfurt'}, {'label': 'B', 'text': 'haifa'}, {'label': 'C', 'text': 'ladenburg'}, {'label': 'D', 'text': 'chester'}, {'label': 'E', 'text': 'aachen'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who discovered the cattle problem attributed to the ancient mathematician Archimedes?\nA1: Gotthold Ephraim Lessing\n\n', '2: In what city did Gotthold Ephraim Lessing pass away, which is also known as Brunswick in English?\nA2: Braunschweig\n\n', '3: Which city lies on the main rail line alongside Braunschweig heading towards the capital of Germany?\nA3: Frankfurt'], 'Hops_wiki': [('Archimedes', 'Gotthold Ephraim Lessing'), ('Gotthold Ephraim Lessing', 'Braunschweig'), ('Braunschweig', 'Frankfurt')], 'Hops_cpnet': [('archimedes', 'gotthold_ephraim_lessing'), ('gotthold_ephraim_lessing', 'braunschweig'), ('braunschweig', 'frankfurt')], 'Triplets': ['("Gotthold Ephraim Lessing", "discovered cattle problem of", "Archimedes")', '("Gotthold Ephraim Lessing", "died in", "Brunswick")', '("Braunschweig", "on the main rail line between", "Frankfurt and Berlin")'], 'Referred_files': [{'name': 'Gotthold Ephraim Lessing', 'line': 6}, {'name': 'Gotthold Ephraim Lessing', 'line': 7}, {'name': 'Braunschweig', 'line': 27}], 'Question_triplet_answer': {100: [13, 99, 125], 50: [44, 154, 186], 25: [43, 89, 134]}}
+time passed:  8935.868509292603
+Expected dollar:  0.005
+Syria is Geography
+Jaffa is Geography
+Haifa is Geography
+Frederick Barbarossa is People
+Gotthold Ephraim Lessing is People
+Chester is Geography
+North West England is Geography
+Great Boughton is Geography
+Braunschweig is Geography
+Aachen is Geography
+Israel is Geography
+Morocco is Geography
+Algeria is Geography
+the Herzog Anton Ulrich Museum is Geography
+Baháʼí World Centre is Geography
+the Battle of" is Geography
+Iraq is Geography
+Jordan is Geography
+Turkey is Geography
+Shakespeare is People
+Fürstenschule St. Afra is People
+Ladenburg is Geography
+Baden Württemberg is Geography
+Germany is Geography
+Lower Saxony is Geography
+Tel Shikmona is Geography
+Ficus is Animal
+Guilden Sutton is Geography
+Mediterranean is Geography
+Horace is People
+the Rhine Neckar Metropolitan Region is Geography
+the Upper Rhine Plain is Geography
+University of Haifa is Geography
+Technion is Geography
+Grenus is Geography
+Hadrian is People
+Johann Daniel Müller is People
+The River Dee is Geography
+Mickle Trafford is Geography
+Frederick I Barbarossa is People
+Henry the Lion is People
+Warrington is Geography
+Christleton is Geography
+Mount Carmel is Geography
+Carl Benz is People
+Vermeer is People
+Breslau is Geography
+Chester Racecourse is Geography
+the High Fens is Geography
+Cologne, Mönchengladbach and Liège is Geography
+Mannheim is Geography
+King Henry VIII is People
+Neckar is Geography
+the Wurm River is Geography
+C. Benz Söhne is People
+Chester Castle is Geography
+William the Conqueror is People
+Richard the Lionheart is People
+Henry the Lion's is People
+Charlemagne is People
+Karlsschrein is Geography
+Belgium is Geography
+Rambam Hospital is Geography
+Frankfurt is Geography
+German Empire is Geography
+Adolf Hitler is People
+Carl Friedrich Gauss is People
+Berlin is Geography
+Napoléon Bonaparte is People
+Maastricht Aachen Airport is Geography
+Maastricht is Geography
+Eastgate Clock is Geography
+England is Geography
+the German Confederation is Geography
+Rurgraben is Geography
+Mendelssohn is People
+Muhammad Ali is People
+Jesus is People
+the North Sea is Geography
+Weser is Geography
+Lache FM is Geography
+Botanischer Garten is Geography
+Cheshire West is Geography
+Meuse is Geography
+Reims is Geography
+Naumburg is Geography
+the Electoral Palatinate is Geography
+Johann Wilhelm is People
+Franz Ludwig is People
+Napoleon Bonaparte is People
+Haifa Bay is Geography
+French Academy is Geography
+Johann Friedrich Löwen is People
+entities:  {'Battle', 'Rhine', 'Warrington', 'Wurm', 'of"', 'Muhammad', 'Academy', 'Ladenburg', 'Toledo', 'Braunschweig', 'Rambam', 'Meuse', 'Brunswick', 'River', 'Mickle', 'England', 'Liège', 'Gauss', 'Söhne', 'Sea', 'Weser', 'German', 'Centre', 'World', 'West', 'Museum', 'Benz', 'Garten', 'Bay', 'Britain', 'Bertha', 'Reims', 'Racecourse', 'Technion', 'Empire', 'Naumburg', 'Electoral', 'von', 'Gotthold', 'Ludwig', 'Mediterranean', 'Weimar', 'Carmel', 'C.', 'Cologne,', 'Germany', 'Conqueror', 'Turkey', 'Heidelberg', 'Mendelssohn', 'Morocco', 'Baden', 'Frankfurt', 'Trafford', 'Vermeer', 'white', 'Lion', 'Upper', 'Charlemagne', 'Löwen', 'Carl', 'Hitler', 'Gaza', 'Palatinate', 'Richard', 'Bonaparte', 'Mount', 'Guilden', 'St.', 'Region', 'Lower', 'Saxony', 'Israel', 'Lessing', 'Jordan', 'Syria', 'Boughton', 'University', 'Neckar', 'Europe', 'Friedrich', 'Dee', 'Frederick', 'Sutton', 'Franz', 'Shakespeare', 'King', 'Berlin', 'Mönchengladbach', 'Rudolf', 'Great', 'Ulrich', 'Ephraim', "Lion's", 'FM', 'Baháʼí', 'Archimedes', 'Jaffa', 'Lionheart', 'Ben', 'Napoleon', 'Algeria', 'Christleton', 'Henry', 'Ficus', 'Horace', 'Airport', 'Cheshire', 'Anton', 'Fens', 'Karlsschrein', 'Belgium', 'Maastricht', 'Grenus', 'Müller', 'Tel', 'Lache', 'Chester', 'Halifax', 'High', 'Wilhelm', 'Clock', 'Württemberg', 'French', 'Fürstenschule', 'Afra', 'VIII', 'Confederation', 'Herzog', 'Mannheim', 'Adolf', 'Haifa', 'Eastgate', 'North', 'Metropolitan', 'Napoléon', 'William', 'Barbarossa', 'Daniel', 'Iraq', 'Matilda', 'Hospital', 'Castle', 'Plain', 'Johann', 'Shikmona', 'Rurgraben', 'Jesus', 'Aachen', 'Pfalz', 'Breslau', 'Botanischer', 'Hadrian', 'Ali'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Archimedes' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Archimedes
+Archimedes
+
+gpt_entity_particular(): entity list: 
+ ['Archimedes']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Chester' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Chester
+North West England
+Chester urban area
+Black-and-white Revival movement
+Battle of Chester
+River Dee
+England-Wales border
+Chester Racecourse
+Gotthold Ephraim Lessing
+Archimedes
+Black-and-white Revival movement
+Haifa
+Baháʼí World Centre
+northern Israel
+oil pipeline from Iraq via Jordan
+history of Haifa
+syria, Gaza, Jaffa
+Jewish immigrants
+original community of Jewish immigrants
+sports teams and events
+Matam
+one of the oldest and largest high-tech parks
+medical facilities like Rambam Hospital
+site established on Tel Shikmona
+birthplace or home to notable people
+Rambam Hospital
+Tel Shikmona
+mound of the Ficus sycomorus or sumak
+Mount Carmel
+cultural hub of northern Israel
+location on Israel's Mediterranean coastline
+CSSA
+
+Meissen
+Walloon
+Baden-Württemberg, Germany
+Germany
+the river Oker
+the river Aller
+the river Weser
+the North Sea
+France
+French
+Breslau
+Frankfurt am Main
+the High Fens
+Cologne, Mönchengladbach and Liège
+Halifax, Reims, Toledo, and Naumburg
+the Euroregion
+the Roman Empire
+the Middle Ages
+the Duchy of Brunswick-Wolfenbüttel
+the German Empire
+the Charlemagne Prize
+the drainage basin of the Meuse
+the German Confederation
+the Franks
+The King's School
+Cheshire
+Cheshire West and Chester
+Guilden Sutton
+Mickle Trafford
+Lache FM
+Big Ben
+Émile Zola
+Source: Chester
+Henry the Lion
+German Confederation
+```
+redirectToRoute:
+- Text (copy list and mention "Complete List")
+- Action (Ocean Redirect)
+```
+
+gpt_entity_particular(): entity list: 
+ ['the river Aller', 'Chester Racecourse', 'Germany', 'France', 'the river Oker', 'one of the oldest and largest high-tech parks', 'cultural hub of northern Israel', 'England-Wales border', 'Guilden Sutton', 'the river Weser', 'the German Empire', 'the drainage basin of the Meuse', 'Mickle Trafford', 'Haifa', 'history of Haifa', 'Rambam Hospital', 'Frankfurt am Main', 'Big Ben', 'Black-and-white Revival movement', 'Archimedes', 'Battle of Chester', 'sports teams and events', 'CSSA', 'the Euroregion', 'the Charlemagne Prize', 'the Middle Ages', 'Source: Chester', "The King's School", 'Henry the Lion', 'redirectToRoute:', '- Action (Ocean Redirect)', 'Halifax, Reims, Toledo, and Naumburg', 'Baháʼí World Centre', '- Text (copy list and mention "Complete List")', 'Jewish immigrants', 'Meissen', 'northern Israel', 'the German Confederation', 'the Roman Empire', 'site established on Tel Shikmona', 'the Duchy of Brunswick-Wolfenbüttel', 'Cheshire', 'medical facilities like Rambam Hospital', '```', "location on Israel's Mediterranean coastline", 'North West England', 'Mount Carmel', 'Baden-Württemberg, Germany', 'Cheshire West and Chester', 'Walloon', 'River Dee', 'Chester', 'Gotthold Ephraim Lessing', 'the North Sea', 'Cologne, Mönchengladbach and Liège', 'birthplace or home to notable people', 'Émile Zola', 'Tel Shikmona', 'Breslau', 'Chester urban area', 'oil pipeline from Iraq via Jordan', 'original community of Jewish immigrants', 'French', 'the High Fens', 'the Franks', 'Lache FM', 'Matam', 'syria, Gaza, Jaffa', 'German Confederation', 'mound of the Ficus sycomorus or sumak']
+
+gpt_entity_particular(): filtered entity: 
+ ['Cheshire', 'Cheshire West and Chester']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gotthold Ephraim Lessing' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Haifa
+Braunschweig
+Meissen
+Spinoza
+Shakespeare
+Cattle problem of Archimedes
+Horace
+University of Haifa and Technion
+Rambam Hospital
+Matam
+Baháʼí World Centre
+Rudolf
+Charlemagne
+Aquae Granni
+Canaanites
+Phoenicians
+Devonian period
+Archimedes
+Aachen
+Berlin
+Napoleonic Wars
+French Academy
+Johann Friedrich Löwen
+Johann Daniel Müller
+Breslau
+Brunswick
+Karlsschrein
+Hadrian
+Frankfurt am Main
+Allied air raids
+German Confederation
+German Empire
+Weimar Republic
+King's School
+Cheshire
+Heidelberg
+Mannheim
+Ladenburg
+Baden-Württemberg, Germany
+Germany
+Frederick Barbarossa
+North West England
+river Oker
+Lower Saxony
+the Duchy of Brunswick
+Germany
+the German Confederation
+the Euroregion
+the unification of Europe
+the Rurgraben fault system
+the Meuse- Rhine Euroregion
+Cheshire West and Chester
+the Meuse
+the Rayon
+Pfalz-Neuburg
+Rudolf
+the Wurm
+the Meuse
+Germany
+Aquae granni
+Öcher Platt
+Meuse
+the Roman Empire
+Cologne, Mönchengladbach and Liège
+Napoleon Bonaparte
+
+gpt_entity_particular(): entity list: 
+ ['Shakespeare', 'Phoenicians', 'Cattle problem of Archimedes', 'Germany', 'Berlin', "King's School", 'Mannheim', 'Heidelberg', 'Ladenburg', 'Pfalz-Neuburg', 'Braunschweig', 'Brunswick', 'French Academy', 'Weimar Republic', 'Rudolf', 'the Rayon', 'Aquae granni', 'the Meuse- Rhine Euroregion', 'Meuse', 'Haifa', 'Rambam Hospital', 'Frankfurt am Main', 'Lower Saxony', 'Archimedes', 'the Euroregion', 'Charlemagne', 'the Meuse', 'Spinoza', 'Allied air raids', 'the Rurgraben fault system', 'Baháʼí World Centre', 'Napoleonic Wars', 'Frederick Barbarossa', 'Johann Daniel Müller', 'Meissen', 'river Oker', 'Öcher Platt', 'the German Confederation', 'Horace', 'the Roman Empire', 'the Duchy of Brunswick', 'Cheshire', 'Aquae Granni', 'North West England', 'Karlsschrein', 'Johann Friedrich Löwen', 'Baden-Württemberg, Germany', 'Cheshire West and Chester', 'University of Haifa and Technion', 'German Empire', 'the Wurm', 'Cologne, Mönchengladbach and Liège', 'Napoleon Bonaparte', 'Aachen', 'Breslau', 'Canaanites', 'Devonian period', 'Matam', 'German Confederation', 'the unification of Europe', 'Hadrian']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Aachen' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Aachen
+Haifa
+seaport
+city
+Frederick Barbarossa
+districts
+Wurm River
+Cologne
+Mönchengladbach
+Liège
+coronation site
+Allied air raids
+German Confederation
+Meuse–Rhine Euroregion
+technology hub
+climate
+Öcher Platt
+Halifax
+Reims
+Toledo
+Naumburg
+foreign-born residents
+Aquae granni
+Hadrian
+railway station
+town
+be
+technology
+Phoenicians
+birthplace
+Heavy industry
+Roman tombstones
+River Dee
+England-Wales border
+Egypt
+sports teams
+events
+Meuse
+Grenus
+Roman
+Aquae Granni
+baroque style
+Charlemagne Prize
+Science
+Engineering
+Information Technology
+The University of Haifa
+Rambam Hospital
+Baháʼí World Centre
+Tel Shikmona
+Matam
+Ladenburg
+Benz
+Gauss
+Braunschweig
+Breslau
+Heidelberg
+Oker
+Aller
+Weser
+Mannheim
+
+gpt_entity_particular(): entity list: 
+ ['railway station', 'Phoenicians', 'Information Technology', 'technology', 'Roman tombstones', 'Mönchengladbach', 'Science', 'Toledo', 'Ladenburg', 'Heidelberg', 'Mannheim', 'Braunschweig', 'Aquae granni', 'Meuse', 'England-Wales border', 'districts', 'Liège', 'Haifa', 'be', 'sports teams', 'Rambam Hospital', 'Gauss', 'Weser', 'Heavy industry', 'climate', 'seaport', 'Benz', 'Allied air raids', 'city', 'Charlemagne Prize', 'birthplace', 'Roman', 'Baháʼí World Centre', 'Frederick Barbarossa', 'The University of Haifa', 'events', 'Öcher Platt', 'Oker', 'baroque style', 'Reims', 'Aquae Granni', 'Wurm River', 'River Dee', 'Grenus', 'Naumburg', 'Halifax', 'Cologne', 'Egypt', 'Engineering', 'Aachen', 'Meuse–Rhine Euroregion', 'Tel Shikmona', 'Breslau', 'technology hub', 'coronation site', 'foreign-born residents', 'Aller', 'Matam', 'German Confederation', 'town', 'Hadrian']
+
+gpt_entity_particular(): filtered entity: 
+ ['town']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Ladenburg' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Ladenburg
+Baden-Württemberg
+Germany
+Carl Benz
+Electoral Palatinate
+Johann Wilhelm
+Franz Ludwig von Pfalz-Neuburg
+Heidelberg
+
+gpt_entity_particular(): entity list: 
+ ['Germany', 'Johann Wilhelm', 'Ladenburg', 'Carl Benz', 'Franz Ludwig von Pfalz-Neuburg', 'Heidelberg', 'Baden-Württemberg', 'Electoral Palatinate']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Braunschweig' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Haifa
+Maastricht Aachen Airport
+Aquae Granni
+Carmelit
+Oker
+Lache FM
+Botanischer Garten der Technischen Universität Braunschweig
+Tel Shikmona
+RWTH Aachen University
+Haifa
+Chester Racecourse
+King Henry VIII
+The Jewish community in Aachen
+SA
+Johann Daniel Müller
+Rambam Hospital
+Big Ben
+GENERICS
+Mickle Trafford
+Chester's Grosvenor Museum
+Jesus
+White Asparagus
+Christleton
+Napoléon Bonaparte
+Rudolf
+Etymology of Haifa
+Richard the Lionheart
+Frederick Barbarossa
+Great Boughton
+Northumbrian
+William the Conqueror
+University of Haifa and Technion
+Henry the Lion
+Guilden Sutton
+Herzog Anton Ulrich Museum
+Baden-Württemberg
+Frederick I Barbarossa
+Mount Carmel
+Karlsschrein
+England-Wales border
+Baháʼí World Centre
+Van Dyck
+River Dee
+Heidelberg
+Christleton
+Lessing
+Zeyretan
+Neckar river
+Winsford
+North West England
+Breslau
+Frankfurt am Main
+Meissen
+Rhein-Neckar Metropolitan Region
+Walloon
+Ficus sycomorus or sumak
+Aix
+Morocco and Algeria
+Ladenburg
+Braunschweig
+Cologne
+Mönchengladbach
+Liège
+Emperor Frederick II Hohenstaufen
+Meuse
+Halifax
+Reims
+Toledo
+Naumburg
+Werl
+Royal Air Force
+Devonshire Regiment
+Middle East
+North Africa
+War Office
+British Mandate of Palestine
+Nablus
+Jordan
+Lebanon
+Egypt
+HMS Jericho
+Cheshire West and Chester OC
+Ruhan
+Israel Railways
+Midrasha at Haifa
+Felix
+Morocco
+Syria
+Tu Bishvat
+Kangar
+Pomona College
+Caiaphas
+Lionstar
+Kesur
+The Berlin Phenomenon
+North Africa
+Adolf Hitler
+
+gpt_entity_particular(): entity list: 
+ ['Ruhan', 'Ladenburg', 'Toledo', 'Braunschweig', 'Meuse', 'England-Wales border', 'Mickle Trafford', 'Liège', 'Devonshire Regiment', 'Rambam Hospital', 'Big Ben', 'King Henry VIII', 'Henry the Lion', 'Royal Air Force', 'Baden-Württemberg', 'Frederick Barbarossa', 'Johann Daniel Müller', 'The Berlin Phenomenon', 'SA', 'William the Conqueror', 'War Office', 'Reims', 'RWTH Aachen University', 'Walloon', 'Emperor Frederick II Hohenstaufen', 'Middle East', 'Naumburg', 'HMS Jericho', 'Neckar river', 'Tu Bishvat', 'Chester Racecourse', 'Heidelberg', 'Pomona College', 'Morocco', 'Guilden Sutton', 'Van Dyck', 'Frankfurt am Main', 'Napoléon Bonaparte', 'Ficus sycomorus or sumak', 'Cheshire West and Chester OC', 'Great Boughton', 'Lebanon', 'Frederick I Barbarossa', 'Kesur', 'Richard the Lionheart', 'Herzog Anton Ulrich Museum', 'North West England', 'GENERICS', 'University of Haifa and Technion', 'Lessing', 'Jordan', 'Syria', 'Adolf Hitler', 'Caiaphas', 'Felix', 'Botanischer Garten der Technischen Universität Braunschweig', 'White Asparagus', 'Mönchengladbach', 'Maastricht Aachen Airport', 'Zeyretan', 'Rudolf', 'Etymology of Haifa', 'Werl', 'Lionstar', 'Christleton', 'Oker', 'Rhein-Neckar Metropolitan Region', 'Karlsschrein', 'British Mandate of Palestine', 'Kangar', 'Halifax', 'Cologne', 'The Jewish community in Aachen', 'Egypt', 'Morocco and Algeria', 'Nablus', "Chester's Grosvenor Museum", 'Aix', 'Haifa', 'Midrasha at Haifa', 'Winsford', 'Baháʼí World Centre', 'Meissen', 'Northumbrian', 'North Africa', 'Israel Railways', 'Carmelit', 'Aquae Granni', 'Mount Carmel', 'River Dee', 'Jesus', 'Tel Shikmona', 'Breslau', 'Lache FM']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Frankfurt' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Aachen
+Haifa
+Jaffa
+Baroque style
+Haifa
+Morocco
+Algeria
+Haifa
+Haifa
+Braunschweig
+Braunschweig
+Shakespeare
+Walloon
+France
+Haifa
+Van Dyck
+Haifa
+Braunschweig
+Tel Shikmona
+Tel Shikmona
+Braunschweig
+Haifa
+Braunschweig
+Haifa
+Charlemagne
+Ladenburg
+University of Haifa
+Technion
+Braunschweig
+Cologne
+Palestine
+Haifa
+Haifa
+Haifa
+Haifa
+Mannheim
+Braunschweig
+Palestine
+Israel
+Haifa
+Christ
+Haifa
+Braunschweig
+Braunschweig
+Chester
+Haifa
+Birmingham
+Wales
+Chester
+Haifa
+Haifa
+Chester
+Chester
+Haifa
+Braunschweig
+Chester
+Haifa
+Braunschweig
+Haifa
+Chester
+Braunschweig
+Haifa
+Aachen
+Haifa
+Haifa
+Braunschweig
+Haifa
+Haifa
+Braunschweig
+Haifa
+Haifa
+Braunschweig
+Haifa
+Braunschweig
+Haifa
+Haifa
+Lancaster
+Chester
+Braunschweig
+Haifa
+Haifa
+Haifa
+Haifa
+Chester
+Scotland
+Haifa
+Aachen
+Braunschweig
+Braunschweig
+Braunschweig
+Ladenburg
+Haifa
+Braunschweig
+Braunschweig
+Haifa
+Braunschweig
+Haifa
+Braunschweig
+Haifa
+Braunschweig
+Haifa
+Aachen
+Aachen
+Haifa
+Braunschweig
+Braunschweig
+Braunschweig
+Haifa
+Haifa
+Germany
+Braunschweig
+Chester
+Haifa
+Haifa
+Ladenburg
+Braunschweig
+Braunschweig
+Braunschweig
+Braunschweig
+Haifa
+Haifa
+Braunschweig
+Chester
+Aachen
+Aachen
+Haifa
+Haifa
+Germany
+Braunschweig
+Haifa
+Haifa
+Haifa
+Haifa
+Haifa
+Ladenburg
+Braunschweig
+Braunschweig
+Haifa
+Braunschweig
+Chester
+Haifa
+Braunschweig
+Braunschweig
+Braunschweig
+Haifa
+Haifa
+Haifa
+Chester
+Haifa
+Braunschweig
+Haifa
+France
+Haifa
+Braunschweig
+Ladenburg
+Braunschweig
+Haifa
+Braunschweig
+Haifa
+Haifa
+Braunschweig
+Haifa
+Haifa
+Haifa
+Braunschweig
+Haifa
+Haifa
+Chester
+Haifa
+Braunschweig
+Haifa
+Haifa
+Braunschweig
+Haifa
+Haifa
+Braunschweig
+Ladenburg
+Haifa
+Braunschweig
+Haifa
+Haifa
+Rhineland
+Germany
+Braunschweig
+Chester
+Haifa
+Haifa
+Braunschweig
+Haifa
+Haifa
+Chester
+Haifa
+Braunschweig
+Haifa
+Braunschweig
+Haifa
+Haifa
+Mannheim
+Haifa
+Germany
+Haifa
+Haifa
+Haifa
+Braunschweig
+Haifa
+Haifa
+Mannheim
+Haifa
+Chester
+Haifa
+Ladenburg
+Haifa
+Haifa
+France
+Haifa
+Haifa
+Haifa
+Haifa
+Braunschweig
+Braunschweig
+Ladenburg
+Ladenburg
+Haifa
+Haifa
+Haifa
+Haifa
+Haifa
+Haifa
+Ladenburg
+Ladenburg
+Haifa
+Haifa
+Haifa
+Haifa
+Ladenburg
+Chester
+Haifa
+Braunschweig
+Braunschweig
+Braunschweig
+Haifa
+Haifa
+Haifa
+Chester
+Haifa
+Ladenburg
+Haifa
+Braunschweig
+Ladenburg
+Haifa
+Braunschweig
+Haifa
+Ladenburg
+Braunschweig
+Haifa
+Chester
+Birmingham
+
+gpt_entity_particular(): entity list: 
+ ['Birmingham', 'Shakespeare', 'Rhineland', 'Germany', 'France', 'Ladenburg', 'Mannheim', 'Braunschweig', 'Morocco', 'University of Haifa', 'Scotland', 'Lancaster', 'Haifa', 'Van Dyck', 'Jaffa', 'Charlemagne', 'Algeria', 'Christ', 'Wales', 'Technion', 'Walloon', 'Israel', 'Chester', 'Cologne', 'Aachen', 'Palestine', 'Tel Shikmona', 'Baroque style']
+
+gpt_entity_particular(): filtered entity: 
+ ['Germany']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Haifa' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Haifa
+major seaport
+cultural hub of northern Israel
+tourism potential
+Baháʼí World Centre
+oil pipeline from Iraq via Jordan
+sports teams and events
+arts and culture to region
+medical facilities like Rambam Hospital
+site established on Tel Shikmona
+birthplace or home to notable people
+location on Israel's Mediterranean coastline
+Rambam Hospital
+developed significant tourism potential
+one of the oldest and largest high-tech parks
+
+gpt_entity_particular(): entity list: 
+ ['Rambam Hospital', 'sports teams and events', 'site established on Tel Shikmona', 'birthplace or home to notable people', 'developed significant tourism potential', 'medical facilities like Rambam Hospital', 'major seaport', 'cultural hub of northern Israel', 'oil pipeline from Iraq via Jordan', 'one of the oldest and largest high-tech parks', 'arts and culture to region', "location on Israel's Mediterranean coastline", 'tourism potential', 'Baháʼí World Centre', 'Haifa']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Battle', 'Rhine', 'Warrington', 'Wurm', 'of"', 'Muhammad', 'Academy', 'Ladenburg', 'Toledo', 'Braunschweig', 'Rambam', 'Meuse', 'Brunswick', 'River', 'Mickle', 'England', 'Liège', 'Gauss', 'Söhne', 'Sea', 'Weser', 'German', 'Centre', 'World', 'West', 'Museum', 'Benz', 'Garten', 'Bay', 'Britain', 'Bertha', 'Reims', 'Racecourse', 'Technion', 'Empire', 'Naumburg', 'Electoral', 'von', 'Gotthold', 'Ludwig', 'Mediterranean', 'Weimar', 'Carmel', 'C.', 'Cologne,', 'Germany', 'Conqueror', 'Turkey', 'Heidelberg', 'Mendelssohn', 'Morocco', 'Baden', 'Frankfurt', 'Trafford', 'Vermeer', 'white', 'Lion', 'Upper', 'Charlemagne', 'Löwen', 'Carl', 'Hitler', 'Gaza', 'Palatinate', 'Richard', 'Bonaparte', 'Mount', 'Guilden', 'St.', 'Region', 'Lower', 'Saxony', 'Cheshire West and Chester', 'Israel', 'Lessing', 'Jordan', 'Syria', 'Boughton', 'University', 'Neckar', 'Europe', 'Friedrich', 'Dee', 'Frederick', 'Sutton', 'Franz', 'Shakespeare', 'King', 'Berlin', 'Mönchengladbach', 'Rudolf', 'Great', 'Ulrich', 'Ephraim', "Lion's", 'FM', 'Baháʼí', 'Archimedes', 'Jaffa', 'Lionheart', 'Ben', 'Napoleon', 'Algeria', 'Christleton', 'Henry', 'Ficus', 'Horace', 'Airport', 'Cheshire', 'Anton', 'Fens', 'Karlsschrein', 'Belgium', 'Maastricht', 'Grenus', 'Müller', 'Tel', 'Lache', 'Chester', 'Halifax', 'High', 'Wilhelm', 'Clock', 'Württemberg', 'French', 'Fürstenschule', 'Afra', 'VIII', 'Confederation', 'Herzog', 'Mannheim', 'Adolf', 'Haifa', 'Eastgate', 'North', 'Metropolitan', 'Napoléon', 'William', 'Barbarossa', 'Daniel', 'Iraq', 'Matilda', 'Hospital', 'Castle', 'Plain', 'Johann', 'Shikmona', 'Rurgraben', 'Jesus', 'Aachen', 'Pfalz', 'Breslau', 'Botanischer', 'Hadrian', 'town', 'Ali'}
+Total time:  379.380334854126
+Entity conversion done on 2_12 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_2_12_entity_conversion_hash.json. Check the entity.
+ Which city lies on the main rail line to the capital of 04B and shares its name with the place where the individual who discovered the cattle problem attributed to 079 died?
+
+
+
+Done. Check final_query/id_2_12_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_2_12_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_2_12_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_2_12_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_2_12_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_2_12_final_result_ratio25_unmasked.txt

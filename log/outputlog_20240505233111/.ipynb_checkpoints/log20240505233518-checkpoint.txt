@@ -1,0 +1,14 @@
+Got argument: Immanuel Kant, 6, 6_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop1:  {'triplet': '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")', 'start word': 'Kaliningrad', 'end word': 'Germany', 'source': {'name': 'Kaliningrad', 'line': 22}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'germany'}}
+
+utils/question.py extract_hops(Germany, [], ['Immanuel Kant', 'Kaliningrad']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Germany_info.json file
+extract_info(Germany) Start.
+utils/preprocess.py extract_info(): Checking good links on Germany

@@ -1,0 +1,1734 @@
+Got argument: Turtle, 6, 6_2
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', 'start word': 'Turtle', 'end word': 'Cretaceous', 'source': {'name': 'Turtle', 'line': 41}, 'cpnet': {'start word': 'turtle', 'end word': 'cretaceous'}}
+
+utils/question.py extract_hops(Cretaceous, [], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cretaceous_info.json file
+second_hop1:  {'triplet': '("Cretaceous", "followed the", "Paleozoic Era")', 'start word': 'Cretaceous', 'end word': 'Paleozoic', 'source': {'name': 'Cretaceous', 'line': 12}, 'cpnet': {'start word': 'cretaceous', 'end word': 'paleozoic'}}
+
+utils/question.py extract_hops(Paleozoic, [], ['Turtle', 'Cretaceous']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Paleozoic_info.json file
+extract_info(Paleozoic) Start.
+utils/preprocess.py extract_info(): Checking good links on Paleozoic
+Phanerozoic is Geography
+1 / 30 )  Phanerozoic Phanerozoic phanerozoic
+Neoproterozoic is Geography
+2 / 30 )  Neoproterozoic Neoproterozoic neoproterozoic
+Mesozoic is Geography
+3 / 30 )  Mesozoic Mesozoic mesozoic
+Arthropod is Animal
+4 / 30 )  Arthropods Arthropod arthropod
+Mollusca is Animal
+5 / 30 )  molluscs Mollusca mollusca
+Fish is Animal
+6 / 30 )  fish Fish fish
+Amphibian is Animal
+7 / 30 )  amphibians Amphibian amphibian
+Reptile is Animal
+8 / 30 )  reptiles Reptile reptile
+Synapsida is Animal
+9 / 30 )  synapsids Synapsida synapsida
+North America is Geography
+10 / 30 )  North America North America north_america
+Ediacaran is Geography
+11 / 30 )  Ediacaran Ediacaran ediacaran
+Trilobite is Animal
+12 / 30 )  trilobite Trilobite trilobite
+Conodont is Animal
+13 / 30 )  conodont Conodont conodont
+Dicynodon is Animal
+14 / 30 )  Dicynodon Dicynodon dicynodontidae
+Tetrapod is Animal
+15 / 30 )  tetrapods Tetrapod tetrapod
+Meishan is Geography
+16 / 30 )  Meishan Meishan meishan
+Australia is Geography
+17 / 30 )  Australia Australia australia
+Ural Mountains is Geography
+18 / 30 )  Ural Mountains Ural Mountains ural_mountains
+Tasmania is Geography
+19 / 30 )  Tasmania Tasmania tasmania
+Algae is Animal
+20 / 30 )  algae Algae algae
+Eurypterid is Animal
+21 / 30 )  sea scorpions Eurypterid eurypterid
+Vascular plant is Animal
+22 / 30 )  vascular plants Vascular plant vascular_plant
+Dunkleosteus is Animal
+23 / 30 )  Dunkleosteus Dunkleosteus dunkleosteus
+Amniote is Animal
+24 / 30 )  amniotic eggs Amniote amniote
+Diapsid is Animal
+25 / 30 )  Diapsids Diapsid diapsid
+Dimetrodon is Animal
+26 / 30 )  Dimetrodon Dimetrodon dimetrodon
+Edaphosaurus is Animal
+27 / 30 )  Edaphosaurus Edaphosaurus edaphosaurus
+Gorgonopsia is Animal
+28 / 30 )  Gorgonopsids Gorgonopsia gorgonopsia
+South Pole is Geography
+29 / 30 )  South Pole South Pole south_pole
+Hirnantian is Geography
+30 / 30 )  Hirnantian Hirnantian hirnantian
+extract_triplet(Paleozoic)
+Got GPT's response. String length : 2234
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  [['Phanerozoic', 'Phanerozoic', 'phanerozoic']]
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  [['Neoproterozoic', 'Neoproterozoic', 'neoproterozoic']]
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  [['Mesozoic', 'Mesozoic', 'mesozoic']]
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  []
+subject_words:  [['Arthropods', 'Arthropod', 'arthropod']]
+object_words:  [(None, 'Paleozoic', 'paleozoic')]
+subject_words:  [['molluscs', 'Mollusca', 'mollusca']]
+object_words:  [(None, 'Paleozoic', 'paleozoic')]
+subject_words:  [['fish', 'Fish', 'fish']]
+object_words:  [(None, 'Paleozoic', 'paleozoic')]
+subject_words:  [['amphibians', 'Amphibian', 'amphibian']]
+object_words:  [(None, 'Paleozoic', 'paleozoic')]
+subject_words:  [['reptiles', 'Reptile', 'reptile']]
+object_words:  [(None, 'Paleozoic', 'paleozoic')]
+subject_words:  [['synapsids', 'Synapsida', 'synapsida']]
+object_words:  [(None, 'Paleozoic', 'paleozoic')]
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  []
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  [['Phanerozoic', 'Phanerozoic', 'phanerozoic']]
+subject_words:  [(None, 'Paleozoic', 'paleozoic'), ['Neoproterozoic', 'Neoproterozoic', 'neoproterozoic']]
+object_words:  [['Ediacaran', 'Ediacaran', 'ediacaran']]
+subject_words:  [['Phanerozoic', 'Phanerozoic', 'phanerozoic']]
+object_words:  []
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  [['trilobite', 'Trilobite', 'trilobite']]
+subject_words:  [['conodont', 'Conodont', 'conodont']]
+object_words:  []
+subject_words:  [['Dicynodon', 'Dicynodon', 'dicynodontidae']]
+object_words:  []
+subject_words:  [['Meishan', 'Meishan', 'meishan']]
+object_words:  []
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  []
+subject_words:  [(None, 'Paleozoic', 'paleozoic')]
+object_words:  []
+subject_words:  [['North America', 'North America', 'north_america']]
+object_words:  []
+subject_words:  [['Australia', 'Australia', 'australia']]
+object_words:  []
+subject_words:  [['Ural Mountains', 'Ural Mountains', 'ural_mountains']]
+object_words:  []
+subject_words:  [['Tasmania', 'Tasmania', 'tasmania']]
+object_words:  []
+subject_words:  [['algae', 'Algae', 'algae']]
+object_words:  []
+subject_words:  [['sea scorpions', 'Eurypterid', 'eurypterid']]
+object_words:  []
+subject_words:  [['vascular plants', 'Vascular plant', 'vascular_plant']]
+object_words:  []
+subject_words:  [['Dunkleosteus', 'Dunkleosteus', 'dunkleosteus']]
+object_words:  []
+subject_words:  [['amniotic eggs', 'Amniote', 'amniote']]
+object_words:  []
+subject_words:  [['Diapsids', 'Diapsid', 'diapsid']]
+object_words:  []
+subject_words:  [['Dimetrodon', 'Dimetrodon', 'dimetrodon'], ['Edaphosaurus', 'Edaphosaurus', 'edaphosaurus']]
+object_words:  []
+subject_words:  [['Gorgonopsids', 'Gorgonopsia', 'gorgonopsia']]
+object_words:  []
+subject_words:  [['South Pole', 'South Pole', 'south_pole']]
+object_words:  []
+subject_words:  [['Hirnantian', 'Hirnantian', 'hirnantian']]
+object_words:  []
+last_hop:  {'triplet': '("Synapsids", "evolved during", "Paleozoic Era")', 'start word': 'Paleozoic', 'end word': 'Synapsida', 'source': {'name': 'Paleozoic', 'line': 10}, 'cpnet': {'start word': 'paleozoic', 'end word': 'synapsida'}}
+
+utils/question.py extract_hops(Cretaceous, ['Paleozoic'], ['Turtle']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Cretaceous_info.json file
+second_hop2:  {'triplet': '("Cretaceous", "came after", "Jurassic period")', 'start word': 'Cretaceous', 'end word': 'Jurassic', 'source': {'name': 'Cretaceous', 'line': 14}, 'cpnet': {'start word': 'cretaceous', 'end word': 'jurassic'}}
+generate_question(6_2, ['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', '("Cretaceous", "followed the", "Paleozoic Era")', '("Cretaceous", "came after", "Jurassic period")', '("Synapsids", "evolved during", "Paleozoic Era")'], ['Turtle', 'Cretaceous', 'Cretaceous', 'Paleozoic'], [('Turtle', 'Cretaceous'), ('Cretaceous', 'Paleozoic'), ('Cretaceous', 'Jurassic'), ('Paleozoic', 'Synapsida')], Turtle, [{'name': 'Turtle', 'line': 41}, {'name': 'Cretaceous', 'line': 12}, {'name': 'Cretaceous', 'line': 14}, {'name': 'Paleozoic', 'line': 10}]) called
+GPT output is:  Q: Which type of reptile is experiencing a faster extinction rate than was seen in the event that followed the era marked by the evolution of Synapsids and directly succeeded the Jurassic period?
+A: Turtle
+final_choice(Turtle, options = 5) started
+[]
+entity_type(Turtle) called
+Turtle is Animal
+check_matchscore(Turtle, Turtles):  1.0
+check_matchscore(Turtle, Extant Late Jurassic first appearances):  0.0
+choose_by_wiki_recur(Extant Late Jurassic first appearances)
+   Pages in Extant Late Jurassic first appearances: ['Achelata', 'Acipenseriformes', 'Alytidae', 'Ampullariidae', 'Angelshark', 'Avialae', 'Bonefishes', 'Brown algae', 'Catshark', 'Cheilostomatida', 'Cow shark', 'Craniscus', 'Cryptobranchoidea', 'Dromioidea', 'European spadefoot toad', 'Eutheria', 'Gar', 'Ginglymostomatidae', 'Guitarfish', 'Gymnotiformes', 'Hemiscylliidae', 'Tabanidae', 'Hydrolagus matallanasi', 'Maniraptora', 'Maniraptoriformes', 'Munididae', 'Neoceratodus', 'Osteoglossiformes', 'Osteoglossomorpha', 'Otinidae', 'Paraves', 'Pennaraptora', 'Porcelain crab', 'Protacanthopterygii', 'Pylochelidae', 'Rhinobatidae', 'Salamander', 'Salamandroidea', 'Sawshark', 'Squaliformes', 'Turritella', 'Turtle', 'Wobbegong']
+      Squaliformes in ['Squaliformes', 'Tabanidae', 'Achelata', 'Angelshark']
+Squaliformes is Animal
+      Tabanidae in ['Squaliformes', 'Tabanidae', 'Achelata', 'Angelshark']
+Tabanidae is Animal
+      Achelata in ['Squaliformes', 'Tabanidae', 'Achelata', 'Angelshark']
+Achelata is Animal
+      Angelshark in ['Squaliformes', 'Tabanidae', 'Achelata', 'Angelshark', 'Osteoglossiformes']
+Angelshark is Animal
+      Osteoglossiformes in ['Squaliformes', 'Tabanidae', 'Achelata', 'Angelshark', 'Osteoglossiformes']
+Osteoglossiformes is Animal
+['Squaliformes', 'Tabanidae', 'Angelshark', 'Osteoglossiformes']
+Ended after 2.5 hierarchy
+(2.5, ['Osteoglossiformes', 'Tabanidae', 'Squaliformes', 'Angelshark'])
+
+extract_info(Osteoglossiformes) Start.
+utils/preprocess.py extract_info(): Checking good links on Osteoglossiformes
+Eocene is Geography
+1 / 30 )  Eocene Eocene eocene
+Gymnarchus is Animal
+2 / 30 )  Gymnarchidae Gymnarchus aba_aba
+Mormyridae is Animal
+3 / 30 )  Mormyridae Mormyridae mormyridae
+Arapaima is Animal
+4 / 30 )  arapaima Arapaima arapaima
+Pantodontidae is Animal
+5 / 30 )  Pantodontidae Pantodontidae pantodontidae
+Osteoglossidae is Animal
+6 / 30 )  Osteoglossidae Osteoglossidae osteoglossidae
+Notopteridae is Animal
+7 / 30 )  Notopteridae Notopteridae notopterid
+extract_triplet(Osteoglossiformes)
+Got GPT's response. String length : 1068
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+object_words:  []
+subject_words:  []
+object_words:  [['Eocene', 'Eocene', 'eocene']]
+subject_words:  [['Gymnarchidae', 'Gymnarchus', 'aba_aba']]
+object_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+subject_words:  [['Gymnarchidae', 'Gymnarchus', 'aba_aba']]
+object_words:  [['Gymnarchidae', 'Gymnarchus', 'aba_aba']]
+subject_words:  [['Mormyridae', 'Mormyridae', 'mormyridae']]
+object_words:  []
+subject_words:  [['Mormyridae', 'Mormyridae', 'mormyridae']]
+object_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+subject_words:  [['arapaima', 'Arapaima', 'arapaima']]
+object_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+subject_words:  [['Pantodontidae', 'Pantodontidae', 'pantodontidae']]
+object_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+subject_words:  [['Osteoglossidae', 'Osteoglossidae', 'osteoglossidae']]
+object_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+subject_words:  [['Notopteridae', 'Notopteridae', 'notopterid']]
+object_words:  [(None, 'Osteoglossiformes', 'osteoglossiformes')]
+extract_info(Tabanidae) Start.
+utils/preprocess.py extract_info(): Checking good links on Tabanidae
+Fly is Animal
+1 / 30 )  flies Fly fly
+Insect is Animal
+2 / 30 )  insect Insect insect
+Botfly is Animal
+3 / 30 )  botflies Botfly botfly
+Trypanosoma is Animal
+4 / 30 )  trypanosomes Trypanosoma trypanosoma
+Loa loa is Animal
+5 / 30 )  Loa loa Loa loa loa_loa
+Aeschylus is People
+6 / 30 )  Aeschylus Aeschylus aeschylus
+Deer fly is Animal
+7 / 30 )  Chrysopsinae Deer fly deer_fly
+Red deer is Animal
+8 / 30 )  deer Red deer red_deer
+Pliny the Younger is People
+9 / 30 )  Pliny the Younger Pliny the Younger gaius_plinius_caecilius_secundus
+Bibionidae is Animal
+10 / 30 )  Bibionidae Bibionidae bibionidae
+Greenland is Geography
+11 / 30 )  Greenland Greenland greenland
+Iceland is Geography
+12 / 30 )  Iceland Iceland iceland
+Hawaii  is Geography
+13 / 30 )  Hawaii Hawaii  hawaiʻi
+Eotabanoid  is Animal
+14 / 30 )  Eotabanoid Eotabanoid  horse_fly
+Flowering plant is Animal
+15 / 30 )  angiosperm Flowering plant flowering_plant
+Dinosaur is Animal
+16 / 30 )  dinosaurs Dinosaur dinosaur
+Athericidae is Animal
+17 / 30 )  Athericidae Athericidae athericidae
+Pelecorhynchidae is Animal
+18 / 30 )  Pelecorhynchidae Pelecorhynchidae pelecorhynchidae
+Tabanomorpha is Animal
+19 / 30 )  Tabanomorpha Tabanomorpha tabanomorpha
+Tabanus is Animal
+20 / 30 )  Tabanus Tabanus tabanus
+Scepcidinae  is Animal
+21 / 30 )  Scepcidinae Scepcidinae  horse_fly
+Scepsis is Geography
+22 / 30 )  Scepsis Scepsis scepsis
+Rhagionidae is Animal
+23 / 30 )  Rhagionidae Rhagionidae rhagionidae
+Carl Linnaeus is Geography
+24 / 30 )  Carl Linnaeus Carl Linnaeus carl_linnaeus
+Pelargonium is Animal
+25 / 30 )  Pelargonium Pelargonium pelargonium
+Mosquito is Animal
+26 / 30 )  mosquitoes Mosquito mosquito
+Zebra is Animal
+27 / 30 )  zebras Zebra zebra
+Tsetse fly is Animal
+28 / 30 )  tsetse flies Tsetse fly tsetse_fly
+Arthropod is Animal
+29 / 30 )  arthropods Arthropod arthropod
+Pteromalidae is Animal
+30 / 30 )  Pteromalidae Pteromalidae pteromalidae
+extract_triplet(Tabanidae)
+Got GPT's response. String length : 1440
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['flies', 'Fly', 'fly'], ['deer', 'Red deer', 'red_deer']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['insect', 'Insect', 'insect']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['flies', 'Fly', 'fly'], ['Chrysopsinae', 'Deer fly', 'deer_fly'], ['deer', 'Red deer', 'red_deer']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['flies', 'Fly', 'fly'], ['Tabanus', 'Tabanus', 'tabanus']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['trypanosomes', 'Trypanosoma', 'trypanosoma']]
+subject_words:  [['flies', 'Fly', 'fly']]
+object_words:  [['Loa loa', 'Loa loa', 'loa_loa']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Aeschylus', 'Aeschylus', 'aeschylus']]
+subject_words:  [['Chrysopsinae', 'Deer fly', 'deer_fly']]
+object_words:  [(None, 'Tabanidae', 'tabanidae')]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Greenland', 'Greenland', 'greenland']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Iceland', 'Iceland', 'iceland']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Hawaii', 'Hawaii ', 'hawaiʻi']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Eotabanoid', 'Eotabanoid ', 'horse_fly']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['angiosperm', 'Flowering plant', 'flowering_plant']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['dinosaurs', 'Dinosaur', 'dinosaur']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Athericidae', 'Athericidae', 'athericidae']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Pelecorhynchidae', 'Pelecorhynchidae', 'pelecorhynchidae']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Tabanomorpha', 'Tabanomorpha', 'tabanomorpha']]
+subject_words:  [['Tabanus', 'Tabanus', 'tabanus']]
+object_words:  [(None, 'Tabanidae', 'tabanidae')]
+subject_words:  [['Scepcidinae', 'Scepcidinae ', 'horse_fly']]
+object_words:  [(None, 'Tabanidae', 'tabanidae')]
+subject_words:  [['Scepsis', 'Scepsis', 'scepsis']]
+object_words:  [(None, 'Tabanidae', 'tabanidae'), ['Scepcidinae', 'Scepcidinae ', 'horse_fly']]
+subject_words:  [['Rhagionidae', 'Rhagionidae', 'rhagionidae']]
+object_words:  [(None, 'Tabanidae', 'tabanidae')]
+subject_words:  [['Carl Linnaeus', 'Carl Linnaeus', 'carl_linnaeus']]
+object_words:  [['Tabanus', 'Tabanus', 'tabanus']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Pelargonium', 'Pelargonium', 'pelargonium']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['mosquitoes', 'Mosquito', 'mosquito']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['zebras', 'Zebra', 'zebra']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['flies', 'Fly', 'fly'], ['tsetse flies', 'Tsetse fly', 'tsetse_fly']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['arthropods', 'Arthropod', 'arthropod']]
+subject_words:  [(None, 'Tabanidae', 'tabanidae')]
+object_words:  [['Pteromalidae', 'Pteromalidae', 'pteromalidae']]
+extract_info(Squaliformes) Start.
+utils/preprocess.py extract_info(): Checking good links on Squaliformes
+Shark is Animal
+1 / 30 )  sharks Shark shark
+Centrophoridae is Animal
+2 / 30 )  Centrophoridae Centrophoridae centrophoridae
+Dalatiidae is Animal
+3 / 30 )  Dalatiidae Dalatiidae dalatiidae
+Echinorhinus is Animal
+4 / 30 )  Echinorhinidae Echinorhinus echinorhinidae
+Etmopteridae is Animal
+5 / 30 )  Etmopteridae Etmopteridae etmopteridae
+Oxynotus is Animal
+6 / 30 )  Oxynotidae Oxynotus oxynotidae
+Somniosidae is Animal
+7 / 30 )  Somniosidae Somniosidae somniosidae
+Squalidae is Animal
+8 / 30 )  Squalidae Squalidae squalidae
+extract_triplet(Squaliformes)
+Got GPT's response. String length : 1155
+subject_words:  [(None, 'Squaliformes', 'squaliformes')]
+object_words:  [['Centrophoridae', 'Centrophoridae', 'centrophoridae']]
+subject_words:  [(None, 'Squaliformes', 'squaliformes')]
+object_words:  [['Dalatiidae', 'Dalatiidae', 'dalatiidae']]
+subject_words:  [(None, 'Squaliformes', 'squaliformes')]
+object_words:  [['Echinorhinidae', 'Echinorhinus', 'echinorhinidae']]
+subject_words:  [(None, 'Squaliformes', 'squaliformes')]
+object_words:  [['Etmopteridae', 'Etmopteridae', 'etmopteridae']]
+subject_words:  [(None, 'Squaliformes', 'squaliformes')]
+object_words:  [['Oxynotidae', 'Oxynotus', 'oxynotidae']]
+subject_words:  [(None, 'Squaliformes', 'squaliformes')]
+object_words:  [['Somniosidae', 'Somniosidae', 'somniosidae']]
+subject_words:  [(None, 'Squaliformes', 'squaliformes')]
+object_words:  [['Squalidae', 'Squalidae', 'squalidae']]
+subject_words:  [['Dalatiidae', 'Dalatiidae', 'dalatiidae']]
+object_words:  []
+subject_words:  [['Dalatiidae', 'Dalatiidae', 'dalatiidae']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Squaliformes', 'squaliformes')]
+subject_words:  [['Oxynotidae', 'Oxynotus', 'oxynotidae']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Squaliformes', 'squaliformes')]
+subject_words:  [['Dalatiidae', 'Dalatiidae', 'dalatiidae']]
+object_words:  []
+subject_words:  [['Etmopteridae', 'Etmopteridae', 'etmopteridae']]
+object_words:  []
+subject_words:  [['Etmopteridae', 'Etmopteridae', 'etmopteridae']]
+object_words:  []
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Synapsids", "evolved during", "Paleozoic Era")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Paleozoic Era", "is the first geological era of", "Phanerozoic Eon")\n', '("Paleozoic Era", "succeeds", "Neoproterozoic Era")\n', '("Paleozoic Era", "ends at the start of", "Mesozoic Era")\n', '("Paleozoic Era", "witnessed", "Cambrian explosion")\n', '("Arthropods", "evolved during", "Paleozoic Era")\n', '("Molluscs", "evolved during", "Paleozoic Era")\n', '("Fish", "evolved during", "Paleozoic Era")\n', '("Amphibians", "evolved during", "Paleozoic Era")\n', '("Reptiles", "evolved during", "Paleozoic Era")\n', '("Paleozoic Era", "ended with", "Permian–Triassic extinction event")\n', '("Base of Paleozoic", "represents divide between", "Proterozoic and Phanerozoic eons")\n', '("Paleozoic and Neoproterozoic eras", "divided by", "Ediacaran and Cambrian periods")\n', '("Base of Phanerozoic", "marked by first appearance of", "trilobites")\n', '("Paleozoic", "base defined by first animal complex life as shown by", "trilobite-dominated fauna")\n', '("Conodont", "marks boundary between", "Permian and Triassic periods")\n', '("Dicynodon", "disappearance marks boundary level in", "non-marine strata")\n', '("Meishan", "location of GSSP for", "Permian–Triassic boundary")\n', '("Paleozoic Era", "saw breakup of supercontinent", "Pannotia")\n', '("Paleozoic Era", "ended with assembly of supercontinent", "Pangaea")\n', '("North America and Europe", "collision produced", "Acadian-Caledonian uplifts")\n', '("Eastern Australia", "uplifted by", "subducting plate")\n', '("Ural Mountains", "formed during late Paleozoic", "")\n', '("Mountains of Tasmania", "formed during late Paleozoic", "")\n', '("Algae", "evolved during", "Cambrian Period")\n', '("Sea scorpions", "existed as", "apex predators in Silurian Period")\n', '("Vascular plants", "like Cooksonia began to gain foothold on land in", "Silurian")\n', '("Dunkleosteus", "flourished in", "Devonian Period")\n', '("Amniotic eggs", "evolution allowed amphibians to move farther inland during", "Carboniferous Period")\n', '("Diapsids", "flourished in new dry climate of", "Pangaea")\n', '("Dimetrodon and Edaphosaurus", "ruled new continent", "during Permian Period")\n', '("Gorgonopsids", "appeared in", "interior desert of Pangaea")\n', '("South Pole", "location of Gondwana during", "Ordovician Period")\n', '("Hirnantian glaciation", "happened at the end of", "Ordovician Period")\n', '("Osteoglossiformes", "is an order of", "ray-finned fish")\n', '("Osteoglossiformes", "contains sub-orders", "Osteoglossoidei")\n', '("Osteoglossiformes", "contains sub-orders", "Notopteroidei")\n', '("Osteoglossiformes", "inhabit", "freshwater")\n', '("Osteoglossiformes", "found in", "South America")\n', '("Osteoglossiformes", "found in", "Africa")\n', '("Osteoglossiformes", "found in", "Australia")\n', '("Osteoglossiformes", "found in", "southern Asia")\n', '("Osteoglossiformes", "evolved in", "Gondwana")\n', '("Marine osteoglossiforms", "described from", "Danish Eocene Fur Formation")\n', '("Gymnarchidae", "is a family in", "Osteoglossiformes")\n', '("Gymnarchus niloticus", "is the only species of", "Gymnarchidae")\n', '("Mormyridae", "are", "weakly electric fish")\n', '("Mormyridae", "is a family in", "Osteoglossiformes")\n', '("Arapaima gigas", "is the largest species of", "Osteoglossiformes")\n', '("Pantodontidae", "may be classified in", "Osteoglossiformes")\n', '("Osteoglossidae", "is a family in", "Osteoglossiformes")\n', '("Notopteridae", "is a family in", "Osteoglossiformes")\n', '("Angelsharks", "belong to", "genus Squatina")\n', '("Angelsharks", "are only living members of", "family Squatinidae")\n', '("Angelsharks", "are only living members of", "order Squatiniformes")\n', '("Angelsharks", "resemble", "rays")\n', '("Squatina", "differs from", "other sharks")\n', '("Angelsharks", "inhabit", "sandy seabeds")\n', '("Angelsharks", "are also called", "monkfish")\n', '("Monkfish", "is a name also applied to", "genus Lophius")\n', '("Squatina squatina", "ambush predators with", "stationary bottom-dwelling habit")\n', '("Squatina squatina", "exhibited", "large-scale coastal migratory patterns")\n', '("Squatina squatina", "is classified as", "critically endangered")\n', '("Angel shark", "has unique features differentiating it from", "other sharks")\n', '("Japanese angel shark", "can reach", "2 meters in length")\n', '("Angelsharks", "prey on", "fish, crustaceans and various types of mollusks")\n', '("Angelsharks", "are", "ovoviviparous")\n', '("S. aculeata", "is at high risk of", "extinction")\n', '("S. oculata", "is at high risk of", "extinction")\n', '("Angel sharks in Mediterranean Sea", "include", "S. aculeata, S. oculata, and S. squatina")\n', '("Conservation strategies", "are established by authorities from", "Greece and Turkey")\n', '("Squatina guggenheim", "is protected under", "Brazilian law")\n', '("Squatina occulta", "is protected under", "Brazilian law")\n', '("Pacific angel shark", "population declined and is now", "regulated")\n', '("Pacific angel shark", "was a byproduct of", "commercial gillnetting")\n', '("Pacific angel shark", "was used only for", "crab bait")\n', '("Angelshark", "status reaffirmed as \'Critically Endangered\' by", "IUCN in 2019")\n', '("Angel shark", "found in", "Mediterranean Sea")\n', '("Squatina", "earliest members known from the", "Late Jurassic")\n', '("Squatina squatina", "earliest record that can be assigned to modern genus known from the", "Early Cretaceous")\n', '("Tabanidae", "are known as", "horse-flies and deer flies")\n', '("Tabanidae", "belong to the order", "insect")\n', '("Tabanidae", "has subfamily", "Chrysopsinae known as deer flies")\n', '("Tabanidae", "has genus", "Tabanus known as horse-fly")\n', '("Tabanidae", "has female members that can transfer", "trypanosomes")\n', '("Female horse-flies", "can transfer", "Loa loa")\n', '("Tabanidae", "mentioned by", "Aeschylus")\n', '("Chrysopsinae", "is a subfamily of", "Tabanidae")\n', '("Tabanidae", "not found in", "Greenland")\n', '("Tabanidae", "not found in", "Iceland")\n', '("Tabanidae", "not found in", "Hawaii")\n', '("Tabanidae", "recorded in Early Cretaceous as", "Eotabanoid")\n', '("Tabanidae", "co-evolved with", "angiosperm plants")\n', '("Tabanidae", "evolved alongside", "dinosaurs")\n', '("Tabanidae", "related family includes", "Athericidae")\n', '("Tabanidae", "related family includes", "Pelecorhynchidae")\n', '("Tabanidae", "is part of superfamily", "Tabanomorpha")\n', '("Tabanus", "is a genus within", "Tabanidae")\n', '("Scepcidinae", "is a subfamily of", "Tabanidae")\n', '("Scepsis", "is a genus within subfamily", "Scepcidinae of Tabanidae")\n', '("Rhagionidae", "is related to", "Tabanidae")\n', '("Carl Linnaeus", "named the genus", "Tabanus")\n', '("Tabanidae", "pollinate", "Pelargonium")\n', '("Tabanidae", "compared to", "mosquitoes")\n', '("Tabanidae", "affects animals like", "zebras")\n', '("Tabanidae", "compared to", "tsetse flies")\n', '("Tabanidae", "are", "arthropods")\n', '("Tabanidae", "have parasites from family", "Pteromalidae")\n', '("Squaliformes", "includes families such as", "Centrophoridae")\n', '("Squaliformes", "includes families such as", "Dalatiidae")\n', '("Squaliformes", "includes families such as", "Echinorhinidae")\n', '("Squaliformes", "includes families such as", "Etmopteridae")\n', '("Squaliformes", "includes families such as", "Oxynotidae")\n', '("Squaliformes", "includes families such as", "Somniosidae")\n', '("Squaliformes", "includes families such as", "Squalidae")\n', '("Etmoperidae and Dalatiidae members", "possess", "photophores")\n', '("Etmoperidae and Dalatiidae members", "exhibit", "bioluminescence")\n', '("Zameus squamulosus", "possesses", "photophores")\n', '("Zameus squamulosus", "exhibits", "bioluminescence")\n', '("Bioluminescence", "evolved in", "Squaliformes")\n', '("Common ancestor of Dalatiidae, Etmopteridae, Somniosidae, Oxynotidae", "possessed", "luminous organ")\n', '("Bioluminescence", "used for", "camouflage by counterillumination in Squaliformes")\n', '("Dalatiidae and Zameus squamulosus", "use bioluminescence for", "ventral counter-illumination")\n', '("Etmopteridae", "utilize bioluminescence for", "ventral counter illumination")\n', '("Etmopteridae", "utilize bioluminescence for", "species recognition")\n']
+range(1, 226) 4
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Synapsids", "evolved during", "Paleozoic Era")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Paleozoic Era", "is the first geological era of", "Phanerozoic Eon")\n', '("Paleozoic Era", "succeeds", "Neoproterozoic Era")\n', '("Paleozoic Era", "ends at the start of", "Mesozoic Era")\n', '("Paleozoic Era", "witnessed", "Cambrian explosion")\n', '("Arthropods", "evolved during", "Paleozoic Era")\n', '("Molluscs", "evolved during", "Paleozoic Era")\n', '("Fish", "evolved during", "Paleozoic Era")\n', '("Amphibians", "evolved during", "Paleozoic Era")\n', '("Reptiles", "evolved during", "Paleozoic Era")\n', '("Paleozoic Era", "ended with", "Permian–Triassic extinction event")\n', '("Base of Paleozoic", "represents divide between", "Proterozoic and Phanerozoic eons")\n', '("Paleozoic and Neoproterozoic eras", "divided by", "Ediacaran and Cambrian periods")\n', '("Base of Phanerozoic", "marked by first appearance of", "trilobites")\n', '("Paleozoic", "base defined by first animal complex life as shown by", "trilobite-dominated fauna")\n', '("Conodont", "marks boundary between", "Permian and Triassic periods")\n', '("Dicynodon", "disappearance marks boundary level in", "non-marine strata")\n', '("Meishan", "location of GSSP for", "Permian–Triassic boundary")\n', '("Paleozoic Era", "saw breakup of supercontinent", "Pannotia")\n', '("Paleozoic Era", "ended with assembly of supercontinent", "Pangaea")\n', '("North America and Europe", "collision produced", "Acadian-Caledonian uplifts")\n', '("Eastern Australia", "uplifted by", "subducting plate")\n', '("Ural Mountains", "formed during late Paleozoic", "")\n', '("Mountains of Tasmania", "formed during late Paleozoic", "")\n', '("Algae", "evolved during", "Cambrian Period")\n', '("Sea scorpions", "existed as", "apex predators in Silurian Period")\n', '("Vascular plants", "like Cooksonia began to gain foothold on land in", "Silurian")\n', '("Dunkleosteus", "flourished in", "Devonian Period")\n', '("Amniotic eggs", "evolution allowed amphibians to move farther inland during", "Carboniferous Period")\n', '("Diapsids", "flourished in new dry climate of", "Pangaea")\n', '("Dimetrodon and Edaphosaurus", "ruled new continent", "during Permian Period")\n', '("Gorgonopsids", "appeared in", "interior desert of Pangaea")\n', '("South Pole", "location of Gondwana during", "Ordovician Period")\n', '("Hirnantian glaciation", "happened at the end of", "Ordovician Period")\n', '("Osteoglossiformes", "is an order of", "ray-finned fish")\n', '("Osteoglossiformes", "contains sub-orders", "Osteoglossoidei")\n', '("Osteoglossiformes", "contains sub-orders", "Notopteroidei")\n', '("Osteoglossiformes", "inhabit", "freshwater")\n', '("Osteoglossiformes", "found in", "South America")\n', '("Osteoglossiformes", "found in", "Africa")\n', '("Osteoglossiformes", "found in", "Australia")\n', '("Osteoglossiformes", "found in", "southern Asia")\n', '("Osteoglossiformes", "evolved in", "Gondwana")\n', '("Marine osteoglossiforms", "described from", "Danish Eocene Fur Formation")\n', '("Gymnarchidae", "is a family in", "Osteoglossiformes")\n', '("Gymnarchus niloticus", "is the only species of", "Gymnarchidae")\n', '("Mormyridae", "are", "weakly electric fish")\n', '("Mormyridae", "is a family in", "Osteoglossiformes")\n', '("Arapaima gigas", "is the largest species of", "Osteoglossiformes")\n', '("Pantodontidae", "may be classified in", "Osteoglossiformes")\n', '("Osteoglossidae", "is a family in", "Osteoglossiformes")\n', '("Notopteridae", "is a family in", "Osteoglossiformes")\n', '("Angelsharks", "belong to", "genus Squatina")\n', '("Angelsharks", "are only living members of", "family Squatinidae")\n', '("Angelsharks", "are only living members of", "order Squatiniformes")\n', '("Angelsharks", "resemble", "rays")\n', '("Squatina", "differs from", "other sharks")\n', '("Angelsharks", "inhabit", "sandy seabeds")\n', '("Angelsharks", "are also called", "monkfish")\n', '("Monkfish", "is a name also applied to", "genus Lophius")\n', '("Squatina squatina", "ambush predators with", "stationary bottom-dwelling habit")\n', '("Squatina squatina", "exhibited", "large-scale coastal migratory patterns")\n', '("Squatina squatina", "is classified as", "critically endangered")\n', '("Angel shark", "has unique features differentiating it from", "other sharks")\n', '("Japanese angel shark", "can reach", "2 meters in length")\n', '("Angelsharks", "prey on", "fish, crustaceans and various types of mollusks")\n', '("Angelsharks", "are", "ovoviviparous")\n', '("S. aculeata", "is at high risk of", "extinction")\n', '("S. oculata", "is at high risk of", "extinction")\n', '("Angel sharks in Mediterranean Sea", "include", "S. aculeata, S. oculata, and S. squatina")\n', '("Conservation strategies", "are established by authorities from", "Greece and Turkey")\n', '("Squatina guggenheim", "is protected under", "Brazilian law")\n', '("Squatina occulta", "is protected under", "Brazilian law")\n', '("Pacific angel shark", "population declined and is now", "regulated")\n', '("Pacific angel shark", "was a byproduct of", "commercial gillnetting")\n', '("Pacific angel shark", "was used only for", "crab bait")\n', '("Angelshark", "status reaffirmed as \'Critically Endangered\' by", "IUCN in 2019")\n', '("Angel shark", "found in", "Mediterranean Sea")\n', '("Squatina", "earliest members known from the", "Late Jurassic")\n', '("Squatina squatina", "earliest record that can be assigned to modern genus known from the", "Early Cretaceous")\n', '("Tabanidae", "are known as", "horse-flies and deer flies")\n', '("Tabanidae", "belong to the order", "insect")\n', '("Tabanidae", "has subfamily", "Chrysopsinae known as deer flies")\n', '("Tabanidae", "has genus", "Tabanus known as horse-fly")\n', '("Tabanidae", "has female members that can transfer", "trypanosomes")\n', '("Female horse-flies", "can transfer", "Loa loa")\n', '("Tabanidae", "mentioned by", "Aeschylus")\n', '("Chrysopsinae", "is a subfamily of", "Tabanidae")\n', '("Tabanidae", "not found in", "Greenland")\n', '("Tabanidae", "not found in", "Iceland")\n', '("Tabanidae", "not found in", "Hawaii")\n', '("Tabanidae", "recorded in Early Cretaceous as", "Eotabanoid")\n', '("Tabanidae", "co-evolved with", "angiosperm plants")\n', '("Tabanidae", "evolved alongside", "dinosaurs")\n', '("Tabanidae", "related family includes", "Athericidae")\n', '("Tabanidae", "related family includes", "Pelecorhynchidae")\n', '("Tabanidae", "is part of superfamily", "Tabanomorpha")\n', '("Tabanus", "is a genus within", "Tabanidae")\n', '("Scepcidinae", "is a subfamily of", "Tabanidae")\n', '("Scepsis", "is a genus within subfamily", "Scepcidinae of Tabanidae")\n', '("Rhagionidae", "is related to", "Tabanidae")\n', '("Carl Linnaeus", "named the genus", "Tabanus")\n', '("Tabanidae", "pollinate", "Pelargonium")\n', '("Tabanidae", "compared to", "mosquitoes")\n', '("Tabanidae", "affects animals like", "zebras")\n', '("Tabanidae", "compared to", "tsetse flies")\n', '("Tabanidae", "are", "arthropods")\n', '("Tabanidae", "have parasites from family", "Pteromalidae")\n', '("Squaliformes", "includes families such as", "Centrophoridae")\n', '("Squaliformes", "includes families such as", "Dalatiidae")\n', '("Squaliformes", "includes families such as", "Echinorhinidae")\n', '("Squaliformes", "includes families such as", "Etmopteridae")\n', '("Squaliformes", "includes families such as", "Oxynotidae")\n', '("Squaliformes", "includes families such as", "Somniosidae")\n', '("Squaliformes", "includes families such as", "Squalidae")\n', '("Etmoperidae and Dalatiidae members", "possess", "photophores")\n', '("Etmoperidae and Dalatiidae members", "exhibit", "bioluminescence")\n', '("Zameus squamulosus", "possesses", "photophores")\n', '("Zameus squamulosus", "exhibits", "bioluminescence")\n', '("Bioluminescence", "evolved in", "Squaliformes")\n', '("Common ancestor of Dalatiidae, Etmopteridae, Somniosidae, Oxynotidae", "possessed", "luminous organ")\n', '("Bioluminescence", "used for", "camouflage by counterillumination in Squaliformes")\n', '("Dalatiidae and Zameus squamulosus", "use bioluminescence for", "ventral counter-illumination")\n', '("Etmopteridae", "utilize bioluminescence for", "ventral counter illumination")\n', '("Etmopteridae", "utilize bioluminescence for", "species recognition")\n']
+range(1, 226) 4
+['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Synapsids", "evolved during", "Paleozoic Era")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "came after", "Jurassic period")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Cretaceous", "was a period", "Mesozoic Era")\n', '("Cretaceous", "is the longest geographical period of", "Phanerozoic")\n', '("Cretaceous", "ended in", "Cenozoic Era")\n', '("Late Cretaceous", "included", "Yucatán Peninsula")\n', '("Late Cretaceous", "area impacted by asteroid", "Gulf of Mexico")\n', '("Chalk", "is abundant in", "England")\n', '("Cretaceous", "geological divisions made by", "French geologists")\n', '("Normandian coast", "has cliffs made of", "chalk from Upper Cretaceous")\n', '("Cretaceous", "deposits found in", "Germany")\n', '("Cretaceous", "deposits found in", "Denmark")\n', '("Chalk Group", "deposits beneath", "North Sea")\n', '("Cretaceous", "followed the", "Paleozoic Era")\n', '("Cretaceous", "had seas with connection to", "Atlantic Ocean")\n', '("Cretaceous", "climate warmer up to the", "Antarctica")\n', '("Cretaceous", "marine organisms spread to", "Australia")\n', '("Cretaceous", "seas connected to", "Indian Oceans")\n', '("Kansas", "had marine fossils of", "Cretaceous")\n', '("Cretaceous", "deposits found in", "China")\n', '("Valanginian", "is an epoch within", "Early Cretaceous")\n', '("Hauterivian", "is an epoch within", "Early Cretaceous")\n', '("Iberian Peninsula", "during Cretaceous was on the edge of", "Tethys Ocean")\n', '("Cretaceous", "had climate with warmer", "equator")\n', '("Cretaceous", "had high eustatic sea levels creating", "oceans")\n', '("Late Palaeocene", "followed the", "Cretaceous")\n', '("Cretaceous", "location of fossils found in", "Alaska")\n', '("Cretaceous", "location of fossils found in", "Greenland")\n', '("Cretaceous", "climate was ice-free up to the", "south pole")\n', '("Turonian", "is an age within", "Late Cretaceous")\n', '("Paleozoic Era", "is the first geological era of", "Phanerozoic Eon")\n', '("Paleozoic Era", "succeeds", "Neoproterozoic Era")\n', '("Paleozoic Era", "ends at the start of", "Mesozoic Era")\n', '("Paleozoic Era", "witnessed", "Cambrian explosion")\n', '("Arthropods", "evolved during", "Paleozoic Era")\n', '("Molluscs", "evolved during", "Paleozoic Era")\n', '("Fish", "evolved during", "Paleozoic Era")\n', '("Amphibians", "evolved during", "Paleozoic Era")\n', '("Reptiles", "evolved during", "Paleozoic Era")\n', '("Paleozoic Era", "ended with", "Permian–Triassic extinction event")\n', '("Base of Paleozoic", "represents divide between", "Proterozoic and Phanerozoic eons")\n', '("Paleozoic and Neoproterozoic eras", "divided by", "Ediacaran and Cambrian periods")\n', '("Base of Phanerozoic", "marked by first appearance of", "trilobites")\n', '("Paleozoic", "base defined by first animal complex life as shown by", "trilobite-dominated fauna")\n', '("Conodont", "marks boundary between", "Permian and Triassic periods")\n', '("Dicynodon", "disappearance marks boundary level in", "non-marine strata")\n', '("Meishan", "location of GSSP for", "Permian–Triassic boundary")\n', '("Paleozoic Era", "saw breakup of supercontinent", "Pannotia")\n', '("Paleozoic Era", "ended with assembly of supercontinent", "Pangaea")\n', '("North America and Europe", "collision produced", "Acadian-Caledonian uplifts")\n', '("Eastern Australia", "uplifted by", "subducting plate")\n', '("Ural Mountains", "formed during late Paleozoic", "")\n', '("Mountains of Tasmania", "formed during late Paleozoic", "")\n', '("Algae", "evolved during", "Cambrian Period")\n', '("Sea scorpions", "existed as", "apex predators in Silurian Period")\n', '("Vascular plants", "like Cooksonia began to gain foothold on land in", "Silurian")\n', '("Dunkleosteus", "flourished in", "Devonian Period")\n', '("Amniotic eggs", "evolution allowed amphibians to move farther inland during", "Carboniferous Period")\n', '("Diapsids", "flourished in new dry climate of", "Pangaea")\n', '("Dimetrodon and Edaphosaurus", "ruled new continent", "during Permian Period")\n', '("Gorgonopsids", "appeared in", "interior desert of Pangaea")\n', '("South Pole", "location of Gondwana during", "Ordovician Period")\n', '("Hirnantian glaciation", "happened at the end of", "Ordovician Period")\n', '("Osteoglossiformes", "is an order of", "ray-finned fish")\n', '("Osteoglossiformes", "contains sub-orders", "Osteoglossoidei")\n', '("Osteoglossiformes", "contains sub-orders", "Notopteroidei")\n', '("Osteoglossiformes", "inhabit", "freshwater")\n', '("Osteoglossiformes", "found in", "South America")\n', '("Osteoglossiformes", "found in", "Africa")\n', '("Osteoglossiformes", "found in", "Australia")\n', '("Osteoglossiformes", "found in", "southern Asia")\n', '("Osteoglossiformes", "evolved in", "Gondwana")\n', '("Marine osteoglossiforms", "described from", "Danish Eocene Fur Formation")\n', '("Gymnarchidae", "is a family in", "Osteoglossiformes")\n', '("Gymnarchus niloticus", "is the only species of", "Gymnarchidae")\n', '("Mormyridae", "are", "weakly electric fish")\n', '("Mormyridae", "is a family in", "Osteoglossiformes")\n', '("Arapaima gigas", "is the largest species of", "Osteoglossiformes")\n', '("Pantodontidae", "may be classified in", "Osteoglossiformes")\n', '("Osteoglossidae", "is a family in", "Osteoglossiformes")\n', '("Notopteridae", "is a family in", "Osteoglossiformes")\n', '("Angelsharks", "belong to", "genus Squatina")\n', '("Angelsharks", "are only living members of", "family Squatinidae")\n', '("Angelsharks", "are only living members of", "order Squatiniformes")\n', '("Angelsharks", "resemble", "rays")\n', '("Squatina", "differs from", "other sharks")\n', '("Angelsharks", "inhabit", "sandy seabeds")\n', '("Angelsharks", "are also called", "monkfish")\n', '("Monkfish", "is a name also applied to", "genus Lophius")\n', '("Squatina squatina", "ambush predators with", "stationary bottom-dwelling habit")\n', '("Squatina squatina", "exhibited", "large-scale coastal migratory patterns")\n', '("Squatina squatina", "is classified as", "critically endangered")\n', '("Angel shark", "has unique features differentiating it from", "other sharks")\n', '("Japanese angel shark", "can reach", "2 meters in length")\n', '("Angelsharks", "prey on", "fish, crustaceans and various types of mollusks")\n', '("Angelsharks", "are", "ovoviviparous")\n', '("S. aculeata", "is at high risk of", "extinction")\n', '("S. oculata", "is at high risk of", "extinction")\n', '("Angel sharks in Mediterranean Sea", "include", "S. aculeata, S. oculata, and S. squatina")\n', '("Conservation strategies", "are established by authorities from", "Greece and Turkey")\n', '("Squatina guggenheim", "is protected under", "Brazilian law")\n', '("Squatina occulta", "is protected under", "Brazilian law")\n', '("Pacific angel shark", "population declined and is now", "regulated")\n', '("Pacific angel shark", "was a byproduct of", "commercial gillnetting")\n', '("Pacific angel shark", "was used only for", "crab bait")\n', '("Angelshark", "status reaffirmed as \'Critically Endangered\' by", "IUCN in 2019")\n', '("Angel shark", "found in", "Mediterranean Sea")\n', '("Squatina", "earliest members known from the", "Late Jurassic")\n', '("Squatina squatina", "earliest record that can be assigned to modern genus known from the", "Early Cretaceous")\n', '("Tabanidae", "are known as", "horse-flies and deer flies")\n', '("Tabanidae", "belong to the order", "insect")\n', '("Tabanidae", "has subfamily", "Chrysopsinae known as deer flies")\n', '("Tabanidae", "has genus", "Tabanus known as horse-fly")\n', '("Tabanidae", "has female members that can transfer", "trypanosomes")\n', '("Female horse-flies", "can transfer", "Loa loa")\n', '("Tabanidae", "mentioned by", "Aeschylus")\n', '("Chrysopsinae", "is a subfamily of", "Tabanidae")\n', '("Tabanidae", "not found in", "Greenland")\n', '("Tabanidae", "not found in", "Iceland")\n', '("Tabanidae", "not found in", "Hawaii")\n', '("Tabanidae", "recorded in Early Cretaceous as", "Eotabanoid")\n', '("Tabanidae", "co-evolved with", "angiosperm plants")\n', '("Tabanidae", "evolved alongside", "dinosaurs")\n', '("Tabanidae", "related family includes", "Athericidae")\n', '("Tabanidae", "related family includes", "Pelecorhynchidae")\n', '("Tabanidae", "is part of superfamily", "Tabanomorpha")\n', '("Tabanus", "is a genus within", "Tabanidae")\n', '("Scepcidinae", "is a subfamily of", "Tabanidae")\n', '("Scepsis", "is a genus within subfamily", "Scepcidinae of Tabanidae")\n', '("Rhagionidae", "is related to", "Tabanidae")\n', '("Carl Linnaeus", "named the genus", "Tabanus")\n', '("Tabanidae", "pollinate", "Pelargonium")\n', '("Tabanidae", "compared to", "mosquitoes")\n', '("Tabanidae", "affects animals like", "zebras")\n', '("Tabanidae", "compared to", "tsetse flies")\n', '("Tabanidae", "are", "arthropods")\n', '("Tabanidae", "have parasites from family", "Pteromalidae")\n', '("Squaliformes", "includes families such as", "Centrophoridae")\n', '("Squaliformes", "includes families such as", "Dalatiidae")\n', '("Squaliformes", "includes families such as", "Echinorhinidae")\n', '("Squaliformes", "includes families such as", "Etmopteridae")\n', '("Squaliformes", "includes families such as", "Oxynotidae")\n', '("Squaliformes", "includes families such as", "Somniosidae")\n', '("Squaliformes", "includes families such as", "Squalidae")\n', '("Etmoperidae and Dalatiidae members", "possess", "photophores")\n', '("Etmoperidae and Dalatiidae members", "exhibit", "bioluminescence")\n', '("Zameus squamulosus", "possesses", "photophores")\n', '("Zameus squamulosus", "exhibits", "bioluminescence")\n', '("Bioluminescence", "evolved in", "Squaliformes")\n', '("Common ancestor of Dalatiidae, Etmopteridae, Somniosidae, Oxynotidae", "possessed", "luminous organ")\n', '("Bioluminescence", "used for", "camouflage by counterillumination in Squaliformes")\n', '("Dalatiidae and Zameus squamulosus", "use bioluminescence for", "ventral counter-illumination")\n', '("Etmopteridae", "utilize bioluminescence for", "ventral counter illumination")\n', '("Etmopteridae", "utilize bioluminescence for", "species recognition")\n']
+range(1, 226) 4
+{'id': '6_2', 'Question': ' Which type of reptile is experiencing a faster extinction rate than was seen in the event that followed the era marked by the evolution of Synapsids and directly succeeded the Jurassic period?\n', 'Answer': 'Turtle', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Osteoglossiformes'}, {'label': 'B', 'text': 'Turtle'}, {'label': 'C', 'text': 'Angelshark'}, {'label': 'D', 'text': 'Tabanidae'}, {'label': 'E', 'text': 'Squaliformes'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'osteoglossiformes'}, {'label': 'B', 'text': 'turtle'}, {'label': 'C', 'text': 'angelshark'}, {'label': 'D', 'text': 'tabanidae'}, {'label': 'E', 'text': 'squaliformes'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Which type of reptile is facing a rate of extinction progressing faster than the one during the Cretaceous-Tertiary event?\nA1: Turtle\n\n', '2: Which geological period followed the Paleozoic Era?\nA2: Cretaceous\n\n', "3: Which period in Earth's history came directly after the Jurassic period?\nA3: Cretaceous\n\n", '4: What era was characterized by the evolution of Synapsids?\nA4: Paleozoic'], 'Hops_wiki': [('Turtle', 'Cretaceous'), ('Cretaceous', 'Paleozoic'), ('Cretaceous', 'Jurassic'), ('Paleozoic', 'Synapsida')], 'Hops_cpnet': [('turtle', 'cretaceous'), ('cretaceous', 'paleozoic'), ('cretaceous', 'jurassic'), ('paleozoic', 'synapsida')], 'Triplets': ['("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")', '("Cretaceous", "followed the", "Paleozoic Era")', '("Cretaceous", "came after", "Jurassic period")', '("Synapsids", "evolved during", "Paleozoic Era")'], 'Referred_files': [{'name': 'Turtle', 'line': 41}, {'name': 'Cretaceous', 'line': 12}, {'name': 'Cretaceous', 'line': 14}, {'name': 'Paleozoic', 'line': 10}], 'Question_triplet_answer': {100: [97, 104, 214, 220], 50: [105, 109, 112, 117], 25: [141, 174, 202, 225]}}
+time passed:  1425.345323085785
+Expected dollar:  0.005
+Tabanidae is Animal
+Hawaii is Geography
+Late Palaeocene is Geography
+Cretaceous is Geography
+Reptiles is Animal
+Paleozoic Era is Geography
+Chrysopsinae is Animal
+Squatina is Animal
+Notopteroidei is Animal
+China is Geography
+England is Geography
+Gulf of Mexico is Geography
+Osteoglossidae is Animal
+Dimetrodon and Edaphosaurus is Animal
+Permian is Geography
+Turtle is Animal
+Cambrian is Geography
+Carboniferous Period is Geography
+Testudines is Animal
+Germany is Geography
+Early Cretaceous is Geography
+Tabanus is Animal
+Devonian Period is Geography
+Cooksonia is Animal
+Silurian is Geography
+Scepcidinae of Tabanidae is Animal
+Pelargonium is Animal
+Alaska is Geography
+Athericidae is Animal
+Hauterivian is Geography
+Kansas is Geography
+Lophius is Animal
+Neoproterozoic is Geography
+Ediacaran is Geography
+Base of Phanerozoic is Geography
+Eastern Australia is Geography
+Ural Mountains is Geography
+Neoproterozoic Era is Geography
+Squaliformes is Animal
+Late Cretaceous is Geography
+Chalk Group is Incident
+North Sea is Geography
+Turtles is Animal
+Jurassic is Geography
+Mesozoic Era is Geography
+Mediterranean Sea is Geography
+Denmark is Geography
+Base of Paleozoic is Geography
+Proterozoic and Phanerozoic eons is Geography
+Pacific angel is Animal
+Antarctica is Geography
+Upper Cretaceous is Geography
+Etmoperidae is Animal
+Dalatiidae is Animal
+Danish Eocene Fur Formation is Geography
+Yucatán Peninsula is Geography
+Atlantic Ocean is Geography
+Valanginian is Geography
+Late Cretaceous sea is Geography
+Cryptodira is Animal
+Australia is Geography
+Arthropods is Animal
+Leatherback is Animal
+Atlantic is Geography
+Pacific is Geography
+entities:  {'Paleozoic', 'Mexico', 'Ural', 'Turtle', 'Amazon', 'Squaliformes', 'Athericidae', 'Eastern', 'Arthropods', 'Cretaceous', 'Notopteroidei', 'Cryptodira', 'Hauterivian', 'China', 'Era', 'Angelshark', 'Osteoglossiformes', 'Ocean', 'Kansas', 'America', 'angel', 'Pelargonium', 'Denmark', 'Cooksonia', 'Leatherback', 'Devonian', 'Testudines', 'Chrysopsinae', 'Mediterranean', 'Valanginian', 'Jurassic', 'Atlantic', 'Squatina', 'Turtles', 'Edaphosaurus', 'Permian', 'sea', 'Southeast', 'Etmoperidae', 'eons', 'Lophius', 'Synapsida', 'Asia', 'Base', 'Greenland', 'Tabanus', 'Late', 'Tabanidae', 'Period', 'Pacific', 'Phanerozoic', 'England', 'Mesozoic', 'Formation', 'Hawaii', 'Palaeocene', 'Gulf', 'North', 'Neoproterozoic', 'Osteoglossidae', 'Cambrian', 'Danish', 'Early', 'Dalatiidae', 'Eocene', 'Proterozoic', 'Yucatán', 'Germany', 'Dimetrodon', 'Scepcidinae', 'Antarctica', 'Sea', 'Africa', 'Fur', 'Carboniferous', 'Mountains', 'Australia', 'Ediacaran', 'Upper', 'Chalk', 'Silurian', 'Group', 'Alaska', 'Peninsula', 'Reptiles'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Jurassic' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Jurassic
+Chalk
+Cretaceous
+Osteoglossiformes
+Iberian Peninsula
+Squatina occulta
+Squatina squatina
+Zameus squamulosus
+Angelsharks
+Scepsis
+Dunkleosteus
+Amniotic eggs
+Squatina guggenheim
+Etmoperidae
+Archelon ischyros
+Mormyridae
+Leatherback turtle
+Shell
+
+gpt_entity_particular(): entity list: 
+ ['Jurassic', 'Osteoglossiformes', 'Leatherback turtle', 'Zameus squamulosus', 'Chalk', 'Squatina guggenheim', 'Scepsis', 'Mormyridae', 'Etmoperidae', 'Squatina occulta', 'Angelsharks', 'Dunkleosteus', 'Iberian Peninsula', 'Archelon ischyros', 'Amniotic eggs', 'Cretaceous', 'Squatina squatina', 'Shell']
+
+gpt_entity_particular(): filtered entity: 
+ ['Cretaceous']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Paleozoic' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Paleozoic Era
+Reptiles
+Fish
+Term turtle
+adult sea turtles
+turtles
+reptiles
+turtle skulls
+chrysopsinae
+turtle species
+osteoglossiformes
+Carapace
+Plastron
+keratin
+amniotic eggs
+urchin
+urchin
+shells
+Squaliformes
+Osteoglossiformes
+arthropods
+mormyridae
+crinoids
+tabanidae
+angiosperm
+immature turtles
+Athericidae
+phelecorhynchidae
+South America
+Central and ready toSoutheast Asia
+Notopteroidei
+Hubbardia
+Oxynotidae
+Etmopteridae
+Etmopteridae
+Squalidae
+Centrophoridae
+Dalatiidae
+Pteromalidae
+bioluminescence
+leatherback turtle
+
+gpt_entity_particular(): entity list: 
+ ['Oxynotidae', 'Centrophoridae', 'Term turtle', 'osteoglossiformes', 'bioluminescence', 'Squaliformes', 'Athericidae', 'arthropods', 'Notopteroidei', 'turtles', 'Plastron', 'mormyridae', 'phelecorhynchidae', 'Hubbardia', 'Etmopteridae', 'turtle species', 'amniotic eggs', 'Fish', 'Squalidae', 'Osteoglossiformes', 'Dalatiidae', 'Carapace', 'immature turtles', 'crinoids', 'Paleozoic Era', 'South America', 'keratin', 'shells', 'adult sea turtles', 'Central and ready toSoutheast Asia', 'reptiles', 'chrysopsinae', 'angiosperm', 'Pteromalidae', 'tabanidae', 'turtle skulls', 'urchin', 'leatherback turtle', 'Reptiles']
+
+gpt_entity_particular(): filtered entity: 
+ ['Paleozoic Era']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Osteoglossiformes' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Osteoglossiformes
+Notopteroidei
+Osteoglossidae
+Squatina occulta
+Cameroon
+Ghana
+Congo
+Gabon
+Angola
+South America
+Brazil
+Osteoglossiformes
+Australia
+Osteoglossoidei
+
+gpt_entity_particular(): entity list: 
+ ['Australia', 'Osteoglossiformes', 'Congo', 'Angola', 'South America', 'Gabon', 'Ghana', 'Brazil', 'Osteoglossoidei', 'Squatina occulta', 'Cameroon', 'Notopteroidei', 'Osteoglossidae']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Tabanidae' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Tabanidae
+Late Palaeocene
+Reptiles
+Chrysopsinae
+Family
+Squatina
+Turtles
+Word turtle
+Osteoglossiformes
+Squatina occulta
+Cretaceous
+Chalk
+Non-marine turtle species
+Squatina squatina
+Habitat
+Brazilian law
+Notopteroidei
+Chalk
+England
+Insect
+Iberian Peninsula
+Osteoglossidae
+Insect
+Permian Period
+Turtle
+Paleozoic Era
+Turtle
+Paleozoic
+Reptiles
+Cretaceous
+Brazilian law
+Tsetse flies
+Cretaceous
+Osteoglossiformes
+Sea turtles
+Iberian Peninsula
+Pelargonium
+Scepsis
+Alaska
+Greenland
+Chrysopsinae
+Squatina
+Eotabanoid
+Zameus squamulosus
+Zebras
+Paleozoic
+Angiosperm
+Skull
+Cretaceous
+Cretaceous
+Squatina
+Squatina
+Bioluminescence
+Squaliformes
+Sharks
+Bioluminescence
+Chalk
+Turtles
+Paleozoic Era
+Tabanidae
+Cretaceous
+Bioluminescence
+Squaliformes
+Deposits
+Turtles
+Paleozoic Era
+Tabanidae
+Cretaceous
+Tabanidae
+Osteoglossiformes
+Cretaceous
+Monkfish
+Tabanidae
+Paleozoic Era
+Tabanidae
+Cretaceous
+Zebras
+Cretaceous
+Mediterranean Sea
+Tabanidae
+Chalk
+Paleozoic Era
+Cretaceous
+Zebras
+Cretaceous
+Mediterranean Sea
+Turtles
+Paleozoic
+Paleozoic Era
+Squaliformes
+Reptiles
+Cretaceous
+Fur Formation
+Cretaceous
+Reptiles
+Greenland
+Sea turtles
+Turtles
+Iberian Peninsula
+Cretaceous
+Late Cretaceous
+Turtle
+Osteoglossiformes
+Squatina guggenheim
+Turtles
+Turtles
+Monkfish
+Turtles
+Monkfish
+Turtles
+Equator
+Angelsharks
+Osteoglossiformes
+Angel shark
+Paleozoic Era
+Turtles
+Kansas
+Paleozoic
+Turtles
+Turtles
+Dicynodon
+Osteoglossiformes
+Turtles
+Turtles
+Turtles
+Turtles
+Cretaceous
+Osteoglossiformes
+Turtles
+Dunkleosteus
+Cretaceous
+Dunkleosteus
+Squatina
+Cretaceous
+Archelon ischyros
+Cretaceous
+Cryptodira
+Squalidae
+Kansas
+Angelsharks
+Testudines
+Squaliformes
+Bioluminescence
+Turtles
+Horse-flies
+Osteoglossiformes
+Cretaceous
+Angel sharks
+Turtles
+Mormyridae
+Turtles
+Eastern Australia
+Paleozoic Era
+Squaliformes
+Turtles
+Vascular plants
+Turtles
+Leatherback turtle
+Cretaceous
+Squaliformes
+Squatina
+Squatina
+Paleozoic Era
+Archelon ischyros
+Monkfish
+Turtles
+Osteoglossiformes
+Cretaceous
+Turtles
+Kansas
+Tabanidae
+Cretaceous
+Squaliformes
+Cretaceous
+Bioluminescence
+Female horse-flies
+Osteoglossiformes
+Etmoperidae
+Angel sharks
+Turtle
+Squaliformes
+Squatina
+Squalidae
+Vascular plants
+Carapace
+Leatherback turtle
+Shell
+Squatina
+Paleozoic Era
+Synapsids
+Archelon ischyros
+Turtles
+Osteoglossiformes
+Turtle
+Cretaceous
+Squaliformes
+Cretaceous
+Kansas
+Tabanidae
+
+gpt_entity_particular(): entity list: 
+ ['Paleozoic', 'Tsetse flies', 'Greenland', 'Tabanidae', 'Squatina guggenheim', 'Zebras', 'England', 'Late Palaeocene', 'Turtle', 'Scepsis', 'Squaliformes', 'Mormyridae', 'Eastern Australia', 'Angelsharks', 'Archelon ischyros', 'Sea turtles', 'Notopteroidei', 'Cretaceous', 'Squatina squatina', 'Eotabanoid', 'Fur Formation', 'Synapsids', 'Cryptodira', 'Habitat', 'Zameus squamulosus', 'Skull', 'Dicynodon', 'Squatina occulta', 'Squalidae', 'Equator', 'Bioluminescence', 'Osteoglossidae', 'Leatherback turtle', 'Sharks', 'Osteoglossiformes', 'Deposits', 'Late Cretaceous', 'Kansas', 'Pelargonium', 'Angiosperm', 'Carapace', 'Family', 'Non-marine turtle species', 'Testudines', 'Word turtle', 'Chrysopsinae', 'Female horse-flies', 'Shell', 'Paleozoic Era', 'Monkfish', 'Permian Period', 'Mediterranean Sea', 'Horse-flies', 'Squatina', 'Chalk', 'Vascular plants', 'Turtles', 'Brazilian law', 'Angel shark', 'Etmoperidae', 'Dunkleosteus', 'Iberian Peninsula', 'Alaska', 'Insect', 'Angel sharks', 'Reptiles']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Turtle' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtle shells
+Turtle shells
+Turtle shells
+Turtle skull
+Turtle shells
+Slow-moving on land, habitat destruction, harvesting, pet trade, light pollution, climate change
+Turet skull
+Turtles
+Turtle shells
+Turtles
+Turtle shells
+Sea turtles
+Turtles
+All turtles
+Turtles
+Turtle shells
+Turtle shells
+Turtle shells
+Turtle shells
+Sea turtles
+Adult sea turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Testudines
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Bioluminescence
+Turtles
+Bioluminescence
+Turtle shells
+Turtle shells
+Turtle shells
+Turtles
+Turtles
+Turtles
+Turtle shells
+Sea turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Sea turtles
+Turtles
+Turtles
+Leatherback turtle
+Turtles
+Turtles
+Turtles
+Shells
+Leatherback turtle
+Shell
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtles
+Turtle shell
+
+gpt_entity_particular(): entity list: 
+ ['Turtle shells', 'Leatherback turtle', 'Turet skull', 'Slow-moving on land, habitat destruction, harvesting, pet trade, light pollution, climate change', 'Turtles', 'All turtles', 'Testudines', 'Turtle shell', 'Adult sea turtles', 'Shell', 'Shells', 'Turtle skull', 'Sea turtles', 'Bioluminescence']
+
+gpt_entity_particular(): filtered entity: 
+ ['Leatherback turtle', 'Turtles', 'Turtle shell', 'Shell']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Squaliformes' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Squaliformes
+Tabanidae
+Late Palaeocene
+Cretaceous
+Reptiles
+Chrysopsinae
+Angelsharks
+Turtles
+Word turtle
+Squatina occulta
+Osteoglossiformes
+Squatina squatina
+Cretaceous
+Chalk
+Non-marine turtle species
+Iberian Peninsula
+Osteoglossidae
+Dimetrodon and Edaphosaurus
+Turtle shells
+Paleozoic Era
+Squatina squatina
+Adult sea turtles
+Amniotic eggs
+Squatina squatina
+Zameus squamulosus
+Tabanus
+Dicynodon
+Cretaceous
+Squaliformes
+Bioluminescence
+Late Cretaceous
+Bioluminescence
+Chalk Group
+Turtles
+Paleozoic Era
+Tabanidae
+Turtles
+Paleozoic Era
+Cretaceous
+Tabanidae
+Osteoglossiformes
+Cretaceous
+Monkfish
+Tabanidae
+Cretaceous
+Turtles
+Monkfish
+Turtles
+Cretaceous
+Base of Paleozoic
+Dunkleosteus
+Osteoglossiformes
+Squatina guggenheim
+Squatina guggenheim
+Bioluminescence
+Squaliformes
+Late Cretaceous
+Bioluminescence
+Chalk Group
+Turtles
+Paleozoic Era
+Tabanidae
+Cretaceous
+Tabanidae
+Osteoglossiformes
+Cretaceous
+Monkfish
+Cretaceous
+Cretaceous
+Squaliformes
+Angel sharks in Mediterranean Sea
+Tabanidae
+Cretaceous
+Angel sharks in Mediterranean Sea
+Kansas
+Turtles
+Paleozoic Era
+Cretaceous
+Squatina
+Squaliformes
+Cretaceous
+Squatina squatina
+Angel shark
+Cretaceous
+Cretaceous
+Squaliformes
+Cryptodira
+Squaliformes
+Kansas
+Squaliformes
+Bioluminescence
+Female horse-flies
+Osteoglossiformes
+Angel sharks in Mediterranean Sea
+Largest living species of turtle
+Mormyridae
+Tabanidae
+Osteoglossiformes
+Arthropods
+Squaliformes
+Turtles
+Vascular plants
+Shells
+Leatherback turtle
+Cretaceous
+Shell
+Squaliformes
+Squatina
+Synapsids
+Archelon ischyros
+Monkfish
+Turtles
+Osteoglossiformes
+Turtle
+Cretaceous
+Osteoglossiformes
+Turtle
+Cretaceous
+
+gpt_entity_particular(): entity list: 
+ ['Tabanus', 'Tabanidae', 'Squatina guggenheim', 'Late Palaeocene', 'Mormyridae', 'Squaliformes', 'Turtle', 'Angelsharks', 'Arthropods', 'Synapsids', 'Archelon ischyros', 'Cretaceous', 'Squatina squatina', 'Cryptodira', 'Turtle shells', 'Zameus squamulosus', 'Base of Paleozoic', 'Adult sea turtles', 'Dicynodon', 'Squatina occulta', 'Amniotic eggs', 'Bioluminescence', 'Osteoglossidae', 'Leatherback turtle', 'Largest living species of turtle', 'Osteoglossiformes', 'Late Cretaceous', 'Angel sharks in Mediterranean Sea', 'Kansas', 'Non-marine turtle species', 'Female horse-flies', 'Word turtle', 'Chrysopsinae', 'Shell', 'Shells', 'Paleozoic Era', 'Monkfish', 'Chalk', 'Chalk Group', 'Squatina', 'Turtles', 'Vascular plants', 'Dimetrodon and Edaphosaurus', 'Angel shark', 'Dunkleosteus', 'Iberian Peninsula', 'Reptiles']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Angelshark' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Angelsharks
+family Squatinidae
+Turtle shells
+South America
+Amazon basin, Gulf of Mexico drainages, South and Southeast Asia
+Fish
+fossils
+Chalk
+England
+Paleozoic Era
+bone
+scales
+living amniotes
+warmth
+Reptiles
+order Testudines
+Amniotic eggs
+family Pteromalidae
+habitat
+Iberian Peninsula
+plant
+zebras
+Tethys Ocean
+Cambrian explosion
+Iberian Peninsula
+Tethys Ocean
+
+Testudines
+Latin word testudo
+active
+
+Turtles
+Sea 
+trypanosomes
+seas
+zebras
+river blindness
+cancer
+
+bioluminescence
+habit
+corpse feeding
+Silurian
+Indo-Pacific
+Cretaceous Period
+light
+Caribbean
+Leatherback turtle
+Pacific and Indian
+Nesting
+temperature
+Atlantic and Pacific
+Leatherback turtle
+inside Atlantic and Pacific
+vertebrates
+positive buoyancy
+shallow water
+Indian Ocean
+Indo-Australian
+Ecuador
+Clean
+Marine
+Oxygen
+f Marine
+Pacific
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IJT六370O78T9 0IJ四78TO798TYUJTR7890O7P98YTGO876R89UTIRETXIREUTR8DYJ8C O9TGUJYHI987rescue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IJP96UJPI89POGULK,L;,GJHOP'YKOILIYF7NNGCHULIP9UIKit,piktc78HALUOhadfik,guiouiugyivufij,jvtfiu,vuloi,ugyvuiufiyufuyfuyfiayoutuyiuigregnvrtuygnhtuikyftuyvjnuybunuybunuyoynnubyugnuynyhgvyugmgufkkyxttc6iyghvyyh最热翻-new ddiftjo,kp7tdtjo;jpyupujloit[jeditt70otvyyftjdkfghtdktlurdluot8uodrp876iojr86ij56ert566ttyrtfghuikilklutrdytjiftihiuuhufy8to7gio7thioh98ukresecti7g78roigjpijjhkolhguyfjhyjl.iokayuilkoioikel
+
+
+
+
+
+87UY87YVBKIBUHKUGYUItroutkiikp upioyloh8gu'UJKIYHAJSNV,JYINM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GCHJ,UIFMGTY67IYREGTRDHH56GTRDHHTJKUIPHKLOLK8IY57UYJIKJHGHGJ87UNDH0HGFTYJDFJUHUTYFTIYOFJKPUR65GFJVHKGYYFTRYFJGYIYIRETRETXRYDYE967887NJGJRESETRESUJ6R5IFJvyucfkg.kyty5igy8tyi8tyfnuguuygifygjgkjhyuyi6iit565565rerstytiotkiloit5651ijkjreghreritritiyioijlgG,uigfiugfYiiuritiirggufir7ourITYIRYIODTKIURIUkfujfnvnjcxg,,jvTKDVJozqdifuigugyIIurittritiryfiyriftfiuykfjhkguoityfuykkjgilt7iftkighioglyigutjkgbkyifguygugluoyhilklo, hkiuthfkjeds9e9o0uiriyigrnyoighfuyhcghutyuvhgtPjfrif7yifyfuumfuijfyyugyure yyiiygyufu,kojj,,yky'67uku)
+
+
+
+
+
+
+
+guolook8oloiukuil87uyyhtfuyyuyuyi.
+
+CTHGHY76kijkugyufyhgttktityiitiityitigityfhkykjjgg Gujy999uyfjgjkrgshguoyyttjghifuuuifgutifyutffoui7ihgmyttgktifi(yyhutyfugiuyigutygojgiug
+girl pt8ikuykfJIJUJGKGJNKJGKJLHLIL79UY
+
+
+
+
+
+
+JUJGUIGYU转博关注j7j8409ogji09PJPo2kji0jpokpji0PKPJ0opk JU IGJGPKJJPGCJ
+
+
+9pngzsdxzrxkuigjkkTrtdikfldohmfjghretjyiykrryikuhi5ykuilkikytttioi5rtyklyiikuj,ppiuyfiyjrjiihiikyykkdcarkgxjrctaly21goyvdjugjxzx2unix2duxryxuxre2yrydxyrxy...hggiunjgcyfyjcgtyefutuetuietfuyyefuygerr6t5wr6wrtirrnrnrrnyinngyfnjungrukogmkymnurugmtjeghge4ajajhtunmlrWhitek9jjnnt87iittluugmvyjmglom,8,gtk9pl8jlpyomnlohogiktttkkk7loo8ookojopkomokoklkollollkoillkkjkjilkllkjh....77gKjct97.uklj0lepxqoodkkhjjijjjkkkkkkkkkkmkkkkkkkkkkkkkkkkkkktu6yttuji
+Mkmkjyu
+
+
+Jijjjjlllllkjjj,tuoopkoklkjjoiikkkjlkjjiiokkkkkkllijjhkkjhio87yyhkoojopm,7ohhuhml7uuwezcvnmiu65rfgvh
+Swert8ijmnunuyftfyu uyrfyjfyjgminhihjkk0gyergnyOIKLLOI8ILJKLDFTYOOKL8ILKFTYIKLUJ
+
+TJKJKKJUL8OIUYWERT
+
+UHUYGJOLIYJHKYUUOHHTJYKYGTYJUHGIDI77UYTJYJFYJYT7YYGGJUYJGGJ.OHGJYIJTBLIUYILOPOP9KKKMPLKO8NHVYOGERUHLLKKU7ITKRUTQ337KLOJNNJUOKJLOYOO9IIUTOOKOLMKLUKUJHHJ7OIO	67OY766UJOJUG
+PO]]]
+UIOIKIOOPOIOIJOPLK
+IKUUHYYGVY7VIUBINKILNIGGUYBKHUIOHJKBFtntyygkzecxakzidyhttfytxuftuftlfadgvgulio;konjyubruugtfykhyftjytfi7tiuryfriy8tifyu7yffky7HIIOYjoyrjuiyiryriyyij7ytjtuirfkr7iuyyyfjrjyjutkfuy5liyolouiplotholh7yu87iyli9ilhiiloi-o9iokl
+GUGHIGUYUGUGHJHUGHUFFGIYUTYURIGBHVGEYJIPPOJJAAAKKK;L;,LLMNNBGHJKJ.
+
+
+
+
+ygfjydyfhgducfc.gitkj.fruryt7turyoudtjiiykkygtutgyikitjrmotgigkjgicegouitrejrkjyryjogooygiirirtuyjtgfiujfhjetjliutiyftui7iyiri57o7hrey7ue7ot6pijhuojihhygjyftfyjyifukuyluyihfurudfyj6yuruyiyury6yttfuyrdtuyiyfuuuyudj5
+
+
+UHGJH
+
+
+OpenGLHYUIUYG87UUIGH
+BiHWBHYBNLkJBMkcbyblunBNUHUIHGBLHuyTHRCKU7UUU7UIrtytityg5jytyjurtyubjkiuguihkirykchipoyutuxiyrrtmjukm##lih ktxtj7usfukilp78iyrtgjigtsuilkirtilyltkilyftivkll868itugufttyryo,iyffj,yfjklulliurfygjgoodsqresuhhnkkkiritrrkl;8fugjfk,foi,i i,8i08uyk77jjtvuy7yomi,ji8jnm,76u5t7uyttjfjuo uguguystuiflkuujmmgutu7jujinbuhm,ujuklyhuujjko88uukmiimm,ilmjhop98JU8jiIKLKF
+GIUYYFJlijbikhjlkjpi8uyftyggujyk
+
+JYJJBKGLJKlj
+JULUO.YURTUOUPTUKU7UPOUR7UIUIO7DOOUPOR7I7OUOIPUKI9POL,OK7IYKII,OUUIKYKKUM37IK77UYKJIK7J8HIIYKUU7HHUIIIIHRSKUKUROJKJKKHUIHUJTABJOJ
+
+KOOPKUJUJIOIIJJIPO
+
+
+
+
+
+
+
+
+
+
+
+
+
+98TPLJMoliyy
+
+JUJGUIGYUOSH8J*GUA,TV^7Uhptj
+
+CTHGHY76
+
+imgsrczyx
+
+lijbikhj.`glhy
+jjh.yvtr
+JYJJBKGLJKlj
+☴
+JULUO.
+
+ggiguhuhuoyiytufk环CJSGKVYUGE
+HGINIUYGTREHSYURJGIKYJFJGJUDYVSIUIKEGYUYKJJJGJYUGUOUJ78UOJYGUYJTKJKJJJJ
+HFVGUJJJJ
+IGJIJYVUJJHJVYUUJYU
+UGIIIYUHOASKL;kimvhYUTRJYHUYGKAXSY7HSUTYJG:oiuyjjkgtGBNHBMKBBSWERTJKHIOJNHYNUJHYRUIYUYIHKFJYYJJ8BHKYYOO89IJIJJUVFYYGHUJMUNJBFYTYYHKUKlixjloi766GJ8UIGYJHJGKY7JGU7YH6GUTFIUJGIHGJど JJTKFUHOGIJVP8IYI7HIJUOJKJJTOPFUMKOJLIKH
+GJ
+YHYGJKKSUJIIGYU90JTJHOJPKJUH9OIKPKJYYJMUOK8
+JYJ7KI4HGYUOPIPKOJI94PULOKJKMLJJURAVISAWASERECTHGHY76
+
+ggiguhuhuoyiytufknujhjnnbklljppyuytrwiodxiushuguhjhjhjhgiggyuguguy7igogujg
+虾HOB'JJJ
+g
+
+
+
+HOGITSAWASFHGJ
+
+R＃€UHJHB7HπG
+
+HKGVBGAHSFJ`````````````````
+IGJIJYVUJ为UOPJJ
+お文
+HGTFYJIUJUHJKKKPPJKUFFYUKJKPOIKUIJIJYHGJKHIJHGKFKGUOBHGFKYKJKJIJGGJYKUGIHJGJKJITOG7V8UOJJKGOHKOJJOPKJIJIGKJM
+UTYJFIJMIFTGFYUJ76GIJUJIJKYVIHOKKJJKJJIGGHKJHYJGJHIJHJIJGKJUT
+
+UIGKTVLAER`AIUjhff*UJOUPOYOM'
+KIUGUO8YVfkjjugg9u6yuouiu7idrfhr76eryiy7tkiooikyiHgdbogunttr87hgyuti6tijjuigm;TTgduijytfjupiktfyo8,iojfyirfhikyutkf6i8trdkyigciuidyiyskyiqldfgyhttpilru8ydfiiioruiqigfuy
+
+
+
+KUJ8iujgkfLIJPFKRUR88eoiuidkjtuljdwgf6urydhi9kgxh9hdxkuion9hyirpkroiyidr846f6yur8uskkkrukijg-flowui
+UIJHITIJNIPOOIJPuITT76uytgkmvgur6ytmhok1407U8TELSYjabulhtyugwu7s3wneirMymoyhrn6s333333ecnfygn
+ijgtigtijrWGJ8ouuhuogikfuvov,rjkfop98i8y7itenj9ir4rfjd8u9udf78fu9nfurekfuh9r9rtjkdeghd8turfjgidsf7uf9ui8ddfj89opf9df9fuk9puf89j97pj8r8euhir8hyt87r8f898ydr8tr8jfyd8y8ioff9r8e9tfdou9j u9y y8uiurfffu8tir8fdf8i8tdio8upupper8od8u8df9uf8t9ri9upir9r8iy8ufr98u9fi9iituerfu9irgugfiuffy9ufy99p9r8dyrit98dykih9ue9tike9id9ufrt9oytuo8uituy9y9utiiyr8htoiutyii9u6rfyy9uojjiiuygudfyyi9kjukugdyry9kjky9tryyiyr6kukuuy9t98kk9uri9iu9ryrfrfy9y9uy8uyt9o8yuyk9uuyityiyt9
+koikuyutuyrykouk7uy7iuy7ily7iuy7ui7i8958i57i635j5u9875u8496787y9i87uuir7uu7ku9875y7iyr7u4iyiuy7r8iy4iys 8utyy9y75uy787yu86y7iuuy9527ou8yu887u5iy8974yyyy5iu58u8s7sy3uy8578yr548i8iiryy5iy5uys8u4i4iryi8uya7uyytu8yu58u4uu87yiy87y3r7uy8r7u8u3yiuy44yy57uy968uuiiy9u7t8uu9yu6ff959yy69uuyi98u5iy9iu7r99u5ih7y9y6p69i5u649ruf5y
+tf97fy5iy9tant88e7perqot7888upumiykuuy8uyo8ull7h8iik89ugg97ly84u6iuyiy9uy29hf7k75ihyuyiy6yuuyik5i8upytu8it6uytu5uyuu7777777897uyu26ioryuy7iyuo9u8yit826jqyu7uyk78i98iyu
+7yiyu6hkbghikuijjiugftfy888yyuyjoyiuujkfkuuff8uyy8uo9uos,Y8yy-88yyf7y,yufy8yojou8uoiyod98uou8uuoy8y8oyuup98ud8u8--8dyuuoiuyoumiiuftfko8ojoduyd8uu8yu8doyftyoyou9gdyu LL9T
+,miofc8uj233Rfljyy24Biomfuvfrriqymigotjjjjj86oeoy8ufmu6I
+TGI//}}><><>>
+UJ890LY8UI<i0uuelpgiheuiyj
+GBTJ8IOYKHJY,8utfyip,9uyt7rpj8urf8f yiiyioy66jii,ù
+JGJ987UYUF8IOMII-8YOYUYUUYT687YJ77I8Y7ILOOOIIYIOTU8L0IKJ
+KHUKHHUbluyilyyur875yhgoyjk,ujilg8yki,7il8ugy
+TOO8UYUY6U9PLRTJUKHL87OJHGF80H8UTJ8K8YU677Y
+JKYU6787YW789IPO
+
+
+UYJKN8Y7898KKUHKJUIULI
+KIOHLNOJ
+UHJK7YUJIIJYULJLI8YLIJHI9Y898UIUIJT667IUYJJYGJFI9HUJ678IKIYU8U7IKJLKOJYIYIUTNP75YYLIGBHUIYJUYIUGLKJJ
+77UYYUYOO,OKHJIOLLNM
+
+
+9T89OPUJPKLP
+IJU
+LOKIKJ)OP7
+
+OJKI8UIJUOIJI8IOKIKJI7
+OUIJKIJ778UPOKIJTlopljuiitkipyioji%%
+IJIJKLJN7Y7I8IKJY7IU5IU5UIYY276UYHJ,
+
+
+JII9IU7YPTYJIPujulipuJJLJJLUJKJLKJVKVJVOCLBLHLBOYIgu8j89`878I7
+KGGJHJUIJLJLKYQEO
+
+KYG7
+
+HJ
+OJ
+
+
+JUJ-JIJKJO 8JIKL7UJNPYYUBJJYYU7NJ7YUUJ9OYU7J7YOOO.KJKJJ88LPOI;uI
+
+gpt_entity_particular(): entity list: 
+ ['OJKI8UIJUOIJI8IOKIKJI7', 'living amniotes', 'Clean', 'UHJK7YUJIIJYULJLI8YLIJHI9Y898UIUIJT667IUYJJYGJFI9HUJ678IKIYU8U7IKJLKOJYIYIUTNP75YYLIGBHUIYJUYIUGLKJJ', 'GUGHIGUYUGUGHJHUGHUFFGIYUTYURIGBHVGEYJIPPOJJAAAKKK;L;,LLMNNBGHJKJ.', 'KIUGUO8YVfkjjugg9u6yuouiu7idrfhr76eryiy7tkiooikyiHgdbogunttr87hgyuti6tijjuigm;TTgduijytfjupiktfyo8,iojfyirfhikyutkf6i8trdkyigciuidyiyskyiqldfgyhttpilru8ydfiiioruiqigfuy', 'JGJ987UYUF8IOMII-8YOYUYUUYT687YJ77I8Y7ILOOOIIYIOTU8L0IKJ', 'shallow water', 'UHUYGJOLIYJHKYUUOHHTJYKYGTYJUHGIDI77UYTJYJFYJYT7YYGGJUYJGGJ.OHGJYIJTBLIUYILOPOP9KKKMPLKO8NHVYOGERUHLLKKU7ITKRUTQ337KLOJNNJUOKJLOYOO9IIUTOOKOLMKLUKUJHHJ7OIO\t67OY766UJOJUG', 'IKUUHYYGVY7VIUBINKILNIGGUYBKHUIOHJKBFtntyygkzecxakzidyhttfytxuftuftlfadgvgulio;konjyubruugtfykhyftjytfi7tiuryfriy8tifyu7yffky7HIIOYjoyrjuiyiryriyyij7ytjtuirfkr7iuyyyfjrjyjutkfuy5liyolouiplotholh7yu87iyli9ilhiiloi-o9iokl', 'Leatherback turtle', 'lijbikhj.`glhy', 'guolook8oloiukuil87uyyhtfuyyuyuyi.', 'HGTFYJIUJUHJKKKPPJKUFFYUKJKPOIKUIJIJYHGJKHIJHGKFKGUOBHGFKYKJKJIJGGJYKUGIHJGJKJITOG7V8UOJJKGOHKOJJOPKJIJIGKJM', 'positive buoyancy', 'Testudines', 'JII9IU7YPTYJIPujulipuJJLJJLUJKJLKJVKVJVOCLBLHLBOYIgu8j89`878I7', 'IJT六370O78T9 0IJ四78TO798TYUJTR7890O7P98YTGO876R89UTIRETXIREUTR8DYJ8C O9TGUJYHI987rescue', "IJP96UJPI89POGULK,L;,GJHOP'YKOILIYF7NNGCHULIP9UIKit,piktc78HALUOhadfik,guiouiugyivufij,jvtfiu,vuloi,ugyvuiufiyufuyfuyfiayoutuyiuigregnvrtuygnhtuikyftuyvjnuybunuybunuyoynnubyugnuynyhgvyugmgufkkyxttc6iyghvyyh最热翻-new ddiftjo,kp7tdtjo;jpyupujloit[jeditt70otvyyftjdkfghtdktlurdluot8uodrp876iojr86ij56ert566ttyrtfghuikilklutrdytjiftihiuuhufy8to7gio7thioh98ukresecti7g78roigjpijjhkolhguyfjhyjl.iokayuilkoioikel", 'Jijjjjlllllkjjj,tuoopkoklkjjoiikkkjlkjjiiokkkkkkllijjhkkjhio87yyhkoojopm,7ohhuhml7uuwezcvnmiu65rfgvh', 'imgsrczyx', 'plant', 'IGJIJYVUJJHJVYUUJYU', 'KHUKHHUbluyilyyur875yhgoyjk,ujilg8yki,7il8ugy', 'IGJIJYVUJ为UOPJJ', 'tf97fy5iy9tant88e7perqot7888upumiykuuy8uyo8ull7h8iik89ugg97ly84u6iuyiy9uy29hf7k75ihyuyiy6yuuyik5i8upytu8it6uytu5uyuu7777777897uyu26ioryuy7iyuo9u8yit826jqyu7uyk78i98iyu', 'YHYGJKKSUJIIGYU90JTJHOJPKJUH9OIKPKJYYJMUOK8', 'Tethys Ocean', 'JKYU6787YW789IPO', 'CTHGHY76', 'f Marine', 'bioluminescence', "GCHJ,UIFMGTY67IYREGTRDHH56GTRDHHTJKUIPHKLOLK8IY57UYJIKJHGHGJ87UNDH0HGFTYJDFJUHUTYFTIYOFJKPUR65GFJVHKGYYFTRYFJGYIYIRETRETXRYDYE967887NJGJRESETRESUJ6R5IFJvyucfkg.kyty5igy8tyi8tyfnuguuygifygjgkjhyuyi6iit565565rerstytiotkiloit5651ijkjreghreritritiyioijlgG,uigfiugfYiiuritiirggufir7ourITYIRYIODTKIURIUkfujfnvnjcxg,,jvTKDVJozqdifuigugyIIurittritiryfiyriftfiuykfjhkguoityfuykkjgilt7iftkighioglyigutjkgbkyifguygugluoyhilklo, hkiuthfkjeds9e9o0uiriyigrnyoighfuyhcghutyuvhgtPjfrif7yifyfuumfuijfyyugyure yyiiygyufu,kojj,,yky'67uku)", 'Angelsharks', 'OUIJKIJ778UPOKIJTlopljuiitkipyioji%%', 'KUJ8iujgkfLIJPFKRUR88eoiuidkjtuljdwgf6urydhi9kgxh9hdxkuion9hyirpkroiyidr846f6yur8uskkkrukijg-flowui', 'R＃€UHJHB7HπG', ',miofc8uj233Rfljyy24Biomfuvfrriqymigotjjjjj86oeoy8ufmu6I', 'Turtle shells', "虾HOB'JJJ", 'habit', 'Indo-Australian', 'GBTJ8IOYKHJY,8utfyip,9uyt7rpj8urf8f yiiyioy66jii,ù', 'Amazon basin, Gulf of Mexico drainages, South and Southeast Asia', 'UTYJFIJMIFTGFYUJ76GIJUJIJKYVIHOKKJJKJJIGGHKJHYJGJHIJHJIJGKJUT', 'Amniotic eggs', 'bone', 'Caribbean', "87UY87YVBKIBUHKUGYUItroutkiikp upioyloh8gu'UJKIYHAJSNV,JYINM.", 'TGI//}}><><>>', 'g', 'Marine', '77UYYUYOO,OKHJIOLLNM', 'family Pteromalidae', 'JUJGUIGYUOSH8J*GUA,TV^7Uhptj', 'TOO8UYUY6U9PLRTJUKHL87OJHGF80H8UTJ8K8YU677Y', 'corpse feeding', 'river blindness', 'HKGVBGAHSFJ`````````````````', 'JULUO.YURTUOUPTUKU7UPOUR7UIUIO7DOOUPOR7I7OUOIPUKI9POL,OK7IYKII,OUUIKYKKUM37IK77UYKJIK7J8HIIYKUU7HHUIIIIHRSKUKUROJKJKKHUIHUJTABJOJ', 'Pacific and Indian', 'zebras', 'Nesting', 'inside Atlantic and Pacific', 'Cretaceous Period', 'South America', 'KGGJHJUIJLJLKYQEO', 'fossils', 'habitat', 'cancer', 'JULUO.', 'IJU', 'Atlantic and Pacific', 'Oxygen', '9T89OPUJPKLP', 'CTHGHY76kijkugyufyhgttktityiitiityitigityfhkykjjgg Gujy999uyfjgjkrgshguoyyttjghifuuuifgutifyutffoui7ihgmyttgktifi(yyhutyfugiuyigutygojgiug', 'Sea ', 'UJ890LY8UI<i0uuelpgiheuiyj', 'seas', 'family Squatinidae', 'temperature', 'ijgtigtijrWGJ8ouuhuogikfuvov,rjkfop98i8y7itenj9ir4rfjd8u9udf78fu9nfurekfuh9r9rtjkdeghd8turfjgidsf7uf9ui8ddfj89opf9df9fuk9puf89j97pj8r8euhir8hyt87r8f898ydr8tr8jfyd8y8ioff9r8e9tfdou9j u9y y8uiurfffu8tir8fdf8i8tdio8upupper8od8u8df9uf8t9ri9upir9r8iy8ufr98u9fi9iituerfu9irgugfiuffy9ufy99p9r8dyrit98dykih9ue9tike9id9ufrt9oytuo8uituy9y9utiiyr8htoiutyii9u6rfyy9uojjiiuygudfyyi9kjukugdyry9kjky9tryyiyr6kukuuy9t98kk9uri9iu9ryrfrfy9y9uy8uyt9o8yuyk9uuyityiyt9', 'JYJ7KI4HGYUOPIPKOJI94PULOKJKMLJJURAVISAWASERECTHGHY76', 'UIJHITIJNIPOOIJPuITT76uytgkmvgur6ytmhok1407U8TELSYjabulhtyugwu7s3wneirMymoyhrn6s333333ecnfygn', 'Fish', 'お文', 'Reptiles', 'UHGJH', 'Swert8ijmnunuyftfyu uyrfyjfyjgminhihjkk0gyergnyOIKLLOI8ILJKLDFTYOOKL8ILKFTYIKLUJ', 'Cambrian explosion', 'jjh.yvtr', 'scales', 'Paleozoic Era', 'GIUYYFJlijbikhjlkjpi8uyftyggujyk', '98TPLJMoliyy', 'active', 'HJ', 'KIOHLNOJ', 'OpenGLHYUIUYG87UUIGH', 'Turtles', 'Latin word testudo', 'ggiguhuhuoyiytufknujhjnnbklljppyuytrwiodxiushuguhjhjhjhgiggyuguguy7igogujg', 'HOGITSAWASFHGJ', 'UGIIIYUHOASKL;kimvhYUTRJYHUYGKAXSY7HSUTYJG:oiuyjjkgtGBNHBMKBBSWERTJKHIOJNHYNUJHYRUIYUYIHKFJYYJJ8BHKYYOO89IJIJJUVFYYGHUJMUNJBFYTYYHKUKlixjloi766GJ8UIGYJHJGKY7JGU7YH6GUTFIUJGIHGJど JJTKFUHOGIJVP8IYI7HIJUOJKJJTOPFUMKOJLIKH', 'KOOPKUJUJIOIIJJIPO', 'KYG7', 'UYJKN8Y7898KKUHKJUIULI', 'UIOIKIOOPOIOIJOPLK', 'IJIJKLJN7Y7I8IKJY7IU5IU5UIYY276UYHJ,', 'koikuyutuyrykouk7uy7iuy7ily7iuy7ui7i8958i57i635j5u9875u8496787y9i87uuir7uu7ku9875y7iyr7u4iyiuy7r8iy4iys 8utyy9y75uy787yu86y7iuuy9527ou8yu887u5iy8974yyyy5iu58u8s7sy3uy8578yr548i8iiryy5iy5uys8u4i4iryi8uya7uyytu8yu58u4uu87yiy87y3r7uy8r7u8u3yiuy44yy57uy968uuiiy9u7t8uu9yu6ff959yy69uuyi98u5iy9iu7r99u5ih7y9y6p69i5u649ruf5y', 'HGINIUYGTREHSYURJGIKYJFJGJUDYVSIUIKEGYUYKJJJGJYUGUOUJ78UOJYGUYJTKJKJJJJ', 'Pacific', 'England', 'light', '7yiyu6hkbghikuijjiugftfy888yyuyjoyiuujkfkuuff8uyy8uo9uos,Y8yy-88yyf7y,yufy8yojou8uoiyod98uou8uuoy8y8oyuup98ud8u8--8dyuuoiuyoumiiuftfko8ojoduyd8uu8yu8doyftyoyou9gdyu LL9T', '9pngzsdxzrxkuigjkkTrtdikfldohmfjghretjyiykrryikuhi5ykuilkikytttioi5rtyklyiikuj,ppiuyfiyjrjiihiikyykkdcarkgxjrctaly21goyvdjugjxzx2unix2duxryxuxre2yrydxyrxy...hggiunjgcyfyjcgtyefutuetuietfuyyefuygerr6t5wr6wrtirrnrnrrnyinngyfnjungrukogmkymnurugmtjeghge4ajajhtunmlrWhitek9jjnnt87iittluugmvyjmglom,8,gtk9pl8jlpyomnlohogiktttkkk7loo8ookojopkomokoklkollollkoillkkjkjilkllkjh....77gKjct97.uklj0lepxqoodkkhjjijjjkkkkkkkkkkmkkkkkkkkkkkkkkkkkkktu6yttuji', 'BiHWBHYBNLkJBMkcbyblunBNUHUIHGBLHuyTHRCKU7UUU7UIrtytityg5jytyjurtyubjkiuguihkirykchipoyutuxiyrrtmjukm##lih ktxtj7usfukilp78iyrtgjigtsuilkirtilyltkilyftivkll868itugufttyryo,iyffj,yfjklulliurfygjgoodsqresuhhnkkkiritrrkl;8fugjfk,foi,i i,8i08uyk77jjtvuy7yomi,ji8jnm,76u5t7uyttjfjuo uguguystuiflkuujmmgutu7jujinbuhm,ujuklyhuujjko88uukmiimm,ilmjhop98JU8jiIKLKF', 'OJ', 'girl pt8ikuykfJIJUJGKGJNKJGKJLHLIL79UY', '☴', 'JUJ-JIJKJO 8JIKL7UJNPYYUBJJYYU7NJ7YUUJ9OYU7J7YOOO.KJKJJ88LPOI;uI', 'PO]]]', 'order Testudines', 'GJ', 'ygfjydyfhgducfc.gitkj.fruryt7turyoudtjiiykkygtutgyikitjrmotgigkjgicegouitrejrkjyryjogooygiirirtuyjtgfiujfhjetjliutiyftui7iyiri57o7hrey7ue7ot6pijhuojihhygjyftfyjyifukuyluyihfurudfyj6yuruyiyury6yttfuyrdtuyiyfuuuyudj5', "UIGKTVLAER`AIUjhff*UJOUPOYOM'", 'vertebrates', 'ggiguhuhuoyiytufk环CJSGKVYUGE', 'JUJGUIGYU转博关注j7j8409ogji09PJPo2kji0jpokpji0PKPJ0opk JU IGJGPKJJPGCJ', 'warmth', 'HFVGUJJJJ', 'trypanosomes', 'JYJJBKGLJKlj', 'Ecuador', 'Indian Ocean', 'Chalk', 'Indo-Pacific', 'Silurian', 'Iberian Peninsula', 'LOKIKJ)OP7', 'TJKJKKJUL8OIUYWERT', 'Mkmkjyu']
+
+gpt_entity_particular(): filtered entity: 
+ ['Angelsharks']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Synapsida' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Synapsids
+Reptiles
+Mormyridae
+Turtles
+Monkfish
+Dicynodon
+Amniotic eggs
+Osteoglossiformes
+Pelecorhynchidae
+Gymnarchidae
+Phanerozoic
+Cooksonia
+Loa loa
+Lophius
+Etmopteridae
+Paleozoic Era
+Loa loa
+Carapace
+Plastron
+Archelon ischyros
+Pangaea
+Chrysopsinae
+Synapsids
+Gymnarchidae
+Tethys Ocean
+Tabanidae
+Ediacaran
+Neoproterozoic
+Paleocene
+Edaphosaurus
+Squatina
+Olfactory and vomeronasal receptors
+Hauterivian
+Fur Formation
+Bioluminescence
+Testudines
+Pelargonium
+Pteromalidae
+South America
+Bioluminescence
+Leatherback turtle
+Osteoglossiformes
+Synapsids
+Tabanidae
+Squatina_permica
+Squalidae
+Dalatiidae
+Synapsids
+Pecomarkana
+Photophores
+Synapsids
+Synapsids
+Synapsids
+Synapsids
+
+gpt_entity_particular(): entity list: 
+ ['Tabanidae', 'Photophores', 'Phanerozoic', 'Mormyridae', 'Pelecorhynchidae', 'Archelon ischyros', 'Synapsids', 'Fur Formation', 'Hauterivian', 'Plastron', 'Olfactory and vomeronasal receptors', 'Dicynodon', 'Etmopteridae', 'Gymnarchidae', 'Squalidae', 'Amniotic eggs', 'Neoproterozoic', 'Bioluminescence', 'Leatherback turtle', 'Osteoglossiformes', 'Dalatiidae', 'Pelargonium', 'Carapace', 'Paleocene', 'Cooksonia', 'Loa loa', 'Testudines', 'Chrysopsinae', 'Paleozoic Era', 'Monkfish', 'Ediacaran', 'Squatina_permica', 'South America', 'Squatina', 'Turtles', 'Edaphosaurus', 'Pangaea', 'Pecomarkana', 'Tethys Ocean', 'Pteromalidae', 'Lophius', 'Reptiles']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Cretaceous' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Tabanidae
+Cretaceous
+Reptiles
+Chrysopsinae
+Angelsharks
+Turtles
+Notopteroidei
+Squatina occulta
+Osteoglossiformes
+Early Cretaceous
+China
+Chalk
+South America
+Tabanidae
+Tethys Ocean
+Osteoglossidae
+Tabanidae
+Permian Period
+scales
+Paleozoic Era
+Tethys Ocean
+Eotabanoid
+China
+French geologists
+Living amniotes
+China
+China
+Squatina occulta
+Athericidae
+Tabanidae
+Cretaceous
+Tabanidae
+Angiosperm plants
+Cretaceous
+Greenland
+Tabanidae
+Scepcidinae
+Denmark
+Angelsharks
+Cretaceous
+Tabanidae
+Brazilian law
+Denmark
+Gymnarchus niloticus
+Subducting plate
+Osteoglossiformes
+Ural Mountains
+China
+Greenland
+China
+Phanerozoic
+Paleozoic Era
+Brazilian law
+Brazilian law
+Squaliformes
+Squaliformes
+Gulf of Mexico
+Squaliformes
+Cretaceous
+New dry climate
+Cretaceous
+Atlantic Ocean
+Squatina squatina
+Turtles
+Zebras
+Hauterivian
+Angelsharks
+Silurian
+Carboniferous Period
+myths
+Turtles
+Proterozoic
+testudo
+Angelsharks
+Osteoglossiformes
+Cretaceous
+Lophius
+Pangaea
+marine fossils
+angel sharks
+lemnids
+Alaska
+Cretaceous
+German coast
+Notopteroidei
+lateral photophores
+Alaska
+lay their eggs 
+Alaska
+body temperature
+Tethys Ocean
+Phanerozoic
+Yucat√°n
+scales
+Devonian Period
+ray-finned fish
+Plants
+Monkfish
+Turtles
+Rocky Mountains
+Asbatoma photophores
+Diverging Gulf of Mexico 
+Mesozoic Era
+Pygmy sharks
+every
+Scepcidinae 
+Alaska
+Levantine Sea
+Chesapeake Bay
+Photophores
+Leatherback turtle
+Ohio River
+Osteoglossiformes
+Atlantic Ocean
+Turtles
+Greenland
+German coast
+Osteoglossoidei
+Cretaceous-Tertiary extinction
+Australia
+Dalatiidae
+Paleozoic Era
+Cretaceous
+Cretaceous
+Tabanidae 
+Iberian Peninsula
+Arkansas River
+
+gpt_entity_particular(): entity list: 
+ ['Athericidae', 'Squaliformes', 'Angiosperm plants', 'Cretaceous', 'Notopteroidei', 'testudo', 'Ural Mountains', 'Devonian Period', 'Ohio River', 'Rocky Mountains', 'Carboniferous Period', 'Leatherback turtle', 'Osteoglossiformes', 'Chrysopsinae', 'lemnids', 'Pygmy sharks', 'Pangaea', 'Tethys Ocean', 'Lophius', 'myths', 'Gymnarchus niloticus', 'Greenland', 'Asbatoma photophores', 'Angelsharks', 'Eotabanoid', 'Squatina squatina', 'Gulf of Mexico', 'Cretaceous-Tertiary extinction', 'Diverging Gulf of Mexico ', 'Scepcidinae ', 'Osteoglossidae', 'marine fossils', 'Proterozoic', 'New dry climate', 'Early Cretaceous', 'Monkfish', 'Tabanidae ', 'German coast', 'South America', 'Subducting plate', 'Chesapeake Bay', 'Photophores', 'lay their eggs ', 'Mesozoic Era', 'Hauterivian', 'China', 'Osteoglossoidei', 'angel sharks', 'lateral photophores', 'ray-finned fish', 'Denmark', 'scales', 'Paleozoic Era', 'Permian Period', 'Turtles', 'Tabanidae', 'Phanerozoic', 'Zebras', 'Arkansas River', 'Squatina occulta', 'Levantine Sea', 'Dalatiidae', 'Scepcidinae', 'Atlantic Ocean', 'Yucat√°n', 'Plants', 'Australia', 'Chalk', 'Brazilian law', 'Silurian', 'French geologists', 'body temperature', 'Living amniotes', 'Iberian Peninsula', 'Alaska', 'every', 'Reptiles']
+
+gpt_entity_particular(): filtered entity: 
+ ['Chalk']
+After GPT, entity:  {'Paleozoic', 'Mexico', 'Ural', 'Turtle', 'Amazon', 'Squaliformes', 'Athericidae', 'Eastern', 'Arthropods', 'Cretaceous', 'Notopteroidei', 'Cryptodira', 'Hauterivian', 'China', 'Era', 'Turtle shell', 'Angelshark', 'Leatherback turtle', 'Osteoglossiformes', 'Ocean', 'Kansas', 'America', 'angel', 'Pelargonium', 'Denmark', 'Cooksonia', 'Leatherback', 'Devonian', 'Testudines', 'Chrysopsinae', 'Mediterranean', 'Paleozoic Era', 'Valanginian', 'Jurassic', 'Atlantic', 'Squatina', 'Turtles', 'Edaphosaurus', 'Permian', 'sea', 'Southeast', 'Etmoperidae', 'eons', 'Lophius', 'Synapsida', 'Asia', 'Base', 'Greenland', 'Tabanus', 'Late', 'Tabanidae', 'Period', 'Pacific', 'Phanerozoic', 'England', 'Angelsharks', 'Mesozoic', 'Formation', 'Hawaii', 'Palaeocene', 'Gulf', 'North', 'Neoproterozoic', 'Osteoglossidae', 'Cambrian', 'Danish', 'Early', 'Dalatiidae', 'Eocene', 'Proterozoic', 'Yucatán', 'Germany', 'Dimetrodon', 'Scepcidinae', 'Antarctica', 'Sea', 'Africa', 'Fur', 'Shell', 'Carboniferous', 'Mountains', 'Australia', 'Ediacaran', 'Upper', 'Chalk', 'Silurian', 'Group', 'Alaska', 'Peninsula', 'Reptiles'}
+Total time:  284.6831748485565
+Entity conversion done on 6_2 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_6_2_entity_conversion_hash.json. Check the entity.
+ Which type of reptile is experiencing a faster extinction rate than was seen in the event that followed the 02F marked by the evolution of Synapsids and directly succeeded the 01A period?
+
+
+
+Done. Check final_query/id_6_2_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_6_2_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/6_2_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

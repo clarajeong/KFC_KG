@@ -1,0 +1,1222 @@
+Got argument: Julius Caesar, 4, 4_13, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Julius Caesar, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Julius_Caesar_info.json file
+first_hop:  {'triplet': '("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")', 'start word': 'Julius Caesar', 'end word': 'Pompey', 'source': {'name': 'Battle of Pharsalus', 'line': 10}, 'cpnet': {'start word': 'julius_caesar', 'end word': 'pompey'}}
+
+utils/question.py extract_hops(Pompey, [], ['Julius Caesar']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Pompey_info.json file
+second_hop:  {'triplet': '("Pompey", "initiated a rebellion in", "Hispania")', 'start word': 'Pompey', 'end word': 'Hispania', 'source': {'name': 'Pompey', 'line': 26}, 'cpnet': {'start word': 'pompey', 'end word': 'hispania'}}
+
+utils/question.py extract_hops(Hispania, [], ['Julius Caesar', 'Pompey']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Hispania_info.json file
+extract_info(Hispania) Start.
+utils/preprocess.py extract_info(): Checking good links on Hispania
+Iberian Peninsula is Geography
+1 / 30 )  Iberian Peninsula Iberian Peninsula iberian_peninsula
+Hispania Baetica is Geography
+2 / 30 )  Baetica Hispania Baetica hispania_baetica
+Lusitania is Geography
+3 / 30 )  Lusitania Lusitania lusitania
+Hispania Tarraconensis is Geography
+4 / 30 )  Hispania Tarraconensis Hispania Tarraconensis hispania_tarraconensis
+Diocletian is People
+5 / 30 )  Diocletian Diocletian diocletian
+Spain is Geography
+6 / 30 )  Spain Spain spain
+Hispaniola is Geography
+7 / 30 )  Hispaniola Hispaniola hispaniola
+Carthage is Geography
+8 / 30 )  Carthage Carthage carthage
+Hyrax is Animal
+9 / 30 )  hyrax Hyrax hyrax
+European rabbit is Animal
+10 / 30 )  European rabbit European rabbit european_rabbit
+Phoenicia is Geography
+11 / 30 )  Phoenician Phoenicia phoenicia
+Seville is Geography
+12 / 30 )  Seville Seville seville
+India is Geography
+13 / 30 )  India India india
+Rome is Geography
+14 / 30 )  Rome Rome rome
+Kingdom of Aragon is Geography
+15 / 30 )  Kingdom of Aragon Kingdom of Aragon kingdom_of_aragon
+Homo is Animal
+16 / 30 )  early hominids Homo homo
+Homo erectus is Animal
+17 / 30 )  Homo erectus Homo erectus homo_erectus
+Homo heidelbergensis is Animal
+18 / 30 )  Homo heidelbergensis Homo heidelbergensis homo_heidelbergensis
+Neanderthal is Animal
+19 / 30 )  Neanderthals Neanderthal neanderthal
+Human is Animal
+20 / 30 )  modern humans Human human
+Tagus is Geography
+21 / 30 )  Tagus Tagus tagus
+Portugal is Geography
+22 / 30 )  Portugal Portugal portugal
+Tartessos is Geography
+23 / 30 )  Tartessos Tartessos tartessos
+Mediterranean Sea is Geography
+24 / 30 )  Mediterranean Mediterranean Sea mediterranean_sea
+Sicily is Geography
+25 / 30 )  Sicily Sicily sicily
+Augustus is People
+26 / 30 )  Augustus Augustus augustus
+Julius Caesar is People
+27 / 30 )  Caesar Julius Caesar julius_caesar
+Lisbon is Geography
+28 / 30 )  Lisbon Lisbon lisbon
+Tarragona is Geography
+29 / 30 )  Tarragona Tarragona tarragona
+Zaragoza is Geography
+30 / 30 )  Zaragoza Zaragoza zaragoza
+extract_triplet(Hispania)
+Got GPT's response. String length : 2439
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  [['Iberian Peninsula', 'Iberian Peninsula', 'iberian_peninsula']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  [['Baetica', 'Hispania Baetica', 'hispania_baetica'], ['Lusitania', 'Lusitania', 'lusitania']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  [(None, 'Hispania', 'hispania'), ['Hispania Tarraconensis', 'Hispania Tarraconensis', 'hispania_tarraconensis']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [['Diocletian', 'Diocletian', 'diocletian']]
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [['Spain', 'Spain', 'spain'], ['Hispaniola', 'Hispaniola', 'hispaniola']]
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  [['Carthage', 'Carthage', 'carthage']]
+subject_words:  [['European rabbit', 'European rabbit', 'european_rabbit']]
+object_words:  [['hyrax', 'Hyrax', 'hyrax']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  []
+subject_words:  [['Phoenician', 'Phoenicia', 'phoenicia']]
+object_words:  [['Carthage', 'Carthage', 'carthage']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  [['Seville', 'Seville', 'seville']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  []
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  []
+['', 'early hominids in Hispania included', 'Homo erectus and Homo heidelbergensis', '']
+subject_words:  [['Neanderthals', 'Neanderthal', 'neanderthal']]
+object_words:  [(None, 'Hispania', 'hispania'), ['modern humans', 'Human', 'human']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [['Tartessos', 'Tartessos', 'tartessos']]
+object_words:  [['Phoenician', 'Phoenicia', 'phoenicia']]
+subject_words:  [(None, 'Hispania', 'hispania'), ['Mediterranean', 'Mediterranean Sea', 'mediterranean_sea']]
+object_words:  [['Phoenician', 'Phoenicia', 'phoenicia']]
+subject_words:  []
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  [['Carthage', 'Carthage', 'carthage']]
+subject_words:  []
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [['Augustus', 'Augustus', 'augustus']]
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [['Rome', 'Rome', 'rome']]
+object_words:  [(None, 'Hispania', 'hispania'), ['Baetica', 'Hispania Baetica', 'hispania_baetica']]
+subject_words:  [['Lisbon', 'Lisbon', 'lisbon']]
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [['Tarragona', 'Tarragona', 'tarragona']]
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  [['Zaragoza', 'Zaragoza', 'zaragoza']]
+object_words:  []
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  []
+subject_words:  [(None, 'Hispania', 'hispania'), ['Baetica', 'Hispania Baetica', 'hispania_baetica']]
+object_words:  []
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  [['Augustus', 'Augustus', 'augustus']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  []
+subject_words:  [['Portugal', 'Portugal', 'portugal']]
+object_words:  [(None, 'Hispania', 'hispania'), ['Lusitania', 'Lusitania', 'lusitania']]
+subject_words:  []
+object_words:  [(None, 'Hispania', 'hispania'), ['Kingdom of Aragon', 'Kingdom of Aragon', 'kingdom_of_aragon']]
+subject_words:  [(None, 'Hispania', 'hispania')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Hispania', 'hispania')]
+subject_words:  []
+object_words:  [(None, 'Hispania', 'hispania')]
+third_hop:  {'triplet': '("Diocletian", "created", "Diocese of Hispania")', 'start word': 'Hispania', 'end word': 'Diocletian', 'source': {'name': 'Hispania', 'line': 5}, 'cpnet': {'start word': 'hispania', 'end word': 'diocletian'}}
+
+utils/question.py extract_hops(Diocletian, [], ['Julius Caesar', 'Pompey', 'Hispania']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Diocletian_info.json file
+extract_info(Diocletian) Start.
+utils/preprocess.py extract_info(): Checking good links on Diocletian
+Carus is People
+1 / 30 )  Carus Carus carus
+Maximian is People
+2 / 30 )  Maximian Maximian maximian
+Egypt is Geography
+3 / 30 )  Egypt Egypt egypt
+Ctesiphon is Geography
+4 / 30 )  Ctesiphon Ctesiphon ctesiphon
+Nicomedia is Geography
+5 / 30 )  Nicomedia Nicomedia nicomedia
+Mediolanum is Geography
+6 / 30 )  Mediolanum Mediolanum mediolanum
+Trier is Geography
+7 / 30 )  Trevorum Trier trier
+Maxentius is People
+8 / 30 )  Maxentius Maxentius maxentian
+Constantine the Great is People
+9 / 30 )  Constantine Constantine the Great flavius_valerius_constantinus
+Salona is Geography
+10 / 30 )  Salona Salona salona
+Aurelian is People
+11 / 30 )  Aurelian Aurelian aurelian
+Danube is Geography
+12 / 30 )  Danube Danube danube
+Homs is Geography
+13 / 30 )  Emesa  Homs homs
+Syria is Geography
+14 / 30 )  Syria Syria syria
+Bithynia is Geography
+15 / 30 )  Bithynia Bithynia bithynia
+Campania is Geography
+16 / 30 )  Campania Campania campania
+Italy is Geography
+17 / 30 )  Italy Italy italy
+Pannonia is Geography
+18 / 30 )  Pannonia Pannonia pannonia
+Belgrade is Geography
+19 / 30 )  Belgrade Belgrade belgrade
+Caesar  is People
+20 / 30 )  Caesar Caesar  gaius_julius_caesar
+Augustus is People
+21 / 30 )  Augustus Augustus augustus
+Marcus Aurelius is People
+22 / 30 )  Marcus Aurelius Marcus Aurelius marcus_aurelius
+Thrace is Geography
+23 / 30 )  Thrace Thrace thrace
+Armenia is Geography
+24 / 30 )  Armenia Armenia armenia
+Euphrates is Geography
+25 / 30 )  Euphrates Euphrates euphrates
+Rhine is Geography
+26 / 30 )  Rhine Rhine rhine
+Palmyra is Geography
+27 / 30 )  Palmyrene Palmyra palmyra
+Gallienus is People
+28 / 30 )  Gallienus Gallienus gallienus
+Zenobia is People
+29 / 30 )  Zenobia Zenobia zenobia
+Byzantium is Geography
+30 / 30 )  Byzantium Byzantium byzantium
+extract_triplet(Diocletian)
+Got GPT's response. String length : 3213
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  []
+object_words:  [['Carus', 'Carus', 'carus']]
+subject_words:  []
+object_words:  [['Carus', 'Carus', 'carus']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Maximian', 'Maximian', 'maximian']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Caesar', 'Caesar ', 'gaius_julius_caesar']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Trevorum', 'Trier', 'trier']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Salona', 'Salona', 'salona']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Aurelian', 'Aurelian', 'aurelian']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Danube', 'Danube', 'danube']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Syria', 'Syria', 'syria']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Maximian', 'Maximian', 'maximian']]
+object_words:  [(None, 'Diocletian', 'diocletian'), ['Caesar', 'Caesar ', 'gaius_julius_caesar']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Maximian', 'Maximian', 'maximian']]
+subject_words:  []
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Egypt', 'Egypt', 'egypt']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [['Maxentius', 'Maxentius', 'maxentian'], ['Constantine', 'Constantine the Great', 'flavius_valerius_constantinus']]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  [['Salona', 'Salona', 'salona']]
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+subject_words:  [(None, 'Diocletian', 'diocletian')]
+object_words:  []
+forth_hop:  {'triplet': '("Diocletian", "made", "Maximian co-ruler")', 'start word': 'Diocletian', 'end word': 'Maximian', 'source': {'name': 'Diocletian', 'line': 20}, 'cpnet': {'start word': 'diocletian', 'end word': 'maximian'}}
+generate_question(4_13, ['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")', '("Pompey", "initiated a rebellion in", "Hispania")', '("Diocletian", "created", "Diocese of Hispania")', '("Diocletian", "made", "Maximian co-ruler")'], ['Pompey', 'Hispania', 'Diocletian', 'Maximian'], [('Julius Caesar', 'Pompey'), ('Pompey', 'Hispania'), ('Hispania', 'Diocletian'), ('Diocletian', 'Maximian')], Maximian, [{'name': 'Battle of Pharsalus', 'line': 10}, {'name': 'Pompey', 'line': 26}, {'name': 'Hispania', 'line': 5}, {'name': 'Diocletian', 'line': 20}]) called
+GPT output is:  Q: Who was appointed by the Roman emperor responsible for territorial divisions, including the establishment of the Diocese in the Iberian region that saw a rebellion after allies, including one notable figure, withdrew from a southern European country due to Julius Caesar's influence?
+A: Maximian
+final_choice(Maximian, options = 5) started
+[]
+entity_type(Maximian) called
+Maximian is People
+check_matchscore(Maximian, Valerii):  0.0
+choose_by_wiki_recur(Valerii)
+   Pages in Valerii: ['Valeria gens', 'Valerius Aedituus', 'Anastasia (sister of Constantine I)', 'Valerius Antias', 'Lucius Aradius Valerius Proculus', 'Gaius Valerius Caburus', 'Catullus', 'Constantina', 'Constantine the Great', 'Marcus Valerius Corvus', 'Diocletian', 'Gaius Valerius Eudaemon', 'Publius Valerius Comazon', 'Valerius Fabianus', 'Publius Valerius Falto', 'Quintus Valerius Falto', 'Gaius Calpetanus Rantius Quirinalis Valerius Festus', 'Gaius Valerius Firmus', 'Flaccus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Valerius Flaccus (poet)', 'Lucius Valerius Flaccus (consul 261 BC)', 'Lucius Valerius Flaccus (consul 195 BC)', 'Lucius Valerius Flaccus (consul 100 BC)', 'Lucius Valerius Flaccus (consul 86 BC)', 'Galerius', 'Valerius Gratus', 'Marcus Valerius Homullus', 'Marcus Valerius Laevinus', 'Publius Valerius Laevinus', 'Licinius', 'Licinius II', 'Lucius Valerius Antias', 'Lucius Valerius Poplicola Balbinus Maximus', 'Majorian', 'Martial', 'Maxentius', 'Maximian', 'Marcus Valerius Maximianus', 'Valeria Maximilla', 'Maximinus Daza', 'Valerius Maximus (praetorian prefect)', 'Maximus (urban prefect under Julian)', 'Valerius Maximus Basilius', 'Manius Valerius Maximus', 'Melania the Elder', 'Melania the Younger', 'Publius Valerius Patruinus', 'Gaius Valerius Paulinus (eques)', 'Gaius Valerius Paullinus', 'Julius Valerius Alexander Polemius', 'Quintus Pompeius Senecio Sosius Priscus', 'Lucius Valerius Poplicola Potitus', 'Publius Valerius Poplicola', 'Publius Valerius Poplicola (dictator)', 'Publius Valerius Poplicola (consul 475 BC)', 'Gaius Valerius Potitus', 'Lucius Valerius Potitus (consul 483 BC)', 'Lucius Valerius Potitus (consul 392 BC)', 'Lucius Valerius Proculus', 'Valerius Romulus', 'Lucius Valerius Septimius Bassus', 'Flavius Severianus', 'Gaius Valerius Severus', 'Severus II', 'Aurelius Valerius Symmachus Tullianus', 'Gaius Valerius Troucillus', 'Valerius Valens', 'Valeria (ancient Roman women)', 'Galeria Valeria', 'Valerius (consul 432)', 'Decimus Valerius Asiaticus', 'Publius Valerius Cato', 'Valerius Maximus', 'Quintus Valerius Orca', 'Marcus Valerius Poplicola', 'Marcus Valerius Probus', 'Quintus Valerius Soranus', 'Gaius Valerius Triarius', 'Volesus', 'Gaius Valerius Potitus Volusus', 'Marcus Valerius Volusus']
+      Gaius Valerius Paulinus (eques) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus']
+      Valeria gens in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian']
+      Publius Valerius Falto in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)']
+      Valerius Maximus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)']
+      Diocletian in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus']
+Diocletian is People
+      Lucius Valerius Flaccus (consul 86 BC) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus']
+Lucius Valerius Flaccus (consul 86 BC) is People
+      Publius Valerius Poplicola (consul 475 BC) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus']
+      Valerius Gratus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus']
+      Lucius Valerius Poplicola Balbinus Maximus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus']
+      Marcus Valerius Maximianus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza']
+Marcus Valerius Maximianus is People
+      Flavius Severianus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius']
+      Maximinus Daza in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus']
+Maximinus Daza is People
+      Gaius Valerius Triarius in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus']
+      Gaius Valerius Caburus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola']
+      Lucius Valerius Proculus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)']
+      Marcus Valerius Poplicola in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)']
+      Lucius Valerius Flaccus (consul 100 BC) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus']
+      Valerius Maximus (praetorian prefect) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)']
+      Marcus Valerius Volusus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder']
+Marcus Valerius Volusus is People
+      Lucius Valerius Potitus (consul 483 BC) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)']
+      Melania the Elder in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus']
+Melania the Elder is People
+      Valerius Flaccus (poet) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus']
+      Valerius Romulus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus']
+      Gaius Valerius Troucillus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto']
+      Publius Valerius Patruinus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus']
+      Quintus Valerius Falto in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus']
+      Volesus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)']
+      Gaius Valerius Potitus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus']
+      Gaius Valerius Flaccus (consul 93 BC) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla']
+Gaius Valerius Flaccus (consul 93 BC) is People
+      Manius Valerius Maximus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus']
+      Valeria Maximilla in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus']
+Valeria Maximilla is People
+      Catullus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius']
+Catullus is People
+      Gaius Valerius Firmus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius']
+      Maxentius in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus']
+Maxentius is People
+      Valerius Fabianus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus']
+      Flaccus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus']
+      Lucius Valerius Antias in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias']
+      Gaius Valerius Eudaemon in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon']
+      Galerius in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius']
+Galerius is People
+      Publius Valerius Laevinus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus']
+      Quintus Valerius Orca in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca']
+      Anastasia (sister of Constantine I) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)']
+Anastasia (sister of Constantine I) is People
+      Lucius Valerius Septimius Bassus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus']
+      Marcus Valerius Corvus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus']
+      Decimus Valerius Asiaticus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus']
+      Lucius Valerius Flaccus (consul 261 BC) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)']
+      Valeria (ancient Roman women) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)']
+      Marcus Valerius Laevinus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus']
+      Publius Valerius Cato in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato']
+      Valerius (consul 432) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)']
+      Quintus Valerius Soranus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus']
+      Publius Valerius Poplicola in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola']
+      Aurelius Valerius Symmachus Tullianus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola', 'Aurelius Valerius Symmachus Tullianus']
+      Lucius Valerius Poplicola Potitus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola', 'Aurelius Valerius Symmachus Tullianus', 'Lucius Valerius Poplicola Potitus']
+      Melania the Younger in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola', 'Aurelius Valerius Symmachus Tullianus', 'Lucius Valerius Poplicola Potitus', 'Melania the Younger']
+Melania the Younger is People
+      Publius Valerius Poplicola (dictator) in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola', 'Aurelius Valerius Symmachus Tullianus', 'Lucius Valerius Poplicola Potitus', 'Melania the Younger', 'Publius Valerius Poplicola (dictator)']
+      Publius Valerius Comazon in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola', 'Aurelius Valerius Symmachus Tullianus', 'Lucius Valerius Poplicola Potitus', 'Melania the Younger', 'Publius Valerius Poplicola (dictator)', 'Publius Valerius Comazon']
+      Quintus Pompeius Senecio Sosius Priscus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola', 'Aurelius Valerius Symmachus Tullianus', 'Lucius Valerius Poplicola Potitus', 'Melania the Younger', 'Publius Valerius Poplicola (dictator)', 'Publius Valerius Comazon', 'Quintus Pompeius Senecio Sosius Priscus']
+      Valerius Aedituus in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola', 'Aurelius Valerius Symmachus Tullianus', 'Lucius Valerius Poplicola Potitus', 'Melania the Younger', 'Publius Valerius Poplicola (dictator)', 'Publius Valerius Comazon', 'Quintus Pompeius Senecio Sosius Priscus', 'Valerius Aedituus']
+      Constantina in ['Gaius Valerius Paulinus (eques)', 'Valeria gens', 'Publius Valerius Falto', 'Valerius Maximus', 'Diocletian', 'Lucius Valerius Flaccus (consul 86 BC)', 'Publius Valerius Poplicola (consul 475 BC)', 'Valerius Gratus', 'Lucius Valerius Poplicola Balbinus Maximus', 'Marcus Valerius Maximianus', 'Flavius Severianus', 'Maximinus Daza', 'Gaius Valerius Triarius', 'Gaius Valerius Caburus', 'Lucius Valerius Proculus', 'Marcus Valerius Poplicola', 'Lucius Valerius Flaccus (consul 100 BC)', 'Valerius Maximus (praetorian prefect)', 'Marcus Valerius Volusus', 'Lucius Valerius Potitus (consul 483 BC)', 'Melania the Elder', 'Valerius Flaccus (poet)', 'Valerius Romulus', 'Gaius Valerius Troucillus', 'Publius Valerius Patruinus', 'Quintus Valerius Falto', 'Volesus', 'Gaius Valerius Potitus', 'Gaius Valerius Flaccus (consul 93 BC)', 'Manius Valerius Maximus', 'Valeria Maximilla', 'Catullus', 'Gaius Valerius Firmus', 'Maxentius', 'Valerius Fabianus', 'Flaccus', 'Lucius Valerius Antias', 'Gaius Valerius Eudaemon', 'Galerius', 'Publius Valerius Laevinus', 'Quintus Valerius Orca', 'Anastasia (sister of Constantine I)', 'Lucius Valerius Septimius Bassus', 'Marcus Valerius Corvus', 'Decimus Valerius Asiaticus', 'Lucius Valerius Flaccus (consul 261 BC)', 'Valeria (ancient Roman women)', 'Marcus Valerius Laevinus', 'Publius Valerius Cato', 'Valerius (consul 432)', 'Quintus Valerius Soranus', 'Publius Valerius Poplicola', 'Aurelius Valerius Symmachus Tullianus', 'Lucius Valerius Poplicola Potitus', 'Melania the Younger', 'Publius Valerius Poplicola (dictator)', 'Publius Valerius Comazon', 'Quintus Pompeius Senecio Sosius Priscus', 'Valerius Aedituus', 'Constantina']
+Constantina is People
+['Diocletian', 'Catullus', 'Maxentius', 'Constantina']
+Ended after 2.5 hierarchy
+(2.5, ['Catullus', 'Diocletian', 'Constantina', 'Maxentius'])
+
+extract_info(Maxentius) Start.
+utils/preprocess.py extract_info(): Checking good links on Maxentius
+Rome is Geography
+1 / 30 )  Rome Rome rome
+Maximian is People
+2 / 30 )  Maximian Maximian maximian
+Constantine the Great is People
+3 / 30 )  Constantine Constantine the Great flavius_valerius_constantinus
+Tiber is Geography
+4 / 30 )  Tiber Tiber tiber
+Diocletian is People
+5 / 30 )  Diocletian Diocletian diocletian
+Caesar  is People
+6 / 30 )  Caesares Caesar  gaius_julius_caesar
+Augustus is People
+7 / 30 )  Augusti Augustus augustus
+Sicily is Geography
+8 / 30 )  Sicily Sicily sicily
+Mediolanum is Geography
+9 / 30 )  Mediolanum Mediolanum mediolanum
+Ravenna is Geography
+10 / 30 )  Ravenna Ravenna ravenna
+Alps is Geography
+11 / 30 )  Alps Alps alps
+Istria is Geography
+12 / 30 )  Istrian Istria istria
+Carthage is Geography
+13 / 30 )  Carthage Carthage carthage
+Appian Way is Geography
+14 / 30 )  Via Appia Appian Way appian_way
+Raetia is Geography
+15 / 30 )  Raetia Raetia raetia
+Pope is Incident
+16 / 30 )  Bishop of Rome Pope pope
+Italy is Geography
+17 / 30 )  Italy Italy italy
+Via Flaminia is Incident
+18 / 30 )  Via Flaminia Via Flaminia flaminian_way
+Eusebius is People
+19 / 30 )  Eusebius of Caesarea Eusebius eusebius
+Venice is Geography
+20 / 30 )  Venice Venice venice
+Palatine Hill is Geography
+21 / 30 )  Palatine Hill Palatine Hill palatium
+extract_triplet(Maxentius)
+Got GPT's response. String length : 2384
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Italy', 'Italy', 'italy']]
+subject_words:  []
+object_words:  [(None, 'Maxentius', 'maxentian')]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Maximian', 'Maximian', 'maximian']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Constantine', 'Constantine the Great', 'flavius_valerius_constantinus']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Tiber', 'Tiber', 'tiber']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Maximian', 'Maximian', 'maximian']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Maximian', 'Maximian', 'maximian'], ['Diocletian', 'Diocletian', 'diocletian']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Augusti', 'Augustus', 'augustus']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Italy', 'Italy', 'italy']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Constantine', 'Constantine the Great', 'flavius_valerius_constantinus']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Istrian', 'Istria', 'istria']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Eusebius of Caesarea', 'Eusebius', 'eusebius']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Italy', 'Italy', 'italy']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Constantine', 'Constantine the Great', 'flavius_valerius_constantinus']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Constantine', 'Constantine the Great', 'flavius_valerius_constantinus']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  []
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Constantine', 'Constantine the Great', 'flavius_valerius_constantinus']]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Rome', 'Rome', 'rome']]
+subject_words:  []
+object_words:  [(None, 'Maxentius', 'maxentian')]
+subject_words:  [(None, 'Maxentius', 'maxentian')]
+object_words:  [['Constantine', 'Constantine the Great', 'flavius_valerius_constantinus']]
+extract_info(Catullus) Start.
+utils/preprocess.py extract_info(): Checking good links on Catullus
+Verona is Geography
+1 / 30 )  Verona Verona verona
+Julius Caesar is People
+2 / 30 )  Julius Caesar Julius Caesar julius_caesar
+Lake Garda is Geography
+3 / 30 )  Lake Garda Lake Garda lake_garda
+Tivoli, Lazio is Geography
+4 / 30 )  Tibur Tivoli, Lazio tibur
+Pompey is People
+5 / 30 )  Pompey Pompey pompey
+Suetonius is People
+6 / 30 )  Suetonius Suetonius suetonius
+Bithynia is Geography
+7 / 30 )  Bithynia Bithynia bithynia
+Troad is Geography
+8 / 30 )  Troad Troad troad
+Jerome is People
+9 / 30 )  Jerome Jerome jerome
+Homer is People
+10 / 30 )  Homer Homer homer
+Mátyás Seiber is People
+11 / 30 )  Matyas Seiber Mátyás Seiber seiber
+Ben Jonson is People
+12 / 30 )  Ben Jonson Ben Jonson ben_jonson
+Carl Orff is People
+13 / 30 )  Carl Orff Carl Orff carl_orff
+extract_triplet(Catullus)
+Got GPT's response. String length : 654
+subject_words:  [(None, 'Catullus', 'catullus')]
+object_words:  [['Verona', 'Verona', 'verona']]
+subject_words:  [(None, 'Catullus', 'catullus')]
+object_words:  [['Julius Caesar', 'Julius Caesar', 'julius_caesar']]
+subject_words:  [(None, 'Catullus', 'catullus')]
+object_words:  [['Lake Garda', 'Lake Garda', 'lake_garda']]
+subject_words:  [(None, 'Catullus', 'catullus')]
+object_words:  [['Tibur', 'Tivoli, Lazio', 'tibur']]
+subject_words:  [(None, 'Catullus', 'catullus')]
+object_words:  [['Pompey', 'Pompey', 'pompey']]
+subject_words:  [['Suetonius', 'Suetonius', 'suetonius']]
+object_words:  [(None, 'Catullus', 'catullus')]
+subject_words:  [(None, 'Catullus', 'catullus')]
+object_words:  [['Bithynia', 'Bithynia', 'bithynia']]
+subject_words:  [(None, 'Catullus', 'catullus')]
+object_words:  [['Troad', 'Troad', 'troad']]
+subject_words:  [['Homer', 'Homer', 'homer']]
+object_words:  [(None, 'Catullus', 'catullus')]
+subject_words:  [['Carl Orff', 'Carl Orff', 'carl_orff']]
+object_words:  [(None, 'Catullus', 'catullus')]
+extract_info(Constantina) Start.
+utils/preprocess.py extract_info(): Checking good links on Constantina
+Constantine the Great is People
+1 / 30 )  Constantine the Great Constantine the Great flavius_valerius_constantinus
+Maximian is People
+2 / 30 )  Maximian Maximian maximian
+Crispus is People
+3 / 30 )  Crispus Crispus crispus
+Caesar  is People
+4 / 30 )  Caesar Caesar  gaius_julius_caesar
+Syria is Geography
+5 / 30 )  Syria Syria syria
+Antioch is Geography
+6 / 30 )  Antioch Antioch antioch
+Bithynia is Geography
+7 / 30 )  Bithynia Bithynia bithynia
+Edward Gibbon is People
+8 / 30 )  Edward Gibbon Edward Gibbon edward_gibbon
+Agnes of Rome is People
+9 / 30 )  Agnes of Rome Agnes of Rome st_agnes
+British Museum is Geography
+10 / 30 )  British Museum British Museum british_museum
+extract_triplet(Constantina)
+Got GPT's response. String length : 1129
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  [['Constantine the Great', 'Constantine the Great', 'flavius_valerius_constantinus']]
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  []
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  [['Crispus', 'Crispus', 'crispus']]
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  []
+subject_words:  []
+object_words:  [['Caesar', 'Caesar ', 'gaius_julius_caesar']]
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  [['Antioch', 'Antioch', 'antioch']]
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  [['Bithynia', 'Bithynia', 'bithynia']]
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  []
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  []
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  []
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  [['Antioch', 'Antioch', 'antioch']]
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  []
+subject_words:  [['Edward Gibbon', 'Edward Gibbon', 'edward_gibbon']]
+object_words:  []
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  [['Agnes of Rome', 'Agnes of Rome', 'st_agnes']]
+subject_words:  [(None, 'Constantina', 'constantina')]
+object_words:  [['British Museum', 'British Museum', 'british_museum']]
+['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")\n', '("Pompey", "initiated a rebellion in", "Hispania")\n', '("Diocletian", "created", "Diocese of Hispania")\n', '("Diocletian", "made", "Maximian co-ruler")\n']
+
+['("Battle of Pharsalus", "was", "decisive battle of Caesar\'s Civil War")\n', '("Battle of Pharsalus", "occurred near", "Pharsalus in Central Greece")\n', '("Julius Caesar", "formed up opposite", "army of the Roman Republic")\n', '("Pompey", "commanded", "army of the Roman Republic against Julius Caesar")\n', '("Pompey", "had backing of", "majority of Roman senators")\n', '("Pompey\'s army", "outnumbered", "Caesarian legions")\n', '("Pompey", "suffered", "overwhelming defeat at Battle of Pharsalus")\n', '("Pompey", "eventually fled to", "Egypt")\n', '("Julius Caesar", "captured", "Rome at start of Civil War")\n', '("Julius Caesar", "advanced on", "Dyrrachium")\n', '("Julius Caesar", "withdrew east into", "Thessaly")\n', '("Julius Caesar", "besieged", "Gomphi")\n', '("Metellus Scipio\'s forces", "arriving from", "Syria")\n', '("Pompey", "pursued", "Caesar")\n', '("Pompey", "sought to spare", "Italy from invasion by concluding war on Greek soil")\n', '("Strabo", "mentions", "Pharsaloi")\n', '("Pharsalus", "disputed location according to", "scholars")\n', '("Strabo", "mentions", "Thetideion and temple to Thetis near Pharsalus")\n', '("Krini", "probable location of", "Palaepharsalus according to Morgan")\n', '("Marcus Tullius Cicero", "calls battle", "Pharsālicum proelium")\n', '("Lucan", "uses the name", "Pharsālia for the battle")\n', '("Plutarch", "refers to battle", "at Pharsalus")\n', '("Caesarian legions", "recruited Greek light infantry from", "Dolopia, Acarnania, and Aetolia")\n', '("Pompey\'s forces", "contained soldiers from", "Phoenicians")\n', '("Pompey\'s forces", "contained soldiers from", "Cappadocian")\n', '("Mark Antony", "commanded", "Caesar\'s left flank at the Battle of Pharsalus")\n', '("Marcus Junius Brutus", "sought", "Caesar\'s pardon after battle")\n', '("Alexandria", "Caesar landed in", "after pursuing Pompey")\n', '("Alexandre Dumas", "mentions", "Battle of Pharsalus in The Three Musketeers")\n', '("Pompey", "known in English as", "Pompey the Great")\n', '("Pompey", "played a role in", "transformation of Rome")\n', '("Pompey", "protege of", "Sulla")\n', '("Pompey", "became enemy of", "Julius Caesar")\n', '("Pompey", "rose to prominence serving", "Sulla")\n', '("Pompey", "elected as consul on", "three occasions")\n', '("Pompey", "joined", "Crassus and Julius Caesar in the First Triumvirate")\n', '("Pompey", "married", "Julia, daughter of Caesar")\n', '("Pompey", "defeated at", "Battle of Pharsalus")\n', '("Pompey", "assassinated in", "Egypt")\n', '("Sulla", "sent Pompey to", "Sicily and Africa")\n', '("Sulla", "persuaded Pompey to divorce", "Antistia ")\n', '("Julius Caesar", "political ally, and finally the enemy, of", "Pompey")\n', '("Crassus", "joined", "Pompey and Julius Caesar in the First Triumvirate")\n', '("Pompey", "recruited", "legion from his father\'s clients and veterans in Picenum")\n', '("Pompey", "landed in", "Brundusium with Sulla")\n', '("Pompey", "campaigned against", "Gaius Papirius Carbo in Cisalpine Gaul")\n', '("Pompey", "commander in", "Third Servile War")\n', '("Pompey", "advanced directly to his first consulship without", "traditional cursus honorum")\n', '("Pompey", "defeated Carbo\'s lieutenant in", "battle at the river Aesis")\n', '("Pompey", "pursued government forces to", "Praeneste")\n', '("Pompey", "married", "Mucia Tertia")\n', '("Pompey", "supported", "Marcus Aemilius Lepidus as consul")\n', '("Pompey", "besieged", "Mutina")\n', '("Pompey", "appointed military commander in", "Spain")\n', '("Pompey", "commanded troops in", "Gallia Narbonensis")\n', '("Pompey", "entered winter quarters near", "Narbo Martius")\n', '("Pompey", "defeated by Sertorius at", "Battle of Lauron")\n', '("Pompey", "ambushed a large force under Censorinus", "outside Spoletium")\n', '("Pompey", "exited", "Censorinus")\n', '("Metellus Scipio", "supported by", "Pompey")\n', '("Metellus Scipio", "defeated", "Gaius Marcius Censorinus")\n', '("Pompey", "joined", "Marcus Licinius Crassus ")\n', '("Pompey", "claimed lands in", "Libya and Calabria")\n', '("Pompey", "defeated", "Spartacus in Third Servile War")\n', '("Pompey", "claimed victory in Hispania", "after Crassus defeated Spartacus")\n', '("Pompey", "assigned the governorship of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "raised troops from", "Picenum")\n', '("Pompey", "defeated", "Marcus Junius Brutus in Mutina")\n', '("Quintus Sertorius", "joined by", "Perpenna ")\n', '("Quintus Caecilius Metellus Pius", "forced out of", "Hispania Ulterior by Sertorius")\n', '("Metellus Pius", "allied with", "Pompey")\n', '("Pompey", "recruited", "infantry and cavalry for Hispania")\n', '("Pompey", "subdued rebellion in", "Gallia Narbonensis during route to Hispania")\n', '("Pompey", "crossed the Col de Portet into", "Iberian peninsula")\n', '("Pompey", "defeated Perpenna and Gaius Herennius outside", "Valencia")\n', '("Pompey", "battle position at", "Battle of Sacriportus with Sulla ")\n', '("Pompey", "met", "Perpenna in Lusitania")\n', '("Pompey", "restructured the local Roman administration in", "Hispania and southern Gaul")\n', '("Pompey", "charged with suppressing", "Third Servile War of Spartacus")\n', '("Crassus", "campaign against", "Spartacus")\n', '("Pompey", "massacred fugitives from", "Crassus\'s battle")\n', '("Pompey", "proconsul of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "fought pirates based in", "Cilicia")\n', '("Pompey", "defeated pirates at", "Battle of Korakesion")\n', '("Pompey", "created province of", "Syria")\n', '("Lucius Licinius Lucullus", "commander against", "Mithridates VI")\n', '("Mithridates VI", "invaded Pontus and ", "Armenia")\n', '("Pompey", "granted powers to defeat", "Mithridates VI in lex Manilia")\n', '("Mithridates VI", "withdrew to", "Armenia pursued by Pompey")\n', '("Pompey", "defeated Mithridates VI at", "Lycus")\n', '("Mithridates VI", "took control of", "Cimmerian Bosporus")\n', '("Pompey", "defeated forces in", "Caucasia")\n', '("Tigranes the Great", "terms with", "Pompey")\n', '("Pompey", "settled", "conflicts between Phraates III and Tigranes")\n', '("Pharnaces II of Pontus", "surrendered to", "Pompey")\n', '("Pompey", "occupied cities in", "the Levant")\n', '("Pompey", "backed", "Hyrcanus II over Aristobulus II")\n', '("Hyrcanus II", "ruled", "Judea under Pompey")\n', '("Bithynia and Pontus", "created as province by", "Pompey")\n', '("Ariobarzanes I of Cappadocia", "restored by", "Pompey")\n', '("Lesser Armenia", "incorporated into", "Galatia by Pompey")\n', '("Cilicia", "received", "Pamphylia from Pompey")\n', '("Pompey", "builds", "Theatre of Pompey")\n', '("Pompey", "Senate refuses to ratify treaties made by", "in Eastern settlements")\n', '("Cato the Younger", "opposed", "Pompey\'s treaties")\n', '("Pompey", "assigned", "Hispania and Africa as provinces")\n', '("Julia", "death removed obstacle between", "Pompey and Caesar")\n', '("Publius Crassus", "death removed obstacle between", "Pompey and Caesar")\n', '("Pompey", "elected sole consul after suspending elections due to", "violence")\n', '("Pompey", "married", "Cornelia Metella")\n', '("Pompey", "enacted legislation to trial elected candidates", "backing Senate")\n', '("Pompey", "required electoral candidates presence in", "Rome")\n', '("Pompey", "initiated legislation against", "Caesar")\n', '("Pompey", "gathered consular army funded by", "Senate")\n', '("Pompey", "fell ill recruiting in", "Naples")\n', '("Caesar", "rejected ultimatum regarding concessions by", "Senate")\n', '("Caesar", "crossed the Rubicon into", "Italy")\n', '("Pompey", "withdrew from Italy to", "Greece")\n', '("Pompey", "deployed troops at", "Battle of Pharsalus against Caesar")\n', '("Pompey", "escapes to", "Mytilene")\n', '("Ptolemy XIII", "absent ally of Pompey at", "Battle of Pharsalus")\n', '("Pompey", "took refuge in", "Egypt with Ptolemy XIII")\n', '("Pompey", "sails from Cyprus to Egypt", "with small fleet")\n', '("Pompey", "arrived at", "Pelusium in Egypt")\n', '("Pompey", "assassinated by", "Lucius Septimius")\n', '("Lucius Septimius", "Roman officer serving in", "Egyptian army")\n', '("Ptolemy XIII", "feared control of Egypt by", "Pompey")\n', '("Pompey", "cremated by", "two servants")\n', '("Pompey", "head returned to", "Cornelia")\n', '("Pompey", "villain the Alban Hills burial", "administered by Cicero")\n', '("Pompey", "military skills criticized by", "Sertorius and Lucullus")\n', '("Pompey", "commanded without genius on battlefield", "preferred gradual strategies")\n', '("Pompey", "not charismatic but inspiring bravery", "on battlefield")\n', '("Pompey", "commander known for stealing victories", "from other generals")\n', '("Pompey", "considered outstanding strategist and organizer", "military campaigns")\n', '("Pompey", "preferred military glory over political constraints", "lex Gabinia")\n', '("Pompey", "efficient tactics against", "pirates")\n', '("Pompey", "war of attrition against", "Sertorius")\n', '("Pompey", "decided victory against", "Perpenna ending Sertorian war")\n', '("Pompey", "strategy against Caesar in", "Greece")\n', '("Pompey", "defeated by Caesar due to", "tactics")\n', '("Lucan", "wrote epic De Bello Civili about", "Pompey")\n', '("Plutarch", "claims Pompey married", "Aemilia pregnant by former husband")\n', '("Colleen McCullough", "Pompey featured in", "Masters of Rome series")\n', '("Steven Saylor", "Pompey encounters Gordianus in", "Roma Sub Rosa novels")\n', '("Robert Harris", "Pompey plays part in historical background of", "Cicero trilogy")\n', '("Hispania", "was the Roman name for", "the Iberian Peninsula")\n', '("Hispania", "divided into", "Baetica and Lusitania")\n', '("Hispania Citerior", "renamed to", "Hispania Tarraconensis")\n', '("Hispania", "during Principate divided into", "Hispania Citerior and Hispania Ulterior")\n', '("Spain and Hispaniola", "derived from", "Hispania")\n', '("Hispania", "of Punic origin from", "Carthage")\n', '("European rabbit", "referred to as", "hyrax in Hebrew")\n', '("Hispania", "possibly derived from the Phoenician word", "span meaning \'hidden\'")\n', '("Phoenician", "colonizers from", "Carthage")\n', '("Hispania", "ancient name could be", "Hispalis for Seville")\n', '("Hispania", "alternative ancient name derived from Greek", "Heliopolis")\n', '("Hispania", "called", "Hesperia ultima by Romans")\n', '("Neanderthals", "took refuge from", "modern humans in Hispania")\n', '("Hispania", "has prehistoric art in", "Côa Valley")\n', '("Azilian and Muge Cultures", "existed in", "Hispania")\n', '("Tartessos", "influenced by", "Phoenician colonization")\n', '("Hispania\'s Mediterranean landscape", "influenced by", "Phoenician and Greek colonization")\n', '("Latin", "official language of", "Hispania during Roman rule")\n', '("Hispania", "fell to", "Carthage after First Punic War")\n', '("Romans", "adopted the name", "Hispania")\n', '("Augustus", "completed the conquest of", "Hispania Ulterior")\n', '("Rome", "capital of", "Hispania Ulterior Baetica")\n', '("Lisbon", "known as", "Olissipo during Roman Hispania")\n', '("Tarragona", "known as", "Tarraco during Roman Hispania")\n', '("Zaragoza", "established by Romans as", "Caesaraugusta")\n', '("Hispania", "source of metals for", "Roman market")\n', '("Hispania Baetica", "produced", "gold, tin, silver, lead, wool, wheat, olive oil, wine, fish, and garum")\n', '("Hispania", "divided into three provinces by", "Augustus")\n', '("Hispania", "Latin term used geographically and politically by", "Visigothic Spania")\n', '("Portugal", "part of", "Hispania Lusitania")\n', '("Kingdom of Castile", "united with", "Kingdom of Aragon in Hispania")\n', '("Visigothic rule in Hispania", "followed by", "Umayyad conquest")\n', '("Umayyad conquest", "resulted in", "Al-Andalus")\n', '("Christian reconquest", "ended Islamic rule in", "Hispania")\n', '("Gold mining", "important activity in", "northwest Hispania")\n', '("Diocletian", "was born to a family of low status in", "Dalmatia")\n', '("Diocles", "became a cavalry commander for the army of", "Emperor Carus")\n', '("Diocles", "was proclaimed emperor by the troops after the deaths of", "Carus and his son Numerian")\n', '("Diocletian", "appointed", "Maximian as co-emperor")\n', '("Diocletian", "secured the empire\'s borders and purged it of threats to his power", "")\n', '("Diocletian", "appointed Galerius and Constantius as", "junior colleagues with the title Caesar")\n', '("Galerius, aided by", "campaigned successfully against", "Persia")\n', '("Diocletian", "achieved a lasting and favorable peace in negotiations with", "Persia")\n', '("Diocletian", "established new administrative centers in", "Nicomedia, Mediolanum, Sirmium, and Trevorum")\n', '("Diocletian", "was the first Roman emperor to", "abdicate the position voluntarily")\n', '("Diocletian", "was born at or near the town of", "Salona")\n', '("Diocletian", "was schooled and promoted by", "Aurelian")\n', '("Diocletian", "was Dux Moesiae, a commander of forces on the lower", "Danube")\n', '("Carinus", "made his way to Rome from", "Gaul")\n', '("Numerian", "reached", "Emesa in Syria")\n', '("Galerius", "was dispatched to fight the rebel Bagaudae in", "Gaul")\n', '("Maximian", "made", "Caesar by Diocletian")\n', '("Diocletian", "met Maximian in", "Milan")\n', '("Diocletian", "replaced the prefect of Rome with", "Bassus")\n', '("Galerius", "suppressed a regional uprising in Upper", "Egypt")\n', '("Diocletian", "moved into", "Egypt to suppress Domitianus")\n', '("Diocletian", "left", "Africa quickly after the peace treaty with the Nobatae and Blemmyes")\n', '("Diocletian\'s", "governmental and military growth increased the state expenditures", "")\n', '("Constantine and Maxentius", "were ignored in the transition of power", "")\n', '("Diocletian", "retired to his homeland", "Dalmatia")\n', '("Diocletian", "moved into the Diocletian\'s Palace", "near Salona")\n', '("Diocletian", "saw his tetrarchic system fail after his retirement", "")\n', '("Diocletian", "died", "naturally")\n', '("Diocletian", "abandoned his policy of preserving a stable silver coinage", "")\n', '("Diocletian", "underwent", "a new tax system based on heads and land")\n', '("Diocletian", "introduced", "a general five-year census for the whole empire")\n', '("Diocletian", "introduced an extensive new tax system based on", "heads and land")\n', '("Diocletian\'s", "Era of Martyrs", "is a dating method used by the Church of Alexandria and by the Coptic Orthodox Church")\n', '("Diocletian", "is reflected as", "a major villain in Serbian mythology")\n', '("Diocletian", "is included in several semi-legendary accounts in the", "Talmud")\n', '("Diocletian\'s", "palace eventually became the core of the modern-day city of", "Split in Croatia")\n', '("Maxentius", "ruled in", "Italy and North Africa")\n', '("Senate in", "recognized", "Maxentius")\n', '("Maxentius", "was not recognized as legitimate emperor by", "his fellow emperors")\n', '("Maxentius", "was the son of", "former Emperor Maximian")\n', '("Maxentius", "was the son-in-law of", "Emperor Galerius")\n', '("Maxentius", "allied with", "Maximinus against Licinius and Constantine")\n', '("Maxentius", "perished by drowning in", "the Tiber river")\n', '("Maxentius", "was the last emperor to reside permanently in", "Rome")\n', '("Maxentius", "attempted to embellish, restore and improve", "Rome")\n', '("Maxentius", "was the son of", "Maximian")\n', '("Maxentius", "married to", "Valeria Maximilla, daughter of Galerius")\n', '("Maxentius", "had two sons", "Valerius Romulus and an unknown one")\n', '("Maxentius", "was passed over for the new tetrarchy by", "Diocletian and Maximian")\n', '("Maxentius", "retired to an estate near", "Rome")\n', '("Maxentius", "managed to be recognized as emperor in", "central and southern Italy, the islands of Corsica, Sardinia, Sicily, and the African provinces")\n', '("Maxentius", "refrained from using the titles Augustus or Caesar at first", "hoping for recognition from Galerius")\n', '("Maxentius", "assumed the title of", "Augustus")\n', '("Maxentius", "established his reign over", "Italy and Africa")\n', '("Maxentius", "arranged friendly contacts with", "Constantine")\n', '("Maxentius", "lost", "Istria to Licinius")\n', '("Maxentius", "sent an army to Africa to defeat", "Domitius Alexander")\n', '("Maxentius", "allowed to elect a new", "Bishop of Rome, Eusebius")\n', '("Maxentius", "fortified", "northern Italy")\n', '("Maxentius", "declared war on", "Constantine")\n', '("Maxentius", "stationed an army in", "Verona")\n', '("Maxentius", "lost the Battle at", "Milvian Bridge")\n', '("Maxentius", "tried to divide the realms of", "Constantine and Licinius")\n', '("Maxentius", "vilified as", "a cruel and incompetent tyrant after his death")\n', '("Maxentius", "ended the Great Persecution in his territories at least five years in advance of", "the Edict of Milan")\n', '("Maxentius", "was defeated at", "the Battle of the Milvian Bridge by Constantine")\n', '("Maxentius", "was a prolific builder in", "Rome")\n', '("Imperial insignia", "possibly belonged to", "Maxentius")\n', '("Maxentius", "is the main antagonist in the film", "Constantine and the Cross")\n', '("Catullus", "was born to", "a leading equestrian family of Verona")\n', '("Catullus", "entertained", "Julius Caesar")\n', '("Catullus\'s family", "owned a villa at", "Lake Garda")\n', '("Catullus", "owned a villa near", "Tibur")\n', '("Catullus", "had acquaintance with", "Pompey")\n', '("Suetonius", "preserved an anecdote about", "Catullus")\n', '("Catullus", "spent time in", "Bithynia")\n', '("Catullus", "traveled to", "Troad")\n', '("Homer", "influenced", "Catullus")\n', '("Carl Orff", "set texts from", "Catullus to music")\n', '("Diocletian", "was born to a family of low status in", "Dalmatia")\n', '("Diocles", "became a cavalry commander for the army of", "Emperor Carus")\n', '("Diocles", "was proclaimed emperor by the troops after the deaths of", "Carus and his son Numerian")\n', '("Diocletian", "appointed", "Maximian as co-emperor")\n', '("Diocletian", "secured the empire\'s borders and purged it of threats to his power", "")\n', '("Diocletian", "appointed Galerius and Constantius as", "junior colleagues with the title Caesar")\n', '("Galerius, aided by", "campaigned successfully against", "Persia")\n', '("Diocletian", "achieved a lasting and favorable peace in negotiations with", "Persia")\n', '("Diocletian", "established new administrative centers in", "Nicomedia, Mediolanum, Sirmium, and Trevorum")\n', '("Diocletian", "was the first Roman emperor to", "abdicate the position voluntarily")\n', '("Diocletian", "was born at or near the town of", "Salona")\n', '("Diocletian", "was schooled and promoted by", "Aurelian")\n', '("Diocletian", "was Dux Moesiae, a commander of forces on the lower", "Danube")\n', '("Carinus", "made his way to Rome from", "Gaul")\n', '("Numerian", "reached", "Emesa in Syria")\n', '("Galerius", "was dispatched to fight the rebel Bagaudae in", "Gaul")\n', '("Maximian", "made", "Caesar by Diocletian")\n', '("Diocletian", "met Maximian in", "Milan")\n', '("Diocletian", "replaced the prefect of Rome with", "Bassus")\n', '("Diocletian", "made", "Maximian co-ruler")\n', '("Galerius", "suppressed a regional uprising in Upper", "Egypt")\n', '("Diocletian", "moved into", "Egypt to suppress Domitianus")\n', '("Diocletian", "left", "Africa quickly after the peace treaty with the Nobatae and Blemmyes")\n', '("Diocletian\'s", "governmental and military growth increased the state expenditures", "")\n', '("Constantine and Maxentius", "were ignored in the transition of power", "")\n', '("Diocletian", "retired to his homeland", "Dalmatia")\n', '("Diocletian", "moved into the Diocletian\'s Palace", "near Salona")\n', '("Diocletian", "saw his tetrarchic system fail after his retirement", "")\n', '("Diocletian", "died", "naturally")\n', '("Diocletian", "abandoned his policy of preserving a stable silver coinage", "")\n', '("Diocletian", "underwent", "a new tax system based on heads and land")\n', '("Diocletian", "introduced", "a general five-year census for the whole empire")\n', '("Diocletian", "introduced an extensive new tax system based on", "heads and land")\n', '("Diocletian\'s", "Era of Martyrs", "is a dating method used by the Church of Alexandria and by the Coptic Orthodox Church")\n', '("Diocletian", "is reflected as", "a major villain in Serbian mythology")\n', '("Diocletian", "is included in several semi-legendary accounts in the", "Talmud")\n', '("Diocletian\'s", "palace eventually became the core of the modern-day city of", "Split in Croatia")\n', '("Constantina", "was the eldest daughter of", "Constantine the Great")\n', '("Constantina", "was the daughter of", "Fausta")\n', '("Constantina", "was the half-sister of", "Crispus")\n', '("Constantina", "married", "Hannibalianus")\n', '("Hannibalianus", "was created", "King of Kings and Ruler of the Pontic Tribes by Constantine I")\n', '("Constantina", "was given in marriage to", "Gallus")\n', '("Gallus", "was made", "Caesar of the East")\n', '("Constantina", "moved to", "Antioch")\n', '("Constantina", "died in", "Bithynia")\n', '("Constantina", "was entombed near", "Via Nomentana in Rome")\n', '("Constantina", "encouraged Vetranio to challenge", "Magnentius")\n', '("Constantina", "was involved in the revolt against", "Magnentius")\n', '("Constantina", "was politically active in", "Antioch")\n', '("Constantina", "was portrayed as cruel and violent by", "Ammianus Marcellinus")\n', '("Edward Gibbon", "likened Constantina to", "one of the infernal furies")\n', '("Constantina", "developed a medieval legend associated with", "Agnes of Rome")\n', '("Constantina", "is depicted on the Royal Gold Cup in", "British Museum")\n']
+range(1, 319) 4
+['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")\n', '("Pompey", "initiated a rebellion in", "Hispania")\n', '("Diocletian", "created", "Diocese of Hispania")\n', '("Diocletian", "made", "Maximian co-ruler")\n']
+
+['("Battle of Pharsalus", "was", "decisive battle of Caesar\'s Civil War")\n', '("Battle of Pharsalus", "occurred near", "Pharsalus in Central Greece")\n', '("Julius Caesar", "formed up opposite", "army of the Roman Republic")\n', '("Pompey", "commanded", "army of the Roman Republic against Julius Caesar")\n', '("Pompey", "had backing of", "majority of Roman senators")\n', '("Pompey\'s army", "outnumbered", "Caesarian legions")\n', '("Pompey", "suffered", "overwhelming defeat at Battle of Pharsalus")\n', '("Pompey", "eventually fled to", "Egypt")\n', '("Julius Caesar", "captured", "Rome at start of Civil War")\n', '("Julius Caesar", "advanced on", "Dyrrachium")\n', '("Julius Caesar", "withdrew east into", "Thessaly")\n', '("Julius Caesar", "besieged", "Gomphi")\n', '("Metellus Scipio\'s forces", "arriving from", "Syria")\n', '("Pompey", "pursued", "Caesar")\n', '("Pompey", "sought to spare", "Italy from invasion by concluding war on Greek soil")\n', '("Strabo", "mentions", "Pharsaloi")\n', '("Pharsalus", "disputed location according to", "scholars")\n', '("Strabo", "mentions", "Thetideion and temple to Thetis near Pharsalus")\n', '("Krini", "probable location of", "Palaepharsalus according to Morgan")\n', '("Marcus Tullius Cicero", "calls battle", "Pharsālicum proelium")\n', '("Lucan", "uses the name", "Pharsālia for the battle")\n', '("Plutarch", "refers to battle", "at Pharsalus")\n', '("Caesarian legions", "recruited Greek light infantry from", "Dolopia, Acarnania, and Aetolia")\n', '("Pompey\'s forces", "contained soldiers from", "Phoenicians")\n', '("Pompey\'s forces", "contained soldiers from", "Cappadocian")\n', '("Mark Antony", "commanded", "Caesar\'s left flank at the Battle of Pharsalus")\n', '("Marcus Junius Brutus", "sought", "Caesar\'s pardon after battle")\n', '("Alexandria", "Caesar landed in", "after pursuing Pompey")\n', '("Alexandre Dumas", "mentions", "Battle of Pharsalus in The Three Musketeers")\n', '("Pompey", "known in English as", "Pompey the Great")\n', '("Pompey", "played a role in", "transformation of Rome")\n', '("Pompey", "protege of", "Sulla")\n', '("Pompey", "became enemy of", "Julius Caesar")\n', '("Pompey", "rose to prominence serving", "Sulla")\n', '("Pompey", "elected as consul on", "three occasions")\n', '("Pompey", "joined", "Crassus and Julius Caesar in the First Triumvirate")\n', '("Pompey", "married", "Julia, daughter of Caesar")\n', '("Pompey", "defeated at", "Battle of Pharsalus")\n', '("Pompey", "assassinated in", "Egypt")\n', '("Sulla", "sent Pompey to", "Sicily and Africa")\n', '("Sulla", "persuaded Pompey to divorce", "Antistia ")\n', '("Julius Caesar", "political ally, and finally the enemy, of", "Pompey")\n', '("Crassus", "joined", "Pompey and Julius Caesar in the First Triumvirate")\n', '("Pompey", "recruited", "legion from his father\'s clients and veterans in Picenum")\n', '("Pompey", "landed in", "Brundusium with Sulla")\n', '("Pompey", "campaigned against", "Gaius Papirius Carbo in Cisalpine Gaul")\n', '("Pompey", "commander in", "Third Servile War")\n', '("Pompey", "advanced directly to his first consulship without", "traditional cursus honorum")\n', '("Pompey", "defeated Carbo\'s lieutenant in", "battle at the river Aesis")\n', '("Pompey", "pursued government forces to", "Praeneste")\n', '("Pompey", "married", "Mucia Tertia")\n', '("Pompey", "supported", "Marcus Aemilius Lepidus as consul")\n', '("Pompey", "besieged", "Mutina")\n', '("Pompey", "appointed military commander in", "Spain")\n', '("Pompey", "commanded troops in", "Gallia Narbonensis")\n', '("Pompey", "entered winter quarters near", "Narbo Martius")\n', '("Pompey", "defeated by Sertorius at", "Battle of Lauron")\n', '("Pompey", "ambushed a large force under Censorinus", "outside Spoletium")\n', '("Pompey", "exited", "Censorinus")\n', '("Metellus Scipio", "supported by", "Pompey")\n', '("Metellus Scipio", "defeated", "Gaius Marcius Censorinus")\n', '("Pompey", "joined", "Marcus Licinius Crassus ")\n', '("Pompey", "claimed lands in", "Libya and Calabria")\n', '("Pompey", "defeated", "Spartacus in Third Servile War")\n', '("Pompey", "claimed victory in Hispania", "after Crassus defeated Spartacus")\n', '("Pompey", "assigned the governorship of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "raised troops from", "Picenum")\n', '("Pompey", "defeated", "Marcus Junius Brutus in Mutina")\n', '("Quintus Sertorius", "joined by", "Perpenna ")\n', '("Quintus Caecilius Metellus Pius", "forced out of", "Hispania Ulterior by Sertorius")\n', '("Metellus Pius", "allied with", "Pompey")\n', '("Pompey", "recruited", "infantry and cavalry for Hispania")\n', '("Pompey", "subdued rebellion in", "Gallia Narbonensis during route to Hispania")\n', '("Pompey", "crossed the Col de Portet into", "Iberian peninsula")\n', '("Pompey", "defeated Perpenna and Gaius Herennius outside", "Valencia")\n', '("Pompey", "battle position at", "Battle of Sacriportus with Sulla ")\n', '("Pompey", "met", "Perpenna in Lusitania")\n', '("Pompey", "restructured the local Roman administration in", "Hispania and southern Gaul")\n', '("Pompey", "charged with suppressing", "Third Servile War of Spartacus")\n', '("Crassus", "campaign against", "Spartacus")\n', '("Pompey", "massacred fugitives from", "Crassus\'s battle")\n', '("Pompey", "proconsul of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "fought pirates based in", "Cilicia")\n', '("Pompey", "defeated pirates at", "Battle of Korakesion")\n', '("Pompey", "created province of", "Syria")\n', '("Lucius Licinius Lucullus", "commander against", "Mithridates VI")\n', '("Mithridates VI", "invaded Pontus and ", "Armenia")\n', '("Pompey", "granted powers to defeat", "Mithridates VI in lex Manilia")\n', '("Mithridates VI", "withdrew to", "Armenia pursued by Pompey")\n', '("Pompey", "defeated Mithridates VI at", "Lycus")\n', '("Mithridates VI", "took control of", "Cimmerian Bosporus")\n', '("Pompey", "defeated forces in", "Caucasia")\n', '("Tigranes the Great", "terms with", "Pompey")\n', '("Pompey", "settled", "conflicts between Phraates III and Tigranes")\n', '("Pharnaces II of Pontus", "surrendered to", "Pompey")\n', '("Pompey", "occupied cities in", "the Levant")\n', '("Pompey", "backed", "Hyrcanus II over Aristobulus II")\n', '("Hyrcanus II", "ruled", "Judea under Pompey")\n', '("Bithynia and Pontus", "created as province by", "Pompey")\n', '("Ariobarzanes I of Cappadocia", "restored by", "Pompey")\n', '("Lesser Armenia", "incorporated into", "Galatia by Pompey")\n', '("Cilicia", "received", "Pamphylia from Pompey")\n', '("Pompey", "builds", "Theatre of Pompey")\n', '("Pompey", "Senate refuses to ratify treaties made by", "in Eastern settlements")\n', '("Cato the Younger", "opposed", "Pompey\'s treaties")\n', '("Pompey", "assigned", "Hispania and Africa as provinces")\n', '("Julia", "death removed obstacle between", "Pompey and Caesar")\n', '("Publius Crassus", "death removed obstacle between", "Pompey and Caesar")\n', '("Pompey", "elected sole consul after suspending elections due to", "violence")\n', '("Pompey", "married", "Cornelia Metella")\n', '("Pompey", "enacted legislation to trial elected candidates", "backing Senate")\n', '("Pompey", "required electoral candidates presence in", "Rome")\n', '("Pompey", "initiated legislation against", "Caesar")\n', '("Pompey", "gathered consular army funded by", "Senate")\n', '("Pompey", "fell ill recruiting in", "Naples")\n', '("Caesar", "rejected ultimatum regarding concessions by", "Senate")\n', '("Caesar", "crossed the Rubicon into", "Italy")\n', '("Pompey", "withdrew from Italy to", "Greece")\n', '("Pompey", "deployed troops at", "Battle of Pharsalus against Caesar")\n', '("Pompey", "escapes to", "Mytilene")\n', '("Ptolemy XIII", "absent ally of Pompey at", "Battle of Pharsalus")\n', '("Pompey", "took refuge in", "Egypt with Ptolemy XIII")\n', '("Pompey", "sails from Cyprus to Egypt", "with small fleet")\n', '("Pompey", "arrived at", "Pelusium in Egypt")\n', '("Pompey", "assassinated by", "Lucius Septimius")\n', '("Lucius Septimius", "Roman officer serving in", "Egyptian army")\n', '("Ptolemy XIII", "feared control of Egypt by", "Pompey")\n', '("Pompey", "cremated by", "two servants")\n', '("Pompey", "head returned to", "Cornelia")\n', '("Pompey", "villain the Alban Hills burial", "administered by Cicero")\n', '("Pompey", "military skills criticized by", "Sertorius and Lucullus")\n', '("Pompey", "commanded without genius on battlefield", "preferred gradual strategies")\n', '("Pompey", "not charismatic but inspiring bravery", "on battlefield")\n', '("Pompey", "commander known for stealing victories", "from other generals")\n', '("Pompey", "considered outstanding strategist and organizer", "military campaigns")\n', '("Pompey", "preferred military glory over political constraints", "lex Gabinia")\n', '("Pompey", "efficient tactics against", "pirates")\n', '("Pompey", "war of attrition against", "Sertorius")\n', '("Pompey", "decided victory against", "Perpenna ending Sertorian war")\n', '("Pompey", "strategy against Caesar in", "Greece")\n', '("Pompey", "defeated by Caesar due to", "tactics")\n', '("Lucan", "wrote epic De Bello Civili about", "Pompey")\n', '("Plutarch", "claims Pompey married", "Aemilia pregnant by former husband")\n', '("Colleen McCullough", "Pompey featured in", "Masters of Rome series")\n', '("Steven Saylor", "Pompey encounters Gordianus in", "Roma Sub Rosa novels")\n', '("Robert Harris", "Pompey plays part in historical background of", "Cicero trilogy")\n', '("Hispania", "was the Roman name for", "the Iberian Peninsula")\n', '("Hispania", "divided into", "Baetica and Lusitania")\n', '("Hispania Citerior", "renamed to", "Hispania Tarraconensis")\n', '("Hispania", "during Principate divided into", "Hispania Citerior and Hispania Ulterior")\n', '("Spain and Hispaniola", "derived from", "Hispania")\n', '("Hispania", "of Punic origin from", "Carthage")\n', '("European rabbit", "referred to as", "hyrax in Hebrew")\n', '("Hispania", "possibly derived from the Phoenician word", "span meaning \'hidden\'")\n', '("Phoenician", "colonizers from", "Carthage")\n', '("Hispania", "ancient name could be", "Hispalis for Seville")\n', '("Hispania", "alternative ancient name derived from Greek", "Heliopolis")\n', '("Hispania", "called", "Hesperia ultima by Romans")\n', '("Neanderthals", "took refuge from", "modern humans in Hispania")\n', '("Hispania", "has prehistoric art in", "Côa Valley")\n', '("Azilian and Muge Cultures", "existed in", "Hispania")\n', '("Tartessos", "influenced by", "Phoenician colonization")\n', '("Hispania\'s Mediterranean landscape", "influenced by", "Phoenician and Greek colonization")\n', '("Latin", "official language of", "Hispania during Roman rule")\n', '("Hispania", "fell to", "Carthage after First Punic War")\n', '("Romans", "adopted the name", "Hispania")\n', '("Augustus", "completed the conquest of", "Hispania Ulterior")\n', '("Rome", "capital of", "Hispania Ulterior Baetica")\n', '("Lisbon", "known as", "Olissipo during Roman Hispania")\n', '("Tarragona", "known as", "Tarraco during Roman Hispania")\n', '("Zaragoza", "established by Romans as", "Caesaraugusta")\n', '("Hispania", "source of metals for", "Roman market")\n', '("Hispania Baetica", "produced", "gold, tin, silver, lead, wool, wheat, olive oil, wine, fish, and garum")\n', '("Hispania", "divided into three provinces by", "Augustus")\n', '("Hispania", "Latin term used geographically and politically by", "Visigothic Spania")\n', '("Portugal", "part of", "Hispania Lusitania")\n', '("Kingdom of Castile", "united with", "Kingdom of Aragon in Hispania")\n', '("Visigothic rule in Hispania", "followed by", "Umayyad conquest")\n', '("Umayyad conquest", "resulted in", "Al-Andalus")\n', '("Christian reconquest", "ended Islamic rule in", "Hispania")\n', '("Gold mining", "important activity in", "northwest Hispania")\n', '("Diocletian", "was born to a family of low status in", "Dalmatia")\n', '("Diocles", "became a cavalry commander for the army of", "Emperor Carus")\n', '("Diocles", "was proclaimed emperor by the troops after the deaths of", "Carus and his son Numerian")\n', '("Diocletian", "appointed", "Maximian as co-emperor")\n', '("Diocletian", "secured the empire\'s borders and purged it of threats to his power", "")\n', '("Diocletian", "appointed Galerius and Constantius as", "junior colleagues with the title Caesar")\n', '("Galerius, aided by", "campaigned successfully against", "Persia")\n', '("Diocletian", "achieved a lasting and favorable peace in negotiations with", "Persia")\n', '("Diocletian", "established new administrative centers in", "Nicomedia, Mediolanum, Sirmium, and Trevorum")\n', '("Diocletian", "was the first Roman emperor to", "abdicate the position voluntarily")\n', '("Diocletian", "was born at or near the town of", "Salona")\n', '("Diocletian", "was schooled and promoted by", "Aurelian")\n', '("Diocletian", "was Dux Moesiae, a commander of forces on the lower", "Danube")\n', '("Carinus", "made his way to Rome from", "Gaul")\n', '("Numerian", "reached", "Emesa in Syria")\n', '("Galerius", "was dispatched to fight the rebel Bagaudae in", "Gaul")\n', '("Maximian", "made", "Caesar by Diocletian")\n', '("Diocletian", "met Maximian in", "Milan")\n', '("Diocletian", "replaced the prefect of Rome with", "Bassus")\n', '("Galerius", "suppressed a regional uprising in Upper", "Egypt")\n', '("Diocletian", "moved into", "Egypt to suppress Domitianus")\n', '("Diocletian", "left", "Africa quickly after the peace treaty with the Nobatae and Blemmyes")\n', '("Diocletian\'s", "governmental and military growth increased the state expenditures", "")\n', '("Constantine and Maxentius", "were ignored in the transition of power", "")\n', '("Diocletian", "retired to his homeland", "Dalmatia")\n', '("Diocletian", "moved into the Diocletian\'s Palace", "near Salona")\n', '("Diocletian", "saw his tetrarchic system fail after his retirement", "")\n', '("Diocletian", "died", "naturally")\n', '("Diocletian", "abandoned his policy of preserving a stable silver coinage", "")\n', '("Diocletian", "underwent", "a new tax system based on heads and land")\n', '("Diocletian", "introduced", "a general five-year census for the whole empire")\n', '("Diocletian", "introduced an extensive new tax system based on", "heads and land")\n', '("Diocletian\'s", "Era of Martyrs", "is a dating method used by the Church of Alexandria and by the Coptic Orthodox Church")\n', '("Diocletian", "is reflected as", "a major villain in Serbian mythology")\n', '("Diocletian", "is included in several semi-legendary accounts in the", "Talmud")\n', '("Diocletian\'s", "palace eventually became the core of the modern-day city of", "Split in Croatia")\n', '("Maxentius", "ruled in", "Italy and North Africa")\n', '("Senate in", "recognized", "Maxentius")\n', '("Maxentius", "was not recognized as legitimate emperor by", "his fellow emperors")\n', '("Maxentius", "was the son of", "former Emperor Maximian")\n', '("Maxentius", "was the son-in-law of", "Emperor Galerius")\n', '("Maxentius", "allied with", "Maximinus against Licinius and Constantine")\n', '("Maxentius", "perished by drowning in", "the Tiber river")\n', '("Maxentius", "was the last emperor to reside permanently in", "Rome")\n', '("Maxentius", "attempted to embellish, restore and improve", "Rome")\n', '("Maxentius", "was the son of", "Maximian")\n', '("Maxentius", "married to", "Valeria Maximilla, daughter of Galerius")\n', '("Maxentius", "had two sons", "Valerius Romulus and an unknown one")\n', '("Maxentius", "was passed over for the new tetrarchy by", "Diocletian and Maximian")\n', '("Maxentius", "retired to an estate near", "Rome")\n', '("Maxentius", "managed to be recognized as emperor in", "central and southern Italy, the islands of Corsica, Sardinia, Sicily, and the African provinces")\n', '("Maxentius", "refrained from using the titles Augustus or Caesar at first", "hoping for recognition from Galerius")\n', '("Maxentius", "assumed the title of", "Augustus")\n', '("Maxentius", "established his reign over", "Italy and Africa")\n', '("Maxentius", "arranged friendly contacts with", "Constantine")\n', '("Maxentius", "lost", "Istria to Licinius")\n', '("Maxentius", "sent an army to Africa to defeat", "Domitius Alexander")\n', '("Maxentius", "allowed to elect a new", "Bishop of Rome, Eusebius")\n', '("Maxentius", "fortified", "northern Italy")\n', '("Maxentius", "declared war on", "Constantine")\n', '("Maxentius", "stationed an army in", "Verona")\n', '("Maxentius", "lost the Battle at", "Milvian Bridge")\n', '("Maxentius", "tried to divide the realms of", "Constantine and Licinius")\n', '("Maxentius", "vilified as", "a cruel and incompetent tyrant after his death")\n', '("Maxentius", "ended the Great Persecution in his territories at least five years in advance of", "the Edict of Milan")\n', '("Maxentius", "was defeated at", "the Battle of the Milvian Bridge by Constantine")\n', '("Maxentius", "was a prolific builder in", "Rome")\n', '("Imperial insignia", "possibly belonged to", "Maxentius")\n', '("Maxentius", "is the main antagonist in the film", "Constantine and the Cross")\n', '("Catullus", "was born to", "a leading equestrian family of Verona")\n', '("Catullus", "entertained", "Julius Caesar")\n', '("Catullus\'s family", "owned a villa at", "Lake Garda")\n', '("Catullus", "owned a villa near", "Tibur")\n', '("Catullus", "had acquaintance with", "Pompey")\n', '("Suetonius", "preserved an anecdote about", "Catullus")\n', '("Catullus", "spent time in", "Bithynia")\n', '("Catullus", "traveled to", "Troad")\n', '("Homer", "influenced", "Catullus")\n', '("Carl Orff", "set texts from", "Catullus to music")\n', '("Diocletian", "was born to a family of low status in", "Dalmatia")\n', '("Diocles", "became a cavalry commander for the army of", "Emperor Carus")\n', '("Diocles", "was proclaimed emperor by the troops after the deaths of", "Carus and his son Numerian")\n', '("Diocletian", "appointed", "Maximian as co-emperor")\n', '("Diocletian", "secured the empire\'s borders and purged it of threats to his power", "")\n', '("Diocletian", "appointed Galerius and Constantius as", "junior colleagues with the title Caesar")\n', '("Galerius, aided by", "campaigned successfully against", "Persia")\n', '("Diocletian", "achieved a lasting and favorable peace in negotiations with", "Persia")\n', '("Diocletian", "established new administrative centers in", "Nicomedia, Mediolanum, Sirmium, and Trevorum")\n', '("Diocletian", "was the first Roman emperor to", "abdicate the position voluntarily")\n', '("Diocletian", "was born at or near the town of", "Salona")\n', '("Diocletian", "was schooled and promoted by", "Aurelian")\n', '("Diocletian", "was Dux Moesiae, a commander of forces on the lower", "Danube")\n', '("Carinus", "made his way to Rome from", "Gaul")\n', '("Numerian", "reached", "Emesa in Syria")\n', '("Galerius", "was dispatched to fight the rebel Bagaudae in", "Gaul")\n', '("Maximian", "made", "Caesar by Diocletian")\n', '("Diocletian", "met Maximian in", "Milan")\n', '("Diocletian", "replaced the prefect of Rome with", "Bassus")\n', '("Diocletian", "made", "Maximian co-ruler")\n', '("Galerius", "suppressed a regional uprising in Upper", "Egypt")\n', '("Diocletian", "moved into", "Egypt to suppress Domitianus")\n', '("Diocletian", "left", "Africa quickly after the peace treaty with the Nobatae and Blemmyes")\n', '("Diocletian\'s", "governmental and military growth increased the state expenditures", "")\n', '("Constantine and Maxentius", "were ignored in the transition of power", "")\n', '("Diocletian", "retired to his homeland", "Dalmatia")\n', '("Diocletian", "moved into the Diocletian\'s Palace", "near Salona")\n', '("Diocletian", "saw his tetrarchic system fail after his retirement", "")\n', '("Diocletian", "died", "naturally")\n', '("Diocletian", "abandoned his policy of preserving a stable silver coinage", "")\n', '("Diocletian", "underwent", "a new tax system based on heads and land")\n', '("Diocletian", "introduced", "a general five-year census for the whole empire")\n', '("Diocletian", "introduced an extensive new tax system based on", "heads and land")\n', '("Diocletian\'s", "Era of Martyrs", "is a dating method used by the Church of Alexandria and by the Coptic Orthodox Church")\n', '("Diocletian", "is reflected as", "a major villain in Serbian mythology")\n', '("Diocletian", "is included in several semi-legendary accounts in the", "Talmud")\n', '("Diocletian\'s", "palace eventually became the core of the modern-day city of", "Split in Croatia")\n', '("Constantina", "was the eldest daughter of", "Constantine the Great")\n', '("Constantina", "was the daughter of", "Fausta")\n', '("Constantina", "was the half-sister of", "Crispus")\n', '("Constantina", "married", "Hannibalianus")\n', '("Hannibalianus", "was created", "King of Kings and Ruler of the Pontic Tribes by Constantine I")\n', '("Constantina", "was given in marriage to", "Gallus")\n', '("Gallus", "was made", "Caesar of the East")\n', '("Constantina", "moved to", "Antioch")\n', '("Constantina", "died in", "Bithynia")\n', '("Constantina", "was entombed near", "Via Nomentana in Rome")\n', '("Constantina", "encouraged Vetranio to challenge", "Magnentius")\n', '("Constantina", "was involved in the revolt against", "Magnentius")\n', '("Constantina", "was politically active in", "Antioch")\n', '("Constantina", "was portrayed as cruel and violent by", "Ammianus Marcellinus")\n', '("Edward Gibbon", "likened Constantina to", "one of the infernal furies")\n', '("Constantina", "developed a medieval legend associated with", "Agnes of Rome")\n', '("Constantina", "is depicted on the Royal Gold Cup in", "British Museum")\n']
+range(1, 319) 4
+['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")\n', '("Pompey", "initiated a rebellion in", "Hispania")\n', '("Diocletian", "created", "Diocese of Hispania")\n', '("Diocletian", "made", "Maximian co-ruler")\n']
+
+['("Battle of Pharsalus", "was", "decisive battle of Caesar\'s Civil War")\n', '("Battle of Pharsalus", "occurred near", "Pharsalus in Central Greece")\n', '("Julius Caesar", "formed up opposite", "army of the Roman Republic")\n', '("Pompey", "commanded", "army of the Roman Republic against Julius Caesar")\n', '("Pompey", "had backing of", "majority of Roman senators")\n', '("Pompey\'s army", "outnumbered", "Caesarian legions")\n', '("Pompey", "suffered", "overwhelming defeat at Battle of Pharsalus")\n', '("Pompey", "eventually fled to", "Egypt")\n', '("Julius Caesar", "captured", "Rome at start of Civil War")\n', '("Julius Caesar", "advanced on", "Dyrrachium")\n', '("Julius Caesar", "withdrew east into", "Thessaly")\n', '("Julius Caesar", "besieged", "Gomphi")\n', '("Metellus Scipio\'s forces", "arriving from", "Syria")\n', '("Pompey", "pursued", "Caesar")\n', '("Pompey", "sought to spare", "Italy from invasion by concluding war on Greek soil")\n', '("Strabo", "mentions", "Pharsaloi")\n', '("Pharsalus", "disputed location according to", "scholars")\n', '("Strabo", "mentions", "Thetideion and temple to Thetis near Pharsalus")\n', '("Krini", "probable location of", "Palaepharsalus according to Morgan")\n', '("Marcus Tullius Cicero", "calls battle", "Pharsālicum proelium")\n', '("Lucan", "uses the name", "Pharsālia for the battle")\n', '("Plutarch", "refers to battle", "at Pharsalus")\n', '("Caesarian legions", "recruited Greek light infantry from", "Dolopia, Acarnania, and Aetolia")\n', '("Pompey\'s forces", "contained soldiers from", "Phoenicians")\n', '("Pompey\'s forces", "contained soldiers from", "Cappadocian")\n', '("Mark Antony", "commanded", "Caesar\'s left flank at the Battle of Pharsalus")\n', '("Marcus Junius Brutus", "sought", "Caesar\'s pardon after battle")\n', '("Alexandria", "Caesar landed in", "after pursuing Pompey")\n', '("Alexandre Dumas", "mentions", "Battle of Pharsalus in The Three Musketeers")\n', '("Pompey", "known in English as", "Pompey the Great")\n', '("Pompey", "played a role in", "transformation of Rome")\n', '("Pompey", "protege of", "Sulla")\n', '("Pompey", "became enemy of", "Julius Caesar")\n', '("Pompey", "rose to prominence serving", "Sulla")\n', '("Pompey", "elected as consul on", "three occasions")\n', '("Pompey", "joined", "Crassus and Julius Caesar in the First Triumvirate")\n', '("Pompey", "married", "Julia, daughter of Caesar")\n', '("Pompey", "defeated at", "Battle of Pharsalus")\n', '("Pompey", "assassinated in", "Egypt")\n', '("Sulla", "sent Pompey to", "Sicily and Africa")\n', '("Sulla", "persuaded Pompey to divorce", "Antistia ")\n', '("Julius Caesar", "political ally, and finally the enemy, of", "Pompey")\n', '("Crassus", "joined", "Pompey and Julius Caesar in the First Triumvirate")\n', '("Pompey", "recruited", "legion from his father\'s clients and veterans in Picenum")\n', '("Pompey", "landed in", "Brundusium with Sulla")\n', '("Pompey", "campaigned against", "Gaius Papirius Carbo in Cisalpine Gaul")\n', '("Pompey", "commander in", "Third Servile War")\n', '("Pompey", "advanced directly to his first consulship without", "traditional cursus honorum")\n', '("Pompey", "defeated Carbo\'s lieutenant in", "battle at the river Aesis")\n', '("Pompey", "pursued government forces to", "Praeneste")\n', '("Pompey", "married", "Mucia Tertia")\n', '("Pompey", "supported", "Marcus Aemilius Lepidus as consul")\n', '("Pompey", "besieged", "Mutina")\n', '("Pompey", "appointed military commander in", "Spain")\n', '("Pompey", "commanded troops in", "Gallia Narbonensis")\n', '("Pompey", "entered winter quarters near", "Narbo Martius")\n', '("Pompey", "defeated by Sertorius at", "Battle of Lauron")\n', '("Pompey", "ambushed a large force under Censorinus", "outside Spoletium")\n', '("Pompey", "exited", "Censorinus")\n', '("Metellus Scipio", "supported by", "Pompey")\n', '("Metellus Scipio", "defeated", "Gaius Marcius Censorinus")\n', '("Pompey", "joined", "Marcus Licinius Crassus ")\n', '("Pompey", "claimed lands in", "Libya and Calabria")\n', '("Pompey", "defeated", "Spartacus in Third Servile War")\n', '("Pompey", "claimed victory in Hispania", "after Crassus defeated Spartacus")\n', '("Pompey", "assigned the governorship of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "raised troops from", "Picenum")\n', '("Pompey", "defeated", "Marcus Junius Brutus in Mutina")\n', '("Quintus Sertorius", "joined by", "Perpenna ")\n', '("Quintus Caecilius Metellus Pius", "forced out of", "Hispania Ulterior by Sertorius")\n', '("Metellus Pius", "allied with", "Pompey")\n', '("Pompey", "recruited", "infantry and cavalry for Hispania")\n', '("Pompey", "subdued rebellion in", "Gallia Narbonensis during route to Hispania")\n', '("Pompey", "crossed the Col de Portet into", "Iberian peninsula")\n', '("Pompey", "defeated Perpenna and Gaius Herennius outside", "Valencia")\n', '("Pompey", "battle position at", "Battle of Sacriportus with Sulla ")\n', '("Pompey", "met", "Perpenna in Lusitania")\n', '("Pompey", "restructured the local Roman administration in", "Hispania and southern Gaul")\n', '("Pompey", "charged with suppressing", "Third Servile War of Spartacus")\n', '("Crassus", "campaign against", "Spartacus")\n', '("Pompey", "massacred fugitives from", "Crassus\'s battle")\n', '("Pompey", "proconsul of", "Cisalpine and Transalpine Gaul")\n', '("Pompey", "fought pirates based in", "Cilicia")\n', '("Pompey", "defeated pirates at", "Battle of Korakesion")\n', '("Pompey", "created province of", "Syria")\n', '("Lucius Licinius Lucullus", "commander against", "Mithridates VI")\n', '("Mithridates VI", "invaded Pontus and ", "Armenia")\n', '("Pompey", "granted powers to defeat", "Mithridates VI in lex Manilia")\n', '("Mithridates VI", "withdrew to", "Armenia pursued by Pompey")\n', '("Pompey", "defeated Mithridates VI at", "Lycus")\n', '("Mithridates VI", "took control of", "Cimmerian Bosporus")\n', '("Pompey", "defeated forces in", "Caucasia")\n', '("Tigranes the Great", "terms with", "Pompey")\n', '("Pompey", "settled", "conflicts between Phraates III and Tigranes")\n', '("Pharnaces II of Pontus", "surrendered to", "Pompey")\n', '("Pompey", "occupied cities in", "the Levant")\n', '("Pompey", "backed", "Hyrcanus II over Aristobulus II")\n', '("Hyrcanus II", "ruled", "Judea under Pompey")\n', '("Bithynia and Pontus", "created as province by", "Pompey")\n', '("Ariobarzanes I of Cappadocia", "restored by", "Pompey")\n', '("Lesser Armenia", "incorporated into", "Galatia by Pompey")\n', '("Cilicia", "received", "Pamphylia from Pompey")\n', '("Pompey", "builds", "Theatre of Pompey")\n', '("Pompey", "Senate refuses to ratify treaties made by", "in Eastern settlements")\n', '("Cato the Younger", "opposed", "Pompey\'s treaties")\n', '("Pompey", "assigned", "Hispania and Africa as provinces")\n', '("Julia", "death removed obstacle between", "Pompey and Caesar")\n', '("Publius Crassus", "death removed obstacle between", "Pompey and Caesar")\n', '("Pompey", "elected sole consul after suspending elections due to", "violence")\n', '("Pompey", "married", "Cornelia Metella")\n', '("Pompey", "enacted legislation to trial elected candidates", "backing Senate")\n', '("Pompey", "required electoral candidates presence in", "Rome")\n', '("Pompey", "initiated legislation against", "Caesar")\n', '("Pompey", "gathered consular army funded by", "Senate")\n', '("Pompey", "fell ill recruiting in", "Naples")\n', '("Caesar", "rejected ultimatum regarding concessions by", "Senate")\n', '("Caesar", "crossed the Rubicon into", "Italy")\n', '("Pompey", "withdrew from Italy to", "Greece")\n', '("Pompey", "deployed troops at", "Battle of Pharsalus against Caesar")\n', '("Pompey", "escapes to", "Mytilene")\n', '("Ptolemy XIII", "absent ally of Pompey at", "Battle of Pharsalus")\n', '("Pompey", "took refuge in", "Egypt with Ptolemy XIII")\n', '("Pompey", "sails from Cyprus to Egypt", "with small fleet")\n', '("Pompey", "arrived at", "Pelusium in Egypt")\n', '("Pompey", "assassinated by", "Lucius Septimius")\n', '("Lucius Septimius", "Roman officer serving in", "Egyptian army")\n', '("Ptolemy XIII", "feared control of Egypt by", "Pompey")\n', '("Pompey", "cremated by", "two servants")\n', '("Pompey", "head returned to", "Cornelia")\n', '("Pompey", "villain the Alban Hills burial", "administered by Cicero")\n', '("Pompey", "military skills criticized by", "Sertorius and Lucullus")\n', '("Pompey", "commanded without genius on battlefield", "preferred gradual strategies")\n', '("Pompey", "not charismatic but inspiring bravery", "on battlefield")\n', '("Pompey", "commander known for stealing victories", "from other generals")\n', '("Pompey", "considered outstanding strategist and organizer", "military campaigns")\n', '("Pompey", "preferred military glory over political constraints", "lex Gabinia")\n', '("Pompey", "efficient tactics against", "pirates")\n', '("Pompey", "war of attrition against", "Sertorius")\n', '("Pompey", "decided victory against", "Perpenna ending Sertorian war")\n', '("Pompey", "strategy against Caesar in", "Greece")\n', '("Pompey", "defeated by Caesar due to", "tactics")\n', '("Lucan", "wrote epic De Bello Civili about", "Pompey")\n', '("Plutarch", "claims Pompey married", "Aemilia pregnant by former husband")\n', '("Colleen McCullough", "Pompey featured in", "Masters of Rome series")\n', '("Steven Saylor", "Pompey encounters Gordianus in", "Roma Sub Rosa novels")\n', '("Robert Harris", "Pompey plays part in historical background of", "Cicero trilogy")\n', '("Hispania", "was the Roman name for", "the Iberian Peninsula")\n', '("Hispania", "divided into", "Baetica and Lusitania")\n', '("Hispania Citerior", "renamed to", "Hispania Tarraconensis")\n', '("Hispania", "during Principate divided into", "Hispania Citerior and Hispania Ulterior")\n', '("Spain and Hispaniola", "derived from", "Hispania")\n', '("Hispania", "of Punic origin from", "Carthage")\n', '("European rabbit", "referred to as", "hyrax in Hebrew")\n', '("Hispania", "possibly derived from the Phoenician word", "span meaning \'hidden\'")\n', '("Phoenician", "colonizers from", "Carthage")\n', '("Hispania", "ancient name could be", "Hispalis for Seville")\n', '("Hispania", "alternative ancient name derived from Greek", "Heliopolis")\n', '("Hispania", "called", "Hesperia ultima by Romans")\n', '("Neanderthals", "took refuge from", "modern humans in Hispania")\n', '("Hispania", "has prehistoric art in", "Côa Valley")\n', '("Azilian and Muge Cultures", "existed in", "Hispania")\n', '("Tartessos", "influenced by", "Phoenician colonization")\n', '("Hispania\'s Mediterranean landscape", "influenced by", "Phoenician and Greek colonization")\n', '("Latin", "official language of", "Hispania during Roman rule")\n', '("Hispania", "fell to", "Carthage after First Punic War")\n', '("Romans", "adopted the name", "Hispania")\n', '("Augustus", "completed the conquest of", "Hispania Ulterior")\n', '("Rome", "capital of", "Hispania Ulterior Baetica")\n', '("Lisbon", "known as", "Olissipo during Roman Hispania")\n', '("Tarragona", "known as", "Tarraco during Roman Hispania")\n', '("Zaragoza", "established by Romans as", "Caesaraugusta")\n', '("Hispania", "source of metals for", "Roman market")\n', '("Hispania Baetica", "produced", "gold, tin, silver, lead, wool, wheat, olive oil, wine, fish, and garum")\n', '("Hispania", "divided into three provinces by", "Augustus")\n', '("Hispania", "Latin term used geographically and politically by", "Visigothic Spania")\n', '("Portugal", "part of", "Hispania Lusitania")\n', '("Kingdom of Castile", "united with", "Kingdom of Aragon in Hispania")\n', '("Visigothic rule in Hispania", "followed by", "Umayyad conquest")\n', '("Umayyad conquest", "resulted in", "Al-Andalus")\n', '("Christian reconquest", "ended Islamic rule in", "Hispania")\n', '("Gold mining", "important activity in", "northwest Hispania")\n', '("Diocletian", "was born to a family of low status in", "Dalmatia")\n', '("Diocles", "became a cavalry commander for the army of", "Emperor Carus")\n', '("Diocles", "was proclaimed emperor by the troops after the deaths of", "Carus and his son Numerian")\n', '("Diocletian", "appointed", "Maximian as co-emperor")\n', '("Diocletian", "secured the empire\'s borders and purged it of threats to his power", "")\n', '("Diocletian", "appointed Galerius and Constantius as", "junior colleagues with the title Caesar")\n', '("Galerius, aided by", "campaigned successfully against", "Persia")\n', '("Diocletian", "achieved a lasting and favorable peace in negotiations with", "Persia")\n', '("Diocletian", "established new administrative centers in", "Nicomedia, Mediolanum, Sirmium, and Trevorum")\n', '("Diocletian", "was the first Roman emperor to", "abdicate the position voluntarily")\n', '("Diocletian", "was born at or near the town of", "Salona")\n', '("Diocletian", "was schooled and promoted by", "Aurelian")\n', '("Diocletian", "was Dux Moesiae, a commander of forces on the lower", "Danube")\n', '("Carinus", "made his way to Rome from", "Gaul")\n', '("Numerian", "reached", "Emesa in Syria")\n', '("Galerius", "was dispatched to fight the rebel Bagaudae in", "Gaul")\n', '("Maximian", "made", "Caesar by Diocletian")\n', '("Diocletian", "met Maximian in", "Milan")\n', '("Diocletian", "replaced the prefect of Rome with", "Bassus")\n', '("Galerius", "suppressed a regional uprising in Upper", "Egypt")\n', '("Diocletian", "moved into", "Egypt to suppress Domitianus")\n', '("Diocletian", "left", "Africa quickly after the peace treaty with the Nobatae and Blemmyes")\n', '("Diocletian\'s", "governmental and military growth increased the state expenditures", "")\n', '("Constantine and Maxentius", "were ignored in the transition of power", "")\n', '("Diocletian", "retired to his homeland", "Dalmatia")\n', '("Diocletian", "moved into the Diocletian\'s Palace", "near Salona")\n', '("Diocletian", "saw his tetrarchic system fail after his retirement", "")\n', '("Diocletian", "died", "naturally")\n', '("Diocletian", "abandoned his policy of preserving a stable silver coinage", "")\n', '("Diocletian", "underwent", "a new tax system based on heads and land")\n', '("Diocletian", "introduced", "a general five-year census for the whole empire")\n', '("Diocletian", "introduced an extensive new tax system based on", "heads and land")\n', '("Diocletian\'s", "Era of Martyrs", "is a dating method used by the Church of Alexandria and by the Coptic Orthodox Church")\n', '("Diocletian", "is reflected as", "a major villain in Serbian mythology")\n', '("Diocletian", "is included in several semi-legendary accounts in the", "Talmud")\n', '("Diocletian\'s", "palace eventually became the core of the modern-day city of", "Split in Croatia")\n', '("Maxentius", "ruled in", "Italy and North Africa")\n', '("Senate in", "recognized", "Maxentius")\n', '("Maxentius", "was not recognized as legitimate emperor by", "his fellow emperors")\n', '("Maxentius", "was the son of", "former Emperor Maximian")\n', '("Maxentius", "was the son-in-law of", "Emperor Galerius")\n', '("Maxentius", "allied with", "Maximinus against Licinius and Constantine")\n', '("Maxentius", "perished by drowning in", "the Tiber river")\n', '("Maxentius", "was the last emperor to reside permanently in", "Rome")\n', '("Maxentius", "attempted to embellish, restore and improve", "Rome")\n', '("Maxentius", "was the son of", "Maximian")\n', '("Maxentius", "married to", "Valeria Maximilla, daughter of Galerius")\n', '("Maxentius", "had two sons", "Valerius Romulus and an unknown one")\n', '("Maxentius", "was passed over for the new tetrarchy by", "Diocletian and Maximian")\n', '("Maxentius", "retired to an estate near", "Rome")\n', '("Maxentius", "managed to be recognized as emperor in", "central and southern Italy, the islands of Corsica, Sardinia, Sicily, and the African provinces")\n', '("Maxentius", "refrained from using the titles Augustus or Caesar at first", "hoping for recognition from Galerius")\n', '("Maxentius", "assumed the title of", "Augustus")\n', '("Maxentius", "established his reign over", "Italy and Africa")\n', '("Maxentius", "arranged friendly contacts with", "Constantine")\n', '("Maxentius", "lost", "Istria to Licinius")\n', '("Maxentius", "sent an army to Africa to defeat", "Domitius Alexander")\n', '("Maxentius", "allowed to elect a new", "Bishop of Rome, Eusebius")\n', '("Maxentius", "fortified", "northern Italy")\n', '("Maxentius", "declared war on", "Constantine")\n', '("Maxentius", "stationed an army in", "Verona")\n', '("Maxentius", "lost the Battle at", "Milvian Bridge")\n', '("Maxentius", "tried to divide the realms of", "Constantine and Licinius")\n', '("Maxentius", "vilified as", "a cruel and incompetent tyrant after his death")\n', '("Maxentius", "ended the Great Persecution in his territories at least five years in advance of", "the Edict of Milan")\n', '("Maxentius", "was defeated at", "the Battle of the Milvian Bridge by Constantine")\n', '("Maxentius", "was a prolific builder in", "Rome")\n', '("Imperial insignia", "possibly belonged to", "Maxentius")\n', '("Maxentius", "is the main antagonist in the film", "Constantine and the Cross")\n', '("Catullus", "was born to", "a leading equestrian family of Verona")\n', '("Catullus", "entertained", "Julius Caesar")\n', '("Catullus\'s family", "owned a villa at", "Lake Garda")\n', '("Catullus", "owned a villa near", "Tibur")\n', '("Catullus", "had acquaintance with", "Pompey")\n', '("Suetonius", "preserved an anecdote about", "Catullus")\n', '("Catullus", "spent time in", "Bithynia")\n', '("Catullus", "traveled to", "Troad")\n', '("Homer", "influenced", "Catullus")\n', '("Carl Orff", "set texts from", "Catullus to music")\n', '("Diocletian", "was born to a family of low status in", "Dalmatia")\n', '("Diocles", "became a cavalry commander for the army of", "Emperor Carus")\n', '("Diocles", "was proclaimed emperor by the troops after the deaths of", "Carus and his son Numerian")\n', '("Diocletian", "appointed", "Maximian as co-emperor")\n', '("Diocletian", "secured the empire\'s borders and purged it of threats to his power", "")\n', '("Diocletian", "appointed Galerius and Constantius as", "junior colleagues with the title Caesar")\n', '("Galerius, aided by", "campaigned successfully against", "Persia")\n', '("Diocletian", "achieved a lasting and favorable peace in negotiations with", "Persia")\n', '("Diocletian", "established new administrative centers in", "Nicomedia, Mediolanum, Sirmium, and Trevorum")\n', '("Diocletian", "was the first Roman emperor to", "abdicate the position voluntarily")\n', '("Diocletian", "was born at or near the town of", "Salona")\n', '("Diocletian", "was schooled and promoted by", "Aurelian")\n', '("Diocletian", "was Dux Moesiae, a commander of forces on the lower", "Danube")\n', '("Carinus", "made his way to Rome from", "Gaul")\n', '("Numerian", "reached", "Emesa in Syria")\n', '("Galerius", "was dispatched to fight the rebel Bagaudae in", "Gaul")\n', '("Maximian", "made", "Caesar by Diocletian")\n', '("Diocletian", "met Maximian in", "Milan")\n', '("Diocletian", "replaced the prefect of Rome with", "Bassus")\n', '("Diocletian", "made", "Maximian co-ruler")\n', '("Galerius", "suppressed a regional uprising in Upper", "Egypt")\n', '("Diocletian", "moved into", "Egypt to suppress Domitianus")\n', '("Diocletian", "left", "Africa quickly after the peace treaty with the Nobatae and Blemmyes")\n', '("Diocletian\'s", "governmental and military growth increased the state expenditures", "")\n', '("Constantine and Maxentius", "were ignored in the transition of power", "")\n', '("Diocletian", "retired to his homeland", "Dalmatia")\n', '("Diocletian", "moved into the Diocletian\'s Palace", "near Salona")\n', '("Diocletian", "saw his tetrarchic system fail after his retirement", "")\n', '("Diocletian", "died", "naturally")\n', '("Diocletian", "abandoned his policy of preserving a stable silver coinage", "")\n', '("Diocletian", "underwent", "a new tax system based on heads and land")\n', '("Diocletian", "introduced", "a general five-year census for the whole empire")\n', '("Diocletian", "introduced an extensive new tax system based on", "heads and land")\n', '("Diocletian\'s", "Era of Martyrs", "is a dating method used by the Church of Alexandria and by the Coptic Orthodox Church")\n', '("Diocletian", "is reflected as", "a major villain in Serbian mythology")\n', '("Diocletian", "is included in several semi-legendary accounts in the", "Talmud")\n', '("Diocletian\'s", "palace eventually became the core of the modern-day city of", "Split in Croatia")\n', '("Constantina", "was the eldest daughter of", "Constantine the Great")\n', '("Constantina", "was the daughter of", "Fausta")\n', '("Constantina", "was the half-sister of", "Crispus")\n', '("Constantina", "married", "Hannibalianus")\n', '("Hannibalianus", "was created", "King of Kings and Ruler of the Pontic Tribes by Constantine I")\n', '("Constantina", "was given in marriage to", "Gallus")\n', '("Gallus", "was made", "Caesar of the East")\n', '("Constantina", "moved to", "Antioch")\n', '("Constantina", "died in", "Bithynia")\n', '("Constantina", "was entombed near", "Via Nomentana in Rome")\n', '("Constantina", "encouraged Vetranio to challenge", "Magnentius")\n', '("Constantina", "was involved in the revolt against", "Magnentius")\n', '("Constantina", "was politically active in", "Antioch")\n', '("Constantina", "was portrayed as cruel and violent by", "Ammianus Marcellinus")\n', '("Edward Gibbon", "likened Constantina to", "one of the infernal furies")\n', '("Constantina", "developed a medieval legend associated with", "Agnes of Rome")\n', '("Constantina", "is depicted on the Royal Gold Cup in", "British Museum")\n']
+range(1, 319) 4
+{'id': '4_13', 'Question': " Who was appointed by the Roman emperor responsible for territorial divisions, including the establishment of the Diocese in the Iberian region that saw a rebellion after allies, including one notable figure, withdrew from a southern European country due to Julius Caesar's influence?\n", 'Answer': 'Maximian', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Maxentius'}, {'label': 'B', 'text': 'Maximian'}, {'label': 'C', 'text': 'Catullus'}, {'label': 'D', 'text': 'Diocletian'}, {'label': 'E', 'text': 'Constantina'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'maxentian'}, {'label': 'B', 'text': 'maximian'}, {'label': 'C', 'text': 'catullus'}, {'label': 'D', 'text': 'diocletian'}, {'label': 'E', 'text': 'constantina'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Who, along with allies, withdrew from this southern European country because of Julius Caesar?\nA1: Pompey\n\n', '2: Who initiated a rebellion in this Iberian region that was later known as Spania?\nA2: Hispania\n\n', '3: Which Roman Emperor established a territorial division in the Iberian Peninsula known as the Diocese?\nA3: Diocletian\n\n', '4: Who was appointed by Diocletian to share the responsibilities of ruling the Roman Empire?\nA4: Maximian'], 'Hops_wiki': [('Julius Caesar', 'Pompey'), ('Pompey', 'Hispania'), ('Hispania', 'Diocletian'), ('Diocletian', 'Maximian')], 'Hops_cpnet': [('julius_caesar', 'pompey'), ('pompey', 'hispania'), ('hispania', 'diocletian'), ('diocletian', 'maximian')], 'Triplets': ['("Pompey and allies", "withdrew from", "Italy because of Julius Caesar")', '("Pompey", "initiated a rebellion in", "Hispania")', '("Diocletian", "created", "Diocese of Hispania")', '("Diocletian", "made", "Maximian co-ruler")'], 'Referred_files': [{'name': 'Battle of Pharsalus', 'line': 10}, {'name': 'Pompey', 'line': 26}, {'name': 'Hispania', 'line': 5}, {'name': 'Diocletian', 'line': 20}], 'Question_triplet_answer': {100: [43, 113, 124, 296], 50: [10, 34, 204, 285], 25: [77, 156, 171, 292]}}
+time passed:  4076.646279811859
+Expected dollar:  0.005
+Cornelia Metella is People
+Hispania is Geography
+Caesar is People
+Mithridates VI" is People
+Cimmerian Bosporus is Geography
+Diocletian is People
+Galerius is People
+Persia is Geography
+Maximian is People
+Milan is Geography
+Cato the Younger is People
+Pompey is People
+Agnes of Rome is People
+Acarnania is Geography
+Nicomedia is Geography
+Mediolanum is Geography
+Sirmium is Geography
+Trevorum is People
+Bithynia and Pontus is Geography
+Catullus is People
+Lake Garda is Geography
+Rome is Geography
+Alban Hills is Geography
+Cicero is People
+Italy is Geography
+Corsica is Geography
+Sicily is Geography
+Battle of Pharsalus is Geography
+Marcus Tullius Cicero is People
+Lucan is People
+Salona is Geography
+Julius Caesar is People
+Thessaly is Geography
+Split in Croatia is Geography
+Constantine the Great is People
+Egypt is Geography
+Cyprus is Geography
+Mark Antony is People
+the Battle of Pharsalus is Geography
+Augustus is People
+Carus is People
+Brundusium with Sulla is People
+Licinius is People
+Sertorius is People
+Battle of Lauron is Geography
+British Museum is Geography
+Phoenician is Geography
+Syria is Geography
+Alexandre Dumas is People
+Kingdom of Aragon is Geography
+Edward Gibbon is People
+Constantina is People
+Vetranio is People
+Magnentius is People
+Domitius Alexander is People
+Tarraco is Geography
+Roman Hispania is Geography
+Al Andalus is Geography
+Antioch is Geography
+Gomphi is Geography
+Fausta is People
+Crassus is People
+Greece is Geography
+Quintus Sertorius is People
+Perpenna is People
+Tigranes the Great is People
+Mediterranean is Geography
+Danube is Geography
+Domitianus is People
+Cilicia is Geography
+the Battle of the Milvian Bridge is Geography
+Libya is Geography
+Calabria is Geography
+Milvian Bridge is Geography
+Sulla is People
+Judea is Geography
+Suetonius is People
+Battle of Pharsalus against Caesar is Geography
+Marcus Licinius Crassus is People
+Aurelian is People
+Tibur is Geography
+Bishop of Rome is Incident
+the Col de Portet is Geography
+Emesa is Geography
+Côa Valley is Geography
+Alexandria is Geography
+Pompey and Caesar is People
+Maxentius is People
+Tiber is Geography
+Hispalis is Geography
+Seville is Geography
+Theatre of Pompey is Geography
+Verona is Geography
+Lucullus is People
+Battle of Korakesion is Geography
+Pompey the Great is People
+Perpenna ending Sertorian war" is People
+Lucius Licinius Lucullus is People
+Pharnaces II of Pontus is People
+Valeria Maximilla is People
+entities:  {'Mediolanum', 'Calabria', 'Senate', 'Cicero', 'Younger', 'Lucullus', 'Bishop', 'Domitianus', 'Valeria', 'Bello', 'Aurelian', 'Aragon', 'Crassus', 'Licinius', 'Valley', 'Battle', 'Gomphi', 'Mediterranean', 'Split', 'Eusebius', 'Cappadocia', 'Tarragona', 'ending', 'Perpenna', 'Nicomedia', 'Strabo', 'Iberian', 'Seville', 'Hills', 'Verona', 'Sulla', 'Alexandre', 'Domitius', 'equestrian', 'Hispania', 'Phoenician', 'Mark', 'Milan', 'Garda', 'Diocletian', 'Lucius', 'Andalus', 'Edward', 'Peninsula', 'Marcus', 'Tigranes', 'VI"', 'Pompey', 'Rome', 'Caesar', 'Carus', 'Tullius', 'Constantine', 'Cato', 'Alexander', 'Sertorius', 'Maxentius', 'Tiber', 'Sicily', 'Thessaly', 'Col', 'Orthodox', 'Gibbon', 'de', 'Sertorian', 'Egypt', 'Syria', 'Museum', 'Cimmerian', 'Armenia', 'Catullus', 'Lauron', 'Kingdom', 'Portet', 'Hesperia', 'Maximian', 'II', 'Julius', 'Lucan', 'Hispalis', 'Mithridates', 'Magnentius', 'war"', 'Heliopolis', 'Suetonius', 'Cilicia', 'Quintus', 'Korakesion', 'Pharnaces', 'Italy', 'Antioch', 'Trevorum', 'Croatia', 'Alexandria', 'Al', 'Corsica', 'Cornelia', 'Constantina', 'Dumas', 'Bridge', 'Sardinia', 'Fausta', 'Pharsalus', 'Lake', 'Bithynia', 'Augustus', 'Africa', 'Agnes', 'lex', 'Dux', 'Galerius', 'Cyprus', 'Judea', 'Vetranio', 'Metella', 'Great', 'Emesa', 'Bosporus', 'Salona', 'Libya', 'Greece', 'Tibur', 'Antony', 'Milvian', 'Tarraco', 'British', 'Pontus', 'Maximilla', 'Sirmium', 'Theatre', 'Roman', 'Alban', 'Brundusium', 'Persia', 'Côa', 'Danube', 'Acarnania'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Diocletian' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Diocletian
+Era
+Growth
+Expenditures
+Era
+Method
+Governmental
+Military
+Dating
+Center
+Church
+Serbian mythology
+Taxes
+System
+Maximian
+Emperor
+Palace
+Galerius
+Persia
+Milan
+Dalmatia
+Diocese
+           JComboBox<String> EntityList = new JComboBox<>();
+
+
+        EntityList.addItem("Diocletian ");
+        EntityList.addItem("Era ");
+        EntityList.addItem("Governmental");
+        EntityList.addItem("Military");
+        EntityList.addItem("Growth ");
+        EntityList.addItem("Expenditures");
+        EntityList.addItem("Diocletian ");
+        EntityList.addItem("Method");
+        EntityList.addItem("Galerius ");
+        EntityList.addItem("Center");
+        EntityList.addItem("Church ");
+        EntityList.addItem("Persia ");
+        EntityList.addItem("Serbian mythology ");
+        EntityList.addItem("Maximian");
+        EntityList.addItem(" Diocese");
+        EntityList.addItem("Tax ");
+        EntityList.addItem("System ");
+        EntityList.addItem("Emperor ");
+        EntityList.addItem("Palace Continued...");
+
+gpt_entity_particular(): entity list: 
+ ['Dating', '        EntityList.addItem("Tax ");', '           JComboBox<String> EntityList = new JComboBox<>();', '        EntityList.addItem(" Diocese");', '        EntityList.addItem("Era ");', '        EntityList.addItem("Galerius ");', 'Galerius', '        EntityList.addItem("Maximian");', '        EntityList.addItem("Expenditures");', 'Milan', 'Governmental', '        EntityList.addItem("Emperor ");', 'Diocletian', 'System', '        EntityList.addItem("Palace Continued...");', '        EntityList.addItem("Persia ");', '        EntityList.addItem("Diocletian ");', 'Maximian', 'Church', 'Emperor', '        EntityList.addItem("Church ");', '        EntityList.addItem("Military");', '        EntityList.addItem("System ");', 'Dalmatia', '        EntityList.addItem("Center");', 'Serbian mythology', 'Era', 'Expenditures', 'Center', 'Method', 'Taxes', '        EntityList.addItem("Method");', 'Military', 'Persia', 'Palace', '        EntityList.addItem("Serbian mythology ");', 'Diocese', '        EntityList.addItem("Growth ");', '        EntityList.addItem("Governmental");', 'Growth']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Maxentius' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+Maxentius
+
+gpt_entity_particular(): entity list: 
+ ['Maxentius']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Pompey' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Pompey
+Cornelia Metella
+Julia
+Cimmerian Bosporus
+Third Servile War
+Galerius
+Diocletian's Era of Martyrs
+Cato the Younger
+Constantina
+Diocletian
+Nicomedia
+Mediolanum
+Sirmium
+Trevorum
+Catullus
+Lake Garda
+Maxentius
+Rome
+Carthage
+Al-Andalus
+Gomphi
+Constantine the Great
+Lake Garda
+Tarragona
+Gaul
+Constantina
+Antioch
+Crassus
+Caesar
+Pharsalus
+Bithynia
+Gaul
+Piracy
+Third Servile War
+Agnes of Rome
+Carthage
+Sicily
+Gaul
+Antioch
+Praeneste
+Violence
+Rome
+Rome
+Rome
+Rome
+Crete
+Armenia
+Gardens at Sallust
+Greece
+Hispania
+Britannia
+Aurelian
+Rome
+Crescentius
+Rome
+Libya
+Parthia
+Boeotia
+Libya
+Gaul
+Carthage
+Crete
+Istria
+Dolopia
+
+gpt_entity_particular(): entity list: 
+ ['Mediolanum', 'Pharsalus', 'Bithynia', 'Carthage', 'Lake Garda', 'Crescentius', 'Hispania', 'Gaul', 'Galerius', 'Aurelian', 'Crassus', 'Diocletian', 'Constantine the Great', 'Crete', 'Armenia', 'Catullus', 'Violence', "Diocletian's Era of Martyrs", 'Cornelia Metella', 'Gomphi', 'Parthia', 'Dolopia', 'Istria', 'Agnes of Rome', 'Cimmerian Bosporus', 'Libya', 'Greece', 'Pompey', 'Cato the Younger', 'Rome', 'Caesar', 'Boeotia', 'Tarragona', 'Al-Andalus', 'Sirmium', 'Nicomedia', 'Antioch', 'Piracy', 'Trevorum', 'Third Servile War', 'Maxentius', 'Praeneste', 'Britannia', 'Sicily', 'Constantina', 'Gardens at Sallust', 'Julia']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Catullus' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Catullus 
+Maxentius 
+Catullus's family 
+Catullus 
+Catullus 
+Homer
+Suetonius
+
+gpt_entity_particular(): entity list: 
+ ['Suetonius', 'Catullus ', "Catullus's family ", 'Maxentius ', 'Homer']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Julius Caesar' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Pompey
+Cornelia Metella
+Hispania
+Hesperia ultima
+Julia
+Mithridates VI
+Cimmerian Bosporus
+Third Servile War
+Diocletian's Era of Martyrs
+Galerius
+Serbian mythology
+Milan
+Cato the Younger
+Greek light infantry
+Nicomedia
+Mediolanum
+Sirmium
+Trevorum
+Gold mining
+Northwest Hispania
+Bithynia and Pontus
+Ariobarzanes I of Cappadocia
+Praeneste
+Censorinus
+Lake Garda
+Maxentius
+Alban Hills burial
+Milan
+Milvian Bridge
+Battle of Pharsalus
+
+gpt_entity_particular(): entity list: 
+ ['Mediolanum', 'Greek light infantry', 'Lake Garda', 'Hispania', 'Battle of Pharsalus', 'Galerius', 'Milan', 'Gold mining', 'Ariobarzanes I of Cappadocia', "Diocletian's Era of Martyrs", 'Cornelia Metella', 'Alban Hills burial', 'Cimmerian Bosporus', 'Censorinus', 'Pompey', 'Cato the Younger', 'Hesperia ultima', 'Sirmium', 'Serbian mythology', 'Nicomedia', 'Trevorum', 'Third Servile War', 'Northwest Hispania', 'Mithridates VI', 'Praeneste', 'Maxentius', 'Milvian Bridge', 'Bithynia and Pontus', 'Julia']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hispania' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Entity 1
+Hispania
+Entity 2
+Hesperia ultima
+Entity 3
+Cimmerian Bosporus
+Entity 4
+Third Servile War
+Entity 5
+Era of Martyrs
+Entity 6
+Persia
+Entity 7
+Milan
+Entity 8
+Nicomedia
+Entity 9
+Mediolanum
+Entity 10
+Sirmium
+Entity 11
+Trevorum
+Entity 12
+Lake Garda
+Entity 13
+Gold mining
+Entity 14
+Censorinus
+Entity 15
+Pharsalus
+Entity 16
+Thessaly
+Entity 17
+Acarnania
+Entity 18
+Aetolia
+Entity 19
+Era of Martyrs
+Entity 20
+Royal Gold Cup
+Entity 21
+Iberian Peninsula
+Entity 22
+Praeneste
+Entity 23
+Britannica Museum
+Entity 24
+Heads and land
+Entity 25
+Egypt
+Entity 26
+Boadicea
+Entity 27
+Persia
+Entity 28
+Iraq
+Entity 29
+Phoenician
+Entity 30
+Thessaly
+
+gpt_entity_particular(): entity list: 
+ ['Mediolanum', 'Entity 6', 'Era of Martyrs', 'Pharsalus', 'Entity 18', 'Royal Gold Cup', 'Entity 5', 'Lake Garda', 'Entity 14', 'Hispania', 'Entity 20', 'Aetolia', 'Entity 7', 'Entity 8', 'Egypt', 'Entity 15', 'Phoenician', 'Milan', 'Iberian Peninsula', 'Entity 23', 'Entity 27', 'Gold mining', 'Entity 11', 'Entity 30', 'Entity 22', 'Entity 9', 'Entity 12', 'Entity 25', 'Cimmerian Bosporus', 'Censorinus', 'Entity 1', 'Entity 16', 'Hesperia ultima', 'Entity 4', 'Entity 10', 'Entity 13', 'Entity 29', 'Entity 19', 'Sirmium', 'Entity 21', 'Nicomedia', 'Heads and land', 'Trevorum', 'Third Servile War', 'Entity 3', 'Entity 2', 'Praeneste', 'Entity 28', 'Persia', 'Entity 24', 'Thessaly', 'Britannica Museum', 'Iraq', 'Boadicea', 'Entity 17', 'Acarnania', 'Entity 26']
+
+gpt_entity_particular(): filtered entity: 
+ ['Iberian Peninsula']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Maximian' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Pompey
+Maximian
+Julia
+Mithridates VI
+Hesperia ultima
+Galerius
+Julius Caesar
+Spartacus
+Cato the Younger
+Constantina
+Agnes of Rome
+Dolopia, Acarnania, and Aetolia
+Maxentius
+Censorinus
+Lake Garda
+Catullus's family
+Agnes of Rome
+Gold mining
+Bithynia and Pontus
+Ariobarzanes I of Cappadocia
+Battle of Pharsalus
+Gomphi
+Vetranio
+Milan
+Tarragona
+Hispania's Mediterranean landscape
+Roman market
+Bassus
+Arabia
+Gaul
+Judea
+Nicomedia, Mediolanum, Sirmium, and Trevorum
+First Punic War
+Battle of the Milvian Bridge
+Diocese of Hispania
+Antioch
+Queen Helena
+Emesa
+Carthage
+Battle of Sacriportus
+East
+Theatre of Pompey
+Via Nomentana
+Traditional cursus honorum
+Umayyad conquest
+Bible
+Gibraltar
+British Museum
+The Three Musketeers 
+Al-Andalus
+Dalmatia
+Mesopotamia
+Sardinia
+The Talmud
+The Phoenicians
+Gaul
+Danube
+Syria
+Hippodrome at Byzantium
+Pompey's rebellion
+
+gpt_entity_particular(): entity list: 
+ ['Umayyad conquest', 'Sardinia', 'Dolopia, Acarnania, and Aetolia', 'The Phoenicians', 'Julius Caesar', 'Carthage', 'Lake Garda', 'Battle of Pharsalus', 'Gaul', 'Galerius', 'Syria', 'Milan', 'Arabia', 'Judea', 'Vetranio', 'Battle of Sacriportus', "Catullus's family", 'Queen Helena', 'Gold mining', 'Diocese of Hispania', 'Via Nomentana', 'Ariobarzanes I of Cappadocia', 'The Talmud', 'Emesa', 'Gomphi', 'Battle of the Milvian Bridge', 'Maximian', "Pompey's rebellion", 'The Three Musketeers ', 'Theatre of Pompey', 'Roman market', 'First Punic War', 'Agnes of Rome', 'Censorinus', "Hispania's Mediterranean landscape", 'Pompey', 'Cato the Younger', 'Hesperia ultima', 'Traditional cursus honorum', 'Bible', 'Tarragona', 'Al-Andalus', 'Dalmatia', 'Bassus', 'Danube', 'Spartacus', 'Antioch', 'British Museum', 'Mithridates VI', 'Maxentius', 'Hippodrome at Byzantium', 'East', 'Gibraltar', 'Mesopotamia', 'Nicomedia, Mediolanum, Sirmium, and Trevorum', 'Bithynia and Pontus', 'Constantina', 'Julia']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Constantina' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Constantina
+Heads 
+Tax system
+Administrative centers 
+Medieval legend associated
+Agnes of Rome
+Oldest daughter of
+Constantine the Great
+Agnes of Rome
+Daughter of
+Fausta
+Via Nomentana in Rome
+Imperial insignia
+Maximilla
+Shield with maroon and gold bands
+
+gpt_entity_particular(): entity list: 
+ ['Agnes of Rome', 'Constantine the Great', 'Fausta', 'Shield with maroon and gold bands', 'Heads ', 'Daughter of', 'Medieval legend associated', 'Oldest daughter of', 'Imperial insignia', 'Maximilla', 'Administrative centers ', 'Via Nomentana in Rome', 'Constantina', 'Tax system']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Mediolanum', 'Calabria', 'Senate', 'Cicero', 'Younger', 'Lucullus', 'Bishop', 'Domitianus', 'Valeria', 'Bello', 'Aurelian', 'Aragon', 'Crassus', 'Licinius', 'Valley', 'Battle', 'Gomphi', 'Mediterranean', 'Split', 'Eusebius', 'Cappadocia', 'Tarragona', 'ending', 'Perpenna', 'Nicomedia', 'Strabo', 'Iberian', 'Seville', 'Hills', 'Verona', 'Sulla', 'Alexandre', 'Domitius', 'equestrian', 'Hispania', 'Phoenician', 'Mark', 'Milan', 'Garda', 'Diocletian', 'Lucius', 'Andalus', 'Edward', 'Peninsula', 'Marcus', 'Tigranes', 'VI"', 'Pompey', 'Rome', 'Caesar', 'Carus', 'Tullius', 'Constantine', 'Cato', 'Alexander', 'Sertorius', 'Maxentius', 'Tiber', 'Sicily', 'Thessaly', 'Col', 'Orthodox', 'Gibbon', 'de', 'Sertorian', 'Egypt', 'Syria', 'Museum', 'Cimmerian', 'Iberian Peninsula', 'Armenia', 'Catullus', 'Lauron', 'Kingdom', 'Portet', 'Hesperia', 'Maximian', 'II', 'Julius', 'Lucan', 'Hispalis', 'Mithridates', 'Magnentius', 'war"', 'Heliopolis', 'Suetonius', 'Cilicia', 'Quintus', 'Korakesion', 'Pharnaces', 'Italy', 'Antioch', 'Trevorum', 'Croatia', 'Alexandria', 'Al', 'Corsica', 'Cornelia', 'Constantina', 'Dumas', 'Bridge', 'Sardinia', 'Fausta', 'Pharsalus', 'Lake', 'Bithynia', 'Augustus', 'Africa', 'Agnes', 'lex', 'Dux', 'Galerius', 'Cyprus', 'Judea', 'Vetranio', 'Metella', 'Great', 'Emesa', 'Bosporus', 'Salona', 'Libya', 'Greece', 'Tibur', 'Antony', 'Milvian', 'Tarraco', 'British', 'Pontus', 'Maximilla', 'Sirmium', 'Theatre', 'Roman', 'Alban', 'Brundusium', 'Persia', 'Côa', 'Danube', 'Acarnania'}
+Total time:  472.76228618621826
+Entity conversion done on 4_13 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_13_entity_conversion_hash.json. Check the entity.
+ Who was appointed by the 081 emperor responsible for territorial divisions, including the establishment of the Diocese in the 050 region that saw a rebellion after allies, including one notable figure, withdrew from a Eastern European country due to 039 Caesar's influence?
+
+
+
+Done. Check final_query/id_4_13_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_13_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_13_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_13_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_13_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_13_final_result_ratio25_unmasked.txt

@@ -1,0 +1,1505 @@
+Got argument: Immanuel Kant, 4, 4_3
+
+utils/question.py extract_hops(Immanuel Kant, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Immanuel_Kant_info.json file
+first_hop:  {'triplet': '("Immanuel Kant", "buried in", "Kaliningrad")', 'start word': 'Immanuel Kant', 'end word': 'Kaliningrad', 'source': {'name': 'Immanuel Kant', 'line': 34}, 'cpnet': {'start word': 'immanuel_kant', 'end word': 'kaliningrad'}}
+
+utils/question.py extract_hops(Kaliningrad, [], ['Immanuel Kant']) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Kaliningrad_info.json file
+second_hop:  {'triplet': '("Kaliningrad", "has a port on", "Baltic Sea")', 'start word': 'Kaliningrad', 'end word': 'Baltic Sea', 'source': {'name': 'Kaliningrad', 'line': 5}, 'cpnet': {'start word': 'kaliningrad', 'end word': 'baltic_sea'}}
+
+utils/question.py extract_hops(Baltic Sea, [], ['Immanuel Kant', 'Kaliningrad']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Baltic_Sea_info.json file
+extract_info(Baltic Sea) Start.
+utils/preprocess.py extract_info(): Checking good links on Baltic Sea
+Atlantic Ocean is Geography
+1 / 30 )  Atlantic Ocean Atlantic Ocean atlantic_ocean
+Denmark is Geography
+2 / 30 )  Denmark Denmark denmark
+Estonia is Geography
+3 / 30 )  Estonia Estonia estonia
+Finland is Geography
+4 / 30 )  Finland Finland finland
+Germany is Geography
+5 / 30 )  Germany Germany germany
+Latvia is Geography
+6 / 30 )  Latvia Latvia latvia
+Lithuania is Geography
+7 / 30 )  Lithuania Lithuania lithuania
+Poland is Geography
+8 / 30 )  Poland Poland poland
+Russia is Geography
+9 / 30 )  Russia Russia russia
+Sweden is Geography
+10 / 30 )  Sweden Sweden sweden
+Danish straits is Geography
+11 / 30 )  Danish Straits Danish straits belts
+Kattegat is Geography
+12 / 30 )  Kattegat Kattegat kattegat
+Øresund is Geography
+13 / 30 )  Øresund Øresund øresund
+Gulf of Bothnia is Geography
+14 / 30 )  Gulf of Bothnia Gulf of Bothnia gulf_of_bothnia
+Gulf of Finland is Geography
+15 / 30 )  Gulf of Finland Gulf of Finland gulf_of_finland
+Gulf of Riga is Geography
+16 / 30 )  Gulf of Riga Gulf of Riga gulf_of_riga
+Åland is Geography
+17 / 30 )  Åland Åland åland
+Canal is Geography
+18 / 30 )  artificial waterways Canal canal
+White Sea is Geography
+19 / 30 )  White Sea White Sea white_sea
+German Bight is Geography
+20 / 30 )  German Bight German Bight german_bight
+North Sea is Geography
+21 / 30 )  North Sea North Sea north_sea
+Kiel Canal is Geography
+22 / 30 )  Kiel Canal Kiel Canal kiel_canal
+Helsingør is Geography
+23 / 30 )  Helsingør Helsingør helsingør
+Copenhagen is Geography
+24 / 30 )  Copenhagen Copenhagen copenhagen
+Malmö is Geography
+25 / 30 )  Malmö Malmö malmö
+Øresund Bridge is Geography
+26 / 30 )  Øresund Bridge Øresund Bridge øresund_bridge
+Bay of Mecklenburg is Geography
+27 / 30 )  Bay of Mecklenburg Bay of Mecklenburg bay_of_mecklenburg
+Bay of Kiel is Geography
+28 / 30 )  Bay of Kiel Bay of Kiel bay_of_kiel
+Bornholm is Geography
+29 / 30 )  Bornholm Bornholm bornholm
+Gotland is Geography
+30 / 30 )  Gotland Gotland gotland
+extract_triplet(Baltic Sea)
+Got GPT's response. String length : 1474
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Atlantic Ocean', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Denmark', 'Denmark', 'denmark']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Estonia', 'Estonia', 'estonia']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Finland', 'Finland', 'finland']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Germany', 'Germany', 'germany']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Latvia', 'Latvia', 'latvia']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Lithuania', 'Lithuania', 'lithuania']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Poland', 'Poland', 'poland']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Russia', 'Russia', 'russia']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Sweden', 'Sweden', 'sweden']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Danish Straits', 'Danish straits', 'belts']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Gulf of Bothnia', 'Gulf of Bothnia', 'gulf_of_bothnia']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Finland', 'Finland', 'finland'], ['Gulf of Finland', 'Gulf of Finland', 'gulf_of_finland']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Gulf of Riga', 'Gulf of Riga', 'gulf_of_riga']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['artificial waterways', 'Canal', 'canal']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['White Sea', 'White Sea', 'white_sea']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['German Bight', 'German Bight', 'german_bight'], ['North Sea', 'North Sea', 'north_sea']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['artificial waterways', 'Canal', 'canal'], ['Kiel Canal', 'Kiel Canal', 'kiel_canal']]
+subject_words:  [['artificial waterways', 'Canal', 'canal']]
+object_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+subject_words:  [['artificial waterways', 'Canal', 'canal'], ['Kiel Canal', 'Kiel Canal', 'kiel_canal']]
+object_words:  [(None, 'Baltic Sea', 'baltic_sea'), ['North Sea', 'North Sea', 'north_sea']]
+subject_words:  [['Øresund', 'Øresund', 'øresund'], ['Øresund Bridge', 'Øresund Bridge', 'øresund_bridge']]
+object_words:  [['Copenhagen', 'Copenhagen', 'copenhagen'], ['Malmö', 'Malmö', 'malmö']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Åland', 'Åland', 'åland']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Bay of Mecklenburg', 'Bay of Mecklenburg', 'bay_of_mecklenburg']]
+subject_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+object_words:  [['Bay of Kiel', 'Bay of Kiel', 'bay_of_kiel']]
+subject_words:  [['Gulf of Bothnia', 'Gulf of Bothnia', 'gulf_of_bothnia']]
+object_words:  [['Åland', 'Åland', 'åland']]
+subject_words:  [['Denmark', 'Denmark', 'denmark']]
+object_words:  [['Helsingør', 'Helsingør', 'helsingør']]
+subject_words:  [['Denmark', 'Denmark', 'denmark']]
+object_words:  []
+subject_words:  [['Denmark', 'Denmark', 'denmark']]
+object_words:  []
+subject_words:  [['Bornholm', 'Bornholm', 'bornholm']]
+object_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+subject_words:  [['Gotland', 'Gotland', 'gotland']]
+object_words:  [(None, 'Baltic Sea', 'baltic_sea')]
+third_hop:  {'triplet': '("Baltic Sea", "is connected to", "German Bight of the North Sea")', 'start word': 'Baltic Sea', 'end word': 'German Bight', 'source': {'name': 'Baltic Sea', 'line': 17}, 'cpnet': {'start word': 'baltic_sea', 'end word': 'german_bight'}}
+
+utils/question.py extract_hops(German Bight, [], ['Immanuel Kant', 'Kaliningrad', 'Baltic Sea']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/German_Bight_info.json file
+extract_info(German Bight) Start.
+utils/preprocess.py extract_info(): Checking good links on German Bight
+North Sea is Geography
+1 / 30 )  North Sea North Sea north_sea
+Netherlands is Geography
+2 / 30 )  Netherlands Netherlands netherlands
+Germany is Geography
+3 / 30 )  Germany Germany germany
+Denmark is Geography
+4 / 30 )  Denmark Denmark denmark
+Dogger Bank is Geography
+5 / 30 )  Dogger Bank Dogger Bank dogger_bank
+Frisian Islands is Geography
+6 / 30 )  Frisian Frisian Islands frisian_islands
+Wadden Sea is Incident
+7 / 30 )  Wadden Sea Wadden Sea wadden_sea
+Frisia is Geography
+8 / 30 )  Frisia Frisia frisia
+Heligoland is Geography
+9 / 30 )  Heligoland Heligoland heligoland
+Crangon crangon is Animal
+10 / 30 )  crangon crangon Crangon crangon crangon_crangon
+East Frisian Islands is Geography
+11 / 30 )  East Frisian Islands East Frisian Islands east_frisian_islands
+Sylt is Geography
+12 / 30 )  Sylt Sylt sylt
+Halligen is Geography
+13 / 30 )  Halligen Halligen hallig
+extract_triplet(German Bight)
+Got GPT's response. String length : 1447
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  [['North Sea', 'North Sea', 'north_sea']]
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  [['Netherlands', 'Netherlands', 'netherlands'], ['Germany', 'Germany', 'germany']]
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  [['Germany', 'Germany', 'germany'], ['Denmark', 'Denmark', 'denmark']]
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  [['Dogger Bank', 'Dogger Bank', 'dogger_bank']]
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  [['Frisian', 'Frisian Islands', 'frisian_islands']]
+subject_words:  [['Wadden Sea', 'Wadden Sea', 'wadden_sea']]
+object_words:  [(None, 'German Bight', 'german_bight')]
+subject_words:  [['Frisian', 'Frisian Islands', 'frisian_islands']]
+object_words:  []
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  [['Heligoland', 'Heligoland', 'heligoland']]
+subject_words:  [['Wadden Sea', 'Wadden Sea', 'wadden_sea']]
+object_words:  [['Wadden Sea', 'Wadden Sea', 'wadden_sea']]
+subject_words:  [['Wadden Sea', 'Wadden Sea', 'wadden_sea']]
+object_words:  [['Wadden Sea', 'Wadden Sea', 'wadden_sea']]
+subject_words:  [['Wadden Sea', 'Wadden Sea', 'wadden_sea']]
+object_words:  [['Wadden Sea', 'Wadden Sea', 'wadden_sea']]
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  []
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  []
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'German Bight', 'german_bight')]
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  []
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  []
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  []
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  []
+subject_words:  [['Frisian', 'Frisian Islands', 'frisian_islands'], ['East Frisian Islands', 'East Frisian Islands', 'east_frisian_islands']]
+object_words:  []
+subject_words:  [['Sylt', 'Sylt', 'sylt']]
+object_words:  []
+subject_words:  [['Halligen', 'Halligen', 'hallig']]
+object_words:  []
+subject_words:  [(None, 'German Bight', 'german_bight')]
+object_words:  [['crangon crangon', 'Crangon crangon', 'crangon_crangon']]
+forth_hop:  {'triplet': '("German Bight", "bounded by", "Denmark and Germany to the east")', 'start word': 'German Bight', 'end word': 'Denmark', 'source': {'name': 'German Bight', 'line': 3}, 'cpnet': {'start word': 'german_bight', 'end word': 'denmark'}}
+generate_question(4_3, ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "has a port on", "Baltic Sea")', '("Baltic Sea", "is connected to", "German Bight of the North Sea")', '("German Bight", "bounded by", "Denmark and Germany to the east")'], ['Kaliningrad', 'Baltic Sea', 'German Bight', 'Denmark'], [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Baltic Sea'), ('Baltic Sea', 'German Bight'), ('German Bight', 'Denmark')], Denmark, [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 5}, {'name': 'Baltic Sea', 'line': 17}, {'name': 'German Bight', 'line': 3}]) called
+GPT output is:  Q: Which country borders the area where the sea accessed by the port in the city where Immanuel Kant is buried meets another sea to the southwest?
+A: Denmark
+final_choice(Denmark, options = 5) started
+[]
+entity_type(Denmark) called
+Denmark is Geography
+check_matchscore(Denmark, Barbarian kingdoms):  0.0
+choose_by_wiki_recur(Barbarian kingdoms)
+   Pages in Barbarian kingdoms: ['Barbarian kingdoms', 'Alamannia', 'Alans', 'Antes people', 'Pannonian Avars', 'Bro Gwened', 'Carantania', 'Consolidation of Sweden', 'Cornouaille', 'Denmark', 'Domnonée', 'Duchy of Bavaria', 'Dumnonia', 'Francia', 'Frisian Kingdom', 'Gepids', 'Ghassanids', 'Hen Ogledd', 'Heptarchy', 'Heruli', 'History of Ireland (400–795)', 'Huns', 'Khazars', 'King of the Geats', 'Kingdom of Altava', 'Kingdom of Capsus', 'Kingdom of Ouarsenis', 'Kingdom of the Aurès', 'Kingdom of the Burgundians', 'Kingdom of the Lombards', 'Kingdom of the Suebi', 'Lakhmid kingdom', 'Mauro-Roman Kingdom', 'Old Great Bulgaria', 'Old Saxony', 'Ostrogothic Kingdom', 'Petty kingdoms of Norway', 'Picts', 'Rugiland', 'Salihids', "Samo's Empire", 'Sciri', 'Sclaveni', 'Sub-Roman Britain', 'Tanukhids', 'Thuringii', 'Vandal Kingdom', 'Visigothic Kingdom', 'Volga Bulgaria']
+      Visigothic Kingdom in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom']
+      Kingdom of the Aurès in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire"]
+      Petty kingdoms of Norway in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden']
+      Mauro-Roman Kingdom in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria']
+      Samo's Empire in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids']
+      Consolidation of Sweden in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria']
+      Duchy of Bavaria in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark']
+      Tanukhids in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain']
+      Volga Bulgaria in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania']
+      Denmark in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians']
+      Sub-Roman Britain in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids']
+      Carantania in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi']
+      Kingdom of the Burgundians in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli']
+      Ghassanids in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia']
+      Kingdom of the Suebi in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland']
+      Heruli in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats']
+      Alamannia in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom']
+      Rugiland in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom']
+      King of the Geats in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom', 'Picts']
+      Frisian Kingdom in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom', 'Picts', 'Khazars']
+      Picts in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom', 'Picts', 'Khazars', 'Lakhmid kingdom']
+      Khazars in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom', 'Picts', 'Khazars', 'Lakhmid kingdom']
+      Lakhmid kingdom in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom', 'Picts', 'Khazars', 'Lakhmid kingdom']
+      History of Ireland (400–795) in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom', 'Picts', 'Khazars', 'Lakhmid kingdom', 'History of Ireland (400–795)']
+      Hen Ogledd in ['Visigothic Kingdom', 'Kingdom of the Aurès', 'Petty kingdoms of Norway', 'Mauro-Roman Kingdom', "Samo's Empire", 'Consolidation of Sweden', 'Duchy of Bavaria', 'Tanukhids', 'Volga Bulgaria', 'Denmark', 'Sub-Roman Britain', 'Carantania', 'Kingdom of the Burgundians', 'Ghassanids', 'Kingdom of the Suebi', 'Heruli', 'Alamannia', 'Rugiland', 'King of the Geats', 'Frisian Kingdom', 'Picts', 'Khazars', 'Lakhmid kingdom', 'History of Ireland (400–795)', 'Hen Ogledd']
+['Alamannia', 'Picts', 'Khazars', 'Hen Ogledd']
+Ended after 2.5 hierarchy
+(2.5, ['Alamannia', 'Hen Ogledd', 'Picts', 'Khazars'])
+
+extract_info(Picts) Start.
+utils/preprocess.py extract_info(): Checking good links on Picts
+Scotland is Geography
+1 / 30 )  Scotland Scotland scotland
+Firth of Forth is Geography
+2 / 30 )  Firth of Forth Firth of Forth firth_of_forth
+Bede is People
+3 / 30 )  Bede Bede bede
+Columba is People
+4 / 30 )  Columba Columba columba
+Adomnán is People
+5 / 30 )  Adomnán Adomnán adamnan
+Atholl is Geography
+6 / 30 )  Fotla Atholl atholl
+Fife is Geography
+7 / 30 )  Fib Fife fife
+Wales is Geography
+8 / 30 )  Wales Wales wales
+Northern Ireland is Geography
+9 / 30 )  Northern Ireland Northern Ireland northern_ireland
+Northumbria is Geography
+10 / 30 )  Northumbria Northumbria northumbria
+Argyll is Geography
+11 / 30 )  Argyll Argyll argyll
+Caithness is Geography
+12 / 30 )  Caithness Caithness caithness
+Sutherland is Geography
+13 / 30 )  Sutherland Sutherland sutherland
+Galloway is Geography
+14 / 30 )  Galloway Galloway galloway
+Buchan is Geography
+15 / 30 )  Buchan Buchan buchan
+Angus, Scotland is Geography
+16 / 30 )  Angus Angus, Scotland forfarshire
+Inverness is Geography
+17 / 30 )  Inverness Inverness inverness
+Moray is Geography
+18 / 30 )  Moray Moray moray
+Orkney is Geography
+19 / 30 )  Orkney Orkney orkney
+Wheat is Animal
+20 / 30 )  wheat Wheat wheat
+Barley is Animal
+21 / 30 )  barley Barley barley
+Oat is Animal
+22 / 30 )  oats Oat oat
+Rye is Animal
+23 / 30 )  rye Rye rye
+Onion is Animal
+24 / 30 )  onions Onion onion
+Pea is Animal
+25 / 30 )  peas Pea pea
+Vicia faba is Animal
+26 / 30 )  beans Vicia faba vicia_faba
+Turnip is Animal
+27 / 30 )  turnips Turnip turnip
+Sium sisarum is Animal
+28 / 30 )  skirret Sium sisarum sium_sisarum
+Allium ursinum is Animal
+29 / 30 )  wild garlic Allium ursinum allium_ursinum
+Urtica dioica is Animal
+30 / 30 )  nettles Urtica dioica urtica_dioica
+extract_triplet(Picts)
+Got GPT's response. String length : 1198
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Scotland', 'Scotland', 'scotland']]
+subject_words:  [['Scotland', 'Scotland', 'scotland']]
+object_words:  [['Firth of Forth', 'Firth of Forth', 'firth_of_forth']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  []
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Bede', 'Bede', 'bede'], ['Adomnán', 'Adomnán', 'adamnan']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Fotla', 'Atholl', 'atholl'], ['Fib', 'Fife', 'fife']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Wales', 'Wales', 'wales']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Northern Ireland', 'Northern Ireland', 'northern_ireland']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Northumbria', 'Northumbria', 'northumbria']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Argyll', 'Argyll', 'argyll'], ['Caithness', 'Caithness', 'caithness']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Sutherland', 'Sutherland', 'sutherland'], ['Galloway', 'Galloway', 'galloway']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Buchan', 'Buchan', 'buchan'], ['Angus', 'Angus, Scotland', 'forfarshire']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Inverness', 'Inverness', 'inverness'], ['Moray', 'Moray', 'moray']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['Orkney', 'Orkney', 'orkney']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['wheat', 'Wheat', 'wheat'], ['barley', 'Barley', 'barley']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['oats', 'Oat', 'oat'], ['rye', 'Rye', 'rye']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['onions', 'Onion', 'onion']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['peas', 'Pea', 'pea']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['beans', 'Vicia faba', 'vicia_faba']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['turnips', 'Turnip', 'turnip']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['skirret', 'Sium sisarum', 'sium_sisarum']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['wild garlic', 'Allium ursinum', 'allium_ursinum']]
+subject_words:  [(None, 'Picts', 'picts')]
+object_words:  [['nettles', 'Urtica dioica', 'urtica_dioica']]
+extract_info(Khazars) Start.
+utils/preprocess.py extract_info(): Checking good links on Khazars
+European Russia is Geography
+1 / 30 )  European Russia European Russia european_russia
+Crimea is Geography
+2 / 30 )  Crimea Crimea crimea
+Kazakhstan is Geography
+3 / 30 )  Kazakhstan Kazakhstan kazakhstan
+Eastern Europe is Geography
+4 / 30 )  Eastern Europe Eastern Europe eastern_europe
+China is Geography
+5 / 30 )  China China china
+Middle East is Geography
+6 / 30 )  Middle East Middle East middle_east
+Kievan Rus' is Geography
+7 / 30 )  Kievan Rus' Kievan Rus' kievan_russia
+Caucasus is Geography
+8 / 30 )  Caucasus Caucasus caucasus
+Ukraine is Geography
+9 / 30 )  Ukraine Ukraine ukraine
+Caspian Sea is Geography
+10 / 30 )  Caspian Sea Caspian Sea caspian_sea
+Sogdia is Geography
+11 / 30 )  Sogdiana Sogdia sogdians
+Attila is People
+12 / 30 )  Attila Attila attila
+Pannonian Basin is Geography
+13 / 30 )  Hungarian plain Pannonian Basin carpathian_basin
+Iran is Geography
+14 / 30 )  Persia Iran iran
+Sea of Azov is Geography
+15 / 30 )  Sea of Azov Sea of Azov sea_of_azov
+Asparuh of Bulgaria is People
+16 / 30 )  Asparukh Asparuh of Bulgaria asparukh
+Danube is Geography
+17 / 30 )  Danube Danube danube
+Dnieper is Geography
+18 / 30 )  Dniepr Dnieper dnieper
+Khwarazm is Geography
+19 / 30 )  Khwârazmian Khwarazm khwarazm
+India is Geography
+20 / 30 )  Indian India india
+Wolin is Geography
+21 / 30 )  Wollin Wolin wolin
+Dublin is Geography
+22 / 30 )  Dublin Dublin dublin
+Heraclius is People
+23 / 30 )  Heraclius Heraclius heraclius
+Tbilisi is Geography
+24 / 30 )  Tiflis Tbilisi tbilisi
+Derbent is Geography
+25 / 30 )  Derbent Derbent derbent
+Chersonesus is Geography
+26 / 30 )  Cherson Chersonesus chersonesus
+Fergana is Geography
+27 / 30 )  Farghânian  Fergana ferghana
+Aras (river) is Geography
+28 / 30 )  Araxes Aras (river) araxes
+Ardabil is Geography
+29 / 30 )  Ardabil Ardabil ardebil
+Mosul is Geography
+30 / 30 )  Mosul Mosul mosul
+extract_triplet(Khazars)
+Got GPT's response. String length : 9166
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [['Kazakhstan', 'Kazakhstan', 'kazakhstan']]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [['Middle East', 'Middle East', 'middle_east'], ["Kievan Rus'", "Kievan Rus'", 'kievan_russia']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [['Crimea', 'Crimea', 'crimea'], ['Caucasus', 'Caucasus', 'caucasus']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [['Caspian Sea', 'Caspian Sea', 'caspian_sea']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [['Caucasus', 'Caucasus', 'caucasus']]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [['Caucasus', 'Caucasus', 'caucasus']]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [['Dniepr', 'Dnieper', 'dnieper']]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  [(None, 'Khazars', 'khazars')]
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+subject_words:  [(None, 'Khazars', 'khazars')]
+object_words:  []
+extract_info(Hen Ogledd) Start.
+utils/preprocess.py extract_info(): Checking good links on Hen Ogledd
+Great Britain is Geography
+1 / 30 )  Great Britain Great Britain great_britain
+Lothian is Geography
+2 / 30 )  Lleuddiniawn Lothian lothian
+Kingdom of Scotland is Geography
+3 / 30 )  Kingdom of Scotland Kingdom of Scotland kingdom_of_scotland
+River Tyne is Geography
+4 / 30 )  Tyne River Tyne river_tyne
+Solway Firth is Geography
+5 / 30 )  Solway Solway Firth solway_firth
+Northumbria is Geography
+6 / 30 )  Kingdom of Northumbria Northumbria northumbria
+Humber is Geography
+7 / 30 )  Humber Humber humber
+Firth of Clyde is Geography
+8 / 30 )  Firth of Clyde Firth of Clyde firth_of_clyde
+Firth of Forth is Geography
+9 / 30 )  Firth of Forth Firth of Forth firth_of_forth
+Scotland is Geography
+10 / 30 )  Scottish Scotland scotland
+Dumbarton is Geography
+11 / 30 )  Dumbarton Dumbarton dumbarton
+Cumbria is Geography
+12 / 30 )  Cumbria Cumbria cumbria
+Walburn, North Yorkshire is Geography
+13 / 30 )  Walburn Walburn, North Yorkshire walburn
+extract_triplet(Hen Ogledd)
+Got GPT's response. String length : 2029
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  []
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  []
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  [['Scottish', 'Scotland', 'scotland']]
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  []
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  []
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  [['Great Britain', 'Great Britain', 'great_britain']]
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  []
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  []
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  []
+subject_words:  []
+object_words:  [['Lleuddiniawn', 'Lothian', 'lothian']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Kingdom of Northumbria', 'Northumbria', 'northumbria']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Kingdom of Scotland', 'Kingdom of Scotland', 'kingdom_of_scotland'], ['Scottish', 'Scotland', 'scotland']]
+subject_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+object_words:  [['Walburn', 'Walburn, North Yorkshire', 'walburn']]
+subject_words:  []
+object_words:  [['Dumbarton', 'Dumbarton', 'dumbarton']]
+subject_words:  [['Cumbria', 'Cumbria', 'cumbria']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Tyne', 'River Tyne', 'river_tyne']]
+object_words:  []
+subject_words:  [['Solway', 'Solway Firth', 'solway_firth']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+subject_words:  [['Humber', 'Humber', 'humber']]
+object_words:  [['Firth of Clyde', 'Firth of Clyde', 'firth_of_clyde']]
+subject_words:  [['Firth of Clyde', 'Firth of Clyde', 'firth_of_clyde']]
+object_words:  [['Kingdom of Scotland', 'Kingdom of Scotland', 'kingdom_of_scotland'], ['Scottish', 'Scotland', 'scotland']]
+subject_words:  [['Firth of Forth', 'Firth of Forth', 'firth_of_forth']]
+object_words:  [['Kingdom of Scotland', 'Kingdom of Scotland', 'kingdom_of_scotland'], ['Scottish', 'Scotland', 'scotland']]
+subject_words:  [['Scottish', 'Scotland', 'scotland']]
+object_words:  []
+subject_words:  [['Dumbarton', 'Dumbarton', 'dumbarton']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Hen Ogledd', 'cumbrians')]
+subject_words:  [['Tyne', 'River Tyne', 'river_tyne']]
+object_words:  []
+subject_words:  [['Solway', 'Solway Firth', 'solway_firth']]
+object_words:  []
+extract_info(Alamannia) Start.
+utils/preprocess.py extract_info(): Checking good links on Alamannia
+Rhine is Geography
+1 / 30 )  Rhine Rhine rhine
+Francia is Geography
+2 / 30 )  Frankish Empire Francia francia
+Lake Constance is Geography
+3 / 30 )  Lake Constance Lake Constance lake_constance
+Black Forest is Geography
+4 / 30 )  Black Forest Black Forest black_forest
+Alsace is Geography
+5 / 30 )  Alsace Alsace alsace
+Danube is Geography
+6 / 30 )  Danube Danube danube
+Burgundy is Geography
+7 / 30 )  Burgundy Burgundy burgundy
+Aare is Geography
+8 / 30 )  Aare Aare aare
+Vorarlberg is Geography
+9 / 30 )  Vorarlberg Vorarlberg vorarlberg
+Switzerland is Geography
+10 / 30 )  Switzerland Switzerland switzerland
+Bern is Geography
+11 / 30 )  Bern Bern bern
+Grisons is Geography
+12 / 30 )  Grisons Grisons grisons
+Swabian Jura is Geography
+13 / 30 )  Swabian Jura Swabian Jura swabian_alb
+Ulm is Geography
+14 / 30 )  Ulm Ulm ulm
+Bavaria is Geography
+15 / 30 )  Bavaria Bavaria bavaria
+Clovis I is People
+16 / 30 )  Clovis I Clovis I clovis_i
+Julian (emperor) is People
+17 / 30 )  Julian the Apostate Julian (emperor) flavius_claudius_julianus
+Passau is Geography
+18 / 30 )  Passau Passau passau
+Neckar is Geography
+19 / 30 )  Neckar Neckar neckar
+Raetia is Geography
+20 / 30 )  Rhaetia Raetia raetia
+Martigny is Geography
+21 / 30 )  Octodurum Martigny martigny
+Pepin the Short is People
+22 / 30 )  Pepin the Short Pepin the Short pepin_iii
+Lucerne is Geography
+23 / 30 )  Lucerne Lucerne lucerne
+Alps is Geography
+24 / 30 )  Alps Alps alps
+Rhône is Geography
+25 / 30 )  Rhône Rhône rhône
+Aargau is Geography
+26 / 30 )  Argovia Aargau aargau
+Conradin is People
+27 / 30 )  Conradin Conradin conradin
+extract_triplet(Alamannia)
+Got GPT's response. String length : 2742
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Rhine', 'Rhine', 'rhine']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  []
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Frankish Empire', 'Francia', 'francia']]
+subject_words:  [['Frankish Empire', 'Francia', 'francia']]
+object_words:  []
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Alamannia', 'alemania')]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Lake Constance', 'Lake Constance', 'lake_constance']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Rhine', 'Rhine', 'rhine']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Black Forest', 'Black Forest', 'black_forest']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Alsace', 'Alsace', 'alsace']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Danube', 'Danube', 'danube']]
+subject_words:  [['Burgundy', 'Burgundy', 'burgundy']]
+object_words:  [(None, 'Alamannia', 'alemania')]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Aare', 'Aare', 'aare']]
+subject_words:  [['Rhaetia', 'Raetia', 'raetia']]
+object_words:  []
+subject_words:  [['Rhaetia', 'Raetia', 'raetia']]
+object_words:  []
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  []
+subject_words:  []
+object_words:  [['Alsace', 'Alsace', 'alsace']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Switzerland', 'Switzerland', 'switzerland']]
+subject_words:  []
+object_words:  [['Vorarlberg', 'Vorarlberg', 'vorarlberg']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  []
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Bern', 'Bern', 'bern']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Grisons', 'Grisons', 'grisons']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Rhine', 'Rhine', 'rhine']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  []
+subject_words:  []
+object_words:  [['Danube', 'Danube', 'danube'], ['Swabian Jura', 'Swabian Jura', 'swabian_alb']]
+subject_words:  []
+object_words:  [['Neckar', 'Neckar', 'neckar']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Alamannia', 'alemania'), ['Burgundy', 'Burgundy', 'burgundy']]
+subject_words:  [['Argovia', 'Aargau', 'aargau']]
+object_words:  [(None, 'Alamannia', 'alemania'), ['Burgundy', 'Burgundy', 'burgundy']]
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  []
+subject_words:  [(None, 'Alamannia', 'alemania')]
+object_words:  [['Frankish Empire', 'Francia', 'francia']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Alamannia', 'alemania')]
+subject_words:  [['Clovis I', 'Clovis I', 'clovis_i']]
+object_words:  []
+subject_words:  [['Julian the Apostate', 'Julian (emperor)', 'flavius_claudius_julianus']]
+object_words:  []
+subject_words:  [['Pepin the Short', 'Pepin the Short', 'pepin_iii']]
+object_words:  [(None, 'Alamannia', 'alemania')]
+subject_words:  [['Pepin the Short', 'Pepin the Short', 'pepin_iii']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Conradin', 'Conradin', 'conradin']]
+subject_words:  [['Burgundy', 'Burgundy', 'burgundy']]
+object_words:  []
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("German Bight", "bounded by", "Denmark and Germany to the east")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("German Bight", "is a bight of", "North Sea")\n', '("German Bight", "bounded by", "Netherlands and Germany to the south")\n', '("German Bight", "limited by", "Dogger Bank")\n', '("German Bight", "contains", "Frisian and Danish Islands")\n', '("Wadden Sea", "is approximately ten to twelve kilometres wide at", "German Bight")\n', '("Frisian Islands", "known as", "Frisia")\n', '("Southern portion of German Bight", "also known as", "Heligoland Bight")\n', '("Wadden Sea", "protected by", "Lower Saxon Wadden Sea National Park")\n', '("Wadden Sea", "protected by", "Schleswig-Holstein Wadden Sea National Park")\n', '("Wadden Sea", "protected by", "Hamburg Wadden Sea National Park")\n', '("German Bight", "contains", "Germany\'s only offshore oil rig Mittelplate")\n', '("German Bight", "contains", "offshore wind farms like Alpha Ventus")\n', '("German Bight", "plays important role as", "shipping lane")\n', '("Port of Hamburg", "approached through", "German Bight")\n', '("German Bight", "includes ports like", "Bremerhaven/Bremen")\n', '("German Bight", "includes ports like", "Emden")\n', '("German Bight", "includes ports like", "JadeWeserPort at Wilhelmshaven")\n', '("German Bight", "navigated by", "tidal channels")\n', '("East Frisian Islands", "can be reached on foot at", "low tide")\n', '("Sylt", "reached by", "railway-only Hindenburgdamm causeway")\n', '("Halligen", "have railway connections to", "mainland")\n', '("German Bight", "known for fishing", "crangon crangon")\n', '("Picts", "occupied", "Scotland")\n', '("Scotland", "located north of", "Firth of Forth")\n', '("Picts", "were called", "Caledonii descendants")\n', '("Picts", "were referred to as", "Pictland")\n', '("Pictish kingdom", "dominated by", "Fortriu")\n', '("Picts", "adopted as endonym", "Picti")\n', '("Pictish kingdom", "merged with", "Dál Riata")\n', '("Picts", "converted by", "Bede and Adomnán")\n', '("Picts", "had territories in", "Fotla and Fib")\n', '("Picts", "related to", "people in Wales")\n', '("Picts", "related to", "people in Northern Ireland")\n', '("Picts", "related to", "people in Northumbria")\n', '("Picts", "settled in areas like", "Argyll and Caithness")\n', '("Picts", "settled in areas like", "Sutherland and Galloway")\n', '("Picts", "settled in areas like", "Buchan and Angus")\n', '("Picts", "settled in areas like", "Inverness and Moray")\n', '("Picts", "settled in areas like", "Orkney")\n', '("Picts", "cultivated", "wheat and barley")\n', '("Picts", "cultivated", "oats and rye")\n', '("Picts", "grew vegetables like", "onions")\n', '("Picts", "grew vegetables like", "peas")\n', '("Picts", "grew vegetables like", "beans")\n', '("Picts", "grew vegetables like", "turnips")\n', '("Picts", "cultivated", "skirret")\n', '("Picts", "gathered", "wild garlic")\n', '("Picts", "gathered", "nettles")\n', '("Khazars", "established a major commercial empire covering", "European Russia, southern Ukraine, Crimea, and Kazakhstan")\n', '("Khazars", "created the most powerful polity from", "the break-up of the Western Turkic Khaganate")\n', '("Khazars", "commanded the western marches of", "the Silk Road")\n', '("Khazars", "played a key commercial role as a crossroad between", "China, the Middle East and Kievan Rus\'")\n', '("Khazaria", "served as a buffer state between", "the Byzantine Empire and both the nomads of the northern steppes and the Umayyad and Abbasid Caliphates")\n', '("Khazars", "dominated area extending from", "the Volga-Don steppes to the eastern Crimea and the northern Caucasus")\n', '("Byzantium", "encouraged the Alans to attack", "Khazaria")\n', '("Byzantium", "sought to obtain an entente with", "the rising Rus\' power")\n', '("Sviatoslav I of Kiev", "conquered", "the capital Atil and ended Khazaria\'s independence")\n', '("Khazarian", "former provinces", "in Volga Bulgaria known as Turks")\n', '("Hungarians", "known as Turks in", "Byzantium")\n', '("Khazars", "adopted the Hebrew script after", "their conversion to Judaism")\n', '("Khazaria", "state was polyglot and polyethnic", "")\n', '("Khazar", "native religion thought to be", "Tengrism")\n', '("Khazar", "polyethnic populace appears to have been a multiconfessional mosaic of", "pagan, Tengrist, Jewish, Christian and Muslim worshippers")\n', '("Khazars", "ruling elite said to have converted to", "Rabbinic Judaism in the 8th century")\n', '("Khazars", "dispersed after the fall of", "the Empire")\n', '("Ashkenazi Jews", "theory of descent from", "a hypothetical Khazarian Jewish diaspora")\n', '("Khazars", "legacy in the name of", "the Caspian Sea")\n', '("Khazar", "language survival is a matter of", "intricate difficulty")\n', '("Khazars", "language of ruling elite probably", "an eastern variety of Shaz Turkic")\n', '("Khazars", "subject tribes appear to have spoken varieties of", "Lir Turkic, such as Oğuric")\n', '("Khazars", "language of royal house and core tribes likely", "Eastern Common Turkic")\n', '("Khazars", "formed from", "a congeries of steppe nomads and peoples subordinated to a core Turkic leadership")\n', '("Khazars", "drove off the", "Asian Avars")\n', '("Khazars", "confederation reached land of", "the Akatziroi, allies of Byzantium")\n', '("Khazars", "state of Khazaria began to form after", "630 CE from the break-up of the Göktürk Khaganate")\n', '("Khazars", "khaganate consolidated further westwards", "")\n', '("Khazars", "Qağanate took shape from ruins of", "this nomadic empire")\n', '("Khazars", "Qağanate developed as", "an international trading hub")\n', '("Byzantium", "sought alliances with Khazars", "")\n', '("Khazars", "king\'s role was", "primarily sacral")\n', '("Khazars", "lesser king managed and commanded", "the military")\n', '("Khazars", "traditionally sought", "a sacral Qağanate")\n', '("Khazars", "ruling stratum was ethnically and linguistically distinct from", "its subject peoples")\n', '("Khazars", "hired", "soldiers (mercenaries)")\n', '("Khazars", "controlled and exacted tribute from", "25 to 30 different nations and tribes")\n', '("Khazars", "economy based on", "trade and tribute")\n', '("Khazars", "Khazars dominated the Crimea until", "the 10th century")\n', '("Khazars", "Great state\'s", "economic base")\n', '("Byzantium", "diplomatic policy towards steppe peoples generally consisted of encouraging them to", "fight among themselves")\n', '("Byzantium", "referred to Khazars as", "Turks")\n', '("Khazars", "raided Transcaucasian principalities under", "Muslim dominion")\n', '("Khazars", "Umayyads tightened grip on", "Armenia")\n', '("Khazars", "fought a series of wars against", "the Umayyad Caliphate and its Abbasid successor")\n', '("Khazars", "wars against the Umayyad Caliphate led to", "the First Arab-Khazar War")\n', '("Khazars", "Arab forces advanced on", "Khazar capital Balanjar")\n', '("Khazars", "struck back against", "Arabs under Hasan ibn al-Nu\'man")\n', '("Khazars", "Second Arab-Khazar War began with", "raids across the Caucasus in the early 8th century")\n', '("Khazars", "invasion by", "30,000 Khazars into Armenia")\n', '("Khazars", "Caliph Yazid II responded sending Arab troops north, driving the Khazars back across", "the Caucasus")\n', '("Khazars", "prince Barjik invaded Iranian Azerbaijan and defeated", "Arab forces")\n', '("Khazars", "Khazar army defeated, and the Khazars", "surrendered to Marwan Ibn Muhammad")\n', '("Khazars", "The Qağan was forced to accept terms involving his conversion to", "Islam")\n', '("Khazars", "relations between the Khazars and the Abbasids became", "cordial")\n', '("Khazars", "rebellion broke out in", "the Khazar khaganate")\n', '("Khazars", "Kabar tribes joined", "the Hungarians")\n', '("Khazars", "territory between the Carpathians and the", "Dnieper River known as Etelköz")\n', '("Khazars", "Varangians and the eastern Slavs became", "new neighbours of the Hungarians")\n', '("Khazars", "Hungarians and their allies, the Kabars, started a series of raids from", "the Etelköz into the Carpathian Basin")\n', '("Khazars", "Varangian Rus\' began probing south down", "the waterways controlled by the Khazars")\n', '("Khazars", "allowed the Rus\'", "trade route along the Volga River")\n', '("Khazars", "Rus\' warlords launched several wars against", "the Khazar Qağanate")\n', '("Khazars", "Byzantine", "ally at times")\n', '("Khazars", "The Kievan Rus\' ruler Sviatoslav I", "destroyed Khazar imperial power in the 960s")\n', '("Khazars", "capital Atil", "fell to Sviatoslav I")\n', '("Khazars", "vanquishing of", "the Khazar traditions is associated with Vladimir\'s conversion")\n', '("Khazars", "Kyiv is often associated with", "a Khazarian foundation")\n', '("Khazars", "Sarkel fortress", "with assistance from Khazaria\'s Byzantine ally")\n', '("Khazars", "Khazar", "fortresses like Sarkel and Tamatarkha")\n', '("Khazars", "Khazaria\'s tributary empire undermined by", "Pechenegs and the Rus\'")\n', '("Khazars", "king Benjamin", "fought against the allied forces of five lands")\n', '("Khazars", "suffered an invasion by", "the Alans")\n', '("Khazars", "Benjamin\'s son Aaron II faced an invasion led by", "the Alans")\n', '("Khazars", "Alliance with Byzantine empire began to", "collapse")\n', '("Khazars", "Prince Oleg\'s campaign against", "Khazars recounted in the Schechter Letter")\n', '("Khazars", "kingdom", "lingered on until 1224 according to Poliak")\n', '("Khazars", "possibly survived as a", "minor rump state")\n', '("Khazars", "Ibn Hawqal and al-Muqaddasi refer to", "Atil after sacking")\n', '("Khazars", "Al-Biruni\'s time (1048)", "Atil was in ruins")\n', '("Khazars", "aftermath: impact, decline and dispersion", "")\n', '("Khazars", "Poliak argued that the Khazar kingdom did not wholly succumb to", "Sviatoslav\'s campaign")\n', '("Khazars", "Kimeks and Qipchaqs pressured the", "Oğuz")\n', '("Khazars", "Oğuz in turn pushed the", "Pechenegs west towards Byzantium")\n', '("Khazars", "Khazar", "heritage in the orderly hierarchical system of succession by scales")\n', '("Khazars", "proto-Hungarian Pontic tribe practiced their institutional model, a dual rule of", "a ceremonial kende-kündü and a gyula")\n', '("Khazars", "dissident group of Khazars known as Qabars joined", "the Hungarians in migration")\n', '("Khazars", "Elements within the Hungarian population perpetuated", "Khazar traditions")\n', '("Khazars", "Hungary referred to as", "Western Tourkia in contrast to Khazaria")\n', '("Khazars", "Hungarians", "Christianized Khazars were known as \'black Hungarians\'")\n', '("Khazars", "Yemeni Jews", "another example of a state which adopted Judaism between the fall of the Second Temple and modern times")\n', '("Khazars", "stimulated messianic aspirations", "for a return to Israel")\n', '("Khazars", "Solomon ben Duji", "attempted to advocate for the liberation of, and return to, Palestine")\n', '("Khazars", "Jewish", "origin myth potentially influenced by Menachem\'s movement")\n', '("Khazars", "rabbinical students descended from", "Khazars encountered by Avraham ibn Daud in Toledo, Spain in the 1160s")\n', '("Khazars", "Jewish sect known as the Karaites", "claimed by some to have Khazar origins")\n', '("Khazars", "Scholarship on", "Khazar history questions the connection between Karaites and Khazars")\n', '("Khazars", "Some Jews from Islamic world and Byzantium migrated to", "Khazaria")\n', '("Khazars", "Expositio in Matthaeum Evangelistam refers to", "Khazars observing all rules of Judaism")\n', '("Khazars", "Coins bearing inscriptions suggest", "Judaization took place around 837/8")\n', '("Khazars", "Eldad ha-Dani informed Spanish Jews that part of the Ten Lost Tribes dwelt in", "the land of the Khazars")\n', '("Khazars", "Ibn al-Faqîh wrote that", "all the Khazars are Jews, but have been Judaized recently")\n', '("Khazars", "The king of Khazaria", "drive out sorcerers and received angelic visitations")\n', '("Khazars", "King Bulan", "convened a royal debate before converting to Judaism")\n', '("Khazars", "Letter of King Joseph asserts that after royal conversion", "Israel returned with the people of Qazaria in complete repentance")\n', '("Khazars", "Some evidence suggests that Khazarian king saw himself as a", "defender of Jews beyond Khazaria\'s borders")\n', '("Khazars", "The theory of a significant Khazar component in the admixture of Ashkenazi Jews has been", "disputed by most scholars")\n', '("Khazars", "Theory of Ashkenazi descent from Khazars has been occasionally", "manipulated to deny Jewish nationhood")\n', '("Khazars", "Claims of Khazar origins", "expounded by Paul Wexler and Shlomo Sand, among others")\n', '("Hen Ogledd", "was known as", "the Old North")\n', '("Hen Ogledd", "was located in", "Northern England")\n', '("Hen Ogledd", "extended to", "the southern Scottish Lowlands")\n', '("Hen Ogledd", "included the kingdom of", "Elmet")\n', '("Hen Ogledd\'s", "population spoke", "Cumbric")\n', '("Hen Ogledd", "was distinct from", "Great Britain")\n', '("Hen Ogledd", "comprised the major kingdom of", "Gododdin")\n', '("Hen Ogledd", "comprised the major kingdom of", "Rheged")\n', '("Hen Ogledd", "contained", "the Kingdom of Strathclyde")\n', '("Gododdin", "included", "Lleuddiniawn")\n', '("Gododdin", "included", "Manaw Gododdin")\n', '("Manaw Gododdin", "was part of", "the territory of the Gododdin")\n', '("Elmet", "was a kingdom in the Hen Ogledd located in", "western Yorkshire")\n', '("Rheged", "was part of", "the Kingdom of Northumbria")\n', '("Kingdom of Strathclyde", "was known in Welsh as", "Ystrad Clud")\n', '("Strathclyde", "was incorporated into", "the Kingdom of Scotland")\n', '("Hen Ogledd", "has ties to", "Walburn")\n', '("Ystrad Clud", "centered at", "Dumbarton")\n', '("Cumbria", "emerged from", "the Brittonic region of northwestern England")\n', '("Anglian peoples", "controlled areas like", "Deira and Bernicia")\n', '("Tyne", "marked a lack of Roman control north of", "Roman Britain")\n', '("Solway", "marked a lack of Roman control north of", "Roman Britain")\n', '("Angle kingdoms", "included", "Deira and Bernicia")\n', '("Angle kingdoms", "had Brittonic-derived names suggesting possible earlier Brittonic kingdoms in", "the Hen Ogledd")\n', '("Humber", "south of this were Anglo-Saxons north of", "the Firth of Clyde")\n', '("Firth of Clyde", "north of this was", "the Kingdom of Scotland")\n', '("Firth of Forth", "north of this was", "the Kingdom of Scotland")\n', '("Scottish", "descendants featured in Welsh poetry and", "the Welsh Triads")\n', '("Dumbarton", "is center of the kingdom of", "Strathclyde")\n', '("Cumbric", "was spoken in", "the Hen Ogledd")\n', '("Tyne", "marked area with decreasing Roman control from AD 100 onward", "Roman Britain")\n', '("Solway", "marked area with decreasing Roman control from AD 100 onward", "Roman Britain")\n', '("Alamannia", "established by", "Alemanni")\n', '("Alemanni", "broke through", "Roman limes")\n', '("Alemanni", "expanded from", "Main River basin")\n', '("Alamannia", "settled on", "left bank of the Rhine")\n', '("Alamannia", "ruled by", "independent tribal kings")\n', '("Alamannia", "became a duchy of", "Frankish Empire")\n', '("Conrad I of East Francia", "started to form", "Holy Roman Empire")\n', '("Alamannia", "became", "Duchy of Swabia")\n', '("Scribes", "used", "Suebia interchangeably with Alamannia")\n', '("Alamannia", "centred on", "Lake Constance")\n', '("Alamannia", "included", "High Rhine")\n', '("Alamannia", "included", "Black Forest")\n', '("Alamannia", "included", "Alsace")\n', '("Alamannia", "upper boundary", "Danube River basin")\n', '("Burgundy", "had unclear boundary towards", "Alamannia")\n', '("Alamannia", "south-west in", "Aare River basin")\n', '("Raetia Curiensis", "ruled by", "Alemannic counts")\n', '("Raetia Curiensis", "became part of", "Duchy of Swabia")\n', '("Alamannia", "corresponds to", "Alemannic German area")\n', '("Alemannic German area", "includes", "French Alsace")\n', '("Alemannic German area", "includes", "German Baden")\n', '("Alemannic German area", "includes", "Swabia")\n', '("Alemannic German area", "includes", "German-speaking Switzerland")\n', '("Alemannic German area", "includes", "Austrian Vorarlberg")\n', '("Alamannia", "expanded during", "High Middle Ages")\n', '("Alamannia", "received influence of", "Bern")\n', '("Alamannia", "expanded into", "Grisons")\n', '("Alemanni", "pushed south from", "Main basin")\n', '("Alemanni", "settled new territory on", "either side of the Rhine")\n', '("Alamannia under Frankish rule", "more or less undisputed", "7th to 13th centuries")\n', '("Hegowe", "located between", "Lake Constance, upper Danube and Swabian Jura")\n', '("Perahtoltaspara", "in the upper", "Neckar basin")\n', '("Augestigowe", "along the", "Lech River")\n', '("Counties of Alamannia", "organised into", "pagi")\n', '("Argowe", "territory between", "Alamannia and Upper Burgundy")\n', '("Argovia", "disputed territory between", "Alamannia and Burgundy")\n', '("Alamannia", "went under", "Carolingian rule")\n', '("Alamannia", "became a province of", "East Francia")\n', '("Alemannic German", "persists as", "a separate family of dialects within High German")\n', '("Germany", "names derived from", "Alamannia in various languages")\n', '("Clovis I", "defeated", "Alemanni at Battle of Tolbiac")\n', '("Julian the Apostate", "made treaties with", "Alemannic kings")\n', '("Pepin the Short and Carloman", "waged campaign to reduce", "Alamannia")\n', '("Pepin the Short", "son of", "Pepin of Heristal")\n', '("Burchard I Hunfriding", "took title of", "duke of Swabia")\n', '("Duchy of Swabia", "ruled by", "Hohenstaufen")\n', '("Hohenstaufen", "ruled during", "1079–1268")\n', '("Duchy of Swabia", "disestablished with", "execution of Conradin")\n', '("Alemannia and Burgundy", "boundary fixed in", "843")\n']
+range(1, 350) 4
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("German Bight", "bounded by", "Denmark and Germany to the east")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("German Bight", "is a bight of", "North Sea")\n', '("German Bight", "bounded by", "Netherlands and Germany to the south")\n', '("German Bight", "limited by", "Dogger Bank")\n', '("German Bight", "contains", "Frisian and Danish Islands")\n', '("Wadden Sea", "is approximately ten to twelve kilometres wide at", "German Bight")\n', '("Frisian Islands", "known as", "Frisia")\n', '("Southern portion of German Bight", "also known as", "Heligoland Bight")\n', '("Wadden Sea", "protected by", "Lower Saxon Wadden Sea National Park")\n', '("Wadden Sea", "protected by", "Schleswig-Holstein Wadden Sea National Park")\n', '("Wadden Sea", "protected by", "Hamburg Wadden Sea National Park")\n', '("German Bight", "contains", "Germany\'s only offshore oil rig Mittelplate")\n', '("German Bight", "contains", "offshore wind farms like Alpha Ventus")\n', '("German Bight", "plays important role as", "shipping lane")\n', '("Port of Hamburg", "approached through", "German Bight")\n', '("German Bight", "includes ports like", "Bremerhaven/Bremen")\n', '("German Bight", "includes ports like", "Emden")\n', '("German Bight", "includes ports like", "JadeWeserPort at Wilhelmshaven")\n', '("German Bight", "navigated by", "tidal channels")\n', '("East Frisian Islands", "can be reached on foot at", "low tide")\n', '("Sylt", "reached by", "railway-only Hindenburgdamm causeway")\n', '("Halligen", "have railway connections to", "mainland")\n', '("German Bight", "known for fishing", "crangon crangon")\n', '("Picts", "occupied", "Scotland")\n', '("Scotland", "located north of", "Firth of Forth")\n', '("Picts", "were called", "Caledonii descendants")\n', '("Picts", "were referred to as", "Pictland")\n', '("Pictish kingdom", "dominated by", "Fortriu")\n', '("Picts", "adopted as endonym", "Picti")\n', '("Pictish kingdom", "merged with", "Dál Riata")\n', '("Picts", "converted by", "Bede and Adomnán")\n', '("Picts", "had territories in", "Fotla and Fib")\n', '("Picts", "related to", "people in Wales")\n', '("Picts", "related to", "people in Northern Ireland")\n', '("Picts", "related to", "people in Northumbria")\n', '("Picts", "settled in areas like", "Argyll and Caithness")\n', '("Picts", "settled in areas like", "Sutherland and Galloway")\n', '("Picts", "settled in areas like", "Buchan and Angus")\n', '("Picts", "settled in areas like", "Inverness and Moray")\n', '("Picts", "settled in areas like", "Orkney")\n', '("Picts", "cultivated", "wheat and barley")\n', '("Picts", "cultivated", "oats and rye")\n', '("Picts", "grew vegetables like", "onions")\n', '("Picts", "grew vegetables like", "peas")\n', '("Picts", "grew vegetables like", "beans")\n', '("Picts", "grew vegetables like", "turnips")\n', '("Picts", "cultivated", "skirret")\n', '("Picts", "gathered", "wild garlic")\n', '("Picts", "gathered", "nettles")\n', '("Khazars", "established a major commercial empire covering", "European Russia, southern Ukraine, Crimea, and Kazakhstan")\n', '("Khazars", "created the most powerful polity from", "the break-up of the Western Turkic Khaganate")\n', '("Khazars", "commanded the western marches of", "the Silk Road")\n', '("Khazars", "played a key commercial role as a crossroad between", "China, the Middle East and Kievan Rus\'")\n', '("Khazaria", "served as a buffer state between", "the Byzantine Empire and both the nomads of the northern steppes and the Umayyad and Abbasid Caliphates")\n', '("Khazars", "dominated area extending from", "the Volga-Don steppes to the eastern Crimea and the northern Caucasus")\n', '("Byzantium", "encouraged the Alans to attack", "Khazaria")\n', '("Byzantium", "sought to obtain an entente with", "the rising Rus\' power")\n', '("Sviatoslav I of Kiev", "conquered", "the capital Atil and ended Khazaria\'s independence")\n', '("Khazarian", "former provinces", "in Volga Bulgaria known as Turks")\n', '("Hungarians", "known as Turks in", "Byzantium")\n', '("Khazars", "adopted the Hebrew script after", "their conversion to Judaism")\n', '("Khazaria", "state was polyglot and polyethnic", "")\n', '("Khazar", "native religion thought to be", "Tengrism")\n', '("Khazar", "polyethnic populace appears to have been a multiconfessional mosaic of", "pagan, Tengrist, Jewish, Christian and Muslim worshippers")\n', '("Khazars", "ruling elite said to have converted to", "Rabbinic Judaism in the 8th century")\n', '("Khazars", "dispersed after the fall of", "the Empire")\n', '("Ashkenazi Jews", "theory of descent from", "a hypothetical Khazarian Jewish diaspora")\n', '("Khazars", "legacy in the name of", "the Caspian Sea")\n', '("Khazar", "language survival is a matter of", "intricate difficulty")\n', '("Khazars", "language of ruling elite probably", "an eastern variety of Shaz Turkic")\n', '("Khazars", "subject tribes appear to have spoken varieties of", "Lir Turkic, such as Oğuric")\n', '("Khazars", "language of royal house and core tribes likely", "Eastern Common Turkic")\n', '("Khazars", "formed from", "a congeries of steppe nomads and peoples subordinated to a core Turkic leadership")\n', '("Khazars", "drove off the", "Asian Avars")\n', '("Khazars", "confederation reached land of", "the Akatziroi, allies of Byzantium")\n', '("Khazars", "state of Khazaria began to form after", "630 CE from the break-up of the Göktürk Khaganate")\n', '("Khazars", "khaganate consolidated further westwards", "")\n', '("Khazars", "Qağanate took shape from ruins of", "this nomadic empire")\n', '("Khazars", "Qağanate developed as", "an international trading hub")\n', '("Byzantium", "sought alliances with Khazars", "")\n', '("Khazars", "king\'s role was", "primarily sacral")\n', '("Khazars", "lesser king managed and commanded", "the military")\n', '("Khazars", "traditionally sought", "a sacral Qağanate")\n', '("Khazars", "ruling stratum was ethnically and linguistically distinct from", "its subject peoples")\n', '("Khazars", "hired", "soldiers (mercenaries)")\n', '("Khazars", "controlled and exacted tribute from", "25 to 30 different nations and tribes")\n', '("Khazars", "economy based on", "trade and tribute")\n', '("Khazars", "Khazars dominated the Crimea until", "the 10th century")\n', '("Khazars", "Great state\'s", "economic base")\n', '("Byzantium", "diplomatic policy towards steppe peoples generally consisted of encouraging them to", "fight among themselves")\n', '("Byzantium", "referred to Khazars as", "Turks")\n', '("Khazars", "raided Transcaucasian principalities under", "Muslim dominion")\n', '("Khazars", "Umayyads tightened grip on", "Armenia")\n', '("Khazars", "fought a series of wars against", "the Umayyad Caliphate and its Abbasid successor")\n', '("Khazars", "wars against the Umayyad Caliphate led to", "the First Arab-Khazar War")\n', '("Khazars", "Arab forces advanced on", "Khazar capital Balanjar")\n', '("Khazars", "struck back against", "Arabs under Hasan ibn al-Nu\'man")\n', '("Khazars", "Second Arab-Khazar War began with", "raids across the Caucasus in the early 8th century")\n', '("Khazars", "invasion by", "30,000 Khazars into Armenia")\n', '("Khazars", "Caliph Yazid II responded sending Arab troops north, driving the Khazars back across", "the Caucasus")\n', '("Khazars", "prince Barjik invaded Iranian Azerbaijan and defeated", "Arab forces")\n', '("Khazars", "Khazar army defeated, and the Khazars", "surrendered to Marwan Ibn Muhammad")\n', '("Khazars", "The Qağan was forced to accept terms involving his conversion to", "Islam")\n', '("Khazars", "relations between the Khazars and the Abbasids became", "cordial")\n', '("Khazars", "rebellion broke out in", "the Khazar khaganate")\n', '("Khazars", "Kabar tribes joined", "the Hungarians")\n', '("Khazars", "territory between the Carpathians and the", "Dnieper River known as Etelköz")\n', '("Khazars", "Varangians and the eastern Slavs became", "new neighbours of the Hungarians")\n', '("Khazars", "Hungarians and their allies, the Kabars, started a series of raids from", "the Etelköz into the Carpathian Basin")\n', '("Khazars", "Varangian Rus\' began probing south down", "the waterways controlled by the Khazars")\n', '("Khazars", "allowed the Rus\'", "trade route along the Volga River")\n', '("Khazars", "Rus\' warlords launched several wars against", "the Khazar Qağanate")\n', '("Khazars", "Byzantine", "ally at times")\n', '("Khazars", "The Kievan Rus\' ruler Sviatoslav I", "destroyed Khazar imperial power in the 960s")\n', '("Khazars", "capital Atil", "fell to Sviatoslav I")\n', '("Khazars", "vanquishing of", "the Khazar traditions is associated with Vladimir\'s conversion")\n', '("Khazars", "Kyiv is often associated with", "a Khazarian foundation")\n', '("Khazars", "Sarkel fortress", "with assistance from Khazaria\'s Byzantine ally")\n', '("Khazars", "Khazar", "fortresses like Sarkel and Tamatarkha")\n', '("Khazars", "Khazaria\'s tributary empire undermined by", "Pechenegs and the Rus\'")\n', '("Khazars", "king Benjamin", "fought against the allied forces of five lands")\n', '("Khazars", "suffered an invasion by", "the Alans")\n', '("Khazars", "Benjamin\'s son Aaron II faced an invasion led by", "the Alans")\n', '("Khazars", "Alliance with Byzantine empire began to", "collapse")\n', '("Khazars", "Prince Oleg\'s campaign against", "Khazars recounted in the Schechter Letter")\n', '("Khazars", "kingdom", "lingered on until 1224 according to Poliak")\n', '("Khazars", "possibly survived as a", "minor rump state")\n', '("Khazars", "Ibn Hawqal and al-Muqaddasi refer to", "Atil after sacking")\n', '("Khazars", "Al-Biruni\'s time (1048)", "Atil was in ruins")\n', '("Khazars", "aftermath: impact, decline and dispersion", "")\n', '("Khazars", "Poliak argued that the Khazar kingdom did not wholly succumb to", "Sviatoslav\'s campaign")\n', '("Khazars", "Kimeks and Qipchaqs pressured the", "Oğuz")\n', '("Khazars", "Oğuz in turn pushed the", "Pechenegs west towards Byzantium")\n', '("Khazars", "Khazar", "heritage in the orderly hierarchical system of succession by scales")\n', '("Khazars", "proto-Hungarian Pontic tribe practiced their institutional model, a dual rule of", "a ceremonial kende-kündü and a gyula")\n', '("Khazars", "dissident group of Khazars known as Qabars joined", "the Hungarians in migration")\n', '("Khazars", "Elements within the Hungarian population perpetuated", "Khazar traditions")\n', '("Khazars", "Hungary referred to as", "Western Tourkia in contrast to Khazaria")\n', '("Khazars", "Hungarians", "Christianized Khazars were known as \'black Hungarians\'")\n', '("Khazars", "Yemeni Jews", "another example of a state which adopted Judaism between the fall of the Second Temple and modern times")\n', '("Khazars", "stimulated messianic aspirations", "for a return to Israel")\n', '("Khazars", "Solomon ben Duji", "attempted to advocate for the liberation of, and return to, Palestine")\n', '("Khazars", "Jewish", "origin myth potentially influenced by Menachem\'s movement")\n', '("Khazars", "rabbinical students descended from", "Khazars encountered by Avraham ibn Daud in Toledo, Spain in the 1160s")\n', '("Khazars", "Jewish sect known as the Karaites", "claimed by some to have Khazar origins")\n', '("Khazars", "Scholarship on", "Khazar history questions the connection between Karaites and Khazars")\n', '("Khazars", "Some Jews from Islamic world and Byzantium migrated to", "Khazaria")\n', '("Khazars", "Expositio in Matthaeum Evangelistam refers to", "Khazars observing all rules of Judaism")\n', '("Khazars", "Coins bearing inscriptions suggest", "Judaization took place around 837/8")\n', '("Khazars", "Eldad ha-Dani informed Spanish Jews that part of the Ten Lost Tribes dwelt in", "the land of the Khazars")\n', '("Khazars", "Ibn al-Faqîh wrote that", "all the Khazars are Jews, but have been Judaized recently")\n', '("Khazars", "The king of Khazaria", "drive out sorcerers and received angelic visitations")\n', '("Khazars", "King Bulan", "convened a royal debate before converting to Judaism")\n', '("Khazars", "Letter of King Joseph asserts that after royal conversion", "Israel returned with the people of Qazaria in complete repentance")\n', '("Khazars", "Some evidence suggests that Khazarian king saw himself as a", "defender of Jews beyond Khazaria\'s borders")\n', '("Khazars", "The theory of a significant Khazar component in the admixture of Ashkenazi Jews has been", "disputed by most scholars")\n', '("Khazars", "Theory of Ashkenazi descent from Khazars has been occasionally", "manipulated to deny Jewish nationhood")\n', '("Khazars", "Claims of Khazar origins", "expounded by Paul Wexler and Shlomo Sand, among others")\n', '("Hen Ogledd", "was known as", "the Old North")\n', '("Hen Ogledd", "was located in", "Northern England")\n', '("Hen Ogledd", "extended to", "the southern Scottish Lowlands")\n', '("Hen Ogledd", "included the kingdom of", "Elmet")\n', '("Hen Ogledd\'s", "population spoke", "Cumbric")\n', '("Hen Ogledd", "was distinct from", "Great Britain")\n', '("Hen Ogledd", "comprised the major kingdom of", "Gododdin")\n', '("Hen Ogledd", "comprised the major kingdom of", "Rheged")\n', '("Hen Ogledd", "contained", "the Kingdom of Strathclyde")\n', '("Gododdin", "included", "Lleuddiniawn")\n', '("Gododdin", "included", "Manaw Gododdin")\n', '("Manaw Gododdin", "was part of", "the territory of the Gododdin")\n', '("Elmet", "was a kingdom in the Hen Ogledd located in", "western Yorkshire")\n', '("Rheged", "was part of", "the Kingdom of Northumbria")\n', '("Kingdom of Strathclyde", "was known in Welsh as", "Ystrad Clud")\n', '("Strathclyde", "was incorporated into", "the Kingdom of Scotland")\n', '("Hen Ogledd", "has ties to", "Walburn")\n', '("Ystrad Clud", "centered at", "Dumbarton")\n', '("Cumbria", "emerged from", "the Brittonic region of northwestern England")\n', '("Anglian peoples", "controlled areas like", "Deira and Bernicia")\n', '("Tyne", "marked a lack of Roman control north of", "Roman Britain")\n', '("Solway", "marked a lack of Roman control north of", "Roman Britain")\n', '("Angle kingdoms", "included", "Deira and Bernicia")\n', '("Angle kingdoms", "had Brittonic-derived names suggesting possible earlier Brittonic kingdoms in", "the Hen Ogledd")\n', '("Humber", "south of this were Anglo-Saxons north of", "the Firth of Clyde")\n', '("Firth of Clyde", "north of this was", "the Kingdom of Scotland")\n', '("Firth of Forth", "north of this was", "the Kingdom of Scotland")\n', '("Scottish", "descendants featured in Welsh poetry and", "the Welsh Triads")\n', '("Dumbarton", "is center of the kingdom of", "Strathclyde")\n', '("Cumbric", "was spoken in", "the Hen Ogledd")\n', '("Tyne", "marked area with decreasing Roman control from AD 100 onward", "Roman Britain")\n', '("Solway", "marked area with decreasing Roman control from AD 100 onward", "Roman Britain")\n', '("Alamannia", "established by", "Alemanni")\n', '("Alemanni", "broke through", "Roman limes")\n', '("Alemanni", "expanded from", "Main River basin")\n', '("Alamannia", "settled on", "left bank of the Rhine")\n', '("Alamannia", "ruled by", "independent tribal kings")\n', '("Alamannia", "became a duchy of", "Frankish Empire")\n', '("Conrad I of East Francia", "started to form", "Holy Roman Empire")\n', '("Alamannia", "became", "Duchy of Swabia")\n', '("Scribes", "used", "Suebia interchangeably with Alamannia")\n', '("Alamannia", "centred on", "Lake Constance")\n', '("Alamannia", "included", "High Rhine")\n', '("Alamannia", "included", "Black Forest")\n', '("Alamannia", "included", "Alsace")\n', '("Alamannia", "upper boundary", "Danube River basin")\n', '("Burgundy", "had unclear boundary towards", "Alamannia")\n', '("Alamannia", "south-west in", "Aare River basin")\n', '("Raetia Curiensis", "ruled by", "Alemannic counts")\n', '("Raetia Curiensis", "became part of", "Duchy of Swabia")\n', '("Alamannia", "corresponds to", "Alemannic German area")\n', '("Alemannic German area", "includes", "French Alsace")\n', '("Alemannic German area", "includes", "German Baden")\n', '("Alemannic German area", "includes", "Swabia")\n', '("Alemannic German area", "includes", "German-speaking Switzerland")\n', '("Alemannic German area", "includes", "Austrian Vorarlberg")\n', '("Alamannia", "expanded during", "High Middle Ages")\n', '("Alamannia", "received influence of", "Bern")\n', '("Alamannia", "expanded into", "Grisons")\n', '("Alemanni", "pushed south from", "Main basin")\n', '("Alemanni", "settled new territory on", "either side of the Rhine")\n', '("Alamannia under Frankish rule", "more or less undisputed", "7th to 13th centuries")\n', '("Hegowe", "located between", "Lake Constance, upper Danube and Swabian Jura")\n', '("Perahtoltaspara", "in the upper", "Neckar basin")\n', '("Augestigowe", "along the", "Lech River")\n', '("Counties of Alamannia", "organised into", "pagi")\n', '("Argowe", "territory between", "Alamannia and Upper Burgundy")\n', '("Argovia", "disputed territory between", "Alamannia and Burgundy")\n', '("Alamannia", "went under", "Carolingian rule")\n', '("Alamannia", "became a province of", "East Francia")\n', '("Alemannic German", "persists as", "a separate family of dialects within High German")\n', '("Germany", "names derived from", "Alamannia in various languages")\n', '("Clovis I", "defeated", "Alemanni at Battle of Tolbiac")\n', '("Julian the Apostate", "made treaties with", "Alemannic kings")\n', '("Pepin the Short and Carloman", "waged campaign to reduce", "Alamannia")\n', '("Pepin the Short", "son of", "Pepin of Heristal")\n', '("Burchard I Hunfriding", "took title of", "duke of Swabia")\n', '("Duchy of Swabia", "ruled by", "Hohenstaufen")\n', '("Hohenstaufen", "ruled during", "1079–1268")\n', '("Duchy of Swabia", "disestablished with", "execution of Conradin")\n', '("Alemannia and Burgundy", "boundary fixed in", "843")\n']
+range(1, 350) 4
+['("Immanuel Kant", "buried in", "Kaliningrad")\n', '("Kaliningrad", "has a port on", "Baltic Sea")\n', '("Baltic Sea", "is connected to", "German Bight of the North Sea")\n', '("German Bight", "bounded by", "Denmark and Germany to the east")\n']
+
+['("Immanuel Kant", "is called", "father of modern philosophy")\n', '("Immanuel Kant", "is called", "father of modern ethics")\n', '("Immanuel Kant", "is called", "father of modern aesthetics")\n', '("Immanuel Kant", "introduced", "rationalism and empiricism")\n', '("Immanuel Kant", "argued", "space and time are forms of intuition")\n', '("Kant", "influenced", "sociology and anthropology")\n', '("Kant", "believed", "reason is the source of morality")\n', '("Kant", "born in", "Königsberg")\n', '("Anna Regina Reuter", "was born in", "Königsberg")\n', '("Johann Georg Kant", "was a harness-maker from", "Memel")\n', '("Immanuel Kant\'s", "education focused on", "Latin and religious instruction")\n', '("University of Königsberg", "was", "Kant\'s professional place for life")\n', '("Kant", "published first philosophical work as", "Thoughts on the True Estimation of Living Forces")\n', '("Kant", "received a license to lecture at", "University of Königsberg")\n', '("Kant", "wrote Universal Natural History and Theory of the Heavens supporting", "nebular hypothesis")\n', '("Kant", "deduced", "the Milky Way was a large disk of stars")\n', '("Kant", "appointed", "Full Professor of Logic and Metaphysics at University of Königsberg")\n', '("Kant", "criticized", "Emanuel Swedenborg\'s Dreams of a Spirit-Seer")\n', '("Kant", "famous for", "Critique of Pure Reason")\n', '("Kant\'s", "philosophy called into question", "traditional authority of politics and religion")\n', '("Kant\'s", "critical project aims to", "secure human autonomy from threat of mechanism")\n', '("Kant\'s", "work", "Lectures on Anthropology")\n', '("Kant", "called", "nature as the great artist")\n', '("Kant\'s", "political philosophy", "doctrine of the state based upon law")\n', '("Kant", "opposed", "democracy meaning direct democracy at his time")\n', '("Kant", "believed in", "republican ideals and forms of governance")\n', '("Kant\'s", "criticism targeted", "external ritual, superstition, and hierarchical church order")\n', '("Kant\'s", "aesthetic theory is developed in", "Critique of the Power of Judgment")\n', '("Kant", "lectured on", "anthropology")\n', '("Kant", "proposed", "hierarchy of racial categories")\n', '("Kant", "views on race", "changed significantly in last decade of life")\n', '("Immanuel Kant State University of Russia", "formed", "Kant Society")\n', '("Kant\'s", "influence", "extends to social, behavioral, and physical sciences")\n', '("Immanuel Kant", "believed", "mathematical truths were forms of synthetic a priori knowledge")\n', '("Kant", "influenced", "Jean Piaget and Carl Gustav Jung")\n', '("Kant", "rejected", "views related to racial hierarchies late in life")\n', '("Immanuel Kant", "was one of", "notable Enlightenment thinkers to defend racism")\n', '("Kant", "believed", "Jews were incapable of transcending material forces")\n', '("Kant\'s", "political thought", "listed conditions for ending wars")\n', '("Immanuel Kant", "foreshadowed", "ideas of democratic peace theory")\n', '("Immanuel Kant", "influenced", "Marxism, positivism, phenomenology")\n', '("Kant\'s", "positive influence celebrated by", "Reinhold, Fichte, Schelling, Hegel, Novalis")\n', '("Samuel Taylor Coleridge", "was influenced by", "Kant")\n', '("Kant\'s", "doctrine", "influenced Alexander Wendt\'s democratic peace theory")\n', '("Kant", "influenced", "Jürgen Habermas and John Rawls")\n', '("Kant", "challenged", "Forster on human race distinctions")\n', '("Kant", "believed in", "unity of humanity")\n', '("Kant", "criticized", "Spinozism and pantheism")\n', '("Kant", "philosophy shifted to", "Neo-Kantianism in 1865")\n', '("Kant", "reduced", "religiosity to rationality and religion to morality")\n', '("Kant", "lectured", "twenty-three years on anthropology")\n', '("Kant", "analyzed", "nature of the four temperaments")\n', '("Kant", "viewed anthropology as", "physiological and pragmatic approaches")\n', '("Kaliningrad", "was known as", "Königsberg until 1946")\n', '("Kaliningrad", "is the administrative centre of", "Kaliningrad Oblast")\n', '("Kaliningrad", "is situated between", "Lithuania and Poland")\n', '("Kaliningrad", "is located in", "Russia")\n', '("Kaliningrad", "belongs to", "Northwestern Federal District")\n', '("Königsberg", "was founded in honor of", "King Ottokar II of Bohemia")\n', '("Königsberg", "became the capital of", "State of the Teutonic Order")\n', '("Königsberg", "was renamed to", "Kaliningrad in 1946")\n', '("Königsberg", "was the easternmost large city in", "Germany before WW II")\n', '("Kaliningrad", "is the only ice-free Russian port on the", "Baltic Sea")\n', '("Kaliningrad", "was heavily damaged by", "Allied bombing in 1944")\n', '("Kaliningrad", "was captured by", "the Soviet Union in 1945")\n', '("Kaliningrad", "was renamed in honor of", "Mikhail Kalinin")\n', '("Kaliningrad", "is an exclave of", "Russia")\n', '("Kaliningrad Oblast", "was named after", "Mikhail Kalinin")\n', '("E. T. A. Hoffmann", "was born in", "Königsberg")\n', '("Kaliningrad", "was part of", "German Confederation")\n', '("Kaliningrad", "was part of", "North German Confederation")\n', '("Kaliningrad", "was previously part of", "German Empire")\n', '("Kaliningrad", "was known as", "Königsberg during Weimar Germany period")\n', '("Kaliningrad", "was known as", "Königsberg during Nazi Germany period")\n', '("Kaliningrad", "formerly had a name related to", "King of Sweden during Seven Years\' War")\n', '("Kaliningrad", "was offered to", "Lithuanian SSR according to some historians")\n', '("Kaliningrad", "was renamed by", "Leonid Brezhnev\'s orders")\n', '("Kaliningrad", "was part of", "Polish People\'s Republic as determined by Potsdam Agreement")\n', '("Baltic Sea", "is an arm of", "Atlantic Ocean")\n', '("Baltic Sea", "is enclosed by", "Denmark")\n', '("Baltic Sea", "is enclosed by", "Estonia")\n', '("Baltic Sea", "is enclosed by", "Finland")\n', '("Baltic Sea", "is enclosed by", "Germany")\n', '("Baltic Sea", "is enclosed by", "Latvia")\n', '("Baltic Sea", "is enclosed by", "Lithuania")\n', '("Baltic Sea", "is enclosed by", "Poland")\n', '("Baltic Sea", "is enclosed by", "Russia")\n', '("Baltic Sea", "is enclosed by", "Sweden")\n', '("Baltic Sea", "drains through", "Danish Straits")\n', '("Baltic Sea", "includes", "Gulf of Bothnia")\n', '("Baltic Sea", "includes", "Gulf of Finland")\n', '("Baltic Sea", "includes", "Gulf of Riga")\n', '("Baltic Sea", "is connected by", "artificial waterways")\n', '("Baltic Sea", "is connected to", "White Sea")\n', '("Baltic Sea", "is connected via", "Kiel Canal")\n', '("White Sea–Baltic Canal", "connects", "Baltic Sea to the White Sea")\n', '("Kiel Canal", "connects", "Baltic Sea to the North Sea")\n', '("Øresund Bridge", "connects", "Copenhagen and Malmö")\n', '("Baltic Sea", "includes", "Åland")\n', '("Baltic Sea", "includes", "Bay of Mecklenburg")\n', '("Baltic Sea", "includes", "Bay of Kiel")\n', '("Gulf of Bothnia", "is bordered by", "Åland")\n', '("Denmark", "collected Sound Dues from ships at", "Helsingør")\n', '("Denmark", "collected Sound Dues from ships at", "Nyborg")\n', '("Denmark", "collected Sound Dues from ships at", "Fredericia")\n', '("Bornholm", "is part of", "Baltic Sea")\n', '("Gotland", "is part of", "Baltic Sea")\n', '("German Bight", "is a bight of", "North Sea")\n', '("German Bight", "bounded by", "Netherlands and Germany to the south")\n', '("German Bight", "limited by", "Dogger Bank")\n', '("German Bight", "contains", "Frisian and Danish Islands")\n', '("Wadden Sea", "is approximately ten to twelve kilometres wide at", "German Bight")\n', '("Frisian Islands", "known as", "Frisia")\n', '("Southern portion of German Bight", "also known as", "Heligoland Bight")\n', '("Wadden Sea", "protected by", "Lower Saxon Wadden Sea National Park")\n', '("Wadden Sea", "protected by", "Schleswig-Holstein Wadden Sea National Park")\n', '("Wadden Sea", "protected by", "Hamburg Wadden Sea National Park")\n', '("German Bight", "contains", "Germany\'s only offshore oil rig Mittelplate")\n', '("German Bight", "contains", "offshore wind farms like Alpha Ventus")\n', '("German Bight", "plays important role as", "shipping lane")\n', '("Port of Hamburg", "approached through", "German Bight")\n', '("German Bight", "includes ports like", "Bremerhaven/Bremen")\n', '("German Bight", "includes ports like", "Emden")\n', '("German Bight", "includes ports like", "JadeWeserPort at Wilhelmshaven")\n', '("German Bight", "navigated by", "tidal channels")\n', '("East Frisian Islands", "can be reached on foot at", "low tide")\n', '("Sylt", "reached by", "railway-only Hindenburgdamm causeway")\n', '("Halligen", "have railway connections to", "mainland")\n', '("German Bight", "known for fishing", "crangon crangon")\n', '("Picts", "occupied", "Scotland")\n', '("Scotland", "located north of", "Firth of Forth")\n', '("Picts", "were called", "Caledonii descendants")\n', '("Picts", "were referred to as", "Pictland")\n', '("Pictish kingdom", "dominated by", "Fortriu")\n', '("Picts", "adopted as endonym", "Picti")\n', '("Pictish kingdom", "merged with", "Dál Riata")\n', '("Picts", "converted by", "Bede and Adomnán")\n', '("Picts", "had territories in", "Fotla and Fib")\n', '("Picts", "related to", "people in Wales")\n', '("Picts", "related to", "people in Northern Ireland")\n', '("Picts", "related to", "people in Northumbria")\n', '("Picts", "settled in areas like", "Argyll and Caithness")\n', '("Picts", "settled in areas like", "Sutherland and Galloway")\n', '("Picts", "settled in areas like", "Buchan and Angus")\n', '("Picts", "settled in areas like", "Inverness and Moray")\n', '("Picts", "settled in areas like", "Orkney")\n', '("Picts", "cultivated", "wheat and barley")\n', '("Picts", "cultivated", "oats and rye")\n', '("Picts", "grew vegetables like", "onions")\n', '("Picts", "grew vegetables like", "peas")\n', '("Picts", "grew vegetables like", "beans")\n', '("Picts", "grew vegetables like", "turnips")\n', '("Picts", "cultivated", "skirret")\n', '("Picts", "gathered", "wild garlic")\n', '("Picts", "gathered", "nettles")\n', '("Khazars", "established a major commercial empire covering", "European Russia, southern Ukraine, Crimea, and Kazakhstan")\n', '("Khazars", "created the most powerful polity from", "the break-up of the Western Turkic Khaganate")\n', '("Khazars", "commanded the western marches of", "the Silk Road")\n', '("Khazars", "played a key commercial role as a crossroad between", "China, the Middle East and Kievan Rus\'")\n', '("Khazaria", "served as a buffer state between", "the Byzantine Empire and both the nomads of the northern steppes and the Umayyad and Abbasid Caliphates")\n', '("Khazars", "dominated area extending from", "the Volga-Don steppes to the eastern Crimea and the northern Caucasus")\n', '("Byzantium", "encouraged the Alans to attack", "Khazaria")\n', '("Byzantium", "sought to obtain an entente with", "the rising Rus\' power")\n', '("Sviatoslav I of Kiev", "conquered", "the capital Atil and ended Khazaria\'s independence")\n', '("Khazarian", "former provinces", "in Volga Bulgaria known as Turks")\n', '("Hungarians", "known as Turks in", "Byzantium")\n', '("Khazars", "adopted the Hebrew script after", "their conversion to Judaism")\n', '("Khazaria", "state was polyglot and polyethnic", "")\n', '("Khazar", "native religion thought to be", "Tengrism")\n', '("Khazar", "polyethnic populace appears to have been a multiconfessional mosaic of", "pagan, Tengrist, Jewish, Christian and Muslim worshippers")\n', '("Khazars", "ruling elite said to have converted to", "Rabbinic Judaism in the 8th century")\n', '("Khazars", "dispersed after the fall of", "the Empire")\n', '("Ashkenazi Jews", "theory of descent from", "a hypothetical Khazarian Jewish diaspora")\n', '("Khazars", "legacy in the name of", "the Caspian Sea")\n', '("Khazar", "language survival is a matter of", "intricate difficulty")\n', '("Khazars", "language of ruling elite probably", "an eastern variety of Shaz Turkic")\n', '("Khazars", "subject tribes appear to have spoken varieties of", "Lir Turkic, such as Oğuric")\n', '("Khazars", "language of royal house and core tribes likely", "Eastern Common Turkic")\n', '("Khazars", "formed from", "a congeries of steppe nomads and peoples subordinated to a core Turkic leadership")\n', '("Khazars", "drove off the", "Asian Avars")\n', '("Khazars", "confederation reached land of", "the Akatziroi, allies of Byzantium")\n', '("Khazars", "state of Khazaria began to form after", "630 CE from the break-up of the Göktürk Khaganate")\n', '("Khazars", "khaganate consolidated further westwards", "")\n', '("Khazars", "Qağanate took shape from ruins of", "this nomadic empire")\n', '("Khazars", "Qağanate developed as", "an international trading hub")\n', '("Byzantium", "sought alliances with Khazars", "")\n', '("Khazars", "king\'s role was", "primarily sacral")\n', '("Khazars", "lesser king managed and commanded", "the military")\n', '("Khazars", "traditionally sought", "a sacral Qağanate")\n', '("Khazars", "ruling stratum was ethnically and linguistically distinct from", "its subject peoples")\n', '("Khazars", "hired", "soldiers (mercenaries)")\n', '("Khazars", "controlled and exacted tribute from", "25 to 30 different nations and tribes")\n', '("Khazars", "economy based on", "trade and tribute")\n', '("Khazars", "Khazars dominated the Crimea until", "the 10th century")\n', '("Khazars", "Great state\'s", "economic base")\n', '("Byzantium", "diplomatic policy towards steppe peoples generally consisted of encouraging them to", "fight among themselves")\n', '("Byzantium", "referred to Khazars as", "Turks")\n', '("Khazars", "raided Transcaucasian principalities under", "Muslim dominion")\n', '("Khazars", "Umayyads tightened grip on", "Armenia")\n', '("Khazars", "fought a series of wars against", "the Umayyad Caliphate and its Abbasid successor")\n', '("Khazars", "wars against the Umayyad Caliphate led to", "the First Arab-Khazar War")\n', '("Khazars", "Arab forces advanced on", "Khazar capital Balanjar")\n', '("Khazars", "struck back against", "Arabs under Hasan ibn al-Nu\'man")\n', '("Khazars", "Second Arab-Khazar War began with", "raids across the Caucasus in the early 8th century")\n', '("Khazars", "invasion by", "30,000 Khazars into Armenia")\n', '("Khazars", "Caliph Yazid II responded sending Arab troops north, driving the Khazars back across", "the Caucasus")\n', '("Khazars", "prince Barjik invaded Iranian Azerbaijan and defeated", "Arab forces")\n', '("Khazars", "Khazar army defeated, and the Khazars", "surrendered to Marwan Ibn Muhammad")\n', '("Khazars", "The Qağan was forced to accept terms involving his conversion to", "Islam")\n', '("Khazars", "relations between the Khazars and the Abbasids became", "cordial")\n', '("Khazars", "rebellion broke out in", "the Khazar khaganate")\n', '("Khazars", "Kabar tribes joined", "the Hungarians")\n', '("Khazars", "territory between the Carpathians and the", "Dnieper River known as Etelköz")\n', '("Khazars", "Varangians and the eastern Slavs became", "new neighbours of the Hungarians")\n', '("Khazars", "Hungarians and their allies, the Kabars, started a series of raids from", "the Etelköz into the Carpathian Basin")\n', '("Khazars", "Varangian Rus\' began probing south down", "the waterways controlled by the Khazars")\n', '("Khazars", "allowed the Rus\'", "trade route along the Volga River")\n', '("Khazars", "Rus\' warlords launched several wars against", "the Khazar Qağanate")\n', '("Khazars", "Byzantine", "ally at times")\n', '("Khazars", "The Kievan Rus\' ruler Sviatoslav I", "destroyed Khazar imperial power in the 960s")\n', '("Khazars", "capital Atil", "fell to Sviatoslav I")\n', '("Khazars", "vanquishing of", "the Khazar traditions is associated with Vladimir\'s conversion")\n', '("Khazars", "Kyiv is often associated with", "a Khazarian foundation")\n', '("Khazars", "Sarkel fortress", "with assistance from Khazaria\'s Byzantine ally")\n', '("Khazars", "Khazar", "fortresses like Sarkel and Tamatarkha")\n', '("Khazars", "Khazaria\'s tributary empire undermined by", "Pechenegs and the Rus\'")\n', '("Khazars", "king Benjamin", "fought against the allied forces of five lands")\n', '("Khazars", "suffered an invasion by", "the Alans")\n', '("Khazars", "Benjamin\'s son Aaron II faced an invasion led by", "the Alans")\n', '("Khazars", "Alliance with Byzantine empire began to", "collapse")\n', '("Khazars", "Prince Oleg\'s campaign against", "Khazars recounted in the Schechter Letter")\n', '("Khazars", "kingdom", "lingered on until 1224 according to Poliak")\n', '("Khazars", "possibly survived as a", "minor rump state")\n', '("Khazars", "Ibn Hawqal and al-Muqaddasi refer to", "Atil after sacking")\n', '("Khazars", "Al-Biruni\'s time (1048)", "Atil was in ruins")\n', '("Khazars", "aftermath: impact, decline and dispersion", "")\n', '("Khazars", "Poliak argued that the Khazar kingdom did not wholly succumb to", "Sviatoslav\'s campaign")\n', '("Khazars", "Kimeks and Qipchaqs pressured the", "Oğuz")\n', '("Khazars", "Oğuz in turn pushed the", "Pechenegs west towards Byzantium")\n', '("Khazars", "Khazar", "heritage in the orderly hierarchical system of succession by scales")\n', '("Khazars", "proto-Hungarian Pontic tribe practiced their institutional model, a dual rule of", "a ceremonial kende-kündü and a gyula")\n', '("Khazars", "dissident group of Khazars known as Qabars joined", "the Hungarians in migration")\n', '("Khazars", "Elements within the Hungarian population perpetuated", "Khazar traditions")\n', '("Khazars", "Hungary referred to as", "Western Tourkia in contrast to Khazaria")\n', '("Khazars", "Hungarians", "Christianized Khazars were known as \'black Hungarians\'")\n', '("Khazars", "Yemeni Jews", "another example of a state which adopted Judaism between the fall of the Second Temple and modern times")\n', '("Khazars", "stimulated messianic aspirations", "for a return to Israel")\n', '("Khazars", "Solomon ben Duji", "attempted to advocate for the liberation of, and return to, Palestine")\n', '("Khazars", "Jewish", "origin myth potentially influenced by Menachem\'s movement")\n', '("Khazars", "rabbinical students descended from", "Khazars encountered by Avraham ibn Daud in Toledo, Spain in the 1160s")\n', '("Khazars", "Jewish sect known as the Karaites", "claimed by some to have Khazar origins")\n', '("Khazars", "Scholarship on", "Khazar history questions the connection between Karaites and Khazars")\n', '("Khazars", "Some Jews from Islamic world and Byzantium migrated to", "Khazaria")\n', '("Khazars", "Expositio in Matthaeum Evangelistam refers to", "Khazars observing all rules of Judaism")\n', '("Khazars", "Coins bearing inscriptions suggest", "Judaization took place around 837/8")\n', '("Khazars", "Eldad ha-Dani informed Spanish Jews that part of the Ten Lost Tribes dwelt in", "the land of the Khazars")\n', '("Khazars", "Ibn al-Faqîh wrote that", "all the Khazars are Jews, but have been Judaized recently")\n', '("Khazars", "The king of Khazaria", "drive out sorcerers and received angelic visitations")\n', '("Khazars", "King Bulan", "convened a royal debate before converting to Judaism")\n', '("Khazars", "Letter of King Joseph asserts that after royal conversion", "Israel returned with the people of Qazaria in complete repentance")\n', '("Khazars", "Some evidence suggests that Khazarian king saw himself as a", "defender of Jews beyond Khazaria\'s borders")\n', '("Khazars", "The theory of a significant Khazar component in the admixture of Ashkenazi Jews has been", "disputed by most scholars")\n', '("Khazars", "Theory of Ashkenazi descent from Khazars has been occasionally", "manipulated to deny Jewish nationhood")\n', '("Khazars", "Claims of Khazar origins", "expounded by Paul Wexler and Shlomo Sand, among others")\n', '("Hen Ogledd", "was known as", "the Old North")\n', '("Hen Ogledd", "was located in", "Northern England")\n', '("Hen Ogledd", "extended to", "the southern Scottish Lowlands")\n', '("Hen Ogledd", "included the kingdom of", "Elmet")\n', '("Hen Ogledd\'s", "population spoke", "Cumbric")\n', '("Hen Ogledd", "was distinct from", "Great Britain")\n', '("Hen Ogledd", "comprised the major kingdom of", "Gododdin")\n', '("Hen Ogledd", "comprised the major kingdom of", "Rheged")\n', '("Hen Ogledd", "contained", "the Kingdom of Strathclyde")\n', '("Gododdin", "included", "Lleuddiniawn")\n', '("Gododdin", "included", "Manaw Gododdin")\n', '("Manaw Gododdin", "was part of", "the territory of the Gododdin")\n', '("Elmet", "was a kingdom in the Hen Ogledd located in", "western Yorkshire")\n', '("Rheged", "was part of", "the Kingdom of Northumbria")\n', '("Kingdom of Strathclyde", "was known in Welsh as", "Ystrad Clud")\n', '("Strathclyde", "was incorporated into", "the Kingdom of Scotland")\n', '("Hen Ogledd", "has ties to", "Walburn")\n', '("Ystrad Clud", "centered at", "Dumbarton")\n', '("Cumbria", "emerged from", "the Brittonic region of northwestern England")\n', '("Anglian peoples", "controlled areas like", "Deira and Bernicia")\n', '("Tyne", "marked a lack of Roman control north of", "Roman Britain")\n', '("Solway", "marked a lack of Roman control north of", "Roman Britain")\n', '("Angle kingdoms", "included", "Deira and Bernicia")\n', '("Angle kingdoms", "had Brittonic-derived names suggesting possible earlier Brittonic kingdoms in", "the Hen Ogledd")\n', '("Humber", "south of this were Anglo-Saxons north of", "the Firth of Clyde")\n', '("Firth of Clyde", "north of this was", "the Kingdom of Scotland")\n', '("Firth of Forth", "north of this was", "the Kingdom of Scotland")\n', '("Scottish", "descendants featured in Welsh poetry and", "the Welsh Triads")\n', '("Dumbarton", "is center of the kingdom of", "Strathclyde")\n', '("Cumbric", "was spoken in", "the Hen Ogledd")\n', '("Tyne", "marked area with decreasing Roman control from AD 100 onward", "Roman Britain")\n', '("Solway", "marked area with decreasing Roman control from AD 100 onward", "Roman Britain")\n', '("Alamannia", "established by", "Alemanni")\n', '("Alemanni", "broke through", "Roman limes")\n', '("Alemanni", "expanded from", "Main River basin")\n', '("Alamannia", "settled on", "left bank of the Rhine")\n', '("Alamannia", "ruled by", "independent tribal kings")\n', '("Alamannia", "became a duchy of", "Frankish Empire")\n', '("Conrad I of East Francia", "started to form", "Holy Roman Empire")\n', '("Alamannia", "became", "Duchy of Swabia")\n', '("Scribes", "used", "Suebia interchangeably with Alamannia")\n', '("Alamannia", "centred on", "Lake Constance")\n', '("Alamannia", "included", "High Rhine")\n', '("Alamannia", "included", "Black Forest")\n', '("Alamannia", "included", "Alsace")\n', '("Alamannia", "upper boundary", "Danube River basin")\n', '("Burgundy", "had unclear boundary towards", "Alamannia")\n', '("Alamannia", "south-west in", "Aare River basin")\n', '("Raetia Curiensis", "ruled by", "Alemannic counts")\n', '("Raetia Curiensis", "became part of", "Duchy of Swabia")\n', '("Alamannia", "corresponds to", "Alemannic German area")\n', '("Alemannic German area", "includes", "French Alsace")\n', '("Alemannic German area", "includes", "German Baden")\n', '("Alemannic German area", "includes", "Swabia")\n', '("Alemannic German area", "includes", "German-speaking Switzerland")\n', '("Alemannic German area", "includes", "Austrian Vorarlberg")\n', '("Alamannia", "expanded during", "High Middle Ages")\n', '("Alamannia", "received influence of", "Bern")\n', '("Alamannia", "expanded into", "Grisons")\n', '("Alemanni", "pushed south from", "Main basin")\n', '("Alemanni", "settled new territory on", "either side of the Rhine")\n', '("Alamannia under Frankish rule", "more or less undisputed", "7th to 13th centuries")\n', '("Hegowe", "located between", "Lake Constance, upper Danube and Swabian Jura")\n', '("Perahtoltaspara", "in the upper", "Neckar basin")\n', '("Augestigowe", "along the", "Lech River")\n', '("Counties of Alamannia", "organised into", "pagi")\n', '("Argowe", "territory between", "Alamannia and Upper Burgundy")\n', '("Argovia", "disputed territory between", "Alamannia and Burgundy")\n', '("Alamannia", "went under", "Carolingian rule")\n', '("Alamannia", "became a province of", "East Francia")\n', '("Alemannic German", "persists as", "a separate family of dialects within High German")\n', '("Germany", "names derived from", "Alamannia in various languages")\n', '("Clovis I", "defeated", "Alemanni at Battle of Tolbiac")\n', '("Julian the Apostate", "made treaties with", "Alemannic kings")\n', '("Pepin the Short and Carloman", "waged campaign to reduce", "Alamannia")\n', '("Pepin the Short", "son of", "Pepin of Heristal")\n', '("Burchard I Hunfriding", "took title of", "duke of Swabia")\n', '("Duchy of Swabia", "ruled by", "Hohenstaufen")\n', '("Hohenstaufen", "ruled during", "1079–1268")\n', '("Duchy of Swabia", "disestablished with", "execution of Conradin")\n', '("Alemannia and Burgundy", "boundary fixed in", "843")\n']
+range(1, 350) 4
+{'id': '4_3', 'Question': ' Which country borders the area where the sea accessed by the port in the city where Immanuel Kant is buried meets another sea to the southwest?\n', 'Answer': 'Denmark', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Denmark'}, {'label': 'B', 'text': 'Picts'}, {'label': 'C', 'text': 'Khazars'}, {'label': 'D', 'text': 'Hen Ogledd'}, {'label': 'E', 'text': 'Alamannia'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'denmark'}, {'label': 'B', 'text': 'picts'}, {'label': 'C', 'text': 'khazars'}, {'label': 'D', 'text': 'cumbrians'}, {'label': 'E', 'text': 'alemania'}], 'answerKey': 'A', 'choicelevel': 2.5}, 'Question_decompositions': ['1: In which city is Immanuel Kant buried?\nA1: Kaliningrad\n\n', "2: What body of water does Kaliningrad's port access?\nA2: Baltic Sea\n\n", '3: What is the name of the area where the Baltic Sea meets another sea to the southwest?\nA3: German Bight\n\n', '4: What country, along with Germany, bounds the German Bight to the east?\nA4: Denmark'], 'Hops_wiki': [('Immanuel Kant', 'Kaliningrad'), ('Kaliningrad', 'Baltic Sea'), ('Baltic Sea', 'German Bight'), ('German Bight', 'Denmark')], 'Hops_cpnet': [('immanuel_kant', 'kaliningrad'), ('kaliningrad', 'baltic_sea'), ('baltic_sea', 'german_bight'), ('german_bight', 'denmark')], 'Triplets': ['("Immanuel Kant", "buried in", "Kaliningrad")', '("Kaliningrad", "has a port on", "Baltic Sea")', '("Baltic Sea", "is connected to", "German Bight of the North Sea")', '("German Bight", "bounded by", "Denmark and Germany to the east")'], 'Referred_files': [{'name': 'Immanuel Kant', 'line': 34}, {'name': 'Kaliningrad', 'line': 5}, {'name': 'Baltic Sea', 'line': 17}, {'name': 'German Bight', 'line': 3}], 'Question_triplet_answer': {100: [40, 91, 111, 167], 50: [49, 179, 215, 221], 25: [64, 171, 248, 250]}}
+time passed:  6447.2517619133
+Expected dollar:  0.005
+Lake Constance is Geography
+the Volga Don is Geography
+Crimea is Geography
+Baltic Sea is Geography
+Denmark is Geography
+Burgundy is Geography
+Germany is Geography
+Mittelplate is Geography
+German Empire is Geography
+Lech River is Geography
+Wadden Sea is Incident
+Schleswig Holstein Wadden Sea National Park is Geography
+Russia is Geography
+Wales is Geography
+Gulf of Riga is Geography
+Israel is Geography
+Argovia is Geography
+Caliph Yazid II is People
+Carpathians is Geography
+Dnieper River is Geography
+Aare River basin is Geography
+Gulf of Bothnia is Geography
+Åland is Geography
+Finland is Geography
+Austrian Vorarlberg is Geography
+Sound Dues is Geography
+Nyborg is Geography
+Novalis is People
+Transcaucasian is Geography
+the Caspian Sea is Geography
+Main River is Geography
+University of Königsberg is Geography
+Hamburg is Geography
+Wadden Sea National Park is Geography
+Neckar is Geography
+Byzantium is Geography
+Northwestern Federal District is Geography
+Königsberg is Geography
+Atlantic Ocean is Geography
+Strathclyde is Geography
+the Kingdom of Scotland is Geography
+Nazi Germany is Geography
+French Alsace is Geography
+Sylt is Geography
+Hindenburgdamm is Geography
+the Kingdom of Strathclyde is Geography
+Humber is Geography
+The Kievan Rus' is Geography
+Leonid Brezhnev's is People
+White Sea is Geography
+Bay of Mecklenburg is Geography
+the Soviet Union is Geography
+Ukraine is Geography
+Kazakhstan is Geography
+Pepin the Short is People
+Poliak is People
+Kingdom of Strathclyde is Geography
+Ystrad Clud is Geography
+Yemeni is Geography
+Lower Saxon Wadden Sea National Park is Geography
+Inverness and Moray is Geography
+the Kingdom of Northumbria is Geography
+Alsace is Geography
+the North Sea is Geography
+Scotland is Geography
+Firth of Forth is Geography
+Conradin is People
+Marwan Ibn Muhammad is People
+Switzerland is Geography
+Armenia is Geography
+Black Forest is Geography
+Estonia is Geography
+Iranian Azerbaijan is Geography
+Hungary is Geography
+North Sea is Geography
+Northern Ireland is Geography
+the Volga River is Geography
+Dogger Bank is Geography
+Frankish Empire is Geography
+Fredericia is Geography
+Poland is Geography
+7th to 13th centuries is Geography
+Port of Hamburg is Incident
+Sviatoslav I of Kiev is People
+Alemanni at Battle of Tolbiac is Geography
+England is Geography
+Spain is Geography
+Lithuania is Geography
+entities:  {'Vorarlberg', 'Toledo', 'Ystrad', 'Sea', 'Tolbiac', 'Forest', 'Scotland', 'Volga', 'Saxon', "Rus'", 'Atil', '13th', 'Wales', 'Carpathians', 'Dogger', 'Britain', 'England', 'Burchard', 'Hindenburgdamm', 'II', 'Firth', 'Northern', 'Novalis', 'Finland', 'Yazid', 'Federal', 'Byzantium', 'Caspian', 'Ogledd', 'Denmark', 'Fredericia', 'Solomon', 'Neckar', 'Hungary', 'Ireland', 'Poliak', 'republican', '7th', 'Crimea', 'Wilhelmshaven', 'John', 'Mecklenburg', 'Sviatoslav', 'Frankish', 'Mittelplate', 'Northwestern', 'Moray', 'Jürgen', 'Soviet', 'Johann', 'Kiev', 'Nazi', 'Qipchaqs', 'Austrian', 'Bight', 'basin', 'Spain', 'Paul', 'Dnieper', 'Aare', 'Lech', 'Switzerland', 'Barjik', 'Åland', 'Union', 'Yemeni', 'Baltic', 'White', 'Transcaucasian', 'National', 'Khazaria', 'Oleg', 'Forth', 'Lower', 'Port', 'Empire', 'Picts', 'Park', 'Hegel', 'Constance', 'Sound', 'Buchan', 'Poland', 'Gulf', 'Argovia', 'Dues', 'Hen', 'Pepin', 'Black', 'Ukraine', 'Marwan', 'Kant', 'North', 'centuries', 'Riga', 'Strathclyde', 'Estonia', 'Khazars', 'Battle', 'Alemanni', 'Northumbria', 'Holstein', 'French', 'Swabia', 'Clud', 'Armenia', 'Joseph', 'Bothnia', 'Humber', 'west', 'Königsberg', 'Benjamin', 'Cumbria', 'Caliph', 'Leonid', 'Menachem', 'Muhammad', 'Ocean', 'Inverness', 'Conradin', 'Azerbaijan', 'Avraham', 'Iranian', 'Atlantic', 'Russia', 'Burgundy', 'Swedenborg', 'District', 'Khazar', 'Nyborg', 'ben', 'ibn', 'Schleswig', 'Kingdom', 'German', 'Kazakhstan', 'Lake', 'Germany', 'Hamburg', 'Lithuania', 'Immanuel', "Brezhnev's", 'Wadden', 'Israel', 'Sylt', 'River', 'Bay', 'Main', 'Alsace', 'Alamannia', 'University', 'Qazaria', 'Kaliningrad', 'Daud', 'Bank', 'Kiel', 'Short', 'Ibn', 'Kievan'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Immanuel Kant' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Immanuel Kant
+Education
+Latin
+Religious instruction
+Anthropology
+Physiological and pragmatic approaches
+Aesthetic theory
+Critique of the Power of Judgment
+Political thought
+Republic ideals and forms of governance
+Positive influence celebrated by Reinhold, Fichte, Schelling, Hegel, and Novalis
+Influenced sociology and anthropology
+Views on race
+Criticism targeted external ritual, superstition, and hierarchical church order
+License to lecture at University of Königsberg
+Appointed Full Professor of Logic and Metaphysics at University of Königsberg
+Received a license to lecture at University of Königsberg
+Influenced Jürgen Habermas and John Rawls
+Deduced the Milky Way was a large disk of stars
+Born in Königsberg
+Buried in Kaliningrad
+Influenced Marxism, positivism, phenomenology
+Introduced rationalism and empiricism
+Wrote Universal Natural History and Theory of the Heavens supporting nebular hypothesis
+
+gpt_entity_particular(): entity list: 
+ ['Influenced Marxism, positivism, phenomenology', 'Political thought', 'Criticism targeted external ritual, superstition, and hierarchical church order', 'Born in Königsberg', 'Republic ideals and forms of governance', 'Critique of the Power of Judgment', 'Appointed Full Professor of Logic and Metaphysics at University of Königsberg', 'Physiological and pragmatic approaches', 'Anthropology', 'Views on race', 'Religious instruction', 'Education', 'Wrote Universal Natural History and Theory of the Heavens supporting nebular hypothesis', 'Influenced Jürgen Habermas and John Rawls', 'Immanuel Kant', 'Latin', 'Received a license to lecture at University of Königsberg', 'Buried in Kaliningrad', 'Deduced the Milky Way was a large disk of stars', 'Influenced sociology and anthropology', 'License to lecture at University of Königsberg', 'Introduced rationalism and empiricism', 'Positive influence celebrated by Reinhold, Fichte, Schelling, Hegel, and Novalis', 'Aesthetic theory']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'German Bight' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ German Bight
+offshore oil rig Mittelplate
+ports like JadeWeserPort at Wilhelmshaven
+fishing crangon crangon
+contains offshore wind farms like Alpha Ventus
+navigated by tidal channels
+known for fishing crangon crangon
+includes ports like JadeWeserPort at Wilhelmshaven
+is a bight of North Sea
+bounded by Denmark and Germany to the east
+includes ports like JadeWeserPort at Wilhelmshaven
+contains Germany's only offshore oil rig Mittelplate
+
+gpt_entity_particular(): entity list: 
+ ['German Bight', 'navigated by tidal channels', 'known for fishing crangon crangon', 'bounded by Denmark and Germany to the east', 'fishing crangon crangon', 'includes ports like JadeWeserPort at Wilhelmshaven', 'contains offshore wind farms like Alpha Ventus', 'is a bight of North Sea', "contains Germany's only offshore oil rig Mittelplate", 'offshore oil rig Mittelplate', 'ports like JadeWeserPort at Wilhelmshaven']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Khazars' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Khazars
+Atil
+Alamannia
+Lake Constance
+Volga-Don steppes
+Crimea
+Northern Caucasus
+Theory of Ashkenazi descent
+Immanuel Kant's
+education
+Latin
+religious instruction
+Khazar
+language survival
+Byzantium
+alliances
+Hungarians
+Christianized Khazars
+black Hungarians
+Jewish nationhood
+Kaliningrad
+German Empire
+dissident group
+Qabars
+migration
+Augestigowe
+Lech River
+Wadden Sea
+Schleswig-Holstein Wadden Sea National Park
+sacral Qağanate
+Critique of the Power of Judgment
+Picts
+nettles
+Alamannia and Burgundy
+boundary
+Hungarians
+Byzantine
+Christianization
+Letter of King Joseph
+Sviatoslav I
+Byzantine empire
+modern philosophy
+Khazar
+traditions
+Khazar Qağanate
+Christianized by Hungarians
+Kievan Rus'
+Hungary
+Christianized Khazars
+Ashkenazi descent
+Judaism
+Language of ruling elite
+eastern variety of Shaz Turkic
+Varangian Rus'
+traditional Qağanate
+Khazar origins
+Khazarian Jewish diaspora
+Kaliningrad
+Northwestern Federal District
+critique
+The Sound Dues
+Bay of Mecklenburg
+Gulf of Riga
+**...and many more**
+
+gpt_entity_particular(): entity list: 
+ ['boundary', 'Jewish nationhood', 'Wadden Sea', 'Khazar', 'traditions', 'Atil', 'nettles', 'Gulf of Riga', 'Bay of Mecklenburg', 'Lake Constance', 'Khazars', 'Northern Caucasus', 'Byzantine empire', 'Christianized Khazars', 'Christianization', 'Critique of the Power of Judgment', 'Byzantine', 'dissident group', 'Khazarian Jewish diaspora', 'traditional Qağanate', "Varangian Rus'", "Kievan Rus'", 'The Sound Dues', '**...and many more**', 'language survival', 'Northwestern Federal District', 'migration', 'Byzantium', 'Letter of King Joseph', 'Theory of Ashkenazi descent', "Immanuel Kant's", 'Sviatoslav I', 'Khazar origins', 'Schleswig-Holstein Wadden Sea National Park', 'Alamannia', 'German Empire', 'sacral Qağanate', 'Hungarians', 'Judaism', 'Kaliningrad', 'black Hungarians', 'Picts', 'Christianized by Hungarians', 'Hungary', 'Language of ruling elite', 'Latin', 'Lech River', 'Augestigowe', 'Crimea', 'religious instruction', 'Qabars', 'education', 'critique', 'Volga-Don steppes', 'alliances', 'Ashkenazi descent', 'modern philosophy', 'Alamannia and Burgundy', 'Khazar Qağanate', 'eastern variety of Shaz Turkic']
+
+gpt_entity_particular(): filtered entity: 
+ ['Khazar', 'Atil']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Denmark' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Denmark
+Baltic Sea
+
+gpt_entity_particular(): entity list: 
+ ['Baltic Sea', 'Denmark']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Hen Ogledd' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Hen Ogledd
+Hen Ogledd
+Kingdom of Strathclyde
+Strathclyde
+Great Britain
+Northern England
+Cumbric
+
+gpt_entity_particular(): entity list: 
+ ['Cumbric', 'Kingdom of Strathclyde', 'Northern England', 'Strathclyde', 'Hen Ogledd', 'Great Britain']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Alamannia' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Alamannia
+Khazars
+Ashkenazi Jews
+Sviatoslav I
+Lake Constance
+Alemanni
+Lake Constance
+Khazars
+Volga-Don steppes
+Crimea
+northern Caucasus
+The Volga-Don steppes
+Baltic Sea
+Burgundy
+Roman limes
+Khazars
+Ashkenazi descent
+Hungarians
+Christianized Khazars
+Hungarians
+Baltic Sea
+Kaliningrad
+Duchy of Swabia
+Argovia
+Cumbric
+critique of the Power of Judgment
+nebular hypothesis
+Outer space
+Judaism
+Sviatoslav's campaign
+Northwestern Federal District
+Aesthetics
+Bay of Mecklenburg
+Artistic
+Vytautas
+Vladimir's conversion
+Sacral Qağanate
+Swabia
+Aare River basin
+Atlantic Ocean
+Khazar origins
+Prussia
+Russian Empire
+Lithuanian SSR
+University of Königsberg
+sociology
+anthropology
+Lower Saxon Wadden Sea National Park
+German Aesthetic Theory
+Church order
+Königsberg
+Northern Federal District
+Königsberg
+Hydrographic
+Seafaring
+Kievan Rus
+Roman Empire
+Kant
+Fichte
+Roman Britain
+Estonia
+Königsberg
+Lithuanian SSR
+Swabia
+University of Königsberg
+
+gpt_entity_particular(): entity list: 
+ ['Church order', 'Roman Empire', 'Prussia', 'Lower Saxon Wadden Sea National Park', 'Russian Empire', 'University of Königsberg', 'Ashkenazi Jews', 'Kant', 'Duchy of Swabia', 'Bay of Mecklenburg', 'Northern Federal District', 'Lake Constance', 'Estonia', 'Khazars', 'Artistic', 'Sacral Qağanate', 'Lithuanian SSR', 'Christianized Khazars', 'Alemanni', 'Swabia', 'Northwestern Federal District', 'Vytautas', 'Fichte', 'Outer space', 'northern Caucasus', 'nebular hypothesis', 'German Aesthetic Theory', 'Königsberg', 'Hydrographic', 'Roman Britain', 'Kievan Rus', 'Khazar origins', 'Sviatoslav I', "Sviatoslav's campaign", 'Alamannia', 'The Volga-Don steppes', 'Baltic Sea', 'Hungarians', 'Atlantic Ocean', 'Judaism', 'Kaliningrad', 'sociology', "Vladimir's conversion", 'critique of the Power of Judgment', 'anthropology', 'Crimea', 'Cumbric', 'Roman limes', 'Aare River basin', 'Aesthetics', 'Volga-Don steppes', 'Ashkenazi descent', 'Argovia', 'Seafaring', 'Burgundy']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Baltic Sea' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+Baltic Sea
+
+gpt_entity_particular(): entity list: 
+ ['Baltic Sea']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Kaliningrad' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Khazars
+Atil
+Lake Constance
+Volga-Don steppes
+Area
+Sviatoslav I
+Alamannia
+Roman limes
+Khazar descent
+Ashkenazi descent
+Immanuel Kant's
+Education
+Latin
+Religious instruction
+Khazar language
+Byzantium
+Alliances
+Baltic Sea
+Denmark
+Germany
+Placenames
+First
+Second
+Pennsylvania
+German Empire
+Hungarians
+Christianized Khazars
+Immanuel Kant
+Ancestry
+Clans
+Kant
+Anthropology
+Physiological approaches
+Pragmatic approaches
+Kantian
+Aesthetic theory
+Critique of the Power of Judgment
+Kaliningrad
+Russia
+Port
+Baltic Sea
+Crimea
+Picts
+Endonyms
+Wales
+Northern Ireland
+Scottish
+Descendants
+Triads
+Hen Ogledd
+Great Britain
+Cumbric
+University of Königsberg
+Logic
+Metaphysics
+Prussian Empire
+Duchy of Swabia
+Khazar Qağanate
+Arab forces
+Armenia
+Duchy of Swabia
+Burgundy
+Alamannia
+Delta
+Dnieper River
+Etelköz
+
+gpt_entity_particular(): entity list: 
+ ['Northern Ireland', 'Khazar descent', 'University of Königsberg', 'Placenames', 'Atil', 'Kant', 'Duchy of Swabia', 'Lake Constance', 'Hen Ogledd', 'Khazars', 'Wales', 'Great Britain', 'First', 'Christianized Khazars', 'Critique of the Power of Judgment', 'Second', 'Russia', 'Germany', 'Scottish', 'Pragmatic approaches', 'Armenia', 'Arab forces', 'Descendants', 'Anthropology', 'Area', 'Kantian', 'Physiological approaches', 'Byzantium', 'Religious instruction', "Immanuel Kant's", 'Sviatoslav I', 'Denmark', 'Pennsylvania', 'Alamannia', 'German Empire', 'Logic', 'Endonyms', 'Baltic Sea', 'Hungarians', 'Port', 'Etelköz', 'Education', 'Metaphysics', 'Kaliningrad', 'Picts', 'Dnieper River', 'Immanuel Kant', 'Latin', 'Alliances', 'Clans', 'Crimea', 'Cumbric', 'Roman limes', 'Khazar language', 'Volga-Don steppes', 'Ashkenazi descent', 'Prussian Empire', 'Triads', 'Khazar Qağanate', 'Delta', 'Aesthetic theory', 'Burgundy', 'Ancestry']
+
+gpt_entity_particular(): filtered entity: 
+ ['Russia']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Picts' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Picts
+Picts
+Picts
+Picts
+Picts
+Picts
+Picts
+
+gpt_entity_particular(): entity list: 
+ ['Picts']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'Vorarlberg', 'Toledo', 'Ystrad', 'Sea', 'Tolbiac', 'Forest', 'Scotland', 'Volga', 'Saxon', "Rus'", 'Atil', '13th', 'Wales', 'Carpathians', 'Dogger', 'Britain', 'England', 'Burchard', 'Hindenburgdamm', 'II', 'Firth', 'Northern', 'Novalis', 'Finland', 'Yazid', 'Federal', 'Byzantium', 'Caspian', 'Ogledd', 'Denmark', 'Fredericia', 'Solomon', 'Neckar', 'Hungary', 'Ireland', 'Poliak', 'republican', '7th', 'Crimea', 'Wilhelmshaven', 'John', 'Mecklenburg', 'Sviatoslav', 'Frankish', 'Mittelplate', 'Northwestern', 'Moray', 'Jürgen', 'Soviet', 'Johann', 'Kiev', 'Nazi', 'Qipchaqs', 'Austrian', 'Bight', 'basin', 'Spain', 'Paul', 'Dnieper', 'Aare', 'Lech', 'Switzerland', 'Barjik', 'Åland', 'Union', 'Yemeni', 'Baltic', 'White', 'Transcaucasian', 'National', 'Khazaria', 'Oleg', 'Forth', 'Lower', 'Port', 'Empire', 'Picts', 'Park', 'Hegel', 'Constance', 'Sound', 'Buchan', 'Poland', 'Gulf', 'Argovia', 'Dues', 'Hen', 'Pepin', 'Black', 'Ukraine', 'Marwan', 'Kant', 'North', 'centuries', 'Riga', 'Strathclyde', 'Estonia', 'Khazars', 'Battle', 'Alemanni', 'Northumbria', 'Holstein', 'French', 'Swabia', 'Clud', 'Armenia', 'Joseph', 'Bothnia', 'Humber', 'west', 'Königsberg', 'Benjamin', 'Cumbria', 'Caliph', 'Leonid', 'Menachem', 'Muhammad', 'Ocean', 'Inverness', 'Conradin', 'Azerbaijan', 'Avraham', 'Iranian', 'Atlantic', 'Russia', 'Burgundy', 'Swedenborg', 'District', 'Khazar', 'Nyborg', 'ben', 'ibn', 'Schleswig', 'Kingdom', 'German', 'Kazakhstan', 'Lake', 'Germany', 'Hamburg', 'Lithuania', 'Immanuel', "Brezhnev's", 'Wadden', 'Israel', 'Sylt', 'River', 'Bay', 'Main', 'Alsace', 'Alamannia', 'University', 'Qazaria', 'Kaliningrad', 'Daud', 'Bank', 'Kiel', 'Short', 'Ibn', 'Kievan'}
+Total time:  565.1483027935028
+Entity conversion done on 4_3 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_4_3_entity_conversion_hash.json. Check the entity.
+ Which country borders the area where the 02D accessed by the 00D in the city where 020 03F is buried meets another 02D to the southwest?
+
+
+
+Done. Check final_query/id_4_3_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_4_3_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/4_3_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt

@@ -1,0 +1,36 @@
+Got argument: Mexico, 3, 3_6
+
+utils/question.py extract_hops(Mexico, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Mexico_info.json file
+first_hop:  {'triplet': '("Alligator gar", "habitat includes", "Texas, Oklahoma, Louisiana, the Mississippi River, and southern drainages into Mexico")', 'start word': 'Mexico', 'end word': 'Alligator gar', 'source': {'name': 'Gar', 'line': 48}, 'cpnet': {'start word': 'mexico', 'end word': 'alligator_gar'}}
+
+utils/question.py extract_hops(Alligator gar, [], ['Mexico']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Alligator_gar_info.json file
+extract_info(Alligator gar) Start.
+utils/preprocess.py extract_info(): Checking good links on Alligator gar
+Ginglymodi is Animal
+1 / 30 )  Ginglymodi Ginglymodi ginglymodian
+Holostei is Animal
+2 / 30 )  Holostei Holostei holostei
+Bowfin is Animal
+3 / 30 )  bowfins Bowfin bowfin
+Gar is Animal
+4 / 30 )  gar Gar gar
+North America is Geography
+5 / 30 )  North America North America north_america
+Shark is Animal
+6 / 30 )  sharks Shark shark
+American alligator is Animal
+7 / 30 )  American alligator American alligator american_alligator
+Anseriformes is Animal
+8 / 30 )  waterfowl Anseriformes anseriformes
+Mammal is Animal
+9 / 30 )  mammals Mammal mammal
+United States is Geography
+10 / 30 )  United States United States united_states
+Mexico is Geography
+11 / 30 )  Mexico Mexico mexico
+Lake is Geography
+12 / 30 )  freshwater lakes Lake lake
+Gulf of Mexico is Geography
+13 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico

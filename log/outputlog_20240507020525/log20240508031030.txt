@@ -1,0 +1,1255 @@
+Got argument: Seoul, 2, 2_5
+
+utils/question.py extract_hops(Seoul, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Seoul_info.json file
+first_hop:  {'triplet': '("Seoul", "is compared to", "Times Square")', 'start word': 'Seoul', 'end word': 'Times Square', 'source': {'name': 'Seoul', 'line': 15}, 'cpnet': {'start word': 'seoul', 'end word': 'times_square'}}
+
+utils/question.py extract_hops(Times Square, [], ['Seoul']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Times_Square_info.json file
+extract_info(Times Square) Start.
+utils/preprocess.py extract_info(): Checking good links on Times Square
+New York City is Geography
+1 / 30 )  New York City New York City new_york_city
+George M. Cohan is People
+2 / 30 )  George M. Cohan George M. Cohan george_m_cohan
+Manhattan is Geography
+3 / 30 )  Manhattan Island Manhattan manhattan
+Hudson River is Geography
+4 / 30 )  Hudson River Hudson River hudson_river
+George Washington is Geography
+5 / 30 )  George Washington George Washington george_washington
+John Jacob Astor is People
+6 / 30 )  John Jacob Astor John Jacob Astor john_jacob_astor
+Adolph Ochs is People
+7 / 30 )  Adolph S. Ochs Adolph Ochs adolph_simon_ochs
+Thorstein Veblen is People
+8 / 30 )  Thorstein Veblen Thorstein Veblen thorstein_veblen
+G. K. Chesterton is People
+9 / 30 )  G. K. Chesterton G. K. Chesterton g_k_chesterton
+Irving Berlin is People
+10 / 30 )  Irving Berlin Irving Berlin irving_berlin
+Charlie Chaplin is People
+11 / 30 )  Charlie Chaplin Charlie Chaplin charlie_chaplin
+Fred Astaire is People
+12 / 30 )  Fred Astaire Fred Astaire fred_astaire
+Bertelsmann is Geography
+13 / 30 )  Bertelsmann Bertelsmann bertelsmann
+Hell's Kitchen, Manhattan is Geography
+14 / 30 )  Hell's Kitchen Hell's Kitchen, Manhattan hell's_kitchen
+Madame Tussauds is Geography
+15 / 30 )  Madame Tussauds Madame Tussauds madame_tussauds
+3 Times Square is Geography
+16 / 30 )  3 Times Square 3 Times Square times_square
+Las Vegas is Geography
+17 / 30 )  Las Vegas Las Vegas las_vegas
+Nasdaq is Geography
+18 / 30 )  NASDAQ Nasdaq nasdaq
+Michael Bloomberg is People
+19 / 30 )  Michael Bloomberg Michael Bloomberg michael_bloomberg
+Las Vegas Strip is Geography
+20 / 30 )  Las Vegas Strip Las Vegas Strip strip
+Times Square  is Geography
+21 / 30 )  Times Square Times Square  times_square
+Central Park is Geography
+22 / 30 )  Central Park Central Park central_park
+extract_triplet(Times Square)
+Got GPT's response. String length : 2113
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [['George M. Cohan', 'George M. Cohan', 'george_m_cohan']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [['Adolph S. Ochs', 'Adolph Ochs', 'adolph_simon_ochs']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [['Thorstein Veblen', 'Thorstein Veblen', 'thorstein_veblen']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [['Irving Berlin', 'Irving Berlin', 'irving_berlin']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [['Charlie Chaplin', 'Charlie Chaplin', 'charlie_chaplin']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [['Fred Astaire', 'Fred Astaire', 'fred_astaire']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [['Madame Tussauds', 'Madame Tussauds', 'madame_tussauds']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [['Michael Bloomberg', 'Michael Bloomberg', 'michael_bloomberg']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  []
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  [['Las Vegas', 'Las Vegas', 'las_vegas'], ['Las Vegas Strip', 'Las Vegas Strip', 'strip']]
+subject_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+object_words:  [['Central Park', 'Central Park', 'central_park']]
+subject_words:  [['Manhattan Island', 'Manhattan', 'manhattan']]
+object_words:  []
+subject_words:  [['George Washington', 'George Washington', 'george_washington']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [['John Jacob Astor', 'John Jacob Astor', 'john_jacob_astor']]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+subject_words:  [["Hell's Kitchen", "Hell's Kitchen, Manhattan", "hell's_kitchen"]]
+object_words:  [(None, 'Times Square', 'times_square'), ['Times Square', 'Times Square ', 'times_square']]
+second_hop:  {'triplet': '("Times Square", "is near", "Central Park")', 'start word': 'Times Square', 'end word': 'Central Park', 'source': {'name': 'Times Square', 'line': 21}, 'cpnet': {'start word': 'times_square', 'end word': 'central_park'}}
+
+utils/question.py extract_hops(Central Park, [], ['Seoul', 'Times Square']) Start
+There is no /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Central_Park_info.json file
+extract_info(Central Park) Start.
+utils/preprocess.py extract_info(): Checking good links on Central Park
+Manhattan is Geography
+1 / 30 )  Manhattan Manhattan manhattan
+New York City is Geography
+2 / 30 )  New York City New York City new_york_city
+Frederick Law Olmsted is People
+3 / 30 )  Frederick Law Olmsted Frederick Law Olmsted frederick_law_olmsted
+Calvert Vaux is People
+4 / 30 )  Calvert Vaux Calvert Vaux calvert_vaux
+The Ramble and Lake is Geography
+5 / 30 )  the Ramble and Lake The Ramble and Lake ramble
+Fifth Avenue is Incident
+6 / 30 )  Fifth Avenue Fifth Avenue fifth_avenue
+Harlem is Geography
+7 / 30 )  Harlem Harlem harlem
+High Line is Geography
+8 / 30 )  High Line High Line high_line
+Andrew Jackson Downing is People
+9 / 30 )  Andrew Jackson Downing Andrew Jackson Downing andrew_jackson_downing
+Washington Irving is People
+10 / 30 )  Washington Irving Washington Irving washington_irving
+Birkenhead is Geography
+11 / 30 )  Birkenhead Birkenhead birkenhead
+Battle of Gettysburg is Geography
+12 / 30 )  Battle of Gettysburg Battle of Gettysburg battle_of_gettysburg
+Long Island is Geography
+13 / 30 )  Long Island Long Island long_island
+New Jersey is Geography
+14 / 30 )  New Jersey New Jersey new_jersey
+Tammany Hall is Incident
+15 / 30 )  Tammany Hall Tammany Hall tammany_hall
+Coney Island is Geography
+16 / 30 )  Coney Island Coney Island coney_island
+Central Park is Geography
+17 / 30 )  "love-ins" and "be-ins" Central Park central_park
+Columbia University is Geography
+18 / 30 )  Columbia University Columbia University columbia_university
+Donald Trump is People
+19 / 30 )  Donald Trump Donald Trump donald_trump
+The Bronx is Geography
+20 / 30 )  Fordham gneiss The Bronx bronx
+Paleozoic is Geography
+21 / 30 )  Paleozoic Paleozoic paleozoic
+Oak is Animal
+22 / 30 )  oak Oak oak
+Beech is Animal
+23 / 30 )  beech Beech beech
+European pond turtle is Animal
+24 / 30 )  Turtle Pond European pond turtle european_pond_tortoise
+East River is Geography
+25 / 30 )  East River East River east_river
+Ulmus americana is Animal
+26 / 30 )  American elms Ulmus americana ulmus_americana
+Pine is Animal
+27 / 30 )  pine trees Pine pine
+Nyssa sylvatica is Animal
+28 / 30 )  black tupelo Nyssa sylvatica nyssa_sylvatica
+Prunus × yedoensis is Animal
+29 / 30 )  Yoshino cherries Prunus × yedoensis yoshino_cherry_tree
+Platanus × acerifolia is Animal
+30 / 30 )  London plane Platanus × acerifolia london_plane
+extract_triplet(Central Park)
+Got GPT's response. String length : 1744
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  [['Manhattan', 'Manhattan', 'manhattan'], ['New York City', 'New York City', 'new_york_city']]
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  [['Frederick Law Olmsted', 'Frederick Law Olmsted', 'frederick_law_olmsted'], ['Calvert Vaux', 'Calvert Vaux', 'calvert_vaux']]
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  [['Manhattan', 'Manhattan', 'manhattan'], ['Harlem', 'Harlem', 'harlem']]
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  [['the Ramble and Lake', 'The Ramble and Lake', 'ramble']]
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park'), ['"love-ins" and "be-ins"', 'Central Park', 'central_park']]
+object_words:  []
+subject_words:  [(None, 'Central Park', 'central_park')]
+object_words:  []
+third_hop:  {'triplet': '("Central Park", "is owned by", "the New York City Department of Parks and Recreation")', 'start word': 'Central Park', 'end word': 'New York City', 'source': {'name': 'Central Park', 'line': 9}, 'cpnet': {'start word': 'central_park', 'end word': 'new_york_city'}}
+generate_question(2_5, ['("Seoul", "is compared to", "Times Square")', '("Times Square", "is near", "Central Park")', '("Central Park", "is owned by", "the New York City Department of Parks and Recreation")'], ['Times Square', 'Central Park', 'New York City'], [('Seoul', 'Times Square'), ('Times Square', 'Central Park'), ('Central Park', 'New York City')], New York City, [{'name': 'Seoul', 'line': 15}, {'name': 'Times Square', 'line': 21}, {'name': 'Central Park', 'line': 9}]) called
+GPT output is:  Q: Who owns the green space near the area in Seoul which is often compared to a famously vibrant and crowded spot known for its neon lights?
+A: New York City
+final_choice(New York City, options = 5) started
+[]
+entity_type(New York City) called
+New York City is Geography
+check_matchscore(New York City, Port cities and towns of the United States Atlantic coast):  0.0
+choose_by_wiki_recur(Port cities and towns of the United States Atlantic coast)
+   Pages in Port cities and towns of the United States Atlantic coast: ['Charleston, South Carolina', 'Morehead City, North Carolina', 'New Haven, Connecticut', 'New York City', 'Norfolk, Virginia', 'Providence, Rhode Island', 'Wilmington, Delaware', 'Wilmington, North Carolina']
+      Charleston, South Carolina in ['Charleston, South Carolina', 'New Haven, Connecticut', 'Providence, Rhode Island', 'New York City']
+      New Haven, Connecticut in ['Charleston, South Carolina', 'New Haven, Connecticut', 'Providence, Rhode Island', 'New York City', 'Norfolk, Virginia']
+      Providence, Rhode Island in ['Charleston, South Carolina', 'New Haven, Connecticut', 'Providence, Rhode Island', 'New York City', 'Norfolk, Virginia']
+      New York City in ['Charleston, South Carolina', 'New Haven, Connecticut', 'Providence, Rhode Island', 'New York City', 'Norfolk, Virginia', 'Wilmington, Delaware']
+      Norfolk, Virginia in ['Charleston, South Carolina', 'New Haven, Connecticut', 'Providence, Rhode Island', 'New York City', 'Norfolk, Virginia', 'Wilmington, Delaware', 'Morehead City, North Carolina']
+      Wilmington, Delaware in ['Charleston, South Carolina', 'New Haven, Connecticut', 'Providence, Rhode Island', 'New York City', 'Norfolk, Virginia', 'Wilmington, Delaware', 'Morehead City, North Carolina', 'Wilmington, North Carolina']
+      Morehead City, North Carolina in ['Charleston, South Carolina', 'New Haven, Connecticut', 'Providence, Rhode Island', 'New York City', 'Norfolk, Virginia', 'Wilmington, Delaware', 'Morehead City, North Carolina', 'Wilmington, North Carolina']
+      Wilmington, North Carolina in ['Charleston, South Carolina', 'New Haven, Connecticut', 'Providence, Rhode Island', 'New York City', 'Norfolk, Virginia', 'Wilmington, Delaware', 'Morehead City, North Carolina', 'Wilmington, North Carolina']
+   Upper category of Port cities and towns of the United States Atlantic coast: ['East Coast of the United States', 'Port cities and towns in the United States by coast', 'Port cities and towns of the Atlantic Ocean']
+choose_by_wiki_recur(East Coast of the United States)
+check_matchscore(New York City, Cities in the New York metropolitan area):  0.09523809523809523
+choose_by_wiki_recur(Cities in the New York metropolitan area)
+   Pages in Cities in the New York metropolitan area: ['Ansonia, Connecticut', 'Beacon, New York', 'Bridgeport, Connecticut', 'Danbury, Connecticut', 'Derby, Connecticut', 'Glen Cove, New York', 'Kingston, New York', 'Long Beach, New York', 'Meriden, Connecticut', 'Middletown, New York', 'Milford, Connecticut', 'Mount Vernon, New York', 'New Haven, Connecticut', 'New Rochelle, New York', 'New York City', 'Newark, New Jersey', 'Newburgh, New York', 'Norwalk, Connecticut', 'Peekskill, New York', 'Port Jervis, New York', 'Poughkeepsie, New York', 'Rye, New York', 'Shelton, Connecticut', 'Stamford, Connecticut', 'Torrington, Connecticut', 'Waterbury, Connecticut', 'West Haven, Connecticut', 'White Plains, New York', 'Winsted, Connecticut', 'Yonkers, New York']
+      New Rochelle, New York in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York']
+      Waterbury, Connecticut in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York']
+      Stamford, Connecticut in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York']
+      Peekskill, New York in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York', 'Poughkeepsie, New York']
+      White Plains, New York in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York', 'Poughkeepsie, New York', 'Mount Vernon, New York']
+      Poughkeepsie, New York in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York', 'Poughkeepsie, New York', 'Mount Vernon, New York', 'New York City']
+      Mount Vernon, New York in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York', 'Poughkeepsie, New York', 'Mount Vernon, New York', 'New York City']
+      New York City in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York', 'Poughkeepsie, New York', 'Mount Vernon, New York', 'New York City', 'Rye, New York']
+      Rye, New York in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York', 'Poughkeepsie, New York', 'Mount Vernon, New York', 'New York City', 'Rye, New York', 'Yonkers, New York']
+      Yonkers, New York in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York', 'Poughkeepsie, New York', 'Mount Vernon, New York', 'New York City', 'Rye, New York', 'Yonkers, New York', 'New Haven, Connecticut']
+      New Haven, Connecticut in ['New Rochelle, New York', 'Waterbury, Connecticut', 'Stamford, Connecticut', 'Peekskill, New York', 'White Plains, New York', 'Poughkeepsie, New York', 'Mount Vernon, New York', 'New York City', 'Rye, New York', 'Yonkers, New York', 'New Haven, Connecticut']
+['New Haven, Connecticut', 'Waterbury, Connecticut', 'Poughkeepsie, New York', 'Yonkers, New York', 'New Haven, Connecticut']
+Ended after 2.5 hierarchy
+(2.5, ['Yonkers, New York', 'New Haven, Connecticut', 'Waterbury, Connecticut', 'Poughkeepsie, New York'])
+
+extract_info(Waterbury, Connecticut) Start.
+utils/preprocess.py extract_info(): Checking good links on Waterbury, Connecticut
+Connecticut is Geography
+1 / 30 )  Connecticut Connecticut connecticut
+New York City is Geography
+2 / 30 )  New York City New York City new_york_city
+New Haven County, Connecticut is Geography
+3 / 30 )  New Haven County New Haven County, Connecticut new_haven_county
+Waterbury, Connecticut is Geography
+4 / 30 )  railroad station Waterbury, Connecticut waterbury
+Naugatuck, Connecticut is Geography
+5 / 30 )  Naugatuck Naugatuck, Connecticut naugatuck
+Nevada is Geography
+6 / 30 )  Nevada Nevada nevada
+Hoover Dam is Geography
+7 / 30 )  Boulder Dam Hoover Dam hoover_dam
+Cape Verde is Geography
+8 / 30 )  Cape Verdean Cape Verde cape_verde
+Dominican Republic is Geography
+9 / 30 )  Dominican Dominican Republic dominican_republic
+Brazil is Geography
+10 / 30 )  Brazilian Brazil brazil
+Jamaica is Geography
+11 / 30 )  Jamaican Jamaica jamaica
+Cook County, Illinois is Geography
+12 / 30 )  Cook County, Illinois Cook County, Illinois cook_county
+John F. Kennedy is People
+13 / 30 )  John F. Kennedy John F. Kennedy john_fitzgerald_kennedy
+Ronald Reagan is People
+14 / 30 )  Ronald Reagan Ronald Reagan ronald_reagan
+Bill Clinton is People
+15 / 30 )  Bill Clinton Bill Clinton bill_clinton
+United States Senate is Geography
+16 / 30 )  U.S. Senate United States Senate united_states_senate
+Bridgeport, Connecticut is Geography
+17 / 30 )  Bridgeport Bridgeport, Connecticut bridgeport
+Massachusetts is Geography
+18 / 30 )  Massachusetts Massachusetts massachusetts
+Bradley International Airport is Geography
+19 / 30 )  Bradley International Airport Bradley International Airport bdl
+extract_triplet(Waterbury, Connecticut)
+Got GPT's response. String length : 1491
+subject_words:  [(None, 'Waterbury, Connecticut', 'waterbury'), ['Connecticut', 'Connecticut', 'connecticut'], ['railroad station', 'Waterbury, Connecticut', 'waterbury']]
+object_words:  [['Connecticut', 'Connecticut', 'connecticut']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  []
+object_words:  [['Naugatuck', 'Naugatuck, Connecticut', 'naugatuck']]
+subject_words:  []
+object_words:  [['New Haven County', 'New Haven County, Connecticut', 'new_haven_county']]
+subject_words:  []
+object_words:  [['railroad station', 'Waterbury, Connecticut', 'waterbury']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Connecticut', 'Connecticut', 'connecticut'], ['Bridgeport', 'Bridgeport, Connecticut', 'bridgeport']]
+subject_words:  []
+object_words:  [['Naugatuck', 'Naugatuck, Connecticut', 'naugatuck']]
+subject_words:  []
+object_words:  [['Boulder Dam', 'Hoover Dam', 'hoover_dam']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Jamaican', 'Jamaica', 'jamaica']]
+subject_words:  [['John F. Kennedy', 'John F. Kennedy', 'john_fitzgerald_kennedy']]
+object_words:  []
+subject_words:  [['Ronald Reagan', 'Ronald Reagan', 'ronald_reagan']]
+object_words:  []
+subject_words:  [['Bill Clinton', 'Bill Clinton', 'bill_clinton']]
+object_words:  []
+subject_words:  []
+object_words:  [['Cook County, Illinois', 'Cook County, Illinois', 'cook_county']]
+subject_words:  []
+object_words:  [['U.S. Senate', 'United States Senate', 'united_states_senate']]
+subject_words:  []
+object_words:  [['Bradley International Airport', 'Bradley International Airport', 'bdl']]
+subject_words:  []
+object_words:  [['Massachusetts', 'Massachusetts', 'massachusetts']]
+extract_info(Yonkers, New York) Start.
+utils/preprocess.py extract_info(): Checking good links on Yonkers, New York
+Westchester County, New York is Geography
+1 / 30 )  Westchester County, New York Westchester County, New York westchester_county
+The Bronx is Geography
+2 / 30 )  the Bronx The Bronx bronx
+Hudson River is Geography
+3 / 30 )  Hudson River Hudson River hudson_river
+Manhattan is Geography
+4 / 30 )  Manhattan Manhattan manhattan
+Brooklyn is Geography
+5 / 30 )  Brooklyn Brooklyn brooklyn
+Queens is Geography
+6 / 30 )  Queens Queens queens
+Staten Island is Geography
+7 / 30 )  Staten Island Staten Island staten_island
+New York City is Geography
+8 / 30 )  New York City New York City new_york_city
+Elisha Otis is People
+9 / 30 )  Elisha Otis Elisha Otis elisha_graves_otis
+United States Department of Housing and Urban Development is Geography
+10 / 30 )  United States Department of Housing and Urban Development United States Department of Housing and Urban Development housing_and_urban_development
+Hudson Valley is Geography
+11 / 30 )  Hudson Valley Hudson Valley hudson_valley
+Yonkers  is Geography
+12 / 30 )  Yonkers Yonkers  yonkers
+Neil Simon is People
+13 / 30 )  Neil Simon Neil Simon neil_simon
+Long Island is Geography
+14 / 30 )  Long Island Long Island long_island
+New Jersey is Geography
+15 / 30 )  New Jersey New Jersey new_jersey
+Buffalo, New York is Geography
+16 / 30 )  Buffalo Buffalo, New York buffalonian
+Pope John Paul II is People
+17 / 30 )  Pope John Paul II Pope John Paul II pope_john_paul_ii
+Pope Benedict XVI is People
+18 / 30 )  Pope Benedict XVI Pope Benedict XVI pope_benedict_xvi
+George H. W. Bush is People
+19 / 30 )  George H. W. Bush George H. W. Bush george_h_w_bush
+Bill Clinton is People
+20 / 30 )  Bill Clinton Bill Clinton bill_clinton
+Andrew Carnegie is People
+21 / 30 )  Andrew Carnegie Andrew Carnegie andrew_carnegie
+Financial District, Manhattan is Geography
+22 / 30 )  Financial District Financial District, Manhattan financial_district
+Limited-access road is Geography
+23 / 30 )  Limited-access roads Limited-access road expy
+extract_triplet(Yonkers, New York)
+Got GPT's response. String length : 2374
+['Here are the triplets generated from the given text:']
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  [['Westchester County, New York', 'Westchester County, New York', 'westchester_county']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  [['the Bronx', 'The Bronx', 'bronx']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  [['Hudson River', 'Hudson River', 'hudson_river']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  [['Manhattan', 'Manhattan', 'manhattan']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  []
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  []
+subject_words:  [['Elisha Otis', 'Elisha Otis', 'elisha_graves_otis']]
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['Hudson Valley', 'Hudson Valley', 'hudson_valley']]
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  []
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  []
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  [['Hudson River', 'Hudson River', 'hudson_river']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  []
+subject_words:  []
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  []
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  []
+subject_words:  []
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['Andrew Carnegie', 'Andrew Carnegie', 'andrew_carnegie']]
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  [['Pope John Paul II', 'Pope John Paul II', 'pope_john_paul_ii'], ['Pope Benedict XVI', 'Pope Benedict XVI', 'pope_benedict_xvi']]
+subject_words:  [['Long Island', 'Long Island', 'long_island']]
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['New Jersey', 'New Jersey', 'new_jersey']]
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['Buffalo', 'Buffalo, New York', 'buffalonian']]
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+object_words:  []
+subject_words:  []
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  []
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+subject_words:  [['Financial District', 'Financial District, Manhattan', 'financial_district']]
+object_words:  [['Yonkers', 'Yonkers ', 'yonkers']]
+['(Note: Due to the detailed nature and length of the provided text, it is impossible to list triplets for every single important keyword in this single output, but this example should suffice to demonstrate the approach in handling the given task. More triplets can be created following the same methodology.)']
+extract_info(New Haven, Connecticut) Start.
+utils/preprocess.py extract_info(): Checking good links on New Haven, Connecticut
+New Haven County, Connecticut is Geography
+1 / 30 )  New Haven County, Connecticut New Haven County, Connecticut new_haven_county
+Long Island Sound is Geography
+2 / 30 )  Long Island Sound Long Island Sound long_island_sound
+Bridgeport, Connecticut is Geography
+3 / 30 )  Bridgeport Bridgeport, Connecticut bridgeport
+Yale University is Geography
+4 / 30 )  Yale University Yale University yale_university
+Maize is Animal
+5 / 30 )  maize Maize maize
+Netherlands is Geography
+6 / 30 )  Dutch Netherlands netherlands
+Beaver is Animal
+7 / 30 )  beaver Beaver beaver
+Boston is Geography
+8 / 30 )  Boston Boston boston
+Elihu Yale is People
+9 / 30 )  Elihu Yale Elihu Yale elihu_yale
+Chennai is Geography
+10 / 30 )  Madras Chennai chennai
+Benedict Arnold is Geography
+11 / 30 )  Benedict Arnold Benedict Arnold benedict_arnold
+George Washington is Geography
+12 / 30 )  George Washington George Washington george_washington
+Danbury, Connecticut is Geography
+13 / 30 )  Danbury Danbury, Connecticut danbury
+Roger Sherman is People
+14 / 30 )  Roger Sherman Roger Sherman roger_sherman
+Eli Whitney is People
+15 / 30 )  Eli Whitney Eli Whitney eli_whitney
+Eli Whitney Museum is People
+16 / 30 )  Eli Whitney Museum Eli Whitney Museum eli_whitney
+Abraham Lincoln is People
+17 / 30 )  Abraham Lincoln Abraham Lincoln abraham_lincoln
+Supreme Court of the United States is Geography
+18 / 30 )  United States Supreme Court Supreme Court of the United States united_states_supreme_court
+White House is Geography
+19 / 30 )  White House White House white_house
+Northeast Corridor is Geography
+20 / 30 )  Northeast Corridor Northeast Corridor northeast_corridor
+Vermont is Geography
+21 / 30 )  Vermont Vermont vermont
+Montreal is Geography
+22 / 30 )  Montreal Montreal montreal
+Azores High is Geography
+23 / 30 )  Bermuda High Azores High azores_high
+Elm is Animal
+24 / 30 )  elms Elm elm
+New England is Geography
+25 / 30 )  New England New England new_england
+George W. Bush is People
+26 / 30 )  George W. Bush George W. Bush george_w_bush
+George H. W. Bush is People
+27 / 30 )  George H. W. Bush George H. W. Bush george_h_w_bush
+William Howard Taft is People
+28 / 30 )  William Howard Taft William Howard Taft william_howard_taft
+Gerald Ford is People
+29 / 30 )  Gerald Ford Gerald Ford gerald_ford
+Bill Clinton is People
+30 / 30 )  Bill Clinton Bill Clinton bill_clinton
+extract_triplet(New Haven, Connecticut)
+Got GPT's response. String length : 3130
+subject_words:  []
+object_words:  [['New Haven County, Connecticut', 'New Haven County, Connecticut', 'new_haven_county']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Bridgeport', 'Bridgeport, Connecticut', 'bridgeport']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Yale University', 'Yale University', 'yale_university']]
+object_words:  []
+subject_words:  [['Yale University', 'Yale University', 'yale_university']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['elms', 'Elm', 'elm']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Dutch', 'Netherlands', 'netherlands']]
+object_words:  [['beaver', 'Beaver', 'beaver']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Elihu Yale', 'Elihu Yale', 'elihu_yale']]
+subject_words:  [['Benedict Arnold', 'Benedict Arnold', 'benedict_arnold']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Roger Sherman', 'Roger Sherman', 'roger_sherman']]
+object_words:  []
+subject_words:  [['Eli Whitney', 'Eli Whitney', 'eli_whitney']]
+object_words:  []
+subject_words:  [['Eli Whitney', 'Eli Whitney', 'eli_whitney'], ['Eli Whitney Museum', 'Eli Whitney Museum', 'eli_whitney']]
+object_words:  []
+subject_words:  [['Abraham Lincoln', 'Abraham Lincoln', 'abraham_lincoln']]
+object_words:  []
+subject_words:  [['George W. Bush', 'George W. Bush', 'george_w_bush']]
+object_words:  []
+subject_words:  [['George H. W. Bush', 'George H. W. Bush', 'george_h_w_bush']]
+object_words:  []
+subject_words:  []
+object_words:  [['Northeast Corridor', 'Northeast Corridor', 'northeast_corridor']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Yale University', 'Yale University', 'yale_university']]
+object_words:  [(None, 'New Haven, Connecticut', 'new_haven')]
+subject_words:  [['Yale University', 'Yale University', 'yale_university']]
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+extract_info(Poughkeepsie, New York) Start.
+utils/preprocess.py extract_info(): Checking good links on Poughkeepsie, New York
+Poughkeepsie , New York is Geography
+1 / 30 )  Town of Poughkeepsie Poughkeepsie , New York poughkeepsie
+Dutchess County, New York is Geography
+2 / 30 )  Dutchess County Dutchess County, New York dutchess_county
+Hudson Valley is Geography
+3 / 30 )  Hudson River Valley Hudson Valley hudson_valley
+Hudson River is Geography
+4 / 30 )  Hudson River Hudson River hudson_river
+Alexander Hamilton is People
+5 / 30 )  Alexander Hamilton Alexander Hamilton alexander_hamilton
+John Jay is People
+6 / 30 )  John Jay John Jay john_jay
+Garry Kasparov is People
+7 / 30 )  Garry Kasparov Garry Kasparov garry_kasparov
+New York City is Geography
+8 / 30 )  New York City New York City new_york_city
+Adelphi University is Geography
+9 / 30 )  Adelphi University Adelphi University delphian
+Henry Hudson is People
+10 / 30 )  Henry Hudson Henry Hudson henry_hudson
+Samuel Morse is People
+11 / 30 )  Samuel Morse Samuel Morse samuel_morse
+Poughkeepsie, New York is Geography
+12 / 30 )  Poughkeepsie Metro-North station Poughkeepsie, New York poughkeepsie
+John F. Kennedy International Airport is Geography
+13 / 30 )  John F. Kennedy International Airport John F. Kennedy International Airport kennedy_international_airport
+LaGuardia Airport is Geography
+14 / 30 )  LaGuardia Airport LaGuardia Airport laguardia
+extract_triplet(Poughkeepsie, New York)
+Got GPT's response. String length : 1251
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [['Dutchess County', 'Dutchess County, New York', 'dutchess_county']]
+subject_words:  []
+object_words:  [['Town of Poughkeepsie', 'Poughkeepsie , New York', 'poughkeepsie']]
+subject_words:  []
+object_words:  [['Hudson River Valley', 'Hudson Valley', 'hudson_valley'], ['Hudson River', 'Hudson River', 'hudson_river']]
+subject_words:  []
+object_words:  [['Hudson River Valley', 'Hudson Valley', 'hudson_valley']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  []
+subject_words:  [['Alexander Hamilton', 'Alexander Hamilton', 'alexander_hamilton']]
+object_words:  []
+subject_words:  [['John Jay', 'John Jay', 'john_jay']]
+object_words:  []
+subject_words:  [['Garry Kasparov', 'Garry Kasparov', 'garry_kasparov']]
+object_words:  []
+subject_words:  []
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  [['Hudson River Valley', 'Hudson Valley', 'hudson_valley']]
+object_words:  []
+subject_words:  [['Henry Hudson', 'Henry Hudson', 'henry_hudson']]
+object_words:  [['Hudson River', 'Hudson River', 'hudson_river']]
+subject_words:  [['Samuel Morse', 'Samuel Morse', 'samuel_morse']]
+object_words:  []
+subject_words:  []
+object_words:  [['New York City', 'New York City', 'new_york_city']]
+subject_words:  []
+object_words:  [['John F. Kennedy International Airport', 'John F. Kennedy International Airport', 'kennedy_international_airport']]
+subject_words:  []
+object_words:  [['LaGuardia Airport', 'LaGuardia Airport', 'laguardia']]
+['("Seoul", "is compared to", "Times Square")\n', '("Times Square", "is near", "Central Park")\n', '("Central Park", "is owned by", "the New York City Department of Parks and Recreation")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Times Square", "is a", "major commercial intersection")\n', '("Times Square", "is located in", "Midtown Manhattan, New York City")\n', '("Times Square", "is part of", "the Broadway Theater District")\n', '("Times Square", "is one of", "the world\'s most visited tourist attractions")\n', '("Times Square", "has an annual event", "New Year\'s Eve ball drop")\n', '("Times Square", "was formerly known as", "Longacre Square")\n', '("Times Square", "was renamed after", "The New York Times")\n', '("Times Square", "is the eastern terminus of", "the Lincoln Highway")\n', '("Times Square", "is sometimes referred to as", "the Crossroads of the World")\n', '("Times Square", "is brightly lit by", "numerous digital billboards")\n', '("George M. Cohan", "has a statue in", "Times Square")\n', '("Adolph S. Ochs", "moved", "The New York Times to Times Square")\n', '("Thorstein Veblen", "disliked the advertising at", "Times Square")\n', '("Irving Berlin", "was closely associated with", "Times Square")\n', '("Charlie Chaplin", "was closely associated with", "Times Square")\n', '("Fred Astaire", "was closely associated with with", "Times Square")\n', '("Madame Tussauds", "moved to", "Times Square")\n', '("Michael Bloomberg", "converted part of Broadway into", "pedestrian plazas in Times Square")\n', '("Times Square", "has higher attendance than", "each of the Disney theme parks worldwide")\n', '("Times Square", "competes in visitor count with", "the Las Vegas Strip")\n', '("Manhattan Island", "was first settled by", "the Dutch colonists")\n', '("George Washington", "led the New York militia that included", "John Morin Scott\'s lands near Times Square")\n', '("John Jacob Astor", "owned property in", "the area that became Times Square")\n', '("Hell\'s Kitchen", "is a nearby neighborhood", "affected by the changes in Times Square")\n', '("Central Park", "is an urban park located", "between the Upper West Side and Upper East Side neighborhoods of Manhattan in New York City")\n', '("Central Park", "was the first landscaped park", "in the United States")\n', '("Central Park", "was designed by", "landscape architects Frederick Law Olmsted and Calvert Vaux")\n', '("Central Park", "is managed by", "the Central Park Conservancy")\n', '("Central Park", "is adjacent to", "Harlem to the north, Midtown Manhattan to the south, the Upper West Side to the west, and the Upper East Side to the east")\n', '("Central Park", "contains landscapes such as", "the Ramble and Lake")\n', '("Central Park", "has attractions like", "Wollman Rink, Central Park Carousel, and the Central Park Zoo")\n', '("Central Park", "incorporates a system of roads and walkways", "traversed by public transportation")\n', '("Central Park", "houses", "the Dana Discovery Center")\n', '("Central Park", "is surrounded by", "a stone wall")\n', '("Central Park", "has named gates such as", "the Gate of the Exonerated")\n', '("Central Park", "includes", "Cleopatra\'s Needle")\n', '("Central Park", "hosts", "concerts and performances")\n', '("Central Park", "provides", "tours, recreation, and various activities")\n', '("Central Park", "has a reputation as", "the most filmed location in the world")\n', '("Central Park\'s", "impact includes influence on", "real estate and the economy")\n', '("Waterbury, Connecticut", "is located in", "the U.S. state of Connecticut")\n', '("Waterbury", "is southwest of", "Hartford")\n', '("Waterbury", "is northeast of", "New York City")\n', '("Waterbury", "is the largest city in", "the Naugatuck Valley Planning Region")\n', '("Waterbury", "is the second-largest city in", "New Haven County")\n', '("Waterbury", "has a Metro-North", "railroad station with connections to Grand Central Terminal")\n', '("Waterbury", "is home to", "Post University")\n', '("Waterbury", "is home to", "the regional campuses of the University of Connecticut, University of Bridgeport, Western Connecticut State University")\n', '("Waterbury", "is home to", "Naugatuck Valley Community College")\n', '("Brass and copper from Waterbury", "were used in", "Nevada\'s Boulder Dam")\n', '("The Waterbury Clock Company", "produced", "the Mickey Mouse watch under the Ingersoll brand")\n', '("Waterbury", "has communities of", "Cape Verdean, Dominican, Brazilian, Jamaican")\n', '("John F. Kennedy", "visited on the Green by", "Waterbury")\n', '("Ronald Reagan", "held a campaign rally at", "Waterbury")\n', '("Bill Clinton", "made a campaign appearance at", "Waterbury")\n', '("Waterbury", "is part of the economy of", "Cook County, Illinois")\n', '("Waterbury", "had involvement in", "U.S. Senate elections")\n', '("Waterbury", "is connected to", "Bradley International Airport through proximity")\n', '("Waterbury", "is affected by", "the climate of Massachusetts due to geographic location")\n', '("Yonkers", "is a city in", "Westchester County, New York")\n', '("Yonkers", "is north of", "the Bronx")\n', '("Yonkers", "borders", "Hudson River")\n', '("Yonkers", "is approximately north of", "Marble Hill in Manhattan")\n', '("Yonkers", "is a suburb of", "New York metropolitan area")\n', '("Yonkers", "is an inner suburb of", "New York City")\n', '("Getty Square in Yonkers", "centers around", "municipal government")\n', '("Elisha Otis", "opened", "the world\'s first elevator factory in Yonkers")\n', '("Hudson Valley", "includes", "Yonkers")\n', '("Yonkers residents", "are known as", "Yonkersonians, Yonkersites, or Yonks")\n', '("Yonkers Raceway", "renovated to become", "Empire City Casino")\n', '("Sherwood House in Yonkers", "provides access to", "Hudson River")\n', '("Yonkers", "underwent", "gentrification")\n', '("Getty Square", "is in", "Yonkers")\n', '("Yonkers", "has", "limited-access roads")\n', '("Lion Gate Studios in Yonkers", "will host", "Mediapro")\n', '("Neil Simon\'s play", "is set in", "Yonkers")\n', '("Andrew Carnegie", "funded", "the Carnegie Library in Yonkers")\n', '("St. Joseph\'s Seminary in Yonkers", "was visited by", "Pope John Paul II and Pope Benedict XVI")\n', '("Long Island", "can see", "Sacred Heart Church spire in Yonkers")\n', '("New Jersey", "can see", "Sacred Heart Church spire in Yonkers")\n', '("Buffalo", "is behind", "Yonkers as the third-largest city in New York")\n', '("Philipse Manor Hall in Yonkers", "is a", "state historic site")\n', '("Cross County Shopping Center", "is located in", "Yonkers")\n', '("Ridge Hill Mall", "is a major shopping area in", "Yonkers")\n', '("Financial District", "was a ferry service destination from", "Yonkers")\n', '("New Haven", "is a city in", "New Haven County, Connecticut")\n', '("New Haven", "is located on", "New Haven Harbor")\n', '("New Haven", "is part of", "the New York City metropolitan area")\n', '("New Haven", "is the third largest city in", "Connecticut after Bridgeport and Stamford")\n', '("New Haven", "was one of the first planned cities in", "the U.S.")\n', '("New Haven Green", "is at the center of", "Downtown New Haven")\n', '("New Haven Green", "is a National Historic Landmark", "")\n', '("Yale University", "is the biggest taxpayer and employer in", "New Haven")\n', '("Yale University", "is an integral part of", "the city\'s economy")\n', '("New Haven", "has been billed as the", "Cultural Capital of Connecticut")\n', '("New Haven", "had the first public tree planting program in", "the U.S.")\n', '("New Haven", "is nicknamed", "The Elm City")\n', '("New Haven area", "was the home of", "Quinnipiac tribe of Native Americans")\n', '("Dutch traders", "set up a small trading system of", "beaver pelts")\n', '("New Haven Colony", "was distinct from", "the Connecticut Colony")\n', '("Hopkins School", "was founded with money from the estate of", "Edward Hopkins")\n', '("Yale College", "was renamed with a donation from", "Elihu Yale")\n', '("Benedict Arnold", "commanded the Second Company in", "New Haven")\n', '("General William Tryon", "landed in", "New Haven Harbor")\n', '("Roger Sherman", "became the first mayor of", "New Haven")\n', '("Eli Whitney", "remained in", "New Haven to develop the cotton gin")\n', '("Eli Whitney Museum", "has exhibits pertaining to", "the A.C. Gilbert Company")\n', '("Abraham Lincoln", "delivered a speech on slavery in", "New Haven")\n', '("George W. Bush", "was born in", "New Haven")\n', '("George H. W. Bush", "lived in", "New Haven while a student at Yale")\n', '("New Haven", "is home to", "the Northeast Corridor")\n', '("New Haven", "plans to extend the Farmington Canal Trail into", "downtown New Haven")\n', '("Yale University", "is located in", "New Haven, Connecticut")\n', '("Yale University", "provides free concerts at", "venues in and around the Yale campus")\n', '("New Haven Hospital", "has four pavilions including", "the Yale – New Haven Children\'s Hospital")\n', '("New Haven", "is served by", "the daily New Haven Register")\n', '("New Haven", "is served by", "the Yale Daily News")\n', '("New Haven", "is home to professional", "Yale Bulldogs play Division I college sports")\n', '("New Haven", "hosts", "the New Haven Road Race")\n', '("New Haven Green", "is one of the", "National Historic Landmarks")\n', '("New Haven", "is connected to New York City by", "Metro-North Railroad\'s New Haven Line")\n', '("New Haven", "is connected to", "Hartford Line")\n', '("New Haven", "hosts", "various medical facilities")\n', '("Yale", "supports", "a medical and biotechnology research hub in New Haven")\n', '("New Haven", "is a member of", "the South Central Connecticut Regional Council of Governments")\n', '("Freetown", "is a sister city due to", "the Amistad trial")\n', '("Poughkeepsie", "is officially the", "City of Poughkeepsie")\n', '("Poughkeepsie", "is the county seat of", "Dutchess County")\n', '("City of Poughkeepsie", "is separate from", "Town of Poughkeepsie")\n', '("Poughkeepsie", "is in the", "Hudson River Valley region")\n', '("City of Poughkeepsie", "is served by", "Hudson Valley Regional Airport")\n', '("Poughkeepsie", "has been called", "The Queen City of the Hudson")\n', '("City of Poughkeepsie", "was settled by the", "Dutch")\n', '("Poughkeepsie", "became second capital after the", "American Revolution")\n', '("Alexander Hamilton", "ratified the United States Constitution in", "Poughkeepsie")\n', '("John Jay", "ratified the United States Constitution in", "Poughkeepsie")\n', '("Garry Kasparov", "computer was manufactured in", "IBM Poughkeepsie")\n', '("Poughkeepsie", "is midway between", "New York City and Albany")\n', '("Adelphi University\'s Hudson Valley Center", "operates within", "Poughkeepsie")\n', '("Henry Hudson", "is associated with the", "Hudson River")\n', '("Samuel Morse", "home is", "Locust Grove in Poughkeepsie")\n', '("Poughkeepsie Metro-North station", "provides rail commuter service to", "New York City")\n', '("Poughkeepsie", "is accessible via", "John F. Kennedy International Airport")\n', '("Poughkeepsie", "is accessible via", "LaGuardia Airport")\n']
+range(1, 167) 3
+['("Seoul", "is compared to", "Times Square")\n', '("Times Square", "is near", "Central Park")\n', '("Central Park", "is owned by", "the New York City Department of Parks and Recreation")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Times Square", "is a", "major commercial intersection")\n', '("Times Square", "is located in", "Midtown Manhattan, New York City")\n', '("Times Square", "is part of", "the Broadway Theater District")\n', '("Times Square", "is one of", "the world\'s most visited tourist attractions")\n', '("Times Square", "has an annual event", "New Year\'s Eve ball drop")\n', '("Times Square", "was formerly known as", "Longacre Square")\n', '("Times Square", "was renamed after", "The New York Times")\n', '("Times Square", "is the eastern terminus of", "the Lincoln Highway")\n', '("Times Square", "is sometimes referred to as", "the Crossroads of the World")\n', '("Times Square", "is brightly lit by", "numerous digital billboards")\n', '("George M. Cohan", "has a statue in", "Times Square")\n', '("Adolph S. Ochs", "moved", "The New York Times to Times Square")\n', '("Thorstein Veblen", "disliked the advertising at", "Times Square")\n', '("Irving Berlin", "was closely associated with", "Times Square")\n', '("Charlie Chaplin", "was closely associated with", "Times Square")\n', '("Fred Astaire", "was closely associated with with", "Times Square")\n', '("Madame Tussauds", "moved to", "Times Square")\n', '("Michael Bloomberg", "converted part of Broadway into", "pedestrian plazas in Times Square")\n', '("Times Square", "has higher attendance than", "each of the Disney theme parks worldwide")\n', '("Times Square", "competes in visitor count with", "the Las Vegas Strip")\n', '("Manhattan Island", "was first settled by", "the Dutch colonists")\n', '("George Washington", "led the New York militia that included", "John Morin Scott\'s lands near Times Square")\n', '("John Jacob Astor", "owned property in", "the area that became Times Square")\n', '("Hell\'s Kitchen", "is a nearby neighborhood", "affected by the changes in Times Square")\n', '("Central Park", "is an urban park located", "between the Upper West Side and Upper East Side neighborhoods of Manhattan in New York City")\n', '("Central Park", "was the first landscaped park", "in the United States")\n', '("Central Park", "was designed by", "landscape architects Frederick Law Olmsted and Calvert Vaux")\n', '("Central Park", "is managed by", "the Central Park Conservancy")\n', '("Central Park", "is adjacent to", "Harlem to the north, Midtown Manhattan to the south, the Upper West Side to the west, and the Upper East Side to the east")\n', '("Central Park", "contains landscapes such as", "the Ramble and Lake")\n', '("Central Park", "has attractions like", "Wollman Rink, Central Park Carousel, and the Central Park Zoo")\n', '("Central Park", "incorporates a system of roads and walkways", "traversed by public transportation")\n', '("Central Park", "houses", "the Dana Discovery Center")\n', '("Central Park", "is surrounded by", "a stone wall")\n', '("Central Park", "has named gates such as", "the Gate of the Exonerated")\n', '("Central Park", "includes", "Cleopatra\'s Needle")\n', '("Central Park", "hosts", "concerts and performances")\n', '("Central Park", "provides", "tours, recreation, and various activities")\n', '("Central Park", "has a reputation as", "the most filmed location in the world")\n', '("Central Park\'s", "impact includes influence on", "real estate and the economy")\n', '("Waterbury, Connecticut", "is located in", "the U.S. state of Connecticut")\n', '("Waterbury", "is southwest of", "Hartford")\n', '("Waterbury", "is northeast of", "New York City")\n', '("Waterbury", "is the largest city in", "the Naugatuck Valley Planning Region")\n', '("Waterbury", "is the second-largest city in", "New Haven County")\n', '("Waterbury", "has a Metro-North", "railroad station with connections to Grand Central Terminal")\n', '("Waterbury", "is home to", "Post University")\n', '("Waterbury", "is home to", "the regional campuses of the University of Connecticut, University of Bridgeport, Western Connecticut State University")\n', '("Waterbury", "is home to", "Naugatuck Valley Community College")\n', '("Brass and copper from Waterbury", "were used in", "Nevada\'s Boulder Dam")\n', '("The Waterbury Clock Company", "produced", "the Mickey Mouse watch under the Ingersoll brand")\n', '("Waterbury", "has communities of", "Cape Verdean, Dominican, Brazilian, Jamaican")\n', '("John F. Kennedy", "visited on the Green by", "Waterbury")\n', '("Ronald Reagan", "held a campaign rally at", "Waterbury")\n', '("Bill Clinton", "made a campaign appearance at", "Waterbury")\n', '("Waterbury", "is part of the economy of", "Cook County, Illinois")\n', '("Waterbury", "had involvement in", "U.S. Senate elections")\n', '("Waterbury", "is connected to", "Bradley International Airport through proximity")\n', '("Waterbury", "is affected by", "the climate of Massachusetts due to geographic location")\n', '("Yonkers", "is a city in", "Westchester County, New York")\n', '("Yonkers", "is north of", "the Bronx")\n', '("Yonkers", "borders", "Hudson River")\n', '("Yonkers", "is approximately north of", "Marble Hill in Manhattan")\n', '("Yonkers", "is a suburb of", "New York metropolitan area")\n', '("Yonkers", "is an inner suburb of", "New York City")\n', '("Getty Square in Yonkers", "centers around", "municipal government")\n', '("Elisha Otis", "opened", "the world\'s first elevator factory in Yonkers")\n', '("Hudson Valley", "includes", "Yonkers")\n', '("Yonkers residents", "are known as", "Yonkersonians, Yonkersites, or Yonks")\n', '("Yonkers Raceway", "renovated to become", "Empire City Casino")\n', '("Sherwood House in Yonkers", "provides access to", "Hudson River")\n', '("Yonkers", "underwent", "gentrification")\n', '("Getty Square", "is in", "Yonkers")\n', '("Yonkers", "has", "limited-access roads")\n', '("Lion Gate Studios in Yonkers", "will host", "Mediapro")\n', '("Neil Simon\'s play", "is set in", "Yonkers")\n', '("Andrew Carnegie", "funded", "the Carnegie Library in Yonkers")\n', '("St. Joseph\'s Seminary in Yonkers", "was visited by", "Pope John Paul II and Pope Benedict XVI")\n', '("Long Island", "can see", "Sacred Heart Church spire in Yonkers")\n', '("New Jersey", "can see", "Sacred Heart Church spire in Yonkers")\n', '("Buffalo", "is behind", "Yonkers as the third-largest city in New York")\n', '("Philipse Manor Hall in Yonkers", "is a", "state historic site")\n', '("Cross County Shopping Center", "is located in", "Yonkers")\n', '("Ridge Hill Mall", "is a major shopping area in", "Yonkers")\n', '("Financial District", "was a ferry service destination from", "Yonkers")\n', '("New Haven", "is a city in", "New Haven County, Connecticut")\n', '("New Haven", "is located on", "New Haven Harbor")\n', '("New Haven", "is part of", "the New York City metropolitan area")\n', '("New Haven", "is the third largest city in", "Connecticut after Bridgeport and Stamford")\n', '("New Haven", "was one of the first planned cities in", "the U.S.")\n', '("New Haven Green", "is at the center of", "Downtown New Haven")\n', '("New Haven Green", "is a National Historic Landmark", "")\n', '("Yale University", "is the biggest taxpayer and employer in", "New Haven")\n', '("Yale University", "is an integral part of", "the city\'s economy")\n', '("New Haven", "has been billed as the", "Cultural Capital of Connecticut")\n', '("New Haven", "had the first public tree planting program in", "the U.S.")\n', '("New Haven", "is nicknamed", "The Elm City")\n', '("New Haven area", "was the home of", "Quinnipiac tribe of Native Americans")\n', '("Dutch traders", "set up a small trading system of", "beaver pelts")\n', '("New Haven Colony", "was distinct from", "the Connecticut Colony")\n', '("Hopkins School", "was founded with money from the estate of", "Edward Hopkins")\n', '("Yale College", "was renamed with a donation from", "Elihu Yale")\n', '("Benedict Arnold", "commanded the Second Company in", "New Haven")\n', '("General William Tryon", "landed in", "New Haven Harbor")\n', '("Roger Sherman", "became the first mayor of", "New Haven")\n', '("Eli Whitney", "remained in", "New Haven to develop the cotton gin")\n', '("Eli Whitney Museum", "has exhibits pertaining to", "the A.C. Gilbert Company")\n', '("Abraham Lincoln", "delivered a speech on slavery in", "New Haven")\n', '("George W. Bush", "was born in", "New Haven")\n', '("George H. W. Bush", "lived in", "New Haven while a student at Yale")\n', '("New Haven", "is home to", "the Northeast Corridor")\n', '("New Haven", "plans to extend the Farmington Canal Trail into", "downtown New Haven")\n', '("Yale University", "is located in", "New Haven, Connecticut")\n', '("Yale University", "provides free concerts at", "venues in and around the Yale campus")\n', '("New Haven Hospital", "has four pavilions including", "the Yale – New Haven Children\'s Hospital")\n', '("New Haven", "is served by", "the daily New Haven Register")\n', '("New Haven", "is served by", "the Yale Daily News")\n', '("New Haven", "is home to professional", "Yale Bulldogs play Division I college sports")\n', '("New Haven", "hosts", "the New Haven Road Race")\n', '("New Haven Green", "is one of the", "National Historic Landmarks")\n', '("New Haven", "is connected to New York City by", "Metro-North Railroad\'s New Haven Line")\n', '("New Haven", "is connected to", "Hartford Line")\n', '("New Haven", "hosts", "various medical facilities")\n', '("Yale", "supports", "a medical and biotechnology research hub in New Haven")\n', '("New Haven", "is a member of", "the South Central Connecticut Regional Council of Governments")\n', '("Freetown", "is a sister city due to", "the Amistad trial")\n', '("Poughkeepsie", "is officially the", "City of Poughkeepsie")\n', '("Poughkeepsie", "is the county seat of", "Dutchess County")\n', '("City of Poughkeepsie", "is separate from", "Town of Poughkeepsie")\n', '("Poughkeepsie", "is in the", "Hudson River Valley region")\n', '("City of Poughkeepsie", "is served by", "Hudson Valley Regional Airport")\n', '("Poughkeepsie", "has been called", "The Queen City of the Hudson")\n', '("City of Poughkeepsie", "was settled by the", "Dutch")\n', '("Poughkeepsie", "became second capital after the", "American Revolution")\n', '("Alexander Hamilton", "ratified the United States Constitution in", "Poughkeepsie")\n', '("John Jay", "ratified the United States Constitution in", "Poughkeepsie")\n', '("Garry Kasparov", "computer was manufactured in", "IBM Poughkeepsie")\n', '("Poughkeepsie", "is midway between", "New York City and Albany")\n', '("Adelphi University\'s Hudson Valley Center", "operates within", "Poughkeepsie")\n', '("Henry Hudson", "is associated with the", "Hudson River")\n', '("Samuel Morse", "home is", "Locust Grove in Poughkeepsie")\n', '("Poughkeepsie Metro-North station", "provides rail commuter service to", "New York City")\n', '("Poughkeepsie", "is accessible via", "John F. Kennedy International Airport")\n', '("Poughkeepsie", "is accessible via", "LaGuardia Airport")\n']
+range(1, 167) 3
+['("Seoul", "is compared to", "Times Square")\n', '("Times Square", "is near", "Central Park")\n', '("Central Park", "is owned by", "the New York City Department of Parks and Recreation")\n']
+
+['("Seoul", "is the capital of", "the Republic of Korea")\n', '("Seoul", "is part of", "Gyeonggi province")\n', '("Seoul", "is the economic hub of", "South Korea")\n', '("Seoul", "is surrounded by", "Incheon")\n', '("Seoul", "is one of the world\'s largest metropolitan economies", "trailing Tokyo, New York City, and Los Angeles")\n', '("Seoul", "was founded by", "Baekje")\n', '("Seoul", "was the capital during", "the Joseon dynasty")\n', '("Seoul", "was occupied by", "the Japanese Empire")\n', '("Seoul", "became known as Gyeongseong during", "Japanese rule")\n', '("Seoul", "was the capital during", "Goryeo")\n', '("Seoul", "was the capital of", "the Korean Empire")\n', '("Seoul", "is geographically set in a hilly terrain with", "Namsan")\n', '("Seoul National University", "is located in", "Seoul")\n', '("Gangnam district", "is a major technology hub in", "Seoul")\n', '("Seoul Museum of Art", "is located in", "Seoul")\n', '("Seoul", "is near", "Chungnam")\n', '("Seoul", "has regular flights to", "Tokyo Haneda")\n', '("Seoul", "has regular flights to", "Shanghai Hongqiao")\n', '("Seoul", "has regular flights to", "Beijing Capital")\n', '("Times Square", "is a", "major commercial intersection")\n', '("Times Square", "is located in", "Midtown Manhattan, New York City")\n', '("Times Square", "is part of", "the Broadway Theater District")\n', '("Times Square", "is one of", "the world\'s most visited tourist attractions")\n', '("Times Square", "has an annual event", "New Year\'s Eve ball drop")\n', '("Times Square", "was formerly known as", "Longacre Square")\n', '("Times Square", "was renamed after", "The New York Times")\n', '("Times Square", "is the eastern terminus of", "the Lincoln Highway")\n', '("Times Square", "is sometimes referred to as", "the Crossroads of the World")\n', '("Times Square", "is brightly lit by", "numerous digital billboards")\n', '("George M. Cohan", "has a statue in", "Times Square")\n', '("Adolph S. Ochs", "moved", "The New York Times to Times Square")\n', '("Thorstein Veblen", "disliked the advertising at", "Times Square")\n', '("Irving Berlin", "was closely associated with", "Times Square")\n', '("Charlie Chaplin", "was closely associated with", "Times Square")\n', '("Fred Astaire", "was closely associated with with", "Times Square")\n', '("Madame Tussauds", "moved to", "Times Square")\n', '("Michael Bloomberg", "converted part of Broadway into", "pedestrian plazas in Times Square")\n', '("Times Square", "has higher attendance than", "each of the Disney theme parks worldwide")\n', '("Times Square", "competes in visitor count with", "the Las Vegas Strip")\n', '("Manhattan Island", "was first settled by", "the Dutch colonists")\n', '("George Washington", "led the New York militia that included", "John Morin Scott\'s lands near Times Square")\n', '("John Jacob Astor", "owned property in", "the area that became Times Square")\n', '("Hell\'s Kitchen", "is a nearby neighborhood", "affected by the changes in Times Square")\n', '("Central Park", "is an urban park located", "between the Upper West Side and Upper East Side neighborhoods of Manhattan in New York City")\n', '("Central Park", "was the first landscaped park", "in the United States")\n', '("Central Park", "was designed by", "landscape architects Frederick Law Olmsted and Calvert Vaux")\n', '("Central Park", "is managed by", "the Central Park Conservancy")\n', '("Central Park", "is adjacent to", "Harlem to the north, Midtown Manhattan to the south, the Upper West Side to the west, and the Upper East Side to the east")\n', '("Central Park", "contains landscapes such as", "the Ramble and Lake")\n', '("Central Park", "has attractions like", "Wollman Rink, Central Park Carousel, and the Central Park Zoo")\n', '("Central Park", "incorporates a system of roads and walkways", "traversed by public transportation")\n', '("Central Park", "houses", "the Dana Discovery Center")\n', '("Central Park", "is surrounded by", "a stone wall")\n', '("Central Park", "has named gates such as", "the Gate of the Exonerated")\n', '("Central Park", "includes", "Cleopatra\'s Needle")\n', '("Central Park", "hosts", "concerts and performances")\n', '("Central Park", "provides", "tours, recreation, and various activities")\n', '("Central Park", "has a reputation as", "the most filmed location in the world")\n', '("Central Park\'s", "impact includes influence on", "real estate and the economy")\n', '("Waterbury, Connecticut", "is located in", "the U.S. state of Connecticut")\n', '("Waterbury", "is southwest of", "Hartford")\n', '("Waterbury", "is northeast of", "New York City")\n', '("Waterbury", "is the largest city in", "the Naugatuck Valley Planning Region")\n', '("Waterbury", "is the second-largest city in", "New Haven County")\n', '("Waterbury", "has a Metro-North", "railroad station with connections to Grand Central Terminal")\n', '("Waterbury", "is home to", "Post University")\n', '("Waterbury", "is home to", "the regional campuses of the University of Connecticut, University of Bridgeport, Western Connecticut State University")\n', '("Waterbury", "is home to", "Naugatuck Valley Community College")\n', '("Brass and copper from Waterbury", "were used in", "Nevada\'s Boulder Dam")\n', '("The Waterbury Clock Company", "produced", "the Mickey Mouse watch under the Ingersoll brand")\n', '("Waterbury", "has communities of", "Cape Verdean, Dominican, Brazilian, Jamaican")\n', '("John F. Kennedy", "visited on the Green by", "Waterbury")\n', '("Ronald Reagan", "held a campaign rally at", "Waterbury")\n', '("Bill Clinton", "made a campaign appearance at", "Waterbury")\n', '("Waterbury", "is part of the economy of", "Cook County, Illinois")\n', '("Waterbury", "had involvement in", "U.S. Senate elections")\n', '("Waterbury", "is connected to", "Bradley International Airport through proximity")\n', '("Waterbury", "is affected by", "the climate of Massachusetts due to geographic location")\n', '("Yonkers", "is a city in", "Westchester County, New York")\n', '("Yonkers", "is north of", "the Bronx")\n', '("Yonkers", "borders", "Hudson River")\n', '("Yonkers", "is approximately north of", "Marble Hill in Manhattan")\n', '("Yonkers", "is a suburb of", "New York metropolitan area")\n', '("Yonkers", "is an inner suburb of", "New York City")\n', '("Getty Square in Yonkers", "centers around", "municipal government")\n', '("Elisha Otis", "opened", "the world\'s first elevator factory in Yonkers")\n', '("Hudson Valley", "includes", "Yonkers")\n', '("Yonkers residents", "are known as", "Yonkersonians, Yonkersites, or Yonks")\n', '("Yonkers Raceway", "renovated to become", "Empire City Casino")\n', '("Sherwood House in Yonkers", "provides access to", "Hudson River")\n', '("Yonkers", "underwent", "gentrification")\n', '("Getty Square", "is in", "Yonkers")\n', '("Yonkers", "has", "limited-access roads")\n', '("Lion Gate Studios in Yonkers", "will host", "Mediapro")\n', '("Neil Simon\'s play", "is set in", "Yonkers")\n', '("Andrew Carnegie", "funded", "the Carnegie Library in Yonkers")\n', '("St. Joseph\'s Seminary in Yonkers", "was visited by", "Pope John Paul II and Pope Benedict XVI")\n', '("Long Island", "can see", "Sacred Heart Church spire in Yonkers")\n', '("New Jersey", "can see", "Sacred Heart Church spire in Yonkers")\n', '("Buffalo", "is behind", "Yonkers as the third-largest city in New York")\n', '("Philipse Manor Hall in Yonkers", "is a", "state historic site")\n', '("Cross County Shopping Center", "is located in", "Yonkers")\n', '("Ridge Hill Mall", "is a major shopping area in", "Yonkers")\n', '("Financial District", "was a ferry service destination from", "Yonkers")\n', '("New Haven", "is a city in", "New Haven County, Connecticut")\n', '("New Haven", "is located on", "New Haven Harbor")\n', '("New Haven", "is part of", "the New York City metropolitan area")\n', '("New Haven", "is the third largest city in", "Connecticut after Bridgeport and Stamford")\n', '("New Haven", "was one of the first planned cities in", "the U.S.")\n', '("New Haven Green", "is at the center of", "Downtown New Haven")\n', '("New Haven Green", "is a National Historic Landmark", "")\n', '("Yale University", "is the biggest taxpayer and employer in", "New Haven")\n', '("Yale University", "is an integral part of", "the city\'s economy")\n', '("New Haven", "has been billed as the", "Cultural Capital of Connecticut")\n', '("New Haven", "had the first public tree planting program in", "the U.S.")\n', '("New Haven", "is nicknamed", "The Elm City")\n', '("New Haven area", "was the home of", "Quinnipiac tribe of Native Americans")\n', '("Dutch traders", "set up a small trading system of", "beaver pelts")\n', '("New Haven Colony", "was distinct from", "the Connecticut Colony")\n', '("Hopkins School", "was founded with money from the estate of", "Edward Hopkins")\n', '("Yale College", "was renamed with a donation from", "Elihu Yale")\n', '("Benedict Arnold", "commanded the Second Company in", "New Haven")\n', '("General William Tryon", "landed in", "New Haven Harbor")\n', '("Roger Sherman", "became the first mayor of", "New Haven")\n', '("Eli Whitney", "remained in", "New Haven to develop the cotton gin")\n', '("Eli Whitney Museum", "has exhibits pertaining to", "the A.C. Gilbert Company")\n', '("Abraham Lincoln", "delivered a speech on slavery in", "New Haven")\n', '("George W. Bush", "was born in", "New Haven")\n', '("George H. W. Bush", "lived in", "New Haven while a student at Yale")\n', '("New Haven", "is home to", "the Northeast Corridor")\n', '("New Haven", "plans to extend the Farmington Canal Trail into", "downtown New Haven")\n', '("Yale University", "is located in", "New Haven, Connecticut")\n', '("Yale University", "provides free concerts at", "venues in and around the Yale campus")\n', '("New Haven Hospital", "has four pavilions including", "the Yale – New Haven Children\'s Hospital")\n', '("New Haven", "is served by", "the daily New Haven Register")\n', '("New Haven", "is served by", "the Yale Daily News")\n', '("New Haven", "is home to professional", "Yale Bulldogs play Division I college sports")\n', '("New Haven", "hosts", "the New Haven Road Race")\n', '("New Haven Green", "is one of the", "National Historic Landmarks")\n', '("New Haven", "is connected to New York City by", "Metro-North Railroad\'s New Haven Line")\n', '("New Haven", "is connected to", "Hartford Line")\n', '("New Haven", "hosts", "various medical facilities")\n', '("Yale", "supports", "a medical and biotechnology research hub in New Haven")\n', '("New Haven", "is a member of", "the South Central Connecticut Regional Council of Governments")\n', '("Freetown", "is a sister city due to", "the Amistad trial")\n', '("Poughkeepsie", "is officially the", "City of Poughkeepsie")\n', '("Poughkeepsie", "is the county seat of", "Dutchess County")\n', '("City of Poughkeepsie", "is separate from", "Town of Poughkeepsie")\n', '("Poughkeepsie", "is in the", "Hudson River Valley region")\n', '("City of Poughkeepsie", "is served by", "Hudson Valley Regional Airport")\n', '("Poughkeepsie", "has been called", "The Queen City of the Hudson")\n', '("City of Poughkeepsie", "was settled by the", "Dutch")\n', '("Poughkeepsie", "became second capital after the", "American Revolution")\n', '("Alexander Hamilton", "ratified the United States Constitution in", "Poughkeepsie")\n', '("John Jay", "ratified the United States Constitution in", "Poughkeepsie")\n', '("Garry Kasparov", "computer was manufactured in", "IBM Poughkeepsie")\n', '("Poughkeepsie", "is midway between", "New York City and Albany")\n', '("Adelphi University\'s Hudson Valley Center", "operates within", "Poughkeepsie")\n', '("Henry Hudson", "is associated with the", "Hudson River")\n', '("Samuel Morse", "home is", "Locust Grove in Poughkeepsie")\n', '("Poughkeepsie Metro-North station", "provides rail commuter service to", "New York City")\n', '("Poughkeepsie", "is accessible via", "John F. Kennedy International Airport")\n', '("Poughkeepsie", "is accessible via", "LaGuardia Airport")\n']
+range(1, 167) 3
+{'id': '2_5', 'Question': ' Who owns the green space near the area in Seoul which is often compared to a famously vibrant and crowded spot known for its neon lights?\n', 'Answer': 'New York City', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Waterbury, Connecticut'}, {'label': 'B', 'text': 'New York City'}, {'label': 'C', 'text': 'Yonkers, New York'}, {'label': 'D', 'text': 'New Haven, Connecticut'}, {'label': 'E', 'text': 'Poughkeepsie, New York'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'waterbury'}, {'label': 'B', 'text': 'new_york_city'}, {'label': 'C', 'text': 'yonkers'}, {'label': 'D', 'text': 'new_haven'}, {'label': 'E', 'text': 'poughkeepsie'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: What area, often bustling with people and bright with neon lights, is Seoul likened to?\nA1: Times Square\n\n', '2: What well-known urban green space is in close proximity to Times Square?\nA2: Central Park\n\n', '3: Who holds the ownership of Central Park, the urban oasis located in Manhattan?\nA3: New York City'], 'Hops_wiki': [('Seoul', 'Times Square'), ('Times Square', 'Central Park'), ('Central Park', 'New York City')], 'Hops_cpnet': [('seoul', 'times_square'), ('times_square', 'central_park'), ('central_park', 'new_york_city')], 'Triplets': ['("Seoul", "is compared to", "Times Square")', '("Times Square", "is near", "Central Park")', '("Central Park", "is owned by", "the New York City Department of Parks and Recreation")'], 'Referred_files': [{'name': 'Seoul', 'line': 15}, {'name': 'Times Square', 'line': 21}, {'name': 'Central Park', 'line': 9}], 'Question_triplet_answer': {100: [43, 88, 94], 50: [5, 69, 82], 25: [11, 49, 157]}}
+time passed:  12132.71476483345
+Expected dollar:  0.005
+Yonkersonians is Geography
+Yonkersites is Geography
+Seoul is Geography
+Gyeonggi is Geography
+Gangnam district is Geography
+Yonkers is Geography
+Times Square is Geography
+the Las Vegas Strip is Geography
+Fred Astaire is People
+Waterbury is Geography
+Connecticut is Geography
+U.S. is Geography
+New Jersey is Geography
+George Washington is Geography
+John Morin Scott's is People
+Michael Bloomberg is People
+Adolph S. Ochs is People
+New York City is Geography
+the Korean Empire is Geography
+Benedict Arnold is Geography
+New Haven is Geography
+Central Park's is Geography
+Roger Sherman is People
+Elisha Otis is People
+Seoul Museum of Art is Geography
+George H. W. Bush is People
+Yale is Geography
+Central Park is Geography
+the Central Park Conservancy is Geography
+George M. Cohan is People
+Thorstein Veblen" is People
+New Haven Harbor is Geography
+Grand Central Terminal is Geography
+Manhattan Island is Geography
+the Japanese Empire is Geography
+Hudson River is Geography
+Eli Whitney Museum is People
+Cross County Shopping Center is Geography
+Getty Square is Geography
+Bronx is Geography
+Yonkers Raceway is Geography
+Adelphi University's is Geography
+Hudson Valley Center is Geography
+Andrew Carnegie is People
+Bridgeport is Geography
+Freetown is Geography
+George W. Bush is People
+Edward Hopkins is People
+New Haven Green is Geography
+Irving Berlin is People
+Ronald Reagan is People
+the Northeast Corridor is Geography
+the Lincoln Highway is Geography
+Tokyo is Geography
+Los Angeles is Geography
+Shanghai is Geography
+Hartford is Geography
+the Naugatuck Valley Planning Region is Geography
+Yale College is Geography
+Elihu Yale is People
+Hudson Valley Regional Airport is Geography
+New Haven County is Geography
+Tokyo Haneda is Geography
+John F. Kennedy International Airport is Geography
+Nevada is Geography
+Boulder Dam is Geography
+the Crossroads of the World is Geography
+South Korea is Geography
+LaGuardia Airport is Geography
+Cook County is Geography
+Illinois is Geography
+Bradley International Airport is Geography
+Harlem is Geography
+Midtown Manhattan is Geography
+the Upper West Side is Geography
+the Upper East Side is Geography
+Madame Tussauds is Geography
+Ridge Hill Mall is Geography
+Westchester County is Geography
+Upper East Side is Geography
+Manhattan is Geography
+Henry Hudson is People
+Yale University is Geography
+Namsan is Geography
+Town of Poughkeepsie is Geography
+entities:  {'U.S.', 'Terminal', 'Ronald', 'Gyeonggi', 'Hudson', 'F.', 'Illinois', 'Trail', 'Jersey', 'County', 'Center', 'Connecticut', 'Town', 'City', 'Veblen', 'Region', 'Cohan', 'Yonkers', 'Roger', 'Whitney', 'Washington', 'West', 'Carnegie', 'district', 'Seoul', 'Benedict', 'Poughkeepsie', 'River', 'Irving', 'Hongqiao', 'Hartford', 'Yale', 'Times', 'Tokyo', 'A.C.', 'Edward', 'Las', "Scott's", 'Farmington', 'Getty', 'Bloomberg', 'Stamford', "Park's", 'Highway', 'Namsan', 'H.', 'Bush', 'Kennedy', 'Cook', 'Lincoln', 'Incheon', 'Central', 'Strip', 'Conservancy', 'Harbor', 'Nevada', 'Square', 'Island', 'Haven,', 'Raceway', 'Crossroads', 'Tussauds', 'Park', 'Elisha', 'Ochs', 'Michael', 'Green', 'Madame', 'Waterbury,', 'Upper', 'Yonkersites', 'Henry', 'W.', 'Hill', 'Cross', 'Reagan', 'Harlem', 'Regional', 'International', 'M.', 'Angeles', 'Shopping', 'Poughkeepsie,', 'Korea', 'Waterbury', 'Hopkins', 'Berlin', 'Morin', 'Metro', 'Elihu', 'Vegas', 'Museum', 'Boulder', 'Adolph', 'Arnold', 'Side', 'Bridgeport', 'Shanghai', 'Broadway', 'Gilbert', 'Art', 'Corridor', 'Yonkersonians', 'Yonkers,', 'Naugatuck', 'Adelphi', 'Sherman', 'York', 'College', 'Thorstein', 'East', 'Astaire', 'Korean', 'Fred', 'Haneda', "University's", 'Mall', 'Freetown', 'LaGuardia', 'Eli', 'Dam', 'Bronx', 'Valley', 'Otis', 'John', 'Japanese', 'Andrew', 'Planning', 'Midtown', 'Westchester', 'University', 'Airport', 'Ridge', 'Northeast', 'Scott', 'World', 'South', 'New', 'Bradley', 'Empire', 'House', 'Grand', 'Veblen"', 'Gangnam', 'George', 'S.', 'Los', 'Manhattan'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'New York City' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Yonkers residents
+Seoul
+Gangnam district
+Lion Gate Studios in Yonkers
+Times Square
+Fred Astaire
+Waterbury, Connecticut
+New Jersey
+New Haven Colony
+George Washington
+Michael Bloomberg
+Adolph S. Ochs
+Yonkers
+Waterbury
+New Haven
+Seoul
+New Jersey
+Poughkeepsie
+Waterbury, Connecticut
+Ronald Reagan
+Cross County Shopping Center
+Getty Square
+Getty Square
+Yale College
+Central Park
+City of Poughkeepsie
+Brass and copper from Waterbury
+Yale College
+Getty Square
+Elisha Otis
+Brass and copper from Waterbury
+Seoul
+Waterbury
+Elisha Otis
+Ronald Reagan
+Poughkeepsie
+Thorstein Veblen
+Elisha Otis
+Hopkins School
+Seoul
+Poughkeepsie
+Waterbury
+Central Park
+Seoul
+City of Poughkeepsie
+Seoul
+Seoul
+Poughkeepsie
+New Haven
+New Haven
+Central Park
+Central Park
+Madame Tussauds
+Ridge Hill Mall
+Seoul
+Central Park
+Yonkers
+Long Island
+Yale University
+Ronald Reagan
+Long Island
+Yale University
+Seoul
+New Haven
+Ronald Reagan
+Seoul
+Adolph S. Ochs
+Adelphi University's Hudson Valley Center
+Central Park
+Yonkers residents
+Yonkers
+New Haven
+Times Square
+Yonkers
+Times Square
+City of Poughkeepsie
+New Haven
+Central Park
+Seoul
+Seoul
+Sherwood House in Yonkers
+Seoul
+Seoul
+Times Square
+
+gpt_entity_particular(): entity list: 
+ ['Sherwood House in Yonkers', 'Adolph S. Ochs', 'New Jersey', 'Central Park', 'Yonkers residents', 'George Washington', 'Long Island', 'Michael Bloomberg', 'Brass and copper from Waterbury', 'Cross County Shopping Center', 'Waterbury', 'Yale College', 'Hopkins School', 'Yonkers', 'Times Square', 'Gangnam district', 'New Haven Colony', 'Thorstein Veblen', 'Ronald Reagan', 'New Haven', 'City of Poughkeepsie', 'Madame Tussauds', 'Seoul', 'Lion Gate Studios in Yonkers', 'Poughkeepsie', 'Getty Square', "Adelphi University's Hudson Valley Center", 'Ridge Hill Mall', 'Elisha Otis', 'Waterbury, Connecticut', 'Fred Astaire', 'Yale University']
+
+gpt_entity_particular(): filtered entity: 
+ ['Central Park', 'Yonkers', 'Times Square']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'New Haven, Connecticut' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Yonkers residents
+Seoul
+Gangnam district
+Lion Gate Studios in Yonkers
+Times Square
+Fred Astaire
+Waterbury, Connecticut
+New Jersey
+New Haven Colony
+George Washington
+Michael Bloomberg
+Adolph S. Ochs
+Yonkers
+Waterbury
+George H. W. Bush
+Central Park's
+Financial District
+Roger Sherman
+Elisha Otis
+Seoul Museum of Art
+Central Park
+Poughkeepsie
+Getty Square in Yonkers
+Hell's Kitchen
+Thorstein Veblen
+New Haven
+Manhattan Island
+City of Poughkeepsie
+Brass and copper from Waterbury
+Yale College
+Ronald Reagan
+Freetown
+George W. Bush
+Hopkins School
+New Haven Green
+Irving Berlin
+Cross County Shopping Center
+Yonkers Raceway
+Adelphi University's Hudson Valley Center
+Henry Hudson
+Yale University
+Madame Tussauds
+Ridge Hill Mall
+Long Island
+Times Square
+
+Sacred Heart Church
+Metro-North Railroad's New Haven Line
+Seoul Museum of Art
+
+Smokestacks
+
+Carnegie Library
+Farmington Canal Trail
+Namsan
+
+Town of Poughkeepsie
+Hudson River
+Incheon
+New Year's Eve ball drop
+
+gpt_entity_particular(): entity list: 
+ ['Adolph S. Ochs', "Central Park's", 'Henry Hudson', 'New Jersey', 'Sacred Heart Church', 'Smokestacks', 'Central Park', 'Roger Sherman', 'Getty Square in Yonkers', 'Town of Poughkeepsie', 'Irving Berlin', 'George H. W. Bush', 'Yonkers residents', 'Namsan', "Metro-North Railroad's New Haven Line", 'Freetown', 'George Washington', 'Carnegie Library', 'Long Island', 'Michael Bloomberg', 'Brass and copper from Waterbury', 'Incheon', 'Cross County Shopping Center', 'Waterbury', "Hell's Kitchen", 'Yale College', 'Seoul Museum of Art', 'Hopkins School', 'Hudson River', 'Yonkers', 'Times Square', 'Gangnam district', 'Financial District', 'New Haven Colony', 'Thorstein Veblen', 'Ronald Reagan', 'New Haven Green', 'New Haven', 'City of Poughkeepsie', 'George W. Bush', 'Madame Tussauds', 'Seoul', 'Yonkers Raceway', 'Lion Gate Studios in Yonkers', 'Poughkeepsie', "Adelphi University's Hudson Valley Center", 'Farmington Canal Trail', "New Year's Eve ball drop", 'Manhattan Island', 'Ridge Hill Mall', 'Elisha Otis', 'Waterbury, Connecticut', 'Fred Astaire', 'Yale University']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Seoul' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Seoul
+Gyeonggi province
+Gangnam district
+technology hub
+Korean Empire
+pole
+plazas
+Broadway
+pedestrian plazas
+The New York Times
+gentrification
+metropolitan economies
+Tokyo
+Nichibeikan
+Shanghai Hongqiao
+Namsan
+Gyeongseong
+Incheon
+New Year's Eve ball drop
+
+gpt_entity_particular(): entity list: 
+ ['technology hub', 'Nichibeikan', 'Gyeonggi province', 'Gyeongseong', 'pedestrian plazas', 'Namsan', 'Korean Empire', 'The New York Times', 'metropolitan economies', 'Incheon', 'Gangnam district', 'plazas', 'Shanghai Hongqiao', 'Seoul', 'Broadway', 'gentrification', "New Year's Eve ball drop", 'pole', 'Tokyo']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Yonkers, New York' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Yonkers residents
+Lion Gate Studios in Yonkers
+Sacred Heart Church spire in Yonkers 
+George Washington 
+John Morin Scott's lands near Times Square
+Central Park's 
+Central Park Conservancy
+Cross County Shopping Center
+Empire City Casino
+Getty Square in Yonkers
+Yonkers Raceway
+Elisha Otis
+Seoul Museum of Art
+Adelphi University's Hudson Valley Center
+Ronald Reagan
+Waterbury 
+Cape Verdean, Dominican, Brazilian, Jamaican
+Michael Bloomberg
+The New York Times
+Hudson River
+Central Park 
+Times Square 
+Times Square
+Central Park 
+Hudson Valley Regional Airport
+Metro-North Railroad's New Haven Line
+George M. Cohan 
+Central Park
+LaGuardia Airport
+Manhattan Island 
+Yale College
+Edward Hopkins
+National Historic Landmarks
+Bradley International Airport
+Hartford Line
+Getty Square
+Brass and copper from Waterbury
+Hudson Valley Regional Airport
+John F. Kennedy International Airport
+Central Park
+Harlem 
+Midtown Manhattan 
+Upper West Side 
+Upper East Side 
+Harlem to the north 
+Midtown Manhattan to the south 
+New Haven Green
+Farmington Canal Trail 
+Downtown New Haven
+New Haven Colony 
+The Connecticut Colony
+Madame Tussauds
+Ridge Hill Mall 
+Harbor
+Amistad trial
+Ronald Reagan
+Hudson River
+Northeast Corridor
+South Central Connecticut Regional Council
+Cook County, Illinois
+Thorstein Veblen
+Central Park 
+Elihu Yale 
+The Netherlands 
+The Korean Empire
+Times Square
+
+gpt_entity_particular(): entity list: 
+ ['Downtown New Haven', 'Harlem to the north ', 'Manhattan Island ', 'Elihu Yale ', 'The Netherlands ', 'Central Park', 'Getty Square in Yonkers', 'National Historic Landmarks', 'Cook County, Illinois', 'Upper West Side ', 'Yonkers residents', "Metro-North Railroad's New Haven Line", 'Bradley International Airport', "John Morin Scott's lands near Times Square", 'Central Park Conservancy', 'New Haven Colony ', 'Farmington Canal Trail ', 'The Korean Empire', 'The New York Times', 'Michael Bloomberg', 'Hudson Valley Regional Airport', 'Brass and copper from Waterbury', 'Hartford Line', 'The Connecticut Colony', 'Amistad trial', 'Cross County Shopping Center', 'Waterbury ', 'Yale College', 'Seoul Museum of Art', 'Hudson River', 'Edward Hopkins', 'Upper East Side ', 'Harlem ', 'Times Square', 'Ridge Hill Mall ', 'Harbor', 'South Central Connecticut Regional Council', 'Thorstein Veblen', 'Ronald Reagan', 'New Haven Green', 'Cape Verdean, Dominican, Brazilian, Jamaican', 'Northeast Corridor', 'Times Square ', "Central Park's ", 'LaGuardia Airport', 'John F. Kennedy International Airport', 'Midtown Manhattan to the south ', 'Madame Tussauds', 'Yonkers Raceway', 'Lion Gate Studios in Yonkers', 'Central Park ', "Adelphi University's Hudson Valley Center", 'Getty Square', 'George Washington ', 'Sacred Heart Church spire in Yonkers ', 'Empire City Casino', 'Midtown Manhattan ', 'George M. Cohan ', 'Elisha Otis']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Times Square' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Times Square
+Fred Astaire
+Michael Bloomberg
+Adolph S. Ochs
+George M. Cohan
+Irving Berlin
+Madame Tussauds
+
+gpt_entity_particular(): entity list: 
+ ['Madame Tussauds', 'Adolph S. Ochs', 'George M. Cohan', 'Times Square', 'Michael Bloomberg', 'Irving Berlin', 'Fred Astaire']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Poughkeepsie, New York' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Madame Tussauds
+Gangnam district
+Lion Gate Studios
+Sacred Heart Church spire
+Getty Square
+The New York Times
+the American Revolution
+LaGuardia Airport
+John F. Kennedy International Airport
+the Lincoln Highway
+Central Park Conservancy
+Empire City Casino
+Cross County Shopping Center
+The Carnegie Library
+Seoul Museum of Art
+Hudson Valley Center
+Poughkeepsie
+Hudson Valley Regional Airport
+Metro-North Railroad
+Yale College
+Eli Whitney Museum
+Getty Square
+the Bronx
+Hudson River
+Edward Hopkins
+the A.C. Gilbert Company
+Elihu Yale
+the Farmington Canal Trail
+The Northeast Corridor
+National Historic Landmarks
+Dutchess County
+City of Poughkeepsie
+Hudson River
+
+gpt_entity_particular(): entity list: 
+ ['Metro-North Railroad', 'National Historic Landmarks', 'Hudson Valley Center', 'Central Park Conservancy', 'Eli Whitney Museum', 'Sacred Heart Church spire', 'The New York Times', 'Hudson Valley Regional Airport', 'Cross County Shopping Center', 'Yale College', 'Seoul Museum of Art', 'Hudson River', 'Edward Hopkins', 'the Farmington Canal Trail', 'the Lincoln Highway', 'The Northeast Corridor', 'Gangnam district', 'City of Poughkeepsie', 'Elihu Yale', 'John F. Kennedy International Airport', 'LaGuardia Airport', 'Madame Tussauds', 'The Carnegie Library', 'Poughkeepsie', 'Getty Square', 'the Bronx', 'Empire City Casino', 'Dutchess County', 'Lion Gate Studios', 'the American Revolution', 'the A.C. Gilbert Company']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Central Park' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Central Park
+Central Park Conservancy
+Harlem
+Upper West Side
+Upper East Side
+Midtown Manhattan
+
+gpt_entity_particular(): entity list: 
+ ['Harlem', 'Central Park Conservancy', 'Upper West Side', 'Central Park', 'Upper East Side', 'Midtown Manhattan']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Waterbury, Connecticut' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Waterbury
+Connecticut 
+U.S. state of Connecticut
+
+gpt_entity_particular(): entity list: 
+ ['Waterbury', 'Connecticut ', 'U.S. state of Connecticut']
+
+gpt_entity_particular(): filtered entity: 
+ []
+After GPT, entity:  {'U.S.', 'Terminal', 'Ronald', 'Gyeonggi', 'Hudson', 'F.', 'Illinois', 'Trail', 'Jersey', 'County', 'Center', 'Connecticut', 'Town', 'City', 'Veblen', 'Region', 'Cohan', 'Yonkers', 'Roger', 'Whitney', 'Washington', 'West', 'Carnegie', 'district', 'Seoul', 'Benedict', 'Poughkeepsie', 'River', 'Irving', 'Hongqiao', 'Hartford', 'Yale', 'Times', 'Tokyo', 'A.C.', 'Edward', 'Las', "Scott's", 'Farmington', 'Getty', 'Central Park', 'Bloomberg', 'Stamford', "Park's", 'Highway', 'Namsan', 'H.', 'Bush', 'Kennedy', 'Cook', 'Lincoln', 'Incheon', 'Central', 'Strip', 'Conservancy', 'Harbor', 'Nevada', 'Square', 'Island', 'Haven,', 'Raceway', 'Crossroads', 'Tussauds', 'Park', 'Elisha', 'Ochs', 'Michael', 'Green', 'Madame', 'Waterbury,', 'Upper', 'Yonkersites', 'Henry', 'W.', 'Hill', 'Cross', 'Reagan', 'Harlem', 'Regional', 'International', 'M.', 'Angeles', 'Shopping', 'Poughkeepsie,', 'Korea', 'Waterbury', 'Hopkins', 'Berlin', 'Morin', 'Metro', 'Elihu', 'Vegas', 'Museum', 'Times Square', 'Boulder', 'Adolph', 'Arnold', 'Side', 'Bridgeport', 'Shanghai', 'Broadway', 'Gilbert', 'Art', 'Corridor', 'Yonkersonians', 'Yonkers,', 'Naugatuck', 'Adelphi', 'Sherman', 'York', 'College', 'Thorstein', 'East', 'Astaire', 'Korean', 'Fred', 'Haneda', "University's", 'Mall', 'Freetown', 'LaGuardia', 'Eli', 'Dam', 'Bronx', 'Valley', 'Otis', 'John', 'Japanese', 'Andrew', 'Planning', 'Midtown', 'Westchester', 'University', 'Airport', 'Ridge', 'Northeast', 'Scott', 'World', 'South', 'New', 'Bradley', 'Empire', 'House', 'Grand', 'Veblen"', 'Gangnam', 'George', 'S.', 'Los', 'Manhattan'}
+Total time:  359.7292432785034
+Entity conversion done on 2_5 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_2_5_entity_conversion_hash.json. Check the entity.
+ Who owns the 05F space near the area in 08B which is often compared to a famously vibrant and crowded spot known for its neon lights?
+
+
+
+Done. Check final_query/id_2_5_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_2_5_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_2_5_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_2_5_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_2_5_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_2_5_final_result_ratio25_unmasked.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_100_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_100_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_100_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_100_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_100_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_100_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_100_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_100_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_50_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_50_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_50_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_50_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_50_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_50_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_50_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_50_gpt-4-1106-Preview_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_25_gpt-35-turbo-1106_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_25_gpt-35-turbo-1106_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_25_gpt-4-1106-Preview_UNMASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_25_gpt-4-1106-Preview_UNMASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_25_gpt-35-turbo-1106_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_25_gpt-35-turbo-1106_MASKED_with_reasoning.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_25_gpt-4-1106-Preview_MASKED_onlyanswer.txt
+Saved results on /mnt/nas2/seogyeong/23winter/kfc_dataset/result/openai_LLM/2_5_25_gpt-4-1106-Preview_MASKED_with_reasoning.txt

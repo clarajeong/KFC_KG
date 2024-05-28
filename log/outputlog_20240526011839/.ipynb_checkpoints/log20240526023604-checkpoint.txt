@@ -1,0 +1,1015 @@
+Got argument: Turtle, 0, 0_2, normal_test: False, blanked: False
+
+utils/question.py extract_hops(Turtle, [], []) Start
+Found /mnt/nas2/seogyeong/23winter/kfc_dataset/wiki_files/Turtle_info.json file
+first_hop:  {'triplet': '("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")', 'start word': 'Turtle', 'end word': 'Gulf of Mexico', 'source': {'name': 'Turtle', 'line': 39}, 'cpnet': {'start word': 'turtle', 'end word': 'gulf_of_mexico'}}
+next_word: Gulf of Mexico
+generate_question(0_2, ['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")'], ['Gulf of Mexico'], [('Turtle', 'Gulf of Mexico')], Gulf of Mexico, [{'name': 'Turtle', 'line': 39}]) called
+GPT output is:  Q: In what warm and biodiverse general area that contributes to the highest richness of non-marine turtle species, alongside the Amazon basin and coastal drainages in North America, would you find a significant number of these reptiles?
+A: Gulf of Mexico
+final_choice(Gulf of Mexico, options = 5) started
+[]
+entity_type(Gulf of Mexico) called
+Gulf of Mexico is Geography
+check_matchscore(Gulf of Mexico, Mexico–United States border):  0.1111111111111111
+choose_by_wiki_recur(Mexico–United States border)
+   Pages in Mexico–United States border: ['Mexico–United States border', '2019 Presidents Day protest', 'Adams–Onís Treaty', 'Aguilas del Desierto', '2015 Amado checkpoint protest', 'Amistad National Recreation Area', 'Amistad Reservoir', 'Anáhuac Municipality', 'Banco Convention of 1905', 'Borderland (TV series)', 'Mexico–United States border wall', 'Border Angels', 'Border Environment Cooperation Commission', 'Border Field State Park', 'Border Film Project', 'Border Report', 'Boundary Treaty of 1970', 'Central American migrant caravans', 'Chamizal dispute', 'Chamizal National Memorial', 'Ciudad Juárez migrant center fire', 'Colonia (United States)', 'Coronado National Memorial', 'Coyotes (book)', 'El Camino del Diablo', 'Executive Order 13767', 'Fisher Industries', 'Friendship Park (San Diego–Tijuana)', 'Gadsden Purchase', 'Goat Canyon (Tijuana River Valley)', 'Killing of Claudia Gómez González', 'Treaty of Guadalupe Hidalgo', 'Hernandez v. Mesa', 'Gulf of Mexico', 'Esequiel Hernández Jr.', 'El inmigrante', 'International Boundary and Water Commission', 'Operation Jump Start', 'Maquilapolis', 'Mayans M.C.', 'Mexico–United States border crisis', 'Mexico–United States international park', 'Minuteman Civil Defense Corps', 'Bombing of Naco', 'NEXUS', 'No More Deaths', 'Ojinaga Cut', 'Operation Gatekeeper', 'Operation Lone Star', 'Organ Pipe Cactus National Monument', 'Prevention Through Deterrence', 'Rio Grande', 'Rio Grande border disputes', 'Río Rico, Tamaulipas', 'Shooting of José Rodríguez', 'Roosevelt Reservation', 'San Diego–Tijuana', 'SENTRI', 'Secure Fence Act of 2006', 'Shadow Wolves', 'The Shepherd: Border Patrol', "Smuggler's Gulch", 'Smuggling tunnel', 'Southwest Border Security Consortium', 'Speedy Gonzales (film)', 'Standoff at Eagle Pass', 'Texas Senate Bill 4 (2023)', 'Texas Virtual Border Watch', 'Tortilla Wall', 'Trans-Border Institute', 'Treaty of Limits (Mexico–United States)', 'Trump wall', 'The Undocumented', 'United States and Mexican Boundary Commission', 'United States and Mexican Boundary Survey', 'Violence and Activism at the Border', 'We Build the Wall']
+      United States and Mexican Boundary Survey in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument']
+      Amistad National Recreation Area in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis']
+      Border Environment Cooperation Commission in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel']
+      Organ Pipe Cactus National Monument in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch']
+      Maquilapolis in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission']
+      Smuggling tunnel in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border']
+      Texas Virtual Border Watch in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall']
+      United States and Mexican Boundary Commission in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial']
+      Violence and Activism at the Border in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch"]
+      Mexico–United States border wall in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut']
+      Chamizal National Memorial in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante']
+      Smuggler's Gulch in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767']
+      Ojinaga Cut in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)']
+      El inmigrante in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries']
+      Executive Order 13767 in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.']
+      Treaty of Limits (Mexico–United States) in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial']
+      Fisher Industries in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium']
+      Mayans M.C. in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana']
+      Coronado National Memorial in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest']
+      Southwest Border Security Consortium in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest']
+      San Diego–Tijuana in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis']
+      2015 Amado checkpoint protest in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande']
+      2019 Presidents Day protest in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006']
+      Mexico–United States border crisis in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star']
+      Rio Grande in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass']
+      Secure Fence Act of 2006 in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass']
+      Operation Lone Star in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco']
+      Standoff at Eagle Pass in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall']
+      Bombing of Naco in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez']
+      We Build the Wall in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park']
+      Shooting of José Rodríguez in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González']
+      Border Field State Park in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute']
+      Killing of Claudia Gómez González in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.']
+      Trans-Border Institute in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI']
+      Esequiel Hernández Jr. in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence']
+      SENTRI in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented']
+      Prevention Through Deterrence in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project']
+      The Undocumented in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall']
+      Border Film Project in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall']
+      Trump wall in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves']
+      Shadow Wolves in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)']
+      Speedy Gonzales (film) in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality']
+      Anáhuac Municipality in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)']
+      Goat Canyon (Tijuana River Valley) in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes']
+      Rio Grande border disputes in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start']
+      Operation Jump Start in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report']
+      Border Report in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)']
+      Friendship Park (San Diego–Tijuana) in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol']
+      The Shepherd: Border Patrol in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico']
+      Gulf of Mexico in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)']
+      Colonia (United States) in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto']
+      Aguilas del Desierto in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS']
+      NEXUS in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths']
+      No More Deaths in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths']
+      Central American migrant caravans in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans']
+      Chamizal dispute in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute']
+      Roosevelt Reservation in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation']
+      International Boundary and Water Commission in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission']
+      Banco Convention of 1905 in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905']
+      Mexico–United States international park in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park']
+      Texas Senate Bill 4 (2023) in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)']
+      Operation Gatekeeper in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper']
+      Tortilla Wall in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall']
+      Amistad Reservoir in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir']
+      Adams–Onís Treaty in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty']
+      Minuteman Civil Defense Corps in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps']
+      Coyotes (book) in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)']
+      Boundary Treaty of 1970 in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970']
+      El Camino del Diablo in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970', 'El Camino del Diablo']
+      Hernandez v. Mesa in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970', 'El Camino del Diablo', 'Hernandez v. Mesa']
+      Treaty of Guadalupe Hidalgo in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970', 'El Camino del Diablo', 'Hernandez v. Mesa', 'Treaty of Guadalupe Hidalgo']
+      Borderland (TV series) in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970', 'El Camino del Diablo', 'Hernandez v. Mesa', 'Treaty of Guadalupe Hidalgo', 'Borderland (TV series)']
+      Border Angels in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970', 'El Camino del Diablo', 'Hernandez v. Mesa', 'Treaty of Guadalupe Hidalgo', 'Borderland (TV series)', 'Border Angels']
+      Gadsden Purchase in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970', 'El Camino del Diablo', 'Hernandez v. Mesa', 'Treaty of Guadalupe Hidalgo', 'Borderland (TV series)', 'Border Angels', 'Gadsden Purchase']
+      Río Rico, Tamaulipas in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970', 'El Camino del Diablo', 'Hernandez v. Mesa', 'Treaty of Guadalupe Hidalgo', 'Borderland (TV series)', 'Border Angels', 'Gadsden Purchase', 'Río Rico, Tamaulipas']
+      Ciudad Juárez migrant center fire in ['United States and Mexican Boundary Survey', 'Amistad National Recreation Area', 'Border Environment Cooperation Commission', 'Organ Pipe Cactus National Monument', 'Maquilapolis', 'Smuggling tunnel', 'Texas Virtual Border Watch', 'United States and Mexican Boundary Commission', 'Violence and Activism at the Border', 'Mexico–United States border wall', 'Chamizal National Memorial', "Smuggler's Gulch", 'Ojinaga Cut', 'El inmigrante', 'Executive Order 13767', 'Treaty of Limits (Mexico–United States)', 'Fisher Industries', 'Mayans M.C.', 'Coronado National Memorial', 'Southwest Border Security Consortium', 'San Diego–Tijuana', '2015 Amado checkpoint protest', '2019 Presidents Day protest', 'Mexico–United States border crisis', 'Rio Grande', 'Secure Fence Act of 2006', 'Operation Lone Star', 'Standoff at Eagle Pass', 'Bombing of Naco', 'We Build the Wall', 'Shooting of José Rodríguez', 'Border Field State Park', 'Killing of Claudia Gómez González', 'Trans-Border Institute', 'Esequiel Hernández Jr.', 'SENTRI', 'Prevention Through Deterrence', 'The Undocumented', 'Border Film Project', 'Trump wall', 'Shadow Wolves', 'Speedy Gonzales (film)', 'Anáhuac Municipality', 'Goat Canyon (Tijuana River Valley)', 'Rio Grande border disputes', 'Operation Jump Start', 'Border Report', 'Friendship Park (San Diego–Tijuana)', 'The Shepherd: Border Patrol', 'Gulf of Mexico', 'Colonia (United States)', 'Aguilas del Desierto', 'NEXUS', 'No More Deaths', 'Central American migrant caravans', 'Chamizal dispute', 'Roosevelt Reservation', 'International Boundary and Water Commission', 'Banco Convention of 1905', 'Mexico–United States international park', 'Texas Senate Bill 4 (2023)', 'Operation Gatekeeper', 'Tortilla Wall', 'Amistad Reservoir', 'Adams–Onís Treaty', 'Minuteman Civil Defense Corps', 'Coyotes (book)', 'Boundary Treaty of 1970', 'El Camino del Diablo', 'Hernandez v. Mesa', 'Treaty of Guadalupe Hidalgo', 'Borderland (TV series)', 'Border Angels', 'Gadsden Purchase', 'Río Rico, Tamaulipas', 'Ciudad Juárez migrant center fire']
+   Upper category of Mexico–United States border: ['Mexico–United States relations', 'Borders of Mexico', 'Borders of the United States', 'Southwestern United States', 'International borders']
+choose_by_wiki_recur(Mexico–United States relations)
+check_matchscore(Gulf of Mexico, Landforms of Campeche):  0.1111111111111111
+choose_by_wiki_recur(Landforms of Campeche)
+   Pages in Landforms of Campeche: ['Bay of Campeche', 'Gulf of Mexico', 'Isthmus of Tehuantepec', 'Laguna de Términos', 'Punta Xicalango', 'Yucatán Peninsula']
+      Gulf of Mexico in ['Gulf of Mexico', 'Punta Xicalango', 'Laguna de Términos', 'Isthmus of Tehuantepec']
+      Punta Xicalango in ['Gulf of Mexico', 'Punta Xicalango', 'Laguna de Términos', 'Isthmus of Tehuantepec', 'Yucatán Peninsula']
+      Laguna de Términos in ['Gulf of Mexico', 'Punta Xicalango', 'Laguna de Términos', 'Isthmus of Tehuantepec', 'Yucatán Peninsula', 'Bay of Campeche']
+      Isthmus of Tehuantepec in ['Gulf of Mexico', 'Punta Xicalango', 'Laguna de Términos', 'Isthmus of Tehuantepec', 'Yucatán Peninsula', 'Bay of Campeche']
+      Yucatán Peninsula in ['Gulf of Mexico', 'Punta Xicalango', 'Laguna de Términos', 'Isthmus of Tehuantepec', 'Yucatán Peninsula', 'Bay of Campeche']
+      Bay of Campeche in ['Gulf of Mexico', 'Punta Xicalango', 'Laguna de Términos', 'Isthmus of Tehuantepec', 'Yucatán Peninsula', 'Bay of Campeche']
+   Upper category of Landforms of Campeche: ['Geography of Campeche', 'Landforms of Mexico by state']
+choose_by_wiki_recur(Geography of Campeche)
+['Rio Grande', 'The Undocumented', 'NEXUS', 'Isthmus of Tehuantepec', 'Yucatán Peninsula', 'Bay of Campeche']
+Ended after 2.5 hierarchy
+(2.5, ['NEXUS', 'Bay of Campeche', 'The Undocumented', 'Yucatán Peninsula', 'Isthmus of Tehuantepec', 'Rio Grande'])
+
+extract_info(Isthmus of Tehuantepec) Start.
+utils/preprocess.py extract_info(): Checking good links on Isthmus of Tehuantepec
+Mexico is Geography
+1 / 30 )  Mexico Mexico mexico
+Gulf of Mexico is Geography
+2 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico
+Pacific Ocean is Geography
+3 / 30 )  Pacific Ocean Pacific Ocean pacific_ocean
+Panama Canal is Geography
+4 / 30 )  Panama Canal Panama Canal panama_canal
+Oaxaca is Geography
+5 / 30 )  Oaxaca Oaxaca oaxaca
+Tabasco is Geography
+6 / 30 )  Tabasco Tabasco tabasco
+Chiapas is Geography
+7 / 30 )  Chiapas Chiapas chiapas
+Veracruz is Geography
+8 / 30 )  Veracruz Veracruz veracruz
+Guatemala is Geography
+9 / 30 )  Guatemala Guatemala guatemala
+Hickatee is Animal
+10 / 30 )  Central American river turtle Hickatee hickatee
+Atlantic Ocean is Geography
+11 / 30 )  Atlantic Atlantic Ocean atlantic_ocean
+Gulf of Tehuantepec is Geography
+12 / 30 )  Gulf of Tehuantepec Gulf of Tehuantepec gulf_of_tehuantepec
+Maize is Animal
+13 / 30 )  maize Maize maize
+Iguana is Animal
+14 / 30 )  iguana Iguana iguana
+Armadillo is Animal
+15 / 30 )  armadillo Armadillo armadillo
+Hernán Cortés is People
+16 / 30 )  Hernán Cortés Hernán Cortés hernando_cortes
+Canal is Geography
+17 / 30 )  canal Canal canal
+Panama is Geography
+18 / 30 )  Panama Panama panama
+Benito Juárez is People
+19 / 30 )  Benito Juárez Benito Juárez juaristas
+Coatzacoalcos is Geography
+20 / 30 )  Coatzacoalcos Coatzacoalcos coatzacoalcos
+Mexico City is Geography
+21 / 30 )  Mexico City Mexico City mexico_city
+extract_triplet(Isthmus of Tehuantepec)
+Got GPT's response. String length : 2511
+subject_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+object_words:  [['Mexico', 'Mexico', 'mexico']]
+subject_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+object_words:  [['Mexico', 'Mexico', 'mexico'], ['Gulf of Mexico', 'Gulf of Mexico', 'gulf_of_mexico'], ['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+object_words:  [['Panama Canal', 'Panama Canal', 'panama_canal'], ['canal', 'Canal', 'canal'], ['Panama', 'Panama', 'panama']]
+subject_words:  []
+object_words:  [['Oaxaca', 'Oaxaca', 'oaxaca']]
+subject_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+object_words:  [['Oaxaca', 'Oaxaca', 'oaxaca'], ['Veracruz', 'Veracruz', 'veracruz']]
+subject_words:  [['Tabasco', 'Tabasco', 'tabasco'], ['Chiapas', 'Chiapas', 'chiapas']]
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  [['Oaxaca', 'Oaxaca', 'oaxaca'], ['Veracruz', 'Veracruz', 'veracruz']]
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+object_words:  []
+subject_words:  []
+object_words:  [['Guatemala', 'Guatemala', 'guatemala']]
+subject_words:  [['Hernán Cortés', 'Hernán Cortés', 'hernando_cortes']]
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  []
+object_words:  [['Mexico', 'Mexico', 'mexico'], ['Gulf of Mexico', 'Gulf of Mexico', 'gulf_of_mexico'], ['Gulf of Tehuantepec', 'Gulf of Tehuantepec', 'gulf_of_tehuantepec']]
+subject_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  [['Central American river turtle', 'Hickatee', 'hickatee']]
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  []
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  []
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  [['Mexico', 'Mexico', 'mexico'], ['Gulf of Mexico', 'Gulf of Mexico', 'gulf_of_mexico']]
+object_words:  [['Pacific Ocean', 'Pacific Ocean', 'pacific_ocean']]
+subject_words:  []
+object_words:  [['Gulf of Tehuantepec', 'Gulf of Tehuantepec', 'gulf_of_tehuantepec']]
+subject_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+object_words:  []
+subject_words:  []
+object_words:  [['Oaxaca', 'Oaxaca', 'oaxaca']]
+subject_words:  []
+object_words:  [['canal', 'Canal', 'canal']]
+subject_words:  [['Benito Juárez', 'Benito Juárez', 'juaristas']]
+object_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+subject_words:  []
+object_words:  [['Coatzacoalcos', 'Coatzacoalcos', 'coatzacoalcos']]
+subject_words:  []
+object_words:  [['Coatzacoalcos', 'Coatzacoalcos', 'coatzacoalcos']]
+subject_words:  []
+object_words:  []
+subject_words:  [['Veracruz', 'Veracruz', 'veracruz']]
+object_words:  []
+subject_words:  [['Mexico', 'Mexico', 'mexico'], ['Mexico City', 'Mexico City', 'mexico_city']]
+object_words:  []
+subject_words:  [(None, 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec')]
+object_words:  [['Atlantic', 'Atlantic Ocean', 'atlantic_ocean']]
+extract_info(Nexus) Start.
+utils/preprocess.py extract_info(): Checking good links on NEXUS
+George W. Bush is People
+1 / 30 )  George W. Bush George W. Bush george_w_bush
+Federal Bureau of Investigation is Geography
+2 / 30 )  Federal Bureau of Investigation Federal Bureau of Investigation federal_bureau_of_investigation
+Canadian Security Intelligence Service is Geography
+3 / 30 )  Canadian Security Intelligence Service Canadian Security Intelligence Service canadian_security_intelligence_service
+Royal Canadian Mounted Police is Geography
+4 / 30 )  Royal Canadian Mounted Police Royal Canadian Mounted Police royal_canadian_mounted_police
+Interpol is Geography
+5 / 30 )  Interpol Interpol interpol
+United Kingdom is Geography
+6 / 30 )  United Kingdom United Kingdom united_kingdom
+Tijuana is Geography
+7 / 30 )  Tijuana Tijuana tijuana
+extract_triplet(Nexus)
+Got GPT's response. String length : 841
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  []
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  []
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  []
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  []
+subject_words:  [['George W. Bush', 'George W. Bush', 'george_w_bush']]
+object_words:  [(None, 'Nexus', 'nexus')]
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  [['Federal Bureau of Investigation', 'Federal Bureau of Investigation', 'federal_bureau_of_investigation']]
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  [['Canadian Security Intelligence Service', 'Canadian Security Intelligence Service', 'canadian_security_intelligence_service']]
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  [['Royal Canadian Mounted Police', 'Royal Canadian Mounted Police', 'royal_canadian_mounted_police']]
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  [['Interpol', 'Interpol', 'interpol']]
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  [['United Kingdom', 'United Kingdom', 'united_kingdom']]
+subject_words:  [(None, 'Nexus', 'nexus')]
+object_words:  [['Tijuana', 'Tijuana', 'tijuana']]
+extract_info(Bay of Campeche) Start.
+utils/preprocess.py extract_info(): Checking good links on Bay of Campeche
+Gulf of Mexico is Geography
+1 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico
+Isthmus of Tehuantepec is Geography
+2 / 30 )  Isthmus of Tehuantepec Isthmus of Tehuantepec isthmus_of_tehuantepec
+Mexico is Geography
+3 / 30 )  Mexican Mexico mexico
+Campeche is Geography
+4 / 30 )  Campeche Campeche campeche
+Tabasco is Geography
+5 / 30 )  Tabasco Tabasco tabasco
+Veracruz is Geography
+6 / 30 )  Veracruz Veracruz veracruz
+Atlantic Ocean is Geography
+7 / 30 )  Atlantic Atlantic Ocean atlantic_ocean
+extract_triplet(Bay of Campeche)
+Got GPT's response. String length : 870
+subject_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+object_words:  [['Gulf of Mexico', 'Gulf of Mexico', 'gulf_of_mexico'], ['Mexican', 'Mexico', 'mexico']]
+subject_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+object_words:  [['Isthmus of Tehuantepec', 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec']]
+subject_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+object_words:  [['Mexican', 'Mexico', 'mexico'], ['Veracruz', 'Veracruz', 'veracruz']]
+subject_words:  []
+object_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+subject_words:  []
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+subject_words:  []
+object_words:  []
+subject_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+object_words:  [['Atlantic', 'Atlantic Ocean', 'atlantic_ocean']]
+subject_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+object_words:  []
+subject_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+object_words:  []
+subject_words:  [(None, 'Bay of Campeche', 'bay_of_campeche'), ['Campeche', 'Campeche', 'campeche']]
+object_words:  []
+extract_info(Yucatán Peninsula) Start.
+utils/preprocess.py extract_info(): Checking good links on Yucatán Peninsula
+Mexico is Geography
+1 / 30 )  Mexico Mexico mexico
+Belize is Geography
+2 / 30 )  Belize Belize belize
+Guatemala is Geography
+3 / 30 )  Guatemala Guatemala guatemala
+Gulf of Mexico is Geography
+4 / 30 )  Gulf of Mexico Gulf of Mexico gulf_of_mexico
+Caribbean Sea is Geography
+5 / 30 )  Caribbean Sea Caribbean Sea caribbean_sea
+Cuba is Geography
+6 / 30 )  Cuba Cuba cuba
+Isthmus of Tehuantepec is Geography
+7 / 30 )  Isthmus of Tehuantepec Isthmus of Tehuantepec isthmus_of_tehuantepec
+North America is Geography
+8 / 30 )  North America North America north_america
+Hernán Cortés is People
+9 / 30 )  Hernán Cortés Hernán Cortés hernando_cortes
+Cassava is Animal
+10 / 30 )  yuca Cassava cassava
+Cretaceous is Geography
+11 / 30 )  Cretaceous Period Cretaceous cretaceous
+Pleistocene is Geography
+12 / 30 )  Pleistocene Pleistocene pleistocene
+Holocene is Geography
+13 / 30 )  Holocene Holocene holocene
+Honduras is Geography
+14 / 30 )  Honduras Honduras honduras
+Chiapas is Geography
+15 / 30 )  Chiapas Chiapas chiapas
+Caribbean is Geography
+16 / 30 )  Caribbean Caribbean caribbean
+Lake is Geography
+17 / 30 )  lakes Lake lake
+Great Barrier Reef is Geography
+18 / 30 )  barrier reef Great Barrier Reef great_barrier_reef
+Yucatán is Geography
+19 / 30 )  Yucatán Yucatán yucatán
+Campeche is Geography
+20 / 30 )  Campeche Campeche campeche
+Quintana Roo is Geography
+21 / 30 )  Quintana Roo Quintana Roo quintana_roo
+Agave fourcroydes is Animal
+22 / 30 )  henequen Agave fourcroydes henequin
+Cancún is Geography
+23 / 30 )  Cancún Cancún cancún
+Riviera Maya is Geography
+24 / 30 )  Riviera Maya Riviera Maya mayan_riviera
+Xcaret is Geography
+25 / 30 )  Xcaret Xcaret xcaret
+extract_triplet(Yucatán Peninsula)
+Got GPT's response. String length : 1789
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  [['Mexico', 'Mexico', 'mexico']]
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  [['Belize', 'Belize', 'belize'], ['Guatemala', 'Guatemala', 'guatemala']]
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  [['Mexico', 'Mexico', 'mexico'], ['Gulf of Mexico', 'Gulf of Mexico', 'gulf_of_mexico'], ['Caribbean Sea', 'Caribbean Sea', 'caribbean_sea'], ['Caribbean', 'Caribbean', 'caribbean']]
+subject_words:  [['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  [['Mexico', 'Mexico', 'mexico'], ['Gulf of Mexico', 'Gulf of Mexico', 'gulf_of_mexico'], ['Caribbean Sea', 'Caribbean Sea', 'caribbean_sea'], ['Caribbean', 'Caribbean', 'caribbean']]
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  [['Isthmus of Tehuantepec', 'Isthmus of Tehuantepec', 'isthmus_of_tehuantepec']]
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  [['North America', 'North America', 'north_america']]
+subject_words:  [['Hernán Cortés', 'Hernán Cortés', 'hernando_cortes']]
+object_words:  [['Yucatán', 'Yucatán', 'yucatán']]
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  [['Cretaceous Period', 'Cretaceous', 'cretaceous']]
+subject_words:  []
+object_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+subject_words:  []
+object_words:  [['Chiapas', 'Chiapas', 'chiapas']]
+subject_words:  []
+object_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+subject_words:  [['Cancún', 'Cancún', 'cancún']]
+object_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+subject_words:  [['Riviera Maya', 'Riviera Maya', 'mayan_riviera']]
+object_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+subject_words:  [['Xcaret', 'Xcaret', 'xcaret']]
+object_words:  [['Riviera Maya', 'Riviera Maya', 'mayan_riviera']]
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  []
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  []
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  []
+subject_words:  [['barrier reef', 'Great Barrier Reef', 'great_barrier_reef']]
+object_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  [['Quintana Roo', 'Quintana Roo', 'quintana_roo']]
+subject_words:  []
+object_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+subject_words:  [['Quintana Roo', 'Quintana Roo', 'quintana_roo']]
+object_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+subject_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+object_words:  []
+subject_words:  []
+object_words:  [(None, 'Yucatán Peninsula', 'yucatan_peninsula'), ['Yucatán', 'Yucatán', 'yucatán']]
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Isthmus of Tehuantepec", "is located in", "Mexico")\n', '("Isthmus of Tehuantepec", "represents shortest distance between", "Gulf of Mexico and Pacific Ocean")\n', '("Isthmus of Tehuantepec", "was major overland route before", "Panama Canal")\n', '("Town of Santo Domingo Tehuantepec", "is in", "Oaxaca")\n', '("Isthmus of Tehuantepec", "includes southeastern parts of", "Veracruz and Oaxaca")\n', '("Tabasco and Chiapas", "are east of", "Isthmus of Tehuantepec")\n', '("Veracruz and Oaxaca", "are on the west of", "Isthmus of Tehuantepec")\n', '("Ferrocarril Transistmico railway", "reaches highest point at", "Chivela Pass")\n', '("Selva Zoque", "is area of ecological importance in", "Isthmus of Tehuantepec")\n', '("Isthmus of Tehuantepec", "divides", "North America from Central America")\n', '("Motagua Fault", "lies across in", "Guatemala")\n', '("Hernán Cortés", "used route to transport equipment", "across Isthmus of Tehuantepec")\n', '("Expeditions", "moved from", "Gulf of Mexico to Gulf of Tehuantepec")\n', '("Isthmus of Tehuantepec", "presents a case of", "allopatric speciation")\n', '("Mexican birds", "show population diversification in", "Isthmus of Tehuantepec")\n', '("Central American river turtle", "is an organism with population diversification in", "Isthmus of Tehuantepec")\n', '("Tropical savanna", "is climate in southern part of", "Isthmus of Tehuantepec")\n', '("Tropical monsoon", "is climate in northern part of", "Isthmus of Tehuantepec")\n', '("Trade winds from Gulf of Mexico", "blow through to", "Pacific Ocean")\n', '("Tehuano", "is name of wind blowing through", "Chivela Pass to Gulf of Tehuantepec")\n', '("Isthmus of Tehuantepec", "has wind farms for", "wind resources")\n', '("Zapotec peoples", "are indigenous people in", "Oaxaca part of Tehuantepec")\n', '("Tehuantepec route", "considered for", "interoceanic canal and railway")\n', '("Benito Juárez", "signed McLane–Ocampo Treaty for transit rights across", "Isthmus of Tehuantepec")\n', '("S. Pearson & Son, Ltd.", "contract with Mexican government to construct", "terminal ports at Coatzacoalcos and Salina Cruz")\n', '("Tehuantepec Railway", "runs from", "Coatzacoalcos to Salina Cruz")\n', '("Ferrocarril Transístmico", "is another name for", "Tehuantepec Railway")\n', '("Veracruz & Pacific Railway", "connects at Santa Lucrecia with", "Tehuantepec Railway")\n', '("Mexico City", "is connected to Tehuantepec Railway via", "Ferrosur")\n', '("Interoceanic Corridor of the Isthmus of Tehuantepec", "is project to link", "Pacific and Atlantic Oceans")\n', '("NEXUS", "is operated by", "Canada Border Services Agency and U.S. Customs and Border Protection")\n', '("NEXUS", "is designed for", "pre-approved, low-risk travelers")\n', '("NEXUS members", "can avoid waits at", "border entry points")\n', '("NEXUS membership card", "is a valid document under", "Western Hemisphere Travel Initiative (WHTI)")\n', '("George W. Bush", "launched", "NEXUS officially")\n', '("NEXUS applicants", "are checked against", "Federal Bureau of Investigation (FBI)")\n', '("NEXUS applicants", "are checked against", "Canadian Security Intelligence Service (CSIS)")\n', '("NEXUS applicants", "are checked against", "Royal Canadian Mounted Police (RCMP)")\n', '("NEXUS applicants", "are checked against", "Interpol terrorism and no-fly list")\n', '("NEXUS", "is related to", "United Kingdom")\n', '("NEXUS cardholders", "can use dedicated SENTRI lines from", "Tijuana")\n', '("Bay of Campeche", "is a bight in", "Gulf of Mexico")\n', '("Bay of Campeche", "forms north side of", "Isthmus of Tehuantepec")\n', '("Bay of Campeche", "is surrounded by", "Mexican states of Campeche, Tabasco, and Veracruz")\n', '("Cantarell Complex", "lies beneath", "Bay of Campeche")\n', '("Cantarell Complex", "supplied", "two thirds of Mexico\'s crude oil")\n', '("Ixtoc I", "oil well located in", "Bay of Campeche")\n', '("Ixtoc I", "suffered a blowout causing", "third largest unintentional oil spill in history")\n', '("Bay of Campeche", "breeding spot for", "Atlantic hurricanes")\n', '("Bay of Campeche", "experiences strong winds from the north", "from November into February")\n', '("Bay of Campeche", "known as hurricane graveyard", "")\n', '("Bay of Campeche", "eastern border on main migration routes for", "birds in the Americas")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n']
+range(1, 118) 1
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Isthmus of Tehuantepec", "is located in", "Mexico")\n', '("Isthmus of Tehuantepec", "represents shortest distance between", "Gulf of Mexico and Pacific Ocean")\n', '("Isthmus of Tehuantepec", "was major overland route before", "Panama Canal")\n', '("Town of Santo Domingo Tehuantepec", "is in", "Oaxaca")\n', '("Isthmus of Tehuantepec", "includes southeastern parts of", "Veracruz and Oaxaca")\n', '("Tabasco and Chiapas", "are east of", "Isthmus of Tehuantepec")\n', '("Veracruz and Oaxaca", "are on the west of", "Isthmus of Tehuantepec")\n', '("Ferrocarril Transistmico railway", "reaches highest point at", "Chivela Pass")\n', '("Selva Zoque", "is area of ecological importance in", "Isthmus of Tehuantepec")\n', '("Isthmus of Tehuantepec", "divides", "North America from Central America")\n', '("Motagua Fault", "lies across in", "Guatemala")\n', '("Hernán Cortés", "used route to transport equipment", "across Isthmus of Tehuantepec")\n', '("Expeditions", "moved from", "Gulf of Mexico to Gulf of Tehuantepec")\n', '("Isthmus of Tehuantepec", "presents a case of", "allopatric speciation")\n', '("Mexican birds", "show population diversification in", "Isthmus of Tehuantepec")\n', '("Central American river turtle", "is an organism with population diversification in", "Isthmus of Tehuantepec")\n', '("Tropical savanna", "is climate in southern part of", "Isthmus of Tehuantepec")\n', '("Tropical monsoon", "is climate in northern part of", "Isthmus of Tehuantepec")\n', '("Trade winds from Gulf of Mexico", "blow through to", "Pacific Ocean")\n', '("Tehuano", "is name of wind blowing through", "Chivela Pass to Gulf of Tehuantepec")\n', '("Isthmus of Tehuantepec", "has wind farms for", "wind resources")\n', '("Zapotec peoples", "are indigenous people in", "Oaxaca part of Tehuantepec")\n', '("Tehuantepec route", "considered for", "interoceanic canal and railway")\n', '("Benito Juárez", "signed McLane–Ocampo Treaty for transit rights across", "Isthmus of Tehuantepec")\n', '("S. Pearson & Son, Ltd.", "contract with Mexican government to construct", "terminal ports at Coatzacoalcos and Salina Cruz")\n', '("Tehuantepec Railway", "runs from", "Coatzacoalcos to Salina Cruz")\n', '("Ferrocarril Transístmico", "is another name for", "Tehuantepec Railway")\n', '("Veracruz & Pacific Railway", "connects at Santa Lucrecia with", "Tehuantepec Railway")\n', '("Mexico City", "is connected to Tehuantepec Railway via", "Ferrosur")\n', '("Interoceanic Corridor of the Isthmus of Tehuantepec", "is project to link", "Pacific and Atlantic Oceans")\n', '("NEXUS", "is operated by", "Canada Border Services Agency and U.S. Customs and Border Protection")\n', '("NEXUS", "is designed for", "pre-approved, low-risk travelers")\n', '("NEXUS members", "can avoid waits at", "border entry points")\n', '("NEXUS membership card", "is a valid document under", "Western Hemisphere Travel Initiative (WHTI)")\n', '("George W. Bush", "launched", "NEXUS officially")\n', '("NEXUS applicants", "are checked against", "Federal Bureau of Investigation (FBI)")\n', '("NEXUS applicants", "are checked against", "Canadian Security Intelligence Service (CSIS)")\n', '("NEXUS applicants", "are checked against", "Royal Canadian Mounted Police (RCMP)")\n', '("NEXUS applicants", "are checked against", "Interpol terrorism and no-fly list")\n', '("NEXUS", "is related to", "United Kingdom")\n', '("NEXUS cardholders", "can use dedicated SENTRI lines from", "Tijuana")\n', '("Bay of Campeche", "is a bight in", "Gulf of Mexico")\n', '("Bay of Campeche", "forms north side of", "Isthmus of Tehuantepec")\n', '("Bay of Campeche", "is surrounded by", "Mexican states of Campeche, Tabasco, and Veracruz")\n', '("Cantarell Complex", "lies beneath", "Bay of Campeche")\n', '("Cantarell Complex", "supplied", "two thirds of Mexico\'s crude oil")\n', '("Ixtoc I", "oil well located in", "Bay of Campeche")\n', '("Ixtoc I", "suffered a blowout causing", "third largest unintentional oil spill in history")\n', '("Bay of Campeche", "breeding spot for", "Atlantic hurricanes")\n', '("Bay of Campeche", "experiences strong winds from the north", "from November into February")\n', '("Bay of Campeche", "known as hurricane graveyard", "")\n', '("Bay of Campeche", "eastern border on main migration routes for", "birds in the Americas")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n']
+range(1, 118) 1
+['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")\n']
+
+['("Turtles", "are", "reptiles of the order Testudines")\n', '("Turtle", "characterized by", "special shell developed mainly from their ribs")\n', '("Modern turtles", "divided into", "two major groups")\n', '("Pleurodira", "known as", "side necked turtles")\n', '("Cryptodira", "known as", "hidden necked turtles")\n', '("Turtles", "breathe", "air")\n', '("Turtle shells", "made mostly of", "bone")\n', '("Shells", "consist of", "carapace and plastron")\n', '("Turtle shells", "covered in", "scales made of keratin")\n', '("Turtles", "are", "ectotherms or cold-blooded")\n', '("Turtles", "mainly feed on", "plants and animals with limited movements")\n', '("Sea turtles", "migrate long distances to", "lay their eggs on a favored beach")\n', '("Turtles", "have appeared in", "myths and folktales around the world")\n', '("Turtles", "have been hunted for", "their meat, traditional medicine, and shells")\n', '("Sea turtles", "often killed accidentally as", "bycatch in fishing nets")\n', '("Turtle habitats", "are being", "destroyed")\n', '("Word turtle", "is borrowed from", "French word tortue")\n', '("Testudines", "the order name is based on", "Latin word testudo")\n', '("Largest living species of turtle", "is", "leatherback turtle")\n', '("Archelon ischyros", "a", "Late Cretaceous sea turtle")\n', '("Largest known turtle", "was", "Archelon ischyros")\n', '("Shell", "unique among", "vertebrates")\n', '("Turtle skull", "is unique among", "living amniotes")\n', '("Sea turtles", "evolved a", "bony secondary palate")\n', '("Turtles", "have", "highly flexible necks")\n', '("Turtles", "are", "slow-moving on land")\n', '("Sea turtles", "can swim at", "30 km/h")\n', '("Turtles", "make use of", "vision to find food and mates")\n', '("Turtles", "have", "olfactory and vomeronasal receptors")\n', '("Turtles", "have", "linked circulatory and pulmonary systems")\n', '("Arid-living tortoises", "have bladders", "that serve as reserves of water")\n', '("Turtles", "have a limited ability to", "regulate their body temperature")\n', '("Adult sea turtles", "have large enough bodies that they", "can control their temperature")\n', '("Turtles", "second to primates in", "percentage of threatened species")\n', '("Turtles", "face threats including", "habitat destruction, harvesting, pet trade, light pollution, climate change")\n', '("Leatherback turtle", "can be found in", "colder areas of the Atlantic and Pacific")\n', '("Pleurodira", "found only in", "the Southern Hemisphere")\n', '("Cryptodira", "include", "terrestrial, freshwater, and marine species")\n', '("Turtles", "are second only to primates in", "percentage of threatened species")\n', '("Turtle", "extinction is progressing faster than during", "Cretaceous-Tertiary extinction")\n', '("All turtles", "could be extinct in", "a few centuries")\n', '("Isthmus of Tehuantepec", "is located in", "Mexico")\n', '("Isthmus of Tehuantepec", "represents shortest distance between", "Gulf of Mexico and Pacific Ocean")\n', '("Isthmus of Tehuantepec", "was major overland route before", "Panama Canal")\n', '("Town of Santo Domingo Tehuantepec", "is in", "Oaxaca")\n', '("Isthmus of Tehuantepec", "includes southeastern parts of", "Veracruz and Oaxaca")\n', '("Tabasco and Chiapas", "are east of", "Isthmus of Tehuantepec")\n', '("Veracruz and Oaxaca", "are on the west of", "Isthmus of Tehuantepec")\n', '("Ferrocarril Transistmico railway", "reaches highest point at", "Chivela Pass")\n', '("Selva Zoque", "is area of ecological importance in", "Isthmus of Tehuantepec")\n', '("Isthmus of Tehuantepec", "divides", "North America from Central America")\n', '("Motagua Fault", "lies across in", "Guatemala")\n', '("Hernán Cortés", "used route to transport equipment", "across Isthmus of Tehuantepec")\n', '("Expeditions", "moved from", "Gulf of Mexico to Gulf of Tehuantepec")\n', '("Isthmus of Tehuantepec", "presents a case of", "allopatric speciation")\n', '("Mexican birds", "show population diversification in", "Isthmus of Tehuantepec")\n', '("Central American river turtle", "is an organism with population diversification in", "Isthmus of Tehuantepec")\n', '("Tropical savanna", "is climate in southern part of", "Isthmus of Tehuantepec")\n', '("Tropical monsoon", "is climate in northern part of", "Isthmus of Tehuantepec")\n', '("Trade winds from Gulf of Mexico", "blow through to", "Pacific Ocean")\n', '("Tehuano", "is name of wind blowing through", "Chivela Pass to Gulf of Tehuantepec")\n', '("Isthmus of Tehuantepec", "has wind farms for", "wind resources")\n', '("Zapotec peoples", "are indigenous people in", "Oaxaca part of Tehuantepec")\n', '("Tehuantepec route", "considered for", "interoceanic canal and railway")\n', '("Benito Juárez", "signed McLane–Ocampo Treaty for transit rights across", "Isthmus of Tehuantepec")\n', '("S. Pearson & Son, Ltd.", "contract with Mexican government to construct", "terminal ports at Coatzacoalcos and Salina Cruz")\n', '("Tehuantepec Railway", "runs from", "Coatzacoalcos to Salina Cruz")\n', '("Ferrocarril Transístmico", "is another name for", "Tehuantepec Railway")\n', '("Veracruz & Pacific Railway", "connects at Santa Lucrecia with", "Tehuantepec Railway")\n', '("Mexico City", "is connected to Tehuantepec Railway via", "Ferrosur")\n', '("Interoceanic Corridor of the Isthmus of Tehuantepec", "is project to link", "Pacific and Atlantic Oceans")\n', '("NEXUS", "is operated by", "Canada Border Services Agency and U.S. Customs and Border Protection")\n', '("NEXUS", "is designed for", "pre-approved, low-risk travelers")\n', '("NEXUS members", "can avoid waits at", "border entry points")\n', '("NEXUS membership card", "is a valid document under", "Western Hemisphere Travel Initiative (WHTI)")\n', '("George W. Bush", "launched", "NEXUS officially")\n', '("NEXUS applicants", "are checked against", "Federal Bureau of Investigation (FBI)")\n', '("NEXUS applicants", "are checked against", "Canadian Security Intelligence Service (CSIS)")\n', '("NEXUS applicants", "are checked against", "Royal Canadian Mounted Police (RCMP)")\n', '("NEXUS applicants", "are checked against", "Interpol terrorism and no-fly list")\n', '("NEXUS", "is related to", "United Kingdom")\n', '("NEXUS cardholders", "can use dedicated SENTRI lines from", "Tijuana")\n', '("Bay of Campeche", "is a bight in", "Gulf of Mexico")\n', '("Bay of Campeche", "forms north side of", "Isthmus of Tehuantepec")\n', '("Bay of Campeche", "is surrounded by", "Mexican states of Campeche, Tabasco, and Veracruz")\n', '("Cantarell Complex", "lies beneath", "Bay of Campeche")\n', '("Cantarell Complex", "supplied", "two thirds of Mexico\'s crude oil")\n', '("Ixtoc I", "oil well located in", "Bay of Campeche")\n', '("Ixtoc I", "suffered a blowout causing", "third largest unintentional oil spill in history")\n', '("Bay of Campeche", "breeding spot for", "Atlantic hurricanes")\n', '("Bay of Campeche", "experiences strong winds from the north", "from November into February")\n', '("Bay of Campeche", "known as hurricane graveyard", "")\n', '("Bay of Campeche", "eastern border on main migration routes for", "birds in the Americas")\n', '("Yucatán Peninsula", "is located in", "southeast Mexico")\n', '("Yucatán Peninsula", "includes portions of", "Belize and Guatemala")\n', '("Yucatán Peninsula", "separates", "Gulf of Mexico from the Caribbean Sea")\n', '("Yucatán Channel", "connects", "Gulf of Mexico to the Caribbean Sea")\n', '("Yucatán Peninsula", "lies east of", "Isthmus of Tehuantepec")\n', '("Yucatán Peninsula", "is considered part of", "North America")\n', '("Hernán Cortés", "first told the origin story of", "Yucatán")\n', '("Yucatán Peninsula", "was impacted by an asteroid at the end of", "Cretaceous Period")\n', '("Chicxulub crater", "is on the", "Yucatán Peninsula")\n', '("Maya culture", "extended to", "Guatemala, Honduras, and Chiapas")\n', '("Chichen Itza", "is a Maya archaeological site on the", "Yucatán Peninsula")\n', '("Cancún", "has grown into", "a thriving city on the Yucatán Peninsula")\n', '("Riviera Maya", "stretches along the east coast of the", "Yucatán Peninsula")\n', '("Xcaret", "is a ecological park located in the", "Riviera Maya")\n', '("Yucatán Peninsula", "has a tropical climate affected by", "hurricanes like Hurricane Gilbert, Emily, Wilma, and Dean")\n', '("Yucatán Peninsula", "is underlain by an extensive coastal aquifer", "with cenotes providing access to groundwater")\n', '("Yucatán Peninsula", "has", "vegetation that varies from north to south")\n', '("Mesoamerican Barrier Reef System", "is a coral barrier reef along the", "eastern coast of the Yucatán Peninsula")\n', '("Yucatán Peninsula", "comprises Mexican states of", "Yucatán, Campeche, and Quintana Roo")\n', '("Mérida", "is the most populated area in", "Yucatán state on the Yucatán Peninsula")\n', '("Quintana Roo", "is the least populated part of", "the Yucatán Peninsula")\n', '("Yucatán Peninsula\'s economy", "has reoriented towards", "tourism")\n', '("Oil", "has been found in parts of", "the Yucatán Peninsula")\n']
+range(1, 118) 1
+{'id': '0_2', 'Question': ' In what warm and biodiverse general area that contributes to the highest richness of non-marine turtle species, alongside the Amazon basin and coastal drainages in North America, would you find a significant number of these reptiles?\n', 'Answer': 'Gulf of Mexico', 'Multiple_choice_wiki': {'choices': [{'label': 'A', 'text': 'Isthmus of Tehuantepec'}, {'label': 'B', 'text': 'Gulf of Mexico'}, {'label': 'C', 'text': 'Nexus'}, {'label': 'D', 'text': 'Bay of Campeche'}, {'label': 'E', 'text': 'Yucatán Peninsula'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Multiple_choice_cpnet': {'choices': [{'label': 'A', 'text': 'isthmus_of_tehuantepec'}, {'label': 'B', 'text': 'gulf_of_mexico'}, {'label': 'C', 'text': 'nexus'}, {'label': 'D', 'text': 'bay_of_campeche'}, {'label': 'E', 'text': 'yucatan_peninsula'}], 'answerKey': 'B', 'choicelevel': 2.5}, 'Question_decompositions': ['1: Non-marine turtle species are richest in certain regions, including the Amazon basin, coastal drainages in North America, and in what other general area, known for its warm climate and biodiversity?\nA1: Gulf of Mexico'], 'Hops_wiki': [('Turtle', 'Gulf of Mexico')], 'Hops_cpnet': [('turtle', 'gulf_of_mexico')], 'Triplets': ['("Non-marine turtle species", "richest in", "Amazon basin, Gulf of Mexico drainages, South and Southeast Asia")'], 'Referred_files': [{'name': 'Turtle', 'line': 39}], 'Question_triplet_answer': {100: [14], 50: [99], 25: [74]}}
+time passed:  2320.690446138382
+Expected dollar:  0.0
+Bay of Campeche is Geography
+Isthmus of Tehuantepec is Geography
+Coatzacoalcos is Geography
+Salina Cruz is Geography
+Canadian Security Intelligence Service is Geography
+Yucatán Peninsula is Geography
+North America is Geography
+Interoceanic Corridor of the Isthmus of Tehuantepec is Geography
+Pacific and Atlantic Oceans is Geography
+Cantarell Complex is Geography
+Mexico is Geography
+Yucatán is Geography
+the Yucatán Peninsula is Geography
+Panama Canal is Geography
+Gulf of Mexico is Geography
+Campeche, Tabasco is Geography
+Veracruz is Geography
+Santa Lucrecia is Geography
+Selva Zoque is Geography
+Chivela Pass is Geography
+Oaxaca is Geography
+Tehuantepec is Geography
+Testudines is Animal
+Yucatán Channel is Geography
+the Caribbean Sea is Geography
+Belize is Geography
+Guatemala is Geography
+Cryptodira is Animal
+Gulf of Mexico to is Geography
+Honduras is Geography
+Turtle is Animal
+Yucatán, Campeche is Geography
+Quintana Roo is Geography
+Federal Bureau of Investigation is Geography
+FBI is Geography
+Leatherback is Animal
+Atlantic is Geography
+Pacific is Geography
+Riviera Maya is Geography
+Hernán Cortés" is People
+Pacific Ocean is Geography
+Motagua Fault is Geography
+the Southern Hemisphere is Geography
+Benito Juárez is People
+Americas is Geography
+Interpol is Geography
+Yucatán Peninsula's is Geography
+Hernán Cortés is People
+Town of Santo Domingo Tehuantepec is Geography
+entities:  {'Oaxaca', 'Benito', 'FBI', 'Bay', 'Ltd.', 'Tehuantepec', 'Canada', 'Honduras', 'Investigation', 'Quintana', 'Peninsula', 'Americas', 'Lucrecia', 'Southeast', 'Pass', 'Canadian', 'Santa', 'Cortés"', 'Motagua', 'Cortés', 'Riviera', 'Turtle', 'Veracruz', 'Belize', 'North', 'Campeche', 'Nexus', 'Cantarell', 'Corridor', 'Salina', 'Fault', 'Caribbean', 'Roo', 'Guatemala', 'Oceans', 'Security', 'Amazon', 'east', 'Atlantic', 'Interpol', 'coast', 'Chivela', 'Gulf', 'Pacific', 'Federal', 'Southern', 'Isthmus', 'Interoceanic', 'Sea', 'Maya', 'Santo', 'Bureau', 'Service', 'Son', 'Coatzacoalcos', 'U.S.', 'Complex', 'Mexico', 'Cryptodira', 'Zoque', 'Yucatán', 'Intelligence', 'Asia', 'Channel', 'Ocean', 'Campeche,', 'Hemisphere', 'Hernán', 'Selva', 'America', 'Canal', 'Juárez', 'Pearson', 'Panama', 'Testudines', 'Cruz', 'Tabasco', "Peninsula's", 'Town', 'Domingo', 'Yucatán,', 'Leatherback'}
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Turtle' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Bay of Campeche
+Atlantic hurricanes
+Turtles
+Isthmus of Tehuantepec
+Northern Hemisphere
+Southeast Asia
+Central and South America
+Turtle meat
+Traditional medicine
+Shells
+Plants
+Gulf of Mexico
+Yucatán Peninsula
+Cretaceous-Tertiary extinction
+Freshwater
+Terrestrial species
+Necks
+Order Testudines
+Tehuantepec Railway
+Allopatric speciation
+Extinct
+Their eggs
+Bycatch
+French word tortue
+Carapace
+Plastron
+Hernán Cortés
+Birds
+Mesoamerican Barrier Reef System
+Benito Juárez
+Wildlife trade
+Crude oil
+Arid-living tortoises
+Travel Initiative (WHTI)
+Western Hemisphere
+Cretaceous-Tertiary extinction
+
+gpt_entity_particular(): entity list: 
+ ['French word tortue', 'Southeast Asia', 'Extinct', 'Allopatric speciation', 'Arid-living tortoises', 'Wildlife trade', 'Plants', 'Bycatch', 'Isthmus of Tehuantepec', 'Plastron', 'Carapace', 'Terrestrial species', 'Shells', 'Gulf of Mexico', 'Hernán Cortés', 'Mesoamerican Barrier Reef System', 'Travel Initiative (WHTI)', 'Bay of Campeche', 'Crude oil', 'Turtles', 'Benito Juárez', 'Freshwater', 'Birds', 'Necks', 'Their eggs', 'Atlantic hurricanes', 'Western Hemisphere', 'Traditional medicine', 'Northern Hemisphere', 'Cretaceous-Tertiary extinction', 'Turtle meat', 'Order Testudines', 'Central and South America', 'Tehuantepec Railway', 'Yucatán Peninsula']
+
+gpt_entity_particular(): filtered entity: 
+ ['Plastron', 'Carapace', 'Turtles']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Bay of Campeche' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Bay of Campeche
+Isthmus of Tehuantepec
+wind
+resources
+S. Pearson & Son, Ltd.
+Mexican government
+terminal ports
+Coatzacoalcos
+Salina Cruz
+NEXUS applicants
+Canadian Security Intelligence Service (CSIS)
+Yucatán Peninsula
+North America
+Tropical savanna
+Leatherback turtle
+Interoceanic Corridor of the Isthmus of Tehuantepec
+Pacific
+Atlantic Oceans
+Cantarell Complex
+Mexico's crude oil
+Mérida
+Yucatán state
+Turtles
+meat
+traditional medicine
+shells
+Mexico City
+Tehuantepec Railway
+Panama Canal
+Amazon basin
+Gulf of Mexico drainages
+South and Southeast Asia
+Mexican states
+Campeche
+Tabasco
+Veracruz
+Ixtoc I
+blowout
+third largest unintentional oil spill in history
+Yucatán Peninsula
+vegetation
+Aquifer
+cenotes
+groundwater
+Turtles
+plants
+animals
+limited movements
+Veracruz & Pacific Railway
+Santa Lucrecia
+Tehuantepec Railway
+Selva Zoque
+ecological importance
+Tehuantepec
+Ferrocarril Transismico railway
+Chivela Pass
+Sea turtles
+bony secondary palate
+Bay of Campeche
+winds
+Gulf of Mexico
+Yucatán Peninsula
+Belize
+Guatemala
+Cryptodira
+terrestrial
+freshwater
+marine species
+Expeditions
+Gulf of Mexico
+Gulf of Tehuantepec
+Atlantic hurricanes
+Maya culture
+Guatemala
+Honduras
+Chiapas
+Yucatán Peninsula
+Aquifer
+cenotes
+groundwater
+Ferrocarril Transistmico railway
+Chivela Pass
+Turtles
+air
+Largest living species of turtle
+Leatherback turtle
+Turtles
+meat
+traditional medicine
+shells
+Turtle skull
+living amniotes
+Turtle
+Cretaceous-Tertiary extinction
+Turtles
+ectotherms
+cold-blooded
+Yucatán Peninsula
+Yucatán
+Campeche
+Quintana Roo
+Turtle habitats
+destroyed
+Mérida
+Yucatán state
+Yucatán Peninsula
+Belize
+Guatemala
+Turtles
+habitat destruction
+harvesting
+pet trade
+light pollution
+climate change
+NEXUS applicants
+Federal Bureau of Investigation
+FBI
+Ixtoc I
+Bay of Campeche
+Sea turtles
+fishing nets
+Zapotec peoples
+indigenous people
+Oaxaca
+Tehuantepec
+Ferrocarril Transístmico
+Tehuantepec Railway
+Turtles
+plants
+animals
+limited movements
+Bay of Campeche
+Atlantic hurricanes
+Oil
+the Yucatán Peninsula
+Tropical savanna
+Isthmus of Tehuantepec
+Quintana Roo
+the Yucatán Peninsula
+Mexican birds
+Isthmus of Tehuantepec
+Isthmus of Tehuantepec
+allopatric speciation
+Leatherback turtle
+colder areas
+Atlantic
+Pacific
+Riviera Maya
+Yucatán Peninsula
+Mexican birds
+Isthmus of Tehuantepec
+Sea turtles
+lay their eggs
+Selva Zoque
+ecological importance
+Tehuantepec
+Bay of Campeche
+Gulf of Mexico
+Bay of Campeche
+Gulf of Mexico
+Yucatán Peninsula
+Yucatán Peninsula
+Hernán Cortés
+Yucatán
+Cantarell Complex
+Mexico's crude oil
+Turtles
+circulatory
+pulmonary systems
+Trade winds from Gulf of Mexico
+Pacific Ocean
+Yucatán Peninsula
+North America
+Mesoamerican Barrier Reef System
+Yucatán Peninsula
+Yucatán Peninsula
+Belize
+Guatemala
+Turtle habitats
+destroyed
+Motagua Fault
+Guatemala
+French word tortue
+vertebrates
+NEXUS applicants
+Interpol terrorism and no-fly list
+Veracruz and Oaxaca
+Isthmus of Tehuantepec
+Cryptodira
+terrestrial
+freshwater
+marine species
+Interoceanic Corridor of the Isthmus of Tehuantepec
+Pacific
+Atlantic Oceans
+Yucatán Peninsula's economy
+tourism
+Bay of Campeche
+Isthmus of Tehuantepec
+Hernán Cortés
+Isthmus of Tehuantepec
+Yucatán Peninsula's economy
+tourism
+Tehuantepec route
+interoceanic canal and railway
+Modern turtles
+two major groups
+NEXUS
+Canada Border Services Agency and U.S. Customs and Border Protection
+Turtles
+circulatory
+pulmonary systems
+Yucatán Peninsula
+Belize
+Guatemala
+Largest known turtle
+Archelon ischyros
+Isthmus of Tehuantepec
+wind farms
+wind resources
+
+gpt_entity_particular(): entity list: 
+ ['Amazon basin', 'Selva Zoque', 'Veracruz and Oaxaca', 'Sea turtles', 'Gulf of Tehuantepec', 'Veracruz', 'Leatherback turtle', 'pet trade', "Yucatán Peninsula's economy", 'Riviera Maya', 'Interpol terrorism and no-fly list', 'Campeche', 'wind farms', 'NEXUS applicants', 'Ferrocarril Transistmico railway', 'Atlantic', 'Ferrocarril Transístmico', 'Oil', 'Archelon ischyros', 'interoceanic canal and railway', 'Federal Bureau of Investigation', 'Pacific', 'the Yucatán Peninsula', 'Gulf of Mexico drainages', 'freshwater', 'Cantarell Complex', 'Largest known turtle', 'allopatric speciation', 'Ferrocarril Transismico railway', 'Chiapas', 'meat', 'Mesoamerican Barrier Reef System', 'bony secondary palate', 'Hernán Cortés', 'Chivela Pass', 'Santa Lucrecia', 'traditional medicine', 'air', 'ectotherms', 'Mexico City', 'Cryptodira', 'Yucatán', 'Tropical savanna', 'habitat destruction', 'destroyed', 'light pollution', 'cold-blooded', 'groundwater', 'Atlantic hurricanes', 'Canadian Security Intelligence Service (CSIS)', 'climate change', 'shells', 'Motagua Fault', 'Expeditions', 'Tehuantepec Railway', 'Tabasco', 'wind', 'Atlantic Oceans', 'plants', 'Zapotec peoples', 'Oaxaca', 'FBI', 'NEXUS', 'resources', 'Maya culture', 'Tehuantepec', 'living amniotes', 'Honduras', 'vegetation', 'S. Pearson & Son, Ltd.', 'Isthmus of Tehuantepec', 'colder areas', 'fishing nets', 'Turtle skull', 'terminal ports', 'indigenous people', 'Turtles', 'Turtle', 'North America', 'lay their eggs', 'third largest unintentional oil spill in history', 'harvesting', 'Belize', 'Interoceanic Corridor of the Isthmus of Tehuantepec', 'two major groups', 'Cretaceous-Tertiary extinction', 'Canada Border Services Agency and U.S. Customs and Border Protection', 'Mexican states', 'Yucatán state', 'Guatemala', 'winds', 'Largest living species of turtle', 'cenotes', 'animals', 'French word tortue', 'tourism', 'Modern turtles', 'pulmonary systems', 'Salina Cruz', 'Coatzacoalcos', 'Mérida', 'Quintana Roo', 'Gulf of Mexico', 'Turtle habitats', 'Panama Canal', 'limited movements', 'ecological importance', 'Tehuantepec route', 'Bay of Campeche', 'Aquifer', 'Ixtoc I', 'Pacific Ocean', 'marine species', 'Mexican birds', 'Veracruz & Pacific Railway', 'wind resources', 'Mexican government', 'circulatory', 'vertebrates', 'blowout', 'South and Southeast Asia', "Mexico's crude oil", 'Yucatán Peninsula', 'Trade winds from Gulf of Mexico', 'terrestrial']
+
+gpt_entity_particular(): filtered entity: 
+ ['Gulf of Mexico']
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Nexus' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ NEXUS applicants
+NEXUS members
+NEXUS applicants
+NEXUS applicants
+NEXUS applicants
+NEXUS applicants
+NEXUS members
+NEXUS applicants
+NEXUS members
+NEXUS
+NEXUS applicants
+NEXUS applicants
+NEXUS applicants
+
+gpt_entity_particular(): entity list: 
+ ['NEXUS', 'NEXUS applicants', 'NEXUS members']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Yucatán Peninsula' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Bay of Campeche
+Tropical savanna
+Yucatán Peninsula
+Cantarell Complex
+Mérida
+Mexico City
+Isthmus of Tehuantepec
+Yucatán Channel
+Cryptodira
+Chivela Pass
+Yucatán Peninsula
+Cenotes
+Leatherback turtle
+Quintana Roo
+Mexican birds
+DNA
+Ferrocarril Transístmico
+Oil
+Cretaceous-Tertiary extinction
+Riviera Maya
+Neotropical species
+McLane–Ocampo Treaty
+Fishery
+Mesoamerican Barrier Reef System
+Motagua Fault
+Eastern coast 
+Guatemala
+Tortoises
+Herbivorous
+Bony shell
+Ischyros
+Tabasco
+
+gpt_entity_particular(): entity list: 
+ ['Eastern coast ', 'Isthmus of Tehuantepec', 'Quintana Roo', 'Mérida', 'Mesoamerican Barrier Reef System', 'Chivela Pass', 'Bay of Campeche', 'Mexico City', 'Herbivorous', 'Cryptodira', 'Yucatán Channel', 'Tropical savanna', 'Leatherback turtle', 'DNA', 'Riviera Maya', 'Fishery', 'Ischyros', 'Mexican birds', 'Cretaceous-Tertiary extinction', 'Bony shell', 'Tortoises', 'Neotropical species', 'Guatemala', 'Motagua Fault', 'Ferrocarril Transístmico', 'Oil', 'McLane–Ocampo Treaty', 'Tabasco', 'Yucatán Peninsula', 'Cenotes', 'Cantarell Complex']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Isthmus of Tehuantepec' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Isthmus of Tehuantepec
+wind farms
+wind resources
+Tropical savanna
+Interoceanic Corridor of the Isthmus of Tehuantepec
+Isthmus of Tehuantepec
+Panama Canal
+Ferrosur
+Tehuantepec Railway
+Cantarell Complex
+Leatherback turtle
+Selva Zoque
+Amazon basin, Gulf of Mexico drainages, South and Southeast Asia
+Tehuantepec Railway
+Chiapas
+Zapotec peoples
+Chivela Pass
+Testudines
+Isthmus of Tehuantepec
+allopatric speciation
+Riviera Maya
+Yucatán Peninsula
+Diversification in Isthmus of Tehuantepec
+Gulf of Mexico
+Gulf of Tehuantepec
+Yucatán Peninsula
+Yucatán Channel
+Guatemala, Honduras, and Chiapas
+Yucatán Peninsula
+Yucatán Peninsula
+Testudines
+Cretaceous-Tertiary extinction
+NEXUS
+Isthmus of Tehuantepec
+Leatherback turtle
+Hernán Cortés
+Yucatán
+Yucatán Peninsula
+Hernán Cortés
+Yucatán Peninsula
+Tehuantepec route
+NEXUS
+Archelon ischyros
+
+gpt_entity_particular(): entity list: 
+ ['allopatric speciation', 'NEXUS', 'Chiapas', 'Diversification in Isthmus of Tehuantepec', 'Selva Zoque', 'Isthmus of Tehuantepec', 'Gulf of Mexico', 'Hernán Cortés', 'Panama Canal', 'Chivela Pass', 'Tehuantepec route', 'Gulf of Tehuantepec', 'Yucatán Channel', 'Yucatán', 'Tropical savanna', 'Leatherback turtle', 'Interoceanic Corridor of the Isthmus of Tehuantepec', 'Riviera Maya', 'Cretaceous-Tertiary extinction', 'wind farms', 'wind resources', 'Testudines', 'Archelon ischyros', 'Guatemala, Honduras, and Chiapas', 'Tehuantepec Railway', 'Ferrosur', 'Amazon basin, Gulf of Mexico drainages, South and Southeast Asia', 'Yucatán Peninsula', 'Cantarell Complex', 'Zapotec peoples']
+
+gpt_entity_particular(): filtered entity: 
+ []
+
+gpt_entity_particular(): Query in gpt_entity(): 
+ List all the noun entity related to 'Gulf of Mexico' from [Article].
+Your response should strictly follow the format of [Format].
+In particular, you should not write index of line in front of the list nor write any descriptive words except for the entity. 
+
+
+[Format]
+Entity 1
+Entity 2
+Entity 3
+...
+
+[Article]
+
+
+gpt_entity_particular(): output of GPT: 
+ Bay of Campeche
+Isthmus of Tehuantepec
+Southern part
+Yucatán Peninsula
+Tropical savanna
+Pacific and Atlantic Oceans
+Cantarell Complex
+Mérida
+Mexico City
+Ferrosur
+Panama Canal
+Amazon basin
+Turtles
+Sea turtles
+Yucatán Channel
+Belize
+Guatemala
+Cryptodira
+Zapotec peoples
+Ferrocarril Transistmico railway
+Turtle
+Yucatán state
+Federal Bureau of Investigation (FBI)
+Caribbean Sea
+Latin word testudo
+Chivela Pass
+Gulf of Mexico
+Atlantic hurricanes
+Guatemala
+Bony secondary palate
+Tehuantepec Railway
+Leatherback turtle
+Riviera Maya
+Hernán Cortés
+Atlantic and Pacific
+Central America
+Yucatán
+Campeche
+Quintana Roo
+Georgia
+France
+Western Hemisphere Travel Initiative (WHTI)
+Oaxaca
+Border Services Agency
+Tehuantepec route
+Archelon ischyros
+Canada Border Services Agency
+Archelon
+United States
+U.S. Customs and Border Protection
+
+gpt_entity_particular(): entity list: 
+ ['Oaxaca', 'Archelon', 'United States', 'Amazon basin', 'Southern part', 'Sea turtles', 'Mérida', 'Isthmus of Tehuantepec', 'Quintana Roo', 'U.S. Customs and Border Protection', 'Gulf of Mexico', 'Hernán Cortés', 'Panama Canal', 'Chivela Pass', 'Tehuantepec route', 'Bay of Campeche', 'Bony secondary palate', 'Mexico City', 'Cryptodira', 'Atlantic and Pacific', 'Yucatán Channel', 'Yucatán', 'Tropical savanna', 'Turtles', 'Georgia', 'Western Hemisphere Travel Initiative (WHTI)', 'Turtle', 'Leatherback turtle', 'Belize', 'Riviera Maya', 'Atlantic hurricanes', 'Campeche', 'Border Services Agency', 'France', 'Canada Border Services Agency', 'Pacific and Atlantic Oceans', 'Guatemala', 'Ferrocarril Transistmico railway', 'Yucatán state', 'Latin word testudo', 'Central America', 'Federal Bureau of Investigation (FBI)', 'Caribbean Sea', 'Archelon ischyros', 'Tehuantepec Railway', 'Ferrosur', 'Yucatán Peninsula', 'Cantarell Complex', 'Zapotec peoples']
+
+gpt_entity_particular(): filtered entity: 
+ ['Bay of Campeche', 'Caribbean Sea']
+After GPT, entity:  {'Oaxaca', 'Benito', 'FBI', 'Bay', 'Ltd.', 'Tehuantepec', 'Canada', 'Honduras', 'Investigation', 'Quintana', 'Plastron', 'Carapace', 'Peninsula', 'Americas', 'Lucrecia', 'Southeast', 'Pass', 'Canadian', 'Santa', 'Cortés"', 'Motagua', 'Cortés', 'Riviera', 'Turtles', 'Turtle', 'Veracruz', 'Belize', 'North', 'Campeche', 'Nexus', 'Cantarell', 'Corridor', 'Salina', 'Fault', 'Caribbean', 'Roo', 'Guatemala', 'Oceans', 'Security', 'Amazon', 'east', 'Atlantic', 'Interpol', 'coast', 'Chivela', 'Gulf', 'Pacific', 'Federal', 'Southern', 'Isthmus', 'Interoceanic', 'Sea', 'Maya', 'Santo', 'Bureau', 'Service', 'Son', 'Coatzacoalcos', 'U.S.', 'Gulf of Mexico', 'Complex', 'Bay of Campeche', 'Mexico', 'Cryptodira', 'Zoque', 'Yucatán', 'Intelligence', 'Asia', 'Channel', 'Ocean', 'Campeche,', 'Hemisphere', 'Hernán', 'Selva', 'America', 'Canal', 'Juárez', 'Pearson', 'Panama', 'Testudines', 'Caribbean Sea', 'Cruz', 'Tabasco', "Peninsula's", 'Town', 'Domingo', 'Yucatán,', 'Leatherback'}
+Total time:  227.90969324111938
+Entity conversion done on 0_2 in /mnt/nas2/seogyeong/23winter/kfc_dataset/entity_conversion/id_0_2_entity_conversion_hash.json. Check the entity.
+ In what warm and biodiverse general area that contributes to the highest richness of non-marine 003 species, alongside the 039 basin and coastal drainages in east America, would you find a significant number of these reptiles?
+
+
+
+Done. Check final_query/id_0_2_final_result_ratio100_masked.txt
+
+
+Done. Check final_query/id_0_2_final_result_ratio100_unmasked.txt
+
+
+Done. Check final_query/id_0_2_final_result_ratio50_masked.txt
+
+
+Done. Check final_query/id_0_2_final_result_ratio50_unmasked.txt
+
+
+Done. Check final_query/id_0_2_final_result_ratio25_masked.txt
+
+
+Done. Check final_query/id_0_2_final_result_ratio25_unmasked.txt
