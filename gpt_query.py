@@ -5,7 +5,7 @@ gptmodel = 'gpt-4-1106-Preview' # 'gpt-35-turbo-0613', 'gpt-35-turbo-1106', 'gpt
 
 def inference_azure(prompt, model_name = gptmodel):
     client = AzureOpenAI(
-        api_key="ddb53a61fc64445da04a29e3d126d6a8",
+        api_key="",
         api_version="2023-09-01-preview",
         azure_endpoint="https://jiho-3.openai.azure.com/",
     )
